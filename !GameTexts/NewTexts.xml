@@ -8,23 +8,16 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>+15% [ICON_FOOD] Food and +10% [ICON_PRODUCTION] Production when construcing buildings in City. Unlike Agribusiness, which it replaces, it does not require horses.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food on Plains tiles, and +2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, and +1 [ICON_GOLD] Gold from Pastures. [NEWLINE][NEWLINE]Only Denmark can build it.</Text>
+			<Text>+5% [ICON_FOOD] Food and +10% [ICON_PRODUCTION] Production when constructing buildings in City. Unlike the Agribusiness which it replaces, it does not require horses.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food on Plains tiles, and +2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, and +1 [ICON_GOLD] Gold from Pastures. [NEWLINE][NEWLINE]Only Denmark can build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production and can help your City grow quickly, especially when surrounded by plains and pastures.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_TEXT">
 			<Text>
-				The Andelsbevægelse (Danish Cooperative Movement) was a means of economical organization under leadership of consumer- or producer-controlled corporations, where each individual member owned a part of the corporation.
-				[NEWLINE]The type of organization was especially used in the farming industry and in consumer organizations in Denmark from the 1790s to the 1960s.
-				[NEWLINE]The members of the corporations sought to share the economic stress of producing or buying goods, and divided the eventual end-year financial surplus amongst them.
-				[NEWLINE]The type of ownership rules varied greatly between individual corporations, as some divided the financial risk equally, while others gave more power to the most financially involved individuals.
-				[NEWLINE][NEWLINE]After the Second War of Schleswig in 1864, two new movements hit Denmark. One was a successful attempt to reclaim moors in central and western Jutland for farming, which was mostly sandy land abandoned in the 14th century as a result of the Black Plague, but in many cases good for potatoes. This movement was initiated by Hedeselskabet (the Heath Association).
-				[NEWLINE]Equally important was an influx of agricultural imports to Great Britain, Denmark's primary market for grains, from a rapidly industrializing United States, which caused not only a sharp drop in prices, but an agriculture crisis throughout Europe in the final decade of the 19th century.
-				[NEWLINE]This affected the income of many Danish farmers and the result was a change in production from grain to dairy products and meat. When a farmer couldn't sell his grain, he fed it to his cows and pigs.
-				[NEWLINE][NEWLINE]This change in production resulted in a need for dairies and slaughterhouses. A Danish minister visited England and studied the Rochdale system of co-operatives, which he then brought back to Denmark. The only way to pay for such massive investments was for a large group of farmers to share the cost and risk between them, thus creating the cooperative dairies and slaughterhouses.
-				[NEWLINE]The new situation implied that farmers would buy cheap grain from Russia and feed it to their livestock, selling milk, butter, eggs and meat for a much higher price. This movement also resulted in the creation of both the Danish Bacon and Danish Lurpak Butter brands.
-				[NEWLINE][NEWLINE]The cooperative movement also resulted in a series of co-op stores known as Brugsen, which were under the administration of The Danish Consumers Co-operative Society. The stores kept a large share of the Danish consumer goods market. It merged with the similar retail chains in Norway and Sweden in January 2002, to form Coop Norden.
+				The Andelsbevægelse (Danish Cooperative Movement) was a means of economical organization under leadership of consumer- or producer-controlled corporations, where each individual member owned a part of the corporation. The type of organization was popular in the farming industry and in consumer organizations in Denmark from the 1790s to the 1960s. The members of the corporations sought to share the economic stress of producing or buying goods, and divided the eventual end-year financial surplus amongst themselves. The type of ownership rules varied greatly between individual corporations, as some divided the financial risk equally, while others gave more power to the most financially involved individuals.
+				[NEWLINE][NEWLINE]After the Second War of Schleswig in 1864, two new movements hit Denmark. One was a successful attempt to reclaim moors in central and western Jutland for farming, which was mostly sandy land abandoned in the 14th century as a result of the Black Plague, but in many cases good for potatoes. This movement was initiated by Hedeselskabet (the Heath Association). Equally important was an influx of agricultural imports to Great Britain, Denmark's primary market for grains, from a rapidly industrializing United States, which caused not only a sharp drop in prices, but an agriculture crisis throughout Europe in the final decade of the 19th century. This affected the income of many Danish farmers and the result was a change in production from grain to dairy products and meat. When a farmer couldn't sell his grain, he fed it to his cows and pigs.
+				[NEWLINE][NEWLINE]The change in production resulted in a need for dairies and slaughterhouses. A Danish minister visited England and studied the Rochdale system of co-operatives, which he then brought back to Denmark. The only way to pay for such massive investments was for a large group of farmers to share the cost and risk between them, thus creating the cooperative dairies and slaughterhouses. The new situation implied that farmers would buy cheap grain from Russia and feed it to their livestock, selling milk, butter, eggs and meat for a much higher price. This movement also resulted in the creation of both the Danish Bacon and Danish Lurpak Butter brands. The cooperative movement also resulted in a series of co-op stores known as Brugsen, which were under the administration of The Danish Consumers Co-operative Society. The stores kept a large share of the Danish consumer goods market. It merged with the similar retail chains in Norway and Sweden in January 2002, to form Coop Norden.
 			</Text>
 		</Row>
 		
@@ -34,15 +27,15 @@
 			<Text>Agora</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_HELP">
-			<Text>Unique Ancient Era building. Only the Greeks may build it. Increases [ICON_GOLD] Gold in this city for every Allied City-State. +5% [ICON_GREAT_PEOPLE] Great People Rate and +5% [ICON_PRODUCTION] Production towards Diplomatic Units in City. [ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City owner and the Trade Route owner.</Text>
+			<Text>Unique Ancient Era building. Only the Greeks may build it. Increases [ICON_GOLD] Gold in this city for every Allied City-State. +20% [ICON_PRODUCTION] Production towards Diplomatic Units in City. [ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City owner and the Trade Route owner.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_STRATEGY">
-			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora boosts the production of Great People and Diplomatic Units.</Text>
+			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora generates Gold for every City-State ally, and boosts the production Diplomatic Units. In addition to the normal bonuses to Spices and Sugar, the Agora also provides bonuses to Wine and Olives.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_TEXT">
 			<Text>
-				The Agora was the marketplace and beating heart of the ancient Greek city-states. Originally used as meeting places for announcements and a muster point for soldiers, Agoras gradually became centers of commerce and trade. Artisans and merchants could sell their wares either in the open, or along the covered walkways, or stoa, which surrounded the field. [NEWLINE][NEWLINE]
-				Often the site of intense philosophical and political discussion, the Agora have been immortalized as the proving ground of renowned philosophers, writers, storytellers, and orators. Disciplines such as Sophism, Skepticism, Cynicism and Stoicism can trace their roots back to the politics and squabbles of the Grecian Agora.
+				The Agora was the marketplace and beating heart of the ancient Greek city-states. Originally used as meeting places for announcements and a muster point for soldiers, Agoras gradually became centers of commerce and trade. Artisans and merchants could sell their wares either in the open, or along the covered walkways which surrounded the field, known as the stoa. [NEWLINE][NEWLINE]
+				Often the site of intense philosophical and political discussion, the Agora have been immortalized as the proving ground of renowned philosophers, writers, storytellers, and orators. Disciplines such as Sophism, Skepticism, Cynicism and Stoicism can trace their roots back to the politicking and squabbles of the Grecian Agora.
 			</Text>
 		</Row>
 		
@@ -58,27 +51,27 @@
 			<Text>Invincible</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP">
-			<Text>+2 XP if unit[COLOR_POSITIVE_TEXT]is inside Enemy Territory at full Health[ENDCOLOR]. +10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. Lost after unit upgrade.</Text>
+			<Text>+2 XP if unit[COLOR_POSITIVE_TEXT]is inside Enemy Territory at full Health[ENDCOLOR]_TEXT]. Lost after unit upgrade.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL">
 			<Text>Appearances</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL_HELP">
-			<Text>+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from full Health[ENDCOLOR].</Text>
+			<Text>+10% [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA">
 			<Text>Armada</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_HELP">
-			<Text>Unique Renaissance Era Naval Unit. A Slow, but incredibly dangerousship. Adept at extended sieges and engaging other ships[NEWLINE][NEWLINE]Generates Great Admirals more quickly[NEWLINE][NEWLINE]Only the Spanish may build it.</Text>
+			<Text>Unique Renaissance Era Naval Unit. A Slow, but incredibly dangerous ship. Adept at extended sieges and engaging other ships[NEWLINE][NEWLINE]Generates Great Admirals more quickly[NEWLINE][NEWLINE]Only the Spanish may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY">
-			<Text>The Armada is the most powerful ship in its era. You are unlikely to chase down an enemy, but these ships can blockade cities and force an engagement. Maneuver your Armada into the borders of cities and settle in for a long siege. Your units will amass more and more experience, becoming more dangerous while they wait for a proper fight.</Text>
+			<Text>The Armada is the a powerful ship in its era. You are unlikely to chase down an enemy, but these ships can blockade cities and force an engagement. Maneuver your Armada into the borders of cities and settle in for a long siege. Your units will amass more and more experience, becoming more dangerous while they wait for a proper fight.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_TEXT">
 			<Text>
-				The "Great and Most Fortunate Navy", the Spanish Armada, was a fleet of 130 ships constructed expressly for the invasion of England to overthrow the Reformist tyrant, Elizabeth I. The fleet was one of the largest ever seen in Europe, raised at great expense by Philip II in retribution for England's break from the Catholic Church, the perceived illegitimacy of Elizabeth I ( born from Henry VIII's second marriage), Elizabeth's execution of Mary, Queen of Scots, and English support for the Dutch revolt against Spain. [NEWLINE][NEWLINE]
-				Spanish ships were outnumbered by the English, but easily outgunned their smaller English counterparts. In the end, however, it was not firepower, but speed and maneuverability which won the day, allowing the small English vessels to harry the lumbering Spanish Juggernaut, sinking 10 ships. When finally forced to retire to Spain, a navigational error blew the Armada off-course and onto the Irish coast, where fierce storms dashed the ships against the rocks. When the Armada at last reached Spain only 67 ships remained, full of sickly, starving, and demoralized sailors. [NEWLINE][NEWLINE]
+				The "Great and Most Fortunate Navy", the Spanish Armada, was a fleet of 130 ships constructed expressly for the invasion of England to overthrow the Reformist tyrant, Elizabeth I. The fleet was one of the largest ever seen in Europe, raised at great expense by Philip II in retribution for England's break from the Catholic Church, the perceived illegitimacy of Elizabeth I (born from Henry VIII's second marriage), Elizabeth's execution of Mary, Queen of Scots, and English support for the Dutch revolt against Spain. [NEWLINE][NEWLINE]
+				Spanish ships were outnumbered, but they easily outgunned their smaller English counterparts. In the end, however, it was not firepower, but speed and maneuverability which won the day, allowing the small English vessels to harry the lumbering Spanish Juggernaut, sinking 10 ships. When finally forced to retire to Spain, a navigational error blew the Armada off-course and onto the Irish coast, where fierce storms dashed the ships against the rocks. When the Armada at last reached Spain only 67 of the original 130 ships remained, full of sickly, starving, and demoralized sailors. [NEWLINE][NEWLINE]
 				The lessons of the Spanish Armada informed naval strategy and design for the next two centuries. Cannons and ranged action had now overtaken boarding and ramming as the primary methods of attack; sinking, rather than capturing, was now the priority. With this stunning victory, England had wrested naval dominance from Spain, a lead they would maintain until the rise of the United States in WWII. [NEWLINE][NEWLINE]
 				"I sent the Armada against men, not God's winds and waves".[NEWLINE]
 				-Philip II
@@ -91,24 +84,27 @@
 			<Text>Elephant Camp</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP">
-			<Text>Unique Siamese replacement for the Workshop.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production on Jungle and Forest, and +1 [ICON_GOLD] Gold on Lumbermills worked by this city. +1 [ICON_PRODUCTION] Production and +1 [ICON_PEACE] Faith on sources of [ICON_RES_IVORY] Ivory on city. +1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every Strategic Resource received as a City-State gift.  Receive 10 [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture in Capital for every Baan Chang in the Empire every time a city state gifts a unit, scales with Era. Allows [ICON_PRODUCTION] Production to be moved from this city along Trade Routes inside your civilization.</Text>
+			<Text>Unique Siamese replacement for the Workshop.[NEWLINE][NEWLINE]
+				+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resource received as City-State gifts.  Receive 10 [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture in Capital for every Baan Chang in the Empire every time a city state gifts a unit, scales with Era.[NEWLINE][NEWLINE]
+				Allows [ICON_PRODUCTION] Production to be moved from this city along Trade Routes inside your civilization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY">
 			<Text>The Baan Chang is the Siamese unique building, replacing the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Gold from lumber mills, Production and Faith from Ivory. City state gifts, both Strategic Resources and units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_TEXT">
-			<Text>Everybody loves elephants.</Text>
+			<Text>Often thought of as ceremonial and military implements first, perhaps the greatest contribution of elephants to human society has been as tremendous beasts of burden. Elephants are prized as a labour force even within today's lumber camps for their ability to haul the dense teak lumber found only within Burma and Thailand. The power of a fully grown elephant is matched only by its grace, as the animals can navigate difficult and uneven terrain impassable by carts and tractors while carrying loads far in excess of other animals. The use of elephants in logging also has had unintentional benefits to the health of the forests, with their delicate command of the forest trails reducing the potential damage of logging trails.[NEWLINE][NEWLINE]
+			The jobs of Southeast Asia's working elephants have come under threat within the past few decades with the mechanization of logging. Elephants and their mahouts have been forced to look for work in tourism and religious festivals, jobs which elephants find terribly stressful. </Text>
 		</Row>
 		
 		<!-- Bastu -->
 		<!-- Created by pineppledan 25/11/2017, modified and incorporated by adan_eslavo 17/12/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU">
-			<Text>Sauna</Text>
+			<Text>Bastu</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_TEXT">
 			<Text>
 				The Swedish Bad Stuga (bath cabin), or Bastu, is a small cabin designed as a bathing and dry heat spa. A stove or furnace heats the room to 75-100°C (167–212 °F) before patrons enter, where they will recline and sweat. Bastus are a social affair; places for discussion and relaxation with family and friends, but in ancient times were also places for food curing and childbirth.[NEWLINE][NEWLINE]
-				Many cultures around the world have independently created their own 'sweat bath' cultures, including Aztec temazcalli, Roman thermae, Korean jjimjilbang, and the sweat lodges of many North American tribes. It is not known where or when Scandinavian sweat baths were first created, but it was well before the Christianization of Scandinavia, as evidenced by their ubiquity throughout medieval Europe. By the time written descriptions of Scandinavian sweat baths were being made, Nordic countries had created varied and distinct cultures surrounding these baths. Swedish Bastu are enjoyed while wrapped in a towel or bathing garment. Humidity is kept low, and baths are often separated by gender. In contrast, Finnish Saunas are much more humid, often approaching 70% humidity, and are often enjoyed naked, even with mixed bathing. Finns often lightly beat themselves with birch branches while bathing to stimulate the skin.[NEWLINE][NEWLINE]
+				Many cultures around the world have independently created their own 'sweat bath' cultures, including Aztec temazcalli, Roman thermae, Korean jjimjilbang, and the sweat lodges of many North American tribes. It is not known where or when Scandinavian sweat baths were first created, but it was well before the Christianization of Scandinavia, as evidenced by their ubiquity throughout medieval Europe. By the time written descriptions of Scandinavian sweat baths were being made, Nordic countries had created varied and distinct cultures surrounding these baths.[NEWLINE][NEWLINE]
 				The health benefits of heat baths are many and varied. Sessions have been shown to relieve cold symptoms and increase pain thresholds. They also help with rheumatic pain and fatigue, and may even reduce the risk of dementia. Prolonged use of a sauna has been linked to reduced male fertility, however, and heat baths should never be enjoyed while under the effects of alcohol.
 			</Text>
 		</Row>
@@ -116,7 +112,7 @@
 			<Text>Unique Swedish replacement for the Baths. The Bastu does not require a river, unlike the Baths, and provides bonuses for lakes and tundra. Science and Culture is generated whenever a citizen is born</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_HELP">
-			<Text>Golden Ages increase [ICON_CULTURE] Culture by 15% and [ICON_FOOD] Food by 10%. Gain 25% of the [ICON_RESEARCH] Science and 25% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City. +1 [ICON_RESEARCH] Science from Lake and Tundra Tiles.</Text>
+			<Text>Golden Ages increase [ICON_CULTURE] Culture and [ICON_FOOD] Food by 10%. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City. +1 [ICON_RESEARCH] Science from Lake and Tundra Tiles.</Text>
 		</Row>
 		
 		<!-- Black Tug -->
@@ -125,32 +121,30 @@
 			<Text>Mingghan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN_HELP">
-			<Text>+5 XP [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. +20% [ICON_STRENGTH] Combat Strength if unit is standing [COLOR_POSITIVE_TEXT]on Pillaged Tile[ENDCOLOR].</Text>
+			<Text>+5 XP [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE">
 			<Text>Massacre</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE_HELP">
-			<Text>+20% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from Pillaged Tile[ENDCOLOR].</Text>
+			<Text>+20% [ICON_STRENGTH] Combat Strength if unit is standing [COLOR_POSITIVE_TEXT]on Pillaged Tile[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG">
 			<Text>Black Tug</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_HELP">
-			<Text>Aggressive and menacing Medieval Era Mounted Unit. Only the Mongols may build it. Has no penalty against Cities and is stronger against wounded units or while standing on pillaged tiles. Gains additional XP for pillaging.</Text>
+			<Text>Aggressive and menacing Medieval Era Mounted Unit. Only the Mongols may build it. ties and is stronger against wounded units or while standing on pillaged tiles. Gains additional XP for pillaging.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_STRATEGY">
-			<Text>Black Tug is a Mongolian unique unit, replacing the Knight. It is stronger and more expensive than the him, and deals more damage to Wounded Units and while standing on pillaged tiles. As mounted unit, the Black Tug is vulnerable to Pikemen.</Text>
+			<Text>Black Tug is a Mongolian unique unit, replacing the Knight. It is stronger and deals more damage to wounded units, and while standing on pillaged tiles. As mounted unit, the Black Tug is vulnerable to Pikemen.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_TEXT">
 			<Text>
-				A tug is a pole with circularly arranged horse or yak tail hairs of varying colors arranged at the top. Originally a symbol of the Mongol Empire, it was later adopted in by Turco-Mongol and Turkic khanates, and the Ottoman Empire. In the 18th century, it was also adopted by Slavic cavalry (Cossacks, Haidamaka), who called the banners 'Bunchuk'. It is still used by some units of the Polish military.[NEWLINE][NEWLINE]
+				A tug is a pole with circularly arranged horse or yak tail-hairs of varying colors arranged at the top. Originally a symbol of the Mongol Empire, it was later adopted in by the Turkic khanates, as well as the Ottoman Empire. It was also adopted by Slavic cavalry in the 18th century, who called the banners 'Bunchuk', and is still used by some units of the Polish military. [NEWLINE][NEWLINE]
 
-				A white-haired banner is used as a peacetime symbol, while the black banner was for wartime. Usage of the horse tail is symbolic because of the central importance of horses in Mongol life. The original white banner disappeared early in history, but the black one survived as the repository of Genghis Khan's soul. The Mongols continued to honor the banner, building a monastery with the special mission of flying and protecting the black tug banner. Around 1937 however, the black banner disappeared amidst purges of Mongol nationalists, monks and intellectuals.[NEWLINE][NEWLINE]
+				Usage of the horse tail is symbolic because of the central importance of horses in Mongol life. A white-haired banner is used as a peacetime symbol, while the black banner was for wartime. The original white banner disappeared early in history, but the black banner survived as the repository of Genghis Khan's soul. The Mongols continued to honor the banner, building a monastery with the special mission of flying and protecting the black tug banner. However, in 1937 the black banner disappeared amidst purges of Mongol nationalists, monks, and intellectuals. [NEWLINE][NEWLINE]
 
-				The Nine White banners came into renewed significance in Mongolia after democracy was adopted in the early 1990s as a symbol of the traditional Mongolian state, replacing the previous communist red flags. The state banner flown by the Mongols, the "Nine Base White Banners", is composed of nine flag poles decorated with white horse tail hairs hanging from a round surface with a flame or trident-like shape on the top. The Nine White Banners was a peacetime emblem used exclusively by the Khans in front of their yurt. The central banner is larger in size than the rest and is placed in the center of the other eight. The modern Mongolian nine white banners are kept in the Government Palace in Ulaanbaatar.[NEWLINE][NEWLINE]
-
-				The "Four Base Black Banners" was used in wartime. It is made of black horse tail hairs and flown in the same fashion. According to the illustrated Japanese chronicle Mōko Shūrai Ekotoba, the banner of the Mongolian Yuan fleet that invaded Japan was black. The modern Mongolian black banners are kept in the Ministry of Defense.
+				The Nine White banners came into renewed significance in Mongolia after democracy was adopted in the early 1990s as a symbol of the traditional Mongolian state, replacing the previous communist flags. The modern Mongolian nine white banners are kept in the Government Palace in Ulaanbaatar; the modern Mongolian black banners are kept in the Ministry of Defense.
 			</Text>
 		</Row>
 		
@@ -160,26 +154,22 @@
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLAND_BARBICAN_HELP">
-			<Text>+33% [ICON_RANGE_STRENGTH] Range Combat Strength [COLOR_POSITIVE_TEXT]on Garrison in the City[ENDCOLOR].</Text>
+			<Text>Ranged units [COLOR_POSITIVE_TEXT]Garrisoned in the City[ENDCOLOR] can attack twice.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN">
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
-			<Text>+2 [ICON_CULTURE] Culture, +2 [ICON_PEACE] Faith and +5 [ICON_STRENGTH] Defense to the City. Increases Military Supply Cap by 2 and reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+20 XP for all new Units and the [COLOR_GREEN]Medic I[ENDCOLOR] Promotion for all Ranged and Siege units trained in this city.[NEWLINE][NEWLINE]Only Polish may build it.</Text>
+			<Text>+2 [ICON_CULTURE] Culture, +2 [ICON_PEACE] Faith and +10 [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this city, and ranged units in the city can attack twice[NEWLINE][NEWLINE]Only Polish may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
-			<Text>Unique Polish replacement for the Armory. Must have built Walls in the city. In addition to the normal bonuses provided by the Armory, this building provides Culture, Faith, and increased city defense. Ranged and Siege units built in this city also recieve the Medic I promotion.</Text>
+			<Text>Unique Polish replacement for the Armory. Must have built Walls in the city. In addition to the normal bonuses provided by the Armory, this building provides Culture, Faith, and increased city defense. Ranged and Siege garrisoned in the city can attack twice in a turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_TEXT">
-			<Text>
-				A Barbican (pol. Barbakan) is a fortified outpost or gateway, such as an outer defense to a city, castle, or any tower situated over a gate or bridge which was used for defensive purposes. The towers were often situated outside the main line of defenses and connected to the city walls with a walled road called the neck; this allowed for an enfilading line of fire against attackers at the main gates. With the improvement in siege tactics and artillery in the 15th century, barbicans lost their significance.[NEWLINE][NEWLINE]
-
-				The Warsaw barbican was erected in 1540 in place of an older gate to protect Nowomiejska Street. Almost immediately after its inception, the 4-tower Barbican became an anachronism serving virtually no practical purpose. This was largely a result of the rapid advancement in artillery power. It was used in the defense of the city only once, during the Swedish invasion of Poland, on 30 June 1656, when it had to be recaptured from the Swedes by the polish army of king Jan Kazimierz.[NEWLINE][NEWLINE]
-
-				During World War II, particularly the Siege of Warsaw (1939) and the Warsaw Uprising (1944), the Barbican was largely destroyed, as were most of the Old Town's buildings. It was rebuilt after the war, during 1952–1954, on the basis of 17th-century etchings, as the new government decided it would be cheaper to rebuild the barbican and the nearby city walls as a tourist attraction than to rebuild the tenements. In its reconstruction, bricks were used from historic buildings demolished in the cities of Nysa and Wroclaw; most of the barbican was rebuilt, save for two exterior gates and the oldest tower on the side of the Old Town. It is currently a popular tourist attraction.[NEWLINE][NEWLINE]
-
-				Another famous polish barbican was built in Kraków in 1498-1499 during the reign of Jan Olbracht. It was inspired by two other Barbicans in Torun (1429) and Chelm (1449), and motivated by the danger posed by Encroaching Ottoman and Wallachian forces.
+			<Text>	
+				A Barbican is a fortified outpost or archery tower, forming part of a city’s outer defense. The towers were often situated outside the main line of defenses with a clear line of fire towards the city’s gates, and connected to the city walls via a walled road called the ‘neck’. [NEWLINE][NEWLINE]
+				
+				The most well-known barbican was built in Kraków in 1498-1499 during the reign of Jan Olbracht. It was inspired by two other Barbicans in Torun (1429) and Chelm (1449), and motivated by the danger posed by Encroaching Ottoman and Wallachian forces. The Warsaw barbican was erected in 1540 in place of an older gate to protect Nowomiejska Street and almost immediately became an anachronism serving no practical purpose. With the improvement in siege tactics and artillery in the 15th century, barbicans had largely lost their significance. The Warsaw barbican was used in the defense of the city only once, during the Swedish invasion of Poland in 1656, when it had to be recaptured from the Swedes by the polish army.
 			</Text>
 		</Row>
 		
@@ -201,16 +191,16 @@
 			<Text>Siege Mobility</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT_HELP">
-			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Flat, but not hindering Terrain from Great General[ENDCOLOR].</Text>
+			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Open Terrain if within 2 tiles of a Great General[ENDCOLOR].</Text>
 		</Row>
 		
-		<!-- Dhanuraashi -->
+		<!-- Dhanurgraha -->
 		<!-- Created by adan_eslavo on 4/12/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_EPIC">
 			<Text>Epic</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_EPIC_HELP">
-			<Text>Unit gains [ICON_CULTURE] Culture and additional XP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. Yields doubled [COLOR_POSITIVE_TEXT]on Barbarian Kills[ENDCOLOR].</Text>
+			<Text>Unit gains [ICON_CULTURE] Culture and additional XP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. Culture doubled [COLOR_POSITIVE_TEXT]on Barbarian Kills[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA">
 			<Text>Dhanurvidya</Text>
@@ -222,13 +212,13 @@
 			<Text>Dhanurgraha</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_HELP">
-			<Text>Unique Ancient Era Unit.  Only the Indians may build it. Gains additional [ICON_PEACE] Faith, [ICON_CULTURE] Culture and experience for every kill, and gains [ICON_CULTURE] Culture when levelling up. Yields from kills are doubled on barbarians.</Text>
+			<Text>Unique Ancient Era Unit.  Only the Indians may build it. Gains additional [ICON_CULTURE] Culture and experience for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. Culture from kills is doubled on barbarians.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_STRATEGY">
-			<Text>The Dhanurvidya is a powerful defense against early barbarians which helps India maintain its cultural and religious dominance in the early game. Seek out barbarians to kill for culture and faith, then turn on your neighbours if it suits you.</Text>
+			<Text>The Dhanurgraha is a powerful defense against early barbarians which helps India maintain its cultural and religious dominance in the early game. Seek out barbarians to kill for culture and faith, then turn on your neighbours if it suits you.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_TEXT">
-			<Text>It's the most indian</Text>
+			<Text>Archery was the most highly revered and prized martial art of ancient India. Many of the culture heroes and gods of the Vedic texts describe archers of unparalleled skill, including Arjuna, Rama, Karna, and even Shiva, the greatest of the Hindu gods. Traditional Indian bows are described as long, even reaching the height of their users, but without the tremendous strength of the Welsh longbow.</Text>
 		</Row>
 		
 		<!-- Buffalo Pound -->
@@ -237,7 +227,7 @@
 			<Text>Buffalo Pound</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_HELP">
-			<Text>Unique Shoshone replacement for the Well. [NEWLINE]Increases [ICON_FOOD] Food from nearby [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle and [ICON_RES_BISON] Bison and a [ICON_RES_BISON] Bison resource apprears near the City[NEWLINE]Additinonal [ICON_FOOD] Food and [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Population in City.[NEWLINE][NEWLINE]Can be built anywhere, including cities with a Water Mill.</Text>
+			<Text>Unique Shoshone replacement for the Well. [NEWLINE]Increases [ICON_FOOD] Food from nearby [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle and [ICON_RES_BISON] Bison and a [ICON_RES_BISON] Bison resource apprears near the City[NEWLINE]Additinonal [ICON_FOOD] Food for every 4 [ICON_CITIZEN] Population in City.[NEWLINE][NEWLINE]Can be built anywhere, including cities with a Water Mill.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_STRATEGY">
 			<Text>The Buffalo Pound is the Shoshone unique building, replacing the Well.  In addition to the normal bonuses of the Well, the Buffalo Pound provides food from Horses, Cattle, Sheep and Bison.  It can also be constructed in cities with access to fresh water, even if a Water Mill has already been built there.</Text>
@@ -245,7 +235,7 @@
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_TEXT">
 			<Text>
 				Buffalo Pounds were large constructions built by many Plains Tribes for the entrapment and killing of Buffalo. Large herds of bison were corralled and funneled into the pound, a sturdy circular ring of hides and wood, where tribesmen could throw spears and other missile weapons from the safety of the walls to take the powerful beasts down. [NEWLINE][NEWLINE]
-				Buffalo were a staple food source on the North American Plains, but hunting such large animals was difficult without horses or sturdy weapons. With the arrival of Europeans and the introduction of the horse and musket, hunting on the Great Plains was changed forever. Widespread adoption of the horse meant Native American tribes could travel great distances and attack bison herds with impunity. The good times would not last, however, as Europeans encroached upon this way of life. Increasingly, the Great Plains were converted into farms and pastures for American homesteaders. The American bison was driven to the brink of extinction by a combination of habitat loss, industrial-scale hunting, and culling, intended to starve the Native American population. [NEWLINE][NEWLINE]
+				Buffalo were a staple food source on the North American Plains, but hunting such large animals was difficult without horses or sturdy weapons. With the arrival of Europeans and the introduction of the horse and musket, hunting on the Great Plains was changed forever. Widespread adoption of the horse meant Native American tribes could travel great distances and attack bison herds with impunity. The good times would not last, however, as Europeans encroached upon this way of life. Increasingly, the Great Plains were converted into farms and pastures for American homesteaders. The American bison was driven to the brink of extinction by a combination of habitat loss, industrial-scale hunting, and culling intended to starve the indigenous population. [NEWLINE][NEWLINE]
 				Today, American buffalo have recovered, but their range has been greatly limited to a few national parks. Commercial farming and sport hunting continues, but the bison are unlikely to ever return to their historical numbers.
 			</Text>
 		</Row>
@@ -271,7 +261,7 @@
 			<Text>Unit takes an additional 20 "fire" damage [COLOR_POSITIVE_TEXT]at the start of its turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_ON_UNIT">
-			<Text>Fire Storm</Text>
+			<Text>Raging Fire</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_ON_UNIT_HELP">
 			<Text>Unit takes an additional 30 "fire" damage [COLOR_POSITIVE_TEXT]at the start of its turn[ENDCOLOR].</Text>
@@ -355,13 +345,15 @@
 			<Text>E-temenanki</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_HELP">
-			<Text>Requires Monument in City.[NEWLINE]+30% [ICON_GREAT_PEOPLE] Great Person rate in City. Receive 50 [ICON_GOLDEN_AGE] Golden Age Points as an intant boost whenever a policy is unlocked, scaling with Era. [NEWLINE][NEWLINE]Receive 15% of City's [ICON_RESEARCH] Science and [ICON_FOOD] Food output as an instant boost in the capital whenever you invest in a building. All monuments gain +1 [ICON_RESEARCH] Science and all Shrines gain +2 [ICON_FOOD] Food. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
+			<Text>Requires Monument in City.[NEWLINE]+30% [ICON_GREAT_PEOPLE] Great Person rate in City. Receive +15% of the City's [ICON_CULTURE] Culture output in in the city as [ICON_CULTURE] Culture whenever a citizen is born, and 50 [ICON_GOLDEN_AGE] Golden Age Points as an intant boost whenever a policy is unlocked, scaling with Era. [NEWLINE][NEWLINE]Receive 15% of the City's [ICON_RESEARCH] Science and [ICON_FOOD] Food output as an instant boost in the City whenever you invest in a building. All monuments gain +1 [ICON_RESEARCH] Science and all Shrines gain +2 [ICON_FOOD] Food. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_STRATEGY">
 			<Text>E-temenanki is the Babylonian Unique Wonder, replacing the National Monument. In addition to the normal bonuses of a National Monument, E-temenanki awards Food and Science whenever a building is invested on empire, so invest in buildings early and often.  All monuments in empire gain +1 Science and all Shrines gain +2 Food.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_TEXT">
-			<Text>It's like the Tower of Babel, but we're like 90% sure it actually existed.</Text>
+			<Text>E-temenanki was the Ziggurat of Marduk, god of storms and head of the Babylonian pantheon. Ziggurats were religious temples erected in Mesopotamian cities as the literal dwelling places of each city's patron god. The Ziggurats were constructed to replicate the high mountains, where it believed the gods originally lived, in order to make the gods feel more at home.[NEWLINE][NEWLINE]
+			
+			E-temenanki was destroyed at least twice in history, once by Sennacherib, King of Assyria, and once by Alexander the Great. Alexander had intended to level the temple in order to rebuild it on fresh foundations, but the project only got as far as the demolition before Alexander's death, and the project was immediately abandoned in the ensuing chaos.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_THEME">
 			<Text>Treasury of Babylon</Text>
