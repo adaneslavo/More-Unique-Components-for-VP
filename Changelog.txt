@@ -1,0 +1,428 @@
+-- Changelog
+-- Author: adan_eslavo
+-- DateCreated: 27/10/2017
+--------------------------------------------------------------
+More Unique Components for Vox Populi changelog:
+
+*Flax art
+*computing popups
+*klepht rework lua
+*check Dhanurgraha
+*credits file with Icon guy
+
+v23:
+- balance: changed Andelsbevaegelse (now +1f to Plains; +1p to Pasture),
+- balance: set Oppidum to Permanent,
+- balance: changed Wat (added World Wonder block action for enemy spies; no art slot),
+- balance: reduced CP on Barbican to 10,
+- balance: added Jungle bonus to Grunwald promotion,
+- balance: changed Latifundium (now +2g at Currency instead of flat value),
+- balance: reworked Hippodrome (now moved Palace bonus to flat yield on Hippodrome; free Horses reduced to 2; after each era, if player is not in Anarchy state: 1-turn of Anarchy in your Empire and then 7/10/15/30-turn WLTKD in your Capital)
+- added Game Speed scaling with rounding to Klepht, Dhanurgraha, Qizilbash, Armada and Black Tug; modified Yassa Court, Pitz and Holkan values; fixed Holkan,
+- renamed Dhanuraashi to Dhanurgraha,
+- fixed Barbican promotion,
+- added 3 missing VP texts,
+
+- rewritten bonus 47 (189) promotion descriptions from VP,
+- renamed 22 (64) promotions from VP,
+- moved 22 (68) promotions from VP to other categories,
+- split 11 (28) promotion descriptions from names,
+- tied 13 (43) promotion pedias to names,
+- changed 19 (55) promotion icons,
+
+- minor fixes.
+
+v22:
+- added Khopesh UU for Egypt (from @BlueGhost's part (now corrected promotion texts; added few exceptions to lua; added pop up for Khopesh; changed Fatigue promotion Icon; changed first Fatigue promotion name to Skillful Warrior; Mercy promotion instead of Coup de Grace),
+- added Nilometer UB for Egypt (from @BlueGhost's part (now reworked Flax spawn algorithm; modified yields; removed River requirement; removed Well restriction; modified flavors),
+- added Flax resource for Egypt,
+- added Jewel as an Artifact to White Tower,
+- balance: added back Uranium to Oppidum,
+- balance: reworked Longbowman (now Agincourt promotion (now only +20% vs Mounted and Armor units; changed icon); Range promotion instead of flat +1 range; 23 CP),
+- balance: added Armory requirement to Hakkapeliitta,
+- balance: changed Buffalo Pound (Bison spawn changes (now allowed Forests; restricted hills; cannot spawn in foreign lands; set priority of own lands vs lands without owner; random tile choose)),
+- balance: changed Latifundium (Figs spawn changes (now restrict Oasis; remove Marsh on build); improves Flax),
+- balance: reworked Andelsbevaegelse (now no bonus from plains; +1f for every farm/+1p for every pasture in the city; +1f for farms and pastures; +5%f),
+- balance: reworked Buffalo Pound (now base +2f/+1p; +1f per 5 citizen),
+- balance: changed Baan Chang (now +1p/+1c from Logging Camps; +1c/+1f from Lumber Mills),
+- balance: reworked Wat (now no bonus to Jungle; blocks Enemy Spy action (turns of resistance/destroy food); +1 great Art/Artifact slot),
+- modified Monolithic Church ground texture (from @Hokath)
+- fixed Maim promotion lua code,
+- fixed Oppidum production from removed feature value,
+- merged all text files into one,
+- merged all xmls into sqls,
+- corrected many promotion descriptions,
+- cleaned up the code,
+- extended credits,
+- minor fixes.
+
+v21:
+- added Longbowman UU for England (from @FieryCharizard7's part (now totally reworked files because there were defined 2 same units (1 from CS, and one for England)),
+- added White Tower UW for England (from @FieryCharizard7's part (now no 32px and 80px art; generated mipmaps; reduced NationalPopRequired to 30; deleted 15%c boost; reworked and simplified lua code (now only 1 function!); changed building bonuses; deleted improvement bonus; reduced defense to 5; adjusted flavors; 
+- balance: changed Sachem's Council (now +1c to Councils; standard Diplomatic Unit production; GDP from 3 to 2; 1 Civil Servant Slot),
+- balance: reworked Philhellenism promotion (now small gold and production for every CS Ally or Friend on fight),
+- balance: decreased Work Rate of Praefectus Castrorum promotion to 60%,
+- balance: reworked Legatus Legionis promotion (now bonus for Flat but not hindering Terrain),
+- balande: changed Latifundium (now build time is 7 turns; food yields reduced to 1f)
+- balance: reworked Goody Huts II promotion (now gives only Science, scaled with Era; +10s on standard),
+- updated Waag (now has only local building class buffs),
+- updated E-temenanki (now has 15%c for each citizen birth),
+- popup changes (deleted from Black Tug; added to Yassa Court and Sachem's Council; modified Shotelai, Dromon, Qizilbash, Koa, Latifundium, Holkan, Bombard, Buffalo Pound and Dhanuraashi), 
+- changed Diplomatic Reciprocity, Praefectus Castrorum and Legatus Legionis promotion icons,
+- added restriction for Barbican promotion (now only available for Archer and Siege units),
+- fixed Hakkapeliitta (now has bonus from GG, cleared the code),
+- cleared Ballista's code,
+- change Monolithic Church scaling to 0.75,
+- rewritten bonus 47 (189) promotion descriptions from VP,
+- renamed 22 (64) promotions from VP,
+- moved 22 (68) promotions from VP to other categories,
+- split 11 (28) promotion descriptions from names,
+- tied 13 (43) promotion pedias to names,
+- changed 19 (55) promotion icons,
+- minor fixes.
+
+v20:
+- added Ballista UU for Rome,
+- added Latifundium UI for Rome,
+- added Figs resource for Rome,
+- balance: changed Legion (now Pilum stays on upgrade; Praefectus Castrorum (+100% Working Rate if GG is within 2 tiles)),
+- balance: reworked Dhanuraashi (now only culture (rised to 75%) and XP on kill; faith added to levelling bonus; 4 CP; 8 RCP; increased offense flavor),
+- balance: changed Waag (now max 20%/10 CP (10 stacks); +1g to markets; 350 Production Cost),
+- balance: reworked Polder (now can be build on every Marsh tile; no bonuses to Villages and Towns; every enemy unit which step in on Polder loses all moves),
+- balance: changed Agora (now +20% towards Diplomatic Units; no GPP bonus; 2g per CS Ally; only 2c; +1c per Wine, +1f per Olive source),
+- balance: reworked Armada (now no Boarding Party II; 40 CP (+4); moved -1 move from Santa Maria to Units table; Santa Maria stays on upgrade; reworked Invincible (now 2 XP every turn and in enemy territory if unit is at full health. +4 CP at full health. Lost after upgrade)),
+- balance: changed Great Turkish Bombard (now 15 CP; Sahi Topu (20 HP dmg, double heal in friendly territory),
+- balance: deleted +1 Range from Licorne,
+- balance: reworked Ball Court unique promotions; added game speed scaling for 20 turn time (20 turn on standard),
+- balance: reworked Holkan (now Renewal Cycle heals for 50 HP, scales with Game Speed; removed Barbarian Penalty; increased CP by 1; reworked Treasure Hunter II (now adds random Faith or Science on GH)),
+- balance: reduced range of Licorne to 2,
+- balance: raised GoldMaintenance of Grande Ecole by 1,
+- balance: changed SPAD (now has Air Range promotion instead of flat +2 Range),
+- balance: modified another Leader_Flavors (Persia: Culture 6 --> 7; Byzantium: Naval 5 --> 6; Siam: Defense 7 --> 8),
+- renamed Immortality to Myriad,
+- added Grunwald icon,
+- deleted popup about gained XP from Dhanurasshi (game adds it automatically),
+- changed popup color and text for Bison Resource creation,
+- changed Yassa Court's game speed scaling,
+- rewritten and simplified Goedendag.lua code,
+- slightly modified all pop up texts to be like Pilum (no exclamation mark),
+- fixed Goedendag (now starts with Pikeman's promotions),
+- fixed Human Sacrifice (excluded Civilian Units),
+- fixed Kampong unnecessary UpgradeTime value,
+- fixed Hacienda and Monolithic Church PillageCost value,
+- fixed Monolithic Church' crazy worker by deleting Marble requirement (now only Stone or Hill),
+- fixed SPAD's interception chance,
+- fixed ConquestProbability value for Pitz, Colosseum, Indus Canal, Satrap's Court and Siege Workshop (now 0%),
+- added NeverVapture value for 0% ConquestProbability buildings: all Guilds, Ehrenhalle, Finance Center, Hotel, Krepost, Palace of Science and Culture and Stable,
+- rewritten bonus 39 (142) promotion descriptions from VP,
+- renamed 12 (42) promotions from VP,
+- moved 20 (46) promotions from VP to other categories,
+- split 4 (17) promotion descriptions from names,
+- tied 8 (30) promotion pedias to names,
+- changed 19 (36) promotion icons,
+- minor fixes.
+
+v19:
+- added Holkan UU for Maya,
+- added Pitz UU for Maya (without 13th B'ak'tun bonus for Epic and Marathon game speeds),
+- added Qizilbash UU for Persia,
+- added Pairidaeza UB for Persia,
+- updated Atlatlist's unique promotion,
+- balance: changed Tug Banner Warrior (now it is Black Tug; changed promotion names to Mingghan and Massacre; added malus against cities; set default cost),
+- balance: deleted Koa's decreased cost and instead added Amphibious promotion,
+- balance: lowered CP on Kibitum to 11,
+- balance: changed Tersane (now only +1f, +1p on Coast and Ocean; no additional gold bonus to Trade Routes),
+- balance: changed Yassa (reverted 5-turn WLTKD bonus, added scaling with game speed),
+- balance: changed Grande Ecole (now 1 specialist; no GSciP),
+- balance: changed Qila (now default Defense),
+- balance: changed Conquistador (deleted Extra Sight II promotion; added Scouting I and Scouting II promotions),
+- balance: changed Great Turkish Bombard (added Siege I and II promotions; now after each shot bombard is damaged for 40 HP (Sahi Topu promotion)),
+- balance: added scaler to Baan Chang's unique ability (added factor=0.5)
+- balance: reworked Waag's unique ability (now (1 GPP/2 Defense) per 1 traded luxury, max 7 times)
+- balance: incresed Scythe promotion damage to 10,
+- changed names (Naga-Malla --> Indian War Elephant; Nau --> Carrack; Ger --> Yurt; Siege Foundry --> Imperial Cannon Foundry),
+- changed Santa Maria promotion name to Santa María,
+- renamed unique promotions (Pictish Warrior --> Highlander; Jaguar --> Legend of the Five Suns; Immortals --> Immortality),
+- rewrited Scythe promotion (thanks to @De_Genius lua code),
+- added unique dummy promotion Druidism for Pictish Warrior (faith gain on kill),
+- added unique dummy promotion Human Sacrifice for Aztecs (faith and gold gain on kill),
+- added additional descriptions and promotion names to Greek Fire, Kapu Kuialua, Maim, Legacy and K'atun Ahaw promotions,
+- changed Legacy promotion icons (added one more),
+- changed Invincible promotion icon (now uses Legacy promotion icon),
+- changed promotion icons for Barbican and Hooked Weapon, 
+- fixed Armada and Longship scaling,
+- fixed Hussar doubled Extra Sight promotions,
+- fixed Pogost Stage 1 (now gives bonus for finishing Trade Routes),
+- updated PediaType for all new promotions,
+- rewritten all popup texts (now some of them contain proper colors, texts changed, added text for creating Bison resource),
+- rewritten all promotion descriptions, added green highlight to important parts (now all promotions try to follow the same pattern),
+- rewritten bonus 103 promotion descriptions from VP,
+- renamed 30 promotions from VP,
+- moved 26 promotions from VP to other categories,
+- split 13 promotion descriptions from names,
+- tied 22 promotion pedias to names,
+- changed 12 promotion icons,
+- renamed !Events folder to !Settings
+- minor fixes.
+
+v18:
+- changed Goedendag 3D model,
+- fixed Goedendag promotions,
+- fixed Leader Flavors (now should work),
+- changed Kibitum name to Sabum Kibitum,
+- deleted all 80px images from UBs (they are unnecessary),
+- deleted unecessary copies of the same folder,
+- changed few folder names,
+- cleaned up project files,
+- made own files for Suleiman's starting bias and Carolean.
+
+v17:
+- added Goendendag UU for Netherlands (based on @De_Genius files),
+- added Waag UB for Netherlands (based on @De_Genius files),
+- balance: increased Crime reduction on Barbican to 30%,
+- fixed bugs in multiple UBs with no unhappiness modification,
+- fixed Hacienda civilopedia link,
+- fixed Dummy Science Building,
+- moved Civilization_Overrides on top of every SQL,
+- mirrored Armada picture to differentiate it from Nau and Sea Beggar,
+- deleted Santa's Slay bonus promotion renaming,
+- deleted Swedish starting bias (bastu has no river requirement).
+
+v16:
+- added Langskib UU for Denmark (from @De_Genius part (deleted unnecessary art; added mipmaps; added shadow for 128px flag; adjusted 32px flag; added missing cost reduction, obsolete tech, goody hut upgrade, xp values; fixed CP; fixed Viking Exploration (now stays until embarked unit leave the ocean); added flavors; modified texts))
+- added Andelsbevaegelse UB for Denmark (from @De_Genius part (simplified code for building construction bonus; added mipmaps; added 80px picture; added flavors; modified texts)),
+- balance: deleted 10% bonus for mounted units from Baan Chang,
+- balance: changed Circus bonus from Hippodrome to 2c,
+- added modified texts for many UCs,
+- added one missing text slot for Celtic Oppidum,
+- changed names for last tier of unique promotions (Seir Morb - Fury of the Tiger; Kibitum - Best Among Us),
+- fixed few infinite folders again (Armada, Pogost, Byzantine, BaanChang),
+- fixed Qila SQL file.
+
+v15:
+- added Dhanuraashi UU for India,
+- added Qila UB for India,
+- added Seir Morb UU for Siam,
+- added Baan Chang UB for Siam,
+- balance: deleted terrain restriction from Bastu,
+- balance: incresed defense from Barbican from 5 to 15,
+- balance: changed Hacienda (now gives only +2p if adjacent to city; missions give +1f to Hacienda),
+- increased Tug Banner Warrior's floating text delay,
+- changed name of unique promotion for Pictish Warrior to Santa's Slay,
+- made dummy buildings not tied to civilizations,
+- modified Sachem's Council and Klepht pictures,
+- deleted 2nd copy of Siege Inaccuracy promotion from basic Field Gun,
+- minor fixes.
+
+v14:
+- added Hippodrome UW for Byzantine,
+- added Peneteconter flags,
+- balance: changed Buffalo Pound (now available at Trapping),
+- added missing Building Class requirements,
+- fixed E-temenanki (now gives science and food on investing),
+- fixed Buffalo Pound (now gives 1 food per 5 population),
+- fixed Kibitum (now upgraded Warrior gets proper Legacy level).
+
+v13:
+- added Kibitum UU for Babylon,
+- added E-temenanki UW for Babylon,
+- changed Dromon unit to Penteconter,
+- added Dromon UU for Byzantine,
+- balance: changed Armada (2 more CP, added Boarding Party I and II),
+- balance: changed Barbican (+2 Science, additional +5 XP for all units, deleted Medic I boost, city adds Barbican promotion for garrisoned units), 
+- balance: changed Koa (deleted Leiomano promotion),
+- added floating text for Maim promotion,
+- adjusted times for all floating texts,
+- deleted player name check in Tersane and Pogost lua files,
+- fixed Grapeshot promotion,
+- fixed Koa's bleeding; put Barbarian Penalty II promotion instead of I,
+- fixed Great Turkish Bombard's RCP,
+- fixed Tersane and Leiomano promotion description,
+- fixed Yassa Court WLTKD issue,
+- fixed Hakkapeliitta and Carolean doubled unit type,
+- fixed Grande Ecole UnlockedByBelief missing value,
+- fixed Klepht's BaseLandAirDefense value,
+- fixed lua code for upgraded units,
+- xml minor text changes,
+- minor fixes.
+
+v12:
+- incorporated Prau UU for Indonesia (from @pineappledan's part (now obsolete at Navigation, upgrades to Caravel, no 32px art, cut Sulu Civ art, cleaned up the naming, fixed flags, fixed art_def value, added model (Kapal Jung), added promotion Flying the Ama instead of flat +2 movement),
+- incorporated Kampung UI for Indonesia (from @pineappledan's part (now uses normal worker, fixed flavors, deleted 1 unnecessary art file, scaled it down, changed amount of texts, added help value to Improvemnts table, change values (Permanent=0, BuildableOnResources=0))
+- incorporated Hakkapeliitta for Sweden (from @pineappledan's part (deleted old Unit Class)
+- incorporated Bastu UB for Sweden (from @pineappledan's part (now reduced art number, fixed flavor_food issue, fixed yield from citizen (25%c/25%s instead of 50%s), Sweden now starts along rivers) 
+- fixed Grapeshot promotion (now stays after upgrade),
+- fixed promotion orders for new units (inherited promotions - unique promoions - tied common promotions - tied abilities),
+- added shadows for all 128px flags; 
+- sharpened, moved or corrected almost all flags,
+- modified leader flavors (Napoleon: Science 5->7; Casimir: Mobile 4->9 (Why did he have only 4?); Kamehameha: Recon 5->7; Isabella: Tile_Improvement 6->7; Suleiman: Offense 5->7, Naval 4->6; Suleiman: Naval_Tile_Improvement 7->8, Naval 4->9),
+- modified XML and SQL file of Oppidum to make it more consistent with actual UIs in VP,
+- added yield changes for Monolithic Church from having Ideology,
+
+v11:
+- added floating text for Kapu Ku'ialua, Philhellenism and Scythe promotions,
+- balance: reworked Shotelai promotions (now Maim promotion instead of Hooked Weapon (stays) and new Hooked Weapon promotion (lost)),
+- balance: reworked Shotelai (now 21 CP, available at the same tech as Longswordsman, lowered production cost to 150),
+- balance: changed Mehal Sefari (now has Sentry promotion instead of Cover I),
+- balance: changed Monolithic Church (now instead of tech yields it gets bonuses from policy finishers),
+- balance: reworked Koa (it is now Scout replacement, changed Kapu Ku'ialua description),
+- balance: reworked Scythed Chariot (buffed Scythe promotion damage to 8, added Carnyx promotion (stays), deleted Accuracy I promotion),
+- balance: modified Boudicca (increased Leader_Flavor: GREAT_PEOPLE (from 5 to 8); changed GMP in trait (now +2 from everything),
+- balance: changed added city HP from Oppidium (now 20) and added ability to stationing units (they stay after attack on the tile),
+- balance: reworked Pancerny (reduced CP to default value, added Grunwald promotion (lost)),
+- balance: reworked SPAD (now requires no oil, +2 range moved out from promotion, deleted french innovation),
+- balance: deleted automatic camp from Buffalo Pound when making a new resource of Bison,
+- balance: reworked Yellow Brow (added 1 CP, changed No Retreat II (lost) to No Retreat (stay) promotion, modified texts),
+- balance: reworked Tug Banner Warrior (now has Charge I promotion, Massacre promotion gives experience for pillaging instead of bonus on wounded units),
+- balance: reworked Licorne (now has +1 Range, Grapeshot (+50% RCS against melee units (stay)) and Can Move After Attacking promotions),
+- renamed Barbarian Penalty IV promotion to Leiomano on Koa,
+- changed Rough Terrain Penalty II promotion to default Rough Terrain Penalty (same values) on Scythed Chariot,
+- updated Sachem's Council (now it can be built everywhere),
+- fixed Fale Tel'e's flavors,
+- fixed Pogost Stage 2 and 3 GoldMaintenance value,
+- changed Pogost (now stage 2 and 3 are not tied to Russia (they can be seen by anyone, but cannot be built because of stage 1 requirement)),
+- reworked Pogost descriptions, added notifications after upgrade to next Stages,
+- made code more universal to updates, cleaned up the code,
+- added mipmaps to all art in mod,
+- modified Armada (moved down by 1px) and Prowler (sharpened) 32px icons,
+- added text for Ethiopia, Spain, Ottomans, France, Polynesia, Shoshone and Greece; modified text of Licorne and Oppidum,
+- minor fixes.
+
+v10:
+- added Hacienda UI for Spain,
+- added flag for Armada,
+- added SPAD S.VIII UU for France,
+- added Grande Ecole UB for France,
+- added Shotelai UU for Ethiopia,
+- added Monolithic Church UI for Ethiopia,
+- reworked Koa,
+- reworked Fale Tel'e,
+- balance: deleted tile requirements from Oppidum; deleted Uranium improvement (VP update); modified lua; added ideology bonuses,
+- delted many Voi folders from Pancerny (what the heck ModBuddy?),
+- minor fixes.
+
+v9:
+- added Armada UU for Spain,
+- balance: modified Leiomano promotion (now lost after unit upgrade),
+- balance: buffed Bogurodzica promotion (50/100 --> 150/300), nerfed CP and RCP of Pancerny (-2/-2),
+- balance: buffed Philhellenism promotion (now Food/Production is 50% of defeated unit CP),
+- balance: nerfed RCP of Prowler (brought back original values),
+- balance: deleted Anti-Mounted I promotion from Yellow Brow,
+- balance: fixed Tug Banner Warrior cost,
+- added IsMounted value to Pancerny, Tug Banner Warrior and Scythed Chariot,
+- rewrited Big Horse Dance promotion,
+- rewrited Klepht.lua file,
+- fixed Koa.lua file,
+- fixed Great Turkish Bombard bugs (now it can be build only by Ottomans),
+- changed icon for Big Horse Dance, Gun-Howitzer, Massacre and Philhellenism promotions,
+- added promotion icons for Bogurodzica, Scythe and Leiomano.
+
+v8:
+- added Koa UU for Polynesia,
+- added Fale Tel'e UB for Polynesia,
+- added Yellow Brow UU for Shoshone,
+- added Buffalo Pound UB for Shoshone,
+- added Klepth UU for Greece,
+- changed dependency to 5th component of VP,
+- fixed Celtic UA,
+- fixed Sachem's Council Diplomatic Reciprocity ability,
+- modified help, strategy and civilopedia entries for Iroquois, Russia and Celts,
+- bug fixes and balance changes.
+
+v7:
+- added Great Turkish Bombard UU for Ottomans,
+- added Tersane UB for Ottomans,
+- added Agora UB for Greece,
+- changed PrereqTech value for Oppidum to null,
+- splited Scythe promotion for Scythed Chariot,
+- added missing "NationalPopRequirement" value to Sachem's Council,
+- added missing bonus from CS to Sachem's Council,
+- added 1 free Emissary to Sachem's Council,
+- added "FLAVOR_RANGED" value to Barbican's flavors,
+- changed starting bias for Ottomans to Coast,
+- added list of unique names for Great Turkish Bombard,
+- modified help, strategy and civilopedia entries for Mongolia and Poland,
+- cleaned up the code, made it compatible with other mods by using "GameInfoTypes." statement,
+- minor fixes.
+
+v6:
+- added Policy changes to Oppidum,
+- rewrited help text for all UC to be more similar to Vanilla Civ,
+- added all civilopedia entries
+
+v5:
+- enlarged sv flag icon of Tug Banner Warrior,
+- changed Voi UU for Poland to Pancerny UU,
+- added Oppidum UI for Celts,
+- moddified Celtic UA to fit new UI,
+   - known issue: reformation belief doesn't trigger gameevent, reported to github,
+- added 3D model for Pancerny, Prowler, Scythed Chariot, Licorne and Tug Banner Warrior,
+- made "Events" folder with sql file enabling custom mod options,
+- modified few file descriptions.
+
+v4:
+- fixed buildinglass refences for Pogost Stage 2 and 3,
+- added Tug Banner Warrior UU for Mongolia,
+- added Yassa Court UB for Mongolia.
+
+v3:
+- moved changelog to special "Changelog.txt" file,
+- moved Ostrog UB to Rifling technology,
+- added Pogost UB for Russia,
+- made new icon for Sachem's Council. It is made as close as possible to the civ art style,
+- fixed bug with Licorne's increased range,
+- small text fixes.
+
+v2:
+- added Licorne UU for Russia,
+- added Scythed Chariot UU for Celts,
+- modified almost all xml descriptions and strategies.
+
+v1:
+- created "Credits.txt" and "Unique Components Description" files,
+- renamed folder from "Poland - Expansion" to "More Unique Components for Vox Populi" to fit more than one civilization,
+- added homepage,
+- added 80 pixel images to Voi and Barbican,
+- modified file names of flags and pictures to be more consistent and clear to find,
+- changed "Slavic Woods" promotion. Now it gives +5% Attack Bonus instead of +10% Defense Bonus.
+- miscellanous changes to all files.
+- added Prowler UU for Iroquois,
+- added Sachem's Council UB for Iroquois.
+
+Poland - Expansion changelog:
+v5:
+- added "(6c) 43 Civs CP" mod dependency and simplified some sql code,
+- deleted from Barbican ability to heal garrisoning units,
+- added lua file with Barbican's new ability: give "Medic I" promotion to newly trained range (archer and siege combat class) units in the city where Barbican is built.
+
+v4:
+- added missing values to Voi's and Barbican's sql files,
+- reworked Voi according to suggestions:
+- he is now substitue of pikeman,
+- changed "Slavic Mobility" promotion to "Slavic Woods" (now double movement in forests, 10% defense bonus in forests),
+- substituted "Discipline" promotion with new "Bogurodzica" (Gain faith for every killed enemy unit. Bonus doubled on barbarian kills. Promotion remains after upgrade),
+- now only 1 more CP than pikeman,
+- cost reduced from 135 to 125,
+increased flavors for Voi,
+- changed Barbican's yields: +2 Science to +2 faith,
+- added religious, cultural and defensive flavors to Barbican,
+- greatly increased military training flavor for Barbican.
+
+v3:
+- modified civilopedia entries,
+- modified Voi's description and strategy,
+- nerfed "Slavic Mobility" promotion to make it less OP and more unique; now grants double
+- movement on plains and grasslands, double movement in forests, 10% defense bonus in forests (was +1 movement on all terrains),
+- lowered cost of Voi from 70 to 65,
+- tweaked 32x32 Voi flag to fit the frames,
+- added shadow effect to the SV flag. made it larger,
+- cleaned up the code.
+
+v2:
+- packed into modpack,
+- changed "Mobility I" promotion into "Slavic Mobility" (+1 movement on all terrains) which is lost after upgrade,
+- disabled Voi animation because of unknown bug,
+- modified civilopedia entries.
+
+v1:
+- alpha version - not working.

@@ -1,0 +1,69 @@
+-- Unique Components Description
+-- Author: adan_eslavo
+-- DateCreated: 10/20/2017 10:07:24 PM
+--------------------------------------------------------------
+Poland:
+UM - Pancerny (replaces Heavy Skirmisher) :c5strength::c5rangedstrength::c5production::c5faith:: 24 :c5strength: CP instead of 18 and 26 :c5rangedstrength: RCP instead of 22. Has "Bogurodzica" (Gain :c5faith: Faith for every killed enemy unit. Bonus doubled on barbarians) and "Cover I" Promotions.
+UB - Barbican (replaces Armory) :c5strength::c5plus::c5war::c5culture::c5faith:: Requires Walls in the city to be constructed. +2 :c5culture: Culture, +2 :c5faith: Faith and +5 :c5strength: CS to city. Ranged units (Archer and Siege Combat Class) trained in the city gain the "Medic I" :c5plus: Promotion. +2 :c5war: Military Supply Cap.
+
+
+The Iroquois:
+UM - Prowler (replaces Musketman) :c5production::c5strength::c5rangedstrength::c5moves:: Decreased cost from 325 :c5production: Production to 275. 18 :c5strength: CP instead of 17, 40 :c5rangedstrength: RCP instead of 35. Has the "Withdraw Before Melee" and "Indirect Fire" Promotions.
+UW - Sachem's Council (replaces Scrivener's Office) :c5culture::c5greatperson::c5production::c5food::c5faith::c5science::c5gold::c5happy::c5plus:: Requires 15 :c5citizen: Population. +1 :c5culture: per 5 :c5citizen:, +3 :c5greatperson: Great Diplomat Points, +3 Paper, +20% :c5production: Production to Diplomatic Units. +2 :c5science: Science on Councils and +2 :c5gold: Gold on Chanceries. 1 Civil Servant Specialist Slot. 1 free Emissary. +1 :c5food: Food in City for every City-State Friend and +2 :c5faith: Faith for every Ally. +1 :c5happy: Happiness for every Defensive Pact or Declared War. Great Diplomats gain "Diplomatic Reciprocity" :c5plus: (After performing diplomatic mission all yields from that tile are added to your capital's revenue if target City-State is an ally, or only half of them if it is not) Promotion.
+
+
+Russia:
+UM - Licorne (replaces Field Gun) :c5science::c5rangedstrength::c5strength:: Available at Metallurgy. Has "Gun-Howitzer" (+1 Range. -10% :c5rangedstrength: RCP. Lost after unit upgrade) Promotion. Has no "Siege Inaccuracy" Promotion.
+UB - Pogost (replaces Customs House) :c5culture::c5gold::trade::c5science::c5trade::c5faith:: Building evolves.
+--- Stage 1: Market: +3 :c5culture: Culture and +2 :c5gold: Gold. 1 Merchant Specialist Slot. +4/2 :c5gold: Gold to all :trade: Trade Routes to/from this city respectively.
+--- Stage 2: Intendant's Residention: +1 :c5science: Science. +5% :c5gold: Gold from :c5trade: City Connections. +1 :c5gold: Gold for every 5 :c5citizen: Population at Banking.
+--- Stage 3: Eastern Orthodox Church: +1:c5faith: Faith on Shrines, Temples and Churches in the same city at Architecture.
+UB - Ostrog change: Moved to Rifling Technology.
+
+
+Mongolia:
+UM - Tug Banner Warrior (replaces Knight) :c5strength::c5production::c5razing::c5moves:: 30 :c5strength: CP instead of 25. Increased cost from 180 :c5production: Production to 200. Has the "Massacre" (+15% :c5strength: CS when standing on pillaged tile, +15% :c5strength: CS against wounded units) Promotion. No penalty against cities.
+UB - Yassa Court (replaces Courthouse) :c5occupied::c5unhappy::c5happy::c5production:: Can be built in non-occupied cities and and its :c5production: Production cost is slightly increased with number of cities. Liquidate :c5occupied: Extra Unhappiness from taking the city. - 10% :c5unhappy: Crime, Illiteracy, Boredom and Religious Tensions in the city and Conquering another city starts 5-turn long WLTKD. +10% :c5production: Production towards Military Units (Range, Siege, Mounted and Armored).
+
+
+The Celts:
+UM - Scythed Chariot (replaces Skirmisher) :c5moves::c5rangedstrength::c5strength:: Has "Scythe" (After moving inflicts 5 Damage to all adjacent enemy units. +1 Sight. Lost after unit upgrade), "Slipstream" and "Rough Terrain Penalty II" (Moving into rough terrain ends turn. Lost after unit upgrade) Promotion.
+UI - Oppidum (Great Merchant Improvement) :c5food::c5production::c5science::c5gold::c5culture::c5faith::c5strength::c5greatperson:: +2 :c5food: Food, +4 :c5gold: Gold, +2 :c5faith: Faith and +2 :c5culture: Culture and +50% :c5strength: Defense Bonus for stationing units. Allows exploitation of any resource on the tile. +10 HP to the city in which it is located. Adjacency bonuses:
++1:c5food:/:c5production: to Farms,
++1:c5food:/:c5faith: to Camps,
++1:c5production:/:c5faith: to Pastures,
++1 :c5production:/:c5gold: to Mines,
++1:c5production:/:c5science: to Quarries.
++1 :c5gold:/:c5culture: to Plantations.
+Gets +3 :c5faith: Faith at Theology, +2 :c5gold: Gold at Economics and +2 :c5production: Production at Industrialization.
+UA change: Substitute "+3 :c5faith: Faith in owned Cities where your Religion is the majority." with "+3 :c5faith: Faith in city after adopting pantheon. +1 :c5greatperson: GMP in your city after setting Pantheon, founding Religion, extending Religion and choosing Reformation Belief"
+
+
+Greece:
+UM - Klepht (replaces Gattling Gun) :c5science:: Available at Rifling. Has decreased cost from 700 :c5production: Production to 650. Has 23 :c5strength: CP instead of 25 and 45 :c5rangedstrength: RCP. Has "Altitude Training", "Can Move After Attacking" and "Philhellenism" (5 food/production for every CS ally on kill) Promotions. Does not have "Covering Fire I" Promotion.
+
+UB - Agora (replaces Market) :c5gold::c5faith::c5culture::c5greatperson::c5production::c5food:: + 2 :c5gold: Gold, +2 :c5faith: Faith and +2 :c5culture: Culture. 1 Merchant Specialist Slot. +1:c5gold: Gold in city for each CS alliance. +5% :c5greatperson: Great People Points in the city. +5% :c5production: Production towards diplomatic units. +1 :c5food: Food and +1 :c5production: Production from Spices, +1 :c5food: Food and +1 :c5gold: Gold from Sugar. Trade routes other players make to a city with a Market will generate +1 :c5gold: Gold for both the city owner and the trade route owner.
+
+
+Spain:
+UM - Armada (replaces Corvette) :c5science::c5strength::c5production::c5capital::c5moves:: Available at Gunpowder. Increased cost from 300 :c5production: Production to 350. 35 :c5strength: CP instead of 30. Has the "Santa Maria" (Earn :c5capital: Great Admiral Points from kills. -1 :c5moves: Movement. Lost after unit upgrade) and the "Invincible" (+3 XP at the end of each turn at foreign territory, if the unit has all its health. Caps at 45 XP points) Promotions.
+
+UI - Hacienda (Worker Improvement) :c5food::c5production::c5gold::c5faith:: Available at Civil Service. +3 :c5food: Food, +1 :c5production: Production, +1 :c5gold: Gold. +1 :c5production: Production and +1 :c5gold: Gold if built within 2 tiles from a city or +2 :c5production: Prodcution and +2:c5gold: Gold if built adjacent to the city. Must be built adjacent to cities or luxury resources (icluding those in the ocean). Cannot be built adjacent to other Hacienda. +2 :c5gold: Gold to adjacent luxuries. Missions generate +1:c5faith: Faith for every Hacienda worked by the city. Gains +2 :c5culture: Culture at Architecture and +1 :c5gold: Gold and +1 :c5production: Production at Fertilizer.
+
+
+The Ottomans:
+UM - Great Turkish Bombard (Siege Unit) :c5science::c5production::c5strength::c5rangedstrength:: Available at Machinery. Increased cost from 175 :c5production: Production to 375. Has 10 :c5strength: CP instead of 8 and 44 :c5rangedstrength: RCP instead of 22. Has "City Assault" and "Siege Inaccuracy II" (-50% :c5rangedstrength: RCS against land units). May only have 2 at one time.
+
+UB - Tersane (replaces Harbor) :c5production::c5gold::c5strength::c5food::tourism::c5culture::c5plus:: +2 :c5production: Production, +2 :c5gold: Gold, +100 City HP, +10% Military Supply Cap from :c5citizen: Population. +1 :c5food: Food, +1 :c5production: Production and +1 :c5gold: Gold from coast and ocean tiles. +1 :c5production: on Sea Resources. When a Sea Trade Route originating here and targeting another Civ is completed, receive a :tourism: Tourism boost with the civ based on your recent :c5culture: Culture output. Sea Trade Routes gain +50% Range and +3 :c5gold:. +50% :c5production: Production towards Cargo Ships and +30% :c5production: towards naval units. Naval Melee units in this city recieve the :c5plus: "Prize Ships" promotion.
+
+
+Shoshone:
+UM - Yellow Brow (replaces Tercio) :c5strength:: 26 :c5strength: CP instead of 25. Has "Anti-mounted I", "No Retreat II" (Fights at full :c5strength: Strength when damaged. Lost after unit upgrade) and "Big Horse Dance" (Double fortification bonus) Promotions.
+
+UB - Buffalo Pound (replaces Well) :c5food::c5production:: No maintenance. +1:c5food: Food and +1:c5production: Production. +1:c5food: Food and +1:c5production: Production for every 5 :c5citizen: Population. +1 :c5food: from Sheep, Cattle, Horse & Bison Sources. A bison tile appears near the city. Can be built on fresh water. Can be built if city has water mill.
+
+
+Polynesia:
+UM - Koa (replaces Swordsman) :c5science::c5production:: Available at Sailing. Does not require Iron. 15 :c5strength: CP. Has deacresed cost from 100 :c5production: Production to 80. Has "Amphibious" and "Leiomano" (After attacking, enemy unit takes an additional 10 "bleed" damage at the start of their turn. Effect can stack up to 3 times) Promotions.
+
+UB - Fale Tel'e (replaces Council) : +1 :c5science: Science and +1 :c5culture: Culture. +1 :c5gold: Gold to Fishing Boats. 7 :c5science: Science and when a :c5citizen: Citizen is born, scaling with Era. Adds 10 :c5culture: Culture when a technology is researched scaling with Era. Units only spend 1 movement to disembark from this city (can't be 0, they need to move 1 tile from land-->sea)

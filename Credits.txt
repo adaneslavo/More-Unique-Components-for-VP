@@ -1,0 +1,164 @@
+-- Credits
+-- Author: adan_eslavo
+-- DateCreated: 20/10/2017
+--------------------------------------------------------------
+Special thanks to:
+
+  - Hinin - ideas and early developement of 3rd and 4th Unique Component mod, many of the playtesting, bug reports and many more,
+  - pineappledan - ideas, great historical knowledge, programming, art, game texts, testing, advices, unlimited posts on many forum threads and many more,
+  - Blue Ghost - main page developement, lots of coding, bug fixes, merging, game texts, ideas and help with coding other people's parts,
+  - FoxOfWar - very important playtesting parts, many essential bug reports and ideas,
+  - Jarula - many ideas, better or worse, but always eager to put his 2 cents, 
+  - De_Genius - 2 civs coded, art and ideas,
+  - FieryCharizard7 - 1 civ coded, ideas,
+  - Enginseers - 1 civ coded, some other borrowed parts of code, ideas and help with coding,
+  - doublex55 - ideas and bug reports,
+  - BazaarJack - early stage of design, ideas and bug reports,
+  - phantomaxl1207 - early stage of design, ideas and bug reports,
+  - LukaSlovenia29 - ideas and bug reports,
+  - Hokath - art, ideas and bug reports,
+  - Infixo - dll coding, ideas and bug reports,
+  - ThirstQuencher - ideas and bug reports,
+  - IcyAngel - ideas and bug reports,
+  - Ziad - ideas and bug reports,
+  - Chandler - ideas and bug reports,
+  - CrazyG - ideas and bug reports,
+  - Gazebo - patience during answering on many questions, author of VP,
+and I should thank myself but at least I can put what I managed to give to this mod:
+  - adan_eslavo - main part of coding, puttings things together, main post developement, ideas, bug fixes, art, advices, some part of early testing, game texts, promotion overhaul and many more.
+If I forgot to mention someone please give me a call.
+
+Things borrowed from other mods:
+	Coding - adan_eslavo:
+		Poland:
+		  - LastSword - idea, picture and 3d model of Pancerny UU, part of civilopedia entry,
+		  - mikeburnfire - idea and picture of Barbican UB, part of civilopedia entry,
+		  - Salamndre - icon of Bogurodzica promotion.
+  
+		The Iroquois:
+		  - mikeburnfire - picture of the Prowler UU (Rusher) and general unit idea, part of civilopedia entry,
+		  - Patum333 - 3D model of Prowler.
+
+		Russia:
+		  - JFD - idea of Licorne UU, idea of Pogost UB, civilopedia entries,
+		  - janboruta - picture of Licorne, pictures of Pogost Stage 1 (Pogost), Stage 2 (Guberniya's Office) and Stage 3 (Sobor),
+		  - Wolfdog - 3D model of Licorne.
+
+		The Celts:
+		  - mikeburnfire - idea, picture of Scythed Chariot UU (Carpentom),
+		  - TarcismoCM - idea of Oppidum UI, civilopedia entry,
+		  - Leugi - icons and 3D model of Oppidum,
+		  - Salamndre - icon of Scythe promotion.
+
+		Mongolia:
+		  - TarcisioCM - idea, picture of Tug Banner Warrior UU (Ilduchi),
+		  - Danrell - 3D model for Tug Banner Warrior,
+		  - lincoln-lyf - picture of Yassa Court UB (from Superpowers mod).
+
+		The Ottomans:
+		  - JFD - idea of Great Turkish Bombard UU,
+		  - janboruta - picture of Great Turkish Bombard,
+		  - Leugi - 3D model of Great Turkish Bombard,
+		  - Sukritact - picture of Tersane UB (Minaa').
+
+		Greece:
+		  - Alan H - picture of Agora UB.
+
+		Polynesia:
+		  - Pouakai - idea of Koa UU,
+		  - janboruta - picture of Koa,
+		  - Hangman - 3D Model of Koa,
+		  - Senshidenshi - idea of Fale Tel'e UB,
+		  - TPangolin - idea and picture of Fale Tel'e,
+		  - Salamndre - icon of Kapu Ku'ialua promotion.
+  
+		The Shoshone:
+		  - Sukritact - idea, picture and 3D model of Yellow Brow UU (Black Mouth),
+		  - TPangolin - idea and picture of Buffalo Pound UB.
+
+		Spain:
+		  - lincoln-lyf - idea and picture of Armada UU,
+		  - TPangolin - idea of Hacienda UI,
+		  - Leugi - icons and 3D model of Hacienda.
+
+		France:
+		  - JFD - idea of SPAD S.VIII UU,
+		  - janboruta - picture of SPAD S.VIII,
+		  - Danrell - 3D Model of SPAD S.VIII,
+		  - Hypereon - idea and picture of Grande Ecole UB.
+
+		Ethiopia:
+		  - Danmacsch - idea of Shotelai UU, idea of Monolitic Church UI, picture of Shotelai,
+		  - DJSHEnninger - icons and 3D model of Monolithic Church.
+
+		Babylon:
+		  - JFD - idea of Kibitum UU (Kibitium),
+		  - janboruta - picture and flag of Kibitum,
+		  - Danrell - 3D model of Kibitum,
+		  - Sukritact - idea and picture of Etemenaki UW,
+		  - Salamndre - icon of Legacy promotion.
+
+		Byzanthine:
+		  - LastSword - idea and picture of Penteconter UU,
+		  - Barathor - 3D model of Penteconter,
+		  - JFD - idea of Hippodrome UB,
+		  - janboruta - picture of Hippodrome.
+
+		India:
+		  - Danmacsch - picture and 3D model of Dhanuraashi UU (Agaw Archer),
+		  - janboruta - flag of Dhanuraashi (Apedemak Archer).
+
+		Siam:
+		  - snafusmith - 3D model of Seir Morb UU (155 mm gun).
+
+		Persia:
+		  - Light in the East - idea of Qizilbash UU,
+		  - janboruta - picture and flags of Qizilbash,
+		  - Wolfdog - 3D model of Qizilbash,
+		  - LastSword - idea and picture of Pairidaeza UB (Charbagh Garden).
+
+		The Maya:
+		  - mikeburnfire - idea and picture of Holkan UU (Obsidian Warrior), idea and picture of Pitz (Ballcourt),
+		  - danrell - 3D model of Holkan.
+	
+		Rome:
+		  - Hypereon, Uighur_Ceasar - idae of Latifundium UI,
+		  - DJSHenniger - 3D model of Latifundium,
+		  - Hypereon, Darth-StarKiller - picture of Latifundium.
+	
+	Coding - pineappledan, adan_eslavo:
+		Indonesia:
+		  - mikeburnfire - idea of Prau UU (Kapal Jung),
+		  - cardboardmech - picture of Prau,
+		  - danrell - 3D model of Prau,
+		  - TPangolin - idea of Kampung UI,
+		  - Knightmare - icons of Kampung,
+		  - Civitar - 3D model of Kampung.
+
+		Sweden:
+		  - JFD - idea of Bastu UB (Banya),
+		  - janboruta - Picture of Bastu.
+
+	Coding - De_Genius, adan_eslavo:
+		Denmark:
+		  - janboruta - picture of Langskib UU (Longboat).
+
+		The Netherlands:
+		  - JFD and LastSword - idea of Goedendag UU,
+		  - janboruta - picture of Goedendag,
+		  - danrell - 3D model of Goedendag,
+		  - mikeburnfire - idea of Waag UU,
+		  - wodhann - picture of Waag,
+		  - Enginseer - base code for Polder back on Marsh rework.
+	
+	Coding - FieryCharizard7, adan_eslavo:	
+		England:
+		  - JFD - idea of White Tower UW,
+		  - janboruta - picture of White Tower.
+
+	Coding - Blue Ghost, adan_eslavo:
+		Egypt:
+		  - JFD idea of Khopesh UU,
+		  - janboruta - picture of Khopesh,
+		  - danrell - 3D model of Khopesh,
+		  - mikeburnfire - idea and 3D model of Flax UR (UI).
