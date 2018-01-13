@@ -9,6 +9,9 @@ More Unique Components for Vox Populi changelog:
 *klepht rework lua
 *check Dhanurgraha
 *credits file with Icon guy
+*rework Oppidum:
+1. Make it work within a specfic range, like 2 or 3 tiles. It will grant bonus HP to all cities there. No tile-change problem.
+2. It still works even when it is pillaged, probably shoudn't. I suppose when iOldImpr == iNewImpr then you can use bPillage flag to distiinguish between cases. 
 
 v23:
 - balance: changed Andelsbevaegelse (now +1f to Plains; +1p to Pasture),
@@ -22,14 +25,8 @@ v23:
 - renamed Dhanuraashi to Dhanurgraha,
 - fixed Barbican promotion,
 - added 3 missing VP texts,
-
-- rewritten bonus 47 (189) promotion descriptions from VP,
-- renamed 22 (64) promotions from VP,
-- moved 22 (68) promotions from VP to other categories,
-- split 11 (28) promotion descriptions from names,
-- tied 13 (43) promotion pedias to names,
-- changed 19 (55) promotion icons,
-
+- removed promotion overhaul from this mod,
+- moved ModUserData.lua to other directory,
 - minor fixes.
 
 v22:

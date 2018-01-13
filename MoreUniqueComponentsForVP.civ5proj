@@ -758,6 +758,10 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="!Lua\ModUserData.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Byzantium\Theodora\TheodoraFlavors.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -955,10 +959,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Ethiopia\MonolithicChurch\3DModel\Lalibela Ground.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModUserData.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -3462,10 +3462,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="UniqueComponentDescription.txt">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Byzantium\Theodora" />
@@ -3478,6 +3474,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="England\Longbowman" />
     <Folder Include="England\WhiteTower" />
     <Folder Include="Egypt" />
+    <Folder Include="!Lua" />
     <Folder Include="Persia\Darius" />
     <Folder Include="Rome" />
     <Folder Include="Poland\Pancerny\Grunwald" />
