@@ -25,9 +25,11 @@ function EnemyUnitOnMyPolder(iPlayer, iUnit, iX, iY)
 					if pPlayer:IsAtWar(Players[pPlot:GetOwner()]:GetTeam()) then
 						pUnit:SetMoves(0)
 				
-						local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-			
-						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_NEGATIVE_TEXT]Polder[ENDCOLOR]", 1)
+						if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+							local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+				
+							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_NEGATIVE_TEXT]Polder[ENDCOLOR]", 1)
+						end
 					end
 				end
 			end

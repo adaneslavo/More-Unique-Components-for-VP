@@ -13,27 +13,35 @@ function ConquereMorePlease(iPlayer, iCapital, iResourceX, iResourceY, iNewPlaye
 				if Game.GetGameSpeedType() == 3 then
 					pCity:ChangeWeLoveTheKingDayCounter(7)
 					
-					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]7-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 1)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]7-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 1)
+					end
 				elseif Game.GetGameSpeedType() == 2 then
 					pCity:ChangeWeLoveTheKingDayCounter(10)
 					
-					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]10-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 1)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]10-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 1)
+					end
 				elseif Game.GetGameSpeedType() == 1 then
 					pCity:ChangeWeLoveTheKingDayCounter(15)
 					
-					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]15-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 1)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]15-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 1)
+					end
 				else
 					pCity:ChangeWeLoveTheKingDayCounter(30)
 					
-					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]30-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 1)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]30-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 1)
+					end
 				end
 			end
 		end

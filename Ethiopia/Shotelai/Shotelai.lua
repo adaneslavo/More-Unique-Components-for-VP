@@ -17,10 +17,6 @@ function Maim(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalD
 				
 				if pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT) == false then
 					pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT, true)
-					
-					local vUnitPosition = PositionCalculator(pDefendingUnit:GetX(), pDefendingUnit:GetY())
-			
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_LIGHT_GREY]-1 [ICON_ARROW_RIGHT] Maim[ENDCOLOR]", 1)
 				end
 			end
 		end
@@ -29,7 +25,7 @@ end
 
 function ReducedMovementMaim(iPlayer)
 	local pPlayer = Players[iPlayer]
-	
+		
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ETHIOPIA_MAIM_2_ON_UNIT) then
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ETHIOPIA_MAIM_2_ON_UNIT, false)
@@ -39,6 +35,12 @@ function ReducedMovementMaim(iPlayer)
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ETHIOPIA_MAIM_2_ON_UNIT, true)
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT, false)
 			pUnit:ChangeMoves(-60)
+			
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_LIGHT_GREY]-1 [ICON_ARROW_RIGHT] Maim[ENDCOLOR]", 1)
+			end
 		end
 	end
 end

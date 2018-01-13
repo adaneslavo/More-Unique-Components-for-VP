@@ -58,18 +58,34 @@ function LatifundiumSpawnFigs(iPlayer)
 											tPossibleSpots[iChosenPlot]:SetResourceType(GameInfoTypes.RESOURCE_ROME_FIGS, 1)
 											tPossibleSpots[iChosenPlot]:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
 
-											local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+												local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 				
-											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_CULTURE_STORED]Figs from Latifundium[ENDCOLOR]", 1)
+												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_CULTURE_STORED]Figs from Latifundium[ENDCOLOR]", 1)
+											end
 										
 											local pCheckedPlayer = Players[tPossibleSpots[iChosenPlot]:GetOwner()]
 											
 											if pCheckedPlayer == nil then
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 1.5)
+												
+												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+													local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													
+													Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 1.5)
+												end
 											elseif pCheckedPlayer:GetName() ~= "Augustus Caesar" then
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 1.5)
+												
+												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+													local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													
+													Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 1.5)
+												end
+
+												if pCheckedPlayer:IsHuman() then
+													pCheckedPlayer:AddNotification(14, 'Roman Empire made plantation on one of your city tiles. Your city lost a tile.', 'Lost tile', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												end
 											end
 										elseif tPossibleSpots[iChosenPlot]:GetFeatureType() == FeatureTypes.FEATURE_FOREST then
 											tPossibleSpots[iChosenPlot]:SetResourceType(GameInfoTypes.RESOURCE_ROME_FIGS, 1)
@@ -77,20 +93,36 @@ function LatifundiumSpawnFigs(iPlayer)
 											tPossibleSpots[iChosenPlot]:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
 											GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):ChangeProduction(30)
 
-											local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
-											local vCityPosition = PositionCalculator(GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetX(), GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetY())
+											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+												local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												local vCityPosition = PositionCalculator(GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetX(), GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetY())
 
-											Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]30 [ICON_PRODUCTION][ENDCOLOR]", 1)
-											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_CULTURE_STORED]Figs from Latifundium[ENDCOLOR]", 1.5)
-										
+												Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]30 [ICON_PRODUCTION][ENDCOLOR]", 1)
+												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_CULTURE_STORED]Figs from Latifundium[ENDCOLOR]", 1.5)
+											end
+											
 											local pCheckedPlayer = Players[tPossibleSpots[iChosenPlot]:GetOwner()]
 
 											if pCheckedPlayer == nil then
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 2)
+												
+												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+													local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													
+													Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 2)
+												end
 											elseif pCheckedPlayer:GetName() ~= "Augustus Caesar" then
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 2)
+												
+												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+													local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													
+													Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 1.5)
+												end
+
+												if pCheckedPlayer:IsHuman() then
+													pCheckedPlayer:AddNotification(14, 'Roman Empire made plantation on one of your city tiles. Your city lost a tile.', 'Lost tile', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												end
 											end
 										elseif tPossibleSpots[iChosenPlot]:GetFeatureType() == FeatureTypes.FEATURE_JUNGLE then
 											tPossibleSpots[iChosenPlot]:SetResourceType(GameInfoTypes.RESOURCE_ROME_FIGS, 1)
@@ -98,38 +130,70 @@ function LatifundiumSpawnFigs(iPlayer)
 											tPossibleSpots[iChosenPlot]:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
 											GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):ChangeProduction(20)
 
-											local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
-											local vCityPosition = PositionCalculator(GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetX(), GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetY())
+											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+												local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												local vCityPosition = PositionCalculator(GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetX(), GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetY())
 
-											Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]20 [ICON_PRODUCTION][ENDCOLOR]", 1)
-											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_CULTURE_STORED]Figs from Latifundium[ENDCOLOR]", 1.5)
+												Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]20 [ICON_PRODUCTION][ENDCOLOR]", 1)
+												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_CULTURE_STORED]Figs from Latifundium[ENDCOLOR]", 1.5)
+											end
 										
 											local pCheckedPlayer = Players[tPossibleSpots[iChosenPlot]:GetOwner()]
 
 											if pCheckedPlayer == nil then
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 2)
+												
+												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+													local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													
+													Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 2)
+												end
 											elseif pCheckedPlayer:GetName() ~= "Augustus Caesar" then
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 2)
+												
+												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+													local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													
+													Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 1.5)
+												end
+
+												if pCheckedPlayer:IsHuman() then
+													pCheckedPlayer:AddNotification(14, 'Roman Empire made plantation on one of your city tiles. Your city lost a tile.', 'Lost tile', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												end
 											end
 										elseif tPossibleSpots[iChosenPlot]:GetFeatureType() == FeatureTypes.FEATURE_MARSH then
 											tPossibleSpots[iChosenPlot]:SetResourceType(GameInfoTypes.RESOURCE_ROME_FIGS, 1)
 											tPossibleSpots[iChosenPlot]:SetFeatureType(FeatureTypes.NO_FEATURE, -1)
 											tPossibleSpots[iChosenPlot]:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
 
-											local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+												local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 											
-											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_CULTURE_STORED]Figs from Latifundium[ENDCOLOR]", 1)
+												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_CULTURE_STORED]Figs from Latifundium[ENDCOLOR]", 1)
+											end
 										
 											local pCheckedPlayer = Players[tPossibleSpots[iChosenPlot]:GetOwner()]
 
 											if pCheckedPlayer == nil then
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 1.5)
+												
+												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+													local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													
+													Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 1.5)
+												end
 											elseif pCheckedPlayer:GetName() ~= "Augustus Caesar" then
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 1.5)
+												
+												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+													local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													
+													Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MAGENTA]Tile aquired[ENDCOLOR]", 1.5)
+												end
+
+												if pCheckedPlayer:IsHuman() then
+													pCheckedPlayer:AddNotification(14, 'Roman Empire made plantation on one of your city tiles. Your city lost a tile.', 'Lost tile', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												end
 											end
 										end
 									end

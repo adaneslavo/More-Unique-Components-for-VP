@@ -81,11 +81,13 @@ function KatunAhawUpgrade(iPlayer)
 							
 							pPlayer:ChangeFaith(iChange)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
-
-							local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-			
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+	
+							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+				
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+							end
 						end
 					end
 				end
@@ -115,10 +117,12 @@ function KatunAhawUpgrade(iPlayer)
 							pPlayer:ChangeFaith(iChange)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
 
-							local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-			
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+				
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+							end
 						end
 					end
 				end
@@ -147,10 +151,12 @@ function KatunAhawUpgrade(iPlayer)
 							pPlayer:ChangeFaith(iChange)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
 
-							local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-			
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] Faith from B'ak'tun[ENDCOLOR]", 1)
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] Science from B'ak'tun[ENDCOLOR]", 1.5)
+							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+				
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+							end
 						end
 					end
 				end
@@ -179,10 +185,12 @@ function KatunAhawUpgrade(iPlayer)
 							pPlayer:ChangeFaith(iChange)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
 
-							local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-			
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] Faith from B'ak'tun[ENDCOLOR]", 1)
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] Science from B'ak'tun[ENDCOLOR]", 1.5)
+							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+				
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+							end
 						end
 					end
 				end

@@ -30,31 +30,39 @@ function HippodromeHooliganism(eTeam, eEra, bFirst)
 						if Game.GetGameSpeedType() == 3 then			
 							pCapital:ChangeWeLoveTheKingDayCounter(8)
 
-							local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
+							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+								local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
 							
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]7-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 2.5)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]7-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 2.5)
+							end
 						elseif Game.GetGameSpeedType() == 2 then
 							pCapital:ChangeWeLoveTheKingDayCounter(11)
 							
-							local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-							
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]10-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 2.5)
+							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+								local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
+								
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]10-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 2.5)
+							end
 						elseif Game.GetGameSpeedType() == 1 then
 							pCapital:ChangeWeLoveTheKingDayCounter(16)
 							
-							local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-							
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]15-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 2.5)
+							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+								local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
+								
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]15-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 2.5)
+							end
 						else
 							pCapital:ChangeWeLoveTheKingDayCounter(31)
 							
-							local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-							
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]30-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 2.5)
+							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+								local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
+								
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]30-turn [ICON_HAPPINESS_1] WLTKD Yassa Court[ICON_FOOD][ENDCOLOR]", 2.5)
+							end
 						end
 
 						break

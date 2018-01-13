@@ -33,28 +33,35 @@ end
 
 function BleedFromLeiomano(iPlayer)
 	local pPlayer = Players[iPlayer]
+	
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_ON_UNIT) then
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_ON_UNIT, false)
-			
-			local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-			
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-10 Bleeding[ENDCOLOR]", 1)
 			pUnit:ChangeDamage(10)
+			
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+			
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-10 Bleeding[ENDCOLOR]", 1)
+			end
 		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_2_ON_UNIT) then
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_2_ON_UNIT, false)
-
-			local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-			
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-20 Heavy bleeding[ENDCOLOR]", 1)
 			pUnit:ChangeDamage(20)
+
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+			
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-20 Heavy bleeding[ENDCOLOR]", 1)
+			end
 		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_3_ON_UNIT) then
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_3_ON_UNIT, false)
-
-			local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-			
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-30 Massive bleeding[ENDCOLOR]", 1)
 			pUnit:ChangeDamage(30)
+
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+			
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-30 Massive bleeding[ENDCOLOR]", 1)
+			end
 		end
 	end
 end
