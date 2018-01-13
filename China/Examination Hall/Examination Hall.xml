@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL">
+			<Text>
+				Examination Hall
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_TEXT">
+			<Text>
+				Placeholder
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_STRATEGY">
+			<Text>
+				The Examination Hall is a Chinese unique building, replacing the Chancery. It boosts Great People generation in the city, and gives random Great Person Points whenever a citizen is born.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_HELP">
+			<Text>
+				+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] for Diplomatic Units in the city in which it is built. [NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% Great People rate in the city, increased to +10% during We Love the King Day.[NEWLINE][NEWLINE]Whenever a citizen is born, gain 15 points toward a random Great Person, scaling with era.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ALERT_EXAMINATIONS">
+			<Text>
+				The birth of a citizen has earned you {1_Num} points toward a {2_Str} in {3_Str}.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE">
+			<Text>
+				Eagle
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_TEXT">
+			<Text>
+				Within the Aztec army existed two classes of elite infantry: the Jaguar Warriors and the Eagle Warriors. Eagle Warriors were comprised of the bravest young men of noble birth who had managed to take the most prisoners in battle. Only after taking 20 prisoners intact enough to serve as human sacrifice could a young man be considered for Eagle Warrior status.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY">
+			<Text>
+				The Eagle is the unique Aztec replacement for the Swordsman. It does not require Iron to build. It has increased vision, and has a chance of capturing defeated enemy units as Workers.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_HELP">
+			<Text>
+				Strong, front-line land Unit of the Classical Era. Only the Aztecs may build it. It gains the Sentry promotion for free. When it defeats an enemy unit, it has a 50% chance of capturing that unit as a Worker.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CAPTIVES_OF_WAR">
+			<Text>
+				Captives of War
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CAPTIVES_OF_WAR_HELP">
+			<Text>
+				May capture defeated units as Workers.
+			</Text>
+		</Row>
+	</Language_en_US>
+
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>EAGLE_FLAG</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>eagleicon.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
+</GameData>

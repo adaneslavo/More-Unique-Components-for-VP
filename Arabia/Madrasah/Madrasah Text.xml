@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH">
+			<Text>
+				Madrasah
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH_TEXT">
+			<Text>
+				"Madrasah" is Arabic for any type of educational institution; although with a religious component, madrasahs were often secular, and could cover anything from elementary to higher learning. Usually associated with a mosque, madrasahs could even specialize in medicine, law, science, philosophy or the education of women. The first madrasah, the Gama'at al-Qarawiyyn, was established in 859 AD by Fatimah al-Fihri, the daughter of a wealthy merchant. During the rule of the Fatimid, Ayyubid and Mamluk dynasties, the practice of sponsoring madrasahs by the ruling, wealthy elite spread across Egypt and the Middle East. The first Ottoman madrasah was founded in 1331 AD in Iznik, and followed the traditions of Sunni Islam. The madrasahs of the Turks and Arabs would, as Europe suffered through the Dark Ages, keep the best of Western knowledge alive, and blended it with that of the East.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH_STRATEGY">
+			<Text>
+				Unique Arabian replacement for the University. Generates Faith in addition to Science, and increases Great Person rate. Whenever you make a Faith purchase, the Madrasah generates additional Science.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH_HELP">
+			<Text>
+				+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE] Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 20 [ICON_RESEARCH] Science (or 100 for a Great Person purchase), scaling with era.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ALERT_MADRASAH_SCIENCE">
+			<Text>
+				Making a [ICON_PEACE] Faith purchase has earned you {1_num} [ICON_RESEARCH] Science from your Madrasah in {2_Str}.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

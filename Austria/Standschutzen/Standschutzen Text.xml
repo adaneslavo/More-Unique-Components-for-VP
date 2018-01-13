@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN">
+			<Text>
+				Standschützen
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_TEXT">
+			<Text>
+				The Standschützen were originally rifle guilds and rifle companies that had been formed in the 15th and 16th centuries, and were involved time and again in military operations within the borders of the Austrian County of Tyrol. A Standschütze was a member of a Schützenstand ("shooting club"), into which he was enrolled, which automatically committed him to the voluntary, military protection of the state of Tyrol (and Vorarlberg). In effect they were a type of Tyrolean local militia or home guard.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_STRATEGY">
+			<Text>
+				The Standschützen is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. It allows for faster construction of land military units in the city. It also provides +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_HELP">
+			<Text>
+				+2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally. +20% production toward land military units.[NEWLINE][NEWLINE]Increases city Defense Strength by 25 and Hit Points by 200. Military Units supplied by this City's population increased by 10%.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

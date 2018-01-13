@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR">
+			<Text>
+				Corsair
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_TEXT">
+			<Text>
+				Placeholder
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_STRATEGY">
+			<Text>
+				The Corsair is the unique Moroccan replacement for the Corvette. It specializes in raiding and pillaging maritime trade routes, earning Food and Production for each enemy unit killed and trade route plundered.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_HELP">
+			<Text>
+				Naval unit that specializes in piracy and disrupting maritime trade. Only Morocco can build it. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing units, pillaging resources, and plundering trade routes.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_RAZZIA">
+			<Text>
+				Razzia
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_RAZZIA_HELP">
+			<Text>
+				Gain Food and Production in the nearest coastal city whenever you kill an enemy unit, pillage an improvement, or plunder a trade route.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

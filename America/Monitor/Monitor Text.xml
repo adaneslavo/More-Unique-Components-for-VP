@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_AMERICAN_MONITOR">
+			<Text>
+				Monitor
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AMERICAN_MONITOR_STRATEGY">
+			<Text>
+				A powerful Industrial-era naval unit. Only America may build it. It has the Cover I promotion and increased movement on coast, and gives a defensive bonus to nearby friendly cities.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MONITOR">
+			<Text>
+				Monitor
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MONITOR_HELP">
+			<Text>
+				When starting turn next to a friendly city, that city gains +5 [ICON_STRENGTH] Combat Strength this turn.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
