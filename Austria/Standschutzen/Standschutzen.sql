@@ -32,7 +32,7 @@ WHERE		Type = 'BUILDING_VP_STANDSCHUTZEN';
 --------------------------------
 INSERT INTO Building_ClassesNeededInCity
 			(BuildingType, BuildingClassType)
-SELECT		'BUILDING_VP_STANDSCHUTZEN', Building_ClassType
+SELECT		'BUILDING_VP_STANDSCHUTZEN', BuildingClassType
 FROM		Building_ClassesNeededInCity
 WHERE		BuildingType = 'BUILDING_ARSENAL';
 

@@ -526,11 +526,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Assyria/Iron Chariot/Iron Chariot Text.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Austria/Landwehr/Landwehr Text.xml</FileName>
       </Action>
       <Action>
@@ -692,6 +687,36 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Assyria/Lamassu Gate/Lamassu Gate.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Arabia/Madrasah/Madrasah.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Arabia/Madrasah/Madrasah Text.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Portugal/Cacadores/Cacadores.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Portugal/Cacadores/Cacadores.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Portugal/University of Coimbra/University of Coimbra.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Portugal/University of Coimbra/University of Coimbra.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -1166,6 +1191,22 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Arabia\Hashemite Raider\3DModel\Hashemite.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Arabia\Hashemite Raider\3DModel\Hashemite.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Arabia\Hashemite Raider\3DModel\Hashemite_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Arabia\Hashemite Raider\3DModel\Hashemite_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Arabia\Hashemite Raider\Hashemite Raider Text.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1174,23 +1215,11 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\Hashemite.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Arabia\Hashemite Raider\Hashemite.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Arabia\Hashemite Raider\Hashemite128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Arabia\Hashemite Raider\Hashemite256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Arabia\Hashemite Raider\Hashemite32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1210,14 +1239,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\Hashemite_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Arabia\Hashemite Raider\Hashemite_sref.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Arabia\Madrasah\Madrasah Text.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1229,6 +1250,22 @@ Latest changes: see changelog file.</Description>
     <Content Include="Arabia\Madrasah\Madrasah.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Assyria\Iron Chariot\3DModel\tcmHeqaKhasut.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Assyria\Iron Chariot\3DModel\tcmHeqaKhasut.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Assyria\Iron Chariot\3DModel\tcmHeqaKhasut_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Assyria\Iron Chariot\3DModel\tcmHeqaKhasut_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Assyria\Iron Chariot\Iron Chariot Text.xml">
       <SubType>Lua</SubType>
@@ -1242,27 +1279,11 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHeqaKhasut.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHeqaKhasut.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Assyria\Iron Chariot\tcmHeqaKhasutAlpha32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Assyria\Iron Chariot\tcmHeqaKhasutSV.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHeqaKhasut_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHeqaKhasut_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1300,19 +1321,19 @@ Latest changes: see changelog file.</Description>
     </Content>
     <Content Include="Assyria\Lamassu Gate\sargon128.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Assyria\Lamassu Gate\sargon256.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Assyria\Lamassu Gate\sargon45.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Assyria\Lamassu Gate\sargon64.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Austria\Landwehr\ausrm1.dds">
       <SubType>Lua</SubType>
@@ -4661,9 +4682,11 @@ Latest changes: see changelog file.</Description>
     <Folder Include="America\Ranch\" />
     <Folder Include="Arabia\" />
     <Folder Include="Arabia\Hashemite Raider\" />
+    <Folder Include="Arabia\Hashemite Raider\3DModel" />
     <Folder Include="Arabia\Madrasah\" />
     <Folder Include="Assyria\" />
     <Folder Include="Assyria\Iron Chariot\" />
+    <Folder Include="Assyria\Iron Chariot\3DModel" />
     <Folder Include="Assyria\Lamassu Gate\" />
     <Folder Include="Austria\" />
     <Folder Include="Austria\Landwehr\" />

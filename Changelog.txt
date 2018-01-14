@@ -5,6 +5,12 @@
 More Unique Components for Vox Populi changelog:
 
 *Flax art
+*move dummy from monitor
+
+v24:
+- added IsMounted value to Hashemite Raider,
+- clean ups,
+- fixes.
 
 v23:
 - merged all @Blue Ghost work via Github,

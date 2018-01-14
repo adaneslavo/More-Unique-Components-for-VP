@@ -161,7 +161,16 @@ Things borrowed from other mods:
 
 	Coding - Blue Ghost, adan_eslavo:
 		Egypt:
-		  - JFD idea of Khopesh UU,
+		  - JFD - idea of Khopesh UU,
 		  - janboruta - picture of Khopesh,
 		  - danrell - 3D model of Khopesh,
 		  - mikeburnfire - idea and 3D model of Flax UR (UI).
+
+		Arabia:
+		  - 
+
+		Assyria:
+		  - janboruta - picture for Iron Chariot
+
+		America:
+		  -          ranch
