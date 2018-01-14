@@ -17,10 +17,10 @@ VALUES		('CIVILIZATION_AMERICA',	'BUILDINGCLASS_STABLE', 'BUILDING_RANCH');
 --------------------------------
 INSERT INTO IconTextureAtlases 
 		(Atlas, 					IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
-VALUES	('3UC_RANCH_ICON_ATLAS', 	256, 		'3uc_ranch256.dds',		1, 				1),
-		('3UC_RANCH_ICON_ATLAS', 	128, 		'3uc_ranch128.dds',		1, 				1),
-		('3UC_RANCH_ICON_ATLAS', 	45, 		'3uc_ranch45.dds',		1, 				1),
-		('3UC_RANCH_ICON_ATLAS', 	64, 		'3uc_ranch64.dds',		1, 				1);
+VALUES	('3UC_RANCH_ICON_ATLAS', 	256, 		'RanchPicture_256.dds',		1, 				1),
+		('3UC_RANCH_ICON_ATLAS', 	128, 		'RanchPicture_128.dds',		1, 				1),
+		('3UC_RANCH_ICON_ATLAS', 	45, 		'RanchPicture_045.dds',		1, 				1),
+		('3UC_RANCH_ICON_ATLAS', 	64, 		'RanchPicture_064.dds',		1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	

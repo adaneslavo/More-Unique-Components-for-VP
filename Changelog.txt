@@ -5,10 +5,14 @@
 More Unique Components for Vox Populi changelog:
 
 *Flax art
-*move dummy from monitor
+*missing sv_flag for monitor
 
 v24:
+- added mipmaps to new art,
+- moved Dummy Defense building outside Monitor,
 - added IsMounted value to Hashemite Raider,
+- changed flag, picture and model of Hashemite Raider,
+- changed promotion Icon of Garland Mine,
 - clean ups,
 - fixes.
 

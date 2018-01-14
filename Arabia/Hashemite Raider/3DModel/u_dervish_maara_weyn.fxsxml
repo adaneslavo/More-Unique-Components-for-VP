@@ -1,5 +1,5 @@
 <Asset>
-	<Mesh file="Hashemite.gr2"/>
+	<Mesh file="u_dervish_maara_weyn.gr2"/>
 	<Animation file="U_Morocco_Berber_IdleA.gr2" ec="1000"/>
 	<Animation file="U_Morocco_Berber_FidgetA.gr2" ec="1040"/>
 	<Animation file="U_Morocco_Berber_IdleA_Trans_IdleB.gr2" ec="1020"/>
@@ -33,8 +33,8 @@
 	<Animation file="U_Morocco_Berber_DeathA_Idle.gr2" ec="1220"/>
 	<Animation file="U_Morocco_Berber_DeathB.gr2" ec="2200"/>
 	<Animation file="U_Morocco_Berber_DeathB_Idle.gr2" ec="2220"/>
-	<Texture file="Hashemite_diff.dds"/>
-	<Texture file="Hashemite_sref.dds"/>
+	<Texture file="u_dervish_maara_weyn_diff.dds"/>
+	<Texture file="u_dervish_maara_weyn_sref.dds"/>
 	<Texture file="Unit_Environment_Dull.dds"/>
 	<Texture file="Unit_Environment_Sharp.dds"/>
 	<Texture file="Unit_Irradiance.dds"/>

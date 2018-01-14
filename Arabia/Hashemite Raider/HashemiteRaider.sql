@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_ARABIA', 'UNITCLASS_ANTI_TANK_GUN', 'UNIT_ARABIAN_HASHEMI
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,						Description,						Civilopedia,							Strategy,									Help, 									Combat,		RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized,	PrereqTech,			ObsoleteTech,	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,			UnitFlagAtlas,					MoveRate,		PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_ARABIAN_HASHEMITE',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_TEXT',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_STRATEGY',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_HELP', 	Combat+5,	RangedCombat+7, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, 0,				'TECH_COMBUSTION',	null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_HASHEMITE', 2,					0,				'HASHEMITE_ATLAS',	'EXPANSION2_UNIT_FLAG_ATLAS',	'QUADRUPED',	PurchaseCooldown, BaseLandAirDefense, 1
+			(Type,						Description,						Civilopedia,							Strategy,									Help, 									Combat,		RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized,	PrereqTech,			ObsoleteTech,	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,			UnitFlagAtlas,			MoveRate,		PurchaseCooldown, BaseLandAirDefense, IsMounted)
+SELECT		'UNIT_ARABIAN_HASHEMITE',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_TEXT',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_STRATEGY',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_HELP', 	Combat+5,	RangedCombat+7, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, 0,				'TECH_COMBUSTION',	null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_HASHEMITE', 0,					0,				'HASHEMITE_ATLAS',	'HASHEMITE_FLAG_ATLAS',	'QUADRUPED',	PurchaseCooldown, BaseLandAirDefense, 1
 FROM Units WHERE Type = 'UNIT_ANTI_TANK_GUN';
 --------------------------------	
 -- Unit_AITypes
@@ -64,8 +64,8 @@ VALUES			('UNIT_ARABIAN_HASHEMITE',	'PROMOTION_GARLAND_MINE'),
 -- Unit_ResourceQuantityRequirements
 --------------------------------		
 INSERT INTO Unit_ResourceQuantityRequirements 	
-			(UnitType, 				ResourceType)
-SELECT		'UNIT_BABYLON_KIBITUM',	null
+			(UnitType, 					ResourceType)
+SELECT		'UNIT_ARABIAN_HASHEMITE',	null
 FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
 --==========================================================================================================================	
 
@@ -77,12 +77,14 @@ FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
 --------------------------------	
 INSERT INTO UnitPromotions
 			(Type,						Description,						Help,									CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry,							FreePillageMoves)
-VALUES		('PROMOTION_GARLAND_MINE',	'TXT_KEY_PROMOTION_GARLAND_MINE',	'TXT_KEY_PROMOTION_GARLAND_MINE_HELP',	1,				'AS2D_IF_LEVELUP',	59,				'ABILITY_ATLAS',	'PEDIA_RANGED',	'TXT_KEY_PROMOTION_GARLAND_MINE',	1);
+VALUES		('PROMOTION_GARLAND_MINE',	'TXT_KEY_PROMOTION_GARLAND_MINE',	'TXT_KEY_PROMOTION_GARLAND_MINE_HELP',	1,				'AS2D_IF_LEVELUP',	10,				'PROMOTION_ATLAS',	'PEDIA_RANGED',	'TXT_KEY_PROMOTION_GARLAND_MINE',	1);
 
 INSERT INTO UnitPromotions
 			(Type,						Description,						Help,									CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,						PediaType,		PediaEntry)
 VALUES		('PROMOTION_DESERT_RAIDER',	'TXT_KEY_PROMOTION_DESERT_RAIDER',	'TXT_KEY_PROMOTION_DESERT_RAIDER_HELP',	1,				'AS2D_IF_LEVELUP',	1,				'EXPANSION2_PROMOTION_ATLAS',	'PEDIA_RANGED',	'TXT_KEY_PROMOTION_DESERT_RAIDER');
-
+--------------------------------
+-- UnitPromotions_Terrains
+--------------------------------
 INSERT INTO UnitPromotions_Terrains
 			(PromotionType,				TerrainType,		Attack, Defense,	DoubleMove)
 VALUES		('PROMOTION_DESERT_RAIDER', 'TERRAIN_DESERT',	25,		25,			1);
@@ -91,6 +93,12 @@ VALUES		('PROMOTION_DESERT_RAIDER', 'TERRAIN_DESERT',	25,		25,			1);
 --==========================================================================================================================
 -- ARTDEFINES
 --==========================================================================================================================	
+------------------------------
+-- ArtDefine_StrategicView
+------------------------------
+INSERT INTO ArtDefine_StrategicView 
+			(StrategicViewType, 		TileType,	Asset)
+VALUES		('ART_DEF_UNIT_HASHEMITE',	'Unit',		'HashemiteRaiderFlag_128.dds');
 ------------------------------
 -- ArtDefine_UnitInfos
 ------------------------------		
@@ -119,18 +127,18 @@ INSERT INTO ArtDefine_UnitMemberCombatWeapons (UnitMemberType, "Index", SubIndex
 -- ArtDefine_UnitMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-	SELECT	('ART_DEF_UNIT_MEMBER_HASHEMITE'), Scale, ZOffset, Domain, ('Hashemite.fxsxml'), MaterialTypeTag, MaterialTypeSoundOverrideTag
+	SELECT	('ART_DEF_UNIT_MEMBER_HASHEMITE'), Scale, ZOffset, Domain, ('u_dervish_maara_weyn.fxsxml'), MaterialTypeTag, MaterialTypeSoundOverrideTag
 	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_U_MORROCAN_BERBER_CAVALRY');
 ------------------------------
 -- IconTextureAtlases
 ------------------------------
 INSERT INTO IconTextureAtlases 
-			(Atlas, 								IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('HASHEMITE_ATLAS', 					256, 		'Hashemite256.dds',			1,				1),
-			('HASHEMITE_ATLAS', 					128, 		'Hashemite128.dds',			1, 				1),
-			('HASHEMITE_ATLAS', 					80, 		'Hashemite80.dds',			1, 				1),
-			('HASHEMITE_ATLAS', 					64, 		'Hashemite64.dds',			1, 				1),
-			('HASHEMITE_ATLAS', 					45, 		'Hashemite45.dds',			1, 				1),
-			('HASHEMITE_ATLAS', 					32, 		'Hashemite32.dds',			1, 				1);
+			(Atlas, 								IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
+VALUES		('HASHEMITE_ATLAS', 					256, 		'HashemiteRaiderPicture_256.dds',			1,				1),
+			('HASHEMITE_ATLAS', 					128, 		'HashemiteRaiderPicture_128.dds',			1, 				1),
+			('HASHEMITE_ATLAS', 					80, 		'HashemiteRaiderPicture_080.dds',			1, 				1),
+			('HASHEMITE_ATLAS', 					64, 		'HashemiteRaiderPicture_064.dds',			1, 				1),
+			('HASHEMITE_ATLAS', 					45, 		'HashemiteRaiderPicture_045.dds',			1, 				1),
+			('HASHEMITE_FLAG_ATLAS', 				32, 		'HashemiteRaiderFlag_032.dds',				1, 				1);
 --==========================================================================================================================
 --==========================================================================================================================

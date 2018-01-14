@@ -52,3 +52,5 @@ FROM Building_YieldChanges WHERE	BuildingType = 'BUILDING_UNIVERSITY';
 INSERT INTO Building_YieldChanges
 			(BuildingType,				YieldType,		Yield)
 VALUES		('BUILDING_VP_MADRASAH',	'YIELD_FAITH',	2);
+--==========================================================================================================================
+--==========================================================================================================================

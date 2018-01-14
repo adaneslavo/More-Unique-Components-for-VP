@@ -330,6 +330,12 @@
 		<Row Tag="TXT_KEY_BUILDING_DUMMYPRODUCTION">
 			<Text>Dummy Production Building</Text>
 		</Row>
+
+		<!-- Dummy Defense Building -->
+		<!-- Created by adan_eslavo 14/01/2018 -->
+		<Row Tag="TXT_KEY_BUILDING_DUMMYDEFENSE">
+			<Text>Dummy Defense Building</Text>
+		</Row>
 		
 		<!-- Dummy City GPP And Defense Building -->
 		<!-- Created by adan_eslavo 13/12/2017 -->

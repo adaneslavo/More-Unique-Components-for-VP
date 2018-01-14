@@ -167,10 +167,14 @@ Things borrowed from other mods:
 		  - mikeburnfire - idea and 3D model of Flax UR (UI).
 
 		Arabia:
-		  - 
+		  - Zantonius Hamm idea of Hashemite Raider (Maara Weyn),
+		  - OrderOfOlav - picture amd flag of Hashemite Raider,
+		  - Civitar - 3D model of Hashemite Raider.
 
 		Assyria:
-		  - janboruta - picture for Iron Chariot
+		  - TarcismoCM - idea of Iron Chariot UU (Heqa-Khasut),
+		  - janboruta - picture for Iron Chariot,
+		  - danrell - 3D model of Iron Chariot.
 
 		America:
-		  -          ranch
+		  - mikeburnfire - idea and picture of Ranch (American Ranch).
