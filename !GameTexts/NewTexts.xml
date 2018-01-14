@@ -203,6 +203,39 @@
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT_HELP">
 			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Flat, but not hindering Terrain from Great General[ENDCOLOR].</Text>
 		</Row>
+
+		<!-- Cacadores -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES">
+			<Text>
+				Cacadores
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_TEXT">
+			<Text>
+				Placeholder
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_STRATEGY">
+			<Text>
+				The Cacador is the unique Portuguese replacement for the Gatling Gun. It gains recon promotions by leveling up, allowing it to excel in hostile terrain.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_HELP">
+			<Text>
+				Ranged unit of the Industrial era. Only Portugal may build it. Whenever it levels up, it gains a random promotion from the Trailblazer or Survivalism lines.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CACADOR">
+			<Text>
+				Cacador
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CACADOR_HELP">
+			<Text>
+				When this unit levels up, it gains a Trailblazer or Survivalism promotion.
+			</Text>
+		</Row>
 		
 		<!-- Dhanuraashi -->
 		<!-- Created by adan_eslavo on 4/12/2017 -->
@@ -247,6 +280,39 @@
 				Buffalo Pounds were large constructions built by many Plains Tribes for the entrapment and killing of Buffalo. Large herds of bison were corralled and funneled into the pound, a sturdy circular ring of hides and wood, where tribesmen could throw spears and other missile weapons from the safety of the walls to take the powerful beasts down. [NEWLINE][NEWLINE]
 				Buffalo were a staple food source on the North American Plains, but hunting such large animals was difficult without horses or sturdy weapons. With the arrival of Europeans and the introduction of the horse and musket, hunting on the Great Plains was changed forever. Widespread adoption of the horse meant Native American tribes could travel great distances and attack bison herds with impunity. The good times would not last, however, as Europeans encroached upon this way of life. Increasingly, the Great Plains were converted into farms and pastures for American homesteaders. The American bison was driven to the brink of extinction by a combination of habitat loss, industrial-scale hunting, and culling, intended to starve the Native American population. [NEWLINE][NEWLINE]
 				Today, American buffalo have recovered, but their range has been greatly limited to a few national parks. Commercial farming and sport hunting continues, but the bison are unlikely to ever return to their historical numbers.
+			</Text>
+		</Row>
+
+		<!-- Corsair -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR">
+			<Text>
+				Corsair
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_TEXT">
+			<Text>
+				Placeholder
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_STRATEGY">
+			<Text>
+				The Corsair is the unique Moroccan replacement for the Corvette. It specializes in raiding and pillaging maritime trade routes, earning Food and Production for each enemy unit killed and trade route plundered.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_HELP">
+			<Text>
+				Naval unit that specializes in piracy and disrupting maritime trade. Only Morocco can build it. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing units, pillaging resources, and plundering trade routes.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_RAZZIA">
+			<Text>
+				Razzia
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_RAZZIA_HELP">
+			<Text>
+				Gain Food and Production in the nearest coastal city whenever you kill an enemy unit, pillage an improvement, or plunder a trade route.
 			</Text>
 		</Row>
 		
@@ -368,6 +434,34 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_THEME_HELP">
 			<Text>To maximize your bonus, make sure the Great Work Slots are all filled with Art from different Eras and different Civilizations.</Text>
+		</Row>
+
+		<!-- Examination Hall -->
+		<!-- Created by Blue Ghost-->
+		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL">
+			<Text>
+				Examination Hall
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_TEXT">
+			<Text>
+				Placeholder
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_STRATEGY">
+			<Text>
+				The Examination Hall is a Chinese unique building, replacing the Chancery. It boosts Great People generation in the city, and gives random Great Person Points whenever a citizen is born.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_HELP">
+			<Text>
+				+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] for Diplomatic Units in the city in which it is built. [NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% Great People rate in the city, increased to +10% during We Love the King Day.[NEWLINE][NEWLINE]Whenever a citizen is born, gain 15 points toward a random Great Person, scaling with era.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ALERT_EXAMINATIONS">
+			<Text>
+				The birth of a citizen has earned you {1_Num} points toward a {2_Str} in {3_Str}.
+			</Text>
 		</Row>
 		
 		<!-- Fale Tel'e -->
@@ -566,6 +660,50 @@
 			<Text>+25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from Luxury Resource[ENDCOLOR].</Text>
 		</Row>
 
+		<!-- Hashemite Raider -->
+		<!-- Created by Blue Ghost -->
+
+		<Row Tag="TXT_KEY_UNIT_ARABIAN_HASHEMITE">
+			<Text>
+				Hashemite Raider
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ARABIAN_HASHEMITE_TEXT">
+			<Text>
+				Placeholder
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ARABIAN_HASHEMITE_STRATEGY">
+			<Text>
+				The Hashemite Raider is adept at hit-and-run tactics and disrupting enemy supply lines. Whenever it pillages an improvement, adjacent enemy units take 10 damage.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ARABIAN_HASHEMITE_HELP">
+			<Text>
+				The Hashemite Raider is the Arabian replacement for the Light Tank. It is stronger than the unit it replaces, available earlier, and does not require Aluminum. It requires no movement to pillage, and deals damage to adjacent enemy units when pillaging improvements.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GARLAND_MINE">
+			<Text>
+				Garland Mine
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GARLAND_MINE_HELP">
+			<Text>
+				No movement cost to pillage. When pillaging an improvement, adjacent enemy units take 10 damage.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DESERT_RAIDER">
+			<Text>
+				Desert Raider
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DESERT_RAIDER_HELP">
+			<Text>
+				+25% combat strength and double movement in Deserts.
+			</Text>
+		</Row>
+
 		<!-- Hippodorme -->
 		<!-- Created by adan_eslavo 2/12/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME">
@@ -579,6 +717,99 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_TEXT">
 			<Text>Something Something Nika Riots.</Text>
+		</Row>
+
+		<!-- Iron Chariot -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_UNIT_ASSYRIAN_IRON_CHARIOT">
+			<Text>
+				Iron Chariot
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ASSYRIAN_IRON_CHARIOT_TEXT">
+			<Text>
+				Chariots formed the core of the Assyrian army. Assyrian chariots were drawn by four horses and used to smash into and disperse enemy formations.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ASSYRIAN_IRON_CHARIOT_STRATEGY">
+			<Text>
+				Assyria's Iron Chariots act as shock troops to control the battlefield. They excel at breaking enemy ranks.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ASSYRIAN_IRON_CHARIOT_HELP">
+			<Text>
+				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require Horses, but gains +2 combat strength if you have sufficient Horses for all Iron Chariots, and likewise for Iron. Also, it gains +10% combat strength for each adjacent enemy unit.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL">
+			<Text>
+				Fury of Nergal
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_HELP">
+			<Text>
+				+10% combat strength for each adjacent enemy military unit.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_1">
+			<Text>
+				Fury of Nergal
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_1_HELP">
+			<Text>
+				+10% combat strength
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_2">
+			<Text>
+				Fury of Nergal
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_2_HELP">
+			<Text>
+				+20% combat strength
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_3">
+			<Text>
+				Fury of Nergal
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_3_HELP">
+			<Text>
+				+30% combat strength
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_4">
+			<Text>
+				Fury of Nergal
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_4_HELP">
+			<Text>
+				+40% combat strength
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_5">
+			<Text>
+				Fury of Nergal
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_5_HELP">
+			<Text>
+				+50% combat strength
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_6">
+			<Text>
+				Fury of Nergal
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_6_HELP">
+			<Text>
+				+60% combat strength
+			</Text>
 		</Row>
 
 		<!-- Kampong -->
@@ -764,6 +995,82 @@
 				In battle, Koa warriors were well-versed in many weapons, including knuckle-dusters, slings, and garrotes, but were also capable hand-to-hand fighters. More traditional melee weapons were also used, including wooden daggers, clubs, staves, and paddles. These weapons would occasionally be modified by sewing shark teeth along their edges, creating devastating serrated weapons called 'Leiomano'. These weapons were used similarly to the obsidian-tipped Macuahuitl of Central America.
 			</Text>
 		</Row>
+
+		<!-- Lamassu Gate -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_BUILDING_LAMASSU">
+			<Text>
+				Lamassu Gate
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAMASSU_TEXT">
+			<Text>
+				Placeholder
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAMASSU_STRATEGY">
+			<Text>
+				The Lamassu Gate is an Assyrian unique building, replacing the Walls. It increases the unit supply cap in the city more than the standard Walls. It also grants +1 [ICON_CULTURE] Culture and a Writer specialist slot.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAMASSU_HELP">
+			<Text>
+				Military Units supplied by this City's population increased by 20%.
+			</Text>
+		</Row>
+
+		<!-- Landwehr -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_LANDWEHR">
+			<Text>
+				Landwehr
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_LANDWEHR_TEXT">
+			<Text>
+				The Austrian Landwehr was one of three components that made up the ground forces of the Austro-Hungarian Dual Monarchy between 1868 and 1918, and it was composed of recruits from the Cisleithanian parts of the empire. Intended as a national defence force alongside the Hungarian Landwehr, the Austrian Landwehr was officially established by order of Emperor Franz Josef on 5 December 1868. Yet, while the Hungarian force was generously supported early on by the parliament in Budapest, legislators in Vienna generally failed to advance the cause of the Landwehr, leaving it by the 1870s as a skeletal force with only the appearance of parity. [NEWLINE[NEWLINE]The 1880s saw an expansion in the force's numbers, as the high command was unable to obtain increases in manpower for the joint Imperial and Royal army and sought to increase overall numbers through the Landwehr. Additionally, Austrian fears of the development of the Hungarian Landwehr caused the Austrian Reichsrat to vote to increase the Landwehr's strength to 135,000. These nationalist interests led to a gradual strengthening and improvement of the force, so that by the start of the First World War, Landwehr units were considered equal to the units of the joint army in readiness and equipment.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_LANDWEHR_STRATEGY">
+			<Text>
+				The Landwehr is the backbone of the Industrial-era Austrian army. It excels in defending in owned territory and the territory of allied city-states.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_LANDWEHR_HELP">
+			<Text>
+				The Landwehr is the Austrian replacement for the Fusilier. It gets a combat bonus when fighting in territory owned by Austria and allied city-states.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IMPERIAL_VIGILANCE">
+			<Text>
+				Imperial Vigilance
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IMPERIAL_VIGILANCE_HELP">
+			<Text>
+				+25% combat bonus in owned territory and territory of allied city-states.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_LANDWEHR_CS_BONUS">
+			<Text>
+				City-State Defense
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_LANDWEHR_CS_BONUS_HELP">
+			<Text>
+				+25% combat in the territory of allied city-states.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_YORKSCHER_MARCHE">
+			<Text>
+				Yorkscher Marche
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_YORKSCHER_MARCHE_HELP">
+			<Text>
+				+2 [ICON_CULTURE] Culture per turn while in owned territory.
+			</Text>
+		</Row>
 		
 		<!-- Langskib -->
 		<!-- Created by De_Genius on 28/10/2017, incorporated and modified by adan_eslavo on 21/12/2017 -->
@@ -864,6 +1171,58 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ENGLAND_AGINCOURT_HELP">
 			<Text>+20% [ICON_RANGED_STRENGTH] Attack Bonus and +20% [ICON_STRENGTH] Defense Bonus vs [COLOR_POSITIVE_TEXT]Armor and Mounted Units[ENDCOLOR].</Text>
+		</Row>
+
+
+		<!-- Madrasah -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH">
+			<Text>
+				Madrasah
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH_TEXT">
+			<Text>
+				"Madrasah" is Arabic for any type of educational institution; although with a religious component, madrasahs were often secular, and could cover anything from elementary to higher learning. Usually associated with a mosque, madrasahs could even specialize in medicine, law, science, philosophy or the education of women. The first madrasah, the Gama'at al-Qarawiyyn, was established in 859 AD by Fatimah al-Fihri, the daughter of a wealthy merchant. During the rule of the Fatimid, Ayyubid and Mamluk dynasties, the practice of sponsoring madrasahs by the ruling, wealthy elite spread across Egypt and the Middle East. The first Ottoman madrasah was founded in 1331 AD in Iznik, and followed the traditions of Sunni Islam. The madrasahs of the Turks and Arabs would, as Europe suffered through the Dark Ages, keep the best of Western knowledge alive, and blended it with that of the East.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH_STRATEGY">
+			<Text>
+				Unique Arabian replacement for the University. Generates Faith in addition to Science, and increases Great Person rate. Whenever you make a Faith purchase, the Madrasah generates additional Science.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH_HELP">
+			<Text>
+				+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE] Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 20 [ICON_RESEARCH] Science (or 100 for a Great Person purchase), scaling with era.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ALERT_MADRASAH_SCIENCE">
+			<Text>
+				Making a [ICON_PEACE] Faith purchase has earned you {1_num} [ICON_RESEARCH] Science from your Madrasah in {2_Str}.
+			</Text>
+		</Row>
+		
+		<!-- Monitor -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_UNIT_AMERICAN_MONITOR">
+			<Text>
+				Monitor
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AMERICAN_MONITOR_STRATEGY">
+			<Text>
+				A powerful Industrial-era naval unit. Only America may build it. It has the Cover I promotion and increased movement on coast, and gives a defensive bonus to nearby friendly cities.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MONITOR">
+			<Text>
+				Monitor
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MONITOR_HELP">
+			<Text>
+				When starting turn next to a friendly city, that city gains +5 [ICON_STRENGTH] Combat Strength this turn.
+			</Text>
 		</Row>
 		
 		<!-- Monolithic Church -->
@@ -1084,6 +1443,29 @@
 		<Row Tag="TXT_KEY_UNIT_PENTECONTER_TEXT">
 			<Text>It's Greek for 5 Conters.</Text>
 		</Row>
+
+		<!-- Pracinha -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_PROMOTION_EXPEDITIONARY_FORCE">
+			<Text>
+				Expeditionary Force
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EXPEDITIONARY_FORCE_HELP">
+			<Text>
+				Gain +1% [ICON_STRENGTH] Strength for every Tile from the [ICON_CAPITAL] Capital this Unit is.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TOURISM">
+			<Text>
+				Tourism from Victories
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TOURISM_HELP">
+			<Text>
+				Earn Tourism toward all civs for each enemy killed.
+			</Text>
+		</Row>
 		
 		<!-- Prowler -->
 		<!-- Created by adan_eslavo on 20/10/2017 -->
@@ -1149,7 +1531,42 @@
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_TEXT">
 			<Text>The Mughals were an Islamic empire that invaded India in the 15th century, and ruled most of the sub-continent until the mid 19th. During their rule, they constructed elaborate forts across the countryside which served as administrative centers and living quarters for the occupiers. These forts were beautiful structures, fitting palaces for the rulers of a vast empire. Several--including the magnificent "Lahore Fort" and Red Fort of Agra--survive today and remain as some of the largest tourist attractions to India, monuments to the Mughals' power and style.</Text>
 		</Row>
-		
+
+		<!-- Ranch -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_BUILDING_RANCH">
+			<Text>
+				Ranch
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RANCH_TEXT">
+			<Text>A ranch is a type of farm and an area of landscape given primarily to the practice of ranching, the practice of raising grazing livestock such as cattle or sheep for meat or wool. Ranching is also a method used to raise less common livestock such as elk, American bison or even ostrich, emu, and alpacas.[NEWLINE][NEWLINE]Ranches generally consist of large areas, but may be of nearly any size. If the ranch includes arable or irrigated land, the ranch may also engage in a limited amount of farming, raising crops for feeding the animals, such as hay and feed grains. As settlers from the United States moved west, they brought cattle breeds developed on the east coast and in Europe along with them, and adapted their management to the drier lands of the west by borrowing key elements of the Spanish vaquero culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RANCH_STRATEGY">
+			<Text>
+				In addition to the regular abilities of the Stable, the Ranch increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RANCH_HELP">
+			<Text>
+				Unique American Stable replacement. +33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the Military Unit Supply Cap from Population in the City by 10%.[NEWLINE]+25% border growth rate in city. Whenever the city borders expand, gain 10 [ICON_FOOD] Food and [ICON_CULTURE] Culture, scaling with Era.
+			</Text>
+		</Row>
+
+		<!-- Riad -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_BUILDING_VP_RIAD">
+			<Text>Riad</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_RIAD_TEXT">
+			<Text>A riad is a traditional Moroccan house with an interior garden or courtyard. The riads were inward focused, which allowed for family privacy and protection from the weather in Morocco. In the central garden of traditional riads there are often four orange or lemon trees and possibly a fountain. The walls of the riads are usually adorned with Arabic calligraphy with quotes from the Quran.[NEWLINE][NEWLINE]The style of these riads has changed over the years, but the basic form is still used in designs today. Recently there has been a surge in interest in this form of house after a new vogue of renovation in towns such as Marrakech and Essaouira where many of these often-crumbling buildings have been restored to their former glory. Many riads are now used as hotels or restaurants.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_RIAD_STRATEGY">
+			<Text>The Riad is a Moroccan unique building that increases the speed at which [ICON_GREAT_PEOPLE] Great people are generated by 30%. It also grants 1 [ICON_CULTURE] Culture per 5 citizens in the city, and trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_RIAD_HELP">
+			<Text>Unique Moroccan replacement for the Garden. Trade routes originating in the city gain +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn. [NEWLINE][NEWLINE]+30% [ICON_GREAT_PEOPLE] Great People generation in this City. [NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY">
@@ -1183,6 +1600,29 @@
 				Whenever a foreign nation is conquered or has by their own will accepted the Great Peace their own system of internal government may continue, but they must cease all warfare against other nations...[NEWLINE][NEWLINE]
 
 				The women of every clan of the Five Nations shall have a Council Fire ever burning in readiness for a council of the clan. When in their opinion it seems necessary for the interest of the people they shall hold a council and their decisions and recommendations shall be introduced before the Council of the Lords by the War Chief for its consideration."
+			</Text>
+		</Row>
+
+		<!-- Sambadrome -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME">
+			<Text>
+				Sambadrome
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME_TEXT">
+			<Text>
+				Sambadrome (Sambódromo in Portuguese language) is the name given to an exhibition place for the Samba schools parades during Carnaval in Brazil. A sambadrome generally consists of tiered spectator viewing areas surrounding a long alley for the schools to parade down.  The parades attract many thousands of Brazilians and foreign tourists each year.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME_STRATEGY">
+			<Text>
+				The Sambadrome is the unique Brazilian replacement for the Opera House. It provides more Culture than the Opera House, and it also provides Golden Age Points and Tourism, and comes with a Musician specialist slot.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME_HELP">
+			<Text>
+				+13% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +3 [ICON_TOURISM] Tourism at Radio.
 			</Text>
 		</Row>
 		
@@ -1271,7 +1711,117 @@
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_TEXT">
 			<Text>This Cannon shouldn't technically be able to move!</Text>
 		</Row>
-		
+
+
+		<!-- Shophet -->
+		<!-- Created by pineappledan -->
+		<Row Tag="TXT_KEY_UNIT_JFD_SHOPHET">
+			<Text>Shophet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_SHOPHET_HELP">
+			<Text>Unique replacement for the Great General. Disembarks onto water tiles as a Great Admiral. Causes friendly units beginning in the same or adjacent tile to ignore enemy Zone of Control for that turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_SHOPHET_STRATEGY">
+			<Text>The Shophet is the unique Great General replacement for Carthage, for Hannibal. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Shophet to supplement your military strategies when waging war against other civilizations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_SHOPHET_TEXT">
+			<Text>In the various independent city states constituting Phoenicia proper (coasts of present Lebanon and Syria) and its "Punic" Mediterranean colonies a shofet (in Punic, suffet or suffete) was a non-royal magistrate granted control over a city-state, sometimes functioning much in the same way as a Roman consul.[NEWLINE][NEWLINE]The term is mostly widely known from the suffetes of Carthage, a former Phoenician colony. Following the overthrow of its monarchy in the 5th century BC, Carthage was ruled by a number of aristocratic councils presided over by two suffetes, who served in similar capacity to Roman consuls.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_GENERAL">
+			<Text>Admiralty</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_GENERAL_HELP">
+			<Text>This unit may embark as a Great Admiral.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_ADMIRAL">
+			<Text>Commandeering</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_ADMIRAL_HELP">
+			<Text>This unit may disembark as a Great General (must be moved into a city first).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_ZOC">
+			<Text>Nearby Shophet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_ZOC_HELP">
+			<Text>Ignores enemy Zone of Control.</Text>
+		</Row>
+		<!--Unique Names-->
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_1">
+			<Text>Bomilcar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_2">
+			<Text>Hamilcar Barca</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_3">
+			<Text>Hannibal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_4">
+			<Text>Hannibal Barca</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_5">
+			<Text>Hasdrubal II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_6">
+			<Text>Hasdrubal Gisco</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_7">
+			<Text>Hasdrubal the Boetharch</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_8">
+			<Text>Mago I Justin</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_9">
+			<Text>Mago II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_10">
+			<Text>Mago III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_11">
+			<Text>Himilco I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_12">
+			<Text>Himilco II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_13">
+			<Text>Hasdrubal the Fair</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_14">
+			<Text>Ad Herbal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_15">
+			<Text>Carthalo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_16">
+			<Text>Hannibal Monomachus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_17">
+			<Text>Maharbal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_18">
+			<Text>Sophonisba</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_19">
+			<Text>Hannibal the Rhodian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_20">
+			<Text>Hanno the Elder</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_21">
+			<Text>Hanno the Great</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_22">
+			<Text>Aderbaal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_23">
+			<Text>Bodashtart</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_24">
+			<Text>Philosir</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_25">
+			<Text>Abdmelqart</Text>
+		</Row>
+	
 		<!-- Shotelai -->
 		<!-- Created by adan_eslavo on 12/11/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM">
@@ -1329,6 +1879,29 @@
 				Air superiority became a constant arms race against newer and better German designs and engines. By the end of the war, the SPAD VII's single .303 Vickers machine gun was outmatched by German fighters, which carried at least two machine guns. The heavier and faster SPAD XIII largely replaced the SPAD VII by late 1917, and would carry France to the end of the War. Though at times unreliable and hard to maneuver, the SPAD series would go down in history as the fastest and most powerful of WWI fighters, and continued to be used by the French as a training plane until it was retired in 1928.
 			</Text>
 		</Row>
+
+		<!-- Standschützen -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN">
+			<Text>
+				Standschützen
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_TEXT">
+			<Text>
+				The Standschützen were originally rifle guilds and rifle companies that had been formed in the 15th and 16th centuries, and were involved time and again in military operations within the borders of the Austrian County of Tyrol. A Standschütze was a member of a Schützenstand ("shooting club"), into which he was enrolled, which automatically committed him to the voluntary, military protection of the state of Tyrol (and Vorarlberg). In effect they were a type of Tyrolean local militia or home guard.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_STRATEGY">
+			<Text>
+				The Standschützen is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. It allows for faster construction of land military units in the city. It also provides +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_HELP">
+			<Text>
+				+2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally. +20% production toward land military units.[NEWLINE][NEWLINE]Increases city Defense Strength by 25 and Hit Points by 200. Military Units supplied by this City's population increased by 10%.
+			</Text>
+		</Row>
 		
 		<!-- Tersane -->
 		<!-- Created by adan_eslavo 1/11/2017 -->
@@ -1347,6 +1920,62 @@
 				Ottoman naval power was maintained through its tremendous shipbuilding capacity, as well as its allegiances to the Barbary corsairs of North Africa. This preeminence was finally ended at the battle of Lepanto, where a combined Spanish and Venetian armada delivered a crushing defeat to the Ottoman's, capturing or destroying more than two thirds of the Ottoman's navy. Their response was to build 250 new vessels within six months. [NEWLINE][NEWLINE]
 				Grand Vizier Mehmed Sokullu, on the defeat at Lepanto, and the capture of Cyprus, which the Ottomans had taken earlier the same year: [NEWLINE]
 				"You come to see how we bear our misfortune. But I would have you know the difference between your loss and ours. In wresting Cyprus from you, we deprived you of an arm; in defeating our fleet, you have only shaved our beard.
+			</Text>
+		</Row>
+
+		<!-- Tophet -->
+		<!-- Created by pineappledan -->
+		<Row Tag="TXT_KEY_BUILDING_TOPHET">
+			<Text>Tophet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOPHET_HELP">
+			<Text>Provides [ICON_PEACE] Faith and [ICON_CULTURE] Culture in the City. [NEWLINE]Receive 10 [ICON_CULTURE] Culture in the City whenever a Unit is purchased, scaling with era, and Units purchased in this city receive full XP from buildings.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOPHET_STRATEGY">
+			<Text>The Tophet is the unique Shrine replacement for Carthage. In addition to the normal bonuses of a Shrine, the Tophet provides Culture whenever a unit is purchased in the City. Military Units purchased in a City with a Tophet are not affected by the normal half XP penalty for purchasing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TOPHET_TEXT">
+			<Text>
+				"Tophet" is a Hebrew term for a place of worship and human sacrifice to the Canaanite gods, and has become a colorful synonym for hell within Judeo-Christian theology. Usually located outside cities, Tophets were holy places where sacrifices to the gods could be presented to the heads of the Phoenician pantheon, Ba'al Hammon, the god of weather and vegetation, and his consort, Tanit.[NEWLINE][NEWLINE]
+				Regular sacrifices were made to ensure the prosperity of Carthage. After the ceremony, ashes of the burnt offering were placed within a vessel and stones were placed on top of the funerary urns to seal them within the Tophet. Child sacrifice, once prevalent throughout the Near-East, was a persistent hallmark of Carthaginian religious life long after contemporary cultures had shunned the practice. Modern archaeological evidence suggests children were sacrificed in times of great stress such as wars, plagues, and natural disasters as an act of divine supplication.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ALERT_TOPHET_CULTURE">
+			<Text>
+				Purchasing a unit has earned you {1_num} [ICON_CULTURE] Culture from your Tophet in {2_Str}.
+			</Text>
+		</Row>
+
+		<!-- University of Coimbra -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA">
+			<Text>
+				University of Coimbra
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_TEXT">
+			<Text>
+				Placeholder
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_STRATEGY">
+			<Text>
+				The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. It gives all naval units the ability to gain [ from exploration, and gains [ICON_GOLD] Gold from Feitorias built in foreign lands.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_HELP">
+			<Text>
+				Unique Portuguese replacement for the Oxford University. Gain a free University, and a Great Scientist appears near the City. +75 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Contains 2 slots for Great Works of Writing. Reduces [ICON_HAPPINESS_3] Illiteracy. +2 [ICON_GOLD] Gold to Universities. All naval units gain the Age of Discovery promotion. Whenever a Feitoria is built in city-state territory, permanently gain +2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE][NEWLINE]+3 [ICON_RESEARCH] Science if Themed.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AGE_OF_DISCOVERY">
+			<Text>
+				Age of Discovery
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AGE_OF_DISCOVERY_HELP">
+			<Text>
+				Gain [ICON_SCIENCE] Science from exploring.
 			</Text>
 		</Row>
 		
@@ -1399,6 +2028,29 @@
 		<Row Tag="TXT_KEY_GREAT_WORK_THE_CROWN_JEWELS">
 			<Text>The Crown Jewels</Text>
 		</Row>
+
+		<!-- Xiafan Guanjun -->
+		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN">
+			<Text>Xiafan Guanjun</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_HELP">
+			<Text>Sturdy Renaissance era ranged naval unit. Only China may build it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_STRATEGY">
+			<Text>The Xiafan Guanjun is a Chinese unique unit. It is much sturdier than the Frigate it replaces, is available earlier, and has the Supply promotion. When stationed in a city-state territory, gain 2 Influence with that city-state per turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_TEXT">
+			<Text>
+				A Junk is an ancient Chinese sailing vessel/ship design still in use today. Junks were developed during the Song Dynasty (960–1279) and were used as seagoing vessels as early as the 2nd century CE. They evolved in the later dynasties, and were used throughout Asia for extensive ocean voyages. The name ultimately stems from the Chinese chuán ("ship"). The Javanese called it "jong", which became the Portuguese "junco", which became the English "junk".[NEWLINE][NEWLINE]Junks were efficient and sturdy ships that sailed long distances as early as the 2nd century CE. They incorporated numerous technical advances in sail plan and hull designs that were later adopted in Western shipbuilding. The historian H. Warington Smyth considered the junk as one of the most efficient ship designs, stating that "As an engine for carrying man and his commerce upon the high and stormy seas as well as on the vast inland waterways, it is doubtful if any class of vessel… is more suited or better adapted to its purpose than the Chinese or Indian junk, and it is certain that for flatness of sail and handiness, the Chinese rig is unsurpassed."
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_KOWTOW">
+			<Text>Kowtow</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_KOWTOW_HELP">
+			<Text>Can enter rival territory. +2 Influence per turn when stationed within a city-state's borders.</Text>
+		</Row>
+		<!-- Created by Blue Ghost-->
 		
 		<!-- Yassa Court -->
 		<!-- Created by adan_eslavo 29/10/2017 -->
