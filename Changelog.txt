@@ -7,6 +7,7 @@ More Unique Components for Vox Populi changelog:
 *Flax art
 
 v23:
+- merged all @Blue Ghost work via Github,
 - balance: changed Andelsbevaegelse (now +1f to Plains; +1p to Pasture),
 - balance: reworked Oppidum (now +20 HP for every city within 2 tiles),
 - balance: changed Wat (added World Wonder block action for enemy spies; no art slot),
