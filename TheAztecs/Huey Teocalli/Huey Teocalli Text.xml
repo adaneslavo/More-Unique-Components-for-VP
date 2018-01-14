@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI">
+			<Text>
+				Huey Teocalli
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_TEXT">
+			<Text>
+				In the Aztec Empire, a teocalli was a terraced pyramid, surmounted by a temple on top, site of all the important religious rituals in the town. The greatest was located in the heart of Tenochtitlan, the Huey Teocalli (or, according to the Spanish, the Templo Mayor) dedicated to a pair of gods: Huitzilopochtli, the god of war, and Tlaloc, the god of agriculture (an indication of what was important in Aztec culture). Each god had a separate temple, reached by separate staircases.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_STRATEGY">
+			<Text>
+				The Huey Teocalli is the unique Aztec replacement for the Grand Temple. It does not require a Temple, and provides a free Temple in the city. It provides a global bonus to Barracks and Floating Gardens. Every time you enter a Golden Age, the Huey Teocalli permanently gains Food, Faith, and additional XP to units built in the city.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_HELP">
+			<Text>
+				Comes with a free Temple. A [ICON_GOLDEN_AGE] Golden Age begins. Reduces [ICON_HAPPINESS_3] Religious Unrest. All Temples gain +1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture, Barracks get +2 [ICON_CULTURE] Culture, and Floating Gardens get +2 [ICON_FOOD] Food. Whenever you enter a Golden Age, permanently gain +3 [ICON_FOOD], +3 [ICON_PEACE] Faith, and +3 XP for units trained in the city (max +30 each). The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

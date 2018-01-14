@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES">
+			<Text>
+				Cacadores
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_TEXT">
+			<Text>
+				Placeholder
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_STRATEGY">
+			<Text>
+				The Cacador is the unique Portuguese replacement for the Gatling Gun. It gains recon promotions by leveling up, allowing it to excel in hostile terrain.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_HELP">
+			<Text>
+				Ranged unit of the Industrial era. Only Portugal may build it. Whenever it levels up, it gains a random promotion from the Trailblazer or Survivalism lines.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CACADOR">
+			<Text>
+				Cacador
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CACADOR_HELP">
+			<Text>
+				When this unit levels up, it gains a Trailblazer or Survivalism promotion.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
