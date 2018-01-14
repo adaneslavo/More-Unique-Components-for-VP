@@ -25,9 +25,11 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 										pSpecificPlot:SetResourceType(GameInfoTypes.RESOURCE_EGYPT_FLAX, 1)
 										iFlaxCount = iFlaxCount + 1
 
-										local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
+										if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+											local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
 				
-										Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+										end
 									
 										if iFlaxCount == 2 then
 											break
@@ -53,9 +55,11 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 											pSpecificPlot:SetResourceType(GameInfoTypes.RESOURCE_EGYPT_FLAX, 1)
 											iFlaxCount = iFlaxCount + 1
 
-											local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
-				
-											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+												local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
+					
+												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											end
 									
 											if iFlaxCount == 2 then
 												break
@@ -82,9 +86,11 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 											pSpecificPlot:SetResourceType(GameInfoTypes.RESOURCE_EGYPT_FLAX, 1)
 											iFlaxCount = iFlaxCount + 1
 
-											local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
-				
-											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+												local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
+					
+												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											end
 									
 											if iFlaxCount == 2 then
 												break
@@ -111,9 +117,11 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 											pSpecificPlot:SetResourceType(GameInfoTypes.RESOURCE_EGYPT_FLAX, 1)
 											iFlaxCount = iFlaxCount + 1
 
-											local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
-				
-											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+												local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
+					
+												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											end
 									
 											if iFlaxCount == 2 then
 												break
@@ -139,9 +147,11 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 										pSpecificPlot:SetResourceType(GameInfoTypes.RESOURCE_EGYPT_FLAX, 1)
 										iFlaxCount = iFlaxCount + 1
 
-										local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
+										if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+											local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
 				
-										Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+										end
 									
 										if iFlaxCount == 2 then
 											break
@@ -166,9 +176,11 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 										pSpecificPlot:SetResourceType(GameInfoTypes.RESOURCE_EGYPT_FLAX, 1)
 										iFlaxCount = iFlaxCount + 1
 
-										local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
+										if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+											local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
 				
-										Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+										end
 									
 										if iFlaxCount == 2 then
 											break

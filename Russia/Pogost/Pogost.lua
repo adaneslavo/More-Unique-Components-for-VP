@@ -6,23 +6,28 @@ function Pogost(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
 
-		if iBuilding == GameInfoTypes.BUILDING_RUSSIA_POGOST_1 then
-			local iBuilding2 = GameInfoTypes.BUILDING_RUSSIA_POGOST_2
-			local iBuilding3 = GameInfoTypes.BUILDING_RUSSIA_POGOST_3
-			local pTeam = Teams[pPlayer:GetTeam()]
-			--banking 33
-			--architecture 37
-			if pTeam:GetTeamTechs():HasTech(33) then
-				pCity:SetNumRealBuilding(iBuilding2, 1)
+	if iBuilding == GameInfoTypes.BUILDING_RUSSIA_POGOST_1 then
+		local iBuilding2 = GameInfoTypes.BUILDING_RUSSIA_POGOST_2
+		local iBuilding3 = GameInfoTypes.BUILDING_RUSSIA_POGOST_3
+		local pTeam = Teams[pPlayer:GetTeam()]
+		--banking 33
+		--architecture 37
+		if pTeam:GetTeamTechs():HasTech(33) then
+			pCity:SetNumRealBuilding(iBuilding2, 1)
+			
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 2 in one of his cities.', 'Building upgrade', pCity:GetX(), pCity:GetY())
 			end
+		end
 			
-			if pTeam:GetTeamTechs():HasTech(37) then
-				pCity:SetNumRealBuilding(iBuilding3, 1)
+		if pTeam:GetTeamTechs():HasTech(37) then
+			pCity:SetNumRealBuilding(iBuilding3, 1)
+			
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 3 in one of his cities.', 'Building upgrade', pCity:GetX(), pCity:GetY())
 			end
 		end
-	--end
+	end
 end
 
 function OnTechResearched(iTeam, iTech)
@@ -35,7 +40,10 @@ function OnTechResearched(iTeam, iTech)
 		for pCity in pPlayer:Cities() do
 			if pCity:IsHasBuilding(iBuilding) then
 				pCity:SetNumRealBuilding(iBuilding2, 1)
-				pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 2 in one of his cities.', 'Building upgrade', pCity:GetX(), pCity:GetY())
+				
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 2 in one of his cities.', 'Building upgrade', pCity:GetX(), pCity:GetY())
+				end
 			end
 		end
 	end
@@ -48,7 +56,10 @@ function OnTechResearched(iTeam, iTech)
 		for pCity in pPlayer:Cities() do
 			if pCity:IsHasBuilding(iBuilding) then
 				pCity:SetNumRealBuilding(iBuilding3, 1)
-				pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 3 in one of his cities.', 'Building upgrade', pCity:GetX(), pCity:GetY())
+				
+				if pPlayer:IsHuman() then
+					pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 3 in one of his cities.', 'Building upgrade', pCity:GetX(), pCity:GetY())
+				end
 			end
 		end
 	end

@@ -21,10 +21,17 @@ function Scythe(iPlayer, iUnit, iX, iY)
 				pTargetPlayer = Players[pTargetUnit:GetOwner()]
 
 				if pTeam:IsAtWar(pTargetPlayer:GetTeam()) then
-					local vUnitPosition = PositionCalculator(pTargetUnit:GetX(), pTargetUnit:GetY())
-					
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-10 Scythe[ENDCOLOR]", 1)
 					pTargetUnit:ChangeDamage(10)
+					
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vUnitPosition = PositionCalculator(pTargetUnit:GetX(), pTargetUnit:GetY())
+					
+						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-10 Scythe[ENDCOLOR]", 1)
+					end
+
+					if pTargetPlayer:IsHuman() then
+						pTargetPlayer:AddNotification(0, 'One of your units was hurt by enemy Scythed Chariot.', 'Unit damaged', pCity:GetX(), pCity:GetY())
+					end
 				end
 			end
 		end

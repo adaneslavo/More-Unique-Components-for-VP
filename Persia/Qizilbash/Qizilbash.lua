@@ -39,11 +39,13 @@ function QizilbashAgitator(iPlayer)
 					pPlayer:ChangeGoldenAgeProgressMeter(iGain2)
 					pPlayer:ChangeGold(iGain2)
 					
-					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-				
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+"..iGain1.." [ICON_PEACE] Safavi Agitator[ENDCOLOR]", 1)
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iGain2.." [ICON_GOLD] Safavi Agitator[ENDCOLOR]", 1.5)
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_LIGHT_GREY]+"..iGain2.." [ICON_GOLDEN_AGE] Safavi Agitator[ENDCOLOR]", 2)	
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+					
+						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+"..iGain1.." [ICON_PEACE] Safavi Agitator[ENDCOLOR]", 1)
+						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iGain2.." [ICON_GOLD] Safavi Agitator[ENDCOLOR]", 1.5)
+						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_LIGHT_GREY]+"..iGain2.." [ICON_GOLDEN_AGE] Safavi Agitator[ENDCOLOR]", 2)
+					end
 				end
 			end
 		end

@@ -59,7 +59,7 @@ function DhanurvidyaCultureGain(iPlayer, iUnit)
 		pPlayer:ChangeJONSCulture(iChange)
 		pPlayer:ChangeFaith(iChange)
 
-		if pPlayer:IsTurnActive() then
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 		
 			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+ "..iChange.." [ICON_CULTURE] Dhanurvidya[ENDCOLOR]", 1)

@@ -17,10 +17,6 @@ function KhopeshFatigue(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAtta
 			if iDefenderFinalDamage < iDefenderMaxHP then
 				if not pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1) then	
 					pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1, true)
-
-					local vUnitPosition = PositionCalculator(pDefendingUnit:GetX(), pDefendingUnit:GetY())
-			
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_LIGHT_GREY]Fatigue[ENDCOLOR]", 1)
 				end
 			end
 		end
@@ -29,10 +25,18 @@ end
 
 function RemoveFatigue(iPlayer)
 	local pPlayer = Players[iPlayer]
-	
+		
 	for pUnit in Players[iPlayer]:Units() do
-		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1) and pUnit:GetFortifyTurns() > 0 then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1, false)
+		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1) 
+			if pUnit:GetFortifyTurns() > 0 then
+				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1, false)
+			else
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+				
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_LIGHT_GREY]Fatigue[ENDCOLOR]", 1)
+				end
+			end
 		end
 	end
 end

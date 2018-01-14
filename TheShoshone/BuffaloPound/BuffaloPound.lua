@@ -35,9 +35,11 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 				tPossibleSpots[iChosenPlot]:SetResourceType(GameInfoTypes.RESOURCE_BISON, 1)
 				bIsBison = true
 
-				local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 				
-				Events.AddPopupTextEvent(vPlotPosition, "[COLOR_SELECTED_TEXT]Bison from Buffalo Pound[ENDCOLOR]", 1)
+					Events.AddPopupTextEvent(vPlotPosition, "[COLOR_SELECTED_TEXT]Bison from Buffalo Pound[ENDCOLOR]", 1)
+				end
 			end
 			
 			if not bIsBison then
@@ -60,10 +62,12 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 				if #tPossibleSpots > 0 then
 					iChosenPlot = Game.Rand(#tPossibleSpots - 1, "") + 1
 					tPossibleSpots[iChosenPlot]:SetResourceType(GameInfoTypes.RESOURCE_BISON, 1)
-
-					local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+					
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vPlotPosition = PositionCalculator(tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 				
-					Events.AddPopupTextEvent(vPlotPosition, "[COLOR_SELECTED_TEXT]Bison from Buffalo Pound[ENDCOLOR]", 1)
+						Events.AddPopupTextEvent(vPlotPosition, "[COLOR_SELECTED_TEXT]Bison from Buffalo Pound[ENDCOLOR]", 1)
+					end
 				end
 			end
 		end

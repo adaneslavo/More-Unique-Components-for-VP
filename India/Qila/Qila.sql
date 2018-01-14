@@ -48,6 +48,12 @@ VALUES		('BUILDING_INDIA_QILA',	'YIELD_CULTURE',	3),
 INSERT INTO Building_TechEnhancedYieldChanges 	
 			(BuildingType,			YieldType,			Yield)
 VALUES		('BUILDING_INDIA_QILA',	'YIELD_TOURISM',	3);
+------------------------------
+-- Building_ImprovementYieldChanges
+------------------------------
+INSERT INTO Building_ImprovementYieldChanges
+			(BuildingType, 				ImprovementType, 		YieldType, 			Yield)
+VALUES		('BUILDING_INDIA_QILA', 	'IMPROVEMENT_QUARRY',	'YIELD_PRODUCTION', 1);
 --==========================================================================================================================
 --==========================================================================================================================
 
