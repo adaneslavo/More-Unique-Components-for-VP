@@ -51,7 +51,7 @@
 			<Text>Invincible</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP">
-			<Text>+2 XP if unit[COLOR_POSITIVE_TEXT]is inside Enemy Territory at full Health[ENDCOLOR]_TEXT]. Lost after unit upgrade.</Text>
+			<Text>+2 XP if unit[COLOR_POSITIVE_TEXT]is inside Enemy Territory at full Health[ENDCOLOR].[NEWLINE]+10% [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. Lost after unit upgrade.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL">
 			<Text>Appearances</Text>
@@ -66,7 +66,7 @@
 			<Text>Unique Renaissance Era Naval Unit. A Slow, but incredibly dangerous ship. Adept at extended sieges and engaging other ships[NEWLINE][NEWLINE]Generates Great Admirals more quickly[NEWLINE][NEWLINE]Only the Spanish may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY">
-			<Text>The Armada is the a powerful ship in its era. You are unlikely to chase down an enemy, but these ships can blockade cities and force an engagement. Maneuver your Armada into the borders of cities and settle in for a long siege. Your units will amass more and more experience, becoming more dangerous while they wait for a proper fight.</Text>
+			<Text>The Armada is a powerful ship in its era. You are unlikely to chase down an enemy, but these ships can blockade cities and force an engagement. Maneuver your Armada into the borders of cities and settle in for a long siege. Your units will amass more and more experience, becoming more dangerous while they wait for a proper fight.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_TEXT">
 			<Text>
@@ -121,7 +121,7 @@
 			<Text>Mingghan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN_HELP">
-			<Text>+5 XP [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].</Text>
+			<Text>+5 XP [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].[NEWLINE]+20% [ICON_STRENGTH] Combat Strength if unit is standing [COLOR_POSITIVE_TEXT]on Pillaged Tile[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE">
 			<Text>Massacre</Text>
@@ -160,10 +160,10 @@
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
-			<Text>+2 [ICON_CULTURE] Culture, +2 [ICON_PEACE] Faith and +10 [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this city, and ranged units in the city can attack twice[NEWLINE][NEWLINE]Only Polish may build it.</Text>
+			<Text>+2 [ICON_CULTURE] Culture, +2 [ICON_PEACE] Faith and +10 [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this city, and ranged units in the city have increased attack.[NEWLINE][NEWLINE]Only Polish may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
-			<Text>Unique Polish replacement for the Armory. Must have built Walls in the city. In addition to the normal bonuses provided by the Armory, this building provides Culture, Faith, and increased city defense. Ranged and Siege garrisoned in the city can attack twice in a turn.</Text>
+			<Text>Unique Polish replacement for the Armory. Must have built Walls in the city. In addition to the normal bonuses provided by the Armory, this building provides Culture, Faith, and increased city defense. Ranged and Siege garrisoned in the city have increased attack.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_TEXT">
 			<Text>	
@@ -227,7 +227,7 @@
 			<Text>Buffalo Pound</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_HELP">
-			<Text>Unique Shoshone replacement for the Well. [NEWLINE]Increases [ICON_FOOD] Food from nearby [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle and [ICON_RES_BISON] Bison and a [ICON_RES_BISON] Bison resource apprears near the City[NEWLINE]Additinonal [ICON_FOOD] Food for every 4 [ICON_CITIZEN] Population in City.[NEWLINE][NEWLINE]Can be built anywhere, including cities with a Water Mill.</Text>
+			<Text>Unique Shoshone replacement for the Well. [NEWLINE]Increases [ICON_FOOD] Food from nearby [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle and [ICON_RES_BISON] Bison and a [ICON_RES_BISON] Bison resource appears near the City[NEWLINE]Additional [ICON_FOOD] Food for every 4 [ICON_CITIZEN] Population in City.[NEWLINE][NEWLINE]Can be built anywhere, including cities with a Water Mill.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_STRATEGY">
 			<Text>The Buffalo Pound is the Shoshone unique building, replacing the Well.  In addition to the normal bonuses of the Well, the Buffalo Pound provides food from Horses, Cattle, Sheep and Bison.  It can also be constructed in cities with access to fresh water, even if a Water Mill has already been built there.</Text>
@@ -345,7 +345,7 @@
 			<Text>E-temenanki</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_HELP">
-			<Text>Requires Monument in City.[NEWLINE]+30% [ICON_GREAT_PEOPLE] Great Person rate in City. Receive +15% of the City's [ICON_CULTURE] Culture output in in the city as [ICON_CULTURE] Culture whenever a citizen is born, and 50 [ICON_GOLDEN_AGE] Golden Age Points as an intant boost whenever a policy is unlocked, scaling with Era. [NEWLINE][NEWLINE]Receive 15% of the City's [ICON_RESEARCH] Science and [ICON_FOOD] Food output as an instant boost in the City whenever you invest in a building. All monuments gain +1 [ICON_RESEARCH] Science and all Shrines gain +2 [ICON_FOOD] Food. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
+			<Text>Requires Monument in City.[NEWLINE]+30% [ICON_GREAT_PEOPLE] Great Person rate in City. Receive +15% of the City's [ICON_CULTURE] Culture output in in the city as [ICON_CULTURE] Culture whenever a citizen is born, and 50 [ICON_GOLDEN_AGE] Golden Age Points as an instant boost whenever a policy is unlocked, scaling with Era. [NEWLINE][NEWLINE]Receive 15% of the City's [ICON_RESEARCH] Science and [ICON_FOOD] Food output as an instant boost in the City whenever you invest in a building. All monuments gain +1 [ICON_RESEARCH] Science and all Shrines gain +2 [ICON_FOOD] Food. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_STRATEGY">
 			<Text>E-temenanki is the Babylonian Unique Wonder, replacing the National Monument. In addition to the normal bonuses of a National Monument, E-temenanki awards Food and Science whenever a building is invested on empire, so invest in buildings early and often.  All monuments in empire gain +1 Science and all Shrines gain +2 Food.</Text>
@@ -375,7 +375,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_TEXT">
 			<Text>
-				Literally meaning "Big Building", the Fale Tele is typical of Samoan architecture. By decree of Tagaloa-lagi, the Samoan creator god, all dwellings were to be of circular design, in imitation of the dome of the heavens and the horizon. Fale Tele were the largest of Samoan buildings, designed to act as meeting places for chief councils as well as family gatherings, celebrations and ceremonies. Regular dwellings were constructed behind the Fale Tele, while a carefully maintained lawn spread in front as a larger gathering and social space for all villagers. [NEWLINE][NEWLINE]
+				Literally meaning "Big Building", the Fale Tele is typical of Samoan architecture. By decree of Tagaloa-lagi, the Samoan creator god, all dwellings were to be of circular design, in imitation of the dome of the heavens and the horizon. Fale Tele were the largest of Samoan buildings, designed to act as meeting places for chief councils as well as family gatherings, celebrations and ceremonies. Regular dwellings were constructed behind the Fale Tele, while a carefully maintained lawn spread in front as a larger gathering and social space for all villagers.[NEWLINE][NEWLINE]
 				Samoan culture’s emphasis on openness is reflected in their architecture, with its circular layouts and no walls. Fales have become emblematic of wider Polynesian architecture, with small fale, or faleo'o, becoming ubiquitous on beaches throughout the Pacific.
 			</Text>
 		</Row>
@@ -389,7 +389,7 @@
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOURCE_ROME_FIGS_TEXT">
-			<Text></Text>
+			<Text>Native to the Middle East and western Asia, Figs have been cultivated since ancient times, being one of the oldest plants cultivated by humans. Figs were widespread in Ancient Greece, and spread to Rome where they formed a staple fruit for the lower classes. Figs are easy to preserve and are well-suited to forming condiments due to their high sugar content. It is perhaps this association with the common folk which saw figs fall from fashion in later periods, being associated with simplicity and poverty.</Text>
 		</Row>
 
 		<!-- Flax -->
@@ -401,16 +401,16 @@
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOURCE_EGYPT_FLAX_TEXT">
-			<Text>Flax is a food and fiber crop best known for its use in the production of linen. The crop was first domesticated in the Fertile Crescent and was cultivated extensively in Egypt, where the fabric became tightly bound to the material culture. Linen has a smooth texture, high lustre, and is cool to the touch. These characteristics linked it to religious and ceremonial purity within Egyptian rituals. Priests wore linen fabrics exclusively, and mummies were wrapped in linen in preparation for the afterlife. Today, more durable textiles like cotton have largely replaced linen as a fabric, but the flax seed is still widely used for food and cooking oil.</Text>
+			<Text>Flax is a food and fiber crop best known for its use in the production of linen. The crop was first domesticated in the Fertile Crescent and was cultivated extensively in Egypt, where the fabric became tightly bound to the local culture. Linen has a smooth texture, high lustre, and is cool to the touch. These characteristics linked it to religious and ceremonial purity within Egyptian rituals. Priests wore linen fabrics exclusively, and mummies were wrapped in linen in preparation for the afterlife. Today, more durable textiles like cotton have largely replaced linen as a fabric, but the flax seed is still widely used for food and cooking oil.</Text>
 		</Row>
 		
 		<!-- Grande Ecole -->
 		<!-- Created by adan_eslavo 10/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE">
-			<Text>Grande École</Text>
+			<Text>Grande Ecole</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_HELP">
-			<Text>Unique French replacement for the Public School.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science and +1 [ICON_PRODUCTION] Production for every 2 [ICON_CITIZEN] Citizens in the City. +3 [ICON_PRODUCTION] Production for Scientists and +3 [ICON_RESEARCH] Science for Engineers in this City. Greatly Reduces [ICON_HAPPINESS_4] Unhappiness generated by Illiteracy. Allows Archaeologists to be built in this city. +2 [ICON_RESEARCH] Science and +2 [ICON_PRODUCTION] Production at Computers. Requires University in City.</Text>
+			<Text>Unique French replacement for the Public School.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science and +1 [ICON_PRODUCTION] Production for every 2 [ICON_CITIZEN] Citizens in the City. +3 [ICON_PRODUCTION] Production for Scientists and +3 [ICON_RESEARCH] Science for Engineers in this City. Greatly Reduces [ICON_HAPPINESS_4] Unhappiness generated by Illiteracy. Allows Archaeologists to be built in this city. +2 [ICON_RESEARCH] Science and +2 [ICON_PRODUCTION] Production at Computers. [NEWLINE]Requires University in City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_STRATEGY">
 			<Text>The Grande Ecole is the French unique building, replacing the Public School. In addition to the normal bonuses of a Public School, The Grande Ecole increases production for every citizen in the City, has more Scientist Specialist slots, and helps to generate Great Engineers. In addition, all Scientists generate more Production, and all Engineers generate more Science, making any city with a Grande Ecole a powerhouse of scientific and technical achievement.</Text>
@@ -418,7 +418,7 @@
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_TEXT">
 			<Text>
 				The French Grande Ecole are institutions of higher learning separate from the more conventional university system. These schools are highly selective, taking only the best and brightest French graduates, and barring entry by foreigners. Once accepted, students studying at a Grande Ecole are considered public servants, paying little to no entrance fees and even receiving a monthly government stipend. [NEWLINE][NEWLINE]
-				The origins of the Grande Ecoles lie in the French Revolution, where several military and technical ecoles normale superieure were established by distinguished French mathematicians and intellectuals. The idea was to open education to individuals based strictly on merit. By the 19th century, a number of ecoles had sprung up for a wide array of disciplines, including natural sciences, business and the humanities. The Grande Ecoles continue to have a deep impact on French society. Approximately 10% of all Native-born French citizens graduate from these schools, including many of France's most renowned politicians, philosophers, scientists, and executives.
+				The origins of the Grande Ecoles lie in the French Revolution, where several military and technical ecoles normale superieure were established by distinguished French mathematicians and intellectuals. The idea was to open education to individuals based strictly on merit. By the 19th century a number of ecoles had sprung up for a wide array of disciplines including natural sciences, business and the humanities. The Grande Ecoles continue to have a deep impact on French society. Approximately 10% of all Native-born French citizens graduate from these schools, including many of France's most renowned politicians, philosophers, scientists, and executives.
 			</Text>
 		</Row>
 		
@@ -465,13 +465,14 @@
 			<Text>Holkan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_HELP">
-			<Text></Text>
+			<Text>Unique Ancient Era Unit, only the Maya may build it. This unit can move faster than the Pathfinder it replaces, and has no penalty against Barbarians. Heals 30HP every 20 turns, and gains [ICON_RESEARCH] science with every ruin.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_STRATEGY">
-			<Text></Text>
+			<Text>The Holkan is a quick and independent scout for the Maya. Because of their increased speed, the Holkan explores more quickly, and gains experience more easily than the Pathfinders. Their increased power against barbarians and ability to heal makes Holkans capable of ranging farther and taking more risks than a normal scout. Use these units to grab ruins quickly, and gain an early scientific edge.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_TEXT">
-			<Text></Text>
+			<Text>The Maya were often idealized as a peaceful civilization by western Mayanist scholars, yet the Maya were no strangers to war. Unlike the wars of Europe and Asia, however, the Maya engaged in a highly ritualized form of combat, based on astrological and religious concerns as much as political ones. Squabbles over land, influence and resources were common, but the capture of human sacrifices was another factor leading to war. 
+				[NEWLINE][NEWLINE]The nobility and priesthood of Mayan cities kept a monopoly on violence, making all but the most desperate of wars strictly within the affairs of the upper class. Weapons made of obsidian and chert were stockpiled within the palaces of lords and kings, who would call upon their family to lead them. The leader of such raids were known as Holkan.</Text>
 		</Row>
 		
 		<!-- Great Turkish Bombard -->
@@ -486,7 +487,7 @@
 			<Text>Sahi Topu</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU_HELP">
-			<Text>Unit hurts itself [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR]. +10 HP [COLOR_POSITIVE_TEXT]on Heal inside Friendly Territory[ENDCOLOR]. Lost after unit upgrade.</Text>
+			<Text>Unit deals 20 damage to itself [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR].[NEWLINE]+10 HP [COLOR_POSITIVE_TEXT]on Heal inside Friendly Territory[ENDCOLOR].[NEWLINE]Lost after unit upgrade.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_1">
 			<Text>Basilica</Text>
@@ -523,14 +524,16 @@
 			<Text>Goedendag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_HELP">
-			<Text></Text>
+			<Text>Unique Medieval Era Melee Unit. A cheap and effective unit in groups, provides a combat boost to all units adjacent to it and has increased [ICON_STRENGTH] Strength when standing on a Luxury Resource tile. Stagnates growth in cities while built. Excess food contributes to production.[NEWLINE]Only the Dutch may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_STRATEGY">
-			<Text></Text>
+			<Text>The Goedendag is an odd unit, but effective in groups. While not as effective against cavalry as the Pikeman, the Goedendag provides increased attack against all units adjacent to it, and has additional combat strength if standing on a luxury resource. These units can be built very quickly, so an army can be raised in the event of a surprise war.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_TEXT">
 			<Text>
-				A goedendag was a weapon originally used by the militias of Medieval Flanders in the 14th century, notably during the Franco-Flemish War. The goedendag was essentially a combination of a club with a spear. Its body was a wooden staff roughly three to five feet (92 cm to 150 cm) long with a diameter of roughly two to four inches (4 cm to 10 cm). It was wider at one end, and at this end a sharp metal spike was inserted by a tang.[NEWLINE][NEWLINE]The weapon's name "goedendag" is exclusively derived from French descriptions of the Flemish weapon. Guillaume Guiart mentions "... a weapon called godendac", which happens to be cognate with the universal Dutch-language greeting "good day", supposedly a reference to the Bruges Matins massacre in 1302, at which the guildsmen of Bruges purportedly took over the city by greeting people in the streets, and murdering anyone who answered with a French accent. This derivation of the name may however be spurious. The Flemish themselves referred to the weapon as a "spiked staff" (gepinde staf). Another theory is that the "dac" or "dag" is related to Germanic root dagger or dolk, so instead of "good day" it may have meant "good dagger".[NEWLINE][NEWLINE]The weapon was used to great effect by the guildsmen of Flanders' wealthy cities against the French knights at the Battle of the Golden Spurs near Kortrijk (Courtrai) on 11 July 1302. The goedendag was frequently seen in the hands of Flemish militia in contemporary depictions of the battle, such as the carvings on the Courtrai Chest, a 14th-century wooden chest, and can also seen on a now-faded fresco from the Leugemeete in Ghent.[NEWLINE][NEWLINE]Exactly how the weapon was used is a source of debate. Contemporary illustrations show it being used as a club, but the contemporary chronicler Guillaume Guiart, speaking of the battle of Courtrai, states, "each held his godendart raised against the French, the iron as one meets a wild boar" which suggests it was first used as a spear to meet a charge, then a club as the enemy was halted. The goedendag was probably set in the ground secured by the fighter's foot and aimed with both hands. The thicker knob under the spike, a safeguard against the horse impaling itself and then going on to crash into the defender, served the same purpose as the cross bar on a boar-spear. The military historian Kelly DeVries asserts that "its chief function was to bring down a knight from his horse". Verbruggen describes the role of the goedendag thus: "They were placed between the pikemen, or in the second rank, so that with their shorter, very heavy weapons they could put the horses out of action".
+				A goedendag is a four-foot long club with a spear at its tip, originally used by the militias of Medieval Flanders, notably during the Franco-Flemish War. The weapon was christened "goedendag" by the French, a cognate with the universal Dutch-language greeting "good day". The name is supposedly a reference to the Bruges Matins massacre in 1302, at which the guildsmen of Bruges purportedly took over the city by greeting people in the streets, and murdering anyone who answered with a French accent.[NEWLINE][NEWLINE]
+				The weapon was used to great effect by the guildsmen of Flanders' wealthy cities against the French knights, but exactly how the weapon was used is a source of debate. Contemporary illustrations show it being used as a club, but the contemporary sources describe its first use as a spear to meet a charge, then a club as the enemy was halted. Flemish Goedendags marked the beginning of the end for heavy cavalry in western Europe, and the dawn of an "Infantry Revolution" where common militia were now a credible threat. The stunning victory of common men over foreign tyrants became a wellspring of romantic nationalism for the Low Countries.[NEWLINE][NEWLINE]
+				"each held his godendart (sic) raised against the French, the iron as one meets a wild boar"[NEWLINE]- Guillaume Guiart, a contemporary account describing the battle of Courtrai, 1302 A.D.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG">
@@ -540,7 +543,7 @@
 			<Text>+10% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR]. +10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to all adjacent Friendly Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT">
-			<Text>Assistance</Text>
+			<Text>Golden Spurs</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT_HELP">
 			<Text>+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from adjacent Friendly Unit[ENDCOLOR].</Text>
@@ -570,7 +573,9 @@
 			<Text>The Hippodrome is the Byzantine Unique Wonder, replacing the Circus Maximus. In comparison to the Circus Maximus, The Hippodrome greatly increases Gold and Culture yields during 'We Love the King Days' and begins a 'We Love the King Day' on completion. The Palace gains Culture and Gold, and all Arenas in the empire receive gold, while circuses receive Culture, and Horses get both. In addition to the 'We Love the King Day', a unique event is triggered on completion, giving your choice of additional bonuses. Choose wisely!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_TEXT">
-			<Text>Something Something Nika Riots.</Text>
+			<Text>The Hippodrome was a chariot racing track and the beating heart of Byzantine social and political life. Located immediately next to the palace, the track was built by Constantine shortly after moving his capital to the city. The track was U-shaped, with ten monuments lining the center. Though slightly smaller in footprint than the Circus Maximus in Rome, the Hippodrome was adorned with art and treasures from all corners of the empire.[NEWLINE][NEWLINE]
+			Not just a pastime of the rich, the chariot races become the one place where the common people could see and interact with the emperor in a single venue. Commoners often took this opportunity to begin chants for political or religious reforms during sporting events. Four political parties, or demes, existed within Constantinople which each sponsored a different racing team.  These were the Blues, the Whites, the Greens and the Reds. Enormous sums of money were wagered on the rivalries between these teams, which became further heated by the religious, societal and political leanings which each team came to represent.	One such feud in particular would come to overshadow them all: the Nika riots.[NEWLINE][NEWLINE] 
+			During the reign of Justinian I (an ardent supporter of the Blues), a dispute arose concerning the sentencing of two hooligans who had been arrested for murder from a prior riot. The sentencing of these men unified the Blues and the Greens against Justinian in a terrible mob, and disgruntled nobles seized the opportunity to try to depose him in revenge for the recently levied taxes against the rich Though at first he considered fleeing Constantinople, Justinian rallied his loyal generals to corral the rioters into the Hippodrome, where they were butchered by royal guardsmen and Gothic mercenaries. By the time the Nika riots had ended, half of Constantinople had been burned down and 30,000 rioters and conspirators lay dead; the most violent riot in world history.</Text>
 		</Row>
 
 		<!-- Kampong -->
@@ -600,19 +605,19 @@
 			<Text>Khopesh</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH_TEXT">
-			<Text>Khopesh is the Egyptian name of the Canaanite "sickle-sword", in Assyrian known as sappara. Its origins can be traced back to Sumer of the third millennium BC.[NEWLINE][NEWLINE]A typical khopesh is 50–60 cm (20–24 inches) in length, though smaller examples do also exist. This blade was designed for hooking an opponent's shield or disarming them. These weapons changed from bronze to iron in the late period.[NEWLINE][NEWLINE]The blade is only sharpened on the outside portion of the curved end. The khopesh evolved from the epsilon or similar crescent shaped axes that were used in warfare. Note, however, that the khopesh is not an axe. Unlike an axe, the khopesh did not make push-cuts, but rather slashes, like a sabre. The khopesh went out of use around 1300 BC.</Text>
+			<Text>Khopesh is the Egyptian name of the Canaanite "sickle-sword", in Assyrian known as sappara. Its origins can be traced back to Sumer of the third millennium BC. A typical khopesh is 50–60 cm (20–24 inches) in length, though smaller examples do also exist. This blade was designed for hooking an opponent's shield or disarming them. These weapons changed from bronze to iron in the late period.[NEWLINE][NEWLINE]The blade is only sharpened on the outside portion of the curved end. The khopesh evolved from the epsilon or similar crescent shaped axes that were used in warfare. Note, however, that the khopesh is not an axe. Unlike an axe, the khopesh did not make push-cuts, but rather slashes, like a sabre. The khopesh went out of use around 1300 BC.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH_STRATEGY">
 			<Text>The Khopesh is the unique Egyptian replacement for the Spearman. It's a strong early unit that has an edge in direct combat. However, unlike the Spearman it replaces, it does not have a combat bonus against mounted units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH_HELP">
-			<Text>Strong, front-line land Unit of the Ancient Era. Only Egypt may build it. It has the Fatigue promotion, which temporarily reduces the combat power of a unit that it attacks.</Text>
+			<Text>Strong, front-line land Unit of the Ancient Era. Only Egypt may build it. Deals increased damage vs heavily damaged units, and has the Skillful promotion, which temporarily reduces the combat power of a unit that it attacks.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE">
-			<Text>Skillful Warrior</Text>
+			<Text>Skillful</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit gets -20% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]until it Fortifies[ENDCOLOR].</Text>
+			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit gets -20% [ICON_STRENGTH] [COLOR_POSITIVE_TEXT]until it Fortifies[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1">
 			<Text>Fatigue</Text>
@@ -681,13 +686,13 @@
 			<Text>Sabum Kibitum</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BABYLON_KIBITUM_HELP">
-			<Text>Unique Ancient Era Unit.  Only the Babylonians may build it. This unit is stronger and faster than the spearman it replaces. Receives additonal [ICON_STRENGTH] Combat Strength for every 2 levels and has the [COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR] Promotion for free.</Text>
+			<Text>Unique Ancient Era Unit.  Only the Babylonians may build it. This unit is stronger than the spearman it replaces. Receives additional [ICON_STRENGTH] Combat Strength for every 2 levels and has the [COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR] Promotion for free.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BABYLON_KIBITUM_STRATEGY">
-			<Text>A soldier to stand the test of time. The Khibitum is one of the strongest units in its era, but its true strength lies in how it gains more power from experience than normal units. Keep these soldiers alive, and they will form an indispensable core for your army.</Text>
+			<Text>A soldier to stand the test of time. The Khibitum is not the strongest unit in its era, but its true strength lies in how it gains more power from experience than normal units. Keep these soldiers alive, and they will form an indispensable core for your army.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BABYLON_KIBITUM_TEXT">
-			<Text>Hamm ur rabi? I thought Jews couldn't have pig!</Text>
+			<Text>The Babylonians were descended from semi-nomadic Amorite and Akkadian tribes from upper Mesopotamia. With the collapse of the Sumerian and Akkadian kingdoms, these Amorite tribes poured into Mesopotamia unopposed and established new dynasties. While in many respects these conquerors assimilated into Sumerian culture, their armies retained the toughness of nomadic peoples.[NEWLINE][NEWLINE]The Sabum Kibitum were the heavy troops of the Babylonians and one of the earliest examples of career soldiers in history. Assembled from the royal guard and city residents, Sabum Kibitum were armed with long and short spears, javelins and bows to form a disciplined and flexible fighting force.</Text>
 		</Row>
 
 		<!-- Klepht -->
@@ -705,13 +710,13 @@
 			<Text>Unique Industrial Era Unit.  Only the Greeks may build it. This unit is slightly weaker than the Gatling Gun it replaces and does not have the [COLOR_RED]Covering Fire I[ENDCOLOR] Promotion, but can move quickly through hills and can move after attacking. Receives the [COLOR_POSITIVE_TEXT]Philhellenism[ENDCOLOR] Promotion for free.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_STRATEGY">
-			<Text>A quick and elusive guerilla fighter. The Klepht is not as powerful as the Gatling Gun it replaces, but can move quickly through hills, even after attacking. This unit also gains food and production for every city-state ally on kills.</Text>
+			<Text>A quick and elusive guerilla fighter. The Klepht is not as powerful as the Gatling Gun it replaces, but can move quickly through hills, even after attacking. This unit also gains gold and production for every city-state ally every time it attacks a unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_TEXT">
 			<Text>
 				Bandits and mountainfolk, turned anti-Ottoman insurgents and freedom fighters, The Klephts were the bedrock upon which the modern Greek army was formed. Together with the men originally hired to capture them, the Armatoloi, the Klephts formed the "yeast of liberty", and the first hope for Greek independence after more than four centuries of Ottoman occupation. [NEWLINE][NEWLINE]
 				Undisciplined and flighty as one would expect of brigands, Klephts waged an effective guerilla campaign against the much larger and well-armed Ottoman forces sent to subdue them.  Massacres on both sides of the conflict were carried out, but Western European sympathy fell heavily in favor of the Greeks. The unbridled cruelty of the Muslim Ottomans outraged Europe’s citizenry, who raised supplies, food and even soldiers to fight for a Hellenic independence. [NEWLINE][NEWLINE]
-				After 8 years Ottoman forces had mostly succeeded in crushing the revolt, but where Greek soldiers had failed poets and propagandists had succeeded brilliantly. French, British and Russian governments each sent a fleet in defense of the Greek islands, in response to popular demand for intervention. In the face of such overwhelming force, the Ottomans sued for peace and liberated Greece. After more than 2,000 years under the boots of Macedonians, Romans and Ottomans, The Greek homeland was at last free, and unified as one people for the first time in history.
+				After 8 years Ottoman forces had mostly succeeded in crushing the revolt, but where Greek soldiers had failed poets and propaganda had succeeded brilliantly. French, British and Russian governments each sent a fleet in defense of the Greek islands, in response to popular demand for intervention. In the face of such overwhelming force, the Ottomans sued for peace and liberated Greece. After more than 2,000 years under the boots of Macedonians, Romans and Ottomans, The Greek homeland was at last free; unified as one people for the first time in history.
 			</Text>
 		</Row>
 		
@@ -736,7 +741,7 @@
 			<Text>Unit takes an additional 20 "bleed" damage [COLOR_POSITIVE_TEXT]at the start of its turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_3_ON_UNIT">
-			<Text>Massive Bleeding</Text>
+			<Text>Hemorrhaging</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_3_ON_UNIT_HELP">
 			<Text>Unit takes an additional 30 "bleed" damage [COLOR_POSITIVE_TEXT]at the start of its turn[ENDCOLOR].</Text>
@@ -745,14 +750,14 @@
 			<Text>Koa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_HELP">
-			<Text>Unique Ancient Era Unit, only Polynesia may build it. This unit is slightly stronger than the Pathfinder it replaces, has the [COLOR_GREEN]Amphibious[ENDCOLOR] promotion, and deals an additional 10 damage to units at the beginning of their turn.</Text>
+			<Text>Unique Classical Era Unit, only Polynesia may build it. This unit is slightly stronger than the Scout it replaces, has the [COLOR_GREEN]Amphibious[ENDCOLOR] promotion, and deals an additional 10 damage to units at the beginning of their turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_STRATEGY">
-			<Text>The Koa is an effective early scout, able to hold its own against barbarians. It is stronger than the Pathfinder, and can fight equally well across rivers and while embarked. This unit also deals an additional 10 'bleed' damage to enemies it attacks at the beginning of the enemy's turn, making them effective at clearing barbarians and preventing healing.</Text>
+			<Text>The Koa is an effective early scout, able to hold its own against barbarians. It is stronger than the Scout, and can fight equally well across rivers and while embarked. This unit also deals an additional 10 'bleed' damage to enemies it attacks at the beginning of the enemy's turn, making them effective at clearing barbarians and preventing healing.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_TEXT">
 			<Text>
-				Deadly warriors from the islands of Hawai'i, Koa are named after the Koa tree, from which most of their weapons are constructed. These warriors were trained extensively in Kapu Ku'ialua, a traditional Hawai'ian martial art specializing in weaponry and the focusing of mana into bone-shattering attacks. [NEWLINE][NEWLINE]
+				Deadly warriors from the islands of Hawai'i, Koa are named after the Koa tree, from which most of their weapons are fashioned. These warriors were trained extensively in Kapu Ku'ialua, a traditional Hawai'ian martial art specializing in weaponry and the focusing of mana into bone-shattering attacks. [NEWLINE][NEWLINE]
 				In battle, Koa warriors were well-versed in many weapons, including knuckle-dusters, slings, and garrotes, but were also capable hand-to-hand fighters. More traditional melee weapons were also used, including wooden daggers, clubs, staves, and paddles. These weapons would occasionally be modified by sewing shark teeth along their edges, creating devastating serrated weapons called 'Leiomano'. These weapons were used similarly to the obsidian-tipped Macuahuitl of Central America.
 			</Text>
 		</Row>
@@ -763,14 +768,16 @@
 			<Text>Longship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_HELP">
-			<Text>Early naval unit. Starts with 20 [ICON_STRENGTH] CP instead of the 25 of the Caravel, which it replaces, but is available at Physics. Starts with the [COLOR_GREEN]Viking Exploration[ENDCOLOR], [COLOR_GREEN]Can move after attacking[ENDCOLOR], and [COLOR_GREEN]Medic I[ENDCOLOR] Promotions. Only Denmark may build it.</Text>
+			<Text>Early naval unit. Starts with 20 [ICON_STRENGTH] CP instead of the 25 of the Caravel, which it replaces, but is available at Physics. Starts with the [COLOR_GREEN]Viking Exploration[ENDCOLOR] promotion, [COLOR_GREEN]Can move after attacking[ENDCOLOR], and [COLOR_GREEN]Medic I[ENDCOLOR] Promotions. Only Denmark may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_STRATEGY">
-			<Text>Danish Langskib is an early ship unit which allow Denmark to have early sea control. This allows Denmark to begin scouting the far seas earlier than the other players to prepare future waves of colonizations, defend your abroad colonies and allows raids to last longer by providing efficient healing at sea and performing hit-and-run tactics.</Text>
+			<Text>The Danish Longship is an early ship unit which allow Denmark to have early sea control. This allows Denmark to begin scouting the far seas earlier than the other players to prepare future waves of colonization, defend your colonies abroad and provides support to raids with its bonuses to healing at sea and performing hit-and-run tactics.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_TEXT">
 			<Text>
-				Longships were a type of ship invented and used by the Norsemen (commonly known as the Vikings) for trade, commerce, exploration, and warfare during the Viking Age.[NEWLINE][NEWLINE]The longship's design evolved over many centuries, beginning in the Stone Age with the invention of the umiak and continuing up until the 6th century with clinker-built ships like Nydam and Kvalsund.[NEWLINE][NEWLINE]The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today.[NEWLINE][NEWLINE]The particular skills and methods employed in making longships are still used worldwide, often with modern adaptations.[NEWLINE][NEWLINE]They were all made out of wood, with cloth sails (woven wool) and had numerous details and carvings on the hull.
+				Longships were a type of ship invented and used by the Norsemen (commonly known as the Vikings) for trade, commerce, exploration, and warfare during the Viking Age. The longship's design evolved over many centuries, beginning in the Stone Age with the invention of the umiak and continuing up until the 6th century with clinker-built ships like Nydam and Kvalsund, appearing in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today.
+				[NEWLINE][NEWLINE]Longships were particularly notable for their relatively quick speed and light construction. The ships were sturdy and reliable at sea, yet light enough to be carried onto shore or even tipped over as a makeshift shelter for sailors. The ability to move quickly in and out of shore was invaluable during the many raids for which the Vikings would become infamous.
+				[NEWLINE][NEWLINE]The particular skills and methods employed in making longships are still used worldwide, often with modern adaptations. They were all made out of wood, with woven wool sails, and had numerous details and carvings on the hull.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION">
@@ -792,19 +799,21 @@
 			<Text>Latifundium</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP">
-			<Text></Text>
+			<Text>Available at Calendar, the Latifundium can be built on wheat, and any resource normally requiring a plantation. Yields [ICON_FOOD] Food, [ICON_CULTURE] Culture. [NEWLINE]Spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the latifundium after 10 turns, and the Figs tile is automatically claimed by Rome.[NEWLINE]Adjacent Farms receive +1 [ICON_PRODUCTION] Production and Adjacent Plantations Receive +1 [ICON_CULTURE] Culture.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT">
-			<Text></Text>
+			<Text>A latifundium was an expansive privately owned farm, enormous landed estates specializing in intensive agriculture. The first latifundia were accumulated from the spoils of war, confiscated from conquered peoples beginning in the early 2nd century BC in Magna Graecia (Southern Italy). Latifundia later expanded with conquest, to the Roman provinces of the Maghreb and in Hispania Baetica, in southern Spain.
+				[NEWLINE][NEWLINE]These estates depended on slave labor and serfs for their productivity, often supplied by the enslavement of the very peoples whose land had been taken. The Latifundia quickly started economic consolidation as larger estates achieved greater economies of scale, enjoyed by the political elite as they did not pay land taxes. Owners re-invested their profits by purchasing smaller neighbouring farms, since smaller farms had a lower productivity and could not compete, in an ancient precursor of agribusiness. As the small farms of the Roman peasantry were bought up by the wealthy and with their vast supply of slaves, the now landless peasantry were forced to find work in the cities of Rome, though often resorting to squatting and handouts.
+			[NEWLINE][NEWLINE]Latifundia became the template upon which later European nations would base their imperial experiments. The Spanish are most noticeable for patterning the Encomienda system after the late Roman Latifundia.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ROME_LATIFUNDIUM">
 			<Text>Build a [LINK=IMPROVEMENT_ROME_LATIFUNDIUM]Latifundium[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ROME_LATIFUNDIUM_HELP">
-			<Text></Text>
+			<Text>Constructs a Latifundium, which yields [ICON_FOOD] Food and [ICON_CULTURE] Culture.[NEWLINE]Spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the latifundium after 10 turns, and the Figs tile is automatically claimed by Rome.[NEWLINE]Adjacent Farms receive +1 [ICON_PRODUCTION] Production and Adjacent Plantations Receive +1 [ICON_CULTURE] Culture.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ROME_LATIFUNDIUM_REC">
-			<Text></Text>
+			<Text>It will increase [ICON_FOOD] Food and [ICON_CULTURE] Culture.[NEWLINE]Spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the latifundium after 10 turns, and the Figs tile is automatically claimed by Rome.[NEWLINE]Adjacent Farms receive +1 [ICON_PRODUCTION] Production and Adjacent Plantations Receive +1 [ICON_CULTURE] Culture.</Text>
 		</Row>
 
 		<!-- Legion (lua code in Ballista.lua)-->
@@ -840,13 +849,13 @@
 			<Text>Licorne</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIA_LICORNE_HELP">
-			<Text>Unique Renaissance Era Siege Unit. Only the Russians may build it. This Unit has a longer attack range, is more accurate than the Field Gun and has better mobility on the field.</Text>
+			<Text>Unique Industrial Era Siege Unit. Only the Russians may build it. This Unit has better mobility in enemy territory, can move after attacking, and is more effective against Unmounted Melee units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIA_LICORNE_STRATEGY">
-			<Text>Licorne is a siege unit that can change the course of battle. Innovatve construction allows attacks from greater distance and no penalty while attacking melee units. Is available earlier than the Field Gun.</Text>
+			<Text>Licorne is a siege unit that can change the course of battle. Innovative construction allows moving after attacks and no penalty while attacking melee units. Is available earlier than the Field Gun.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIA_LICORNE_TEXT">
-			<Text>Licorne is the french name given to the Russian 'unicorn' cannons, named for the distinctively shaped handles on the gun barrels. Devised in 1757, Licornes were a flexible design, easy to fire and transport and made in many variants of differing weights and power. Lighter designs are best remembered from their use as mobile horse artillery, a Russian innovation that would change the European theory of combined arms for the next century.</Text>
+			<Text>Licorne is the French name given to the Russian 'unicorn' cannons, named for the distinctively shaped handles on the gun barrels. Devised in 1757, Licornes were a flexible design, easy to fire and transport and made in many variants of differing weights and power. Lighter designs are best remembered from their use as mobile horse artillery, a Russian innovation that would change the European theory of combined arms for the next century.</Text>
 		</Row>
 		
 		<!-- Longbowman -->
@@ -888,10 +897,10 @@
 			<Text>Nilometer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_NILOMETER_STRATEGY">
-			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_FOOD] Food output, and boosts river tiles. It also provides access to the unique Flax bonus resource.</Text>
+			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_FOOD] Food and [ICON_PRODUCTION] Production output. It also provides access to the unique Flax bonus resource.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_NILOMETER_HELP">
-			<Text>+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. Each worked River tile provides +1 [ICON_FOOD] and +1 [ICON_GOLD] Gold, and Flood Plains provide an additional +1 [ICON_CULTURE] Culture.</Text>
+			<Text>+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the city.</Text>
 		</Row>
 
 		<!-- Oppidum -->
@@ -900,10 +909,10 @@
 			<Text>Oppidum</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP">
-			<Text></Text>
+			<Text>Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a +50% [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to a nearby Cities. Adjacent Improvements gain additional bonus yields</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
-			<Text>An oppidum is a large defended settlement associated with the Celtic late La Tène culture. In Iberia, they are usually referred to as Castro, fortified villages often built in naturally protected areas and full of circular constructions. In times of conflict, the people who lived in open fields moved to these strategically located buildings to ensure their safety. Oppida could also have other purposes such as control of territory or safeguarding of crops.</Text>
+			<Text>An Oppidum is a large defended settlement associated with the Celtic late La Tene culture. In Iberia, they are usually referred to as Castro, fortified villages often built in naturally protected areas and full of circular constructions. In times of conflict, the people who lived in open fields moved to these strategically located buildings to ensure their safety. Oppida could also have other purposes such as control of territory or safeguarding of crops.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM">
 			<Text>Construct an [LINK=IMPROVEMENT_CELTS_OPPIDUM]Oppidum[\LINK]</Text>
@@ -912,7 +921,7 @@
 			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_FAITH] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to nearby cities. Provides bonus yields to all non-road and non-great person land improvements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_REC">
-			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to a nearby city. Adjacent Improvements gain additional bonus yields:[NEWLINE]+1[ICON_FOOD] Food/[ICON_PRODUCTION] Production to Farms, [NEWLINE]+1[ICON_FOOD] Food/[ICON_PEACE] Faith to Camps, [NEWLINE]+1[ICON_PRODUCTION] Production /[ICON_PEACE] Faith to Pastures, [NEWLINE]+1 [ICON_PRODUCTION] Production /[ICON_GOLD] Gold to Mines, [NEWLINE]+1[ICON_PRODUCTION] Production/[ICON_RESEARCH] Science to Quarries.[NEWLINE]+1 [ICON_GOLD] Gold/[ICON_CULTURE] Culture to Plantations.</Text>
+			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to a nearby city. Adjacent Improvements gain additional bonus yields.</Text>
 		</Row>
 
 		<!-- Pairidaeza -->
@@ -966,13 +975,18 @@
 			<Text>Ball Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
-			<Text></Text>
+			<Text>Unique Mayan replacement for the Arena.[NEWLINE]Receive 10 [ICON_RESEARCH] Science and 10 [ICON_PEACE Faith] at the beginning of every B'ak'tun. Land Units trained in this City Receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] promotion, gaining new abilities every 20 turns[NEWLINE]Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Reduces [ICON_HAPPINESS_3] Boredom.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
-			<Text></Text>
+			<Text>The Ball Court is the Mayan unique building, replacing the Arena. In addition to the normal bonuses of an Arena, the Ball Court provides Science and Faith at the end of every long count. Land units trained in a City with a Ball Court receive the 'K'atun Ahaw' promotion, which grants new abilities for every 20 turns the unit has been alive.				[NEWLINE]Hun: 5XP, 5% :c5strength: CS
+				[NEWLINE]Ka'a: 10XP, 10% Combat Strength, 5% Combat Strength in Forest/Jungle
+				[NEWLINE]Oox: 10XP, 10% Combat Strength, 15% Combat Strength in Forest/Jungle
+				[NEWLINE]Kan: 15XP, 10% Combat Strength, 15% Combat Strength CS in Forest/Jungle, +10 HP on Heal in friendly territory</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_TEXT">
-			<Text></Text>
+				<Text>The Mesoamerican Ball Game, or 'Pitz' is a game of ritual and cultural significance among the Mayan people. The object of the game is to keep the ball in play for as long as possible by striking back and forth within an sloped arena using the hips, though some variations allowed for elbows, shoulders and even rackets. The earliest archaeological evidence of the game come from a court estimated to be 3400 years old.[NEWLINE][NEWLINE]
+			Over 1300 different ballcourts have been found within Mayan ruins, with relatively little variation in size or layout over thousands of years. Every court is shaped as a narrow alley with gently sloping walls on either side and an enclosed endzone on either side. This gave the court a roughly I-shaped layout. Later versions of the ballcourts include hoops at the midpoint, suspended on the walls. Actually sending a ball through the ring must have been a rare occurrence, since the players could not use their hands or even feet to guide the ball. Moreover, the rings were only slightly larger than the ball itself and were located at no small distance from the playing alley.[NEWLINE][NEWLINE]
+			The game was more than a mere sporting event to the Mayan people, perhaps serving as a substitute for war in the case of a dispute between cities. Later Classical Mayan art suggests a link between the ball game and ritual sacrifice, with winners being decapitated as an offering to the gods. The Maya Twin Myth of the Popol Vuh, describes the game between the Hero Twins, Hunahpu and Xbalanque, and lord of the underworld, One Death and Seven Death. The game was played so the Hero Twins might recover Hunahpu's head which was being used as a ball by the lords (Hunahpu was using a squash for his head until his real one could be recovered).</Text>
 		</Row>
 		
 		<!-- Pancerny -->
@@ -1000,13 +1014,10 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLAND_PANCERNY_TEXT">
 			<Text>
-				Pancerny (also Towarzysz Pancerny, Towarzysz Pocztowy (ang. Mailed Companion) was a rank of Polish cavalryman from the 10th to 18th century, named for their chainmail armor. During the rule of Mieszko I and Boleslaw I Chrobry in the late 10th century, Pancerni were members of the prince's own force, and where their use of mail armour made them unique among the army (druzhyna).[NEWLINE][NEWLINE]
+				Towarzysz  Pancerny (Mailed Companion) was a rank of Polish cavalryman from the 10th to 18th century, named for their chainmail armor. During the rule of Mieszko I and Boleslaw I Chrobry in the late 10th century, Pancerni were members of the prince's own force, where their use of mail armor made them unique among the army (druzhyna). [NEWLINE][NEWLINE]
+				With the advent of heavy cavalry the Pancerni often worked in concert with the newer and more heavily armed husaria, augmenting a cavalry charge and chasing down routing enemy soldiers. By the second half of the 17th century, they represented approximately 70% of all soldiers in the Polish military, fighting against Cossacks, Tatars, and the Swedish invasion during the Great Northern War. Once distinct entities, the Husaria and Pancerni were eventually combined to form the ‘Kawaleria Narodowa’, the Polish-Lithuanian National Cavalry. [NEWLINE][NEWLINE]
 
-				With the advent of the heavy cavalry the Pancerni often worked in concert with the newer and more heavilly armed husaria, augmenting a cavalry charge and chasing down routing enemy soldiers. By the second half of the 17th century, they represented approximately 70% of all soldiers in the Polish military, fighting against Cossacks, Tatars and the Swedish invasion during the Great Northern War (Potop Szwedzki). Once distinct entities, the Husaria and Pancerni were eventually to form the Kawaleria Narodowa (Polish-Lithuanian National Cavalry).[NEWLINE][NEWLINE]
-
-				Most Pancerni were recruited from the middle or lower classes or 'szlachta' (Nobility). They were organized into companies, with each company consisting of 60 to 200 horsemen. Exceptionally well-armoured, they used chainmail or platemail armor for upper body, vambraces, helmets, and buckler shields. The most common armaments were sabres, reflex bows and, with the arrival of gunpowder, flintlock pistols and carbines. During rule of Jan III Sobieski polearms became a necessary countermeasure against Ottoman forces.[NEWLINE][NEWLINE]
-
-				In modern Polish, "pancerni" also means "tank men", as in the title of the book and TV series, Czterej pancerni i pies (Four Tank Men and a Dog). The word "pancerny" is seldom used in that context, however, the common word being "czolgista" (from "czolg", "tank").
+				Pancerni were organized into companies, with each company consisting of 60 to 200 horsemen. Exceptionally well-armored, they used chainmail or platemail armor for upper body, vambraces, helmets, and buckler shields. The most common armaments were sabres, reflex bows and, with the arrival of gunpowder, flintlock pistols and carbines. 
 			</Text>
 		</Row>
 		
@@ -1052,7 +1063,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_TEXT">
 			<Text>
-				One of the most ancient of seaworthy boat designs, the prau, also known as proa or perahu, are wooden sailing vessels consisting of a large hull (vaka) and a small hull (ama) set in parallel by a crossbeam (akas). Prau are believed to have been developped in Micronesia in the first century AD, spreading quickly throughout southeast Asia. Western accounts of prau first appear in the 16th century, when Magellan made note of their agility in his fateful trip to the Philippines.[NEWLINE][NEWLINE]When sailing in strong winds, the crew walk between the hulls along the akas to counterbalance the force of the sail. A skilled prau crew can balance so as to lift the ama out of the water, called "flying the ama", and skim the ocean's surface to reach incredible speeds. Prau continue to be used worldwide, and modern designs can exceed 95km/h in favourable winds. This makes prau some of the fastest ships in the world; not bad for a 2,000 year old!
+				One of the most ancient of seaworthy boat designs, the prau, also known as proa or perahu, are wooden sailing vessels consisting of a large hull (vaka) and a small hull (ama) set in parallel by a crossbeam (akas). Prau are believed to have been developed in Micronesia in the first century AD, spreading quickly throughout southeast Asia. Western accounts of prau first appear in the 16th century, when Magellan made note of their agility in his fateful trip to the Philippines.[NEWLINE][NEWLINE]When sailing in strong winds, the crew walk between the hulls along the akas to counterbalance the force of the sail. A skilled prau crew can balance so as to lift the ama out of the water, called "flying the ama", and skim the ocean's surface to reach incredible speeds. Prau continue to be used worldwide, and modern designs can exceed 95km/h in favourable winds. This makes prau some of the fastest ships in the world; not bad for a 2,000 year old!
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_STRATEGY">
@@ -1074,7 +1085,7 @@
 			<Text>The first naval unit with a ranged attack. It cannot end its turn in Deep Ocean tiles outside of the city borders.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PENTECONTER_TEXT">
-			<Text>It's Greek for 5 Conters.</Text>
+			<Text>The penteconter was an ancient Greek Galley, used for trade, piracy and warfare. The ship was rowed by 50 oarsmen arranged in 2 rows of 25, making the ship long, but relatively narrow. This design made the boat relatively quick, but difficult to turn during a naval engagement.</Text>
 		</Row>
 		
 		<!-- Prowler -->
@@ -1090,19 +1101,8 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_IROQUOIS_PROWLER_TEXT">
 			<Text>
-				The Iroquois used a variety of weapons, the most common being firearms, tomahawks and knives. During the 17th century the Iroquois, unlike many other tribes, had easy access to trade goods at Dutch posts along the Hudson River. Weapons of war, such as the iron axe and musket, were highly sought items, and by the 1640s the Iroquois were well equipped with these goods and used them against their enemies. By the beginning of the 18th century Mohawks had approximately 300 muskets bought from the Dutch in Albany and from the British.[NEWLINE][NEWLINE]
-
-				Seneca's and Onondaga's tribesmen fired shots from their bows and muskets into the air while shouting war-cries as part of their Sun Ceremony. This was to inform the sun that people intended to speak with him.[NEWLINE][NEWLINE]
-
-				War tactics were changed after the Iroquois' acquisition of firearms. Great armies walking with prominent chiefs and shamans were replaced with guerilla tactics, small bands of troops guided by commanders. The lethality of their new weapons put the Iroquois, never a highly populous group, in a precarious position. The tribes' custom of absorbing refugees and prisoners of war changed as fewer and fewer warriors survived clashes with European arms.[NEWLINE][NEWLINE]
-
-				Historical descriptions of Iroquois assaults against fortified villages were first reported in the 1640s. The Iroquois effectively invaded Huronia, attacking and destroying Huron villages. The newly acquired muskets allowed Iroquois braves to fire into villages through nooks and gaps in their walls while iron hatchets quickly dismantled the wooden defenses. Once a wall was breached, warriors rushed inside to kill or capture the defenders.[NEWLINE][NEWLINE]
-
-				The Iroquois were supplied well by the British. Between 1813 and 1816 nearly 27 000 firearms were shipped to Canada for trade with the Six Nations. Britain gave their allies four different types of firearms: Common guns or muskets, chief's guns, pistols and rifles. Common muskets were lighter and smaller calibre than military-grade muskets, often with a shorter barrel. British feared giving high-quality weapons to people who could turn against them, but the Iroquois often found the smaller weapons more portable and more suitable to rough terrain. Iroquois often employed buckshot pellets, provided by the British and to great effect against American soldiers. Iroquois allied to Americans carried almost the same variety of weapons. The biggest difference was that rifles were more common than muskets.[NEWLINE][NEWLINE]
-
-				"The classic stereotype of the Iroquois, even today, is the stealthy warrior slinking cat-like through the woods, senses keen, and armed with a loaded musket. Iroquois ambushes could be devastating, as unseen enemies opened fire on European troop columns from bushes and trees...[NEWLINE][NEWLINE]
-
-				...The Iroquois preferred this kind of shadowy warfare. Its effectiveness was proven by the fact that the Americans adopted these techniques in their revolution against the British in 1776. The Americans had been taught how to use the forests by the Iroquois themselves, in their periodic conflicts."
+				Unlike many other tribes, the Iroquois had easy access to trade goods at Dutch posts along the Hudson River, and traded for various goods and luxuries. Weapons of war, such as the iron axe and musket, were highly sought after, and by the 1640s the Iroquois were well-equipped to fight their traditional Huron and Algonquian enemies. Common muskets were given in exchange for pelts and food, but often of lighter and smaller caliber than military-grade muskets. The British feared giving high-quality weapons to people who could turn against them, but the Iroquois often found the smaller weapons more suitable to rough terrain anyways. [NEWLINE][NEWLINE]
+				War tactics were changed after the Iroquois' acquisition of firearms. The lethality of their new weapons put the Iroquois, never a highly populous group, in a precarious position. The tribes' custom of absorbing refugees and prisoners of war changed as fewer and fewer warriors survived clashes with European arms. Great armies walking with prominent chiefs and shamans were replaced with guerilla tactics, small bands of troops guided by commanders. 
 			</Text>
 		</Row>
 		
@@ -1118,13 +1118,15 @@
 			<Text>Qizilbash</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_HELP">
-			<Text></Text>
+			<Text>Unique replacement for the Lancer. Generates +1 [ICON_PEACE] Faith, +2 [ICON_GOLD] Gold, and +2  [ICON_GOLDEN_AGE] Golden Age Points every turn in enemy territory. Can always be purchased with [ICON_PEACE] Faith. Only the Persians may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_STRATEGY">
-			<Text></Text>
+			<Text>The Qizilbash is the Unique Persian replacement for the Lancer. Stronger than the Lancer, the Qizilbash also generates Faith, Gold and Golden Age Points for every turn they spend in enemy territory. This unit can also be purchased with Faith without needing a religious tenet.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_TEXT">
-			<Text></Text>
+			<Text>Qizilbash was originally a pejorative for the followers of the Safawiyyah Sufi order, who distinguished themselves by wearing bright crimson headwear. The name, which means red headed, became a mark of pride among the Qizilbash, who organized into a military society of Shi'ite Muslims in the late 15th century. Though primarily of Turkman origin, the Qizilbash proved instrumental in the establishment of the Safavid Dynasty in Iran.[NEWLINE][NEWLINE]
+			In a campaign to avenge the death of his father Haydar, Ismail I, led 7000 Qizilbash warriors to destroy the Aq Qoyunlu force of 30 000 in Azerbaijan, and establish the Safavid State. By 1510, eleven years later, Ismail brought all of Iran under his control, the first ethnically Iranian monarch to rule Iran in over 850 years. Though they had made him a powerful king, Ismail feared the power and influence of the tribal qizilbash over the Iranian peoples. Ismail and his successors would spend the next 80 years diminishing the political power of the Qizilbash, replacing them with ghulam slave soldiers from the Caucasus. Nevertheless, the Qizilbash held an honoured position within the Safavid empire, both on the battlefield and in the Safavid court.[NEWLINE][NEWLINE]
+			</Text>
 		</Row>
 		
 		<!-- Qila -->
@@ -1133,10 +1135,10 @@
 			<Text>Mughal Fort</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>Provides [ICON_FOOD] Food, [ICON_CULTURE] Culture and protection to the City. 10% of [ICON_FOOD] Food is converted into [ICON_CULTURE] Culture every turn and 1 [ICON_GREAT_PEOPLE] Great Artist Point. Contains 1 slot for a Great Work of Art. Gains +3 [ICON_TOURISM] Tourism at Flight. Requires Walls in City.</Text>
+			<Text>Unique replacement for the Castle. 10% of [ICON_FOOD] Food is converted into [ICON_CULTURE] Culture every turn and 1 [ICON_GREAT_PEOPLE] Great Artist Point. Contains 1 slot for a Great Work of Art. Gains +3 [ICON_TOURISM] Tourism at Flight. Requires Walls in City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
-			<Text>Unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Food, and Culture. 10% of [ICON_FOOD] Food is converted into Culture every turn and 1 Great Artist Point. Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
+			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Food, and Culture. 10% of [ICON_FOOD] Food is converted into Culture every turn and 1 Great Artist Point. Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_TEXT">
 			<Text>The Mughals were an Islamic empire that invaded India in the 15th century, and ruled most of the sub-continent until the mid 19th. During their rule, they constructed elaborate forts across the countryside which served as administrative centers and living quarters for the occupiers. These forts were beautiful structures, fitting palaces for the rulers of a vast empire. Several--including the magnificent "Lahore Fort" and Red Fort of Agra--survive today and remain as some of the largest tourist attractions to India, monuments to the Mughals' power and style.</Text>
@@ -1148,33 +1150,23 @@
 			<Text>Diplomatic Reciprocity</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY_HELP">
-			<Text>After creating an [COLOR_POSITIVE_TEXT]Embassy[ENDCOLOR] its yields are permamently added to your Capital's revenue if target City-State [COLOR_POSITIVE_TEXT]is an Ally[ENDCOLOR] or only half, if it [COLOR_NEGATIVE_TEXT]is not[ENDCOLOR] one.</Text>
+			<Text>After creating an [COLOR_POSITIVE_TEXT]Embassy[ENDCOLOR] its yields are permanently added to your Capital's revenue if target City-State [COLOR_POSITIVE_TEXT]is an Ally[ENDCOLOR] or only half, if it [COLOR_NEGATIVE_TEXT]is not[ENDCOLOR] one.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL">
 			<Text>Sachem's Council</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_HELP">
-			<Text>+1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens, +3 [ICON_DIPLOMAT] Great Diplomat Points, +2 [ICON_RES_PAPER] Paper +20% [ICON_PRODUCTION] Production of Diplomatic Units. 2 Civil Servant Specialist Slots.[NEWLINE][NEWLINE]All Councils gain +2 [ICON_RESEARCH] Science, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or War.[NEWLINE][NEWLINE]Great Diplomats gain the [COLOR_GREEN]Diplomatic Reciprocity[ENDCOLOR] Promotion.</Text>
+			<Text>+1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens, +2 [ICON_DIPLOMAT] Great Diplomat Points, +2 [ICON_RES_PAPER] Paper +10% [ICON_PRODUCTION] Production of Diplomatic Units and 1 Civil Servant Specialist Slots.[NEWLINE][NEWLINE]All Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or War.[NEWLINE][NEWLINE]Great Diplomats gain the [COLOR_GREEN]Diplomatic Reciprocity[ENDCOLOR] Promotion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_STRATEGY">
-			<Text>Unique Iroquoian replacement for the Scrivener's Office. In addition to the normal bonuses provided by the Scrivener's Office, the Sachem's Council  provides faster generation of both regular and Great Diplomat units. Great Diplomats also recieve a unique promotion, providing Science, Culture and gold for every embassy founded. All Councils in your empire also gain +2 Science, and all Chanceries gain +2 Gold. The Sachem's Council also provides Happiness for every Defensive Pact and Declared War involving the Iroquois.</Text>
+			<Text>Unique Iroquoian replacement for the Scrivener's Office. In addition to the normal bonuses provided by the Scrivener's Office, the Sachem's Council  provides faster generation of Great Diplomat units. Great Diplomats also receive a unique promotion, providing Science, Culture and gold for every embassy founded. All Councils in your empire also gain +1 Culture, and all Chanceries gain +2 Gold. The Sachem's Council also provides Happiness for every Defensive Pact and Declared War involving the Iroquois.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_TEXT">
 			<Text>
-				Until the 1500s, the five tribes of the Iroquois devoted much energy toward fighting and killing each other. According to oral tradition, it was about this time that they came to their senses and united into a powerful confederation.[NEWLINE][NEWLINE]
-
-				The five tribes designed quite an elaborate political system. This included a bicameral (two-house) legislature, much like the British Parliament and modern U.S. Congress. The confederacy could also be called an oligarchy, because the Iroquois became ruled by a small group of people. The representatives, or sachems, from the Seneca and Mohawk tribes met in one house and those of the Oneida and Cayuga met in the other. The Onondaga sachems broke ties and had the power to veto decisions made by the others. There was an unwritten constitution that described these proceedings at least as early as 1590. Such a complex political arrangement was unknown in Europe at that time. There were 50 delegates in the confederacy, all men, each chosen by the clan mother. The number of Sachems from each tribe was as follows: the Onondaga - fourteen, the Cayuga - ten, the Mohawk and Oneida - nine, and the Seneca - eight. In addition to Sachem, who could vote during meetings on the Onondaga land, there were Pine Trees who were both male and female advisory council members. Pine Trees became advisors because of their heroic feets and accomplishments as warriors. In 1715 the Tuscarora joined the league, and it was renamed the League of Six Nations.[NEWLINE][NEWLINE]
-
-				Benjamin Franklin was familiar with the League and helped frame many parts of the new United States government off of the Iroquois's ideas.[NEWLINE][NEWLINE]
-
-				Excerpts from the Iroquois Constitution:[NEWLINE]
-				"Roots have spread out from the Tree of the Great Peace, one to the north, one to the east, one to the south and one to the west. The name of these roots is The Great White Roots and their nature is Peace and Strength...[NEWLINE][NEWLINE]
-
-				The soil of the earth from one end of the land to the other is the property of the people who inhabit it. By birthright the Ongwehonweh (original beings) are the owners of the soil which they own and occupy and none other may hold it. The same law has been held from the oldest times. The Great Creator has made us of the one blood and of the same soil he made us and as only different tongues constitute different nations he established different hunting grounds and territories and made boundary lines between them...[NEWLINE][NEWLINE]
-
-				Whenever a foreign nation is conquered or has by their own will accepted the Great Peace their own system of internal government may continue, but they must cease all warfare against other nations...[NEWLINE][NEWLINE]
-
-				The women of every clan of the Five Nations shall have a Council Fire ever burning in readiness for a council of the clan. When in their opinion it seems necessary for the interest of the people they shall hold a council and their decisions and recommendations shall be introduced before the Council of the Lords by the War Chief for its consideration."
+				According to oral tradition, the five tribes of the Iroquois devoted much energy toward fighting and killing each other until the 1500s. It was at this time that the five tribes united into a powerful confederation, forming an elaborate political system including a bicameral (two-house) legislature much like the modern U.S. Congress. [NEWLINE][NEWLINE]
+				In accordance with their unwritten constitution, the confederacy was represented by 50 delegates, or Sachems – all men, each chosen by the clan mother. The 17 sachems from the Seneca and Mohawk tribes met in one house while the 19 Oneida and Cayuga met in the other. The 14 Onondaga sachems acted as tie-breakers and had the power to veto decisions made by the others. In addition to Sachem, who met on Onondaga land to cast their votes, there were advisory council members called Pine Trees. Pine Trees could be men or women appointed for their heroic feats and accomplishments. In 1715 the Tuscarora joined the league, and it was renamed the League of Six Nations. Benjamin Franklin’s dealings with the Iroquois led him to model the United States’ government after theirs. [NEWLINE][NEWLINE]
+					“The soil of the earth from one end of the land to the other is the property of the people who inhabit it. By birthright the Ongwehonweh (original beings) are the owners of the soil which they own and occupy and none other may hold it. The same law has been held from the oldest times. The Great Creator has made us of the one blood and of the same soil he made us and as only different tongues constitute different nations he established different hunting grounds and territories and made boundary lines between them...” [NEWLINE]
+				-Excerpt from the Iroquois Constitution
 			</Text>
 		</Row>
 		
@@ -1196,20 +1188,17 @@
 			<Text>Scythed Chariot</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP">
-			<Text>A dangerous unit on open terrain. Only the Celts may build it. This unit is stronger against Archer and Melee Units, has more vision and ignores enemy Zone of Control, unlike the Skirmisher. After moving, all newly adjacent enemy units take 8 damage. Moving into rough terrain ends all movement.</Text>
+			<Text>A dangerous unit on open terrain. Only the Celts may build it. This unit is stronger against Archer and Melee Units, has more vision and ignores enemy Zone of Control. After moving, all newly adjacent enemy units take 10 damage. Moving into rough terrain ends all movement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY">
 			<Text>The Scythed Chariot is a Celtic unique unit made for destroying enemy lines. Enemies take damage whenever the Scythed Chariot moves adjacent to them, making this unit deadly in open terrain. Make every move count to maximize damage, but be careful not to leave your Chariots exposed to enemies on their turn. A mounted unit, the Scythed Chariot is vulnerable to Spearmen.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_TEXT">
 			<Text>
-				Scythed chariots are modified war chariots with long blades extending from the wheel axels. Often dismissed as fanciful storytelling, the use of such war machines have at least been confirmed in some more credible sources. Scythed chariots featured prominently during the Greco-Persian War, though to little effect against Macedon's well-trained infantry. Use of scythed chariots has been ascribed to Pictish, Irish and Iceni armies, but the claims are often of dubious validity. The only report of a scythed chariot in Britain outside of Roman propaganda comes from the Irish Ulster Cycle.[NEWLINE][NEWLINE]
-
-				Although chariots had fallen out of use in continental Europe from the end of the 3rd century BC, Caesar found that they remained significant in British warfare. If his descriptions are to be believed, Caesar encountered a Britain in transition, possessing cavalry but still with an elite fighting force of chariots. He described how these warriors would throw javelins from their vehicles before abandoning them to fight on foot and returning to them in order to retreat or redeploy. Cavalry proper is described as being used for skirmishing. Roman sources report that Gallic armies had abandoned chariot warfare long before Ceasar's campaigns.[NEWLINE][NEWLINE]
-
-				"Their mode of fighting with their chariots is this: firstly, they drive about in all directions and throw their weapons and generally break the ranks of the enemy with the very dread of their horses and the noise of their wheels; and when they have worked themselves in between the troops of horse, leap from their chariots and engage on foot. The charioteers in the mean time withdraw a little distance from the battle, and so place themselves with the chariots that, if their masters are overpowered by the number of the enemy, they may have a ready retreat to their own troops. Thus they display in battle the speed of horse, [together with] the firmness of infantry."[NEWLINE][NEWLINE]
-
-				They make war not only on horseback but also from 2 horse chariots and cars armed in the Gallic fashion – they call them "Covinni" - on which they use axles equipped with scythes.
+				Scythed chariots are modified war chariots with long blades extending from the wheel axels. Though often dismissed as fanciful storytelling, the use of these war machines has been confirmed in at least a few more credible sources. Scythed chariots featured prominently during the Greco-Persian War, though to little effect against Macedon's well-trained infantry. Use of scythed chariots has been ascribed to Pictish, Irish and Iceni armies, but the claims are often of dubious validity. The only report of a scythed chariot in Britain outside of Roman propaganda comes from the Irish Ulster Cycle, during the adventures of Chu Chulainn. [NEWLINE][NEWLINE]
+				Although chariots had fallen out of use in continental Europe from the end of the 3rd century BC, Caesar found that they remained significant in British warfare. Caesar encountered both Celtic cavalry and chariots and described how these warriors would throw javelins from their vehicles before dismounting to fight on foot. Celtic soldiers could return to their chariots to quickly retreat or redeploy. [NEWLINE][NEWLINE]
+				“They make war not only on horseback but also from 2 horse chariots and cars armed in the Gallic fashion – they call them ‘Covinni’ - on which they use axles equipped with scythes.” [NEWLINE]
+				- Pomponius Mela
 			</Text>
 		</Row>
 		
@@ -1222,31 +1211,31 @@
 			<Text>+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER">
-			<Text>Croaching Tiger</Text>
+			<Text>Crouching Tiger</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_HELP">
 			<Text>+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength [COLOR_POSITIVE_TEXT]for every Movement Point left[ENDCOLOR] on Seir Morb. Bonus caps at 60%.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_1">
-			<Text>Croaching Tiger I</Text>
+			<Text>Crouching Tiger I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_1_HELP">
 			<Text>+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_2">
-			<Text>Croaching Tiger II</Text>
+			<Text>Crouching Tiger II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_2_HELP">
 			<Text>+30% [ICON_RANGE_STRENGTH] Ranged Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_3">
-			<Text>Croaching Tiger III</Text>
+			<Text>Crouching Tiger III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_3_HELP">
 			<Text>+45% [ICON_RANGE_STRENGTH] Ranged Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_4">
-			<Text>Fury of the Tiger</Text>
+			<Text>Eye of the Tiger</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_4_HELP">
 			<Text>+60% [ICON_RANGE_STRENGTH] Ranged Combat Strength.</Text>
@@ -1255,13 +1244,13 @@
 			<Text>Armstrong Gun</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_HELP">
-			<Text>Unique Industrial Era Unit.  Only the Siamese may build it. more powerful than the Field Gun it replaces and has a bonus against naval units instead of a penalty, but does not have the [COLOR_RED]Bonus vs Cities[ENDCOLOR] promotion. Deals more damage in a turn the less the unit has moved and receives [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] promotions for free.</Text>
+			<Text>Unique Industrial Era Unit.  Only the Siamese may build it. More powerful than the Field Gun it replaces and has a bonus against naval units instead of a penalty, but does not have the [COLOR_RED]Bonus vs Cities[ENDCOLOR] promotion. Deals more damage in a turn the less the unit has moved and receives [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] promotions for free.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_STRATEGY">
 			<Text>A powerful coastal defense cannon, the Seir Morb is more powerful than the Field Gun it replaces, especially against naval targets, but deals less damage to cities. The Seir Morb receives a combat boost for every remaining movement point when attacking, so pick a good spot and keep it steady.  Location, Location, Location.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_TEXT">
-			<Text>This Cannon shouldn't technically be able to move!</Text>
+			<Text>Despite Siam's remarkable diplomacy, they did at times come into conflict with the great imperial powers which threated to swallow them whole. When the French set their sights on Laos, the Siamese mistakenly believed the English would aid them in their plight, and prepared for war. The Seir Morb ("Crouching Tiger") were the most technologically advanced cannons in the Siamese arsenal at the time; coastal artillery which could destroy any French boats foolish enough to enter their harbours. No amount of raw power, however, can account for corruption and disorganization. The French managed to establish their beachheads, and the coastal artillery of Thailand remained unused. It turns out that the proper use of a cannon involves firing it.</Text>
 		</Row>
 		
 		<!-- Shotelai -->
@@ -1273,7 +1262,7 @@
 			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked. Marked unit has reduced [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT">
-			<Text>Catching</Text>
+			<Text>Maimed</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT_HELP">
 			<Text>Unit has reduced movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
@@ -1318,7 +1307,7 @@
 			<Text>
 				World War I saw rapid technological and tactical changes in how wars were fought, not the least of which was the first use of aircraft for scouting, support, and bombing. These new machines opened an entirely new theatre of war, a new avenue to gain an advantage over the enemy. Despite their promise, the first aircraft were slow, clumsy, and unreliable thanks to their underpowered combustion engines. This all changed in 1915 when Marc Birgikt invented a new V8 engine boasting 150 horsepower and weighing only 330 pounds. The French high command saw this new motor’s obvious value as an aircraft engine and set about in commissioning a new fighter aircraft designed around this new powerhouse: The Societe Pour L'Aviation et ses Derives, or ‘SPAD’ S. VII. [NEWLINE][NEWLINE]
 				By late 1916 SPAD VIIs were beginning to see action, and saw wide adoption by allied pilots for the rest of the war. Though lacking in maneuverability compared to the older Nieuport fighters, the SPAD VII more than made up for this deficiency in sheer speed, travelling in excess of 205kmph, and capable of safe dives of more than 400kmph. Entirely new tactics had to be created by pilots to leverage this unmatched speed, which gave the SPAD the ability to safely avoid or escape pitched battles. The added stability in diving was especially appreciated over the old Nieuports, which had a bad habit of shedding their wings during maneuvers. [NEWLINE][NEWLINE]
-				Air superiority became a constant arms race against newer and better German designs and engines. By the end of the war, the SPAD VII's single .303 Vickers machine gun was outmatched by German fighters, which carried at least two machine guns. The heavier and faster SPAD XIII largely replaced the SPAD VII by late 1917, and would carry France to the end of the War. Though at times unreliable and hard to maneuver, the SPAD series would go down in history as the fastest and most powerful of WWI fighters, and continued to be used by the French as a training plane until it was retired in 1928.
+				Air superiority became a constant arms race against newer and better German designs and engines. By the end of the war, the SPAD VII's single .303 Vickers machine gun was outmatched by German fighters, which carried at least two machine guns. The heavier and faster SPAD XIII replaced the SPAD VII by late 1917, and would carry France to the end of the War. Though at times unreliable and hard to maneuver, the SPAD series would go down in history as the fastest and most powerful of WWI fighters, and continued to be used by the French as a training plane until it was retired in 1928.
 			</Text>
 		</Row>
 		
@@ -1328,17 +1317,16 @@
 			<Text>Tersane</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_HELP">
-			<Text>Unique Medieval Era Building. [NEWLINE]When a Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the civ based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Units. Naval Melee Units trained in this City recieve the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
+			<Text>Unique Medieval Era Building. [NEWLINE]When a Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the civ based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_STRATEGY">
-			<Text>Tersane is the unique Harbor replacement of the Ottomans. In addition to the bonuses of a Harbor, the Tersane increases the yields of work boats. The building also greatly improves production towards trade and military vessels, greatly improving the Ottoman's naval capabilities. All Melee Ships built in this city also recieve the Prize Ships promotion, allowing them to capture defeated enemy units.</Text>
+			<Text>Tersane is the unique Harbor replacement of the Ottomans. In addition to the bonuses of a Harbor, the Tersane increases the yields of work boats. The building also greatly improves production towards trade and military vessels, greatly improving the Ottoman's naval capabilities. All Melee Ships built in this city also receive the Prize Ships promotion, allowing them to capture defeated enemy units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_TEXT">
 			<Text>
 				The Turkish word 'Tersane' is derived from the Venetian 'darsane', from which the English word 'arsenal' is also derived. Though never at the forefront of shipbuilding technology, the Ottomans enjoyed over a century of naval dominance in the Mediterranean following their conquest of Constantinople in 1453. The largest Tersane, constructed at the Golden Horn across from Constantinople, housed over 160 docks, drydocks, storehouses and supply depots, making it one of the largest centers of trade, commerce and industry in the Mediterranean. [NEWLINE][NEWLINE]
-				Ottoman naval power was maintained through its tremendous shipbuilding capacity, as well as its allegiances to the Barbary corsairs of North Africa. This preeminence was finally ended at the battle of Lepanto, where a combined Spanish and Venetian armada delivered a crushing defeat to the Ottoman's, capturing or destroying more than two thirds of the Ottoman's navy. Their response was to build 250 new vessels within six months. [NEWLINE][NEWLINE]
-				Grand Vizier Mehmed Sokullu, on the defeat at Lepanto, and the capture of Cyprus, which the Ottomans had taken earlier the same year: [NEWLINE]
-				"You come to see how we bear our misfortune. But I would have you know the difference between your loss and ours. In wresting Cyprus from you, we deprived you of an arm; in defeating our fleet, you have only shaved our beard.
+				Ottoman naval power was maintained through its tremendous shipbuilding capacity, as well as its allegiances to the Barbary corsairs of North Africa. This pre-eminence was finally ended at the battle of Lepanto, where a combined Spanish and Venetian armada delivered a crushing defeat to the Ottoman's, capturing or destroying more than two thirds of the Ottoman's navy. Their response was to build 250 new vessels within six months. [NEWLINE][NEWLINE]
+				"You come to see how we bear our misfortune. But I would have you know the difference between your loss and ours. In wresting Cyprus from you, we deprived you of an arm; in defeating our fleet, you have only shaved our beard. [NEWLINE] Grand Vizier Mehmed Sokullu, on the defeat at Lepanto, and the capture of Cyprus, which the Ottomans had taken earlier the same year
 			</Text>
 		</Row>
 		
@@ -1355,7 +1343,8 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_TEXT">
 			<Text>
-				The Amsterdamn Waag ("weigh house") is a 15th-century building on Nieuwmarkt square in Amsterdam.[NEWLINE][NEWLINE]Originally, the building was one of the gates in the city wall, the Sint Antoniespoort (Saint Anthony's Gate). The city gate was part of the medieval city walls along the moat formed by the current Singel canal and the canals of the Kloveniersburgwal and the Geldersekade. These walls were constructed during the period 1481 to 1494 and consisted of defensive towers and city gates connected by walls of brick with a natural stone pediment. All that remains of the walls is some sandstone in the Geldersekade canal wall. The only remains of the city gates are the Waag and part of the Regulierspoort gate, which is now the bottom half of the Munttoren tower. The Schreierstoren is the only remaining defensive tower.[NEWLINE]The oldest gable stone in Amsterdam adorns the facade of the tower at the corner of Zeedijk and Geldersekade. It carries the inscription MCCCCLXXXVIII de XXVIII dach in April wart d'eerste steen van dese poert gheleit. ("The first stone of this gate was laid on 28 April 1488")[NEWLINE]From around the beginning of the 16th century, when Amsterdam had completed its surrounding stone city wall, Saint Anthony's Gate appeared as it is depicted in the wood carvings of Cornelis Anthonisz: a main gate with four towers on the inner (city) side and a front gate with two towers on the outer (canal) side. Between the front gate and main gate, there was a small square covering a subterraneous sluice gate. The walls of the towers are almost 2 metres thick.[NEWLINE]When the city expanded beyond its walls the late 16th century, Saint Anthony's Gate lost its function as a city gate. Shortly thereafter, during the years 1603 to 1613, the walls were demolished. In 1614, the present Nieuwmarkt square was created by covering the canal on either side of the gate. In addition, the square was raised, causing part of the brickwork of the gate to disappear below ground. This makes the building appear shorter than it actually is.[NEWLINE][NEWLINE]In 1617, the former city gate was repurposed as a weigh house, a public building where various goods were weighed.  This new weigh house was needed to relieve the Waag op de Dam, the original weigh house on Dam square, which had become too small for the needs of the rapidly growing city.[NEWLINE]An inner courtyard was added in 1617 by covering the area between the front and main gates. A number of guilds were housed on the top floors of the building: the blacksmiths' guild, the painter's guild, the masons' guild and the surgeons' guild. Each guild had its own entrance gate. The guild emblems are still visible over these entrances. The gate of the masons' guild includes sculpture work by Hendrick de Keyser. Over the entrance for the surgeons' guild is the inscription Theatrum Anatomicum. In 1690 to 1691, a large dome-shaped hall was added, topped by a central octagonal tower. The interior also dates to this time period.[NEWLINE]The Waag eventually lost its function as a weigh house. In 1819, a chest of indigo was the last item to be weighed there.[NEWLINE][NEWLINE]After falling into disuse as a weigh house, the Waag served a range of different functions. In the 19th century it was used consecutively as a fencing hall, a furniture workshop, a workshop for oil lamps used for street lighting, a fire station, and as the city archives. In the first half of the 19th century, punishments were carried out in front of the building. There was even a guillotine.[NEWLINE]In the 20th century, the building was used primarily as a museum. It was the original location of the Amsterdams Historisch Museum (now Amsterdam Museum) as well as the Joods Historisch Museum (Jewish Historical Museum).
+				Waag ("weigh house") arethe public buildings in which goods were weighed for market. Prior to international standards of weights and measures, the Waags performed an indispensable service in preventing the fraudulent sale of goods. As public control of the weight of goods was very important, Waags were run by local authorities who would also use them for the levying of taxes on goods transported through or sold within the city. This necessitated weigh houses be near a market square or town centre.[NEWLINE][NEWLINE]
+				Of particular note is the Amsterdamn Waag, built in the 15th-century on Nieuwmarkt square in Amsterdam. Originally, the building was one of the gates in the city wall along the moat formed by the current Singel canal. A number of guilds were housed on the top floors of the building: the blacksmiths' guild, the painter's guild, the masons' guild and the surgeons' guild, each with its own entrance gate. In 1632 Rembrandt van Rijn was commissioned to paint the surgeons at work, and the resulting The Anatomy Lesson of Dr. Nicolaes Tulp made his reputation. In 1691 a theatrum anatomicum was added, which became famous for admitting members of the public to witness human dissections.[NEWLINE][NEWLINE]
 			</Text>
 		</Row>
 		
@@ -1371,7 +1360,7 @@
 			<Text>Unique English replacement for the Hermitage. This National Wonder produces +1 [ICON_CULTURE] Culture for every 3 [ICON_CITIZEN] Citizens in the City, and +15% [ICON_CULTURE] Culture for the City. I It cannot be constructed unless the city has a Castle.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_TEXT">
-			<Text>The White Tower is a central tower, the old keep, at the Tower of London. It was built by William the Conqueror during the early 1080s, and subsequently extended. The White Tower was the castle's strongest point militarily, and provided accommodation for the king and his representatives, as well as a chapel. The White Tower is just one of the 21 towers which, together, form the Tower of London castle complex. The Tower of London covers an area of 18 acres and its magnificent architecture covers almost all the styles which have flourished in England. Although the Tower is no longer a place of great military strength it has in time past been a fortress, a palace, and a prison.</Text>
+			<Text>The White Tower is a central tower, the old keep, at the Tower of London. It was built by William the Conqueror during the early 1080s, and subsequently extended. The White Tower was the castle's strongest point militarily, and provided accommodation for the king and his representatives, as well as a chapel. The Tower of London covers an area of 18 acres and its magnificent architecture covers almost all the styles which have flourished in England. Throughout its long history, the Tower has been many things to England: A tyrant's castle, and treasury; a menagerie, and a mint; a palace, and a prison. Today, the Tower of London is a vast museum which boasts, among its many treasure, the Crown Jewels of England.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_WHITE_TOWER_NATIONAL">
 			<Text>Treasury of {2_CivAdjective} Treasures</Text>
@@ -1380,7 +1369,7 @@
 			<Text>Treasury of Global Treasures</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WHITE_TOWER_THEMING_BONUS_HELP">
-			<Text>To maximize your bonus, make sure all slots are filled with artifacts and either from the city owne or from different owners.</Text>
+			<Text>To maximize your bonus, make sure all slots are filled with artifacts and either from the city owner or from different owners.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GREAT_WORK_THE_CROWN_JEWELS_QUOTE">
 			<Text>
@@ -1404,7 +1393,9 @@
 			<Text>Unique Mongolian replacement for the Courthouse. Can be built in non-occupied Cities. In addition elimination Unhappiness in Occupied Cities, this building reduces unhappiness from Crime, Illiteracy, Boredom and Religious Tensions, and increases production of all Land-based military units, except Unmounted Melee. Conquering Cities triggers a small WLTKD. It is also slightly cheaper than the Courthouse.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_TEXT">
-			<Text>Yassa was a secret written code of law created by Genghis Khan. The word Yassa translates into "order" or "decree". It was the de facto law of the Mongol Empire even though the "law" was kept secret and never made public. The Yassa seems to have its origin as decrees issued in war time. Later, these decrees were codified and expanded to include cultural and life-style conventions. By keeping the Yassa secret, the decrees could be modified and used selectively. It is believed that the Yassa was supervised by Genghis Khan himself and his stepbrother Shihihutag who was then high judge of the Mongol Empire. Genghis Khan appointed his second son Chagatai (later Chagatai Khan) to oversee the execution of the laws.</Text>
+			<Text>
+				Yassa was a secret written code of law created by Genghis Khan. The word Yassa translates into "order" or "decree". It was the de facto law of the Mongol Empire even though the "law" was never actually made public. The Yassa seems to have originated from decrees issued in war time, and was later codified and expanded to include cultural and life-style conventions. By keeping the Yassa secret, the decrees could be modified and used selectively. It is believed that the Yassa was supervised by Genghis Khan himself with the help of the high judge of the Mongol Empire: His stepbrother, Shihihutag. Genghis Khan appointed his second son Chagatai (later Chagatai Khan) to oversee the execution of the laws.
+			</Text>
 		</Row>
 		
 		<!-- Yellow Brow -->
