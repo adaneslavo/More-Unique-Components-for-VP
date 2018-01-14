@@ -51,7 +51,7 @@
 			<Text>Invincible</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP">
-			<Text>+2 XP if unit[COLOR_POSITIVE_TEXT]is inside Enemy Territory at full Health[ENDCOLOR].[NEWLINE]+10% [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. Lost after unit upgrade.</Text>
+			<Text>+2 XP if unit[COLOR_POSITIVE_TEXT]is inside Enemy Territory at full Health[ENDCOLOR]. +10% [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. Lost after unit upgrade.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL">
 			<Text>Appearances</Text>
@@ -99,7 +99,7 @@
 		<!-- Bastu -->
 		<!-- Created by pineppledan 25/11/2017, modified and incorporated by adan_eslavo 17/12/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU">
-			<Text>Bastu</Text>
+			<Text>Sauna</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_TEXT">
 			<Text>
@@ -121,19 +121,19 @@
 			<Text>Mingghan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN_HELP">
-			<Text>+5 XP [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].[NEWLINE]+20% [ICON_STRENGTH] Combat Strength if unit is standing [COLOR_POSITIVE_TEXT]on Pillaged Tile[ENDCOLOR].</Text>
+			<Text>+5 XP [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. +20% [ICON_STRENGTH] Combat Strength if unit is standing [COLOR_POSITIVE_TEXT]on Pillaged Tile[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE">
 			<Text>Massacre</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE_HELP">
-			<Text>+20% [ICON_STRENGTH] Combat Strength if unit is standing [COLOR_POSITIVE_TEXT]on Pillaged Tile[ENDCOLOR].</Text>
+			<Text>+20% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from Pillaged Tile[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG">
 			<Text>Black Tug</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_HELP">
-			<Text>Aggressive and menacing Medieval Era Mounted Unit. Only the Mongols may build it. ties and is stronger against wounded units or while standing on pillaged tiles. Gains additional XP for pillaging.</Text>
+			<Text>Aggressive and menacing Medieval Era Mounted Unit. Only the Mongols may build it. It is stronger against wounded units or while standing on pillaged tiles. Gains additional XP for pillaging.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_STRATEGY">
 			<Text>Black Tug is a Mongolian unique unit, replacing the Knight. It is stronger and deals more damage to wounded units, and while standing on pillaged tiles. As mounted unit, the Black Tug is vulnerable to Pikemen.</Text>
@@ -154,13 +154,13 @@
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLAND_BARBICAN_HELP">
-			<Text>Ranged units [COLOR_POSITIVE_TEXT]Garrisoned in the City[ENDCOLOR] can attack twice.</Text>
+			<Text>+33% [ICON_RANGE_STRENGTH] Range Combat Strength [COLOR_POSITIVE_TEXT]on Garrison in the City[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN">
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
-			<Text>+2 [ICON_CULTURE] Culture, +2 [ICON_PEACE] Faith and +10 [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this city, and ranged units in the city have increased attack.[NEWLINE][NEWLINE]Only Polish may build it.</Text>
+			<Text>+2 [ICON_CULTURE] Culture, +2 [ICON_PEACE] Faith, +2 [ICON_RESEARCH] Science and +10 [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this city, and ranged units in the city have increased attack.[NEWLINE][NEWLINE]Only Polish may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
 			<Text>Unique Polish replacement for the Armory. Must have built Walls in the city. In addition to the normal bonuses provided by the Armory, this building provides Culture, Faith, and increased city defense. Ranged and Siege garrisoned in the city have increased attack.</Text>
@@ -200,7 +200,7 @@
 			<Text>Epic</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_EPIC_HELP">
-			<Text>Unit gains [ICON_CULTURE] Culture and additional XP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. Culture doubled [COLOR_POSITIVE_TEXT]on Barbarian Kills[ENDCOLOR].</Text>
+			<Text>Unit gains [ICON_CULTURE] Culture and additional XP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. [ICON_CULTURE] Culture doubled [COLOR_POSITIVE_TEXT]on Barbarian Kills[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA">
 			<Text>Dhanurvidya</Text>
@@ -212,7 +212,7 @@
 			<Text>Dhanurgraha</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_HELP">
-			<Text>Unique Ancient Era Unit.  Only the Indians may build it. Gains additional [ICON_CULTURE] Culture and experience for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. Culture from kills is doubled on barbarians.</Text>
+			<Text>Unique Ancient Era Unit.  Only the Indians may build it. Gains additional [ICON_CULTURE] Culture and experience for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled on barbarians.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_STRATEGY">
 			<Text>The Dhanurgraha is a powerful defense against early barbarians which helps India maintain its cultural and religious dominance in the early game. Seek out barbarians to kill for culture and faith, then turn on your neighbours if it suits you.</Text>
@@ -410,10 +410,10 @@
 			<Text>Flax is a food and fiber crop best known for its use in the production of linen. The crop was first domesticated in the Fertile Crescent and was cultivated extensively in Egypt, where the fabric became tightly bound to the local culture. Linen has a smooth texture, high lustre, and is cool to the touch. These characteristics linked it to religious and ceremonial purity within Egyptian rituals. Priests wore linen fabrics exclusively, and mummies were wrapped in linen in preparation for the afterlife. Today, more durable textiles like cotton have largely replaced linen as a fabric, but the flax seed is still widely used for food and cooking oil.</Text>
 		</Row>
 		
-		<!-- Grande Ecole -->
+		<!-- Grande École -->
 		<!-- Created by adan_eslavo 10/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE">
-			<Text>Grande Ecole</Text>
+			<Text>Grande École</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_HELP">
 			<Text>Unique French replacement for the Public School.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science and +1 [ICON_PRODUCTION] Production for every 2 [ICON_CITIZEN] Citizens in the City. +3 [ICON_PRODUCTION] Production for Scientists and +3 [ICON_RESEARCH] Science for Engineers in this City. Greatly Reduces [ICON_HAPPINESS_4] Unhappiness generated by Illiteracy. Allows Archaeologists to be built in this city. +2 [ICON_RESEARCH] Science and +2 [ICON_PRODUCTION] Production at Computers. [NEWLINE]Requires University in City.</Text>
@@ -493,7 +493,7 @@
 			<Text>Sahi Topu</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU_HELP">
-			<Text>Unit deals 20 damage to itself [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR].[NEWLINE]+10 HP [COLOR_POSITIVE_TEXT]on Heal inside Friendly Territory[ENDCOLOR].[NEWLINE]Lost after unit upgrade.</Text>
+			<Text>Unit deals 20 damage to itself [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR]. +10 HP [COLOR_POSITIVE_TEXT]on Heal inside Friendly Territory[ENDCOLOR]. Lost after unit upgrade.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_1">
 			<Text>Basilica</Text>
@@ -623,7 +623,7 @@
 			<Text>Skillful</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit gets -20% [ICON_STRENGTH] [COLOR_POSITIVE_TEXT]until it Fortifies[ENDCOLOR].</Text>
+			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit gets -20% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]until it Fortifies[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1">
 			<Text>Fatigue</Text>
@@ -1268,7 +1268,7 @@
 			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked. Marked unit has reduced [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT">
-			<Text>Maimed</Text>
+			<Text>Catching</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT_HELP">
 			<Text>Unit has reduced movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
@@ -1374,7 +1374,7 @@
 		<Row Tag="TXT_KEY_THEMING_BONUS_WHITE_TOWER_GLOBAL">
 			<Text>Treasury of Global Treasures</Text>
 		</Row>
-		<Row Tag="TXT_KEY_WHITE_TOWER_THEMING_BONUS_HELP">
+		<Row Tag="TXT_KEY_THEMING_BONUS_WHITE_TOWER_HELP">
 			<Text>To maximize your bonus, make sure all slots are filled with artifacts and either from the city owner or from different owners.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GREAT_WORK_THE_CROWN_JEWELS_QUOTE">

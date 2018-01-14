@@ -521,12 +521,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Arabia/Hashemite Raider/Hashemite Raider Text.xml</FileName>
+        <FileName>Arabia/HashemiteRaider/Hashemite Raider Text.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Arabia/Hashemite Raider/HashemiteRaider.sql</FileName>
+        <FileName>Arabia/HashemiteRaider/HashemiteRaider.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -676,22 +676,22 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Assyria/Iron Chariot/Iron Chariot Text.xml</FileName>
+        <FileName>Assyria/IronChariot/Iron Chariot Text.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Assyria/Lamassu Gate/Lamassu Gate Text.xml</FileName>
+        <FileName>Assyria/LamassuGate/Lamassu Gate Text.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Assyria/Iron Chariot/Iron Chariot.sql</FileName>
+        <FileName>Assyria/IronChariot/IronChariot.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Assyria/Lamassu Gate/Lamassu Gate.sql</FileName>
+        <FileName>Assyria/LamassuGate/LamassuGate.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -981,7 +981,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Hashemite Raider</Name>
         <Description>Garland Mine promotion for Hashemite Raider</Description>
-        <FileName>Arabia/Hashemite Raider/HashemiteRaider.lua</FileName>
+        <FileName>Arabia/HashemiteRaider/HashemiteRaider.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -993,7 +993,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Iron Chariot</Name>
         <Description>Fury of Nergal and bonuses from resources for Iron Chariot</Description>
-        <FileName>Assyria/Iron Chariot/Iron Chariot.lua</FileName>
+        <FileName>Assyria/IronChariot/IronChariot.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1196,59 +1196,59 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\3DModel\u_dervish_maara_weyn.fxsxml">
+    <Content Include="Arabia\HashemiteRaider\3DModel\u_dervish_maara_weyn.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\3DModel\u_dervish_maara_weyn.gr2">
+    <Content Include="Arabia\HashemiteRaider\3DModel\u_dervish_maara_weyn.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\3DModel\u_dervish_maara_weyn_diff.dds">
+    <Content Include="Arabia\HashemiteRaider\3DModel\u_dervish_maara_weyn_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\3DModel\u_dervish_maara_weyn_sref.dds">
+    <Content Include="Arabia\HashemiteRaider\3DModel\u_dervish_maara_weyn_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\Hashemite Raider Text.xml">
+    <Content Include="Arabia\HashemiteRaider\Hashemite Raider Text.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\HashemiteRaider.sql">
+    <Content Include="Arabia\HashemiteRaider\HashemiteRaider.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\HashemiteRaider.lua">
+    <Content Include="Arabia\HashemiteRaider\HashemiteRaider.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\HashemiteRaiderFlag_032.dds">
+    <Content Include="Arabia\HashemiteRaider\HashemiteRaiderFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\HashemiteRaiderFlag_128.dds">
+    <Content Include="Arabia\HashemiteRaider\HashemiteRaiderFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\HashemiteRaiderPicture_045.dds">
+    <Content Include="Arabia\HashemiteRaider\HashemiteRaiderPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\HashemiteRaiderPicture_064.dds">
+    <Content Include="Arabia\HashemiteRaider\HashemiteRaiderPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\HashemiteRaiderPicture_080.dds">
+    <Content Include="Arabia\HashemiteRaider\HashemiteRaiderPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\HashemiteRaiderPicture_128.dds">
+    <Content Include="Arabia\HashemiteRaider\HashemiteRaiderPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Hashemite Raider\HashemiteRaiderPicture_256.dds">
+    <Content Include="Arabia\HashemiteRaider\HashemiteRaiderPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1264,87 +1264,87 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\3DModel\tcmHeqaKhasut.fxsxml">
+    <Content Include="Assyria\IronChariot\3DModel\Chariot_Babylon.blend">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\3DModel\tcmHeqaKhasut.gr2">
+    <Content Include="Assyria\IronChariot\3DModel\Chariot_Babylon.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\3DModel\tcmHeqaKhasut_diff.dds">
+    <Content Include="Assyria\IronChariot\3DModel\Chariot_Babylon.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\3DModel\tcmHeqaKhasut_sref.dds">
+    <Content Include="Assyria\IronChariot\3DModel\Chariot_Babylon.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\Iron Chariot Text.xml">
+    <Content Include="Assyria\IronChariot\3DModel\Chariot_Babylon_gloss.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Assyria\IronChariot\Iron Chariot Text.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\Iron Chariot.lua">
+    <Content Include="Assyria\IronChariot\IronChariot.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\Iron Chariot.sql">
+    <Content Include="Assyria\IronChariot\IronChariot.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHeqaKhasutAlpha32.dds">
+    <Content Include="Assyria\IronChariot\IronChariotFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHeqaKhasutSV.dds">
+    <Content Include="Assyria\IronChariot\IronChariotFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHyksosIcons128.dds">
+    <Content Include="Assyria\IronChariot\IronChariotPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHyksosIcons256.dds">
+    <Content Include="Assyria\IronChariot\IronChariotPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHyksosIcons32.dds">
+    <Content Include="Assyria\IronChariot\IronChariotPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHyksosIcons45.dds">
+    <Content Include="Assyria\IronChariot\IronChariotPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHyksosIcons64.dds">
+    <Content Include="Assyria\IronChariot\IronChariotPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Iron Chariot\tcmHyksosIcons80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Assyria\Lamassu Gate\Lamassu Gate Text.xml">
+    <Content Include="Assyria\LamassuGate\Lamassu Gate Text.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Lamassu Gate\Lamassu Gate.sql">
+    <Content Include="Assyria\LamassuGate\LamassuGate.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Lamassu Gate\sargon128.dds">
+    <Content Include="Assyria\LamassuGate\LamassuGatePicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Lamassu Gate\sargon256.dds">
+    <Content Include="Assyria\LamassuGate\LamassuGatePicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Lamassu Gate\sargon45.dds">
+    <Content Include="Assyria\LamassuGate\LamassuGatePicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Assyria\Lamassu Gate\sargon64.dds">
+    <Content Include="Assyria\LamassuGate\LamassuGatePicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -4698,13 +4698,13 @@ Latest changes: see changelog file.</Description>
     <Folder Include="America\Monitor\" />
     <Folder Include="America\Ranch\" />
     <Folder Include="Arabia\" />
-    <Folder Include="Arabia\Hashemite Raider\" />
-    <Folder Include="Arabia\Hashemite Raider\3DModel" />
+    <Folder Include="Arabia\HashemiteRaider" />
+    <Folder Include="Arabia\HashemiteRaider\3DModel" />
     <Folder Include="Arabia\Madrasah\" />
     <Folder Include="Assyria\" />
-    <Folder Include="Assyria\Iron Chariot\" />
-    <Folder Include="Assyria\Iron Chariot\3DModel" />
-    <Folder Include="Assyria\Lamassu Gate\" />
+    <Folder Include="Assyria\IronChariot" />
+    <Folder Include="Assyria\IronChariot\3DModel" />
+    <Folder Include="Assyria\LamassuGate" />
     <Folder Include="Austria\" />
     <Folder Include="Austria\Landwehr\" />
     <Folder Include="Austria\Standschutzen\" />

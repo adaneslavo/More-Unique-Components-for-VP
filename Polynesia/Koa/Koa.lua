@@ -60,7 +60,7 @@ function BleedFromLeiomano(iPlayer)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-30 Massive bleeding[ENDCOLOR]", 1)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-30 Hemorrhaging[ENDCOLOR]", 1)
 			end
 		end
 	end

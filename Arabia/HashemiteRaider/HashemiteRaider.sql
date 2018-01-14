@@ -5,8 +5,8 @@
 -- Civilization_UnitClassOverrides
 --------------------------------	
 INSERT INTO	Civilization_UnitClassOverrides
-			(CivilizationType, UnitClassType, UnitType)
-VALUES		('CIVILIZATION_ARABIA', 'UNITCLASS_ANTI_TANK_GUN', 'UNIT_ARABIAN_HASHEMITE');
+			(CivilizationType,		UnitClassType,				UnitType)
+VALUES		('CIVILIZATION_ARABIA', 'UNITCLASS_ANTI_TANK_GUN',	'UNIT_ARABIA_HASHEMITE_RAIDER');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -16,56 +16,56 @@ VALUES		('CIVILIZATION_ARABIA', 'UNITCLASS_ANTI_TANK_GUN', 'UNIT_ARABIAN_HASHEMI
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,						Description,						Civilopedia,							Strategy,									Help, 									Combat,		RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized,	PrereqTech,			ObsoleteTech,	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,			UnitFlagAtlas,			MoveRate,		PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_ARABIAN_HASHEMITE',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_TEXT',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_STRATEGY',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_HELP', 	Combat+5,	RangedCombat+7, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, 0,				'TECH_COMBUSTION',	null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_HASHEMITE', 0,					0,				'HASHEMITE_ATLAS',	'HASHEMITE_FLAG_ATLAS',	'QUADRUPED',	PurchaseCooldown, BaseLandAirDefense, 1
+			(Type,							Description,						Civilopedia,							Strategy,									Help, 									Combat,		RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized,	PrereqTech,			ObsoleteTech,	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,				MoveRate,		PurchaseCooldown, BaseLandAirDefense, IsMounted)
+SELECT		'UNIT_ARABIA_HASHEMITE_RAIDER',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_TEXT',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_STRATEGY',	'TXT_KEY_UNIT_ARABIAN_HASHEMITE_HELP', 	Combat+5,	RangedCombat+7, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, 0,				'TECH_COMBUSTION',	null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_HASHEMITE', 0,					0,				'UNIT_ARABIA_ATLAS',	'UNIT_ARABIA_FLAG_ATLAS',	'QUADRUPED',	PurchaseCooldown, BaseLandAirDefense, 1
 FROM Units WHERE Type = 'UNIT_ANTI_TANK_GUN';
 --------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	
-			(UnitType, 					UnitAIType)
-SELECT		'UNIT_ARABIAN_HASHEMITE', 	UnitAIType
+			(UnitType, 							UnitAIType)
+SELECT		'UNIT_ARABIA_HASHEMITE_RAIDER', 	UnitAIType
 FROM Unit_AITypes WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
 --------------------------------	
 -- Unit_BuildingClassPurchaseRequireds
 --------------------------------		
 INSERT INTO Unit_BuildingClassPurchaseRequireds 	
-			(UnitType, 					BuildingClassType)
-SELECT		'UNIT_ARABIAN_HASHEMITE', 	BuildingClassType
+			(UnitType, 							BuildingClassType)
+SELECT		'UNIT_ARABIA_HASHEMITE_RAIDER', 	BuildingClassType
 FROM Unit_BuildingClassPurchaseRequireds WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------		
 INSERT INTO Unit_ClassUpgrades 	
-			(UnitType, 					UnitClassType)
-SELECT		'UNIT_ARABIAN_HASHEMITE', 	UnitClassType
+			(UnitType, 							UnitClassType)
+SELECT		'UNIT_ARABIA_HASHEMITE_RAIDER', 	UnitClassType
 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
 --------------------------------	
 -- Unit_Flavors
 --------------------------------	
 INSERT INTO		Unit_Flavors
-				(UnitType, 					FlavorType,			Flavor)
-VALUES			('UNIT_ARABIAN_HASHEMITE', 'FLAVOR_OFFENSE',	13),
-				('UNIT_ARABIAN_HASHEMITE', 'FLAVOR_DEFENSE',	10),
-				('UNIT_ARABIAN_HASHEMITE', 'FLAVOR_MOBILE',		10);
+				(UnitType, 							FlavorType,			Flavor)
+VALUES			('UNIT_ARABIA_HASHEMITE_RAIDER',	'FLAVOR_OFFENSE',	13),
+				('UNIT_ARABIA_HASHEMITE_RAIDER',	'FLAVOR_DEFENSE',	10),
+				('UNIT_ARABIA_HASHEMITE_RAIDER',	'FLAVOR_MOBILE',	10);
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------	
 INSERT INTO		Unit_FreePromotions
-				(UnitType, 					PromotionType)
-SELECT			'UNIT_ARABIAN_HASHEMITE', 	PromotionType
+				(UnitType, 							PromotionType)
+SELECT			'UNIT_ARABIA_HASHEMITE_RAIDER', 	PromotionType
 FROM Unit_FreePromotions WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
 
 INSERT INTO		Unit_FreePromotions
-				(UnitType,					PromotionType)
-VALUES			('UNIT_ARABIAN_HASHEMITE',	'PROMOTION_GARLAND_MINE'),
-				('UNIT_ARABIAN_HASHEMITE',	'PROMOTION_DESERT_RAIDER');
+				(UnitType,							PromotionType)
+VALUES			('UNIT_ARABIA_HASHEMITE_RAIDER',	'PROMOTION_GARLAND_MINE'),
+				('UNIT_ARABIA_HASHEMITE_RAIDER',	'PROMOTION_DESERT_RAIDER');
 --------------------------------	
 -- Unit_ResourceQuantityRequirements
 --------------------------------		
 INSERT INTO Unit_ResourceQuantityRequirements 	
-			(UnitType, 					ResourceType)
-SELECT		'UNIT_ARABIAN_HASHEMITE',	null
+			(UnitType, 						ResourceType)
+SELECT		'UNIT_ARABIA_HASHEMITE_RAIDER',	null
 FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
 --==========================================================================================================================	
 
@@ -76,12 +76,9 @@ FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-			(Type,						Description,						Help,									CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry,							FreePillageMoves)
-VALUES		('PROMOTION_GARLAND_MINE',	'TXT_KEY_PROMOTION_GARLAND_MINE',	'TXT_KEY_PROMOTION_GARLAND_MINE_HELP',	1,				'AS2D_IF_LEVELUP',	10,				'PROMOTION_ATLAS',	'PEDIA_RANGED',	'TXT_KEY_PROMOTION_GARLAND_MINE',	1);
-
-INSERT INTO UnitPromotions
-			(Type,						Description,						Help,									CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,						PediaType,		PediaEntry)
-VALUES		('PROMOTION_DESERT_RAIDER',	'TXT_KEY_PROMOTION_DESERT_RAIDER',	'TXT_KEY_PROMOTION_DESERT_RAIDER_HELP',	1,				'AS2D_IF_LEVELUP',	1,				'EXPANSION2_PROMOTION_ATLAS',	'PEDIA_RANGED',	'TXT_KEY_PROMOTION_DESERT_RAIDER');
+			(Type,						Description,						Help,									CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,						PediaType,		PediaEntry,							FreePillageMoves)
+VALUES		('PROMOTION_GARLAND_MINE',	'TXT_KEY_PROMOTION_GARLAND_MINE',	'TXT_KEY_PROMOTION_GARLAND_MINE_HELP',	1,				'AS2D_IF_LEVELUP',	10,				'PROMOTION_ATLAS',				'PEDIA_RANGED',	'TXT_KEY_PROMOTION_GARLAND_MINE',	1),
+			('PROMOTION_DESERT_RAIDER',	'TXT_KEY_PROMOTION_DESERT_RAIDER',	'TXT_KEY_PROMOTION_DESERT_RAIDER_HELP',	1,				'AS2D_IF_LEVELUP',	1,				'EXPANSION2_PROMOTION_ATLAS',	'PEDIA_RANGED',	'TXT_KEY_PROMOTION_DESERT_RAIDER',	0);
 --------------------------------
 -- UnitPromotions_Terrains
 --------------------------------
@@ -134,11 +131,11 @@ INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, Mate
 ------------------------------
 INSERT INTO IconTextureAtlases 
 			(Atlas, 								IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
-VALUES		('HASHEMITE_ATLAS', 					256, 		'HashemiteRaiderPicture_256.dds',			1,				1),
-			('HASHEMITE_ATLAS', 					128, 		'HashemiteRaiderPicture_128.dds',			1, 				1),
-			('HASHEMITE_ATLAS', 					80, 		'HashemiteRaiderPicture_080.dds',			1, 				1),
-			('HASHEMITE_ATLAS', 					64, 		'HashemiteRaiderPicture_064.dds',			1, 				1),
-			('HASHEMITE_ATLAS', 					45, 		'HashemiteRaiderPicture_045.dds',			1, 				1),
-			('HASHEMITE_FLAG_ATLAS', 				32, 		'HashemiteRaiderFlag_032.dds',				1, 				1);
+VALUES		('UNIT_ARABIA_ATLAS', 					256, 		'HashemiteRaiderPicture_256.dds',			1,				1),
+			('UNIT_ARABIA_ATLAS', 					128, 		'HashemiteRaiderPicture_128.dds',			1, 				1),
+			('UNIT_ARABIA_ATLAS', 					80, 		'HashemiteRaiderPicture_080.dds',			1, 				1),
+			('UNIT_ARABIA_ATLAS', 					64, 		'HashemiteRaiderPicture_064.dds',			1, 				1),
+			('UNIT_ARABIA_ATLAS', 					45, 		'HashemiteRaiderPicture_045.dds',			1, 				1),
+			('UNIT_ARABIA_FLAG_ATLAS', 				32, 		'HashemiteRaiderFlag_032.dds',				1, 				1);
 --==========================================================================================================================
 --==========================================================================================================================
