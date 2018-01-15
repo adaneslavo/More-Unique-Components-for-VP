@@ -75,11 +75,12 @@ DELETE FROM UnitClasses WHERE Type = 'UNITCLASS_LONGBOWMAN';
 -- Language_en_US 
 --------------------------------
 UPDATE Language_en_US 
-SET Text = ''
-WHERE Tag = 'TXT_KEY_UNIT_HELP_LONGBOWMAN';
+SET Text = 'Unique ranged unit of the English civilization. Replaces the Crossbowman. Begins with the [COLOR_POSITIVE_TEXT]Range[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Agincourt[ENDCOLOR] Promotions, giving increased attack range and a bonus against Mounted units.'
+WHERE Tag = 'TXT_KEY_UNIT_HELP_LONGBOWMAN' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 UPDATE Language_en_US 
-SET Text = ''
-WHERE Tag = 'TXT_KEY_UNIT_ENGLISH_LONGBOWMAN_STRATEGY';
+SET Text = ' The Longbowman has a greater range than the Crossbowman, allowing it to attack enemies three hexes away, often destroying them before they can strike back. Longbows also are more effective against Mounted opponents, thanks to their Agincourt Promotion. Like other ranged units, Longbowmen are vulnerable to melee attack.'
+WHERE Tag = 'TXT_KEY_UNIT_ENGLISH_LONGBOWMAN_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
 --==========================================================================================================================
 --==========================================================================================================================
