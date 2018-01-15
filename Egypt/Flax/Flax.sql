@@ -56,7 +56,7 @@ VALUES 		('Any', 		'Any',					1,		'ART_DEF_IMPROVEMENT_NONE',			'SNAPSHOT',		'AR
 ------------------------------
 INSERT INTO ArtDefine_StrategicView
 			(StrategicViewType, 				TileType, 		Asset)
-VALUES 		('ART_DEF_RESOURCE_EGYPT_FLAX', 	'Resource', 	'FlaxIcon_128.dds');
+VALUES 		('ART_DEF_RESOURCE_EGYPT_FLAX', 	'Resource', 	'FlaxIcon_256f.dds');
 --==========================================================================================================================
 
 --==========================================================================================================================

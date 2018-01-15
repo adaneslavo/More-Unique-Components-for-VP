@@ -1,4 +1,4 @@
---[[function RanchCityGrowth(iPlayer, iCity, iPlotX, iPlotY, bGold, bCulture)
+function RanchCityGrowth(iPlayer, iCity, iPlotX, iPlotY, bGold, bCulture)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
 	
@@ -14,4 +14,4 @@
 	end
 end
 
-GameEvents.CityBoughtPlot.Add(RanchCityGrowth)]]--
+GameEvents.CityBoughtPlot.Add(RanchCityGrowth)

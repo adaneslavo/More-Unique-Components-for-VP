@@ -27,7 +27,7 @@ function RemoveFatigue(iPlayer)
 	local pPlayer = Players[iPlayer]
 		
 	for pUnit in Players[iPlayer]:Units() do
-		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1) 
+		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1) then
 			if pUnit:GetFortifyTurns() > 0 then
 				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1, false)
 			else

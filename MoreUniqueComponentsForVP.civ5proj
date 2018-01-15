@@ -166,11 +166,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheCelts/DruidicLore/DruidicLore.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>TheCelts/Boudicca/BoudiccaFlavors.sql</FileName>
       </Action>
       <Action>
@@ -511,11 +506,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Arabia/Hashemite Raider/Hashemite Raider.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Austria/Landwehr/Landwehr.sql</FileName>
       </Action>
       <Action>
@@ -621,22 +611,22 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Assyria/Iron Chariot/Iron Chariot.sql</FileName>
+        <FileName>Assyria/IronChariot/IronChariot.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Assyria/Lamassu Gate/Lamassu Gate.sql</FileName>
+        <FileName>Assyria/LamassuGate/LamassuGate.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Arabia/HashemiteRaider/HashemiteRaider.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Arabia/Madrasah/Madrasah.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Arabia/Madrasah/Madrasah Text.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1099,6 +1089,10 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="America\Monitor\MonitorFlag_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="America\Ranch\RanchPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -1138,10 +1132,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Arabia\HashemiteRaider\3DModel\u_dervish_maara_weyn_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Arabia\HashemiteRaider\Hashemite Raider Text.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Arabia\HashemiteRaider\HashemiteRaider.sql">
       <SubType>Lua</SubType>
@@ -1184,30 +1174,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Arabia\Madrasah\Madrasah.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Assyria\IronChariot\3DModel\Chariot_Babylon.blend">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Assyria\IronChariot\3DModel\Chariot_Babylon.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Assyria\IronChariot\3DModel\Chariot_Babylon.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Assyria\IronChariot\3DModel\Chariot_Babylon.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Assyria\IronChariot\3DModel\Chariot_Babylon_gloss.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Assyria\IronChariot\Iron Chariot Text.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1635,14 +1601,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Egypt\Flax\FlaxIcon_128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Egypt\Flax\FlaxIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Egypt\Flax\FlaxIcon_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -1652,6 +1610,18 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Egypt\Flax\FlaxIcon_080.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Flax\FlaxIcon_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Flax\FlaxIcon_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Flax\FlaxIcon_256f.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -4003,10 +3973,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\DruidicLore\DruidicLore.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="TheCelts\Oppidum\3DModel\black32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -4586,7 +4552,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Arabia\Madrasah\" />
     <Folder Include="Assyria\" />
     <Folder Include="Assyria\IronChariot" />
-    <Folder Include="Assyria\IronChariot\3DModel" />
     <Folder Include="Assyria\LamassuGate" />
     <Folder Include="Austria\" />
     <Folder Include="Austria\Landwehr\" />

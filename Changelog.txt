@@ -4,14 +4,26 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 
-*Flax art
-*missing sv_flag for monitor
-*fix Iron Chariot model
-*ranch lua?
+*popups
+*monitor.lua
+*flax 22px
+*roman GG appear and disappear?
 
 v24:
 - added mipmaps to new art,
 - added new texts for every UCs (from @pineappledan),
+- moved updated sql texts to xml,
+- added sv icon for Monitor,
+- added new flax art,
+- fixed Monitor texts (used original ones),
+- deleted unnecessary text files,
+- fixed file links,
+- fixed Khopesh,
+- changed sound and formation of Klepht, now only bonus on Attack, lowered number of units in model from 14 to 9,
+- ballista and legion now can be buffed by any GG,
+- renamed and changed text of few promotions,
+- renamed back to Seir Morb and Great Bombard,
+- fixed Druidic Lore (double entry in table),
 - moved Dummy Defense building outside Monitor,
 - added IsMounted value to Hashemite Raider,
 - changed flag, picture and model of Hashemite Raider,
@@ -19,7 +31,7 @@ v24:
 - changed flag, picture and model of Iron Chariot,
 - added to Ranch: yields from border growth, +33%p to mounted units,
 - added to Madrasa: growth from birth,
-- fixed White Tower thiming texts
+- fixed White Tower theming texts
 - clean ups,
 - fixes.
 

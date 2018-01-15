@@ -91,7 +91,7 @@ function LegatusOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
-	if pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_ROME and pUnit:GetUnitType() == GameInfoTypes.UNIT_GREAT_GENERAL then
+	if pUnit:GetUnitType() == GameInfoTypes.UNIT_GREAT_GENERAL then
 		pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS"], true)
 		pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM"], true)
 	end

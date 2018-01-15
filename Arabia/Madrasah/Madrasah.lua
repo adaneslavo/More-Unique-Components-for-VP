@@ -16,7 +16,7 @@ end
 function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
-	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASA) and bFaith) then
+	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith) then
 		local iScience = 20 * math.max(pPlayer:GetCurrentEra(), 1)
 		if IsGreatPerson(iPlayer, iUnit) then
 			iScience = 100 * math.max(pPlayer:GetCurrentEra(), 1)
@@ -31,7 +31,7 @@ end
 function MadrasahScienceBuilding(iPlayer, iCity, iBuilding, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
-	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASA) and bFaith) then
+	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith) then
 		local iScience = 20 * math.max(pPlayer:GetCurrentEra(), 1)
 		if iPlayer == Game:GetActivePlayer() then
 			Events.GameplayAlertMessage(Locale.ConvertTextKey("TXT_KEY_ALERT_MADRASAH_SCIENCE", iScience, pCity:GetName()))

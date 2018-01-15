@@ -58,17 +58,4 @@ UPDATE Unit_Flavors SET Flavor = '4' WHERE UnitType = 'UNIT_SWEDISH_HAKKAPELIITT
 --------------------------------
 DELETE FROM UnitClasses WHERE Type = 'UNITCLASS_SWEDISH_HAKKAPELIITTA';
 --==========================================================================================================================	
-
 --==========================================================================================================================	
--- LANGUAGE
---==========================================================================================================================	
---------------------------------	
--- Language_en_US 
---------------------------------
-UPDATE Language_en_US 
-SET Text = 'Unique Swedish Lancer. This Unit is stronger and more effective against wounded units than the Lancer. [ICON_GREAT_GENERAL] Great Generals are generated more quickly by this Unit, and they transfer their movement to [ICON_GREAT_GENERAL] Great Generals when beginning a turn stacked. Is available earlier than the Lancer.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_SWEDISH_HAKKAPELIITTA';
-
-UPDATE Language_en_US 
-SET Text = 'Strong against wounded units. Stack a Great General with them if possible. The Great General receives the movement allowance of the Hakkapeliitta if they start the turn stacked.'
-WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_HAKKAPELIITTA_STRATEGY';

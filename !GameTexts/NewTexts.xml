@@ -602,7 +602,7 @@
 			<Text>Orban's Cannon</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD">
-			<Text>Great Turkish Bombard</Text>
+			<Text>Great Bombard</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_HELP">
 			<Text>Unique Medieval Era Siege Unit. An Incredibly powerful unit capable of smashing cities to pieces. Does very high damage to cities and naval units, but is less useful against land units compared to other siege weapons. [NEWLINE][NEWLINE]Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
@@ -664,22 +664,22 @@
 		<!-- Hashemite Raider -->
 		<!-- Created by Blue Ghost -->
 
-		<Row Tag="TXT_KEY_UNIT_ARABIAN_HASHEMITE">
+		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER">
 			<Text>
 				Hashemite Raider
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ARABIAN_HASHEMITE_TEXT">
+		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_TEXT">
 			<Text>
 				Placeholder
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ARABIAN_HASHEMITE_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_STRATEGY">
 			<Text>
 				The Hashemite Raider is adept at hit-and-run tactics and disrupting enemy supply lines. Whenever it pillages an improvement, adjacent enemy units take 10 damage.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ARABIAN_HASHEMITE_HELP">
+		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_HELP">
 			<Text>
 				The Hashemite Raider is the Arabian replacement for the Light Tank. It is stronger than the unit it replaces, available earlier, and does not require Aluminum. It requires no movement to pillage, and deals damage to adjacent enemy units when pillaging improvements.
 			</Text>
@@ -691,7 +691,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_GARLAND_MINE_HELP">
 			<Text>
-				No movement cost to pillage. When pillaging an improvement, adjacent enemy units take 10 damage.
+				Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. All [COLOR_POSITIVE_TEXT]adjacent Enemy Units[ENDCOLOR] take flat damage [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_DESERT_RAIDER">
@@ -701,7 +701,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_DESERT_RAIDER_HELP">
 			<Text>
-				+25% combat strength and double movement in Deserts.
+				Double [ICON_ARROW_RIGHT] Movement and +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on Desert[ENDCOLOR].
 			</Text>
 		</Row>
 
@@ -724,22 +724,22 @@
 
 		<!-- Iron Chariot -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_UNIT_ASSYRIAN_IRON_CHARIOT">
+		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT">
 			<Text>
 				Iron Chariot
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ASSYRIAN_IRON_CHARIOT_TEXT">
+		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_TEXT">
 			<Text>
 				Chariots formed the core of the Assyrian army. Assyrian chariots were drawn by four horses and used to smash into and disperse enemy formations.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ASSYRIAN_IRON_CHARIOT_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_STRATEGY">
 			<Text>
 				Assyria's Iron Chariots act as shock troops to control the battlefield. They excel at breaking enemy ranks.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ASSYRIAN_IRON_CHARIOT_HELP">
+		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP">
 			<Text>
 				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require Horses, but gains +2 combat strength if you have sufficient Horses for all Iron Chariots, and likewise for Iron. Also, it gains +10% combat strength for each adjacent enemy unit.
 			</Text>
@@ -751,67 +751,67 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_HELP">
 			<Text>
-				+10% combat strength for each adjacent enemy military unit.
+				+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for each adjacent Enemy Unit[ENDCOLOR].
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_1">
 			<Text>
-				Fury of Nergal
+				Fury of Nergal I
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_1_HELP">
 			<Text>
-				+10% combat strength
+				+10% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_2">
 			<Text>
-				Fury of Nergal
+				Fury of Nergal II
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_2_HELP">
 			<Text>
-				+20% combat strength
+				+20% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_3">
 			<Text>
-				Fury of Nergal
+				Fury of Nergal III
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_3_HELP">
 			<Text>
-				+30% combat strength
+				+30% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_4">
 			<Text>
-				Fury of Nergal
+				Fury of Nergal IV
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_4_HELP">
 			<Text>
-				+40% combat strength
+				+40% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_5">
 			<Text>
-				Fury of Nergal
+				Fury of Nergal V
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_5_HELP">
 			<Text>
-				+50% combat strength
+				+50% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_6">
 			<Text>
-				Fury of Nergal
+				Fury of Nergal VI
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_6_HELP">
 			<Text>
-				+60% combat strength
+				+60% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
 
@@ -1001,22 +1001,22 @@
 
 		<!-- Lamassu Gate -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_BUILDING_LAMASSU">
+		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE">
 			<Text>
 				Lamassu Gate
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_LAMASSU_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_TEXT">
 			<Text>
 				Placeholder
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_LAMASSU_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_STRATEGY">
 			<Text>
 				The Lamassu Gate is an Assyrian unique building, replacing the Walls. It increases the unit supply cap in the city more than the standard Walls. It also grants +1 [ICON_CULTURE] Culture and a Writer specialist slot.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_LAMASSU_HELP">
+		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
 			<Text>
 				Military Units supplied by this City's population increased by 20%.
 			</Text>
@@ -1183,22 +1183,22 @@
 
 		<!-- Madrasah -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH">
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH">
 			<Text>
 				Madrasah
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_TEXT">
 			<Text>
 				"Madrasah" is Arabic for any type of educational institution; although with a religious component, madrasahs were often secular, and could cover anything from elementary to higher learning. Usually associated with a mosque, madrasahs could even specialize in medicine, law, science, philosophy or the education of women. The first madrasah, the Gama'at al-Qarawiyyn, was established in 859 AD by Fatimah al-Fihri, the daughter of a wealthy merchant. During the rule of the Fatimid, Ayyubid and Mamluk dynasties, the practice of sponsoring madrasahs by the ruling, wealthy elite spread across Egypt and the Middle East. The first Ottoman madrasah was founded in 1331 AD in Iznik, and followed the traditions of Sunni Islam. The madrasahs of the Turks and Arabs would, as Europe suffered through the Dark Ages, keep the best of Western knowledge alive, and blended it with that of the East.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_STRATEGY">
 			<Text>
 				Unique Arabian replacement for the University. Generates Faith in addition to Science, and increases Great Person rate. Whenever you make a Faith purchase, the Madrasah generates additional Science.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_MADRASAH_HELP">
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
 			<Text>
 				+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE] Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 20 [ICON_RESEARCH] Science (or 100 for a Great Person purchase), scaling with era.
 			</Text>
@@ -1211,19 +1211,9 @@
 		
 		<!-- Monitor -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_UNIT_AMERICAN_MONITOR">
-			<Text>
-				Monitor
-			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_AMERICAN_MONITOR_STRATEGY">
-			<Text>
-				A powerful Industrial-era naval unit. Only America may build it. It has the Cover I promotion and increased movement on coast, and gives a defensive bonus to nearby friendly cities.
-			</Text>
-		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_MONITOR">
 			<Text>
-				Monitor
+				Surveillance
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_MONITOR_HELP">
@@ -1537,20 +1527,20 @@
 
 		<!-- Ranch -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_BUILDING_RANCH">
+		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH">
 			<Text>
 				Ranch
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_RANCH_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_TEXT">
 			<Text>A ranch is a type of farm and an area of landscape given primarily to the practice of ranching, the practice of raising grazing livestock such as cattle or sheep for meat or wool. Ranching is also a method used to raise less common livestock such as elk, American bison or even ostrich, emu, and alpacas.[NEWLINE][NEWLINE]Ranches generally consist of large areas, but may be of nearly any size. If the ranch includes arable or irrigated land, the ranch may also engage in a limited amount of farming, raising crops for feeding the animals, such as hay and feed grains. As settlers from the United States moved west, they brought cattle breeds developed on the east coast and in Europe along with them, and adapted their management to the drier lands of the west by borrowing key elements of the Spanish vaquero culture.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_RANCH_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY">
 			<Text>
 				In addition to the regular abilities of the Stable, the Ranch increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_RANCH_HELP">
+		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
 			<Text>
 				Unique American Stable replacement. +33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the Military Unit Supply Cap from Population in the City by 10%.[NEWLINE]+25% border growth rate in city. Whenever the city borders expand, gain 10 [ICON_FOOD] Food and [ICON_CULTURE] Culture, scaling with Era.
 			</Text>
@@ -1690,7 +1680,7 @@
 			<Text>+60% [ICON_RANGE_STRENGTH] Ranged Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB">
-			<Text>Armstrong Gun</Text>
+			<Text>Seir Morb</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_HELP">
 			<Text>Unique Industrial Era Unit.  Only the Siamese may build it. More powerful than the Field Gun it replaces and has a bonus against naval units instead of a penalty, but does not have the [COLOR_RED]Bonus vs Cities[ENDCOLOR] promotion. Deals more damage in a turn the less the unit has moved and receives [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] promotions for free.</Text>

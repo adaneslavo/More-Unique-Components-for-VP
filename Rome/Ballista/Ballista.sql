@@ -77,22 +77,5 @@ DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_ROMAN_BALLISTA' AND Promo
 -- UnitClasses
 --------------------------------
 DELETE FROM UnitClasses WHERE Type = 'UNITCLASS_BALLISTA';
---==========================================================================================================================	
-
---==========================================================================================================================	
--- LANGUAGE
---==========================================================================================================================	
---------------------------------	
--- Language_en_US 
---------------------------------
-UPDATE Language_en_US 
-SET Text = 'Unique Roman replacement for the Catapult. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against land Units. When near a Great General, has double movement in open terrain in enemy territory.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_BALLISTA' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
-UPDATE Language_en_US 
-SET Text = 'The Ballista is a potent replacement for the Catapult, with few of the drawbacks of a normal Siege unit. When near a Great General the Ballista can move freely in unhindering terrain, even in enemy territory. Use these war machines in conjunction with your Legions to expand quickly and consolidate your early empire. The power and flexibility of the Ballista may allow your army to ignore producing Composite Bowmen entirely.'
-WHERE Tag = 'TXT_KEY_UNIT_ROMAN_BALLISTA_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
-UPDATE Language_en_US
-SET Text = 'The Legion is the Roman unique unit, replacing the Swordsman. The Legion is more powerful than the Swordsman, making it the one of the most powerful melee units of the Classical Era. The Legion can also construct roads and forts. When near a Great General, the Legion constructs improvements faster.'
-WHERE Tag = 'TXT_KEY_UNIT_ROMAN_LEGION_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+--==========================================================================================================================
+--==========================================================================================================================

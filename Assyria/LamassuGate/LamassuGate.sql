@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_ASSYRIA',	'BUILDINGCLASS_WALLS', 'BUILDING_ASSYRIA_LAMASS
 -- Buildings
 --------------------------------	
 INSERT INTO	Buildings
-			(Type,								Description,				Civilopedia,						Strategy,								Help,								GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	NeverCapture, Defense, ExtraCityHitPoints, AllowsRangeStrike, CityWall, CitySupplyModifier,		SpecialistType,			SpecialistCount,	GreatWorkSlotType,				GreatWorkCount)
-SELECT		'BUILDING_ASSYRIA_LAMASSU_GATE',	'TXT_KEY_BUILDING_LAMASSU', 'TXT_KEY_BUILDING_LAMASSU_TEXT',	'TXT_KEY_BUILDING_LAMASSU_STRATEGY',	'TXT_KEY_BUILDING_LAMASSU_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_ASSYRIA_ATLAS',	GreatWorkYieldType,	NeverCapture, Defense, ExtraCityHitPoints, AllowsRangeStrike, CityWall, CitySupplyModifier+10,	'SPECIALIST_WRITER',	SpecialistCount+1,	'GREAT_WORK_SLOT_LITERATURE',	GreatWorkCount+1
+			(Type,								Description,							Civilopedia,									Strategy,											Help,											GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	NeverCapture, Defense, ExtraCityHitPoints, AllowsRangeStrike, CityWall, CitySupplyModifier,		SpecialistType,			SpecialistCount,	GreatWorkSlotType,				GreatWorkCount)
+SELECT		'BUILDING_ASSYRIA_LAMASSU_GATE',	'TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE', 'TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_TEXT',	'TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_STRATEGY',	'TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_ASSYRIA_ATLAS',	GreatWorkYieldType,	NeverCapture, Defense, ExtraCityHitPoints, AllowsRangeStrike, CityWall, CitySupplyModifier+10,	'SPECIALIST_WRITER',	SpecialistCount+1,	'GREAT_WORK_SLOT_LITERATURE',	GreatWorkCount+1
 FROM Buildings WHERE Type = 'BUILDING_WALLS';
 --------------------------------	
 -- Building_Flavors
