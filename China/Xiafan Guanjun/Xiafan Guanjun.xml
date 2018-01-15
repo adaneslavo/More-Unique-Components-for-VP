@@ -2,28 +2,6 @@
 <!-- Created by ModBuddy on 8/6/2013 1:15:40 AM -->
 <GameData>
 	
-	<Language_en_US>
-		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN">
-			<Text>Xiafan Guanjun</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_HELP">
-			<Text>Sturdy Renaissance era ranged naval unit. Only China may build it.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_STRATEGY">
-			<Text>The Xiafan Guanjun is a Chinese unique unit. It is much sturdier than the Frigate it replaces, is available earlier, and has the Supply promotion. When stationed in a city-state territory, gain 2 Influence with that city-state per turn.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_TEXT">
-			<Text>
-				A Junk is an ancient Chinese sailing vessel/ship design still in use today. Junks were developed during the Song Dynasty (960–1279) and were used as seagoing vessels as early as the 2nd century CE. They evolved in the later dynasties, and were used throughout Asia for extensive ocean voyages. The name ultimately stems from the Chinese chuán ("ship"). The Javanese called it "jong", which became the Portuguese "junco", which became the English "junk".[NEWLINE][NEWLINE]Junks were efficient and sturdy ships that sailed long distances as early as the 2nd century CE. They incorporated numerous technical advances in sail plan and hull designs that were later adopted in Western shipbuilding. The historian H. Warington Smyth considered the junk as one of the most efficient ship designs, stating that "As an engine for carrying man and his commerce upon the high and stormy seas as well as on the vast inland waterways, it is doubtful if any class of vessel… is more suited or better adapted to its purpose than the Chinese or Indian junk, and it is certain that for flatness of sail and handiness, the Chinese rig is unsurpassed."
-			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_KOWTOW">
-			<Text>Kowtow</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_KOWTOW_HELP">
-			<Text>Can enter rival territory. +2 Influence per turn when stationed within a city-state's borders.</Text>
-		</Row>
-	</Language_en_US>
 
 	<IconTextureAtlases>
 		<Row>
