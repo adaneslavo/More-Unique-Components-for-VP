@@ -30,7 +30,7 @@ FROM ArtDefine_UnitInfos WHERE Type = 'ART_DEF_UNIT_U_OTTOMAN_JANISSARY';
 ------------------------------
 INSERT INTO ArtDefine_UnitInfoMemberInfos 	
 			(UnitInfoType,					UnitMemberInfoType,						NumMembers)
-SELECT		'ART_DEF_UNIT_GREECE_KLEPHT', 	'ART_DEF_UNIT_MEMBER_GREECE_KLEPHT',	NumMembers
+SELECT		'ART_DEF_UNIT_GREECE_KLEPHT', 	'ART_DEF_UNIT_MEMBER_GREECE_KLEPHT',	9
 FROM ArtDefine_UnitInfoMemberInfos WHERE UnitInfoType = 'ART_DEF_UNIT_U_OTTOMAN_JANISSARY';
 ------------------------------
 -- ArtDefine_UnitMemberCombats
