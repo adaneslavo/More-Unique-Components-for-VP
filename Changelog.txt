@@ -5,6 +5,23 @@
 More Unique Components for Vox Populi changelog:
 
 *Flax art
+*missing sv_flag for monitor
+*fix Iron Chariot model
+*ranch lua?
+
+v24:
+- added mipmaps to new art,
+- added new texts for every UCs (from @pineappledan),
+- moved Dummy Defense building outside Monitor,
+- added IsMounted value to Hashemite Raider,
+- changed flag, picture and model of Hashemite Raider,
+- changed promotion Icon of Garland Mine,
+- changed flag, picture and model of Iron Chariot,
+- added to Ranch: yields from border growth, +33%p to mounted units,
+- added to Madrasa: growth from birth,
+- fixed White Tower thiming texts
+- clean ups,
+- fixes.
 
 v23:
 - merged all @Blue Ghost work via Github,
