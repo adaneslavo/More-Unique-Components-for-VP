@@ -1081,15 +1081,15 @@ Latest changes: see changelog file.</Description>
     </Content>
     <Content Include="!Utils\PlotIterators.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="!Utils\Sukritact_ChangeResearchProgress.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="!Utils\Sukritact_SaveUtils.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="America\Monitor\Monitor.lua">
       <SubType>Lua</SubType>
