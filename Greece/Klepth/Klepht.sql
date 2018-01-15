@@ -23,7 +23,7 @@ VALUES		('ART_DEF_UNIT_GREECE_KLEPHT',	'Unit',		'KlephtFlag_128.dds');
 ------------------------------		
 INSERT INTO ArtDefine_UnitInfos 
 			(Type,							DamageStates,	Formation)
-SELECT		'ART_DEF_UNIT_GREECE_KLEPHT', 	DamageStates, 	Formation
+SELECT		'ART_DEF_UNIT_GREECE_KLEPHT', 	DamageStates, 	'Scout'
 FROM ArtDefine_UnitInfos WHERE Type = 'ART_DEF_UNIT_U_OTTOMAN_JANISSARY';
 ------------------------------
 -- ArtDefine_UnitInfoMemberInfos
@@ -43,8 +43,8 @@ FROM ArtDefine_UnitMemberCombats WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_O
 -- ArtDefine_UnitMemberCombatWeapons
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberCombatWeapons	
-			(UnitMemberType,						"Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag)
-SELECT		'ART_DEF_UNIT_MEMBER_GREECE_KLEPHT',	"Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag, WeaponTypeSoundOverrideTag
+			(UnitMemberType,						"Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag,	WeaponTypeSoundOverrideTag)
+SELECT		'ART_DEF_UNIT_MEMBER_GREECE_KLEPHT',	"Index", SubIndex, ID, VisKillStrengthMin, VisKillStrengthMax, ProjectileSpeed, ProjectileTurnRateMin, ProjectileTurnRateMax, HitEffect, HitEffectScale, HitRadius, ProjectileChildEffectScale, AreaDamageDelay, ContinuousFire, WaitForEffectCompletion, TargetGround, IsDropped, WeaponTypeTag,	WeaponTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberCombatWeapons WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_OTTOMAN_JANISSARY';
 ------------------------------
 -- ArtDefine_UnitMemberInfos
@@ -93,7 +93,7 @@ FROM Units WHERE Type = 'UNIT_GATLINGGUN';
 INSERT INTO UnitGameplay2DScripts 	
 			(UnitType, 				SelectionSound, FirstSelectionSound)
 SELECT		'UNIT_GREECE_KLEPHT', 	SelectionSound, FirstSelectionSound
-FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_GATLINGGUN';	
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_MUSKETMAN';	
 --------------------------------	
 -- Unit_AITypes
 --------------------------------		

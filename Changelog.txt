@@ -8,6 +8,7 @@ More Unique Components for Vox Populi changelog:
 *monitor.lua
 *flax 22px
 *roman GG appear and disappear?
+*fury prmotion
 
 v24:
 - added mipmaps to new art,
@@ -18,6 +19,8 @@ v24:
 - fixed Monitor texts (used original ones),
 - deleted unnecessary text files,
 - fixed file links
+- fixed Khopesh,
+- changed sound and formation of Klepht, now only bonus on Attack,
 - ballista and legion now can be buffed by any GG,
 - renamed and changed text of few promotions,
 - renamed back to Seir Morb and Great Bombard,

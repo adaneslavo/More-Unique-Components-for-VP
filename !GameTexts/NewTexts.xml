@@ -691,7 +691,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_GARLAND_MINE_HELP">
 			<Text>
-				No movement cost to pillage. When pillaging an improvement, adjacent enemy units take 10 damage.
+				Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. All [COLOR_POSITIVE_TEXT]adjacent Enemy Units[ENDCOLOR] take flat damage [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_DESERT_RAIDER">
@@ -701,7 +701,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_DESERT_RAIDER_HELP">
 			<Text>
-				+25% combat strength and double movement in Deserts.
+				Double [ICON_ARROW_RIGHT] Movement and +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on Desert[ENDCOLOR].
 			</Text>
 		</Row>
 
@@ -1213,7 +1213,7 @@
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_PROMOTION_MONITOR">
 			<Text>
-				Monitor
+				Surveillance
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_MONITOR_HELP">
