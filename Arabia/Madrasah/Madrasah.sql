@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_ARABIA', 'BUILDINGCLASS_UNIVERSITY', 'BUILDING_ARABIA_MAD
 -- Buildings
 --------------------------------
 INSERT INTO	Buildings
-			(Type,						Description,					Civilopedia,							Strategy,									Help,									GoldMaintenance, Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,							GreatWorkYieldType,	UnlockedByBelief, SpecialistCount, SpecialistType, IlliteracyHappinessChange, GreatPeopleRateModifier)
-SELECT		'BUILDING_ARABIA_MADRASAH', 'TXT_KEY_BUILDING_VP_MADRASAH', 'TXT_KEY_BUILDING_VP_MADRASAH_TEXT',	'TXT_KEY_BUILDING_VP_MADRASAH_STRATEGY',	'TXT_KEY_BUILDING_VP_MADRASAH_HELP',	GoldMaintenance, Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 2,				'EXPANSION_SCEN_BUILDING_ATLAS',	GreatWorkYieldType,	UnlockedByBelief, SpecialistCount, SpecialistType, IlliteracyHappinessChange, GreatPeopleRateModifier+15
+			(Type,						Description,						Civilopedia,								Strategy,										Help,										GoldMaintenance, Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,							GreatWorkYieldType,	UnlockedByBelief, SpecialistCount, SpecialistType, IlliteracyHappinessChange, GreatPeopleRateModifier)
+SELECT		'BUILDING_ARABIA_MADRASAH', 'TXT_KEY_BUILDING_ARABIA_MADRASAH', 'TXT_KEY_BUILDING_ARABIA_MADRASAH_TEXT',	'TXT_KEY_BUILDING_ARABIA_MADRASAH_STRATEGY',	'TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP',	GoldMaintenance, Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 2,				'EXPANSION_SCEN_BUILDING_ATLAS',	GreatWorkYieldType,	UnlockedByBelief, SpecialistCount, SpecialistType, IlliteracyHappinessChange, GreatPeopleRateModifier+15
 FROM Buildings WHERE Type = 'BUILDING_UNIVERSITY';
 --------------------------------
 -- Building_Flavors

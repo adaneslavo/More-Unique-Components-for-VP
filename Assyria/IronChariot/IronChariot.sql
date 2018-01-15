@@ -96,7 +96,7 @@ INSERT INTO ArtDefine_UnitInfoMemberInfos(UnitInfoType, UnitMemberInfoType, NumM
 -- ArtDefine_UnitMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberInfos(Type, Scale, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-  VALUES ('ART_DEF_UNIT_MEMBER_TCM_HEQA_KHASUT', 0.129999995231628, 'Chariot_Babylon.fxsxml', 'CLOTH', 'WOODSM');
+  VALUES ('ART_DEF_UNIT_MEMBER_TCM_HEQA_KHASUT', 0.129999995231628, 'Hititte_War_Chariot.fxsxml', 'CLOTH', 'WOODSM');
 ------------------------------
 -- ArtDefine_UnitMemberCombats
 ------------------------------

@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_AMERICA',	'UNITCLASS_IRONCLAD',	'UNIT_AMERICA_MONITOR');
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,					Description,								Civilopedia,									Strategy,									Help,										Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves,		Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, ObsoleteTech,	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 						UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,					MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_AMERICA_MONITOR',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_TEXT', 'TXT_KEY_UNIT_AMERICA_MONITOR_STRATEGY',	'TXT_KEY_UNIT_AMERICA_MONITOR_STRATEGY',	Combat+6,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves-1,	Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_UNION_IRONCLAD',	3,					9,				'CIVIL_WAR_UNIT_ATLAS', 'CIVIL_WAR_UNIT_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
+			(Type,					Description,								Civilopedia,									Strategy,											Help,											Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves,		Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, ObsoleteTech,	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 						UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,					MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
+SELECT		'UNIT_AMERICA_MONITOR',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_TEXT', 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_STRATEGY',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_HELP',	Combat+6,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves-1,	Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_UNION_IRONCLAD',	3,					9,				'CIVIL_WAR_UNIT_ATLAS', 'CIVIL_WAR_UNIT_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_IRONCLAD';
 --------------------------------	
 -- Unit_AITypes
@@ -78,5 +78,16 @@ FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_IRONCLAD';
 INSERT INTO UnitPromotions
 			(Type,					Description,					Help,								CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry)
 VALUES		('PROMOTION_MONITOR',	'TXT_KEY_PROMOTION_MONITOR',	'TXT_KEY_PROMOTION_MONITOR_HELP',	1,				'AS2D_IF_LEVELUP',	23,				'ABILITY_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_MONITOR');
+--==========================================================================================================================	
+
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- ArtDefine_StrategicView
+------------------------------
+INSERT INTO ArtDefine_StrategicView 
+			(StrategicViewType, 			TileType,	Asset)
+VALUES		('ART_DEF_UNIT_UNION_IRONCLAD',	'Unit',		'MonitorFlag_128.dds');
 --==========================================================================================================================
 --==========================================================================================================================
