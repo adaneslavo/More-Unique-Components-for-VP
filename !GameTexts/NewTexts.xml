@@ -109,7 +109,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_STRATEGY">
-			<Text>Unique Swedish replacement for the Baths. The Bastu does not require a river, unlike the Baths, and provides bonuses for lakes and tundra. Science and Culture is generated whenever a citizen is born</Text>
+			<Text>Unique Swedish replacement for the Baths. In addition to the bonuses of the Baths, the Bastu provides bonuses for lakes and tundra. Science and Culture is generated whenever a citizen is born, and extra Food is generated during Golden Ages. Unlike the Baths, the Bastu does not require a river,</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_HELP">
 			<Text>Golden Ages increase [ICON_CULTURE] Culture and [ICON_FOOD] Food by 10%. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City. +1 [ICON_RESEARCH] Science from Lake and Tundra Tiles.</Text>
@@ -1847,10 +1847,10 @@
 			<Text>SPAD S.VII</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_HELP">
-			<Text>Unique Modern Era Unit. Only the French may build it. This Unit has a longer range and a greater chance to intercept enemy aircraft than the Triplane it replaces. Receives the [COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR] Promotion for free</Text>
+			<Text>Unique Modern Era Unit. Only the French may build it. This Unit is cheaper, and has a longer range than the Triplane it replaces. Receives the [COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR] Promotion for free.[NEWLINE]Does not require Oil.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_STRATEGY">
-			<Text>The SPAD S.VII is France's early air superiority fighter. With a longer range and a guaranteed chance to intercept, these fighters will help create a strong French presence in the air. The SPAD S.VII's quick study ability ensures these fighters are the toughest aces in the sky.</Text>
+			<Text>The SPAD S.VII is France's early air superiority fighter. With a longer range and a cheaper cost and no need for oil, these fighters will help create a strong French presence in the air. The SPAD S.VII's quick study ability ensures these fighters are the toughest aces in the sky.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_TEXT">
 			<Text>
@@ -1864,17 +1864,17 @@
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN">
 			<Text>
-				Standschützen
+				Schützenstand
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_TEXT">
 			<Text>
-				The Standschützen were originally rifle guilds and rifle companies that had been formed in the 15th and 16th centuries, and were involved time and again in military operations within the borders of the Austrian County of Tyrol. A Standschütze was a member of a Schützenstand ("shooting club"), into which he was enrolled, which automatically committed him to the voluntary, military protection of the state of Tyrol (and Vorarlberg). In effect they were a type of Tyrolean local militia or home guard.
+				The Schützenstand were originally rifle guilds and rifle companies that had been formed in the 15th and 16th centuries, and were involved time and again in military operations within the borders of the Austrian County of Tyrol. A Standschütze was a member of a Schützenstand ("shooting club"), into which he was enrolled, which automatically committed him to the voluntary, military protection of the state of Tyrol (and Vorarlberg). In effect they were a type of Tyrolean local militia or home guard.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_STRATEGY">
 			<Text>
-				The Standschützen is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. It allows for faster construction of land military units in the city. It also provides +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally.
+				The Schützenstand is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. It allows for faster construction of land military units in the city. It also provides +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_HELP">
