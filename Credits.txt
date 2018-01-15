@@ -33,7 +33,7 @@ Things borrowed from other mods:
 		Poland:
 		  - LastSword - idea, picture and 3d model of Pancerny UU, part of civilopedia entry,
 		  - mikeburnfire - idea and picture of Barbican UB, part of civilopedia entry,
-		  - Salamndre - icon of Bogurodzica promotion.
+		  - Salamandre - icon of Bogurodzica promotion.
   
 		The Iroquois:
 		  - mikeburnfire - picture of the Prowler UU (Rusher) and general unit idea, part of civilopedia entry,
@@ -48,7 +48,7 @@ Things borrowed from other mods:
 		  - mikeburnfire - idea, picture of Scythed Chariot UU (Carpentom),
 		  - TarcismoCM - idea of Oppidum UI, civilopedia entry,
 		  - Leugi - icons and 3D model of Oppidum,
-		  - Salamndre - icon of Scythe promotion.
+		  - Salamandre - icon of Scythe promotion.
 
 		Mongolia:
 		  - TarcisioCM - idea, picture of Tug Banner Warrior UU (Ilduchi),
@@ -70,7 +70,7 @@ Things borrowed from other mods:
 		  - Hangman - 3D Model of Koa,
 		  - Senshidenshi - idea of Fale Tel'e UB,
 		  - TPangolin - idea and picture of Fale Tel'e,
-		  - Salamndre - icon of Kapu Ku'ialua promotion.
+		  - Salamandre - icon of Kapu Ku'ialua promotion.
   
 		The Shoshone:
 		  - Sukritact - idea, picture and 3D model of Yellow Brow UU (Black Mouth),
@@ -96,7 +96,7 @@ Things borrowed from other mods:
 		  - janboruta - picture and flag of Kibitum,
 		  - Danrell - 3D model of Kibitum,
 		  - Sukritact - idea and picture of Etemenaki UW,
-		  - Salamndre - icon of Legacy promotion.
+		  - Salamandre - icon of Legacy promotion.
 
 		Byzanthine:
 		  - LastSword - idea and picture of Penteconter UU,
@@ -110,16 +110,19 @@ Things borrowed from other mods:
 
 		Siam:
 		  - snafusmith - 3D model of Seir Morb UU (155 mm gun).
+		  - Salamandre - icon of Croaching Tiger promotion.
 
 		Persia:
 		  - Light in the East - idea of Qizilbash UU,
 		  - janboruta - picture and flags of Qizilbash,
 		  - Wolfdog - 3D model of Qizilbash,
+		  - Salamandre - icon of Safavi Agitator promotion.
 		  - LastSword - idea and picture of Pairidaeza UB (Charbagh Garden).
 
 		The Maya:
 		  - mikeburnfire - idea and picture of Holkan UU (Obsidian Warrior), idea and picture of Pitz (Ballcourt),
-		  - danrell - 3D model of Holkan.
+		  - danrell - 3D model of Holkan,
+		  - Salamandre - icon of Renewal Cycle promotion.
 	
 		Rome:
 		  - Hypereon, Uighur_Ceasar - idae of Latifundium UI,
@@ -158,7 +161,21 @@ Things borrowed from other mods:
 
 	Coding - Blue Ghost, adan_eslavo:
 		Egypt:
-		  - JFD idea of Khopesh UU,
+		  - JFD - idea of Khopesh UU,
 		  - janboruta - picture of Khopesh,
 		  - danrell - 3D model of Khopesh,
 		  - mikeburnfire - idea and 3D model of Flax UR (UI).
+
+		Arabia:
+		  - Zantonius Hamm - idea of Hashemite Raider UU (Maara Weyn),
+		  - OrderOfOlav - picture of Hashemite Raider,
+		  - Civitar - 3D model of Hashemite Raider.
+
+		Assyria:
+		  - TarcismoCM - idea of Iron Chariot UU (Heqa-Khasut),
+		  - janboruta - picture for Iron Chariot,
+		  - danrell - 3D model of Iron Chariot,
+		  - mikeburnfire - idea and picture of Lamassu Gate UB.
+
+		America:
+		  - mikeburnfire - idea and picture of Ranch UB (American Ranch).

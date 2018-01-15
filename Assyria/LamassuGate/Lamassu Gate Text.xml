@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_LAMASSU">
+			<Text>
+				Lamassu Gate
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAMASSU_TEXT">
+			<Text>
+				Placeholder
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAMASSU_STRATEGY">
+			<Text>
+				The Lamassu Gate is an Assyrian unique building, replacing the Walls. It increases the unit supply cap in the city more than the standard Walls. It also grants +1 [ICON_CULTURE] Culture and a Writer specialist slot.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAMASSU_HELP">
+			<Text>
+				Military Units supplied by this City's population increased by 20%.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

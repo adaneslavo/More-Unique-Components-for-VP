@@ -91,14 +91,16 @@ function DiplomaticReciprocityEmbassy(iPlayer, iUnit, iUnitType, iX, iY)
 					pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCULTURE, pCapital:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCULTURE) + iCulture)
 					pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH, pCapital:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH) + iFaith)
 
-					local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
 
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_FOOD]+"..iFood.." [ICON_FOOD][ENDCOLOR]", 1)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+"..iProduction.." [ICON_PRODUCTION][ENDCOLOR]", 1.5)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_GOLD]+"..iGold.." [ICON_GOLD][ENDCOLOR]", 2)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.." [ICON_RESEARCH][ENDCOLOR]", 2.5)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iCulture.." [ICON_CULTURE][ENDCOLOR]", 3)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iFaith.." [ICON_PEACE][ENDCOLOR]", 3.5)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_FOOD]+"..iFood.." [ICON_FOOD][ENDCOLOR]", 1)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+"..iProduction.." [ICON_PRODUCTION][ENDCOLOR]", 1.5)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_GOLD]+"..iGold.." [ICON_GOLD][ENDCOLOR]", 2)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.." [ICON_RESEARCH][ENDCOLOR]", 2.5)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iCulture.." [ICON_CULTURE][ENDCOLOR]", 3)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iFaith.." [ICON_PEACE][ENDCOLOR]", 3.5)
+					end
 				else
 					iFood = pPlot:GetYield(0) / 2
 					iProduction = pPlot:GetYield(1) / 2
@@ -114,14 +116,16 @@ function DiplomaticReciprocityEmbassy(iPlayer, iUnit, iUnitType, iX, iY)
 					pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCULTURE, pCapital:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCULTURE) + iCulture)
 					pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH, pCapital:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH) + iFaith)
 
-					local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
 					
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_FOOD]+"..iFood.." [ICON_FOOD][ENDCOLOR]", 1)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+"..iProduction.." [ICON_PRODUCTION][ENDCOLOR]", 1.5)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_GOLD]+"..iGold.." [ICON_GOLD][ENDCOLOR]", 2)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.." [ICON_RESEARCH][ENDCOLOR]", 2.5)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iCulture.." [ICON_CULTURE][ENDCOLOR]", 3)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iFaith.." [ICON_PEACE][ENDCOLOR]", 3.5)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_FOOD]+"..iFood.." [ICON_FOOD][ENDCOLOR]", 1)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+"..iProduction.." [ICON_PRODUCTION][ENDCOLOR]", 1.5)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_GOLD]+"..iGold.." [ICON_GOLD][ENDCOLOR]", 2)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.." [ICON_RESEARCH][ENDCOLOR]", 2.5)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iCulture.." [ICON_CULTURE][ENDCOLOR]", 3)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iFaith.." [ICON_PEACE][ENDCOLOR]", 3.5)
+					end
 				end
 			end
 		end

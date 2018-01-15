@@ -15,10 +15,12 @@ function MeltingTurkishBombard(iPlayer, iUnitOrCity, iRole)
 			if pUnit ~= nil then
 				if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_OTTOMANS_SAHI_TOPU) then
 					pUnit:ChangeDamage(20)
-
-					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 					
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-20 Sahi Topu[ENDCOLOR]", 2)
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+					
+						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-20 Sahi Topu[ENDCOLOR]", 2)
+					end
 				end
 			end
 		end

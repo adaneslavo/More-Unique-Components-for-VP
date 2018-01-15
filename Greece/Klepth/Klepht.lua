@@ -41,12 +41,16 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 					
 			pPlayer:ChangeGold(iGain)
 			pCapital:ChangeProduction(iGain)
-
-			local vUnitPosition = PositionCalculator(pDefendingUnit:GetX(), pDefendingUnit:GetY())
+			
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				local vUnitPosition = PositionCalculator(pDefendingUnit:GetX(), pDefendingUnit:GetY())
 				
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_PRODUCTION]+"..iGain.." [ICON_PRODUCTION][ENDCOLOR]", 1)
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iGain.." [ICON_GOLD][ENDCOLOR]", 1.5)
-		elseif pDefendingUnit ~= nil and pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_GREECE_PHILHELLENISM) then			
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_PRODUCTION]+"..iGain.." [ICON_PRODUCTION][ENDCOLOR]", 1)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iGain.." [ICON_GOLD][ENDCOLOR]", 1.5)
+			end
+		end
+		
+		if pDefendingUnit ~= nil and pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_GREECE_PHILHELLENISM) then			
 			local iPlayer = iDefendingPlayer
 			local pPlayer = Players[iPlayer]
 			local pCapital = pPlayer:GetCapitalCity()
@@ -64,10 +68,12 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 			pPlayer:ChangeGold(iGain)
 			pCapital:ChangeProduction(iGain)
 
-			local vUnitPosition = PositionCalculator(pAttackingUnit:GetX(), pAttackingUnit:GetY())
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				local vUnitPosition = PositionCalculator(pAttackingUnit:GetX(), pAttackingUnit:GetY())
 				
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_PRODUCTION]+"..iGain.." [ICON_PRODUCTION][ENDCOLOR]", 1)
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iGain.." [ICON_GOLD][ENDCOLOR]", 1.5)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_PRODUCTION]+"..iGain.." [ICON_PRODUCTION][ENDCOLOR]", 1)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iGain.." [ICON_GOLD][ENDCOLOR]", 1.5)
+			end
 		end
 	end
 end

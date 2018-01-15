@@ -25,9 +25,11 @@ function RenewalCycleOnHolkan(iPlayer)
 			if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_RENEWAL_CYCLE) then
 				pUnit:ChangeDamage(-30)
 				
-				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_POSITIVE_TEXT]Renewal Cycle[ENDCOLOR]", 1)
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_POSITIVE_TEXT]Renewal Cycle[ENDCOLOR]", 1)
+				end
 			end
 		end
 	end

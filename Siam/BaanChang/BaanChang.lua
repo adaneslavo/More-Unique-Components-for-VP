@@ -39,11 +39,13 @@ function BaanChangGetsUnitFromCS(iPlayer, iUnit, iUnitType, iX, iY)
 
 				pCapital:ChangeProduction(iGain)
 				pPlayer:ChangeJONSCulture(iGain)
-		
-				local vCapitalPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
 				
-				Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain.." [ICON_PRODUCTION] from City-State[ENDCOLOR]", 1)
-				Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain.." [ICON_CULTURE] from City-State[ENDCOLOR]", 1.5)
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vCapitalPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
+				
+					Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain.." [ICON_PRODUCTION] Baan Chang[ENDCOLOR]", 1)
+					Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain.." [ICON_CULTURE] Baan Chang[ENDCOLOR]", 1.5)
+				end
 			end
 		end
 	end

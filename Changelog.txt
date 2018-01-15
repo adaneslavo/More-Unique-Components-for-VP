@@ -5,25 +5,43 @@
 More Unique Components for Vox Populi changelog:
 
 *Flax art
-*computing popups
-*klepht rework lua
-*check Dhanurgraha
-*credits file with Icon guy
-*rework Oppidum:
-1. Make it work within a specfic range, like 2 or 3 tiles. It will grant bonus HP to all cities there. No tile-change problem.
-2. It still works even when it is pillaged, probably shoudn't. I suppose when iOldImpr == iNewImpr then you can use bPillage flag to distiinguish between cases. 
+*missing sv_flag for monitor
+*fix Iron Chariot model
+*ranch lua?
+
+v24:
+- added mipmaps to new art,
+- added new texts for every UCs (from @pineappledan),
+- moved Dummy Defense building outside Monitor,
+- added IsMounted value to Hashemite Raider,
+- changed flag, picture and model of Hashemite Raider,
+- changed promotion Icon of Garland Mine,
+- changed flag, picture and model of Iron Chariot,
+- added to Ranch: yields from border growth, +33%p to mounted units,
+- added to Madrasa: growth from birth,
+- fixed White Tower thiming texts
+- clean ups,
+- fixes.
 
 v23:
+- merged all @Blue Ghost work via Github,
 - balance: changed Andelsbevaegelse (now +1f to Plains; +1p to Pasture),
-- balance: set Oppidum to Permanent,
+- balance: reworked Oppidum (now +20 HP for every city within 2 tiles),
 - balance: changed Wat (added World Wonder block action for enemy spies; no art slot),
 - balance: reduced CP on Barbican to 10,
 - balance: added Jungle bonus to Grunwald promotion,
 - balance: changed Latifundium (now +2g at Currency instead of flat value),
-- balance: reworked Hippodrome (now moved Palace bonus to flat yield on Hippodrome; free Horses reduced to 2; after each era, if player is not in Anarchy state: 1-turn of Anarchy in your Empire and then 7/10/15/30-turn WLTKD in your Capital)
+- balance: reworked Hippodrome (now moved Palace bonus to flat yield on Hippodrome; free Horses reduced to 2; after each era, if player is not in Anarchy state: 1-turn of Anarchy in your Empire and then 7/10/15/30-turn WLTKD in your Capital),
+- balance: decreased CP of Goedendag by 1 (now the same as Pikeman,
+- balance: updated Qila (now +1p to Quarries),
 - added Game Speed scaling with rounding to Klepht, Dhanurgraha, Qizilbash, Armada and Black Tug; modified Yassa Court, Pitz and Holkan values; fixed Holkan,
+- added IsHuman() and IsActiveTurn() restriction for every popup message; reworked Kopesh and Shotelai (now second player has prompt),
+- fixed notification from Pogost,
+- added notification about lost tile from enemy Figs for second player,
+- added notification about hurt units from enemy Scythed Chariot for second player,
 - renamed Dhanuraashi to Dhanurgraha,
 - fixed Barbican promotion,
+- fixed Klepht.lua,
 - added 3 missing VP texts,
 - removed promotion overhaul from this mod,
 - moved ModUserData.lua to other directory,
