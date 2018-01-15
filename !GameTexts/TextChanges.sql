@@ -16,7 +16,7 @@ UPDATE Language_en_US SET Text = 'Imperial Cannon Foundry' WHERE Tag = 'TXT_KEY_
 ------------------------------
 -- Ballista
 UPDATE Language_en_US 
-SET Text = 'Unique Roman replacement for the Catapult. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against land Units. When near a Great General, has double movement in open terrain in enemy territory.'
+SET Text = 'Unique Roman replacement for the Catapult. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against land Units. When near a Great General, has double movement in open terrain while in enemy territory.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_BALLISTA';
 
 UPDATE Language_en_US 
@@ -39,17 +39,12 @@ WHERE Tag = 'TXT_KEY_UNIT_ENGLISH_LONGBOWMAN_STRATEGY';
 
 -- Dromon
 UPDATE Language_en_US 
-SET Text = ''
+SET Text = 'Unique naval unit of the Byzantines. Replaces the Penteconter. Deals an additional 10 damage to units it has attacked at the beginning of the enemy's turn, stacking up to 3 times.'
 WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_STRATEGY';
 
 UPDATE Language_en_US 
-SET Text = ''
+SET Text = 'The Dromon is a powerful ranged naval unit, capable of pouring fire onto enemy ships and burning them to ash. Each attack by a Dromon inflicts an additional 10 damage at the beginning of the enemy unit's turn, up to 3 attacks. Rush to logistics and reign fire down on your enemies.'
 WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_HELP';
-
--- Conquistador
-UPDATE Language_en_US 
-SET Text = ''
-WHERE Tag = 'TXT_KEY_CIV5_SPAIN_CONQUISTADOR_HELP';
 
 -- Carolean
 UPDATE Language_en_US 
@@ -67,11 +62,11 @@ WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_HAKKAPELIITTA_STRATEGY';
 
 -- Monitor
 UPDATE Language_en_US 
-SET Text = ''
+SET Text = 'Unique replacement for the Ironclad. Increases the [ICON_STRENGTH] Combat Strength of your cities when adjacent to or inside the city. Has the [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] promotion for free.'
 WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_HELP';
 
 UPDATE Language_en_US 
-SET Text = 'A powerful Industrial-era naval unit. Only America may build it. It has the Cover I promotion and increased movement on coast, and gives a defensive bonus to nearby friendly cities.'
+SET Text = 'A powerful Industrial-era naval unit. Only America may build it. It has the Cover I promotion, and gives a defensive bonus to nearby friendly cities. Monitors are effective combatants when at war, and can be used to reduce crime in peacetime.'
 WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_STRATEGY';
 ------------------------------
 -- Building Texts
@@ -81,16 +76,12 @@ UPDATE Language_en_US
 SET Text = 'Reduces enemy spy stealing rate by 50%, and prevents the disruption of Building and Wonder construction by Spy Advanced Actions, and enemy Spies cannot cause Unrest in the City. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City, and reduces [ICON_HAPPINESS_3] Crime.'
 WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
 
--- Mission
-UPDATE Language_en_US 
-SET Text = ''
-WHERE Tag = 'TXT_KEY_BUILDING_MISSION_HELP';
 ------------------------------
 -- UI Texts
 ------------------------------
 -- Polder
 UPDATE Language_en_US 
-SET Text = 'A Polder can be built on tiles with access to fresh water or on marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Provides additional yields once later techs are researched.'
+SET Text = 'A Polder can be built on tiles with access to fresh water or on marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy units entering a tile with a Polder lose all remaining movement. Provides additional yields once later techs are researched.'
 WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP';
 
 UPDATE Language_en_US 
@@ -99,13 +90,13 @@ WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT';
 
 INSERT INTO Language_en_US
 			(Tag,							Text)
-VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'');
+VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'Constructs a Polder, which increases [ICON_FOOD] Food,  [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy units entering a tile with a Polder lose all remaining movement.');
 ------------------------------
 -- UA Texts
 ------------------------------
--- Dridic Lore
+-- Druidic Lore
 UPDATE Language_en_US
-SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if city adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] GMP for setting Pantheon, founding Religion, extending it and choosing Reformation Belief.'
+SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion neither generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if city adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] GMP for setting Pantheon, founding Religion, extending it and choosing Reformation Belief.'
 WHERE Tag = 'TXT_KEY_TRAIT_FAITH_FROM_NATURE';
 --==========================================================================================================================
 --==========================================================================================================================
