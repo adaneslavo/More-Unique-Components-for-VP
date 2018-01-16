@@ -438,7 +438,38 @@
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_THEME_HELP">
 			<Text>To maximize your bonus, make sure the Great Work Slots are all filled with Art from different Eras and different Civilizations.</Text>
 		</Row>
-
+		
+		<!-- Eagle -->
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE">
+			<Text>
+				Eagle
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_TEXT">
+			<Text>
+				One of the two elite class of infantry (the other being the Jaguar Warriors) in the Aztec army, the Eagle Warriors were the bravest young men of noble birth and/or those who had taken the most prisoners in battle. Like the Jaguars, the Eagles used the atlatl, bow, spear and macuahuitl (wooden swords set with obsidian shards); unlike the Jaguars, the Eagles decorated their armor with eagle feathers and wore a headdress shaped like the head of an eagle with the beak wide open. And they had a hilltop temple in Malinalco. Upon taking 20 prisoners – intact enough to serve as human sacrifice – a young warrior was eligible to become an Eagle Warrior, no doubt making his family very proud. Until the Spanish arrived with their cannons, muskets, and horses, the Eagle and Jaguar warriors were the toughest bullies on the Mesoamerican block.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY">
+			<Text>
+				The Eagle is the unique Aztec replacement for the Swordsman. It does not require Iron to build. It has increased vision, and has a chance of capturing defeated enemy units as Workers.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_HELP">
+			<Text>
+				Strong, front-line land Unit of the Classical Era. Only the Aztecs may build it. It gains the Sentry promotion for free. When it defeats an enemy unit, it has a 50% chance of capturing that unit as a Worker.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CAPTIVES_OF_WAR">
+			<Text>
+				Captives of War
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CAPTIVES_OF_WAR_HELP">
+			<Text>
+				May capture defeated units as Workers.
+			</Text>
+		</Row>
 		<!-- Examination Hall -->
 		<!-- Created by Blue Ghost-->
 		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL">
@@ -544,7 +575,7 @@
 				The origins of the Grande Ecoles lie in the French Revolution, where several military and technical ecoles normale superieure were established by distinguished French mathematicians and intellectuals. The idea was to open education to individuals based strictly on merit. By the 19th century a number of ecoles had sprung up for a wide array of disciplines including natural sciences, business and the humanities. The Grande Ecoles continue to have a deep impact on French society. Approximately 10% of all Native-born French citizens graduate from these schools, including many of France's most renowned politicians, philosophers, scientists, and executives.
 			</Text>
 		</Row>
-		
+				
 		<!-- Hacienda -->
 		<!-- Created by adan_eslavo on 10/11/2017 -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA">
@@ -745,6 +776,28 @@
 			<Text>The Hippodrome was a chariot racing track and the beating heart of Byzantine social and political life. Located immediately next to the palace, the track was built by Constantine shortly after moving his capital to the city. The track was U-shaped, with ten monuments lining the center. Though slightly smaller in footprint than the Circus Maximus in Rome, the Hippodrome was adorned with art and treasures from all corners of the empire.[NEWLINE][NEWLINE]
 			Not just a pastime of the rich, the chariot races become the one place where the common people could see and interact with the emperor in a single venue. Commoners often took this opportunity to begin chants for political or religious reforms during sporting events. Four political parties, or demes, existed within Constantinople which each sponsored a different racing team.  These were the Blues, the Whites, the Greens and the Reds. Enormous sums of money were wagered on the rivalries between these teams, which became further heated by the religious, societal and political leanings which each team came to represent.	One such feud in particular would come to overshadow them all: the Nika riots.[NEWLINE][NEWLINE] 
 			During the reign of Justinian I (an ardent supporter of the Blues), a dispute arose concerning the sentencing of two hooligans who had been arrested for murder from a prior riot. The sentencing of these men unified the Blues and the Greens against Justinian in a terrible mob, and disgruntled nobles seized the opportunity to try to depose him in revenge for the recently levied taxes against the rich Though at first he considered fleeing Constantinople, Justinian rallied his loyal generals to corral the rioters into the Hippodrome, where they were butchered by royal guardsmen and Gothic mercenaries. By the time the Nika riots had ended, half of Constantinople had been burned down and 30,000 rioters and conspirators lay dead; the most violent riot in world history.</Text>
+		</Row>
+
+		<!-- Huey Teocalli -->
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI">
+			<Text>
+				Huey Teocalli
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_TEXT">
+			<Text>
+				In the Aztec Empire, a teocalli was a terraced pyramid, surmounted by a temple on top, site of all the important religious rituals in the town. The greatest was located in the heart of Tenochtitlan, the Huey Teocalli (or, according to the Spanish, the Templo Mayor) dedicated to a pair of gods: Huitzilopochtli, the god of war, and Tlaloc, the god of agriculture (an indication of what was important in Aztec culture). Each god had a separate temple, reached by separate staircases.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_STRATEGY">
+			<Text>
+				The Huey Teocalli is the unique Aztec replacement for the Grand Temple. It does not require a Temple, and provides a free Temple in the city. It provides a global bonus to Barracks and Floating Gardens. Every time you enter a Golden Age, the Huey Teocalli permanently gains Food, Faith, and additional XP to units built in the city.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_HELP">
+			<Text>
+				Unique replacement for the Grand Temple. Only the Aztec may build it.[NEWLINE]Comes with a free Temple. A [ICON_GOLDEN_AGE] Golden Age begins. Reduces [ICON_HAPPINESS_3] Religious Unrest. All Temples gain +1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture, Barracks get +2 [ICON_CULTURE] Culture, and Floating Gardens get +2 [ICON_FOOD] Food. Whenever you enter a Golden Age, permanently gain +3 [ICON_FOOD], +3 [ICON_PEACE] Faith, and +3 XP for units trained in the city (max +30 each).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+			</Text>
 		</Row>
 
 		<!-- Iron Chariot -->
@@ -2130,4 +2183,13 @@
 			</Text>
 		</Row>
 	</Language_en_US>
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>EAGLE_FLAG</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>eagleicon.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
 </GameData>
