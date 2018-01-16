@@ -1367,7 +1367,7 @@
 			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_FAITH] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to nearby cities. Provides bonus yields to all non-road and non-great person land improvements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_REC">
-			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to a nearby city. Adjacent Improvements gain additional bonus yields.</Text>
+			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to all Cities in workable range. Adjacent Improvements gain additional bonus yields.</Text>
 		</Row>
 
 		<!-- Pairidaeza -->
