@@ -84,15 +84,16 @@
 			<Text>Elephant Camp</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP">
-			<Text>Unique Siamese replacement for the Workshop.[NEWLINE][NEWLINE]
+			<Text>Unique Siamese replacement for the Workshop.[NEWLINE]
+				+1[NEWLINE][NEWLINE][ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production on all Forest and +1 [ICON_CULTURE] Culture for all Lumber Mills and Logging Camps
 				+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resource received as City-State gifts.  Receive 10 [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture in Capital for every Baan Chang in the Empire every time a city state gifts a unit, scales with Era.[NEWLINE][NEWLINE]
 				Allows [ICON_PRODUCTION] Production to be moved from this city along Trade Routes inside your civilization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY">
-			<Text>The Baan Chang is the Siamese unique building, replacing the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Gold from lumber mills, Production and Faith from Ivory. City state gifts, both Strategic Resources and units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
+			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills, and gives Production and Faith from Ivory. [NEWLINE][NEWLINE]City state gifts, both Strategic Resources and units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_TEXT">
-			<Text>Often thought of as ceremonial and military implements first, perhaps the greatest contribution of elephants to human society has been as tremendous beasts of burden. Elephants are prized as a labour force even within today's lumber camps for their ability to haul the dense teak lumber found only within Burma and Thailand. The power of a fully grown elephant is matched only by its grace, as the animals can navigate difficult and uneven terrain impassable by carts and tractors while carrying loads far in excess of other animals. The use of elephants in logging also has had unintentional benefits to the health of the forests, with their delicate command of the forest trails reducing the potential damage of logging trails.[NEWLINE][NEWLINE]
+			<Text>Often thought of as ceremonial and military implements first, perhaps the greatest contribution of elephants to human society has been as beasts of burden. Elephants are prized as a labour force even within today's lumber camps for their ability to haul the dense teak lumber found only within Burma and Thailand. The power of a fully grown elephant is matched only by its grace, as the animals can navigate difficult and uneven terrain impassable by carts and tractors, while carrying loads far in excess of other animals. The use of elephants in logging also has had unintentional benefits to the health of forests, with their delicate command of the forest trails reducing the potential damage of logging roads.[NEWLINE][NEWLINE]
 			The jobs of Southeast Asia's working elephants have come under threat within the past few decades with the mechanization of logging. Elephants and their mahouts have been forced to look for work in tourism and religious festivals, jobs which elephants find terribly stressful. </Text>
 		</Row>
 		
@@ -1252,10 +1253,10 @@
 			<Text>Nilometer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_NILOMETER_STRATEGY">
-			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_FOOD] Food and [ICON_PRODUCTION] Production output. It also provides access to the unique Flax bonus resource.</Text>
+			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_PRODUCTION] Production output. On construction, 2 Flax resources spawn near the city, which provide additional culture and Production. This building can be built anywhere, as long as you don't have a Well in the City already.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_NILOMETER_HELP">
-			<Text>+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the city.</Text>
+			<Text>Unique Egyptian replacement for the Water Mill.[NEWLINE]+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the city.</Text>
 		</Row>
 
 		<!-- Oppidum -->
@@ -1455,7 +1456,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_EXPEDITIONARY_FORCE_HELP">
 			<Text>
-				Gain +1% [ICON_STRENGTH] Strength for every Tile from the [ICON_CAPITAL] Capital this Unit is.
+				Gain +1% [ICON_STRENGTH] Strength for every Tile between the [ICON_CAPITAL] Capital and this Unit.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_TOURISM">
@@ -1505,8 +1506,8 @@
 			<Text>The Qizilbash is the Unique Persian replacement for the Lancer. Stronger than the Lancer, the Qizilbash also generates Faith, Gold and Golden Age Points for every turn they spend in enemy territory. This unit can also be purchased with Faith without needing a religious tenet. Maintaining a strong presence in enemy territory allows Persia to generate Faith for more Qizilbash, and trigger more Golden Ages to increase your army's power.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_TEXT">
-			<Text>Qizilbash was originally a pejorative for the followers of the Safawiyyah Sufi order, who distinguished themselves by wearing bright crimson headwear. The name, which means red headed, became a mark of pride among the Qizilbash, who organized into a military society of Shi'ite Muslims in the late 15th century. Though primarily of Turkman origin, the Qizilbash proved instrumental in the establishment of the Safavid Dynasty in Iran.[NEWLINE][NEWLINE]
-			In a campaign to avenge the death of his father Haydar, Ismail I, led 7000 Qizilbash warriors to destroy the Aq Qoyunlu force of 30 000 in Azerbaijan, and establish the Safavid State. By 1510, eleven years later, Ismail brought all of Iran under his control, the first ethnically Iranian monarch to rule Iran in over 850 years. Though they had made him a powerful king, Ismail feared the power and influence of the tribal qizilbash over the Iranian peoples. Ismail and his successors would spend the next 80 years diminishing the political power of the Qizilbash, replacing them with ghulam slave soldiers from the Caucasus. Nevertheless, the Qizilbash held an honoured position within the Safavid empire, both on the battlefield and in the Safavid court.[NEWLINE][NEWLINE]
+			<Text>Qizilbash was originally a pejorative for the followers of the Safawiyyah Sufi order, who distinguished themselves by wearing bright crimson headwear. The name, which means red headed, became a mark of pride among the Qizilbash, who organized into a Shi'ite Islamic military society in the late 15th century. Though primarily of Turkman origin, the Qizilbash proved instrumental in the establishment of the Safavid Dynasty in Iran.[NEWLINE][NEWLINE]
+			In a campaign to avenge the death of his father Haydar, Ismail I, led 7000 Qizilbash warriors to destroy the Aq Qoyunlu force of 30 000 in Azerbaijan, and establish the Safavid State. By 1510, eleven years later, Ismail brought all of Iran under his control, the first ethnically Iranian monarch to unify Iran in over 850 years. Though they had made him a powerful king, Ismail feared the power and influence of the tribal qizilbash over the Iranian peoples. Ismail and his successors would spend the next 80 years diminishing the political power of the Qizilbash, replacing them with ghulam slave soldiers from the Caucasus. Nevertheless, the Qizilbash held an honoured position within the Safavid empire, both on the battlefield and in the Safavid court.[NEWLINE][NEWLINE]
 			</Text>
 		</Row>
 		
@@ -1533,11 +1534,11 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_TEXT">
-			<Text>A ranch is a type of farm and an area of landscape given primarily to the practice of ranching, the practice of raising grazing livestock such as cattle or sheep for meat or wool. Ranching is also a method used to raise less common livestock such as elk, American bison or even ostrich, emu, and alpacas.[NEWLINE][NEWLINE]Ranches generally consist of large areas, but may be of nearly any size. If the ranch includes arable or irrigated land, the ranch may also engage in a limited amount of farming, raising crops for feeding the animals, such as hay and feed grains. As settlers from the United States moved west, they brought cattle breeds developed on the east coast and in Europe along with them, and adapted their management to the drier lands of the west by borrowing key elements of the Spanish vaquero culture.</Text>
+			<Text>A ranch is a type of farm primarily for the raising of grazing livestock such as cattle or sheep. Ranching is also a method used to raise less common livestock such as elk, American bison or even ostrich, emu, and alpacas.[NEWLINE][NEWLINE]Ranches generally consist of large areas, but may be of nearly any size. If the ranch includes arable or irrigated land, the ranch may also engage in a limited amount of farming, raising crops for feeding the animals, such as hay and feed grains. As settlers from the United States moved west, they brought cattle breeds developed on the east coast and in Europe along with them, and adapted their management to the drier lands of the west by borrowing key elements of the Spanish vaquero culture. Vast swathes of the American interior were converted to ranchland in a process of colonization which left an indelible mark on the American psyche.  Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY">
 			<Text>
-				In addition to the regular abilities of the Stable, the Ranch increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
+				The Ranch is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Ranch increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
@@ -1555,10 +1556,10 @@
 			<Text>A riad is a traditional Moroccan house with an interior garden or courtyard. The riads were inward focused, which allowed for family privacy and protection from the weather in Morocco. In the central garden of traditional riads there are often four orange or lemon trees and possibly a fountain. The walls of the riads are usually adorned with Arabic calligraphy with quotes from the Quran.[NEWLINE][NEWLINE]The style of these riads has changed over the years, but the basic form is still used in designs today. Recently there has been a surge in interest in this form of house after a new vogue of renovation in towns such as Marrakech and Essaouira where many of these often-crumbling buildings have been restored to their former glory. Many riads are now used as hotels or restaurants.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_RIAD_STRATEGY">
-			<Text>The Riad is a Moroccan unique building that increases the speed at which [ICON_GREAT_PEOPLE] Great people are generated by 30%. It also grants 1 [ICON_CULTURE] Culture per 5 citizens in the city, and trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points.</Text>
+			<Text>The Riad is the Moroccan unique replacement for the Garden. In addition to the bonuses of a normal Garden, the Riad grants culture in the city for every 5 citizens in the city, and Gold generation in the city is greatly increased during a Golden Age. Trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_RIAD_HELP">
-			<Text>Unique Moroccan replacement for the Garden. Trade routes originating in the city gain +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn. [NEWLINE][NEWLINE]+30% [ICON_GREAT_PEOPLE] Great People generation in this City. [NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Unique Moroccan replacement for the Garden. Trade routes originating in the city gain +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn. [NEWLINE][NEWLINE]+30% [ICON_GREAT_PEOPLE] Great People generation in this City. [NEWLINE]+15% [ICON_GOLD] Gold in the city during a [ICON_GOLDEN_AGE] Golden Age</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
