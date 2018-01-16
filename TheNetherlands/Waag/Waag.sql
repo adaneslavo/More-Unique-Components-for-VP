@@ -61,7 +61,7 @@ FROM Building_BuildingClassYieldChanges WHERE BuildingType = 'BUILDING_BANK';
 
 INSERT INTO Building_BuildingClassLocalYieldChanges
 			(BuildingType,					BuildingClassType,		YieldType,		YieldChange)
-VALUES		('BUILDING_NETHERLANDS_WAAG',	'BUILDINGCLASS_MARKET', 'YIELD_GOLD',	2);
+VALUES		('BUILDING_NETHERLANDS_WAAG',	'BUILDINGCLASS_MARKET', 'YIELD_GOLD',	3);
 ------------------------------	
 -- Building_ResourceYieldChanges
 ------------------------------
