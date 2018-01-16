@@ -65,7 +65,13 @@ VALUES		('BUILDING_VP_RIAD', 'FEATURE_OASIS', 'YIELD_GOLD', 3),
 INSERT INTO	Building_YieldChangesPerPop
 			(BuildingType, YieldType, Yield)
 VALUES		('BUILDING_VP_RIAD', 'YIELD_CULTURE', 20);
-
+--------------------------------	
+-- Building_GoldenAgeYieldMod
+--------------------------------
+INSERT INTO Building_GoldenAgeYieldMod
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_STELE', 'YIELD_GOLD', 15);
 --------------------------------
 -- IconTextureAtlases
 --------------------------------
