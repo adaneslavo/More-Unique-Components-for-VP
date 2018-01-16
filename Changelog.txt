@@ -9,6 +9,11 @@ More Unique Components for Vox Populi changelog:
 *roman GG appear and disappear?
 *Baan Change after VP update
 
+*PDan changes*
+- Waag text fix
+- Added +15% gold during GA on Riad (was on spreadsheet, but never implemented. gives Riad a wide mechanic to justify being built in every city)
+- increased Waag's +gold to market to 3 (now 3/3/3g from caravansary/market/customs house, was 3/2/3g)
+
 v25:
 - added dummy promotion to Monitor,
 - changed Qizilbash cooldown to 0,
@@ -179,7 +184,7 @@ v19:
 - balance: reworked Waag's unique ability (now (1 GPP/2 Defense) per 1 traded luxury, max 7 times)
 - balance: incresed Scythe promotion damage to 10,
 - changed names (Naga-Malla --> Indian War Elephant; Nau --> Carrack; Ger --> Yurt; Siege Foundry --> Imperial Cannon Foundry),
-- changed Santa Maria promotion name to Santa María,
+- changed Santa Maria promotion name to Santa MarÃ­a,
 - renamed unique promotions (Pictish Warrior --> Highlander; Jaguar --> Legend of the Five Suns; Immortals --> Immortality),
 - rewrited Scythe promotion (thanks to @De_Genius lua code),
 - added unique dummy promotion Druidism for Pictish Warrior (faith gain on kill),
