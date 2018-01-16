@@ -283,7 +283,11 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_TEXT">
 			<Text>
-				Placeholder
+				The Barbary Corsairs were pirates and privateers operating off the coast of North Africa. The corsairs became infamous throughout Europe, ranging throughout the Mediterranean, and as far as Iceland, slaughtering livestock and capturing Christians for sale in the slave markets of the Islamic world. The ferocity and frequency of such raids, or "Razzia" was such that much of the coast of Italy and Spain was abandoned for fear of abduction. It is estimated that some 1.25 million people were taken as slaves by barbary pirates between 1530 and 1780 A.D.[NEWLINE][NEWLINE]
+				
+				The scope of Corsair activity began to diminish in the latter part of the 17th century, as the more powerful European navies started to compel the Barbary States to cease attacking their shipping. However, the ships and coasts of Christian states continued to suffer until the early 19th century. Following the Napoleonic Wars and the Congress of Vienna in 1814, European powers agreed upon the need to suppress the Barbary corsairs entirely. Occasional incidents continued to occurr, including two Barbary wars between the United States and the Barbary States, creating the impetus for the creation of the US Navy.[NEWLINE][NEWLINE]
+				"It is written in our Koran, that all nations which do not acknowledg the Prophet are sinners, whom it is the right and duty of the faithful to plunder and enslave; and that every mu'min (believer) who is slain in this warfare is sure to go to paradise."[NEWLINE]
+				-Sidi Haji Abdrahaman, to Thomas Jefferson in reply to his demand for the protection of American merchant ships
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_STRATEGY">
@@ -444,12 +448,16 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_TEXT">
 			<Text>
-				Placeholder
+				Perhaps the most truly unique aspect of Chinese culture - and the one with the most powerful legacy - is the Confucian examination system with which the Son of Heaven's empire was staffed with civil servants over the best part of two millennia. The Imperial examinations represented an attempt to create an aristocracy of learning, which in itself represent a remarkable advance over the warrior and hereditary aristocracies that dominated in the rest of the world. The Chinese examination system, archaic, laborious and daunting as it may have been, was nevertheless, was a glorious attempt at intellectual meritocracy.[NEWLINE][NEWLINE]
+				The Imperial Exams, or Keju, were state organized examinations for candidacy into the Chinese civil service. The examinations amounted to tests of rote memorization of the Five Confucian Classics and required direct quotations on Confucian philosophy and ethics. There were several levels of exams, each conferring differing levels of honor and privelege. A scholar who obtained the highest degree, the jinshi, would have his memory trained to a tremendous degree.[NEWLINE][NEWLINE]
+				The Imperial examinations was abolished in 1890 under pressure by Chinese citizens to reform and modernize the state. As Western universities began to move away from their own classical tradition to embrace economics, engineering and natural science, China's scholarly efforts languished in the ancient literary past. It is unsurprising that the ingenuity that produced the “Four Great Inventions” could not flourish in such a backward-looking intellectual environment.[NEWLINE][NEWLINE]
+				 “Do you know that we tried an experiment which is unique in the history of the world? We sought to rule this great country not by force, but by wisdom. And for centuries we succeeded.”[NEWLINE]
+				-Anonymous Confucian Philosopher; excerpt from "On a Chinese Screen"
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_STRATEGY">
 			<Text>
-				The Examination Hall is a Chinese unique building, replacing the Chancery. It boosts Great People generation in the city, and gives random Great Person Points whenever a citizen is born.
+				The Examination Hall is a Chinese unique building, replacing the Chancery. In addition to the normal bonuses of a Chancery, the Exam Hall boosts Great People generation in the city, and gives random Great Person Points whenever a citizen is born.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_HELP">
@@ -499,7 +507,7 @@
 			<Text>Flax</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOURCE_EGYPT_FLAX_HELP">
-			<Text></Text>
+			<Text>Can be improved by Plantation. Spawns near a City on the construction of the Egyptian Nilometer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOURCE_EGYPT_FLAX_TEXT">
 			<Text>Flax is a food and fiber crop best known for its use in the production of linen. The crop was first domesticated in the Fertile Crescent and was cultivated extensively in Egypt, where the fabric became tightly bound to the local culture. Linen has a smooth texture, high lustre, and is cool to the touch. These characteristics linked it to religious and ceremonial purity within Egyptian rituals. Priests wore linen fabrics exclusively, and mummies were wrapped in linen in preparation for the afterlife. Today, more durable textiles like cotton have largely replaced linen as a fabric, but the flax seed is still widely used for food and cooking oil.</Text>
@@ -734,17 +742,17 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_TEXT">
 			<Text>
-				Chariots formed the core of the Assyrian army. Assyrian chariots were drawn by four horses and used to smash into and disperse enemy formations.
+				Before horses were bred to be big enough to carry men on their backs, Chariots formed the core of the Assyrian army. Assyrian chariots were drawn by four horses and used to smash into and disperse enemy formations.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_STRATEGY">
 			<Text>
-				Assyria's Iron Chariots act as shock troops to control the battlefield. They excel at breaking enemy ranks.
+				Assyria's Iron Chariots act as shock troops to control the battlefield. They excel at breaking enemy ranks. The Iron Chariot gains a combat bonus for every adjacent enemy unit, neutralizing the enemy's flanking bonuses and allowing your chariots to take greater risks on the battlefield. Iron and Horse resources in excess of the number of Iron Chariots you own increase the combat effectivenss of your chariots
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP">
 			<Text>
-				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require Horses, but gains +2 combat strength if you have sufficient Horses for all Iron Chariots, and likewise for Iron. Also, it gains +10% combat strength for each adjacent enemy unit.
+				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require Horses, and gains +2 combat strength if you have sufficient Horses for all Iron Chariots, and likewise for Iron. Gains +10% combat strength for each adjacent enemy unit.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL">
@@ -809,7 +817,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_6">
 			<Text>
-				Fury of Nergal VI
+				In a Pickle
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_6_HELP">
@@ -845,7 +853,7 @@
 			<Text>Khopesh</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH_TEXT">
-			<Text>Khopesh is the Egyptian name of the Canaanite "sickle-sword", in Assyrian known as sappara. Its origins can be traced back to Sumer of the third millennium BC. A typical khopesh is 50–60 cm (20–24 inches) in length, though smaller examples do also exist. This blade was designed for hooking an opponent's shield or disarming them. These weapons changed from bronze to iron in the late period.[NEWLINE][NEWLINE]The blade is only sharpened on the outside portion of the curved end. The khopesh evolved from the epsilon or similar crescent shaped axes that were used in warfare. Note, however, that the khopesh is not an axe. Unlike an axe, the khopesh did not make push-cuts, but rather slashes, like a sabre. The khopesh went out of use around 1300 BC.</Text>
+			<Text>Khopesh is the Egyptian name of the Canaanite "sickle-sword", in Assyrian known as sappara. Its origins can be traced back to Sumer of the third millennium BC, where the Stele of Vultures depicts Eannatum of Lagash, the world's first emperor, wielding a khopesh.[NEWLINE][NEWLINE]A typical khopesh is 50–60 cm (20–24 inches) in length, designed for hooking an opponent's shield or disarming them. The blade is only sharpened on the outside portion of the curved end. The khopesh evolved from the epsilon or similar crescent shaped axes that were used in warfare. Note, however, that the khopesh is not an axe, but rather a slashing weapon like a sabre. Many examples of Khopesh can be found in tombs and many Pharoahs are depicted holding the weapon. Indeed, many examples of khopesh found do not show signs of ever having been sharpened, indicating they were ceremonial, or status symbols.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH_STRATEGY">
 			<Text>The Khopesh is the unique Egyptian replacement for the Spearman. It's a strong early unit that has an edge in direct combat. However, unlike the Spearman it replaces, it does not have a combat bonus against mounted units.</Text>
@@ -917,7 +925,7 @@
 			<Text>+50% [ICON_STRENGTH] Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_7">
-			<Text>Best Among Us</Text>
+			<Text>A Winner is You</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_7_HELP">
 			<Text>+75% [ICON_STRENGTH] Combat Strength.</Text>
@@ -1198,7 +1206,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_STRATEGY">
 			<Text>
-				Unique Arabian replacement for the University. Generates Faith in addition to Science, and increases Great Person rate. Whenever you make a Faith purchase, the Madrasah generates additional Science.
+				Unique Arabian replacement for the University. In addition to the bonuses of a University, increases Great Person rate. Whenever you make a Faith purchase, the Madrasah generates additional Science.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
@@ -1603,12 +1611,12 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME_STRATEGY">
 			<Text>
-				The Sambadrome is the unique Brazilian replacement for the Opera House. It provides more Culture than the Opera House, and it also provides Golden Age Points and Tourism, and comes with a Musician specialist slot.
+				The Sambadrome is the unique Brazilian replacement for the Opera House. In addition to the bonuses of an Opera House, it provides more Culture than the Opera House, and it also provides Golden Age Points and Tourism. The Sambadrome comes with a Musician specialist slot.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME_HELP">
 			<Text>
-				+13% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +3 [ICON_TOURISM] Tourism at Radio.
+				Unique Brazilian replacement for the Opera House. +7% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +3 [ICON_TOURISM] Tourism at Radio.
 			</Text>
 		</Row>
 		
@@ -1814,7 +1822,7 @@
 			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked. Marked unit has reduced [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT">
-			<Text>Catching</Text>
+			<Text>Hobbled</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT_HELP">
 			<Text>Unit has reduced movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
@@ -1892,7 +1900,7 @@
 			<Text>Tersane</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_HELP">
-			<Text>Unique Medieval Era Building. [NEWLINE]When a Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the civ based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
+			<Text>Unique Medieval Era Building. [NEWLINE]When a Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the civ based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Melee Units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_STRATEGY">
 			<Text>Tersane is the unique Harbor replacement of the Ottomans. In addition to the bonuses of a Harbor, the Tersane increases the yields of work boats. The building also greatly improves production towards trade and military vessels, greatly improving the Ottoman's naval capabilities. All Melee Ships built in this city also receive the Prize Ships promotion, allowing them to capture defeated enemy units.</Text>
@@ -1937,12 +1945,12 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_TEXT">
 			<Text>
-				Placeholder
+				Opened in 1290, the University of Coimbra is one of the oldest centers of higher learning in the world, and the oldest in Portugal. The university was founded by King Dinis as the Lisbon Estudo Geral, originally with faculties of Arts, Law, Canon Law and Medicine. As the only university in Portugal for 350 years, the University of Coimbra became a focus of educaional, political, and social influence in Portugal.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_STRATEGY">
 			<Text>
-				The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. It gives all naval units the ability to gain [ from exploration, and gains [ICON_GOLD] Gold from Feitorias built in foreign lands.
+				The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. In addition to the normal bonuses of the Oxford University, it gives all naval units the ability to gain science from exploration, and generates Gold and Production in the city for every Feitoria built in foreign lands.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_HELP">
@@ -1967,10 +1975,10 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text>Unique Dutch replacement for the Bank. Available earlier.[NEWLINE]When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. +1 [ICON_GOLD] Gold to Caravansary and Customs House in this City, and +2 [ICON_GOLD] Gold to Market in this City.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great Person Generation and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire[NEWLINE]Reduces Poverty slightly.[NEWLINE][NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Unique Dutch replacement for the Bank. Available earlier.[NEWLINE]When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. +3 [ICON_GOLD] Gold to Caravansary and Customs House in this City, and +2 [ICON_GOLD] Gold to Market in this City.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great Person Generation and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire[NEWLINE]Reduces Poverty slightly.[NEWLINE][NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
-			<Text></Text>
+			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier than the Bank, and provides bonuses to Great Person Generation and defense for every luxury imported or exported in the Empire. Be sure to keep peaceful and lucrative relationships with your neighbors; a surprise war with a trading partner could suddenly weaken your city's defenses!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_TEXT">
 			<Text>
@@ -1985,10 +1993,18 @@
 			<Text>White Tower</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP">
-			<Text></Text>
+			<Text>Unique replacement for the Hermitage. Only England may build it
+			[NEWLINE]+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Population in city.
+			[NEWLINE]+2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% Spy stealing rate on Empire 
+			[NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City.
+			[NEWLINE]+1 [ICON_HAPPINESS] Happiness on Empire for every enemy spy killed on Empire.
+			[NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. 
+			[NEWLINE]+5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.
+			[NEWLINE][NEWLINE]Available earlier, requires Castle in City.
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY">
-			<Text>Unique English replacement for the Hermitage. This National Wonder produces +1 [ICON_CULTURE] Culture for every 3 [ICON_CITIZEN] Citizens in the City, and +15% [ICON_CULTURE] Culture for the City. I It cannot be constructed unless the city has a Castle.</Text>
+			<Text>Unique English replacement for the Hermitage. This National Wonder produces +1 Culture for every 4 Citizens in the City, and 2 culture for every castle in the empire. The White Tower reduces the stealing rate of enemy spies on empire, and gives Happiness for every enemy spy killed. Your citizens will love you if you can keep a tight lid on English secrets, so station spies in your cities to take advantage of this wonder.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_TEXT">
 			<Text>The White Tower is a central tower, the old keep, at the Tower of London. It was built by William the Conqueror during the early 1080s, and subsequently extended. The White Tower was the castle's strongest point militarily, and provided accommodation for the king and his representatives, as well as a chapel. The Tower of London covers an area of 18 acres and its magnificent architecture covers almost all the styles which have flourished in England. Throughout its long history, the Tower has been many things to England: A tyrant's castle, and treasury; a menagerie, and a mint; a palace, and a prison. Today, the Tower of London is a vast museum which boasts, among its many treasure, the Crown Jewels of England.</Text>
@@ -2024,7 +2040,11 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_TEXT">
 			<Text>
-				A Junk is an ancient Chinese sailing vessel/ship design still in use today. Junks were developed during the Song Dynasty (960–1279) and were used as seagoing vessels as early as the 2nd century CE. They evolved in the later dynasties, and were used throughout Asia for extensive ocean voyages. The name ultimately stems from the Chinese chuán ("ship"). The Javanese called it "jong", which became the Portuguese "junco", which became the English "junk".[NEWLINE][NEWLINE]Junks were efficient and sturdy ships that sailed long distances as early as the 2nd century CE. They incorporated numerous technical advances in sail plan and hull designs that were later adopted in Western shipbuilding. The historian H. Warington Smyth considered the junk as one of the most efficient ship designs, stating that "As an engine for carrying man and his commerce upon the high and stormy seas as well as on the vast inland waterways, it is doubtful if any class of vessel… is more suited or better adapted to its purpose than the Chinese or Indian junk, and it is certain that for flatness of sail and handiness, the Chinese rig is unsurpassed."
+				The Xiafan Guanjun (lit. "The Foreign Expeditionary Armada") was the great treasure fleet of the Ming Dynasty. Seven voyages were made from 1405 to 1433 AD, all headed by the legendary admiral Zheng He at the behest of Yongle Emperor. The Treasure Fleet ranged as far as the Arabian Peninsula in their task of projecting Chinese influence across the South China Sea and beyond, bringing many smaller nations under the suzerainty of China.[NEWLINE][NEWLINE]
+				
+				The ships of the Xiafan Guanjun were some of the largest wooden ships ever constructed, some measuring an estimated 137 meters (416 feet). It would be another century before European ships could match the size and power of the Chinese, making China the undisputed naval superpower of the 15th century. Despite this raw power, the voyages were primarily concerned with diplomacy, bringing envoys and even kings before the emperor to present tribute and perform the 'kowtow', an act of reverence indicating their recognition and subservience to China.[NEWLINE][NEWLINE]
+				
+				"As an engine for carrying man and his commerce upon the high and stormy seas as well as on the vast inland waterways, it is doubtful if any class of vessel… is more suited or better adapted to its purpose than the Chinese or Indian junk, and it is certain that for flatness of sail and handiness, the Chinese rig is unsurpassed."[NEWLINE]-H. Warington Smyth
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_KOWTOW">
