@@ -68,6 +68,15 @@ WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_HELP';
 UPDATE Language_en_US 
 SET Text = 'A powerful Industrial-era naval unit. Only America may build it. It has the Cover I promotion, and gives a defensive bonus to nearby friendly cities. Monitors are effective combatants when at war, and can be used to reduce crime in peacetime.'
 WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_STRATEGY';
+
+--Pracinha
+UPDATE	Language_en_US
+SET		Text = 'This melee unit is stronger in faraway lands and earns Tourism when it defeats an enemy. Use them to fight wars in foreign lands to push your Civilization towards a Culture victory.'
+WHERE	Tag = 'TXT_KEY_UNIT_BRAZILIAN_PRACINHA_STRATEGY';
+
+UPDATE	Language_en_US
+SET		Text = 'The Brazilian replacement for the Rifleman. Modern Era infantry unit that is stronger in foreign lands and earns [ICON_TOURISM] Tourism when it defeats an enemy.'
+WHERE	Tag = 'TXT_KEY_UNIT_HELP_BRAZILIAN_PRACINHA';
 ------------------------------
 -- Building Texts
 ------------------------------
