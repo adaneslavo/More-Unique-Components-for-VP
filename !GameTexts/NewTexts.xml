@@ -513,6 +513,20 @@
 			<Text>Flax is a food and fiber crop best known for its use in the production of linen. The crop was first domesticated in the Fertile Crescent and was cultivated extensively in Egypt, where the fabric became tightly bound to the local culture. Linen has a smooth texture, high lustre, and is cool to the touch. These characteristics linked it to religious and ceremonial purity within Egyptian rituals. Priests wore linen fabrics exclusively, and mummies were wrapped in linen in preparation for the afterlife. Today, more durable textiles like cotton have largely replaced linen as a fabric, but the flax seed is still widely used for food and cooking oil.</Text>
 		</Row>
 		
+		<!-- Fusta -->
+		<Row Tag="TXT_KEY_UNIT_JFD_LANTERNAS">
+			<Text>Fusta</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_JFD_LANTERNAS">
+			<Text>A small and fast compliment to the Galleas, rather than a replacement. Weaker, but cheaper, and does not contribute to unit maintenance. May withdraw before melee attacks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_LANTERNAS_STRATEGY">
+			<Text>Fusta are quick, cheap, and do not cost any unit maintenance. Use these ships in combination with the bigger Galleass to monitor and protect your shipping lanes without causing an undue burden on your economy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JFD_LANTERNAS_TEXT">
+			<Text>Fusta, or galliots, were small galleys with no more than 35 sailors. Exceptionally light and fast, the Venetians originally used them to maintain a standing navy against pirates, but the ship quickly became a favorite of the pirates themselves. The shallow draft, maneuverability and speed of the Fusta made them a legend throughout the Mediterranean.</Text>
+		</Row>
+
 		<!-- Grande École -->
 		<!-- Created by adan_eslavo 10/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE">
@@ -1009,7 +1023,20 @@
 				In battle, Koa warriors were well-versed in many weapons, including knuckle-dusters, slings, and garrotes, but were also capable hand-to-hand fighters. More traditional melee weapons were also used, including wooden daggers, clubs, staves, and paddles. These weapons would occasionally be modified by sewing shark teeth along their edges, creating devastating serrated weapons called 'Leiomano'. These weapons were used similarly to the obsidian-tipped Macuahuitl of Central America.
 			</Text>
 		</Row>
-
+		<!-- Laguna -->
+		<Row Tag="TXT_KEY_BUILDING_LAGUNA">
+			<Text>Laguna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAGUNA_TEXT">
+			<Text>When a [ICON_INTERNATIONAL_TRADE] Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from Coast and Ocean Tiles, +2 [ICON_FOOD] Food and +2 [ICON_PRODUCTION] Production to Atolls and +1 [ICON_PRODUCTION] Production from Sea Resources worked by this City. Sea Trade Routes gain +75% Range and +4 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_GOLD] Gold to Rialto District, +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science to Venetian Arsenale, and +1 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism to Murano Glassworks.[NEWLINE][NEWLINE]+15% [ICON_PRODUCTION] Production of Naval units, and increases Military Units supplied by this City''s population by 10%. [NEWLINE][NEWLINE]City must be built on the Coast.[NEWLINE]Requires a Lighthouse in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAGUNA_STRATEGY">
+			<Text>The Laguna is a Medieval-era building, requiring a Lighthouse. It improves the range and [ICON_GOLD] Gold yield of sea trade routes, and boosts the value of sea tiles and resources. The Laguna also increases the [ICON_PRODUCTION] Production of Naval units by 15%, and increases Military Units supplied by this City''s population by 10%. The Laguna additionally provide bonus yields to Murano Glassworks, Rialto District, and Arsenale di Venezia.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAGUNA_PEDIA">
+			<Text>Laguna (eng. Lagoons) are shallow bodies of salt water separated from a larger sea by barrier islands or reefs. Venice itself is situated on the bank of a large lagoon, artificially maintained and enlarged by the dredging of the Venetian canals. The Venice Lagoon is also the largest wetland in the Mediterranean, offering protection as well as a rich source of food to its inhabitants.</Text>
+		</Row>
+		
 		<!-- Lamassu Gate -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE">
