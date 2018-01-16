@@ -39,7 +39,7 @@ WHERE Tag = 'TXT_KEY_UNIT_ENGLISH_LONGBOWMAN_STRATEGY';
 
 -- Dromon
 UPDATE Language_en_US 
-SET Text = 'Unique naval unit of the Byzantines. Replaces the Penteconter. Deals an additional 10 damage to units it has attacked at the beginning of the enemy's turn, stacking up to 3 times.'
+SET Text = 'Unique naval unit of the Byzantines. Replaces the Penteconter. Deals an additional 10 damage to units it has attacked at the beginning of the enemy''s turn, stacking up to 3 times.'
 WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_STRATEGY';
 
 UPDATE Language_en_US 
@@ -105,7 +105,7 @@ VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'Constructs a Polder, which increases [ICO
 ------------------------------
 -- Druidic Lore
 UPDATE Language_en_US
-SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion neither generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if city adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] GMP for setting Pantheon, founding Religion, extending it and choosing Reformation Belief.'
+SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion neither generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if city adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] Great Merchant Points in your [ICON CAPITAL] Capital after you found a Pantheon, and Holy City after you found a Religion, enhance a Religion and choose a Reformation Belief.'
 WHERE Tag = 'TXT_KEY_TRAIT_FAITH_FROM_NATURE';
 --==========================================================================================================================
 --==========================================================================================================================

@@ -75,8 +75,8 @@ VALUES		('BUILDING_SIAM_BAAN_CHANG',	'RESOURCE_IVORY',	'YIELD_PRODUCTION',	1),
 -- Building_ImprovementYieldChanges
 ------------------------------		
 INSERT INTO Building_ImprovementYieldChanges	
-			(BuildingType, 					ImprovementType,		YieldType,			Yield)
-VALUES			('BUILDING_SIAM_BAAN_CHANG',	'IMPROVEMENT_LUMBERMILL_JUNGLE',	'YIELD_CULTURE',	1),
+			(BuildingType, 					ImprovementType,					YieldType,			Yield)
+VALUES		('BUILDING_SIAM_BAAN_CHANG',	'IMPROVEMENT_LUMBERMILL_JUNGLE',	'YIELD_CULTURE',	1),
 			('BUILDING_SIAM_BAAN_CHANG',	'IMPROVEMENT_LUMBERMILL',			'YIELD_CULTURE',	1);
 --==========================================================================================================================
 --==========================================================================================================================
