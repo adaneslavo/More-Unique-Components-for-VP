@@ -1967,14 +1967,14 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text></Text>
+			<Text>Unique Dutch replacement for the Bank. Available earlier.[NEWLINE]When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. +1 [ICON_GOLD] Gold to Caravansary and Customs House in this City, and +2 [ICON_GOLD] Gold to Market in this City.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great Person Generation and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire[NEWLINE]Reduces Poverty slightly.[NEWLINE][NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
 			<Text></Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_TEXT">
 			<Text>
-				Waag ("weigh house") arethe public buildings in which goods were weighed for market. Prior to international standards of weights and measures, the Waags performed an indispensable service in preventing the fraudulent sale of goods. As public control of the weight of goods was very important, Waags were run by local authorities who would also use them for the levying of taxes on goods transported through or sold within the city. This necessitated weigh houses be near a market square or town centre.[NEWLINE][NEWLINE]
+				Waag ("weigh house") are the public buildings in which goods were weighed for market. Prior to international standards of weights and measures, the Waags performed an indispensable service in preventing the fraudulent sale of goods. As public control of the weight of goods was very important, Waags were run by local authorities who would also use them for the levying of taxes on goods transported through or sold within the city. This necessitated weigh houses be near a market square or town centre.[NEWLINE][NEWLINE]
 				Of particular note is the Amsterdamn Waag, built in the 15th-century on Nieuwmarkt square in Amsterdam. Originally, the building was one of the gates in the city wall along the moat formed by the current Singel canal. A number of guilds were housed on the top floors of the building: the blacksmiths' guild, the painter's guild, the masons' guild and the surgeons' guild, each with its own entrance gate. In 1632 Rembrandt van Rijn was commissioned to paint the surgeons at work, and the resulting The Anatomy Lesson of Dr. Nicolaes Tulp made his reputation. In 1691 a theatrum anatomicum was added, which became famous for admitting members of the public to witness human dissections.[NEWLINE][NEWLINE]
 			</Text>
 		</Row>
