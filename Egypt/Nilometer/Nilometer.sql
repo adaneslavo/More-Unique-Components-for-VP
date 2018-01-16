@@ -17,7 +17,7 @@ VALUES		('CIVILIZATION_EGYPT', 'BUILDINGCLASS_WATERMILL',	'BUILDING_VP_NILOMETER
 --------------------------------	
 INSERT INTO	Buildings
 			(Type,						Description,						Civilopedia,								Strategy,									Help,									River,	MutuallyExclusiveGroup,	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,						GreatWorkYieldType)
-SELECT		'BUILDING_VP_NILOMETER',	'TXT_KEY_BUILDING_VP_NILOMETER',	'TXT_KEY_CIV5_BUILDINGS_NILOMETER_TEXT',	'TXT_KEY_BUILDING_VP_NILOMETER_STRATEGY',	'TXT_KEY_BUILDING_VP_NILOMETER_HELP',	0,		-1,						GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 2,				'WONDER_BUILDING_ATLAS_3UC',	GreatWorkYieldType
+SELECT		'BUILDING_VP_NILOMETER',	'TXT_KEY_BUILDING_VP_NILOMETER',	'TXT_KEY_CIV5_BUILDINGS_NILOMETER_TEXT',	'TXT_KEY_BUILDING_VP_NILOMETER_STRATEGY',	'TXT_KEY_BUILDING_VP_NILOMETER_HELP',	0,		-1,						GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 2,				'BUILDING_EGYPT_ATLAS',	GreatWorkYieldType
 FROM Buildings WHERE Type = 'BUILDING_WATERMILL';
 --------------------------------
 -- Building_ClassesNeededInCity
@@ -63,9 +63,10 @@ VALUES		('BUILDING_VP_NILOMETER',	'YIELD_PRODUCTION', 40);
 -- IconTextureAtlases
 ------------------------------
 INSERT INTO IconTextureAtlases 
-			(Atlas, 								IconSize, 	Filename, 										IconsPerRow, 	IconsPerColumn)
-VALUES		('WONDER_BUILDING_ATLAS_3UC', 			128, 		'BuildingPortraits128_DLC_WonderPack.dds',		2, 				2),
-			('WONDER_BUILDING_ATLAS_3UC', 			64, 		'BuildingPortraits64_DLC_WonderPack.dds',		2, 				2),
-			('WONDER_BUILDING_ATLAS_3UC', 			45, 		'BuildingPortraits45_DLC_WonderPack.dds',		2, 				2);
+			(Atlas, 							IconSize, 	Filename, 										IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_EGYPT_ATLAS', 			256, 		'BuildingPortraits256_DLC_WonderPack.dds',		2, 				2),
+			('BUILDING_EGYPT_ATLAS', 			128, 		'BuildingPortraits128_DLC_WonderPack.dds',		2, 				2),
+			('BUILDING_EGYPT_ATLAS', 			64, 		'BuildingPortraits64_DLC_WonderPack.dds',		2, 				2),
+			('BUILDING_EGYPT_ATLAS', 			45, 		'BuildingPortraits45_DLC_WonderPack.dds',		2, 				2);
 --==========================================================================================================================
 --==========================================================================================================================

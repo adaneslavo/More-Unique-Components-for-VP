@@ -5,7 +5,7 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>23</ModVersion>
+    <ModVersion>24</ModVersion>
     <Stability>Beta</Stability>
     <Teaser>More Unique Components mod. Compatible with latest VP.</Teaser>
     <Description>More Unique Components mod. Compatible with latest VP.
@@ -521,17 +521,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheAztecs/Eagle/Eagle Text.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>TheAztecs/Eagle/Eagle.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>TheAztecs/Huey Teocalli/Huey Teocalli Text.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -602,11 +592,6 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Venice/Laguna/Laguna.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Venice/VeniceText.XML</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -2149,10 +2134,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Eagle Text.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="TheAztecs\Eagle\Eagle.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2204,10 +2185,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="TheAztecs\Eagle\Pikeman_Aztec_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheAztecs\Huey Teocalli\Huey Teocalli Text.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="TheAztecs\Huey Teocalli\Huey Teocalli.lua">
       <SubType>Lua</SubType>
@@ -4540,10 +4517,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Venice\Laguna\Laguna80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\VeniceText.XML">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
   </ItemGroup>
   <ItemGroup>

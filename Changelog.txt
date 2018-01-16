@@ -5,7 +5,6 @@
 More Unique Components for Vox Populi changelog:
 
 *popups
-*monitor.lua
 *flax 22px
 *roman GG appear and disappear?
 
@@ -19,6 +18,9 @@ v24:
 - deleted unnecessary text files,
 - fixed file links,
 - fixed Khopesh,
+- fixed Nilometer art,
+- fixed Corsair,
+- added new adajcency bonuses to Oppidum (Logging Camp and Lumber Mill),
 - changed sound and formation of Klepht, now only bonus on Attack, lowered number of units in model from 14 to 9,
 - ballista and legion now can be buffed by any GG,
 - renamed and changed text of few promotions,
