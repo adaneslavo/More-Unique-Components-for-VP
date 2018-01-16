@@ -17,7 +17,7 @@ function JFD_CarthageHannibal_Shophet(playerID, unitID, unitX, unitY)
 		if plot:IsWater() then
 			local newShophet = player:InitUnit(unitAdmiralID, unitX, unitY, -1, DirectionTypes.NO_DIRECTION, false)
 			unit:SetEmbarked(false)
-			newShophet:Convert(unit, false)
+			newShophet:Convert(unit, false, false)
 			newShophet:SetHasPromotion(unitPromotionShophetGeneralID, false)
 			newShophet:SetHasPromotion(unitPromotionGreatGeneralID, false)
 			newShophet:SetHasPromotion(unitPromotionShophetID, false)
@@ -26,7 +26,7 @@ function JFD_CarthageHannibal_Shophet(playerID, unitID, unitX, unitY)
 	elseif (unit and plot and unit:IsHasPromotion(unitPromotionShophetAdmiralID)) then
 		if (not plot:IsWater()) then
 			local newShophet = player:InitUnit(unitShophetID, unitX, unitY, -1, DirectionTypes.NO_DIRECTION, false)
-			newShophet:Convert(unit, false)
+			newShophet:Convert(unit, false, false)
 			newShophet:SetHasPromotion(unitPromotionShophetAdmiralID, false)
 			newShophet:SetHasPromotion(unitPromotionGreatAdmiralID, false)
 			newShophet:SetHasPromotion(unitPromotionShophetGeneralID, true)
