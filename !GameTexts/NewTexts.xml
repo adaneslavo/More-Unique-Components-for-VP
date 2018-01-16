@@ -204,7 +204,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_TEXT">
 			<Text>
-				Placeholder
+				The Cacadores were the elite light infantry of the Portuguese army in the 18th and 19th centuries. The divisions were famed for their marksmanship and their brown coats, one of the first attempts at military camouflage. After a Portugal's sound defeat and occupation by Napoleon, the English intervened on behalf of their ally to rally and reorganize a joint war to retake the country. The British general William Beresford, as part of his reforms, formed the Cacadores to fill a role analogous to the German jaeger or American ranger divisions. Under this combined military, the Cacadores helped in reclaiming Portuguese independence and distinguished themselves as the "fighting cocks" of the Portuguese army until the units were eventually dissolved in the military reforms of 1911.  
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_STRATEGY">
@@ -1019,7 +1019,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_TEXT">
 			<Text>
-				Placeholder
+				Lamassu are Assyrian protective deities, often depicted as having a human's head, a body of a bull or a lion, and bird's wings. The Lamassu were household protective spirits of the common Babylonian and Assyrian peoples, becoming associated later as royal protectors, and were placed as sentinels at entrances. Depictions of Lamassu are found throughout Assyrian architecture, positioned on the thresholds of buildings and as colossal statues on each side of the city and palace gates. To protect houses, Lamassi were engraved in clay tablets, which were then buried under the door's threshold.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_STRATEGY">
@@ -1029,7 +1029,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
 			<Text>
-				Military Units supplied by this City's population increased by 20%.
+				Unique Wall replacement. Only the Assyrians may build it. Military Units supplied by this City's population increased by 20%.
 			</Text>
 		</Row>
 
