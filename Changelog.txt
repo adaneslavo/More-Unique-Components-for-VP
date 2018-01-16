@@ -10,8 +10,8 @@ More Unique Components for Vox Populi changelog:
 *Baan Change after VP update
 
 v25:
-- added popup and scaling for Paradise Garden,
-- added scaling for Baan Chang,
+- added dummy promotion to Monitor,
+- changed Qizilbash cooldown to 0,
 - minor fixes.
 
 v24:
@@ -26,6 +26,8 @@ v24:
 - fixed Khopesh,
 - fixed Nilometer art,
 - fixed Corsair,
+- added popup and scaling for Paradise Garden,
+- added scaling for Baan Chang,
 - reduced bonuse from Baan Chang on features to culture only,
 - added new adajcency bonuses to Oppidum (Logging Camp and Lumber Mill),
 - changed sound and formation of Klepht, now only bonus on Attack, lowered number of units in model from 14 to 9,

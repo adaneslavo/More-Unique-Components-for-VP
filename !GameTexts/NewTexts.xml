@@ -1302,14 +1302,24 @@
 		
 		<!-- Monitor -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_PROMOTION_MONITOR">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR">
 			<Text>
 				Surveillance
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_MONITOR_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP">
 			<Text>
 				When starting turn next to a friendly city, that city gains +5 [ICON_STRENGTH] Combat Strength this turn.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE">
+			<Text>
+				Fast and Hard
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE_HELP">
+			<Text>
+				+2 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack.
 			</Text>
 		</Row>
 		

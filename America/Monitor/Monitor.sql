@@ -57,7 +57,8 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_IRONCLAD';
 
 INSERT INTO		Unit_FreePromotions
 				(UnitType,					PromotionType)
-VALUES			('UNIT_AMERICA_MONITOR',	'PROMOTION_MONITOR'),
+VALUES			('UNIT_AMERICA_MONITOR',	'PROMOTION_UNIT_AMERICA_MONITOR'),
+				('UNIT_AMERICA_MONITOR',	'PROMOTION_UNIT_AMERICA_IRON_AND_HORSE'),
 				('UNIT_AMERICA_MONITOR',	'PROMOTION_COVER_1'),
 				('UNIT_AMERICA_MONITOR',	'PROMOTION_STEAM_POWERED');
 --------------------------------	
@@ -76,8 +77,9 @@ FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_IRONCLAD';
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-			(Type,					Description,					Help,								CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry)
-VALUES		('PROMOTION_MONITOR',	'TXT_KEY_PROMOTION_MONITOR',	'TXT_KEY_PROMOTION_MONITOR_HELP',	1,				'AS2D_IF_LEVELUP',	23,				'ABILITY_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_MONITOR');
+			(Type,										Description,										Help,													CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry)
+VALUES		('PROMOTION_UNIT_AMERICA_MONITOR',			'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR',			'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP',			1,				'AS2D_IF_LEVELUP',	23,				'ABILITY_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR'),
+			('PROMOTION_UNIT_AMERICA_IRON_AND_HORSE',	'TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE',	'TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE_HELP',	1,				'AS2D_IF_LEVELUP',	23,				'ABILITY_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE');
 --==========================================================================================================================	
 
 --==========================================================================================================================
