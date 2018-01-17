@@ -10,6 +10,7 @@ More Unique Components for Vox Populi changelog:
 *Baan Change after VP update
 
 *PDan changes*
+.modinfo changes: need to delete VeniceText.xml, HueyTeocalliText.xml & EagleText.xml
 - Waag text fix
 - Added +15% gold during GA on Riad (was on spreadsheet, but never implemented. gives Riad a wide mechanic to justify being built in every city)
 - increased Waag's +gold to market to 3 (now 3/3/3g from caravansary/market/customs house, was 3/2/3g)
