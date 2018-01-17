@@ -619,10 +619,10 @@
 			<Text>Holkan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_HELP">
-			<Text>Unique Ancient Era Unit, only the Maya may build it. This unit can move faster than the Pathfinder it replaces, and has no penalty against Barbarians. Heals 30HP every 20 turns, and gains [ICON_RESEARCH] science with every ruin.</Text>
+			<Text>Unique Ancient Era Unit, only the Maya may build it. This unit is stronger than the Pathfinder it replaces, and has no penalty against Barbarians. Heals 30HP every 20 turns, and gains [ICON_RESEARCH] science with every ruin. Unit receives the [COLOR_POSITIVE_TEXT]Trailblazer I[ENDCOLOR] promotion for free.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_STRATEGY">
-			<Text>The Holkan is a quick and independent scout for the Maya. Because of their increased speed, the Holkan explores more quickly, and gains experience more easily than the Pathfinders. Their increased power against barbarians and ability to heal makes Holkans capable of ranging farther and taking more risks than a normal scout. Use these units to grab ruins quickly, and gain an early scientific edge.</Text>
+			<Text>The Holkan is a quick and independent scout for the Maya. Because of their free Trailblazer I promotion, the Holkan explores more quickly, and gains experience more easily than the Pathfinders. Their increased power against barbarians and ability to heal makes Holkans capable of ranging farther and taking more risks than a normal scout. Use these units to grab ruins quickly, and gain an early scientific edge.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_TEXT">
 			<Text>The Maya were often idealized as a peaceful civilization by western Mayanist scholars, yet the Maya were no strangers to war. Unlike the wars of Europe and Asia, however, the Maya engaged in a highly ritualized form of combat, based on astrological and religious concerns as much as political ones. Squabbles over land, influence and resources were common, but the capture of human sacrifices was another factor leading to war. 
@@ -892,7 +892,16 @@
 				+60% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
-
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE">
+			<Text>
+				Fast and Hard
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE_HELP">
+			<Text>
+				+2 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack.
+			</Text>
+		</Row>
 		<!-- Kampong -->
 		<!-- Created by pineappledan; incorporated by adan_eslavo on 24/11/2017 -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG">
@@ -1310,16 +1319,6 @@
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP">
 			<Text>
 				When starting turn next to a friendly city, that city gains +5 [ICON_STRENGTH] Combat Strength this turn.
-			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE">
-			<Text>
-				Fast and Hard
-			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE_HELP">
-			<Text>
-				+2 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack.
 			</Text>
 		</Row>
 		
