@@ -26,7 +26,7 @@ function Scythe(iPlayer, iUnit, iX, iY)
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 						local vUnitPosition = PositionCalculator(pTargetUnit:GetX(), pTargetUnit:GetY())
 					
-						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-10 Scythe[ENDCOLOR]", 1)
+						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Scythe[ENDCOLOR]", 2)
 					end
 
 					if pTargetPlayer:IsHuman() then

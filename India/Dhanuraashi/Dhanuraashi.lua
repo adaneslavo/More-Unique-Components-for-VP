@@ -27,11 +27,11 @@ function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, att
 		
 		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then
 			if pDefendingUnit:IsDead() then
-				pAttackingUnit:SetExperience(pAttackingUnit:GetExperience() + (5 * iGameSpeedScaler))
+				pAttackingUnit:SetExperience(pAttackingUnit:GetExperience() + math.floor((5 * iGameSpeedScaler) + 0.5))
 			end
 		elseif pDefendingUnit ~= nil and pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then			
 			if pAttackingUnit:IsDead() then
-				pDefendingUnit:SetExperience(pDefendingUnit:GetExperience() + (5 * iGameSpeedScaler))
+				pDefendingUnit:SetExperience(pDefendingUnit:GetExperience() + math.floor((5 * iGameSpeedScaler) + 0.5))
 			end
 		end
 	end

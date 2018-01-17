@@ -42,7 +42,7 @@ function BleedFromLeiomano(iPlayer)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-10 Bleeding[ENDCOLOR]", 1)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Bleeding[ENDCOLOR]", 1)
 			end
 		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_2_ON_UNIT) then
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_2_ON_UNIT, false)
@@ -51,7 +51,7 @@ function BleedFromLeiomano(iPlayer)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-20 Heavy bleeding[ENDCOLOR]", 1)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Heavy bleeding[ENDCOLOR]", 1)
 			end
 		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_3_ON_UNIT) then
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_3_ON_UNIT, false)
@@ -60,7 +60,7 @@ function BleedFromLeiomano(iPlayer)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-30 Hemorrhaging[ENDCOLOR]", 1)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Hemorrhaging[ENDCOLOR]", 1)
 			end
 		end
 	end

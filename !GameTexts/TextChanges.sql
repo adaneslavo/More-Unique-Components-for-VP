@@ -105,7 +105,7 @@ VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'Constructs a Polder, which increases [ICO
 ------------------------------
 -- Druidic Lore
 UPDATE Language_en_US
-SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion neither generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if city adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] Great Merchant Points in your [ICON CAPITAL] Capital after you found a Pantheon, and Holy City after you found a Religion, enhance a Religion and choose a Reformation Belief.'
+SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion neither generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if city adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] GMP in your [ICON_CAPITAL] Capital after you found a Pantheon, and in Holy City after you found a Religion, enhance it or choose a Reformation Belief.'
 WHERE Tag = 'TXT_KEY_TRAIT_FAITH_FROM_NATURE';
 --==========================================================================================================================
 --==========================================================================================================================

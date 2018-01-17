@@ -28,7 +28,7 @@ function EnemyUnitOnMyPolder(iPlayer, iUnit, iX, iY)
 						if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 							local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 				
-							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_NEGATIVE_TEXT]Polder[ENDCOLOR]", 1)
+							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_NEGATIVE_TEXT]No [ICON_ARROW_RIGHT] Polder[ENDCOLOR]", 2)
 						end
 					end
 				end

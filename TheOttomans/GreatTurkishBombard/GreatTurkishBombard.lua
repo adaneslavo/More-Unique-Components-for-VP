@@ -19,7 +19,7 @@ function MeltingTurkishBombard(iPlayer, iUnitOrCity, iRole)
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 						local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 					
-						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-20 Sahi Topu[ENDCOLOR]", 2)
+						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Sahi Topu[ENDCOLOR]", 2)
 					end
 				end
 			end
