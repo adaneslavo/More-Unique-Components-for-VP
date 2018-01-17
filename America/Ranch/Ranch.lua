@@ -1,7 +1,16 @@
 function RanchCityGrowth(iPlayer, iCity, iPlotX, iPlotY, bGold, bCulture)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
-	
+	local iGameSpeedModifier = 1
+	if Game.GetGameSpeedType() == 0 then
+		iGameSpeedModifier = 3
+	elseif Game.GetGameSpeedType() == 1 then
+		iGameSpeedModifier = 2
+	elseif Game.GetGameSpeedType() == 2 then
+		iGameSpeedModifier = 1
+	elseif Game.GetGameSpeedType() == 3 then
+		iGameSpeedModifier = 0.67
+	end
 	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_AMERICA_RANCH)) then
 		local iEra = pPlayer:GetCurrentEra()
 		
@@ -9,8 +18,8 @@ function RanchCityGrowth(iPlayer, iCity, iPlotX, iPlotY, bGold, bCulture)
 			iEra = 1
 		end
 		
-		pCity:ChangeFood(10 * iEra)
-		pPlayer:ChangeJONSCulture(10 * iEra)
+		pCity:ChangeFood(10 * iEra * iGameSpeedModifier)
+		pPlayer:ChangeJONSCulture(10 * iEra * iGameSpeedModifier)
 	end
 end
 
