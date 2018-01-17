@@ -43,7 +43,7 @@ SET Text = 'Unique naval unit of the Byzantines. Replaces the Penteconter. Deals
 WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_STRATEGY';
 
 UPDATE Language_en_US 
-SET Text = 'The Dromon is a powerful ranged naval unit, capable of pouring fire onto enemy ships and burning them to ash. Each attack by a Dromon inflicts an additional 10 damage at the beginning of the enemy unit's turn, up to 3 attacks. Rush to logistics and reign fire down on your enemies.'
+SET Text = 'The Dromon is a powerful ranged naval unit, capable of pouring fire onto enemy ships and burning them to ash. Each attack by a Dromon inflicts an additional 10 damage at the beginning of the enemy unit''s turn, up to 3 attacks. Rush to logistics and reign fire down on your enemies.'
 WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_HELP';
 
 -- Carolean
