@@ -10,6 +10,8 @@ More Unique Components for Vox Populi changelog:
 *Baan Change after VP update
 
 *PDan changes*
+- removed +1 move from holkan, gave free Trailblazer I promotion
+- removed bonus CP/RCP from hashemite, lowered to default values of light tank
 - typo in newtext.sql fixed
 - Waag text fix
 - Added +15% gold during GA on Riad (was on spreadsheet, but never implemented. gives Riad a wide mechanic to justify being built in every city)
