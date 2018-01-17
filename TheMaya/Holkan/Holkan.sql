@@ -90,7 +90,7 @@ VALUES		('PROMOTION_UNIT_MAYA_RENEWAL_CYCLE', 			'TXT_KEY_PROMOTION_UNIT_MAYA_RE
 --------------------------------	
 INSERT INTO Units 	
 			(Type,				Class, 	PrereqTech,	Range,	BaseSightRange, Combat,		Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves,		Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,	GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 						Strategy, 								Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 					UnitFlagIconOffset,	UnitFlagAtlas,					PortraitIndex, 	IconAtlas,				MoveRate)
-SELECT		'UNIT_MAYA_HOLKAN',	Class,	PrereqTech,	Range,	BaseSightRange, Combat+1,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves+1,	Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_COMPASS',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_MAYA_HOLKAN',	'TXT_KEY_UNIT_MAYA_HOLKAN_TEXT',	'TXT_KEY_UNIT_MAYA_HOLKAN_STRATEGY',	'TXT_KEY_UNIT_MAYA_HOLKAN_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_MAYA_HOLKAN', 	0,					'UNIT_MAYA_FLAG_ATLAS',	0, 				'UNIT_MAYA_ATLAS',	MoveRate
+SELECT		'UNIT_MAYA_HOLKAN',	Class,	PrereqTech,	Range,	BaseSightRange, Combat+1,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves,	Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_COMPASS',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_MAYA_HOLKAN',	'TXT_KEY_UNIT_MAYA_HOLKAN_TEXT',	'TXT_KEY_UNIT_MAYA_HOLKAN_STRATEGY',	'TXT_KEY_UNIT_MAYA_HOLKAN_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_MAYA_HOLKAN', 	0,					'UNIT_MAYA_FLAG_ATLAS',	0, 				'UNIT_MAYA_ATLAS',	MoveRate
 FROM Units WHERE Type = 'UNIT_SHOSHONE_PATHFINDER';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -137,7 +137,9 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SHOSHONE_PATHFINDER';
 INSERT INTO Unit_FreePromotions
 			(UnitType, 				PromotionType)
 VALUES		('UNIT_MAYA_HOLKAN',	'PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2'),
-			('UNIT_MAYA_HOLKAN',	'PROMOTION_UNIT_MAYA_RENEWAL_CYCLE');
+		('UNIT_MAYA_HOLKAN',	'PROMOTION_WOODLAND_TRAILBLAZER_I'),
+		('UNIT_MAYA_HOLKAN',	'PROMOTION_UNIT_MAYA_RENEWAL_CYCLE');
+
 --------------------------------
 -- Unit_FreePromotions Deletion
 --------------------------------
