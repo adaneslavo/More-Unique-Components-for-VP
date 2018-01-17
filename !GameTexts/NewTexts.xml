@@ -84,15 +84,16 @@
 			<Text>Elephant Camp</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP">
-			<Text>Unique Siamese replacement for the Workshop.[NEWLINE][NEWLINE]
+			<Text>Unique Siamese replacement for the Workshop.[NEWLINE]
+				+1[NEWLINE][NEWLINE][ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production on all Forest and +1 [ICON_CULTURE] Culture for all Lumber Mills and Logging Camps
 				+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resource received as City-State gifts.  Receive 10 [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture in Capital for every Baan Chang in the Empire every time a city state gifts a unit, scales with Era.[NEWLINE][NEWLINE]
 				Allows [ICON_PRODUCTION] Production to be moved from this city along Trade Routes inside your civilization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY">
-			<Text>The Baan Chang is the Siamese unique building, replacing the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Gold from lumber mills, Production and Faith from Ivory. City state gifts, both Strategic Resources and units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
+			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills, and gives Production and Faith from Ivory. [NEWLINE][NEWLINE]City state gifts, both Strategic Resources and units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_TEXT">
-			<Text>Often thought of as ceremonial and military implements first, perhaps the greatest contribution of elephants to human society has been as tremendous beasts of burden. Elephants are prized as a labour force even within today's lumber camps for their ability to haul the dense teak lumber found only within Burma and Thailand. The power of a fully grown elephant is matched only by its grace, as the animals can navigate difficult and uneven terrain impassable by carts and tractors while carrying loads far in excess of other animals. The use of elephants in logging also has had unintentional benefits to the health of the forests, with their delicate command of the forest trails reducing the potential damage of logging trails.[NEWLINE][NEWLINE]
+			<Text>Often thought of as ceremonial and military implements first, perhaps the greatest contribution of elephants to human society has been as beasts of burden. Elephants are prized as a labour force even within today's lumber camps for their ability to haul the dense teak lumber found only within Burma and Thailand. The power of a fully grown elephant is matched only by its grace, as the animals can navigate difficult and uneven terrain impassable by carts and tractors, while carrying loads far in excess of other animals. The use of elephants in logging also has had unintentional benefits to the health of forests, with their delicate command of the forest trails reducing the potential damage of logging roads.[NEWLINE][NEWLINE]
 			The jobs of Southeast Asia's working elephants have come under threat within the past few decades with the mechanization of logging. Elephants and their mahouts have been forced to look for work in tourism and religious festivals, jobs which elephants find terribly stressful. </Text>
 		</Row>
 		
@@ -109,7 +110,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_STRATEGY">
-			<Text>Unique Swedish replacement for the Baths. The Bastu does not require a river, unlike the Baths, and provides bonuses for lakes and tundra. Science and Culture is generated whenever a citizen is born</Text>
+			<Text>Unique Swedish replacement for the Baths. In addition to the bonuses of the Baths, the Bastu provides bonuses for lakes and tundra. Science and Culture is generated whenever a citizen is born, and extra Food is generated during Golden Ages. Unlike the Baths, the Bastu does not require a river,</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_HELP">
 			<Text>Golden Ages increase [ICON_CULTURE] Culture and [ICON_FOOD] Food by 10%. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City. +1 [ICON_RESEARCH] Science from Lake and Tundra Tiles.</Text>
@@ -203,7 +204,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_TEXT">
 			<Text>
-				Placeholder
+				The Cacadores were the elite light infantry of the Portuguese army in the 18th and 19th centuries. The divisions were famed for their marksmanship and their brown coats, one of the first attempts at military camouflage. After a Portugal's sound defeat and occupation by Napoleon, the English intervened on behalf of their ally to rally and reorganize a joint war to retake the country. The British general William Beresford, as part of his reforms, formed the Cacadores to fill a role analogous to the German jaeger or American ranger divisions. Under this combined military, the Cacadores helped in reclaiming Portuguese independence and distinguished themselves as the "fighting cocks" of the Portuguese army until the units were eventually dissolved in the military reforms of 1911.  
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_STRATEGY">
@@ -282,7 +283,11 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_TEXT">
 			<Text>
-				Placeholder
+				The Barbary Corsairs were pirates and privateers operating off the coast of North Africa. The corsairs became infamous throughout Europe, ranging throughout the Mediterranean, and as far as Iceland, slaughtering livestock and capturing Christians for sale in the slave markets of the Islamic world. The ferocity and frequency of such raids, or "Razzia" was such that much of the coast of Italy and Spain was abandoned for fear of abduction. It is estimated that some 1.25 million people were taken as slaves by barbary pirates between 1530 and 1780 A.D.[NEWLINE][NEWLINE]
+				
+				The scope of Corsair activity began to diminish in the latter part of the 17th century, as the more powerful European navies started to compel the Barbary States to cease attacking their shipping. However, the ships and coasts of Christian states continued to suffer until the early 19th century. Following the Napoleonic Wars and the Congress of Vienna in 1814, European powers agreed upon the need to suppress the Barbary corsairs entirely. Occasional incidents continued to occur, including two Barbary wars between the United States and the Barbary States, creating the impetus for the creation of the US Navy.[NEWLINE][NEWLINE]
+				"It is written in our Koran, that all nations which do not acknowledge the Prophet are sinners, whom it is the right and duty of the faithful to plunder and enslave; and that every mu'min (believer) who is slain in this warfare is sure to go to paradise."[NEWLINE]
+				-Sidi Haji Abdrahaman, to Thomas Jefferson in reply to his demand for the protection of American merchant ships
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_STRATEGY">
@@ -433,7 +438,38 @@
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_THEME_HELP">
 			<Text>To maximize your bonus, make sure the Great Work Slots are all filled with Art from different Eras and different Civilizations.</Text>
 		</Row>
-
+		
+		<!-- Eagle -->
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE">
+			<Text>
+				Eagle
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_TEXT">
+			<Text>
+				One of the two elite class of infantry (the other being the Jaguar Warriors) in the Aztec army, the Eagle Warriors were the bravest young men of noble birth and/or those who had taken the most prisoners in battle. Like the Jaguars, the Eagles used the atlatl, bow, spear and macuahuitl (wooden swords set with obsidian shards); unlike the Jaguars, the Eagles decorated their armor with eagle feathers and wore a headdress shaped like the head of an eagle with the beak wide open. And they had a hilltop temple in Malinalco. Upon taking 20 prisoners – intact enough to serve as human sacrifice – a young warrior was eligible to become an Eagle Warrior, no doubt making his family very proud. Until the Spanish arrived with their cannons, muskets, and horses, the Eagle and Jaguar warriors were the toughest bullies on the Mesoamerican block.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY">
+			<Text>
+				The Eagle is the unique Aztec replacement for the Swordsman. It does not require Iron to build. It has increased vision, and has a chance of capturing defeated enemy units as Workers.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_HELP">
+			<Text>
+				Strong, front-line land Unit of the Classical Era. Only the Aztecs may build it. It gains the Sentry promotion for free. When it defeats an enemy unit, it has a 50% chance of capturing that unit as a Worker.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CAPTIVES_OF_WAR">
+			<Text>
+				Captives of War
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CAPTIVES_OF_WAR_HELP">
+			<Text>
+				May capture defeated units as Workers.
+			</Text>
+		</Row>
 		<!-- Examination Hall -->
 		<!-- Created by Blue Ghost-->
 		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL">
@@ -443,12 +479,16 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_TEXT">
 			<Text>
-				Placeholder
+				Perhaps the most truly unique aspect of Chinese culture - and the one with the most powerful legacy - is the Confucian examination system with which the Son of Heaven's empire was staffed with civil servants over the best part of two millennia. The Imperial examinations represented an attempt to create an aristocracy of learning, which in itself represent a remarkable advance over the warrior and hereditary aristocracies that dominated in the rest of the world. The Chinese examination system, archaic, laborious and daunting as it may have been, was nevertheless, was a glorious attempt at intellectual meritocracy.[NEWLINE][NEWLINE]
+				The Imperial Exams, or Keju, were state organized examinations for candidacy into the Chinese civil service. The examinations amounted to tests of rote memorization of the Five Confucian Classics and required direct quotations on Confucian philosophy and ethics. There were several levels of exams, each conferring differing levels of honor and privelege. A scholar who obtained the highest degree, the jinshi, would have his memory trained to a tremendous degree.[NEWLINE][NEWLINE]
+				The Imperial examinations was abolished in 1890 under pressure by Chinese citizens to reform and modernize the state. As Western universities began to move away from their own classical tradition to embrace economics, engineering and natural science, China's scholarly efforts languished in the ancient literary past. It is unsurprising that the ingenuity that produced the “Four Great Inventions” could not flourish in such a backward-looking intellectual environment.[NEWLINE][NEWLINE]
+				 “Do you know that we tried an experiment which is unique in the history of the world? We sought to rule this great country not by force, but by wisdom. And for centuries we succeeded.”[NEWLINE]
+				-Anonymous Confucian Philosopher; excerpt from "On a Chinese Screen"
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_STRATEGY">
 			<Text>
-				The Examination Hall is a Chinese unique building, replacing the Chancery. It boosts Great People generation in the city, and gives random Great Person Points whenever a citizen is born.
+				The Examination Hall is a Chinese unique building, replacing the Chancery. In addition to the normal bonuses of a Chancery, the Exam Hall boosts Great People generation in the city, and gives random Great Person Points whenever a citizen is born.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_HELP">
@@ -498,12 +538,26 @@
 			<Text>Flax</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOURCE_EGYPT_FLAX_HELP">
-			<Text></Text>
+			<Text>Can be improved by Plantation. Spawns near a City on the construction of the Egyptian Nilometer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOURCE_EGYPT_FLAX_TEXT">
 			<Text>Flax is a food and fiber crop best known for its use in the production of linen. The crop was first domesticated in the Fertile Crescent and was cultivated extensively in Egypt, where the fabric became tightly bound to the local culture. Linen has a smooth texture, high lustre, and is cool to the touch. These characteristics linked it to religious and ceremonial purity within Egyptian rituals. Priests wore linen fabrics exclusively, and mummies were wrapped in linen in preparation for the afterlife. Today, more durable textiles like cotton have largely replaced linen as a fabric, but the flax seed is still widely used for food and cooking oil.</Text>
 		</Row>
 		
+		<!-- Fusta -->
+		<Row Tag="TXT_KEY_UNIT_JFD_LANTERNAS">
+			<Text>Fusta</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_JFD_LANTERNAS">
+			<Text>A small and fast compliment to the Galleas, rather than a replacement. Weaker, but cheaper, and does not contribute to unit maintenance. May withdraw before melee attacks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_LANTERNAS_STRATEGY">
+			<Text>Fusta are quick, cheap, and do not cost any unit maintenance. Use these ships in combination with the bigger Galleass to monitor and protect your shipping lanes without causing an undue burden on your economy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_JFD_LANTERNAS_TEXT">
+			<Text>Fusta, or galliots, were small galleys with no more than 35 sailors. Exceptionally light and fast, the Venetians originally used them to maintain a standing navy against pirates, but the ship quickly became a favorite of the pirates themselves. The shallow draft, maneuverability and speed of the Fusta made them a legend throughout the Mediterranean.</Text>
+		</Row>
+
 		<!-- Grande École -->
 		<!-- Created by adan_eslavo 10/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE">
@@ -521,7 +575,7 @@
 				The origins of the Grande Ecoles lie in the French Revolution, where several military and technical ecoles normale superieure were established by distinguished French mathematicians and intellectuals. The idea was to open education to individuals based strictly on merit. By the 19th century a number of ecoles had sprung up for a wide array of disciplines including natural sciences, business and the humanities. The Grande Ecoles continue to have a deep impact on French society. Approximately 10% of all Native-born French citizens graduate from these schools, including many of France's most renowned politicians, philosophers, scientists, and executives.
 			</Text>
 		</Row>
-		
+				
 		<!-- Hacienda -->
 		<!-- Created by adan_eslavo on 10/11/2017 -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA">
@@ -565,10 +619,10 @@
 			<Text>Holkan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_HELP">
-			<Text>Unique Ancient Era Unit, only the Maya may build it. This unit can move faster than the Pathfinder it replaces, and has no penalty against Barbarians. Heals 30HP every 20 turns, and gains [ICON_RESEARCH] science with every ruin.</Text>
+			<Text>Unique Ancient Era Unit, only the Maya may build it. This unit is stronger than the Pathfinder it replaces, and has no penalty against Barbarians. Heals 30HP every 20 turns, and gains [ICON_RESEARCH] science with every ruin. Unit receives the [COLOR_POSITIVE_TEXT]Trailblazer I[ENDCOLOR] promotion for free.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_STRATEGY">
-			<Text>The Holkan is a quick and independent scout for the Maya. Because of their increased speed, the Holkan explores more quickly, and gains experience more easily than the Pathfinders. Their increased power against barbarians and ability to heal makes Holkans capable of ranging farther and taking more risks than a normal scout. Use these units to grab ruins quickly, and gain an early scientific edge.</Text>
+			<Text>The Holkan is a quick and independent scout for the Maya. Because of their free Trailblazer I promotion, the Holkan explores more quickly, and gains experience more easily than the Pathfinders. Their increased power against barbarians and ability to heal makes Holkans capable of ranging farther and taking more risks than a normal scout. Use these units to grab ruins quickly, and gain an early scientific edge.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_TEXT">
 			<Text>The Maya were often idealized as a peaceful civilization by western Mayanist scholars, yet the Maya were no strangers to war. Unlike the wars of Europe and Asia, however, the Maya engaged in a highly ritualized form of combat, based on astrological and religious concerns as much as political ones. Squabbles over land, influence and resources were common, but the capture of human sacrifices was another factor leading to war. 
@@ -671,17 +725,19 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_TEXT">
 			<Text>
-				Placeholder
+				Long considered the "Sick Man of Europe", Ottoman power was in decline well before nationalist sentiment took root in the Arab population. When WWI broke out among the European powers and Ottomans set about to crush Arab dissent, the Arabs responded in a popular revolt, declaring a new Islamic empire.[NEWLINE][NEWLINE]
+				Hussein bin Ali, Sharif of Mecca, began his rebellion in hopes of re-establishing a Hashemite dynasty in Arabia, and led his fellow Arabs in a popular revolt against their Turkish masters in Hejaz. Seeing an opportunity to tie down Ottoman forces in a new front, the British promised to recognize Arab hegemony and heavily subsidize the revolt, sending the now famous T.E. Lawrence as a liaison. The Arabs waged a guerilla war through the desert, crippling Ottoman supply lines and retreating back into the vast desert. With the help of French and English navy, they were able to take several ports along the Mediterranean coast, drawing even more to join their cause.[NEWLINE][NEWLINE]
+				With the end of WWI in 1918, and the Ottomans soundly defeated, the Arabs expected the full cooperation of their European allies as they established their new kingdom, but the English and French had other plans. Reneging on their agreement, the French and English secretly, formed the Sykes-Picot Agreement, in which Britain and France agreed to divide the Middle-East amongst themselves into their own respective spheres on influence. This gross betrayal of a trusted ally has soured relations between the Arab states and the West ever since.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_STRATEGY">
 			<Text>
-				The Hashemite Raider is adept at hit-and-run tactics and disrupting enemy supply lines. Whenever it pillages an improvement, adjacent enemy units take 10 damage.
+				The Hashemite Raider the Arab replacement for the Light Tank. It is adept at hit-and-run tactics and disrupting enemy supply lines. Whenever it pillages an improvement, adjacent enemy units take 10 damage. Moves quickly through desert.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_HELP">
 			<Text>
-				The Hashemite Raider is the Arabian replacement for the Light Tank. It is stronger than the unit it replaces, available earlier, and does not require Aluminum. It requires no movement to pillage, and deals damage to adjacent enemy units when pillaging improvements.
+				The Hashemite Raider is the Arabian replacement for the Light Tank. It is stronger than the unit it replaces, available earlier, and does not require Aluminum. Double Movement and +25% [ICON_STRENGTH] Strength in Desert. This unit requires no movement to pillage, and deals damage to adjacent enemy units when pillaging improvements.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_GARLAND_MINE">
@@ -711,15 +767,37 @@
 			<Text>Hippodrome</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
-			<Text>Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] in the City during 'We Love the King Day' and a 'We Love the King Day' begins immediately on Completion. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on the Palace, all Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. On completion, triggers an Event. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
+			<Text>Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on the Palace, all Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. On completion, triggers an Event. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
-			<Text>The Hippodrome is the Byzantine Unique Wonder, replacing the Circus Maximus. In comparison to the Circus Maximus, The Hippodrome greatly increases Gold and Culture yields during 'We Love the King Days' and begins a 'We Love the King Day' on completion. The Palace gains Culture and Gold, and all Arenas in the empire receive gold, while circuses receive Culture, and Horses get both. In addition to the 'We Love the King Day', a unique event is triggered on completion, giving your choice of additional bonuses. Choose wisely!</Text>
+			<Text>The Hippodrome is the Byzantine Unique Wonder, replacing the Circus Maximus. In comparison to the Circus Maximus, The Hippodrome greatly increases Gold and Culture yields during "We Love the King Days" and begins a "We Love the King Day" on completion. The Palace gains Culture and Gold, and all Arenas in the empire receive gold, while circuses receive Culture, and Horses get both. In addition to the "We Love the King Day", a unique event is triggered on completion, giving your choice of additional bonuses. Choose wisely!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_TEXT">
 			<Text>The Hippodrome was a chariot racing track and the beating heart of Byzantine social and political life. Located immediately next to the palace, the track was built by Constantine shortly after moving his capital to the city. The track was U-shaped, with ten monuments lining the center. Though slightly smaller in footprint than the Circus Maximus in Rome, the Hippodrome was adorned with art and treasures from all corners of the empire.[NEWLINE][NEWLINE]
 			Not just a pastime of the rich, the chariot races become the one place where the common people could see and interact with the emperor in a single venue. Commoners often took this opportunity to begin chants for political or religious reforms during sporting events. Four political parties, or demes, existed within Constantinople which each sponsored a different racing team.  These were the Blues, the Whites, the Greens and the Reds. Enormous sums of money were wagered on the rivalries between these teams, which became further heated by the religious, societal and political leanings which each team came to represent.	One such feud in particular would come to overshadow them all: the Nika riots.[NEWLINE][NEWLINE] 
 			During the reign of Justinian I (an ardent supporter of the Blues), a dispute arose concerning the sentencing of two hooligans who had been arrested for murder from a prior riot. The sentencing of these men unified the Blues and the Greens against Justinian in a terrible mob, and disgruntled nobles seized the opportunity to try to depose him in revenge for the recently levied taxes against the rich Though at first he considered fleeing Constantinople, Justinian rallied his loyal generals to corral the rioters into the Hippodrome, where they were butchered by royal guardsmen and Gothic mercenaries. By the time the Nika riots had ended, half of Constantinople had been burned down and 30,000 rioters and conspirators lay dead; the most violent riot in world history.</Text>
+		</Row>
+
+		<!-- Huey Teocalli -->
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI">
+			<Text>
+				Huey Teocalli
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_TEXT">
+			<Text>
+				In the Aztec Empire, a teocalli was a terraced pyramid, surmounted by a temple on top, site of all the important religious rituals in the town. The greatest was located in the heart of Tenochtitlan, the Huey Teocalli (or, according to the Spanish, the Templo Mayor) dedicated to a pair of gods: Huitzilopochtli, the god of war, and Tlaloc, the god of agriculture (an indication of what was important in Aztec culture). Each god had a separate temple, reached by separate staircases.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_STRATEGY">
+			<Text>
+				The Huey Teocalli is the unique Aztec replacement for the Grand Temple. It does not require a Temple, and provides a free Temple in the city. It provides a global bonus to Barracks and Floating Gardens. Every time you enter a Golden Age, the Huey Teocalli permanently gains Food, Faith, and additional XP to units built in the city.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_HELP">
+			<Text>
+				Unique replacement for the Grand Temple. Only the Aztec may build it.[NEWLINE]Comes with a free Temple. A [ICON_GOLDEN_AGE] Golden Age begins. Reduces [ICON_HAPPINESS_3] Religious Unrest. All Temples gain +1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture, Barracks get +2 [ICON_CULTURE] Culture, and Floating Gardens get +2 [ICON_FOOD] Food. Whenever you enter a Golden Age, permanently gain +3 [ICON_FOOD], +3 [ICON_PEACE] Faith, and +3 XP for units trained in the city (max +30 each).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+			</Text>
 		</Row>
 
 		<!-- Iron Chariot -->
@@ -731,17 +809,17 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_TEXT">
 			<Text>
-				Chariots formed the core of the Assyrian army. Assyrian chariots were drawn by four horses and used to smash into and disperse enemy formations.
+				Before horses were bred to be big enough to carry men on their backs, Chariots formed the core of the Assyrian army. Assyrian chariots were drawn by four horses and used to smash into and disperse enemy formations.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_STRATEGY">
 			<Text>
-				Assyria's Iron Chariots act as shock troops to control the battlefield. They excel at breaking enemy ranks.
+				Assyria's Iron Chariots act as shock troops to control the battlefield. They excel at breaking enemy ranks. The Iron Chariot gains a combat bonus for every adjacent enemy unit, neutralizing the enemy's flanking bonuses and allowing your chariots to take greater risks on the battlefield. Iron and Horse resources in excess of the number of Iron Chariots you own increase the combat effectivness of your chariots
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP">
 			<Text>
-				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require Horses, but gains +2 combat strength if you have sufficient Horses for all Iron Chariots, and likewise for Iron. Also, it gains +10% combat strength for each adjacent enemy unit.
+				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require Horses, and gains +2 combat strength if you have sufficient Horses for all Iron Chariots, and likewise for Iron. Gains +10% combat strength for each adjacent enemy unit.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL">
@@ -806,7 +884,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_6">
 			<Text>
-				Fury of Nergal VI
+				In a Pickle
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_6_HELP">
@@ -814,7 +892,16 @@
 				+60% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
-
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE">
+			<Text>
+				Fast and Hard
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE_HELP">
+			<Text>
+				+2 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack.
+			</Text>
+		</Row>
 		<!-- Kampong -->
 		<!-- Created by pineappledan; incorporated by adan_eslavo on 24/11/2017 -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG">
@@ -842,7 +929,7 @@
 			<Text>Khopesh</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH_TEXT">
-			<Text>Khopesh is the Egyptian name of the Canaanite "sickle-sword", in Assyrian known as sappara. Its origins can be traced back to Sumer of the third millennium BC. A typical khopesh is 50–60 cm (20–24 inches) in length, though smaller examples do also exist. This blade was designed for hooking an opponent's shield or disarming them. These weapons changed from bronze to iron in the late period.[NEWLINE][NEWLINE]The blade is only sharpened on the outside portion of the curved end. The khopesh evolved from the epsilon or similar crescent shaped axes that were used in warfare. Note, however, that the khopesh is not an axe. Unlike an axe, the khopesh did not make push-cuts, but rather slashes, like a sabre. The khopesh went out of use around 1300 BC.</Text>
+			<Text>Khopesh is the Egyptian name of the Canaanite "sickle-sword", in Assyrian known as sappara. Its origins can be traced back to Sumer of the third millennium BC, where the Stele of Vultures depicts Eannatum of Lagash, the world's first emperor, wielding a khopesh.[NEWLINE][NEWLINE]A typical khopesh is 50–60 cm (20–24 inches) in length, designed for hooking an opponent's shield or disarming them. The blade is only sharpened on the outside portion of the curved end. The khopesh evolved from the epsilon or similar crescent shaped axes that were used in warfare. Note, however, that the khopesh is not an axe, but rather a slashing weapon like a sabre. Many examples of Khopesh can be found in tombs and many Pharaohs are depicted holding the weapon. Indeed, many examples of khopesh found do not show signs of ever having been sharpened, indicating they were ceremonial, or status symbols.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH_STRATEGY">
 			<Text>The Khopesh is the unique Egyptian replacement for the Spearman. It's a strong early unit that has an edge in direct combat. However, unlike the Spearman it replaces, it does not have a combat bonus against mounted units.</Text>
@@ -914,7 +1001,7 @@
 			<Text>+50% [ICON_STRENGTH] Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_7">
-			<Text>Best Among Us</Text>
+			<Text>A Winner is You</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_7_HELP">
 			<Text>+75% [ICON_STRENGTH] Combat Strength.</Text>
@@ -998,7 +1085,20 @@
 				In battle, Koa warriors were well-versed in many weapons, including knuckle-dusters, slings, and garrotes, but were also capable hand-to-hand fighters. More traditional melee weapons were also used, including wooden daggers, clubs, staves, and paddles. These weapons would occasionally be modified by sewing shark teeth along their edges, creating devastating serrated weapons called 'Leiomano'. These weapons were used similarly to the obsidian-tipped Macuahuitl of Central America.
 			</Text>
 		</Row>
-
+		<!-- Laguna -->
+		<Row Tag="TXT_KEY_BUILDING_LAGUNA">
+			<Text>Laguna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAGUNA_TEXT">
+			<Text>When a [ICON_INTERNATIONAL_TRADE] Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from Coast and Ocean Tiles, +2 [ICON_FOOD] Food and +2 [ICON_PRODUCTION] Production to Atolls and +1 [ICON_PRODUCTION] Production from Sea Resources worked by this City. Sea Trade Routes gain +75% Range and +4 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_GOLD] Gold to Rialto District, +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science to Venetian Arsenale, and +1 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism to Murano Glassworks.[NEWLINE][NEWLINE]+15% [ICON_PRODUCTION] Production of Naval units, and increases Military Units supplied by this City's population by 10%. [NEWLINE][NEWLINE]City must be built on the Coast.[NEWLINE]Requires a Lighthouse in the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAGUNA_STRATEGY">
+			<Text>The Laguna is a Medieval-era building, requiring a Lighthouse. It improves the range and [ICON_GOLD] Gold yield of sea trade routes, and boosts the value of sea tiles and resources. The Laguna also increases the [ICON_PRODUCTION] Production of Naval units by 15%, and increases Military Units supplied by this City''s population by 10%. The Laguna additionally provide bonus yields to Murano Glassworks, Rialto District, and Arsenale di Venezia.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAGUNA_PEDIA">
+			<Text>Laguna (eng. Lagoons) are shallow bodies of salt water separated from a larger sea by barrier islands or reefs. Venice itself is situated on the bank of a large lagoon, artificially maintained and enlarged by the dredging of the Venetian canals. The Venice Lagoon is also the largest wetland in the Mediterranean, offering protection as well as a rich source of food to its inhabitants.</Text>
+		</Row>
+		
 		<!-- Lamassu Gate -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE">
@@ -1008,7 +1108,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_TEXT">
 			<Text>
-				Placeholder
+				Lamassu are Assyrian protective deities, often depicted as having a human's head, a body of a bull or a lion, and bird's wings. The Lamassu were household protective spirits of the common Babylonian and Assyrian peoples, becoming associated later as royal protectors, and were placed as sentinels at entrances. Depictions of Lamassu are found throughout Assyrian architecture, positioned on the thresholds of buildings and as colossal statues on each side of the city and palace gates. To protect houses, Lamassi were engraved in clay tablets, which were then buried under the door's threshold.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_STRATEGY">
@@ -1018,7 +1118,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
 			<Text>
-				Military Units supplied by this City's population increased by 20%.
+				Unique Wall replacement. Only the Assyrians may build it. Military Units supplied by this City's population increased by 20%.
 			</Text>
 		</Row>
 
@@ -1195,7 +1295,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_STRATEGY">
 			<Text>
-				Unique Arabian replacement for the University. Generates Faith in addition to Science, and increases Great Person rate. Whenever you make a Faith purchase, the Madrasah generates additional Science.
+				Unique Arabian replacement for the University. In addition to the bonuses of a University, increases Great Person rate. Whenever you make a Faith purchase, the Madrasah generates additional Science.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
@@ -1211,12 +1311,12 @@
 		
 		<!-- Monitor -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_PROMOTION_MONITOR">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR">
 			<Text>
 				Surveillance
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_MONITOR_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP">
 			<Text>
 				When starting turn next to a friendly city, that city gains +5 [ICON_STRENGTH] Combat Strength this turn.
 			</Text>
@@ -1252,10 +1352,10 @@
 			<Text>Nilometer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_NILOMETER_STRATEGY">
-			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_FOOD] Food and [ICON_PRODUCTION] Production output. It also provides access to the unique Flax bonus resource.</Text>
+			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_PRODUCTION] Production output. On construction, 2 Flax resources spawn near the city, which provide additional culture and Production. This building can be built anywhere, as long as you don't have a Well in the City already.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_NILOMETER_HELP">
-			<Text>+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the city.</Text>
+			<Text>Unique Egyptian replacement for the Water Mill.[NEWLINE]+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the city.</Text>
 		</Row>
 
 		<!-- Oppidum -->
@@ -1276,7 +1376,7 @@
 			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_FAITH] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to nearby cities. Provides bonus yields to all non-road and non-great person land improvements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_REC">
-			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to a nearby city. Adjacent Improvements gain additional bonus yields.</Text>
+			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to all Cities in workable range. Adjacent Improvements gain additional bonus yields.</Text>
 		</Row>
 
 		<!-- Pairidaeza -->
@@ -1455,7 +1555,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_EXPEDITIONARY_FORCE_HELP">
 			<Text>
-				Gain +1% [ICON_STRENGTH] Strength for every Tile from the [ICON_CAPITAL] Capital this Unit is.
+				Gain +1% [ICON_STRENGTH] Strength for every Tile between the [ICON_CAPITAL] Capital and this Unit.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_TOURISM">
@@ -1505,8 +1605,8 @@
 			<Text>The Qizilbash is the Unique Persian replacement for the Lancer. Stronger than the Lancer, the Qizilbash also generates Faith, Gold and Golden Age Points for every turn they spend in enemy territory. This unit can also be purchased with Faith without needing a religious tenet. Maintaining a strong presence in enemy territory allows Persia to generate Faith for more Qizilbash, and trigger more Golden Ages to increase your army's power.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_TEXT">
-			<Text>Qizilbash was originally a pejorative for the followers of the Safawiyyah Sufi order, who distinguished themselves by wearing bright crimson headwear. The name, which means red headed, became a mark of pride among the Qizilbash, who organized into a military society of Shi'ite Muslims in the late 15th century. Though primarily of Turkman origin, the Qizilbash proved instrumental in the establishment of the Safavid Dynasty in Iran.[NEWLINE][NEWLINE]
-			In a campaign to avenge the death of his father Haydar, Ismail I, led 7000 Qizilbash warriors to destroy the Aq Qoyunlu force of 30 000 in Azerbaijan, and establish the Safavid State. By 1510, eleven years later, Ismail brought all of Iran under his control, the first ethnically Iranian monarch to rule Iran in over 850 years. Though they had made him a powerful king, Ismail feared the power and influence of the tribal qizilbash over the Iranian peoples. Ismail and his successors would spend the next 80 years diminishing the political power of the Qizilbash, replacing them with ghulam slave soldiers from the Caucasus. Nevertheless, the Qizilbash held an honoured position within the Safavid empire, both on the battlefield and in the Safavid court.[NEWLINE][NEWLINE]
+			<Text>Qizilbash was originally a pejorative for the followers of the Safawiyyah Sufi order, who distinguished themselves by wearing bright crimson headwear. The name, which means red headed, became a mark of pride among the Qizilbash, who organized into a Shi'ite Islamic military society in the late 15th century. Though primarily of Turkman origin, the Qizilbash proved instrumental in the establishment of the Safavid Dynasty in Iran.[NEWLINE][NEWLINE]
+			In a campaign to avenge the death of his father Haydar, Ismail I, led 7000 Qizilbash warriors to destroy the Aq Qoyunlu force of 30 000 in Azerbaijan, and establish the Safavid State. By 1510, eleven years later, Ismail brought all of Iran under his control, the first ethnically Iranian monarch to unify Iran in over 850 years. Though they had made him a powerful king, Ismail feared the power and influence of the tribal qizilbash over the Iranian peoples. Ismail and his successors would spend the next 80 years diminishing the political power of the Qizilbash, replacing them with ghulam slave soldiers from the Caucasus. Nevertheless, the Qizilbash held an honoured position within the Safavid empire, both on the battlefield and in the Safavid court.[NEWLINE][NEWLINE]
 			</Text>
 		</Row>
 		
@@ -1533,11 +1633,11 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_TEXT">
-			<Text>A ranch is a type of farm and an area of landscape given primarily to the practice of ranching, the practice of raising grazing livestock such as cattle or sheep for meat or wool. Ranching is also a method used to raise less common livestock such as elk, American bison or even ostrich, emu, and alpacas.[NEWLINE][NEWLINE]Ranches generally consist of large areas, but may be of nearly any size. If the ranch includes arable or irrigated land, the ranch may also engage in a limited amount of farming, raising crops for feeding the animals, such as hay and feed grains. As settlers from the United States moved west, they brought cattle breeds developed on the east coast and in Europe along with them, and adapted their management to the drier lands of the west by borrowing key elements of the Spanish vaquero culture.</Text>
+			<Text>A ranch is a type of farm primarily for the raising of grazing livestock such as cattle or sheep. Ranching is also a method used to raise less common livestock such as elk, American bison or even ostrich, emu, and alpacas.[NEWLINE][NEWLINE]Ranches generally consist of large areas, but may be of nearly any size. If the ranch includes arable or irrigated land, the ranch may also engage in a limited amount of farming, raising crops for feeding the animals, such as hay and feed grains. As settlers from the United States moved west, they brought cattle breeds developed on the east coast and in Europe along with them, and adapted their management to the drier lands of the west by borrowing key elements of the Spanish vaquero culture. Vast swathes of the American interior were converted to ranchland in a process of colonization which left an indelible mark on the American psyche.  Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY">
 			<Text>
-				In addition to the regular abilities of the Stable, the Ranch increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
+				The Ranch is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Ranch increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
@@ -1555,10 +1655,10 @@
 			<Text>A riad is a traditional Moroccan house with an interior garden or courtyard. The riads were inward focused, which allowed for family privacy and protection from the weather in Morocco. In the central garden of traditional riads there are often four orange or lemon trees and possibly a fountain. The walls of the riads are usually adorned with Arabic calligraphy with quotes from the Quran.[NEWLINE][NEWLINE]The style of these riads has changed over the years, but the basic form is still used in designs today. Recently there has been a surge in interest in this form of house after a new vogue of renovation in towns such as Marrakech and Essaouira where many of these often-crumbling buildings have been restored to their former glory. Many riads are now used as hotels or restaurants.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_RIAD_STRATEGY">
-			<Text>The Riad is a Moroccan unique building that increases the speed at which [ICON_GREAT_PEOPLE] Great people are generated by 30%. It also grants 1 [ICON_CULTURE] Culture per 5 citizens in the city, and trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points.</Text>
+			<Text>The Riad is the Moroccan unique replacement for the Garden. In addition to the bonuses of a normal Garden, the Riad grants culture in the city for every 5 citizens in the city, and Gold generation in the city is greatly increased during a Golden Age. Trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_RIAD_HELP">
-			<Text>Unique Moroccan replacement for the Garden. Trade routes originating in the city gain +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn. [NEWLINE][NEWLINE]+30% [ICON_GREAT_PEOPLE] Great People generation in this City. [NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Unique Moroccan replacement for the Garden. Trade routes originating in the city gain +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn. [NEWLINE][NEWLINE]+30% [ICON_GREAT_PEOPLE] Great People generation in this City. [NEWLINE]+15% [ICON_GOLD] Gold in the city during a [ICON_GOLDEN_AGE] Golden Age</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
@@ -1600,12 +1700,12 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME_STRATEGY">
 			<Text>
-				The Sambadrome is the unique Brazilian replacement for the Opera House. It provides more Culture than the Opera House, and it also provides Golden Age Points and Tourism, and comes with a Musician specialist slot.
+				The Sambadrome is the unique Brazilian replacement for the Opera House. In addition to the bonuses of an Opera House, it provides more Culture than the Opera House, and it also provides Golden Age Points and Tourism. The Sambadrome comes with a Musician specialist slot.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME_HELP">
 			<Text>
-				+13% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +3 [ICON_TOURISM] Tourism at Radio.
+				Unique Brazilian replacement for the Opera House. +7% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +3 [ICON_TOURISM] Tourism at Radio.
 			</Text>
 		</Row>
 		
@@ -1636,7 +1736,7 @@
 			<Text>
 				Scythed chariots are modified war chariots with long blades extending from the wheel axels. Though often dismissed as fanciful storytelling, the use of these war machines has been confirmed in at least a few more credible sources. Scythed chariots featured prominently during the Greco-Persian War, though to little effect against Macedon's well-trained infantry. Use of scythed chariots has been ascribed to Pictish, Irish and Iceni armies, but the claims are often of dubious validity. The only report of a scythed chariot in Britain outside of Roman propaganda comes from the Irish Ulster Cycle, during the adventures of Chu Chulainn. [NEWLINE][NEWLINE]
 				Although chariots had fallen out of use in continental Europe from the end of the 3rd century BC, Caesar found that they remained significant in British warfare. Caesar encountered both Celtic cavalry and chariots and described how these warriors would throw javelins from their vehicles before dismounting to fight on foot. Celtic soldiers could return to their chariots to quickly retreat or redeploy. [NEWLINE][NEWLINE]
-				“They make war not only on horseback but also from 2 horse chariots and cars armed in the Gallic fashion – they call them ‘Covinni’ - on which they use axles equipped with scythes.” [NEWLINE]
+				“They make war not only on horseback but also from two horse chariots and cars armed in the Gallic fashion – they call them Covinni - on which they use axles equipped with scythes.” [NEWLINE]
 				- Pomponius Mela
 			</Text>
 		</Row>
@@ -1811,7 +1911,7 @@
 			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked. Marked unit has reduced [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT">
-			<Text>Catching</Text>
+			<Text>Hobbled</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT_HELP">
 			<Text>Unit has reduced movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
@@ -1847,14 +1947,13 @@
 			<Text>SPAD S.VII</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_HELP">
-			<Text>Unique Modern Era Unit. Only the French may build it. This Unit has a longer range and a greater chance to intercept enemy aircraft than the Triplane it replaces. Receives the [COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR] Promotion for free</Text>
+			<Text>Unique Modern Era Unit. Only the French may build it. This Unit is cheaper, and has a longer range than the Triplane it replaces. Receives the [COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR] Promotion for free.[NEWLINE]Does not require Oil.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_STRATEGY">
-			<Text>The SPAD S.VII is France's early air superiority fighter. With a longer range and a guaranteed chance to intercept, these fighters will help create a strong French presence in the air. The SPAD S.VII's quick study ability ensures these fighters are the toughest aces in the sky.</Text>
+			<Text>The SPAD S.VII is France''s early air superiority fighter. With a longer range and a cheaper cost and no need for oil, these fighters will help create a strong French presence in the air. The SPAD S.VII's quick study ability ensures these fighters are the toughest aces in the sky.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_TEXT">
-			<Text>
-				World War I saw rapid technological and tactical changes in how wars were fought, not the least of which was the first use of aircraft for scouting, support, and bombing. These new machines opened an entirely new theatre of war, a new avenue to gain an advantage over the enemy. Despite their promise, the first aircraft were slow, clumsy, and unreliable thanks to their underpowered combustion engines. This all changed in 1915 when Marc Birgikt invented a new V8 engine boasting 150 horsepower and weighing only 330 pounds. The French high command saw this new motor’s obvious value as an aircraft engine and set about in commissioning a new fighter aircraft designed around this new powerhouse: The Societe Pour L'Aviation et ses Derives, or ‘SPAD’ S. VII. [NEWLINE][NEWLINE]
+			<Text>World War I saw rapid technological and tactical changes in how wars were fought, not the least of which was the first use of aircraft for scouting, support, and bombing. These new machines opened an entirely new theatre of war, a new avenue to gain an advantage over the enemy. Despite their promise, the first aircraft were slow, clumsy, and unreliable thanks to their underpowered combustion engines. This all changed in 1915 when Marc Birgikt invented a new V8 engine boasting 150 horsepower and weighing only 330 pounds. The French high command saw this new motor''s obvious value as an aircraft engine and set about in commissioning a new fighter aircraft designed around this new powerhouse: The Societe Pour L'Aviation et ses Derives, or "SPAD" S. VII. [NEWLINE][NEWLINE]
 				By late 1916 SPAD VIIs were beginning to see action, and saw wide adoption by allied pilots for the rest of the war. Though lacking in maneuverability compared to the older Nieuport fighters, the SPAD VII more than made up for this deficiency in sheer speed, travelling in excess of 205kmph, and capable of safe dives of more than 400kmph. Entirely new tactics had to be created by pilots to leverage this unmatched speed, which gave the SPAD the ability to safely avoid or escape pitched battles. The added stability in diving was especially appreciated over the old Nieuports, which had a bad habit of shedding their wings during maneuvers. [NEWLINE][NEWLINE]
 				Air superiority became a constant arms race against newer and better German designs and engines. By the end of the war, the SPAD VII's single .303 Vickers machine gun was outmatched by German fighters, which carried at least two machine guns. The heavier and faster SPAD XIII replaced the SPAD VII by late 1917, and would carry France to the end of the War. Though at times unreliable and hard to maneuver, the SPAD series would go down in history as the fastest and most powerful of WWI fighters, and continued to be used by the French as a training plane until it was retired in 1928.
 			</Text>
@@ -1864,17 +1963,17 @@
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN">
 			<Text>
-				Standschützen
+				Schützenstand
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_TEXT">
 			<Text>
-				The Standschützen were originally rifle guilds and rifle companies that had been formed in the 15th and 16th centuries, and were involved time and again in military operations within the borders of the Austrian County of Tyrol. A Standschütze was a member of a Schützenstand ("shooting club"), into which he was enrolled, which automatically committed him to the voluntary, military protection of the state of Tyrol (and Vorarlberg). In effect they were a type of Tyrolean local militia or home guard.
+				The Schützenstand were originally rifle guilds and rifle companies that had been formed in the 15th and 16th centuries, and were involved time and again in military operations within the borders of the Austrian County of Tyrol. A Standschütze was a member of a Schützenstand ("shooting club"), into which he was enrolled, which automatically committed him to the voluntary, military protection of the state of Tyrol (and Vorarlberg). In effect they were a type of Tyrolean local militia or home guard.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_STRATEGY">
 			<Text>
-				The Standschützen is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. It allows for faster construction of land military units in the city. It also provides +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally.
+				The Schützenstand is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. It allows for faster construction of land military units in the city. It also provides +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_HELP">
@@ -1889,7 +1988,7 @@
 			<Text>Tersane</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_HELP">
-			<Text>Unique Medieval Era Building. [NEWLINE]When a Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the civ based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
+			<Text>Unique Medieval Era Building. [NEWLINE]When a Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the civ based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Melee Units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_STRATEGY">
 			<Text>Tersane is the unique Harbor replacement of the Ottomans. In addition to the bonuses of a Harbor, the Tersane increases the yields of work boats. The building also greatly improves production towards trade and military vessels, greatly improving the Ottoman's naval capabilities. All Melee Ships built in this city also receive the Prize Ships promotion, allowing them to capture defeated enemy units.</Text>
@@ -1934,12 +2033,12 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_TEXT">
 			<Text>
-				Placeholder
+				Opened in 1290, the University of Coimbra is one of the oldest centers of higher learning in the world, and the oldest in Portugal. The university was founded by King Dinis as the Lisbon Estudo Geral, originally with faculties of Arts, Law, Canon Law and Medicine. As the only university in Portugal for 350 years, the University of Coimbra became a focus of educational, political, and social influence in Portugal.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_STRATEGY">
 			<Text>
-				The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. It gives all naval units the ability to gain [ from exploration, and gains [ICON_GOLD] Gold from Feitorias built in foreign lands.
+				The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. In addition to the normal bonuses of the Oxford University, it gives all naval units the ability to gain science from exploration, and generates Gold and Production in the city for every Feitoria built in foreign lands.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_HELP">
@@ -1964,15 +2063,15 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text></Text>
+			<Text>Unique Dutch replacement for the Bank. Available earlier.[NEWLINE]When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. +3 [ICON_GOLD] Gold to Market, Caravansary and Customs House in this City.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great Person Generation and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire, up to a maximum of 10 traded resources.[NEWLINE]Reduces Poverty slightly.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
-			<Text></Text>
+			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier than the Bank, and provides bonuses to Great Person Generation and defense for every luxury imported or exported in the Empire. Be sure to keep peaceful and lucrative relationships with your neighbors; a surprise war with a trading partner could suddenly weaken your city's defenses!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_TEXT">
 			<Text>
-				Waag ("weigh house") arethe public buildings in which goods were weighed for market. Prior to international standards of weights and measures, the Waags performed an indispensable service in preventing the fraudulent sale of goods. As public control of the weight of goods was very important, Waags were run by local authorities who would also use them for the levying of taxes on goods transported through or sold within the city. This necessitated weigh houses be near a market square or town centre.[NEWLINE][NEWLINE]
-				Of particular note is the Amsterdamn Waag, built in the 15th-century on Nieuwmarkt square in Amsterdam. Originally, the building was one of the gates in the city wall along the moat formed by the current Singel canal. A number of guilds were housed on the top floors of the building: the blacksmiths' guild, the painter's guild, the masons' guild and the surgeons' guild, each with its own entrance gate. In 1632 Rembrandt van Rijn was commissioned to paint the surgeons at work, and the resulting The Anatomy Lesson of Dr. Nicolaes Tulp made his reputation. In 1691 a theatrum anatomicum was added, which became famous for admitting members of the public to witness human dissections.[NEWLINE][NEWLINE]
+				Waag ("weigh house") are the public buildings in which goods were weighed for market. Prior to international standards of weights and measures, the Waags performed an indispensable service in preventing the fraudulent sale of goods. As public control of the weight of goods was very important, Waags were run by local authorities who would also use them for the levying of taxes on goods transported through or sold within the city. This necessitated weigh houses be near a market square or town centre.[NEWLINE][NEWLINE]
+				Of particular note is the Amsterdam Waag, built in the 15th-century on Nieuwmarkt square in Amsterdam. Originally, the building was one of the gates in the city wall along the moat formed by the current Singel canal. A number of guilds were housed on the top floors of the building: the blacksmiths' guild, the painter's guild, the masons' guild and the surgeons' guild, each with its own entrance gate. In 1632 Rembrandt van Rijn was commissioned to paint the surgeons at work, and the resulting The Anatomy Lesson of Dr. Nicolaes Tulp made his reputation. In 1691 a theatrum anatomicum was added, which became famous for admitting members of the public to witness human dissections.[NEWLINE][NEWLINE]
 			</Text>
 		</Row>
 		
@@ -1982,10 +2081,18 @@
 			<Text>White Tower</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP">
-			<Text></Text>
+			<Text>Unique replacement for the Hermitage. Only England may build it
+			[NEWLINE]+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Population in city.
+			[NEWLINE]+2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% Spy stealing rate on Empire 
+			[NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City.
+			[NEWLINE]+1 [ICON_HAPPINESS] Happiness on Empire for every enemy spy killed on Empire.
+			[NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. 
+			[NEWLINE]+5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.
+			[NEWLINE][NEWLINE]Available earlier, requires Castle in City.
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY">
-			<Text>Unique English replacement for the Hermitage. This National Wonder produces +1 [ICON_CULTURE] Culture for every 3 [ICON_CITIZEN] Citizens in the City, and +15% [ICON_CULTURE] Culture for the City. I It cannot be constructed unless the city has a Castle.</Text>
+			<Text>Unique English replacement for the Hermitage. This National Wonder produces +1 Culture for every 4 Citizens in the City, and 2 culture for every castle in the empire. The White Tower reduces the stealing rate of enemy spies on empire, and gives Happiness for every enemy spy killed. Your citizens will love you if you can keep a tight lid on English secrets, so station spies in your cities to take advantage of this wonder.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_TEXT">
 			<Text>The White Tower is a central tower, the old keep, at the Tower of London. It was built by William the Conqueror during the early 1080s, and subsequently extended. The White Tower was the castle's strongest point militarily, and provided accommodation for the king and his representatives, as well as a chapel. The Tower of London covers an area of 18 acres and its magnificent architecture covers almost all the styles which have flourished in England. Throughout its long history, the Tower has been many things to England: A tyrant's castle, and treasury; a menagerie, and a mint; a palace, and a prison. Today, the Tower of London is a vast museum which boasts, among its many treasure, the Crown Jewels of England.</Text>
@@ -2021,7 +2128,11 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_TEXT">
 			<Text>
-				A Junk is an ancient Chinese sailing vessel/ship design still in use today. Junks were developed during the Song Dynasty (960–1279) and were used as seagoing vessels as early as the 2nd century CE. They evolved in the later dynasties, and were used throughout Asia for extensive ocean voyages. The name ultimately stems from the Chinese chuán ("ship"). The Javanese called it "jong", which became the Portuguese "junco", which became the English "junk".[NEWLINE][NEWLINE]Junks were efficient and sturdy ships that sailed long distances as early as the 2nd century CE. They incorporated numerous technical advances in sail plan and hull designs that were later adopted in Western shipbuilding. The historian H. Warington Smyth considered the junk as one of the most efficient ship designs, stating that "As an engine for carrying man and his commerce upon the high and stormy seas as well as on the vast inland waterways, it is doubtful if any class of vessel… is more suited or better adapted to its purpose than the Chinese or Indian junk, and it is certain that for flatness of sail and handiness, the Chinese rig is unsurpassed."
+				The Xiafan Guanjun (lit. "The Foreign Expeditionary Armada") was the great treasure fleet of the Ming Dynasty. Seven voyages were made from 1405 to 1433 AD, all headed by the legendary admiral Zheng He at the behest of Yongle Emperor. The Treasure Fleet ranged as far as the Arabian Peninsula in their task of projecting Chinese influence across the South China Sea and beyond, bringing many smaller nations under the suzerainty of China.[NEWLINE][NEWLINE]
+				
+				The ships of the Xiafan Guanjun were some of the largest wooden ships ever constructed, some measuring an estimated 137 meters (416 feet). It would be another century before European ships could match the size and power of the Chinese, making China the undisputed naval superpower of the 15th century. Despite this raw power, the voyages were primarily concerned with diplomacy, bringing envoys and even kings before the emperor to present tribute and perform the 'kowtow', an act of reverence indicating their recognition and subservience to China.[NEWLINE][NEWLINE]
+				
+				"As an engine for carrying man and his commerce upon the high and stormy seas as well as on the vast inland waterways, it is doubtful if any class of vessel… is more suited or better adapted to its purpose than the Chinese or Indian junk, and it is certain that for flatness of sail and handiness, the Chinese rig is unsurpassed."[NEWLINE]-H. Warington Smyth
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_KOWTOW">
@@ -2080,4 +2191,13 @@
 			</Text>
 		</Row>
 	</Language_en_US>
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>EAGLE_FLAG</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>eagleicon.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
 </GameData>

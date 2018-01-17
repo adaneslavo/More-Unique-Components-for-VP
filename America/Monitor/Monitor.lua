@@ -17,7 +17,7 @@ function MonitorOnMove(iPlayer, iUnit, iX, iY)
 		for iVal = 0,(pPlot:GetNumUnits() - 1) do
 			local pSameTileUnit = pPlot:GetUnit(iVal)
 				
-			if pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_MONITOR"]) then
+			if pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_AMERICA_MONITOR"]) then
 				bOnTheSameTile = true
 				break
 			end
@@ -30,7 +30,7 @@ function MonitorOnMove(iPlayer, iUnit, iX, iY)
 				for iVal = 0,(pAdjacentPlot:GetNumUnits() - 1) do
 					local pAdjacentUnit = pAdjacentPlot:GetUnit(iVal)
 					
-					if pAdjacentUnit:GetOwner() == iPlayer and pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_MONITOR"]) then
+					if pAdjacentUnit:GetOwner() == iPlayer and pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_AMERICA_MONITOR"]) then
 						bInRange = true
 						break
 					end
@@ -58,7 +58,7 @@ function MonitorOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
-	if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_MONITOR"]) then
+	if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_AMERICA_MONITOR"]) then
 		local pPlot = pUnit:GetPlot()
 
 		if pPlot ~= nil then
@@ -93,7 +93,7 @@ function MonitorOnBuild(iPlayer, iCity, iUnit)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
-	if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_MONITOR"]) then
+	if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_AMERICA_MONITOR"]) then
 		local pPlot = pUnit:GetPlot()
 
 		if pPlot ~= nil then
@@ -135,7 +135,7 @@ function MonitorOnCityFound(iPlayer, iX, iY)
 		for iVal = 0,(pPlot:GetNumUnits() - 1) do
 			local pSameTileUnit = pPlot:GetUnit(iVal)
 				
-			if pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_MONITOR"]) then
+			if pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_AMERICA_MONITOR"]) then
 				bOnTheSameTile = true
 				break
 			end
@@ -148,7 +148,7 @@ function MonitorOnCityFound(iPlayer, iX, iY)
 				for iVal = 0,(pAdjacentPlot:GetNumUnits() - 1) do
 					local pAdjacentUnit = pAdjacentPlot:GetUnit(iVal)
 					
-					if pAdjacentUnit:GetOwner() == iPlayer and pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_MONITOR"]) then
+					if pAdjacentUnit:GetOwner() == iPlayer and pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_AMERICA_MONITOR"]) then
 						bInRange = true
 						break
 					end

@@ -52,17 +52,6 @@ VALUES		('PROMOTION_TOURISM',				'TXT_KEY_PROMOTION_TOURISM',		'TXT_KEY_PROMOTIO
 			1,				'AS2D_IF_LEVELUP',	2, 'EXPANSION2_PROMOTION_ATLAS',	'PEDIA_MELEE',			'TXT_KEY_PROMOTION_TOURISM');
 
 --------------------------------
--- Language_en_US
---------------------------------	
-UPDATE	Language_en_US
-SET		Text = 'This melee unit is stronger in faraway lands and earns Tourism when it defeats an enemy. Use them to fight wars in foreign lands to push your Civilization towards a Culture victory.'
-WHERE	Tag = 'TXT_KEY_UNIT_BRAZILIAN_PRACINHA_STRATEGY';
-
-UPDATE	Language_en_US
-SET		Text = 'The Brazilian replacement for the Rifleman. Modern Era infantry unit that is stronger in foreign lands and earns [ICON_TOURISM] Tourism when it defeats an enemy.'
-WHERE	Tag = 'TXT_KEY_UNIT_HELP_BRAZILIAN_PRACINHA';
-
---------------------------------
 -- EventChoices
 --------------------------------	
 INSERT INTO EventChoices

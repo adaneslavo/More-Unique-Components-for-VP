@@ -5,9 +5,22 @@
 More Unique Components for Vox Populi changelog:
 
 *popups
-*monitor.lua
 *flax 22px
 *roman GG appear and disappear?
+*Baan Change after VP update
+
+*PDan changes*
+- removed +1 move from holkan, gave free Trailblazer I promotion
+- removed bonus CP/RCP from hashemite, lowered to default values of light tank
+- typo in newtext.sql fixed
+- Waag text fix
+- Added +15% gold during GA on Riad (was on spreadsheet, but never implemented. gives Riad a wide mechanic to justify being built in every city)
+- increased Waag's +gold to market to 3 (now 3/3/3g from caravansary/market/customs house, was 3/2/3g)
+
+v25:
+- added dummy promotion to Monitor,
+- changed Qizilbash cooldown to 0,
+- minor fixes.
 
 v24:
 - added mipmaps to new art,
@@ -19,6 +32,12 @@ v24:
 - deleted unnecessary text files,
 - fixed file links,
 - fixed Khopesh,
+- fixed Nilometer art,
+- fixed Corsair,
+- added popup and scaling for Paradise Garden,
+- added scaling for Baan Chang,
+- reduced bonuse from Baan Chang on features to culture only,
+- added new adajcency bonuses to Oppidum (Logging Camp and Lumber Mill),
 - changed sound and formation of Klepht, now only bonus on Attack, lowered number of units in model from 14 to 9,
 - ballista and legion now can be buffed by any GG,
 - renamed and changed text of few promotions,
@@ -168,7 +187,7 @@ v19:
 - balance: reworked Waag's unique ability (now (1 GPP/2 Defense) per 1 traded luxury, max 7 times)
 - balance: incresed Scythe promotion damage to 10,
 - changed names (Naga-Malla --> Indian War Elephant; Nau --> Carrack; Ger --> Yurt; Siege Foundry --> Imperial Cannon Foundry),
-- changed Santa Maria promotion name to Santa María,
+- changed Santa Maria promotion name to Santa MarÃ­a,
 - renamed unique promotions (Pictish Warrior --> Highlander; Jaguar --> Legend of the Five Suns; Immortals --> Immortality),
 - rewrited Scythe promotion (thanks to @De_Genius lua code),
 - added unique dummy promotion Druidism for Pictish Warrior (faith gain on kill),
