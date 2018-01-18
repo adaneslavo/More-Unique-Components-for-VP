@@ -21,7 +21,7 @@ function WLTKDGreatPersonBonus(iPlayer)
 end
 
 function GPPOnGrowth(iX, iY, iOld, iNew)
-	local iGameSpeedModifier = 1
+	local iGameSpeedModifier
 	if Game.GetGameSpeedType() == 0 then
 		iGameSpeedModifier = 3
 	elseif Game.GetGameSpeedType() == 1 then

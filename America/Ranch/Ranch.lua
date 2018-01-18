@@ -1,7 +1,7 @@
 function RanchCityGrowth(iPlayer, iCity, iPlotX, iPlotY, bGold, bCulture)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
-	local iGameSpeedModifier = 1
+	local iGameSpeedModifier
 	if Game.GetGameSpeedType() == 0 then
 		iGameSpeedModifier = 3
 	elseif Game.GetGameSpeedType() == 1 then
