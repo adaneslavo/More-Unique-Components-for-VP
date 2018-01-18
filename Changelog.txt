@@ -4,21 +4,22 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 
-*popups
-*flax 22px
 *roman GG appear and disappear?
 *Baan Change after VP update
 
-*PDan changes*
-- removed +1 move from holkan, gave free Trailblazer I promotion
-- removed bonus CP/RCP from hashemite, lowered to default values of light tank
-- typo in newtext.sql fixed
-- Waag text fix
-- Added +15% gold during GA on Riad (was on spreadsheet, but never implemented. gives Riad a wide mechanic to justify being built in every city)
-- increased Waag's +gold to market to 3 (now 3/3/3g from caravansary/market/customs house, was 3/2/3g)
-
 v25:
-- added dummy promotion to Monitor,
+- shortened Celtic UA text,
+- modified flax 22px icon,
+- modified Hashemite Raider's pictures,
+- added scaling with Game speed to Holkan and Hippodrome's ability,
+- deleted numbers from popup icons that needed to be cut,
+- removed +1 move from holkan, gave free Trailblazer I promotion,
+- removed bonus CP/RCP from hashemite, lowered to default values of light tank,
+- typo in newtext.sql fixed,
+- Waag text fix,
+- Added +15% gold during GA on Riad (was on spreadsheet, but never implemented. gives Riad a wide mechanic to justify being built in every city),
+- increased Waag's +gold to market to 3 (now 3/3/3g from caravansary/market/customs house, was 3/2/3g),
+- added dummy promotion to Iron Chariot,
 - changed Qizilbash cooldown to 0,
 - minor fixes.
 

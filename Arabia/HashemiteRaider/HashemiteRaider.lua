@@ -10,7 +10,7 @@ end
 function GarlandMine(iPlayer, iUnit, iImprovement, iGold)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
-	local promotion = GameInfoTypes["PROMOTION_GARLAND_MINE"]
+	local promotion = GameInfoTypes["PROMOTION_UNIT_ARABIA_GARLAND_MINE"]
 	if (pUnit:IsHasPromotion(promotion)) then
 		local unitPlot = pUnit:GetPlot()
 		for iPlot in PlotRingIterator(unitPlot, 1, SECTOR_NORTH, DIRECTION_CLOCKWISE) do
@@ -21,7 +21,7 @@ function GarlandMine(iPlayer, iUnit, iImprovement, iGold)
 				local iTeam = pPlayer:GetTeam()
 				if Teams[iTeam]:IsAtWar(jTeam) then
 					local vUnitPosition = PositionCalculator(jUnit:GetX(), jUnit:GetY())
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]10 damage from Garland Mine[ENDCOLOR]", 1.2)
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Garland Mine[ENDCOLOR]", 1.2)
 					jUnit:ChangeDamage(10, jPlayer)
 				end
 			end

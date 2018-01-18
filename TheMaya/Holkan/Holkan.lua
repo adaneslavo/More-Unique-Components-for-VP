@@ -49,25 +49,37 @@ function HolkansGoodyHuts(iPlayer, iUnit, eGoody, bPick)
 			end
 
 			if Game.GetGameSpeedType() == 3 then
-				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-
 				Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), 7, iPlayer)
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+7 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
+
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+7 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
+				end
 			elseif Game.GetGameSpeedType() == 2 then
-				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-
 				Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), 10, iPlayer)
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+10 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
+				
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+10 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
+				end
 			elseif Game.GetGameSpeedType() == 1 then
-				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-
 				Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), 15, iPlayer)
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+15 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
-			else
-				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+				
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+15 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
+				end
+			else
 				Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), 30, iPlayer)
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+30 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
+				
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+30 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
+				end
 			end
 		end
 	end

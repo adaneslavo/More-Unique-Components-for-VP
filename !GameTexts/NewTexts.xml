@@ -740,22 +740,22 @@
 				The Hashemite Raider is the Arabian replacement for the Light Tank. It is stronger than the unit it replaces, available earlier, and does not require Aluminum. Double Movement and +25% [ICON_STRENGTH] Strength in Desert. This unit requires no movement to pillage, and deals damage to adjacent enemy units when pillaging improvements.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_GARLAND_MINE">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ARABIA_GARLAND_MINE">
 			<Text>
 				Garland Mine
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_GARLAND_MINE_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ARABIA_GARLAND_MINE_HELP">
 			<Text>
 				Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. All [COLOR_POSITIVE_TEXT]adjacent Enemy Units[ENDCOLOR] take flat damage [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_DESERT_RAIDER">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ARABIA_DESERT_RAIDER">
 			<Text>
 				Desert Raider
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_DESERT_RAIDER_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ARABIA_DESERT_RAIDER_HELP">
 			<Text>
 				Double [ICON_ARROW_RIGHT] Movement and +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on Desert[ENDCOLOR].
 			</Text>
@@ -822,84 +822,84 @@
 				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require Horses, and gains +2 combat strength if you have sufficient Horses for all Iron Chariots, and likewise for Iron. Gains +10% combat strength for each adjacent enemy unit.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL">
 			<Text>
 				Fury of Nergal
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_HELP">
 			<Text>
 				+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for each adjacent Enemy Unit[ENDCOLOR].
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_1">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1">
 			<Text>
 				Fury of Nergal I
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_1_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1_HELP">
 			<Text>
 				+10% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_2">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_2">
 			<Text>
 				Fury of Nergal II
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_2_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_2_HELP">
 			<Text>
 				+20% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_3">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_3">
 			<Text>
 				Fury of Nergal III
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_3_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_3_HELP">
 			<Text>
 				+30% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_4">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_4">
 			<Text>
 				Fury of Nergal IV
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_4_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_4_HELP">
 			<Text>
 				+40% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_5">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_5">
 			<Text>
 				Fury of Nergal V
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_5_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_5_HELP">
 			<Text>
 				+50% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_6">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_6">
 			<Text>
 				In a Pickle
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FURY_OF_NERGAL_6_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_6_HELP">
 			<Text>
 				+60% [ICON_STRENGTH] Combat Strength.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE">
 			<Text>
 				Fast and Hard
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_IRON_AND_HORSE_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE_HELP">
 			<Text>
-				+2 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack.
+				+2 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack. Lost after unit upgrade.
 			</Text>
 		</Row>
 		<!-- Kampong -->

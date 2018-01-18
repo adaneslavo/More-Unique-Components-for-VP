@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_ARABIA', 'UNITCLASS_ANTI_TANK_GUN',	'UNIT_ARABIA_HASHEMIT
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,							Description,							Civilopedia,									Strategy,											Help, 											Combat,		RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized,	PrereqTech,			ObsoleteTech,	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,				MoveRate,		PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_ARABIA_HASHEMITE_RAIDER',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_TEXT',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_STRATEGY',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_HELP', 	Combat,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, 0,				'TECH_COMBUSTION',	null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_HASHEMITE', 0,					0,				'UNIT_ARABIA_ATLAS',	'UNIT_ARABIA_FLAG_ATLAS',	'QUADRUPED',	PurchaseCooldown, BaseLandAirDefense, 1
+			(Type,							Description,							Civilopedia,									Strategy,											Help, 											Combat,	RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized,	PrereqTech,			ObsoleteTech,	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,				MoveRate,		PurchaseCooldown, BaseLandAirDefense, IsMounted)
+SELECT		'UNIT_ARABIA_HASHEMITE_RAIDER',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_TEXT',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_STRATEGY',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_HELP', 	Combat,	RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, 0,				'TECH_COMBUSTION',	null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_HASHEMITE', 0,					0,				'UNIT_ARABIA_ATLAS',	'UNIT_ARABIA_FLAG_ATLAS',	'QUADRUPED',	PurchaseCooldown, BaseLandAirDefense, 1
 FROM Units WHERE Type = 'UNIT_ANTI_TANK_GUN';
 --------------------------------	
 -- Unit_AITypes
@@ -58,8 +58,8 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
 
 INSERT INTO		Unit_FreePromotions
 				(UnitType,							PromotionType)
-VALUES			('UNIT_ARABIA_HASHEMITE_RAIDER',	'PROMOTION_GARLAND_MINE'),
-				('UNIT_ARABIA_HASHEMITE_RAIDER',	'PROMOTION_DESERT_RAIDER');
+VALUES			('UNIT_ARABIA_HASHEMITE_RAIDER',	'PROMOTION_UNIT_ARABIA_GARLAND_MINE'),
+				('UNIT_ARABIA_HASHEMITE_RAIDER',	'PROMOTION_UNIT_ARABIA_DESERT_RAIDER');
 --------------------------------	
 -- Unit_ResourceQuantityRequirements
 --------------------------------		
@@ -76,15 +76,15 @@ FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-			(Type,						Description,						Help,									CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,						PediaType,		PediaEntry,							FreePillageMoves)
-VALUES		('PROMOTION_GARLAND_MINE',	'TXT_KEY_PROMOTION_GARLAND_MINE',	'TXT_KEY_PROMOTION_GARLAND_MINE_HELP',	1,				'AS2D_IF_LEVELUP',	10,				'PROMOTION_ATLAS',				'PEDIA_RANGED',	'TXT_KEY_PROMOTION_GARLAND_MINE',	1),
-			('PROMOTION_DESERT_RAIDER',	'TXT_KEY_PROMOTION_DESERT_RAIDER',	'TXT_KEY_PROMOTION_DESERT_RAIDER_HELP',	1,				'AS2D_IF_LEVELUP',	1,				'EXPANSION2_PROMOTION_ATLAS',	'PEDIA_RANGED',	'TXT_KEY_PROMOTION_DESERT_RAIDER',	0);
+			(Type,									Description,									Help,												CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,						PediaType,		PediaEntry,										FreePillageMoves)
+VALUES		('PROMOTION_UNIT_ARABIA_GARLAND_MINE',	'TXT_KEY_PROMOTION_UNIT_ARABIA_GARLAND_MINE',	'TXT_KEY_PROMOTION_UNIT_ARABIA_GARLAND_MINE_HELP',	1,				'AS2D_IF_LEVELUP',	10,				'PROMOTION_ATLAS',				'PEDIA_RANGED',	'TXT_KEY_PROMOTION_UNIT_ARABIA_GARLAND_MINE',	1),
+			('PROMOTION_UNIT_ARABIA_DESERT_RAIDER',	'TXT_KEY_PROMOTION_UNIT_ARABIA_DESERT_RAIDER',	'TXT_KEY_PROMOTION_UNIT_ARABIA_DESERT_RAIDER_HELP',	1,				'AS2D_IF_LEVELUP',	1,				'EXPANSION2_PROMOTION_ATLAS',	'PEDIA_RANGED',	'TXT_KEY_PROMOTION_UNIT_ARABIA_DESERT_RAIDER',	0);
 --------------------------------
 -- UnitPromotions_Terrains
 --------------------------------
 INSERT INTO UnitPromotions_Terrains
 			(PromotionType,				TerrainType,		Attack, Defense,	DoubleMove)
-VALUES		('PROMOTION_DESERT_RAIDER', 'TERRAIN_DESERT',	25,		25,			1);
+VALUES		('PROMOTION_UNIT_ARABIA_DESERT_RAIDER', 'TERRAIN_DESERT',	25,		25,			1);
 --==========================================================================================================================	
 
 --==========================================================================================================================

@@ -42,7 +42,7 @@ function FireFromGreekFire(iPlayer)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-10 Fire[ENDCOLOR]", 1.5)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Fire[ENDCOLOR]", 1.5)
 			end
 		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2_ON_UNIT) then
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2_ON_UNIT, false)
@@ -51,7 +51,7 @@ function FireFromGreekFire(iPlayer)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-20 Huge fire[ENDCOLOR]", 1.5)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Huge fire[ENDCOLOR]", 1.5)
 			end
 		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_ON_UNIT) then
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_ON_UNIT, false)
@@ -60,7 +60,7 @@ function FireFromGreekFire(iPlayer)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]-30 Raging Fire[ENDCOLOR]", 1.5)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Raging Fire[ENDCOLOR]", 1.5)
 			end
 		end
 	end
