@@ -10,7 +10,7 @@ function ConquereMorePlease(iPlayer, iCapital, iResourceX, iResourceY, iNewPlaye
 	if pNewPlayer:GetName() == "Genghis Khan" then
 		for pCity in pNewPlayer:Cities() do
 			if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MONGOLIA_YASSA_COURT) then
-				local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent
+				local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
 				local iWLTKDLength = math.floor(10 * iGameSpeedModifier)
 				
 				pCity:ChangeWeLoveTheKingDayCounter(iWLTKDLength)

@@ -24,7 +24,7 @@ end
 function KatunAhawUpgrade(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
-	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent)
+	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent) / 100
 
 	if pPlayer:GetName() == "Pacal" then
 		if Game.GetElapsedGameTurns() % iCounter == 0 then
@@ -68,8 +68,8 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
-							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
+							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
+							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 													
 							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
 							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
@@ -107,8 +107,8 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
-							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
+							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
+							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 													
 							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
 							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
@@ -145,8 +145,8 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
-							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
+							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
+							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 													
 							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
 							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
@@ -183,8 +183,8 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
-							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
+							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
+							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 													
 							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
 							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)

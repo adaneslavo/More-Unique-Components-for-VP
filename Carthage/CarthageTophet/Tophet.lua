@@ -1,13 +1,16 @@
 include("FLuaVector.lua")
 include("PlotIterators.lua")
+include("InstanceManager")
 
 function TophetXPGain(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
+	
 	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_TOPHET) and bGold) then
 		local pUnit = pPlayer:GetUnitByID(iUnit)
 		local oldXP = pUnit:GetExperience()
 		local newXP = 2 * oldXP
+		
 		pUnit:SetExperience(newXP)
 	end
 end
@@ -16,16 +19,27 @@ function TophetCultureGain(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
 	
-	local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent
-	
 	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_TOPHET) and (bGold or bFaith)) then
-		local cultureGain = 10 * math.max(pPlayer:GetCurrentEra(), 1) * iGameSpeedModifier
+		local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
+		local iEraModifier = pPlayer:GetCurrentEra() + 1
+
+		local cultureGain = 10 * iEraModifier * iGameSpeedModifier
+		
 		cultureGain = math.floor(cultureGain)
+		
 		pPlayer:ChangeJONSCulture(cultureGain)
-		if iPlayer == Game:GetActivePlayer() then
-			Events.GameplayAlertMessage(Locale.ConvertTextKey("TXT_KEY_ALERT_TOPHET_CULTURE", cultureGain, pCity:GetName()))
+		
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+					
+			Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..cultureGain.." [ICON_CULTURE] Tophet[ENDCOLOR]", 1)
 		end
 	end
+end
+
+
+function PositionCalculator(i1, i2)
+	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
 GameEvents.CityTrained.Add(TophetXPGain)

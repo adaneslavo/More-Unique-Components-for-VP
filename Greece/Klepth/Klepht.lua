@@ -6,8 +6,8 @@ include("FLuaVector.lua")
 include("InstanceManager")
 
 function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
-	pAttackingPlayer = Players[iAttackingPlayer]
-	pDefendingPlayer = Players[iDefendingPlayer]
+	local pAttackingPlayer = Players[iAttackingPlayer]
+	local pDefendingPlayer = Players[iDefendingPlayer]
 	
 	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
@@ -26,8 +26,8 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 				end
 			end
 			
-			local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent
-			local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent
+			local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
+			local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
 			
 			local iGain1 = math.floor(5 * ((pPlayer:GetCurrentEra() + 1) / iKlephtEraPlusOne) *  iGameSpeedModifier1 * (iAlliesOrFriends + 1))
 			local iGain2 = math.floor(5 * ((pPlayer:GetCurrentEra() + 1) / iKlephtEraPlusOne) *  iGameSpeedModifier2 * (iAlliesOrFriends + 1))

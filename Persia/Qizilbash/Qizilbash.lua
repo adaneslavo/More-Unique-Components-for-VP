@@ -20,13 +20,15 @@ function QizilbashAgitator(iPlayer)
 				local pEnemyTeam = Teams[pEnemyPlayer:GetTeam()]
 
 				if pEnemyTeam:IsAtWar(iTeam) then
-					local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
-					local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent
-					local iGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent
+					local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
+					local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
+					local iGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
 					
-					local iGain1 = math.floor(2 * iGameSpeedModifier1)
-					local iGain2 = math.floor(2 * iGameSpeedModifier2)
-					local iGain3 = math.floor(1 * iGameSpeedModifier3)
+					local iEraModifier = (pPlayer:GetCurrentEra() + 1) / 4
+
+					local iGain1 = math.floor(2 * iGameSpeedModifier1 * iEraModifier)
+					local iGain2 = math.floor(2 * iGameSpeedModifier2 * iEraModifier)
+					local iGain3 = math.floor(1 * iGameSpeedModifier3 * iEraModifier)
 					
 					pPlayer:ChangeFaith(iGain1)
 					pPlayer:ChangeGoldenAgeProgressMeter(iGain2)

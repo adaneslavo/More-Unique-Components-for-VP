@@ -6,14 +6,14 @@ include("FLuaVector.lua")
 include("InstanceManager")
 
 function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
-	pAttackingPlayer = Players[iAttackingPlayer]
-	pDefendingPlayer = Players[iDefendingPlayer]
+	local pAttackingPlayer = Players[iAttackingPlayer]
+	local pDefendingPlayer = Players[iDefendingPlayer]
 
 	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 		
-		local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent
+		local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100
 		
 		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then
 			if pDefendingUnit:IsDead() then
@@ -32,8 +32,8 @@ function DhanurvidyaCultureGain(iPlayer, iUnit)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_DHANURVIDYA) then
-		local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
-		local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent
+		local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
+		local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
 		
 		local iChange1 = math.floor(5 * (pUnit:GetLevel() - 1) * (pPlayer:GetCurrentEra() + 1) * iGameSpeedScaler1)
 		local iChange2 = math.floor(5 * (pUnit:GetLevel() - 1) * (pPlayer:GetCurrentEra() + 1) * iGameSpeedScaler2)

@@ -52,7 +52,7 @@ function OnPillageBonus(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPilla
 				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, true)
 			end
 			
-			local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent
+			local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100
 			
 			pUnit:SetExperience(pUnit:GetExperience() + math.floor(5 * iGameSpeedModifier))
 		end

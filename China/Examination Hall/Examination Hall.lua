@@ -21,7 +21,7 @@ function WLTKDGreatPersonBonus(iPlayer)
 end
 
 function GPPOnGrowth(iX, iY, iOld, iNew)
-	local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GreatPeoplePercent
+	local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GreatPeoplePercent / 100
 	
 	if iNew > iOld and iNew > 1 then
 		local pPlot = Map.GetPlot(iX, iY)
@@ -30,7 +30,9 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 			if city and city:IsHasBuilding(iBuilding) then
 				local iPlayer = city:GetOwner()
 				local player = Players[iPlayer]
-				local iGPP = 15 * math.max(player:GetCurrentEra(), 1) * iGameSpeedModifier
+				local iEraModifier = (player:GetCurrentEra() + 1) / 3
+				
+				local iGPP = 15 * iEraModifier * iGameSpeedModifier
 				iGPP = math.floor(iGPP)
 				local rand = math.random(7)
 				local GPType = iDiplomat

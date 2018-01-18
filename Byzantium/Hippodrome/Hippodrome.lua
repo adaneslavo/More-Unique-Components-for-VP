@@ -11,7 +11,7 @@ function HippodromeBuilt(iPlayer, iCity, iBuilding)
 	if pPlayer:GetName() == "Theodora" then
 		if iBuilding == GameInfoTypes.BUILDING_BYZANTIUM_HIPPODROME then
 			for pCity in pPlayer:Cities() do
-				local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent
+				local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
 				local iWLTKDLength = math.floor(20 * iGameSpeedModifier)
 				
 				pCity:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
@@ -33,7 +33,7 @@ function HippodromeHooliganism(eTeam, eEra, bFirst)
 				if pPlayer:GetName() == "Theodora" then
 					if not pPlayer:IsAnarchy() then
 						local pCapital = pPlayer:GetCapitalCity()
-						local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent
+						local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
 						local iWLTKDLength = math.floor(10 * iGameSpeedModifier) + 1
 						
 						pPlayer:ChangeAnarchyNumTurns(2)

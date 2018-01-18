@@ -8,7 +8,7 @@ include("ModUserData.lua")
 
 function RenewalCycleOnHolkan(iPlayer)
 	local pPlayer = Players[iPlayer]
-	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent)
+	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent) / 100
 
 	if Game.GetElapsedGameTurns() % iCounter == 0 then
 		for pUnit in pPlayer:Units() do
@@ -38,7 +38,7 @@ function HolkansGoodyHuts(iPlayer, iUnit, eGoody, bPick)
 				modUserData.SetValue("FileToReset", "1");
 			end
 
-			local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
+			local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 			local iResearchBonus = math.floor(10 * iGameSpeedModifier)
 			
 			Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iResearchBonus, iPlayer)

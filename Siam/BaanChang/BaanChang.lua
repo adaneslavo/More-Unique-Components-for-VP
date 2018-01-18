@@ -36,8 +36,8 @@ function BaanChangGetsUnitFromCS(iPlayer, iUnit, iUnitType, iX, iY)
 				local pCapital = pPlayer:GetCapitalCity()
 				local iBaanChangEraPlusOne = 3
 				
-				local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent
-				local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent
+				local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
+				local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 					
 				local iGain1 = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * iGameSpeedModifier1)
 				local iGain2 = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * iGameSpeedModifier2)
