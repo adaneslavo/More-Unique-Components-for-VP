@@ -15,6 +15,7 @@ v25:
 - deleted +0.5 factor from round functions,
 - fixed SPAD and Hashemite civilopedia issue,
 - fixed pAttackingPlayer = nil lua bug,
+- fixed Landwehr giving 25% bonus twice,
 - added era modifier to few UCs,
 - added few popup texts,
 - modified all game speed scaling
@@ -31,6 +32,7 @@ v25:
 - increased Waag's +gold to market to 3 (now 3/3/3g from caravansary/market/customs house, was 3/2/3g),
 - added dummy promotion to Iron Chariot,
 - changed Qizilbash cooldown to 0,
+- cleaned up the code,
 - minor fixes.
 
 v24:

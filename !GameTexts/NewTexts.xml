@@ -924,16 +924,16 @@
 		
 		<!-- Khopesh -->
 		<!-- Created by BlueGhost, incorporated and modified by adan_eslavo on 7/01/2018 -->
-		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH">
+		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH">
 			<Text>Khopesh</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH_TEXT">
+		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_TEXT">
 			<Text>Khopesh is the Egyptian name of the Canaanite "sickle-sword", in Assyrian known as sappara. Its origins can be traced back to Sumer of the third millennium BC, where the Stele of Vultures depicts Eannatum of Lagash, the world's first emperor, wielding a khopesh.[NEWLINE][NEWLINE]A typical khopesh is 50–60 cm (20–24 inches) in length, designed for hooking an opponent's shield or disarming them. The blade is only sharpened on the outside portion of the curved end. The khopesh evolved from the epsilon or similar crescent shaped axes that were used in warfare. Note, however, that the khopesh is not an axe, but rather a slashing weapon like a sabre. Many examples of Khopesh can be found in tombs and many Pharaohs are depicted holding the weapon. Indeed, many examples of khopesh found do not show signs of ever having been sharpened, indicating they were ceremonial, or status symbols.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_STRATEGY">
 			<Text>The Khopesh is the unique Egyptian replacement for the Spearman. It's a strong early unit that has an edge in direct combat. However, unlike the Spearman it replaces, it does not have a combat bonus against mounted units.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_EGYPTIAN_KHOPESH_HELP">
+		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_HELP">
 			<Text>Strong, front-line land Unit of the Ancient Era. Only Egypt may build it. Deals increased damage vs heavily damaged units, and has the Skillful promotion, which temporarily reduces the combat power of a unit that it attacks.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE">
@@ -1123,54 +1123,54 @@
 
 		<!-- Landwehr -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_LANDWEHR">
+		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR">
 			<Text>
 				Landwehr
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_LANDWEHR_TEXT">
+		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_TEXT">
 			<Text>
 				The Austrian Landwehr was one of three components that made up the ground forces of the Austro-Hungarian Dual Monarchy between 1868 and 1918, and it was composed of recruits from the Cisleithanian parts of the empire. Intended as a national defence force alongside the Hungarian Landwehr, the Austrian Landwehr was officially established by order of Emperor Franz Josef on 5 December 1868. Yet, while the Hungarian force was generously supported early on by the parliament in Budapest, legislators in Vienna generally failed to advance the cause of the Landwehr, leaving it by the 1870s as a skeletal force with only the appearance of parity. [NEWLINE[NEWLINE]The 1880s saw an expansion in the force's numbers, as the high command was unable to obtain increases in manpower for the joint Imperial and Royal army and sought to increase overall numbers through the Landwehr. Additionally, Austrian fears of the development of the Hungarian Landwehr caused the Austrian Reichsrat to vote to increase the Landwehr's strength to 135,000. These nationalist interests led to a gradual strengthening and improvement of the force, so that by the start of the First World War, Landwehr units were considered equal to the units of the joint army in readiness and equipment.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_LANDWEHR_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_STRATEGY">
 			<Text>
 				The Landwehr is the backbone of the Industrial-era Austrian army. It excels in defending in owned territory and the territory of allied city-states.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_LANDWEHR_HELP">
+		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_HELP">
 			<Text>
 				The Landwehr is the Austrian replacement for the Fusilier. It gets a combat bonus when fighting in territory owned by Austria and allied city-states.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_IMPERIAL_VIGILANCE">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE">
 			<Text>
 				Imperial Vigilance
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_IMPERIAL_VIGILANCE_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE_HELP">
 			<Text>
-				+25% combat bonus in owned territory and territory of allied city-states.
+				+25% [COMBAT_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]inside Friendly Territory[ENDCOLOR].
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_LANDWEHR_CS_BONUS">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS">
 			<Text>
-				City-State Defense
+				Guard
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_LANDWEHR_CS_BONUS_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS_HELP">
 			<Text>
-				+25% combat in the territory of allied city-states.
+				+25% [COMBAT_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from Friendly Territory[ENDCOLOR].
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_YORKSCHER_MARCHE">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE">
 			<Text>
 				Yorkscher Marche
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_YORKSCHER_MARCHE_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP">
 			<Text>
-				+2 [ICON_CULTURE] Culture per turn while in owned territory.
+				Unit gains [ICON_CULTURE] Culture [COLOR_POSITIVE_TEXT]inside Owned Territory[ENDCOLOR].
 			</Text>
 		</Row>
 		
@@ -1347,13 +1347,13 @@
 
 		<!-- Nilometer -->
 		<!-- Created by BlueGhost, incorporated and modified by adan_eslavo on 7/01/2018 -->
-		<Row Tag="TXT_KEY_BUILDING_VP_NILOMETER">
+		<Row Tag="TXT_KEY_BUILDING_EGYPT_NILOMETER">
 			<Text>Nilometer</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_NILOMETER_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_EGYPT_NILOMETER_STRATEGY">
 			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_PRODUCTION] Production output. On construction, 2 Flax resources spawn near the city, which provide additional culture and Production. This building can be built anywhere, as long as you don't have a Well in the City already.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_NILOMETER_HELP">
+		<Row Tag="TXT_KEY_BUILDING_EGYPT_NILOMETER_HELP">
 			<Text>Unique Egyptian replacement for the Water Mill.[NEWLINE]+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the city.</Text>
 		</Row>
 

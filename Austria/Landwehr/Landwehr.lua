@@ -1,8 +1,9 @@
-local iPromotion1 = GameInfoTypes.PROMOTION_IMPERIAL_VIGILANCE
-local iPromotion2 = GameInfoTypes.PROMOTION_YORKSCHER_MARCHE
-local iBonus = GameInfoTypes.PROMOTION_LANDWEHR_CS_BONUS
 include("FLuaVector.lua")
 include("InstanceManager")
+
+local iPromotion1 = GameInfoTypes.PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE
+local iPromotion2 = GameInfoTypes.PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE
+local iBonus = GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS
 
 function CheckLandwehr(iPlayer)
 	local pPlayer = Players[iPlayer]

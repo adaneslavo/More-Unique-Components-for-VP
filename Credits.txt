@@ -162,7 +162,7 @@ Things borrowed from other mods:
 	Coding - Blue Ghost, adan_eslavo:
 		Egypt:
 		  - JFD - idea of Khopesh UU,
-		  - janboruta - picture of Khopesh,
+		  - janboruta - picture and flag of Khopesh,
 		  - danrell - 3D model of Khopesh,
 		  - mikeburnfire - idea and 3D model of Flax UR (UI).
 
@@ -172,13 +172,12 @@ Things borrowed from other mods:
 		  - Civitar - 3D model of Hashemite Raider.
 
 		Assyria:
-		  - TarcismoCM - idea of Iron Chariot UU (Heqa-Khasut),
-		  - janboruta - picture for Iron Chariot,
-		  - danrell - 3D model of Iron Chariot,
-
-		  It is a modified version of the hittite chariot found in the 7-wonders DLC. Modified by Civitar. I pulled it from Mikeburnfire's 4UC project, and it may have been slightly modified by him as well.
-
 		  - mikeburnfire - idea and picture of Lamassu Gate UB.
 
 		America:
 		  - mikeburnfire - idea and picture of Ranch UB (American Ranch).
+
+		Austria:
+		  - JFD - idea of Landwehr UU,
+		  - janboruta - picture and flag of Landwehr,
+		  - bernie14 - 3D model of Landwehr.
