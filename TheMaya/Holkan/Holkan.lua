@@ -8,17 +8,7 @@ include("ModUserData.lua")
 
 function RenewalCycleOnHolkan(iPlayer)
 	local pPlayer = Players[iPlayer]
-	local iCounter
-
-	if Game.GetGameSpeedType() == 0 then
-		iCounter = 60
-	elseif Game.GetGameSpeedType() == 1 then
-		iCounter = 30
-	elseif Game.GetGameSpeedType() == 2 then
-		iCounter = 20
-	else
-		iCounter = 14
-	end
+	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent)
 
 	if Game.GetElapsedGameTurns() % iCounter == 0 then
 		for pUnit in pPlayer:Units() do
@@ -48,38 +38,15 @@ function HolkansGoodyHuts(iPlayer, iUnit, eGoody, bPick)
 				modUserData.SetValue("FileToReset", "1");
 			end
 
-			if Game.GetGameSpeedType() == 3 then
-				Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), 7, iPlayer)
+			local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
+			local iResearchBonus = math.floor(10 * iGameSpeedModifier)
+			
+			Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iResearchBonus, iPlayer)
 
-				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+7 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
-				end
-			elseif Game.GetGameSpeedType() == 2 then
-				Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), 10, iPlayer)
-				
-				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+10 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
-				end
-			elseif Game.GetGameSpeedType() == 1 then
-				Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), 15, iPlayer)
-				
-				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+15 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
-				end
-			else
-				Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), 30, iPlayer)
-				
-				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+30 [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
-				end
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+"..iResearchBonus.." [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
 			end
 		end
 	end

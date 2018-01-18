@@ -22,7 +22,9 @@ function InvincibleArmada(iPlayer)
 					local pEnemyTeam = Teams[pEnemyPlayer:GetTeam()]
 
 					if pEnemyTeam:IsAtWar(iTeam) then
-						pUnit:SetExperience(pUnit:GetExperience() + (2 * iGameSpeedScaler))
+						local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent
+						
+						pUnit:SetExperience(pUnit:GetExperience() + math.floor(2 * iGameSpeedModifier))
 					end
 				end
 			else

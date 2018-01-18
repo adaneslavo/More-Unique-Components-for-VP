@@ -35,55 +35,21 @@ function BaanChangGetsUnitFromCS(iPlayer, iUnit, iUnitType, iX, iY)
 			if iNumberOfBaanChangs > 0 then
 				local pCapital = pPlayer:GetCapitalCity()
 				local iBaanChangEraPlusOne = 3
+				
+				local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent
+				local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent
 					
-				if Game.GetGameSpeedType() == 0 then	
-					local iGain = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 3)
-
-					pCapital:ChangeProduction(iGain)
-					pPlayer:ChangeJONSCulture(iGain)
+				local iGain1 = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * iGameSpeedModifier1)
+				local iGain2 = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * iGameSpeedModifier2)
 				
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCapitalPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
+				pCapital:ChangeProduction(iGain1)
+				pPlayer:ChangeJONSCulture(iGain2)
 				
-						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain.." [ICON_PRODUCTION] Baan Chang[ENDCOLOR]", 1)
-						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain.." [ICON_CULTURE] Baan Chang[ENDCOLOR]", 1.5)
-					end
-				elseif Game.GetGameSpeedType() == 1 then
-					local iGain = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 1.5)
-
-					pCapital:ChangeProduction(iGain)
-					pPlayer:ChangeJONSCulture(iGain)
-				
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCapitalPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-				
-						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain.." [ICON_PRODUCTION] Baan Chang[ENDCOLOR]", 1)
-						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain.." [ICON_CULTURE] Baan Chang[ENDCOLOR]", 1.5)
-					end
-				elseif Game.GetGameSpeedType() == 2 then
-					local iGain = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 1)
-
-					pCapital:ChangeProduction(iGain)
-					pPlayer:ChangeJONSCulture(iGain)
-				
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCapitalPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-				
-						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain.." [ICON_PRODUCTION] Baan Chang[ENDCOLOR]", 1)
-						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain.." [ICON_CULTURE] Baan Chang[ENDCOLOR]", 1.5)
-					end
-				else
-					local iGain = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 0.66)
-
-					pCapital:ChangeProduction(iGain)
-					pPlayer:ChangeJONSCulture(iGain)
-				
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCapitalPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-				
-						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain.." [ICON_PRODUCTION] Baan Chang[ENDCOLOR]", 1)
-						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain.." [ICON_CULTURE] Baan Chang[ENDCOLOR]", 1.5)
-					end
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vCapitalPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
+			
+					Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain1.." [ICON_PRODUCTION] Baan Chang[ENDCOLOR]", 1)
+					Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain2.." [ICON_CULTURE] Baan Chang[ENDCOLOR]", 1.5)
 				end
 			end
 		end

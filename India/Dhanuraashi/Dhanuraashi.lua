@@ -13,25 +13,15 @@ function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, att
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 		
-		local iGameSpeedScaler
-		
-		if Game.GetGameSpeedType() == 0 then
-			iGameSpeedScaler = 3
-		elseif Game.GetGameSpeedType() == 1 then
-			iGameSpeedScaler = 1.5
-		elseif Game.GetGameSpeedType() == 2 then
-			iGameSpeedScaler = 1
-		else
-			iGameSpeedScaler = 0.66
-		end
+		local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent
 		
 		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then
 			if pDefendingUnit:IsDead() then
-				pAttackingUnit:SetExperience(pAttackingUnit:GetExperience() + math.floor(5 * iGameSpeedScaler))
+				pAttackingUnit:SetExperience(pAttackingUnit:GetExperience() + math.floor(5 * iGameSpeedModifier))
 			end
 		elseif pDefendingUnit ~= nil and pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then			
 			if pAttackingUnit:IsDead() then
-				pDefendingUnit:SetExperience(pDefendingUnit:GetExperience() + math.floor(5 * iGameSpeedScaler))
+				pDefendingUnit:SetExperience(pDefendingUnit:GetExperience() + math.floor(5 * iGameSpeedModifier))
 			end
 		end
 	end
@@ -42,28 +32,20 @@ function DhanurvidyaCultureGain(iPlayer, iUnit)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_DHANURVIDYA) then
-		local iGameSpeedScaler
+		local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
+		local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent
 		
-		if Game.GetGameSpeedType() == 0 then
-			iGameSpeedScaler = 3
-		elseif Game.GetGameSpeedType() == 1 then
-			iGameSpeedScaler = 1.5
-		elseif Game.GetGameSpeedType() == 2 then
-			iGameSpeedScaler = 1
-		else
-			iGameSpeedScaler = 0.66
-		end
+		local iChange1 = math.floor(5 * (pUnit:GetLevel() - 1) * (pPlayer:GetCurrentEra() + 1) * iGameSpeedScaler1)
+		local iChange2 = math.floor(5 * (pUnit:GetLevel() - 1) * (pPlayer:GetCurrentEra() + 1) * iGameSpeedScaler2)
 		
-		local iChange = math.floor(5 * (pUnit:GetLevel() - 1) * (pPlayer:GetCurrentEra() + 1) * iGameSpeedScaler)
-		
-		pPlayer:ChangeJONSCulture(iChange)
-		pPlayer:ChangeFaith(iChange)
+		pPlayer:ChangeJONSCulture(iChange2)
+		pPlayer:ChangeFaith(iChange1)
 
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 		
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+ "..iChange.." [ICON_CULTURE] Dhanurvidya[ENDCOLOR]", 1)
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+ "..iChange.." [ICON_PEACE] Dhanurvidya[ENDCOLOR]", 1.5)
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+ "..iChange2.." [ICON_CULTURE] Dhanurvidya[ENDCOLOR]", 1)
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+ "..iChange1.." [ICON_PEACE] Dhanurvidya[ENDCOLOR]", 1.5)
 		end
 	end
 end

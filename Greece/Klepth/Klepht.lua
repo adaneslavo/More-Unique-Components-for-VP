@@ -12,18 +12,7 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
-		local iGameSpeedScaler
-		
-		if Game.GetGameSpeedType() == 0 then
-			iGameSpeedScaler = 3
-		elseif Game.GetGameSpeedType() == 1 then
-			iGameSpeedScaler = 1.5
-		elseif Game.GetGameSpeedType() == 2 then
-			iGameSpeedScaler = 1
-		else
-			iGameSpeedScaler = 0.66
-		end
-		
+				
 		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_GREECE_PHILHELLENISM) then
 			local iPlayer = iAttackingPlayer
 			local pPlayer = Players[iPlayer]
@@ -36,17 +25,21 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 					iAlliesOrFriends = iAlliesOrFriends + 1
 				end
 			end
-
-			local iGain = math.floor(5 * ((pPlayer:GetCurrentEra() + 1) / iKlephtEraPlusOne) *  iGameSpeedScaler * (iAlliesOrFriends + 1))
+			
+			local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent
+			local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent
+			
+			local iGain1 = math.floor(5 * ((pPlayer:GetCurrentEra() + 1) / iKlephtEraPlusOne) *  iGameSpeedModifier1 * (iAlliesOrFriends + 1))
+			local iGain2 = math.floor(5 * ((pPlayer:GetCurrentEra() + 1) / iKlephtEraPlusOne) *  iGameSpeedModifier2 * (iAlliesOrFriends + 1))
 					
-			pPlayer:ChangeGold(iGain)
-			pCapital:ChangeProduction(iGain)
+			pPlayer:ChangeGold(iGain2)
+			pCapital:ChangeProduction(iGain1)
 			
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vUnitPosition = PositionCalculator(pAttackingUnit:GetX(), pAttackingUnit:GetY())
 				
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_PRODUCTION]+"..iGain.." [ICON_PRODUCTION][ENDCOLOR]", 1)
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iGain.." [ICON_GOLD][ENDCOLOR]", 1.5)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_PRODUCTION]+"..iGain1.." [ICON_PRODUCTION][ENDCOLOR]", 1)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iGain2.." [ICON_GOLD][ENDCOLOR]", 1.5)
 			end
 		end
 	end

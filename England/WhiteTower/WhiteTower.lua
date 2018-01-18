@@ -10,7 +10,7 @@ function WhiteTowerEspionageResult(iPlayer, iSpy, iResult, iCityX, iCityY)
 		
 		if pCity:IsHasBuilding(GameInfoTypes.BUILDING_ENGLAND_WHITE_TOWER) then
 			pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYHAPPINESS, pCity:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYHAPPINESS) + 1);
-			print(pCity:GetNumRealBuilding(GameInfoTypes.BUILDINGCLASS_DUMMYHAPPINESS))
+
 			local sText = "The public execution of an enemy spy at the White Tower in " .. pCity:GetName() ..  " has excited its Citizens, providing the city with +1 [ICON_HAPPINESS1] Happiness.";
 			local sTitle = "Spy killed in " .. pCity:GetName()
 			

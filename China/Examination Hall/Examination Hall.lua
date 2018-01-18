@@ -21,16 +21,8 @@ function WLTKDGreatPersonBonus(iPlayer)
 end
 
 function GPPOnGrowth(iX, iY, iOld, iNew)
-	local iGameSpeedModifier
-	if Game.GetGameSpeedType() == 0 then
-		iGameSpeedModifier = 3
-	elseif Game.GetGameSpeedType() == 1 then
-		iGameSpeedModifier = 2
-	elseif Game.GetGameSpeedType() == 2 then
-		iGameSpeedModifier = 1
-	elseif Game.GetGameSpeedType() == 3 then
-		iGameSpeedModifier = 0.67
-	end
+	local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GreatPeoplePercent
+	
 	if iNew > iOld and iNew > 1 then
 		local pPlot = Map.GetPlot(iX, iY)
 		if pPlot then

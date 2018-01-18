@@ -16,16 +16,9 @@ end
 function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
-	local iGameSpeedModifier
-	if Game.GetGameSpeedType() == 0 then
-		iGameSpeedModifier = 3
-	elseif Game.GetGameSpeedType() == 1 then
-		iGameSpeedModifier = 2
-	elseif Game.GetGameSpeedType() == 2 then
-		iGameSpeedModifier = 1
-	elseif Game.GetGameSpeedType() == 3 then
-		iGameSpeedModifier = 0.67
-	end
+	
+	local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
+	
 	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith) then
 		local iScience = 20 * math.max(pPlayer:GetCurrentEra(), 1) * iGameSpeedModifier
 		if IsGreatPerson(iPlayer, iUnit) then

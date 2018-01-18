@@ -23,17 +23,8 @@ end
 
 function KatunAhawUpgrade(iPlayer)
 	local pPlayer = Players[iPlayer]
-	local iCounter
-
-	if Game.GetGameSpeedType() == 0 then
-		iCounter = 60
-	elseif Game.GetGameSpeedType() == 1 then
-		iCounter = 30
-	elseif Game.GetGameSpeedType() == 2 then
-		iCounter = 20
-	else
-		iCounter = 14
-	end
+	
+	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent)
 
 	if pPlayer:GetName() == "Pacal" then
 		if Game.GetElapsedGameTurns() % iCounter == 0 then
@@ -77,16 +68,20 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iChange = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 0.66)
+							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
+							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
+													
+							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
+							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
 							
-							pPlayer:ChangeFaith(iChange)
-							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
+							pPlayer:ChangeFaith(iChange2)
+							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
 	
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
 							end
 						end
 					end
@@ -112,16 +107,20 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iChange = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 1)
+							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
+							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
+													
+							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
+							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
 							
-							pPlayer:ChangeFaith(iChange)
-							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
-
+							pPlayer:ChangeFaith(iChange2)
+							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
+	
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
 							end
 						end
 					end
@@ -146,16 +145,20 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iChange = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 1.5)
+							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
+							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
+													
+							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
+							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
 							
-							pPlayer:ChangeFaith(iChange)
-							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
-
+							pPlayer:ChangeFaith(iChange2)
+							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
+	
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
 							end
 						end
 					end
@@ -180,16 +183,20 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iChange = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 3)
+							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent
+							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent
+													
+							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
+							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
 							
-							pPlayer:ChangeFaith(iChange)
-							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
-
+							pPlayer:ChangeFaith(iChange2)
+							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
+	
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
 							end
 						end
 					end

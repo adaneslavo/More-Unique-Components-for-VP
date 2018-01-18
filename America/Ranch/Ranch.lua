@@ -18,10 +18,16 @@ function RanchCityGrowth(iPlayer, iCity, iPlotX, iPlotY, bGold, bCulture)
 			iEra = 1
 		end
 		
-		local yield = 10 * iEra * iGameSpeedModifier
-		yield = math.floor(yield)
-		pCity:ChangeFood(yield)
-		pPlayer:ChangeJONSCulture(yield)
+		local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GrowthPercent
+		local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent
+		
+		local yield1 = 10 * iEra * iGameSpeedModifier1
+		local yield2 = 10 * iEra * iGameSpeedModifier2
+		yield1 = math.floor(yield1)
+		yield2 = math.floor(yield2)
+		
+		pCity:ChangeFood(yield1)
+		pPlayer:ChangeJONSCulture(yield2)
 	end
 end
 

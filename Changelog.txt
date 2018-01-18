@@ -11,7 +11,9 @@ v25:
 - renamed Treasure Hunter II promotion to Helpful Knowledge,
 - fixed Maya promotion texts,
 - fixed Maya Katun Ahaw promotion,
-- deleted +0.5 facotr from round functions,
+- deleted +0.5 factor from round functions,
+- fixed SPAD and Hashemite civilopedia issue,
+- modified all game speed scaling
 - shortened even more Celtic UA text,
 - modified flax 22px icon,
 - modified Hashemite Raider's pictures,
