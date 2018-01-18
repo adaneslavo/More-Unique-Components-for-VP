@@ -18,8 +18,10 @@ function RanchCityGrowth(iPlayer, iCity, iPlotX, iPlotY, bGold, bCulture)
 			iEra = 1
 		end
 		
-		pCity:ChangeFood(10 * iEra * iGameSpeedModifier)
-		pPlayer:ChangeJONSCulture(10 * iEra * iGameSpeedModifier)
+		local yield = 10 * iEra * iGameSpeedModifier
+		yield = math.floor(yield + 0.5)
+		pCity:ChangeFood(yield)
+		pPlayer:ChangeJONSCulture(yield)
 	end
 end
 

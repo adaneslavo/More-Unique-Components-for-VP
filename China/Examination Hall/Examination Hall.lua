@@ -39,6 +39,7 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 				local iPlayer = city:GetOwner()
 				local player = Players[iPlayer]
 				local iGPP = 15 * math.max(player:GetCurrentEra(), 1) * iGameSpeedModifier
+				iGPP = math.floor(iGPP + 0.5)
 				local rand = math.random(7)
 				local GPType = iDiplomat
 				local GPStr = "Great Diplomat"
