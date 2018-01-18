@@ -41,17 +41,17 @@ function KatunAhawUpgrade(iPlayer)
 				if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW) then
 					if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1) then
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_2, true)
-						pUnit:SetExperience(pAttackingUnit:GetExperience() + 10)
+						pUnit:SetExperience(pUnit:GetExperience() + 10)
 					elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_2) then
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_3, true)
-						pUnit:SetExperience(pAttackingUnit:GetExperience() + 10)
+						pUnit:SetExperience(pUnit:GetExperience() + 10)
 					elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_3) then
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_4, true)
-						pUnit:SetExperience(pAttackingUnit:GetExperience() + 15)
+						pUnit:SetExperience(pUnit:GetExperience() + 15)
 					elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_4) then
 					else
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1, true)
-						pUnit:SetExperience(pAttackingUnit:GetExperience() + 5)
+						pUnit:SetExperience(pUnit:GetExperience() + 5)
 					end
 				end
 			end
@@ -77,7 +77,7 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iChange = math.floor((10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 0.66) + 0.5)
+							local iChange = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 0.66)
 							
 							pPlayer:ChangeFaith(iChange)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
@@ -112,7 +112,7 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iChange = math.floor((10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 1) + 0.5)
+							local iChange = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 1)
 							
 							pPlayer:ChangeFaith(iChange)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
@@ -146,7 +146,7 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iChange = math.floor((10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 1.5) + 0.5)
+							local iChange = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 1.5)
 							
 							pPlayer:ChangeFaith(iChange)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)
@@ -180,7 +180,7 @@ function KatunAhawUpgrade(iPlayer)
 				if Game.GetElapsedGameTurns() == t then
 					for pCity in pPlayer:Cities() do
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-							local iChange = math.floor((10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 3) + 0.5)
+							local iChange = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * 3)
 							
 							pPlayer:ChangeFaith(iChange)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange, iPlayer)

@@ -27,10 +27,10 @@ function GoedendagOnMove(iPlayer, iUnit, iX, iY)
 			if not bOnTheSameTile then
 				for iDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 					local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), iDirection)
-			
+					
 					for iVal = 0,(pAdjacentPlot:GetNumUnits() - 1) do
 						local pAdjacentUnit = pAdjacentPlot:GetUnit(iVal)
-					
+						
 						if pAdjacentUnit:GetOwner() == iPlayer and pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG"]) then
 							bInRange = true
 							break

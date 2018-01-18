@@ -32,8 +32,8 @@ function QizilbashAgitator(iPlayer)
 						iGameSpeedScaler = 0.66
 					end
 					
-					local iGain1 = math.floor((1 * iGameSpeedScaler) + 0.5)
-					local iGain2 = math.floor((2 * iGameSpeedScaler) + 0.5)
+					local iGain1 = math.floor(1 * iGameSpeedScaler)
+					local iGain2 = math.floor(2 * iGameSpeedScaler)
 					
 					pPlayer:ChangeFaith(iGain1)
 					pPlayer:ChangeGoldenAgeProgressMeter(iGain2)

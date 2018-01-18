@@ -27,7 +27,7 @@ function TophetCultureGain(iPlayer, iCity, iUnit, bGold, bFaith)
 	end
 	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_TOPHET) and (bGold or bFaith)) then
 		local cultureGain = 10 * math.max(pPlayer:GetCurrentEra(), 1) * iGameSpeedModifier
-		cultureGain = math.floor(cultureGain + 0.5)
+		cultureGain = math.floor(cultureGain)
 		pPlayer:ChangeJONSCulture(cultureGain)
 		if iPlayer == Game:GetActivePlayer() then
 			Events.GameplayAlertMessage(Locale.ConvertTextKey("TXT_KEY_ALERT_TOPHET_CULTURE", cultureGain, pCity:GetName()))

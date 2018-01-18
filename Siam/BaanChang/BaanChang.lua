@@ -37,7 +37,7 @@ function BaanChangGetsUnitFromCS(iPlayer, iUnit, iUnitType, iX, iY)
 				local iBaanChangEraPlusOne = 3
 					
 				if Game.GetGameSpeedType() == 0 then	
-					local iGain = math.floor((10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 3) + 0.5)
+					local iGain = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 3)
 
 					pCapital:ChangeProduction(iGain)
 					pPlayer:ChangeJONSCulture(iGain)
@@ -49,7 +49,7 @@ function BaanChangGetsUnitFromCS(iPlayer, iUnit, iUnitType, iX, iY)
 						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain.." [ICON_CULTURE] Baan Chang[ENDCOLOR]", 1.5)
 					end
 				elseif Game.GetGameSpeedType() == 1 then
-					local iGain = math.floor((10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 1.5) + 0.5)
+					local iGain = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 1.5)
 
 					pCapital:ChangeProduction(iGain)
 					pPlayer:ChangeJONSCulture(iGain)
@@ -61,7 +61,7 @@ function BaanChangGetsUnitFromCS(iPlayer, iUnit, iUnitType, iX, iY)
 						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain.." [ICON_CULTURE] Baan Chang[ENDCOLOR]", 1.5)
 					end
 				elseif Game.GetGameSpeedType() == 2 then
-					local iGain = math.floor((10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 1) + 0.5)
+					local iGain = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 1)
 
 					pCapital:ChangeProduction(iGain)
 					pPlayer:ChangeJONSCulture(iGain)
@@ -73,7 +73,7 @@ function BaanChangGetsUnitFromCS(iPlayer, iUnit, iUnitType, iX, iY)
 						Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain.." [ICON_CULTURE] Baan Chang[ENDCOLOR]", 1.5)
 					end
 				else
-					local iGain = math.floor((10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 0.66) + 0.5)
+					local iGain = math.floor(10 * iNumberOfBaanChangs * ((pPlayer:GetCurrentEra() + 1) / iBaanChangEraPlusOne) * 0.66)
 
 					pCapital:ChangeProduction(iGain)
 					pPlayer:ChangeJONSCulture(iGain)

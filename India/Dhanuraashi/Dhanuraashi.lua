@@ -27,11 +27,11 @@ function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, att
 		
 		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then
 			if pDefendingUnit:IsDead() then
-				pAttackingUnit:SetExperience(pAttackingUnit:GetExperience() + math.floor((5 * iGameSpeedScaler) + 0.5))
+				pAttackingUnit:SetExperience(pAttackingUnit:GetExperience() + math.floor(5 * iGameSpeedScaler))
 			end
 		elseif pDefendingUnit ~= nil and pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then			
 			if pAttackingUnit:IsDead() then
-				pDefendingUnit:SetExperience(pDefendingUnit:GetExperience() + math.floor((5 * iGameSpeedScaler) + 0.5))
+				pDefendingUnit:SetExperience(pDefendingUnit:GetExperience() + math.floor(5 * iGameSpeedScaler))
 			end
 		end
 	end
@@ -54,7 +54,7 @@ function DhanurvidyaCultureGain(iPlayer, iUnit)
 			iGameSpeedScaler = 0.66
 		end
 		
-		local iChange = math.floor((5 * (pUnit:GetLevel() - 1) * (pPlayer:GetCurrentEra() + 1) * iGameSpeedScaler) + 0.5)
+		local iChange = math.floor(5 * (pUnit:GetLevel() - 1) * (pPlayer:GetCurrentEra() + 1) * iGameSpeedScaler)
 		
 		pPlayer:ChangeJONSCulture(iChange)
 		pPlayer:ChangeFaith(iChange)

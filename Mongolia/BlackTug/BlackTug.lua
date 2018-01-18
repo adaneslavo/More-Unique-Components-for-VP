@@ -64,7 +64,7 @@ function OnPillageBonus(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPilla
 				iGameSpeedScaler = 0.66
 			end
 			
-			pUnit:SetExperience(pUnit:GetExperience() + (5 * iGameSpeedScaler))
+			pUnit:SetExperience(pUnit:GetExperience() + math.floor(5 * iGameSpeedScaler))
 		end
 	end
 end

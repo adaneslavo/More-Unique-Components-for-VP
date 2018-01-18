@@ -610,7 +610,7 @@
 			<Text>Unit is healed for 30 HP [COLOR_POSITIVE_TEXT]in regular turn cycles[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2">
-			<Text>Treasure Hunter II</Text>
+			<Text>Helpful Knowledge</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2_HELP">
 			<Text>Unit gains [ICON_RESEARCH] Science [COLOR_POSITIVE_TEXT]from Ancient Ruins[ENDCOLOR].</Text>
@@ -717,7 +717,6 @@
 
 		<!-- Hashemite Raider -->
 		<!-- Created by Blue Ghost -->
-
 		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER">
 			<Text>
 				Hashemite Raider
@@ -1403,7 +1402,7 @@
 			<Text>K'atun Ahaw</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_KATUN_AHAW_HELP">
-			<Text>Unit gains 5% [ICON_DEFENSE] Combat Strength [COLOR_POSITIVE_TEXT]every 20 Game Turns[ENDCOLOR]. Effect stacks [COLOR_POSITIVE_TEXT]4[ENDCOLOR] times.</Text>
+			<Text>Unit gets unique ability [COLOR_POSITIVE_TEXT]every 20 Game Turns[ENDCOLOR]. Effect can be extended [COLOR_POSITIVE_TEXT]4[ENDCOLOR] times.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_KATUN_AHAW_1">
 			<Text>Hun K'atun Ahaw</Text>

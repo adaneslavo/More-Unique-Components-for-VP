@@ -31,7 +31,7 @@ function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 		if IsGreatPerson(iPlayer, iUnit) then
 			iScience = 100 * math.max(pPlayer:GetCurrentEra(), 1) * iGameSpeedModifier
 		end
-		iScience = math.floor(iScience + 0.5)
+		iScience = math.floor(iScience)
 		if iPlayer == Game:GetActivePlayer() then
 			Events.GameplayAlertMessage(Locale.ConvertTextKey("TXT_KEY_ALERT_MADRASAH_SCIENCE", iScience, pCity:GetName()))
 		end

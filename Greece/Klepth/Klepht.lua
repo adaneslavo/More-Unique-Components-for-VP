@@ -37,7 +37,7 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 				end
 			end
 
-			local iGain = math.floor((5 * ((pPlayer:GetCurrentEra() + 1) / iKlephtEraPlusOne) *  iGameSpeedScaler * (iAlliesOrFriends + 1)) + 0.5)
+			local iGain = math.floor(5 * ((pPlayer:GetCurrentEra() + 1) / iKlephtEraPlusOne) *  iGameSpeedScaler * (iAlliesOrFriends + 1))
 					
 			pPlayer:ChangeGold(iGain)
 			pCapital:ChangeProduction(iGain)

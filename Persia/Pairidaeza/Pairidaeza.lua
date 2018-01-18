@@ -15,7 +15,7 @@ function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 				local iGain
 
 				if Game.GetGameSpeedType() == 0 then
-					iGain = math.floor(30 * ((pPlayer:GetCurrentEra() + 1) / iPairidaezaEraPlusOne) * 3) + 0.5
+					iGain = math.floor(30 * ((pPlayer:GetCurrentEra() + 1) / iPairidaezaEraPlusOne) * 3)
 					pPlayer:ChangeJONSCulture(iGain)
 
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -24,7 +24,7 @@ function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+"..iGain.." [ICON_CULTURE] Paradise Garden[ENDCOLOR]", 1)
 					end
 				elseif Game.GetGameSpeedType() == 1 then
-					iGain = math.floor(30 * ((pPlayer:GetCurrentEra() + 1) / iPairidaezaEraPlusOne) * 1.5) + 0.5
+					iGain = math.floor(30 * ((pPlayer:GetCurrentEra() + 1) / iPairidaezaEraPlusOne) * 1.5)
 					pPlayer:ChangeJONSCulture(iGain)
 
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -33,7 +33,7 @@ function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+"..iGain.." [ICON_CULTURE] Paradise Garden[ENDCOLOR]", 1)
 					end
 				elseif Game.GetGameSpeedType() == 2 then
-					iGain = math.floor(30 * ((pPlayer:GetCurrentEra() + 1) / iPairidaezaEraPlusOne) * 1) + 0.5
+					iGain = math.floor(30 * ((pPlayer:GetCurrentEra() + 1) / iPairidaezaEraPlusOne) * 1)
 					pPlayer:ChangeJONSCulture(iGain)
 
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -42,7 +42,7 @@ function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+"..iGain.." [ICON_CULTURE] Paradise Garden[ENDCOLOR]", 1)
 					end
 				else
-					iGain = math.floor(30 * ((pPlayer:GetCurrentEra() + 1) / iPairidaezaEraPlusOne) * 0.66) + 0.5
+					iGain = math.floor(30 * ((pPlayer:GetCurrentEra() + 1) / iPairidaezaEraPlusOne) * 0.66)
 					pPlayer:ChangeJONSCulture(iGain)
 
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
