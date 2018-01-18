@@ -21,6 +21,16 @@ function WLTKDGreatPersonBonus(iPlayer)
 end
 
 function GPPOnGrowth(iX, iY, iOld, iNew)
+	local iGameSpeedModifier
+	if Game.GetGameSpeedType() == 0 then
+		iGameSpeedModifier = 3
+	elseif Game.GetGameSpeedType() == 1 then
+		iGameSpeedModifier = 2
+	elseif Game.GetGameSpeedType() == 2 then
+		iGameSpeedModifier = 1
+	elseif Game.GetGameSpeedType() == 3 then
+		iGameSpeedModifier = 0.67
+	end
 	if iNew > iOld and iNew > 1 then
 		local pPlot = Map.GetPlot(iX, iY)
 		if pPlot then
@@ -28,7 +38,8 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 			if city and city:IsHasBuilding(iBuilding) then
 				local iPlayer = city:GetOwner()
 				local player = Players[iPlayer]
-				local iGPP = 15 * math.max(player:GetCurrentEra(), 1)
+				local iGPP = 15 * math.max(player:GetCurrentEra(), 1) * iGameSpeedModifier
+				iGPP = math.floor(iGPP + 0.5)
 				local rand = math.random(7)
 				local GPType = iDiplomat
 				local GPStr = "Great Diplomat"
