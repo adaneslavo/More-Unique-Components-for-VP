@@ -90,13 +90,7 @@ INSERT INTO Unit_AITypes
 			(UnitType, 			UnitAIType)
 SELECT		'UNIT_FRANCE_SPAD', UnitAIType
 FROM Unit_AITypes WHERE UnitType = 'UNIT_TRIPLANE';
---------------------------------	
--- Unit_ResourceQuantityRequirements
---------------------------------		
-INSERT INTO Unit_ResourceQuantityRequirements 	
-			(UnitType, 				ResourceType)
-SELECT		'UNIT_FRANCE_SPAD', 	null
-FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_TRIPLANE';
+
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------		

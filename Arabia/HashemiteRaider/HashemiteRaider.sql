@@ -60,13 +60,7 @@ INSERT INTO		Unit_FreePromotions
 				(UnitType,							PromotionType)
 VALUES			('UNIT_ARABIA_HASHEMITE_RAIDER',	'PROMOTION_UNIT_ARABIA_GARLAND_MINE'),
 				('UNIT_ARABIA_HASHEMITE_RAIDER',	'PROMOTION_UNIT_ARABIA_DESERT_RAIDER');
---------------------------------	
--- Unit_ResourceQuantityRequirements
---------------------------------		
-INSERT INTO Unit_ResourceQuantityRequirements 	
-			(UnitType, 						ResourceType)
-SELECT		'UNIT_ARABIA_HASHEMITE_RAIDER',	null
-FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_ANTI_TANK_GUN';
+
 --==========================================================================================================================	
 
 --==========================================================================================================================	
