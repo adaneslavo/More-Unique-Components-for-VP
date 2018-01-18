@@ -16,7 +16,7 @@ VALUES		('CIVILIZATION_BRAZIL', 'UNITCLASS_INFANTRY', 'UNIT_BRAZILIAN_PRACINHA')
 -- Units
 --------------------------------	
 UPDATE	Units
-SET		Combat = 50, Cost = 800, FaithCost = 700, Moves = 3, Class = 'UNITCLASS_GREAT_WAR_INFANTRY', PrereqTech = 'TECH_REPLACEABLE_PARTS', MinorCivGift = 0
+SET		Combat = 55, Cost = 1300, FaithCost = 800, Moves = 3, Class = 'UNITCLASS_INFANTRY', PrereqTech = 'TECH_RADIO', MinorCivGift = 0, BaseLandAirDefense = 8
 WHERE	Type = 'UNIT_BRAZILIAN_PRACINHA';
 
 --------------------------------

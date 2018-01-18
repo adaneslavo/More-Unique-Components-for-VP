@@ -75,7 +75,7 @@ SET		Text = 'This melee unit is stronger in faraway lands and earns Tourism when
 WHERE	Tag = 'TXT_KEY_UNIT_BRAZILIAN_PRACINHA_STRATEGY';
 
 UPDATE	Language_en_US
-SET		Text = 'The Brazilian replacement for the Rifleman. Modern Era infantry unit that is stronger in foreign lands and earns [ICON_TOURISM] Tourism when it defeats an enemy.'
+SET		Text = 'The Brazilian replacement for the Infantry. Modern Era infantry unit that is stronger in foreign lands and earns [ICON_TOURISM] Tourism when it defeats an enemy.'
 WHERE	Tag = 'TXT_KEY_UNIT_HELP_BRAZILIAN_PRACINHA';
 ------------------------------
 -- Building Texts
