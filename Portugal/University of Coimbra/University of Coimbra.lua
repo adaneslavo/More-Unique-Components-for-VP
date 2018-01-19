@@ -25,9 +25,9 @@ function CoimbraUnitCheckGrantPromotion(iPlayer, iCity, iUnit)
 end
 
 function CoimbraFeitoriaImprovement(iPlotX, iPlotY, iOwner, iOldImprovement, iNewImprovement)
+	if iNewImprovement ~= GameInfoTypes. IMPROVEMENT_FEITORIA then return end -- no point running further if not Feitoria
 	local owner= Players[iOwner]
-	if not owner then print("CoimbraFeitoriaImprovement owner is nil (error?)") end
-	if owner and owner:IsMinorCiv() and iNewImprovement == GameInfoTypes.IMPROVEMENT_FEITORIA then
+	if owner and owner:IsMinorCiv() then
 		for playerID = 0, GameDefines.MAX_MAJOR_CIVS-1, 1 do
 			local player = Players[playerID]
 			if player:IsAlive() then
