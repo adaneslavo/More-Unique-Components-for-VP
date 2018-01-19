@@ -10,11 +10,11 @@ function RiadTradeRouteBonuses(iPlayer)
 			local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 			local iGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GreatPeoplePercent / 100
 			
-			local iEraModifier = (pPlayer:GetCurrentEra() + 1) / 3
+			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 
-			pPlayer:ChangeGold(math.floor(2 * iGameSpeedModifier1 * iEraModifier))
-			pPlayer:ChangeJONSCulture(math.floor(2 * iGameSpeedModifier2 * iEraModifier))
-			pCity:ChangeSpecialistGreatPersonProgressTimes100(GameInfoTypes.SPECIALIST_MERCHANT, math.floor(200 * iGameSpeedModifier3))
+			pPlayer:ChangeGold(math.floor(1 * iGameSpeedModifier1 * iEraModifier))
+			pPlayer:ChangeJONSCulture(math.floor(1 * iGameSpeedModifier2 * iEraModifier))
+			pCity:ChangeSpecialistGreatPersonProgressTimes100(GameInfoTypes.SPECIALIST_MERCHANT, math.floor(100 * iGameSpeedModifier3))
 		end
 	end
 end

@@ -11,16 +11,16 @@ function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pCity = pPlayer:GetCityByID(iCity)
 	
 	local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
-	local iEraModifier = (pPlayer:GetCurrentEra() + 1) / 3
+	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 
 	if pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith then
 		local iScience
 		local pUnit = pPlayer:GetUnitByID(iUnit)
 
 		if pUnit:IsGreatPerson() then
-			iScience = math.floor(100 * iEraModifier * iGameSpeedModifier)
+			iScience = math.floor(50 * iEraModifier * iGameSpeedModifier)
 		else
-			iScience = math.floor(20 * iEraModifier * iGameSpeedModifier)
+			iScience = math.floor(10 * iEraModifier * iGameSpeedModifier)
 		end
 
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -38,10 +38,10 @@ function MadrasahScienceBuilding(iPlayer, iCity, iBuilding, bGold, bFaith)
 	local pCity = pPlayer:GetCityByID(iCity)
 	
 	if pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith then
-		local iEraModifier = (pPlayer:GetCurrentEra() + 1) / 3
+		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 		local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 
-		local iScience = math.floor(20 * iEraModifier * iGameSpeedModifier)
+		local iScience = math.floor(10 * iEraModifier * iGameSpeedModifier)
 		
 		if iPlayer == Game:GetActivePlayer() then
 			Events.GameplayAlertMessage(Locale.ConvertTextKey("TXT_KEY_ALERT_MADRASAH_SCIENCE", iScience, pCity:GetName()))

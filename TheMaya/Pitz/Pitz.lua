@@ -70,9 +70,10 @@ function KatunAhawUpgrade(iPlayer)
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
 							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
-													
-							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
-							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
+							local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+											
+							local iChange1 = math.floor(10 * iEraModifier * iGameSpeedModifier1)
+							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
@@ -109,9 +110,10 @@ function KatunAhawUpgrade(iPlayer)
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
 							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
-													
-							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
-							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
+							local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+											
+							local iChange1 = math.floor(10 * iEraModifier * iGameSpeedModifier1)
+							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
@@ -147,9 +149,10 @@ function KatunAhawUpgrade(iPlayer)
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
 							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
-													
-							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
-							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
+							local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+											
+							local iChange1 = math.floor(10 * iEraModifier * iGameSpeedModifier1)
+							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
@@ -185,9 +188,10 @@ function KatunAhawUpgrade(iPlayer)
 						if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
 							local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
-													
-							local iChange1 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier1)
-							local iChange2 = math.floor(10 * ((pPlayer:GetCurrentEra() + 1) / 2) * iGameSpeedModifier2)
+							local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+											
+							local iChange1 = math.floor(10 * iEraModifier * iGameSpeedModifier1)
+							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
 							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)

@@ -18,6 +18,7 @@ v25:
 - fixed Landwehr giving 25% bonus twice,
 - fixed Iron Chariot.lua,
 - added restrinction for XP scaling (now depends on BALNCE_CORE_XP_VALUE),
+- simplify Madrasah lua code (no GP function),
 - reworked Landwehr lua code,
 - added era modifier to few UCs,
 - added few popup texts,

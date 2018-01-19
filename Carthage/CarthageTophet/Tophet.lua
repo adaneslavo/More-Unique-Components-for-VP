@@ -21,7 +21,7 @@ function TophetCultureGain(iPlayer, iCity, iUnit, bGold, bFaith)
 	
 	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_TOPHET) and (bGold or bFaith)) then
 		local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
-		local iEraModifier = pPlayer:GetCurrentEra() + 1
+		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 
 		local cultureGain = 10 * iEraModifier * iGameSpeedModifier
 		

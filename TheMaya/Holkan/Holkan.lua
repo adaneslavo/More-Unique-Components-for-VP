@@ -39,7 +39,9 @@ function HolkansGoodyHuts(iPlayer, iUnit, eGoody, bPick)
 			end
 
 			local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
-			local iResearchBonus = math.floor(10 * iGameSpeedModifier)
+			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+			
+			local iResearchBonus = math.floor(10 * iEraModifier * iGameSpeedModifier)
 			
 			Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iResearchBonus, iPlayer)
 

@@ -11,9 +11,10 @@ function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 	if bStart then
 		for pCity in pPlayer:Cities() do
 			if pCity:IsHasBuilding(GameInfoTypes.BUILDING_PERSIA_PAIRIDAEZA) then
-				local iPairidaezaEraPlusOne = 3
 				local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
-				local iGain = math.floor(30 * ((pPlayer:GetCurrentEra() + 1) / iPairidaezaEraPlusOne) * iGameSpeedModifier)
+				local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+				
+				local iGain = math.floor(15 * iEraModifier * iGameSpeedModifier)
 
 				pPlayer:ChangeJONSCulture(iGain)
 
