@@ -14,7 +14,7 @@ function CheckLandwehrMove(iPlayer, iUnit, iX, iY)
 			if iOwner >= GameDefines.MAX_MAJOR_CIVS and iOwner <= GameDefines.MAX_CIV_PLAYERS then
 				local pOwner = Players[iOwner]
 
-				if pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 2 then
+				if pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 1 then
 					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, true)
 
 				else
@@ -40,7 +40,7 @@ function CheckLandwehrCreate(iPlayer, iUnit, iUnitType, iX, iY)
 			if iOwner >= GameDefines.MAX_MAJOR_CIVS and iOwner <= GameDefines.MAX_CIV_PLAYERS then
 				local pOwner = Players[iOwner]
 
-				if pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 2 then
+				if pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 1 then
 					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, true)
 
 				else
@@ -66,7 +66,7 @@ function CheckLandwehrBuild(iPlayer, iCity, iUnit)
 			if iOwner >= GameDefines.MAX_MAJOR_CIVS and iOwner <= GameDefines.MAX_CIV_PLAYERS then
 				local pOwner = Players[iOwner]
 
-				if pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 2 then
+				if pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 1 then
 					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, true)
 
 				else
@@ -96,7 +96,7 @@ function CheckLandwehr(iPlayer)
 					if pOwner == pPlayer then
 						local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 						local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-						local iGain = math.floor(0.5 * iEraModifier * iGameSpeedModifier)
+						local iGain = math.floor(0.75 * iEraModifier * iGameSpeedModifier)
 
 						pPlayer:ChangeJONSCulture(iGain)
 

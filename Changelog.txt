@@ -7,6 +7,9 @@ More Unique Components for Vox Populi changelog:
 *roman GG appear and disappear?
 *Baan Change after VP update
 
+v26:
+- reworked Landwehr (now +3c on Yorkshire promotion, Imperial Vigilance adds bonus to laos friendly territory, fixed texts),
+
 v25:
 - renamed Treasure Hunter II promotion to Helpful Knowledge,
 - fixed Maya promotion texts,
@@ -15,13 +18,15 @@ v25:
 - deleted +0.5 factor from round functions,
 - fixed SPAD and Hashemite civilopedia issue,
 - fixed pAttackingPlayer = nil lua bug,
+- fixed PlotIterator bug,
 - fixed Landwehr giving 25% bonus twice,
 - fixed Iron Chariot.lua,
-- added restrinction for XP scaling (now depends on BALNCE_CORE_XP_VALUE),
+- added restriction for XP scaling for Dhanurgraha, Black Tug and Armada (now depends on BALNCE_CORE_XP_VALUE),
+- simplify Madrasah lua code (no GP function),
 - reworked Landwehr lua code,
 - added era modifier to few UCs,
 - added few popup texts,
-- modified all game speed scaling
+- modified all game speed scaling,
 - shortened even more Celtic UA text,
 - modified flax 22px icon,
 - modified Hashemite Raider's pictures,

@@ -30,9 +30,9 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 			if city and city:IsHasBuilding(iBuilding) then
 				local iPlayer = city:GetOwner()
 				local player = Players[iPlayer]
-				local iEraModifier = (player:GetCurrentEra() + 1) / 3
+				local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 				
-				local iGPP = 15 * iEraModifier * iGameSpeedModifier
+				local iGPP = 7.5 * iEraModifier * iGameSpeedModifier
 				iGPP = math.floor(iGPP)
 				local rand = math.random(7)
 				local GPType = iDiplomat

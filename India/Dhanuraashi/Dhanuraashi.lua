@@ -40,9 +40,10 @@ function DhanurvidyaCultureGain(iPlayer, iUnit)
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_DHANURVIDYA) then
 		local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 		local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
-		
-		local iChange1 = math.floor(5 * (pUnit:GetLevel() - 1) * (pPlayer:GetCurrentEra() + 1) * iGameSpeedScaler1)
-		local iChange2 = math.floor(5 * (pUnit:GetLevel() - 1) * (pPlayer:GetCurrentEra() + 1) * iGameSpeedScaler2)
+		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+
+		local iChange1 = math.floor(5 * (pUnit:GetLevel() - 1) * iEraModifier * iGameSpeedScaler1)
+		local iChange2 = math.floor(5 * (pUnit:GetLevel() - 1) * iEraModifier * iGameSpeedScaler2)
 		
 		pPlayer:ChangeJONSCulture(iChange2)
 		pPlayer:ChangeFaith(iChange1)
