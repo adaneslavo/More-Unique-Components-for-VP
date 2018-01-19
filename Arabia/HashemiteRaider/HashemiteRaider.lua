@@ -10,7 +10,7 @@ function GarlandMine(iPlayer, iUnit, iImprovement, iGold)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	
-	if (pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ARABIA_GARLAND_MINE"]) then
+	if pUnit and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ARABIA_GARLAND_MINE) then
 		local unitPlot = pUnit:GetPlot()
 		
 		for iPlot in PlotRingIterator(unitPlot, 1, SECTOR_NORTH, DIRECTION_CLOCKWISE) do

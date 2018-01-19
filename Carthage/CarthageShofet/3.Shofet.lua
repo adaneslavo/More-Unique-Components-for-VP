@@ -1,6 +1,7 @@
 ----------------------------------------------------------------------------------------------------------------------------
 -- SHOPHET
 ----------------------------------------------------------------------------------------------------------------------------	
+include("PlotIterators.lua")
 -- JFD_CarthageHannibal_Shophet
 local unitPromotionGreatAdmiralID = GameInfoTypes["PROMOTION_GREAT_ADMIRAL"]
 local unitPromotionGreatGeneralID = GameInfoTypes["PROMOTION_GREAT_GENERAL"]

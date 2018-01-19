@@ -26,7 +26,8 @@ end
 
 function CoimbraFeitoriaImprovement(iPlotX, iPlotY, iOwner, iOldImprovement, iNewImprovement)
 	local owner= Players[iOwner]
-	if owner:IsMinorCiv() and iNewImprovement == GameInfoTypes.IMPROVEMENT_FEITORIA then
+	if not owner then print("CoimbraFeitoriaImprovement owner is nil (error?)") end
+	if owner and owner:IsMinorCiv() and iNewImprovement == GameInfoTypes.IMPROVEMENT_FEITORIA then
 		for playerID = 0, GameDefines.MAX_MAJOR_CIVS-1, 1 do
 			local player = Players[playerID]
 			if player:IsAlive() then
