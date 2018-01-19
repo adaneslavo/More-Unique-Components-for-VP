@@ -9,7 +9,7 @@
 --------------------------------	
 INSERT INTO	Civilization_UnitClassOverrides
 			(CivilizationType,			UnitClassType,			UnitType)
-VALUES		('CIVILIZATION_AUSTRIA',	'UNITCLASS_RIFLEMAN',	'UNIT_AUSTRIAN_LANDWEHR');
+VALUES		('CIVILIZATION_AUSTRIA',	'UNITCLASS_RIFLEMAN',	'UNIT_AUSTRIA_LANDWEHR');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -19,56 +19,56 @@ VALUES		('CIVILIZATION_AUSTRIA',	'UNITCLASS_RIFLEMAN',	'UNIT_AUSTRIAN_LANDWEHR')
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,						Description,						Civilopedia,							Strategy,									Help, 									Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, ObsoleteTech,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,		MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_AUSTRIAN_LANDWEHR',	'TXT_KEY_UNIT_AUSTRIAN_LANDWEHR',	'TXT_KEY_UNIT_AUSTRIAN_LANDWEHR_TEXT',	'TXT_KEY_UNIT_AUSTRIAN_LANDWEHR_STRATEGY',	'TXT_KEY_UNIT_AUSTRIAN_LANDWEHR_HELP', 	Combat+3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, 'TECH_COMBINED_ARMS',	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_LANDWEHR', 	0,					0,				'UNIT_AUSTRIA_ATLAS',	'UNIT_AUSTRIA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
+			(Type,						Description,						Civilopedia,							Strategy,									Help, 									Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, ObsoleteTech,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
+SELECT		'UNIT_AUSTRIA_LANDWEHR',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_TEXT',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_STRATEGY',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_HELP', 	Combat+3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, 'TECH_COMBINED_ARMS',	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_LANDWEHR', 	0,					0,				'UNIT_AUSTRIA_ATLAS',	'UNIT_AUSTRIA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_RIFLEMAN';
 --------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	
 			(UnitType, 					UnitAIType)
-SELECT		'UNIT_AUSTRIAN_LANDWEHR', 	UnitAIType
+SELECT		'UNIT_AUSTRIA_LANDWEHR', 	UnitAIType
 FROM Unit_AITypes WHERE UnitType = 'UNIT_RIFLEMAN';
 --------------------------------	
 -- Unit_BuildingClassPurchaseRequireds
 --------------------------------		
 INSERT INTO Unit_BuildingClassPurchaseRequireds 	
 			(UnitType, 					BuildingClassType)
-SELECT		'UNIT_AUSTRIAN_LANDWEHR', 	BuildingClassType
+SELECT		'UNIT_AUSTRIA_LANDWEHR', 	BuildingClassType
 FROM Unit_BuildingClassPurchaseRequireds WHERE UnitType = 'UNIT_RIFLEMAN';
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------		
 INSERT INTO Unit_ClassUpgrades 	
 			(UnitType, 					UnitClassType)
-SELECT		'UNIT_AUSTRIAN_LANDWEHR', 	UnitClassType
+SELECT		'UNIT_AUSTRIA_LANDWEHR', 	UnitClassType
 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_RIFLEMAN';
 --------------------------------	
 -- Unit_Flavors
 --------------------------------	
 INSERT INTO	Unit_Flavors
 			(UnitType, 					FlavorType,			Flavor)
-VALUES		('UNIT_AUSTRIAN_LANDWEHR', 'FLAVOR_OFFENSE',	15),
-			('UNIT_AUSTRIAN_LANDWEHR', 'FLAVOR_DEFENSE',	20);
+VALUES		('UNIT_AUSTRIA_LANDWEHR',	'FLAVOR_OFFENSE',	15),
+			('UNIT_AUSTRIA_LANDWEHR',	'FLAVOR_DEFENSE',	20);
 --------------------------------	
 -- Unit_ResourceQuantityRequirements
 --------------------------------	
 INSERT INTO	Unit_ResourceQuantityRequirements
 			(UnitType, 					ResourceType,	Cost)
-SELECT		'UNIT_AUSTRIAN_LANDWEHR', 	ResourceType,	Cost
+SELECT		'UNIT_AUSTRIA_LANDWEHR', 	ResourceType,	Cost
 FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_RIFLEMAN';
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------	
 INSERT INTO	Unit_FreePromotions
 			(UnitType, 					PromotionType)
-SELECT		'UNIT_AUSTRIAN_LANDWEHR', 	PromotionType
+SELECT		'UNIT_AUSTRIA_LANDWEHR', 	PromotionType
 FROM Unit_FreePromotions WHERE UnitType = 'UNIT_RIFLEMAN';
 
 INSERT INTO	Unit_FreePromotions
 			(UnitType,					PromotionType)
-VALUES		('UNIT_AUSTRIAN_LANDWEHR', 'PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE'),
-			('UNIT_AUSTRIAN_LANDWEHR', 'PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE');
+VALUES		('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE'),
+			('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -133,5 +133,7 @@ VALUES	('UNIT_AUSTRIA_ATLAS', 				256, 		'LandwehrPicture_256.dds',				1, 				1)
 		('UNIT_AUSTRIA_ATLAS', 				45, 		'LandwehrPicture_045.dds',				1, 				1),
 		('UNIT_AUSTRIA_ATLAS', 				64, 		'LandwehrPicture_064.dds',				1, 				1),
 		('UNIT_AUSTRIA_FLAG_ATLAS', 		32, 		'LandwehrFlag_032.dds',					1, 				1);
+--==========================================================================================================================
+--==========================================================================================================================
 		
 

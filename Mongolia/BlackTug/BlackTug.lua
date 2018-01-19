@@ -26,7 +26,7 @@ function PillagedTileBonusMove(iPlayer, iUnit, iX, iY)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MINGGHAN) then
+	if pUnit and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MINGGHAN) then
 		local pPlot = Map.GetPlot(iX, iY)
 				
 		if pPlot:IsImprovementPillaged() then

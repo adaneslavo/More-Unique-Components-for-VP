@@ -37,12 +37,68 @@ function IronChariotResourceCheck(iPlayer)
 	end
 end
 
-function FuryOfNergalCheckTurnStart(iPlayer)
-	pPlayer = Players[iPlayer]
+function FuryOfNergalCheckMovement(iPlayer, iUnit)
+	local pPlayer = Players[iPlayer]
+	local pUnit = pPlayer:GetUnitByID(iUnit)
 	
-	for pUnit in pPlayer:Units() do
-		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
-			FuryOfNergalUpdate(pPlayer, pUnit)
+	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
+		FuryOfNergalUpdate(pPlayer, pUnit)
+	end
+
+	local pUnitPlot = pUnit:GetPlot()
+	
+	for iPlot in PlotRingIterator(pUnitPlot, 1, SECTOR_NORTH, DIRECTION_CLOCKWISE) do
+		for k = 0, iPlot:GetNumUnits() - 1 do
+			local jUnit = iPlot:GetUnit(k)
+			local jPlayer = jUnit:GetOwner()
+			
+			if jUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
+				FuryOfNergalUpdate(Players[jPlayer], jUnit)
+			end
+		end
+	end
+end
+
+function FuryOfNergalCheckCreate(iPlayer, iUnit, iUnitType, iX, iY)
+	local pPlayer = Players[iPlayer]
+	local pUnit = pPlayer:GetUnitByID(iUnit)
+	
+	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
+		FuryOfNergalUpdate(pPlayer, pUnit)
+	end
+
+	local pUnitPlot = pUnit:GetPlot()
+	
+	for iPlot in PlotRingIterator(pUnitPlot, 1, SECTOR_NORTH, DIRECTION_CLOCKWISE) do
+		for k = 0, iPlot:GetNumUnits() - 1 do
+			local jUnit = iPlot:GetUnit(k)
+			local jPlayer = jUnit:GetOwner()
+			
+			if jUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
+				FuryOfNergalUpdate(Players[jPlayer], jUnit)
+			end
+		end
+	end
+end
+
+function FuryOfNergalCheckBuild(iPlayer, iCity, iUnit)
+	local pPlayer = Players[iPlayer]
+	local pUnit = pPlayer:GetUnitByID(iUnit)
+	
+	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
+		FuryOfNergalUpdate(pPlayer, pUnit)
+	end
+
+	local pUnitPlot = pUnit:GetPlot()
+	
+	for iPlot in PlotRingIterator(pUnitPlot, 1, SECTOR_NORTH, DIRECTION_CLOCKWISE) do
+		for k = 0, iPlot:GetNumUnits() - 1 do
+			local jUnit = iPlot:GetUnit(k)
+			local jPlayer = jUnit:GetOwner()
+			
+			if jUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
+				FuryOfNergalUpdate(Players[jPlayer], jUnit)
+			end
 		end
 	end
 end
@@ -86,28 +142,7 @@ function FuryOfNergalUpdate(pPlayer, pUnit)
 	end
 end
 
-function FuryOfNergalCheckMovement(iPlayer, iUnit)
-	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-	
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
-		FuryOfNergalUpdate(pPlayer, pUnit)
-	end
-
-	local pUnitPlot = pUnit:GetPlot()
-	
-	for iPlot in PlotRingIterator(pUnitPlot, 1, SECTOR_NORTH, DIRECTION_CLOCKWISE) do
-		for k = 0, iPlot:GetNumUnits() - 1 do
-			local jUnit = iPlot:GetUnit(k)
-			local jPlayer = jUnit:GetOwner()
-			
-			if jUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
-				FuryOfNergalUpdate(Players[jPlayer], jUnit)
-			end
-		end
-	end
-end
-
 GameEvents.PlayerDoTurn.Add(IronChariotResourceCheck)
-GameEvents.PlayerDoTurn.Add(FuryOfNergalCheckTurnStart)
 GameEvents.UnitSetXY.Add(FuryOfNergalCheckMovement)
+GameEvents.UnitCreated.Add(FuryOfNergalCheckCreate)
+GameEvents.CityTrained.Add(FuryOfNergalCheckBuild)
