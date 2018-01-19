@@ -610,7 +610,7 @@
 			<Text>Unit is healed for 30 HP [COLOR_POSITIVE_TEXT]in regular turn cycles[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2">
-			<Text>Helpful Knowledge</Text>
+			<Text>Lost Codices</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2_HELP">
 			<Text>Unit gains [ICON_RESEARCH] Science [COLOR_POSITIVE_TEXT]from Ancient Ruins[ENDCOLOR].</Text>
