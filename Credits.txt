@@ -17,7 +17,7 @@ Special thanks to:
   - phantomaxl1207 - early stage of design, ideas and bug reports,
   - LukaSlovenia29 - ideas and bug reports,
   - Hokath - art, ideas and bug reports,
-  - Infixo - dll coding, ideas and bug reports,
+  - Infixo - dll coding, ideas and bug reports, lua code, Github help, codeing suggestions, VP cooperation,
   - ThirstQuencher - ideas and bug reports,
   - IcyAngel - ideas and bug reports,
   - Ziad - ideas and bug reports,

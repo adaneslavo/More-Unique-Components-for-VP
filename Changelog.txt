@@ -16,6 +16,9 @@ v25:
 - fixed SPAD and Hashemite civilopedia issue,
 - fixed pAttackingPlayer = nil lua bug,
 - fixed Landwehr giving 25% bonus twice,
+- fixed Iron Chariot.lua,
+- added restrinction for XP scaling (now depends on BALNCE_CORE_XP_VALUE),
+- reworked Landwehr lua code,
 - added era modifier to few UCs,
 - added few popup texts,
 - modified all game speed scaling

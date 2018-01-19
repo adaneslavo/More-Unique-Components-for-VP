@@ -22,7 +22,13 @@ function InvincibleArmada(iPlayer)
 					local pEnemyTeam = Teams[pEnemyPlayer:GetTeam()]
 
 					if pEnemyTeam:IsAtWar(iTeam) then
-						local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100
+						for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do 
+							if t.Value  = 1 then	
+								local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100
+							else
+								local iGameSpeedModifier = 1
+							end
+						end
 						
 						pUnit:SetExperience(pUnit:GetExperience() + math.floor(2 * iGameSpeedModifier))
 					end
