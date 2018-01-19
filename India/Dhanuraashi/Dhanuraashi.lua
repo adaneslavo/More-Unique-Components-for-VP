@@ -5,6 +5,16 @@
 include("FLuaVector.lua")
 include("InstanceManager")
 
+-- check XP scaling
+local bXPScaling = true -- default VP
+for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do bXPScaling = (tValue == 1) end
+print("XP scaling is", bXPScaling)
+
+-- acquire game speed modifier
+local fGameSpeedModifier = 1.0 -- it is float, so use 'f' at begining
+if bXPScaling then fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100 end
+print("Game speed modifier is", fGameSpeedModifier)
+
 function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
@@ -13,21 +23,13 @@ function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, att
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 		
-		for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do 
-			if t.Value  = 1 then	
-				local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100
-			else
-				local iGameSpeedModifier = 1
-			end
-		end
-				
 		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then
 			if pDefendingUnit:IsDead() then
-				pAttackingUnit:SetExperience(pAttackingUnit:GetExperience() + math.floor(5 * iGameSpeedModifier))
+				pAttackingUnit:SetExperience(pAttackingUnit:GetExperience() + math.floor(5 * fGameSpeedModifier))
 			end
 		elseif pDefendingUnit ~= nil and pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then			
 			if pAttackingUnit:IsDead() then
-				pDefendingUnit:SetExperience(pDefendingUnit:GetExperience() + math.floor(5 * iGameSpeedModifier))
+				pDefendingUnit:SetExperience(pDefendingUnit:GetExperience() + math.floor(5 * fGameSpeedModifier))
 			end
 		end
 	end
