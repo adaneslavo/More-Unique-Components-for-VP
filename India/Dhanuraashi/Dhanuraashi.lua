@@ -13,8 +13,14 @@ function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, att
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 		
-		local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100
-		
+		for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do 
+			if t.Value  = 1 then	
+				local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100
+			else
+				local iGameSpeedModifier = 1
+			end
+		end
+				
 		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then
 			if pDefendingUnit:IsDead() then
 				pAttackingUnit:SetExperience(pAttackingUnit:GetExperience() + math.floor(5 * iGameSpeedModifier))

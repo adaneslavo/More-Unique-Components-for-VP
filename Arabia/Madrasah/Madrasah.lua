@@ -6,21 +6,6 @@ include("Sukritact_ChangeResearchProgress.lua")
 include("FLuaVector.lua")
 include("InstanceManager")
 
-local tGreatPeople = { GameInfoTypes.UNIT_GREAT_GENERAL, GameInfoTypes.UNIT_GREAT_ADMIRAL, GameInfoTypes.UNIT_PROPHET, GameInfoTypes.UNIT_ARTIST, GameInfoTypes.UNIT_WRITER, GameInfoTypes.UNIT_MUSICIAN, GameInfoTypes.UNIT_SCIENTIST, GameInfoTypes.UNIT_MERCHANT, GameInfoTypes.UNIT_ENGINEER, GameInfoTypes.UNIT_GREAT_DIPLOMAT }
-
-function IsGreatPerson(iPlayer, iUnit)
-	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-	
-	for i, pUnitType in pairs(tGreatPeople) do
-		if pUnitType == pUnit:GetUnitType() then
-			return true
-		end
-	end
-
-	return false
-end
-
 function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
@@ -30,8 +15,9 @@ function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 
 	if pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith then
 		local iScience
-		
-		if IsGreatPerson(iPlayer, iUnit) then
+		local pUnit = pPlayer:GetUnitByID(iUnit)
+
+		if pUnit:IsGreatPerson() then
 			iScience = math.floor(100 * iEraModifier * iGameSpeedModifier)
 		else
 			iScience = math.floor(20 * iEraModifier * iGameSpeedModifier)

@@ -52,7 +52,13 @@ function OnPillageBonus(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPilla
 				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, true)
 			end
 			
-			local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100
+			for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do 
+				if t.Value  = 1 then	
+					local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100
+				else
+					local iGameSpeedModifier = 1
+				end
+			end
 			
 			pUnit:SetExperience(pUnit:GetExperience() + math.floor(5 * iGameSpeedModifier))
 		end
