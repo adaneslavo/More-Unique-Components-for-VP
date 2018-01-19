@@ -7,6 +7,9 @@ More Unique Components for Vox Populi changelog:
 *roman GG appear and disappear?
 *Baan Change after VP update
 
+v26:
+- reworked Landwehr (now +3c on Yorkshire promotion, Imperial Vigilance adds bonus to laos friendly territory, fixed texts),
+
 v25:
 - renamed Treasure Hunter II promotion to Helpful Knowledge,
 - fixed Maya promotion texts,
