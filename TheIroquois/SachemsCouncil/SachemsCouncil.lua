@@ -89,7 +89,7 @@ function DiplomaticReciprocityEmbassy(iPlayer, iUnit, iUnitType, iX, iY)
 					pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH, pCapital:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH) + iFaith)
 
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						pPlayer:AddNotification(0, 'Your unit performed [ICON_INFLUENCE] Diplomatic Mission. City of '..pCapital:GetName()..' gained additional permanent yields:[NEWLINE][ICON_BULLET]+'..iFood..' [ICON_FOOD] Food[NEWLINE][ICON_BULLET]+'..iProduction..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET]+'..iGold..' [ICON_GOLD] Gold[NEWLINE][ICON_BULLET]+'..iScience..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iCulture..' [ICON_CULTURE] Culture[NEWLINE][ICON_BULLET]+'..iFaith..' [ICON_PEACE] Faith', 'Yields added in '..pCapital:GetName()..'!', pPlot:GetX(), pPlot:GetY())
+						pPlayer:AddNotification(0, '[ICON_INFLUENCE] Diplomatic Mission performed by Great Diplomat. The City of '..pCapital:GetName()..' gained additional permanent yields:[NEWLINE][ICON_BULLET]+'..iFood..' [ICON_FOOD] Food[NEWLINE][ICON_BULLET]+'..iProduction..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET]+'..iGold..' [ICON_GOLD] Gold[NEWLINE][ICON_BULLET]+'..iScience..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iCulture..' [ICON_CULTURE] Culture[NEWLINE][ICON_BULLET]+'..iFaith..' [ICON_PEACE] Faith', 'Yields added in '..pCapital:GetName(), pPlot:GetX(), pPlot:GetY())
 					end
 				else
 					iFood = pPlot:GetYield(0) / 2
@@ -107,7 +107,7 @@ function DiplomaticReciprocityEmbassy(iPlayer, iUnit, iUnitType, iX, iY)
 					pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH, pCapital:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH) + iFaith)
 
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						pPlayer:AddNotification(0, 'Your unit Unit performed [ICON_INFLUENCE] Diplomatic Mission. City of '..pCapital:GetName()..' gained additional permanent yields:[NEWLINE][ICON_BULLET]+'..iFood..' [ICON_FOOD] Food[NEWLINE][ICON_BULLET]+'..iProduction..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET]+'..iGold..' [ICON_GOLD] Gold[NEWLINE][ICON_BULLET]+'..iScience..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iCulture..' [ICON_CULTURE] Culture[NEWLINE][ICON_BULLET]+'..iFaith..' [ICON_PEACE] Faith', 'Yields added in '..pCapital:GetName()..'!', pPlot:GetX(), pPlot:GetY())
+						pPlayer:AddNotification(0, '[ICON_INFLUENCE] Diplomatic Mission performed by Great Diplomat. The City of '..pCapital:GetName()..' gained additional permanent yields:[NEWLINE][ICON_BULLET]+'..iFood..' [ICON_FOOD] Food[NEWLINE][ICON_BULLET]+'..iProduction..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET]+'..iGold..' [ICON_GOLD] Gold[NEWLINE][ICON_BULLET]+'..iScience..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iCulture..' [ICON_CULTURE] Culture[NEWLINE][ICON_BULLET]+'..iFaith..' [ICON_PEACE] Faith', 'Yields added in '..pCapital:GetName(), pPlot:GetX(), pPlot:GetY())
 					end
 				end
 			end

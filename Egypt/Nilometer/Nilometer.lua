@@ -23,7 +23,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 										iFlaxCount = iFlaxCount + 1
 
 										if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-											pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new [ICON_RES_FLAX] Flax source.', 'New Flax source in '..pCity:GetName()..'!', pSpecificPlot:GetX(), pSpecificPlot:GetY())
+											pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 										end
 									
 										if iFlaxCount == 2 then
@@ -51,7 +51,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 											iFlaxCount = iFlaxCount + 1
 
 											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-												pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new [ICON_RES_FLAX] Flax source.', 'New Flax source in '..pCity:GetName()..'!', pSpecificPlot:GetX(), pSpecificPlot:GetY())
+												pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 											end
 									
 											if iFlaxCount == 2 then
@@ -80,7 +80,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 											iFlaxCount = iFlaxCount + 1
 
 											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-												pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new [ICON_RES_FLAX] Flax source.', 'New Flax source in '..pCity:GetName()..'!', pSpecificPlot:GetX(), pSpecificPlot:GetY())
+												pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 											end
 									
 											if iFlaxCount == 2 then
@@ -109,7 +109,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 											iFlaxCount = iFlaxCount + 1
 
 											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-												pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new [ICON_RES_FLAX] Flax source.', 'New Flax source in '..pCity:GetName()..'!', pSpecificPlot:GetX(), pSpecificPlot:GetY())
+												pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 											end
 									
 											if iFlaxCount == 2 then
@@ -137,7 +137,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 										iFlaxCount = iFlaxCount + 1
 
 										if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-											pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new [ICON_RES_FLAX] Flax source.', 'New Flax source in '..pCity:GetName()..'!', pSpecificPlot:GetX(), pSpecificPlot:GetY())
+											pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 										end
 									
 										if iFlaxCount == 2 then
@@ -164,7 +164,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 										iFlaxCount = iFlaxCount + 1
 
 										if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-											pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new [ICON_RES_FLAX] Flax source.', 'New Flax source in '..pCity:GetName()..'!', pSpecificPlot:GetX(), pSpecificPlot:GetY())
+											pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 										end
 									
 										if iFlaxCount == 2 then

@@ -57,7 +57,7 @@ function LatifundiumSpawnFigs(iPlayer)
 											tPossibleSpots[iChosenPlot]:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
 
 											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-												pPlayer:AddNotification(0, 'In '..pCity:GetName()..'[ENDCOLOR] Latifundium worked out new [ICON_RES_FIGS] Figs source.', 'New Figs source in '..pCity:GetName()..'!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												pPlayer:AddNotification(0, 'In '..pCity:GetName()..'[ENDCOLOR] Latifundium worked out new source of [ICON_RES_FIGS] Figs.', 'New source of Figs in '..pCity:GetName(), tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 											end
 										
 											local pCheckedPlayer = Players[tPossibleSpots[iChosenPlot]:GetOwner()]
@@ -69,14 +69,16 @@ function LatifundiumSpawnFigs(iPlayer)
 													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] claimed new tile.', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 												end
 											elseif pCheckedPlayer:GetName() ~= "Augustus Caesar" then
+												local pCityThatLostTile = tPossibleSpots[iChosenPlot]:GetWorkingCity()
+												
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
 												
 												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] claimed new tile.', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] took a tile from another Empire!', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 												end
 
 												if pCheckedPlayer:IsHuman() then
-													pCheckedPlayer:AddNotification(14, 'Roman Empire made plantation in one of your city tiles. Your city lost a tile.', 'The City of '..pCityThatLostTile:GetName()..' lost its tile!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													pCheckedPlayer:AddNotification(14, 'Roman Empire found a plantation in one of your Cities. '..pCityThatLostTile:GetName()..' lost a tile.', 'The City of '..pCityThatLostTile:GetName()..' lost a tile!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 												end
 											end
 										elseif tPossibleSpots[iChosenPlot]:GetFeatureType() == FeatureTypes.FEATURE_FOREST then
@@ -90,7 +92,7 @@ function LatifundiumSpawnFigs(iPlayer)
 
 											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 												Events.GameplayAlertMessage(Locale.ConvertTextKey("Clearing Forest has created "..iClearing.." [ICON_PRODUCTION] Production for"..pCity:GetName(), iClearing, pCity:GetName()))
-												pPlayer:AddNotification(0, 'In '..pCity:GetName()..'[ENDCOLOR] Latifundium worked out new [ICON_RES_FIGS] Figs source.', 'New Figs source in '..pCity:GetName()..'!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												pPlayer:AddNotification(0, 'In '..pCity:GetName()..'[ENDCOLOR] Latifundium worked out new source of [ICON_RES_FIGS] Figs.', 'New source of Figs in '..pCity:GetName(), tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 											end
 											
 											local pCheckedPlayer = Players[tPossibleSpots[iChosenPlot]:GetOwner()]
@@ -102,14 +104,16 @@ function LatifundiumSpawnFigs(iPlayer)
 													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] claimed new tile.', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 												end
 											elseif pCheckedPlayer:GetName() ~= "Augustus Caesar" then
+												local pCityThatLostTile = tPossibleSpots[iChosenPlot]:GetWorkingCity()
+												
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
 												
 												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] claimed new tile.', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] took a tile from another Empire!', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 												end
 
 												if pCheckedPlayer:IsHuman() then
-													pCheckedPlayer:AddNotification(14, 'Roman Empire made plantation in one of your city tiles. Your city lost a tile.', 'The City of '..pCityThatLostTile:GetName()..' lost its tile!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													pCheckedPlayer:AddNotification(14, 'Roman Empire found a plantation in one of your Cities. '..pCityThatLostTile:GetName()..' lost a tile.', 'The City of '..pCityThatLostTile:GetName()..' lost a tile!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 												end
 											end
 										elseif tPossibleSpots[iChosenPlot]:GetFeatureType() == FeatureTypes.FEATURE_JUNGLE then
@@ -123,35 +127,7 @@ function LatifundiumSpawnFigs(iPlayer)
 
 											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 												Events.GameplayAlertMessage(Locale.ConvertTextKey("Clearing Jungle has created "..iClearing.." [ICON_PRODUCTION] Production for"..pCity:GetName(), iClearing, pCity:GetName()))
-												pPlayer:AddNotification(0, 'In '..pCity:GetName()..'[ENDCOLOR] Latifundium worked out new [ICON_RES_FIGS] Figs source.', 'New Figs source in '..pCity:GetName()..'!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
-											end
-										
-											local pCheckedPlayer = Players[tPossibleSpots[iChosenPlot]:GetOwner()]
-
-											if pCheckedPlayer == nil then
-												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
-												
-												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] claimed new tile.', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
-												end
-											elseif pCheckedPlayer:GetName() ~= "Augustus Caesar" then
-												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
-												
-												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] claimed new tile.', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
-												end
-
-												if pCheckedPlayer:IsHuman() then
-													pCheckedPlayer:AddNotification(14, 'Roman Empire made plantation in one of your city tiles. Your city lost a tile.', 'The City of '..pCityThatLostTile:GetName()..' lost its tile!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
-												end
-											end
-										elseif tPossibleSpots[iChosenPlot]:GetFeatureType() == FeatureTypes.FEATURE_MARSH then
-											tPossibleSpots[iChosenPlot]:SetResourceType(GameInfoTypes.RESOURCE_ROME_FIGS, 1)
-											tPossibleSpots[iChosenPlot]:SetFeatureType(FeatureTypes.NO_FEATURE, -1)
-											tPossibleSpots[iChosenPlot]:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
-
-											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-												pPlayer:AddNotification(0, 'In '..pCity:GetName()..'[ENDCOLOR] Latifundium worked out new [ICON_RES_FIGS] Figs source.', 'New Figs source in '..pCity:GetName()..'!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												pPlayer:AddNotification(0, 'In '..pCity:GetName()..'[ENDCOLOR] Latifundium worked out new source of [ICON_RES_FIGS] Figs.', 'New source of Figs in '..pCity:GetName(), tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 											end
 										
 											local pCheckedPlayer = Players[tPossibleSpots[iChosenPlot]:GetOwner()]
@@ -164,14 +140,45 @@ function LatifundiumSpawnFigs(iPlayer)
 												end
 											elseif pCheckedPlayer:GetName() ~= "Augustus Caesar" then
 												local pCityThatLostTile = tPossibleSpots[iChosenPlot]:GetWorkingCity()
+												
+												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
+												
+												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] took a tile from another Empire!', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												end
+
+												if pCheckedPlayer:IsHuman() then
+													pCheckedPlayer:AddNotification(14, 'Roman Empire found a plantation in one of your Cities. '..pCityThatLostTile:GetName()..' lost a tile.', 'The City of '..pCityThatLostTile:GetName()..' lost a tile!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												end
+											end
+										elseif tPossibleSpots[iChosenPlot]:GetFeatureType() == FeatureTypes.FEATURE_MARSH then
+											tPossibleSpots[iChosenPlot]:SetResourceType(GameInfoTypes.RESOURCE_ROME_FIGS, 1)
+											tPossibleSpots[iChosenPlot]:SetFeatureType(FeatureTypes.NO_FEATURE, -1)
+											tPossibleSpots[iChosenPlot]:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
+
+											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+												pPlayer:AddNotification(0, 'In '..pCity:GetName()..'[ENDCOLOR] Latifundium worked out new source of [ICON_RES_FIGS] Figs.', 'New source of Figs in '..pCity:GetName(), tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+											end
+										
+											local pCheckedPlayer = Players[tPossibleSpots[iChosenPlot]:GetOwner()]
+
+											if pCheckedPlayer == nil then
 												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
 												
 												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] claimed new tile.', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 												end
+											elseif pCheckedPlayer:GetName() ~= "Augustus Caesar" then
+												local pCityThatLostTile = tPossibleSpots[iChosenPlot]:GetWorkingCity()
+												
+												tPossibleSpots[iChosenPlot]:SetOwner(iPlayer, GetNearestCity(pPlayer, tPossibleSpots[iChosenPlot]):GetID(), true, true)
+												
+												if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+													pPlayer:AddNotification(14, 'The City of '..pCity:GetName()..'[ENDCOLOR] took a tile from another Empire!', 'Borders of '..pCity:GetName()..' have grown', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+												end
 
 												if pCheckedPlayer:IsHuman() then
-													pCheckedPlayer:AddNotification(14, 'Roman Empire made plantation in one of your city tiles. Your city lost a tile.', 'The City of '..pCityThatLostTile:GetName()..' lost its tile!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+													pCheckedPlayer:AddNotification(14, 'Roman Empire found a plantation in one of your Cities. '..pCityThatLostTile:GetName()..' lost a tile.', 'The City of '..pCityThatLostTile:GetName()..' lost a tile!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 												end
 											end
 										end

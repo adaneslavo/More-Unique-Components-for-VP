@@ -14,7 +14,7 @@ function ConquereMorePlease(iPlayer, iCapital, iResourceX, iResourceY, iNewPlaye
 				pCity:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 									
 				if pNewPlayer:IsHuman() and pNewPlayer:IsTurnActive() then
-					pNewPlayer:AddNotification(0, 'You conquered enemy city. '..iWLTKDLength..'-turn [ICON_HAPPINESS_1] WLTKD started in '..pCity:GetName()..'.', 'Enemy city conquered!', pCity:GetX(), pCity:GetY())
+					pNewPlayer:AddNotification(0, 'You have conquered a City! People love you. '..iWLTKDLength..'-turn [ICON_HAPPINESS_1] WLTKD has started in '..pCity:GetName()..'.', 'Enemy city conquered!', pCity:GetX(), pCity:GetY())
 				end
 			end
 		end

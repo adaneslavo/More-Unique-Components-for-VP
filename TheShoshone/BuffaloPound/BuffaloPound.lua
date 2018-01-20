@@ -33,7 +33,7 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 				bIsBison = true
 
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Buffalo Pound and created new [ICON_RES_BISON] Bison source.', 'New Bison source in '..pCity:GetName()..'!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+					pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Buffalo Pound and created new source of [ICON_RES_BISON] Bison.', 'New source of Bison in '..pCity:GetName(), tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 				end
 			end
 			
@@ -59,7 +59,7 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 					tPossibleSpots[iChosenPlot]:SetResourceType(GameInfoTypes.RESOURCE_BISON, 1)
 					
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Buffalo Pound and created new [ICON_RES_BISON] Bison source.', 'New Bison source in '..pCity:GetName()..'!', tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
+						pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Buffalo Pound and created new source of [ICON_RES_BISON] Bison.', 'New source of Bison in '..pCity:GetName(), tPossibleSpots[iChosenPlot]:GetX(), tPossibleSpots[iChosenPlot]:GetY())
 					end
 				end
 			end

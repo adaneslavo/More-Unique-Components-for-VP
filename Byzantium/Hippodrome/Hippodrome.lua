@@ -13,11 +13,12 @@ function HippodromeBuilt(iPlayer, iCity, iBuilding)
 			for pCity in pPlayer:Cities() do
 				local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
 				local iWLTKDLength = math.floor(20 * iGameSpeedModifier)
+				local pCapital = pPlayer:GetCapitalCity()
 				
 				pCity:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 				
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					pPlayer:AddNotification(0, 'City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Hippodrome. '..iWLTKDLength..'-turn WLTKD started.', 'Hippodrome constructed in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
+					pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCapital:GetName()..'[ENDCOLOR] constructed Hippodrome. People love you. '..iWLTKDLength..'-turn WLTKD has started in '..pCity:GetName()..'.', 'Hippodrome constructed in '..pCapital:GetName(), pCity:GetX(), pCity:GetY())
 				end
 			end
 		end
@@ -40,7 +41,7 @@ function HippodromeHooliganism(eTeam, eEra, bFirst)
 							pCapital:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 						
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-								pPlayer:AddNotification(0, 'New Era started. Your Capital falls into 1 turn of [ICON_RESISTANCE] Resistance, after which your [ICON_CITIZEN] Citizens will [ICON_HAPPINESS_1] love their king for '..(iWLTKDLength - 1)..' turns.', 'Hooliganism in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())
+								pPlayer:AddNotification(0, 'Your Empire entered new Era, causing hooligan eccesses across your Cities. Your Empire falls into 1 turn of [ICON_RESISTANCE] Resistance, after which your [ICON_CITIZEN] Citizens will [ICON_HAPPINESS_1] love their king for '..(iWLTKDLength - 1)..' turns.', 'Hooliganism in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())
 							end
 						
 							break
