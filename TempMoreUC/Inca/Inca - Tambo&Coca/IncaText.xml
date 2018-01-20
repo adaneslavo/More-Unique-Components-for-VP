@@ -1,0 +1,63 @@
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_TAMBO">
+			<Text>Tambo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TAMBO_HELP">
+			<Text>When a [ICON_INTERNATIONAL_TRADE] Land Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Land Trade Routes gain +50% Range and +3 [ICON_GOLD] Gold, Merchant Specialists in this City gain +1 [ICON_GOLD] Gold, and this City''s [ICON_CONNECTED] Connection to the [ICON_CAPITAL] Capital generates +20% [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_TRUFFLES] Truffles: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COTTON] Cotton: +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_FUR] Furs: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Units stationed in this city heal 5HP every turn, regardless of any actions taken. Granaries in the City produce +2 [ICON_PRODUCTION] Production. City receives a free [ICON_RES_COCA] Coca Luxury Resource.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TAMBO_STRATEGY">
+			<Text>The Tambo is the unique Caravansary replacement for the Inca. In addition to the normal bonuses of a Caravansary, the Tambo boosts production if the City also contains a Granary. On construction, the Tambo also grants the City 1 free copy of the [ICON_RES_COCA] Coca Luxury Resource. Units stationed in a city with a Tambo slowly heal every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TAMBO_TEXT">
+			<Text>A Tambo is an Incan military and administrative waystation. Found along roads across the Tawantinsuyu (Incan empire), Tambos typically contained lodgings for state personnel, garrisons, and the Incan messengers, the Chasqui. At a minimum,  Tambos would contain housing, cooking facilities, and storage silos called qullqas, which contained everything from food to building materials.[NEWLINE][NEWLINE]
+			Beyond taking care of various kinds of travelers, larger tambos would also contain facilities where various specialists, such as potters and weavers, would produce their goods. They could also served as administrative centers from which local lords would oversee the region. Additionally, coca production and exploitation was often carried within a safe distance of the Tambo, providing protection to the Incan coca monopoly.[NEWLINE][NEWLINE]
+			Tambos were frequently positioned for interregional contact and travel, as opposed to being positioned near large local villages. Historians suggest that the tambo system was a part of an "artificial urbanism" created by the Inca empire to enable cohesion and communication across the vast Incan empire.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_RESOURCE_COCA">
+			<Text>Coca</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_COCA_TEXT">
+			<Text>Coca is the leaf of any of four cultivated species of the family Erythroxylaceae native to western South America. The plant is famous for its various medicinal and nutritional uses, increasing alertness, dulling pain, supressing appetite, and treating altitude sickness. Traditionally, the leaves are chewed or brewed into a tea, and even made an impression on the Spanish for coca's ability to help people work harder, even through exhaustion or hunger.[NEWLINE][NEWLINE]Coca is known throughout the world for its psychoactive alkaloid, cocaine. The alkaloid content of coca leaves is relatively low, requiring a large number of leaves for a single batch of cocaine. Coca leaf extract began being used in Coca-Cola products in 1885, but cocaine was completely eliminated from the products in or around 1903.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI">
+			<Text>Chasqui</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_HELP">
+			<Text>Unique replacement for the Scout. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15HP every turn in friendly territory.[NEWLINE]Receives the Altitude Training Promotion for free.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_STRATEGY">
+			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_TEXT">
+			<Text>The Chasquis were the messengers of the Inca empire. They were in charge of carrying the quipus, messages and gifts up to 240 km per day through the chasquis relay system, a sort of Pony Express for the horseless Inca. In addition to their physical fitness, the Chasquis were well-educated in order to be able to read and translate the khipus, the Incan knot-based writing system, to each other and higher authorities.[NEWLINE][NEWLINE]
+			Chasquis were dispatched along thousands of miles, taking advantage of the vast Inca system of purpose-built roads and rope bridges in the Andes of Peru and Ecuador. Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. Each Chasqui carried a pututu, a conch trumpet, which was blown by the chasqui as they neared a Tambo, signalling to a fresh chasqui that one runner was close, so that they could prepare to run.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_GOLD">
+			<Text>Khipu Runner</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_GOLD_HELP">
+			<Text>Receive Gold for revealing new tiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL">
+			<Text>Chasquiwasi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP">
+			<Text>Heals 15HP every turn in friendly territory, regardless of action.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COCA_MILITARY">
+			<Text>Coca Monopoly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COCA_MILITARY_HELP">
+			<Text>+10% [ICON_STRENGTH] and double movement on Mountains.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COCA_WORKER">
+			<Text>Coca Monopoly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COCA_WORKER_HELP">
+			<Text>+15% Improvement Speed.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

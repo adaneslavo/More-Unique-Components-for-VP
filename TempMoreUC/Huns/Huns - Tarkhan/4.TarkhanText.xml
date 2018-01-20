@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Tomatekh -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PROMOTION_HORSE_ARCHER">
+			<Text>Horse Archer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HORSE_ARCHER_HELP">
+			<Text>If all moves are used without attacking, attacks a valid target automatically.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MIGRATION">
+			<Text>Migration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MIGRATION_HELP">
+			<Text>+1 Movement to Workers and Settlers that begin the turn stacked with this Unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SACKER">
+			<Text>Sacker</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SACKER_HELP">
+			<Text>+20 [ICON_GOLD] Gold and +10 [ICON_CULTURE] Culture every turn and 2x Razing Speed if stationed in a City being Razed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY">
+			<Text>Tarkhan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_HELP">
+			<Text>Fearsome mounted warrior who also helps build the Hunnic economy. Only the Huns may build it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_STRATEGY">
+			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Stationing this unit inside a city you are razing provides a large sum of Culture and Gold, and hastens the destruction of the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_TEXT">
+			<Text>Tarkhan were nobles and high-ranking commanders within the armies of the Xiongnu and Hunnic empires. The term spread throughout the languages and peoples of the steppes, appearing as a title within Turkic, Mongol and Iranian cultures, even becoming a common boys name. Analogous to modern day generals, the Tarkhan were the protectors and conquerors of the Hunnic empire, spurring their civilization forward to greatness.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
