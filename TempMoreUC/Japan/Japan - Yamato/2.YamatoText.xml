@@ -1,0 +1,17 @@
+		<!--YAMATO-->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_YAMATO">
+			<Text>Yamato</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_YAMATO_HELP">
+			<Text>A powerful Japanese battleship. Great Generals I and 25% increased defense.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_YAMATO_STRATEGY">
+			<Text>The Yamato is the unique Battleship replacement for Japan.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_YAMATO_TEXT">
+			<Text>The Yamato-class battleships were battleships of the Imperial Japanese Navy (IJN) constructed and operated during World War II. Displacing 72,000 long tons (73,000 t) at full load, the vessels were the heaviest and most powerfully armed battleships ever constructed. The class carried the largest naval artillery ever fitted to a warship, nine 460-millimetre (18.1 in) naval guns, each capable of firing 1,360 kg (3,000 lb) shells over 42 km (26 mi). Two battleships of the class (Yamato and Musashi) were completed, while a third (Shinano) was converted to an aircraft carrier during construction.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
