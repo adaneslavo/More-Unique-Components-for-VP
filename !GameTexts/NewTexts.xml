@@ -2434,7 +2434,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_YAMATO">
-			<Text>Kentai Kessen</Text>
+			<Text>Kantai Kessen</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_YAMATO_HELP">
 			<Text>Unit gains [ICON_CAPITAL] Great Admiral Points [COLOR_POSITIVE_TEXT]on Kills[ENDCOLOR].</Text>
