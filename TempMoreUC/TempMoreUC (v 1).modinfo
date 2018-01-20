@@ -89,7 +89,7 @@
     <File md5="ECB32FB76EAFDCC14C9FFB852FA928A1" import="1">Japan/Japan - Kabuki/Kabuki64.dds</File>
     <File md5="49338B5BD199213000B52C79E7D9984E" import="1">Japan/Japan - Kabuki/Kabuki80.dds</File>
     <File md5="50822EB095EDFE255095971B9EB37376" import="0">Japan/Japan - Kabuki/KabukiText.xml</File>
-    <File md5="21DEB70738DE7D57BA7B4392B21145EE" import="0">Japan/Japan - Yamato/2.YamatoText.xml</File>
+    <File md5="0D3FED71F8F68C4D63EF3E6085A45A3F" import="0">Japan/Japan - Yamato/2.YamatoText.xml</File>
     <File md5="74B55B3C96723A68EEDEA8B083D50DBC" import="0">Japan/Japan - Yamato/Animations and Effects/civ5artdefines_viseffects.xml</File>
     <File md5="0B3EDF7C3F4DF4B3E29BE9693EC17179" import="0">Japan/Japan - Yamato/Animations and Effects/Edited_Animations/Animations_Chariot/Animations Export.jpg</File>
     <File md5="62C8B0D2EEEC81E954EC81B8A9246305" import="0">Japan/Japan - Yamato/Animations and Effects/Edited_Animations/Animations_Chariot/Animations Import.jpg</File>
@@ -228,7 +228,7 @@
     <File md5="B8A468D42DF9B23B373AD762848044ED" import="1">Japan/Japan - Yamato/JFD_JapanTojoAtlas_80.dds</File>
     <File md5="4435B3549B3D8EC689FAA31E80D8B637" import="1">Japan/Japan - Yamato/sv_Yamato.dds</File>
     <File md5="7E7E0A8D57A91E97295A00924BC7E103" import="1">Japan/Japan - Yamato/UnitFlagYamatoAtlas_32.dds</File>
-    <File md5="ECD94832A3B7B417A78E69D75AEC93F8" import="0">Japan/Japan - Yamato/Yamato.sql</File>
+    <File md5="0331330643E45EE3AABECC5C77543682" import="0">Japan/Japan - Yamato/Yamato.sql</File>
     <File md5="4C5C099F0A4FD21C8E3CE9B0775AEBD4" import="1">Japan/Japan - Yamato/Yamato_Class.dds</File>
     <File md5="0D4D76E4C089C2A54982CB4CD4B53F83" import="1">Japan/Japan - Yamato/Yamato_Class.fxsxml</File>
     <File md5="800A6760332BFB63E5F61651040918F2" import="1">Japan/Japan - Yamato/Yamato_Class.gr2</File>
