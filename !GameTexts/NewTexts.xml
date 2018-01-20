@@ -1934,6 +1934,35 @@
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_TEXT">
 			<Text>Shotel are dramatically curved double-edged swords used exclusively by the ancient Ethiopian Empire. Almost semicircular, the shotel could be used to hook shields, or even reach around them to strike an opponent. The sword could also be used to hook and unhorse a mounted soldier, bringing them to the ground. Warriors armed with Shotel were called 'Shotelai'. Elite corps of these Shotelai were employed by the armies of Amda Seyon I, comprising an elite force within his host.</Text>
 		</Row>
+
+		<!-- Slaganz -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ">
+			<Text>
+				Slaganz
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_TEXT">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_STRATEGY">
+			<Text>
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_HELP">
+			<Text>
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FUROR_TEUTONICUS">
+			<Text>
+				Furor Teutonicus
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FUROR_TEUTONICUS_HELP">
+			<Text>
+				+50% combat strength against Barbarians. 50% chance of converting Barbarians it kills.
+			</Text>
+		</Row>
 		
 		<!-- SPAD -->
 		<!-- Created by adan_eslavo on 11/11/2017 -->
@@ -1952,7 +1981,7 @@
 				Air superiority became a constant arms race against newer and better German designs and engines. By the end of the war, the SPAD VII's single .303 Vickers machine gun was outmatched by German fighters, which carried at least two machine guns. The heavier and faster SPAD XIII replaced the SPAD VII by late 1917, and would carry France to the end of the War. Though at times unreliable and hard to maneuver, the SPAD series would go down in history as the fastest and most powerful of WWI fighters, and continued to be used by the French as a training plane until it was retired in 1928.
 			</Text>
 		</Row>
-
+		
 		<!-- Standschützen -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN">
@@ -1992,6 +2021,25 @@
 				The Turkish word 'Tersane' is derived from the Venetian 'darsane', from which the English word 'arsenal' is also derived. Though never at the forefront of shipbuilding technology, the Ottomans enjoyed over a century of naval dominance in the Mediterranean following their conquest of Constantinople in 1453. The largest Tersane, constructed at the Golden Horn across from Constantinople, housed over 160 docks, drydocks, storehouses and supply depots, making it one of the largest centers of trade, commerce and industry in the Mediterranean. [NEWLINE][NEWLINE]
 				Ottoman naval power was maintained through its tremendous shipbuilding capacity, as well as its allegiances to the Barbary corsairs of North Africa. This pre-eminence was finally ended at the battle of Lepanto, where a combined Spanish and Venetian armada delivered a crushing defeat to the Ottoman's, capturing or destroying more than two thirds of the Ottoman's navy. Their response was to build 250 new vessels within six months. [NEWLINE][NEWLINE]
 				"You come to see how we bear our misfortune. But I would have you know the difference between your loss and ours. In wresting Cyprus from you, we deprived you of an arm; in defeating our fleet, you have only shaved our beard. [NEWLINE] Grand Vizier Mehmed Sokullu, on the defeat at Lepanto, and the capture of Cyprus, which the Ottomans had taken earlier the same year
+			</Text>
+		</Row>
+
+		<!-- Teutonic Order -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER">
+			<Text>
+				Teutonic Order
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_TEXT">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_STRATEGY">
+			<Text>
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_HELP">
+			<Text>
 			</Text>
 		</Row>
 
