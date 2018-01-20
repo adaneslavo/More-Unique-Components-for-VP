@@ -129,7 +129,7 @@ VALUES		('PROMOTION_UNIT_YAMATO', 			'TXT_KEY_PROMOTION_UNIT_YAMATO',			'TXT_KEY
 ------------------------------
 INSERT INTO UnitPromotions_YieldFromKills
 			(PromotionType, 						YieldType,						Yield)
-VALUES		('PROMOTION_UNIT_YAMATO',	'YIELD_GREAT_ADMIRAL_POINTS',	100);
+VALUES		('PROMOTION_UNIT_YAMATO',	'YIELD_GREAT_ADMIRAL_POINTS',	400);
 --==========================================================================================================================	
 
 --------------------------------
