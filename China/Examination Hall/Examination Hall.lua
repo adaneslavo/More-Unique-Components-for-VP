@@ -1,6 +1,6 @@
 local iBuilding = GameInfoTypes.BUILDING_VP_EXAMINATION_HALL
 local iDummy = GameInfoTypes.BUILDING_VP_EXAMINATION_HALL_DUMMY
-
+--[[
 local iWriter = GameInfoTypes['SPECIALIST_WRITER']
 local iArtist = GameInfoTypes['SPECIALIST_ARTIST']
 local iMusician = GameInfoTypes['SPECIALIST_MUSICIAN']
@@ -8,6 +8,17 @@ local iScientist = GameInfoTypes['SPECIALIST_SCIENTIST']
 local iEngineer = GameInfoTypes['SPECIALIST_ENGINEER']
 local iMerchant = GameInfoTypes['SPECIALIST_MERCHANT']
 local iDiplomat = GameInfoTypes['SPECIALIST_CIVIL_SERVANT']
+--]]
+-- build table of valid specialists and corresponding GPs
+local tGPs = {}
+for sp in GameInfo.Specialists() do 
+	if sp.GreatPeopleRateChange > 0 then
+		local spec = { GPType = sp.ID, GPStr = Locale.ConvertTextKey(GameInfo.UnitClasses[ GameInfoTypes[sp.GreatPeopleUnitClass] ].Description) }
+		table.insert(tGPs, spec)
+	end
+end
+--for k,v in pairs(tGPs) do print(k, v.GPType, v.GPStr) end -- debug
+--print("Num GPs is", #tGPs) -- debug
 
 function WLTKDGreatPersonBonus(iPlayer)
 	local player = Players[iPlayer]
@@ -30,10 +41,12 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 			if city and city:IsHasBuilding(iBuilding) then
 				local iPlayer = city:GetOwner()
 				local player = Players[iPlayer]
-				local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+				local iEraModifier = math.max(player:GetCurrentEra(), 1)
 				
 				local iGPP = 7.5 * iEraModifier * iGameSpeedModifier
 				iGPP = math.floor(iGPP)
+				local tGP = tGPs[ math.random( #tGPs ) ] -- pick random GP
+				--[[
 				local rand = math.random(7)
 				local GPType = iDiplomat
 				local GPStr = "Great Diplomat"
@@ -59,8 +72,9 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 					GPType = iDiplomat
 					GPStr = "Great Diplomat"
 				end
-				city:ChangeSpecialistGreatPersonProgressTimes100(GPType, iGPP * 100)
-				player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, Locale.ConvertTextKey("TXT_KEY_ALERT_EXAMINATIONS", iGPP, GPStr, city:GetName()), 'Civil Examinations')
+				--]]
+				city:ChangeSpecialistGreatPersonProgressTimes100(tGP.GPType, iGPP * 100)
+				player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, Locale.ConvertTextKey("TXT_KEY_ALERT_EXAMINATIONS", iGPP, tGP.GPStr, city:GetName()), 'Civil Examinations')
 			end
 		end
 	end
