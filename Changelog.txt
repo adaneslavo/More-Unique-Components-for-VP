@@ -23,6 +23,7 @@ v26:
 - added Germany, Japan and all art for the rest of components,
 - fixed Exam Hall,
 - fixed Nilometer Flax spawning,
+- changed Flax icons,
 - tweaked lua code,
 - cleaned up the code,
 - minor fixes,
