@@ -1,3 +1,7 @@
+-- Landwehr
+-- Author: Blue Ghost, adan_eslavo
+-- DateCreated:
+--------------------------------------------------------------
 include("FLuaVector.lua")
 include("InstanceManager")
 
@@ -95,15 +99,15 @@ function CheckLandwehr(iPlayer)
 
 					if pOwner == pPlayer then
 						local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
-						local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-						local iGain = math.floor(0.75 * iEraModifier * iGameSpeedModifier)
+						
+						local iGain = math.floor(0.75 * iGameSpeedModifier)
 
 						pPlayer:ChangeJONSCulture(iGain)
 
 						if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 							local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+"..iGain.." [ICON_CULTURE] Landwehr[ENDCOLOR]", 1)
+							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+"..iGain.." [ICON_CULTURE] Yorksher Marche[ENDCOLOR]", 1)
 						end
 					end
 				end

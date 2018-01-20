@@ -24,11 +24,9 @@ function QizilbashAgitator(iPlayer)
 					local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
 					local iGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
 					
-					local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-
-					local iGain1 = math.floor(0.67 * iGameSpeedModifier1 * iEraModifier)
-					local iGain2 = math.floor(0.67 * iGameSpeedModifier2 * iEraModifier)
-					local iGain3 = math.floor(0.34 * iGameSpeedModifier3 * iEraModifier)
+					local iGain1 = math.floor(0.67 * iGameSpeedModifier1)
+					local iGain2 = math.floor(0.67 * iGameSpeedModifier2)
+					local iGain3 = math.max(math.floor(0.34 * iGameSpeedModifier3), 1)
 					
 					pPlayer:ChangeFaith(iGain1)
 					pPlayer:ChangeGoldenAgeProgressMeter(iGain2)

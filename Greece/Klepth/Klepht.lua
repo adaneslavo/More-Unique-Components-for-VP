@@ -27,10 +27,9 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 			
 			local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
 			local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
-			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-
-			local iGain1 = math.floor(1.25 * iEraModifier *  iGameSpeedModifier1 * (iAlliesOrFriends + 1))
-			local iGain2 = math.floor(1.25 * iEraModifier *  iGameSpeedModifier2 * (iAlliesOrFriends + 1))
+			
+			local iGain1 = math.floor(1.25 *  iGameSpeedModifier1 * (iAlliesOrFriends + 1))
+			local iGain2 = math.floor(1.25 *  iGameSpeedModifier2 * (iAlliesOrFriends + 1))
 					
 			pPlayer:ChangeGold(iGain2)
 			pCapital:ChangeProduction(iGain1)

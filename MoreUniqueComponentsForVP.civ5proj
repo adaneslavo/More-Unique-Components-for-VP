@@ -633,6 +633,16 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>Portugal/University of Coimbra/University of Coimbra.sql</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Germany/Slaganz/Slaganz.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Germany/Teutonic Order/Teutonic Order.sql</FileName>
+      </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -994,6 +1004,18 @@ Latest changes: see changelog file.</Description>
         <Name>University of Coimbra</Name>
         <Description>Yields from feitorias for University of Coimbra</Description>
         <FileName>Portugal/University of Coimbra/University of Coimbra.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Slaganz</Name>
+        <Description>Furor Teutonicus for Slaganz</Description>
+        <FileName>Germany/Slaganz/Slaganz.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Teutonic Order</Name>
+        <Description>Various functions for Teutonic Order</Description>
+        <FileName>Germany/Teutonic Order/Teutonic Order.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
@@ -1705,6 +1727,70 @@ Latest changes: see changelog file.</Description>
     <Content Include="Ethiopia\MonolithicChurch\3DModel\Lalibela Ground.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\BearWarrior.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\BearWarrior.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\BearWarrior.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\BearWarrior_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\JFD_GermansAtlas_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\JFD_GermansAtlas_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\JFD_GermansAtlas_32.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\JFD_GermansAtlas_45.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\JFD_GermansAtlas_64.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\JFD_GermansAtlas_80.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\JFD_SlaganzUnitFlag_32.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\Slaganz.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\Slaganz.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Slaganz\sv_Slaganz.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Teutonic Order\Teutonic Order.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Germany\Teutonic Order\Teutonic Order.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Morocco\Corsair\Corsair.lua">
       <SubType>Lua</SubType>
@@ -4556,9 +4642,12 @@ Latest changes: see changelog file.</Description>
     <Folder Include="!Lua" />
     <Folder Include="!Utils" />
     <Folder Include="!SharedAssets" />
+    <Folder Include="Germany\Teutonic Order" />
+    <Folder Include="Germany\Slaganz" />
     <Folder Include="Morocco\" />
     <Folder Include="Morocco\Corsair\" />
     <Folder Include="Morocco\Riad\" />
+    <Folder Include="Germany" />
     <Folder Include="Persia\Darius" />
     <Folder Include="Portugal\" />
     <Folder Include="Portugal\Cacadores\" />

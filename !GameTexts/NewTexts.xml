@@ -38,7 +38,22 @@
 				Often the site of intense philosophical and political discussion, the Agora have been immortalized as the proving ground of renowned philosophers, writers, storytellers, and orators. Disciplines such as Sophism, Skepticism, Cynicism and Stoicism can trace their roots back to the politicking and squabbles of the Grecian Agora.
 			</Text>
 		</Row>
-		
+		<!-- Alti Cur -->
+		<Row Tag="TXT_KEY_BUILDING_3UC_YURT">
+			<Text>Six-Horns Council</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_HELP">
+			<Text>Receive 25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]
+			Receive 50 [ICON_RESEARCH] Science and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State. A [ICON_GOLDEN_AGE] Golden Age begins whenever you successfully demand Tribute from another Major Civilization.[NEWLINE][NEWLINE]
+			Does not require any prerequisite building. Only the Huns may build it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_STRATEGY">
+			<Text>The Six-Horns Council is the Hunnic Unique Wonder, replacing the Ironworks. In addition to the normal bonuses of the Ironworks, the Six Horns council increases Science and Culture, and boosts Culture and Production from all Stables on empire. The wonder increases the bonuses to demanding tribute from minor City-States, and will trigger a Golden Age whenever a demand is successfully made against a rival Civilization.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_TEXT">
+			<Text>The Huns' origins remain shrouded in mystery, but one clue to their possible connection to the ancient scourge of China, the Xiongnu, is their rule by an Alti Cur, or Six-Horns Council. The Alti Cur were a small council of nobles, the most powerful men within the Hunnic empire besides the emperor himself. Each was seated according to their rank and standing with the emperor, with the Empreror's favorite seated to his immediate right, signifying the north and east.[NEWLINE][NEWLINE]
+			An emperor's legitimacy depended heavily on the tributes he could exact from the surrounding kingdoms. It is surmised that insufficient tributes from the Chinese and other client steppes tribes may have contributed to the decline and disappearance of the Xiongnu in East Asia, only for them to burst once more onto the world stage in eastern Europe.</Text>
+		</Row>
 		<!-- Armada -->
 		<!-- Created by adan_eslavo on 8/11/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA">
@@ -228,32 +243,6 @@
 			</Text>
 		</Row>
 		
-		<!-- Dhanurgraha -->
-		<!-- Created by adan_eslavo on 4/12/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_EPIC">
-			<Text>Epic</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_EPIC_HELP">
-			<Text>Unit gains [ICON_CULTURE] Culture and additional XP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. [ICON_CULTURE] Culture doubled [COLOR_POSITIVE_TEXT]on Barbarian Kills[ENDCOLOR].</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA">
-			<Text>Dhanurvidya</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA_HELP">
-			<Text>Unit gains [ICON_CULTURE] Culture and [ICON_PEACE] Faith [COLOR_POSITIVE_TEXT]on Promotion[ENDCOLOR].</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI">
-			<Text>Dhanurgraha</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_HELP">
-			<Text>Unique Ancient Era Unit.  Only the Indians may build it. Gains additional [ICON_CULTURE] Culture and experience for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled on barbarians.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_STRATEGY">
-			<Text>The Dhanurgraha is a powerful defense against early barbarians which helps India maintain its cultural and religious dominance in the early game. Seek out barbarians to kill for culture and faith, then turn on your neighbours if it suits you.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_TEXT">
-			<Text>Archery was the most highly revered and prized martial art of ancient India. Many of the culture heroes and gods of the Vedic texts describe archers of unparalleled skill, including Arjuna, Rama, Karna, and even Shiva, the greatest of the Hindu gods. Traditional Indian bows are described as long, even reaching the height of their users, but without the tremendous strength of the Welsh longbow.</Text>
-		</Row>
 		
 		<!-- Buffalo Pound -->
 		<!-- Created by adan_eslavo 4/11/2017 -->
@@ -273,7 +262,59 @@
 				Today, American buffalo have recovered, but their range has been greatly limited to a few national parks. Commercial farming and sport hunting continues, but the bison are unlikely to ever return to their historical numbers.
 			</Text>
 		</Row>
-
+		<!-- Chaebol -->		
+		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL">
+			<Text>Chaebol</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_HELP">
+			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 10%.[NEWLINE][NEWLINE]
+			+1 [ICON_GOLD] Gold and +2% [ICON_GREAT_PEOPLE] Great Person Points (GPP) for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]
+			+2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol in the Empire.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_STRATEGY">
+			<Text>The Chaebol is the unique Stock Exchange replacement for South Korea. In addition to the normal bonuses of a Stock Exchange, the Chaebol boosts the production of Factories in Cities where the Chaebol is built. Chaebol produce additional Gold and increase the production of Great People for every International Trade Route the Empire controls. In addition, every Chaebol increases the Gold, Culture and Science of every other Chaebol in the empire; the more you build, the more they produce.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_PEDIA">
+			<Text>Chaebol are powerful multi-national corporations originating in South Korea. Beginning as family businesses, they grew by recieving government investment and relief, and were able to industrialise South Korea's agricultural society. Although the Chaebol were signs of success during the Miracle of the Han River, financial crashes later in the 20th century led to many collapsing - an event that the Korean people thought impossible.[NEWLINE][NEWLINE]Chaebols continue to dominate the South Korean economy and social fabric, and some like Samsung and Hyundai have become household names worldwide. Today, Chaebol account for over 80% of South Korea's exports, and the largest Chaebol controls 17% of the nation's GDP.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE">
+			<Text>Double Movement on Coast</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE_HELP">
+			<Text>Double Movement on Coast.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DECK_SPIKES">
+			<Text>Deck Spikes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DECK_SPIKES_HELP">
+			<Text>+25% [ICON_STRENGTH] vs Melee Ships.</Text>
+		</Row>		
+		<!-- Chasqui -->		
+		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI">
+			<Text>Chasqui</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_HELP">
+			<Text>Unique replacement for the Scout. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15HP every turn in friendly territory.[NEWLINE]Receives the Altitude Training Promotion for free.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_STRATEGY">
+			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_TEXT">
+			<Text>The Chasquis were the messengers of the Inca empire. They were in charge of carrying the quipus, messages and gifts up to 240 km per day through the chasquis relay system, a sort of Pony Express for the horseless Inca. In addition to their physical fitness, the Chasquis were well-educated in order to be able to read and translate the khipus, the Incan knot-based writing system, to each other and higher authorities.[NEWLINE][NEWLINE]
+			Chasquis were dispatched along thousands of miles, taking advantage of the vast Inca system of purpose-built roads and rope bridges in the Andes of Peru and Ecuador. Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. Each Chasqui carried a pututu, a conch trumpet, which was blown by the chasqui as they neared a Tambo, signalling to a fresh chasqui that one runner was close, so that they could prepare to run.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_GOLD">
+			<Text>Khipu Runner</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_GOLD_HELP">
+			<Text>Receive Gold for revealing new tiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL">
+			<Text>Chasquiwasi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP">
+			<Text>Heals 15HP every turn in friendly territory, regardless of action.</Text>
+		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR">
@@ -309,6 +350,33 @@
 			<Text>
 				Gain Food and Production in the nearest coastal city whenever you kill an enemy unit, pillage an improvement, or plunder a trade route.
 			</Text>
+		</Row>
+		
+		<!-- Dhanurgraha -->
+		<!-- Created by adan_eslavo on 4/12/2017 -->
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_EPIC">
+			<Text>Epic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_EPIC_HELP">
+			<Text>Unit gains [ICON_CULTURE] Culture and additional XP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. [ICON_CULTURE] Culture doubled [COLOR_POSITIVE_TEXT]on Barbarian Kills[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA">
+			<Text>Dhanurvidya</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA_HELP">
+			<Text>Unit gains [ICON_CULTURE] Culture and [ICON_PEACE] Faith [COLOR_POSITIVE_TEXT]on Promotion[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI">
+			<Text>Dhanurgraha</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_HELP">
+			<Text>Unique Ancient Era Unit.  Only the Indians may build it. Gains additional [ICON_CULTURE] Culture and experience for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled on barbarians.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_STRATEGY">
+			<Text>The Dhanurgraha is a powerful defense against early barbarians which helps India maintain its cultural and religious dominance in the early game. Seek out barbarians to kill for culture and faith, then turn on your neighbours if it suits you.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_TEXT">
+			<Text>Archery was the most highly revered and prized martial art of ancient India. Many of the culture heroes and gods of the Vedic texts describe archers of unparalleled skill, including Arjuna, Rama, Karna, and even Shiva, the greatest of the Hindu gods. Traditional Indian bows are described as long, even reaching the height of their users, but without the tremendous strength of the Welsh longbow.</Text>
 		</Row>
 		
 		<!-- Dromon -->
@@ -893,7 +961,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE">
 			<Text>
-				Fast and Hard
+				Hard and Fast
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE_HELP">
@@ -901,6 +969,45 @@
 				+2 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack. Lost after unit upgrade.
 			</Text>
 		</Row>
+		
+		<!-- InDuna -->	
+		<Row Tag="TXT_KEY_PROMOTION_INDABA">
+			<Text>Indaba</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_INDABA_HELP">
+			<Text>When expended, grants 60XP to a stacked unit and 15XP to every adjacent unit.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL">
+			<Text>InDuna</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_STRATEGY">
+			<Text>The InDuna is a Zulu unique unit. May construct a Citadel. +15% Combat bonus to all Land units within 2 tiles. [NEWLINE][NEWLINE]Expending an InDuna gives 60XP to the unit that was stacked with it, and 15X for adjacent units.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_HELP">
+			<Text>
+				Unique Zulu Great General that grants a Combat Bonus to all nearby troops and experience when expended.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_TEXT">
+			<Text>Leadership was not a complicated affair for the Zulu military. An inDuna guided each regiment, and he in turn answered to senior izinDuna who controlled the corps grouping. Overall guidance of the host was furnished by elder izinDuna usually with many years of experience. One or more of these elder chiefs might accompany a big force on an important mission, but there was no single "field marshal" in supreme command of all Zulu forces. Regimental izinDuna, like the non-commissioned officers of today's army, and yesterday's Roman Centurions, were extremely important to morale and discipline. This was shown during the battle of Isandhlwana. Blanketed by a hail of British bullets, rockets and artillery, the advance of the Zulu faltered. Echoing from the mountain, however, were the shouted cadences and fiery exhortations of their regimental izinDuna, who reminded the warriors that their king did not send them to run away. Thus encouraged, the encircling regiments remained in place, maintaining continual pressure, until weakened British dispositions enabled the host to make a final surge forward.</Text>
+		</Row>		
+		
+		<!-- Iziko -->		
+		<Row Tag="TXT_KEY_BUILDING_IZIKO">
+			<Text>Iziko</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_IZIKO_TEXT">
+			<Text>An Iziko is a simple hearth used as a gathering place for Zulu communities. The fireplace is revered as a resource for food, warmth, dreams, and for communicating with ancestors. It is from these gatherings that a sense of community and identity was formed, and young Zulus could perform and bond.[NEWLINE][NEWLINE]
+			The fireplace is used metaphorically for the "cooking of songs" in isicathamiya stage performances, a traditional, yet somewhat modern offshoot of traditional Zulu music. Dreams were an essential part of communicating with ancestors and formed part of a deeply rooted Zulu religion. Some isicathamiya musicians claim some of their songs were created in the spiritual realm given to them by ancestors.[NEWLINE][NEWLINE]
+			"A person is a person because of other people"[NEWLINE]-Zulu proverb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_IZIKO_HELP">
+			<Text>+33% [ICON_GREAT_WRITER] Great Writer Rate in the City, and all Writers'' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE]+1 [ICON_CULTURE] Culture for every Great Work in City.[NEWLINE][NEWLINE]Whenever a unit gains a level, receive +5 [ICON_CULTURE] Culture in the City, scaling with Era.[NEWLINE]Nearby [ICON_RES_DYE] Dye: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILK] Silk: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_IZIKO_STRATEGY">
+			<Text>Unique Zulu replacement for the Amphitheater. Build . Also boosts the City''s Great Writer rate and the value of Writers'' Guilds, and the Culture of Great Works. Provides Culture in the City whenever a military unit gains a level.</Text>
+		</Row>		
 		<!-- Kampong -->
 		<!-- Created by pineappledan; incorporated by adan_eslavo on 24/11/2017 -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG">
@@ -1302,11 +1409,6 @@
 				+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE] Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 20 [ICON_RESEARCH] Science (or 100 for a Great Person purchase), scaling with era.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_ALERT_MADRASAH_SCIENCE">
-			<Text>
-				Making a [ICON_PEACE] Faith purchase has earned you {1_num} [ICON_RESEARCH] Science from your Madrasah in {2_Str}.
-			</Text>
-		</Row>
 		
 		<!-- Monitor -->
 		<!-- Created by Blue Ghost -->
@@ -1585,6 +1687,21 @@
 				War tactics were changed after the Iroquois' acquisition of firearms. The lethality of their new weapons put the Iroquois, never a highly populous group, in a precarious position. The tribes' custom of absorbing refugees and prisoners of war changed as fewer and fewer warriors survived clashes with European arms. Great armies walking with prominent chiefs and shamans were replaced with guerilla tactics, small bands of troops guided by commanders. 
 			</Text>
 		</Row>
+		
+		<!-- Qadi -->
+		<Row Tag="TXT_KEY_BUILDING_QADI_COURT">
+			<Text>Qadi Court</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_QADI_COURT_HELP">
+			<Text>Unique Classical Era Building which can be built in non-occupied cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City.[NEWLINE][NEWLINE]Provides [ICON_GOLD] Gold for every [ICON_CITIZEN] not of the City's majority religion. 10% of [ICON_PRODUCTION] Production in the City is converted to [ICON_CULTURE] Culture. Reduces [ICON_HAPPINESS_3] Religious Tension in the City. Only Songhai may build it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_QADI_COURT_STRATEGY">
+			<Text>The Qadi Court is a Songhai unique building that replaces the Courthouse. In addition to The normal bonuses of a Courthouse, the Qadi Court also yields [ICON_PEACE] Faith and reduces religious unrest in the city. Every citizen not following the city's majority religion provides extra Gold, and 10% of Production in the city is converted to Culture. The Qadi Court can be built in any City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_QADI_COURT_TEXT">
+			<Text>Criminal justice in Songhai was based mainly, if not entirely, on Islamic principles, especially during the rule of Askia Muhammad. The local qadis were tasked with maintaining order by following Sharia law, found in the precepts of the Qur'an and the hadiths. Kings usually did not judge a defendant, however, under special circumstances, such as acts of treason, they felt an obligation to do so and thus exert their authority. Results of a trial were announced by the "town crier" and punishment for most trivial crimes usually consisted of confiscation of merchandise or imprisonment.[NEWLINE][NEWLINE]
+			Askia Muhammad centralized the administration of the empire and established an efficient bureaucracy which was responsible for, among other things, tax collection and the administration of justice. Qadis worked at the local level and were positioned in important trading towns, such as Timbuktu and Djenne. The Qadi was appointed by the king and dealt with common-law misdemeanors according to Sharia law.</Text>
+		</Row>		
 		
 		<!-- Qizilbash -->
 		<!-- Created by adan_eslavo on 29/10/2017 -->
@@ -1939,6 +2056,55 @@
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_TEXT">
 			<Text>Shotel are dramatically curved double-edged swords used exclusively by the ancient Ethiopian Empire. Almost semicircular, the shotel could be used to hook shields, or even reach around them to strike an opponent. The sword could also be used to hook and unhorse a mounted soldier, bringing them to the ground. Warriors armed with Shotel were called 'Shotelai'. Elite corps of these Shotelai were employed by the armies of Amda Seyon I, comprising an elite force within his host.</Text>
 		</Row>
+
+		<!-- Slaganz -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ">
+			<Text>
+				Slaganz
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_TEXT">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_STRATEGY">
+			<Text>
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_HELP">
+			<Text>
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FUROR_TEUTONICUS">
+			<Text>
+				Furor Teutonicus
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FUROR_TEUTONICUS_HELP">
+			<Text>
+				+50% combat strength against Barbarians. 50% chance of converting Barbarians it kills.
+			</Text>
+		</Row>
+
+		<!-- Sofa -->		
+		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER">
+			<Text>Father of the Horse</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_HELP">
+			<Text>+15% [ICON_STRENGTH] Combat Strength for all Mounted Units within 2 tiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_3UC_SOFA">
+			<Text>Sofa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_3UC_SOFA_HELP">
+			<Text>Skirmisher Unit excelling at supporting your Cavalry. Only Songhai may build it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_3UC_SOFA_STRATEGY">
+			<Text>The Sofa is a Songhai unique unit, replacing the Crossbowman. It serves as an excellent support unit starting with the Medic I promotion and a 15% Damage increase to all Mounted units within 2 tiles. The Sofa has a slightly lower defensive strength, but is relatively cheap to train.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_3UC_SOFA_TEXT">
+			<Text>Sofa is a Mandinka term for slave soldiers who served in the army of the various Empires of West Africa. Originally, the Sofas were horse  grooms of the soldier nobility, the Farari, but their role slowly changed to become skirmishers and soldiers in their own right. Sofas were recruited from "jonow" (slaves) captured in battle or bought from afar. The institution of slavery in the Mali and Songhai Empires heavily rewarded loyalty, and jonow could rise to civil or military positions of prominence. Jonow became part of their master's clan, and were often freed after a certain amount of years. [NEWLINE][NEWLINE]Sofas were equipped with two quivers, and their bow was small by European standards, so sofas employed deadly poisons and fired in arcs to give their arrows strength.</Text>
+		</Row>		
 		
 		<!-- SPAD -->
 		<!-- Created by adan_eslavo on 11/11/2017 -->
@@ -1957,7 +2123,7 @@
 				Air superiority became a constant arms race against newer and better German designs and engines. By the end of the war, the SPAD VII's single .303 Vickers machine gun was outmatched by German fighters, which carried at least two machine guns. The heavier and faster SPAD XIII replaced the SPAD VII by late 1917, and would carry France to the end of the War. Though at times unreliable and hard to maneuver, the SPAD series would go down in history as the fastest and most powerful of WWI fighters, and continued to be used by the French as a training plane until it was retired in 1928.
 			</Text>
 		</Row>
-
+		
 		<!-- Standschützen -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN">
@@ -1980,7 +2146,71 @@
 				+2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally. +20% production toward land military units.[NEWLINE][NEWLINE]Increases city Defense Strength by 25 and Hit Points by 200. Military Units supplied by this City's population increased by 10%.
 			</Text>
 		</Row>
+		<!-- Tambo & Coca -->		
+		<Row Tag="TXT_KEY_BUILDING_TAMBO">
+			<Text>Tambo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TAMBO_HELP">
+			<Text>Granaries in the City produce +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]When a [ICON_INTERNATIONAL_TRADE] Land Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Land Trade Routes gain +50% Range and +3 [ICON_GOLD] Gold, Merchant Specialists in this City gain +1 [ICON_GOLD] Gold, and this City''s [ICON_CONNECTED] Connection to the [ICON_CAPITAL] Capital generates +20% [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_TRUFFLES] Truffles: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COTTON] Cotton: +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_FUR] Furs: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Units stationed in this city heal 5HP every turn, regardless of any actions taken.[NEWLINE][NEWLINE]City Receives a free [ICON_RES_COCA] Coca Luxury Resource.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TAMBO_STRATEGY">
+			<Text>The Tambo is the unique Caravansary replacement for the Inca. In addition to the normal bonuses of a Caravansary, the Tambo boosts production if the City also contains a Granary. On construction, the Tambo also grants the City 1 free copy of the [ICON_RES_COCA] Coca Luxury Resource. Units stationed in a city with a Tambo slowly heal every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TAMBO_TEXT">
+			<Text>A Tambo is an Incan military and administrative waystation. Found along roads across the Tawantinsuyu (Incan empire), Tambos typically contained lodgings for state personnel, garrisons, and the Incan messengers, the Chasqui. At a minimum,  Tambos would contain housing, cooking facilities, and storage silos called qullqas, which contained everything from food to building materials.[NEWLINE][NEWLINE]
+			Beyond taking care of various kinds of travelers, larger tambos would also contain facilities where various specialists, such as potters and weavers, would produce their goods. They could also served as administrative centers from which local lords would oversee the region. Additionally, coca production and exploitation was often carried within a safe distance of the Tambo, providing protection to the Incan coca monopoly.[NEWLINE][NEWLINE]
+			Tambos were frequently positioned for interregional contact and travel, as opposed to being positioned near large local villages. Historians suggest that the tambo system was a part of an "artificial urbanism" created by the Inca empire to enable cohesion and communication across the vast Incan empire.</Text>
+		</Row>
 		
+		<Row Tag="TXT_KEY_RESOURCE_COCA">
+			<Text>Coca</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_COCA_TEXT">
+			<Text>Coca is the leaf of any of four cultivated species of the family Erythroxylaceae native to western South America. The plant is famous for its various medicinal and nutritional uses, increasing alertness, dulling pain, supressing appetite, and treating altitude sickness. Traditionally, the leaves are chewed or brewed into a tea, and even made an impression on the Spanish for coca's ability to help people work harder, even through exhaustion or hunger.[NEWLINE][NEWLINE]Coca is known throughout the world for its psychoactive alkaloid, cocaine. The alkaloid content of coca leaves is relatively low, requiring a large number of leaves for a single batch of cocaine. Coca leaf extract began being used in Coca-Cola products in 1885, but cocaine was completely eliminated from the products in or around 1903.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COCA_MILITARY">
+			<Text>Coca Monopoly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COCA_MILITARY_HELP">
+			<Text>+10% [ICON_STRENGTH] and double movement on Mountains.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COCA_WORKER">
+			<Text>Coca Monopoly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COCA_WORKER_HELP">
+			<Text>+15% Improvement Speed.</Text>
+		</Row>
+		<!-- Tarkhan -->		
+		<Row Tag="TXT_KEY_PROMOTION_HORSE_ARCHER">
+			<Text>Horse Archer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HORSE_ARCHER_HELP">
+			<Text>If all moves are used without attacking, attacks a valid target automatically.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MIGRATION">
+			<Text>Migration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MIGRATION_HELP">
+			<Text>+1 Movement to Workers and Settlers that begin the turn stacked with this Unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SACKER">
+			<Text>Sacker</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SACKER_HELP">
+			<Text>+20 [ICON_GOLD] Gold and +10 [ICON_CULTURE] Culture every turn and 2x Razing Speed if stationed in a City being Razed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY">
+			<Text>Tarkhan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_HELP">
+			<Text>Fearsome mounted warrior who also helps build the Hunnic economy. Only the Huns may build it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_STRATEGY">
+			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Stationing this unit inside a city you are razing provides a large sum of Culture and Gold, and hastens the destruction of the City.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_TEXT">
+			<Text>Tarkhan were nobles and high-ranking commanders within the armies of the Xiongnu and Hunnic empires. The term spread throughout the languages and peoples of the steppes, appearing as a title within Turkic, Mongol and Iranian cultures, even becoming a common boys name. Analogous to modern day generals, the Tarkhan were the protectors and conquerors of the Hunnic empire, spurring their civilization forward to greatness.</Text>
+		</Row>
 		<!-- Tersane -->
 		<!-- Created by adan_eslavo 1/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE">
@@ -1997,6 +2227,25 @@
 				The Turkish word 'Tersane' is derived from the Venetian 'darsane', from which the English word 'arsenal' is also derived. Though never at the forefront of shipbuilding technology, the Ottomans enjoyed over a century of naval dominance in the Mediterranean following their conquest of Constantinople in 1453. The largest Tersane, constructed at the Golden Horn across from Constantinople, housed over 160 docks, drydocks, storehouses and supply depots, making it one of the largest centers of trade, commerce and industry in the Mediterranean. [NEWLINE][NEWLINE]
 				Ottoman naval power was maintained through its tremendous shipbuilding capacity, as well as its allegiances to the Barbary corsairs of North Africa. This pre-eminence was finally ended at the battle of Lepanto, where a combined Spanish and Venetian armada delivered a crushing defeat to the Ottoman's, capturing or destroying more than two thirds of the Ottoman's navy. Their response was to build 250 new vessels within six months. [NEWLINE][NEWLINE]
 				"You come to see how we bear our misfortune. But I would have you know the difference between your loss and ours. In wresting Cyprus from you, we deprived you of an arm; in defeating our fleet, you have only shaved our beard. [NEWLINE] Grand Vizier Mehmed Sokullu, on the defeat at Lepanto, and the capture of Cyprus, which the Ottomans had taken earlier the same year
+			</Text>
+		</Row>
+
+		<!-- Teutonic Order -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER">
+			<Text>
+				Teutonic Order
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_TEXT">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_STRATEGY">
+			<Text>
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_HELP">
+			<Text>
 			</Text>
 		</Row>
 
@@ -2191,10 +2440,130 @@
 		</Row>
 	</Language_en_US>
 	<IconTextureAtlases>
+		<!-- Eagle Icons -->		
 		<Row>
 			<Atlas>EAGLE_FLAG</Atlas>
 			<IconSize>32</IconSize>
 			<Filename>eagleicon.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>YURT_ICON_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>yurt256.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<!-- Alti Cur Icons -->
+		<Row>
+			<Atlas>YURT_ICON_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>yurt128.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>YURT_ICON_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>yurt64.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>YURT_ICON_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>yurt45.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+
+		<!-- Sofa Icons -->		
+		<Row>
+			<Atlas>UNIT_ALPHA_SOFA_ATLAS</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>MaliUnitAlphaAtlas.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+
+		<Row>
+			<Atlas>SOFA_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>SofaIcon256.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SOFA_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>SofaIcon128.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SOFA_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>SofaIcon080.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SOFA_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>SofaIcon064.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SOFA_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>SofaIcon045.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		
+		<!-- InDuna Icons -->			
+		<Row>
+			<Atlas>ZULU3_GENERAL_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>3ZuluGeneral256.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>ZULU3_GENERAL_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>3ZuluGeneral128.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>ZULU3_GENERAL_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>3ZuluGeneral80.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>ZULU3_GENERAL_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>3ZuluGeneral64.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>ZULU3_GENERAL_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>3ZuluGeneral45.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+
+		<Row>
+			<Atlas>UNIT_ALPHA_3IZU_ATLAS</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>3IzuUnitAlphaAtlas.dds</Filename>
 			<IconsPerRow>1</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>

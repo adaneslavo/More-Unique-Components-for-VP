@@ -1,3 +1,6 @@
+include("FLuaVector.lua")
+include("InstanceManager")
+
 local iBuilding = GameInfoTypes.BUILDING_VP_EXAMINATION_HALL
 local iDummy = GameInfoTypes.BUILDING_VP_EXAMINATION_HALL_DUMMY
 --[[
@@ -21,12 +24,12 @@ end
 print("Detected GPs", #tGPs) -- debug
 
 function WLTKDGreatPersonBonus(iPlayer)
-	local player = Players[iPlayer]
-	for city in player:Cities() do
-		if city:IsHasBuilding(iBuilding) and city:GetWeLoveTheKingDayCounter() > 0 then
-			city:SetNumRealBuilding(iDummy, 1)
+	local pPlayer = Players[iPlayer]
+	for pCity in pPlayer:Cities() do
+		if pCity:IsHasBuilding(iBuilding) and pCity:GetWeLoveTheKingDayCounter() > 0 then
+			pCity:SetNumRealBuilding(iDummy, 1)
 		else
-			city:SetNumRealBuilding(iDummy, 0)
+			pCity:SetNumRealBuilding(iDummy, 0)
 		end
 	end
 end
@@ -37,14 +40,15 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 	if iNew > iOld and iNew > 1 then
 		local pPlot = Map.GetPlot(iX, iY)
 		if pPlot then
-			local city = pPlot:GetPlotCity()
-			if city and city:IsHasBuilding(iBuilding) then
-				local iPlayer = city:GetOwner()
-				local player = Players[iPlayer]
-				local iEraModifier = math.max(player:GetCurrentEra(), 1)
+			local pCity = pPlot:GetPlotCity()
+			if pCity and pCity:IsHasBuilding(iBuilding) then
+				local iPlayer = pCity:GetOwner()
+				local pPlayer = Players[iPlayer]
+				local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 				
 				local iGPP = 7.5 * iEraModifier * iGameSpeedModifier
 				iGPP = math.floor(iGPP)
+				
 				local tGP = tGPs[ math.random( #tGPs ) ] -- pick random GP
 				--[[
 				local rand = math.random(7)
@@ -74,11 +78,21 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 				end
 				--]]
 				--print("Civil Examinations", tGP.GPType, tGP.GPStr, iGPP) -- debug
-				city:ChangeSpecialistGreatPersonProgressTimes100(tGP.GPType, iGPP * 100)
-				player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, Locale.ConvertTextKey("TXT_KEY_ALERT_EXAMINATIONS", iGPP, tGP.GPStr, city:GetName()), 'Civil Examinations')
+				pCity:ChangeSpecialistGreatPersonProgressTimes100(tGP.GPType, iGPP * 100)
+				
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+				
+					Events.AddPopupTextEvent(vCityPosition, "[COLOR_GREAT_PEOPLE_STORED]+"..iGPP.."[ICON_GREAT_PEOPLE][ENDCOLOR]", 1)
+					pPlayer:AddNotification(0, 'New [ICON_CITIZEN] Citizen appeared in '..pCity:GetName()..'. City gained '..iGPP..' [ICON_GREAT_PEOPLE] Great Person Points towards '..tGP.GPStr..'.', 'Citizen born in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
+				end
 			end
 		end
 	end
+end
+
+function PositionCalculator(i1, i2)
+	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
 GameEvents.PlayerDoTurn.Add(WLTKDGreatPersonBonus)

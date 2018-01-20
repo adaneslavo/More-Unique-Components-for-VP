@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/21/2015 8:36:53 PM -->
+<GameData>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_3UC_YURT">
+			<Text>Six-Horns Council</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_HELP">
+			<Text>Receive 25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]
+Receive 50 [ICON_RESEARCH] Science and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State. A [ICON_GOLDEN_AGE] Golden Age begins whenever you successfully demand Tribute from another Major Civilization.[NEWLINE][NEWLINE]
+Does not require any prerequisite building. Only the Huns may build it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_STRATEGY">
+			<Text>The Six-Horns Council is the Hunnic Unique Wonder, replacing the Ironworks. In addition to the normal bonuses of the Ironworks, the Six Horns council increases Science and Culture, and boosts Culture and Production from all Stables on empire. The wonder increases the bonuses to demanding tribute from minor City-States, and will trigger a Golden Age whenever a demand is successfully made against a rival Civilization.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_TEXT">
+			<Text>The Huns' origins remain shrouded in mystery, but one clue to their possible connection to the ancient scourge of China, the Xiongnu, is their rule by an Alti Cur, or Six-Horns Council. The Alti Cur were a small council of nobles, the most powerful men within the Hunnic empire besides the emperor himself. Each was seated according to their rank and standing with the emperor, with the Empreror's favorite seated to his immediate right, signifying the north and east.[NEWLINE][NEWLINE]
+			An emperor's legitimacy depended heavily on the tributes he could exact from the surrounding kingdoms. It is surmised that insufficient tributes from the Chinese and other client steppes tribes may have contributed to the decline and disappearance of the Xiongnu in East Asia, only for them to burst once more onto the world stage in eastern Europe.</Text>
+		</Row>
+	</Language_en_US>
+
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>YURT_ICON_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>yurt256.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>YURT_ICON_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>yurt128.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>YURT_ICON_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>yurt64.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>YURT_ICON_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>yurt45.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
+</GameData>

@@ -2,14 +2,11 @@
 -- Author: adan_eslavo
 -- DateCreated: 8/01/2018
 --------------------------------------------------------------
-include("FLuaVector.lua")
-include("InstanceManager")
-
 function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 
 	if pPlayer:GetName() == "Ramesses II" then
-		if iBuilding == GameInfoTypes.BUILDING_VP_NILOMETER then
+		if iBuilding == GameInfoTypes.BUILDING_EGYPT_NILOMETER then
 			local pCity = pPlayer:GetCityByID(iCity)
 			local iFlaxCount = 0
 
@@ -26,9 +23,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 										iFlaxCount = iFlaxCount + 1
 
 										if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-											local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
-				
-											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 										end
 									
 										if iFlaxCount == 2 then
@@ -56,9 +51,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 											iFlaxCount = iFlaxCount + 1
 
 											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-												local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
-					
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+												pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 											end
 									
 											if iFlaxCount == 2 then
@@ -87,9 +80,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 											iFlaxCount = iFlaxCount + 1
 
 											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-												local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
-					
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+												pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 											end
 									
 											if iFlaxCount == 2 then
@@ -118,9 +109,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 											iFlaxCount = iFlaxCount + 1
 
 											if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-												local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
-					
-												Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+												pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 											end
 									
 											if iFlaxCount == 2 then
@@ -148,9 +137,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 										iFlaxCount = iFlaxCount + 1
 
 										if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-											local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
-				
-											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 										end
 									
 										if iFlaxCount == 2 then
@@ -177,9 +164,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 										iFlaxCount = iFlaxCount + 1
 
 										if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-											local vPlotPosition = PositionCalculator(pSpecificPlot:GetX(), pSpecificPlot:GetY())
-				
-											Events.AddPopupTextEvent(vPlotPosition, "[COLOR_MENU_BLUE]Flax from Nilometer[ENDCOLOR]", 1)
+											pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and created new source of [ICON_RES_FLAX] Flax.', 'New source of Flax in '..pCity:GetName(), pSpecificPlot:GetX(), pSpecificPlot:GetY())
 										end
 									
 										if iFlaxCount == 2 then
@@ -194,10 +179,6 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 			end
 		end
 	end
-end
-
-function PositionCalculator(i1, i2)
-	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
 GameEvents.CityConstructed.Add(NilometerPlaceFlax)

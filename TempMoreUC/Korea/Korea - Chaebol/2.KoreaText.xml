@@ -1,0 +1,70 @@
+
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CONFIRM_C15_PURCHASE_SKOREA">
+			<Text>Are you sure you want to make this purchase?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_C15_SKOREA_CHAEBOL_PURCHASE">
+			<Text>Purchase a Chaebol ({1_Gold} [ICON_GOLD])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_C15_SKOREA_CHAEBOL_PURCHASE_TT">
+			<Text>Purchase a Chaebol in this city for {1_Gold} [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_C15_SKOREA_CHAEBOL_PURCHASE_DISABLED">
+			<Text>[COLOR_NEGATIVE_TEXT]Purchase a Chaebol ({1_Gold} [ICON_GOLD]])[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_C15_SKOREA_CHAEBOL_PURCHASE_DISABLED_TT">
+			<Text>[COLOR_NEGATIVE_TEXT]Purchase a Chaebol in this city for {1_Gold} [ICON_GOLD] Gold.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_C15_SKOREA_CHAEBOL_ROUTE_PURCHASE">
+			<Text>Invest in the Chaebol ({1_Gold} [ICON_GOLD])</Text>
+		</Row>
+		<Row Tag="TXT_KEY_C15_SKOREA_CHAEBOL_ROUTE_PURCHASE_TT">
+			<Text>Invest in the Chaebol for {1_Gold} [ICON_GOLD] Gold, increasing the [ICON_INTERNATIONAL_TRADE] Trade Route bonus from worked Resources.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_C15_SKOREA_CHAEBOL_ROUTE_PURCHASE_DISABLED">
+			<Text>[COLOR_NEGATIVE_TEXT]Invest in the Chaebol ({1_Gold} [ICON_GOLD])[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_C15_SKOREA_CHAEBOL_ROUTE_PURCHASE_DISABLED_TT">
+			<Text>[COLOR_NEGATIVE_TEXT]Invest in the Chaebol for {1_Gold} [ICON_GOLD] Gold, increasing the [ICON_INTERNATIONAL_TRADE] Trade Route bonus from worked Resources.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_C15_SKOREA_MCIS_DESC">
+			<Text>Secondary Producer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_C15_SKOREA_MCIS_HELP">
+			<Text>Outgoing [ICON_INTERNATIONAL_TRADE] Trade Routes are producing +{1_Gold} [ICON_GOLD] Gold thanks to our Chaebol.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_RESOURCE">
+			<Text>Resource Route Gold Dummy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_ROUTE_GOLD">
+			<Text>UA counter or summin</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL">
+			<Text>Chaebol</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_HELP">
+			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 10%.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +2% [ICON_GREAT_PEOPLE] Great Person Points for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol in the Empire.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_STRATEGY">
+			<Text>The Chaebol is the unique Stock Exchange replacement for South Korea. In addition to the normal bonuses of a Stock Exchange, the Chaebol boosts the production of Factories in Cities where the Chaebol is built. Chaebol produce additional Gold and increase the production of Great People for every International Trade Route the Empire controls. In addition, every Chaebol increases the Gold, Culture and Science of every other Chaebol in the empire; the more you build, the more they produce.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_PEDIA">
+			<Text>Chaebol are powerful multi-national corporations originating in South Korea. Beginning as family businesses, they grew by recieving government investment and relief, and were able to industrialise South Korea's agricultural society. Although the Chaebol were signs of success during the Miracle of the Han River, financial crashes later in the 20th century led to many collapsing - an event that the Korean people thought impossible.[NEWLINE][NEWLINE]Chaebols continue to dominate the South Korean economy and social fabric, and some like Samsung and Hyundai have become household names worldwide. Today, Chaebol account for over 80% of South Korea's exports, and the largest Chaebol controls 17% of the nation's GDP.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE">
+			<Text>Double Movement on Coast</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE_HELP">
+			<Text>Double Movement on Coast.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DECK_SPIKES">
+			<Text>Deck Spikes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DECK_SPIKES_HELP">
+			<Text>+25% [ICON_STRENGTH] vs Melee Ships.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
+	

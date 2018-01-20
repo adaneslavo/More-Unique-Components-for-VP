@@ -2,17 +2,6 @@
 -- Author: adan_eslavo
 -- DateCreated: 29/10/2017
 --------------------------------------------------------------
-
--- check XP scaling
-local bXPScaling = true -- default VP
-for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do bXPScaling = (tValue == 1) end
-print("XP scaling is", bXPScaling)
-
--- acquire game speed modifier
-local fGameSpeedModifier = 1.0 -- it is float, so use 'f' at begining
-if bXPScaling then fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100 end
-print("Game speed modifier is", fGameSpeedModifier)
-
 function PillagedTileBonusStand(iPlayer)
 	local pPlayer = Players[iPlayer]
 
@@ -63,7 +52,7 @@ function OnPillageBonus(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPilla
 				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, true)
 			end
 			
-			pUnit:SetExperience(pUnit:GetExperience() + math.floor(5 * fGameSpeedModifier))
+			pUnit:ChangeExperience(5)
 		end
 	end
 end

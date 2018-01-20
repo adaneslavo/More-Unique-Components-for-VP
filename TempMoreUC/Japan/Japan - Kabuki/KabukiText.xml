@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/20/2018 2:15:10 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI">
+			<Text>
+				Kabuki Theater
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_TEXT">
+			<Text>
+				Kabuki is a classical Japanese dance-drama. Kabuki theatre is known for the stylization of its drama and for the elaborate make-up worn by some of its performers. The history of kabuki began in 1603 when Izumo no Okuni, possibly a miko of Izumo-taisha, began performing a new style of dance drama in the dry riverbeds of Kyoto. Despite huge cultural changes since then, it remains the most popular of the traditional styles of Japanese drama.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_STRATEGY">
+			<Text>
+				The Kabuki is the unique Japanese replacement for the Opera House. In addition to the bonuses of an Opera House, it provides more Culture than the Opera House and boosts the effect of all [ICON_CULTURE] Cultural Specialists in the City. Furthermore, it does not require an Amphitheater to have been constructed.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_HELP">
+			<Text>
+				Unique Japanese replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN] Musician, [ICON_GREAT_ARTIST] Artist, and [ICON_GREAT_WRITER] Writer Specialists in the City produce +2 [ICON_GOLD] Gold and 33% more [ICON_GREAT_PEOPLE] Great Person Points.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

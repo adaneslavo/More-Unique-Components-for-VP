@@ -16,7 +16,7 @@ function Pogost(iPlayer, iCity, iBuilding)
 			pCity:SetNumRealBuilding(iBuilding2, 1)
 			
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-				pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 2 in one of his cities.', 'Building upgrade', pCity:GetX(), pCity:GetY())
+				pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 2 in '..pCity:GetName()..'.', 'Pogost upgrade in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
 			end
 		end
 			
@@ -24,7 +24,7 @@ function Pogost(iPlayer, iCity, iBuilding)
 			pCity:SetNumRealBuilding(iBuilding3, 1)
 			
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-				pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 3 in one of his cities.', 'Building upgrade', pCity:GetX(), pCity:GetY())
+				pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 3 in '..pCity:GetName()..'.', 'Pogost upgrade in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
 			end
 		end
 	end
@@ -42,7 +42,7 @@ function OnTechResearched(iTeam, iTech)
 				pCity:SetNumRealBuilding(iBuilding2, 1)
 				
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 2 in one of his cities.', 'Building upgrade', pCity:GetX(), pCity:GetY())
+					pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 2 in '..pCity:GetName()..'.', 'Pogost upgrade in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
 				end
 			end
 		end
@@ -58,7 +58,7 @@ function OnTechResearched(iTeam, iTech)
 				pCity:SetNumRealBuilding(iBuilding3, 1)
 				
 				if pPlayer:IsHuman() then
-					pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 3 in one of his cities.', 'Building upgrade', pCity:GetX(), pCity:GetY())
+					pPlayer:AddNotification(147, 'Player received free Pogost upgrade to Stage 3 in '..pCity:GetName()..'.', 'Pogost upgrade in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
 				end
 			end
 		end

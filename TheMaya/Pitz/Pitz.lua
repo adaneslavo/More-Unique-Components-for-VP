@@ -32,17 +32,17 @@ function KatunAhawUpgrade(iPlayer)
 				if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW) then
 					if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1) then
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_2, true)
-						pUnit:SetExperience(pUnit:GetExperience() + 10)
+						pUnit:ChangeExperience(10)
 					elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_2) then
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_3, true)
-						pUnit:SetExperience(pUnit:GetExperience() + 10)
+						pUnit:ChangeExperience(10)
 					elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_3) then
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_4, true)
-						pUnit:SetExperience(pUnit:GetExperience() + 15)
+						pUnit:ChangeExperience(15)
 					elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_4) then
 					else
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1, true)
-						pUnit:SetExperience(pUnit:GetExperience() + 5)
+						pUnit:ChangeExperience(5)
 					end
 				end
 			end
@@ -76,13 +76,14 @@ function KatunAhawUpgrade(iPlayer)
 							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
-							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
+							LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)
 	
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE][ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
+								pPlayer:AddNotification(0, 'New Baktun:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange2..' [ICON_PEACE] Faith', 'Bonus Yields in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
 							end
 						end
 					end
@@ -116,13 +117,14 @@ function KatunAhawUpgrade(iPlayer)
 							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
-							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
+							LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)
 	
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE][ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
+								pPlayer:AddNotification(0, 'New Baktun:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange2..' [ICON_PEACE] Faith', 'Bonus Yields in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
 							end
 						end
 					end
@@ -155,13 +157,14 @@ function KatunAhawUpgrade(iPlayer)
 							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
-							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
+							LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)
 	
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE][ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
+								pPlayer:AddNotification(0, 'New Baktun:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange2..' [ICON_PEACE] Faith', 'Bonus Yields in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
 							end
 						end
 					end
@@ -194,13 +197,14 @@ function KatunAhawUpgrade(iPlayer)
 							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
-							Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iChange1, iPlayer)
+							LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)
 	
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 								local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE] from B'ak'tun[ENDCOLOR]", 1)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH] from B'ak'tun[ENDCOLOR]", 1.5)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE][ENDCOLOR]", 1)
+								Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
+								pPlayer:AddNotification(0, 'New Baktun:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange2..' [ICON_PEACE] Faith', 'Bonus Yields in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
 							end
 						end
 					end

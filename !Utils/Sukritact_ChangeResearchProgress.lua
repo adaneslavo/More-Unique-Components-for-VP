@@ -45,11 +45,11 @@ function ScienceManager(iPlayer)
 	if iStored > iCanBeAdded then
 		pTeamTechs:ChangeResearchProgress(iTech, iCanBeAdded, pPlayer:GetID())
 		save(pPlayer, "iStored", iStored - iCanBeAdded)
-		print("Added: " .. iCanBeAdded .. ", Remaining: " .. iStored - iCanBeAdded)
+		--print("Added: " .. iCanBeAdded .. ", Remaining: " .. iStored - iCanBeAdded)
 	else
 		pTeamTechs:ChangeResearchProgress(iTech, iStored, pPlayer:GetID())
 		save(pPlayer, "iStored", 0)
-		print("Added: " .. iStored .. ", Remaining: " .. 0)
+		--print("Added: " .. iStored .. ", Remaining: " .. 0)
 	end
 end
 
