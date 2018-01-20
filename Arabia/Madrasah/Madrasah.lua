@@ -26,7 +26,8 @@ function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-			Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.."[ICON_RESEARCH] Madrasah[ENDCOLOR]", 1)
+			Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.."[ICON_RESEARCH][ENDCOLOR]", 1)
+			pPlayer:AddNotification(0, '[ICON_PEACE] Faith purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iScience..' [ICON_RESEARCH] Science', 'Bonus Yields in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
 		end
 
 		LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iScience)
@@ -43,14 +44,11 @@ function MadrasahScienceBuilding(iPlayer, iCity, iBuilding, bGold, bFaith)
 
 		local iScience = math.floor(10 * iEraModifier * iGameSpeedModifier)
 		
-		if iPlayer == Game:GetActivePlayer() then
-			Events.GameplayAlertMessage(Locale.ConvertTextKey("TXT_KEY_ALERT_MADRASAH_SCIENCE", iScience, pCity:GetName()))
-		end
-
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
-			Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.."[ICON_RESEARCH] Madrasah[ENDCOLOR]", 1)
+			Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.."[ICON_RESEARCH][ENDCOLOR]", 1)
+			pPlayer:AddNotification(0, '[ICON_PEACE] Faith purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iScience..' [ICON_RESEARCH] Science', 'Bonus Yields in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
 		end
 
 		LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iScience)

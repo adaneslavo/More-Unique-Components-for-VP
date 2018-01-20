@@ -17,9 +17,7 @@ function HippodromeBuilt(iPlayer, iCity, iBuilding)
 				pCity:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 				
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-						
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]"..iWLTKDLength.."-turn [ICON_HAPPINESS_1] WLTKD Hippodrome[ENDCOLOR]", 1)
+					pPlayer:AddNotification(0, 'City of [COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR] constructed Hippodrome. '..iWLTKDLength..'-turn WLTKD started.', 'Hippodrome constructed in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
 				end
 			end
 		end
@@ -31,22 +29,22 @@ function HippodromeHooliganism(eTeam, eEra, bFirst)
 		if pPlayer:IsEverAlive() then
 			if pPlayer:GetTeam() == eTeam then
 				if pPlayer:GetName() == "Theodora" then
-					if not pPlayer:IsAnarchy() then
-						local pCapital = pPlayer:GetCapitalCity()
-						local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
-						local iWLTKDLength = math.floor(10 * iGameSpeedModifier) + 1
+					local pCapital = pPlayer:GetCapitalCity()
+					
+					if pCapital:IsHasBuilding(GameInfoTypes.BUILDING_BYZANTIUM_HIPPODROME) then
+						if not pPlayer:IsAnarchy() then
+							local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
+							local iWLTKDLength = math.floor(10 * iGameSpeedModifier) + 1
 						
-						pPlayer:ChangeAnarchyNumTurns(2)
-						pCapital:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
+							pPlayer:ChangeAnarchyNumTurns(2)
+							pCapital:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 						
-						if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-							local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-							
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)							
-							Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]"..iWLTKDLength.."-turn [ICON_HAPPINESS_1] WLTKD Hippodrome[ENDCOLOR]", 1)
+							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+								pPlayer:AddNotification(0, 'New Era started. Your Capital falls into 1 turn of [ICON_RESISTANCE] Resistance, after which your [ICON_CITIZEN] Citizens will [ICON_HAPPINESS_1] love their king for '..(iWLTKDLength - 1)..' turns.', 'Hooliganism in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())
+							end
+						
+							break
 						end
-						
-						break
 					end
 				end
 			end

@@ -39,16 +39,15 @@ function HolkansGoodyHuts(iPlayer, iUnit, eGoody, bPick)
 			end
 
 			local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
-			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 			
-			local iResearchBonus = math.floor(10 * iEraModifier * iGameSpeedModifier)
+			local iResearchBonus = math.floor(10 * iGameSpeedModifier)
 			
-			Teams[pPlayer:GetTeam()]:GetTeamTechs():ChangeResearchProgress(pPlayer:GetCurrentResearch(), iResearchBonus, iPlayer)
+			LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iResearchBonus)
 
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+"..iResearchBonus.." [ICON_RESEARCH] Ancient Ruins[ENDCOLOR]", 2)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+"..iResearchBonus.." [ICON_RESEARCH] Lost Codices[ENDCOLOR]", 2)
 			end
 		end
 	end
