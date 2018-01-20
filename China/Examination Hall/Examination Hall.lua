@@ -18,7 +18,7 @@ for sp in GameInfo.Specialists() do
 	end
 end
 --for k,v in pairs(tGPs) do print(k, v.GPType, v.GPStr) end -- debug
---print("Num GPs is", #tGPs) -- debug
+print("Detected GPs", #tGPs) -- debug
 
 function WLTKDGreatPersonBonus(iPlayer)
 	local player = Players[iPlayer]
@@ -73,6 +73,7 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 					GPStr = "Great Diplomat"
 				end
 				--]]
+				--print("Civil Examinations", tGP.GPType, tGP.GPStr, iGPP) -- debug
 				city:ChangeSpecialistGreatPersonProgressTimes100(tGP.GPType, iGPP * 100)
 				player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, Locale.ConvertTextKey("TXT_KEY_ALERT_EXAMINATIONS", iGPP, tGP.GPStr, city:GetName()), 'Civil Examinations')
 			end
