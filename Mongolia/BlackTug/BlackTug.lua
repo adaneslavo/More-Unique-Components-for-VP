@@ -8,16 +8,8 @@ function PillagedTileBonusStand(iPlayer)
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MINGGHAN) then
 			local pPlot = Map.GetPlot(pUnit:GetX(), pUnit:GetY())
-				
-			if pPlot:IsImprovementPillaged() then
-				if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE) == false then
-					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, true)
-				end
-			else
-				if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE) then
-					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, false)
-				end
-			end
+			
+			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, pPlot:IsImprovementPillaged())
 		end
 	end
 end
@@ -28,16 +20,8 @@ function PillagedTileBonusMove(iPlayer, iUnit, iX, iY)
 
 	if pUnit and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MINGGHAN) then
 		local pPlot = Map.GetPlot(iX, iY)
-				
-		if pPlot:IsImprovementPillaged() then
-			if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE) == false then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, true)
-			end
-		else
-			if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE) then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, false)
-			end
-		end
+		
+		pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, pPlot:IsImprovementPillaged())
 	end
 end
 
@@ -46,12 +30,9 @@ function OnPillageBonus(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPilla
 		local pPlot = Map.GetPlot(iX, iY)
 		local pUnit = pPlot:GetUnit(0)
 		local pPlayer = Players[pUnit:GetOwner()]
-
+		
 		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MINGGHAN) then
-			if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE) == false then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, true)
-			end
-			
+			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, true)
 			pUnit:ChangeExperience(5)
 		end
 	end

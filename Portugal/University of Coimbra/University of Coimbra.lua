@@ -5,9 +5,7 @@ function CoimbraBuiltGrantPromotion(iPlayer, iCity, iBuilding)
 	local pCity = pPlayer:GetCityByID(iCity)
 	if iBuilding == buildingCoimbraID then
 		for unit in pPlayer:Units() do
-			if unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED then
-				unit:SetHasPromotion(GameInfoTypes.PROMOTION_AGE_OF_DISCOVERY, true)
-			end
+			unit:SetHasPromotion(GameInfoTypes.PROMOTION_AGE_OF_DISCOVERY, (unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED))
 		end
 	end
 end
@@ -17,9 +15,7 @@ function CoimbraUnitCheckGrantPromotion(iPlayer, iCity, iUnit)
 	local unit = player:GetUnitByID(iUnit)
 	if unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED then
 		for city in player:Cities() do
-			if city:IsHasBuilding(buildingCoimbraID) then
-				unit:SetHasPromotion(GameInfoTypes.PROMOTION_AGE_OF_DISCOVERY, true)
-			end
+			unit:SetHasPromotion(GameInfoTypes.PROMOTION_AGE_OF_DISCOVERY, city:IsHasBuilding(buildingCoimbraID))
 		end
 	end
 end

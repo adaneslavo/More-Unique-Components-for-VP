@@ -18,15 +18,7 @@ function VikingsExplorationEmbarkation(playerID)
 				end
 			end
 			
-			if sameTile then
-				if not unit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN"]) then
-					unit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN"], true)
-				end
-			else
-				if unit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN"]) and plot:GetTerrainType() ~= GameInfoTypes.TERRAIN_OCEAN then
-					unit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN"], false)
-				end
-			end
+			unit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN"], sameTile)
 		end
 	end
 end

@@ -14,19 +14,9 @@ function CheckLandwehrMove(iPlayer, iUnit, iX, iY)
 	
 		if pPlot ~= nil then
 			local iOwner = pPlot:GetOwner()
-
-			if iOwner >= GameDefines.MAX_MAJOR_CIVS and iOwner <= GameDefines.MAX_CIV_PLAYERS then
-				local pOwner = Players[iOwner]
-
-				if pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 1 then
-					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, true)
-
-				else
-					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, false)
-				end
-			else
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, false)
-			end
+			local pOwner = Players[iOwner]
+			
+			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, (iOwner >= GameDefines.MAX_MAJOR_CIVS and iOwner <= GameDefines.MAX_CIV_PLAYERS and pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 1))
 		end
 	end
 end
@@ -40,19 +30,9 @@ function CheckLandwehrCreate(iPlayer, iUnit, iUnitType, iX, iY)
 	
 		if pPlot ~= nil then
 			local iOwner = pPlot:GetOwner()
-
-			if iOwner >= GameDefines.MAX_MAJOR_CIVS and iOwner <= GameDefines.MAX_CIV_PLAYERS then
-				local pOwner = Players[iOwner]
-
-				if pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 1 then
-					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, true)
-
-				else
-					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, false)
-				end
-			else
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, false)
-			end
+			local pOwner = Players[iOwner]
+			
+			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, (iOwner >= GameDefines.MAX_MAJOR_CIVS and iOwner <= GameDefines.MAX_CIV_PLAYERS and pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 1))
 		end
 	end
 end
@@ -66,19 +46,9 @@ function CheckLandwehrBuild(iPlayer, iCity, iUnit)
 	
 		if pPlot ~= nil then
 			local iOwner = pPlot:GetOwner()
-
-			if iOwner >= GameDefines.MAX_MAJOR_CIVS and iOwner <= GameDefines.MAX_CIV_PLAYERS then
-				local pOwner = Players[iOwner]
-
-				if pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 1 then
-					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, true)
-
-				else
-					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, false)
-				end
-			else
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, false)
-			end
+			local pOwner = Players[iOwner]
+			
+			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, (iOwner >= GameDefines.MAX_MAJOR_CIVS and iOwner <= GameDefines.MAX_CIV_PLAYERS and pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 1))
 		end
 	end
 end

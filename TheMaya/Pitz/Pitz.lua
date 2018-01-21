@@ -13,10 +13,8 @@ function KatunAhaw(iPlayer, iCity, iUnit)
 	
 		if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then	
 			local pUnit = pPlayer:GetUnitByID(iUnit)
-
-			if pUnit:GetUnitCombatType() <= 6 then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW, true)
-			end
+			
+			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW, pUnit:GetUnitCombatType() <= 6)
 		end
 	end
 end

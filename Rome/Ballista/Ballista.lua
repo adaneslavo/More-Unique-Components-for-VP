@@ -70,18 +70,10 @@ function LegatusOnMove(iPlayer, iUnit, iX, iY)
 				end
 			end
 
-			if bInRange or bOnTheSameTile then
-				if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) and not pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], true)
-				elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) and not pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"], true)
-				end
-			else
-				if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], false)
-				elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"], false)
-				end
+			if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) then
+				pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], (bInRange or bOnTheSameTile))
+			elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) then
+				pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], (bInRange or bOnTheSameTile))
 			end
 		end
 	end
@@ -157,12 +149,10 @@ function LegatusOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 				end
 			end
 
-			if bInRange or bOnTheSameTile then
-				if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) and not pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], true)
-				elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) and not pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"], true)
-				end
+			if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) then
+				pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], (bInRange or bOnTheSameTile))
+			elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) then
+				pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], (bInRange or bOnTheSameTile))
 			end
 		end
 	elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS"]) then
@@ -172,12 +162,10 @@ function LegatusOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 			for iVal = 0,(pPlot:GetNumUnits() - 1) do
 				local pSameTileUnit = pPlot:GetUnit(iVal)
 				
-				if pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer then
-					if pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) and not pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"]) then
-						pSameTileUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], true)
-					elseif pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) and not pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"]) then
-						pSameTileUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"], true)
-					end
+				if pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) then
+					pSameTileUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], (pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer))
+				elseif pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) then
+					pSameTileUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], (pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer))
 				end
 			end
 
@@ -187,12 +175,10 @@ function LegatusOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 				for iVal = 0,(pAdjacentPlot:GetNumUnits() - 1) do
 					local pAdjacentUnit = pAdjacentPlot:GetUnit(iVal)
 					
-					if pAdjacentUnit:GetOwner() == iPlayer then
-						if pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) and not pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"]) then
-							pAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], true)
-						elseif pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) and not pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"]) then
-							pAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"], true)
-						end
+					if pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) then
+						pAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], pAdjacentUnit:GetOwner() == iPlayer)
+					elseif pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) then
+						pAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], pAdjacentUnit:GetOwner() == iPlayer)
 					end
 				end
 			end
@@ -206,12 +192,10 @@ function LegatusOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 					for iVal2 = 0,(pSecondAdjacentPlot:GetNumUnits() - 1) do
 						local pAdjacentOfAdjacentUnit = pSecondAdjacentPlot:GetUnit(iVal2)
 							
-						if pAdjacentOfAdjacentUnit:GetOwner() == iPlayer and pAdjacentOfAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS"]) then
-							if pAdjacentOfAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) and not pAdjacentOfAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"]) then
-								pAdjacentOfAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], true)
-							elseif pAdjacentOfAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) and not pAdjacentOfAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"]) then
-								pAdjacentOfAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"], true)
-							end
+						if pAdjacentOfAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) then
+							pAdjacentOfAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], pAdjacentOfAdjacentUnit:GetOwner() == iPlayer)
+						elseif pAdjacentOfAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) then
+							pAdjacentOfAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], pAdjacentOfAdjacentUnit:GetOwner() == iPlayer)
 						end
 					end
 				end
@@ -285,18 +269,10 @@ function LegatusOnBuild(iPlayer, iCity, iUnit)
 				end
 			end
 
-			if bInRange or bOnTheSameTile then
-				if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) and not pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], true)
-				elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) and not pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"], true)
-				end
-			else
-				if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], false)
-				elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT"], false)
-				end
+			if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA"]) then
+				pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], (bInRange or bOnTheSameTile))
+			elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION"]) then
+				pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT"], (bInRange or bOnTheSameTile))
 			end
 		end
 	end

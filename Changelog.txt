@@ -6,7 +6,6 @@ More Unique Components for Vox Populi changelog:
 
 *roman GG appear and disappear?
 *Baan Change after VP update
-*Pracinha
 
 v26:
 - deleted scaling with Era from units,
@@ -31,7 +30,7 @@ v26:
 - added mipmaps to Lammasu and Sambadromo art,
 - cut unnecessary art from Sambadromo,
 - changed Flax icons,
-- tweaked lua code,
+- tweaked lua code, simplified lua for giving and taking promotions,
 - cleaned up the code,
 - fixed Exam Hall,
 - fixed Nilometer Flax spawning,
