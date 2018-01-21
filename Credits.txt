@@ -5,8 +5,9 @@
 Special thanks to:
 
   - Hinin - ideas and early developement of 3rd and 4th Unique Component mod, many of the playtesting, bug reports and many more,
-  - pineappledan - ideas, great historical knowledge, programming, art, game texts, testing, advices, unlimited posts on many forum threads and many more,
-  - Blue Ghost - main page developement, lots of coding, bug fixes, merging, game texts, ideas and help with coding other people's parts,
+  - pineappledan - ideas, great historical knowledge, programming, art, game texts, testing, advices, unlimited posts on many forum threads and many more, project collaborator, 
+  - Blue Ghost - main page developement, lots of coding, bug fixes, merging, game texts, ideas and help with coding other people's parts, project collaborator,
+  - Infixo - dll coding, ideas and bug reports, lua code, Github help, coding suggestions, VP cooperation and implementations, project collaborator,
   - FoxOfWar - very important playtesting parts, many essential bug reports and ideas,
   - Jarula - many ideas, better or worse, but always eager to put his 2 cents, 
   - De_Genius - 2 civs coded, art and ideas,
@@ -17,7 +18,6 @@ Special thanks to:
   - phantomaxl1207 - early stage of design, ideas and bug reports,
   - LukaSlovenia29 - ideas and bug reports,
   - Hokath - art, ideas and bug reports,
-  - Infixo - dll coding, ideas and bug reports, lua code, Github help, codeing suggestions, VP cooperation,
   - ThirstQuencher - ideas and bug reports,
   - IcyAngel - ideas and bug reports,
   - Ziad - ideas and bug reports,
@@ -25,7 +25,7 @@ Special thanks to:
   - CrazyG - ideas and bug reports,
   - Gazebo - patience during answering on many questions, author of VP,
 and I should thank myself but at least I can put what I managed to give to this mod:
-  - adan_eslavo - main part of coding, puttings things together, main post developement, ideas, bug fixes, art, advices, some part of early testing, game texts, promotion overhaul and many more.
+  - adan_eslavo - main part of coding, puttings things together, main post developement, ideas, bug fixes, art, advices, some part of early testing, game texts, promotion overhaul and many more, project collaborator,
 If I forgot to mention someone please give me a call.
 
 Things borrowed from other mods:
