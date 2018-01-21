@@ -2347,6 +2347,14 @@
 			</Text>
 		</Row>
 		
+		<!-- Wat -->		
+		<Row Tag="TXT_KEY_THEMING_BONUS_WAT">
+			<Text>Collection of {2_CivAdjective} Suttas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WAT_THEMING_BONUS_HELP">
+			<Text>To maximize your bonus, make sure all slots are filled with Writing from the Same Era and Civilization.</Text>
+		</Row>		
+		
 		<!-- White Tower -->
 		<!-- Created by FieryCharizard7 on 20/11/2017, incorporated and modified by adan_eslavo on 6/01/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER">
@@ -2370,10 +2378,10 @@
 			<Text>The White Tower is a central tower, the old keep, at the Tower of London. It was built by William the Conqueror during the early 1080s, and subsequently extended. The White Tower was the castle's strongest point militarily, and provided accommodation for the king and his representatives, as well as a chapel. The Tower of London covers an area of 18 acres and its magnificent architecture covers almost all the styles which have flourished in England. Throughout its long history, the Tower has been many things to England: A tyrant's castle, and treasury; a menagerie, and a mint; a palace, and a prison. Today, the Tower of London is a vast museum which boasts, among its many treasure, the Crown Jewels of England.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_WHITE_TOWER_NATIONAL">
-			<Text>Treasury of {2_CivAdjective} Treasures</Text>
+			<Text>{2_CivAdjective} Colonial Treasures Collection</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_WHITE_TOWER_GLOBAL">
-			<Text>Treasury of Global Treasures</Text>
+			<Text>Royal Treasury</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_WHITE_TOWER_HELP">
 			<Text>To maximize your bonus, make sure all slots are filled with artifacts and either from the city owner or from different owners.</Text>
