@@ -1308,19 +1308,19 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Brazil\Samba School\Samba_Atlas_128.dds">
+    <Content Include="Brazil\Samba School\SambadromePicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Brazil\Samba School\Samba_Atlas_256.dds">
+    <Content Include="Brazil\Samba School\SambadromePicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Brazil\Samba School\Samba_Atlas_45.dds">
+    <Content Include="Brazil\Samba School\SambadromePicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Brazil\Samba School\Samba_Atlas_64.dds">
+    <Content Include="Brazil\Samba School\SambadromePicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

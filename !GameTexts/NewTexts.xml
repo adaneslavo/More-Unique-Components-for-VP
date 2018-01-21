@@ -1828,22 +1828,22 @@
 
 		<!-- Sambadrome -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME">
+		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME">
 			<Text>
 				Sambadrome
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_TEXT">
 			<Text>
 				Sambadrome (Sambódromo in Portuguese language) is the name given to an exhibition place for the Samba schools parades during Carnaval in Brazil. A sambadrome generally consists of tiered spectator viewing areas surrounding a long alley for the schools to parade down.  The parades attract many thousands of Brazilians and foreign tourists each year.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY">
 			<Text>
 				The Sambadrome is the unique Brazilian replacement for the Opera House. In addition to the bonuses of an Opera House, it provides more Culture than the Opera House, and it also provides Golden Age Points and Tourism. The Sambadrome comes with a Musician specialist slot.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_SAMBADROME_HELP">
+		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP">
 			<Text>
 				Unique Brazilian replacement for the Opera House. +7% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +3 [ICON_TOURISM] Tourism at Radio.
 			</Text>
@@ -2150,22 +2150,22 @@
 		
 		<!-- Standschützen -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN">
+		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN">
 			<Text>
 				Schützenstand
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_TEXT">
 			<Text>
 				The Schützenstand were originally rifle guilds and rifle companies that had been formed in the 15th and 16th centuries, and were involved time and again in military operations within the borders of the Austrian County of Tyrol. A Standschütze was a member of a Schützenstand ("shooting club"), into which he was enrolled, which automatically committed him to the voluntary, military protection of the state of Tyrol (and Vorarlberg). In effect they were a type of Tyrolean local militia or home guard.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_STRATEGY">
 			<Text>
 				The Schützenstand is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. It allows for faster construction of land military units in the city. It also provides +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_STANDSCHUTZEN_HELP">
+		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP">
 			<Text>
 				+2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally. +20% production toward land military units.[NEWLINE][NEWLINE]Increases city Defense Strength by 25 and Hit Points by 200. Military Units supplied by this City's population increased by 10%.
 			</Text>

@@ -8,7 +8,6 @@ MapModData.Sukritact_ChangeResearchProgress = true
 Events.SequenceGameInitComplete.Add(function() MapModData.Sukritact_ChangeResearchProgress = nil end)
 --=======================================================================================================================
 
-print("loaded")
 include( "Sukritact_SaveUtils.lua" ); MY_MOD_NAME = "Sukritact_ChangeResearchProgress";
 
 --=======================================================================================================================

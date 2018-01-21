@@ -11,7 +11,6 @@ local bXPScaling = true -- default VP
 for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do 
 	bXPScaling = (tValue == 1) 
 end
-print("XP scaling is", bXPScaling)
 
 -- acquire game speed modifier
 local fGameSpeedModifier = 1.0 -- it is float, so use 'f' at begining
@@ -19,7 +18,6 @@ local fGameSpeedModifier = 1.0 -- it is float, so use 'f' at begining
 if bXPScaling then 
 	fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100 
 end
-print("Game speed modifier is", fGameSpeedModifier)
 
 function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
