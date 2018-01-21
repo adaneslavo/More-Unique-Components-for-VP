@@ -6,7 +6,6 @@ More Unique Components for Vox Populi changelog:
 
 *roman GG appear and disappear?
 *Baan Change after VP update
-*Riad notification?
 
 v26:
 - reworked Landwehr (now +3c on Yorkshire promotion, Imperial Vigilance adds bonus to units inside friendly territory too, fixed texts),
@@ -21,8 +20,18 @@ v26:
 - added GameSpeed scaling for Latifundium clearing Forest and Jungle,
 - modified code for gaining experience (Dhanurgraha, Black Tug, Armada, Pitz, Tophet),
 - added Germany, Japan and all art for the rest of components,
+- fixed Black Tug bonus vs Wonded Units (shouldn't be in Mingghan),
+- changed Tersane (Sea production to Gold),
+= deleted Siege Engine II from Bombard,
 - fixed Exam Hall,
 - fixed Nilometer Flax spawning,
+- fixed Waag civilopedia issue,
+- fixed comma issue in Teutonic Order,
+- deleted some debug statements,
+- updated Fix.sql,
+- added mipmaps to Lammasu and Sambadromo art,
+- modified Standshutzen (now only Land Military Units production modifier),
+- cut unnecessary art from Sambadromo,
 - changed Flax icons,
 - tweaked lua code,
 - cleaned up the code,
