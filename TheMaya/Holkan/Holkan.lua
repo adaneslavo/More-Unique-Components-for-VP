@@ -8,7 +8,7 @@ include("ModUserData.lua")
 
 function RenewalCycleOnHolkan(iPlayer)
 	local pPlayer = Players[iPlayer]
-	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent) / 100
+	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100)
 
 	if Game.GetElapsedGameTurns() % iCounter == 0 then
 		for pUnit in pPlayer:Units() do

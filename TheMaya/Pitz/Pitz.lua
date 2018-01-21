@@ -22,23 +22,31 @@ end
 function KatunAhawUpgrade(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
-	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent) / 100
+	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent/ 100) 
 
 	if pPlayer:GetName() == "Pacal" then
 		if Game.GetElapsedGameTurns() % iCounter == 0 then
 			for pUnit in pPlayer:Units() do
 				if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW) then
 					if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1) then
+						print("1")
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_2, true)
+						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1, false)
 						pUnit:ChangeExperience(10)
 					elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_2) then
+						print("2")
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_3, true)
+						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_2, false)
 						pUnit:ChangeExperience(10)
 					elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_3) then
+						print("3")
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_4, true)
+						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_3, false)
 						pUnit:ChangeExperience(15)
 					elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_4) then
+						print("4")
 					else
+						print("0")
 						pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1, true)
 						pUnit:ChangeExperience(5)
 					end
@@ -70,8 +78,8 @@ function KatunAhawUpgrade(iPlayer)
 							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 							local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 											
-							local iChange1 = math.floor(10 * iEraModifier * iGameSpeedModifier1)
-							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
+							local iChange1 = math.floor(20 * iEraModifier * iGameSpeedModifier1)
+							local iChange2 = math.floor(20 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
 							LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)
@@ -111,8 +119,8 @@ function KatunAhawUpgrade(iPlayer)
 							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 							local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 											
-							local iChange1 = math.floor(10 * iEraModifier * iGameSpeedModifier1)
-							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
+							local iChange1 = math.floor(20 * iEraModifier * iGameSpeedModifier1)
+							local iChange2 = math.floor(20 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
 							LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)
@@ -151,8 +159,8 @@ function KatunAhawUpgrade(iPlayer)
 							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 							local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 											
-							local iChange1 = math.floor(10 * iEraModifier * iGameSpeedModifier1)
-							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
+							local iChange1 = math.floor(20 * iEraModifier * iGameSpeedModifier1)
+							local iChange2 = math.floor(20 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
 							LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)
@@ -191,8 +199,8 @@ function KatunAhawUpgrade(iPlayer)
 							local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 							local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 											
-							local iChange1 = math.floor(10 * iEraModifier * iGameSpeedModifier1)
-							local iChange2 = math.floor(10 * iEraModifier * iGameSpeedModifier2)
+							local iChange1 = math.floor(20 * iEraModifier * iGameSpeedModifier1)
+							local iChange2 = math.floor(20 * iEraModifier * iGameSpeedModifier2)
 							
 							pPlayer:ChangeFaith(iChange2)
 							LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)

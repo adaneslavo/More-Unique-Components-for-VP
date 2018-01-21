@@ -25,6 +25,7 @@ v26:
 - deleted Siege Engine II from Bombard,
 - reworked Landwehr (now +3c on Yorkshire promotion, Imperial Vigilance adds bonus to units inside friendly territory too, fixed texts),
 - modified Standshutzen (now only Land Military Units production modifier),
+- modified Pitz B'ak'tun bonus (now 20 of each yield),
 - deleted some debug statements,
 - updated Fix.sql,
 - added mipmaps to Lammasu and Sambadromo art,
@@ -36,6 +37,8 @@ v26:
 - fixed Nilometer Flax spawning,
 - fixed Waag civilopedia issue,
 - fixed Barbican.lua,
+- fixed Pitz unique promotions,
+- fixed Pitz and Holkan 20 turn counter on fast speed,
 - minor fixes,
 
 v25:
