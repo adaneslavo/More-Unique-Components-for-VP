@@ -44,13 +44,6 @@ VALUES		('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_GREAT_PEOPLE',			50),
 			('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_GOLD',					100),
 			('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_PRODUCTION',			5),
 			('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_SCIENCE',				40);
-			------------------------------	
--- Building_ClassesNeededInCity
-------------------------------		
-INSERT INTO Building_ClassesNeededInCity 	
-			(BuildingType, 					BuildingClassType)
-SELECT		'BUILDING_NETHERLANDS_WAAG',	null
-FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_BANK';
 ------------------------------	
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------
