@@ -91,3 +91,37 @@ VALUES	('UNIT_3UC_SOFA',  'PROMOTION_MEDIC'),
 INSERT INTO Civilization_UnitClassOverrides 
 		(CivilizationType, 					UnitClassType, 			UnitType)
 VALUES	('CIVILIZATION_SONGHAI',	'UNITCLASS_CROSSBOWMAN',	'UNIT_3UC_SOFA');
+
+--MANDEKALU CAVALRY CHANGES
+
+--==========================================================================================================================	
+-- CIVILIZATIONS
+--==========================================================================================================================	
+--------------------------------	
+-- Civilization_UnitClassOverrides 
+--------------------------------
+INSERT INTO Civilization_UnitClassOverrides 
+			(CivilizationType, 			UnitClassType, 			UnitType)
+VALUES		('CIVILIZATION_SONGHAI', 	'UNITCLASS_KNIGHT',	'UNIT_SONGHAI_MUSLIMCAVALRY');
+--------------------------------	
+-- Civilization_UnitClassOverrides Deletion 
+--------------------------------
+DELETE FROM Civilization_UnitClassOverrides WHERE CivilizationType = 'CIVILIZATION_SONGHAI' AND UnitClassType = 'UNITCLASS_HORSEMAN';
+--==========================================================================================================================	
+
+--==========================================================================================================================	
+-- UNITS
+--==========================================================================================================================	
+--------------------------------	
+-- Units
+--------------------------------
+UPDATE Units SET Cost = '200' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
+UPDATE Units SET Class = 'UNITCLASS_KNIGHT' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
+UPDATE Units SET PrereqTech = 'TECH_CHIVALRY' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
+UPDATE Units SET Combat = '25' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
+UPDATE Units SET ObsoleteTech = 'TECH_COMBUSTION' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY'; 
+UPDATE Units SET GoodyHutUpgradeUnitClass = 'UNITCLASS_LANCER' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
+--------------------------------	
+-- Unit_ClassUpgrades
+--------------------------------
+UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_LANCER' WHERE UnitType = 'UNIT_SONGHAI_MUSLIMCAVALRY';

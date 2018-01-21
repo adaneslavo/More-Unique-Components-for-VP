@@ -36,12 +36,14 @@ UPDATE Buildings SET NeverCapture = '1' WHERE Type = 'BUILDING_STABLE';
 --------------------------------
 -- Database.log
 --------------------------------
-UPDATE ArtDefine_Landmarks SET LayoutHandler = 'SNAPSHOT' WHERE ImprovementType IN ('ART_DEF_IMPROVEMENT_MOAI_STATUES', 'ART_DEF_IMPROVEMENT_FEITORIA', 'ART_DEF_IMPROVEMENT_PONTOON_BRIDGE');
+--UPDATE ArtDefine_Landmarks SET LayoutHandler = 'SNAPSHOT' WHERE ImprovementType IN ('ART_DEF_IMPROVEMENT_MOAI_STATUES', 'ART_DEF_IMPROVEMENT_FEITORIA', 'ART_DEF_IMPROVEMENT_PONTOON_BRIDGE'); -- Infixo already in VP
 --------------------------------
 -- Language
 --------------------------------
+/* -- Infixo already in VP
 INSERT INTO Language_en_US
 			(Tag,										Text)
 VALUES		('TXT_KEY_AIR_STRENGTH_DEFENSE',			'Air Defense:'),
 			('TXT_KEY_EUI_BUILDING_SUPPLY_CAP_LOCAL',	'Local Military Supply:'),
 			('TXT_KEY_EUI_BUILDING_SUPPLY_CAP_GLOBAL',	'Global Military Supply:');
+*/
