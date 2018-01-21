@@ -1007,7 +1007,31 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IZIKO_STRATEGY">
 			<Text>Unique Zulu replacement for the Amphitheater. Build . Also boosts the City''s Great Writer rate and the value of Writers'' Guilds, and the Culture of Great Works. Provides Culture in the City whenever a military unit gains a level.</Text>
-		</Row>		
+		</Row>	
+		
+		<!-- Kabuki -->
+		
+		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI">
+			<Text>
+				Kabuki Theater
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_TEXT">
+			<Text>
+				Kabuki is a classical Japanese dance-drama. Kabuki theatre is known for the stylization of its drama and for the elaborate make-up worn by some of its performers. The history of kabuki began in 1603 when Izumo no Okuni, possibly a miko of Izumo-taisha, began performing a new style of dance drama in the dry riverbeds of Kyoto. Despite huge cultural changes since then, it remains the most popular of the traditional styles of Japanese drama.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_STRATEGY">
+			<Text>
+				The Kabuki is the unique Japanese replacement for the Opera House. In addition to the bonuses of an Opera House, it provides more Culture than the Opera House and boosts the effect of all [ICON_CULTURE] Cultural Specialists in the City. Furthermore, it does not require an Amphitheater to have been constructed.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_HELP">
+			<Text>
+				Unique Japanese replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN] Musician, [ICON_GREAT_ARTIST] Artist, and [ICON_GREAT_WRITER] Writer Specialists in the City produce +2 [ICON_GOLD] Gold and 33% more [ICON_GREAT_PEOPLE] Great Person Points.
+			</Text>
+		</Row>
+		
 		<!-- Kampong -->
 		<!-- Created by pineappledan; incorporated by adan_eslavo on 24/11/2017 -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG">
@@ -2194,10 +2218,10 @@
 			<Text>+1 Movement to Workers and Settlers that begin the turn stacked with this Unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SACKER">
-			<Text>Sacker</Text>
+			<Text>Bellum Alet'</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SACKER_HELP">
-			<Text>+20 [ICON_GOLD] Gold and +10 [ICON_CULTURE] Culture every turn and 2x Razing Speed if stationed in a City being Razed.</Text>
+			<Text>On Pillage, Heal all adjacent friendly units by [COLOR_POSITIVE_TEXT]10HP[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY">
 			<Text>Tarkhan</Text>
@@ -2390,6 +2414,31 @@
 			<Text>Can enter rival territory. +2 Influence per turn when stationed within a city-state's borders.</Text>
 		</Row>
 		<!-- Created by Blue Ghost-->
+
+		<!-- Yamato -->
+		<Row Tag="TXT_KEY_UNIT_YAMATO">
+			<Text>Yamato</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_YAMATO_HELP">
+			<Text>A powerful Japanese battleship. Has more range, power, and higher defense than the Battleship. Earns [ICON_GREAT_ADMIRAL] Great Admiral Points on kills.[NEWLINE]Receive 600 [ICON_GOLDEN_AGE] Golden Age Points whenever a Yamato is constructed. Enemies receive 300 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points whenever they destroy a Yamato</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_YAMATO_STRATEGY">
+			<Text>The Yamato is the unique Battleship replacement for Japan which is significantly more powerful. It has increased range, attack, strength, defense against attack and earns Great Admiral Points on kills. Use them to dominate the seas in the end game, giving you the edge for a Domination Victory.[NEWLINE][NEWLINE]
+			Each Yamato gives points towards a Golden Age when constructed, but sinking a Yamato rewards enemies with Golden Age points and Culture, so don't leave your Yamatos without an escort.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_YAMATO_TEXT">
+			<Text>
+				The Yamato-class battleships were battleships of the Imperial Japanese Navy (IJN) constructed and operated during World War II. Displacing 72,000 long tons (73,000 t) at full load, the vessels were the heaviest and most powerfully armed battleships ever constructed. The class carried the largest naval artillery ever fitted to a warship, nine 460-millimetre (18.1 in) naval guns, each capable of firing 1,360 kg (3,000 lb) shells over 42 km (26 mi). Two battleships of the class (Yamato and Musashi) were completed, while a third (Shinano) was converted to an aircraft carrier during construction. All were sunk by American forces during WWII.[NEWLINE][NEWLINE]
+			
+				Due to their size, speed, and power, The Yamato-class visibly embodied Japan's determination and readiness to defend its interests against the western powers, especially the United States. One of the reasons that the warship may have such significance in Japanese culture is that the word "Yamato" was often used as a poetic name for Japan itself. Thus, the construction and subsequent destruction of the Yamato battleships could serve as a metaphor for the rise and fall of Japanese imperial aspirations.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_YAMATO">
+			<Text>Kantai Kessen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_YAMATO_HELP">
+			<Text>Unit gains [ICON_CAPITAL] Great Admiral Points [COLOR_POSITIVE_TEXT]on Kills[ENDCOLOR].</Text>
+		</Row>
 		
 		<!-- Yassa Court -->
 		<!-- Created by adan_eslavo 29/10/2017 -->

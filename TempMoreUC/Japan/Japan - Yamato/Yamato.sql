@@ -77,7 +77,7 @@ VALUES		('UNIT_YAMATO_ATLAS', 		256, 		'JFD_JapanTojoAtlas_256.dds',	2, 				2),
 --------------------------------	
 INSERT INTO Units 	
 			(Type,					Class, 	PrereqTech,			Range, BaseLandAirDefense,	BaseSightRange, Combat, RangedCombat,		Cost,		FaithCost,	RequiresFaithPurchaseEnabled,	Moves,		Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 						Strategy, 								Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 					UnitFlagIconOffset,	UnitFlagAtlas,				PortraitIndex, 	IconAtlas,			MoveRate)
-SELECT		'UNIT_YAMATO',	Class,	'TECH_ROCKETRY',	Range,	BaseLandAirDefense, BaseSightRange, Combat+5, RangedCombat+15,	Cost+200,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves,	Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_YAMATO',	'TXT_KEY_UNIT_YAMATO_TEXT',	'TXT_KEY_UNIT_YAMATO_STRATEGY',	'TXT_KEY_UNIT_YAMATO_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_YAMATO', 	0,					'UNIT_YAMATO_FLAG_ATLAS',	2, 				'UNIT_YAMATO_ATLAS',	MoveRate
+SELECT		'UNIT_YAMATO',	Class,	'TECH_ROCKETRY',	Range+1,	BaseLandAirDefense, BaseSightRange, Combat+5, RangedCombat+15,	Cost+200,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves,	Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_YAMATO',	'TXT_KEY_UNIT_YAMATO_TEXT',	'TXT_KEY_UNIT_YAMATO_STRATEGY',	'TXT_KEY_UNIT_YAMATO_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_YAMATO', 	0,					'UNIT_YAMATO_FLAG_ATLAS',	2, 				'UNIT_YAMATO_ATLAS',	MoveRate
 FROM Units WHERE Type = 'UNIT_BATTLESHIP';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -114,6 +114,24 @@ INSERT INTO Unit_Flavors
 			(UnitType, 				FlavorType,				Flavor)
 VALUES		('UNIT_YAMATO',	'FLAVOR_NAVAL',			45),
 			('UNIT_YAMATO',	'FLAVOR_NAVAL_RECON',	5);
+
+--==========================================================================================================================	
+-- PROMOTIONS
+--==========================================================================================================================	
+------------------------------
+-- UnitPromotions
+------------------------------
+INSERT INTO UnitPromotions 
+			(Type, 											Description, 										Help, 														Sound, 				CombatPercent,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_YAMATO', 			'TXT_KEY_PROMOTION_UNIT_YAMATO',			'TXT_KEY_PROMOTION_UNIT_YAMATO_HELP', 			'AS2D_IF_LEVELUP',	0,				0,				0,			0,			0,					0,			0,					1, 				16, 			'PROMOTION_ATLAS', 					'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA');
+------------------------------
+-- UnitPromotions_YieldFromKills
+------------------------------
+INSERT INTO UnitPromotions_YieldFromKills
+			(PromotionType, 						YieldType,						Yield)
+VALUES		('PROMOTION_UNIT_YAMATO',	'YIELD_GREAT_ADMIRAL_POINTS',	400);
+--==========================================================================================================================	
+
 --------------------------------
 -- Unit_FreePromotions
 --------------------------------
@@ -124,7 +142,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_BATTLESHIP';
 
 INSERT INTO Unit_FreePromotions
 			(UnitType, 				PromotionType)
-VALUES		('UNIT_YAMATO',	'PROMOTION_SPAWN_GENERALS_I'),
+VALUES		('UNIT_YAMATO',	'PROMOTION_UNIT_YAMATO'),
 			('UNIT_YAMATO',	'PROMOTION_ARMOR_PLATING_1');
 --==========================================================================================================================
 --==========================================================================================================================
