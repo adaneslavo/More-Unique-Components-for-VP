@@ -2218,10 +2218,10 @@
 			<Text>+1 Movement to Workers and Settlers that begin the turn stacked with this Unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SACKER">
-			<Text>Sacker</Text>
+			<Text>Bellum Alet'</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SACKER_HELP">
-			<Text>+20 [ICON_GOLD] Gold and +10 [ICON_CULTURE] Culture every turn and 2x Razing Speed if stationed in a City being Razed.</Text>
+			<Text>On Pillage, Heal all adjacent friendly units by [COLOR_POSITIVE_TEXT]10HP[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY">
 			<Text>Tarkhan</Text>
