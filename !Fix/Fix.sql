@@ -1,6 +1,7 @@
 --------------------------------
 -- Field Gun
 --------------------------------
+/*
 DELETE FROM Unit_FreePromotions	WHERE UnitType = 'UNIT_FIELD_GUN' AND PromotionType = 'PROMOTION_SIEGE_INACCURACY';
 
 INSERT INTO Unit_FreePromotions 	
@@ -33,3 +34,4 @@ UPDATE Buildings SET NeverCapture = '1' WHERE Type = 'BUILDING_HOTEL';
 UPDATE Buildings SET NeverCapture = '1' WHERE Type = 'BUILDING_KREPOST';
 UPDATE Buildings SET NeverCapture = '1' WHERE Type = 'BUILDING_PALACE_SCIENCE_CULTURE';
 UPDATE Buildings SET NeverCapture = '1' WHERE Type = 'BUILDING_STABLE';
+*/
