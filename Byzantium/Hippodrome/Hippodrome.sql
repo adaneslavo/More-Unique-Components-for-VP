@@ -61,6 +61,12 @@ INSERT INTO Building_BuildingClassYieldChanges
 VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_CIRCUS',		'YIELD_CULTURE',	2),
 			('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_COLOSSEUM',	'YIELD_GOLD',		2);
 ------------------------------	
+-- Building_BuildingClassHappiness
+------------------------------
+INSERT INTO Building_BuildingClassHappiness 	
+			(BuildingType,						BuildingClassType,			Happiness)
+VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_COLOSSEUM',	1);
+------------------------------	
 -- Building_WLTKDYieldMod
 ------------------------------
 INSERT INTO Building_WLTKDYieldMod	

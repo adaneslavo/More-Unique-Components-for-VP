@@ -1673,24 +1673,24 @@
 
 		<!-- Pracinha -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_PROMOTION_EXPEDITIONARY_FORCE">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BRAZIL_EXPEDITIONARY_FORCE">
 			<Text>
 				Expeditionary Force
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_EXPEDITIONARY_FORCE_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BRAZIL_EXPEDITIONARY_FORCE_HELP">
 			<Text>
-				Gain +1% [ICON_STRENGTH] Strength for every Tile between the [ICON_CAPITAL] Capital and this Unit.
+				+1% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for every tile between unit and [ICON_CAPITAL] Capital[ENDCOLOR].
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_TOURISM">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BRAZIL_TOURISM">
 			<Text>
-				Tourism from Victories
+				Glorious Banner
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_TOURISM_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BRAZIL_TOURISM_HELP">
 			<Text>
-				Earn Tourism toward all civs for each enemy killed.
+				Unit gains [ICON_TOURISM] Tourism [COLOR_POSITIVE_TEXT]toward all Civilizations on Kill[ENDCOLOR].
 			</Text>
 		</Row>
 		
@@ -1806,7 +1806,7 @@
 			<Text>Diplomatic Reciprocity</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY_HELP">
-			<Text>After creating an [COLOR_POSITIVE_TEXT]Embassy[ENDCOLOR] its yields are permanently added to your Capital's revenue if target City-State [COLOR_POSITIVE_TEXT]is an Ally[ENDCOLOR] or only half, if it [COLOR_NEGATIVE_TEXT]is not[ENDCOLOR] one.</Text>
+			<Text>After creating an [COLOR_POSITIVE_TEXT]Embassy[ENDCOLOR] its yields are permanently added to your [ICON_CAPITAL] Capital's revenue if target City-State [COLOR_POSITIVE_TEXT]is an Ally[ENDCOLOR] or only half, if it [COLOR_NEGATIVE_TEXT]is not[ENDCOLOR] one.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL">
 			<Text>Sachem's Council</Text>

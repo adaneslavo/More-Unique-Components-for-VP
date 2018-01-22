@@ -8,7 +8,7 @@ function PracinhaTourism(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAtt
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 			
-		if(pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_TOURISM) and iDefenderFinalDamage >= iDefenderMaxHP) then
+		if (pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_BRAZIL_TOURISM) and iDefenderFinalDamage >= iDefenderMaxHP) then
 			if pAttackingPlayer:GetEventChoiceCooldown(iTourismEvent) == 0 and not pAttackingPlayer:IsEventChoiceActive(iTourismEvent) then
 				pAttackingPlayer:DoEventChoice(iTourismEvent)
 				pAttackingPlayer:DoCancelEventChoice(iTourismEvent)
