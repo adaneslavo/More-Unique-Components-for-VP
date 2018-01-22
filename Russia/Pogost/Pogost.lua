@@ -10,9 +10,8 @@ function Pogost(iPlayer, iCity, iBuilding)
 		local iBuilding2 = GameInfoTypes.BUILDING_RUSSIA_POGOST_2
 		local iBuilding3 = GameInfoTypes.BUILDING_RUSSIA_POGOST_3
 		local pTeam = Teams[pPlayer:GetTeam()]
-		--banking 33
-		--architecture 37
-		if pTeam:GetTeamTechs():HasTech(33) then
+
+		if pTeam:GetTeamTechs():HasTech(GameInfoTypes.TECH_BANKING) then
 			pCity:SetNumRealBuilding(iBuilding2, 1)
 			
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -20,7 +19,7 @@ function Pogost(iPlayer, iCity, iBuilding)
 			end
 		end
 			
-		if pTeam:GetTeamTechs():HasTech(37) then
+		if pTeam:GetTeamTechs():HasTech(GameInfoTypes.TECH_ARCHITECTURE) then
 			pCity:SetNumRealBuilding(iBuilding3, 1)
 			
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -34,7 +33,7 @@ function OnTechResearched(iTeam, iTech)
 	local pTeam = Teams[iTeam]
 	local pPlayer = Players[pTeam:GetLeaderID()]
 
-	if iTech == 33 then
+	if iTech == GameInfoTypes.TECH_BANKING then
 		local iBuilding = GameInfoTypes.BUILDING_RUSSIA_POGOST_1
 		local iBuilding2 = GameInfoTypes.BUILDING_RUSSIA_POGOST_2
 		for pCity in pPlayer:Cities() do
@@ -48,7 +47,7 @@ function OnTechResearched(iTeam, iTech)
 		end
 	end
 
-	if iTech == 37 then
+	if iTech == GameInfoTypes.TECH_ARCHITECTURE then
 		local pTeam = Teams[iTeam]
 		local pPlayer = Players[pTeam:GetLeaderID()]
 		local iBuilding = GameInfoTypes.BUILDING_RUSSIA_POGOST_1

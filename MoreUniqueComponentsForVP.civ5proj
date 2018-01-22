@@ -26,11 +26,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!Fix/Fix.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>!GameTexts/NewTexts.xml</FileName>
       </Action>
       <Action>
@@ -2772,10 +2767,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!Fix\Fix.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="France\GrandeEcole\GrandeEcole.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -4709,7 +4700,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Byzantium" />
     <Folder Include="India" />
     <Folder Include="!DummyBuildings" />
-    <Folder Include="!Fix" />
     <Folder Include="Denmark" />
     <Folder Include="!GameTexts" />
     <Folder Include="TheAztecs" />
