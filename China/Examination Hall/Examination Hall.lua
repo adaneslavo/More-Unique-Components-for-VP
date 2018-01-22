@@ -1,17 +1,13 @@
+-- Examination Hall
+-- 2018-01-20 updated by Infixo
+--------------------------------------------------------------
+
 include("FLuaVector.lua")
 include("InstanceManager")
 
 local iBuilding = GameInfoTypes.BUILDING_VP_EXAMINATION_HALL
 local iDummy = GameInfoTypes.BUILDING_VP_EXAMINATION_HALL_DUMMY
---[[
-local iWriter = GameInfoTypes['SPECIALIST_WRITER']
-local iArtist = GameInfoTypes['SPECIALIST_ARTIST']
-local iMusician = GameInfoTypes['SPECIALIST_MUSICIAN']
-local iScientist = GameInfoTypes['SPECIALIST_SCIENTIST']
-local iEngineer = GameInfoTypes['SPECIALIST_ENGINEER']
-local iMerchant = GameInfoTypes['SPECIALIST_MERCHANT']
-local iDiplomat = GameInfoTypes['SPECIALIST_CIVIL_SERVANT']
---]]
+
 -- build table of valid specialists and corresponding GPs
 local tGPs = {}
 for sp in GameInfo.Specialists() do 
@@ -21,7 +17,6 @@ for sp in GameInfo.Specialists() do
 	end
 end
 --for k,v in pairs(tGPs) do print(k, v.GPType, v.GPStr) end -- debug
-print("Detected GPs", #tGPs) -- debug
 
 function WLTKDGreatPersonBonus(iPlayer)
 	local pPlayer = Players[iPlayer]
@@ -50,33 +45,6 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 				iGPP = math.floor(iGPP)
 				
 				local tGP = tGPs[ math.random( #tGPs ) ] -- pick random GP
-				--[[
-				local rand = math.random(7)
-				local GPType = iDiplomat
-				local GPStr = "Great Diplomat"
-				if rand == 1 then
-					GPType = iWriter
-					GPStr = "Great Writer"
-				elseif rand == 2 then
-					GPType = iArtist
-					GPStr = "Great Artist"
-				elseif rand == 3 then
-					GPType = iMusician
-					GPStr = "Great Musician"
-				elseif rand == 4 then
-					GPType = iScientist
-					GPStr = "Great Scientist"
-				elseif rand == 5 then
-					GPType = iEngineer
-					GPStr = "Great Engineer"
-				elseif rand == 6 then
-					GPType = iMerchant
-					GPStr = "Great Merchant"
-				elseif rand == 7 then
-					GPType = iDiplomat
-					GPStr = "Great Diplomat"
-				end
-				--]]
 				--print("Civil Examinations", tGP.GPType, tGP.GPStr, iGPP) -- debug
 				pCity:ChangeSpecialistGreatPersonProgressTimes100(tGP.GPType, iGPP * 100)
 				
@@ -84,7 +52,11 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 				
 					Events.AddPopupTextEvent(vCityPosition, "[COLOR_GREAT_PEOPLE_STORED]+"..iGPP.."[ICON_GREAT_PEOPLE][ENDCOLOR]", 1)
-					pPlayer:AddNotification(0, 'New [ICON_CITIZEN] Citizen appeared in '..pCity:GetName()..'. City gained '..iGPP..' [ICON_GREAT_PEOPLE] Great Person Points towards '..tGP.GPStr..'.', 'Citizen born in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
+					pPlayer:AddNotification(
+						NotificationTypes.NOTIFICATION_CITY_GROWTH,
+						'New [ICON_CITIZEN] Citizen appeared in '..pCity:GetName()..'. City gained '..iGPP..' [ICON_GREAT_PEOPLE] Great Person Points towards '..tGP.GPStr..'.',
+						'Citizen born in '..pCity:GetName(),
+						pCity:GetX(), pCity:GetY(), pCity:GetID())
 				end
 			end
 		end
@@ -97,3 +69,5 @@ end
 
 GameEvents.PlayerDoTurn.Add(WLTKDGreatPersonBonus)
 GameEvents.SetPopulation.Add(GPPOnGrowth)
+
+print("OK loaded Examination Hall.lua - detected GPs", #tGPs)

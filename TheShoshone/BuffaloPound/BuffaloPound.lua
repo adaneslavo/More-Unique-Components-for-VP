@@ -22,7 +22,7 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 			if (pSpecificPlot:GetTerrainType() == TerrainTypes.TERRAIN_GRASS or pSpecificPlot:GetTerrainType() == TerrainTypes.TERRAIN_PLAINS) then
 				if pSpecificPlot:GetFeatureType() == (-1) or pSpecificPlot:GetFeatureType() == FeatureTypes.FEATURE_FOREST then
 					if not pSpecificPlot:IsMountain() and not pSpecificPlot:IsHills() then
-						if pSpecificPlot:GetResourceType(-1) == (-1) then
+						if pSpecificPlot:GetNumResource() == 0 then
 							if iPlotOwner == iPlayer then table.insert(tPossibleSpots,     pSpecificPlot)
 							else                          table.insert(tPossibleSpotsFree, pSpecificPlot) end
 						end
@@ -39,11 +39,11 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 		pSpotsTable = tPossibleSpots
 		bBisonCreated = true
 	elseif #tPossibleSpotsFree > 0 then 
-		pSpotsTable = tPossibleSpots
+		pSpotsTable = tPossibleSpotsFree
 		bBisonCreated = true
 	end
 	if bBisonCreated then
-		pChosenPlot = pSpotsTable[ Game.Rand(#pSpotsTable, "BuffaloPoundPlaceBison roll for plot") + 1 ]
+		pChosenPlot = pSpotsTable[ math.random(#pSpotsTable) ]
 		pChosenPlot:SetResourceType(GameInfoTypes.RESOURCE_BISON, 1)
 	end
 	-- send a proper notification
@@ -59,7 +59,7 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 				NotificationTypes.NOTIFICATION_DISCOVERED_BONUS_RESOURCE,
 				'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] constructed Buffalo Pound but [COLOR_NEGATIVE_TEXT]there was no place[ENDCOLOR] to create a new source of [ICON_RES_BISON] Bison.', -- use TXT_KEY_ here
 				'New source of Bison nearby '..pCity:GetName()..' [COLOR_NEGATIVE_TEXT]not created[ENDCOLOR]',
-				pChosenPlot:GetX(), pChosenPlot:GetY(), GameInfoTypes.RESOURCE_BISON)
+				pCity:GetX(), pCity:GetY(), GameInfoTypes.RESOURCE_BISON)
 		end
 	end
 end
