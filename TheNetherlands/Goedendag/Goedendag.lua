@@ -1,6 +1,7 @@
 -- Goedendag
 -- Author: adan_eslavo
 -- DateCreated: 12/12/2017
+-- 2018-01-22 Infixo, RESOURCECLASS_LUXURY used
 --------------------------------------------------------------
 function GoedendagOnMove(iPlayer, iUnit, iX, iY)
 	local pPlayer = Players[iPlayer];
@@ -190,6 +191,7 @@ function GoedendagOnResourceBonus(iPlayer, iUnit, iX, iY)
 		local pPlot = pUnit:GetPlot()
 			
 		if pPlot ~= nil then	
+			--[[
 			local iLuxuries = {}
 				iLuxuries[0] = GameInfoTypes.RESOURCE_AMBER
 				iLuxuries[1] = GameInfoTypes.RESOURCE_BRAZILWOOD
@@ -234,7 +236,10 @@ function GoedendagOnResourceBonus(iPlayer, iUnit, iX, iY)
 					break
 				end
 			end
-
+			--]]
+			local eResType = pPlot:GetResourceType(pPlayer:GetTeam())
+			local bIsLuxury = false
+			if eResType ~= -1 then bIsLuxury = (GameInfo.Resources[ eResType ].ResourceClassType == "RESOURCECLASS_LUXURY") end
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT, bIsLuxury)
 		end			
 	end
@@ -244,3 +249,5 @@ GameEvents.UnitSetXY.Add(GoedendagOnMove)
 GameEvents.UnitCreated.Add(GoedendagOnCreate)
 GameEvents.CityTrained.Add(GoedendagOnBuild)
 GameEvents.UnitSetXY.Add(GoedendagOnResourceBonus)
+
+print("OK loaded Goedendag.lua")
