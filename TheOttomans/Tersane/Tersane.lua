@@ -9,9 +9,7 @@ function TrainPrizeShips(iPlayer, iCity, iUnit)
 	if pUnit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE then
 		local pCity = pPlayer:GetCityByID(iCity)
 
-		if pCity:IsHasBuilding(GameInfoTypes.BUILDING_OTTOMANS_TERSANE) == true then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_PRIZE_SHIPS, true)
-		end
+		pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_PRIZE_SHIPS, pCity:IsHasBuilding(GameInfoTypes.BUILDING_OTTOMANS_TERSANE))
 	end
 end
 

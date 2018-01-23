@@ -15,9 +15,7 @@ function Maim(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalD
 			if iDefenderFinalDamage < iDefenderMaxHP then
 				local pDefendingUnit = Players[iDefendingPlayer]:GetUnitByID(iDefendingUnit)
 				
-				if pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT) == false then
-					pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT, true)
-				end
+				pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT, true)
 			end
 		end
 	end

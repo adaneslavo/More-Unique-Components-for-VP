@@ -8,7 +8,6 @@ MapModData.Sukritact_ChangeResearchProgress = true
 Events.SequenceGameInitComplete.Add(function() MapModData.Sukritact_ChangeResearchProgress = nil end)
 --=======================================================================================================================
 
-print("loaded")
 include( "Sukritact_SaveUtils.lua" ); MY_MOD_NAME = "Sukritact_ChangeResearchProgress";
 
 --=======================================================================================================================
@@ -45,11 +44,11 @@ function ScienceManager(iPlayer)
 	if iStored > iCanBeAdded then
 		pTeamTechs:ChangeResearchProgress(iTech, iCanBeAdded, pPlayer:GetID())
 		save(pPlayer, "iStored", iStored - iCanBeAdded)
-		print("Added: " .. iCanBeAdded .. ", Remaining: " .. iStored - iCanBeAdded)
+		--print("Added: " .. iCanBeAdded .. ", Remaining: " .. iStored - iCanBeAdded)
 	else
 		pTeamTechs:ChangeResearchProgress(iTech, iStored, pPlayer:GetID())
 		save(pPlayer, "iStored", 0)
-		print("Added: " .. iStored .. ", Remaining: " .. 0)
+		--print("Added: " .. iStored .. ", Remaining: " .. 0)
 	end
 end
 

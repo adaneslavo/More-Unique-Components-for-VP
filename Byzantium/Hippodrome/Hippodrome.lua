@@ -11,38 +11,14 @@ function HippodromeBuilt(iPlayer, iCity, iBuilding)
 	if pPlayer:GetName() == "Theodora" then
 		if iBuilding == GameInfoTypes.BUILDING_BYZANTIUM_HIPPODROME then
 			for pCity in pPlayer:Cities() do
-				if Game.GetGameSpeedType() == 3 then
-					pCity:ChangeWeLoveTheKingDayCounter(13)
-
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-							
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]13-turn [ICON_HAPPINESS_1] WLTKD Hippodrome[ICON_FOOD][ENDCOLOR]", 1)
-					end
-				elseif Game.GetGameSpeedType() == 2 then
-					pCity:ChangeWeLoveTheKingDayCounter(20)
-
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-							
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]20-turn [ICON_HAPPINESS_1] WLTKD Hippodrome[ICON_FOOD][ENDCOLOR]", 1)
-					end
-				elseif Game.GetGameSpeedType() == 1 then
-					pCity:ChangeWeLoveTheKingDayCounter(30)
-
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-							
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]30-turn [ICON_HAPPINESS_1] WLTKD Hippodrome[ICON_FOOD][ENDCOLOR]", 1)
-					end
-				else
-					pCity:ChangeWeLoveTheKingDayCounter(60)
-
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-							
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]60-turn [ICON_HAPPINESS_1] WLTKD Hippodrome[ICON_FOOD][ENDCOLOR]", 1)
-					end
+				local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
+				local iWLTKDLength = math.floor(20 * iGameSpeedModifier)
+				local pCapital = pPlayer:GetCapitalCity()
+				
+				pCity:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
+				
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCapital:GetName()..'[ENDCOLOR] constructed Hippodrome. People love you. '..iWLTKDLength..'-turn WLTKD has started in '..pCity:GetName()..'.', 'Hippodrome constructed in '..pCapital:GetName(), pCity:GetX(), pCity:GetY())
 				end
 			end
 		end
@@ -54,50 +30,22 @@ function HippodromeHooliganism(eTeam, eEra, bFirst)
 		if pPlayer:IsEverAlive() then
 			if pPlayer:GetTeam() == eTeam then
 				if pPlayer:GetName() == "Theodora" then
-					if not pPlayer:IsAnarchy() then
-						local pCapital = pPlayer:GetCapitalCity()
+					local pCapital = pPlayer:GetCapitalCity()
+					
+					if pCapital:IsHasBuilding(GameInfoTypes.BUILDING_BYZANTIUM_HIPPODROME) then
+						if not pPlayer:IsAnarchy() then
+							local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
+							local iWLTKDLength = math.floor(10 * iGameSpeedModifier) + 1
 						
-						pPlayer:ChangeAnarchyNumTurns(2)
-
-						if Game.GetGameSpeedType() == 3 then			
-							pCapital:ChangeWeLoveTheKingDayCounter(8)
-
+							pPlayer:ChangeAnarchyNumTurns(2)
+							pCapital:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
+						
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-								local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-							
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]7-turn [ICON_HAPPINESS_1] WLTKD Hippodrome[ICON_FOOD][ENDCOLOR]", 2.5)
+								pPlayer:AddNotification(0, 'Your Empire entered new Era, causing hooligan eccesses across your Cities. Your Empire falls into 1 turn of [ICON_RESISTANCE] Resistance, after which your [ICON_CITIZEN] Citizens will [ICON_HAPPINESS_1] love their king for '..(iWLTKDLength - 1)..' turns.', 'Hooliganism in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())
 							end
-						elseif Game.GetGameSpeedType() == 2 then
-							pCapital:ChangeWeLoveTheKingDayCounter(11)
-							
-							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-								local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-								
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]10-turn [ICON_HAPPINESS_1] WLTKD Hippodrome[ICON_FOOD][ENDCOLOR]", 2.5)
-							end
-						elseif Game.GetGameSpeedType() == 1 then
-							pCapital:ChangeWeLoveTheKingDayCounter(16)
-							
-							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-								local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-								
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]15-turn [ICON_HAPPINESS_1] WLTKD Hippodrome[ICON_FOOD][ENDCOLOR]", 2.5)
-							end
-						else
-							pCapital:ChangeWeLoveTheKingDayCounter(31)
-							
-							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-								local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-								
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]1-turn [ICON_RESISTNCE] Anarchy[ENDCOLOR]", 2)
-								Events.AddPopupTextEvent(vCityPosition, "[COLOR_YELLOW]30-turn [ICON_HAPPINESS_1] WLTKD Hippodrome[ICON_FOOD][ENDCOLOR]", 2.5)
-							end
+						
+							break
 						end
-
-						break
 					end
 				end
 			end

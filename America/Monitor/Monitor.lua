@@ -160,6 +160,8 @@ function MonitorOnCityFound(iPlayer, iX, iY)
 			end
 		end
 
+		local pCity = pPlot:GetPlotCity()
+
 		if bInRange or bOnTheSameTile then
 			if not pCity:IsHasBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSE) then
 				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSE, 1)

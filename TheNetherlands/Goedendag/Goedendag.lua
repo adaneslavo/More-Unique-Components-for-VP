@@ -1,6 +1,7 @@
 -- Goedendag
 -- Author: adan_eslavo
 -- DateCreated: 12/12/2017
+-- 2018-01-22 Infixo, RESOURCECLASS_LUXURY used
 --------------------------------------------------------------
 function GoedendagOnMove(iPlayer, iUnit, iX, iY)
 	local pPlayer = Players[iPlayer];
@@ -27,10 +28,10 @@ function GoedendagOnMove(iPlayer, iUnit, iX, iY)
 			if not bOnTheSameTile then
 				for iDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 					local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), iDirection)
-			
+					
 					for iVal = 0,(pAdjacentPlot:GetNumUnits() - 1) do
 						local pAdjacentUnit = pAdjacentPlot:GetUnit(iVal)
-					
+						
 						if pAdjacentUnit:GetOwner() == iPlayer and pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG"]) then
 							bInRange = true
 							break
@@ -43,15 +44,7 @@ function GoedendagOnMove(iPlayer, iUnit, iX, iY)
 				end
 			end
 
-			if bInRange or bOnTheSameTile then
-				if not pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
-				end
-			else
-				if pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], false)
-				end
-			end
+			pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], (bInRange or bOnTheSameTile))
 		end
 	end
 end
@@ -94,11 +87,7 @@ function GoedendagOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 				end
 			end
 
-			if bInRange or bOnTheSameTile then
-				if not pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
-				end
-			end
+			pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], (bInRange or bOnTheSameTile))
 		end
 	elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG"]) then
 		local pPlot = pUnit:GetPlot()
@@ -108,9 +97,7 @@ function GoedendagOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 				local pSameTileUnit = pPlot:GetUnit(iVal)
 				
 				if pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:GetUnitCombatType() >= 0 and pSameTileUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND then
-					if not pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"]) then
-						pSameTileUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
-					end
+					pSameTileUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
 				end
 			end
 
@@ -121,9 +108,7 @@ function GoedendagOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 					local pAdjacentUnit = pAdjacentPlot:GetUnit(iVal)
 					
 					if pAdjacentUnit:GetOwner() == iPlayer and pAdjacentUnit:GetUnitCombatType() >= 0 and pAdjacentUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND then
-						if not pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"]) then
-							pAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
-						end
+						pAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
 					end
 				end
 			end
@@ -169,11 +154,7 @@ function GoedendagOnBuild(iPlayer, iCity, iUnit)
 				end
 			end
 
-			if bInRange or bOnTheSameTile then
-				if not pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"]) then
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
-				end
-			end
+			pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], (bInRange or bOnTheSameTile))
 		end
 	elseif pUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG"]) then
 		local pPlot = pUnit:GetPlot()
@@ -183,9 +164,7 @@ function GoedendagOnBuild(iPlayer, iCity, iUnit)
 				local pSameTileUnit = pPlot:GetUnit(iVal)
 				
 				if pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:GetUnitCombatType() >= 0 and pSameTileUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND then
-					if not pSameTileUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"]) then
-						pSameTileUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
-					end
+					pSameTileUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
 				end
 			end
 
@@ -196,9 +175,7 @@ function GoedendagOnBuild(iPlayer, iCity, iUnit)
 					local pAdjacentUnit = pAdjacentPlot:GetUnit(iVal)
 					
 					if pAdjacentUnit:GetOwner() == iPlayer and pAdjacentUnit:GetUnitCombatType() >= 0 and pAdjacentUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND then
-						if not pAdjacentUnit:IsHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"]) then
-							pAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
-						end
+						pAdjacentUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT"], true)
 					end
 				end
 			end
@@ -214,6 +191,7 @@ function GoedendagOnResourceBonus(iPlayer, iUnit, iX, iY)
 		local pPlot = pUnit:GetPlot()
 			
 		if pPlot ~= nil then	
+			--[[
 			local iLuxuries = {}
 				iLuxuries[0] = GameInfoTypes.RESOURCE_AMBER
 				iLuxuries[1] = GameInfoTypes.RESOURCE_BRAZILWOOD
@@ -258,16 +236,11 @@ function GoedendagOnResourceBonus(iPlayer, iUnit, iX, iY)
 					break
 				end
 			end
-
-			if bIsLuxury then
-				if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT) == false then
-					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT, true)
-				end
-			else
-				if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT) == true then
-					pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT, false)
-				end
-			end
+			--]]
+			local eResType = pPlot:GetResourceType(pPlayer:GetTeam())
+			local bIsLuxury = false
+			if eResType ~= -1 then bIsLuxury = (GameInfo.Resources[ eResType ].ResourceClassType == "RESOURCECLASS_LUXURY") end
+			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT, bIsLuxury)
 		end			
 	end
 end
@@ -276,3 +249,5 @@ GameEvents.UnitSetXY.Add(GoedendagOnMove)
 GameEvents.UnitCreated.Add(GoedendagOnCreate)
 GameEvents.CityTrained.Add(GoedendagOnBuild)
 GameEvents.UnitSetXY.Add(GoedendagOnResourceBonus)
+
+print("OK loaded Goedendag.lua")

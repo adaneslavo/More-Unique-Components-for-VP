@@ -32,19 +32,22 @@ end
 
 function RazziaOnKill(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP, iInterceptingPlayer, iInterceptingUnit, iInterceptorDamage, iPlotX, iPlotY)
 	local pAttackingPlayer = Players[iAttackingPlayer]
-	local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 	local pDefendingPlayer = Players[iDefendingPlayer]
-	local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
+	
+	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
+		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
+		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 
-	if(pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_RAZZIA) and iDefenderFinalDamage >= iDefenderMaxHP) then
-		local yields = pDefendingUnit:GetBaseCombatStrength() * 2
-		local city = GetNearestCoastalCity(iPlotX, iPlotY, pAttackingPlayer)
-		if city then
-			local hex = ToHexFromGrid(Vector2(iPlotX, iPlotY))
-			Events.AddPopupTextEvent(HexToWorld(hex), Locale.ConvertTextKey("[ICON_WHITE]+{1_Num}[ENDCOLOR] [ICON_FOOD]", yields), true)
-			Events.AddPopupTextEvent(HexToWorld(hex), Locale.ConvertTextKey("[ICON_WHITE]+{1_Num}[ENDCOLOR] [ICON_PRODUCTION]", yields), true)
-			city:ChangeFood(yields)
-			city:ChangeProduction(yields)
+		if(pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_RAZZIA) and iDefenderFinalDamage >= iDefenderMaxHP) then
+			local yields = pDefendingUnit:GetBaseCombatStrength() * 2
+			local city = GetNearestCoastalCity(iPlotX, iPlotY, pAttackingPlayer)
+			if city then
+				local hex = ToHexFromGrid(Vector2(iPlotX, iPlotY))
+				Events.AddPopupTextEvent(HexToWorld(hex), Locale.ConvertTextKey("[ICON_WHITE]+{1_Num}[ENDCOLOR] [ICON_FOOD]", yields), true)
+				Events.AddPopupTextEvent(HexToWorld(hex), Locale.ConvertTextKey("[ICON_WHITE]+{1_Num}[ENDCOLOR] [ICON_PRODUCTION]", yields), true)
+				city:ChangeFood(yields)
+				city:ChangeProduction(yields)
+			end
 		end
 	end
 end

@@ -30,7 +30,7 @@ function Scythe(iPlayer, iUnit, iX, iY)
 					end
 
 					if pTargetPlayer:IsHuman() then
-						pTargetPlayer:AddNotification(0, 'One of your units was hurt by enemy Scythed Chariot.', 'Unit damaged', pCity:GetX(), pCity:GetY())
+						pTargetPlayer:AddNotification(0, pTargetUnit:GetName()..' was hurt by enemy Scythed Chariot for 10 damage.', 'Unit damaged by Scythed Chariot', pCity:GetX(), pCity:GetY())
 					end
 				end
 			end

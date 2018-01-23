@@ -2,9 +2,6 @@
 -- Author: adan_eslavo
 -- DateCreated: 22/10/2017
 --------------------------------------------------------------
-include("FLuaVector.lua")
-include("InstanceManager")
-
 function DefensivePactOrWar(iPlayer)
 	local pPlayer = Players[iPlayer]
 
@@ -92,14 +89,7 @@ function DiplomaticReciprocityEmbassy(iPlayer, iUnit, iUnitType, iX, iY)
 					pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH, pCapital:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH) + iFaith)
 
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_FOOD]+"..iFood.." [ICON_FOOD][ENDCOLOR]", 1)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+"..iProduction.." [ICON_PRODUCTION][ENDCOLOR]", 1.5)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_GOLD]+"..iGold.." [ICON_GOLD][ENDCOLOR]", 2)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.." [ICON_RESEARCH][ENDCOLOR]", 2.5)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iCulture.." [ICON_CULTURE][ENDCOLOR]", 3)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iFaith.." [ICON_PEACE][ENDCOLOR]", 3.5)
+						pPlayer:AddNotification(0, '[ICON_INFLUENCE] Diplomatic Mission performed by Great Diplomat. The City of '..pCapital:GetName()..' gained additional permanent yields:[NEWLINE][ICON_BULLET]+'..iFood..' [ICON_FOOD] Food[NEWLINE][ICON_BULLET]+'..iProduction..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET]+'..iGold..' [ICON_GOLD] Gold[NEWLINE][ICON_BULLET]+'..iScience..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iCulture..' [ICON_CULTURE] Culture[NEWLINE][ICON_BULLET]+'..iFaith..' [ICON_PEACE] Faith', 'Yields added in '..pCapital:GetName(), pPlot:GetX(), pPlot:GetY())
 					end
 				else
 					iFood = pPlot:GetYield(0) / 2
@@ -117,23 +107,12 @@ function DiplomaticReciprocityEmbassy(iPlayer, iUnit, iUnitType, iX, iY)
 					pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH, pCapital:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYFAITH) + iFaith)
 
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-					
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_FOOD]+"..iFood.." [ICON_FOOD][ENDCOLOR]", 1)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+"..iProduction.." [ICON_PRODUCTION][ENDCOLOR]", 1.5)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_GOLD]+"..iGold.." [ICON_GOLD][ENDCOLOR]", 2)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.." [ICON_RESEARCH][ENDCOLOR]", 2.5)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iCulture.." [ICON_CULTURE][ENDCOLOR]", 3)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iFaith.." [ICON_PEACE][ENDCOLOR]", 3.5)
+						pPlayer:AddNotification(0, '[ICON_INFLUENCE] Diplomatic Mission performed by Great Diplomat. The City of '..pCapital:GetName()..' gained additional permanent yields:[NEWLINE][ICON_BULLET]+'..iFood..' [ICON_FOOD] Food[NEWLINE][ICON_BULLET]+'..iProduction..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET]+'..iGold..' [ICON_GOLD] Gold[NEWLINE][ICON_BULLET]+'..iScience..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iCulture..' [ICON_CULTURE] Culture[NEWLINE][ICON_BULLET]+'..iFaith..' [ICON_PEACE] Faith', 'Yields added in '..pCapital:GetName(), pPlot:GetX(), pPlot:GetY())
 					end
 				end
 			end
 		end
 	end
-end
-
-function PositionCalculator(i1, i2)
-	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
 GameEvents.PlayerDoTurn.Add(DefensivePactOrWar)

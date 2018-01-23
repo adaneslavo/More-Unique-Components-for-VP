@@ -73,9 +73,9 @@ VALUES		('UNIT_MONGOLIA_ATLAS', 		256, 		'BlackTugPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 									Description, 								Help, 												Sound, 				AttackWoundedMod,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_MONGOLIA_MINGGHAN', 	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN',	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN_HELP', 	'AS2D_IF_LEVELUP',	30,					0,				0,			0,			0,					0,			0,					1, 				9, 				'PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN'),
-			('PROMOTION_UNIT_MONGOLIA_MASSACRE', 	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE',	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE_HELP', 	'AS2D_IF_LEVELUP',	0,					0,				20,			0,			0,					0,			0,					1, 				9, 				'PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE');
+			(Type, 									Description, 								Help, 												Sound, 				GainsXPFromPillaging,	AttackWoundedMod,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_MONGOLIA_MINGGHAN', 	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN',	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN_HELP', 	'AS2D_IF_LEVELUP',	1,						0,					0,				0,			0,			0,					0,			0,					1, 				9, 				'PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN'),
+			('PROMOTION_UNIT_MONGOLIA_MASSACRE', 	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE',	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE_HELP', 	'AS2D_IF_LEVELUP',	0,						0,					0,				20,			0,			0,					0,			0,					1, 				9, 				'PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

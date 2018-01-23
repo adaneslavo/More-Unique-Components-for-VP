@@ -5,8 +5,8 @@
 -- Civilization_UnitClassOverrides
 --------------------------------	
 INSERT INTO	Civilization_UnitClassOverrides
-			(CivilizationType, UnitClassType, UnitType)
-VALUES		('CIVILIZATION_EGYPT', 'UNITCLASS_SPEARMAN', 'UNIT_EGYPTIAN_KHOPESH');
+			(CivilizationType,		UnitClassType,			UnitType)
+VALUES		('CIVILIZATION_EGYPT',	'UNITCLASS_SPEARMAN',	'UNIT_EGYPT_KHOPESH');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -16,58 +16,52 @@ VALUES		('CIVILIZATION_EGYPT', 'UNITCLASS_SPEARMAN', 'UNIT_EGYPTIAN_KHOPESH');
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,						Description,						Civilopedia,							Strategy,									Help,									Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, ObsoleteTech,		GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, UnitArtInfo,						UnitFlagIconOffset, PortraitIndex,	IconAtlas,			UnitFlagAtlas,	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_EGYPTIAN_KHOPESH',	'TXT_KEY_UNIT_EGYPTIAN_KHOPESH',	'TXT_KEY_UNIT_EGYPTIAN_KHOPESH_TEXT',	'TXT_KEY_UNIT_EGYPTIAN_KHOPESH_STRATEGY',	'TXT_KEY_UNIT_EGYPTIAN_KHOPESH_HELP',	Combat+3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_GUNPOWDER', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_KHOPESH_SWORDSMAN', 	0,					0,				'KHOPESH_ATLAS',	'KHOPESH_FLAG', MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
+			(Type,					Description,					Civilopedia,						Strategy,								Help,								Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, ObsoleteTech,		GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, UnitArtInfo,						UnitFlagIconOffset, PortraitIndex,	IconAtlas,			UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
+SELECT		'UNIT_EGYPT_KHOPESH',	'TXT_KEY_UNIT_EGYPT_KHOPESH',	'TXT_KEY_UNIT_EGYPT_KHOPESH_TEXT',	'TXT_KEY_UNIT_EGYPT_KHOPESH_STRATEGY',	'TXT_KEY_UNIT_EGYPT_KHOPESH_HELP',	Combat+3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_GUNPOWDER', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_KHOPESH_SWORDSMAN', 	0,					0,				'UNIT_EGYPT_ATLAS',	'UNIT_EGYPT_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_SPEARMAN';
 --------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	
-			(UnitType, 					UnitAIType)
-SELECT		'UNIT_EGYPTIAN_KHOPESH', 	UnitAIType
+			(UnitType, 				UnitAIType)
+SELECT		'UNIT_EGYPT_KHOPESH', 	UnitAIType
 FROM Unit_AITypes WHERE UnitType = 'UNIT_SPEARMAN';
 --------------------------------	
 -- Unit_BuildingClassPurchaseRequireds
 --------------------------------		
 INSERT INTO Unit_BuildingClassPurchaseRequireds 	
-			(UnitType, 					BuildingClassType)
-SELECT		'UNIT_EGYPTIAN_KHOPESH', 	BuildingClassType
+			(UnitType, 				BuildingClassType)
+SELECT		'UNIT_EGYPT_KHOPESH', 	BuildingClassType
 FROM Unit_BuildingClassPurchaseRequireds WHERE UnitType = 'UNIT_SPEARMAN';
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------		
 INSERT INTO Unit_ClassUpgrades 	
-			(UnitType, 					UnitClassType)
-SELECT		'UNIT_EGYPTIAN_KHOPESH', 	UnitClassType
+			(UnitType, 				UnitClassType)
+SELECT		'UNIT_EGYPT_KHOPESH', 	UnitClassType
 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_SPEARMAN';
 --------------------------------	
 -- Unit_Flavors
 --------------------------------	
 INSERT INTO	Unit_Flavors
-			(UnitType, 					FlavorType,			Flavor)
-VALUES		('UNIT_EGYPTIAN_KHOPESH',	'FLAVOR_OFFENSE',	6),
-			('UNIT_EGYPTIAN_KHOPESH',	'FLAVOR_DEFENSE',	6);
+			(UnitType, 				FlavorType,			Flavor)
+VALUES		('UNIT_EGYPT_KHOPESH',	'FLAVOR_OFFENSE',	6),
+			('UNIT_EGYPT_KHOPESH',	'FLAVOR_DEFENSE',	6);
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------	
 INSERT INTO		Unit_FreePromotions
-				(UnitType,					PromotionType)
-VALUES			('UNIT_EGYPTIAN_KHOPESH',	'PROMOTION_UNIT_EGYPT_FATIGUE'),
-				('UNIT_EGYPTIAN_KHOPESH',	'PROMOTION_UNIT_EGYPT_MERCY');
+				(UnitType,				PromotionType)
+VALUES			('UNIT_EGYPT_KHOPESH',	'PROMOTION_UNIT_EGYPT_FATIGUE'),
+				('UNIT_EGYPT_KHOPESH',	'PROMOTION_UNIT_EGYPT_MERCY');
 --------------------------------	
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-			(Type,								Description,							Help,											CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry)
-VALUES		('PROMOTION_UNIT_EGYPT_FATIGUE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP',	1,					'AS2D_IF_LEVELUP',	23,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE');
-
-INSERT INTO UnitPromotions
-			(Type,								Description,								Help,											CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry,									CombatPercent)
-VALUES		('PROMOTION_UNIT_EGYPT_FATIGUE_1',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1_HELP',	1,					'AS2D_IF_LEVELUP',	57,				'PROMOTION_ATLAS',	'PEDIA_SHARED',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1',	-20);
-
-INSERT INTO UnitPromotions
-			(Type,							Description,							Help,										CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry,								AttackBelowEqual50HealthMod)
-VALUES		('PROMOTION_UNIT_EGYPT_MERCY',	'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',	'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY_HELP',	1,					'AS2D_IF_LEVELUP',	9,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',	30);
+			(Type,								Description,								Help,											CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry,									CombatPercent,	AttackBelowEqual50HealthMod)
+VALUES		('PROMOTION_UNIT_EGYPT_FATIGUE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE',		'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP',	1,					'AS2D_IF_LEVELUP',	23,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE',		0,				0),
+			('PROMOTION_UNIT_EGYPT_FATIGUE_1',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1_HELP',	1,					'AS2D_IF_LEVELUP',	57,				'PROMOTION_ATLAS',	'PEDIA_SHARED',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1',	-20,			0),
+			('PROMOTION_UNIT_EGYPT_MERCY',		'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',		'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY_HELP',		1,					'AS2D_IF_LEVELUP',	9,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',		0,				30);
 --==========================================================================================================================	
 
 --==========================================================================================================================
@@ -107,18 +101,17 @@ INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, Mate
 -- ArtDefine_StrategicView
 ------------------------------
 INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
-	VALUES	('ART_DEF_UNIT_KHOPESH_SWORDSMAN', 'Unit', 'Khopesh_SV.dds');
+	VALUES	('ART_DEF_UNIT_KHOPESH_SWORDSMAN', 'Unit', 'KhopeshFlag_128.dds');
 ------------------------------
 -- IconTextureAtlases
 ------------------------------
 INSERT INTO IconTextureAtlases 
 			(Atlas, 								IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
-VALUES		('KHOPESH_ATLAS', 						256, 		'3UC_khopesh256.dds',				1, 				1),
-			('KHOPESH_ATLAS', 						128, 		'3UC_khopesh128.dds',				1, 				1),
-			('KHOPESH_ATLAS', 						80, 		'3UC_khopesh80.dds',				1, 				1),
-			('KHOPESH_ATLAS', 						45, 		'3UC_khopesh45.dds',				1, 				1),
-			('KHOPESH_ATLAS', 						64, 		'3UC_khopesh64.dds',				1, 				1),
-			('KHOPESH_ATLAS', 						32, 		'3UC_khopesh32.dds',				1, 				1),
-			('KHOPESH_FLAG', 						32, 		'Khopesh_Flag.dds',					1, 				1);
+VALUES		('UNIT_EGYPT_ATLAS', 						256, 		'KhopeshPicture_256.dds',				1, 				1),
+			('UNIT_EGYPT_ATLAS', 						128, 		'KhopeshPicture_128.dds',				1, 				1),
+			('UNIT_EGYPT_ATLAS', 						80, 		'KhopeshPicture_080.dds',				1, 				1),
+			('UNIT_EGYPT_ATLAS', 						45, 		'KhopeshPicture_045.dds',				1, 				1),
+			('UNIT_EGYPT_ATLAS', 						64, 		'KhopeshPicture_064.dds',				1, 				1),
+			('UNIT_EGYPT_FLAG_ATLAS', 					32, 		'KhopeshFlag_032.dds',					1, 				1);
 --==========================================================================================================================
 --==========================================================================================================================

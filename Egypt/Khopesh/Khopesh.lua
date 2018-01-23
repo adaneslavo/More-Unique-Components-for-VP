@@ -15,9 +15,7 @@ function KhopeshFatigue(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAtta
 		
 		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE) then
 			if iDefenderFinalDamage < iDefenderMaxHP then
-				if not pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1) then	
-					pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1, true)
-				end
+				pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1, true)
 			end
 		end
 	end

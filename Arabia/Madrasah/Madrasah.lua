@@ -1,29 +1,35 @@
+-- Madrasah
+-- Author: Blue Ghost, adan_eslavo
+-- DateCreated:
+--------------------------------------------------------------
 include("Sukritact_ChangeResearchProgress.lua")
-
-local greatPeople = { GameInfoTypes.UNIT_GREAT_GENERAL, GameInfoTypes.UNIT_GREAT_ADMIRAL, GameInfoTypes.UNIT_PROPHET, GameInfoTypes.UNIT_ARTIST, GameInfoTypes.UNIT_WRITER, GameInfoTypes.UNIT_MUSICIAN, GameInfoTypes.UNIT_SCIENTIST, GameInfoTypes.UNIT_MERCHANT, GameInfoTypes.UNIT_ENGINEER, GameInfoTypes.UNIT_GREAT_DIPLOMAT }
-
-function IsGreatPerson(iPlayer, iUnit)
-	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-	for _, unitType in pairs(greatPeople) do
-		if (unitType == pUnit:GetUnitType()) then
-			return true
-		end
-	end
-	return false
-end
+include("FLuaVector.lua")
+include("InstanceManager")
 
 function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
-	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith) then
-		local iScience = 20 * math.max(pPlayer:GetCurrentEra(), 1)
-		if IsGreatPerson(iPlayer, iUnit) then
-			iScience = 100 * math.max(pPlayer:GetCurrentEra(), 1)
+	
+	local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
+	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+
+	if pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith then
+		local iScience
+		local pUnit = pPlayer:GetUnitByID(iUnit)
+
+		if pUnit:IsGreatPerson() then
+			iScience = math.floor(50 * iEraModifier * iGameSpeedModifier)
+		else
+			iScience = math.floor(10 * iEraModifier * iGameSpeedModifier)
 		end
-		if iPlayer == Game:GetActivePlayer() then
-			Events.GameplayAlertMessage(Locale.ConvertTextKey("TXT_KEY_ALERT_MADRASAH_SCIENCE", iScience, pCity:GetName()))
+
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+				
+			Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.."[ICON_RESEARCH][ENDCOLOR]", 1)
+			pPlayer:AddNotification(0, '[ICON_PEACE] Faith purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iScience..' [ICON_RESEARCH] Science', 'Bonus Yields in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
 		end
+
 		LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iScience)
 	end
 end
@@ -31,16 +37,27 @@ end
 function MadrasahScienceBuilding(iPlayer, iCity, iBuilding, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
-	if (pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith) then
-		local iScience = 20 * math.max(pPlayer:GetCurrentEra(), 1)
-		if iPlayer == Game:GetActivePlayer() then
-			Events.GameplayAlertMessage(Locale.ConvertTextKey("TXT_KEY_ALERT_MADRASAH_SCIENCE", iScience, pCity:GetName()))
+	
+	if pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith then
+		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+		local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
+
+		local iScience = math.floor(10 * iEraModifier * iGameSpeedModifier)
+		
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+				
+			Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iScience.."[ICON_RESEARCH][ENDCOLOR]", 1)
+			pPlayer:AddNotification(0, '[ICON_PEACE] Faith purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iScience..' [ICON_RESEARCH] Science', 'Bonus Yields in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
 		end
+
 		LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iScience)
 	end
 end
 
-
+function PositionCalculator(i1, i2)
+	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
+end
 
 GameEvents.CityTrained.Add(MadrasahScienceUnit)
 GameEvents.CityConstructed.Add(MadrasahScienceBuilding)
