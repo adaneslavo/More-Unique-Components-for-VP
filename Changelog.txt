@@ -6,6 +6,7 @@ More Unique Components for Vox Populi changelog:
 
 *roman GG appear and disappear?
 *Baan Change after VP update
+*dummies?
 
 v26:
 - deleted scaling with Era from units,
@@ -26,15 +27,18 @@ v26:
 - modified Standshutzen (now only Land Military Units production modifier),
 - modified Pitz (B'ak'tun bonus: now 20 of each yield, added Epic and Marathon B'ak'tun turns),
 - added missing Amphibious promotion to Pracinha,
-- updated Hippodrome to 1-22,
+- updated Hippodrome to 1-22; deleted horses from it,
 - deleted some debug statements,
 - deleted Fix.sql file (integrated into VP by @Infixo),
+- deleted !Lua folder; moved ModUserData.lua to !Utils,
 - added mipmaps to Lammasu and Sambadromo art,
 - cut unnecessary art from Sambadromo,
 - changed Flax icons,
 - tweaked lua code, simplified lua for giving and taking promotions,
 - reworked Goedendag, Nilometer, Buffalo Pound, Black Tug, Pitz and Pogost,
 - cleaned up the code,
+- deleted all Alert messages,
+- fixed Tophet (no unnecessary art; fixed military flavor; fixed HurryCostModifier; moved art definition to Tophet files)
 - fixed Black Tug bonus vs Wonded Units (shouldn't be in Mingghan),
 - fixed Exam Hall,
 - fixed Nilometer Flax spawning,

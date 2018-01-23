@@ -564,11 +564,6 @@
 				+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] for Diplomatic Units in the city in which it is built. [NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% Great People rate in the city, increased to +10% during We Love the King Day.[NEWLINE][NEWLINE]Whenever a citizen is born, gain 15 points toward a random Great Person, scaling with era.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_ALERT_EXAMINATIONS">
-			<Text>
-				The birth of a citizen has earned you {1_Num} points toward a {2_Str} in {3_Str}.
-			</Text>
-		</Row>
 		
 		<!-- Fale Tel'e -->
 		<!-- Created by adan_eslavo 5/11/2017 -->
@@ -2275,24 +2270,19 @@
 
 		<!-- Tophet -->
 		<!-- Created by pineappledan -->
-		<Row Tag="TXT_KEY_BUILDING_TOPHET">
+		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET">
 			<Text>Tophet</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_TOPHET_HELP">
+		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_HELP">
 			<Text>Provides [ICON_PEACE] Faith and [ICON_CULTURE] Culture in the City. [NEWLINE]Receive 10 [ICON_CULTURE] Culture in the City whenever a Unit is purchased, scaling with era, and Units purchased in this city receive full XP from buildings.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_TOPHET_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_STRATEGY">
 			<Text>The Tophet is the unique Shrine replacement for Carthage. In addition to the normal bonuses of a Shrine, the Tophet provides Culture whenever a unit is purchased in the City. Military Units purchased in a City with a Tophet are not affected by the normal half XP penalty for purchasing.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_TOPHET_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_TEXT">
 			<Text>
 				"Tophet" is a Hebrew term for a place of worship and human sacrifice to the Canaanite gods, and has become a colorful synonym for hell within Judeo-Christian theology. Usually located outside cities, Tophets were holy places where sacrifices to the gods could be presented to the heads of the Phoenician pantheon, Ba'al Hammon, the god of weather and vegetation, and his consort, Tanit.[NEWLINE][NEWLINE]
 				Regular sacrifices were made to ensure the prosperity of Carthage. After the ceremony, ashes of the burnt offering were placed within a vessel and stones were placed on top of the funerary urns to seal them within the Tophet. Child sacrifice, once prevalent throughout the Near-East, was a persistent hallmark of Carthaginian religious life long after contemporary cultures had shunned the practice. Modern archaeological evidence suggests children were sacrificed in times of great stress such as wars, plagues, and natural disasters as an act of divine supplication.
-			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_ALERT_TOPHET_CULTURE">
-			<Text>
-				Purchasing a unit has earned you {1_num} [ICON_CULTURE] Culture from your Tophet in {2_Str}.
 			</Text>
 		</Row>
 

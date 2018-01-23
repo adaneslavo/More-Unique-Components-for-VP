@@ -11,13 +11,7 @@ VALUES	('JFD_CARTHAGE_HANNIBAL_ATLAS', 		256, 		'JFD_CarthageHannibalAtlas_256.d
 		('JFD_CARTHAGE_HANNIBAL_ATLAS', 		64, 		'JFD_CarthageHannibalAtlas_64.dds',			2, 				1),
 		('JFD_CARTHAGE_HANNIBAL_ATLAS', 		45, 		'JFD_CarthageHannibalAtlas_45.dds',			2, 				1),
 		('JFD_CARTHAGE_HANNIBAL_ATLAS', 		32, 		'JFD_CarthageHannibalAtlas_32.dds',			2,				1),
-		('JFD_UNIT_FLAG_SHOPHET_ATLAS', 		32, 		'JFD_ShophetUnitFlag_32.dds',				1, 				1),
-		('BUILDING_TOPHET_ATLAS', 		256, 		'Tophet256.dds',		1, 				1),
-		('BUILDING_TOPHET_ATLAS', 		128, 		'Tophet128.dds',		1, 				1),
-		('BUILDING_TOPHET_ATLAS', 		80, 		'Tophet80.dds',			1, 				1),
-		('BUILDING_TOPHET_ATLAS', 		64, 		'Tophet64.dds',			1, 				1),
-		('BUILDING_TOPHET_ATLAS', 		45, 		'Tophet45.dds',			1, 				1),
-		('BUILDING_TOPHET_ATLAS', 		32, 		'Tophet32.dds',			1,				1);	
+		('JFD_UNIT_FLAG_SHOPHET_ATLAS', 		32, 		'JFD_ShophetUnitFlag_32.dds',				1, 				1);
 		
 --==========================================================================================================================
 -- UNIT GRAPHICS

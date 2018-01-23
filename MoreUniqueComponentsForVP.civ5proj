@@ -531,22 +531,22 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Brazil/Samba School/Sambadrome.sql</FileName>
+        <FileName>Brazil/Sambadrome/Sambadrome.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Carthage/CarthageShofet/1.ShofetArt.sql</FileName>
+        <FileName>Carthage/Shofet/1.ShofetArt.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Carthage/CarthageShofet/2.ShofetGame.sql</FileName>
+        <FileName>Carthage/Shofet/2.ShofetGame.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Carthage/CarthageTophet/1.TophetCode.sql</FileName>
+        <FileName>Carthage/Tophet/Tophet.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -956,13 +956,13 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Shofet</Name>
         <Description>Shofet conversion functions</Description>
-        <FileName>Carthage/CarthageShofet/3.Shofet.lua</FileName>
+        <FileName>Carthage/Shofet/3.Shofet.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Tophet</Name>
         <Description>Tophet XP and culture on unit purchase</Description>
-        <FileName>Carthage/CarthageTophet/Tophet.lua</FileName>
+        <FileName>Carthage/Tophet/Tophet.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1039,10 +1039,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!Lua\ModUserData.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="!SharedAssets\SharedAtlas.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1068,6 +1064,10 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.80.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Utils\ModUserData.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1299,23 +1299,23 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Brazil\Samba School\Sambadrome.sql">
+    <Content Include="Brazil\Sambadrome\Sambadrome.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Brazil\Samba School\SambadromePicture_128.dds">
+    <Content Include="Brazil\Sambadrome\SambadromePicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Brazil\Samba School\SambadromePicture_256.dds">
+    <Content Include="Brazil\Sambadrome\SambadromePicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Brazil\Samba School\SambadromePicture_045.dds">
+    <Content Include="Brazil\Sambadrome\SambadromePicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Brazil\Samba School\SambadromePicture_064.dds">
+    <Content Include="Brazil\Sambadrome\SambadromePicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1323,115 +1323,103 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\1.ShofetArt.sql">
+    <Content Include="Carthage\Shofet\1.ShofetArt.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\2.ShofetGame.sql">
+    <Content Include="Carthage\Shofet\2.ShofetGame.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\3.Shofet.lua">
+    <Content Include="Carthage\Shofet\3.Shofet.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\JFD_CarthageHannibalAtlas_128.dds">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\JFD_CarthageHannibalAtlas_256.dds">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\JFD_CarthageHannibalAtlas_32.dds">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\JFD_CarthageHannibalAtlas_45.dds">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\JFD_CarthageHannibalAtlas_64.dds">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece_Horse.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\JFD_CarthageHannibalAtlas_80.dds">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece_Horse_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\JFD_ShophetUnitFlag_32.2.dds">
+    <Content Include="Carthage\Shofet\3DModel\tcmAmmiratus.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\JFD_ShophetUnitFlag_32.dds">
+    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\Knight_Greece.dds">
+    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\Knight_Greece.fxsxml">
+    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\Knight_Greece.gr2">
+    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\Knight_Greece_gloss.dds">
+    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\Knight_Greece_Horse.dds">
+    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\Knight_Greece_Horse_gloss.dds">
+    <Content Include="Carthage\Shofet\JFD_ShophetUnitFlag_32.2.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\sv_Shophet.dds">
+    <Content Include="Carthage\Shofet\JFD_ShophetUnitFlag_32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageShofet\tcmAmmiratus.gr2">
+    <Content Include="Carthage\Shofet\sv_Shophet.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Carthage\Tophet\Tophet.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageTophet\1.TophetCode.sql">
+    <Content Include="Carthage\Tophet\Tophet.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageTophet\Tophet.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Carthage\CarthageTophet\Tophet128.dds">
+    <Content Include="Carthage\Tophet\TophetPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageTophet\Tophet256.dds">
+    <Content Include="Carthage\Tophet\TophetPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageTophet\Tophet32.dds">
+    <Content Include="Carthage\Tophet\TophetPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\CarthageTophet\Tophet45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Carthage\CarthageTophet\Tophet64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Carthage\CarthageTophet\Tophet80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Carthage\JFD_CarthageHannibalAtlas_45.dds">
+    <Content Include="Carthage\Tophet\TophetPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -4613,11 +4601,12 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Austria\Standschutzen\" />
     <Folder Include="Brazil\" />
     <Folder Include="Brazil\Pracinha\" />
-    <Folder Include="Brazil\Samba School\" />
+    <Folder Include="Brazil\Sambadrome" />
     <Folder Include="Byzantium\Theodora" />
     <Folder Include="Carthage\" />
-    <Folder Include="Carthage\CarthageShofet\" />
-    <Folder Include="Carthage\CarthageTophet\" />
+    <Folder Include="Carthage\Shofet" />
+    <Folder Include="Carthage\Shofet\3DModel" />
+    <Folder Include="Carthage\Tophet" />
     <Folder Include="China\" />
     <Folder Include="China\Examination Hall\" />
     <Folder Include="China\Xiafan Guanjun\" />
@@ -4630,7 +4619,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="England\Longbowman" />
     <Folder Include="England\WhiteTower" />
     <Folder Include="Egypt" />
-    <Folder Include="!Lua" />
     <Folder Include="!Utils" />
     <Folder Include="!SharedAssets" />
     <Folder Include="Germany\Teutonic Order" />

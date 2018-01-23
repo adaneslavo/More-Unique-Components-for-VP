@@ -30,9 +30,7 @@ function KatunAhawUpgrade(iPlayer)
 
 	if not pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA then return end
 	
-	local pTeam = Teams[pPlayer:GetTeam()]
-
-	if pTeam:GetTeamTechs():HasTech(GameInfoTypes.TECH_MATHEMATICS) then
+	if pPlayer:IsUsingMayaCalendar() then
 		local sMayaCalendar = pPlayer:GetMayaCalendarString()
 		local sMayaBaktun
 			

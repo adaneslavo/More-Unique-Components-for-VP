@@ -80,12 +80,6 @@ INSERT INTO Building_ResourceYieldChanges
 			(BuildingType,						ResourceType,		YieldType,			Yield)
 VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'RESOURCE_HORSE',	'YIELD_CULTURE',	1),
 			('BUILDING_BYZANTIUM_HIPPODROME',	'RESOURCE_HORSE',	'YIELD_GOLD',		1);
-------------------------------	
--- Building_ResourceQuantity
-------------------------------
-INSERT INTO Building_ResourceQuantity 	
-			(BuildingType,						ResourceType,		Quantity)
-VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'RESOURCE_HORSE',	2);
 --==========================================================================================================================
 --==========================================================================================================================
 
