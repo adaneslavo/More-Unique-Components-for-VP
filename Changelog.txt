@@ -26,6 +26,7 @@ v26:
 - reworked Landwehr (now +3c on Yorkshire promotion, Imperial Vigilance adds bonus to units inside friendly territory too, fixed texts),
 - modified Standshutzen (now only Land Military Units production modifier),
 - modified Pitz (B'ak'tun bonus: now 20 of each yield, added Epic and Marathon B'ak'tun turns),
+- reworked Latifundium (now permanent; cannot be adjacent to naother Latifundium; Roman workers can build plantation),
 - added missing Amphibious promotion to Pracinha,
 - updated Hippodrome to 1-22; deleted horses from it,
 - deleted some debug statements,
