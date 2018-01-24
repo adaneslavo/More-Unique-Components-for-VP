@@ -59,8 +59,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_HORSEMAN';
 INSERT INTO		Unit_FreePromotions
 				(UnitType,						PromotionType)
 VALUES			('UNIT_ASSYRIA_IRON_CHARIOT', 'PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL'),
-				('UNIT_ASSYRIA_IRON_CHARIOT', 'PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE'),
-				('UNIT_ASSYRIA_IRON_CHARIOT', 'PROMOTION_SHOCK_1');
+				('UNIT_ASSYRIA_IRON_CHARIOT', 'PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
