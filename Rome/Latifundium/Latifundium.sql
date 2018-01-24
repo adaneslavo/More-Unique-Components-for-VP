@@ -41,8 +41,8 @@ VALUES		('IMPROVEMENT_ROME_ATLAS', 			256, 		'LatifundiumIcons_256.dds',				1, 	
 ------------------------------
 INSERT INTO Improvements
 			(Type, 										Description, 							Civilopedia, 									ArtDefineTag, 							Help, 											SpecificCivRequired, 	CivilizationType, 		PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	Permanent,	PortraitIndex, 	IconAtlas, 					NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury, UpgradeTime,	ImprovementUpgrade)
-VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT',	'ART_DEF_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP',	1,						'CIVILIZATION_ROME',	25,				0,						0,						0,						1,			0,				'IMPROVEMENT_ROME_ATLAS',	1,				0,					0,				10,				'IMPROVEMENT_ROME_LATIFUNDIUM_UPGRADED'),
-			('IMPROVEMENT_ROME_LATIFUNDIUM_UPGRADED',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT',	'ART_DEF_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP',	0,						null,					25,				0,						0,						0,						1,			0,				'IMPROVEMENT_ROME_ATLAS',	1,				0,					0,				0,				null);
+VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT',	'ART_DEF_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP',	1,						'CIVILIZATION_ROME',	25,				0,						0,						0,						1,			0,				'IMPROVEMENT_ROME_ATLAS',	0,				0,					0,				10,				'IMPROVEMENT_ROME_LATIFUNDIUM_UPGRADED'),
+			('IMPROVEMENT_ROME_LATIFUNDIUM_UPGRADED',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT',	'ART_DEF_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP',	0,						null,					25,				0,						0,						0,						1,			0,				'IMPROVEMENT_ROME_ATLAS',	0,				0,					0,				0,				null);
 ------------------------------	
 -- Improvement_Flavors
 ------------------------------		
