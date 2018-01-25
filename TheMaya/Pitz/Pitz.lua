@@ -1,6 +1,7 @@
 -- Pitz
 -- Author: adan_eslavo
 -- DateCreated: 16/12/2017
+-- 2018-01-25 updated by Infixo
 --------------------------------------------------------------
 include("FLuaVector.lua")
 include("InstanceManager")
@@ -10,39 +11,34 @@ local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].Faith
 local fGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent/ 100
 local iMayaBaktun = 0
 
+local tEligibleCombats = {
+	GameInfoTypes.UNITCOMBAT_RECON = true,
+	GameInfoTypes.UNITCOMBAT_ARCHER = true,
+	GameInfoTypes.UNITCOMBAT_MOUNTED = true,
+	GameInfoTypes.UNITCOMBAT_MELEE = true,
+	GameInfoTypes.UNITCOMBAT_SIEGE = true,
+	GameInfoTypes.UNITCOMBAT_GUN = true,
+	GameInfoTypes.UNITCOMBAT_ARMOR = true,
+}
+
 function KatunAhaw(iPlayer, iCity, iUnit)
+	-- check for Maya
 	local pPlayer = Players[iPlayer]
-	
-	if pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA then
-		local pCity = pPlayer:GetCityByID(iCity)
-	
-		if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then	
-			local pUnit = pPlayer:GetUnitByID(iUnit)
-			
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW, pUnit:GetUnitCombatType() <= 6)
-		end
+	if not( pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA ) then return end
+	local pUnit = pPlayer:GetUnitByID(iUnit)
+	if pUnit and tEligibleCombats[ pUnit:GetUnitCombatType() ] then
+		pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW, pPlayer:GetCityByID(iCity):IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ))
 	end
 end
 
 function KatunAhawUpgrade(iPlayer)
+	-- check for Maya
 	local pPlayer = Players[iPlayer]
-	local iCounter = math.floor(20 * fGameSpeedModifier3)
-
-	if not pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA then return end
+	if not( pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA ) then return end
 	
 	if pPlayer:IsUsingMayaCalendar() then
 		local sMayaCalendar = pPlayer:GetMayaCalendarString()
-		local sMayaBaktun
-			
-		sMayaBaktun = string.sub(sMayaCalendar, 2, 2)
-		
-		if sMayaBaktun == "." then 
-			sMayaBaktun = string.sub(sMayaCalendar, 1, 1) 
-		else 
-			sMayaBaktun = string.sub(sMayaCalendar, 1, 2) 
-		end
-			
-		local iMayaActualBaktun = tonumber(sMayaBaktun)
+		local iMayaActualBaktun = tonumber( string.sub(sMayaCalendar,1,string.find(sMayaCalendar,"%.")-1) )
 			
 		if iMayaActualBaktun > iMayaBaktun then
 			iMayaBaktun = iMayaActualBaktun
@@ -62,13 +58,18 @@ function KatunAhawUpgrade(iPlayer)
 				
 						Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE][ENDCOLOR]", 1)
 						Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
-						pPlayer:AddNotification(0, 'Baktun '..iMayaActualBaktun..' has ended:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange2..' [ICON_PEACE] Faith', 'Bonus Yields in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
+						pPlayer:AddNotification(
+							NotificationTypes.NOTIFICATION_INSTANT_YIELD,
+							'Baktun '..iMayaActualBaktun..' has ended:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange2..' [ICON_PEACE] Faith',
+							'Bonus Yields in '..pCity:GetName(),
+							pCity:GetX(), pCity:GetY(), pCity:GetID())
 					end
 				end
 			end
 		end
 	end
 	
+	local iCounter = math.floor(20 * fGameSpeedModifier3)
 	if Game.GetElapsedGameTurns() % iCounter ~= 0 then return end
 
 	for pUnit in pPlayer:Units() do
@@ -86,6 +87,7 @@ function KatunAhawUpgrade(iPlayer)
 				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_3, false)
 				pUnit:ChangeExperience(15)
 			elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_4) then
+				-- code missing here?
 			else
 				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1, true)
 				pUnit:ChangeExperience(5)
