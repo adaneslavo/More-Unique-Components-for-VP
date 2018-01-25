@@ -66,7 +66,7 @@ function LatifundiumSpawnFigs(iX, iY, iOwner, iOldImprovement, iNewImprovement, 
 				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_TILE, 
 				'The City of '..pNearestCity:GetName()..'[ENDCOLOR] has claimed new tile.', 
 				'Borders of '..pNearestCity:GetName()..' have grown', 
-				pChosenPlot:GetX(), pChosenPlot:GetY(), GameInfoTypes.RESOURCE_ROME_FIGS)
+				pChosenPlot:GetX(), pChosenPlot:GetY(), pNearestCity:GetID())
 			end
 		elseif pCheckedPlayer:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_ROME then
 			pChosenPlot:SetOwner(iPlayer, pNearestCity:GetID(), true, true)	
@@ -75,14 +75,14 @@ function LatifundiumSpawnFigs(iX, iY, iOwner, iOldImprovement, iNewImprovement, 
 				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_TILE, 
 				'The City of '..pNearestCity:GetName()..'[ENDCOLOR] has taken a tile from another Empire!', 
 				'Borders of '..pNearestCity:GetName()..' have grown', 
-				pChosenPlot:GetX(), pChosenPlot:GetY(), GameInfoTypes.RESOURCE_ROME_FIGS)
+				pChosenPlot:GetX(), pChosenPlot:GetY(), pNearestCity:GetID())
 			end
 
 			if pCheckedPlayer:IsHuman() then
 				pCheckedPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_TILE, 
 				'Roman Empire found a plantation in one of your Cities. '..pCityThatLostTile:GetName()..' lost a tile.', 
 				'The City of '..pCityThatLostTile:GetName()..' lost a tile!', 
-				pChosenPlot:GetX(), pChosenPlot:GetY())
+				pChosenPlot:GetX(), pChosenPlot:GetY(), pCityThatLostTile:GetID())
 			end
 		end
 
