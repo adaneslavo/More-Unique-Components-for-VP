@@ -22,7 +22,11 @@ function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
 			
 					Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iGain.." [ICON_CULTURE][ENDCOLOR]", 1)
-					pPlayer:AddNotification(0, '[ICON_GOLDEN_AGE] Golden Age has started:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iGain..' [ICON_CULTURE Culture', 'Bonus Yields in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
+					pPlayer:AddNotification(
+						NotificationTypes.NOTIFICATION_INSTANT_YIELD,
+						'[ICON_GOLDEN_AGE] Golden Age has started:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..'[ENDCOLOR]: +'..iGain..' [ICON_CULTURE] Culture',
+						'Bonus Yields in '..pCity:GetName(),
+						pCity:GetX(), pCity:GetY(), pCity:GetID())
 				end
 			end
 		end
