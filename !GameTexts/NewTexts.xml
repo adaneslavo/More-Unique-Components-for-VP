@@ -2084,14 +2084,16 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_TEXT">
-			<Text></Text>
+			<Text>The German Slaganz were ferocious warriors who would bludgeon their enemies to death using a club or other such blunt instrument. These weapons might have been supplemented with bone spikes in order to make them even more deadly. Slaganz were common throughout German societies as warriors due to Germania's natural lack of resources which could match the weaponry of their foes. They relied upon strength and brute force in order to crush enemy soldiers beneath their armour.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_STRATEGY">
 			<Text>
+				The Slaganz is the unique Warrior replacement which only the Germans can train. It is much cheaper than the Warrior and gains an attack bonus against Barbarian Units. When a barbarian unit is defeated, the Slaganz has a chance to convert the unit to your side. Converting barbarian units also increases your influence with the nearest city-state. Use Slaganz to hunt down barbarians and form a strong coalition of early city-state allies.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_HELP">
 			<Text>
+				Cheap German warrior replacement. +50% [ICON_STRENGTH] Strength against Barbarians, and has a chance of converting defeated Barbarian units. On Barbarian kills, earn 5 [ICON_INFLUENCE] Influence with the nearest City-State.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FUROR_TEUTONICUS">
