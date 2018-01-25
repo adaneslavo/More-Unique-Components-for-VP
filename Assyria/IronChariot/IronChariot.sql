@@ -45,9 +45,9 @@ FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_HORSEMAN';
 --------------------------------	
 INSERT INTO		Unit_Flavors
 				(UnitType, 						FlavorType,			Flavor)
-VALUES			('UNIT_ASSYRIA_IRON_CHARIOT', 'FLAVOR_OFFENSE',	10),
-				('UNIT_ASSYRIA_IRON_CHARIOT', 'FLAVOR_DEFENSE',	4),
-				('UNIT_ASSYRIA_IRON_CHARIOT', 'FLAVOR_MOBILE',		5);
+VALUES			('UNIT_ASSYRIA_IRON_CHARIOT',	'FLAVOR_OFFENSE',	10),
+				('UNIT_ASSYRIA_IRON_CHARIOT',	'FLAVOR_DEFENSE',	4),
+				('UNIT_ASSYRIA_IRON_CHARIOT',	'FLAVOR_MOBILE',	5);
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------	

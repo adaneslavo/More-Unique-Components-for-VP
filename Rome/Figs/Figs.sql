@@ -66,8 +66,8 @@ VALUES 		('ART_DEF_RESOURCE_ROME_FIGS', 	'Resource', 	'FigsIcon_256f.dds');
 -- Resources
 ------------------------------
 INSERT INTO Resources 
-			(Type,					TechReveal,		TechCityTrade, 		Description,					Civilopedia, 						Help,	ResourceClassType, 		ArtDefineTag, 					CivilizationType,		OnlyMinorCivs,  Happiness,  IconString, 						PortraitIndex, 	IconAtlas)
-VALUES		('RESOURCE_ROME_FIGS',	null,			null,				'TXT_KEY_RESOURCE_ROME_FIGS',	'TXT_KEY_RESOURCE_ROME_FIGS_TEXT',	null,	'RESOURCECLASS_BONUS',	'ART_DEF_RESOURCE_ROME_FIGS',	'CIVILIZATION_ROME',	0,				0,			'[ICON_RES_FIGS]',	0, 				'RESOURCE_ROME_ATLAS');
+			(Type,						TechReveal,		TechCityTrade, 		Description,					Civilopedia, 						Help,	ResourceClassType, 		ArtDefineTag, 					CivilizationType,		OnlyMinorCivs,  Happiness,  IconString, 		PortraitIndex, 	IconAtlas)
+VALUES		('RESOURCE_ROME_FIGS',		null,			null,				'TXT_KEY_RESOURCE_ROME_FIGS',	'TXT_KEY_RESOURCE_ROME_FIGS_TEXT',	null,	'RESOURCECLASS_BONUS',	'ART_DEF_RESOURCE_ROME_FIGS',	'CIVILIZATION_ROME',	0,				0,			'[ICON_RES_FIGS]',	0, 				'RESOURCE_ROME_ATLAS');
 ------------------------------
 -- Resource_YieldChanges
 ------------------------------
@@ -89,8 +89,8 @@ VALUES		('RESOURCE_ROME_FIGS',	'FLAVOR_GROWTH',		10);
 -- Improvements
 ------------------------------
 INSERT INTO Improvement_ResourceTypes
-			(ResourceType, 			ImprovementType)
-VALUES		('RESOURCE_ROME_FIGS',	'IMPROVEMENT_PLANTATION');
+			(ResourceType, 				ImprovementType)
+VALUES		('RESOURCE_ROME_FIGS',		'IMPROVEMENT_PLANTATION');
 ------------------------------
 -- Improvement_ResourceType_Yields
 ------------------------------
