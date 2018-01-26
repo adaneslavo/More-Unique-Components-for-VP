@@ -9,6 +9,8 @@ INSERT INTO Civilization_BuildingClassOverrides
 VALUES	('CIVILIZATION_OTTOMAN',	'BUILDINGCLASS_HARBOR',	'BUILDING_OTTOMANS_TERSANE');
 --==========================================================================================================================	
 
+UPDATE UnitPromotions_UnitCombats SET UnitCombatType = 'UNITCOMBAT_NAVALMELEE' WHERE PromotionType = 'PROMOTION_PRIZE_SHIPS';
+
 --==========================================================================================================================
 -- ARTDEFINES
 --==========================================================================================================================	
