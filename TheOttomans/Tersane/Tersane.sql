@@ -9,8 +9,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 VALUES	('CIVILIZATION_OTTOMAN',	'BUILDINGCLASS_HARBOR',	'BUILDING_OTTOMANS_TERSANE');
 --==========================================================================================================================	
 
-UPDATE UnitPromotions_UnitCombats SET UnitCombatType = 'UNITCOMBAT_NAVALMELEE' WHERE PromotionType = 'PROMOTION_PRIZE_SHIPS';
-
 --==========================================================================================================================
 -- ARTDEFINES
 --==========================================================================================================================	
@@ -32,8 +30,8 @@ VALUES		('BUILDING_OTTOMANS_ATLAS', 			256, 		'TersanePicture_256.dds',			1, 			
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-		(Type,				BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints,	TrainedFreePromotion,		CitySupplyFlat,	CitySupplyModifier,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteSeaDistanceModifier,	TradeRouteSeaGoldBonus,		FinishSeaTRTourism,	Help,										Description,						Civilopedia,								Strategy,										IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_OTTOMANS_TERSANE',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints,	'PROMOTION_PRIZE_SHIPS',	CitySupplyFlat,	CitySupplyModifier,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteSeaDistanceModifier,	TradeRouteSeaGoldBonus,		FinishSeaTRTourism, 'TXT_KEY_BUILDING_OTTOMANS_TERSANE_HELP',	'TXT_KEY_BUILDING_OTTOMANS_TERSANE', 'TXT_KEY_BUILDING_OTTOMANS_TERSANE_TEXT',	'TXT_KEY_BUILDING_OTTOMANS_TERSANE_STRATEGY',	'BUILDING_OTTOMANS_ATLAS',	0
+		(Type,				BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints,	TrainedFreePromotion,	CitySupplyFlat,	CitySupplyModifier,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteSeaDistanceModifier,	TradeRouteSeaGoldBonus,		FinishSeaTRTourism,	Help,										Description,						Civilopedia,								Strategy,										IconAtlas,					PortraitIndex)
+SELECT		'BUILDING_OTTOMANS_TERSANE',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints,	TrainedFreePromotion,	CitySupplyFlat,	CitySupplyModifier,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteSeaDistanceModifier,	TradeRouteSeaGoldBonus,		FinishSeaTRTourism, 'TXT_KEY_BUILDING_OTTOMANS_TERSANE_HELP',	'TXT_KEY_BUILDING_OTTOMANS_TERSANE', 'TXT_KEY_BUILDING_OTTOMANS_TERSANE_TEXT',	'TXT_KEY_BUILDING_OTTOMANS_TERSANE_STRATEGY',	'BUILDING_OTTOMANS_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_HARBOR';	
 ------------------------------	
 -- Building_Flavors
