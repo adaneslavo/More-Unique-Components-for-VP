@@ -8,6 +8,10 @@ INSERT INTO UnitPromotions
 	(Type,			Description,			Help,					CannotBeChosen,	Sound,			PortraitIndex,	IconAtlas,	 PediaType,	PediaEntry)
 VALUES	('PROMOTION_CHAPTER',	'TXT_KEY_PROMOTION_CHAPTER',	'TXT_KEY_PROMOTION_CHAPTER_HELP',	1,		'AS2D_IF_LEVELUP',	59,		'ABILITY_ATLAS', 'PEDIA_MELEE',	'TXT_KEY_PROMOTION_CHAPTER');
 
+INSERT INTO UnitPromotions_UnitCombats
+	(PromotionType, UnitCombatType)
+VALUES
+	('PROMOTION_CHAPTER', 'UNITCOMBAT_MELEE'),
 --------------------------------	
 -- Civilization_UnitClassOverrides
 --------------------------------	
