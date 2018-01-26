@@ -11,7 +11,7 @@ VALUES	('PROMOTION_CHAPTER',	'TXT_KEY_PROMOTION_CHAPTER',	'TXT_KEY_PROMOTION_CHA
 INSERT INTO UnitPromotions_UnitCombats
 	(PromotionType, UnitCombatType)
 VALUES
-	('PROMOTION_CHAPTER', 'UNITCOMBAT_MELEE'),
+	('PROMOTION_CHAPTER', 'UNITCOMBAT_MELEE');
 --------------------------------	
 -- Civilization_UnitClassOverrides
 --------------------------------	
