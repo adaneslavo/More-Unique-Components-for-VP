@@ -313,7 +313,13 @@
 			<Text>Chasquiwasi</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP">
-			<Text>Heals 15HP every turn in friendly territory, regardless of action.</Text>
+			<Text>Heals 15HP every turn in [COLOR_POSITIVE_TEXT]owned territory[ENDCOLOR], regardless of action.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY">
+			<Text>Chasquiwasi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY_HELP">
+			<Text>Heals 15HP every turn in [COLOR_POSITIVE_TEXT]owned territory[ENDCOLOR], regardless of action.</Text>
 		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->
