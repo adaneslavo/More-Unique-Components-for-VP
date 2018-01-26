@@ -30,6 +30,7 @@ v26:
 - removed Shock I promotion from Iron Chariot; lowered Fury of Nergal bonus to 7%,
 - added missing Amphibious promotion to Pracinha,
 - updated Hippodrome to 1-22; deleted horses from it,
+- rewoked Oppidum lua (now HP bonus is given to nearest player city),
 - deleted some debug statements,
 - deleted Fix.sql file (integrated into VP by @Infixo),
 - deleted !Lua folder; moved ModUserData.lua to !Utils,
@@ -48,6 +49,7 @@ v26:
 - fixed Barbican.lua,
 - fixed Pitz unique promotions,
 - fixed Pitz and Holkan 20 turn counter on fast speed,
+- fixed Oppidum stay after attack ability,
 - minor fixes,
 
 v25:

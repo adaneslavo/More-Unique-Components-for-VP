@@ -12,33 +12,36 @@ local fGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].Train
 local iMayaBaktun = 0
 
 local tEligibleCombats = {
-	GameInfoTypes.UNITCOMBAT_RECON = true,
-	GameInfoTypes.UNITCOMBAT_ARCHER = true,
-	GameInfoTypes.UNITCOMBAT_MOUNTED = true,
-	GameInfoTypes.UNITCOMBAT_MELEE = true,
-	GameInfoTypes.UNITCOMBAT_SIEGE = true,
-	GameInfoTypes.UNITCOMBAT_GUN = true,
-	GameInfoTypes.UNITCOMBAT_ARMOR = true,
+	GameInfoTypes.UNITCOMBAT_RECON,
+	GameInfoTypes.UNITCOMBAT_ARCHER,
+	GameInfoTypes.UNITCOMBAT_MOUNTED,
+	GameInfoTypes.UNITCOMBAT_MELEE,
+	GameInfoTypes.UNITCOMBAT_SIEGE,
+	GameInfoTypes.UNITCOMBAT_GUN,
+	GameInfoTypes.UNITCOMBAT_ARMOR
 }
 
 function KatunAhaw(iPlayer, iCity, iUnit)
-	-- check for Maya
 	local pPlayer = Players[iPlayer]
-	if not( pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA ) then return end
+	
+	if not (pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA) then return end
+	
 	local pUnit = pPlayer:GetUnitByID(iUnit)
-	if pUnit and tEligibleCombats[ pUnit:GetUnitCombatType() ] then
-		pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW, pPlayer:GetCityByID(iCity):IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ))
+	
+	for i, iUnitCombatType in pairs(tEligibleCombats) do
+		if pUnit and pUnit:GetUnitCombatType() == iUnitCombatType then
+			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW, pPlayer:GetCityByID(iCity):IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ))
+		end
 	end
 end
 
 function KatunAhawUpgrade(iPlayer)
-	-- check for Maya
 	local pPlayer = Players[iPlayer]
-	if not( pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA ) then return end
+	if not (pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA) then return end
 	
 	if pPlayer:IsUsingMayaCalendar() then
 		local sMayaCalendar = pPlayer:GetMayaCalendarString()
-		local iMayaActualBaktun = tonumber( string.sub(sMayaCalendar,1,string.find(sMayaCalendar,"%.")-1) )
+		local iMayaActualBaktun = tonumber(string.sub(sMayaCalendar, 1, string.find(sMayaCalendar, "%."), -1))
 			
 		if iMayaActualBaktun > iMayaBaktun then
 			iMayaBaktun = iMayaActualBaktun
@@ -58,8 +61,7 @@ function KatunAhawUpgrade(iPlayer)
 				
 						Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE][ENDCOLOR]", 1)
 						Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
-						pPlayer:AddNotification(
-							NotificationTypes.NOTIFICATION_INSTANT_YIELD,
+						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
 							'Baktun '..iMayaActualBaktun..' has ended:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange2..' [ICON_PEACE] Faith',
 							'Bonus Yields in '..pCity:GetName(),
 							pCity:GetX(), pCity:GetY(), pCity:GetID())
@@ -87,7 +89,7 @@ function KatunAhawUpgrade(iPlayer)
 				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_3, false)
 				pUnit:ChangeExperience(15)
 			elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_4) then
-				-- code missing here?
+				-- do nothing. Next condition comes naturally with else statement instead of whole list of promotions unit shouldn't have worn on.
 			else
 				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1, true)
 				pUnit:ChangeExperience(5)
