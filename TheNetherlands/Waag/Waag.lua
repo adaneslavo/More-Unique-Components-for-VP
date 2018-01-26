@@ -1,6 +1,7 @@
 -- Waag
 -- Author: adan_eslavo
 -- DateCreated: 13/12/2017
+-- 2018-01-25 updated by Infixo
 --------------------------------------------------------------
 function ImportedResourcesToGPPAndDefense(iPlayer)
 	local pPlayer = Players[iPlayer]
@@ -8,7 +9,7 @@ function ImportedResourcesToGPPAndDefense(iPlayer)
 	for pCity in pPlayer:Cities() do
 		if pCity:IsHasBuilding(GameInfoTypes.BUILDING_NETHERLANDS_WAAG) then
 			local iTradedResources = 0
-			local iTemp = 0
+			--[[ Infixo not necessary
 			local iLuxuries = {}
 				iLuxuries[0] = GameInfoTypes.RESOURCE_AMBER
 				iLuxuries[1] = GameInfoTypes.RESOURCE_BRAZILWOOD
@@ -45,17 +46,11 @@ function ImportedResourcesToGPPAndDefense(iPlayer)
 				iLuxuries[32] = GameInfoTypes.RESOURCE_TRUFFLES
 				iLuxuries[33] = GameInfoTypes.RESOURCE_WHALE
 				iLuxuries[34] = GameInfoTypes.RESOURCE_WINE
-
-			for i=0, 34, 1 do
-				iTemp = pPlayer:GetResourceImport(iLuxuries[i]) + pPlayer:GetResourceExport(iLuxuries[i])
-				iTradedResources = iTradedResources + iTemp
+			--]]
+			for res in GameInfo.Resources("ResourceClassType = 'RESOURCECLASS_LUXURY'") do
+				iTradedResources = iTradedResources + pPlayer:GetResourceImport(res.ID) + pPlayer:GetResourceExport(res.ID)
 			end
-
-			if iTradedResources >= 10 then
-				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGPPANDDEFENSE, 10)
-			else
-				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGPPANDDEFENSE, iTradedResources)
-			end
+			pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGPPANDDEFENSE, math.min(iTradedResources, 10))
 		end
 	end
 end

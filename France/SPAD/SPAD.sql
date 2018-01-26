@@ -116,8 +116,7 @@ SELECT		'UNIT_FRANCE_SPAD', 	PromotionType
 FROM Unit_FreePromotions WHERE UnitType = 'UNIT_TRIPLANE';
 
 INSERT INTO Unit_FreePromotions
-			(UnitType, 			PromotionType)
-VALUES		('UNIT_FRANCE_SPAD', 'PROMOTION_AIR_RANGE'),
-			('UNIT_FRANCE_SPAD', 'PROMOTION_GAIN_EXPERIENCE');
+		(UnitType, 		PromotionType)
+VALUES		('UNIT_FRANCE_SPAD', 	'PROMOTION_AIR_LOGISTICS');
 --==========================================================================================================================
 --==========================================================================================================================
