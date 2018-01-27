@@ -50,3 +50,6 @@ UPDATE CustomModOptions SET	Value = 1 WHERE	Name = 'EVENTS_TILE_IMPROVEMENTS';
 
 -- Corsair plundering trigger
 UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_TRADE_ROUTE_PLUNDERED';
+
+-- Baan Chang gifted from CS
+UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_MINORS_GIFTS';

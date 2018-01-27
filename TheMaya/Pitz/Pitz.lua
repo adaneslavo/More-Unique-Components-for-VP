@@ -9,7 +9,6 @@ include("InstanceManager")
 local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 local fGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent/ 100
-local iMayaBaktun = 0
 
 local tEligibleCombats = {
 	GameInfoTypes.UNITCOMBAT_RECON,
@@ -37,41 +36,11 @@ end
 
 function KatunAhawUpgrade(iPlayer)
 	local pPlayer = Players[iPlayer]
+	
 	if not (pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA) then return end
 	
-	if pPlayer:IsUsingMayaCalendar() then
-		local sMayaCalendar = pPlayer:GetMayaCalendarString()
-		local iMayaActualBaktun = tonumber(string.sub(sMayaCalendar, 1, string.find(sMayaCalendar, "%."), -1))
-			
-		if iMayaActualBaktun > iMayaBaktun then
-			iMayaBaktun = iMayaActualBaktun
-
-			for pCity in pPlayer:Cities() do
-				if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
-					local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-											
-					local iChange1 = math.floor(20 * iEraModifier * fGameSpeedModifier1)
-					local iChange2 = math.floor(20 * iEraModifier * fGameSpeedModifier2)
-							
-					pPlayer:ChangeFaith(iChange2)
-					LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)
-	
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-				
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE][ENDCOLOR]", 1)
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
-						pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
-							'Baktun '..iMayaActualBaktun..' has ended:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange2..' [ICON_PEACE] Faith',
-							'Bonus Yields in '..pCity:GetName(),
-							pCity:GetX(), pCity:GetY(), pCity:GetID())
-					end
-				end
-			end
-		end
-	end
-	
 	local iCounter = math.floor(20 * fGameSpeedModifier3)
+	
 	if Game.GetElapsedGameTurns() % iCounter ~= 0 then return end
 
 	for pUnit in pPlayer:Units() do
@@ -98,9 +67,41 @@ function KatunAhawUpgrade(iPlayer)
 	end
 end
 
+function OnBaktunBonus(iPlayer, iBaktun, iBaktunPreviousTurn)
+	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MAYA) then return end
+	
+	if pPlayer:IsUsingMayaCalendar() then
+		for pCity in pPlayer:Cities() do
+			if pCity:IsHasBuilding(GameInfoTypes.BUILDING_MAYA_PITZ) then
+				local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+											
+				local iChange1 = math.floor(20 * iEraModifier * fGameSpeedModifier1)
+				local iChange2 = math.floor(20 * iEraModifier * fGameSpeedModifier2)
+							
+				pPlayer:ChangeFaith(iChange2)
+				LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)
+	
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+				
+					Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE][ENDCOLOR]", 1)
+					Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
+					pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
+						'Baktun '..iBaktun..' has ended:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iChange2..' [ICON_PEACE] Faith',
+						'Bonus Yields in '..pCity:GetName(),
+						pCity:GetX(), pCity:GetY(), pCity:GetID())
+				end
+			end
+		end
+	end
+end
+
 function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
 GameEvents.CityTrained.Add(KatunAhaw)
 GameEvents.PlayerDoTurn.Add(KatunAhawUpgrade)
+GameEvents.PlayerEndOfMayaLongCount.Add(OnBaktunBonus)

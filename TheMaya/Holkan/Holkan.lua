@@ -4,7 +4,8 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 include("InstanceManager")
-include("ModUserData.lua")
+
+local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 
 function RenewalCycleOnHolkan(iPlayer)
 	local pPlayer = Players[iPlayer]
@@ -25,40 +26,20 @@ function RenewalCycleOnHolkan(iPlayer)
 	end
 end
 
-function HolkansGoodyHuts(iPlayer, iUnit, eGoody, bPick)
+function HolkansGoodyHuts(iPlayer, iUnit, eGoody, iX, iY)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2) then
-		local bGoodyHutTaken = modUserData.GetValue(pUnit:GetX().."-"..pUnit:GetY().."-GoodyHut");
-
-		if bGoodyHutTaken == nil then
-			modUserData.SetValue(pUnit:GetX().."-"..pUnit:GetY().."-GoodyHut", "1");
-			if modUserData.GetValue("FileToReset") == nil then
-				modUserData.SetValue("FileToReset", "1");
-			end
-
-			local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
+		local iResearchBonus = math.floor(10 * fGameSpeedModifier)
 			
-			local iResearchBonus = math.floor(10 * iGameSpeedModifier)
-			
-			LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iResearchBonus)
+		LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iResearchBonus)
 
-			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-				local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			local vUnitPosition = PositionCalculator(iX, iY)
 
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+"..iResearchBonus.." [ICON_RESEARCH] Lost Codices[ENDCOLOR]", 2)
-			end
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+"..iResearchBonus.." [ICON_RESEARCH] Lost Codices[ENDCOLOR]", 2)
 		end
-	end
-
-	return false
-end
-
-function ModBaseResetOnFirstMove(iPlayer, iUnit, iX, iY)
-	if Modding.HasUserData(modid, modver) and modUserData.GetValue("FileToReset") == 1 then
-		Modding.DeleteUserData(modid, modver)
-		modUserData.SetValue("FileToReset", "0");
 	end
 end
 
@@ -67,5 +48,5 @@ function PositionCalculator(i1, i2)
 end
 
 GameEvents.PlayerDoTurn.Add(RenewalCycleOnHolkan)
-GameEvents.GoodyHutCanNotReceive.Add(HolkansGoodyHuts)
+GameEvents.GoodyHutReceivedBonus.Add(HolkansGoodyHuts)
 GameEvents.UnitSetXY.Add(ModBaseResetOnFirstMove)

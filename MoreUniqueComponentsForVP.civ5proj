@@ -5,10 +5,10 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>25</ModVersion>
+    <ModVersion>26</ModVersion>
     <Stability>Beta</Stability>
     <Teaser>More Unique Components mod. Compatible with latest VP.</Teaser>
-    <Description>More Unique Components mod. Compatible with latest VP.
+    <Description>More Unique Components mod. Compatible with latest VP (1-26).
 
 Latest changes: see changelog file.</Description>
     <Authors>adan_eslavo</Authors>
@@ -1064,10 +1064,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="!Utils\ModUserData.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

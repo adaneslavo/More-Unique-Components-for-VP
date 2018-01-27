@@ -59,13 +59,7 @@ VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'FLAVOR_CULTURE',	150),
 INSERT INTO Building_BuildingClassYieldChanges 	
 			(BuildingType,						BuildingClassType,			YieldType,			YieldChange)
 VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_CIRCUS',		'YIELD_CULTURE',	2),
-			('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_COLOSSEUM',	'YIELD_GOLD',		2);
-------------------------------	
--- Building_BuildingClassHappiness
-------------------------------
-INSERT INTO Building_BuildingClassHappiness 	
-			(BuildingType,						BuildingClassType,			Happiness)
-VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_COLOSSEUM',	1);
+			('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_COLOSSEUM',	'YIELD_GOLD',		4);
 ------------------------------	
 -- Building_WLTKDYieldMod
 ------------------------------

@@ -5,7 +5,6 @@
 More Unique Components for Vox Populi changelog:
 
 *roman GG appear and disappear?
-*Baan Change after VP update
 *dummies?
 
 v26:
@@ -29,16 +28,17 @@ v26:
 - reworked Latifundium (now permanent; Roman workers can build plantation, adjacent restriction; build time 18 turns, immediate fig spawn),
 - removed Shock I promotion from Iron Chariot; lowered Fury of Nergal bonus to 7%,
 - added missing Amphibious promotion to Pracinha,
-- updated Hippodrome to 1-22; deleted horses from it,
+- updated Baan Chang (6p instead of 4p) and Hippodrome (+4g to arenas instead of 2g) to 1-26,
+- deleted horses from Hippodrome,
 - rewoked Oppidum lua (now HP bonus is given to nearest player city),
 - deleted some debug statements,
 - deleted Fix.sql file (integrated into VP by @Infixo),
-- deleted !Lua folder; moved ModUserData.lua to !Utils,
+- deleted !Lua folder; deleted ModUserData.lua,
 - added mipmaps to Lammasu and Sambadromo art,
 - cut unnecessary art from Sambadromo,
 - changed Flax icons,
 - tweaked lua code, simplified lua for giving and taking promotions,
-- reworked Goedendag, Nilometer, Buffalo Pound, Black Tug, Pitz and Pogost,
+- reworked Baan Chang, Holkan, Goedendag, Nilometer, Buffalo Pound, Black Tug, Pitz and Pogost,
 - cleaned up the code,
 - deleted all Alert messages,
 - fixed Tophet (no unnecessary art; fixed military flavor; fixed HurryCostModifier; moved art definition to Tophet files)
@@ -50,6 +50,8 @@ v26:
 - fixed Pitz unique promotions,
 - fixed Pitz and Holkan 20 turn counter on fast speed,
 - fixed Oppidum stay after attack ability,
+- fixed Baan Chang lua game event,
+- fixed Holkan Goody Huts,
 - minor fixes,
 
 v25:

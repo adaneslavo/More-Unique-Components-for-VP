@@ -4,6 +4,9 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 include("InstanceManager")
+		
+local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
+local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 
 function BaanChangCSBonus(iPlayer)
 	local pPlayer = Players[iPlayer]
@@ -18,41 +21,37 @@ function BaanChangCSBonus(iPlayer)
 	end
 end
 
-function BaanChangGetsUnitFromCS(iPlayer, iUnit, iUnitType, iX, iY)
-	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
+function BaanChangGetsUnitFromCS(iMinor, iMajor, iUnitType)
+	local pPlayer = Players[iMajor]
+	local pPlayer2 = Players[iMinor]
+	local iNumberOfBaanChangs = 0
 
-	if pUnit:GetUnitCombatType() ~= nil then
-		if iUnitType ~= GameInfoTypes.UNIT_FRENCH_FOREIGNLEGION then
-			local iNumberOfBaanChangs = 0
+	for pCity in pPlayer:Cities() do
+		if pCity:IsHasBuilding(GameInfoTypes.BUILDING_SIAM_BAAN_CHANG) then
+			iNumberOfBaanChangs = iNumberOfBaanChangs + 1
+		end
+	end
 
-			for pCity in pPlayer:Cities() do
-				if pCity:IsHasBuilding(GameInfoTypes.BUILDING_SIAM_BAAN_CHANG) then
-					iNumberOfBaanChangs = iNumberOfBaanChangs + 1
-				end
-			end
+	if iNumberOfBaanChangs > 0 then
+		local pCapital = pPlayer:GetCapitalCity()
 
-			if iNumberOfBaanChangs > 0 then
-				local pCapital = pPlayer:GetCapitalCity()
+		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+
+		local iGain1 = math.floor(5 * iNumberOfBaanChangs * iEraModifier * fGameSpeedModifier1)
+		local iGain2 = math.floor(5 * iNumberOfBaanChangs * iEraModifier * fGameSpeedModifier2)
 				
-				local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
-				local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
-				local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-					
-				local iGain1 = math.floor(5 * iNumberOfBaanChangs * iEraModifier * iGameSpeedModifier1)
-				local iGain2 = math.floor(5 * iNumberOfBaanChangs * iEraModifier * iGameSpeedModifier2)
-				
-				pCapital:ChangeProduction(iGain1)
-				pPlayer:ChangeJONSCulture(iGain2)
-				
-				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					local vCapitalPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
-			
-					Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain1.." [ICON_PRODUCTION][ENDCOLOR]", 1)
-					Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain2.." [ICON_CULTURE][ENDCOLOR]", 1.5)
-					pPlayer:AddNotification(0, 'City-State gift:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCapital:GetName()..': [ENDCOLOR]+'..iGain1..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCapital:GetName()..': [ENDCOLOR]+'..iGain2..' [ICON_CULTURE] Culture', 'Bonus Yields in '..pCapital:GetName(), pCapital:GetX(), pCapital:GetY())
-				end
-			end
+		pCapital:ChangeProduction(iGain1)
+		pPlayer:ChangeJONSCulture(iGain2)
+
+		if pPlayer:IsHuman() then
+			local vCapitalPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
+
+			Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain1.." [ICON_PRODUCTION][ENDCOLOR]", 1)
+			Events.AddPopupTextEvent(vCapitalPosition, "[COLOR_MAGENTA]+ "..iGain2.." [ICON_CULTURE][ENDCOLOR]", 1.5)
+			pPlayer:AddNotification(0, 
+			'City-State gift:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCapital:GetName()..': [ENDCOLOR]+'..iGain1..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCapital:GetName()..': [ENDCOLOR]+'..iGain2..' [ICON_CULTURE] Culture', 
+			'Bonus Yields in '..pCapital:GetName(), 
+			pCapital:GetX(), pCapital:GetY())
 		end
 	end
 end
@@ -62,4 +61,4 @@ function PositionCalculator(i1, i2)
 end
 
 GameEvents.PlayerDoTurn.Add(BaanChangCSBonus)
-GameEvents.UnitCreated.Add(BaanChangGetsUnitFromCS)
+GameEvents.MinorGiftUnit.Add(BaanChangGetsUnitFromCS)
