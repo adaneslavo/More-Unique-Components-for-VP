@@ -81,7 +81,7 @@ function OnBaktunBonus(iPlayer, iBaktun, iBaktunPreviousTurn)
 				local iChange2 = math.floor(20 * iEraModifier * fGameSpeedModifier2)
 							
 				pPlayer:ChangeFaith(iChange2)
-				LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iChange1)
+				pPlayer:ChangeOverflowResearch(iChange1)
 	
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())

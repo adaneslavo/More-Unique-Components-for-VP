@@ -59,9 +59,6 @@ end
 
 function PogostOnCapture(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, iConquest2)
 	local pNewPlayer = Players[iNewPlayer]
-
-	if not pNewPlayer:IsAlive() then return end
-	
 	local pTeam = Teams[pNewPlayer:GetTeam()]
 	local pCity = Map.GetPlot(iX, iY):GetWorkingCity()
 

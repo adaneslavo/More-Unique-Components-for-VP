@@ -6,6 +6,13 @@ More Unique Components for Vox Populi changelog:
 
 *roman GG appear and disappear?
 *dummies?
+*ironchariot/scythedchariot model?
+
+v27:
+- deleted Sukritact_ChangeResearchProgress.lua; changed science progress code for few UCs,
+- modified DruidicLore.lua (added code for capital/holy city capture from celts and for celts),
+- small lua modifications (Pogost),
+- minor fixes.
 
 v26:
 - deleted scaling with Era from units,
@@ -52,7 +59,7 @@ v26:
 - fixed Oppidum stay after attack ability,
 - fixed Baan Chang lua game event,
 - fixed Holkan Goody Huts,
-- minor fixes,
+- minor fixes.
 
 v25:
 - renamed Treasure Hunter II promotion to Helpful Knowledge,

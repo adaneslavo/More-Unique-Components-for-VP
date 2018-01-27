@@ -924,12 +924,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Sukritact_ChangeResearchProgress</Name>
-        <Description>Sukritact's function for gaining science</Description>
-        <FileName>!Utils/Sukritact_ChangeResearchProgress.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Sukritact_SaveUtils.lua</Name>
         <Description>Sukritact's save utils</Description>
         <FileName>!Utils/Sukritact_SaveUtils.lua</FileName>
@@ -1068,10 +1062,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="!Utils\PlotIterators.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="!Utils\Sukritact_ChangeResearchProgress.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
