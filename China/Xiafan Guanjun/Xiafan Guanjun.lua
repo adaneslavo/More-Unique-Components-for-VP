@@ -1,5 +1,4 @@
 include("FLuaVector.lua")
-include("PlotIterators.lua")
 
 function JFD_IsInCityStateBorders(unit)
 	local plot = unit:GetPlot()

@@ -1,5 +1,6 @@
+-- Tophet
+----------------------------------------------------------------------------------------------------------------------------	
 include("FLuaVector.lua")
-include("PlotIterators.lua")
 include("InstanceManager")
 
 function TophetXPGain(iPlayer, iCity, iUnit, bGold, bFaith)
