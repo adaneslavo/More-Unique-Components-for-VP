@@ -2,63 +2,18 @@
 -- Author: adan_eslavo
 -- DateCreated: 30/10/2017
 --------------------------------------------------------------
+local iUnitX
+local iUnitY
+
 function OppidumAddsHP(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged)
+	local pPlayer = Players[iOwner]
+	
 	if (iNewImprovement == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and iNewImprovement ~= iOldImprovement) or (iNewImprovement == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and iNewImprovement == iOldImprovement and not bPillaged) then
 		local pPlot = Map.GetPlot(iX, iY)
 
 		if pPlot ~= nil then
-			local tCitiesFound = {}
-			local iTableRow = 0
-			local bFoundInTable = false
-
-			for iDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-				local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), iDirection)
-
-				if pAdjacentPlot:IsCity() then
-					for i, pTablePlot in pairs(tCitiesFound) do
-						print("i=", i, pTablePlot:GetWorkingCity():GetName())
-						if pTablePlot == pAdjacentPlot then
-							bFoundInTable = true
-							break
-						else
-							bFoundInTable = false
-						end
-					end
-					
-					if not bFoundInTable then
-						pAdjacentPlot:GetWorkingCity():SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pAdjacentPlot:GetWorkingCity():GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) + 1)
-						tCitiesFound[iTableRow] = pAdjacentPlot
-						iTableRow = iTableRow + 1
-						bFoundInTable = false
-					end
-				end
-			end
-
-			for iDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-				local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), iDirection)		
-	
-				for iSecondDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-					local pSecondAdjacentPlot = Map.PlotDirection(pAdjacentPlot:GetX(), pAdjacentPlot:GetY(), iSecondDirection)
-							
-					if pSecondAdjacentPlot:IsCity() then
-						for i, pTablePlot in pairs(tCitiesFound) do
-							if pTablePlot == pSecondAdjacentPlot then
-								bFoundInTable = true
-								break
-							else
-								bFoundInTable = false
-							end
-						end
-					
-						if not bFoundInTable then
-							pSecondAdjacentPlot:GetWorkingCity():SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pSecondAdjacentPlot:GetWorkingCity():GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) + 1)
-							tCitiesFound[iTableRow] = pSecondAdjacentPlot
-							iTableRow = iTableRow + 1
-							bFoundInTable = false
-						end
-					end
-				end
-			end
+			pCity = GetNearestCity(pPlayer, pPlot)
+			pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) + 1)
 		end
 	end
 
@@ -66,60 +21,119 @@ function OppidumAddsHP(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillag
 		local pPlot = Map.GetPlot(iX, iY)
 
 		if pPlot ~= nil then
-			local tCitiesFound = {}
-			local iTableRow = 0
-			local bFoundInTable = false
+			pCity = GetNearestCity(pPlayer, pPlot)
+			pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) - 1)
+		end
+	end
+end
 
-			for iDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-				local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), iDirection)
+function OppidumMoveHP(iPlayer, iX, iY)
+	local pPlayer = Players[iPlayer]
+	local pFoundCity = Map.GetPlot(iX, iY):GetWorkingCity()
+	
+	for iCityPlot = 1, pFoundCity:GetNumCityPlots() - 1, 1 do
+		local pSpecificPlot = pFoundCity:GetCityIndexPlot(iCityPlot)
 
-				if pAdjacentPlot:IsCity() then
-					for i, pTablePlot in pairs(tCitiesFound) do
-						if pTablePlot == pAdjacentPlot then
-							bFoundInTable = true
-							break
-						else
-							bFoundInTable = false
-						end
-					end
-					
-					if not bFoundInTable then
-						pAdjacentPlot:GetWorkingCity():SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pAdjacentPlot:GetWorkingCity():GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) - 1)
-						tCitiesFound[iTableRow] = pAdjacentPlot
-						iTableRow = iTableRow + 1
-						bFoundInTable = false
-					end
-				end
+		if pSpecificPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and not pSpecificPlot:IsImprovementPillaged() then
+			local pCheckedCity = GetNearestCity(pPlayer, pSpecificPlot)
+
+			if pCheckedCity == pFoundCity then
+				pFirstCity = GetNearestCityExcluded(pPlayer, pSpecificPlot, pFoundCity)
+				pFirstCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pFirstCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) - 1)
+				pFoundCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pFoundCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) + 1)
 			end
+		end
+	end
+end
 
-			for iDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-				local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), iDirection)
-					
-				for iSecondDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-					local pSecondAdjacentPlot = Map.PlotDirection(pAdjacentPlot:GetX(), pAdjacentPlot:GetY(), iSecondDirection)
-												
-					if pSecondAdjacentPlot:IsCity() then
-						for i, pTablePlot in pairs(tCitiesFound) do
-							if pTablePlot == pSecondAdjacentPlot then
-								bFoundInTable = true
-								break
-							else
-								bFoundInTable = false
-							end
-						end
-					
-						if not bFoundInTable then
-							pSecondAdjacentPlot:GetWorkingCity():SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pSecondAdjacentPlot:GetWorkingCity():GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) - 1)
-							tCitiesFound[iTableRow] = pSecondAdjacentPlot
-							iTableRow = iTableRow + 1
-							bFoundInTable = false
-						end
+function OppidumOnCapture(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, iConquest2)
+	local pNewPlayer = Players[iNewPlayer]
+	local pOldPlayer = Players[iPlayer]
+	local pCapturedCity = Map.GetPlot(iX, iY):GetWorkingCity()
+
+	if pOldPlayer then
+		for iCityPlot = 1, pCapturedCity:GetNumCityPlots() - 1, 1 do
+			local pSpecificPlot = pCapturedCity:GetCityIndexPlot(iCityPlot)
+
+			if pSpecificPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and not pSpecificPlot:IsImprovementPillaged() then
+				local pCheckedPlayer = Players[pSpecificPlot:GetOwner()]
+				local pCheckedCity = GetNearestCityFor2Players(pOldPlayer, pNewPlayer, pSpecificPlot)
+				
+				if pCheckedCity == pCapturedCity then
+					if pCheckedPlayer ~= pNewPlayer then
+						pNewCity = GetNearestCity(pOldPlayer, pSpecificPlot)
+						pCapturedCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pCapturedCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) - 1)
+						pNewCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pNewCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) + 1)
+					else
+						pCapturedCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pCapturedCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) + 1)
+					end
+				else
+					if pCheckedPlayer == pNewPlayer then
+						pCheckedCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pCheckedCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) - 1)
 					end
 				end
 			end
 		end
-		print(" ")
+	end					
+end
+
+function GetNearestCity(pPlayer, pPlot)
+	local iDistance = 10000
+	local pNearestCity = nil
+
+	for pCity in pPlayer:Cities() do
+		local iDistanceToCity = Map.PlotDistance(pCity:GetX(), pCity:GetY(), pPlot:GetX(), pPlot:GetY())
+
+		if(iDistanceToCity < iDistance and iDistanceToCity <= 3) then
+			iDistance = iDistanceToCity
+			pNearestCity = pCity
+		end
 	end
+
+	return pNearestCity
+end
+
+function GetNearestCityExcluded(pPlayer, pPlot, pExcludedCity)
+	local iDistance = 10000
+	local pNearestCity = nil
+
+	for pCity in pPlayer:Cities() do
+		if pCity ~= pExcludedCity then
+			local iDistanceToCity = Map.PlotDistance(pCity:GetX(), pCity:GetY(), pPlot:GetX(), pPlot:GetY())
+
+			if(iDistanceToCity < iDistance and iDistanceToCity <= 3) then
+				iDistance = iDistanceToCity
+				pNearestCity = pCity
+			end
+		end
+	end
+
+	return pNearestCity
+end
+
+function GetNearestCityFor2Players(pPlayer1, pPlayer2, pPlot)
+	local iDistance = 10000
+	local pNearestCity = nil
+
+	for pCity in pPlayer1:Cities() do
+		local iDistanceToCity = Map.PlotDistance(pCity:GetX(), pCity:GetY(), pPlot:GetX(), pPlot:GetY())
+
+		if(iDistanceToCity < iDistance and iDistanceToCity <= 3) then
+			iDistance = iDistanceToCity
+			pNearestCity = pCity
+		end
+	end
+
+	for pCity in pPlayer2:Cities() do
+		local iDistanceToCity = Map.PlotDistance(pCity:GetX(), pCity:GetY(), pPlot:GetX(), pPlot:GetY())
+
+		if(iDistanceToCity < iDistance and iDistanceToCity <= 3) then
+			iDistance = iDistanceToCity
+			pNearestCity = pCity
+		end
+	end
+
+	return pNearestCity
 end
 
 function OppidumGarrisonBefore(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
@@ -139,12 +153,14 @@ function OppidumGarrisonAfter(iAttackingPlayer, iAttackingUnit, attackerDamage, 
 
 	if pAttackingPlayer ~= nil then
 		if defenderFinalDamage > defenderMaxHP then
-			local pPlot = Map.GetPlot(iUnitX, iUnitY)
+			if iUnitX and iUnitY then	
+				local pPlot = Map.GetPlot(iUnitX, iUnitY)
 
-			if pPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM then
-				local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
+				if pPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM then
+					local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 			
-				pAttackingUnit:SetXY(iUnitX, iUnitY)
+					pAttackingUnit:SetXY(iUnitX, iUnitY)
+				end
 			end
 		end
 	end
@@ -153,3 +169,5 @@ end
 GameEvents.CombatResult.Add(OppidumGarrisonBefore)
 GameEvents.CombatEnded.Add(OppidumGarrisonAfter)
 GameEvents.TileImprovementChanged.Add(OppidumAddsHP)
+GameEvents.PlayerCityFounded.Add(OppidumMoveHP)
+GameEvents.CityCaptureComplete.Add(OppidumOnCapture)
