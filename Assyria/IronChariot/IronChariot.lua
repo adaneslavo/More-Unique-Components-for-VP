@@ -40,13 +40,13 @@ end
 function FuryOfNergalCheckMovement(iPlayer, iUnit)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
+	if not pUnit then return end
 	
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
 		FuryOfNergalUpdate(pPlayer, pUnit)
 	end
 
-	local pUnitPlot = pUnit:GetPlot()
-	local iX, iY = pUnitPlot:GetX(), pUnitPlot:GetY()
+	local iX, iY = pUnit:GetX(), pUnit:GetY()
 	for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 		local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
 		for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
@@ -62,13 +62,13 @@ end
 function FuryOfNergalCheckCreate(iPlayer, iUnit, iUnitType, iX, iY)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
-	
+	if not pUnit then return end
+
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
 		FuryOfNergalUpdate(pPlayer, pUnit)
 	end
 
-	local pUnitPlot = pUnit:GetPlot()
-	local iX, iY = pUnitPlot:GetX(), pUnitPlot:GetY()
+	local iX, iY = pUnit:GetX(), pUnit:GetY()
 	for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 		local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
 		for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
@@ -84,13 +84,13 @@ end
 function FuryOfNergalCheckBuild(iPlayer, iCity, iUnit)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
+	if not pUnit then return end
 	
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
 		FuryOfNergalUpdate(pPlayer, pUnit)
 	end
 
-	local pUnitPlot = pUnit:GetPlot()
-	local iX, iY = pUnitPlot:GetX(), pUnitPlot:GetY()
+	local iX, iY = pUnit:GetX(), pUnit:GetY()
 	for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 		local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
 		for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
@@ -113,8 +113,7 @@ function FuryOfNergalUpdate(pPlayer, pUnit)
 	pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_6, false)
 	
 	local iNumEnemyUnitsNearby = 0
-	local pUnitPlot = pUnit:GetPlot()
-	local iX, iY = pUnitPlot:GetX(), pUnitPlot:GetY()
+	local iX, iY = pUnit:GetX(), pUnit:GetY()
 	for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 		local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
 		for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
