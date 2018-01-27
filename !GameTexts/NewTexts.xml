@@ -313,7 +313,13 @@
 			<Text>Chasquiwasi</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP">
-			<Text>Heals 15HP every turn in friendly territory, regardless of action.</Text>
+			<Text>Heals 15HP every turn in [COLOR_POSITIVE_TEXT]owned territory[ENDCOLOR], regardless of action.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY">
+			<Text>Chasquiwasi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY_HELP">
+			<Text>Heals 15HP every turn in [COLOR_POSITIVE_TEXT]owned territory[ENDCOLOR], regardless of action.</Text>
 		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->
@@ -2259,17 +2265,31 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_TEXT">
-			<Text></Text>
+			<Text>
+				The Order of Brothers of the German House of Saint Mary in Jerusalem, more commonly known as the Teutonic Order, is a Catholic knightly order founded in 1190 in Acre Jerusalem. Originally founded as an adjunct of the Knights Hospitaller, the Order was commissioned to help pilgrims on their way to the Holy Land and establish hospitals for the many Germanic pilgrims who spoke neither the local languages, nor Latin. Within 50 years, the German Catholic order became a state unto itself, prosecuting a holy crusade against Baltic pagans from their capital in present day Malbork, Poland.[NEWLINE][NEWLINE] 
+				After Christian forces were expelled from Jerusalem, the Teutonic knights found work as mercenaries and guardsmen in Transylvania, Hungary, and then Poland, before becoming the largest player in a new Prussian Crusade against the pagan inhabitants of the Eastern Baltics. The Teutonic Order carried out a bloody and centuries long campaign of forced conversions and ethnic replacement which saw them come into conflict with Estonians, Lithuanians, Old Prussians and even their former Polish allies. Struggles against the militarized Christianization by Catholic knights would shape the national identities of all neighboring peoples.[NEWLINE][NEWLINE]
+				Christianization of Lithuania and Poland's successful attempts to politically isolate the Teutonic Order from the rest of Catholicism left the Order without a purpose (and a shortage of friends) by 1520. In response, the Grand Master of the Order, Albert of Brandenburg, resigned from the Order, converted to Lutheranism and styled himself Duke of Prussia, becoming the first Protestant state by converting the Order's Prussian holdings into a secularized fiefdom. Though declining in political force, the Teutonic Order continued to exist as a Catholic state through its holdings in Germany until forcibly dissolved by Napoleon Bonaparte in 1809. Since then, the Teutonic Order has continued to exist, but as a ceremonial and charitable organization.  
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_STRATEGY">
 			<Text>
+				The Teutonic Order is Germany's unique wonder, replacing the Heroic Epic. This wonder is available much later than the Heroic epic, but provides strong bonuses to all cities in your empire with a Barracks comparable to that of a full Order. All new units trained in any city with a Barracks receive the Morale promotion for free, and all melee land units immediately receive the Chapter promotion.[NEWLINE][NEWLINE] 
+				With the Chapter promotion, your melee units gain additional power in foreign lands, and can aid the quick spread of your religion by removing foreign religions from newly conquered cities. This will allow Germans to spread their influence and reform quickly through military expansionism. 
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_HELP">
 			<Text>
+				Unique German replacement for the Heroic Epic. Gain a free Armory in the City. Contains 1 slot for a Great Work of Writing. +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP to all Cities in the Empire with a Barracks.[NEWLINE][NEWLINE]
+				All melee land units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] promotion. New units trained in Cities with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] promotion.[NEWLINE][NEWLINE]
+				The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
-
+		<Row Tag="TXT_KEY_PROMOTION_CHAPTER">
+			<Text>Chapter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHAPTER_HELP">
+			<Text>10% [ICON_STRENGTH] Strength Outside [COLOR_POSITIVE_TEXT]friendly territory[ENDCOLOR]. On city conquest, [ICON_CITIZEN] citizens not following your majority religion are un-converted to having No religion.</Text>
+		</Row>
 		<!-- Tophet -->
 		<!-- Created by pineappledan -->
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET">
@@ -2307,7 +2327,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_HELP">
 			<Text>
-				Unique Portuguese replacement for the Oxford University. Gain a free University, and a Great Scientist appears near the City. +75 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Contains 2 slots for Great Works of Writing. Reduces [ICON_HAPPINESS_3] Illiteracy. +2 [ICON_GOLD] Gold to Universities. All naval units gain the Age of Discovery promotion. Whenever a Feitoria is built in city-state territory, permanently gain +2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE][NEWLINE]+3 [ICON_RESEARCH] Science if Themed.
+				Unique Portuguese replacement for the Oxford University. Gain a free University, and a Great Scientist appears near the City. +75 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Contains 2 slots for Great Works of Writing. Reduces [ICON_HAPPINESS_3] Illiteracy. +2 [ICON_GOLD] Gold to Universities. All naval units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] promotion. Whenever a Feitoria is built in city-state territory, permanently gain +2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE][NEWLINE]+3 [ICON_RESEARCH] Science if Themed.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_AGE_OF_DISCOVERY">

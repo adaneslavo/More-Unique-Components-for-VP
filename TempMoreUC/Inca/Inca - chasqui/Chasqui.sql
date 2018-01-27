@@ -44,9 +44,10 @@ FROM Units WHERE Type = 'UNIT_SCOUT';
 --==========================================================================================================================
 
 INSERT INTO UnitPromotions 
-		(Type, 						 Description, 						Help, 								Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 			LostWithUpgrade, 	PediaType,	PediaEntry)
-VALUES	('PROMOTION_CHASQUI_GOLD',	'TXT_KEY_PROMOTION_CHASQUI_GOLD',	'TXT_KEY_PROMOTION_CHASQUI_GOLD', 	'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	0,					null,		null),
-		('PROMOTION_CHASQUI_HEAL',	'TXT_KEY_PROMOTION_CHASQUI_HEAL',	'TXT_KEY_PROMOTION_CHASQUI_HEAL', 	'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	0, 					null, 		null);
+		(Type, 					 Description, 				Help, 						AlwaysHeal, 	FriendlyHealChange, 	Sound, 			CannotBeChosen, 	PortraitIndex,	IconAtlas, 		LostWithUpgrade, PediaType,	PediaEntry)
+VALUES		('PROMOTION_CHASQUI_GOLD',		'TXT_KEY_PROMOTION_CHASQUI_GOLD',	'TXT_KEY_PROMOTION_CHASQUI_GOLD_HELP', 		false, 		0, 			'AS2D_IF_LEVELUP',	1, 			59, 		'ABILITY_ATLAS', 	0,		null,		null),
+		('PROMOTION_CHASQUI_HEAL',		'TXT_KEY_PROMOTION_CHASQUI_HEAL',	'TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP', 		true, 		5, 			'AS2D_IF_LEVELUP',	1, 			59, 		'ABILITY_ATLAS', 	0, 		null, 		null),
+		('PROMOTION_CHASQUI_HEAL_DUMMY',	'TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY',	'TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY_HELP', 	false, 		0, 			'AS2D_IF_LEVELUP',	1, 			59, 		'ABILITY_ATLAS', 	0, 		null, 		null);
 
 INSERT INTO UnitPromotions_YieldFromScouting
 	(PromotionType, YieldType, Yield)
@@ -106,5 +107,5 @@ VALUES	('UNIT_3UC_CHASQUI',		'PROMOTION_ALTITUDE_TRAINING'),
 -- Civilization_UnitClassOverrides 
 --------------------------------		
 INSERT INTO Civilization_UnitClassOverrides 
-		(CivilizationType, 					UnitClassType, 			UnitType)
+	(CivilizationType, 	UnitClassType, 		UnitType)
 VALUES	('CIVILIZATION_INCA',	'UNITCLASS_SCOUT',	'UNIT_3UC_CHASQUI');
