@@ -22,12 +22,14 @@ VALUES		('CIVILIZATION_GERMANY', 'BUILDINGCLASS_HEROIC_EPIC', 'BUILDING_GERMAN_T
 --------------------------------	
 -- Buildings
 --------------------------------	
+UPDATE Buildings SET PortraitIndex = '3', IconAtlas = 'BUILDING_APIG4UC_ATLAS' WHERE Type = 'BUILDING_ORDER';
+
 INSERT INTO	Buildings
 			(Type, Description, Civilopedia, Strategy, Help, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,
 			BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas, GreatWorkYieldType,
 			NeverCapture, NukeImmune, NumCityCostMod, TrainedFreePromotion, FreePromotion, GreatWorkSlotType, GreatWorkCount, NationalPopRequired, CitySupplyModifier)
 SELECT		'BUILDING_GERMAN_TEUTONIC_ORDER', 'TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER', 'TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_TEXT', 'TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_STRATEGY', 'TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_HELP', GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,
-			BuildingClass, ArtDefineTag, PrereqTech, 3, 'BUILDING_APIG4UC_ATLAS', GreatWorkYieldType,
+			BuildingClass, ArtDefineTag, PrereqTech, 5, 'COMMUNITY_ATLAS', GreatWorkYieldType,
 			NeverCapture, NukeImmune, NumCityCostMod, TrainedFreePromotion, FreePromotion, GreatWorkSlotType, GreatWorkCount, NationalPopRequired, CitySupplyModifier
 FROM		Buildings
 WHERE		Type = 'BUILDING_HEROIC_EPIC';
@@ -35,6 +37,7 @@ WHERE		Type = 'BUILDING_HEROIC_EPIC';
 UPDATE		Buildings
 SET			PrereqTech = 'TECH_CHIVALRY', ExtraCityHitPoints = 50, FreeBuildingThisCity = 'BUILDINGCLASS_ARMORY', FreePromotion = 'PROMOTION_CHAPTER'
 WHERE		Type = 'BUILDING_GERMAN_TEUTONIC_ORDER';
+
 
 ------------------------------	
 -- Building_ClassesNeededInCity
