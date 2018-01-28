@@ -1343,7 +1343,7 @@
 			<Text>Latifundium</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP">
-			<Text>Available at Calendar, the Latifundium can be built on wheat, and any resource normally requiring a plantation. Yields [ICON_FOOD] Food, [ICON_CULTURE] Culture. [NEWLINE]Spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the latifundium after 10 turns, and the Figs tile is automatically claimed by Rome.[NEWLINE]Adjacent Farms receive +1 [ICON_PRODUCTION] Production and Adjacent Plantations Receive +1 [ICON_CULTURE] Culture.</Text>
+			<Text>Available at Calendar, the Latifundium can be built on [ICON_RES_WHEAT] Wheat, and any resource normally requiring a plantation. Cannot be built adjacent to another Latifundium.[NEWLINE][NEWLINE]Yields [ICON_FOOD] Food, [ICON_CULTURE] Culture. [NEWLINE][NEWLINE]On construction, immediately spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the latifundium. The new Figs tile is automatically claimed by Rome.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production to adjacent Farms.[NEWLINE]+1 [ICON_CULTURE] Culture to adjacent Plantations.[NEWLINE][NEWLINE]Cannot be removed.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT">
 			<Text>A latifundium was an expansive privately owned farm, enormous landed estates specializing in intensive agriculture. The first latifundia were accumulated from the spoils of war, confiscated from conquered peoples beginning in the early 2nd century BC in Magna Graecia (Southern Italy). Latifundia later expanded with conquest, to the Roman provinces of the Maghreb and in Hispania Baetica, in southern Spain.
@@ -1354,10 +1354,10 @@
 			<Text>Build a [LINK=IMPROVEMENT_ROME_LATIFUNDIUM]Latifundium[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ROME_LATIFUNDIUM_HELP">
-			<Text>Constructs a Latifundium, which yields [ICON_FOOD] Food and [ICON_CULTURE] Culture.[NEWLINE]Spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the latifundium after 10 turns, and the Figs tile is automatically claimed by Rome.[NEWLINE]Adjacent Farms receive +1 [ICON_PRODUCTION] Production and Adjacent Plantations Receive +1 [ICON_CULTURE] Culture.</Text>
+			<Text>Constructs a Latifundium, which yields [ICON_FOOD] Food and [ICON_CULTURE] Culture.[NEWLINE]On construction, spawns an Improved [ICON_RES_FIGS] Figs Resource adjacent to the latifundium, and the Figs tile is claimed by Rome.[NEWLINE]Adjacent Farms receive +1 [ICON_PRODUCTION] Production and Adjacent Plantations Receive +1 [ICON_CULTURE] Culture.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ROME_LATIFUNDIUM_REC">
-			<Text>It will increase [ICON_FOOD] Food and [ICON_CULTURE] Culture.[NEWLINE]Spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the latifundium after 10 turns, and the Figs tile is automatically claimed by Rome.[NEWLINE]Adjacent Farms receive +1 [ICON_PRODUCTION] Production and Adjacent Plantations Receive +1 [ICON_CULTURE] Culture.</Text>
+			<Text>It will increase [ICON_FOOD] Food and [ICON_CULTURE] Culture.[NEWLINE]Spawns an Improved [ICON_RES_FIGS] Figs Resource adjacent to the latifundium on construction, and the Figs tile is claimed by Rome.[NEWLINE]Adjacent Farms receive +1 [ICON_PRODUCTION] Production and Adjacent Plantations Receive +1 [ICON_CULTURE] Culture.</Text>
 		</Row>
 
 		<!-- Legion (lua code in Ballista.lua)-->
