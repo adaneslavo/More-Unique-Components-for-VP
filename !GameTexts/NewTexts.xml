@@ -1156,7 +1156,7 @@
 			<Text>Philhellenism</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GREECE_PHILHELLENISM_HELP">
-			<Text>Unit gains [ICON_PRODUCTION] Production and [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]for every City-State Ally or Friend on Fight[ENDCOLOR].</Text>
+			<Text>Unit gains [ICON_PRODUCTION] Production and [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]for every City-State Ally or Friend[ENDCOLOR] on Ranged Attack.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT">
 			<Text>Klepht</Text>
@@ -2090,7 +2090,10 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_TEXT">
-			<Text>The German Slaganz were ferocious warriors who would bludgeon their enemies to death using a club or other such blunt instrument. These weapons might have been supplemented with bone spikes in order to make them even more deadly. Slaganz were common throughout German societies as warriors due to Germania's natural lack of resources which could match the weaponry of their foes. They relied upon strength and brute force in order to crush enemy soldiers beneath their armour.</Text>
+			<Text>
+				The strength and ferocity of the tribal Germanic warriors, or Slaganz, were legendary among Roman writers and soldiers alike. Germanic tribesmen stood an average of 6 inches taller than a Latin, but were unable to capitalize on their brute advantages over Roman interlopers because of the legions' superior equipment, organization and training. German fortunes would change, however, under the leadership of Arminius.[NEWLINE][NEWLINE] 
+				A Cherusci commander who had spent time training under the Romans, Arminius led a coalition of five German tribes in a decisive victory, destroying three Roman legions under Publius Varus. Arminius falisified reports of a northern Germanic uprising and laid an ambush for Varus deep in the Teotoburg Forest. Using their superior numbers, heavy rain, and Arminius' knowledge of Roman tactics, the Roman annihilation at Teotoburg Forest was utterly thorough. It is estimated that 20 000 men were killed or enslaved by the Germans. Rome's total defeat at the hands of Arminius set the borders of Rome's eastern expansion at the Rhine, and would be remembered as their greatest humiliation. 
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_STRATEGY">
 			<Text>
@@ -2109,10 +2112,18 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FUROR_TEUTONICUS_HELP">
 			<Text>
-				+50% combat strength against Barbarians. 50% chance of converting Barbarians it kills.
+				+50% combat strength against Barbarians.
 			</Text>
 		</Row>
-
+		<Row Tag="TXT_KEY_PROMOTION_BARBARIAN_ALLIANCE">
+			<Text>
+				Barbarian Alliance
+			</Text>
+		<Row Tag="TXT_KEY_PROMOTION_BARBARIAN_ALLIANCE_HELP">
+			<Text>
+				50% Chance to convert Barbarians on kill. +5 [ICON_INFLUENCE] Influence to the nearest City-State on barbarian conversion.
+			</Text>
+		</Row>
 		<!-- Sofa -->		
 		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER">
 			<Text>Father of the Horse</Text>
@@ -2218,7 +2229,7 @@
 			<Text>Migration</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_MIGRATION_HELP">
-			<Text>+1 Movement to Workers and Settlers that begin the turn stacked with this Unit.</Text>
+			<Text>+2 Movement to Workers and Settlers that begin the turn stacked with this Unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SACKER">
 			<Text>Bellum Alet'</Text>
