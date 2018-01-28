@@ -91,36 +91,29 @@ function DruidicLoreOnCapture(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1,
 	local pOldPlayer = Players[iPlayer]
 	local pCity = Map.GetPlot(iX, iY):GetWorkingCity()
 
-	if pOldPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_CELTS then
-		pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP1, 0)
-		pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP2, 0)
-		pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP3, 0)
-		pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP4, 0)
-	else
-		if pNewPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_CELTS then
-			if pCity == pCelticCapital then
-				if pCity == pCelticHolyCity then
-					if iReligionState == 1 then
-						pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP1, 1)
-					elseif iReligionState == 2 then
-						pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP2, 1)
-					elseif iReligionState == 3 then
-						pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP3, 1)
-					elseif iReligionState == 4 then
-						pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP4, 1)
-					end
-				else
+	if pNewPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_CELTS then
+		if pCity == pCelticCapital then
+			if pCity == pCelticHolyCity then
+				if iReligionState == 1 then
 					pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP1, 1)
+				elseif iReligionState == 2 then
+					pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP2, 1)
+				elseif iReligionState == 3 then
+					pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP3, 1)
+				elseif iReligionState == 4 then
+					pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP4, 1)
 				end
 			else
-				if pCity == pCelticHolyCity then
-					if iReligionState == 2 then
-						pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP1, 1)
-					elseif iReligionState == 3 then
-						pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP2, 1)
-					elseif iReligionState == 4 then
-						pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP3, 1)
-					end
+				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP1, 1)
+			end
+		else
+			if pCity == pCelticHolyCity then
+				if iReligionState == 2 then
+					pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP1, 1)
+				elseif iReligionState == 3 then
+					pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP2, 1)
+				elseif iReligionState == 4 then
+					pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGMP3, 1)
 				end
 			end
 		end

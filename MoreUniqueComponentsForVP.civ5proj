@@ -3275,6 +3275,22 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="TheCelts\ScythedChariot\3DModel\tcmHeqaKhasut.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheCelts\ScythedChariot\3DModel\tcmHeqaKhasut.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheCelts\ScythedChariot\3DModel\tcmHeqaKhasut_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheCelts\ScythedChariot\3DModel\tcmHeqaKhasut_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="TheNetherlands\Polder\Polder.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -4692,6 +4708,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Persia\Pairidaeza" />
     <Folder Include="Persia\Qizilbash\3DModel" />
     <Folder Include="Persia\Qizilbash\SafaviAgitator" />
+    <Folder Include="TheCelts\ScythedChariot\3DModel" />
     <Folder Include="TheMaya" />
     <Folder Include="Sweden\Carolean" />
     <Folder Include="TheMaya\Holkan" />

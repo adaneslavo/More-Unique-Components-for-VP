@@ -92,7 +92,7 @@ INSERT INTO ArtDefine_UnitInfos(Type, DamageStates, Formation)
 -- ArtDefine_UnitInfoMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitInfoMemberInfos(UnitInfoType, UnitMemberInfoType, NumMembers)
-  VALUES ('ART_DEF_UNIT_TCM_HEQA_KHASUT', 'ART_DEF_UNIT_MEMBER_TCM_HEQA_KHASUT', 2);
+  VALUES ('ART_DEF_UNIT_TCM_HEQA_KHASUT', 'ART_DEF_UNIT_MEMBER_TCM_HEQA_KHASUT', 1);
 ------------------------------
 -- ArtDefine_UnitMemberInfos
 ------------------------------

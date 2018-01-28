@@ -13,6 +13,7 @@ function ImportedResourcesToGPPAndDefense(iPlayer)
 			for res in GameInfo.Resources("ResourceClassType = 'RESOURCECLASS_LUXURY'") do
 				iTradedResources = iTradedResources + pPlayer:GetResourceImport(res.ID) + pPlayer:GetResourceExport(res.ID)
 			end
+			
 			pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGPPANDDEFENSE, math.min(iTradedResources, 10))
 		end
 	end
