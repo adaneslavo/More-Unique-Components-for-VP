@@ -71,12 +71,9 @@ VALUES			('UNIT_GERMAN_SLAGANZ', 'PROMOTION_FUROR_TEUTONICUS');
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-			(Type,										Description,								Help,						
-			CannotBeChosen,		Sound,			PortraitIndex,	IconAtlas,			PediaType,		PediaEntry,
-			BarbarianCombatBonus)
-VALUES		('PROMOTION_FUROR_TEUTONICUS',				'TXT_KEY_PROMOTION_FUROR_TEUTONICUS',		'TXT_KEY_PROMOTION_FUROR_TEUTONICUS_HELP',
-			1,				'AS2D_IF_LEVELUP',	59,				'ABILITY_ATLAS',	'PEDIA_MELEE',			'TXT_KEY_PROMOTION_FUROR_TEUTONICUS',
-			50);
+		(Type,					Description,				Help,						CannotBeChosen,		Sound,			PortraitIndex,		IconAtlas,		PediaType,	PediaEntry,				BarbarianCombatBonus)
+VALUES		('PROMOTION_BARBARIAN_ALLIANCE',	'TXT_KEY_PROMOTION_BARBARIAN_ALLIANCE',	'TXT_KEY_PROMOTION_BARBARIAN_ALLIANCE_HELP',	1,			'AS2D_IF_LEVELUP',	59,			'ABILITY_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_FUROR_TEUTONICUS',	0),
+		('PROMOTION_FUROR_TEUTONICUS',		'TXT_KEY_PROMOTION_FUROR_TEUTONICUS',	'TXT_KEY_PROMOTION_FUROR_TEUTONICUS_HELP',	1,			'AS2D_IF_LEVELUP',	59,			'ABILITY_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_FUROR_TEUTONICUS',	50);
 
 INSERT OR REPLACE INTO ArtDefine_StrategicView 
 			(StrategicViewType, 				TileType,	Asset)
