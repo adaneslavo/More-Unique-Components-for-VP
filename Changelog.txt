@@ -9,9 +9,11 @@ More Unique Components for Vox Populi changelog:
 *ironchariot/scythedchariot model?
 
 v27:
-- deleted Sukritact_ChangeResearchProgress.lua; changed science progress code for few UCs,
-- modified DruidicLore.lua (added code for capital/holy city capture from celts and for celts),
-- small lua modifications (Pogost),
+- deleted Sukritact_ChangeResearchProgress.lua; changed science progress code (Madrasah, Pitz, Holkan),
+- modified DruidicLore lua (added code for capital/holy city capture from celts and for celts),
+- modified lua (Pogost),
+- fixed text (Iron Chariot, Klepht),
+- fixes (Black Tug, Latifundium),
 - minor fixes.
 
 v26:

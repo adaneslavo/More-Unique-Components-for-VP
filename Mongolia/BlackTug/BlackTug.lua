@@ -16,10 +16,14 @@ end
 function OnPillageBonus(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged) 
 	if bPillaged then
 		local pPlot = Map.GetPlot(iX, iY)
-		local pUnit = pPlot:GetUnit(0)
-		local pPlayer = Players[pUnit:GetOwner()]
 		
-		pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, true)
+		for iVal = 0,(pPlot:GetNumUnits() - 1) do
+			local pUnit = pPlot:GetUnit(iVal)
+		
+			if pUnit and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MINGGHAN) then	
+				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_MONGOLIA_MASSACRE, true)
+			end
+		end
 	end
 end
 
