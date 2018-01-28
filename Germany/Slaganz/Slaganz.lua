@@ -14,9 +14,9 @@ function SlaganzConvert(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAtta
 	local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 	local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 	if pAttackingUnit == nil or pDefendingUnit == nil then return end -- stupidity check
-	if pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_FUROR_TEUTONICUS) and iDefenderFinalDamage >= iDefenderMaxHP then
+	if pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_BARBARIAN_ALLIANCE) and iDefenderFinalDamage >= iDefenderMaxHP then
 		local iRand = Game.Rand(100, "Slaganz capture roll")
-		if (iRand < 75) then
+		if (iRand < 51) then
 			local pNewUnit = pAttackingPlayer:InitUnit(pDefendingUnit:GetUnitType(), pDefendingUnit:GetX(), pDefendingUnit:GetY())
 			pNewUnit:Convert(pDefendingUnit)
 			pNewUnit:SetDamage(75)
