@@ -69,5 +69,3 @@ end
 
 GameEvents.PlayerDoTurn.Add(WLTKDGreatPersonBonus)
 GameEvents.SetPopulation.Add(GPPOnGrowth)
-
-print("OK loaded Examination Hall.lua - detected GPs", #tGPs)

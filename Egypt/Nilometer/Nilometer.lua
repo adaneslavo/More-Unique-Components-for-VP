@@ -87,5 +87,3 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 	end
 end
 GameEvents.CityConstructed.Add(NilometerPlaceFlax)
-
-print("OK loaded Nilometer.lua")

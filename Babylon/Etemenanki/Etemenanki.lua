@@ -8,13 +8,13 @@ include("InstanceManager")
 local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GrowthPercent / 100
 local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 
-function EtemenankiUnitInvestment(iPlayer, iCity, iUnitClass, bValue)
-	local pPlayer = Players[iPlayer]
+function EtemenankiUnitInvestment(iPlayer, iCity, iUnit, bGold, bFaith)
+	if not bGold then return end
 
+	local pPlayer = Players[iPlayer]
 	if not pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_BABYLON then return end
 
 	local pCapital = pPlayer:GetCapitalCity()
-	
 	if not pCapital:IsHasBuilding(GameInfoTypes.BUILDING_BABYLON_ETEMENANKI) then return end
 
 	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)										
@@ -68,5 +68,6 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.CityInvestedUnit.Add(EtemenankiUnitInvestment)
+
+GameEvents.CityTrained.Add(EtemenankiUnitInvestment)
 GameEvents.CityInvestedBuilding.Add(EtemenankiBuildingInvestment)
