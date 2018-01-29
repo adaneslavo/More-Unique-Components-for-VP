@@ -2131,6 +2131,7 @@
 			<Text>
 				Barbarian Alliance
 			</Text>
+		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_BARBARIAN_ALLIANCE_HELP">
 			<Text>
 				50% Chance to convert Barbarians on kill. +5 [ICON_INFLUENCE] Influence to the nearest City-State on barbarian conversion.
