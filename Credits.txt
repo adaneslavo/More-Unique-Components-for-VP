@@ -181,3 +181,10 @@ Things borrowed from other mods:
 		  - JFD - idea of Landwehr UU,
 		  - janboruta - picture and flag of Landwehr,
 		  - bernie14 - 3D model of Landwehr.
+
+		Brazil:
+		  - mikeburnfire - idea and picture of Sambadrome UB.
+
+		China:
+		  - mikeburnfire - idea and picture of Xiafan Guanjun UU (War Junk),
+		  - wolfdog - 3D model for Xiafan Guanjun.
