@@ -558,26 +558,26 @@
 		</Row>
 		<!-- Examination Hall -->
 		<!-- Created by Blue Ghost-->
-		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL">
+		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL">
 			<Text>
 				Examination Hall
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_TEXT">
 			<Text>
 				Perhaps the most truly unique aspect of Chinese culture - and the one with the most powerful legacy - is the Confucian examination system with which the Son of Heaven's empire was staffed with civil servants over the best part of two millennia. The Imperial examinations represented an attempt to create an aristocracy of learning, which in itself represent a remarkable advance over the warrior and hereditary aristocracies that dominated in the rest of the world. The Chinese examination system, archaic, laborious and daunting as it may have been, was nevertheless, was a glorious attempt at intellectual meritocracy.[NEWLINE][NEWLINE]
 				The Imperial Exams, or Keju, were state organized examinations for candidacy into the Chinese civil service. The examinations amounted to tests of rote memorization of the Five Confucian Classics and required direct quotations on Confucian philosophy and ethics. There were several levels of exams, each conferring differing levels of honor and privelege. A scholar who obtained the highest degree, the jinshi, would have his memory trained to a tremendous degree.[NEWLINE][NEWLINE]
 				The Imperial examinations was abolished in 1890 under pressure by Chinese citizens to reform and modernize the state. As Western universities began to move away from their own classical tradition to embrace economics, engineering and natural science, China's scholarly efforts languished in the ancient literary past. It is unsurprising that the ingenuity that produced the “Four Great Inventions” could not flourish in such a backward-looking intellectual environment.[NEWLINE][NEWLINE]
-				 “Do you know that we tried an experiment which is unique in the history of the world? We sought to rule this great country not by force, but by wisdom. And for centuries we succeeded.”[NEWLINE]
+				“Do you know that we tried an experiment which is unique in the history of the world? We sought to rule this great country not by force, but by wisdom. And for centuries we succeeded.”[NEWLINE]
 				-Anonymous Confucian Philosopher; excerpt from "On a Chinese Screen"
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_STRATEGY">
 			<Text>
 				The Examination Hall is a Chinese unique building, replacing the Chancery. In addition to the normal bonuses of a Chancery, the Exam Hall boosts Great People generation in the city, and gives random Great Person Points whenever a citizen is born.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_EXAMINATION_HALL_HELP">
+		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_HELP">
 			<Text>
 				+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] for Diplomatic Units in the city in which it is built. [NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% Great People rate in the city, increased to +10% during We Love the King Day.[NEWLINE][NEWLINE]Whenever a citizen is born, gain 15 points toward a random Great Person, scaling with era.
 			</Text>
@@ -2432,29 +2432,29 @@
 		</Row>
 
 		<!-- Xiafan Guanjun -->
-		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN">
+		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN">
 			<Text>Xiafan Guanjun</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_HELP">
+		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_HELP">
 			<Text>Sturdy Renaissance era ranged naval unit. Only China may build it.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_STRATEGY">
 			<Text>The Xiafan Guanjun is a Chinese unique unit. It is much sturdier than the Frigate it replaces, is available earlier, and has the Supply promotion. When stationed in a city-state territory, gain 2 Influence with that city-state per turn.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_CHINESE_XIAFAN_GUANJUN_TEXT">
+		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_TEXT">
 			<Text>
 				The Xiafan Guanjun (lit. "The Foreign Expeditionary Armada") was the great treasure fleet of the Ming Dynasty. Seven voyages were made from 1405 to 1433 AD, all headed by the legendary admiral Zheng He at the behest of Yongle Emperor. The Treasure Fleet ranged as far as the Arabian Peninsula in their task of projecting Chinese influence across the South China Sea and beyond, bringing many smaller nations under the suzerainty of China.[NEWLINE][NEWLINE]
-				
+
 				The ships of the Xiafan Guanjun were some of the largest wooden ships ever constructed, some measuring an estimated 137 meters (416 feet). It would be another century before European ships could match the size and power of the Chinese, making China the undisputed naval superpower of the 15th century. Despite this raw power, the voyages were primarily concerned with diplomacy, bringing envoys and even kings before the emperor to present tribute and perform the 'kowtow', an act of reverence indicating their recognition and subservience to China.[NEWLINE][NEWLINE]
-				
+
 				"As an engine for carrying man and his commerce upon the high and stormy seas as well as on the vast inland waterways, it is doubtful if any class of vessel… is more suited or better adapted to its purpose than the Chinese or Indian junk, and it is certain that for flatness of sail and handiness, the Chinese rig is unsurpassed."[NEWLINE]-H. Warington Smyth
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_KOWTOW">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW">
 			<Text>Kowtow</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_KOWTOW_HELP">
-			<Text>Can enter rival territory. +2 Influence per turn when stationed within a city-state's borders.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW_HELP">
+			<Text>Unit [COLOR_POSITIVE_TEXT]can Enter Enemy Territory[ENDCOLOR] without Open Borders Agreement. +2 [ICON_INFLUENCE] Influence per turn [COLOR_POSITIVE_TEXT]inside City-State Territory[ENDCOLOR].</Text>
 		</Row>
 		<!-- Created by Blue Ghost-->
 
