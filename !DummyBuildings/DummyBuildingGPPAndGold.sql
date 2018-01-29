@@ -17,7 +17,7 @@ VALUES		('BUILDINGCLASS_DUMMYGPPANDGOLD',	'BUILDING_DUMMYGPPANDGOLD',		1);
 ------------------------------	
 INSERT INTO Buildings 	
 			(Type,							BuildingClass,						GoldMaintenance,	Cost,	FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount,	FreshWater, FreeStartEra, UnmoddedHappiness,	Happiness,	NeverCapture,	PrereqTech, ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	Description,							IconAtlas,			PortraitIndex)
-SELECT		'BUILDING_DUMMYGPPANDGOLD',	'BUILDINGCLASS_DUMMYGPPANDGOLD',	0,					-1,		-1,			EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, 0,		ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	2,							GreatWorkSlotType, -1,				FreshWater, FreeStartEra, 0,					0,			1,				PrereqTech, ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, -1,					'TXT_KEY_BUILDING_DUMMYGPPANDGOLD', 'CIV_COLOR_ATLAS',	0
+SELECT		'BUILDING_DUMMYGPPANDGOLD',	'BUILDINGCLASS_DUMMYGPPANDGOLD',	0,					-1,		-1,			EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, 0,		ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	2,							GreatWorkSlotType, -1,				FreshWater, FreeStartEra, 0,					0,			1,				PrereqTech, ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, -1,					'TXT_KEY_BUILDING_DUMMYGPPANDDEFENSE', 'CIV_COLOR_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_PALACE';	
 ------------------------------	
 -- Building_Flavors

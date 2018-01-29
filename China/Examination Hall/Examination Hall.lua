@@ -5,8 +5,8 @@
 include("FLuaVector.lua")
 include("InstanceManager")
 
-local iBuilding = GameInfoTypes.BUILDING_CHINA_EXAMINATION_HALL
-local iDummy = GameInfoTypes.BUILDING_DUMMYGPP
+local iBuilding = GameInfoTypes.BUILDING_VP_EXAMINATION_HALL
+local iDummy = GameInfoTypes.BUILDING_VP_EXAMINATION_HALL_DUMMY
 
 -- build table of valid specialists and corresponding GPs
 local tGPs = {}
