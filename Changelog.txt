@@ -5,7 +5,20 @@
 More Unique Components for Vox Populi changelog:
 
 *roman GG appear and disappear?
-*dummies?
+
+v27:
+- added lua for Etemenanki (now investing in units or building in any city grants bonus to capital; sql function deleted),
+- deleted Sukritact_ChangeResearchProgress.lua; changed science progress code (Madrasah, Pitz, Holkan),
+- modified DruidicLore lua (added code for capital/holy city capture from celts and for celts),
+- optimized lua (Pogost, White Tower),
+- fixed text (Iron Chariot, Klepht),
+- fixes (Black Tug, Latifundium),
+- changed unit model (Scythed Chariot),
+- changed number of units in Iron Chariots model to 1,
+- cleaned up the code and art (Xiafan Guanjun, Examination Hall, Tophet),
+- scaled down Xiafan Guanjun model,
+- added 2 dummy buildings,
+- minor fixes.
 
 v26:
 - deleted scaling with Era from units,
@@ -52,7 +65,7 @@ v26:
 - fixed Oppidum stay after attack ability,
 - fixed Baan Chang lua game event,
 - fixed Holkan Goody Huts,
-- minor fixes,
+- minor fixes.
 
 v25:
 - renamed Treasure Hunter II promotion to Helpful Knowledge,

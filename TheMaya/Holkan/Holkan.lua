@@ -33,7 +33,7 @@ function HolkansGoodyHuts(iPlayer, iUnit, eGoody, iX, iY)
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2) then
 		local iResearchBonus = math.floor(10 * fGameSpeedModifier)
 			
-		LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iResearchBonus)
+		pPlayer:ChangeOverflowResearch(iResearchBonus)
 
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local vUnitPosition = PositionCalculator(iX, iY)

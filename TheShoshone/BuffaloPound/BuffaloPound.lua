@@ -63,6 +63,5 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 		end
 	end
 end
-GameEvents.CityConstructed.Add(BuffaloPoundPlaceBison)
 
-print("OK loaded BuffaloPound.lua")
+GameEvents.CityConstructed.Add(BuffaloPoundPlaceBison)
