@@ -3,7 +3,6 @@
 -- DateCreated: 
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("PlotIterators.lua")
 
 function Kowtow(iPlayer)
 	local pPlayer = Players[iPlayer]
