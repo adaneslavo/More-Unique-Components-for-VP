@@ -56,13 +56,6 @@ INSERT INTO Building_YieldFromPolicyUnlock
 			(BuildingType,					YieldType,					Yield)
 VALUES		('BUILDING_BABYLON_ETEMENANKI',	'YIELD_GOLDEN_AGE_POINTS',	50);
 ------------------------------	
--- Building_YieldFromPurchase
-------------------------------
-INSERT INTO Building_YieldFromPurchase
-			(BuildingType,					YieldType,			Yield)
-VALUES		('BUILDING_BABYLON_ETEMENANKI',	'YIELD_FOOD',		15),
-			('BUILDING_BABYLON_ETEMENANKI',	'YIELD_SCIENCE',	15);
-------------------------------	
 -- Building_BuildingClassYieldChanges
 ------------------------------
 INSERT INTO Building_BuildingClassYieldChanges 	

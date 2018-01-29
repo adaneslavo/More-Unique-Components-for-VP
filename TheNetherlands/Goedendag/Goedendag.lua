@@ -191,52 +191,6 @@ function GoedendagOnResourceBonus(iPlayer, iUnit, iX, iY)
 		local pPlot = pUnit:GetPlot()
 			
 		if pPlot ~= nil then	
-			--[[
-			local iLuxuries = {}
-				iLuxuries[0] = GameInfoTypes.RESOURCE_AMBER
-				iLuxuries[1] = GameInfoTypes.RESOURCE_BRAZILWOOD
-				iLuxuries[2] = GameInfoTypes.RESOURCE_CITRUS
-				iLuxuries[3] = GameInfoTypes.RESOURCE_CLOVES
-				iLuxuries[4] = GameInfoTypes.RESOURCE_COCOA
-				iLuxuries[5] = GameInfoTypes.RESOURCE_COFFEE
-				iLuxuries[6] = GameInfoTypes.RESOURCE_COPPER
-				iLuxuries[7] = GameInfoTypes.RESOURCE_CORAL
-				iLuxuries[8] = GameInfoTypes.RESOURCE_COTTON
-				iLuxuries[9] = GameInfoTypes.RESOURCE_CRAB
-				iLuxuries[10] = GameInfoTypes.RESOURCE_DYE
-				iLuxuries[11] = GameInfoTypes.RESOURCE_FUR
-				iLuxuries[12] = GameInfoTypes.RESOURCE_GEMS
-				iLuxuries[13] = GameInfoTypes.RESOURCE_GOLD
-				iLuxuries[14] = GameInfoTypes.RESOURCE_INCENSE
-				iLuxuries[15] = GameInfoTypes.RESOURCE_IVORY
-				iLuxuries[16] = GameInfoTypes.RESOURCE_JADE
-				iLuxuries[17] = GameInfoTypes.RESOURCE_LAPIS
-				iLuxuries[18] = GameInfoTypes.RESOURCE_MARBLE
-				iLuxuries[19] = GameInfoTypes.RESOURCE_NUTMEG
-				iLuxuries[20] = GameInfoTypes.RESOURCE_OLIVE
-				iLuxuries[21] = GameInfoTypes.RESOURCE_PEARLS
-				iLuxuries[22] = GameInfoTypes.RESOURCE_PEPPER
-				iLuxuries[23] = GameInfoTypes.RESOURCE_PERFUME
-				iLuxuries[24] = GameInfoTypes.RESOURCE_PORCELAIN
-				iLuxuries[25] = GameInfoTypes.RESOURCE_SALT
-				iLuxuries[26] = GameInfoTypes.RESOURCE_SILK
-				iLuxuries[27] = GameInfoTypes.RESOURCE_SILVER
-				iLuxuries[28] = GameInfoTypes.RESOURCE_SPICES
-				iLuxuries[29] = GameInfoTypes.RESOURCE_SUGAR
-				iLuxuries[30] = GameInfoTypes.RESOURCE_TEA
-				iLuxuries[31] = GameInfoTypes.RESOURCE_TOBACCO
-				iLuxuries[32] = GameInfoTypes.RESOURCE_TRUFFLES
-				iLuxuries[33] = GameInfoTypes.RESOURCE_WHALE
-				iLuxuries[34] = GameInfoTypes.RESOURCE_WINE
-			local bIsLuxury = false
-
-			for i=0, 34, 1 do
-				if pPlot:GetResourceType(pPlayer:GetTeam()) == iLuxuries[i] then
-					bIsLuxury = true
-					break
-				end
-			end
-			--]]
 			local eResType = pPlot:GetResourceType(pPlayer:GetTeam())
 			local bIsLuxury = false
 			if eResType ~= -1 then bIsLuxury = (GameInfo.Resources[ eResType ].ResourceClassType == "RESOURCECLASS_LUXURY") end
@@ -249,5 +203,3 @@ GameEvents.UnitSetXY.Add(GoedendagOnMove)
 GameEvents.UnitCreated.Add(GoedendagOnCreate)
 GameEvents.CityTrained.Add(GoedendagOnBuild)
 GameEvents.UnitSetXY.Add(GoedendagOnResourceBonus)
-
-print("OK loaded Goedendag.lua")

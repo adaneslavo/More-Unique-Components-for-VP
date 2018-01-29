@@ -60,7 +60,7 @@ function LatifundiumSpawnFigs(iX, iY, iOwner, iOldImprovement, iNewImprovement, 
 		end	
 			
 		if pCheckedPlayer == nil then
-			pChosenPlot:SetOwner(iPlayer, pNearestCity:GetID(), true, true)	
+			pChosenPlot:SetOwner(iOwner, pNearestCity:GetID(), true, true)	
 
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_TILE, 
@@ -69,7 +69,7 @@ function LatifundiumSpawnFigs(iX, iY, iOwner, iOldImprovement, iNewImprovement, 
 				pChosenPlot:GetX(), pChosenPlot:GetY(), pNearestCity:GetID())
 			end
 		elseif pCheckedPlayer:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_ROME then
-			pChosenPlot:SetOwner(iPlayer, pNearestCity:GetID(), true, true)	
+			pChosenPlot:SetOwner(iOwner, pNearestCity:GetID(), true, true)	
 
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_TILE, 

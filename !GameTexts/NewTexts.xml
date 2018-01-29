@@ -967,7 +967,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE_HELP">
 			<Text>
-				+2 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack. Lost after unit upgrade.
+				+2 [ICON_STRENGTH] Combat Power if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack. Lost after unit upgrade.
 			</Text>
 		</Row>
 		

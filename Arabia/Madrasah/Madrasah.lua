@@ -2,7 +2,6 @@
 -- Author: Blue Ghost, adan_eslavo
 -- DateCreated:
 --------------------------------------------------------------
-include("Sukritact_ChangeResearchProgress.lua")
 include("FLuaVector.lua")
 include("InstanceManager")
 
@@ -30,7 +29,7 @@ function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 			pPlayer:AddNotification(0, '[ICON_PEACE] Faith purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iScience..' [ICON_RESEARCH] Science', 'Bonus Yields in '..pCity:GetName(), pCity:GetX(), pCity:GetY())
 		end
 
-		LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iScience)
+		pPlayer:ChangeOverflowResearch(iScience)
 	end
 end
 
@@ -51,7 +50,7 @@ function MadrasahScienceBuilding(iPlayer, iCity, iBuilding, bGold, bFaith)
 			pPlayer:AddNotification(0, '[ICON_PEACE] Faith purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iScience..' [ICON_RESEARCH] Science', 'Bonus Yields in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
 		end
 
-		LuaEvents.Sukritact_ChangeResearchProgress(iPlayer, iScience)
+		pPlayer:ChangeOverflowResearch(iScience)
 	end
 end
 
