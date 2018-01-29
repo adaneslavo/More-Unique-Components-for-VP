@@ -551,21 +551,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>China/Examination Hall/Examination Hall.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>China/Xiafan Guanjun/Xiafan Guanjun.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>China/Xiafan Guanjun/Xiafan Guanjun.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Morocco/Corsair/Corsair.sql</FileName>
       </Action>
       <Action>
@@ -637,6 +622,16 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Germany/Teutonic Order/Teutonic Order.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>China/XiafanGuanjun/XiafanGuanjun.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>China/ExaminationHall/ExaminationHall.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -960,18 +955,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Examination Hall</Name>
-        <Description>Examination Hall GPP on birth</Description>
-        <FileName>China/Examination Hall/Examination Hall.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>Xiafan Guanjun</Name>
-        <Description>Kowtow promotion for Xiafan Guanjun</Description>
-        <FileName>China/Xiafan Guanjun/Xiafan Guanjun.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Corsair</Name>
         <Description>Razzia promotion for Corsair</Description>
         <FileName>Morocco/Corsair/Corsair.lua</FileName>
@@ -1011,6 +994,18 @@ Latest changes: see changelog file.</Description>
         <Name>Etemenanki</Name>
         <Description>Adds yields to capital from purchase.</Description>
         <FileName>Babylon/Etemenanki/Etemenanki.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Xiafan Guanjun</Name>
+        <Description>Adds Kowtow promotion.</Description>
+        <FileName>China/XiafanGuanjun/XiafanGuanjun.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>ExaminationHall</Name>
+        <Description>Adds bonuses to Examination Hall.</Description>
+        <FileName>China/ExaminationHall/ExaminationHall.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
@@ -1419,93 +1414,81 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\Examination Hall\ExamHall.128.dds">
+    <Content Include="China\ExaminationHall\ExamHallPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\Examination Hall\ExamHall.256.dds">
+    <Content Include="China\ExaminationHall\ExamHallPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\Examination Hall\ExamHall.32.dds">
+    <Content Include="China\ExaminationHall\ExamHallPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\Examination Hall\ExamHall.45.dds">
+    <Content Include="China\ExaminationHall\ExamHallPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\Examination Hall\ExamHall.64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="China\Examination Hall\ExamHall.80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="China\Examination Hall\Examination Hall.lua">
+    <Content Include="China\ExaminationHall\ExaminationHall.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="China\Examination Hall\Examination Hall.sql">
+    <Content Include="China\ExaminationHall\ExaminationHall.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="China\Xiafan Guanjun\junkship128.dds">
+    <Content Include="China\XiafanGuanjun\3DModel\WarJunk.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\Xiafan Guanjun\junkship256.dds">
+    <Content Include="China\XiafanGuanjun\3DModel\WarJunk.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\Xiafan Guanjun\junkship45.dds">
+    <Content Include="China\XiafanGuanjun\3DModel\WarJunk_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\Xiafan Guanjun\junkship64.dds">
+    <Content Include="China\XiafanGuanjun\3DModel\WarJunk_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\Xiafan Guanjun\junkship80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="China\Xiafan Guanjun\WarJunk.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="China\Xiafan Guanjun\WarJunk.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="China\Xiafan Guanjun\warjunkicon.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="China\Xiafan Guanjun\warjunkSV.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="China\Xiafan Guanjun\WarJunk_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="China\Xiafan Guanjun\WarJunk_sref.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="China\Xiafan Guanjun\Xiafan Guanjun.lua">
+    <Content Include="China\XiafanGuanjun\XiafanGuanjun.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="China\Xiafan Guanjun\Xiafan Guanjun.sql">
+    <Content Include="China\XiafanGuanjun\XiafanGuanjun.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="China\Xiafan Guanjun\Xiafan Guanjun.xml">
+    <Content Include="China\XiafanGuanjun\XiafanGuanjunFlag_032.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="China\XiafanGuanjun\XiafanGuanjunFlag_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="China\XiafanGuanjun\XiafanGuanjunPicture_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="China\XiafanGuanjun\XiafanGuanjunPicture_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="China\XiafanGuanjun\XiafanGuanjunPicture_080.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="China\XiafanGuanjun\XiafanGuanjunPicture_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="China\XiafanGuanjun\XiafanGuanjunPicture_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Egypt\Flax\3DModel\flax_diff.dds">
       <SubType>Lua</SubType>
@@ -4619,9 +4602,9 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Carthage\Shofet" />
     <Folder Include="Carthage\Shofet\3DModel" />
     <Folder Include="Carthage\Tophet" />
-    <Folder Include="China\" />
-    <Folder Include="China\Examination Hall\" />
-    <Folder Include="China\Xiafan Guanjun\" />
+    <Folder Include="China\ExaminationHall" />
+    <Folder Include="China\XiafanGuanjun" />
+    <Folder Include="China\XiafanGuanjun\3DModel" />
     <Folder Include="Egypt\Flax\3DModel" />
     <Folder Include="Egypt\Khopesh" />
     <Folder Include="Egypt\Khopesh\3DModel" />
@@ -4639,6 +4622,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Morocco\Corsair\" />
     <Folder Include="Morocco\Riad\" />
     <Folder Include="Germany" />
+    <Folder Include="China" />
     <Folder Include="Persia\Darius" />
     <Folder Include="Portugal\" />
     <Folder Include="Portugal\Cacadores\" />
