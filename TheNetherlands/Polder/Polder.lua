@@ -3,7 +3,6 @@
 -- DateCreated: 31/12/2017
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function PolderCanBeOnMarsh (iPlayer, iUnit, iX, iY, iBuild)
 	if iBuild == GameInfoTypes.BUILD_POLDER_2 and Players[iPlayer]:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_NETHERLANDS then

@@ -3,7 +3,6 @@
 -- DateCreated: 12/11/2017
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function Maim(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]

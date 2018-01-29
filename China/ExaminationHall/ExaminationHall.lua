@@ -1,9 +1,9 @@
 -- Examination Hall
+-- Author: Blue Ghost
+-- DateCreated:
 -- 2018-01-20 updated by Infixo
 --------------------------------------------------------------
-
 include("FLuaVector.lua")
-include("InstanceManager")
 
 local iBuilding = GameInfoTypes.BUILDING_CHINA_EXAMINATION_HALL
 local iDummy = GameInfoTypes.BUILDING_DUMMYGPP

@@ -3,7 +3,6 @@
 -- DateCreated: 26/01/2018
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function Chasquiwasi(iPlayer, iUnit)
 	local pPlayer = Players[iPlayer]

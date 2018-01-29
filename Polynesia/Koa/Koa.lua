@@ -3,7 +3,6 @@
 -- DateCreated: 3/11/2017
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function Leiomano(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]

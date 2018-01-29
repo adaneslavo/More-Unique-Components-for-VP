@@ -3,7 +3,6 @@
 -- DateCreated: 2/12/2017
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function HippodromeBuilt(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]

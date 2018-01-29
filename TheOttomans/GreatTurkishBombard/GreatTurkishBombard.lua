@@ -3,7 +3,6 @@
 -- DateCreated: 22/12/2017
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function MeltingTurkishBombard(iPlayer, iUnitOrCity, iRole)
 	pPlayer = Players[iPlayer]

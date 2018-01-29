@@ -1,7 +1,8 @@
 -- Tophet
-----------------------------------------------------------------------------------------------------------------------------	
+-- Author: Blue Ghost, adan_eslavo
+-- DateCreated:
+--------------------------------------------------------------	
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function TophetXPGain(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]

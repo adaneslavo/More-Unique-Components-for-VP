@@ -3,7 +3,6 @@
 -- DateCreated: 29/10/2017
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 		
 local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
 local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100

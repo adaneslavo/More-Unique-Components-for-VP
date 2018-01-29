@@ -1,5 +1,4 @@
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function RiadTradeRouteBonuses(iPlayer)
 	local pPlayer = Players[iPlayer]

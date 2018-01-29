@@ -1,9 +1,8 @@
--- Ranch
--- Author: Blue Ghost, adan_eslavo
--- DateCreated:
+-- Etemenanki
+-- Author: adan_eslavo
+-- DateCreated: 27-01-2018
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GrowthPercent / 100
 local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100

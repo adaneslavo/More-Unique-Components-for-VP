@@ -4,7 +4,6 @@
 -- 2018-01-27 updated by Infixo
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function GarlandMine(iPlayer, iUnit, iImprovement, iGold)
 	local pPlayer = Players[iPlayer]
