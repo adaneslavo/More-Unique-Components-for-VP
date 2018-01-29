@@ -1,9 +1,8 @@
 -- Xiafan Guanjun
--- Author: Blue Ghost
+-- Author: Blue Ghost, adan_eslavo
 -- DateCreated: 
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("PlotIterators.lua")
 
 function Kowtow(iPlayer)
 	local pPlayer = Players[iPlayer]

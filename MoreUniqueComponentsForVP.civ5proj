@@ -923,12 +923,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>PlotIterators</Name>
-        <Description>Sukritact's plot iterators</Description>
-        <FileName>!Utils/PlotIterators.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Sukritact_SaveUtils.lua</Name>
         <Description>Sukritact's save utils</Description>
         <FileName>!Utils/Sukritact_SaveUtils.lua</FileName>
@@ -1077,10 +1071,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="!Utils\PlotIterators.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1432,19 +1422,19 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\ExaminationHall\ExamHallPicture_045.dds">
+    <Content Include="China\ExaminationHall\ExaminationHallPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\ExaminationHall\ExamHallPicture_064.dds">
+    <Content Include="China\ExaminationHall\ExaminationHallPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\ExaminationHall\ExamHallPicture_128.dds">
+    <Content Include="China\ExaminationHall\ExaminationHallPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\ExaminationHall\ExamHallPicture_256.dds">
+    <Content Include="China\ExaminationHall\ExaminationHallPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

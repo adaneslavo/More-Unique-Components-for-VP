@@ -3,7 +3,6 @@
 -- DateCreated:
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]

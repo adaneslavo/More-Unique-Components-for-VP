@@ -3,7 +3,6 @@
 -- DateCreated: 20/12/2017
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function QizilbashAgitator(iPlayer)
 	local pPlayer = Players[iPlayer]

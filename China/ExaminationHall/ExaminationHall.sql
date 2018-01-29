@@ -80,11 +80,11 @@ FROM Building_UnitCombatProductionModifiers WHERE BuildingType = 'BUILDING_CHANC
 -- IconTextureAtlases
 ------------------------------
 INSERT INTO IconTextureAtlases 
-		(Atlas, 								IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES	('BUILDING_CHINA_ATLAS', 				256, 		'ExamHallPicture_256.dds',		1, 				1),
-		('BUILDING_CHINA_ATLAS', 				128, 		'ExamHallPicture_128.dds',		1, 				1),
-		('BUILDING_CHINA_ATLAS', 				45, 		'ExamHallPicture_045.dds',		1, 				1),
-		('BUILDING_CHINA_ATLAS', 				64, 		'ExamHallPicture_064.dds',		1, 				1);
+		(Atlas, 								IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
+VALUES	('BUILDING_CHINA_ATLAS', 				256, 		'ExaminationHallPicture_256.dds',		1, 				1),
+		('BUILDING_CHINA_ATLAS', 				128, 		'ExaminationHallPicture_128.dds',		1, 				1),
+		('BUILDING_CHINA_ATLAS', 				45, 		'ExaminationHallPicture_045.dds',		1, 				1),
+		('BUILDING_CHINA_ATLAS', 				64, 		'ExaminationHallPicture_064.dds',		1, 				1);
 --==========================================================================================================================
 --==========================================================================================================================
 		

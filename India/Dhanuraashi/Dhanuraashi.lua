@@ -3,7 +3,6 @@
 -- DateCreated: 4/12/2017
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 -- check XP scaling
 local bXPScaling = true -- default VP

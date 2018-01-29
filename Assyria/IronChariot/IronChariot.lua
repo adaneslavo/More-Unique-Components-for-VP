@@ -3,7 +3,6 @@
 -- DateCreated:
 -- 2018-01-27 updated by Infixo
 --------------------------------------------------------------
-
 function IronChariotResourceCheck(iPlayer)
 	local pPlayer = Players[iPlayer]
 	local tIronChariots = {}

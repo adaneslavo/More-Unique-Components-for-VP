@@ -4,7 +4,6 @@
 -- 2018-01-25 updated by Infixo
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 	local pPlayer = Players[iPlayer]

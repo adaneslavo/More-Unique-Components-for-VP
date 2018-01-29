@@ -3,7 +3,6 @@
 -- DateCreated: 26/10/2017
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function Scythe(iPlayer, iUnit, iX, iY)
 	local pPlayer = Players[iPlayer]

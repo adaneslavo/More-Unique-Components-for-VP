@@ -3,7 +3,6 @@
 -- DateCreated:
 --------------------------------------------------------------
 include("FLuaVector.lua")
-include("InstanceManager")
 
 function CheckLandwehrMove(iPlayer, iUnit, iX, iY)
 	local pPlayer = Players[iPlayer]

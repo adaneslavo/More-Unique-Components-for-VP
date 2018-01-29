@@ -188,3 +188,6 @@ Things borrowed from other mods:
 		China:
 		  - mikeburnfire - idea and picture of Xiafan Guanjun UU (War Junk),
 		  - wolfdog - 3D model for Xiafan Guanjun.
+
+		Carthage:
+		  - - Shofet
