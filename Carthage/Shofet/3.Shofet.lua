@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------------------------------------------------
 -- SHOPHET
+-- 2018-01-27 updated by Infixo
 ----------------------------------------------------------------------------------------------------------------------------	
-include("PlotIterators.lua")
 -- JFD_CarthageHannibal_Shophet
 local unitPromotionGreatAdmiralID = GameInfoTypes["PROMOTION_GREAT_ADMIRAL"]
 local unitPromotionGreatGeneralID = GameInfoTypes["PROMOTION_GREAT_GENERAL"]
@@ -109,7 +109,9 @@ function JFD_CarthageHannibal_ShophetZoC(playerID)
 				if isUsingCPDLL then
 					isNearbyShophet = (unit:IsWithinDistanceOfUnit(unitShophetID, 1, true) or unit:IsWithinDistanceOfUnit(unitShophetID, 0))
 				else
-					for adjacentPlot in PlotAreaSweepIterator(unitPlot, 1, SECTOR_NORTH, DIRECTION_CLOCKWISE, DIRECTION_OUTWARDS, CENTRE_EXCLUDE) do
+					local iX, iY = unitPlot:GetX(), unitPlot:GetY()
+					for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
+						local adjacentPlot = Map.PlotDirection(iX, iY, eDirection)
 						isNearbyShophet = (adjacentPlot:GetUnit() and adjacentPlot:GetUnit():IsHasPromotion(unitPromotionShophetID))
 						if isNearbyShophet == true then 
 							break
