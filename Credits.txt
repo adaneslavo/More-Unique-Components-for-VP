@@ -4,20 +4,20 @@
 --------------------------------------------------------------
 Special thanks to:
 
-  - Hinin - ideas and early developement of 3rd and 4th Unique Component mod, many of the playtesting, bug reports and many more,
-  - pineappledan - ideas, great historical knowledge, programming, art, game texts, testing, advices, unlimited posts on many forum threads and many more, project collaborator, 
-  - Blue Ghost - main page developement, lots of coding, bug fixes, merging, game texts, ideas and help with coding other people's parts, project collaborator,
+  - Hinin - ideas and early developement of 3rd and 4th Unique Component mod. Mod support, spreadsheets and summarizing, Playtesting, bug reports,
+  - pineappledan - ideas, research, sql programming, art and game texts. Mod support, spreadsheets and summarizing. Too many forum posts than is healthy, project collaborator, 
+  - Blue Ghost - main page developement, coding, bug fixes, merging, game texts, ideas and help with coding other people's parts, project collaborator,
   - Infixo - dll coding, ideas and bug reports, lua code, Github help, coding suggestions, VP cooperation and implementations, project collaborator,
-  - FoxOfWar - very important playtesting parts, many essential bug reports and ideas,
-  - Jarula - many ideas, better or worse, but always eager to put his 2 cents, 
+  - FoxOfWar - Playtesting, quality assurance and ideas,
+  - Jarula - Ideas and playtesting ,
   - De_Genius - 2 civs coded, art and ideas,
   - FieryCharizard7 - 1 civ coded, ideas,
   - Enginseers - 1 civ coded, some other borrowed parts of code, ideas and help with coding,
   - doublex55 - ideas and bug reports,
-  - BazaarJack - early stage of design, ideas and bug reports,
-  - phantomaxl1207 - early stage of design, ideas and bug reports,
+  - BazaarJack - early civ design, ideas and bug reports,
+  - phantomaxl1207 - early mod design, ideas and bug reports,
   - LukaSlovenia29 - ideas and bug reports,
-  - Hokath - art, ideas and bug reports,
+  - Hokath - art, ideas, SQL coding and bug reports,
   - ThirstQuencher - ideas and bug reports,
   - IcyAngel - ideas and bug reports,
   - Ziad - ideas and bug reports,
@@ -142,6 +142,40 @@ Things borrowed from other mods:
 		  - JFD - idea of Bastu UB (Banya),
 		  - janboruta - Picture of Bastu.
 
+		Carthage:
+		  - Janboruta - Shophet art
+		  - JFD - Shophet idea and code 
+		  
+		Venice:
+		  - Janboruta - Fusta art
+		  - Kevin Fitzgerald AKA SushiSquid - Laguna art
+
+		Huns:
+		  - Janboruta - Tarkhan icon art (Alan Cavalry)
+		  - Danrell - Tarkhan Unit model
+		  - Wodhann - Alti Cur art (Yurt)
+		  
+		Korea:
+		  - DarthStarKiller/DarthKyofu - Chaebol Art
+		  
+		Japan:
+		  - Teddyk - Kabuki Art
+		  - Danrell - Yamato Unit model & animation 
+		  
+		Inca:
+		  - Leugi - Chasqui icon art 
+		  - JTitan - Chasqui Unit model
+		
+		Songhai:
+		  - Tomatekh - Sofa idea and Art
+		  - DJS Henninger & RyanJames - Qadi Court art
+		
+		Zulu:
+		  - Mikeburnfire - InDuna art
+		  - Mr. Spiffy - Iziko art
+
+		
+
 	Coding - De_Genius, adan_eslavo:
 		Denmark:
 		  - janboruta - picture of Langskib UU (Longboat).
@@ -188,6 +222,7 @@ Things borrowed from other mods:
 		China:
 		  - mikeburnfire - idea and picture of Xiafan Guanjun UU (War Junk),
 		  - wolfdog - 3D model for Xiafan Guanjun.
-
-		Carthage:
-		  - - Shofet
+		
+		Germany 
+		  - Janboruta - Slaganz icon Art
+		  - JTitan - Slaganz unit model
