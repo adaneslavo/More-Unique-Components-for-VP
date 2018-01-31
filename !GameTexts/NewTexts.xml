@@ -1948,110 +1948,110 @@
 
 		<!-- Shophet -->
 		<!-- Created by pineappledan -->
-		<Row Tag="TXT_KEY_UNIT_JFD_SHOPHET">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET">
 			<Text>Shophet</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_JFD_SHOPHET_HELP">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP">
 			<Text>Unique replacement for the Great General. Disembarks onto water tiles as a Great Admiral. Causes friendly units beginning in the same or adjacent tile to ignore enemy Zone of Control for that turn.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_JFD_SHOPHET_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY">
 			<Text>The Shophet is the unique Great General replacement for Carthage, for Hannibal. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Shophet to supplement your military strategies when waging war against other civilizations.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_JFD_SHOPHET_TEXT">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_TEXT">
 			<Text>In the various independent city states constituting Phoenicia proper (coasts of present Lebanon and Syria) and its "Punic" Mediterranean colonies a shofet (in Punic, suffet or suffete) was a non-royal magistrate granted control over a city-state, sometimes functioning much in the same way as a Roman consul.[NEWLINE][NEWLINE]The term is mostly widely known from the suffetes of Carthage, a former Phoenician colony. Following the overthrow of its monarchy in the 5th century BC, Carthage was ruled by a number of aristocratic councils presided over by two suffetes, who served in similar capacity to Roman consuls.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_GENERAL">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL">
 			<Text>Admiralty</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_GENERAL_HELP">
-			<Text>This unit may embark as a Great Admiral.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL_HELP">
+			<Text>Unit turns into Great Admiral [COLOR_POSITIVE_TEXT]on Embark[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_ADMIRAL">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL">
 			<Text>Commandeering</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_ADMIRAL_HELP">
-			<Text>This unit may disembark as a Great General (must be moved into a city first).</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL_HELP">
+			<Text>Unit turns into Great General if it [COLOR_POSITIVE_TEXT]is standing in City[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_ZOC">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC">
 			<Text>Nearby Shophet</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_JFD_SHOPHET_ZOC_HELP">
-			<Text>Ignores enemy Zone of Control.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC_HELP">
+			<Text>Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR].</Text>
 		</Row>
 		<!--Unique Names-->
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_1">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_1">
 			<Text>Bomilcar</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_2">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_2">
 			<Text>Hamilcar Barca</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_3">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_3">
 			<Text>Hannibal</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_4">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_4">
 			<Text>Hannibal Barca</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_5">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_5">
 			<Text>Hasdrubal II</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_6">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_6">
 			<Text>Hasdrubal Gisco</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_7">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_7">
 			<Text>Hasdrubal the Boetharch</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_8">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_8">
 			<Text>Mago I Justin</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_9">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_9">
 			<Text>Mago II</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_10">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_10">
 			<Text>Mago III</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_11">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_11">
 			<Text>Himilco I</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_12">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_12">
 			<Text>Himilco II</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_13">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_13">
 			<Text>Hasdrubal the Fair</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_14">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_14">
 			<Text>Ad Herbal</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_15">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_15">
 			<Text>Carthalo</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_16">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_16">
 			<Text>Hannibal Monomachus</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_17">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_17">
 			<Text>Maharbal</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_18">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_18">
 			<Text>Sophonisba</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_19">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_19">
 			<Text>Hannibal the Rhodian</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_20">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_20">
 			<Text>Hanno the Elder</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_21">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_21">
 			<Text>Hanno the Great</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_22">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_22">
 			<Text>Aderbaal</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_23">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_23">
 			<Text>Bodashtart</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_24">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_24">
 			<Text>Philosir</Text>
 		</Row>
-		<Row Tag="TXT_KEY_GREAT_PERSON_JFD_SHOPHET_25">
+		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_25">
 			<Text>Abdmelqart</Text>
 		</Row>
 	

@@ -536,12 +536,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Carthage/Shofet/1.ShofetArt.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Carthage/Shofet/2.ShofetGame.sql</FileName>
+        <FileName>Carthage/Shofet/Shophet.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -949,7 +944,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Shofet</Name>
         <Description>Shofet conversion functions</Description>
-        <FileName>Carthage/Shofet/3.Shofet.lua</FileName>
+        <FileName>Carthage/Shofet/Shophet.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1322,15 +1317,11 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shofet\1.ShofetArt.sql">
+    <Content Include="Carthage\Shofet\Shophet.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shofet\2.ShofetGame.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Carthage\Shofet\3.Shofet.lua">
+    <Content Include="Carthage\Shofet\Shophet.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1362,39 +1353,31 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_128.dds">
+    <Content Include="Carthage\Shofet\ShophetPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_256.dds">
+    <Content Include="Carthage\Shofet\ShophetPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_32.dds">
+    <Content Include="Carthage\Shofet\ShophetPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_45.dds">
+    <Content Include="Carthage\Shofet\ShophetPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_64.dds">
+    <Content Include="Carthage\Shofet\ShophetPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shofet\JFD_CarthageHannibalAtlas_80.dds">
+    <Content Include="Carthage\Shofet\ShophetFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shofet\JFD_ShophetUnitFlag_32.2.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Carthage\Shofet\JFD_ShophetUnitFlag_32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Carthage\Shofet\sv_Shophet.dds">
+    <Content Include="Carthage\Shofet\ShophetFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

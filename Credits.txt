@@ -143,8 +143,9 @@ Things borrowed from other mods:
 		  - janboruta - Picture of Bastu.
 
 		Carthage:
-		  - Janboruta - Shophet art
-		  - JFD - Shophet idea and code 
+		  - JFD - idea and code of Shofet UU,
+		  - janboruta - picture of Shofet,
+		  - danrell - 3D model of Shofet.
 		  
 		Venice:
 		  - Janboruta - Fusta art
