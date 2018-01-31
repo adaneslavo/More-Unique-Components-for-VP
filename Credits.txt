@@ -146,9 +146,35 @@ Things borrowed from other mods:
 		  - Janboruta - Shophet art
 		  - JFD - Shophet idea and code 
 		  
-		  Venice:
+		Venice:
 		  - Janboruta - Fusta art
 		  - Kevin Fitzgerald AKA SushiSquid - Laguna art
+
+		Huns:
+		  - Janboruta - Tarkhan icon art (Alan Cavalry)
+		  - Danrell - Tarkhan Unit model
+		  - Wodhann - Alti Cur art (Yurt)
+		  
+		Korea:
+		  - DarthStarKiller/DarthKyofu - Chaebol Art
+		  
+		Japan:
+		  - Teddyk - Kabuki Art
+		  - Danrell - Yamato Unit model & animation 
+		  
+		Inca:
+		  - Leugi - Chasqui icon art 
+		  - JTitan - Chasqui Unit model
+		
+		Songhai:
+		  - Tomatekh - Sofa idea and Art
+		  - DJS Henninger & RyanJames - Qadi Court art
+		
+		Zulu:
+		  - Mikeburnfire - InDuna art
+		  - Mr. Spiffy - Iziko art
+
+		
 
 	Coding - De_Genius, adan_eslavo:
 		Denmark:
@@ -196,4 +222,7 @@ Things borrowed from other mods:
 		China:
 		  - mikeburnfire - idea and picture of Xiafan Guanjun UU (War Junk),
 		  - wolfdog - 3D model for Xiafan Guanjun.
-
+		
+		Germany 
+		  - Janboruta - Slaganz icon Art
+		  - JTitan - Slaganz unit model
