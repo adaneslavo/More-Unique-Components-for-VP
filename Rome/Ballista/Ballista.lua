@@ -13,50 +13,13 @@ function LegatusOnMove(iPlayer, iUnit, iX, iY)
 
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsHasPromotion(iLegatus) or pUnit:IsHasPromotion(iPraefectus) then
-			local bInRange = false
-			local pPlot = pUnit:GetPlot()
-
-			if pPlot == nil then
-				break
-			end
-
-			for iVal = 0,(pPlot:GetNumUnits() - 1) do
-				local pSameTileUnit = pPlot:GetUnit(iVal)
-				
-				if pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:GetUnitType() == iGeneral then
-					bInRange = true
-					break
-				end
-			end
+			local bInRange = pUnit:IsWithinDistanceOfUnit(iGeneral, 0, true, false)
 
 			if not bInRange then
 				bInRange = pUnit:IsAdjacentToUnit(iGeneral, true, false)
 
 				if not bInRange then
-					for iDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-						local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), iDirection)		
-						
-						for iSecondDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-							local pSecondAdjacentPlot = Map.PlotDirection(pAdjacentPlot:GetX(), pAdjacentPlot:GetY(), iSecondDirection)
-												
-							for iVal2 = 0,(pSecondAdjacentPlot:GetNumUnits() - 1) do
-								local pAdjacentOfAdjacentUnit = pSecondAdjacentPlot:GetUnit(iVal2)
-							
-								if pAdjacentOfAdjacentUnit:GetOwner() == iPlayer and pAdjacentOfAdjacentUnit:GetUnitType() == iGeneral then
-									bInRange = true
-									break
-								end
-							end
-						
-							if bInRange then
-								break
-							end
-						end
-
-						if bInRange then
-							break
-						end
-					end
+					bInRange = pUnit:IsWithinDistanceOfUnit(iGeneral, 2, true, false)
 				end
 			end
 
@@ -74,55 +37,20 @@ function LegatusOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:IsHasPromotion(iLegatus) or pUnit:IsHasPromotion(iPraefectus) then
-		local bInRange = false
-		local pPlot = pUnit:GetPlot()
+		local bInRange = pUnit:IsWithinDistanceOfUnit(iGeneral, 0, true, false)
 
-		if pPlot ~= nil then
-			for iVal = 0,(pPlot:GetNumUnits() - 1) do
-				local pSameTileUnit = pPlot:GetUnit(iVal)
-				
-				if pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:GetUnitType() == iGeneral then
-					bInRange = true
-					break
-				end
-			end
+		if not bInRange then
+			bInRange = pUnit:IsAdjacentToUnit(iGeneral, true, false)
 
 			if not bInRange then
-				bInRange = pUnit:IsAdjacentToUnit(iGeneral, true, false)
-
-				if not bInRange then
-					for iDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-						local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), iDirection)		
-						
-						for iSecondDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-							local pSecondAdjacentPlot = Map.PlotDirection(pAdjacentPlot:GetX(), pAdjacentPlot:GetY(), iSecondDirection)
-												
-							for iVal2 = 0,(pSecondAdjacentPlot:GetNumUnits() - 1) do
-								local pAdjacentOfAdjacentUnit = pSecondAdjacentPlot:GetUnit(iVal2)
-							
-								if pAdjacentOfAdjacentUnit:GetOwner() == iPlayer and pAdjacentOfAdjacentUnit:GetUnitType() == iGeneral then
-									bInRange = true
-									break
-								end
-							end
-						
-							if bInRange then
-								break
-							end
-						end
-
-						if bInRange then
-							break
-						end
-					end
-				end
+				bInRange = pUnit:IsWithinDistanceOfUnit(iGeneral, 2, true, false)
 			end
+		end
 
-			if pUnit:IsHasPromotion(iLegatus) then
-				pUnit:SetHasPromotion(iLegatusEffect, bInRange)
-			elseif pUnit:IsHasPromotion(iPraefectus) then
-				pUnit:SetHasPromotion(iPraefectusEffect, bInRange)
-			end
+		if pUnit:IsHasPromotion(iLegatus) then
+			pUnit:SetHasPromotion(iLegatusEffect, bInRange)
+		elseif pUnit:IsHasPromotion(iPraefectus) then
+			pUnit:SetHasPromotion(iPraefectusEffect, bInRange)
 		end
 	elseif pUnit:GetUnitType() == iGeneral then
 		local pPlot = pUnit:GetPlot()
@@ -178,55 +106,20 @@ function LegatusOnBuild(iPlayer, iCity, iUnit)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:IsHasPromotion(iLegatus) or pUnit:IsHasPromotion(iPraefectus) then
-		local bInRange = false
-		local pPlot = pUnit:GetPlot()
+		local bInRange = pUnit:IsWithinDistanceOfUnit(iGeneral, 0, true, false)
 
-		if pPlot ~= nil then
-			for iVal = 0,(pPlot:GetNumUnits() - 1) do
-				local pSameTileUnit = pPlot:GetUnit(iVal)
-				
-				if pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:GetUnitType() == iGeneral then
-					bInRange = true
-					break
-				end
-			end
+		if not bInRange then
+			bInRange = pUnit:IsAdjacentToUnit(iGeneral, true, false)
 
 			if not bInRange then
-				bInRange = pUnit:IsAdjacentToUnit(iGeneral, true, false)
-
-				if not bInRange then
-					for iDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-						local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), iDirection)		
-						
-						for iSecondDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-							local pSecondAdjacentPlot = Map.PlotDirection(pAdjacentPlot:GetX(), pAdjacentPlot:GetY(), iSecondDirection)
-												
-							for iVal2 = 0,(pSecondAdjacentPlot:GetNumUnits() - 1) do
-								local pAdjacentOfAdjacentUnit = pSecondAdjacentPlot:GetUnit(iVal2)
-							
-								if pAdjacentOfAdjacentUnit:GetOwner() == iPlayer and pAdjacentOfAdjacentUnit:GetUnitType() == iGeneral then
-									bInRange = true
-									break
-								end
-							end
-						
-							if bInRange then
-								break
-							end
-						end
-
-						if bInRange then
-							break
-						end
-					end
-				end
+				bInRange = pUnit:IsWithinDistanceOfUnit(iGeneral, 2, true, false)
 			end
+		end
 
-			if pUnit:IsHasPromotion(iLegatus) then
-				pUnit:SetHasPromotion(iLegatusEffect, bInRange)
-			elseif pUnit:IsHasPromotion(iPraefectus) then
-				pUnit:SetHasPromotion(iPraefectusEffect, bInRange)
-			end
+		if pUnit:IsHasPromotion(iLegatus) then
+			pUnit:SetHasPromotion(iLegatusEffect, bInRange)
+		elseif pUnit:IsHasPromotion(iPraefectus) then
+			pUnit:SetHasPromotion(iPraefectusEffect, bInRange)
 		end
 	end
 end

@@ -11,21 +11,7 @@ function GoedendagOnMove(iPlayer, iUnit, iX, iY)
 
 	for pUnit in pPlayer:Units() do
 		if pUnit:GetUnitCombatType() >= 0 and pUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND then
-			local bInRange = false
-			local pPlot = pUnit:GetPlot()
-
-			if pPlot == nil then
-				break
-			end
-
-			for iVal = 0,(pPlot:GetNumUnits() - 1) do
-				local pSameTileUnit = pPlot:GetUnit(iVal)
-				
-				if pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:IsHasPromotion(iGoedendag) then
-					bInRange = true
-					break
-				end
-			end
+			local bInRange = pUnit:IsWithinDistanceOfUnit(iGoedendag, 0, true, false)
 
 			if not bInRange then
 				bInRange = pUnit:IsAdjacentToUnitPromotion(iGoedendag, true, false)
@@ -41,25 +27,13 @@ function GoedendagOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:GetUnitCombatType() >= 0 and pUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND and not pUnit:IsHasPromotion(iGoedendag) then
-		local bInRange = false
-		local pPlot = pUnit:GetPlot()
+		local bInRange = pUnit:IsWithinDistanceOfUnit(iGoedendag, 0, true, false)
 
-		if pPlot ~= nil then
-			for iVal = 0,(pPlot:GetNumUnits() - 1) do
-				local pSameTileUnit = pPlot:GetUnit(iVal)
-				
-				if pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:IsHasPromotion(iGoedendag) then
-					bInRange = true
-					break
-				end
-			end
-
-			if not bInRange then
-				bInRange = pUnit:IsAdjacentToUnitPromotion(iGoedendag, true, false)
-			end
-
-			pUnit:SetHasPromotion(iGoedendagEffect, bInRange)
+		if not bInRange then
+			bInRange = pUnit:IsAdjacentToUnitPromotion(iGoedendag, true, false)
 		end
+
+		pUnit:SetHasPromotion(iGoedendagEffect, bInRange)
 	elseif pUnit:IsHasPromotion(iGoedendag) then
 		local pPlot = pUnit:GetPlot()
 
@@ -92,25 +66,13 @@ function GoedendagOnBuild(iPlayer, iCity, iUnit)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:GetUnitCombatType() >= 0 and pUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND and not pUnit:IsHasPromotion(iGoedendag) then
-		local bInRange = false
-		local pPlot = pUnit:GetPlot()
+		local bInRange = pUnit:IsWithinDistanceOfUnit(iGoedendag, 0, true, false)
 
-		if pPlot ~= nil then
-			for iVal = 0,(pPlot:GetNumUnits() - 1) do
-				local pSameTileUnit = pPlot:GetUnit(iVal)
-				
-				if pSameTileUnit ~= pUnit and pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:IsHasPromotion(iGoedendag) then
-					bInRange = true
-					break
-				end
-			end
-
-			if not bInRange then
-				bInRange = pUnit:IsAdjacentToUnitPromotion(iGoedendag, true, false)
-			end
-
-			pUnit:SetHasPromotion(iGoedendagEffect, bInRange)
+		if not bInRange then
+			bInRange = pUnit:IsAdjacentToUnitPromotion(iGoedendag, true, false)
 		end
+
+		pUnit:SetHasPromotion(iGoedendagEffect, bInRange)
 	elseif pUnit:IsHasPromotion(iGoedendag) then
 		local pPlot = pUnit:GetPlot()
 
