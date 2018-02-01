@@ -20,7 +20,7 @@ VALUES 		('Any', 'UnderConstruction', 	0.6,		'ART_DEF_IMPROVEMENT_INDONESIA_KAMP
 ------------------------------
 INSERT INTO ArtDefine_StrategicView
 			(StrategicViewType, 						TileType, 		Asset)
-VALUES 		('ART_DEF_IMPROVEMENT_INDONESIA_KAMPONG', 	'Improvement', 	'KampongIcon_128.dds');
+VALUES 		('ART_DEF_IMPROVEMENT_INDONESIA_KAMPONG', 	'Improvement', 	'KampungIcon_128.dds');
 ------------------------------
 -- IconTextureAtlases
 ------------------------------

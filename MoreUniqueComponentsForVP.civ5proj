@@ -536,7 +536,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Carthage/Shophet/Shophet.sql</FileName>
+        <FileName>Carthage/Shofet/Shophet.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -944,7 +944,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Shofet</Name>
         <Description>Shofet conversion functions</Description>
-        <FileName>Carthage/Shophet/Shophet.lua</FileName>
+        <FileName>Carthage/Shofet/Shophet.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1317,67 +1317,67 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\Shophet.sql">
+    <Content Include="Carthage\Shofet\Shophet.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\Shophet.lua">
+    <Content Include="Carthage\Shofet\Shophet.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\3DModel\Knight_Greece.dds">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\3DModel\Knight_Greece.fxsxml">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\3DModel\Knight_Greece.gr2">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\3DModel\Knight_Greece_gloss.dds">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\3DModel\Knight_Greece_Horse.dds">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece_Horse.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\3DModel\Knight_Greece_Horse_gloss.dds">
+    <Content Include="Carthage\Shofet\3DModel\Knight_Greece_Horse_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\3DModel\tcmAmmiratus.gr2">
+    <Content Include="Carthage\Shofet\3DModel\tcmAmmiratus.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\ShophetPicture_128.dds">
+    <Content Include="Carthage\Shofet\ShophetPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\ShophetPicture_256.dds">
+    <Content Include="Carthage\Shofet\ShophetPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\ShophetPicture_045.dds">
+    <Content Include="Carthage\Shofet\ShophetPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\ShophetPicture_064.dds">
+    <Content Include="Carthage\Shofet\ShophetPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\ShophetPicture_080.dds">
+    <Content Include="Carthage\Shofet\ShophetPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\ShophetFlag_032.dds">
+    <Content Include="Carthage\Shofet\ShophetFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\ShophetFlag_128.dds">
+    <Content Include="Carthage\Shofet\ShophetFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -4590,8 +4590,8 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Brazil\Sambadrome" />
     <Folder Include="Byzantium\Theodora" />
     <Folder Include="Carthage\" />
-    <Folder Include="Carthage\Shophet" />
-    <Folder Include="Carthage\Shophet\3DModel" />
+    <Folder Include="Carthage\Shofet" />
+    <Folder Include="Carthage\Shofet\3DModel" />
     <Folder Include="Carthage\Tophet" />
     <Folder Include="China\ExaminationHall" />
     <Folder Include="China\XiafanGuanjun" />
