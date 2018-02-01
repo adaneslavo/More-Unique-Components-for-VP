@@ -13,10 +13,10 @@ v27:
 - modified DruidicLore lua (added code for capital/holy city capture from celts and for celts),
 - optimized lua (Pogost, White Tower, Ballista (with SQLs), Goedendag, Shophet),
 - fixed text (Iron Chariot, Klepht),
-- fixes (Black Tug, Latifundium),
+- fixes (Black Tug, Latifundium, Shophet),
 - changed unit model (Scythed Chariot),
 - changed number of units in Iron Chariots model to 1,
-- cleaned up the code and art (Xiafan Guanjun, Examination Hall, Tophet, Shofet),
+- cleaned up the code and art (Xiafan Guanjun, Examination Hall, Tophet, Shophet),
 - scaled down Xiafan Guanjun model,
 - added 2 dummy buildings,
 - minor fixes.
