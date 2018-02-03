@@ -9,7 +9,7 @@ function YamatoOnBuild(iPlayer, iCity, iUnit)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
-	if pUnit:GetUnitType() == UNIT_YAMATO then
+	if pUnit:GetUnitType() == GameInfoTypes.UNIT_YAMATO then
 		pPlayer:ChangeGoldenAgeProgressMeter(600)
 
 	end
@@ -20,7 +20,7 @@ end
 function YamatoOnDeath(iPlayerKiller, iPlayerKillee, KillerUnitType, KilledUnitType)
 	local pPlayerKiller = Players[iPlayerKiller]
 
-	if KilledUnitType:GetUnitType() == UNIT_YAMATO then
+	if KilledUnitType:GetUnitType() == GameInfoTypes.UNIT_YAMATO then
 		pPlayerKiller:ChangeJONSCulture(400)
 		pPlayerKiller:ChangeGoldenAgeProgressMeter(400)
 	
