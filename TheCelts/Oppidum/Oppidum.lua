@@ -2,7 +2,7 @@
 -- Author: adan_eslavo
 -- DateCreated: 30/10/2017
 --------------------------------------------------------------
---[[local iUnitX
+local iUnitX
 local iUnitY
 
 function OppidumAddsHP(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged)
@@ -30,7 +30,7 @@ end
 function OppidumMoveHP(iPlayer, iX, iY)
 	local pPlayer = Players[iPlayer]
 	local pFoundCity = Map.GetPlot(iX, iY):GetWorkingCity()
-	print(pFoundCity:GetName())
+
 	for iCityPlot = 1, pFoundCity:GetNumCityPlots() - 1, 1 do
 		local pSpecificPlot = pFoundCity:GetCityIndexPlot(iCityPlot)
 
@@ -138,7 +138,7 @@ end
 
 function OppidumGarrisonBefore(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
-	print("oppidum")
+
 	if pAttackingPlayer ~= nil then
 		if defenderFinalDamage > defenderMaxHP then
 			local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
@@ -150,7 +150,7 @@ end
 
 function OppidumGarrisonAfter(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
-	print("oppidum2")
+
 	if pAttackingPlayer ~= nil then
 		if defenderFinalDamage > defenderMaxHP then
 			if iUnitX and iUnitY then	

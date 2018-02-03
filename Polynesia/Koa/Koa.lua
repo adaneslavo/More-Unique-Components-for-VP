@@ -2,12 +2,12 @@
 -- Author: adan_eslavo
 -- DateCreated: 3/11/2017
 --------------------------------------------------------------
---[[include("FLuaVector.lua")
+include("FLuaVector.lua")
 
 function Leiomano(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
-	print("koa")
+
 	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 

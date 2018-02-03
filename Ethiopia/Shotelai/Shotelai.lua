@@ -2,11 +2,11 @@
 -- Author: adan_eslavo
 -- DateCreated: 12/11/2017
 --------------------------------------------------------------
---[[include("FLuaVector.lua")
+include("FLuaVector.lua")
 
 function Maim(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
-	print("shotel")
+
 	if pAttackingPlayer ~= nil then
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 

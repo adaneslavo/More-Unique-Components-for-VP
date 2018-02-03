@@ -2,7 +2,7 @@
 -- Author: adan_eslavo
 -- DateCreated: 4/12/2017
 --------------------------------------------------------------
---[[include("FLuaVector.lua")
+include("FLuaVector.lua")
 
 -- check XP scaling
 local bXPScaling = true -- default VP
@@ -21,7 +21,7 @@ end
 function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
-	print("dhanurgraha")
+
 	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)

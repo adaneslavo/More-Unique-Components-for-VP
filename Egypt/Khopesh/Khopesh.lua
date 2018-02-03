@@ -2,12 +2,12 @@
 -- Author: BlueGhost, adan_eslavo
 -- DateCreated: 29/10/2017
 --------------------------------------------------------------
---[[include("FLuaVector.lua")
+include("FLuaVector.lua")
 
 function KhopeshFatigue(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP, iInterceptingPlayer, iInterceptingUnit, iInterceptorDamage, iPlotX, iPlotY)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
-	print("khopesh")
+
 	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
