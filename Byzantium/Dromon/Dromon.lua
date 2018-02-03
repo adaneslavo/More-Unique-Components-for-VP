@@ -2,7 +2,7 @@
 -- Author: adan_eslavo
 -- DateCreated: 30/11/2017
 --------------------------------------------------------------
-include("FLuaVector.lua")
+--[[include("FLuaVector.lua")
 
 function GreekFire(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
@@ -10,7 +10,7 @@ function GreekFire(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFin
 
 	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
-
+		print("dromon")
 		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE) then
 			if defenderFinalDamage < defenderMaxHP then
 				local pDefendingUnit = Players[iDefendingPlayer]:GetUnitByID(iDefendingUnit)

@@ -1,7 +1,7 @@
 -- Corsair
 -- 2018-01-27 updated by Infixo
 ----------------------------------------------------------------------------------------------------------------------------	
-include("FLuaVector.lua")
+--[[include("FLuaVector.lua")
 
 local terrainCoastalID = GameInfoTypes["TERRAIN_COAST"]
 local terrainOceanID   = GameInfoTypes["TERRAIN_OCEAN"]
@@ -46,7 +46,7 @@ end
 function RazziaOnKill(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP, iInterceptingPlayer, iInterceptingUnit, iInterceptorDamage, iPlotX, iPlotY)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
-	
+	print("corsair")
 	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)

@@ -1681,47 +1681,43 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\BearWarrior.dds">
+    <Content Include="Germany\Slaganz\3DModel\BearWarrior.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\BearWarrior.fxsxml">
+    <Content Include="Germany\Slaganz\3DModel\BearWarrior.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\BearWarrior.gr2">
+    <Content Include="Germany\Slaganz\3DModel\BearWarrior.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\BearWarrior_sref.dds">
+    <Content Include="Germany\Slaganz\3DModel\BearWarrior_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\JFD_GermansAtlas_128.dds">
+    <Content Include="Germany\Slaganz\SlaganzPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\JFD_GermansAtlas_256.dds">
+    <Content Include="Germany\Slaganz\SlaganzPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\JFD_GermansAtlas_32.dds">
+    <Content Include="Germany\Slaganz\SlaganzPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\JFD_GermansAtlas_45.dds">
+    <Content Include="Germany\Slaganz\SlaganzPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\JFD_GermansAtlas_64.dds">
+    <Content Include="Germany\Slaganz\SlaganzPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\JFD_GermansAtlas_80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Germany\Slaganz\JFD_SlaganzUnitFlag_32.dds">
+    <Content Include="Germany\Slaganz\SlaganzFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1733,7 +1729,7 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\sv_Slaganz.dds">
+    <Content Include="Germany\Slaganz\SlaganzFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -4607,6 +4603,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Egypt" />
     <Folder Include="!Utils" />
     <Folder Include="!SharedAssets" />
+    <Folder Include="Germany\Slaganz\3DModel" />
     <Folder Include="Germany\Teutonic Order" />
     <Folder Include="Germany\Slaganz" />
     <Folder Include="Morocco\" />

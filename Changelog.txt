@@ -16,7 +16,7 @@ v27:
 - fixes (Black Tug, Latifundium, Shophet),
 - changed unit model (Scythed Chariot),
 - changed number of units in Iron Chariots model to 1,
-- cleaned up the code and art (Xiafan Guanjun, Examination Hall, Tophet, Shophet),
+- cleaned up the code and art (Xiafan Guanjun, Examination Hall, Tophet, Shophet, Slaganz),
 - scaled down Xiafan Guanjun model,
 - added 2 dummy buildings,
 - minor fixes.

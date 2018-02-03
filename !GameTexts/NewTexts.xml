@@ -2096,45 +2096,45 @@
 
 		<!-- Slaganz -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ">
+		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ">
 			<Text>
 				Slaganz
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_TEXT">
+		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_TEXT">
 			<Text>
 				The strength and ferocity of the tribal Germanic warriors, or Slaganz, were legendary among Roman writers and soldiers alike. Germanic tribesmen stood an average of 6 inches taller than a Latin, but were unable to capitalize on their brute advantages over Roman interlopers because of the legions' superior equipment, organization and training. German fortunes would change, however, under the leadership of Arminius.[NEWLINE][NEWLINE] 
 				A Cherusci commander who had spent time training under the Romans, Arminius led a coalition of five German tribes in a decisive victory, destroying three Roman legions under Publius Varus. Arminius falisified reports of a northern Germanic uprising and laid an ambush for Varus deep in the Teotoburg Forest. Using their superior numbers, heavy rain, and Arminius' knowledge of Roman tactics, the Roman annihilation at Teotoburg Forest was utterly thorough. It is estimated that 20 000 men were killed or enslaved by the Germans. Rome's total defeat at the hands of Arminius set the borders of Rome's eastern expansion at the Rhine, and would be remembered as their greatest humiliation. 
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_STRATEGY">
 			<Text>
 				The Slaganz is the unique Warrior replacement which only the Germans can train. It is much cheaper than the Warrior and gains an attack bonus against Barbarian Units. When a barbarian unit is defeated, the Slaganz has a chance to convert the unit to your side. Converting barbarian units also increases your influence with the nearest city-state. Use Slaganz to hunt down barbarians and form a strong coalition of early city-state allies.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_HELP">
+		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_HELP">
 			<Text>
 				Cheap German warrior replacement. +50% [ICON_STRENGTH] Strength against Barbarians, and has a chance of converting defeated Barbarian units. On Barbarian kills, earn 5 [ICON_INFLUENCE] Influence with the nearest City-State.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FUROR_TEUTONICUS">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS">
 			<Text>
 				Furor Teutonicus
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FUROR_TEUTONICUS_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS_HELP">
 			<Text>
-				+50% combat strength against Barbarians.
+				+50% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Barbarians[ENDCOLOR].
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_BARBARIAN_ALLIANCE">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE">
 			<Text>
 				Barbarian Alliance
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_BARBARIAN_ALLIANCE_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE_HELP">
 			<Text>
-				50% Chance to convert Barbarians on kill. +5 [ICON_INFLUENCE] Influence to the nearest City-State on barbarian conversion.
+				Unit [COLOR_POSITIVE_TEXT]can convert Barbarian Unit[ENDCOLOR] to your side [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. +5 [ICON_INFLUENCE] Influence to the nearest City-State [COLOR_POSITIVE_TEXT]on Conversion[ENDCOLOR].
 			</Text>
 		</Row>
 		<!-- Sofa -->		
