@@ -616,7 +616,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Germany/Teutonic Order/Teutonic Order.sql</FileName>
+        <FileName>Germany/TeutonicOrder/TeutonicOrder.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -637,6 +637,11 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>!DummyBuildings/DummyBuildingGPPAndGold.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>!DummyBuildings/DummyBuildingDefenseHPPromotion.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -986,7 +991,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Teutonic Order</Name>
         <Description>Various functions for Teutonic Order</Description>
-        <FileName>Germany/Teutonic Order/Teutonic Order.lua</FileName>
+        <FileName>Germany/TeutonicOrder/TeutonicOrder.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1030,6 +1035,10 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="!DummyBuildings\DummyBuildingGPPAndGold.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="!DummyBuildings\DummyBuildingDefenseHPPromotion.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1733,11 +1742,11 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Teutonic Order\Teutonic Order.lua">
+    <Content Include="Germany\TeutonicOrder\TeutonicOrder.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Teutonic Order\Teutonic Order.sql">
+    <Content Include="Germany\TeutonicOrder\TeutonicOrder.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -5620,7 +5629,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="!Utils" />
     <Folder Include="!SharedAssets" />
     <Folder Include="Germany\Slaganz\3DModel" />
-    <Folder Include="Germany\Teutonic Order" />
+    <Folder Include="Germany\TeutonicOrder" />
     <Folder Include="Germany\Slaganz" />
     <Folder Include="Huns\" />
     <Folder Include="Huns\AltiCur\" />
