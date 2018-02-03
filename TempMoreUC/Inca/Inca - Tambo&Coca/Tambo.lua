@@ -8,7 +8,7 @@
 function CocaMonopoly(iPlayer, iResource)
 	local pPlayer = Players[iPlayer]
 
-	if pPlayer:HasGlobalMonopoly(RESOURCE_COCA) == 1 then
+	if pPlayer:HasGlobalMonopoly(RESOURCE_COCA) then
 		for UNITCOMBAT_MELEE:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
 		for UNITCOMBAT_ARCHER:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
 		for UNITCOMBAT_GUN:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
