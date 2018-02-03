@@ -27,8 +27,9 @@ INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
 --------------------------------	
 
 INSERT INTO UnitPromotions 
-		(Type, 								Description, 									Help, 												Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 			PediaType, 			PediaEntry)
-VALUES	('PROMOTION_HORSE_FATHER',			'TXT_KEY_PROMOTION_HORSE_FATHER',				'TXT_KEY_PROMOTION_HORSE_FATHER_HELP', 				'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_HORSE_FATHER');
+		(Type, 					Description, 							Help, 						Sound, 				CombatPercent, 	CannotBeChosen, PortraitIndex,	IconAtlas, 	PediaType, 		PediaEntry)
+VALUES	('PROMOTION_HORSE_FATHER',			'TXT_KEY_PROMOTION_HORSE_FATHER',				'TXT_KEY_PROMOTION_HORSE_FATHER_HELP', 		'AS2D_IF_LEVELUP',		0,		1, 		59, 		'ABILITY_ATLAS', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_HORSE_FATHER'),
+	('PROMOTION_HORSE_FATHER_EFFECT',		'TXT_KEY_PROMOTION_HORSE_FATHER_EFFECT',			'TXT_KEY_PROMOTION_HORSE_FATHER_EFFECT_HELP', 	'AS2D_IF_LEVELUP',		15, 		1, 		59, 		'ABILITY_ATLAS', 'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_HORSE_FATHER_EFFECT');
 
 --------------------------------	
 -- Units

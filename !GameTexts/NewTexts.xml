@@ -2144,6 +2144,12 @@
 		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_HELP">
 			<Text>+15% [ICON_STRENGTH] Combat Strength for all Mounted Units within 2 tiles.</Text>
 		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_EFFECT">
+			<Text>Nearby Sofa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_EFFECT_HELP">
+			<Text>+15% [ICON_STRENGTH] Combat Strength.</Text>
+		</Row>
 		<Row Tag="TXT_KEY_UNIT_3UC_SOFA">
 			<Text>Sofa</Text>
 		</Row>
