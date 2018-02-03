@@ -2,7 +2,7 @@
 -- Author: pineappledan (modified from Goedendag by Adan_eslavo)
 -- DateCreated: 02/02/2018
 --------------------------------------------------------------
-local iSofa = GameInfoTypes.UNIT_3UC_SOFA
+local iSofa = GameInfoTypes.PROMOTION_HORSE_FATHER
 local iHorseDadEffect = GameInfoTypes.PROMOTION_HORSE_FATHER_EFFECT
 
 function HorseDadOnMove(iPlayer, iUnit, iX, iY)
