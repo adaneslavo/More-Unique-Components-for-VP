@@ -13,6 +13,7 @@ v27:
 - deleted PlotIterators.lua; reworked all lua code related to this file,
 - deleted InstanceManager link from luas,
 - modified DruidicLore lua (added code for capital/holy city capture from celts and for celts),
+- modified luas for Move/Build/Create game events combination (Goedendag, 
 - optimized lua (Pogost, White Tower, Ballista (with SQLs), Goedendag, Shophet, Slaganz, Teutonic Order),
 - fixed text (Iron Chariot, Klepht),
 - fixes (Black Tug, Latifundium, Shophet),
@@ -21,6 +22,7 @@ v27:
 - cleaned up the code and art (Xiafan Guanjun, Examination Hall, Tophet, Shophet, Slaganz, Teutonic Order),
 - scaled down Xiafan Guanjun model,
 - added 2 dummy buildings,
+- fixed many texts,
 - minor fixes.
 
 v26:

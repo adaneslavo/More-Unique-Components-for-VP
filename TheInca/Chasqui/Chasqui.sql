@@ -1,3 +1,10 @@
+--------------------------------	
+-- Civilization_UnitClassOverrides 
+--------------------------------		
+INSERT INTO Civilization_UnitClassOverrides 
+			(CivilizationType, 		UnitClassType, 		UnitType)
+VALUES		('CIVILIZATION_INCA',	'UNITCLASS_SCOUT',	'UNIT_3UC_CHASQUI');
+
 INSERT INTO ArtDefine_UnitInfos (Type,DamageStates,Formation)
 	SELECT	('ART_DEF_UNIT_CHASQUI'), DamageStates, Formation
 	FROM ArtDefine_UnitInfos WHERE (Type = 'ART_DEF_UNIT_SCOUT');
@@ -23,89 +30,80 @@ INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
 
 
 INSERT INTO IconTextureAtlases 
-		(Atlas, 								IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
-VALUES	
-		('CHASQUI_FLAG', 		32, 		'Chasqui_Flag.dds',		1, 				1),
-		('CHASQUI_ICON_ATLAS', 		256, 		'Chasqui256.dds',		1, 				1),
-		('CHASQUI_ICON_ATLAS', 		128, 		'Chasqui128.dds',		1, 				1),
-		('CHASQUI_ICON_ATLAS', 		80, 		'Chasqui80.dds',			1, 				1),
-		('CHASQUI_ICON_ATLAS', 		64, 		'Chasqui64.dds',			1, 				1),
-		('CHASQUI_ICON_ATLAS', 		45, 		'Chasqui45.dds',			1, 				1),
-		('CHASQUI_ICON_ATLAS', 		32, 		'Chasqui32.dds',			1,				1);	
+			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES		('CHASQUI_FLAG', 			32, 		'Chasqui_Flag.dds',			1, 				1),
+			('CHASQUI_ICON_ATLAS', 		256, 		'Chasqui256.dds',			1, 				1),
+			('CHASQUI_ICON_ATLAS', 		128, 		'Chasqui128.dds',			1, 				1),
+			('CHASQUI_ICON_ATLAS', 		80, 		'Chasqui80.dds',			1, 				1),
+			('CHASQUI_ICON_ATLAS', 		64, 		'Chasqui64.dds',			1, 				1),
+			('CHASQUI_ICON_ATLAS', 		45, 		'Chasqui45.dds',			1, 				1);
 --------------------------------	
 -- Units
 --------------------------------
 INSERT INTO Units 	
-		(Type, 			Class,	NoBadGoodies, PrereqTech, RangedCombat, Range, Special, Combat, Cost, ObsoleteTech, 		GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, Description, 			 Civilopedia, 				Strategy, 		 		Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 		UnitFlagIconOffset,	UnitFlagAtlas,	 PortraitIndex, IconAtlas,		MoveRate)
-SELECT		'UNIT_3UC_CHASQUI',	Class,	NoBadGoodies, PrereqTech, RangedCombat, Range, Special, Combat, Cost, 'TECH_STEAM_POWER', 	GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, 'TXT_KEY_UNIT_3UC_CHASQUI', 	'TXT_KEY_UNIT_3UC_CHASQUI_TEXT',	'TXT_KEY_UNIT_3UC_CHASQUI_STRATEGY',  	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_CHASQUI',	0,			'CHASQUI_FLAG',	 0,		'CHASQUI_ICON_ATLAS',	MoveRate
+			(Type, 				Class,	NoBadGoodies, PrereqTech, RangedCombat, Range, Special, Combat, Cost, ObsoleteTech, 		GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, Description, 					Civilopedia, 						Strategy, 		 						Help,								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 			UnitFlagIconOffset,	UnitFlagAtlas,	 PortraitIndex, IconAtlas,				MoveRate)
+SELECT		'UNIT_3UC_CHASQUI',	Class,	NoBadGoodies, PrereqTech, RangedCombat, Range, Special, Combat, Cost, 'TECH_STEAM_POWER', 	GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, 'TXT_KEY_UNIT_3UC_CHASQUI', 	'TXT_KEY_UNIT_3UC_CHASQUI_TEXT',	'TXT_KEY_UNIT_3UC_CHASQUI_STRATEGY',  	'TXT_KEY_UNIT_3UC_CHASQUI_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_CHASQUI',	0,					'CHASQUI_FLAG',	 0,				'CHASQUI_ICON_ATLAS',	MoveRate
 FROM Units WHERE Type = 'UNIT_SCOUT';
 --==========================================================================================================================
 -- UnitPromotions
 --==========================================================================================================================
 
 INSERT INTO UnitPromotions 
-		(Type, 					 Description, 				Help, 						AlwaysHeal, 	FriendlyHealChange, 	Sound, 			CannotBeChosen, 	PortraitIndex,	IconAtlas, 		LostWithUpgrade, PediaType,	PediaEntry)
-VALUES		('PROMOTION_CHASQUI_GOLD',		'TXT_KEY_PROMOTION_CHASQUI_GOLD',	'TXT_KEY_PROMOTION_CHASQUI_GOLD_HELP', 		false, 		0, 			'AS2D_IF_LEVELUP',	1, 			59, 		'ABILITY_ATLAS', 	0,		null,		null),
-		('PROMOTION_CHASQUI_HEAL',		'TXT_KEY_PROMOTION_CHASQUI_HEAL',	'TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP', 		true, 		5, 			'AS2D_IF_LEVELUP',	1, 			59, 		'ABILITY_ATLAS', 	0, 		null, 		null),
-		('PROMOTION_CHASQUI_HEAL_DUMMY',	'TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY',	'TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY_HELP', 	false, 		0, 			'AS2D_IF_LEVELUP',	1, 			59, 		'ABILITY_ATLAS', 	0, 		null, 		null);
+			(Type, 								Description, 							Help, 											AlwaysHeal, 	FriendlyHealChange, 	Sound, 				CannotBeChosen, 	PortraitIndex,	IconAtlas, 			LostWithUpgrade)
+VALUES		('PROMOTION_CHASQUI_GOLD',			'TXT_KEY_PROMOTION_CHASQUI_GOLD',		'TXT_KEY_PROMOTION_CHASQUI_GOLD_HELP', 			0, 				0, 						'AS2D_IF_LEVELUP',	1, 					59, 			'ABILITY_ATLAS', 	0),
+			('PROMOTION_CHASQUI_HEAL',			'TXT_KEY_PROMOTION_CHASQUI_HEAL',		'TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP', 			1, 				5, 						'AS2D_IF_LEVELUP',	1, 					59, 			'ABILITY_ATLAS', 	0),
+			('PROMOTION_CHASQUI_HEAL_DUMMY',	'TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY',	'TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY_HELP', 	0, 				0, 						'AS2D_IF_LEVELUP',	1, 					59, 			'ABILITY_ATLAS', 	0);
 
 INSERT INTO UnitPromotions_YieldFromScouting
-	(PromotionType, YieldType, Yield)
-VALUES
-	('PROMOTION_CHASQUI_GOLD', 'YIELD_GOLD', 1);		
+			(PromotionType,				YieldType,		Yield)
+VALUES		('PROMOTION_CHASQUI_GOLD',	'YIELD_GOLD',	1);		
 
 --------------------------------	
 -- UnitGameplay2DScripts
 --------------------------------		
 INSERT INTO UnitGameplay2DScripts 	
-		(UnitType, 		SelectionSound, FirstSelectionSound)
+			(UnitType, 				SelectionSound, FirstSelectionSound)
 SELECT		'UNIT_3UC_CHASQUI', 	SelectionSound, FirstSelectionSound
 FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_SCOUT';
 --------------------------------		
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	
-		(UnitType, 					UnitAIType)
-SELECT	'UNIT_3UC_CHASQUI', 	UnitAIType
+			(UnitType, 				UnitAIType)
+SELECT		'UNIT_3UC_CHASQUI', 	UnitAIType
 FROM Unit_AITypes WHERE UnitType = 'UNIT_SCOUT';
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------	
 INSERT INTO Unit_ClassUpgrades 	
-		(UnitType, 					UnitClassType)
-SELECT	'UNIT_3UC_CHASQUI',	UnitClassType
+			(UnitType, 			UnitClassType)
+SELECT		'UNIT_3UC_CHASQUI',	UnitClassType
 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_SCOUT';	
 --------------------------------	
 -- Unit_Flavors
 --------------------------------		
 INSERT INTO Unit_Flavors 	
-		(UnitType, 					FlavorType, Flavor)
-SELECT	'UNIT_3UC_CHASQUI',	FlavorType, Flavor
+			(UnitType, 			FlavorType, Flavor)
+SELECT		'UNIT_3UC_CHASQUI',	FlavorType, Flavor
 FROM Unit_Flavors  WHERE UnitType = 'UNIT_SCOUT';
 --------------------------------	
 -- Unit_ResourceQuantityRequirements
 --------------------------------	
 INSERT INTO Unit_ResourceQuantityRequirements 	
-		(UnitType, 					ResourceType, Cost)
-SELECT	'UNIT_3UC_CHASQUI', 	ResourceType, Cost
+			(UnitType, 				ResourceType, Cost)
+SELECT		'UNIT_3UC_CHASQUI', 	ResourceType, Cost
 FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_SCOUT';
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------	
 INSERT INTO Unit_FreePromotions 	
-		(UnitType, 					PromotionType)
-SELECT	'UNIT_3UC_CHASQUI', 	PromotionType
+			(UnitType, 				PromotionType)
+SELECT		'UNIT_3UC_CHASQUI', 	PromotionType
 FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SCOUT';	
 
 INSERT INTO Unit_FreePromotions 	
-		(UnitType, 					PromotionType)
+			(UnitType, 					PromotionType)
 VALUES		('UNIT_3UC_CHASQUI',		'PROMOTION_ALTITUDE_TRAINING'),
-		('UNIT_3UC_CHASQUI',		'PROMOTION_CHASQUI_GOLD'),
-		('UNIT_3UC_CHASQUI',		'PROMOTION_CHASQUI_HEAL');
+			('UNIT_3UC_CHASQUI',		'PROMOTION_CHASQUI_GOLD'),
+			('UNIT_3UC_CHASQUI',		'PROMOTION_CHASQUI_HEAL');
 
---------------------------------	
--- Civilization_UnitClassOverrides 
---------------------------------		
-INSERT INTO Civilization_UnitClassOverrides 
-	(CivilizationType, 	UnitClassType, 		UnitType)
-VALUES	('CIVILIZATION_INCA',	'UNITCLASS_SCOUT',	'UNIT_3UC_CHASQUI');

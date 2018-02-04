@@ -1,12 +1,3 @@
-INSERT INTO IconTextureAtlases 
-		(Atlas, 								IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES	('CHAEBOL_ATLAS', 		256, 		'Chaebol_Isolated_256.dds',		1, 				1),
-		('CHAEBOL_ATLAS', 		128, 		'Chaebol_Isolated_128.dds',		1, 				1),
-		('CHAEBOL_ATLAS', 		80, 		'Chaebol_Isolated_80.dds',		1, 				1),
-		('CHAEBOL_ATLAS', 		64, 		'Chaebol_Isolated_64.dds',		1, 				1),
-		('CHAEBOL_ATLAS', 		45, 		'Chaebol_Isolated_45.dds',		1, 				1),
-		('CHAEBOL_ATLAS', 		32, 		'Chaebol_Isolated_32.dds',		1,				1);
-
 --==========================================================================================================================	
 -- CIVILIZATIONS
 --==========================================================================================================================	
@@ -16,6 +7,19 @@ VALUES	('CHAEBOL_ATLAS', 		256, 		'Chaebol_Isolated_256.dds',		1, 				1),
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 		BuildingClassType, 				BuildingType)
 VALUES	('CIVILIZATION_KOREA',	'BUILDINGCLASS_STOCK_EXCHANGE',	'BUILDING_C15_SKOREA_CHAEBOL');
+
+
+
+
+INSERT INTO IconTextureAtlases 
+			(Atlas, 				IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('CHAEBOL_ATLAS', 		256, 		'Chaebol_Isolated_256.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		128, 		'Chaebol_Isolated_128.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		80, 		'Chaebol_Isolated_80.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		64, 		'Chaebol_Isolated_64.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		45, 		'Chaebol_Isolated_45.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		32, 		'Chaebol_Isolated_32.dds',		1,				1);
+
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -52,7 +56,7 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_STOCK_EXCHANGE'
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
-VALUES		('BUILDING_C15_SKOREA_CHAEBOL',	'YIELD_GOLD',		5)
+VALUES		('BUILDING_C15_SKOREA_CHAEBOL',	'YIELD_GOLD',		5),
 			('BUILDING_C15_SKOREA_CHAEBOL',	'YIELD_PRODUCTION',	3);
 
 
@@ -60,23 +64,21 @@ VALUES		('BUILDING_C15_SKOREA_CHAEBOL',	'YIELD_GOLD',		5)
 -- Building_YieldChangesPerPop
 ------------------------------
 INSERT INTO Building_YieldChangesPerPop 	
-			(BuildingType,						YieldType,			Yield)
-SELECT	'BUILDING_C15_SKOREA_CHAEBOL',	YieldType, Yield
+			(BuildingType,						YieldType,	Yield)
+SELECT		'BUILDING_C15_SKOREA_CHAEBOL',		YieldType,	Yield
 FROM Building_YieldChangesPerPop WHERE BuildingType = 'BUILDING_STOCK_EXCHANGE';
 
 INSERT INTO Building_HurryModifiersLocal
-	(BuildingType, HurryType, HurryCostModifier)
-SELECT	'BUILDING_C15_SKOREA_CHAEBOL',	HurryType, HurryCostModifier
-FROM Building_YieldChangesPerPop WHERE BuildingType = 'BUILDING_STOCK_EXCHANGE';
+			(BuildingType,					HurryType, HurryCostModifier)
+SELECT		'BUILDING_C15_SKOREA_CHAEBOL',	HurryType, HurryCostModifier
+FROM Building_HurryModifiersLocal WHERE BuildingType = 'BUILDING_STOCK_EXCHANGE';
 
 INSERT INTO Building_BuildingClassLocalYieldChanges
-	(BuildingType, BuildingClassType, YieldType, YieldChange)
-VALUES
-	('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_FACTORY', 'YIELD_PRODUCTION', 3),
+			(BuildingType,					BuildingClassType,			YieldType,			YieldChange)
+VALUES		('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_FACTORY',	'YIELD_PRODUCTION', 3);
 
 INSERT INTO Building_BuildingClassYieldChanges 
-	(BuildingType, BuildingClassType, YieldType, YieldChange)
-VALUES
-	('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_GOLD', 		2),
-	('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_CULTURE', 	2),
-	('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_SCIENCE', 	2);
+			(BuildingType,					BuildingClassType,				YieldType,			YieldChange)
+VALUES		('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_GOLD', 		2),
+			('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_CULTURE', 	2),
+			('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_SCIENCE', 	2);

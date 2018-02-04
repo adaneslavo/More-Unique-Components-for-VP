@@ -1009,7 +1009,7 @@
 		<Row Tag="TXT_KEY_BUILDING_IZIKO">
 			<Text>Iziko</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_BUILDINGS_IZIKO_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_IZIKO_TEXT">
 			<Text>An Iziko is a simple hearth used as a gathering place for Zulu communities. The fireplace is revered as a resource for food, warmth, dreams, and for communicating with ancestors. It is from these gatherings that a sense of community and identity was formed, and young Zulus could perform and bond.[NEWLINE][NEWLINE]
 			The fireplace is used metaphorically for the "cooking of songs" in isicathamiya stage performances, a traditional, yet somewhat modern offshoot of traditional Zulu music. Dreams were an essential part of communicating with ancestors and formed part of a deeply rooted Zulu religion. Some isicathamiya musicians claim some of their songs were created in the spiritual realm given to them by ancestors.[NEWLINE][NEWLINE]
 			"A person is a person because of other people"[NEWLINE]-Zulu proverb</Text>
@@ -1573,11 +1573,12 @@
 			<Text>Unique Mayan replacement for the Arena.[NEWLINE]Receive 20 [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the beginning of every B'ak'tun. Land Units trained in this City Receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] promotion, gaining new abilities every 20 turns[NEWLINE]Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Reduces [ICON_HAPPINESS_3] Boredom.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
-			<Text>The Ball Court is the Mayan unique building, replacing the Arena. In addition to the normal bonuses of an Arena, the Ball Court provides Science and Faith at the end of every long count. Land units trained in a City with a Ball Court receive the 'K'atun Ahaw' promotion, which grants new abilities for every 20 turns the unit has been alive.
-				[NEWLINE][ICON_BULLET]Hun: 5XP, 5% :c5strength: CS
-				[NEWLINE][ICON_BULLET]Ka'a: 10XP, 10% Combat Strength, 5% Combat Strength in Forest/Jungle
-				[NEWLINE][ICON_BULLET]Oox: 10XP, 10% Combat Strength, 15% Combat Strength in Forest/Jungle
-				[NEWLINE][ICON_BULLET]Kan: 15XP, 10% Combat Strength, 15% Combat Strength CS in Forest/Jungle, +10 HP on Heal in friendly territory</Text>
+			<Text>
+				The Ball Court is the Mayan unique building, replacing the Arena. In addition to the normal bonuses of an Arena, the Ball Court provides Science and Faith at the end of every long count. Land units trained in a City with a Ball Court receive the 'K'atun Ahaw' promotion, which grants new abilities for every 20 turns the unit has been alive.
+				[NEWLINE][ICON_BULLET]Hun: 5XP, +5% [ICON_STRENGTH] Combat Strength
+				[NEWLINE][ICON_BULLET]Ka'a: 10XP, +10% [ICON_STRENGTH] Combat Strength, +5% [ICON_STRENGTH] Combat Strength in Forest/Jungle
+				[NEWLINE][ICON_BULLET]Oox: 10XP, +10% [ICON_STRENGTH] Combat Strength, +15% [ICON_STRENGTH] Combat Strength in Forest/Jungle
+				[NEWLINE][ICON_BULLET]Kan: 15XP, +10% [ICON_STRENGTH] Combat Strength, +15% [ICON_STRENGTH] Combat Strength in Forest/Jungle, +10 HP on Heal in Friendly Territory</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_TEXT">
 				<Text>The Mesoamerican Ball Game, or 'Pitz' is a game of ritual and cultural significance among the Mayan people. The object of the game is to keep the ball in play for as long as possible by striking back and forth within an sloped arena using the hips, though some variations allowed for elbows, shoulders and even rackets. The earliest archaeological evidence of the game come from a court estimated to be 3400 years old.[NEWLINE][NEWLINE]
