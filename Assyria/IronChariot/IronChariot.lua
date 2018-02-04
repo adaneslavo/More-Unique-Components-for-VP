@@ -70,7 +70,7 @@ function FuryOfNergalUpdate(pPlayer, pUnit)
 			end
 		end
 	end
-	print(iNumEnemyUnitsNearby)
+	--print(iNumEnemyUnitsNearby)
 	if iNumEnemyUnitsNearby == 1 then
 		pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1, true)
 	elseif iNumEnemyUnitsNearby == 2 then
