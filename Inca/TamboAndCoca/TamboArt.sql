@@ -15,19 +15,19 @@ VALUES	('4UC_COCA_ATLAS', 		256, 		'NewAymaraIcons256.dds',		2, 				1),
 --		('BUILDING_APIG4UC_ATLAS', 		32, 		'tambo.stnd.UofC.Ord.32.dds',			4,				1);	
 		
 INSERT INTO ArtDefine_StrategicView
-			(StrategicViewType, TileType, 		Asset)
+		(StrategicViewType, TileType, 		Asset)
 VALUES 		('ART_DEF_COCA', 	'Resource', 	'sv_coca.dds');
 
 INSERT INTO ArtDefine_LandmarkTypes
-			(Type, 				LandmarkType, 	FriendlyName)
-VALUES 		('ART_DEF_COCA', 	'Resource', 	'INCA_COCA');
+		(Type, 			LandmarkType, 	FriendlyName)
+VALUES 		('ART_DEF_COCA', 	'Resource', 	'RES_COCA');
 
 INSERT INTO IconFontTextures 
 			(IconFontTexture, 						IconFontTextureFile)
 VALUES		('RESOURCE_COCA_TEXTURE_ATLAS', 		'Coca_fonticon');
 
 INSERT INTO IconFontMapping 
-			(IconName, 				IconFontTexture,							IconMapping)
+		(IconName, 				IconFontTexture,				IconMapping)
 VALUES		('ICON_RES_COCA', 		'RESOURCE_COCA_TEXTURE_ATLAS',				1);
 
 

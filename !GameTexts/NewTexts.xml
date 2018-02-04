@@ -43,9 +43,7 @@
 			<Text>Six-Horns Council</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_HELP">
-			<Text>Receive 25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]
-			Receive 50 [ICON_RESEARCH] Science and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State. A [ICON_GOLDEN_AGE] Golden Age begins whenever you successfully demand Tribute from another Major Civilization.[NEWLINE][NEWLINE]
-			Does not require any prerequisite building. Only the Huns may build it.</Text>
+			<Text>Receive 25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive 50 [ICON_RESEARCH] Science and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State. A [ICON_GOLDEN_AGE] Golden Age begins whenever you successfully demand Tribute from another Major Civilization.[NEWLINE][NEWLINE]Does not require any prerequisite building. Only the Huns may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_STRATEGY">
 			<Text>The Six-Horns Council is the Hunnic Unique Wonder, replacing the Ironworks. In addition to the normal bonuses of the Ironworks, the Six Horns council increases Science and Culture, and boosts Culture and Production from all Stables on empire. The wonder increases the bonuses to demanding tribute from minor City-States, and will trigger a Golden Age whenever a demand is successfully made against a rival Civilization.</Text>
@@ -99,10 +97,7 @@
 			<Text>Elephant Camp</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP">
-			<Text>Unique Siamese replacement for the Workshop.[NEWLINE]
-				+1[NEWLINE][NEWLINE][ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production on all Forest and +1 [ICON_CULTURE] Culture for all Lumber Mills and Logging Camps
-				+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resource received as City-State gifts.  Receive 10 [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture in Capital for every Baan Chang in the Empire every time a city state gifts a unit, scales with Era.[NEWLINE][NEWLINE]
-				Allows [ICON_PRODUCTION] Production to be moved from this city along Trade Routes inside your civilization.</Text>
+			<Text>Unique Siamese replacement for the Workshop.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production on all Forest and +1 [ICON_CULTURE] Culture for all Lumber Mills and Logging Camps[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resource received as City-State gifts.  Receive 10 [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture in Capital for every Baan Chang in the Empire every time a city state gifts a unit, scales with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this city along Trade Routes inside your civilization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY">
 			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills, and gives Production and Faith from Ivory. [NEWLINE][NEWLINE]City state gifts, both Strategic Resources and units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
@@ -267,9 +262,7 @@
 			<Text>Chaebol</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_HELP">
-			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 10%.[NEWLINE][NEWLINE]
-			+1 [ICON_GOLD] Gold and +2% [ICON_GREAT_PEOPLE] Great Person Points (GPP) for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]
-			+2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol in the Empire.</Text>
+			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 10%.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +2% [ICON_GREAT_PEOPLE] Great Person Points (GPP) for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol in the Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_STRATEGY">
 			<Text>The Chaebol is the unique Stock Exchange replacement for South Korea. In addition to the normal bonuses of a Stock Exchange, the Chaebol boosts the production of Factories in Cities where the Chaebol is built. Chaebol produce additional Gold and increase the production of Great People for every International Trade Route the Empire controls. In addition, every Chaebol increases the Gold, Culture and Science of every other Chaebol in the empire; the more you build, the more they produce.</Text>
@@ -585,17 +578,17 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_HELP">
 			<Text>
-				+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] for Diplomatic Units in the city in which it is built. [NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% Great People rate in the city, increased to +10% during We Love the King Day.[NEWLINE][NEWLINE]Whenever a citizen is born, gain 15 points toward a random Great Person, scaling with era.
+				+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] for Diplomatic Units in the city in which it is built.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% [ICON_GREAT_PEOPLE] Great People rate in the city, increased to +10% during We Love the King Day.[NEWLINE][NEWLINE]Whenever a citizen is born, gain 15 [ICON_GREAT_PEOPLE] points toward a random Great Person, scaling with era.
 			</Text>
 		</Row>
 		
 		<!-- Fale Tel'e -->
 		<!-- Created by adan_eslavo 5/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE">
-			<Text>Fale</Text>
+			<Text>Fale Tele</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_HELP">
-			<Text>Unique Ancient Era building. Only the Polynesians may build it. Increases [ICON_GOLD] Gold from Work Boats. Gain [ICON_RESEARCH] Science when a [ICON_CITIZEN] Citizen is born in this City, scaling with era, and gain [ICON_CULTURE] Culture, [ICON_FAITH] Faith, [ICON_GOLD] Gold and [ICON_FOOD] Food when a building is constructed in this City, scaling with era.</Text>
+			<Text>Unique Ancient Era building. Only the Polynesians may build it. Increases [ICON_GOLD] Gold from Work Boats. Gain [ICON_RESEARCH] Science when a [ICON_CITIZEN] Citizen is born in this City, scaling with era, and gain [ICON_CULTURE] Culture, [ICON_PEACE] Faith, [ICON_GOLD] Gold and [ICON_FOOD] Food when a building is constructed in this City, scaling with era.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_STRATEGY">
 			<Text>Unique Council replacement for the Polynesians. In addition to the normal bonuses of a Council, the Fale Tele provides Gold on Improved Sea Resources and a small amount of Culture, Faith, Gold and Food whenever a building is constructed in the city. Build the Fale tele as a first priority to maximize the bonuses for all later buildings.</Text>
@@ -669,7 +662,7 @@
 			<Text>Hacienda</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_HELP">
-			<Text>Available at Civil Service, the Hacienda can be built next to Cities or Luxury Resources, but not next to each other. Yields [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_GOLD] Gold from adjacent Luxury Resources. +1 [ICON_FAITH] Faith if the nearby City has built a Mission.</Text>
+			<Text>Available at Civil Service, the Hacienda can be built next to Cities or Luxury Resources, but not next to each other. Yields [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_GOLD] Gold from adjacent Luxury Resources. +1 [ICON_PEACE] Faith if the nearby City has built a Mission.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_TEXT">
 			<Text>
@@ -682,10 +675,10 @@
 			<Text>Build a [LINK=IMPROVEMENT_SPAIN_HACIENDA]Hacienda[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_SPAIN_HACIENDA_HELP">
-			<Text>Constructs a Hacienda, which yields [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_GOLD] Gold from adjacent Luxury Resources. +1 [ICON_FAITH] Faith if the nearby City has built a Mission.</Text>
+			<Text>Constructs a Hacienda, which yields [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_GOLD] Gold from adjacent Luxury Resources. +1 [ICON_PEACE] Faith if the nearby City has built a Mission.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_SPAIN_HACIENDA_REC">
-			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_GOLD] Gold from adjacent Luxury Resources. +1 [ICON_FAITH] Faith if the nearby City has built a Mission.</Text>
+			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_GOLD] Gold from adjacent Luxury Resources. +1 [ICON_PEACE] Faith if the nearby City has built a Mission.</Text>
 		</Row>
 		
 		<!-- Holkan -->
@@ -853,7 +846,7 @@
 			<Text>Hippodrome</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
-			<Text>Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on the Palace, all Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. On completion, triggers an Event. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
+			<Text>Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on the Palace, all Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. On completion, triggers an Event. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
 			<Text>The Hippodrome is the Byzantine Unique Wonder, replacing the Circus Maximus. In comparison to the Circus Maximus, The Hippodrome greatly increases Gold and Culture yields during "We Love the King Days" and begins a "We Love the King Day" on completion. The Palace gains Culture and Gold, and all Arenas in the empire receive gold, while circuses receive Culture, and Horses get both. In addition to the "We Love the King Day", a unique event is triggered on completion, giving your choice of additional bonuses. Choose wisely!</Text>
@@ -1577,10 +1570,11 @@
 			<Text>Ball Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
-			<Text>Unique Mayan replacement for the Arena.[NEWLINE]Receive 10 [ICON_RESEARCH] Science and 10 [ICON_PEACE Faith] at the beginning of every B'ak'tun. Land Units trained in this City Receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] promotion, gaining new abilities every 20 turns[NEWLINE]Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Reduces [ICON_HAPPINESS_3] Boredom.</Text>
+			<Text>Unique Mayan replacement for the Arena.[NEWLINE]Receive 20 [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the beginning of every B'ak'tun. Land Units trained in this City Receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] promotion, gaining new abilities every 20 turns[NEWLINE]Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Reduces [ICON_HAPPINESS_3] Boredom.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
-			<Text>The Ball Court is the Mayan unique building, replacing the Arena. In addition to the normal bonuses of an Arena, the Ball Court provides Science and Faith at the end of every long count. Land units trained in a City with a Ball Court receive the 'K'atun Ahaw' promotion, which grants new abilities for every 20 turns the unit has been alive.				[NEWLINE][ICON_BULLET]Hun: 5XP, 5% :c5strength: CS
+			<Text>The Ball Court is the Mayan unique building, replacing the Arena. In addition to the normal bonuses of an Arena, the Ball Court provides Science and Faith at the end of every long count. Land units trained in a City with a Ball Court receive the 'K'atun Ahaw' promotion, which grants new abilities for every 20 turns the unit has been alive.
+				[NEWLINE][ICON_BULLET]Hun: 5XP, 5% :c5strength: CS
 				[NEWLINE][ICON_BULLET]Ka'a: 10XP, 10% Combat Strength, 5% Combat Strength in Forest/Jungle
 				[NEWLINE][ICON_BULLET]Oox: 10XP, 10% Combat Strength, 15% Combat Strength in Forest/Jungle
 				[NEWLINE][ICON_BULLET]Kan: 15XP, 10% Combat Strength, 15% Combat Strength CS in Forest/Jungle, +10 HP on Heal in friendly territory</Text>
@@ -1801,7 +1795,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
 			<Text>
-				Unique American Stable replacement. +33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the Military Unit Supply Cap from Population in the City by 10%.[NEWLINE]+25% border growth rate in city. Whenever the city borders expand, gain 10 [ICON_FOOD] Food and [ICON_CULTURE] Culture, scaling with Era.
+				Unique American Stable replacement. +33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the Military Unit Supply Cap from Population in the City by 10%.[NEWLINE][NEWLINE]+25% border growth rate in city. Whenever the city borders expand, gain 10 [ICON_FOOD] Food and [ICON_CULTURE] Culture, scaling with Era.
 			</Text>
 		</Row>
 
@@ -2206,7 +2200,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP">
 			<Text>
-				+2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally. +20% production toward land military units.[NEWLINE][NEWLINE]Increases city Defense Strength by 25 and Hit Points by 200. Military Units supplied by this City's population increased by 10%.
+				+2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally. +20% [ICON_PRODUCTION] Production toward land military units.[NEWLINE][NEWLINE]Increases [ICON_STRENGTH] City Defense by 25 and Hit Points by 200. Military Units supplied by this City's population increased by 10%.
 			</Text>
 		</Row>
 		<!-- Tambo & Coca -->		
@@ -2214,15 +2208,17 @@
 			<Text>Tambo</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_TAMBO_HELP">
-			<Text>Granaries in the City produce +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]When a [ICON_INTERNATIONAL_TRADE] Land Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Land Trade Routes gain +50% Range and +3 [ICON_GOLD] Gold, Merchant Specialists in this City gain +1 [ICON_GOLD] Gold, and this City''s [ICON_CONNECTED] Connection to the [ICON_CAPITAL] Capital generates +20% [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_TRUFFLES] Truffles: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COTTON] Cotton: +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_FUR] Furs: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Units stationed in this city heal 5HP every turn, regardless of any actions taken.[NEWLINE][NEWLINE]City Receives a free [ICON_RES_COCA] Coca Luxury Resource.</Text>
+			<Text>Granaries in the City produce +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]When a [ICON_INTERNATIONAL_TRADE] Land Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Land Trade Routes gain +50% Range and +3 [ICON_GOLD] Gold, Merchant Specialists in this City gain +1 [ICON_GOLD] Gold, and this City's [ICON_CONNECTED] Connection to the [ICON_CAPITAL] Capital generates +20% [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Units stationed in this city heal 5HP every turn, regardless of any actions taken.[NEWLINE][NEWLINE]City Receives a free [ICON_RES_COCA] Coca Luxury Resource.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_TAMBO_STRATEGY">
 			<Text>The Tambo is the unique Caravansary replacement for the Inca. In addition to the normal bonuses of a Caravansary, the Tambo boosts production if the City also contains a Granary. On construction, the Tambo also grants the City 1 free copy of the [ICON_RES_COCA] Coca Luxury Resource. Units stationed in a city with a Tambo slowly heal every turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_TAMBO_TEXT">
-			<Text>A Tambo is an Incan military and administrative waystation. Found along roads across the Tawantinsuyu (Incan empire), Tambos typically contained lodgings for state personnel, garrisons, and the Incan messengers, the Chasqui. At a minimum,  Tambos would contain housing, cooking facilities, and storage silos called qullqas, which contained everything from food to building materials.[NEWLINE][NEWLINE]
-			Beyond taking care of various kinds of travelers, larger tambos would also contain facilities where various specialists, such as potters and weavers, would produce their goods. They could also served as administrative centers from which local lords would oversee the region. Additionally, coca production and exploitation was often carried within a safe distance of the Tambo, providing protection to the Incan coca monopoly.[NEWLINE][NEWLINE]
-			Tambos were frequently positioned for interregional contact and travel, as opposed to being positioned near large local villages. Historians suggest that the tambo system was a part of an "artificial urbanism" created by the Inca empire to enable cohesion and communication across the vast Incan empire.</Text>
+			<Text>
+				A Tambo is an Incan military and administrative waystation. Found along roads across the Tawantinsuyu (Incan empire), Tambos typically contained lodgings for state personnel, garrisons, and the Incan messengers, the Chasqui. At a minimum,  Tambos would contain housing, cooking facilities, and storage silos called qullqas, which contained everything from food to building materials.[NEWLINE][NEWLINE]
+				Beyond taking care of various kinds of travelers, larger tambos would also contain facilities where various specialists, such as potters and weavers, would produce their goods. They could also served as administrative centers from which local lords would oversee the region. Additionally, coca production and exploitation was often carried within a safe distance of the Tambo, providing protection to the Incan coca monopoly.[NEWLINE][NEWLINE]
+				Tambos were frequently positioned for interregional contact and travel, as opposed to being positioned near large local villages. Historians suggest that the tambo system was a part of an "artificial urbanism" created by the Inca empire to enable cohesion and communication across the vast Incan empire.
+			</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_RESOURCE_COCA">
@@ -2315,9 +2311,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
-				Unique German replacement for the Heroic Epic. Gain a free Armory in the City. Contains 1 slot for a Great Work of Writing. +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP to all Cities in the Empire with a Barracks.[NEWLINE][NEWLINE]
-				All melee land units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] promotion. New units trained in Cities with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] promotion.[NEWLINE][NEWLINE]
-				The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				Unique German replacement for the Heroic Epic. Gain a free Armory in the City. Contains 1 slot for a Great Work of Writing. +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP to all Cities in the Empire with a Barracks.[NEWLINE][NEWLINE]All melee land units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] promotion. New units trained in Cities with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] promotion.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_CHAPTER">
@@ -2383,7 +2377,7 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text>Unique Dutch replacement for the Bank. Available earlier.[NEWLINE]When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. +3 [ICON_GOLD] Gold to Market, Caravansary and Customs House in this City.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great Person Generation and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire, up to a maximum of 10 traded resources.[NEWLINE]Reduces Poverty slightly.</Text>
+			<Text>Unique Dutch replacement for the Bank. Available earlier.[NEWLINE][NEWLINE]When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. +3 [ICON_GOLD] Gold to Market, Caravansary and Customs House in this City.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great Person Generation and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire, up to a maximum of 10 traded resources.[NEWLINE]Reduces Poverty slightly.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
 			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier than the Bank, and provides bonuses to Great Person Generation and defense for every luxury imported or exported in the Empire. Be sure to keep peaceful and lucrative relationships with your neighbors; a surprise war with a trading partner could suddenly weaken your city's defenses!</Text>
@@ -2413,7 +2407,7 @@
 			[NEWLINE]+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Population in city.
 			[NEWLINE]+2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% Spy stealing rate on Empire 
 			[NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City.
-			[NEWLINE]+1 [ICON_HAPPINESS] Happiness on Empire for every enemy spy killed on Empire.
+			[NEWLINE]+1 [ICON_HAPPINESS_1] Happiness on Empire for every enemy spy killed on Empire.
 			[NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. 
 			[NEWLINE]+5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.
 			[NEWLINE][NEWLINE]Available earlier, requires Castle in City.
