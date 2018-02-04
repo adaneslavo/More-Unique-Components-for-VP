@@ -1,52 +1,55 @@
 -- Teutonic Order
 -- Author: Blue Ghost, adan_eslavo
 -- DateCreated:
+-- 2018-02-04 Modified by Infixo
 --------------------------------------------------------------
-local iOrder = GameInfoTypes.BUILDING_GERMANY_TEUTONIC_ORDER
-local iBarracks = GameInfoTypes.BUILDING_BARRACKS
-local iPantheon = ReligionTypes.RELIGION_PANTHEON
+local eBuildingTeutonicOrder = GameInfoTypes.BUILDING_GERMANY_TEUTONIC_ORDER
+local eBuildingBarracks = GameInfoTypes.BUILDING_BARRACKS
+local ePantheon = ReligionTypes.RELIGION_PANTHEON
 
-function TeutonicOrderBarracksBonus(iPlayer, iCity, iBuilding)
+-- helper checks if Teutonic Order is present
+function PlayerHasTeutonicOrder(pPlayer)
+	for city in pPlayer:Cities() do
+		if city:IsHasBuilding(eBuildingTeutonicOrder) then return true end
+	end
+	return false
+end
+
+function OnCityConstructedTeutonicOrder(iPlayer, iCity, eBuilding)
 	local pPlayer = Players[iPlayer]
 	
-	if iBuilding == iOrder then
-		for pCity in pPlayer:Cities() do
-			if pCity:IsHasBuilding(iBarracks) then
-				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSEHPPROMOTION, 1)
+	if eBuilding == eBuildingTeutonicOrder then
+		for city in pPlayer:Cities() do
+			if city:IsHasBuilding(eBuildingBarracks) then
+				city:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSEHPPROMOTION, 1)
 			end
 		end
-	elseif iBuilding == iBarracks then
-		for pCity in pPlayer:Cities() do
-			if pCity:IsHasBuilding(iOrder) then
-				pPlayer:GetCityByID(iCity):SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSEHPPROMOTION, 1)
-				
-				break
-			end
+	elseif eBuilding == eBuildingBarracks then
+		if PlayerHasTeutonicOrder(pPlayer) then
+			pPlayer:GetCityByID(iCity):SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSEHPPROMOTION, 1)
 		end
 	end
 end
 
-function TeutonicOrderOnCapture(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, iConquest2)
-	local pPlayer = Players[iNewPlayer]
-	local pCity = Map.GetPlot(iX, iY):GetWorkingCity()
-	local iFoundedReligion = pPlayer:GetReligionCreatedByPlayer()
-	local iStateReligion = pPlayer:GetCapitalCity():GetReligiousMajority()
-
-	if iFoundedReligion > 0 then
-		for iReligion in GameInfo.Religions() do
-			if iReligion ~= iFoundedReligion then			
-				pCity:ConvertPercentFollowers(iPantheon, iReligion, 100)
-			end
-		end
-	elseif iStateReligion > 0 then
-		for iReligion in GameInfo.Religions() do
-			if iReligion ~= iStateReligion then		
-				pCity:ConvertPercentFollowers(iPantheon, iReligion, 100)
-			end
+-- CityCaptureComplete(eOldOwner, bIsCapital, iX, iY, eNewOwner, iOldPopulation, bConquest, iNumGreatWorks, iCaptureGreatWorks)
+function OnCityCaptureCompleteTeutonicOrder(eOldOwner, iCapital, iX, iY, eNewOwner, iConquest1, iConquest2)
+	local pPlayer = Players[eNewOwner]
+	-- check if Teutonic Order is present
+	if not( pPlayer and PlayerHasTeutonicOrder(pPlayer)) then return end -- no TO, no effect
+	-- do we have a religion?
+	local eReligion = -1
+	if pPlayer:HasCreatedReligion() then eReligion = pPlayer:GetReligionCreatedByPlayer()
+	elseif pPlayer:HasStateReligion() then eReligion = pPlayer:GetStateReligion() end
+	if eReligion == -1 then return end -- no religion, no conversion
+	-- ok, de-convert non-followers
+	local pCity = Map.GetPlot(iX, iY):GetPlotCity()
+	for religion in GameInfo.Religions() do
+		if religion.ID ~= ePantheon and religion.ID ~= eReligion and pCity:GetNumFollowers(religion.ID) > 0 then
+			--ConvertPercentFollowers(eToReligion, eFromReligion, iPercent) -- works with religious pressure so calling it for all religions could create weird effects
+			pCity:ConvertPercentFollowers(ePantheon, religion.ID, 100)
 		end
 	end
 end
 
-
-GameEvents.CityConstructed.Add(TeutonicOrderBarracksBonus)
-GameEvents.CityCaptureComplete.Add(TeutonicOrderOnCapture)
+GameEvents.CityConstructed.Add(OnCityConstructedTeutonicOrder)
+GameEvents.CityCaptureComplete.Add(OnCityCaptureCompleteTeutonicOrder)
