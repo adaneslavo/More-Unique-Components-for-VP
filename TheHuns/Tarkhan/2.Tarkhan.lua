@@ -3,13 +3,14 @@
 -- 2018-01-27 updated by Infixo
 --------------------------------------------------------------------------------------------------------------------------
 --4UC Tarkhan Migration promotion
-local unitClassCivilianID		 = GameInfoTypes["UNITCLASS_SETTLER"],["UNITCLASS_WORKER"]
+local unitClassSettlerID = GameInfoTypes.UNITCLASS_SETTLER
+local unitClassWorkerID = GameInfoTypes.UNITCLASS_WORKER
 local unitPromotionMigration = GameInfoTypes["PROMOTION_MIGRATION"]
 function HunMigration_PlayerDoTurn(playerID)
 	local player = Players[playerID]
 	if (not player:IsAlive()) then return end
 	for unit in player:Units() do
-		if unit:GetUnitClassType() == unitClassCivilianID then
+		if unit:GetUnitClassType() == unitClassSettlerID or unit:GetUnitClassType() == unitClassWorkerID then
 			local plot = unit:GetPlot()
 			if (plot:GetUnit() and plot:GetUnit():IsHasPromotion(unitPromotionMigration)) then
 				unit:ChangeMoves(120)
