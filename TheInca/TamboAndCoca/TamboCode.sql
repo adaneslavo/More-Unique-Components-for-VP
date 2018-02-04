@@ -61,12 +61,12 @@ VALUES
 INSERT INTO Building_ResourceYieldChanges
 	(BuildingType, ResourceType, YieldType, Yield)
 SELECT 'BUILDING_TAMBO', ResourceType, YieldType, Yield
-FROM Building_ResourceYieldChanges WHERE Type = 'BUILDING_CARAVANSARY';		
+FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_CARAVANSARY';		
 
 INSERT INTO Building_SpecialistYieldChangesLocal
 	(BuildingType, SpecialistType, YieldType, Yield)
 SELECT 'BUILDING_TAMBO', SpecialistType, YieldType, Yield
-FROM Building_SpecialistYieldChangesLocal WHERE Type = 'BUILDING_CARAVANSARY';	
+FROM Building_SpecialistYieldChangesLocal WHERE BuildingType = 'BUILDING_CARAVANSARY';	
 ------------------------------	
 -- Building_Flavors
 ------------------------------		

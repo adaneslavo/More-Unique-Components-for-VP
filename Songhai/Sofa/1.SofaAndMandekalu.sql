@@ -116,12 +116,10 @@ DELETE FROM Civilization_UnitClassOverrides WHERE CivilizationType = 'CIVILIZATI
 --------------------------------	
 -- Units
 --------------------------------
-UPDATE Units SET Cost = '200' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
-UPDATE Units SET Class = 'UNITCLASS_KNIGHT' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
-UPDATE Units SET PrereqTech = 'TECH_CHIVALRY' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
-UPDATE Units SET Combat = '25' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
-UPDATE Units SET ObsoleteTech = 'TECH_COMBUSTION' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY'; 
-UPDATE Units SET GoodyHutUpgradeUnitClass = 'UNITCLASS_LANCER' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
+UPDATE Units
+SET Cost = 200, Combat = 25, Class = 'UNITCLASS_KNIGHT', PrereqTech = 'TECH_CHIVALRY', ObsoleteTech = 'TECH_COMBUSTION', GoodyHutUpgradeUnitClass = 'UNITCLASS_LANCER'
+WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
+
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------

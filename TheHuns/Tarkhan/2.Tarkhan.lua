@@ -2,7 +2,7 @@
 -- TARKHAN
 -- 2018-01-27 updated by Infixo
 --------------------------------------------------------------------------------------------------------------------------
---[[--4UC Tarkhan Migration promotion
+--4UC Tarkhan Migration promotion
 local unitClassCivilianID		 = GameInfoTypes["UNITCLASS_SETTLER"],["UNITCLASS_WORKER"]
 local unitPromotionMigration = GameInfoTypes["PROMOTION_MIGRATION"]
 function HunMigration_PlayerDoTurn(playerID)
@@ -52,4 +52,4 @@ function PositionCalculator(i1, i2)
     return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.UnitPillageGold.Add(BellumAlet)--]]
+GameEvents.UnitPillageGold.Add(BellumAlet)

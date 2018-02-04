@@ -37,17 +37,17 @@ VALUES
 INSERT INTO Building_ResourceYieldChanges
 		(BuildingType, ResourceType, YieldType, Yield)
 SELECT	'BUILDING_IZIKO', ResourceType, YieldType, Yield
-FROM Building_ResourceYieldChanges WHERE Type = 'BUILDING_AMPHITHEATER';
+FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_AMPHITHEATER';
 
 INSERT INTO Building_BuildingClassYieldChanges
 		(BuildingType, 		BuildingClassType, YieldType, YieldChange)
 SELECT	'BUILDING_IZIKO', 	BuildingClassType, YieldType, YieldChange
-FROM Building_BuildingClassYieldChanges WHERE Type = 'BUILDING_AMPHITHEATER';
+FROM Building_BuildingClassYieldChanges WHERE BuildingType = 'BUILDING_AMPHITHEATER';
 	
 INSERT INTO Building_SpecificGreatPersonRateModifier
 		(BuildingType, 		SpecialistType, Modifier)
 SELECT	'BUILDING_IZIKO', 	SpecialistType, Modifier
-FROM Building_SpecificGreatPersonRateModifier WHERE Type = 'BUILDING_AMPHITHEATER';
+FROM Building_SpecificGreatPersonRateModifier WHERE BuildingType = 'BUILDING_AMPHITHEATER';
 	
 INSERT INTO Building_ClassesNeededInCity
 	(BuildingType, BuildingClassType)
@@ -64,6 +64,6 @@ VALUES	('BUILDING_IZIKO', 'YIELD_CULTURE', 1);
 INSERT INTO Building_Flavors
 		(BuildingType,				FlavorType,				Flavor)
 VALUES	
-	('BUILDING_IZIKO',		'FLAVOR_FAITH',		20),
+	('BUILDING_IZIKO',		'FLAVOR_RELIGION',		20),
 	('BUILDING_IZIKO',		'FLAVOR_CULTURE',		50),
 	('BUILDING_IZIKO',		'FLAVOR_GOLD',		20);
