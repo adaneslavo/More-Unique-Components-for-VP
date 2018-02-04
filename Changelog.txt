@@ -14,7 +14,7 @@ v27:
 - deleted InstanceManager link from luas,
 - deleted SaveUtils.lua file and !Utils folder,
 - modified DruidicLore lua (added code for capital/holy city capture from Celts and for Celts),
-- modified luas for Move/Build/Create game events combination (Goedendag, Ballista, Iron Chariot, Landwehr, 
+- modified luas for Move/Build/Create game events combination (Goedendag, Ballista, Iron Chariot, Landwehr, Monitor, Sofa)
 - optimized lua (Pogost, White Tower, Ballista (with SQLs), Goedendag, Shophet, Slaganz, Teutonic Order, Seir Morb),
 - fixed text (Iron Chariot, Klepht),
 - fixes (Black Tug, Latifundium, Shophet),
