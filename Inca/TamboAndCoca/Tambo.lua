@@ -1,25 +1,36 @@
--- Tambo
--- Author: Pineappledan
--- DateCreated: 02/02/2018
+--------------------------------------------------------------
+-- Inca - Tambo
+-- Coca Monopoly gives promotion to eligible military and civilian units
+-- Author: Infixo
+-- DateCreated: 2018-02-03
 --------------------------------------------------------------
 
---Coca Monopoly gives promotion to land military units and workers
+local ePromotionMilitary = GameInfoTypes.PROMOTION_COCA_MILITARY
+local ePromotionCivilian = GameInfoTypes.PROMOTION_COCA_WORKER
 
-function CocaMonopoly(iPlayer, iResource)
+local tEligibleCombats = {
+	[GameInfoTypes.UNITCOMBAT_MELEE] = true,
+	[GameInfoTypes.UNITCOMBAT_ARCHER] = true,
+	[GameInfoTypes.UNITCOMBAT_GUN] = true,
+	[GameInfoTypes.UNITCOMBAT_MOUNTED] = true,
+	[GameInfoTypes.UNITCOMBAT_ARMOR] = true,
+	[GameInfoTypes.UNITCOMBAT_RECON] = true,
+	[GameInfoTypes.UNITCOMBAT_SIEGE] = true,
+	[GameInfoTypes.UNITCOMBAT_HELICOPTER] = true,
+}
+
+local tEligibleClasses = {
+	[GameInfoTypes.UNITCLASS_WORKER] = true,
+}
+
+function OnPlayerDoTurnTambo(iPlayer)
 	local pPlayer = Players[iPlayer]
-
-	if pPlayer:HasGlobalMonopoly(RESOURCE_COCA) then
-		for UNITCOMBAT_MELEE:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
-		for UNITCOMBAT_ARCHER:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
-		for UNITCOMBAT_GUN:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
-		for UNITCOMBAT_MOUNTED:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
-		for UNITCOMBAT_ARMOR:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
-		for UNITCOMBAT_RECON:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
-		for UNITCOMBAT_SIEGE:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
-		for UNITCOMBAT_HELICOPTER:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_MILITARY, false)
-		for UNITCLASS_WORKER:SetHasPromotion(GameInfoTypes.PROMOTION_COCA_WORKER, false)
-
+	local bHasCocaMonopoly = pPlayer:HasGlobalMonopoly(GameInfoTypes.RESOURCE_COCA)
+	for unit in pPlayer:Units() do
+		if tEligibleCombats[ unit:GetUnitCombatType() ] then unit:SetHasPromotion(ePromotionMilitary, bHasCocaMonopoly) end
+	end
+	for unit in pPlayer:Units() do
+		if tEligibleClasses[ unit:GetUnitClassType() ] then unit:SetHasPromotion(ePromotionCivilian, bHasCocaMonopoly) end
 	end
 end
-
-GameEvents.HasGlobalMonopoly.Add(CocaMonopoly)
+GameEvents.PlayerDoTurn.Add(OnPlayerDoTurnTambo)
