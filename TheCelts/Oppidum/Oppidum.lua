@@ -30,7 +30,7 @@ end
 function OppidumMoveHP(iPlayer, iX, iY)
 	local pPlayer = Players[iPlayer]
 	local pFoundCity = Map.GetPlot(iX, iY):GetWorkingCity()
-	
+
 	for iCityPlot = 1, pFoundCity:GetNumCityPlots() - 1, 1 do
 		local pSpecificPlot = pFoundCity:GetCityIndexPlot(iCityPlot)
 

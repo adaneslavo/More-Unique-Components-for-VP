@@ -472,6 +472,12 @@
 			<Text>Dummy Defense Building</Text>
 		</Row>
 
+		<!-- Dummy Defense, HP and Promotion Building -->
+		<!-- Created by adan_eslavo 14/01/2018 -->
+		<Row Tag="TXT_KEY_BUILDING_DUMMYDEFENSEHPPROMOTION">
+			<Text>Dummy Defense, HP and Promotion Building</Text>
+		</Row>
+		
 		<!-- Dummy GPP And City Defense Building -->
 		<!-- Created by adan_eslavo 13/12/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_DUMMYGPPANDDEFENSE">
@@ -2096,45 +2102,45 @@
 
 		<!-- Slaganz -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ">
+		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ">
 			<Text>
 				Slaganz
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_TEXT">
+		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_TEXT">
 			<Text>
 				The strength and ferocity of the tribal Germanic warriors, or Slaganz, were legendary among Roman writers and soldiers alike. Germanic tribesmen stood an average of 6 inches taller than a Latin, but were unable to capitalize on their brute advantages over Roman interlopers because of the legions' superior equipment, organization and training. German fortunes would change, however, under the leadership of Arminius.[NEWLINE][NEWLINE] 
 				A Cherusci commander who had spent time training under the Romans, Arminius led a coalition of five German tribes in a decisive victory, destroying three Roman legions under Publius Varus. Arminius falisified reports of a northern Germanic uprising and laid an ambush for Varus deep in the Teotoburg Forest. Using their superior numbers, heavy rain, and Arminius' knowledge of Roman tactics, the Roman annihilation at Teotoburg Forest was utterly thorough. It is estimated that 20 000 men were killed or enslaved by the Germans. Rome's total defeat at the hands of Arminius set the borders of Rome's eastern expansion at the Rhine, and would be remembered as their greatest humiliation. 
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_STRATEGY">
 			<Text>
 				The Slaganz is the unique Warrior replacement which only the Germans can train. It is much cheaper than the Warrior and gains an attack bonus against Barbarian Units. When a barbarian unit is defeated, the Slaganz has a chance to convert the unit to your side. Converting barbarian units also increases your influence with the nearest city-state. Use Slaganz to hunt down barbarians and form a strong coalition of early city-state allies.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_GERMAN_SLAGANZ_HELP">
+		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_HELP">
 			<Text>
 				Cheap German warrior replacement. +50% [ICON_STRENGTH] Strength against Barbarians, and has a chance of converting defeated Barbarian units. On Barbarian kills, earn 5 [ICON_INFLUENCE] Influence with the nearest City-State.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FUROR_TEUTONICUS">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS">
 			<Text>
 				Furor Teutonicus
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FUROR_TEUTONICUS_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS_HELP">
 			<Text>
-				+50% combat strength against Barbarians.
+				+50% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Barbarians[ENDCOLOR].
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_BARBARIAN_ALLIANCE">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE">
 			<Text>
 				Barbarian Alliance
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_BARBARIAN_ALLIANCE_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE_HELP">
 			<Text>
-				50% Chance to convert Barbarians on kill. +5 [ICON_INFLUENCE] Influence to the nearest City-State on barbarian conversion.
+				Unit [COLOR_POSITIVE_TEXT]can convert Barbarian Unit[ENDCOLOR] to your side [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. +5 [ICON_INFLUENCE] Influence to the nearest City-State [COLOR_POSITIVE_TEXT]on Conversion[ENDCOLOR].
 			</Text>
 		</Row>
 		<!-- Sofa -->		
@@ -2289,36 +2295,36 @@
 
 		<!-- Teutonic Order -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER">
+		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER">
 			<Text>
 				Teutonic Order
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_TEXT">
 			<Text>
 				The Order of Brothers of the German House of Saint Mary in Jerusalem, more commonly known as the Teutonic Order, is a Catholic knightly order founded in 1190 in Acre Jerusalem. Originally founded as an adjunct of the Knights Hospitaller, the Order was commissioned to help pilgrims on their way to the Holy Land and establish hospitals for the many Germanic pilgrims who spoke neither the local languages, nor Latin. Within 50 years, the German Catholic order became a state unto itself, prosecuting a holy crusade against Baltic pagans from their capital in present day Malbork, Poland.[NEWLINE][NEWLINE] 
 				After Christian forces were expelled from Jerusalem, the Teutonic knights found work as mercenaries and guardsmen in Transylvania, Hungary, and then Poland, before becoming the largest player in a new Prussian Crusade against the pagan inhabitants of the Eastern Baltics. The Teutonic Order carried out a bloody and centuries long campaign of forced conversions and ethnic replacement which saw them come into conflict with Estonians, Lithuanians, Old Prussians and even their former Polish allies. Struggles against the militarized Christianization by Catholic knights would shape the national identities of all neighboring peoples.[NEWLINE][NEWLINE]
 				Christianization of Lithuania and Poland's successful attempts to politically isolate the Teutonic Order from the rest of Catholicism left the Order without a purpose (and a shortage of friends) by 1520. In response, the Grand Master of the Order, Albert of Brandenburg, resigned from the Order, converted to Lutheranism and styled himself Duke of Prussia, becoming the first Protestant state by converting the Order's Prussian holdings into a secularized fiefdom. Though declining in political force, the Teutonic Order continued to exist as a Catholic state through its holdings in Germany until forcibly dissolved by Napoleon Bonaparte in 1809. Since then, the Teutonic Order has continued to exist, but as a ceremonial and charitable organization.  
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_STRATEGY">
 			<Text>
 				The Teutonic Order is Germany's unique wonder, replacing the Heroic Epic. This wonder is available much later than the Heroic epic, but provides strong bonuses to all cities in your empire with a Barracks comparable to that of a full Order. All new units trained in any city with a Barracks receive the Morale promotion for free, and all melee land units immediately receive the Chapter promotion.[NEWLINE][NEWLINE] 
 				With the Chapter promotion, your melee units gain additional power in foreign lands, and can aid the quick spread of your religion by removing foreign religions from newly conquered cities. This will allow Germans to spread their influence and reform quickly through military expansionism. 
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_GERMAN_TEUTONIC_ORDER_HELP">
+		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
 				Unique German replacement for the Heroic Epic. Gain a free Armory in the City. Contains 1 slot for a Great Work of Writing. +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP to all Cities in the Empire with a Barracks.[NEWLINE][NEWLINE]
 				All melee land units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] promotion. New units trained in Cities with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] promotion.[NEWLINE][NEWLINE]
 				The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHAPTER">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_CHAPTER">
 			<Text>Chapter</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHAPTER_HELP">
-			<Text>10% [ICON_STRENGTH] Strength Outside [COLOR_POSITIVE_TEXT]friendly territory[ENDCOLOR]. On city conquest, [ICON_CITIZEN] citizens not following your majority religion are un-converted to having No religion.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_CHAPTER_HELP">
+			<Text>+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]outside Friendly Territory[ENDCOLOR]. [COLOR_POSITIVE_TEXT]On City Capture[ENDCOLOR], [ICON_CITIZEN] Citizens not following your Majority Religion are un-converted and [COLOR_POSITIVE_TEXT]do not follow any Religion[ENDCOLOR].</Text>
 		</Row>
 		<!-- Tophet -->
 		<!-- Created by pineappledan -->

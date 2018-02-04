@@ -7,7 +7,7 @@ include("FLuaVector.lua")
 function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
-	
+
 	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)

@@ -7,7 +7,7 @@ local iTourismEvent = GameInfoTypes['PLAYER_EVENT_CHOICE_PRACINHA_TOURISM']
 function PracinhaTourism(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP, iInterceptingPlayer, iInterceptingUnit, iInterceptorDamage, iPlotX, iPlotY)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
-	
+
 	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)

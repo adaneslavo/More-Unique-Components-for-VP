@@ -11,14 +11,29 @@ function GoedendagOnMove(iPlayer, iUnit, iX, iY)
 
 	for pUnit in pPlayer:Units() do
 		if pUnit:GetUnitCombatType() >= 0 and pUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND then
-			local bInRange = pUnit:IsWithinDistanceOfUnit(iGoedendag, 0, true, false)
+			if pUnit:GetCurrHitPoints() > 0 then
+				local bInRange = pUnit:IsWithinDistanceOfUnitPromotion(iGoedendag, 0, true, false)
 
-			if not bInRange then
-				bInRange = pUnit:IsAdjacentToUnitPromotion(iGoedendag, true, false)
+				if not bInRange then
+					bInRange = pUnit:IsAdjacentToUnitPromotion(iGoedendag, true, false)
+				end
+
+				pUnit:SetHasPromotion(iGoedendagEffect, bInRange)
 			end
-
-			pUnit:SetHasPromotion(iGoedendagEffect, bInRange)
 		end
+	end
+	
+	local pUnit = pPlayer:GetUnitByID(iUnit)
+
+	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE) then
+		local pPlot = pUnit:GetPlot()
+			
+		if pPlot ~= nil then	
+			local eResType = pPlot:GetResourceType(pPlayer:GetTeam())
+			local bIsLuxury = false
+			if eResType ~= -1 then bIsLuxury = (GameInfo.Resources[ eResType ].ResourceClassType == "RESOURCECLASS_LUXURY") end
+			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT, bIsLuxury)
+		end			
 	end
 end
 
@@ -27,7 +42,7 @@ function GoedendagOnCreate(iPlayer, iUnit, iUnitType, iX, iY)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:GetUnitCombatType() >= 0 and pUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND and not pUnit:IsHasPromotion(iGoedendag) then
-		local bInRange = pUnit:IsWithinDistanceOfUnit(iGoedendag, 0, true, false)
+		local bInRange = pUnit:IsWithinDistanceOfUnitPromotion(iGoedendag, 0, true, false)
 
 		if not bInRange then
 			bInRange = pUnit:IsAdjacentToUnitPromotion(iGoedendag, true, false)
@@ -66,7 +81,7 @@ function GoedendagOnBuild(iPlayer, iCity, iUnit)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:GetUnitCombatType() >= 0 and pUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND and not pUnit:IsHasPromotion(iGoedendag) then
-		local bInRange = pUnit:IsWithinDistanceOfUnit(iGoedendag, 0, true, false)
+		local bInRange = pUnit:IsWithinDistanceOfUnitPromotion(iGoedendag, 0, true, false)
 
 		if not bInRange then
 			bInRange = pUnit:IsAdjacentToUnitPromotion(iGoedendag, true, false)
@@ -100,23 +115,6 @@ function GoedendagOnBuild(iPlayer, iCity, iUnit)
 	end
 end
 
-function GoedendagOnResourceBonus(iPlayer, iUnit, iX, iY)
-	local pPlayer = Players[iPlayer];
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE) then
-		local pPlot = pUnit:GetPlot()
-			
-		if pPlot ~= nil then	
-			local eResType = pPlot:GetResourceType(pPlayer:GetTeam())
-			local bIsLuxury = false
-			if eResType ~= -1 then bIsLuxury = (GameInfo.Resources[ eResType ].ResourceClassType == "RESOURCECLASS_LUXURY") end
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT, bIsLuxury)
-		end			
-	end
-end
-
 GameEvents.UnitSetXY.Add(GoedendagOnMove)
 GameEvents.UnitCreated.Add(GoedendagOnCreate)
 GameEvents.CityTrained.Add(GoedendagOnBuild)
-GameEvents.UnitSetXY.Add(GoedendagOnResourceBonus)
