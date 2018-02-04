@@ -10,7 +10,7 @@ function HorseDaddy(iPlayer)
 	local pPlayer = Players[iPlayer]
 
 	for pUnit in pPlayer:Units() do
-		if GameInfo.Units[pUnit:GetUnitType()].IsMounted then
+		if GameInfo.Units[pUnit:GetUnitType()].IsMounted or pUnit:GetUnitCombatType() == UNITCOMBAT_MOUNTED then
 			pUnit:SetHasPromotion(iHorseDadEffect, pUnit:IsWithinDistanceOfUnitPromotion(iSofa, 2, true, false))
 		end
 	end
