@@ -9,8 +9,8 @@ VALUES	('CIVILIZATION_INCA', 	'BUILDINGCLASS_CARAVANSARY', 	'BUILDING_TAMBO');
 --==========================================================================================================================
 
 INSERT INTO Buildings 	
-		(Type, 				BuildingClass, Cost, GoldMaintenance, PrereqTech, Water, TradeRouteLandDistanceModifier, AlwaysHeal, 	TradeRouteLandGoldBonus, CityConnectionGoldModifier, FinishLandTRTourism, Description, 				Civilopedia, 					Help, 							Strategy,								PlotBuyCostModifier, ArtDefineTag, 	ArtInfoEraVariation, FreeStartEra, DisplayPosition, MinAreaSize, ConquestProb, 	GreatPeopleRateModifier, FreshWater, HurryCostModifier, PortraitIndex, 	IconAtlas)
-SELECT	'BUILDING_TAMBO',	BuildingClass, Cost, GoldMaintenance, PrereqTech, Water, TradeRouteLandDistanceModifier, 5,				TradeRouteLandGoldBonus, 20,						 FinishLandTRTourism, 'TXT_KEY_BUILDING_TAMBO', 	'TXT_KEY_BUILDING_TAMBO_TEXT', 	'TXT_KEY_BUILDING_TAMBO_HELP', 	'TXT_KEY_BUILDING_TAMBO_STRATEGY',		PlotBuyCostModifier, ArtDefineTag,	ArtInfoEraVariation, FreeStartEra, DisplayPosition, MinAreaSize, 100, 			GreatPeopleRateModifier, FreshWater, HurryCostModifier, 0, 	'BUILDING_APIG4UC_ATLAS'
+		(Type, 		BuildingClass, Cost, GoldMaintenance, PrereqTech, Water, TradeRouteLandDistanceModifier, AlwaysHeal, 	TradeRouteLandGoldBonus, CityConnectionGoldModifier, 	FinishLandTRTourism, Description, 		Civilopedia, 			Help, 				Strategy,								PlotBuyCostModifier, ArtDefineTag, 	ArtInfoEraVariation, FreeStartEra, DisplayPosition, MinAreaSize, ConquestProb, 	GreatPeopleRateModifier, FreshWater, HurryCostModifier, PortraitIndex, 	IconAtlas)
+SELECT	'BUILDING_TAMBO',	BuildingClass, Cost, GoldMaintenance, PrereqTech, Water, TradeRouteLandDistanceModifier, 5,		TradeRouteLandGoldBonus, 20,				FinishLandTRTourism, 'TXT_KEY_BUILDING_TAMBO', 	'TXT_KEY_BUILDING_TAMBO_TEXT', 	'TXT_KEY_BUILDING_TAMBO_HELP', 	'TXT_KEY_BUILDING_TAMBO_STRATEGY',		PlotBuyCostModifier, ArtDefineTag,	ArtInfoEraVariation, FreeStartEra, DisplayPosition, MinAreaSize, 100, 			GreatPeopleRateModifier, FreshWater, HurryCostModifier, 0, 	'BUILDING_APIG4UC_ATLAS'
 FROM Buildings WHERE Type = 'BUILDING_CARAVANSARY';	
 
 --==========================================================================================================================
@@ -30,7 +30,7 @@ VALUES		('RESOURCE_COCA',	null,			'TECH_CURRENCY',	'TXT_KEY_RESOURCE_COCA',	'TXT
 INSERT INTO UnitPromotions 
 		(Type, 						WorkRateMod,	MountainsDoubleMove, Description, 						Help, 									Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 			LostWithUpgrade, 	PediaType,	PediaEntry)
 VALUES	('PROMOTION_COCA_MILITARY',	0,				1,					'TXT_KEY_PROMOTION_COCA_MILITARY',	'TXT_KEY_PROMOTION_COCA_MILITARY_HELP', 'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	1,					null,		null),
-		('PROMOTION_COCA_WORKER',	15,				0,					'TXT_KEY_PROMOTION_COCA_WORKER',	'TXT_KEY_PROMOTION_COCA_WORKER_HELP', 	'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	1, 					null, 		null),
+		('PROMOTION_COCA_WORKER',	15,				0,					'TXT_KEY_PROMOTION_COCA_WORKER',	'TXT_KEY_PROMOTION_COCA_WORKER_HELP', 	'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	1, 					null, 		null);
 
 INSERT INTO UnitPromotions_Terrains
 	(PromotionType, 			TerrainType, 		Attack, Defense)
@@ -49,7 +49,7 @@ VALUES
 INSERT INTO Building_BuildingClassYieldChanges
 	(BuildingType, BuildingClassType, YieldType, YieldChange)
 VALUES
-	('BUILDING_TAMBO', 'BUILDINGCLASS_GRANARY', 'YIELD_PRODUCTION', 2),
+	('BUILDING_TAMBO', 'BUILDINGCLASS_GRANARY', 'YIELD_PRODUCTION', 2);
 
 --Tambo gives 1 free copy of Coca
 INSERT INTO Building_ResourceQuantity
