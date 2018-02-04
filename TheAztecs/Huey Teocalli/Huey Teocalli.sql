@@ -75,9 +75,9 @@ INSERT INTO BuildingClasses
 VALUES		('BUILDINGCLASS_VP_HUEY_TEOCALLI_DUMMY',	'BUILDING_VP_HUEY_TEOCALLI_DUMMY',  1);
 
 INSERT INTO Buildings
-			(Type,										BuildingClass,	
+			(Type,										BuildingClass,	                     Description,
 			Cost,	FaithCost,	GreatWorkCount, PrereqTech, NeverCapture,	NukeImmune)
-VALUES		('BUILDING_VP_HUEY_TEOCALLI_DUMMY',		'BUILDINGCLASS_VP_HUEY_TEOCALLI_DUMMY',
+VALUES		('BUILDING_VP_HUEY_TEOCALLI_DUMMY',		'BUILDINGCLASS_VP_HUEY_TEOCALLI_DUMMY', 'TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_DUMMY',
 			-1,		-1,			-1,				NULL,		1,				1);
 
 INSERT INTO Building_BuildingClassYieldChanges
