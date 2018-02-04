@@ -1,8 +1,7 @@
 --------------------------------	
 -- Promotions
 --------------------------------	
-DELETE FROM	Unit_FreePromotions
-WHERE		UnitType = 'UNIT_HUN_HORSE_ARCHER';
+DELETE FROM	Unit_FreePromotions WHERE UnitType = 'UNIT_HUN_HORSE_ARCHER';
 
 
 INSERT INTO UnitPromotions 

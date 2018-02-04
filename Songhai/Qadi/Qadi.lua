@@ -2,7 +2,7 @@
 -- Author: pineappledan
 -- DateCreated: 25/01/2018
 --------------------------------------------------------------
-function YieldProdToCulture(iPlayer)
+--[[function YieldProdToCulture(iPlayer)
 	local pPlayer = Players[iPlayer]
 
 	if pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_SONGHAI then
@@ -16,4 +16,4 @@ function YieldProdToCulture(iPlayer)
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(YieldProdToCulture)
+GameEvents.PlayerDoTurn.Add(YieldProdToCulture)--]]

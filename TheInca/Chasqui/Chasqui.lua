@@ -4,30 +4,22 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
+local iChasqui = GameInfoTypes.UNIT_3UC_CHASQUI
+
 function Chasquiwasi(iPlayer, iUnit)
 	local pPlayer = Players[iPlayer]
-	local ChasquiID = GameInfoTypes.UNIT_3UC_CHASQUI;
-	
+		
 	for pUnit in pPlayer:Units() do
-		local pUnit = Players[player]:GetUnitByID(unit);
-		if pUnit:GetUnitType() == ChasquiID then
-			if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CHASQUI_HEAL) then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHASQUI_HEAL, false)
-			elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CHASQUI_HEAL_DUMMY) then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHASQUI_HEAL_DUMMY, false)		
-			end
-			
+		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CHASQUI_HEAL) then
 			local iX = pUnit:GetX()
 			local iY = pUnit:GetY()
 			local pPlot = Map.GetPlot(iX, iY)
-			
-			if pPlot:GetOwner() = pPlayer then 
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHASQUI_HEAL, true) else
-					pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CHASQUI_HEAL_DUMMY) 
-				end
+
+			if pPlot:GetOwner() == pPlayer then
+				pUnit:ChangeDamage(-10)
 			end
 		end
 	end
 end
 
-Events.UnitActionChanged.Add(Chasquiwasi)
+GameEvents.PlayerDoTurn.Add(Chasquiwasi)

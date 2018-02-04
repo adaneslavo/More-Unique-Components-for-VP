@@ -5,7 +5,7 @@
 -- DateCreated: 2018-02-03
 --------------------------------------------------------------
 
-local ePromotionMilitary = GameInfoTypes.PROMOTION_COCA_MILITARY
+--[[local ePromotionMilitary = GameInfoTypes.PROMOTION_COCA_MILITARY
 local ePromotionCivilian = GameInfoTypes.PROMOTION_COCA_WORKER
 
 local tEligibleCombats = {
@@ -33,4 +33,4 @@ function OnPlayerDoTurnTambo(iPlayer)
 		if tEligibleClasses[ unit:GetUnitClassType() ] then unit:SetHasPromotion(ePromotionCivilian, bHasCocaMonopoly) end
 	end
 end
-GameEvents.PlayerDoTurn.Add(OnPlayerDoTurnTambo)
+GameEvents.PlayerDoTurn.Add(OnPlayerDoTurnTambo)--]]

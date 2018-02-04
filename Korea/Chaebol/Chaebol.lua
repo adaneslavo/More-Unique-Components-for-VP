@@ -2,7 +2,7 @@
 -- Author: hokath
 -- DateCreated: 27/1/18
 --------------------------------------------------------------
-function TradeRoutesToGPPAndGold(iPlayer)
+--[[function TradeRoutesToGPPAndGold(iPlayer)
 	local pPlayer = Players[iPlayer]
   numTR = pPlayer:GetNumInternationalTradeRoutes()
 	for pCity in pPlayer:Cities() do
@@ -12,4 +12,4 @@ function TradeRoutesToGPPAndGold(iPlayer)
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(TradeRoutesToGPPAndGold)
+GameEvents.PlayerDoTurn.Add(TradeRoutesToGPPAndGold)--]]
