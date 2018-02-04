@@ -46,17 +46,17 @@ function DhanurvidyaCultureGain(iPlayer, iUnit)
 		local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 		local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
 		
-		local iChange1 = math.floor(5 * (pUnit:GetLevel() - 1) * iGameSpeedScaler1)
-		local iChange2 = math.floor(5 * (pUnit:GetLevel() - 1) * iGameSpeedScaler2)
+		local iChange1 = math.floor(5 * (pUnit:GetLevel() - 1) * iGameSpeedModifier1) -- faith
+		local iChange2 = math.floor(5 * (pUnit:GetLevel() - 1) * iGameSpeedModifier2) -- culture
 		
-		pPlayer:ChangeJONSCulture(iChange2)
 		pPlayer:ChangeFaith(iChange1)
+		pPlayer:ChangeJONSCulture(iChange2)
 
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 		
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+ "..iChange2.." [ICON_CULTURE] Dhanurvidya[ENDCOLOR]", 1)
 			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+ "..iChange1.." [ICON_PEACE] Dhanurvidya[ENDCOLOR]", 1.5)
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+ "..iChange2.." [ICON_CULTURE] Dhanurvidya[ENDCOLOR]", 1)
 		end
 	end
 end
