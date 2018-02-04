@@ -18,6 +18,9 @@ if bXPScaling then
 	fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100 
 end
 
+local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
+local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
+		
 function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
@@ -43,11 +46,8 @@ function DhanurvidyaCultureGain(iPlayer, iUnit)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_DHANURVIDYA) then
-		local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
-		local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
-		
-		local iChange1 = math.floor(5 * (pUnit:GetLevel() - 1) * iGameSpeedModifier1) -- faith
-		local iChange2 = math.floor(5 * (pUnit:GetLevel() - 1) * iGameSpeedModifier2) -- culture
+		local iChange1 = math.floor(5 * (pUnit:GetLevel() - 1) * fGameSpeedModifier1) -- faith
+		local iChange2 = math.floor(5 * (pUnit:GetLevel() - 1) * fGameSpeedModifier2) -- culture
 		
 		pPlayer:ChangeFaith(iChange1)
 		pPlayer:ChangeJONSCulture(iChange2)
