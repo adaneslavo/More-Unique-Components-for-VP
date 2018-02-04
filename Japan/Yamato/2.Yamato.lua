@@ -17,10 +17,10 @@ end
 
 --GAP and Culture on killing Yamato
 
-function YamatoOnDeath(iPlayerKiller, iPlayerKillee, KillerUnitType, KilledUnitType)
+function YamatoOnDeath(iPlayerKiller, iPlayerKillee, eKillerUnitType, eKilledUnitType)
 	local pPlayerKiller = Players[iPlayerKiller]
 
-	if KilledUnitType:GetUnitType() == GameInfoTypes.UNIT_YAMATO then
+	if eKilledUnitType == GameInfoTypes.UNIT_YAMATO then
 		pPlayerKiller:ChangeJONSCulture(400)
 		pPlayerKiller:ChangeGoldenAgeProgressMeter(400)
 	
