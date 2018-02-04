@@ -48,4 +48,3 @@ end
 
 GameEvents.PlayerDoTurn.Add(RenewalCycleOnHolkan)
 GameEvents.GoodyHutReceivedBonus.Add(HolkansGoodyHuts)
-GameEvents.UnitSetXY.Add(ModBaseResetOnFirstMove)

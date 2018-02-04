@@ -1945,6 +1945,26 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="TheInca\Chasqui\3DModel\IncaScout.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\Chasqui\3DModel\IncaScout.fbx">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\Chasqui\3DModel\IncaScout.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\Chasqui\3DModel\IncaScout.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\Chasqui\3DModel\IncaScout_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="TheInca\Chasqui\Chasqui.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1978,26 +1998,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="TheInca\Chasqui\Chasqui_SV.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheInca\Chasqui\IncaScout.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheInca\Chasqui\IncaScout.fbx">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheInca\Chasqui\IncaScout.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheInca\Chasqui\IncaScout.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheInca\Chasqui\IncaScout_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5211,6 +5211,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="TheHuns\Tarkhan" />
     <Folder Include="TheInca" />
     <Folder Include="TheInca\Chasqui" />
+    <Folder Include="TheInca\Chasqui\3DModel" />
     <Folder Include="TheInca\TamboAndCoca" />
     <Folder Include="TheInca\TamboAndCoca\CocaArt" />
     <Folder Include="TheInca\TamboAndCoca\CocaArt\CocaLeaf" />

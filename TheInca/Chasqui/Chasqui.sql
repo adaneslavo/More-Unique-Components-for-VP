@@ -49,10 +49,9 @@ FROM Units WHERE Type = 'UNIT_SCOUT';
 --==========================================================================================================================
 
 INSERT INTO UnitPromotions 
-			(Type, 								Description, 							Help, 											AlwaysHeal, 	FriendlyHealChange, 	Sound, 				CannotBeChosen, 	PortraitIndex,	IconAtlas, 			LostWithUpgrade)
-VALUES		('PROMOTION_CHASQUI_GOLD',			'TXT_KEY_PROMOTION_CHASQUI_GOLD',		'TXT_KEY_PROMOTION_CHASQUI_GOLD_HELP', 			0, 				0, 						'AS2D_IF_LEVELUP',	1, 					59, 			'ABILITY_ATLAS', 	0),
-			('PROMOTION_CHASQUI_HEAL',			'TXT_KEY_PROMOTION_CHASQUI_HEAL',		'TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP', 			1, 				5, 						'AS2D_IF_LEVELUP',	1, 					59, 			'ABILITY_ATLAS', 	0),
-			('PROMOTION_CHASQUI_HEAL_DUMMY',	'TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY',	'TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY_HELP', 	0, 				0, 						'AS2D_IF_LEVELUP',	1, 					59, 			'ABILITY_ATLAS', 	0);
+			(Type, 								Description, 							Help, 											Sound, 				CannotBeChosen, 	PortraitIndex,	IconAtlas, 			LostWithUpgrade, 	PediaType, 			PediaEntry)
+VALUES		('PROMOTION_CHASQUI_GOLD',			'TXT_KEY_PROMOTION_CHASQUI_GOLD',		'TXT_KEY_PROMOTION_CHASQUI_GOLD_HELP', 			'AS2D_IF_LEVELUP',	1, 					59, 			'ABILITY_ATLAS', 	0, 					'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_CHASQUI_GOLD'),
+			('PROMOTION_CHASQUI_HEAL',			'TXT_KEY_PROMOTION_CHASQUI_HEAL',		'TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP', 			'AS2D_IF_LEVELUP',	1, 					59, 			'ABILITY_ATLAS', 	0, 					'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_CHASQUI_HEAL');
 
 INSERT INTO UnitPromotions_YieldFromScouting
 			(PromotionType,				YieldType,		Yield)

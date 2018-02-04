@@ -1,44 +1,35 @@
 --==========================================================================================================================	
--- UNITCLASSES
+-- CIVILIZATION
 --==========================================================================================================================	
 --------------------------------	
 -- Civilization_UnitClassOverrides 
 --------------------------------
 INSERT INTO Civilization_UnitClassOverrides 
-			(CivilizationType, 			UnitClassType, 				UnitType)
-VALUES		('CIVILIZATION_KOREA', 	'UNITCLASS_CARAVEL',		'UNIT_KOREAN_TURTLE_SHIP');
+			(CivilizationType, 		UnitClassType, 			UnitType)
+VALUES		('CIVILIZATION_KOREA', 	'UNITCLASS_CARAVEL',	'UNIT_KOREAN_TURTLE_SHIP');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
 -- PROMOTIONS
---==========================================================================================================================	
-
+--==========================================================================================================================
 INSERT INTO UnitPromotions
-	(Type, Description, Help, Sound, OrderPriority, PortraitIndex, IconAtlas, PediaType, CannotBeChosen)
-VALUES
-	('PROMOTION_COAST_MOVE', 'TXT_KEY_PROMOTION_COAST_MOVE', 'TXT_KEY_PROMOTION_COAST_MOVE_HELP', 'AS2D_IF_LEVELUP', 99, 44, 'PROMOTION_ATLAS', 'PEDIA_ATTRIBUTES', 1),
-	('PROMOTION_DECK_SPIKES', 'TXT_KEY_PROMOTION_DECK_SPIKES', 'TXT_KEY_PROMOTION_DECK_SPIKES_HELP', 'AS2D_IF_LEVELUP', 99, 25, 'PROMOTION_ATLAS', 'PEDIA_ATTRIBUTES', 1);
+			(Type,						Description,						Help,									Sound,				PortraitIndex,	CannotBeChosen,	IconAtlas,			PediaType,			PediaEntry)
+VALUES		('PROMOTION_COAST_MOVE',	'TXT_KEY_PROMOTION_COAST_MOVE',		'TXT_KEY_PROMOTION_COAST_MOVE_HELP',	'AS2D_IF_LEVELUP',	44,				1,				'PROMOTION_ATLAS', 'PEDIA_ATTRIBUTES',	'TXT_KEY_PROMOTION_COAST_MOVE'),
+			('PROMOTION_DECK_SPIKES',	'TXT_KEY_PROMOTION_DECK_SPIKES',	'TXT_KEY_PROMOTION_DECK_SPIKES_HELP',	'AS2D_IF_LEVELUP',	25,				1,				'PROMOTION_ATLAS', 'PEDIA_ATTRIBUTES',	'TXT_KEY_PROMOTION_DECK_SPIKES');
 
 INSERT INTO UnitPromotions_Terrains
-	(PromotionType, TerrainType, DoubleMove)
-VALUES
-	('PROMOTION_COAST_MOVE', 'TERRAIN_COAST', 1);
+			(PromotionType,				TerrainType,		DoubleMove)
+VALUES		('PROMOTION_COAST_MOVE',	'TERRAIN_COAST',	1);
 
 INSERT INTO UnitPromotions_UnitCombatMods
-	(PromotionType, UnitCombatType, Modifier)
-VALUES
-	('PROMOTION_DECK_SPIKES', 'UNITCOMBAT_NAVALMELEE', 25);	
-
-
+			(PromotionType,				UnitCombatType,				Modifier)
+VALUES		('PROMOTION_DECK_SPIKES',	'UNITCOMBAT_NAVALMELEE',	25);	
 --==========================================================================================================================	
 -- UNITS
 --==========================================================================================================================	
 --------------------------------	
 -- Units
 --------------------------------
-
-
-
 UPDATE Units SET MinorCivGift = '0' WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP';
 UPDATE Units SET Class = 'UNITCLASS_CARAVEL' WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP';
 UPDATE Units SET Cost = '185' WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP';
@@ -61,7 +52,7 @@ DELETE FROM UnitClasses WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP';
 --------------------------------		
 
 INSERT INTO		Unit_FreePromotions
-				(UnitType, 			PromotionType)
+				(UnitType, 					PromotionType)
 SELECT			'UNIT_KOREAN_TURTLE_SHIP', 	PromotionType
 FROM Unit_FreePromotions WHERE UnitType = 'UNIT_CARAVEL';
 

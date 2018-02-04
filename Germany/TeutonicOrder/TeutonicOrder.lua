@@ -33,15 +33,15 @@ function TeutonicOrderOnCapture(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest
 	local iStateReligion = pPlayer:GetCapitalCity():GetReligiousMajority()
 
 	if iFoundedReligion > 0 then
-		for i = 1, 11, 1 do
-			if i ~= iFoundedReligion then			
-				pCity:ConvertPercentFollowers(iPantheon, i, 100)
+		for iReligion in GameInfo.Religions() do
+			if iReligion ~= iFoundedReligion then			
+				pCity:ConvertPercentFollowers(iPantheon, iReligion, 100)
 			end
 		end
 	elseif iStateReligion > 0 then
-		for i = 1, 11, 1 do
-			if i ~= iStateReligion then		
-				pCity:ConvertPercentFollowers(iPantheon, i, 100)
+		for iReligion in GameInfo.Religions() do
+			if iReligion ~= iStateReligion then		
+				pCity:ConvertPercentFollowers(iPantheon, iReligion, 100)
 			end
 		end
 	end

@@ -4,7 +4,6 @@
 -- Author: Infixo
 -- DateCreated: 2018-02-03
 --------------------------------------------------------------
-
 local ePromotionMilitary = GameInfoTypes.PROMOTION_COCA_MILITARY
 local ePromotionCivilian = GameInfoTypes.PROMOTION_COCA_WORKER
 

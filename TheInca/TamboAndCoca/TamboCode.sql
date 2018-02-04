@@ -28,9 +28,9 @@ VALUES		('RESOURCE_COCA',	null,			'TECH_CURRENCY',	'TXT_KEY_RESOURCE_COCA',	'TXT
 --promotions granted by Coca monopoly
 
 INSERT INTO UnitPromotions 
-		(Type, 						WorkRateMod,	MountainsDoubleMove, Description, 						Help, 									Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 			LostWithUpgrade, 	PediaType,	PediaEntry)
-VALUES	('PROMOTION_COCA_MILITARY',	0,				1,					'TXT_KEY_PROMOTION_COCA_MILITARY',	'TXT_KEY_PROMOTION_COCA_MILITARY_HELP', 'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	1,					null,		null),
-		('PROMOTION_COCA_WORKER',	15,				0,					'TXT_KEY_PROMOTION_COCA_WORKER',	'TXT_KEY_PROMOTION_COCA_WORKER_HELP', 	'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	1, 					null, 		null);
+		(Type, 						WorkRateMod,	MountainsDoubleMove, Description, 						Help, 									Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 			LostWithUpgrade, 	PediaType,		PediaEntry)
+VALUES	('PROMOTION_COCA_MILITARY',	0,				1,					'TXT_KEY_PROMOTION_COCA_MILITARY',	'TXT_KEY_PROMOTION_COCA_MILITARY_HELP', 'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	1, 					'PEDIA_SHARED',	'TXT_KEY_PROMOTION_COCA_MILITARY'),
+		('PROMOTION_COCA_WORKER',	15,				0,					'TXT_KEY_PROMOTION_COCA_WORKER',	'TXT_KEY_PROMOTION_COCA_WORKER_HELP', 	'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	1, 					'PEDIA_SHARED',	'TXT_KEY_PROMOTION_COCA_WORKER');
 
 INSERT INTO UnitPromotions_Terrains
 	(PromotionType, 			TerrainType, 		Attack, Defense)
