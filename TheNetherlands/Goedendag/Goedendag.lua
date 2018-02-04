@@ -8,7 +8,7 @@ local iGoedendagEffect = GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFE
 
 function GoedendagBonus(iPlayer)
 	local pPlayer = Players[iPlayer]
-	print("poszlo")
+
 	for pUnit in pPlayer:Units() do
 		if pUnit:GetUnitCombatType() >= 0 and pUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND then
 			local bInRange = pUnit:IsWithinDistanceOfUnitPromotion(iGoedendag, 0, true, false)

@@ -5,7 +5,7 @@
 
 --GAP on construction of Yamato
 
-function YamatoOnBuild(iPlayer, iCity, iUnit)
+--[[function YamatoOnBuild(iPlayer, iCity, iUnit)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
@@ -28,4 +28,4 @@ function YamatoOnDeath(iPlayerKiller, iPlayerKillee, KillerUnitType, KilledUnitT
 end
 			
 GameEvents.CityTrained.Add(YamatoOnBuild)
-GameEvents.UnitKilledInCombat.Add(YamatoOnDeath)
+GameEvents.UnitKilledInCombat.Add(YamatoOnDeath)--]]

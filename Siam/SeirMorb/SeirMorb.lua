@@ -61,7 +61,7 @@ function CroachingTigerBonusMove(iPlayer, iUnit, iX, iY)
 	end
 end
 
-function CroachingTigerBonusTrained(iPlayer, iCity, iUnit)
+--[[function CroachingTigerBonusTrained(iPlayer, iCity, iUnit)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
@@ -78,7 +78,7 @@ function CroachingTigerBonusTrained(iPlayer, iCity, iUnit)
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_1, true)
 		end
 	end
-end
+end]]--
 
 function CroachingTigerBonusCreated(iPlayer, iUnit, iUnitType, iX, iY)
 	local pPlayer = Players[iPlayer]
@@ -100,6 +100,6 @@ function CroachingTigerBonusCreated(iPlayer, iUnit, iUnitType, iX, iY)
 end
 
 GameEvents.UnitCreated.Add(CroachingTigerBonusCreated)
-GameEvents.CityTrained.Add(CroachingTigerBonusTrained)
+--GameEvents.CityTrained.Add(CroachingTigerBonusTrained)
 GameEvents.PlayerDoTurn.Add(CroachingTigerBonusStand)
 GameEvents.UnitSetXY.Add(CroachingTigerBonusMove)

@@ -186,23 +186,17 @@
 		
 		<!-- Ballista -->
 		<!-- Created by adan_eslavo on 30/12/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS">
-			<Text>Legatus Legionis</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_HELP">
-			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Flat, but not hindering Terrain to all Roman Siege Units within 2 tiles[ENDCOLOR].</Text>
-		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA">
 			<Text>Legatus Legionis</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA_HELP">
-			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Flat, but not hindering Terrain if Great General is within 2 tiles[ENDCOLOR].</Text>
+			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Open Terrain[ENDCOLOR] if unit [COLOR_POSITIVE_TEXT]starts turn within 2 tiles from Great General[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT">
 			<Text>Siege Mobility</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT_HELP">
-			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Open Terrain if within 2 tiles of a Great General[ENDCOLOR].</Text>
+			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Open Terrain[ENDCOLOR].</Text>
 		</Row>
 
 		<!-- Cacadores -->
@@ -774,7 +768,7 @@
 			<Text>Goedendag!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_HELP">
-			<Text>+10% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR]. +10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to all adjacent Friendly Units[ENDCOLOR].</Text>
+			<Text>+10% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR]. +10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to all adjacent Friendly Units for one turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT">
 			<Text>Golden Spurs</Text>
@@ -908,7 +902,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_HELP">
 			<Text>
-				+7% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for each adjacent Enemy Unit[ENDCOLOR].
+				+7% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for each adjacent Enemy Unit for one turn[ENDCOLOR].
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1">
@@ -1293,7 +1287,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE_HELP">
 			<Text>
-				+25% [COMBAT_STRENGTH] Combat Strength if unit is standing [COLOR_POSITIVE_TEXT]inside your, Friendly or Allied City-State Territory[ENDCOLOR].
+				+25% [COMBAT_STRENGTH] Combat Strength if unit [COLOR_POSITIVE_TEXT]starts turn inside your, Friendly or Allied City-State Territory[ENDCOLOR].
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS">
@@ -1373,17 +1367,11 @@
 
 		<!-- Legion (lua code in Ballista.lua)-->
 		<!-- Created by adan_eslavo on 30/12/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM">
-			<Text>Praefectus Castrorum</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_HELP">
-			<Text>+60% [ICON_WORKER] Work Rate [COLOR_POSITIVE_TEXT]to all Legion Units within 2 tiles[ENDCOLOR].</Text>
-		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION">
 			<Text>Praefectus Castrorum</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_ON_LEGION_HELP">
-			<Text>+60% [ICON_WORKER] Work Rate if [COLOR_POSITIVE_TEXT]Great General is within 2 tiles[ENDCOLOR].</Text>
+			<Text>+60% [ICON_WORKER] Work Rate if unit [COLOR_POSITIVE_TEXT]starts turn within 2 tiles from Great General[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM_EFFECT">
 			<Text>Camp Management</Text>

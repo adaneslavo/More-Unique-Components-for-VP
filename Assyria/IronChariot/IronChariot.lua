@@ -36,74 +36,20 @@ function IronChariotResourceCheck(iPlayer)
 	end
 end
 
-function FuryOfNergalCheckMovement(iPlayer, iUnit)
+function FuryOfNergalCheck(iPlayer)
 	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-	if not pUnit then return end
-	
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
-		FuryOfNergalUpdate(pPlayer, pUnit)
-	end
-
-	local iX, iY = pUnit:GetX(), pUnit:GetY()
-	for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-		local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
-		for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
-			local jUnit = pAdjacentPlot:GetUnit(k)
-			local jPlayer = jUnit:GetOwner()
-			if jUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
-				FuryOfNergalUpdate(Players[jPlayer], jUnit)
-			end
-		end
-	end
-end
-
-function FuryOfNergalCheckCreate(iPlayer, iUnit, iUnitType, iX, iY)
-	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-	if not pUnit then return end
-
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
-		FuryOfNergalUpdate(pPlayer, pUnit)
-	end
-
-	local iX, iY = pUnit:GetX(), pUnit:GetY()
-	for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-		local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
-		for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
-			local jUnit = pAdjacentPlot:GetUnit(k)
-			local jPlayer = jUnit:GetOwner()
-			if jUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
-				FuryOfNergalUpdate(Players[jPlayer], jUnit)
-			end
-		end
-	end
-end
-
-function FuryOfNergalCheckBuild(iPlayer, iCity, iUnit)
-	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-	if not pUnit then return end
-	
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
-		FuryOfNergalUpdate(pPlayer, pUnit)
-	end
-
-	local iX, iY = pUnit:GetX(), pUnit:GetY()
-	for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-		local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
-		for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
-			local jUnit = pAdjacentPlot:GetUnit(k)
-			local jPlayer = jUnit:GetOwner()
-			
-			if jUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
-				FuryOfNergalUpdate(Players[jPlayer], jUnit)
-			end
+	print("check")
+	for pUnit in pPlayer:Units() do
+		print("check2")
+		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
+			print("promotion")
+			FuryOfNergalUpdate(pPlayer, pUnit)
 		end
 	end
 end
 
 function FuryOfNergalUpdate(pPlayer, pUnit)
+	print("furyfunction")
 	pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1, false)
 	pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_2, false)
 	pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_3, false)
@@ -113,6 +59,7 @@ function FuryOfNergalUpdate(pPlayer, pUnit)
 	
 	local iNumEnemyUnitsNearby = 0
 	local iX, iY = pUnit:GetX(), pUnit:GetY()
+	
 	for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 		local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
 		for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
@@ -126,7 +73,7 @@ function FuryOfNergalUpdate(pPlayer, pUnit)
 			end
 		end
 	end
-
+	print(iNumEnemyUnitsNearby)
 	if iNumEnemyUnitsNearby == 1 then
 		pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1, true)
 	elseif iNumEnemyUnitsNearby == 2 then
@@ -143,6 +90,4 @@ function FuryOfNergalUpdate(pPlayer, pUnit)
 end
 
 GameEvents.PlayerDoTurn.Add(IronChariotResourceCheck)
-GameEvents.UnitSetXY.Add(FuryOfNergalCheckMovement)
-GameEvents.UnitCreated.Add(FuryOfNergalCheckCreate)
-GameEvents.CityTrained.Add(FuryOfNergalCheckBuild)
+GameEvents.PlayerEndTurnCompleted.Add(FuryOfNergalCheck)
