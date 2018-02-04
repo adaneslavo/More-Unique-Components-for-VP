@@ -3,13 +3,14 @@
 -- 2018-01-27 updated by Infixo
 --------------------------------------------------------------------------------------------------------------------------
 --4UC Tarkhan Migration promotion
-local unitClassCivilianID		 = GameInfoTypes["UNITCLASS_SETTLER"],["UNITCLASS_WORKER"]
+local unitClassSettlerID = GameInfoTypes.UNITCLASS_SETTLER
+local unitClassWorkerID = GameInfoTypes.UNITCLASS_WORKER
 local unitPromotionMigration = GameInfoTypes["PROMOTION_MIGRATION"]
 function HunMigration_PlayerDoTurn(playerID)
 	local player = Players[playerID]
 	if (not player:IsAlive()) then return end
 	for unit in player:Units() do
-		if unit:GetUnitClassType() == unitClassCivilianID then
+		if unit:GetUnitClassType() == unitClassSettlerID or unit:GetUnitClassType() == unitClassWorkerID then
 			local plot = unit:GetPlot()
 			if (plot:GetUnit() and plot:GetUnit():IsHasPromotion(unitPromotionMigration)) then
 				unit:ChangeMoves(120)
@@ -36,17 +37,16 @@ function BellumAlet(iPlayer, iUnit, iImprovement, iGold)
 			local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
 			for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
 				local jUnit = pAdjacentPlot:GetUnit(k)
-				local iTeam = pPlayer:GetTeam()
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vUnitPosition = PositionCalculator(jUnit:GetX(), jUnit:GetY())
-						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_GREEN]Bellum Alet[ENDCOLOR]", 1)
-					end
-					jUnit:ChangeDamage(-10, pPlayer)
+				--local iTeam = pPlayer:GetTeam()
+				jUnit:ChangeDamage(-10, pPlayer)
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vUnitPosition = PositionCalculator(jUnit:GetX(), jUnit:GetY())
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_GREEN]Bellum Alet[ENDCOLOR]", 1)
 				end
-			end
-		end
-	end
-end
+			end -- units
+		end -- for
+	end -- promo
+end -- function
 
 function PositionCalculator(i1, i2)
     return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))

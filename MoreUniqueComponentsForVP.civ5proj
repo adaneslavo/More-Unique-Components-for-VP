@@ -1090,13 +1090,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Tambo</Name>
         <Description>Adds Coca Monopoly to Game</Description>
-        <FileName>Inca/Tambo/Tambo.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>HorseArcher</Name>
-        <Description>Adds Horse Archer promotion</Description>
-        <FileName>Huns/HorseArcherChange/HorseArcherChange.lua</FileName>
+        <FileName>TheInca/TamboAndCoca/Tambo.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
