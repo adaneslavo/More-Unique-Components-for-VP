@@ -36,8 +36,8 @@ VALUES
 -- Units
 --------------------------------
 INSERT INTO Units 	
-		(Type, 				Class,	NoBadGoodies, PrereqTech, RangedCombat, Range, Special, Combat, Cost, ObsoleteTech, 		GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, Description, 					 Civilopedia, 						Strategy, 		 						Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 			UnitFlagIconOffset,	UnitFlagAtlas,	 PortraitIndex, IconAtlas,				MoveRate)
-SELECT	'UNIT_3UC_CHASQUI',	Class,	NoBadGoodies, PrereqTech, RangedCombat, Range, Special, Combat, Cost, 'TECH_STEAM_POWER', 	GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, 'TXT_KEY_UNIT_3UC_CHASQUI', 	'TXT_KEY_UNIT_3UC_CHASQUI_TEXT',	'TXT_KEY_UNIT_3UC_CHASQUI_STRATEGY',  	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_CHASQUI',	0,					'CHASQUI_FLAG',	 0,				'CHASQUI_ICON_ATLAS',	MoveRate
+		(Type, 			Class,	NoBadGoodies, PrereqTech, RangedCombat, Range, Special, Combat, Cost, ObsoleteTech, 		GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, Description, 			 Civilopedia, 				Strategy, 		 		Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 		UnitFlagIconOffset,	UnitFlagAtlas,	 PortraitIndex, IconAtlas,		MoveRate)
+SELECT		'UNIT_3UC_CHASQUI',	Class,	NoBadGoodies, PrereqTech, RangedCombat, Range, Special, Combat, Cost, 'TECH_STEAM_POWER', 	GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, 'TXT_KEY_UNIT_3UC_CHASQUI', 	'TXT_KEY_UNIT_3UC_CHASQUI_TEXT',	'TXT_KEY_UNIT_3UC_CHASQUI_STRATEGY',  	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_CHASQUI',	0,			'CHASQUI_FLAG',	 0,		'CHASQUI_ICON_ATLAS',	MoveRate
 FROM Units WHERE Type = 'UNIT_SCOUT';
 --==========================================================================================================================
 -- UnitPromotions
@@ -58,8 +58,8 @@ VALUES
 -- UnitGameplay2DScripts
 --------------------------------		
 INSERT INTO UnitGameplay2DScripts 	
-		(UnitType, 					SelectionSound, FirstSelectionSound)
-SELECT	'UNIT_3UC_CHASQUI', 	SelectionSound, FirstSelectionSound
+		(UnitType, 		SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_3UC_CHASQUI', 	SelectionSound, FirstSelectionSound
 FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_SCOUT';
 --------------------------------		
 -- Unit_AITypes
@@ -99,7 +99,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SCOUT';
 
 INSERT INTO Unit_FreePromotions 	
 		(UnitType, 					PromotionType)
-VALUES	('UNIT_3UC_CHASQUI',		'PROMOTION_ALTITUDE_TRAINING'),
+VALUES		('UNIT_3UC_CHASQUI',		'PROMOTION_ALTITUDE_TRAINING'),
 		('UNIT_3UC_CHASQUI',		'PROMOTION_CHASQUI_GOLD'),
 		('UNIT_3UC_CHASQUI',		'PROMOTION_CHASQUI_HEAL');
 
