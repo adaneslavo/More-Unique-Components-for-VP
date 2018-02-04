@@ -37,17 +37,17 @@ VALUES
 INSERT INTO Building_ResourceYieldChanges
 		(BuildingType, ResourceType, YieldType, Yield)
 SELECT	'BUILDING_IZIKO', ResourceType, YieldType, Yield
-FROM Buildings WHERE Type = 'BUILDING_AMPHITHEATER';
+FROM Building_ResourceYieldChanges WHERE Type = 'BUILDING_AMPHITHEATER';
 
 INSERT INTO Building_BuildingClassYieldChanges
 		(BuildingType, 		BuildingClassType, YieldType, YieldChange)
 SELECT	'BUILDING_IZIKO', 	BuildingClassType, YieldType, YieldChange
-FROM Buildings WHERE Type = 'BUILDING_AMPHITHEATER';
+FROM Building_BuildingClassYieldChanges WHERE Type = 'BUILDING_AMPHITHEATER';
 	
 INSERT INTO Building_SpecificGreatPersonRateModifier
 		(BuildingType, 		SpecialistType, Modifier)
 SELECT	'BUILDING_IZIKO', 	SpecialistType, Modifier
-FROM Buildings WHERE Type = 'BUILDING_AMPHITHEATER';
+FROM Building_SpecificGreatPersonRateModifier WHERE Type = 'BUILDING_AMPHITHEATER';
 	
 INSERT INTO Building_ClassesNeededInCity
 	(BuildingType, BuildingClassType)

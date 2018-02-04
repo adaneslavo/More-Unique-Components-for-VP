@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
@@ -641,32 +641,32 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Huns/AltiCur/AltiCurCode.sql</FileName>
+        <FileName>TheHuns/AltiCur/AltiCurCode.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Huns/Tarkhan/1.TarkhanArt.sql</FileName>
+        <FileName>TheHuns/Tarkhan/1.TarkhanArt.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Huns/Tarkhan/3.TarkhanCode.sql</FileName>
+        <FileName>TheHuns/Tarkhan/3.TarkhanCode.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Inca/Chasqui/Chasqui.sql</FileName>
+        <FileName>TheInca/Chasqui/Chasqui.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Inca/TamboAndCoca/TamboArt.sql</FileName>
+        <FileName>TheInca/TamboAndCoca/TamboArt.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Inca/TamboAndCoca/TamboCode.sql</FileName>
+        <FileName>TheInca/TamboAndCoca/TamboCode.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -691,22 +691,17 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Japan/Yamato/AnimationsAndEffects/civ5artdefines_viseffects.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Japan/Yamato/1.Yamato.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Zulu/Indaba/3UC_ZULU.sql</FileName>
+        <FileName>TheZulu/Indaba/3UC_ZULU.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Zulu/Iziko/1.IzikoCode.sql</FileName>
+        <FileName>TheZulu/Iziko/1.IzikoCode.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1003,12 +998,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Sukritact_SaveUtils.lua</Name>
-        <Description>Sukritact's save utils</Description>
-        <FileName>!Utils/Sukritact_SaveUtils.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Huey Teocalli</Name>
         <Description>Huey Teocalli improvement on golden age</Description>
         <FileName>TheAztecs/Huey Teocalli/Huey Teocalli.lua</FileName>
@@ -1095,7 +1084,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Chasqui</Name>
         <Description>Adds Chasquiwasi to game</Description>
-        <FileName>Inca/Chasqui/Chasqui.lua</FileName>
+        <FileName>TheInca/Chasqui/Chasqui.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1113,7 +1102,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Tarkhan</Name>
         <Description>Adds Tarkhan Promotions</Description>
-        <FileName>Huns/Tarkhan/2.Tarkhan.lua</FileName>
+        <FileName>TheHuns/Tarkhan/2.Tarkhan.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1203,10 +1192,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="!Utils\Sukritact_SaveUtils.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1878,199 +1863,195 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\AltiCurCode.sql">
+    <Content Include="TheHuns\AltiCur\AltiCurCode.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt128.dds">
+    <Content Include="TheHuns\AltiCur\yurt128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt256.dds">
+    <Content Include="TheHuns\AltiCur\yurt256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt45.dds">
+    <Content Include="TheHuns\AltiCur\yurt45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt64.dds">
+    <Content Include="TheHuns\AltiCur\yurt64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\1.TarkhanArt.sql">
+    <Content Include="TheHuns\Tarkhan\1.TarkhanArt.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\2.Tarkhan.lua">
+    <Content Include="TheHuns\Tarkhan\2.Tarkhan.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\3.TarkhanCode.sql">
+    <Content Include="TheHuns\Tarkhan\3.TarkhanCode.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey.dds">
+    <Content Include="TheHuns\Tarkhan\Horseman_Turkey.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey.fxsxml">
+    <Content Include="TheHuns\Tarkhan\Horseman_Turkey.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey.gr2">
+    <Content Include="TheHuns\Tarkhan\Horseman_Turkey.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey_gloss.dds">
+    <Content Include="TheHuns\Tarkhan\Horseman_Turkey_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey_Horse.dds">
+    <Content Include="TheHuns\Tarkhan\Horseman_Turkey_Horse.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_AlanCavalryUnitFlag_32.dds">
+    <Content Include="TheHuns\Tarkhan\JFD_AlanCavalryUnitFlag_32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_128.dds">
+    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_256.dds">
+    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_32.dds">
+    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_45.dds">
+    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_64.dds">
+    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_80.dds">
+    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\no_gloss.dds">
+    <Content Include="TheHuns\Tarkhan\no_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\sv_AlanCavalry.dds">
+    <Content Include="TheHuns\Tarkhan\sv_AlanCavalry.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui.lua">
+    <Content Include="TheInca\Chasqui\Chasqui.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui.sql">
+    <Content Include="TheInca\Chasqui\Chasqui.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui128.dds">
+    <Content Include="TheInca\Chasqui\Chasqui128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui256.dds">
+    <Content Include="TheInca\Chasqui\Chasqui256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui32.dds">
+    <Content Include="TheInca\Chasqui\Chasqui45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui45.dds">
+    <Content Include="TheInca\Chasqui\Chasqui64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui64.dds">
+    <Content Include="TheInca\Chasqui\Chasqui80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui80.dds">
+    <Content Include="TheInca\Chasqui\Chasqui_Flag.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui_Flag.dds">
+    <Content Include="TheInca\Chasqui\Chasqui_SV.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui_SV.dds">
+    <Content Include="TheInca\Chasqui\IncaScout.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\IncaScout.dds">
+    <Content Include="TheInca\Chasqui\IncaScout.fbx">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\IncaScout.fbx">
+    <Content Include="TheInca\Chasqui\IncaScout.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\IncaScout.fxsxml">
+    <Content Include="TheInca\Chasqui\IncaScout.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\IncaScout.gr2">
+    <Content Include="TheInca\Chasqui\IncaScout_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\IncaScout_sref.dds">
+    <Content Include="TheInca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.dds">
+    <Content Include="TheInca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.ggxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\TamboAndCoca\CocaArt\CocaLeaf\sv_coca.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons32.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons45.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons64.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons80.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="TheInca\TamboAndCoca\Tambo.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.ggxml">
+    <Content Include="TheInca\TamboAndCoca\TamboArt.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\sv_coca.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\Tambo.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\TamboArt.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\TamboCode.sql">
+    <Content Include="TheInca\TamboAndCoca\TamboCode.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2107,526 +2088,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Japan\Yamato\2.Yamato.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\civ5artdefines_viseffects.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Animations Export.jpg">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Animations Import.jpg">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Celtic_MD_DieA.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Celtic_MD_DieA_Fade.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Celtic_MD_Fidget.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Celtic_MD_FortifyA.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Celtic_MD_FortifyA_Idle.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Celtic_MD_HurtA.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Celtic_MD_Idle.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Celtic_MD_Run.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Celtic_MD_StrikeA.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Chinese_MD_DieA.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Chinese_MD_DieA_Fade.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Chinese_MD_Fidget.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Chinese_MD_FortifyA.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Chinese_MD_FortifyA_Idle.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Chinese_MD_HurtA.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Chinese_MD_Idle.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Chinese_MD_Run.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\Chariot_Chinese_MD_StrikeA.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\chariot_md_diea.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\chariot_md_diea_fade.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\chariot_md_fidget.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\chariot_md_fortifya.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\chariot_md_fortifya_idle.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\chariot_md_hurta.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\chariot_md_idle.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\chariot_md_run.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\chariot_md_strikea.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\egyptianwarchariot_md_diea.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\egyptianwarchariot_md_diea_fade.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\egyptianwarchariot_md_fidget.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\egyptianwarchariot_md_fortifya.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\egyptianwarchariot_md_fortifya_idle.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\egyptianwarchariot_md_hurta.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\egyptianwarchariot_md_idle.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\egyptianwarchariot_md_run.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\egyptianwarchariot_md_strikea.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\fx_triggers_Chariot_Civ4.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\[Chariot_XML_Code].txt">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_attack_city_to_run.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_attack_to_run_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_bombard_defend_loop_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_civilian_activate_captured.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_civilian_death_final.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_civilian_enter_bombard_defend.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_civilian_state_01.fsmxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_combat_ready_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_death_final_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_death_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_enter_bombard_defend_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_enter_combat_ready_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_enter_fortify.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_enter_sleep_civilian.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_fidgets_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_fortify_fidget_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_fortify_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_fortify_leave_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_fortify_to_idle_a.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_idle_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_idle_offset_continue_true_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_leave_bombard_defend_trans_idle_a_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_leave_combat_ready.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_melee_attacks.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_modern_ship_attacks.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_attack_city_to_run.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_attack_to_run_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_bombard_defend_loop_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_civilian_activate_captured.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_civilian_death_final.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_civilian_enter_bombard_defend.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_combat_ready_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_death_final_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_death_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_enter_bombard_defend_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_enter_combat_ready_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_enter_fortify.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_enter_sleep_civilian.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_fidgets_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_fortify_fidget_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_fortify_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_fortify_leave_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_fortify_to_idle_a.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_idle_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_idle_offset_continue_true_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_leave_bombard_defend_trans_idle_a_graph.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_leave_combat_ready.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_melee_attacks.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_modern_ship_attacks.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_running_loop.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_run_no_charge_loop.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_run_start_civilian.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_start_running.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_stop_running.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_stop_running_civilian.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_ms_transitions_for_idles.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_running_loop.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_run_no_charge_loop.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_run_start_civilian.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_start_running.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_stop_running.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_stop_running_civilian.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_aim_transitions_for_idles.dge">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_antiair_vehicle_1gun.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_antiair_vehicle_2gun.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_antiair_vehicle_3gun.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_antiair_vehicle_4gun.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_artillery.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_battleship.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_battleship_4turret.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_Cruiser.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_destroyer.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_EarlyJet.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_EarlyTank_1gun.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_EarlyTank_2gun.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_fighter_2Propellers.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_infantry.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_jetfighter.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_Katyusha.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_modernarmor.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_paratrooper.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_paratrooper_mg.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_tank.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_tank_lightfire.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_tank_mg_1gun.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_fx_triggers_tank_mg_2gun.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_mechanized_aim_state_01.fsmxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\edited_modern_ship_aim_state_01.fsmxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\AnimationsAndEffects\[Readme].txt">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -5634,79 +5095,79 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3IzuUnitAlphaAtlas.dds">
+    <Content Include="TheZulu\Indaba\3IzuUnitAlphaAtlas.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3UC_ZULU.sql">
+    <Content Include="TheZulu\Indaba\3UC_ZULU.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral128.dds">
+    <Content Include="TheZulu\Indaba\3ZuluGeneral128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral256.dds">
+    <Content Include="TheZulu\Indaba\3ZuluGeneral256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral45.dds">
+    <Content Include="TheZulu\Indaba\3ZuluGeneral45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral64.dds">
+    <Content Include="TheZulu\Indaba\3ZuluGeneral64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral80.dds">
+    <Content Include="TheZulu\Indaba\3ZuluGeneral80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.blend">
+    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.blend">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.br2">
+    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.br2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.dds">
+    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.fxsxml">
+    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.gr2">
+    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear_sref.dds">
+    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\1.IzikoCode.sql">
+    <Content Include="TheZulu\Iziko\1.IzikoCode.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko128.dds">
+    <Content Include="TheZulu\Iziko\Iziko128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko256.dds">
+    <Content Include="TheZulu\Iziko\Iziko256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko45.dds">
+    <Content Include="TheZulu\Iziko\Iziko45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko64.dds">
+    <Content Include="TheZulu\Iziko\Iziko64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\sv_3izu.dds">
+    <Content Include="TheZulu\Iziko\sv_3izu.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5746,26 +5207,22 @@ Latest changes: see changelog file.</Description>
     <Folder Include="England\Longbowman" />
     <Folder Include="England\WhiteTower" />
     <Folder Include="Egypt" />
-    <Folder Include="!Utils" />
     <Folder Include="!SharedAssets" />
     <Folder Include="Germany\Slaganz\3DModel" />
     <Folder Include="Germany\TeutonicOrder" />
     <Folder Include="Germany\Slaganz" />
-    <Folder Include="Huns\" />
-    <Folder Include="Huns\AltiCur\" />
-    <Folder Include="Huns\HorseArcherChange" />
-    <Folder Include="Huns\Tarkhan\" />
-    <Folder Include="Inca\" />
-    <Folder Include="Inca\Chasqui\" />
-    <Folder Include="Inca\TamboAndCoca\" />
-    <Folder Include="Inca\TamboAndCoca\CocaArt\" />
-    <Folder Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\" />
+    <Folder Include="TheHuns" />
+    <Folder Include="TheHuns\AltiCur" />
+    <Folder Include="TheHuns\HorseArcherChange" />
+    <Folder Include="TheHuns\Tarkhan" />
+    <Folder Include="TheInca" />
+    <Folder Include="TheInca\Chasqui" />
+    <Folder Include="TheInca\TamboAndCoca" />
+    <Folder Include="TheInca\TamboAndCoca\CocaArt" />
+    <Folder Include="TheInca\TamboAndCoca\CocaArt\CocaLeaf" />
     <Folder Include="Japan\" />
     <Folder Include="Japan\Kabuki\" />
     <Folder Include="Japan\Yamato\" />
-    <Folder Include="Japan\Yamato\AnimationsAndEffects\" />
-    <Folder Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\" />
-    <Folder Include="Japan\Yamato\AnimationsAndEffects\Edited_Animations\Animations_Chariot\" />
     <Folder Include="Korea\" />
     <Folder Include="Korea\Chaebol\" />
     <Folder Include="Korea\TurtleShip\" />
@@ -5916,10 +5373,10 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Venice\" />
     <Folder Include="Venice\Fusta\" />
     <Folder Include="Venice\Laguna\" />
-    <Folder Include="Zulu\" />
-    <Folder Include="Zulu\Indaba\" />
-    <Folder Include="Zulu\Indaba\AlternativeUnitModel\" />
-    <Folder Include="Zulu\Iziko\" />
+    <Folder Include="TheZulu" />
+    <Folder Include="TheZulu\Indaba" />
+    <Folder Include="TheZulu\Indaba\AlternativeUnitModel" />
+    <Folder Include="TheZulu\Iziko" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>
