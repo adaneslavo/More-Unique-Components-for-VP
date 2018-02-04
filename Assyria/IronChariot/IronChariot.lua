@@ -38,18 +38,15 @@ end
 
 function FuryOfNergalCheck(iPlayer)
 	local pPlayer = Players[iPlayer]
-	--print("check")
+
 	for pUnit in pPlayer:Units() do
-		--print("check2")
 		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL) then
-			--print("promotion")
 			FuryOfNergalUpdate(pPlayer, pUnit)
 		end
 	end
 end
 
 function FuryOfNergalUpdate(pPlayer, pUnit)
-	print("furyfunction")
 	pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1, false)
 	pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_2, false)
 	pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_3, false)

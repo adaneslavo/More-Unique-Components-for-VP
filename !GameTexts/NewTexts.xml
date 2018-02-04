@@ -300,13 +300,7 @@
 			<Text>Chasquiwasi</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP">
-			<Text>Heals 15HP every turn in [COLOR_POSITIVE_TEXT]owned territory[ENDCOLOR], regardless of action.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY">
-			<Text>Chasquiwasi</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_DUMMY_HELP">
-			<Text>Heals 15HP every turn in [COLOR_POSITIVE_TEXT]owned territory[ENDCOLOR], regardless of action.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]At the beginning of its turn[ENDCOLOR] unit Heals 5 HP if it is standing [COLOR_POSITIVE_TEXT]inside Friendly Territory[ENDCOLOR].</Text>
 		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->
@@ -1443,7 +1437,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP">
 			<Text>
-				When starting turn next to a friendly city, that city gains +5 [ICON_STRENGTH] Combat Strength this turn.
+				+5 [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to adjacent Friendly Cities for one turn[ENDCOLOR].
 			</Text>
 		</Row>
 		
@@ -2131,13 +2125,13 @@
 			<Text>Father of the Horse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_HELP">
-			<Text>+15% [ICON_STRENGTH] Combat Strength for all Mounted Units within 2 tiles.</Text>
+			<Text>+15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to all Friendly Mounted Units within 2 tiles for one turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_EFFECT">
 			<Text>Nearby Sofa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_EFFECT_HELP">
-			<Text>+15% [ICON_STRENGTH] Combat Strength.</Text>
+			<Text>+15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from Sofa[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_3UC_SOFA">
 			<Text>Sofa</Text>

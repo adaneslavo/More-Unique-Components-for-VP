@@ -11,11 +11,7 @@ function GoedendagBonus(iPlayer)
 
 	for pUnit in pPlayer:Units() do
 		if pUnit:GetUnitCombatType() >= 0 and pUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND then
-			local bInRange = pUnit:IsWithinDistanceOfUnitPromotion(iGoedendag, 0, true, false)
-
-			if not bInRange then
-				bInRange = pUnit:IsAdjacentToUnitPromotion(iGoedendag, true, false)
-			end
+			local bInRange = pUnit:IsWithinDistanceOfUnitPromotion(iGoedendag, 1, true, false)
 
 			pUnit:SetHasPromotion(iGoedendagEffect, bInRange)
 		end

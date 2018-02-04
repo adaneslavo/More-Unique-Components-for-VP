@@ -126,12 +126,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheIroquois/Prowler/Prowler.sql</FileName>
+        <FileName>Iroquois/Prowler/Prowler.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheIroquois/SachemsCouncil/SachemsCouncil.sql</FileName>
+        <FileName>Iroquois/SachemsCouncil/SachemsCouncil.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -161,22 +161,22 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheCelts/Boudicca/BoudiccaFlavors.sql</FileName>
+        <FileName>Celts/Boudicca/BoudiccaFlavors.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheCelts/ScythedChariot/ScythedChariot.sql</FileName>
+        <FileName>Celts/ScythedChariot/ScythedChariot.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheCelts/Oppidum/Oppidum.sql</FileName>
+        <FileName>Celts/Oppidum/Oppidum.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheCelts/PictishWarrior/PictishWarrior.sql</FileName>
+        <FileName>Celts/PictishWarrior/PictishWarrior.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -191,22 +191,22 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheOttomans/Suleiman/SuleimanStartingBias.sql</FileName>
+        <FileName>Ottomans/Suleiman/SuleimanStartingBias.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheOttomans/Suleiman/SuleimanFlavors.sql</FileName>
+        <FileName>Ottomans/Suleiman/SuleimanFlavors.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheOttomans/GreatTurkishBombard/GreatTurkishBombard.sql</FileName>
+        <FileName>Ottomans/GreatTurkishBombard/GreatTurkishBombard.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheOttomans/Tersane/Tersane.sql</FileName>
+        <FileName>Ottomans/Tersane/Tersane.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -236,12 +236,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheShoshone/YellowBrow/YellowBrow.sql</FileName>
+        <FileName>Shoshone/YellowBrow/YellowBrow.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheShoshone/BuffaloPound/BuffaloPound.sql</FileName>
+        <FileName>Shoshone/BuffaloPound/BuffaloPound.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -396,32 +396,32 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheNetherlands/Goedendag/Goedendag.sql</FileName>
+        <FileName>Netherlands/Goedendag/Goedendag.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheNetherlands/Waag/Waag.sql</FileName>
+        <FileName>Netherlands/Waag/Waag.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheNetherlands/Polder/Polder.sql</FileName>
+        <FileName>Netherlands/Polder/Polder.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheMaya/Holkan/Holkan.sql</FileName>
+        <FileName>Maya/Holkan/Holkan.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheMaya/Pitz/Pitz.sql</FileName>
+        <FileName>Maya/Pitz/Pitz.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheMaya/Atlatlist/Atlatlist.sql</FileName>
+        <FileName>Maya/Atlatlist/Atlatlist.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -471,7 +471,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheAztecs/SacrificialCaptives/SacrificialCaptives.sql</FileName>
+        <FileName>Aztecs/SacrificialCaptives/SacrificialCaptives.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -516,12 +516,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheAztecs/Eagle/Eagle.sql</FileName>
+        <FileName>Aztecs/Eagle/Eagle.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheAztecs/Huey Teocalli/Huey Teocalli.sql</FileName>
+        <FileName>Aztecs/Huey Teocalli/Huey Teocalli.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -641,32 +641,32 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheHuns/AltiCur/AltiCurCode.sql</FileName>
+        <FileName>Huns/AltiCur/AltiCurCode.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheHuns/Tarkhan/1.TarkhanArt.sql</FileName>
+        <FileName>Huns/Tarkhan/1.TarkhanArt.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheHuns/Tarkhan/3.TarkhanCode.sql</FileName>
+        <FileName>Huns/Tarkhan/3.TarkhanCode.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheInca/Chasqui/Chasqui.sql</FileName>
+        <FileName>Inca/Chasqui/Chasqui.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheInca/TamboAndCoca/TamboArt.sql</FileName>
+        <FileName>Inca/TamboAndCoca/TamboArt.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheInca/TamboAndCoca/TamboCode.sql</FileName>
+        <FileName>Inca/TamboAndCoca/TamboCode.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -696,12 +696,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheZulu/Indaba/3UC_ZULU.sql</FileName>
+        <FileName>Zulu/Indaba/3UC_ZULU.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>TheZulu/Iziko/1.IzikoCode.sql</FileName>
+        <FileName>Zulu/Iziko/1.IzikoCode.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -742,13 +742,13 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Sachems Council</Name>
         <Description>Adds Diplomatic Reciprocity promotion to Great Diplomats and adds 1 Happiness for every Defensive Pact and War.</Description>
-        <FileName>TheIroquois/SachemsCouncil/SachemsCouncil.lua</FileName>
+        <FileName>Iroquois/SachemsCouncil/SachemsCouncil.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Scythed Chariot</Name>
         <Description>Adds Scythe promotion.</Description>
-        <FileName>TheCelts/ScythedChariot/ScythedChariot.lua</FileName>
+        <FileName>Celts/ScythedChariot/ScythedChariot.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -772,19 +772,19 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Oppidum</Name>
         <Description>Adds HP to cities.</Description>
-        <FileName>TheCelts/Oppidum/Oppidum.lua</FileName>
+        <FileName>Celts/Oppidum/Oppidum.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Druidic Lore</Name>
         <Description>Modifies Celtic UA.</Description>
-        <FileName>TheCelts/DruidicLore/DruidicLore.lua</FileName>
+        <FileName>Celts/DruidicLore/DruidicLore.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Tersane</Name>
         <Description>Adds Prize Ships promotion to naval melee units.</Description>
-        <FileName>TheOttomans/Tersane/Tersane.lua</FileName>
+        <FileName>Ottomans/Tersane/Tersane.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -796,13 +796,13 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Yellow Brow</Name>
         <Description>Adds Big Horse Dance promotion.</Description>
-        <FileName>TheShoshone/YellowBrow/YellowBrow.lua</FileName>
+        <FileName>Shoshone/YellowBrow/YellowBrow.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Buffalo Pound</Name>
         <Description>Places Bison source on map.</Description>
-        <FileName>TheShoshone/BuffaloPound/BuffaloPound.lua</FileName>
+        <FileName>Shoshone/BuffaloPound/BuffaloPound.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -880,25 +880,25 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Goedendag</Name>
         <Description>Adds Goedendag and Burgemeeste promotions.</Description>
-        <FileName>TheNetherlands/Goedendag/Goedendag.lua</FileName>
+        <FileName>Netherlands/Goedendag/Goedendag.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Waag</Name>
         <Description>Adds GPP and Defense for every imported and exported luxury.</Description>
-        <FileName>TheNetherlands/Waag/Waag.lua</FileName>
+        <FileName>Netherlands/Waag/Waag.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Holkan</Name>
         <Description>Adds Renewal Cycle promotion.</Description>
-        <FileName>TheMaya/Holkan/Holkan.lua</FileName>
+        <FileName>Maya/Holkan/Holkan.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Pitz</Name>
         <Description>Adds K'atun Ahaw promotion. Adds B'ak'tun bonus.</Description>
-        <FileName>TheMaya/Pitz/Pitz.lua</FileName>
+        <FileName>Maya/Pitz/Pitz.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -916,13 +916,13 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Sacrificial Captives</Name>
         <Description>Adds dummy promotion to all Aztec units.</Description>
-        <FileName>TheAztecs/SacrificialCaptives/SacrificialCaptives.lua</FileName>
+        <FileName>Aztecs/SacrificialCaptives/SacrificialCaptives.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Great Turkish Bombard</Name>
         <Description>Melts Bombard after shot.</Description>
-        <FileName>TheOttomans/GreatTurkishBombard/GreatTurkishBombard.lua</FileName>
+        <FileName>Ottomans/GreatTurkishBombard/GreatTurkishBombard.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -940,7 +940,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Polder</Name>
         <Description>Allows building Polder on Marsh.</Description>
-        <FileName>TheNetherlands/Polder/Polder.lua</FileName>
+        <FileName>Netherlands/Polder/Polder.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1000,13 +1000,13 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Huey Teocalli</Name>
         <Description>Huey Teocalli improvement on golden age</Description>
-        <FileName>TheAztecs/Huey Teocalli/Huey Teocalli.lua</FileName>
+        <FileName>Aztecs/Huey Teocalli/Huey Teocalli.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Eagle</Name>
         <Description>Captives of War promotion for Eagle</Description>
-        <FileName>TheAztecs/Eagle/Eagle.lua</FileName>
+        <FileName>Aztecs/Eagle/Eagle.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1084,19 +1084,19 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Chasqui</Name>
         <Description>Adds Chasquiwasi to game</Description>
-        <FileName>TheInca/Chasqui/Chasqui.lua</FileName>
+        <FileName>Inca/Chasqui/Chasqui.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Tambo</Name>
         <Description>Adds Coca Monopoly to Game</Description>
-        <FileName>TheInca/TamboAndCoca/Tambo.lua</FileName>
+        <FileName>Inca/TamboAndCoca/Tambo.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Tarkhan</Name>
         <Description>Adds Tarkhan Promotions</Description>
-        <FileName>TheHuns/Tarkhan/2.Tarkhan.lua</FileName>
+        <FileName>Huns/Tarkhan/2.Tarkhan.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1857,195 +1857,195 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\AltiCur\AltiCurCode.sql">
+    <Content Include="Huns\AltiCur\AltiCurCode.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\AltiCur\yurt128.dds">
+    <Content Include="Huns\AltiCur\yurt128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\AltiCur\yurt256.dds">
+    <Content Include="Huns\AltiCur\yurt256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\AltiCur\yurt45.dds">
+    <Content Include="Huns\AltiCur\yurt45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\AltiCur\yurt64.dds">
+    <Content Include="Huns\AltiCur\yurt64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\1.TarkhanArt.sql">
+    <Content Include="Huns\Tarkhan\1.TarkhanArt.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\2.Tarkhan.lua">
+    <Content Include="Huns\Tarkhan\2.Tarkhan.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\3.TarkhanCode.sql">
+    <Content Include="Huns\Tarkhan\3.TarkhanCode.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\Horseman_Turkey.dds">
+    <Content Include="Huns\Tarkhan\Horseman_Turkey.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\Horseman_Turkey.fxsxml">
+    <Content Include="Huns\Tarkhan\Horseman_Turkey.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\Horseman_Turkey.gr2">
+    <Content Include="Huns\Tarkhan\Horseman_Turkey.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\Horseman_Turkey_gloss.dds">
+    <Content Include="Huns\Tarkhan\Horseman_Turkey_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\Horseman_Turkey_Horse.dds">
+    <Content Include="Huns\Tarkhan\Horseman_Turkey_Horse.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\JFD_AlanCavalryUnitFlag_32.dds">
+    <Content Include="Huns\Tarkhan\JFD_AlanCavalryUnitFlag_32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_128.dds">
+    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_256.dds">
+    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_32.dds">
+    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_45.dds">
+    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_64.dds">
+    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\JFD_VandalsAtlas_80.dds">
+    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\no_gloss.dds">
+    <Content Include="Huns\Tarkhan\no_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheHuns\Tarkhan\sv_AlanCavalry.dds">
+    <Content Include="Huns\Tarkhan\sv_AlanCavalry.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\3DModel\IncaScout.dds">
+    <Content Include="Inca\Chasqui\3DModel\IncaScout.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\3DModel\IncaScout.fbx">
+    <Content Include="Inca\Chasqui\3DModel\IncaScout.fbx">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\3DModel\IncaScout.fxsxml">
+    <Content Include="Inca\Chasqui\3DModel\IncaScout.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\3DModel\IncaScout.gr2">
+    <Content Include="Inca\Chasqui\3DModel\IncaScout.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\3DModel\IncaScout_sref.dds">
+    <Content Include="Inca\Chasqui\3DModel\IncaScout_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\Chasqui.lua">
+    <Content Include="Inca\Chasqui\Chasqui.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\Chasqui.sql">
+    <Content Include="Inca\Chasqui\Chasqui.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\Chasqui128.dds">
+    <Content Include="Inca\Chasqui\Chasqui128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\Chasqui256.dds">
+    <Content Include="Inca\Chasqui\Chasqui256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\Chasqui45.dds">
+    <Content Include="Inca\Chasqui\Chasqui45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\Chasqui64.dds">
+    <Content Include="Inca\Chasqui\Chasqui64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\Chasqui80.dds">
+    <Content Include="Inca\Chasqui\Chasqui80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\Chasqui_Flag.dds">
+    <Content Include="Inca\Chasqui\Chasqui_Flag.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\Chasqui\Chasqui_SV.dds">
+    <Content Include="Inca\Chasqui\Chasqui_SV.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.dds">
+    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.ggxml">
+    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.ggxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\CocaArt\CocaLeaf\sv_coca.dds">
+    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\sv_coca.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons128.dds">
+    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons256.dds">
+    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons32.dds">
+    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons45.dds">
+    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons64.dds">
+    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\CocaArt\NewAymaraIcons80.dds">
+    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\Tambo.lua">
+    <Content Include="Inca\TamboAndCoca\Tambo.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\TamboArt.sql">
+    <Content Include="Inca\TamboAndCoca\TamboArt.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheInca\TamboAndCoca\TamboCode.sql">
+    <Content Include="Inca\TamboAndCoca\TamboCode.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2693,91 +2693,91 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Eagle.lua">
+    <Content Include="Aztecs\Eagle\Eagle.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Eagle.sql">
+    <Content Include="Aztecs\Eagle\Eagle.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\eagleicon.dds">
+    <Content Include="Aztecs\Eagle\eagleicon.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Eagle_Icon_032.dds">
+    <Content Include="Aztecs\Eagle\Eagle_Icon_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Eagle_Icon_045.dds">
+    <Content Include="Aztecs\Eagle\Eagle_Icon_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Eagle_Icon_064.dds">
+    <Content Include="Aztecs\Eagle\Eagle_Icon_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Eagle_Icon_080.dds">
+    <Content Include="Aztecs\Eagle\Eagle_Icon_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Eagle_Icon_128.dds">
+    <Content Include="Aztecs\Eagle\Eagle_Icon_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Eagle_Icon_256.dds">
+    <Content Include="Aztecs\Eagle\Eagle_Icon_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Pikeman_Aztec.dds">
+    <Content Include="Aztecs\Eagle\Pikeman_Aztec.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Pikeman_Aztec.fxsxml">
+    <Content Include="Aztecs\Eagle\Pikeman_Aztec.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Pikeman_Aztec.gr2">
+    <Content Include="Aztecs\Eagle\Pikeman_Aztec.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Eagle\Pikeman_Aztec_gloss.dds">
+    <Content Include="Aztecs\Eagle\Pikeman_Aztec_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Huey Teocalli\Huey Teocalli.lua">
+    <Content Include="Aztecs\Huey Teocalli\Huey Teocalli.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Huey Teocalli\Huey Teocalli.sql">
+    <Content Include="Aztecs\Huey Teocalli\Huey Teocalli.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Huey Teocalli\Templo_icon128.dds">
+    <Content Include="Aztecs\Huey Teocalli\Templo_icon128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Huey Teocalli\Templo_icon256.dds">
+    <Content Include="Aztecs\Huey Teocalli\Templo_icon256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Huey Teocalli\Templo_icon45.dds">
+    <Content Include="Aztecs\Huey Teocalli\Templo_icon45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Huey Teocalli\Templo_icon64.dds">
+    <Content Include="Aztecs\Huey Teocalli\Templo_icon64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\Huey Teocalli\Templo_icon80.dds">
+    <Content Include="Aztecs\Huey Teocalli\Templo_icon80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\SacrificialCaptives\SacrificialCaptives.lua">
+    <Content Include="Aztecs\SacrificialCaptives\SacrificialCaptives.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheAztecs\SacrificialCaptives\SacrificialCaptives.sql">
+    <Content Include="Aztecs\SacrificialCaptives\SacrificialCaptives.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -3769,107 +3769,107 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\3DModel\tcmHeqaKhasut.fxsxml">
+    <Content Include="Celts\ScythedChariot\3DModel\tcmHeqaKhasut.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\3DModel\tcmHeqaKhasut.gr2">
+    <Content Include="Celts\ScythedChariot\3DModel\tcmHeqaKhasut.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\3DModel\tcmHeqaKhasut_diff.dds">
+    <Content Include="Celts\ScythedChariot\3DModel\tcmHeqaKhasut_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\3DModel\tcmHeqaKhasut_sref.dds">
+    <Content Include="Celts\ScythedChariot\3DModel\tcmHeqaKhasut_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Polder\Polder.lua">
+    <Content Include="Netherlands\Polder\Polder.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Polder\Polder.sql">
+    <Content Include="Netherlands\Polder\Polder.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\GreatTurkishBombard.lua">
+    <Content Include="Ottomans\GreatTurkishBombard\GreatTurkishBombard.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\BuffaloPound\BuffaloPound.lua">
+    <Content Include="Shoshone\BuffaloPound\BuffaloPound.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\BuffaloPound\BuffaloPound.sql">
+    <Content Include="Shoshone\BuffaloPound\BuffaloPound.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\BuffaloPound\BuffaloPoundPicture_045.dds">
+    <Content Include="Shoshone\BuffaloPound\BuffaloPoundPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\BuffaloPound\BuffaloPoundPicture_064.dds">
+    <Content Include="Shoshone\BuffaloPound\BuffaloPoundPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\BuffaloPound\BuffaloPoundPicture_128.dds">
+    <Content Include="Shoshone\BuffaloPound\BuffaloPoundPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\BuffaloPound\BuffaloPoundPicture_256.dds">
+    <Content Include="Shoshone\BuffaloPound\BuffaloPoundPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\3DModel\MC_BlackMouth.fxsxml">
+    <Content Include="Shoshone\YellowBrow\3DModel\MC_BlackMouth.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\3DModel\MC_BlackMouth.gr2">
+    <Content Include="Shoshone\YellowBrow\3DModel\MC_BlackMouth.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\3DModel\MC_BlackMouth_32.dds">
+    <Content Include="Shoshone\YellowBrow\3DModel\MC_BlackMouth_32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\3DModel\MC_BlackMouth_diff.dds">
+    <Content Include="Shoshone\YellowBrow\3DModel\MC_BlackMouth_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\YellowBrow.lua">
+    <Content Include="Shoshone\YellowBrow\YellowBrow.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\YellowBrow.sql">
+    <Content Include="Shoshone\YellowBrow\YellowBrow.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\YellowBrowFlag_032.dds">
+    <Content Include="Shoshone\YellowBrow\YellowBrowFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\YellowBrowFlag_128.dds">
+    <Content Include="Shoshone\YellowBrow\YellowBrowFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\YellowBrowPicture_045.dds">
+    <Content Include="Shoshone\YellowBrow\YellowBrowPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\YellowBrowPicture_064.dds">
+    <Content Include="Shoshone\YellowBrow\YellowBrowPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\YellowBrowPicture_080.dds">
+    <Content Include="Shoshone\YellowBrow\YellowBrowPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\YellowBrowPicture_128.dds">
+    <Content Include="Shoshone\YellowBrow\YellowBrowPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheShoshone\YellowBrow\YellowBrowPicture_256.dds">
+    <Content Include="Shoshone\YellowBrow\YellowBrowPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -4421,347 +4421,347 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Atlatlist\Atlatlist.sql">
+    <Content Include="Maya\Atlatlist\Atlatlist.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Calendar\CalendarIcon_032.dds">
+    <Content Include="Maya\Calendar\CalendarIcon_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Calendar\CalendarIcon_045.dds">
+    <Content Include="Maya\Calendar\CalendarIcon_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Calendar\CalendarIcon_064.dds">
+    <Content Include="Maya\Calendar\CalendarIcon_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Calendar\CalendarIcon_256.dds">
+    <Content Include="Maya\Calendar\CalendarIcon_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\3DModel\Swordsman_Maya.dds">
+    <Content Include="Maya\Holkan\3DModel\Swordsman_Maya.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\3DModel\Swordsman_Maya.fxsxml">
+    <Content Include="Maya\Holkan\3DModel\Swordsman_Maya.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\3DModel\Swordsman_Maya.gr2">
+    <Content Include="Maya\Holkan\3DModel\Swordsman_Maya.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\3DModel\Swordsman_Maya_gloss.dds">
+    <Content Include="Maya\Holkan\3DModel\Swordsman_Maya_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\HolkanFlag_032.dds">
+    <Content Include="Maya\Holkan\HolkanFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\HolkanFlag_128.dds">
+    <Content Include="Maya\Holkan\HolkanFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\HolkanPicture_045.dds">
+    <Content Include="Maya\Holkan\HolkanPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\HolkanPicture_064.dds">
+    <Content Include="Maya\Holkan\HolkanPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\HolkanPicture_080.dds">
+    <Content Include="Maya\Holkan\HolkanPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\HolkanPicture_128.dds">
+    <Content Include="Maya\Holkan\HolkanPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\HolkanPicture_256.dds">
+    <Content Include="Maya\Holkan\HolkanPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Holkan\Holkan.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="TheMaya\Holkan\Holkan.sql">
+    <Content Include="Maya\Holkan\Holkan.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Pitz\Pitz.lua">
+    <Content Include="Maya\Holkan\Holkan.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Pitz\Pitz.sql">
+    <Content Include="Maya\Pitz\Pitz.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheMaya\Pitz\PitzPicture_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheMaya\Pitz\PitzPicture_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheMaya\Pitz\PitzPicture_128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheMaya\Pitz\PitzPicture_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Boudicca\BoudiccaFlavors.sql">
+    <Content Include="Maya\Pitz\Pitz.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\DruidicLore\DruidicLore.lua">
+    <Content Include="Maya\Pitz\PitzPicture_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Maya\Pitz\PitzPicture_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Maya\Pitz\PitzPicture_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Maya\Pitz\PitzPicture_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Boudicca\BoudiccaFlavors.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\black32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_01.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_01.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_02.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_02.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_03.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_03.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_decal_01.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_decal_02.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_decal_03.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_hb.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_hb.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_hb_decal.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_pl.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_pl.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_pl_decal.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\3DModel\castro_pl_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\Oppidum\Oppidum.sql">
+    <Content Include="Celts\DruidicLore\DruidicLore.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\Oppidum\OppidumIcons_045.dds">
+    <Content Include="Celts\Oppidum\3DModel\black32.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\Oppidum\OppidumIcons_064.dds">
+    <Content Include="Celts\Oppidum\3DModel\castro_01.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\Oppidum\OppidumIcons_256.dds">
+    <Content Include="Celts\Oppidum\3DModel\castro_01.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\Oppidum\Oppidum.lua">
+    <Content Include="Celts\Oppidum\3DModel\castro_02.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_02.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_03.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_03.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_decal_01.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_decal_02.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_decal_03.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_hb.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_hb.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_hb_decal.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_pl.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_pl.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_pl_decal.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\3DModel\castro_pl_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\Oppidum.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\Oppidum\OppidumIcon_128.dds">
+    <Content Include="Celts\Oppidum\OppidumIcons_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\PictishWarrior\PictishWarrior.sql">
+    <Content Include="Celts\Oppidum\OppidumIcons_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\OppidumIcons_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\Oppidum\Oppidum.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\Carnyx\CarnyxIcon_032.dds">
+    <Content Include="Celts\Oppidum\OppidumIcon_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\Carnyx\CarnyxIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\ScythedChariot\Carnyx\CarnyxIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\ScythedChariot\Carnyx\CarnyxIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\ScythedChariot\ScythedChariot.lua">
+    <Content Include="Celts\PictishWarrior\PictishWarrior.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\ScythedChariotPicture_045.dds">
+    <Content Include="Celts\ScythedChariot\Carnyx\CarnyxIcon_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\ScythedChariotPicture_064.dds">
+    <Content Include="Celts\ScythedChariot\Carnyx\CarnyxIcon_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\ScythedChariotPicture_080.dds">
+    <Content Include="Celts\ScythedChariot\Carnyx\CarnyxIcon_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\ScythedChariotPicture_128.dds">
+    <Content Include="Celts\ScythedChariot\Carnyx\CarnyxIcon_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\ScythedChariotPicture_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheCelts\ScythedChariot\ScythedChariot.sql">
+    <Content Include="Celts\ScythedChariot\ScythedChariot.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\ScythedChariotFlag_032.dds">
+    <Content Include="Celts\ScythedChariot\ScythedChariotPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\ScythedChariotFlag_128.dds">
+    <Content Include="Celts\ScythedChariot\ScythedChariotPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\Scythe\ScytheIcon_032.dds">
+    <Content Include="Celts\ScythedChariot\ScythedChariotPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\Scythe\ScytheIcon_045.dds">
+    <Content Include="Celts\ScythedChariot\ScythedChariotPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\Scythe\ScytheIcon_064.dds">
+    <Content Include="Celts\ScythedChariot\ScythedChariotPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheCelts\ScythedChariot\Scythe\ScytheIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\3DModel\civ5_iromu1.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\3DModel\civ5_iromu1.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\3DModel\civ5_iromu2.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\3DModel\civ5_iromu2.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\3DModel\iromu1.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\3DModel\iromu1_sref.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\3DModel\iromu2.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\3DModel\iromu2_sref.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\ProwlerFlag_128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\ProwlerPicture_128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\ProwlerPicture_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\ProwlerPicture_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\ProwlerPicture_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\ProwlerPicture_080.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="TheIroquois\Prowler\Prowler.sql">
+    <Content Include="Celts\ScythedChariot\ScythedChariot.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheIroquois\Prowler\ProwlerFlag_032.dds">
+    <Content Include="Celts\ScythedChariot\ScythedChariotFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheIroquois\SachemsCouncil\SachemsCouncil.lua">
+    <Content Include="Celts\ScythedChariot\ScythedChariotFlag_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\ScythedChariot\Scythe\ScytheIcon_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\ScythedChariot\Scythe\ScytheIcon_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\ScythedChariot\Scythe\ScytheIcon_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\ScythedChariot\Scythe\ScytheIcon_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\3DModel\civ5_iromu1.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\3DModel\civ5_iromu1.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\3DModel\civ5_iromu2.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\3DModel\civ5_iromu2.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\3DModel\iromu1.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\3DModel\iromu1_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\3DModel\iromu2.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\3DModel\iromu2_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\ProwlerFlag_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\ProwlerPicture_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\ProwlerPicture_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\ProwlerPicture_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\ProwlerPicture_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\ProwlerPicture_080.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\Prowler\Prowler.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheIroquois\SachemsCouncil\SachemsCouncil.sql">
+    <Content Include="Iroquois\Prowler\ProwlerFlag_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\SachemsCouncil\SachemsCouncil.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Iroquois\SachemsCouncil\SachemsCouncil.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -4801,203 +4801,203 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheIroquois\SachemsCouncil\SachemsCouncilPicture_045.dds">
+    <Content Include="Iroquois\SachemsCouncil\SachemsCouncilPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheIroquois\SachemsCouncil\SachemsCouncilPicture_064.dds">
+    <Content Include="Iroquois\SachemsCouncil\SachemsCouncilPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheIroquois\SachemsCouncil\SachemsCouncilPicture_128.dds">
+    <Content Include="Iroquois\SachemsCouncil\SachemsCouncilPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheIroquois\SachemsCouncil\SachemsCouncilPicture_256.dds">
+    <Content Include="Iroquois\SachemsCouncil\SachemsCouncilPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\3DModel\Maceman.fxsxml">
+    <Content Include="Netherlands\Goedendag\3DModel\Maceman.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\3DModel\Maceman.gr2">
+    <Content Include="Netherlands\Goedendag\3DModel\Maceman.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\3DModel\Maceman_diff512.dds">
+    <Content Include="Netherlands\Goedendag\3DModel\Maceman_diff512.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\3DModel\Maceman_sref512.dds">
+    <Content Include="Netherlands\Goedendag\3DModel\Maceman_sref512.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\3DModel\Pikeman_England.blend">
+    <Content Include="Netherlands\Goedendag\3DModel\Pikeman_England.blend">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\3DModel\Pikeman_England.dds">
+    <Content Include="Netherlands\Goedendag\3DModel\Pikeman_England.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\3DModel\Pikeman_England.fxsxml">
+    <Content Include="Netherlands\Goedendag\3DModel\Pikeman_England.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\3DModel\Pikeman_England.gr2">
+    <Content Include="Netherlands\Goedendag\3DModel\Pikeman_England.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\3DModel\Pikeman_England.jpg">
+    <Content Include="Netherlands\Goedendag\3DModel\Pikeman_England.jpg">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\3DModel\Pikeman_England_gloss.dds">
+    <Content Include="Netherlands\Goedendag\3DModel\Pikeman_England_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\Goedendag.lua">
+    <Content Include="Netherlands\Goedendag\Goedendag.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\Goedendag.sql">
+    <Content Include="Netherlands\Goedendag\Goedendag.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\GoedendagFlag_032.dds">
+    <Content Include="Netherlands\Goedendag\GoedendagFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\GoedendagFlag_128.dds">
+    <Content Include="Netherlands\Goedendag\GoedendagFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\GoedendagPicture_045.dds">
+    <Content Include="Netherlands\Goedendag\GoedendagPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\GoedendagPicture_064.dds">
+    <Content Include="Netherlands\Goedendag\GoedendagPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\GoedendagPicture_080.dds">
+    <Content Include="Netherlands\Goedendag\GoedendagPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\GoedendagPicture_128.dds">
+    <Content Include="Netherlands\Goedendag\GoedendagPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Goedendag\GoedendagPicture_256.dds">
+    <Content Include="Netherlands\Goedendag\GoedendagPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Waag\Waag.lua">
+    <Content Include="Netherlands\Waag\Waag.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Waag\Waag.sql">
+    <Content Include="Netherlands\Waag\Waag.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Waag\WaagPicture_045.dds">
+    <Content Include="Netherlands\Waag\WaagPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Waag\WaagPicture_064.dds">
+    <Content Include="Netherlands\Waag\WaagPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Waag\WaagPicture_128.dds">
+    <Content Include="Netherlands\Waag\WaagPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheNetherlands\Waag\WaagPicture_256.dds">
+    <Content Include="Netherlands\Waag\WaagPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\3DModel\Bombard.fxsxml">
+    <Content Include="Ottomans\GreatTurkishBombard\3DModel\Bombard.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\3DModel\Bombard.gr2">
+    <Content Include="Ottomans\GreatTurkishBombard\3DModel\Bombard.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\3DModel\bombard_crew_diff.dds">
+    <Content Include="Ottomans\GreatTurkishBombard\3DModel\bombard_crew_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\3DModel\Bombard_diff.dds">
+    <Content Include="Ottomans\GreatTurkishBombard\3DModel\Bombard_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\3DModel\Bombard_sref.dds">
+    <Content Include="Ottomans\GreatTurkishBombard\3DModel\Bombard_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\GreatTurkishBombard.sql">
+    <Content Include="Ottomans\GreatTurkishBombard\GreatTurkishBombard.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\GreatTurkishBombardFlag_032.dds">
+    <Content Include="Ottomans\GreatTurkishBombard\GreatTurkishBombardFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\GreatTurkishBombardFlag_128.dds">
+    <Content Include="Ottomans\GreatTurkishBombard\GreatTurkishBombardFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\GreatTurkishBombardPicture_045.dds">
+    <Content Include="Ottomans\GreatTurkishBombard\GreatTurkishBombardPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\GreatTurkishBombardPicture_064.dds">
+    <Content Include="Ottomans\GreatTurkishBombard\GreatTurkishBombardPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\GreatTurkishBombardPicture_080.dds">
+    <Content Include="Ottomans\GreatTurkishBombard\GreatTurkishBombardPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\GreatTurkishBombardPicture_128.dds">
+    <Content Include="Ottomans\GreatTurkishBombard\GreatTurkishBombardPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\GreatTurkishBombard\GreatTurkishBombardPicture_256.dds">
+    <Content Include="Ottomans\GreatTurkishBombard\GreatTurkishBombardPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\Suleiman\SuleimanStartingBias.sql">
+    <Content Include="Ottomans\Suleiman\SuleimanStartingBias.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\Suleiman\SuleimanFlavors.sql">
+    <Content Include="Ottomans\Suleiman\SuleimanFlavors.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\Tersane\Tersane.lua">
+    <Content Include="Ottomans\Tersane\Tersane.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\Tersane\Tersane.sql">
+    <Content Include="Ottomans\Tersane\Tersane.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\Tersane\TersanePicture_045.dds">
+    <Content Include="Ottomans\Tersane\TersanePicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\Tersane\TersanePicture_064.dds">
+    <Content Include="Ottomans\Tersane\TersanePicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\Tersane\TersanePicture_128.dds">
+    <Content Include="Ottomans\Tersane\TersanePicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheOttomans\Tersane\TersanePicture_256.dds">
+    <Content Include="Ottomans\Tersane\TersanePicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5089,79 +5089,79 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\3IzuUnitAlphaAtlas.dds">
+    <Content Include="Zulu\Indaba\3IzuUnitAlphaAtlas.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\3UC_ZULU.sql">
+    <Content Include="Zulu\Indaba\3UC_ZULU.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\3ZuluGeneral128.dds">
+    <Content Include="Zulu\Indaba\3ZuluGeneral128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\3ZuluGeneral256.dds">
+    <Content Include="Zulu\Indaba\3ZuluGeneral256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\3ZuluGeneral45.dds">
+    <Content Include="Zulu\Indaba\3ZuluGeneral45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\3ZuluGeneral64.dds">
+    <Content Include="Zulu\Indaba\3ZuluGeneral64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\3ZuluGeneral80.dds">
+    <Content Include="Zulu\Indaba\3ZuluGeneral80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.blend">
+    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.blend">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.br2">
+    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.br2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.dds">
+    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.fxsxml">
+    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.gr2">
+    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear_sref.dds">
+    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Iziko\1.IzikoCode.sql">
+    <Content Include="Zulu\Iziko\1.IzikoCode.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Iziko\Iziko128.dds">
+    <Content Include="Zulu\Iziko\Iziko128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Iziko\Iziko256.dds">
+    <Content Include="Zulu\Iziko\Iziko256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Iziko\Iziko45.dds">
+    <Content Include="Zulu\Iziko\Iziko45.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Iziko\Iziko64.dds">
+    <Content Include="Zulu\Iziko\Iziko64.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="TheZulu\Iziko\sv_3izu.dds">
+    <Content Include="Zulu\Iziko\sv_3izu.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5205,16 +5205,16 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Germany\Slaganz\3DModel" />
     <Folder Include="Germany\TeutonicOrder" />
     <Folder Include="Germany\Slaganz" />
-    <Folder Include="TheHuns" />
-    <Folder Include="TheHuns\AltiCur" />
-    <Folder Include="TheHuns\HorseArcherChange" />
-    <Folder Include="TheHuns\Tarkhan" />
-    <Folder Include="TheInca" />
-    <Folder Include="TheInca\Chasqui" />
-    <Folder Include="TheInca\Chasqui\3DModel" />
-    <Folder Include="TheInca\TamboAndCoca" />
-    <Folder Include="TheInca\TamboAndCoca\CocaArt" />
-    <Folder Include="TheInca\TamboAndCoca\CocaArt\CocaLeaf" />
+    <Folder Include="Huns" />
+    <Folder Include="Huns\AltiCur" />
+    <Folder Include="Huns\HorseArcherChange" />
+    <Folder Include="Huns\Tarkhan" />
+    <Folder Include="Inca" />
+    <Folder Include="Inca\Chasqui" />
+    <Folder Include="Inca\Chasqui\3DModel" />
+    <Folder Include="Inca\TamboAndCoca" />
+    <Folder Include="Inca\TamboAndCoca\CocaArt" />
+    <Folder Include="Inca\TamboAndCoca\CocaArt\CocaLeaf" />
     <Folder Include="Japan\" />
     <Folder Include="Japan\Kabuki\" />
     <Folder Include="Japan\Yamato\" />
@@ -5244,9 +5244,9 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Songhai\Qadi\" />
     <Folder Include="Songhai\Sofa\" />
     <Folder Include="Spain\Conquistador" />
-    <Folder Include="TheAztecs\Eagle\" />
-    <Folder Include="TheAztecs\Huey Teocalli\" />
-    <Folder Include="TheAztecs\SacrificialCaptives" />
+    <Folder Include="Aztecs\Eagle" />
+    <Folder Include="Aztecs\Huey Teocalli" />
+    <Folder Include="Aztecs\SacrificialCaptives" />
     <Folder Include="Babylon\Kibitum" />
     <Folder Include="Babylon\Kibitum\3DModel" />
     <Folder Include="Babylon\Kibitum\Legacy" />
@@ -5292,22 +5292,22 @@ Latest changes: see changelog file.</Description>
     <Folder Include="!DummyBuildings" />
     <Folder Include="Denmark" />
     <Folder Include="!GameTexts" />
-    <Folder Include="TheAztecs" />
+    <Folder Include="Aztecs" />
     <Folder Include="Persia" />
     <Folder Include="Persia\Qizilbash" />
     <Folder Include="Persia\Pairidaeza" />
     <Folder Include="Persia\Qizilbash\3DModel" />
     <Folder Include="Persia\Qizilbash\SafaviAgitator" />
-    <Folder Include="TheCelts\ScythedChariot\3DModel" />
-    <Folder Include="TheMaya" />
+    <Folder Include="Celts\ScythedChariot\3DModel" />
+    <Folder Include="Maya" />
     <Folder Include="Sweden\Carolean" />
-    <Folder Include="TheMaya\Holkan" />
-    <Folder Include="TheMaya\Holkan\3DModel" />
-    <Folder Include="TheMaya\Calendar" />
-    <Folder Include="TheMaya\Atlatlist" />
-    <Folder Include="TheMaya\Pitz" />
-    <Folder Include="TheCelts\PictishWarrior" />
-    <Folder Include="TheNetherlands" />
+    <Folder Include="Maya\Holkan" />
+    <Folder Include="Maya\Holkan\3DModel" />
+    <Folder Include="Maya\Calendar" />
+    <Folder Include="Maya\Atlatlist" />
+    <Folder Include="Maya\Pitz" />
+    <Folder Include="Celts\PictishWarrior" />
+    <Folder Include="Netherlands" />
     <Folder Include="Siam" />
     <Folder Include="Siam\BaanChang" />
     <Folder Include="Siam\SeirMorb" />
@@ -5321,14 +5321,14 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Polynesia\Kamehameha" />
     <Folder Include="Spain" />
     <Folder Include="Polynesia\FaleTele" />
-    <Folder Include="TheNetherlands\Polder" />
-    <Folder Include="TheShoshone" />
+    <Folder Include="Netherlands\Polder" />
+    <Folder Include="Shoshone" />
     <Folder Include="Polynesia" />
     <Folder Include="Polynesia\Koa" />
     <Folder Include="Polynesia\Koa\3DModel" />
-    <Folder Include="TheShoshone\BuffaloPound" />
-    <Folder Include="TheShoshone\YellowBrow" />
-    <Folder Include="TheShoshone\YellowBrow\3DModel" />
+    <Folder Include="Shoshone\BuffaloPound" />
+    <Folder Include="Shoshone\YellowBrow" />
+    <Folder Include="Shoshone\YellowBrow\3DModel" />
     <Folder Include="Spain\Armada" />
     <Folder Include="Spain\Armada\3DModel" />
     <Folder Include="Spain\Hacienda" />
@@ -5336,42 +5336,42 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Spain\Isabella" />
     <Folder Include="Sweden\Bastu" />
     <Folder Include="Sweden\Hakkapeliitta" />
-    <Folder Include="TheCelts\Boudicca" />
-    <Folder Include="TheCelts\ScythedChariot\Carnyx" />
-    <Folder Include="TheCelts\ScythedChariot\Scythe" />
-    <Folder Include="TheNetherlands\Goedendag" />
-    <Folder Include="TheNetherlands\Goedendag\3DModel" />
-    <Folder Include="TheNetherlands\Waag" />
-    <Folder Include="TheOttomans" />
+    <Folder Include="Celts\Boudicca" />
+    <Folder Include="Celts\ScythedChariot\Carnyx" />
+    <Folder Include="Celts\ScythedChariot\Scythe" />
+    <Folder Include="Netherlands\Goedendag" />
+    <Folder Include="Netherlands\Goedendag\3DModel" />
+    <Folder Include="Netherlands\Waag" />
+    <Folder Include="Ottomans" />
     <Folder Include="Poland\Pancerny\3DModel" />
     <Folder Include="Russia\Licorne\3DModel" />
     <Folder Include="Russia\Ostrog" />
     <Folder Include="Russia\Pogost" />
-    <Folder Include="TheCelts" />
+    <Folder Include="Celts" />
     <Folder Include="Russia\Licorne" />
-    <Folder Include="TheCelts\DruidicLore" />
-    <Folder Include="TheCelts\Oppidum\3DModel" />
-    <Folder Include="TheCelts\ScythedChariot" />
-    <Folder Include="TheCelts\Oppidum" />
-    <Folder Include="TheIroquois" />
-    <Folder Include="TheIroquois\Prowler\3DModel" />
-    <Folder Include="TheIroquois\SachemsCouncil" />
-    <Folder Include="TheIroquois\Prowler" />
+    <Folder Include="Celts\DruidicLore" />
+    <Folder Include="Celts\Oppidum\3DModel" />
+    <Folder Include="Celts\ScythedChariot" />
+    <Folder Include="Celts\Oppidum" />
+    <Folder Include="Iroquois" />
+    <Folder Include="Iroquois\Prowler\3DModel" />
+    <Folder Include="Iroquois\SachemsCouncil" />
+    <Folder Include="Iroquois\Prowler" />
     <Folder Include="Russia" />
     <Folder Include="Poland" />
     <Folder Include="Poland\Barbican\" />
     <Folder Include="Poland\Pancerny" />
-    <Folder Include="TheOttomans\GreatTurkishBombard" />
-    <Folder Include="TheOttomans\GreatTurkishBombard\3DModel" />
-    <Folder Include="TheOttomans\Suleiman" />
-    <Folder Include="TheOttomans\Tersane" />
+    <Folder Include="Ottomans\GreatTurkishBombard" />
+    <Folder Include="Ottomans\GreatTurkishBombard\3DModel" />
+    <Folder Include="Ottomans\Suleiman" />
+    <Folder Include="Ottomans\Tersane" />
     <Folder Include="Venice\" />
     <Folder Include="Venice\Fusta\" />
     <Folder Include="Venice\Laguna\" />
-    <Folder Include="TheZulu" />
-    <Folder Include="TheZulu\Indaba" />
-    <Folder Include="TheZulu\Indaba\AlternativeUnitModel" />
-    <Folder Include="TheZulu\Iziko" />
+    <Folder Include="Zulu" />
+    <Folder Include="Zulu\Indaba" />
+    <Folder Include="Zulu\Indaba\AlternativeUnitModel" />
+    <Folder Include="Zulu\Iziko" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>
