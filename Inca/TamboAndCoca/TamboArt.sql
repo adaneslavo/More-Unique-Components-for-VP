@@ -28,6 +28,6 @@ VALUES		('RESOURCE_COCA_TEXTURE_ATLAS', 		'Coca_fonticon');
 
 INSERT INTO IconFontMapping 
 		(IconName, 				IconFontTexture,				IconMapping)
-VALUES		('ICON_RES_COCA]', 		'RESOURCE_COCA_TEXTURE_ATLAS',				1);
+VALUES		('ICON_RES_COCA', 		'RESOURCE_COCA_TEXTURE_ATLAS',				1);
 
 
