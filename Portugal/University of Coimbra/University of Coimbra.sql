@@ -107,23 +107,3 @@ VALUES		('PROMOTION_AGE_OF_DISCOVERY',				'TXT_KEY_PROMOTION_AGE_OF_DISCOVERY',	
 INSERT INTO UnitPromotions_YieldFromScouting
 			(PromotionType, YieldType, Yield)
 VALUES		('PROMOTION_AGE_OF_DISCOVERY', 'YIELD_SCIENCE', 1);
-
-
---------------------------------	
--- Dummy building
---------------------------------	
-
-INSERT INTO BuildingClasses
-			(Type,										DefaultBuilding,					NoLimit)
-VALUES		('BUILDINGCLASS_VP_UNIVERSITY_OF_COIMBRA_DUMMY',	'BUILDING_VP_UNIVERSITY_OF_COIMBRA_DUMMY',  1);
-
-INSERT INTO Buildings
-			(Type,										BuildingClass,	                                    Description,
-			Cost,	FaithCost,	GreatWorkCount, PrereqTech, NeverCapture,	NukeImmune)
-VALUES		('BUILDING_VP_UNIVERSITY_OF_COIMBRA_DUMMY',		'BUILDINGCLASS_VP_UNIVERSITY_OF_COIMBRA_DUMMY', 'TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_DUMMY',
-			-1,		-1,			-1,				NULL,		1,				1);
-
-INSERT INTO Building_BuildingClassYieldChanges
-			(BuildingType, BuildingClassType, YieldType, YieldChange)
-VALUES		('BUILDING_VP_UNIVERSITY_OF_COIMBRA_DUMMY', 'BUILDINGCLASS_OXFORD_UNIVERSITY', 'YIELD_GOLD', 2),
-			('BUILDING_VP_UNIVERSITY_OF_COIMBRA_DUMMY', 'BUILDINGCLASS_OXFORD_UNIVERSITY', 'YIELD_PRODUCTION', 2);

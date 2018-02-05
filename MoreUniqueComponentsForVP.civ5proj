@@ -718,6 +718,16 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>!DummyBuildings/DummyBuildingDefenseHPPromotion.sql</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>!DummyBuildings/DummyBuildingClassYield.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>!DummyBuildings/DummyBuildingExpAndClassYield.sql</FileName>
+      </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -1150,6 +1160,14 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="!DummyBuildings\DummyBuildingDefenseHPPromotion.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="!DummyBuildings\DummyBuildingExpAndClassYield.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="!DummyBuildings\DummyBuildingClassYield.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
