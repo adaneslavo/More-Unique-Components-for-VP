@@ -13,12 +13,10 @@ function LegatusAndPraefectus(iPlayer)
 
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsHasPromotion(iLegatus) or pUnit:IsHasPromotion(iPraefectus) then
-			local bInRange = pUnit:IsWithinDistanceOfUnit(iGeneral, 2, true, false)
-
 			if pUnit:IsHasPromotion(iLegatus) then
-				pUnit:SetHasPromotion(iLegatusEffect, bInRange)
+				pUnit:SetHasPromotion(iLegatusEffect, pUnit:IsWithinDistanceOfUnit(iGeneral, 2, true, false))
 			elseif pUnit:IsHasPromotion(iPraefectus) then
-				pUnit:SetHasPromotion(iPraefectusEffect, bInRange)
+				pUnit:SetHasPromotion(iPraefectusEffect, pUnit:IsWithinDistanceOfUnit(iGeneral, 2, true, false))
 			end
 		end
 	end

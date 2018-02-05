@@ -5,12 +5,12 @@
 --------------------------------------------------------------
 local iSofa = GameInfoTypes.PROMOTION_HORSE_FATHER
 local iHorseDadEffect = GameInfoTypes.PROMOTION_HORSE_FATHER_EFFECT
+local eUnitCombatMounted = GameInfoTypes.UNITCOMBAT_MOUNTED
 
 function HorseDaddy(iPlayer)
 	local pPlayer = Players[iPlayer]
-
 	for pUnit in pPlayer:Units() do
-		if GameInfo.Units[pUnit:GetUnitType()].IsMounted then
+		if pUnit:IsMounted() or pUnit:GetUnitCombatType() == eUnitCombatMounted then
 			pUnit:SetHasPromotion(iHorseDadEffect, pUnit:IsWithinDistanceOfUnitPromotion(iSofa, 2, true, false))
 		end
 	end
