@@ -45,7 +45,6 @@ function TophetCultureGain(iPlayer, iCity, iUnit, bGold, bFaith)
 	end
 end
 
-
 function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end

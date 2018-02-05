@@ -5,17 +5,17 @@
 More Unique Components for Vox Populi changelog:
 
 v27:
-- extracted all beta civs,
-- added Inca, Japan and Korea,
-- added Rough Terrain Penalty to Iron Chariot,
+- extracted and added all beta civs,
+- added Rough Terrain Penalty promotion to Iron Chariot,
 - added lua for Etemenanki (now investing in units or building in any city grants bonus to capital; sql function deleted),
 - deleted Sukritact_ChangeResearchProgress.lua; changed science progress code (Madrasah, Pitz, Holkan),
 - deleted PlotIterators.lua; reworked all lua code related to this file,
 - deleted InstanceManager link from luas,
 - deleted SaveUtils.lua file and !Utils folder,
+- deleted code for changing 4 UCs names,
 - modified DruidicLore lua (added code for capital/holy city capture from Celts and for Celts),
 - modified luas for Move/Build/Create game events combination (Goedendag, Ballista, Iron Chariot, Landwehr, Monitor, Sofa)
-- optimized lua (Pogost, White Tower, Ballista (with SQLs), Goedendag, Shophet, Slaganz, Teutonic Order, Seir Morb),
+- optimized lua (Pogost, White Tower, Ballista (with SQLs), Goedendag, Shophet, Slaganz, Teutonic Order, Seir Morb, Ranch, Monitor),
 - fixed text (Iron Chariot, Klepht),
 - fixes (Black Tug, Latifundium, Shophet),
 - changed unit model (Scythed Chariot),

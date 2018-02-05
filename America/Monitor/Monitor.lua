@@ -2,53 +2,54 @@
 -- Author: adan_eslavo
 -- DateCreated: 15/01/2018
 --------------------------------------------------------------
-local iMonitor = GameInfoTypes.PROMOTION_UNIT_AMERICA_MONITOR
+local eMonitor = GameInfoTypes.PROMOTION_UNIT_AMERICA_MONITOR
 
-function MonitorCityDefense(iPlayer)
+function OnTurnEndAddCityDefense(iPlayer)
 	local pPlayer = Players[iPlayer]
 
-	for pCity in pPlayer:Cities() do
-		local bInRange = false
-		local pPlot = pCity:Plot()
-
-		if pPlot == nil then
-			break
-		end
-
-		for iVal = 0,(pPlot:GetNumUnits() - 1) do
-			local pSameTileUnit = pPlot:GetUnit(iVal)
+	-- loop through cities in search of monitor
+	for city in pPlayer:Cities() do
+		local iInRange = 0
+		local pPlot = city:Plot()
+		local pFoundUnit
+		
+		-- check city tile
+		for val = 0, (pPlot:GetNumUnits() - 1), 1 do
+			pFoundUnit = pPlot:GetUnit(val)
 				
-			if pSameTileUnit:GetOwner() == iPlayer and pSameTileUnit:IsHasPromotion(iMonitor) then
-				bInRange = true
+			if pFoundUnit:GetOwner() == iPlayer and pFoundUnit:IsHasPromotion(eMonitor) then
+				iInRange = 1
 				break
 			end
 		end
 
-		if not bInRange then
-			for iDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-				local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), iDirection)
+		-- check adjacent tiles
+		if iInRange == 0 then
+			local pAdjacentPlot
+			local iX = pPlot:GetX()
+			local iY = pPlot:GetY()
+
+			for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
+				pAdjacentPlot = Map.PlotDirection(iX, iY, direction)
 			
-				for iVal = 0,(pAdjacentPlot:GetNumUnits() - 1) do
-					local pAdjacentUnit = pAdjacentPlot:GetUnit(iVal)
+				for val = 0, (pAdjacentPlot:GetNumUnits() - 1), 1 do
+					pFoundUnit = pAdjacentPlot:GetUnit(val)
 					
-					if pAdjacentUnit:GetOwner() == iPlayer and pAdjacentUnit:IsHasPromotion(iMonitor) then
-						bInRange = true
+					if pFoundUnit:GetOwner() == iPlayer and pFoundUnit:IsHasPromotion(eMonitor) then
+						iInRange = 1
 						break
 					end
 				end
 
-				if bInRange then
+				if iInRange == 1 then
 					break
 				end
 			end
 		end
 
-		if bInRange then
-			pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSE, 1)
-		else
-			pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSE, 0)
-		end
+		-- add defense to the city
+		city:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSE, iInRange)
 	end
 end
 
-GameEvents.PlayerEndTurnCompleted.Add(MonitorCityDefense)
+GameEvents.PlayerEndTurnCompleted.Add(OnTurnEndAddCityDefense)
