@@ -29,8 +29,8 @@ function CoimbraFeitoriaImprovement(iPlotX, iPlotY, iOwner, iOldImprovement, iNe
 			if player:IsAlive() then
 				for city in player:Cities() do
 					if city:IsHasBuilding(buildingCoimbraID) then
-						local iDummies = city:GetNumRealBuilding(GameInfoTypes.BUILDING_VP_UNIVERSITY_OF_COIMBRA_DUMMY)
-						city:SetNumRealBuilding(GameInfoTypes.BUILDING_VP_UNIVERSITY_OF_COIMBRA_DUMMY, iDummies + 1)
+						local iDummies = city:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCLASSYIELD)
+						city:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCLASSYIELD, iDummies + 1)
 					end
 				end
 			end

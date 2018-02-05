@@ -1,19 +1,23 @@
-function EagleSpawnWorker(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP, iInterceptingPlayer, iInterceptingUnit, iInterceptorDamage, iPlotX, iPlotY)
-	local pAttackingPlayer = Players[iAttackingPlayer]
-	local pDefendingPlayer = Players[iDefendingPlayer]
+-- Eagle
+-- Author: Blue Ghost, adan_eslavo
+-- DateCreated:
+--------------------------------------------------------------
+local ePromotionCaptives = GameInfoTypes.PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR
+local eUnitWorker = GameInfoTypes.UNIT_WORKER
 
-	if pAttackingPlayer ~= nil and pDefendingPlayer ~= nil then
-		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
-		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
+-- spawn worker unit on kill
+function OnCombatEndSpawnWorker(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP, iInterceptingPlayer, iInterceptingUnit, iInterceptorDamage, iPlotX, iPlotY)
+	local pAttackingPlayer = Players[iAttackingPlayer]
+
+	if not pAttackingPlayer then return end
+
+	local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 		
-		if(pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CAPTIVES_OF_WAR) and iDefenderFinalDamage >= iDefenderMaxHP) then
-			local iRand = Game.Rand(100, "Eagle capture roll")
-			if (iRand < 50) then
-				pAttackingPlayer:InitUnit(GameInfoTypes["UNIT_WORKER"], iPlotX, iPlotY)
-			end
+	if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(ePromotionCaptives) and iDefenderFinalDamage >= iDefenderMaxHP then
+		if Game.Rand(2, "Eagle capture roll") == 1 then
+			pAttackingPlayer:InitUnit(eUnitWorker, iPlotX, iPlotY)
 		end
 	end
 end
 
-
-GameEvents.CombatEnded.Add(EagleSpawnWorker)
+GameEvents.CombatEnded.Add(OnCombatEndSpawnWorker)

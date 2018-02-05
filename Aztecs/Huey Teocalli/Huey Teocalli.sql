@@ -66,30 +66,6 @@ SELECT		'BUILDING_VP_HUEY_TEOCALLI', YieldType, Yield
 FROM		Building_YieldChanges
 WHERE		BuildingType = 'BUILDING_GRAND_TEMPLE';
 
---------------------------------	
--- Dummy building
---------------------------------	
-
-INSERT INTO BuildingClasses
-			(Type,										DefaultBuilding,					NoLimit)
-VALUES		('BUILDINGCLASS_VP_HUEY_TEOCALLI_DUMMY',	'BUILDING_VP_HUEY_TEOCALLI_DUMMY',  1);
-
-INSERT INTO Buildings
-			(Type,										BuildingClass,	                     Description,
-			Cost,	FaithCost,	GreatWorkCount, PrereqTech, NeverCapture,	NukeImmune)
-VALUES		('BUILDING_VP_HUEY_TEOCALLI_DUMMY',		'BUILDINGCLASS_VP_HUEY_TEOCALLI_DUMMY', 'TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_DUMMY',
-			-1,		-1,			-1,				NULL,		1,				1);
-
-INSERT INTO Building_BuildingClassYieldChanges
-			(BuildingType, BuildingClassType, YieldType, YieldChange)
-VALUES		('BUILDING_VP_HUEY_TEOCALLI_DUMMY', 'BUILDINGCLASS_GRAND_TEMPLE', 'YIELD_FOOD', 3),
-			('BUILDING_VP_HUEY_TEOCALLI_DUMMY', 'BUILDINGCLASS_GRAND_TEMPLE', 'YIELD_FAITH', 3);
-
-INSERT INTO Building_DomainFreeExperiences
-			(BuildingType, DomainType, Experience)
-VALUES		('BUILDING_VP_HUEY_TEOCALLI_DUMMY', 'DOMAIN_LAND', 3),
-			('BUILDING_VP_HUEY_TEOCALLI_DUMMY', 'DOMAIN_AIR', 3),
-			('BUILDING_VP_HUEY_TEOCALLI_DUMMY', 'DOMAIN_SEA', 3);
 
 
 INSERT INTO IconTextureAtlases 

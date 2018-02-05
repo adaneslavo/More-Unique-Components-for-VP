@@ -5,24 +5,24 @@
 More Unique Components for Vox Populi changelog:
 
 v27:
-- extracted all beta civs,
-- added Inca, Japan and Korea,
-- added Rough Terrain Penalty to Iron Chariot,
+- extracted and added all beta civs,
+- added Rough Terrain Penalty promotion to Iron Chariot,
 - added lua for Etemenanki (now investing in units or building in any city grants bonus to capital; sql function deleted),
 - deleted Sukritact_ChangeResearchProgress.lua; changed science progress code (Madrasah, Pitz, Holkan),
 - deleted PlotIterators.lua; reworked all lua code related to this file,
 - deleted InstanceManager link from luas,
 - deleted SaveUtils.lua file and !Utils folder,
+- deleted code for changing 4 UCs names,
 - modified DruidicLore lua (added code for capital/holy city capture from Celts and for Celts),
 - modified luas for Move/Build/Create game events combination (Goedendag, Ballista, Iron Chariot, Landwehr, Monitor, Sofa)
-- optimized lua (Pogost, White Tower, Ballista (with SQLs), Goedendag, Shophet, Slaganz, Teutonic Order, Seir Morb),
+- optimized lua (Pogost, White Tower, Ballista (with SQLs), Goedendag, Shophet, Slaganz, TeutonicOrder, Seir Morb, Ranch, Monitor, HumanSacrifice),
 - fixed text (Iron Chariot, Klepht),
 - fixes (Black Tug, Latifundium, Shophet),
 - changed unit model (Scythed Chariot),
 - changed number of units in Iron Chariots model to 1,
-- cleaned up the code and art (Xiafan Guanjun, Examination Hall, Tophet, Shophet, Slaganz, Teutonic Order),
+- cleaned up the code and art (XiafanGuanjun, ExaminationHall, Tophet, Shophet, Slaganz, TeutonicOrder, Eagle),
 - scaled down Xiafan Guanjun model,
-- added 2 dummy buildings,
+- added 4 dummy buildings; simplified all previous dummy buildings; added Nuke Immune value,
 - fixed many texts,
 - minor fixes.
 

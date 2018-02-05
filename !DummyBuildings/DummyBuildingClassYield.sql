@@ -5,8 +5,8 @@
 -- BuildingClasses
 ------------------------------
 INSERT INTO BuildingClasses 	
-			(Type,							DefaultBuilding,			NoLimit)
-VALUES		('BUILDINGCLASS_DUMMYFAITH',	'BUILDING_DUMMYFAITH',		1);
+			(Type,							DefaultBuilding,				NoLimit)
+VALUES		('BUILDINGCLASS_DUMMYCLASSYIELD',	'BUILDING_DUMMYCLASSYIELD',		1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -16,13 +16,14 @@ VALUES		('BUILDINGCLASS_DUMMYFAITH',	'BUILDING_DUMMYFAITH',		1);
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,					BuildingClass,				Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex)
-VALUES		('BUILDING_DUMMYFAITH',	'BUILDINGCLASS_DUMMYFAITH',	'TXT_KEY_BUILDING_DUMMYFAITH',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0);
+			(Type,							BuildingClass,						Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex)
+VALUES		('BUILDING_DUMMYCLASSYIELD',	'BUILDINGCLASS_DUMMYCLASSYIELD',	'TXT_KEY_BUILDING_DUMMYCLASSYIELD',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0);
 ------------------------------	
--- Building_YieldChanges
-------------------------------		
-INSERT INTO Building_YieldChanges 	
-			(BuildingType, 			YieldType,		Yield)
-VALUES		('BUILDING_DUMMYFAITH',	'YIELD_FAITH',	1);
+-- Building_BuildingClassYieldChanges
+------------------------------
+INSERT INTO Building_BuildingClassYieldChanges
+			(BuildingType,					BuildingClassType,					YieldType,			YieldChange)
+VALUES		('BUILDING_DUMMYCLASSYIELD',	'BUILDINGCLASS_OXFORD_UNIVERSITY',	'YIELD_GOLD',		2),
+			('BUILDING_DUMMYCLASSYIELD',	'BUILDINGCLASS_OXFORD_UNIVERSITY',	'YIELD_PRODUCTION',	2);
 --==========================================================================================================================
 --==========================================================================================================================

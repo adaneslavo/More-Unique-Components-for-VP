@@ -1,19 +1,6 @@
 --==========================================================================================================================
 -- LANGUAGE_EN_US
 --==========================================================================================================================	
-------------------------------
--- Unit Names
-------------------------------
-UPDATE Language_en_US SET Text = 'Indian War Elephant' WHERE Tag = 'TXT_KEY_UNIT_INDIAN_WARELEPHANT';
-UPDATE Language_en_US SET Text = 'Carrack' WHERE Tag = 'TXT_KEY_UNIT_PORTUGUESE_NAU';
-------------------------------
--- Building Names
-------------------------------
-UPDATE Language_en_US SET Text = 'Yurt' WHERE Tag = 'TXT_KEY_BUILDING_YURT';
-UPDATE Language_en_US SET Text = 'Imperial Cannon Foundry' WHERE Tag = 'TXT_KEY_BUILDING_SIEGE_WORKSHOP';
-------------------------------
--- Unit Texts
-------------------------------
 -- Ballista
 UPDATE Language_en_US 
 SET Text = 'Unique Roman replacement for the Catapult. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against land Units. When near a Great General, has double movement in open terrain while in enemy territory.'
@@ -78,7 +65,6 @@ UPDATE Language_en_US
 SET Text = 'Powerful Medieval Mounted Unit, weak to Pikemen. Only the Songhai may build it. This Unit is not penalized when attacking Cities, unlike the Knight which it replaces, and starts with the Raider promotion.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_MUSLIM_CAVALRY';
 
-
 --Pracinha
 UPDATE	Language_en_US
 SET	Text = 'This melee unit is stronger in faraway lands and earns Tourism when it defeats an enemy. Use them to fight wars in foreign lands to push your Civilization towards a Culture victory.'
@@ -100,7 +86,6 @@ WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_STRATEGY' AND EXISTS (SELECT * FROM C
 UPDATE Language_en_US 
 SET Text = 'Korean replacement for the Caravel. High [ICON_STRENGTH] Combat Strength, and more effective against other melee naval units. Moves slowly in Deep Ocean'
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
 ------------------------------
 -- Building Texts
 ------------------------------
@@ -108,7 +93,6 @@ WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_HELP' AND EXISTS (SELECT * FROM COMMU
 UPDATE Language_en_US
 SET Text = 'Reduces enemy spy stealing rate by 50%, and prevents the disruption of Building and Wonder construction by Spy Advanced Actions, and enemy Spies cannot cause Unrest in the City. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City, and reduces [ICON_HAPPINESS_3] Crime.'
 WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
-
 ------------------------------
 -- UI Texts
 ------------------------------
