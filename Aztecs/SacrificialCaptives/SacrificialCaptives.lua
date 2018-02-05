@@ -2,44 +2,34 @@
 -- Author: adan_eslavo
 -- DateCreated: 21/12/2017
 --------------------------------------------------------------
-function AztecHumanSacrificeOnTraining(playerID, cityID, unitID)
-	local pPlayer = Players[playerID]
-	
-	if pPlayer:GetName() == "Montezuma" then
-		local pUnit = pPlayer:GetUnitByID(unitID)
+local eCivilizationAztec = GameInfoTypes.CIVILIZATION_AZTEC
+local ePromotionHumanSacrifice = GameInfoTypes.PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE
 
-		if pUnit:GetUnitCombatType() ~= nil then	
-			pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE"], true)
+-- add Human Sacrifice (dummy) promotion to newly trained or created units
+function OnUnitCreateAddHumanSacrificePromotion(iPlayer, iUnit, iUnitType, iX, iY)
+	local pPlayer = Players[iPlayer]
+
+	if pPlayer:GetCivilizationType() ~= eCivilizationAztec then return end
+
+	local pUnit = pPlayer:GetUnitByID(iUnit)
+
+	pUnit:SetHasPromotion(ePromotionHumanSacrifice, pUnit:GetUnitCombatType() >= 0)
+end
+
+-- add Human Sacrifice to first Pathfinder of the game at the end of first turn
+function OnFirstTurnEndAddHumanSacrificePromotion(iPlayer)
+	if Game.GetElapsedGameTurns() ~= 0 then return end
+
+	local pPlayer = Players[iPlayer]
+
+	if pPlayer:GetCivilizationType() ~= eCivilizationAztec then return end
+
+	for unit in pPlayer:Units() do
+		if unit:GetUnitCombatType() ~= nil then
+			unit:SetHasPromotion(ePromotionHumanSacrifice, unit:GetUnitCombatType() >= 0)
 		end
 	end
 end
 
-function AztecHumanSacrificeOnCreation(playerID, unitID, iUnitType, iX, iY)
-	local pPlayer = Players[playerID]
-	
-	if pPlayer:GetName() == "Montezuma" then
-		local pUnit = pPlayer:GetUnitByID(unitID)
-
-		if pUnit:GetUnitCombatType() ~= nil then	
-			pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE"], true)
-		end
-	end
-end
-
-function AztecStartingHumanSacrifice(iPlayer)
-	if Game.GetElapsedGameTurns() == 1 then
-		local pPlayer = Players[iPlayer]
-
-		if pPlayer:GetName() == "Montezuma" then
-			for pUnit in pPlayer:Units() do
-				if pUnit:GetUnitCombatType() ~= nil then	
-					pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE"], true)
-				end
-			end
-		end
-	end
-end
-
-GameEvents.CityTrained.Add(AztecHumanSacrificeOnTraining)
-GameEvents.UnitCreated.Add(AztecHumanSacrificeOnCreation)
-GameEvents.PlayerDoTurn.Add(AztecStartingHumanSacrifice)
+GameEvents.UnitCreated.Add(OnUnitCreateAddHumanSacrificePromotion)
+GameEvents.PlayerEndTurnCompleted.Add(OnFirstTurnEndAddHumanSacrificePromotion)

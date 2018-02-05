@@ -1415,6 +1415,30 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Aztecs\Eagle\3DModel\Pikeman_Aztec.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Aztecs\Eagle\3DModel\Pikeman_Aztec.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Aztecs\Eagle\3DModel\Pikeman_Aztec.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Aztecs\Eagle\3DModel\Pikeman_Aztec_gloss.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Aztecs\Eagle\EagleFlag_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Aztecs\Eagle\EagleFlag_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Babylon\Etemenanki\Etemenanki.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2719,47 +2743,23 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Aztecs\Eagle\eagleicon.dds">
+    <Content Include="Aztecs\Eagle\EaglePicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Aztecs\Eagle\Eagle_Icon_032.dds">
+    <Content Include="Aztecs\Eagle\EaglePicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Aztecs\Eagle\Eagle_Icon_045.dds">
+    <Content Include="Aztecs\Eagle\EaglePicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Aztecs\Eagle\Eagle_Icon_064.dds">
+    <Content Include="Aztecs\Eagle\EaglePicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Aztecs\Eagle\Eagle_Icon_080.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Aztecs\Eagle\Eagle_Icon_128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Aztecs\Eagle\Eagle_Icon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Aztecs\Eagle\Pikeman_Aztec.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Aztecs\Eagle\Pikeman_Aztec.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Aztecs\Eagle\Pikeman_Aztec.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Aztecs\Eagle\Pikeman_Aztec_gloss.dds">
+    <Content Include="Aztecs\Eagle\EaglePicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5199,6 +5199,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Austria\Landwehr\" />
     <Folder Include="Austria\Landwehr\3DModel" />
     <Folder Include="Austria\Standschutzen\" />
+    <Folder Include="Aztecs\Eagle\3DModel" />
     <Folder Include="Brazil\" />
     <Folder Include="Brazil\Pracinha\" />
     <Folder Include="Brazil\Sambadrome" />

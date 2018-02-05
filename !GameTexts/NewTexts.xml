@@ -545,14 +545,14 @@
 				Strong, front-line land Unit of the Classical Era. Only the Aztecs may build it. It gains the Sentry promotion for free. When it defeats an enemy unit, it has a 50% chance of capturing that unit as a Worker.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CAPTIVES_OF_WAR">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR">
 			<Text>
 				Captives of War
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CAPTIVES_OF_WAR_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR_HELP">
 			<Text>
-				May capture defeated units as Workers.
+				Unit can [COLOR_POSITIVE_TEXT]spawn Worker Unit on Kill[ENDCOLOR].
 			</Text>
 		</Row>
 		<!-- Examination Hall -->
