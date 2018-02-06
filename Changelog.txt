@@ -4,6 +4,8 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 
+v28:
+
 v27:
 - extracted and added all beta civs,
 - added Rough Terrain Penalty promotion to Iron Chariot,
