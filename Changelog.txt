@@ -22,6 +22,7 @@ v27:
 - changed number of units in Iron Chariots model to 1,
 - cleaned up the code and art (XiafanGuanjun, ExaminationHall, Tophet, Shophet, Slaganz, TeutonicOrder, Eagle, Huey Teocalli),
 - scaled down Xiafan Guanjun model,
+- changed promotion name (Nearby Sofa ==> Great Tactician),
 - added 4 dummy buildings; simplified all previous dummy buildings; added Nuke Immune value,
 - fixed many texts,
 - minor fixes.

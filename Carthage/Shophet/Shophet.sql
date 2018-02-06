@@ -38,15 +38,15 @@ VALUES	('ART_DEF_UNIT_CARTHAGE_SHOPHET', 	'Unit', 	'ShophetFlag_128.dds');
 -- ArtDefine_UnitInfos
 ------------------------------			
 INSERT INTO ArtDefine_UnitInfos 
-		(Type, 							DamageStates,	Formation)
-SELECT	'ART_DEF_UNIT_CARTHAGE_SHOPHET', DamageStates, 	Formation
+		(Type, 								DamageStates,	Formation)
+SELECT	'ART_DEF_UNIT_CARTHAGE_SHOPHET',	DamageStates, 	Formation
 FROM ArtDefine_UnitInfos WHERE Type = 'ART_DEF_UNIT_GENERAL_KHAN';
 ------------------------------
 -- ArtDefine_UnitInfoMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitInfoMemberInfos 	
-		(UnitInfoType,					UnitMemberInfoType,						NumMembers)
-SELECT	'ART_DEF_UNIT_CARTHAGE_SHOPHET', 'ART_DEF_UNIT_MEMBER_JFD_SHOPHET', 		1
+		(UnitInfoType,						UnitMemberInfoType,						NumMembers)
+SELECT	'ART_DEF_UNIT_CARTHAGE_SHOPHET',	'ART_DEF_UNIT_MEMBER_JFD_SHOPHET', 		1
 FROM ArtDefine_UnitInfoMemberInfos WHERE UnitInfoType = 'ART_DEF_UNIT_GENERAL_KHAN';
 ------------------------------
 -- ArtDefine_UnitMemberCombats
@@ -76,29 +76,29 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_GREATGENERAL_KH
 -- Units
 ------------------------------	
 INSERT INTO Units 	
-		(Type, 					Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, Description,						Civilopedia,							Strategy,									Help,									AdvancedStartCost,	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, UnitArtInfo,  					UnitFlagIconOffset,	UnitFlagAtlas,				MoveRate, PortraitIndex, IconAtlas)
+		(Type, 						Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, Description,						Civilopedia,							Strategy,									Help,									AdvancedStartCost,	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, UnitArtInfo,  					UnitFlagIconOffset,	UnitFlagAtlas,				MoveRate, PortraitIndex, IconAtlas)
 SELECT	'UNIT_CARTHAGE_SHOPHET',	Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, 'TXT_KEY_UNIT_CARTHAGE_SHOPHET',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_TEXT',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP',	AdvancedStartCost, 	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, 'ART_DEF_UNIT_CARTHAGE_SHOPHET',  0,					'UNIT_CARTHAGE_FLAG_ATLAS',	MoveRate, 0, 			 'UNIT_CARTHAGE_ATLAS'
 FROM Units WHERE Type = 'UNIT_GREAT_GENERAL';	
 --------------------------------
 -- UnitGameplay2DScripts
 --------------------------------
 INSERT INTO UnitGameplay2DScripts 	
-		(UnitType, 				SelectionSound, FirstSelectionSound)
-SELECT	'UNIT_CARTHAGE_SHOPHET', SelectionSound, FirstSelectionSound
+		(UnitType, 					SelectionSound, FirstSelectionSound)
+SELECT	'UNIT_CARTHAGE_SHOPHET',	SelectionSound, FirstSelectionSound
 FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_GREAT_GENERAL';	
 --------------------------------
 -- Unit_AITypes
 --------------------------------
 INSERT INTO Unit_AITypes 	
-		(UnitType, 				UnitAIType)
-SELECT	'UNIT_CARTHAGE_SHOPHET', UnitAIType
+		(UnitType, 					UnitAIType)
+SELECT	'UNIT_CARTHAGE_SHOPHET',	UnitAIType
 FROM Unit_AITypes WHERE UnitType = 'UNIT_GREAT_GENERAL';
 --------------------------------
 -- Unit_Flavors
 --------------------------------
 INSERT INTO Unit_Flavors 	
-		(UnitType, 				FlavorType, Flavor)
-SELECT	'UNIT_CARTHAGE_SHOPHET', FlavorType, Flavor
+		(UnitType, 					FlavorType, Flavor)
+SELECT	'UNIT_CARTHAGE_SHOPHET',	FlavorType, Flavor
 FROM Unit_Flavors WHERE UnitType = 'UNIT_GREAT_GENERAL';
 --------------------------------
 -- Unit_Builds
@@ -110,8 +110,8 @@ VALUES	('UNIT_CARTHAGE_SHOPHET',	'BUILD_CITADEL');
 -- Unit_FreePromotions
 --------------------------------
 INSERT INTO Unit_FreePromotions 	
-		(UnitType, 				PromotionType)
-SELECT	'UNIT_CARTHAGE_SHOPHET', PromotionType
+		(UnitType, 					PromotionType)
+SELECT	'UNIT_CARTHAGE_SHOPHET',	PromotionType
 FROM Unit_FreePromotions WHERE UnitType = 'UNIT_GREAT_GENERAL';
 
 INSERT INTO Unit_FreePromotions 	

@@ -13,7 +13,7 @@ function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 
 	if pCity:IsHasBuilding(eBuildingTophet) then
 		if bGold then
-			-- give double amount of xp on unit purchase
+			-- give double amount of xp on unit purchase (reduce XP penalty on purchase)
 			local pUnit = pPlayer:GetUnitByID(iUnit)
 			local oldXP = pUnit:GetExperience()
 			local newXP = 2 * oldXP
@@ -45,7 +45,7 @@ function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 				end	
 
 				pPlayer:AddNotification(0, 
-					sCurrency..' Unit purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iCultureGain..' [ICON_CULTURE] Culture', 
+					sCurrency..' Unit Purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iCultureGain..' [ICON_CULTURE] Culture', 
 					'Bonus Yields in '..sCityName, 
 					iCityX, iCityY)
 			

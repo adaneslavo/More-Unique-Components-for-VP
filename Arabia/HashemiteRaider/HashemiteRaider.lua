@@ -1,9 +1,6 @@
 -- Hashemite Raider
 -- Author: Blue Ghost, adan_eslavo
 -- DateCreated:
--- Hashemite Raider
--- Author: Blue Ghost, adan_eslavo
--- DateCreated:
 -- 2018-01-27 updated by Infixo
 --------------------------------------------------------------
 include("FLuaVector.lua")

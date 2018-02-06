@@ -33,7 +33,7 @@ function OnCityExpansion(iPlayer, iCity, iX, iY, bGold, bCulture)
 			local sCurrency
 
 			if bGold then
-				sCurrency = '[ICON_GOLD] Tile purchase:'
+				sCurrency = '[ICON_GOLD] Tile Purchase:'
 			elseif bCulture then
 				sCurrency = '[ICON_CULTURE] Natural Border Growth:'
 			end	

@@ -1959,7 +1959,7 @@
 			<Text>Admiralty</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL_HELP">
-			<Text>Unit turns into Great Admiral [COLOR_POSITIVE_TEXT]on Embark[ENDCOLOR].</Text>
+			<Text>Unit turns into Great Admiral [COLOR_POSITIVE_TEXT]on Embark[ENDCOLOR]. [COLOR_POSITIVE_TEXT]From the beginning of the turn to its end[ENDCOLOR], same tile or adjacent Friendly Units [COLOR_POSITIVE_TEXT]ignore ZOC[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL">
 			<Text>Commandeering</Text>
@@ -1968,7 +1968,7 @@
 			<Text>Unit turns into Great General if it [COLOR_POSITIVE_TEXT]is standing in City[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC">
-			<Text>Nearby Shophet</Text>
+			<Text>Great Tactician</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC_HELP">
 			<Text>Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR].</Text>
