@@ -39,7 +39,7 @@ function OnMoveAddScytheDamage(iPlayer, iUnit, iX, iY)
 						pAdjacentPlayer:AddNotification(NotificationTypes.NOTIFICATION_ENEMY_IN_TERRITORY, 
 							pAdjacentUnit:GetName()..' was hurt by enemy Scythed Chariot for 10 damage.', 
 							'Unit damaged by Scythed Chariot', 
-							iX, iY, pAdjacentUnit:GetID())
+							iX, iY, iUnit)
 					end
 				end
 			end
