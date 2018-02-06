@@ -858,22 +858,22 @@
 		</Row>
 
 		<!-- Huey Teocalli -->
-		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI">
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI">
 			<Text>
 				Huey Teocalli
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_TEXT">
 			<Text>
 				In the Aztec Empire, a teocalli was a terraced pyramid, surmounted by a temple on top, site of all the important religious rituals in the town. The greatest was located in the heart of Tenochtitlan, the Huey Teocalli (or, according to the Spanish, the Templo Mayor) dedicated to a pair of gods: Huitzilopochtli, the god of war, and Tlaloc, the god of agriculture (an indication of what was important in Aztec culture). Each god had a separate temple, reached by separate staircases.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_STRATEGY">
 			<Text>
 				The Huey Teocalli is the unique Aztec replacement for the Grand Temple. It does not require a Temple, and provides a free Temple in the city. It provides a global bonus to Barracks and Floating Gardens. Every time you enter a Golden Age, the Huey Teocalli permanently gains Food, Faith, and additional XP to units built in the city.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_HUEY_TEOCALLI_HELP">
+		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP">
 			<Text>
 				Unique replacement for the Grand Temple. Only the Aztec may build it.[NEWLINE]Comes with a free Temple. A [ICON_GOLDEN_AGE] Golden Age begins. Reduces [ICON_HAPPINESS_3] Religious Unrest. All Temples gain +1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture, Barracks get +2 [ICON_CULTURE] Culture, and Floating Gardens get +2 [ICON_FOOD] Food. Whenever you enter a Golden Age, permanently gain +3 [ICON_FOOD], +3 [ICON_PEACE] Faith, and +3 XP for units trained in the city (max +30 each).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
@@ -1959,7 +1959,7 @@
 			<Text>Admiralty</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL_HELP">
-			<Text>Unit turns into Great Admiral [COLOR_POSITIVE_TEXT]on Embark[ENDCOLOR].</Text>
+			<Text>Unit turns into Great Admiral [COLOR_POSITIVE_TEXT]on Embark[ENDCOLOR]. [COLOR_POSITIVE_TEXT]From the beginning of the turn to its end[ENDCOLOR], same tile or adjacent Friendly Units [COLOR_POSITIVE_TEXT]ignore ZOC[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL">
 			<Text>Commandeering</Text>
@@ -1968,7 +1968,7 @@
 			<Text>Unit turns into Great General if it [COLOR_POSITIVE_TEXT]is standing in City[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC">
-			<Text>Nearby Shophet</Text>
+			<Text>Great Tactician</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC_HELP">
 			<Text>Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR].</Text>

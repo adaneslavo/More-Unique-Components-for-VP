@@ -24,13 +24,22 @@ function OnCityExpansion(iPlayer, iCity, iX, iY, bGold, bCulture)
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local iCityX = pCity:GetX()
 			local iCityY = pCity:GetY()
-			local sCityName = pCity:GetName()
 			local vCityPosition = PositionCalculator(iCityX, iCityY)
 			
 			Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_FOOD]+"..iYield1.." [ICON_FOOD][ENDCOLOR]", 1)
 			Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iYield2.." [ICON_CULTURE][ENDCOLOR]", 1.5)
+			
+			local sCityName = pCity:GetName()
+			local sCurrency
+
+			if bGold then
+				sCurrency = '[ICON_GOLD] Tile Purchase:'
+			elseif bCulture then
+				sCurrency = '[ICON_CULTURE] Natural Border Growth:'
+			end	
+
 			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_TILE, 
-				'Aquired tile:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iYield1..' [ICON_FOOD] Food[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iYield2..' [ICON_CULTURE] Culture', 
+				sCurrency..'[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iYield1..' [ICON_FOOD] Food[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iYield2..' [ICON_CULTURE] Culture', 
 				'Bonus Yields in '..sCityName, 
 				iCityX, iCityY)
 		end

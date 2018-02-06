@@ -4,32 +4,42 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
-function Scythe(iPlayer, iUnit, iX, iY)
-	local pPlayer = Players[iPlayer]
-	local pTeam = Teams[pPlayer:GetTeam()]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-		
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_CELTS_SCYTHE) then
-		local pPlot = Map.GetPlot(iX, iY)
-			
-		for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do	
-			local pPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
-			
-			if pPlot:IsUnit() == true then
-				pTargetUnit = pPlot:GetUnit(0)
-				pTargetPlayer = Players[pTargetUnit:GetOwner()]
+local ePromotionScythe = GameInfoTypes.PROMOTION_UNIT_CELTS_SCYTHE
 
-				if pTeam:IsAtWar(pTargetPlayer:GetTeam()) then
-					pTargetUnit:ChangeDamage(10)
+-- damage adjacent enemies on move
+function OnMoveAddScytheDamage(iPlayer, iUnit, iX, iY)
+	local pPlayer = Players[iPlayer]
+	local pUnit = pPlayer:GetUnitByID(iUnit)
+	
+	if pUnit and pUnit:IsHasPromotion(ePromotionScythe) then
+		local pPlot = pUnit:GetPlot()
+		
+		-- loop through adjacent tiles
+		for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
+			local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
+			
+			-- loop through all units on adjacent tile
+			for k = 0, pAdjacentPlot:GetNumUnits() - 1, 1 do
+				local pAdjacentUnit = pAdjacentPlot:GetUnit(k)
+				local eAdjacentPlayer = pAdjacentUnit:GetOwner()
+				local pAdjacentPlayer = Players[eAdjacentPlayer]
+				
+				if Teams[pPlayer:GetTeam()]:IsAtWar(pAdjacentPlayer:GetTeam()) then
+					pAdjacentUnit:ChangeDamage(10, eAdjacentPlayer)
 					
+					local iX, iY = pAdjacentUnit:GetX(), pAdjacentUnit:GetY()
+
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vUnitPosition = PositionCalculator(pTargetUnit:GetX(), pTargetUnit:GetY())
+						local vUnitPosition = PositionCalculator(iX, iY)
 					
 						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Scythe[ENDCOLOR]", 2)
 					end
 
-					if pTargetPlayer:IsHuman() then
-						pTargetPlayer:AddNotification(0, pTargetUnit:GetName()..' was hurt by enemy Scythed Chariot for 10 damage.', 'Unit damaged by Scythed Chariot', pCity:GetX(), pCity:GetY())
+					if pAdjacentPlayer:IsHuman() then
+						pAdjacentPlayer:AddNotification(NotificationTypes.NOTIFICATION_ENEMY_IN_TERRITORY, 
+							pAdjacentUnit:GetName()..' was hurt by enemy Scythed Chariot for 10 damage.', 
+							'Unit damaged by Scythed Chariot', 
+							iX, iY, pAdjacentUnit:GetID())
 					end
 				end
 			end
@@ -41,4 +51,4 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.UnitSetXY.Add(Scythe)
+GameEvents.UnitSetXY.Add(OnMoveAddScytheDamage)
