@@ -40,7 +40,7 @@ function OnPillageDamageEnemies(iPlayer, iUnit, iImprovement, iGold)
 						pAdjacentPlayer:AddNotification(NotificationTypes.NOTIFICATION_ENEMY_IN_TERRITORY, 
 							pTargetUnit:GetName()..' was hurt by enemy Hashemite Raider for 10 damage.', 
 							'Unit damaged by Hashemite Raider', 
-							iX, iY, pAdjacentUnit:GetID())
+							iX, iY, iUnit)
 					end
 				end
 			end

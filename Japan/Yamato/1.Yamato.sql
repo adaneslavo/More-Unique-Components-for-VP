@@ -58,12 +58,11 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_BATTLESHIP';
 ------------------------------
 INSERT INTO IconTextureAtlases 
 			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_YAMATO_ATLAS', 		256, 		'JFD_JapanTojoAtlas_256.dds',	2, 				2),
-			('UNIT_YAMATO_ATLAS', 		128, 		'JFD_JapanTojoAtlas_128.dds',	2, 				2),
-			('UNIT_YAMATO_ATLAS', 		80, 		'JFD_JapanTojoAtlas_80.dds',	2, 				2),
-			('UNIT_YAMATO_ATLAS', 		64, 		'JFD_JapanTojoAtlas_64.dds',	2, 				2),
-			('UNIT_YAMATO_ATLAS', 		45, 		'JFD_JapanTojoAtlas_45.dds',	2, 				2),
-			('UNIT_YAMATO_ATLAS', 		32, 		'JFD_JapanTojoAtlas_32.dds',	2, 				2),
+VALUES		('UNIT_YAMATO_ATLAS', 		256, 		'JFD_JapanTojoAtlas_256.dds',	1, 				1),
+			('UNIT_YAMATO_ATLAS', 		128, 		'JFD_JapanTojoAtlas_128.dds',	1, 				1),
+			('UNIT_YAMATO_ATLAS', 		80, 		'JFD_JapanTojoAtlas_80.dds',	1, 				1),
+			('UNIT_YAMATO_ATLAS', 		64, 		'JFD_JapanTojoAtlas_64.dds',	1, 				1),
+			('UNIT_YAMATO_ATLAS', 		45, 		'JFD_JapanTojoAtlas_45.dds',	1, 				1),
 			('UNIT_YAMATO_FLAG_ATLAS', 	32, 		'UnitFlagYamatoAtlas_32.dds',		1, 				1);
 --==========================================================================================================================	
 
@@ -77,7 +76,7 @@ VALUES		('UNIT_YAMATO_ATLAS', 		256, 		'JFD_JapanTojoAtlas_256.dds',	2, 				2),
 --------------------------------	
 INSERT INTO Units 	
 			(Type,					Class, 	PrereqTech,			Range, BaseLandAirDefense,	BaseSightRange, Combat, RangedCombat,		Cost,		FaithCost,	RequiresFaithPurchaseEnabled,	Moves,		Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 						Strategy, 								Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 					UnitFlagIconOffset,	UnitFlagAtlas,				PortraitIndex, 	IconAtlas,			MoveRate)
-SELECT		'UNIT_YAMATO',	Class,	'TECH_ROCKETRY',	Range+1,	BaseLandAirDefense, BaseSightRange, Combat+5, RangedCombat+15,	Cost+200,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves,	Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_YAMATO',	'TXT_KEY_UNIT_YAMATO_TEXT',	'TXT_KEY_UNIT_YAMATO_STRATEGY',	'TXT_KEY_UNIT_YAMATO_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_YAMATO', 	0,					'UNIT_YAMATO_FLAG_ATLAS',	2, 				'UNIT_YAMATO_ATLAS',	MoveRate
+SELECT		'UNIT_YAMATO',	Class,	'TECH_ROCKETRY',	Range+1,	BaseLandAirDefense, BaseSightRange, Combat+5, RangedCombat+15,	Cost+200,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves,	Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_YAMATO',	'TXT_KEY_UNIT_YAMATO_TEXT',	'TXT_KEY_UNIT_YAMATO_STRATEGY',	'TXT_KEY_UNIT_YAMATO_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_YAMATO', 	0,					'UNIT_YAMATO_FLAG_ATLAS',	0, 				'UNIT_YAMATO_ATLAS',	MoveRate
 FROM Units WHERE Type = 'UNIT_BATTLESHIP';
 --------------------------------	
 -- UnitGameplay2DScripts
