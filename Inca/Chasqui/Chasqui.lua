@@ -13,7 +13,7 @@ function Chasquiwasi(iPlayer)
             local pPlot = Map.GetPlot(pUnit:GetX(), pUnit:GetY())
 
             if pPlot:GetOwner() == iPlayer then
-				pUnit:ChangeDamage(-5)
+				pUnit:ChangeDamage(-15)
 
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
@@ -28,5 +28,25 @@ end
 function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
+
+
+--function Chasquiwasi(iPlayer, iUnit)
+--	local pPlayer = Players[iPlayer]
+
+--	if not( pPlayer and pPlayer:IsAlive()) then return end
+--	for unit in pPlayer:Units() do
+
+--		if unit:IsHasPromotion(GameInfoTypes.PROMOTION_CHASQUI_HEAL_DUMMY) then
+--			local pPlot = Map.GetPlot(unit:GetX(), unit:GetY())
+
+--			if pPlot:GetOwner() == iPlayer then 
+--				unit:SetHasPromotion(GameInfoTypes.PROMOTION_CHASQUI_HEAL, true) else
+--					unit:SetHasPromotion(GameInfoTypes.PROMOTION_CHASQUI_HEAL, false)
+--			end
+--		end
+--	end
+--end
+
+
 
 GameEvents.PlayerDoTurn.Add(Chasquiwasi)
