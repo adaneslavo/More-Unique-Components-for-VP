@@ -329,7 +329,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_RAZZIA_HELP">
 			<Text>
-				Gain Food and Production in the nearest coastal city whenever you kill an enemy unit, pillage an improvement, or plunder a trade route.
+				Gain Food and Production in the nearest coastal city whenever you kill an enemy unit, pillage an improvement, or plunder a trade route. Can enter rival territory without Open Borders.
 			</Text>
 		</Row>
 		
