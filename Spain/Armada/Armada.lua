@@ -24,7 +24,8 @@ function InvincibleArmada(iPlayer)
 						pUnit:ChangeExperience(2)
 					end
 				end
-			--else
+			else
+				pUnit:SetBaseCombatStrength(40)
 				--pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL"], false)
 			end
 		end
