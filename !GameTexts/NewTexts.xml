@@ -1080,15 +1080,30 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_STRATEGY">
 			<Text>
-				The Kabuki is the unique Japanese replacement for the Opera House. In addition to the bonuses of an Opera House, it provides more Culture than the Opera House and boosts the effect of all [ICON_CULTURE] Cultural Specialists in the City. Furthermore, it does not require an Amphitheater to have been constructed.
+				The Kabuki is the unique Japanese replacement for the Opera House. In addition to the bonuses of an Opera House, it provides more Culture than the Opera House and boosts the effect of all [ICON_CULTURE] Cultural Specialists in the City. On construction, the city immediately receives a Great Work of Music in the city.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_HELP">
 			<Text>
-				Unique Japanese replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN] Musician, [ICON_GREAT_ARTIST] Artist, and [ICON_GREAT_WRITER] Writer Specialists in the City produce +2 [ICON_GOLD] Gold and 33% more [ICON_GREAT_PEOPLE] Great Person Points.
+				Unique Japanese replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN] Musician, [ICON_GREAT_ARTIST] Artist, and [ICON_GREAT_WRITER] Writer Specialists in the City produce 33% more [ICON_GREAT_PEOPLE] Great Person Points.[NEWLINE][NEWLINE]Contains 2 Slots for Great Works of Music, and a free Great Work of Music appears in the city
 			</Text>
 		</Row>
-		
+		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_THEMING_BONUS_HELP">
+			<Text>
+				To maximize your bonus, make sure all slots are filled with Music from the Same Era and Civilization.
+			</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_THEMING_BONUS_KABUKI">
+			<Text>
+				Collection of {2_CivAdjective} Shosagoto
+			</Text>
+		</Row>	
+				<Row Tag="TXT_KEY_THEMING_BONUS_WAT">
+			<Text>Collection of {2_CivAdjective} Suttas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WAT_THEMING_BONUS_HELP">
+			<Text>To maximize your bonus, make sure all slots are filled with Music from the Same Era and Civilization.</Text>
+		</Row>	
 		<!-- Kampong -->
 		<!-- Created by pineappledan; incorporated by adan_eslavo on 24/11/2017 -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG">
@@ -1561,10 +1576,10 @@
 			<Text>Paradise Garden</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>Unique Persian replacement for the Garden.[NEWLINE]Increases the rate of [ICON_GREAT_PEOPLE] Great People generation in City. Receive 30 [ICON_CULTURE] Culture as an instant boost in City when a [ICON_GOLDEN_AGE] Golden Age begins. +3 [ICON_CULTURE] Culture and [ICON_GOLD] Gold to all guilds in City.</Text>
+			<Text>Unique Persian replacement for the Garden.[NEWLINE]Increases the rate of [ICON_GREAT_PEOPLE] Great People generation in City. Receive 30 [ICON_CULTURE] Culture as an instant boost in City when a [ICON_GOLDEN_AGE] Golden Age begins. +1 [ICON_CULTURE] Culture and [ICON_GOLD] Gold for every guild on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
-			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, the Pairidaeza provides culture and gold to all guilds in the City. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city, even if you do not have a guild.</Text>
+			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, the Pairidaeza provides culture and gold to all guilds in the Empire. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city, even if you do not have a guild.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_TEXT">
 			<Text>
