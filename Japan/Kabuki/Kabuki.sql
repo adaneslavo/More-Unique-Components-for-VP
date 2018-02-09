@@ -13,8 +13,12 @@ VALUES		('CIVILIZATION_JAPAN', 'BUILDINGCLASS_OPERA_HOUSE', 'BUILDING_VP_KABUKI'
 -- Buildings
 --------------------------------
 INSERT INTO	Buildings
-		(Type, 			Description, 			Civilopedia, 			Strategy, 				Help, 					ThemingBonusHelp, 					GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, 	IconAtlas, 	GreatWorkYieldType, UnlockedByBelief, CultureRateModifier, 	GreatWorkSlotType, 	GreatWorkCount)
-SELECT		'BUILDING_VP_KABUKI', 	'TXT_KEY_BUILDING_VP_KABUKI', 	'TXT_KEY_BUILDING_VP_KABUKI', 	'TXT_KEY_BUILDING_VP_KABUKI_STRATEGY', 'TXT_KEY_BUILDING_VP_KABUKI_HELP', 	'TXT_KEY_BUILDING_VP_KABUKI_THEMING_BONUS_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 0, 		'KABUKI_ATLAS', GreatWorkYieldType, UnlockedByBelief, 10, 			GreatWorkSlotType, 			2
+			(Type, Description, Civilopedia, Strategy, Help, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,
+			BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas, GreatWorkYieldType,
+			UnlockedByBelief, CultureRateModifier, GreatWorkSlotType, GreatWorkCount)
+SELECT		'BUILDING_VP_KABUKI', 'TXT_KEY_BUILDING_VP_KABUKI', 'TXT_KEY_BUILDING_VP_KABUKI', 'TXT_KEY_BUILDING_VP_KABUKI_STRATEGY', 'TXT_KEY_BUILDING_VP_KABUKI_HELP', GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,
+			BuildingClass, ArtDefineTag, PrereqTech, 0, 'KABUKI_ATLAS', GreatWorkYieldType,
+			UnlockedByBelief, 10, GreatWorkSlotType, GreatWorkCount
 FROM		Buildings
 WHERE		Type = 'BUILDING_OPERA_HOUSE';
 
@@ -43,9 +47,8 @@ WHERE		BuildingType = 'BUILDING_OPERA_HOUSE';
 --------------------------------
 INSERT INTO	Building_Flavors
 		(BuildingType,  FlavorType, Flavor)
-VALUES		('BUILDING_VP_KABUKI', 'FLAVOR_CULTURE', 50),
-		('BUILDING_VP_KABUKI', 'FLAVOR_GREAT_PEOPLE', 15),
-		('BUILDING_VP_KABUKI', 'FLAVOR_RELIGION', 5);
+VALUES		('BUILDING_VP_KABUKI', 'FLAVOR_CULTURE', 70),
+		('BUILDING_VP_KABUKI', 'FLAVOR_GREAT_PEOPLE', 20);
 
 --------------------------------
 -- Building_SpecificGreatPersonRateModifier
@@ -56,19 +59,26 @@ VALUES
 		('BUILDING_VP_KABUKI', 'SPECIALIST_MUSICIAN', 66),
 		('BUILDING_VP_KABUKI', 'SPECIALIST_ARTIST', 33),
 		('BUILDING_VP_KABUKI', 'SPECIALIST_WRITER', 33);
+
+INSERT INTO Building_SpecialistYieldChangesLocal
+			(BuildingType, SpecialistType, YieldType, Yield)
+VALUES
+		('BUILDING_VP_KABUKI', 'SPECIALIST_ARTIST', 'YIELD_TOURISM', 2),
+		('BUILDING_VP_KABUKI', 'SPECIALIST_WRITER', 'YIELD_TOURISM', 2),
+		('BUILDING_VP_KABUKI', 'SPECIALIST_MUSICIAN', 'YIELD_TOURISM', 2);
 --------------------------------
 -- Building_ThemingBonus
 --------------------------------
-INSERT INTO Building_ThemingYieldBonus
-		(BuildingType, YieldType, Yield)
-VALUES		('BUILDING_VP_KABUKI', 'YIELD_CULTURE', 	2),
-		('BUILDING_VP_KABUKI', 'YIELD_FAITH',		2);
+--INSERT INTO Building_ThemingYieldBonus
+--		(BuildingType, YieldType, Yield)
+--VALUES		('BUILDING_VP_KABUKI', 'YIELD_CULTURE', 	2),
+--		('BUILDING_VP_KABUKI', 'YIELD_FAITH',		2);
 ------------------------------	
 -- Building_ThemingBonuses
 ------------------------------	
-INSERT INTO Building_ThemingBonuses	
-		(BuildingType,		Description,			Bonus,	SameEra, RequiresSamePlayer,	AIPriority)
-VALUES		('BUILDING_VP_KABUKI',	'TXT_KEY_THEMING_BONUS_KABUKI',	2,	1,	 1,		        4);
+--INSERT INTO Building_ThemingBonuses	
+--		(BuildingType,		Description,			Bonus,	SameEra, RequiresSamePlayer,	AIPriority)
+--VALUES		('BUILDING_VP_KABUKI',	'TXT_KEY_THEMING_BONUS_KABUKI',	2,	1,	 1,		        4);
 
 --------------------------------
 -- Building_YieldChanges
