@@ -55,17 +55,14 @@ FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_HORSEMAN';
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------	
-INSERT INTO Unit_FreePromotions 	
-	(UnitType, 					PromotionType)
-SELECT	'UNIT_HUN_HORSE_ARCHER', 	PromotionType
-FROM Unit_FreePromotions WHERE UnitType = 'UNIT_MONGOLIAN_KESHIK';
+DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_HUN_HORSE_ARCHER' AND PromotionType = 'PROMOTION_ACCURACY_1';
 
 INSERT INTO Unit_FreePromotions
 	(UnitType, 					PromotionType)
 VALUES	('UNIT_HUN_HORSE_ARCHER',  'PROMOTION_HORSE_ARCHER');
 
 INSERT INTO Unit_FreePromotions 	
-		(UnitType, 					PromotionType)
+		(UnitType, 		PromotionType)
 SELECT	'UNIT_JFD_ALAN_CAVALRY', 	PromotionType
 FROM Unit_FreePromotions WHERE UnitType = 'UNIT_HORSEMAN';	
 
