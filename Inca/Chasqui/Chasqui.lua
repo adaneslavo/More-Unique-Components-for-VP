@@ -13,7 +13,7 @@ function Chasquiwasi(iPlayer)
             local pPlot = Map.GetPlot(pUnit:GetX(), pUnit:GetY())
 
             if pPlot:GetOwner() == iPlayer then
-				pUnit:ChangeDamage(-15)
+				pUnit:ChangeDamage(-10)
 
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
