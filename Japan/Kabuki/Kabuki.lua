@@ -7,8 +7,8 @@ local jGuild1 = GameInfoTypes.BUILDING_WRITERS_GUILD
 local jGuild2 = GameInfoTypes.BUILDING_ARTISTS_GUILD
 local jGuild3 = GameInfoTypes.BUILDING_MUSICIANS_GUILD
 local jJapGuild1 = GameInfoTypes.BUILDING_MONOGATARI
-local jJapGuild2 = GameInfoTypes.TXT_KEY_BUILDING_UKIYOE
-local jJapGuild3 = GameInfoTypes.TXT_KEY_BUILDING_GAGAKU
+local jJapGuild2 = GameInfoTypes.BUILDING_UKIYOE
+local jJapGuild3 = GameInfoTypes.BUILDING_GAGAKU
 
 --Kabuki Construction. All guilds in city upgraded
 
