@@ -1066,7 +1066,7 @@
 			<Text>Unique Zulu replacement for the Amphitheater. Build . Also boosts the City''s Great Writer rate and the value of Writers'' Guilds, and the Culture of Great Works. Provides Culture in the City whenever a military unit gains a level.</Text>
 		</Row>	
 		
-		<!-- Kabuki -->
+		<!-- Kabuki & the Japanese Guilds-->
 		
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI">
 			<Text>
@@ -1075,35 +1075,79 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_TEXT">
 			<Text>
-				Kabuki is a classical Japanese dance-drama. Kabuki theatre is known for the stylization of its drama and for the elaborate make-up worn by some of its performers. The history of kabuki began in 1603 when Izumo no Okuni, possibly a miko of Izumo-taisha, began performing a new style of dance drama in the dry riverbeds of Kyoto. Despite huge cultural changes since then, it remains the most popular of the traditional styles of Japanese drama.
+				Kabuki is a classical Japanese dance-drama. Kabuki theatre is known for the stylization of its drama and for the elaborate make-up worn by some of its performers. The history of kabuki began in 1603 when Izumo no Okuni, possibly a miko of Izumo-taisha, began performing a new style of dance drama in the dry riverbeds of Kyoto. Despite huge cultural changes since then, it remains the most popular of the traditional styles of Japanese drama, and has helped renew interest in other forms of traditional Japanese art.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_STRATEGY">
 			<Text>
-				The Kabuki is the unique Japanese replacement for the Opera House. In addition to the bonuses of an Opera House, it provides more Culture than the Opera House and boosts the effect of all [ICON_CULTURE] Cultural Specialists in the City. On construction, the city immediately receives a Great Work of Music in the city.
+				The Kabuki is the unique Japanese replacement for the Opera House. In addition to the bonuses of an Opera House, it boosts the effect of all [ICON_CULTURE] Cultural Specialists in the City. On construction, All guilds in the city are replaced with a unique Japanese guild.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_HELP">
 			<Text>
-				Unique Japanese replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN] Musician, [ICON_GREAT_ARTIST] Artist, and [ICON_GREAT_WRITER] Writer Specialists in the City produce 33% more [ICON_GREAT_PEOPLE] Great Person Points.[NEWLINE][NEWLINE]Contains 2 Slots for Great Works of Music, and a free Great Work of Music appears in the city
+				Unique Japanese replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN] Musician, [ICON_GREAT_ARTIST] Artist, and [ICON_GREAT_WRITER] Writer Specialists in the City produce 33% more [ICON_GREAT_PEOPLE] Great Person Points.[NEWLINE][NEWLINE]All Writers', Artists' and Musicians' Guilds in this city are replaced with powerful unique guild equivalents. 
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_THEMING_BONUS_HELP">
+		<Row Tag="TXT_KEY_BUILDING_MONOGATARI">
 			<Text>
-				To maximize your bonus, make sure all slots are filled with Music from the Same Era and Civilization.
+				Monogatari Guild
 			</Text>
-		</Row>		
-		<Row Tag="TXT_KEY_THEMING_BONUS_KABUKI">
-			<Text>
-				Collection of {2_CivAdjective} Shosagoto
-			</Text>
-		</Row>	
-				<Row Tag="TXT_KEY_THEMING_BONUS_WAT">
-			<Text>Collection of {2_CivAdjective} Suttas</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_WAT_THEMING_BONUS_HELP">
-			<Text>To maximize your bonus, make sure all slots are filled with Music from the Same Era and Civilization.</Text>
-		</Row>	
+		<Row Tag="TXT_KEY_BUILDING_MONOGATARI_TEXT">
+			<Text>
+				Monogatari are a classical form of Japanses literature which gained popularity during the 10th century Heian period. Monogatari were traditionally epics and semi-religious tales, but later works included secular stories of courtly life, including Genji Monogatari, widely regarded as the first modern novel. Many of the most prolific and successful writers of Monogatari were noble women.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONOGATARI_STRATEGY">
+			<Text>
+				The Monogatari Guild is the unique Japanese replacement for the Writers' Guild. It generates Great Writers more quickly than the Writers' Guild, gives Gold for Writer specialists in the City, and provides Production for every Kabuki Theater in the Empire.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONOGATARI_HELP">
+			<Text>
+				Unique Japanese replacement for the Writers' Guild. Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. All Writer specialists in this city generate +2 [ICON_GOLD] Gold. +1 [ICON_PRODUCTION] Production to all Kabuki Theaters on Empire
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UKIYOE">
+			<Text>
+				Ukiyo-e Guild
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UKIYOE_TEXT">
+			<Text>
+				Ukiyo-e is a style of Japanese painting on woodblocks which flourished in the 17th century. The production of ukiyo-e was a collaborative affair, often with a separate painter who crafted the designs, a woodcarver who crafted the woodblock, and a printer who inked and reproduced the artwork. The striking angles, shapes and colours of Ukiyo-e would leave a lasting impression on Western art, informing the impressionist and modernist movements.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UKIYOE_STRATEGY">
+			<Text>
+				The Ukiyo-e Guild is the unique Japanese replacement for the Artists' Guild. It generates Great Artists more quickly than the Artists' Guild, gives Science for Artist specialists in the City, and provides Tourism for every Kabuki Theater in the Empire.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UKIYOE_HELP">
+			<Text>
+				Unique Japanese replacement for the Artists' Guild. Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. All Artist specialists in this city generate +2 [ICON_RESEARCH] Science. +1 [ICON_TOURISM] Tourism to all Kabuki Theaters on Empire
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GAGAKU">
+			<Text>
+				Gagaku Guild
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GAGAKU_TEXT">
+			<Text>
+				Gagaku is the oldest existing form of orchestral music in the world. The style was brought in from mainland China in the 6th century, and reached its peak in the 10th century's imperial court. Modern ensembles consist of three wind instruments, three percussion instruments, and a supporting string instrument. 
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GAGAKU_STRATEGY">
+			<Text>
+				The Gagaku Guild is the unique Japanese replacement for the Musicians' Guild. It generates Great Musicians more quickly than the Musicians' Guild, gives Faith for Musician and Civil Servant specialists in the City, and provides Culture for every Kabuki Theater in the Empire
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GAGAKU_HELP">
+			<Text>
+				Unique Japanese replacement for the Musicians' Guild. Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. All Musician and Civil Servant specialists in this city generate +2 [ICON_PEACE] Faith. +1 [ICON_CULTURE] Culture to all Kabuki Theaters on Empire
+			</Text>
+		</Row>
 		<!-- Kampong -->
 		<!-- Created by pineappledan; incorporated by adan_eslavo on 24/11/2017 -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG">
