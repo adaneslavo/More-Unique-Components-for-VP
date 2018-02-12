@@ -111,5 +111,5 @@ VALUES
 		('KABUKI_ATLAS', 	32, 		'Kabuki32.dds',		1, 		1),
 		('JAPGUILDS_ATLAS', 	256, 		'JapGuilds256.dds',	3, 		1),
 		('JAPGUILDS_ATLAS', 	128, 		'JapGuilds128.dds',	3, 		1),
-		('JAPGUILDS_ATLAS', 	64, 		'JapGuilds80.dds',	3, 		1),
+		('JAPGUILDS_ATLAS', 	64, 		'JapGuilds64.dds',	3, 		1),
 		('JAPGUILDS_ATLAS', 	45, 		'JapGuilds45.dds',	3, 		1);
