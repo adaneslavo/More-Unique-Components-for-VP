@@ -13,8 +13,9 @@ function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 
 	if pCity:IsHasBuilding(eBuildingTophet) then
 		if bGold then
+			local pUnit = pPlayer:GetUnitByID(iUnit)
 			-- give double amount of xp on unit purchase (reduce XP penalty on purchase)
-			pPlayer:GetUnitByID(iUnit):ChangeExperience(2 * pUnit:GetExperience())
+			pUnit:ChangeExperience(2 * pUnit:GetExperience())
 		end
 	
 		if bGold or bFaith then

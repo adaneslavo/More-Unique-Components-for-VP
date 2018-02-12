@@ -5,6 +5,10 @@
 More Unique Components for Vox Populi changelog:
 
 v28:
+- cleaned (Chasqui),
+- simplified (E-temenanki ==> no bonus on unit purchase),
+- reworked (Kabuki, Hacienda),
+- fixed (Tophet ==> lua, Oppidum ==> lua).
 
 v27:
 - extracted and added all beta civs,

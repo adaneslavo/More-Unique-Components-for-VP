@@ -2019,31 +2019,31 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui128.dds">
+    <Content Include="Inca\Chasqui\ChasquiPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui256.dds">
+    <Content Include="Inca\Chasqui\ChasquiPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui45.dds">
+    <Content Include="Inca\Chasqui\ChasquiPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui64.dds">
+    <Content Include="Inca\Chasqui\ChasquiPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui80.dds">
+    <Content Include="Inca\Chasqui\ChasquiPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui_Flag.dds">
+    <Content Include="Inca\Chasqui\ChasquiFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Chasqui\Chasqui_SV.dds">
+    <Content Include="Inca\Chasqui\ChasquiFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
