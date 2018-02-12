@@ -27,29 +27,30 @@ INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
 --------------------------------	
 
 INSERT INTO UnitPromotions 
-		(Type, 								Description, 									Help, 												Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 			PediaType, 			PediaEntry)
-VALUES	('PROMOTION_INDABA',			'TXT_KEY_PROMOTION_INDABA',				'TXT_KEY_PROMOTION_INDABA_HELP', 				'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_INDABA');
+		(Type, 			Description, 			Help, 					Sound, 			CannotBeChosen, PortraitIndex,	IconAtlas, 	PediaType, 		PediaEntry)
+VALUES		('PROMOTION_IBUTHO',	'TXT_KEY_PROMOTION_IBUTHO',	'TXT_KEY_PROMOTION_IBUTHO_HELP', 	'AS2D_IF_LEVELUP',	1, 		59, 		'ABILITY_ATLAS', 'PEDIA_ATTRIBUTES', 	'TXT_KEY_PROMOTION_IBUTHO'),
+		('PROMOTION_IQAWE',	'TXT_KEY_PROMOTION_IQAWE',	'TXT_KEY_PROMOTION_IQAWE_HELP', 	'AS2D_IF_LEVELUP',	1, 		59, 		'ABILITY_ATLAS', 'PEDIA_ATTRIBUTES', 	'TXT_KEY_PROMOTION_IQAWE');
 	
 --------------------------------	
 -- Units
 --------------------------------
 INSERT INTO Units 	
-		(Type, 		Class, DontShowYields, WorkRate, CivilianAttackPriority, SupplyCapBoost, 	PrereqTech, RangedCombat, Range, Special, Combat, Cost, ObsoleteTech, GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, Help, 				Description, 			Civilopedia, 				Strategy, 		 			Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 			UnitFlagIconOffset,	UnitFlagAtlas,			PortraitIndex, 	IconAtlas,		 MoveRate)
-SELECT	'UNIT_ZULU3_GENERAL',	Class, DontShowYields, WorkRate, CivilianAttackPriority, SupplyCapBoost, 	PrereqTech, RangedCombat, Range, Special, Combat, Cost, ObsoleteTech, GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, 3, CombatClass, Domain,  DefaultUnitAI,  'TXT_KEY_UNIT_ZULU3_GENERAL_HELP',	'TXT_KEY_UNIT_ZULU3_GENERAL',  'TXT_KEY_UNIT_ZULU3_GENERAL_TEXT',	'TXT_KEY_UNIT_ZULU3_GENERAL_STRATEGY',  	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_ZULU3_GENERAL',	0,			'UNIT_ALPHA_3IZU_ATLAS',	0, 		'ZULU3_GENERAL_ATLAS',	 MoveRate
+		(Type, 		Class, DontShowYields, WorkRate, CivilianAttackPriority, SupplyCapBoost, 	PrereqTech, RangedCombat, Range, Special, Combat, Cost, ObsoleteTech, GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, Help, 				Description, 			Civilopedia, 				Strategy, 		 			Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfoEraVariation, UnitArtInfo, 			UnitFlagIconOffset,	UnitFlagAtlas,			PortraitIndex, 	IconAtlas,		 MoveRate)
+SELECT	'UNIT_ZULU3_GENERAL',	Class, DontShowYields, WorkRate, CivilianAttackPriority, SupplyCapBoost, 	PrereqTech, RangedCombat, Range, Special, Combat, Cost, ObsoleteTech, GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, 3, 	CombatClass, Domain,  DefaultUnitAI,  'TXT_KEY_UNIT_ZULU3_GENERAL_HELP',	'TXT_KEY_UNIT_ZULU3_GENERAL',  'TXT_KEY_UNIT_ZULU3_GENERAL_TEXT',	'TXT_KEY_UNIT_ZULU3_GENERAL_STRATEGY',  	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfoEraVariation, 'ART_DEF_UNIT_ZULU3_GENERAL',	0,			'UNIT_ALPHA_3IZU_ATLAS',	0, 		'ZULU3_GENERAL_ATLAS',	 MoveRate
 FROM Units WHERE Type = 'UNIT_GREAT_GENERAL';
 
 --------------------------------	
 -- Civilization_UnitClassOverrides 
 --------------------------------		
 INSERT INTO Civilization_UnitClassOverrides 
-		(CivilizationType, 					UnitClassType, 			UnitType)
+	(CivilizationType, 	UnitClassType, 			UnitType)
 VALUES	('CIVILIZATION_ZULU',	'UNITCLASS_GREAT_GENERAL',	'UNIT_ZULU3_GENERAL');
 
 --------------------------------	
 -- Unit_Builds
 --------------------------------
 INSERT INTO Unit_Builds 	
-		(UnitType, 			BuildType)
+		(UnitType, 	BuildType)
 SELECT	'UNIT_ZULU3_GENERAL',	BuildType
 FROM Unit_Builds WHERE UnitType = 'UNIT_GREAT_GENERAL';
 
@@ -57,34 +58,35 @@ FROM Unit_Builds WHERE UnitType = 'UNIT_GREAT_GENERAL';
 -- UnitGameplay2DScripts
 --------------------------------		
 INSERT INTO UnitGameplay2DScripts 	
-		(UnitType, 					SelectionSound, FirstSelectionSound)
+		(UnitType, 	SelectionSound, FirstSelectionSound)
 SELECT	'UNIT_ZULU3_GENERAL', 	SelectionSound, FirstSelectionSound
 FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_GREAT_GENERAL';
 --------------------------------		
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	
-		(UnitType, 					UnitAIType)
+		(UnitType, 	UnitAIType)
 SELECT	'UNIT_ZULU3_GENERAL', 	UnitAIType
 FROM Unit_AITypes WHERE UnitType = 'UNIT_GREAT_GENERAL';
 --------------------------------	
 -- Unit_Flavors
 --------------------------------		
 INSERT INTO Unit_Flavors 	
-		(UnitType, 					FlavorType, Flavor)
+		(UnitType, 	FlavorType, Flavor)
 SELECT	'UNIT_ZULU3_GENERAL', 	FlavorType, Flavor
 FROM Unit_Flavors WHERE UnitType = 'UNIT_GREAT_GENERAL';
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------	
 INSERT INTO Unit_FreePromotions 	
-		(UnitType, 					PromotionType)
+		(UnitType, 	PromotionType)
 SELECT	'UNIT_ZULU3_GENERAL', 	PromotionType
 FROM Unit_FreePromotions WHERE UnitType = 'UNIT_GREAT_GENERAL';	
 
 INSERT INTO Unit_FreePromotions
-		(UnitType, 					PromotionType)
-VALUES	('UNIT_ZULU3_GENERAL',  'PROMOTION_INDABA');
+		(UnitType, 		PromotionType)
+VALUES		('UNIT_ZULU3_GENERAL',  'PROMOTION_IBUTHO'),
+		('UNIT_ZULU3_GENERAL',  'PROMOTION_IQAWE');
 
 --------------------------------	
 -- Unit_UniqueNames
@@ -92,7 +94,7 @@ VALUES	('UNIT_ZULU3_GENERAL',  'PROMOTION_INDABA');
 
 INSERT INTO Unit_UniqueNames 
 		(UnitType, 					UniqueName)
-VALUES	('UNIT_ZULU3_GENERAL',	'TXT_KEY_UNIT_ZULU3_GENERAL_1'),
+VALUES		('UNIT_ZULU3_GENERAL',	'TXT_KEY_UNIT_ZULU3_GENERAL_1'),
 		('UNIT_ZULU3_GENERAL',	'TXT_KEY_UNIT_ZULU3_GENERAL_2'),
 		('UNIT_ZULU3_GENERAL',	'TXT_KEY_UNIT_ZULU3_GENERAL_3'),
 		('UNIT_ZULU3_GENERAL',	'TXT_KEY_UNIT_ZULU3_GENERAL_4'),
