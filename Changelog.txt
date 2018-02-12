@@ -5,6 +5,9 @@
 More Unique Components for Vox Populi changelog:
 
 v28:
+- simplified (E-temenanki ==> no bonus on unit purchase),
+- reworked (Kabuki),
+- fixed (Tophet).
 
 v27:
 - extracted and added all beta civs,
