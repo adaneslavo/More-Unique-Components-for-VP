@@ -12,7 +12,8 @@ function InvincibleArmada(iPlayer)
 				local iY = pUnit:GetY()
 				local pPlot = Map.GetPlot(iX, iY)
 
-				pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL"], true)
+				--pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL"], true)
+				pUnit:SetBaseCombatStrength(44)
 				
 				if pPlot:GetOwner() ~= -1 then
 					local pEnemyPlayer = Players[pPlot:GetOwner()]
@@ -24,7 +25,8 @@ function InvincibleArmada(iPlayer)
 					end
 				end
 			else
-				pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL"], false)
+				pUnit:SetBaseCombatStrength(40)
+				--pUnit:SetHasPromotion(GameInfoTypes["PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL"], false)
 			end
 		end
 	end

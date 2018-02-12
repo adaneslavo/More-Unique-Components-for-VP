@@ -74,16 +74,18 @@ VALUES		('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_COCOA',	'YIELD_GOLD',		1),
 			('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_CITRUS',	'YIELD_GOLD',		1),
 			('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_CITRUS',	'YIELD_FOOD',		1);
 ------------------------------	
--- Building_BuildingClassLocalYieldChanges
+-- Building_BuildingClassYieldChanges
 ------------------------------		
-INSERT INTO Building_BuildingClassLocalYieldChanges
-			(BuildingType, 					BuildingClassType, 					YieldType, 			YieldChange)
-VALUES		('BUILDING_PERSIA_PAIRIDAEZA', 	'BUILDINGCLASS_ARTISTS_GUILD', 		'YIELD_GOLD',		3),
-			('BUILDING_PERSIA_PAIRIDAEZA', 	'BUILDINGCLASS_MUSICIANS_GUILD', 	'YIELD_GOLD',		3),
-			('BUILDING_PERSIA_PAIRIDAEZA', 	'BUILDINGCLASS_WRITERS_GUILD', 		'YIELD_GOLD',		3),
-			('BUILDING_PERSIA_PAIRIDAEZA', 	'BUILDINGCLASS_ARTISTS_GUILD', 		'YIELD_CULTURE',	3),
-			('BUILDING_PERSIA_PAIRIDAEZA', 	'BUILDINGCLASS_MUSICIANS_GUILD', 	'YIELD_CULTURE',	3),
-			('BUILDING_PERSIA_PAIRIDAEZA', 	'BUILDINGCLASS_WRITERS_GUILD', 		'YIELD_CULTURE',	3);
+INSERT INTO Building_BuildingClassYieldChanges 
+	(BuildingType, BuildingClassType, YieldType, YieldChange)
+VALUES
+	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_ARTISTS_GUILD', 'YIELD_GOLD', 1),
+	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_ARTISTS_GUILD', 'YIELD_CULTURE', 1),
+	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_MUSICIANS_GUILD', 'YIELD_GOLD', 1),
+	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_MUSICIANS_GUILD', 'YIELD_CULTURE', 1),
+	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_WRITERS_GUILD', 'YIELD_GOLD', 1),
+	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_WRITERS_GUILD', 'YIELD_CULTURE', 1);
+
 --==========================================================================================================================
 --==========================================================================================================================
 

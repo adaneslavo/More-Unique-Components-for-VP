@@ -77,9 +77,9 @@ VALUES			('UNIT_MOROCCAN_CORSAIR', 'PROMOTION_TARGETING_4'),
 --------------------------------	
 INSERT INTO UnitPromotions
 			(Type,										Description,								Help,						
-			CannotBeChosen,		Sound,			PortraitIndex,	IconAtlas,			PediaType,		PediaEntry)
+			CannotBeChosen,		Sound,			PortraitIndex,	IconAtlas,			PediaType,		PediaEntry, RivalTerritory)
 VALUES		('PROMOTION_RAZZIA',				'TXT_KEY_PROMOTION_RAZZIA',		'TXT_KEY_PROMOTION_RAZZIA_HELP',
-			1,				'AS2D_IF_LEVELUP',	59,				'ABILITY_ATLAS',	'PEDIA_MELEE',			'TXT_KEY_PROMOTION_RAZZIA');
+			1,				'AS2D_IF_LEVELUP',	59,				'ABILITY_ATLAS',	'PEDIA_MELEE',			'TXT_KEY_PROMOTION_RAZZIA', 1);
 
 
 INSERT INTO ArtDefine_UnitInfos (Type,DamageStates,Formation)

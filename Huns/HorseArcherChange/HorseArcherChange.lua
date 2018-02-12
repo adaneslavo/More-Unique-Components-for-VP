@@ -1,6 +1,6 @@
 --UU
 
-local HerdID = GameInfoTypes.UNIT_HUN_HORSE_ARCHER;
+local HerdID = GameInfoTypes.PROMOTION_HORSE_ARCHER;
 local RangAtt = GameInfoTypes.MISSION_RANGE_ATTACK;
 local tPIE = {}
 

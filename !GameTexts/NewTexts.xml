@@ -64,13 +64,7 @@
 			<Text>Invincible</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP">
-			<Text>+2 XP if unit is sailing [COLOR_POSITIVE_TEXT]inside Enemy Territory at full Health[ENDCOLOR]. +10% [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. Lost after unit upgrade.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL">
-			<Text>Appearances</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL_HELP">
-			<Text>+10% [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR].</Text>
+			<Text>+2 XP if unit is sailing [COLOR_POSITIVE_TEXT]inside Enemy Territory at full Health[ENDCOLOR]. +4 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. Lost after unit upgrade.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA">
 			<Text>Armada</Text>
@@ -335,7 +329,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_RAZZIA_HELP">
 			<Text>
-				Gain Food and Production in the nearest coastal city whenever you kill an enemy unit, pillage an improvement, or plunder a trade route.
+				Gain Food and Production in the nearest coastal city whenever you kill an enemy unit, pillage an improvement, or plunder a trade route. Can enter rival territory without Open Borders.
 			</Text>
 		</Row>
 		
@@ -983,11 +977,17 @@
 		</Row>
 		
 		<!-- InDuna -->	
-		<Row Tag="TXT_KEY_PROMOTION_INDABA">
-			<Text>Indaba</Text>
+		<Row Tag="TXT_KEY_PROMOTION_IBUTHO">
+			<Text>Ibutho</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_INDABA_HELP">
-			<Text>When expended, grants 60XP to a stacked unit and 15XP to every adjacent unit.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_IBUTHO_HELP">
+			<Text>Grants 5XP to a stacked unit [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR].</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_PROMOTION_IQAWE">
+			<Text>Iqawe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IQAWE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]When Expended[ENDCOLOR], grants 30XP to a stacked unit and inflicts 30 damage to every adjacent enemy unit.</Text>
 		</Row>		
 		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL">
 			<Text>InDuna</Text>
@@ -1002,9 +1002,60 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_TEXT">
-			<Text>Leadership was not a complicated affair for the Zulu military. An inDuna guided each regiment, and he in turn answered to senior izinDuna who controlled the corps grouping. Overall guidance of the host was furnished by elder izinDuna usually with many years of experience. One or more of these elder chiefs might accompany a big force on an important mission, but there was no single "field marshal" in supreme command of all Zulu forces. Regimental izinDuna, like the non-commissioned officers of today's army, and yesterday's Roman Centurions, were extremely important to morale and discipline. This was shown during the battle of Isandhlwana. Blanketed by a hail of British bullets, rockets and artillery, the advance of the Zulu faltered. Echoing from the mountain, however, were the shouted cadences and fiery exhortations of their regimental izinDuna, who reminded the warriors that their king did not send them to run away. Thus encouraged, the encircling regiments remained in place, maintaining continual pressure, until weakened British dispositions enabled the host to make a final surge forward.</Text>
+			<Text>Leadership was not a complicated affair for the Zulu military. An inDuna guided each regiment, or 'ibutho', and he in turn answered to senior izinDuna who controlled the corps grouping. Overall guidance of the host was furnished by elder izinDuna usually with many years of experience. One or more of these elder chiefs might accompany a big force on an important mission, but there was no single "field marshal" in supreme command of all Zulu forces. Regimental izinDuna, like the non-commissioned officers of today's army, and yesterday's Roman Centurions, were extremely important to morale and discipline. This was shown during the battle of Isandhlwana. Blanketed by a hail of British bullets, rockets and artillery, the advance of the Zulu faltered. Echoing from the mountain, however, were the shouted cadences and fiery exhortations of their regimental izinDuna, who reminded the warriors that their king did not send them to run away. Thus encouraged, the encircling regiments remained in place, maintaining continual pressure, until weakened British dispositions enabled the host to make a final surge forward.</Text>
 		</Row>		
-		
+		<!--Unique Names-->
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_1">
+			<Text>Mzilikazi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_2">
+			<Text>Mbopa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_3">
+			<Text>Ntshingwayo kaMahole</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_4">
+			<Text>Nathaniel Isaacs</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_5">
+			<Text>Ndlela kaSompisi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_6">
+			<Text>Umgobhozi Ovela Entabeni</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_7">
+			<Text>Nongalaza KaNondela</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_8">
+			<Text>Dabulamanzi kaMpande</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_9">
+			<Text>Dambuza Nzobo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_10">
+			<Text>Nqoboka Mthiyane</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_11">
+			<Text>Mabhodla Mbuyazi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_12">
+			<Text>Menziwa Biyela</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_13">
+			<Text>Gala ka Nodade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_14">
+			<Text>Vumindaba kaNthati</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_15">
+			<Text>Mavumengwana kaNdlela</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_16">
+			<Text>Zibhebhu kaMaphitha</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_17">
+			<Text>Manyosi</Text>
+		</Row>
 		<!-- Iziko -->		
 		<Row Tag="TXT_KEY_BUILDING_IZIKO">
 			<Text>Iziko</Text>
@@ -1021,7 +1072,7 @@
 			<Text>Unique Zulu replacement for the Amphitheater. Build . Also boosts the City''s Great Writer rate and the value of Writers'' Guilds, and the Culture of Great Works. Provides Culture in the City whenever a military unit gains a level.</Text>
 		</Row>	
 		
-		<!-- Kabuki -->
+		<!-- Kabuki & the Japanese Guilds-->
 		
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI">
 			<Text>
@@ -1030,20 +1081,79 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_TEXT">
 			<Text>
-				Kabuki is a classical Japanese dance-drama. Kabuki theatre is known for the stylization of its drama and for the elaborate make-up worn by some of its performers. The history of kabuki began in 1603 when Izumo no Okuni, possibly a miko of Izumo-taisha, began performing a new style of dance drama in the dry riverbeds of Kyoto. Despite huge cultural changes since then, it remains the most popular of the traditional styles of Japanese drama.
+				Kabuki is a classical Japanese dance-drama. Kabuki theatre is known for the stylization of its drama and for the elaborate make-up worn by some of its performers. The history of kabuki began in 1603 when Izumo no Okuni, possibly a miko of Izumo-taisha, began performing a new style of dance drama in the dry riverbeds of Kyoto. Despite huge cultural changes since then, it remains the most popular of the traditional styles of Japanese drama, and has helped renew interest in other forms of traditional Japanese art.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_STRATEGY">
 			<Text>
-				The Kabuki is the unique Japanese replacement for the Opera House. In addition to the bonuses of an Opera House, it provides more Culture than the Opera House and boosts the effect of all [ICON_CULTURE] Cultural Specialists in the City. Furthermore, it does not require an Amphitheater to have been constructed.
+				The Kabuki is the unique Japanese replacement for the Opera House. In addition to the bonuses of an Opera House, it boosts the effect of all [ICON_CULTURE] Cultural Specialists in the City. On construction, All guilds in the city are replaced with a unique Japanese guild.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_HELP">
 			<Text>
-				Unique Japanese replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN] Musician, [ICON_GREAT_ARTIST] Artist, and [ICON_GREAT_WRITER] Writer Specialists in the City produce +2 [ICON_GOLD] Gold and 33% more [ICON_GREAT_PEOPLE] Great Person Points.
+				Unique Japanese replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN] Musician, [ICON_GREAT_ARTIST] Artist, and [ICON_GREAT_WRITER] Writer Specialists in the City produce 33% more [ICON_GREAT_PEOPLE] Great Person Points.[NEWLINE][NEWLINE]All Writers', Artists' and Musicians' Guilds in this city are replaced with powerful unique guild equivalents. 
 			</Text>
 		</Row>
-		
+		<Row Tag="TXT_KEY_BUILDING_MONOGATARI">
+			<Text>
+				Monogatari Guild
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONOGATARI_TEXT">
+			<Text>
+				Monogatari are a classical form of Japanses literature which gained popularity during the 10th century Heian period. Monogatari were traditionally epics and semi-religious tales, but later works included secular stories of courtly life, including Genji Monogatari, widely regarded as the first modern novel. Many of the most prolific and successful writers of Monogatari were noble women.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONOGATARI_STRATEGY">
+			<Text>
+				The Monogatari Guild is the unique Japanese replacement for the Writers' Guild. It generates Great Writers more quickly than the Writers' Guild, gives Gold for Writer specialists in the City, and provides Production for every Kabuki Theater in the Empire.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONOGATARI_HELP">
+			<Text>
+				Unique Japanese replacement for the Writers' Guild. Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. All Writer specialists in this city generate +2 [ICON_GOLD] Gold. +1 [ICON_PRODUCTION] Production to all Kabuki Theaters on Empire
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UKIYOE">
+			<Text>
+				Ukiyo-e Guild
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UKIYOE_TEXT">
+			<Text>
+				Ukiyo-e is a style of Japanese painting on woodblocks which flourished in the 17th century. The production of ukiyo-e was a collaborative affair, often with a separate painter who crafted the designs, a woodcarver who crafted the woodblock, and a printer who inked and reproduced the artwork. The striking angles, shapes and colours of Ukiyo-e would leave a lasting impression on Western art, informing the impressionist and modernist movements.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UKIYOE_STRATEGY">
+			<Text>
+				The Ukiyo-e Guild is the unique Japanese replacement for the Artists' Guild. It generates Great Artists more quickly than the Artists' Guild, gives Science for Artist specialists in the City, and provides Tourism for every Kabuki Theater in the Empire.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_UKIYOE_HELP">
+			<Text>
+				Unique Japanese replacement for the Artists' Guild. Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. All Artist specialists in this city generate +2 [ICON_RESEARCH] Science. +1 [ICON_TOURISM] Tourism to all Kabuki Theaters on Empire
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GAGAKU">
+			<Text>
+				Gagaku Guild
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GAGAKU_TEXT">
+			<Text>
+				Gagaku is the oldest existing form of orchestral music in the world. The style was brought in from mainland China in the 6th century, and reached its peak in the 10th century's imperial court. Modern ensembles consist of three wind instruments, three percussion instruments, and a supporting string instrument. 
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GAGAKU_STRATEGY">
+			<Text>
+				The Gagaku Guild is the unique Japanese replacement for the Musicians' Guild. It generates Great Musicians more quickly than the Musicians' Guild, gives Faith for Musician and Civil Servant specialists in the City, and provides Culture for every Kabuki Theater in the Empire
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GAGAKU_HELP">
+			<Text>
+				Unique Japanese replacement for the Musicians' Guild. Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. All Musician and Civil Servant specialists in this city generate +2 [ICON_PEACE] Faith. +1 [ICON_CULTURE] Culture to all Kabuki Theaters on Empire
+			</Text>
+		</Row>
 		<!-- Kampong -->
 		<!-- Created by pineappledan; incorporated by adan_eslavo on 24/11/2017 -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG">
@@ -1516,10 +1626,10 @@
 			<Text>Paradise Garden</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>Unique Persian replacement for the Garden.[NEWLINE]Increases the rate of [ICON_GREAT_PEOPLE] Great People generation in City. Receive 30 [ICON_CULTURE] Culture as an instant boost in City when a [ICON_GOLDEN_AGE] Golden Age begins. +3 [ICON_CULTURE] Culture and [ICON_GOLD] Gold to all guilds in City.</Text>
+			<Text>Unique Persian replacement for the Garden.[NEWLINE]Increases the rate of [ICON_GREAT_PEOPLE] Great People generation in City. Receive 30 [ICON_CULTURE] Culture as an instant boost in City when a [ICON_GOLDEN_AGE] Golden Age begins. +1 [ICON_CULTURE] Culture and [ICON_GOLD] Gold for every guild on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
-			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, the Pairidaeza provides culture and gold to all guilds in the City. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city, even if you do not have a guild.</Text>
+			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, the Pairidaeza provides culture and gold to all guilds in the Empire. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city, even if you do not have a guild.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_TEXT">
 			<Text>
