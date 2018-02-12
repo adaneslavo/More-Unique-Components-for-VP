@@ -10,7 +10,7 @@ local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].Resea
 function EtemenankiBuildingInvestment(iPlayer, iCity, iBuildingClass, bValue)
 	local pPlayer = Players[iPlayer]
 
-  if not pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_BABYLON then return end
+	if not pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_BABYLON then return end
 
 	local pCapital = pPlayer:GetCapitalCity()
 	
