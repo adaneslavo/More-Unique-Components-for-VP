@@ -977,11 +977,17 @@
 		</Row>
 		
 		<!-- InDuna -->	
-		<Row Tag="TXT_KEY_PROMOTION_INDABA">
-			<Text>Indaba</Text>
+		<Row Tag="TXT_KEY_PROMOTION_IBUTHO">
+			<Text>Ibutho</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_INDABA_HELP">
-			<Text>When expended, grants 60XP to a stacked unit and 15XP to every adjacent unit.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_IBUTHO_HELP">
+			<Text>Grants 5XP to a stacked unit [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR].</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_PROMOTION_IQAWE">
+			<Text>Iqawe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IQAWE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]When Expended[ENDCOLOR], grants 30XP to a stacked unit and inflicts 30 damage to every adjacent enemy unit.</Text>
 		</Row>		
 		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL">
 			<Text>InDuna</Text>
