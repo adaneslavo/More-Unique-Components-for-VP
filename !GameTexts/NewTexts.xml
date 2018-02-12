@@ -271,30 +271,30 @@
 			<Text>+25% [ICON_STRENGTH] vs Melee Ships.</Text>
 		</Row>		
 		<!-- Chasqui -->		
-		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI">
+		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI">
 			<Text>Chasqui</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_HELP">
+		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_HELP">
 			<Text>Unique replacement for the Scout. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15HP every turn in friendly territory.[NEWLINE]Receives the Altitude Training Promotion for free.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_STRATEGY">
 			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_TEXT">
+		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_TEXT">
 			<Text>The Chasquis were the messengers of the Inca empire. They were in charge of carrying the quipus, messages and gifts up to 240 km per day through the chasquis relay system, a sort of Pony Express for the horseless Inca. In addition to their physical fitness, the Chasquis were well-educated in order to be able to read and translate the khipus, the Incan knot-based writing system, to each other and higher authorities.[NEWLINE][NEWLINE]
 			Chasquis were dispatched along thousands of miles, taking advantage of the vast Inca system of purpose-built roads and rope bridges in the Andes of Peru and Ecuador. Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. Each Chasqui carried a pututu, a conch trumpet, which was blown by the chasqui as they neared a Tambo, signalling to a fresh chasqui that one runner was close, so that they could prepare to run.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_GOLD">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_KHIPU_RUNNER">
 			<Text>Khipu Runner</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_GOLD_HELP">
-			<Text>Receive Gold for revealing new tiles.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_KHIPU_RUNNER_HELP">
+			<Text>Unit gains [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]on revealing new tiles[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI">
 			<Text>Chasquiwasi</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]At the beginning of its turn[ENDCOLOR] unit Heals 5 HP if it is standing [COLOR_POSITIVE_TEXT]inside Friendly Territory[ENDCOLOR].</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]At the beginning of its turn[ENDCOLOR] unit Heals 15 HP if it is standing [COLOR_POSITIVE_TEXT]inside Friendly Territory and is not Fortified[ENDCOLOR].</Text>
 		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->
