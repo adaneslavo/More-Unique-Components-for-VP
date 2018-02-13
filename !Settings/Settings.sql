@@ -54,5 +54,8 @@ UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_TRADE_ROUTE_PLUNDERED
 -- Baan Chang gifted from CS
 UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_MINORS_GIFTS';
 
+-- Alti Cur demanding tribute trigger
+UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_MINORS_INTERACTION';
+
 -- Instead of OnMove/OnBuild/OnCreate functions
 UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_RED_TURN';

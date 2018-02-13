@@ -1132,6 +1132,12 @@ Latest changes: see changelog file.</Description>
         <Description>Adds HorseFather promotion to Sofa</Description>
         <FileName>Songhai/Sofa/2.Sofa.lua</FileName>
       </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>AltiCur</Name>
+        <Description>Bonuses for demanding tribute</Description>
+        <FileName>Huns/AltiCur/AltiCur.lua</FileName>
+      </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
   </PropertyGroup>
@@ -1900,6 +1906,10 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Germany\TeutonicOrder\TeutonicOrder.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Huns\AltiCur\AltiCur.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

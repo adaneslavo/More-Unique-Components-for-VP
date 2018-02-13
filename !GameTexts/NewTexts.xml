@@ -52,6 +52,21 @@
 			<Text>The Huns' origins remain shrouded in mystery, but one clue to their possible connection to the ancient scourge of China, the Xiongnu, is their rule by an Alti Cur, or Six-Horns Council. The Alti Cur were a small council of nobles, the most powerful men within the Hunnic empire besides the emperor himself. Each was seated according to their rank and standing with the emperor, with the Empreror's favorite seated to his immediate right, signifying the north and east.[NEWLINE][NEWLINE]
 			An emperor's legitimacy depended heavily on the tributes he could exact from the surrounding kingdoms. It is surmised that insufficient tributes from the Chinese and other client steppes tribes may have contributed to the decline and disappearance of the Xiongnu in East Asia, only for them to burst once more onto the world stage in eastern Europe.</Text>
 		</Row>
+		<Row Tag="TXT_KEY_ALERT_ALTI_CUR_MINOR_TRIBUTE">
+			<Text>
+				Demanding tribute from the city-state has earned you {1_Num} [ICON_GOLD] Gold and +6 [ICON_HAPPINESS] Happiness for 20 turns!
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS">
+			<Text>
+				Alti Cur tribute bonus
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS_HELP">
+			<Text>
+				+6 [ICON_HAPPINESS] Happiness for 20 turns.
+			</Text>
+		</Row>
 		<!-- Armada -->
 		<!-- Created by adan_eslavo on 8/11/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA">
