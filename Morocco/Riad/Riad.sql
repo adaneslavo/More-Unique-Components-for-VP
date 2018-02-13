@@ -58,8 +58,8 @@ VALUES		('BUILDING_MAROCCO_RIAD',	'YIELD_CULTURE',	20);
 -- Building_GoldenAgeYieldMod
 --------------------------------
 INSERT INTO Building_GoldenAgeYieldMod
-			(BuildingType,		YieldType,		Yield)
-VALUES		('BUILDING_STELE',	'YIELD_GOLD',	15);
+			(BuildingType,				YieldType,		Yield)
+VALUES		('BUILDING_MAROCCO_RIAD',	'YIELD_GOLD',	15);
 --==========================================================================================================================	
 
 --==========================================================================================================================

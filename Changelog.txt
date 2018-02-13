@@ -6,7 +6,7 @@ More Unique Components for Vox Populi changelog:
 
 v28:
 - added unique names to InDuna,
-- cleaned (Chasqui, Riad),
+- cleaned (Chasqui, Riad, Corsair),
 - simplified (E-temenanki ==> no bonus on unit purchase),
 - reworked:
     - Kabuki ==> creates unique japanese guilds, 
@@ -14,8 +14,11 @@ v28:
 	- Oppidum ==> added fishing boats bonus, 
 	- Corsair ==> can enter rival territory, 
 	- Armada ==> +4CS instead of +10%CS, 
-	- Tambo),
-- fixed (Tophet ==> lua, Oppidum ==> lua).
+	- Tambo.
+- fixed:
+    - Tophet ==> lua - now works
+	- Oppidum ==> lua - nil value in fire tunner,
+	- Riad ==> sql - GA yields work now.
 - fixed text files,
 - reworked Credits.txt.
 

@@ -19,7 +19,7 @@ INSERT INTO Units
 SELECT		'UNIT_MOROCCAN_CORSAIR', 'TXT_KEY_UNIT_MOROCCAN_CORSAIR', 'TXT_KEY_UNIT_MOROCCAN_CORSAIR_TEXT', 'TXT_KEY_UNIT_MOROCCAN_CORSAIR_STRATEGY', 'TXT_KEY_UNIT_MOROCCAN_CORSAIR_HELP', 
 			Combat, RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,
 			DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, ObsoleteTech, GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_CORSAIR', 
-			0, 3, 'TCM_SICILY_ATLAS', 'TCM_UNIT_FLAG_AMMIRATUS_ATLAS', MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
+			0, 0, 'TCM_SICILY_ATLAS', 'TCM_UNIT_FLAG_AMMIRATUS_ATLAS', MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM		Units
 WHERE		Type = 'UNIT_PRIVATEER';
 
@@ -107,10 +107,9 @@ INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
 
 INSERT INTO IconTextureAtlases 
 			(Atlas, 								IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES		('TCM_SICILY_ATLAS', 					256, 		'tcmSicilyIcons256.dds',			2,				2),
-			('TCM_SICILY_ATLAS', 					128, 		'tcmSicilyIcons128.dds',			2, 				2),
-			('TCM_SICILY_ATLAS', 					80, 		'tcmSicilyIcons80.dds',				2, 				2),
-			('TCM_SICILY_ATLAS', 					64, 		'tcmSicilyIcons64.dds',				2, 				2),
-			('TCM_SICILY_ATLAS', 					45, 		'tcmSicilyIcons45.dds',				2, 				2),
-			('TCM_SICILY_ATLAS', 					32, 		'tcmSicilyIcons32.dds',				2, 				2),
+VALUES		('TCM_SICILY_ATLAS', 					256, 		'tcmSicilyIcons256.dds',			1,				1),
+			('TCM_SICILY_ATLAS', 					128, 		'tcmSicilyIcons128.dds',			1, 				1),
+			('TCM_SICILY_ATLAS', 					80, 		'tcmSicilyIcons80.dds',				1, 				1),
+			('TCM_SICILY_ATLAS', 					64, 		'tcmSicilyIcons64.dds',				1, 				1),
+			('TCM_SICILY_ATLAS', 					45, 		'tcmSicilyIcons45.dds',				1, 				1),
 			('TCM_UNIT_FLAG_AMMIRATUS_ATLAS',		32, 		'tcm_Ammiratus_Alpha.dds',			1, 				1);

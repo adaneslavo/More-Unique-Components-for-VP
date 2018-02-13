@@ -2237,6 +2237,30 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Morocco\Corsair\3DModel\tcmAmmiratus.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Morocco\Corsair\3DModel\tcmAmmiratus.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Morocco\Corsair\3DModel\tcmAmmiratusDiff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Morocco\Corsair\3DModel\tcmAmmiratusSref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Morocco\Corsair\3DModel\tcm_Ammiratus_Alpha.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Morocco\Corsair\3DModel\tcm_Ammiratus_SV.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Morocco\Corsair\Corsair.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2245,51 +2269,23 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Morocco\Corsair\tcmAmmiratus.fxsxml">
+    <Content Include="Morocco\Corsair\CorsairPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Morocco\Corsair\tcmAmmiratus.gr2">
+    <Content Include="Morocco\Corsair\CorsairPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Morocco\Corsair\tcmAmmiratusDiff.dds">
+    <Content Include="Morocco\Corsair\CorsairPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Morocco\Corsair\tcmAmmiratusSref.dds">
+    <Content Include="Morocco\Corsair\CorsairPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Morocco\Corsair\tcmSicilyIcons128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Morocco\Corsair\tcmSicilyIcons256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Morocco\Corsair\tcmSicilyIcons32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Morocco\Corsair\tcmSicilyIcons45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Morocco\Corsair\tcmSicilyIcons64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Morocco\Corsair\tcmSicilyIcons80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Morocco\Corsair\tcm_Ammiratus_Alpha.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Morocco\Corsair\tcm_Ammiratus_SV.dds">
+    <Content Include="Morocco\Corsair\CorsairPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5256,6 +5252,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Korea\TurtleShip\" />
     <Folder Include="Morocco\" />
     <Folder Include="Morocco\Corsair\" />
+    <Folder Include="Morocco\Corsair\3DModel" />
     <Folder Include="Morocco\Riad\" />
     <Folder Include="Germany" />
     <Folder Include="China" />
