@@ -13,7 +13,8 @@ function TamboPlaceCoca(iPlayer, iCity, iBuilding)
 	if iBuilding ~= GameInfoTypes.BUILDING_TAMBO then return end
 	local pCity = pPlayer:GetCityByID(iCity)
 	if not pCity then return end
-	-- If no resource under city then spawn Coca
+	-- Spawn Coca
+	local iCityPlot = plot:GetPlotCity(iCity)
 	if iCityPlot:GetNumResource() == 0 then
 		iCityPlot:SetResourceType(GameInfoTypes.RESOURCE_COCA, 1)
 		bCocaCreated = true
@@ -36,7 +37,7 @@ end
 function CocaRemoved(iHexPos, iPlayer1, iCity, iPlayer2)
 	local pPlayer = Players[iPlayer1]
 	local pCity = pPlayer:GetCityByID(iCity)
-	for iCityPlot do		
+	if iCityPlot:GetNumResource(RESOURCE_COCA) == 1 then		
 		iCityPlot:SetResourceType(GameInfoTypes.RESOURCE_COCA, 0)
 	end			
 end			
