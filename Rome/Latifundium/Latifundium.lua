@@ -35,7 +35,7 @@ function LatifundiumSpawnFigs(iX, iY, iOwner, iOldImprovement, iNewImprovement, 
 
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				pPlayer:AddNotification(0, 
-				'In [COLOR_CYAN]'..pNearestCity:GetName()..'[ENDCOLOR] there was not enough space for Latifundium to work out new source of [ICON_RES_FIGS] Figs.', 
+				'There was not enough space near [COLOR_CYAN]'..pNearestCity:GetName()..'[ENDCOLOR] for Latifundium to plant a new source of [ICON_RES_FIGS] Figs.', 
 				'Cannot place source of Figs in '..pNearestCity:GetName(), 
 				iX, iY)
 			end	
@@ -54,7 +54,7 @@ function LatifundiumSpawnFigs(iX, iY, iOwner, iOldImprovement, iNewImprovement, 
 
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_DISCOVERED_BONUS_RESOURCE, 
-			'In [COLOR_CYAN]'..pNearestCity:GetName()..'[ENDCOLOR] Latifundium worked out new source of [ICON_RES_FIGS] Figs.', 
+			'Latifundium planted a new source of [ICON_RES_FIGS] Figs near [COLOR_CYAN]'..pNearestCity:GetName()..'[ENDCOLOR].', 
 			'New source of Figs in '..pNearestCity:GetName(), 
 			pChosenPlot:GetX(), pChosenPlot:GetY(), GameInfoTypes.RESOURCE_ROME_FIGS)
 		end	

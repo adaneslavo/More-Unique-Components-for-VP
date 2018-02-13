@@ -1887,15 +1887,15 @@
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH">
 			<Text>
-				Ranch
+				Homestead
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_TEXT">
-			<Text>A ranch is a type of farm primarily for the raising of grazing livestock such as cattle or sheep. Ranching is also a method used to raise less common livestock such as elk, American bison or even ostrich, emu, and alpacas.[NEWLINE][NEWLINE]Ranches generally consist of large areas, but may be of nearly any size. If the ranch includes arable or irrigated land, the ranch may also engage in a limited amount of farming, raising crops for feeding the animals, such as hay and feed grains. As settlers from the United States moved west, they brought cattle breeds developed on the east coast and in Europe along with them, and adapted their management to the drier lands of the west by borrowing key elements of the Spanish vaquero culture. Vast swathes of the American interior were converted to ranchland in a process of colonization which left an indelible mark on the American psyche.  Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
+			<Text>A Homestead is a is a complex of buildings on a large landholding, typically a ranch, settled in accordance to the United States Homesteading Acts. The United States government implemented a policy of "free soil", allowing claimants, essentially squatters, ownership of land which they had converted into productive farms or ranches. Nearly 10% of the continental United States was settle in this way, as 270 million acres of land were essentially given away to 1.6 million homesteaders between 1862 and 1930.[NEWLINE][NEWLINE]The colonization of vast swathes of the interior left an indelible mark on the American psyche. Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY">
 			<Text>
-				The Ranch is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Ranch increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
+				The Homestead is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Homestead increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">

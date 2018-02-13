@@ -16,7 +16,7 @@ function WhiteTowerEspionageResult(iPlayer, iSpy, iResult, iCityX, iCityY)
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 					Players[pCity:GetOwner()]:AddNotification(
 						NotificationTypes.NOTIFICATION_SPY_KILLED_A_SPY,
-						'You have killed an Enemy Spy in '..pCity:GetName()..'. [ICON_HAPPINESS_1] Happiness in '..pCity:GetName()..' incresed by 1.',
+						'You have killed an Enemy Spy in '..pCity:GetName()..'. [ICON_HAPPINESS_1] Happiness in '..pCity:GetName()..' increased by 1.',
 						'Enemy Spy killed in '..pCity:GetName(),
 						pCity:GetX(), pCity:GetY(), pCity:GetOwner())
 				end
