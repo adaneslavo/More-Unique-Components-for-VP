@@ -1906,7 +1906,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_TEXT">
-			<Text>A Homestead is a is a complex of buildings on a large landholding, typically a ranch, settled in accordance to the United States Homesteading Acts. The United States government implemented a policy of "free soil", allowing claimants, essentially squatters, ownership of land which they had converted into productive farms or ranches. Nearly 10% of the continental United States was settle in this way, as 270 million acres of land were essentially given away to 1.6 million homesteaders between 1862 and 1930.[NEWLINE][NEWLINE]The colonization of vast swathes of the interior left an indelible mark on the American psyche. Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
+			<Text>A Homestead is a is a complex of buildings on a large landholding, typically a ranch, settled in accordance to the United States Homesteading Acts. The United States Government implemented a policy of "free soil", allowing claimants, effectively squatters, ownership of land which they had converted into productive farms or ranches. Nearly 10% of the continental United States was settle in this way; 270 million acres of land claimed by approximately 1.6 million homesteaders between 1862 and 1930.[NEWLINE][NEWLINE]The colonization of vast swathes of the interior left an indelible mark on the American psyche. Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY">
 			<Text>
