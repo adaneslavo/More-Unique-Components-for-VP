@@ -5,11 +5,11 @@
 --------------------------------------------------------------
 -- Coca Placement underneath city
 function TamboPlaceCoca(iPlayer, iCity, iBuilding)
-	--print("BuffaloPoundPlaceBison",iPlayer, iCity, iBuilding)
+	--print("TamboPlaceCoca",iPlayer, iCity, iBuilding)
 	-- check for Inca
 	local pPlayer = Players[iPlayer]
 	if not( pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_INCA ) then return end
-	-- check for Buffalo Pound
+	-- check for Tambo
 	if iBuilding ~= GameInfoTypes.BUILDING_TAMBO then return end
 	local pCity = pPlayer:GetCityByID(iCity)
 	if not pCity then return end
