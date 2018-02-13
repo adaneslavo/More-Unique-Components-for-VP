@@ -1,22 +1,27 @@
+-- Riad
+-- Author: Blue, Ghost, adan_eslavo
+-- DateCreated:
+--------------------------------------------------------------
 include("FLuaVector.lua")
 
-function RiadTradeRouteBonuses(iPlayer)
+local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
+local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
+local fGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GreatPeoplePercent / 100
+local eBuildingRiad = GameInfoTypes.BUILDING_MAROCCO_RIAD			
+
+-- gain yields each turn for each trade route if Riad is built in the city
+function OnTurnGainYieldsFromTR(iPlayer)
 	local pPlayer = Players[iPlayer]
-	local tradeRoutes = pPlayer:GetTradeRoutes()
 	
-	for i, tradeRoute in pairs(tradeRoutes) do
+	for i, tradeRoute in pairs(pPlayer:GetTradeRoutes()) do
 		local pCity = tradeRoute.FromCity
 		
-		if pCity:IsHasBuilding(GameInfoTypes.BUILDING_VP_RIAD) then
-			local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
-			local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
-			local iGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GreatPeoplePercent / 100
-			
+		if pCity:IsHasBuilding(eBuildingRiad) then
 			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 
-			iGain1 = math.max(math.floor(1 * iGameSpeedModifier1 * iEraModifier), 1)
-			iGain2 = math.max(math.floor(1 * iGameSpeedModifier2 * iEraModifier), 1)
-			iGain3 = math.floor(100 * iGameSpeedModifier3 * iEraModifier)
+			iGain1 = math.max(math.floor(1 * fGameSpeedModifier1 * iEraModifier), 1)
+			iGain2 = math.max(math.floor(1 * fGameSpeedModifier2 * iEraModifier), 1)
+			iGain3 = math.floor(100 * fGameSpeedModifier3 * iEraModifier)
 
 			pPlayer:ChangeGold(iGain1)
 			pPlayer:ChangeJONSCulture(iGain2)
@@ -38,4 +43,4 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.PlayerDoTurn.Add(RiadTradeRouteBonuses)
+GameEvents.PlayerDoTurn.Add(OnTurnGainYieldsFromTR)

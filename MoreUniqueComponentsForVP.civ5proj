@@ -2293,10 +2293,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Morocco\Riad\JFD_ByzantiumAlexiusAtlas_32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Morocco\Riad\Riad.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2305,19 +2301,19 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Morocco\Riad\Riad_Icon_045.dds">
+    <Content Include="Morocco\Riad\RiadPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Morocco\Riad\Riad_Icon_064.dds">
+    <Content Include="Morocco\Riad\RiadPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Morocco\Riad\Riad_Icon_128.dds">
+    <Content Include="Morocco\Riad\RiadPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Morocco\Riad\Riad_Icon_256.dds">
+    <Content Include="Morocco\Riad\RiadPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

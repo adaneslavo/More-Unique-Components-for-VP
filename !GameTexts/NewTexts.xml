@@ -1906,16 +1906,16 @@
 
 		<!-- Riad -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_BUILDING_VP_RIAD">
+		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD">
 			<Text>Riad</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_RIAD_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_TEXT">
 			<Text>A riad is a traditional Moroccan house with an interior garden or courtyard. The riads were inward focused, which allowed for family privacy and protection from the weather in Morocco. In the central garden of traditional riads there are often four orange or lemon trees and possibly a fountain. The walls of the riads are usually adorned with Arabic calligraphy with quotes from the Quran.[NEWLINE][NEWLINE]The style of these riads has changed over the years, but the basic form is still used in designs today. Recently there has been a surge in interest in this form of house after a new vogue of renovation in towns such as Marrakech and Essaouira where many of these often-crumbling buildings have been restored to their former glory. Many riads are now used as hotels or restaurants.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_RIAD_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_STRATEGY">
 			<Text>The Riad is the Moroccan unique replacement for the Garden. In addition to the bonuses of a normal Garden, the Riad grants culture in the city for every 5 citizens in the city, and Gold generation in the city is greatly increased during a Golden Age. Trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_RIAD_HELP">
+		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_HELP">
 			<Text>Unique Moroccan replacement for the Garden. +1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens in City. Trade routes originating in the city gain +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn. [NEWLINE][NEWLINE]+30% [ICON_GREAT_PEOPLE] Great People generation in this City. [NEWLINE]+15% [ICON_GOLD] Gold in the city during a [ICON_GOLDEN_AGE] Golden Age</Text>
 		</Row>
 		<!-- Sachem's Council -->
