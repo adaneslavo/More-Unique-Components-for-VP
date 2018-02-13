@@ -103,13 +103,13 @@ INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, Mate
 	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_PRIVATEER');
 
 INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
-	VALUES	('ART_DEF_UNIT_CORSAIR', 'Unit', 'tcm_Ammiratus_SV.dds');
+	VALUES	('ART_DEF_UNIT_CORSAIR', 'Unit', 'CorsairFlag_128.dds');
 
 INSERT INTO IconTextureAtlases 
 			(Atlas, 								IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES		('TCM_SICILY_ATLAS', 					256, 		'tcmSicilyIcons256.dds',			1,				1),
-			('TCM_SICILY_ATLAS', 					128, 		'tcmSicilyIcons128.dds',			1, 				1),
-			('TCM_SICILY_ATLAS', 					80, 		'tcmSicilyIcons80.dds',				1, 				1),
-			('TCM_SICILY_ATLAS', 					64, 		'tcmSicilyIcons64.dds',				1, 				1),
-			('TCM_SICILY_ATLAS', 					45, 		'tcmSicilyIcons45.dds',				1, 				1),
-			('TCM_UNIT_FLAG_AMMIRATUS_ATLAS',		32, 		'tcm_Ammiratus_Alpha.dds',			1, 				1);
+VALUES		('TCM_SICILY_ATLAS', 					256, 		'CorsairPicture_256.dds',			1,				1),
+			('TCM_SICILY_ATLAS', 					128, 		'CorsairPicture_128.dds',			1, 				1),
+			('TCM_SICILY_ATLAS', 					80, 		'CorsairPicture_080.dds',			1, 				1),
+			('TCM_SICILY_ATLAS', 					64, 		'CorsairPicture_064.dds',			1, 				1),
+			('TCM_SICILY_ATLAS', 					45, 		'CorsairPicture_045.dds',			1, 				1),
+			('TCM_UNIT_FLAG_AMMIRATUS_ATLAS',		32, 		'CorsairFlag_032.dds',				1, 				1);
