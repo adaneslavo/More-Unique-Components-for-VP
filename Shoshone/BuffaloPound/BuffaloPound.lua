@@ -51,13 +51,13 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 		if bBisonCreated then 
 			pPlayer:AddNotification(
 				NotificationTypes.NOTIFICATION_DISCOVERED_BONUS_RESOURCE,
-				'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] constructed Buffalo Pound and [COLOR_POSITIVE_TEXT]created[ENDCOLOR] new source of [ICON_RES_BISON] Bison.', -- use TXT_KEY_ here
+				'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] constructed a Buffalo Pound and [COLOR_POSITIVE_TEXT]created[ENDCOLOR] a new source of [ICON_RES_BISON] Bison.', -- use TXT_KEY_ here
 				'New source of Bison nearby '..pCity:GetName()..' [COLOR_POSITIVE_TEXT]created[ENDCOLOR]',
 				pChosenPlot:GetX(), pChosenPlot:GetY(), GameInfoTypes.RESOURCE_BISON)
 		else
 			pPlayer:AddNotification(
 				NotificationTypes.NOTIFICATION_DISCOVERED_BONUS_RESOURCE,
-				'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] constructed Buffalo Pound but [COLOR_NEGATIVE_TEXT]there was no place[ENDCOLOR] to create a new source of [ICON_RES_BISON] Bison.', -- use TXT_KEY_ here
+				'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] constructed a Buffalo Pound but [COLOR_NEGATIVE_TEXT]there was no place[ENDCOLOR] to create a new source of [ICON_RES_BISON] Bison.', -- use TXT_KEY_ here
 				'New source of Bison nearby '..pCity:GetName()..' [COLOR_NEGATIVE_TEXT]not created[ENDCOLOR]',
 				pCity:GetX(), pCity:GetY(), GameInfoTypes.RESOURCE_BISON)
 		end
