@@ -54,7 +54,7 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 					Events.AddPopupTextEvent(vCityPosition, "[COLOR_GREAT_PEOPLE_STORED]+"..iGPP.."[ICON_GREAT_PEOPLE][ENDCOLOR]", 1)
 					pPlayer:AddNotification(
 						NotificationTypes.NOTIFICATION_CITY_GROWTH,
-						'New [ICON_CITIZEN] Citizen appeared in '..pCity:GetName()..'. City gained '..iGPP..' [ICON_GREAT_PEOPLE] Great Person Points towards '..tGP.GPStr..'.',
+						'New [ICON_CITIZEN] Citizen born in '..pCity:GetName()..'. City gained '..iGPP..' [ICON_GREAT_PEOPLE] Great Person Points towards '..tGP.GPStr..'.',
 						'Citizen born in '..pCity:GetName(),
 						pCity:GetX(), pCity:GetY(), pCity:GetID())
 				end

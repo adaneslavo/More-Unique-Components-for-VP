@@ -56,8 +56,8 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				pPlayer:AddNotification(
 					NotificationTypes.NOTIFICATION_DISCOVERED_BONUS_RESOURCE,
-					'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer and [COLOR_POSITIVE_TEXT]created[ENDCOLOR] a new source of [ICON_RES_FLAX] Flax.', -- use TXT_KEY_ here
-					'New source of [ICON_RES_FLAX] Flax nearby '..pCity:GetName()..' [COLOR_POSITIVE_TEXT]created[ENDCOLOR]',
+					'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] constructed a Nilometer and [COLOR_POSITIVE_TEXT]created[ENDCOLOR] a new source of [ICON_RES_FLAX] Flax.', -- use TXT_KEY_ here
+					'New source of [ICON_RES_FLAX] Flax near '..pCity:GetName()..' [COLOR_POSITIVE_TEXT]created[ENDCOLOR]',
 					pChosenPlot:GetX(), pChosenPlot:GetY(), GameInfoTypes.RESOURCE_EGYPT_FLAX)
 			end
 			return 1
@@ -81,8 +81,8 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 	if pPlayer:IsHuman() and pPlayer:IsTurnActive() and iFlaxCount == 0 then 
 		pPlayer:AddNotification(
 			NotificationTypes.NOTIFICATION_DISCOVERED_BONUS_RESOURCE,
-			'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] constructed Nilometer but [COLOR_NEGATIVE_TEXT]there was no place[ENDCOLOR] to create a new source of [ICON_RES_FLAX] Flax.', -- use TXT_KEY_ here
-			'New source of [ICON_RES_FLAX] Flax nearby '..pCity:GetName()..' [COLOR_NEGATIVE_TEXT]not created[ENDCOLOR]',
+			'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] constructed a Nilometer but [COLOR_NEGATIVE_TEXT]there was no place[ENDCOLOR] to create a new source of [ICON_RES_FLAX] Flax.', -- use TXT_KEY_ here
+			'New source of [ICON_RES_FLAX] Flax near '..pCity:GetName()..' [COLOR_NEGATIVE_TEXT]not created[ENDCOLOR]',
 			pCity:GetX(), pCity:GetY(), GameInfoTypes.RESOURCE_EGYPT_FLAX)
 	end
 end

@@ -5,6 +5,15 @@
 More Unique Components for Vox Populi changelog:
 
 v28:
+- cleaned (Chasqui),
+- simplified (E-temenanki ==> no bonus on unit purchase),
+- reworked (Kabuki, Hacienda),
+- fixed (Tophet ==> lua, Oppidum ==> lua).
+- Added bonus to fishing boats to oppidum
+- added unique names to InDuna
+- various text fixes
+- added ability to enter rival territory to Corsair
+- modified Armada's Invincible promotion (now gives +4 strength instead of +10% strength) 
 
 v27:
 - extracted and added all beta civs,

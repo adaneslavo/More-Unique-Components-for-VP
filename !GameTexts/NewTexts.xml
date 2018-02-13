@@ -286,30 +286,30 @@
 			<Text>+25% [ICON_STRENGTH] vs Melee Ships.</Text>
 		</Row>		
 		<!-- Chasqui -->		
-		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI">
+		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI">
 			<Text>Chasqui</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_HELP">
+		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_HELP">
 			<Text>Unique replacement for the Scout. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15HP every turn in friendly territory.[NEWLINE]Receives the Altitude Training Promotion for free.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_STRATEGY">
 			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_3UC_CHASQUI_TEXT">
+		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_TEXT">
 			<Text>The Chasquis were the messengers of the Inca empire. They were in charge of carrying the quipus, messages and gifts up to 240 km per day through the chasquis relay system, a sort of Pony Express for the horseless Inca. In addition to their physical fitness, the Chasquis were well-educated in order to be able to read and translate the khipus, the Incan knot-based writing system, to each other and higher authorities.[NEWLINE][NEWLINE]
 			Chasquis were dispatched along thousands of miles, taking advantage of the vast Inca system of purpose-built roads and rope bridges in the Andes of Peru and Ecuador. Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. Each Chasqui carried a pututu, a conch trumpet, which was blown by the chasqui as they neared a Tambo, signalling to a fresh chasqui that one runner was close, so that they could prepare to run.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_GOLD">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_KHIPU_RUNNER">
 			<Text>Khipu Runner</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_GOLD_HELP">
-			<Text>Receive Gold for revealing new tiles.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_KHIPU_RUNNER_HELP">
+			<Text>Unit gains [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]on revealing new tiles[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI">
 			<Text>Chasquiwasi</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CHASQUI_HEAL_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]At the beginning of its turn[ENDCOLOR] unit Heals 5 HP if it is standing [COLOR_POSITIVE_TEXT]inside Friendly Territory[ENDCOLOR].</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]At the beginning of its turn[ENDCOLOR] unit Heals 15 HP if it is standing [COLOR_POSITIVE_TEXT]inside Friendly Territory and is not Fortified[ENDCOLOR].</Text>
 		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->
@@ -1902,15 +1902,15 @@
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH">
 			<Text>
-				Ranch
+				Homestead
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_TEXT">
-			<Text>A ranch is a type of farm primarily for the raising of grazing livestock such as cattle or sheep. Ranching is also a method used to raise less common livestock such as elk, American bison or even ostrich, emu, and alpacas.[NEWLINE][NEWLINE]Ranches generally consist of large areas, but may be of nearly any size. If the ranch includes arable or irrigated land, the ranch may also engage in a limited amount of farming, raising crops for feeding the animals, such as hay and feed grains. As settlers from the United States moved west, they brought cattle breeds developed on the east coast and in Europe along with them, and adapted their management to the drier lands of the west by borrowing key elements of the Spanish vaquero culture. Vast swathes of the American interior were converted to ranchland in a process of colonization which left an indelible mark on the American psyche.  Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
+			<Text>A Homestead is a is a complex of buildings on a large landholding, typically a ranch, settled in accordance to the United States Homesteading Acts. The United States government implemented a policy of "free soil", allowing claimants, essentially squatters, ownership of land which they had converted into productive farms or ranches. Nearly 10% of the continental United States was settle in this way, as 270 million acres of land were essentially given away to 1.6 million homesteaders between 1862 and 1930.[NEWLINE][NEWLINE]The colonization of vast swathes of the interior left an indelible mark on the American psyche. Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY">
 			<Text>
-				The Ranch is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Ranch increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
+				The Homestead is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Homestead increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">

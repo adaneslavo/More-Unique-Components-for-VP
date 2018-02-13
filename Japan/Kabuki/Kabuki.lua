@@ -1,120 +1,96 @@
 -- Kabuki
--- Author: Pineappledan (based on Pogost)
+-- Author: Pineappledan, adan_eslavo
 -- DateCreated: 10/02/2017
 --------------------------------------------------------------
-local jBuilding1 = GameInfoTypes.BUILDING_VP_KABUKI
-local jGuild1 = GameInfoTypes.BUILDING_WRITERS_GUILD
-local jGuild2 = GameInfoTypes.BUILDING_ARTISTS_GUILD
-local jGuild3 = GameInfoTypes.BUILDING_MUSICIANS_GUILD
-local jJapGuild1 = GameInfoTypes.BUILDING_MONOGATARI
-local jJapGuild2 = GameInfoTypes.BUILDING_UKIYOE
-local jJapGuild3 = GameInfoTypes.BUILDING_GAGAKU
+local eBuildingKabuki = GameInfoTypes.BUILDING_VP_KABUKI
+local eBuildingWritersGuild = GameInfoTypes.BUILDING_WRITERS_GUILD
+local eBuildingArtistsGuild = GameInfoTypes.BUILDING_ARTISTS_GUILD
+local eBuildingMusiciansGuild = GameInfoTypes.BUILDING_MUSICIANS_GUILD
+local eBuildingMonogatari = GameInfoTypes.BUILDING_MONOGATARI
+local eBuildingUkiyoe = GameInfoTypes.BUILDING_UKIYOE
+local eBuildingGagaku = GameInfoTypes.BUILDING_GAGAKU
 
---Kabuki Construction. All guilds in city upgraded
-
-function KabukiBuild(iPlayer, iCity, iBuilding)
+-- upgrade all guilds on Kabuki construction
+function OnConstructionUpgradeGuilds(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
+	
+	if pPlayer:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_JAPAN then return end
+	if iBuilding ~= eBuildingKabuki then return end
+			
 	local pCity = pPlayer:GetCityByID(iCity)
-
-	if pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_JAPAN then
-
-		if iBuilding == jBuilding1 then
-			local pTeam = Teams[pPlayer:GetTeam()]
-
-			if pCity:IsHasBuilding(jGuild1) then
-				pCity:SetNumRealBuilding(jGuild1, 0)
-				pCity:SetNumRealBuilding(jJapGuild1, 1)
-			end
-
-			if pCity:IsHasBuilding(jGuild2) then
-				pCity:SetNumRealBuilding(jGuild2, 0)
-				pCity:SetNumRealBuilding(jJapGuild2, 1)
-			end
-
-			if pCity:IsHasBuilding(jGuild3) then
-				pCity:SetNumRealBuilding(jGuild3, 0)
-				pCity:SetNumRealBuilding(jJapGuild3, 1)
-			end
-
-			NotificationLoad(0, pPlayer, pCity)
-		end
+		
+	if pCity:IsHasBuilding(eBuildingWritersGuild) then
+		pCity:SetNumRealBuilding(eBuildingWritersGuild, 0)
+		pCity:SetNumRealBuilding(eBuildingMonogatari, 1)
 	end
+
+	if pCity:IsHasBuilding(eBuildingArtistsGuild) then
+		pCity:SetNumRealBuilding(eBuildingArtistsGuild, 0)
+		pCity:SetNumRealBuilding(eBuildingUkiyoe, 1)
+	end
+
+	if pCity:IsHasBuilding(eBuildingMusiciansGuild) then
+		pCity:SetNumRealBuilding(eBuildingMusiciansGuild, 0)
+		pCity:SetNumRealBuilding(eBuildingGagaku, 1)
+	end
+
+	NotificationLoad(0, pPlayer, pCity)
 end
 
---Guild Construction. If a kabuki is in the city it is upgraded immediately
-
-function GuildBuild(iPlayer, iCity, iBuilding)
+-- upgrade guild on its construction
+function OnConstructionUpgradeThatGuild(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
+	
+	if pPlayer:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_JAPAN then return end
+	
 	local pCity = pPlayer:GetCityByID(iCity)
+	
+	if not pCity:IsHasBuilding(eBuildingKabuki) then return end
+		
+	if iBuilding == eBuildingWritersGuild then
+		pCity:SetNumRealBuilding(eBuildingWritersGuild, 0)
+		pCity:SetNumRealBuilding(eBuildingMonogatari, 1)
 
-	if pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_JAPAN then
+		NotificationLoad(1, pPlayer, pCity)
+	end
 
-		if iBuilding == jGuild1 then
-			local pTeam = Teams[pPlayer:GetTeam()]
+	if iBuilding == eBuildingArtistsGuild then
+		pCity:SetNumRealBuilding(eBuildingArtistsGuild, 0)
+		pCity:SetNumRealBuilding(eBuildingUkiyoe, 1)
 
-			if pCity:IsHasBuilding(jBuilding1) then
-				pCity:SetNumRealBuilding(jGuild1, 0)
-				pCity:SetNumRealBuilding(jJapGuild1, 1)
+		NotificationLoad(2, pPlayer, pCity)
+	end
 
-				NotificationLoad(1, pPlayer, pCity)
-			end
-		end
+	if iBuilding == eBuildingMusiciansGuild then
+		pCity:SetNumRealBuilding(eBuildingMusiciansGuild, 0)
+		pCity:SetNumRealBuilding(eBuildingGagaku, 1)
 
-		if iBuilding == jGuild2 then
-			local pTeam = Teams[pPlayer:GetTeam()]
-
-			if pCity:IsHasBuilding(jBuilding1) then
-				pCity:SetNumRealBuilding(jGuild2, 0)
-				pCity:SetNumRealBuilding(jJapGuild2, 1)
-
-				NotificationLoad(2, pPlayer, pCity)
-			end
-		end
-
-		if iBuilding == jGuild3 then
-			local pTeam = Teams[pPlayer:GetTeam()]
-
-			if pCity:IsHasBuilding(jBuilding1) then
-				pCity:SetNumRealBuilding(jGuild3, 0)
-				pCity:SetNumRealBuilding(jJapGuild3, 1)
-
-				NotificationLoad(3, pPlayer, pCity)
-			end
-		end
+		NotificationLoad(3, pPlayer, pCity)
 	end
 end
 
 function NotificationLoad(iSet, pPlayer, pCity)
+	if not (pPlayer:IsHuman() and pPlayer:IsTurnActive()) then return end
+	
+	local sCityName = pCity:GetName()
+	local sTitle, sText
+
 	if iSet == 0 then
-		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-			pPlayer:AddNotification(0, 
-			'Player constructed Kabuki Theater in [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR], revitalizing lost art forms. All guilds in the city have been upgraded.', 
-			'Guilds upgraded in '..pCity:GetName(), 
-			pCity:GetX(), pCity:GetY())
-		end
+		sTitle = 'Guilds upgraded in '..sCityName
+		sText = 'Player constructed Kabuki Theater in [COLOR_CYAN]'..sCityName..'[ENDCOLOR], revitalizing lost art forms. All guilds in the city have been upgraded.'
 	elseif iSet == 1 then
-		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-			pPlayer:AddNotification(0, 
-			'Player constructed a Writer''s guild building in [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] and received a free upgrade to Monogatari Guild.', 
-			'Guild upgraded in '..pCity:GetName(), 
-			pCity:GetX(), pCity:GetY())
-		end
+		sTitle = 'Writers\' Guild upgraded in '..sCityName
+		sText = 'Player constructed a Writers\' Guild building in [COLOR_CYAN]'..sCityName..'[ENDCOLOR] and received a free upgrade to Monogatari Guild.'
 	elseif iSet == 2 then
-		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-			pPlayer:AddNotification(0, 
-			'Player constructed a Artist''s guild building in [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] and received a free upgrade to Ukiyo-e Guild.', 
-			'Guild upgraded in '..pCity:GetName(), 
-			pCity:GetX(), pCity:GetY())
-		end
+		sTitle = 'Artists\' Guild upgraded in '..sCityName
+		sText = 'Player constructed a Artists\' Guild building in [COLOR_CYAN]'..sCityName..'[ENDCOLOR] and received a free upgrade to Ukiyo-e Guild.'
 	else
-		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-			pPlayer:AddNotification(0, 
-			'Player constructed a Musician''s guild building in [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] and received a free upgrade to Gagaku Guild.', 
-			'Guild upgraded in '..pCity:GetName(), 
-			pCity:GetX(), pCity:GetY())
-		end
+		sTitle = 'Musicians\' Guild upgraded in '..sCityName
+		sText = 'Player constructed a Musicians\' Guild building in [COLOR_CYAN]'..sCityName..'[ENDCOLOR] and received a free upgrade to Gagaku Guild.'
 	end
+
+	pPlayer:AddNotification(0, sText, sTitle, pCity:GetX(), pCity:GetY())
 end
 
-GameEvents.CityConstructed.Add(KabukiBuild)
-GameEvents.CityConstructed.Add(GuildBuild)
+GameEvents.CityConstructed.Add(OnConstructionUpgradeGuilds)
+GameEvents.CityConstructed.Add(OnConstructionUpgradeThatGuild)

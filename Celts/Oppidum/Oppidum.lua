@@ -34,7 +34,7 @@ function OppidumMoveHP(iPlayer, iX, iY)
 	for iCityPlot = 1, pFoundCity:GetNumCityPlots() - 1, 1 do
 		local pSpecificPlot = pFoundCity:GetCityIndexPlot(iCityPlot)
 
-		if pSpecificPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and not pSpecificPlot:IsImprovementPillaged() then
+		if pSpecificPlot and pSpecificPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and not pSpecificPlot:IsImprovementPillaged() then
 			local pCheckedCity = GetNearestCity(pPlayer, pSpecificPlot)
 
 			if pCheckedCity == pFoundCity then
