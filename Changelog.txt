@@ -5,15 +5,24 @@
 More Unique Components for Vox Populi changelog:
 
 v28:
-- cleaned (Chasqui),
-- simplified (E-temenanki ==> no bonus on unit purchase),
-- reworked (Kabuki, Hacienda),
-- fixed (Tophet ==> lua, Oppidum ==> lua).
-- Added bonus to fishing boats to oppidum
-- added unique names to InDuna
-- various text fixes
-- added ability to enter rival territory to Corsair
-- modified Armada's Invincible promotion (now gives +4 strength instead of +10% strength) 
+- added unique names to InDuna,
+- cleaned (Chasqui, Riad, Corsair),
+- simplified:
+    - E-temenanki ==> no bonus on unit purchase,
+- reworked:
+    - Kabuki ==> creates unique japanese guilds, 
+	- Hacienda ==> yield changes, 2 more unique abilities, simplier sql code, 
+	- Oppidum ==> added fishing boats bonus, 
+	- Corsair ==> can enter rival territory, 
+	- Armada ==> +4CS instead of +10%CS, 
+	- Tambo,
+	- Riazza ==> many unnecessary lua code, added popups.
+- fixed:
+    - Tophet ==> lua - now works
+	- Oppidum ==> lua - nil value in fire tunner,
+	- Riad ==> sql - GA yields work now,
+- fixed text files,
+- reworked Credits.txt.
 
 v27:
 - extracted and added all beta civs,
