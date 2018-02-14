@@ -323,10 +323,10 @@
 				Naval unit that specializes in piracy and disrupting maritime trade. Only Morocco can build it. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing units, pillaging resources, and plundering trade routes.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAROCCO_RIAZZA">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA">
 			<Text>Razzia</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAROCCO_RIAZZA_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA_HELP">
 			<Text>
 				Nearest Coastal Friendly City gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production [COLOR_POSITIVE_TEXT]on Kill, Pillage or Trade Route Plunder[ENDCOLOR]. Unit [COLOR_POSITIVE_TEXT]can Enter Enemy Territory[ENDCOLOR] without Open Borders Agreement.
 			</Text>
