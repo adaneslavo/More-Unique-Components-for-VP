@@ -7,18 +7,20 @@ More Unique Components for Vox Populi changelog:
 v28:
 - added unique names to InDuna,
 - cleaned (Chasqui, Riad, Corsair),
-- simplified (E-temenanki ==> no bonus on unit purchase),
+- simplified:
+    - E-temenanki ==> no bonus on unit purchase,
 - reworked:
     - Kabuki ==> creates unique japanese guilds, 
-	- Hacienda ==> yield changes, 2 more unique abilities, 
+	- Hacienda ==> yield changes, 2 more unique abilities, simplier sql code, 
 	- Oppidum ==> added fishing boats bonus, 
 	- Corsair ==> can enter rival territory, 
 	- Armada ==> +4CS instead of +10%CS, 
-	- Tambo.
+	- Tambo,
+	- Riazza ==> many unnecessary lua code, added popups.
 - fixed:
     - Tophet ==> lua - now works
 	- Oppidum ==> lua - nil value in fire tunner,
-	- Riad ==> sql - GA yields work now.
+	- Riad ==> sql - GA yields work now,
 - fixed text files,
 - reworked Credits.txt.
 

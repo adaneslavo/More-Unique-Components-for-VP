@@ -302,10 +302,10 @@
 		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR">
+		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR">
 			<Text>Corsair</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_TEXT">
+		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_TEXT">
 			<Text>
 				The Barbary Corsairs were pirates and privateers operating off the coast of North Africa. The corsairs became infamous throughout Europe, ranging throughout the Mediterranean, and as far as Iceland, slaughtering livestock and capturing Christians for sale in the slave markets of the Islamic world. The ferocity and frequency of such raids, or "Razzia" was such that much of the coast of Italy and Spain was abandoned for fear of abduction. It is estimated that some 1.25 million people were taken as slaves by barbary pirates between 1530 and 1780 A.D.[NEWLINE][NEWLINE]
 				The scope of Corsair activity began to diminish in the latter part of the 17th century, as the more powerful European navies started to compel the Barbary States to cease attacking their shipping. However, the ships and coasts of Christian states continued to suffer until the early 19th century. Following the Napoleonic Wars and the Congress of Vienna in 1814, European powers agreed upon the need to suppress the Barbary corsairs entirely. Occasional incidents continued to occur, including two Barbary wars between the United States and the Barbary States, creating the impetus for the creation of the US Navy.[NEWLINE][NEWLINE]
@@ -313,22 +313,22 @@
 				-Sidi Haji Abdrahaman, to Thomas Jefferson in reply to his demand for the protection of American merchant ships
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_STRATEGY">
 			<Text>
 				The Corsair is the unique Moroccan replacement for the Corvette. It specializes in raiding and pillaging maritime trade routes, earning Food and Production for each enemy unit killed and trade route plundered.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_HELP">
+		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_HELP">
 			<Text>
 				Naval unit that specializes in piracy and disrupting maritime trade. Only Morocco can build it. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing units, pillaging resources, and plundering trade routes.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_RAZZIA">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAROCCO_RIAZZA">
 			<Text>Razzia</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_RAZZIA_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAROCCO_RIAZZA_HELP">
 			<Text>
-				Gain Food and Production in the nearest coastal city whenever you kill an enemy unit, pillage an improvement, or plunder a trade route. Can enter rival territory without Open Borders.
+				Nearest Coastal Friendly City gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production [COLOR_POSITIVE_TEXT]on Kill, Pillage or Trade Route Plunder[ENDCOLOR]. Unit [COLOR_POSITIVE_TEXT]can Enter Enemy Territory[ENDCOLOR] without Open Borders Agreement.
 			</Text>
 		</Row>
 		
