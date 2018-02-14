@@ -7,7 +7,7 @@ include("FLuaVector.lua")
 
 local eTerrainCoast = GameInfoTypes.TERRAIN_COAST
 local eTerrainOcean = GameInfoTypes.TERRAIN_OCEAN
-local ePromotionRazzia = GameInfoTypes.PROMOTION_UNIT_MAROCCO_RIAZZA
+local ePromotionRazzia = GameInfoTypes.PROMOTION_UNIT_MOROCCO_RAZZIA
 local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GrowthPercent / 100
 local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
 
