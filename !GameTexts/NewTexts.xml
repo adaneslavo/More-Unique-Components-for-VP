@@ -49,8 +49,19 @@
 			<Text>The Six-Horns Council is the Hunnic Unique Wonder, replacing the Ironworks. In addition to the normal bonuses of the Ironworks, the Six Horns council increases Science and Culture, and boosts Culture and Production from all Stables on empire. The wonder increases the bonuses to demanding tribute from minor City-States, and will trigger a Golden Age whenever a demand is successfully made against a rival Civilization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_TEXT">
-			<Text>The Huns' origins remain shrouded in mystery, but one clue to their possible connection to the ancient scourge of China, the Xiongnu, is their rule by an Alti Cur, or Six-Horns Council. The Alti Cur were a small council of nobles, the most powerful men within the Hunnic empire besides the emperor himself. Each was seated according to their rank and standing with the emperor, with the Empreror's favorite seated to his immediate right, signifying the north and east.[NEWLINE][NEWLINE]
-			An emperor's legitimacy depended heavily on the tributes he could exact from the surrounding kingdoms. It is surmised that insufficient tributes from the Chinese and other client steppes tribes may have contributed to the decline and disappearance of the Xiongnu in East Asia, only for them to burst once more onto the world stage in eastern Europe.</Text>
+			<Text>The Huns' origins remain shrouded in mystery, but one clue to their Xiongnu heritage is their rule by an Alti Cur, or "Six-Horns Council". The Alti Cur were a small council of nobles, the most powerful men within the Hunnic empire besides the emperor himself. Each was seated according to their standing with the emperor, with the emperor's favorite seated to his immediate right.[NEWLINE][NEWLINE]
+			An emperor's legitimacy depended heavily on the tributes he could extract from the surrounding kingdoms and distribute to his nobles. It is surmised that insufficient tributes from the Chinese and other client steppes tribes may have triggered to the decline and disappearance of the Xiongnu in East Asia, only for them to burst onto the world stage as the Huns of Eastern Europe.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ALERT_ALTI_CUR_MINOR_TRIBUTE">
+			<Text>
+				Demanding tribute from the city-state has earned you {1_Num} [ICON_GOLD] Gold and +6 [ICON_HAPPINESS] Happiness for 20 turns!
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS">
+			<Text>Alti Cur tribute bonus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS_HELP">
+			<Text>+6 [ICON_HAPPINESS] Happiness for 20 turns.</Text>
 		</Row>
 		<!-- Armada -->
 		<!-- Created by adan_eslavo on 8/11/2017 -->
@@ -97,7 +108,7 @@
 			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills, and gives Production and Faith from Ivory. [NEWLINE][NEWLINE]City state gifts, both Strategic Resources and units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_TEXT">
-			<Text>Often thought of as ceremonial and military implements first, perhaps the greatest contribution of elephants to human society has been as beasts of burden. Elephants are prized as a labour force even within today's lumber camps for their ability to haul the dense teak lumber found only within Burma and Thailand. The power of a fully grown elephant is matched only by its grace, as the animals can navigate difficult and uneven terrain impassable by carts and tractors, while carrying loads far in excess of other animals. The use of elephants in logging also has had unintentional benefits to the health of forests, with their delicate command of the forest trails reducing the potential damage of logging roads.[NEWLINE][NEWLINE]
+			<Text>Often thought of as ceremonial and military implements first, perhaps the greatest contribution of elephants to human society has been as beasts of burden. Elephants are prized as a labour force even within today's lumber camps for their ability to haul the dense teak lumber found only within Burma and Thailand. The power of a fully grown elephant is matched only by its grace, navigating difficult and uneven terrain while carrying loads far in excess of other animals. The use of elephants in logging also has had unintentional benefits to the health of forests, with their delicate command of the forest trails reducing the potential damage of logging roads.[NEWLINE][NEWLINE]
 			The jobs of Southeast Asia's working elephants have come under threat within the past few decades with the mechanization of logging. Elephants and their mahouts have been forced to look for work in tourism and religious festivals, jobs which elephants find terribly stressful. </Text>
 		</Row>
 		
@@ -196,13 +207,11 @@
 		<!-- Cacadores -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES">
-			<Text>
-				Cacadores
-			</Text>
+			<Text>Cacadores</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_TEXT">
 			<Text>
-				The Cacadores were the elite light infantry of the Portuguese army in the 18th and 19th centuries. The divisions were famed for their marksmanship and their brown coats, one of the first attempts at military camouflage. After a Portugal's sound defeat and occupation by Napoleon, the English intervened on behalf of their ally to rally and reorganize a joint war to retake the country. The British general William Beresford, as part of his reforms, formed the Cacadores to fill a role analogous to the German jaeger or American ranger divisions. Under this combined military, the Cacadores helped in reclaiming Portuguese independence and distinguished themselves as the "fighting cocks" of the Portuguese army until the units were eventually dissolved in the military reforms of 1911.  
+				The Cacadores were the elite light infantry of the Portuguese army in the 18th and 19th centuries. The divisions were famed for their marksmanship and their brown coats, one of the first attempts at military camouflage. After Portugal's sound defeat and occupation by Napoleon, the English intervened on behalf of their ally to rally and reorganize a joint war to retake the country. The British general William Beresford, as part of his reforms, formed the Cacadores to fill a skirmishing role analogous to the German jaegers or American rangers. Under this combined military, the Cacadores helped in reclaiming Portuguese independence and distinguished themselves as the "fighting cocks" of the Portuguese army until the units were eventually dissolved in the military reforms of 1911.  
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_STRATEGY">
@@ -216,16 +225,11 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CACADOR">
-			<Text>
-				Fighting Cock
-			</Text>
+			<Text>Fighting Cock</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CACADOR_HELP">
-			<Text>
-				When this unit levels up, it gains a Trailblazer or Survivalism promotion.
-			</Text>
+			<Text>When this unit levels up, it gains a Trailblazer or Survivalism promotion.</Text>
 		</Row>
-		
 		
 		<!-- Buffalo Pound -->
 		<!-- Created by adan_eslavo 4/11/2017 -->
@@ -256,7 +260,7 @@
 			<Text>The Chaebol is the unique Stock Exchange replacement for South Korea. In addition to the normal bonuses of a Stock Exchange, the Chaebol boosts the production of Factories in Cities where the Chaebol is built. Chaebol produce additional Gold and increase the production of Great People for every International Trade Route the Empire controls. In addition, every Chaebol increases the Gold, Culture and Science of every other Chaebol in the empire; the more you build, the more they produce.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_PEDIA">
-			<Text>Chaebol are powerful multi-national corporations originating in South Korea. Beginning as family businesses, they grew by recieving government investment and relief, and were able to industrialise South Korea's agricultural society. Although the Chaebol were signs of success during the Miracle of the Han River, financial crashes later in the 20th century led to many collapsing - an event that the Korean people thought impossible.[NEWLINE][NEWLINE]Chaebols continue to dominate the South Korean economy and social fabric, and some like Samsung and Hyundai have become household names worldwide. Today, Chaebol account for over 80% of South Korea's exports, and the largest Chaebol controls 17% of the nation's GDP.</Text>
+			<Text>Chaebol are powerful multi-national corporations originating in South Korea. Beginning as family businesses, they grew by receiving government investment, and were able to quickly industrialize South Korea's agricultural society. Although the Chaebol were signs of success during the Miracle of the Han River, financial crashes later in the 20th century led to many collapsing - an event that the Korean people thought impossible.[NEWLINE][NEWLINE]Chaebol continue to dominate the South Korean economy and social fabric, and some like Samsung and Hyundai have become household names worldwide. Today, Chaebol account for over 80% of South Korea's exports, and the largest single Chaebol accounts for 17% of the entire nation's GDP.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE">
 			<Text>Double Movement on Coast</Text>
@@ -281,8 +285,8 @@
 			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_TEXT">
-			<Text>The Chasquis were the messengers of the Inca empire. They were in charge of carrying the quipus, messages and gifts up to 240 km per day through the chasquis relay system, a sort of Pony Express for the horseless Inca. In addition to their physical fitness, the Chasquis were well-educated in order to be able to read and translate the khipus, the Incan knot-based writing system, to each other and higher authorities.[NEWLINE][NEWLINE]
-			Chasquis were dispatched along thousands of miles, taking advantage of the vast Inca system of purpose-built roads and rope bridges in the Andes of Peru and Ecuador. Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. Each Chasqui carried a pututu, a conch trumpet, which was blown by the chasqui as they neared a Tambo, signalling to a fresh chasqui that one runner was close, so that they could prepare to run.</Text>
+			<Text>The Chasquis were the messengers of the Inca empire in charge of carrying the khipus, messages and gifts up to 240 km per day through a form of on-foot Pony Express. In addition to their physical fitness, the Chasquis were well-educated in order to translate the khipus, the Incan knot-based writing system, to each other and higher authorities.[NEWLINE][NEWLINE]
+			Chasquis were dispatched along thousands of miles, taking advantage of the vast Inca system of purpose-built roads and rope bridges in the Andes of Peru and Ecuador. Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. Each Chasqui carried a pututu, a conch trumpet, which was blown by the chasqui as they neared a Tambo, signalling to a fresh chasqui that one runner was close so that they could prepare to run.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_KHIPU_RUNNER">
 			<Text>Khipu Runner</Text>
@@ -299,14 +303,11 @@
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR">
-			<Text>
-				Corsair
-			</Text>
+			<Text>Corsair</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCAN_CORSAIR_TEXT">
 			<Text>
 				The Barbary Corsairs were pirates and privateers operating off the coast of North Africa. The corsairs became infamous throughout Europe, ranging throughout the Mediterranean, and as far as Iceland, slaughtering livestock and capturing Christians for sale in the slave markets of the Islamic world. The ferocity and frequency of such raids, or "Razzia" was such that much of the coast of Italy and Spain was abandoned for fear of abduction. It is estimated that some 1.25 million people were taken as slaves by barbary pirates between 1530 and 1780 A.D.[NEWLINE][NEWLINE]
-				
 				The scope of Corsair activity began to diminish in the latter part of the 17th century, as the more powerful European navies started to compel the Barbary States to cease attacking their shipping. However, the ships and coasts of Christian states continued to suffer until the early 19th century. Following the Napoleonic Wars and the Congress of Vienna in 1814, European powers agreed upon the need to suppress the Barbary corsairs entirely. Occasional incidents continued to occur, including two Barbary wars between the United States and the Barbary States, creating the impetus for the creation of the US Navy.[NEWLINE][NEWLINE]
 				"It is written in our Koran, that all nations which do not acknowledge the Prophet are sinners, whom it is the right and duty of the faithful to plunder and enslave; and that every mu'min (believer) who is slain in this warfare is sure to go to paradise."[NEWLINE]
 				-Sidi Haji Abdrahaman, to Thomas Jefferson in reply to his demand for the protection of American merchant ships
@@ -323,9 +324,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_RAZZIA">
-			<Text>
-				Razzia
-			</Text>
+			<Text>Razzia</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_RAZZIA_HELP">
 			<Text>
@@ -357,7 +356,7 @@
 			<Text>The Dhanurgraha is a powerful defense against early barbarians which helps India maintain its cultural and religious dominance in the early game. Seek out barbarians to kill for culture and faith, then turn on your neighbours if it suits you.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_TEXT">
-			<Text>Archery was the most highly revered and prized martial art of ancient India. Many of the culture heroes and gods of the Vedic texts describe archers of unparalleled skill, including Arjuna, Rama, Karna, and even Shiva, the greatest of the Hindu gods. Traditional Indian bows are described as long, even reaching the height of their users, but without the tremendous strength of the Welsh longbow.</Text>
+			<Text>Archery was the most highly revered martial art of ancient India. Many of the culture heroes and gods of the Vedic texts describe archers of unparalleled skill, including Arjuna, Rama, Karna, and even Shiva himself. Traditional Indian bows are described as long, matching the height of their users, but without the tremendous strength of the Welsh longbow.</Text>
 		</Row>
 		
 		<!-- Dromon -->
@@ -507,9 +506,7 @@
 			<Text>E-temenanki is the Babylonian Unique Wonder, replacing the National Monument. In addition to the normal bonuses of a National Monument, E-temenanki awards Food and Science whenever a building is invested on empire, so invest in buildings early and often.  All monuments in empire gain +1 Science and all Shrines gain +2 Food.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_TEXT">
-			<Text>E-temenanki was the Ziggurat of Marduk, god of storms and head of the Babylonian pantheon. Ziggurats were religious temples erected in Mesopotamian cities as the literal dwelling places of each city's patron god. The Ziggurats were constructed to replicate the high mountains, where it believed the gods originally lived, in order to make the gods feel more at home.[NEWLINE][NEWLINE]
-			
-			E-temenanki was destroyed at least twice in history, once by Sennacherib, King of Assyria, and once by Alexander the Great. Alexander had intended to level the temple in order to rebuild it on fresh foundations, but the project only got as far as the demolition before Alexander's death, and the project was immediately abandoned in the ensuing chaos.</Text>
+			<Text>E-temenanki was the Ziggurat of Marduk, god of storms and head of the Babylonian pantheon. Ziggurats were religious temples erected in Mesopotamian cities as the literal dwelling places of each city's patron god. The Ziggurats were constructed to replicate the high mountains, where it believed the gods originally lived, in order to make the gods feel more at home.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_THEME">
 			<Text>Treasury of Babylon</Text>
@@ -520,13 +517,11 @@
 		
 		<!-- Eagle -->
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE">
-			<Text>
-				Eagle
-			</Text>
+			<Text>Eagle</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_TEXT">
 			<Text>
-				One of the two elite class of infantry (the other being the Jaguar Warriors) in the Aztec army, the Eagle Warriors were the bravest young men of noble birth and/or those who had taken the most prisoners in battle. Like the Jaguars, the Eagles used the atlatl, bow, spear and macuahuitl (wooden swords set with obsidian shards); unlike the Jaguars, the Eagles decorated their armor with eagle feathers and wore a headdress shaped like the head of an eagle with the beak wide open. And they had a hilltop temple in Malinalco. Upon taking 20 prisoners – intact enough to serve as human sacrifice – a young warrior was eligible to become an Eagle Warrior, no doubt making his family very proud. Until the Spanish arrived with their cannons, muskets, and horses, the Eagle and Jaguar warriors were the toughest bullies on the Mesoamerican block.
+				One of the two elite class of infantry (the other being the Jaguar Warriors) in the Aztec army, the Eagle Warriors were the bravest young men of noble birth and/or those who had taken the most prisoners in battle. Like the Jaguars, the Eagles used the atlatl, bow, spear and macuahuitl (wooden swords set with obsidian shards); unlike the Jaguars, the Eagles decorated their armor with eagle feathers and wore a headdress shaped like the head of an eagle with the beak wide open. Upon taking 20 prisoners – intact enough to serve as human sacrifice – a young warrior was eligible to become an Eagle Warrior, no doubt making his family very proud. Until the Spanish arrived with their cannons, muskets, and horses, the Eagle and Jaguar warriors were the toughest bullies on the Mesoamerican block.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY">
@@ -552,16 +547,14 @@
 		<!-- Examination Hall -->
 		<!-- Created by Blue Ghost-->
 		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL">
-			<Text>
-				Examination Hall
-			</Text>
+			<Text>Examination Hall</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_TEXT">
 			<Text>
-				Perhaps the most truly unique aspect of Chinese culture - and the one with the most powerful legacy - is the Confucian examination system with which the Son of Heaven's empire was staffed with civil servants over the best part of two millennia. The Imperial examinations represented an attempt to create an aristocracy of learning, which in itself represent a remarkable advance over the warrior and hereditary aristocracies that dominated in the rest of the world. The Chinese examination system, archaic, laborious and daunting as it may have been, was nevertheless, was a glorious attempt at intellectual meritocracy.[NEWLINE][NEWLINE]
-				The Imperial Exams, or Keju, were state organized examinations for candidacy into the Chinese civil service. The examinations amounted to tests of rote memorization of the Five Confucian Classics and required direct quotations on Confucian philosophy and ethics. There were several levels of exams, each conferring differing levels of honor and privelege. A scholar who obtained the highest degree, the jinshi, would have his memory trained to a tremendous degree.[NEWLINE][NEWLINE]
-				The Imperial examinations was abolished in 1890 under pressure by Chinese citizens to reform and modernize the state. As Western universities began to move away from their own classical tradition to embrace economics, engineering and natural science, China's scholarly efforts languished in the ancient literary past. It is unsurprising that the ingenuity that produced the “Four Great Inventions” could not flourish in such a backward-looking intellectual environment.[NEWLINE][NEWLINE]
-				“Do you know that we tried an experiment which is unique in the history of the world? We sought to rule this great country not by force, but by wisdom. And for centuries we succeeded.”[NEWLINE]
+				Perhaps the most unique aspect of Chinese culture -- and the one with the most powerful legacy -- is the Imperial Examination system with which the Son of Heaven's empire was staffed with civil servants over two millennia. The Imperial examinations represented an attempt to create an aristocracy of learning, which in itself represent a remarkable advance over the warrior and hereditary aristocracies that dominated in the rest of the world. The Chinese examination system -- archaic, laborious and daunting as it may have been -- was nevertheless a glorious attempt at intellectual meritocracy.[NEWLINE][NEWLINE]
+				The Imperial Exams, or Keju, were state organized examinations for candidacy into the Chinese civil service. The examinations amounted to tests of rote memorization of the Five Confucian Classics and required direct quotations on Confucian philosophy and ethics. There were several levels of exams, each conferring differing levels of privelege; a scholar who obtained the highest degree, the jinshi, would have his memory trained to a tremendous degree.[NEWLINE][NEWLINE]
+				The Examinations were abolished in 1890 under pressure by Chinese citizens to reform and modernize the state. As Western universities began to move away from their own classical tradition to embrace economics, engineering and natural science, China's scholarly efforts languished in the ancient literary past. It is unsurprising that the ingenuity that produced the Four Great Inventions could not flourish in such a backward-looking intellectual environment.[NEWLINE][NEWLINE]
+				“We tried an experiment which is unique in the history of the world: We sought to rule this great country not by force, but by wisdom. And for centuries we succeeded.”[NEWLINE]
 				-Anonymous Confucian Philosopher; excerpt from "On a Chinese Screen"
 			</Text>
 		</Row>
@@ -759,8 +752,8 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_TEXT">
 			<Text>
-				A goedendag is a four-foot long club with a spear at its tip, originally used by the militias of Medieval Flanders, notably during the Franco-Flemish War. The weapon was christened "goedendag" by the French, a cognate with the universal Dutch-language greeting "good day". The name is supposedly a reference to the Bruges Matins massacre in 1302, at which the guildsmen of Bruges purportedly took over the city by greeting people in the streets, and murdering anyone who answered with a French accent.[NEWLINE][NEWLINE]
-				The weapon was used to great effect by the guildsmen of Flanders' wealthy cities against the French knights, but exactly how the weapon was used is a source of debate. Contemporary illustrations show it being used as a club, but the contemporary sources describe its first use as a spear to meet a charge, then a club as the enemy was halted. Flemish Goedendags marked the beginning of the end for heavy cavalry in western Europe, and the dawn of an "Infantry Revolution" where common militia were now a credible threat. The stunning victory of common men over foreign tyrants became a wellspring of romantic nationalism for the Low Countries.[NEWLINE][NEWLINE]
+				A goedendag is a four-foot long club with a spearhead at its tip that was used by the militias of Medieval Flanders, notably during the Franco-Flemish War. The weapon was christened "goedendag" by the French, a cognate with the Dutch greeting "good day". Supposedly, this name is a reference to the Bruges Matins massacre of 1302, in which the guildsmen of Bruges purportedly took over the city by greeting people in the streets, and murdering anyone who answered with a French accent.[NEWLINE][NEWLINE]
+				The weapon was used to great effect by the guildsmen of Flanders' wealthy cities against the French knights, but exactly how the weapon was used is a source of debate. Contemporary illustrations show it being used as a club, written accounts describe its first use as a spear to meet a charge, then a club as the enemy was halted. Flemish Goedendags marked the beginning of the end for heavy cavalry in western Europe, and the dawn of an "Infantry Revolution" where common militia were now a credible threat to professional soldiers. The stunning victory of common men over foreign tyrants became a wellspring of romantic nationalism for the Low Countries.[NEWLINE][NEWLINE]
 				"each held his godendart (sic) raised against the French, the iron as one meets a wild boar"[NEWLINE]- Guillaume Guiart, a contemporary account describing the battle of Courtrai, 1302 A.D.
 			</Text>
 		</Row>
@@ -792,9 +785,7 @@
 		<!-- Hashemite Raider -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER">
-			<Text>
-				Hashemite Raider
-			</Text>
+			<Text>Hashemite Raider</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_TEXT">
 			<Text>
@@ -814,24 +805,16 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ARABIA_GARLAND_MINE">
-			<Text>
-				Garland Mine
-			</Text>
+			<Text>Garland Mine</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ARABIA_GARLAND_MINE_HELP">
-			<Text>
-				Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. All [COLOR_POSITIVE_TEXT]adjacent Enemy Units[ENDCOLOR] take flat damage [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].
-			</Text>
+			<Text>Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. All [COLOR_POSITIVE_TEXT]adjacent Enemy Units[ENDCOLOR] take flat damage [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ARABIA_DESERT_RAIDER">
-			<Text>
-				Desert Raider
-			</Text>
+			<Text>Desert Raider</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ARABIA_DESERT_RAIDER_HELP">
-			<Text>
-				Double [ICON_ARROW_RIGHT] Movement and +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on Desert[ENDCOLOR].
-			</Text>
+			<Text>Double [ICON_ARROW_RIGHT] Movement and +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on Desert[ENDCOLOR].</Text>
 		</Row>
 
 		<!-- Hippodorme -->
@@ -853,9 +836,7 @@
 
 		<!-- Huey Teocalli -->
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI">
-			<Text>
-				Huey Teocalli
-			</Text>
+			<Text>Huey Teocalli</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_TEXT">
 			<Text>
@@ -876,9 +857,7 @@
 		<!-- Iron Chariot -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT">
-			<Text>
-				Iron Chariot
-			</Text>
+			<Text>Iron Chariot</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_TEXT">
 			<Text>
@@ -896,84 +875,52 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL">
-			<Text>
-				Fury of Nergal
-			</Text>
+			<Text>Fury of Nergal</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_HELP">
-			<Text>
-				+7% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for each adjacent Enemy Unit for one turn[ENDCOLOR].
-			</Text>
+			<Text>+7% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for each adjacent Enemy Unit for one turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1">
-			<Text>
-				Fury of Nergal I
-			</Text>
+			<Text>Fury of Nergal I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1_HELP">
-			<Text>
-				+7% [ICON_STRENGTH] Combat Strength.
-			</Text>
+			<Text>+7% [ICON_STRENGTH] Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_2">
-			<Text>
-				Fury of Nergal II
-			</Text>
+			<Text>Fury of Nergal II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_2_HELP">
-			<Text>
-				+14% [ICON_STRENGTH] Combat Strength.
-			</Text>
+			<Text>+14% [ICON_STRENGTH] Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_3">
-			<Text>
-				Fury of Nergal III
-			</Text>
+			<Text>Fury of Nergal III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_3_HELP">
-			<Text>
-				+21% [ICON_STRENGTH] Combat Strength.
-			</Text>
+			<Text>+21% [ICON_STRENGTH] Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_4">
-			<Text>
-				Fury of Nergal IV
-			</Text>
+			<Text>Fury of Nergal IV</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_4_HELP">
-			<Text>
-				+28% [ICON_STRENGTH] Combat Strength.
-			</Text>
+			<Text>+28% [ICON_STRENGTH] Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_5">
-			<Text>
-				Fury of Nergal V
-			</Text>
+			<Text>Fury of Nergal V</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_5_HELP">
-			<Text>
-				+35% [ICON_STRENGTH] Combat Strength.
-			</Text>
+			<Text>+35% [ICON_STRENGTH] Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_6">
-			<Text>
-				In a Pickle
-			</Text>
+			<Text>In a Pickle</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_6_HELP">
-			<Text>
-				+42% [ICON_STRENGTH] Combat Strength.
-			</Text>
+			<Text>+42% [ICON_STRENGTH] Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE">
-			<Text>
-				Hard and Fast
-			</Text>
+			<Text>Hard and Fast</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE_HELP">
-			<Text>
-				+2 [ICON_STRENGTH] Combat Power if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack. Lost after unit upgrade.
-			</Text>
+			<Text>+2 [ICON_STRENGTH] Combat Power if [COLOR_POSITIVE_TEXT]Player has more Horses or Iron than Iron Chariot Units[ENDCOLOR]. Bonuses can stack. Lost after unit upgrade.</Text>
 		</Row>
 		
 		<!-- InDuna -->	
@@ -1075,9 +1022,7 @@
 		<!-- Kabuki & the Japanese Guilds-->
 		
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI">
-			<Text>
-				Kabuki Theater
-			</Text>
+			<Text>Kabuki Theater</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_TEXT">
 			<Text>
@@ -1095,9 +1040,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONOGATARI">
-			<Text>
-				Monogatari Guild
-			</Text>
+			<Text>Monogatari Guild</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONOGATARI_TEXT">
 			<Text>
@@ -1115,9 +1058,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_UKIYOE">
-			<Text>
-				Ukiyo-e Guild
-			</Text>
+			<Text>Ukiyo-e Guild</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_UKIYOE_TEXT">
 			<Text>
@@ -1135,9 +1076,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GAGAKU">
-			<Text>
-				Gagaku Guild
-			</Text>
+			<Text>Gagaku Guild</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GAGAKU_TEXT">
 			<Text>
@@ -1354,9 +1293,7 @@
 		<!-- Lamassu Gate -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE">
-			<Text>
-				Lamassu Gate
-			</Text>
+			<Text>Lamassu Gate</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_TEXT">
 			<Text>
@@ -1377,9 +1314,7 @@
 		<!-- Landwehr -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR">
-			<Text>
-				Landwehr
-			</Text>
+			<Text>Landwehr</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_TEXT">
 			<Text>
@@ -1397,9 +1332,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE">
-			<Text>
-				Imperial Vigilance
-			</Text>
+			<Text>Imperial Vigilance</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE_HELP">
 			<Text>
@@ -1407,9 +1340,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS">
-			<Text>
-				Guard
-			</Text>
+			<Text>Guard</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS_HELP">
 			<Text>
@@ -1417,9 +1348,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE">
-			<Text>
-				Yorkscher Marche
-			</Text>
+			<Text>Yorkscher Marche</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP">
 			<Text>
@@ -1468,7 +1397,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT">
 			<Text>A latifundium was an expansive privately owned farm, enormous landed estates specializing in intensive agriculture. The first latifundia were accumulated from the spoils of war, confiscated from conquered peoples beginning in the early 2nd century BC in Magna Graecia (Southern Italy). Latifundia later expanded with conquest, to the Roman provinces of the Maghreb and in Hispania Baetica, in southern Spain.
-				[NEWLINE][NEWLINE]These estates depended on slave labor and serfs for their productivity, often supplied by the enslavement of the very peoples whose land had been taken. The Latifundia quickly started economic consolidation as larger estates achieved greater economies of scale, enjoyed by the political elite as they did not pay land taxes. Owners re-invested their profits by purchasing smaller neighbouring farms, since smaller farms had a lower productivity and could not compete, in an ancient precursor of agribusiness. As the small farms of the Roman peasantry were bought up by the wealthy and with their vast supply of slaves, the now landless peasantry were forced to find work in the cities of Rome, though often resorting to squatting and handouts.
+			[NEWLINE][NEWLINE]These estates depended on slave labor and serfs for their productivity, often supplied by the enslavement of the very peoples whose land had been taken. The Latifundia quickly started economic consolidation as larger estates achieved greater economies of scale, enjoyed by the political elite as they did not pay land taxes. Owners re-invested their profits by purchasing smaller neighbouring farms, since smaller farms had a lower productivity and could not compete, in an ancient precursor of agribusiness. As the small farms of the Roman peasantry were bought up by the wealthy and with their vast supply of slaves, the now landless peasantry were forced to find work in the cities of Rome, though often resorting to squatting and handouts.
 			[NEWLINE][NEWLINE]Latifundia became the template upon which later European nations would base their imperial experiments. The Spanish are most noticeable for patterning the Encomienda system after the late Roman Latifundia.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ROME_LATIFUNDIUM">
@@ -1530,9 +1459,7 @@
 		<!-- Madrasah -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH">
-			<Text>
-				Madrasah
-			</Text>
+			<Text>Madrasah</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_TEXT">
 			<Text>
@@ -1553,9 +1480,7 @@
 		<!-- Monitor -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR">
-			<Text>
-				Surveillance
-			</Text>
+			<Text>Surveillance</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP">
 			<Text>
@@ -1633,9 +1558,8 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_TEXT">
 			<Text>
-				A pairidaeza is a specific style of garden consisting of cultivated land within an enclosure. Also known as a “paradise garden,” the pairidaeza is thought to originate in the time of the Assyrian Empire. Its rectangular construction serves to contrast the external wildness of nature with an ordered and beautiful garden. Water was often an important element of their construction—ponds, canals, or even fountains flowed freely within the walls.[NEWLINE][NEWLINE]
-
-				As a tool of state, they were invaluable in flaunting a kingdom’s ability to bring life to an area that would otherwise have none. The Achaemenid dynasty melded the pairidaeza with their royal hunting parks, a not so subtle way to show their command over both their empire and the natural world within it.</Text>
+				A pairidaeza is a specific style of garden consisting of cultivated land within an enclosure. Also known as a “paradise garden,” the pairidaeza is thought to originate in the time of the Assyrian Empire. Its rectangular, ordered construction serves to contrast the chaos of nature. As a tool of state, Pairidaeza were invaluable in flaunting a kingdom’s ability to bring life to an area that would otherwise have none. The Achaemenid dynasty melded the pairidaeza with their royal hunting parks, a not so subtle way to show their command over both their empire and the natural world within it.
+			</Text>
 		</Row>
 		
 		<!-- Pitz -->
@@ -1792,24 +1716,16 @@
 		<!-- Pracinha -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BRAZIL_EXPEDITIONARY_FORCE">
-			<Text>
-				Expeditionary Force
-			</Text>
+			<Text>Expeditionary Force</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BRAZIL_EXPEDITIONARY_FORCE_HELP">
-			<Text>
-				+1% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for every tile between unit and [ICON_CAPITAL] Capital[ENDCOLOR].
-			</Text>
+			<Text>+1% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for every tile between unit and [ICON_CAPITAL] Capital[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BRAZIL_TOURISM">
-			<Text>
-				Glorious Banner
-			</Text>
+			<Text>Glorious Banner</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BRAZIL_TOURISM_HELP">
-			<Text>
-				Unit gains [ICON_TOURISM] Tourism [COLOR_POSITIVE_TEXT]toward all Civilizations on Kill[ENDCOLOR].
-			</Text>
+			<Text>Unit gains [ICON_TOURISM] Tourism [COLOR_POSITIVE_TEXT]toward all Civilizations on Kill[ENDCOLOR].</Text>
 		</Row>
 		
 		<!-- Prowler -->
@@ -1886,12 +1802,10 @@
 		<!-- Ranch -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH">
-			<Text>
-				Homestead
-			</Text>
+			<Text>Homestead</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_TEXT">
-			<Text>A Homestead is a is a complex of buildings on a large landholding, typically a ranch, settled in accordance to the United States Homesteading Acts. The United States government implemented a policy of "free soil", allowing claimants, essentially squatters, ownership of land which they had converted into productive farms or ranches. Nearly 10% of the continental United States was settle in this way, as 270 million acres of land were essentially given away to 1.6 million homesteaders between 1862 and 1930.[NEWLINE][NEWLINE]The colonization of vast swathes of the interior left an indelible mark on the American psyche. Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
+			<Text>A Homestead is a is a complex of buildings on a large landholding, typically a ranch, settled in accordance to the United States Homesteading Acts. The United States Government implemented a policy of "free soil", allowing claimants, effectively squatters, ownership of land which they had converted into productive farms or ranches. Nearly 10% of the continental United States was settle in this way; 270 million acres of land claimed by approximately 1.6 million homesteaders between 1862 and 1930.[NEWLINE][NEWLINE]The colonization of vast swathes of the interior left an indelible mark on the American psyche. Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY">
 			<Text>
@@ -1939,7 +1853,7 @@
 			<Text>
 				According to oral tradition, the five tribes of the Iroquois devoted much energy toward fighting and killing each other until the 1500s. It was at this time that the five tribes united into a powerful confederation, forming an elaborate political system including a bicameral (two-house) legislature much like the modern U.S. Congress. [NEWLINE][NEWLINE]
 				In accordance with their unwritten constitution, the confederacy was represented by 50 delegates, or Sachems – all men, each chosen by the clan mother. The 17 sachems from the Seneca and Mohawk tribes met in one house while the 19 Oneida and Cayuga met in the other. The 14 Onondaga sachems acted as tie-breakers and had the power to veto decisions made by the others. In addition to Sachem, who met on Onondaga land to cast their votes, there were advisory council members called Pine Trees. Pine Trees could be men or women appointed for their heroic feats and accomplishments. In 1715 the Tuscarora joined the league, and it was renamed the League of Six Nations. Benjamin Franklin’s dealings with the Iroquois led him to model the United States’ government after theirs. [NEWLINE][NEWLINE]
-					“The soil of the earth from one end of the land to the other is the property of the people who inhabit it. By birthright the Ongwehonweh (original beings) are the owners of the soil which they own and occupy and none other may hold it. The same law has been held from the oldest times. The Great Creator has made us of the one blood and of the same soil he made us and as only different tongues constitute different nations he established different hunting grounds and territories and made boundary lines between them...” [NEWLINE]
+				“The soil of the earth from one end of the land to the other is the property of the people who inhabit it. By birthright the Ongwehonweh (original beings) are the owners of the soil which they own and occupy and none other may hold it. The same law has been held from the oldest times. The Great Creator has made us of the one blood and of the same soil he made us and as only different tongues constitute different nations he established different hunting grounds and territories and made boundary lines between them...” [NEWLINE]
 				-Excerpt from the Iroquois Constitution
 			</Text>
 		</Row>
@@ -1947,9 +1861,7 @@
 		<!-- Sambadrome -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME">
-			<Text>
-				Sambadrome
-			</Text>
+			<Text>Sambadrome</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_TEXT">
 			<Text>
@@ -2202,9 +2114,7 @@
 		<!-- Slaganz -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ">
-			<Text>
-				Slaganz
-			</Text>
+			<Text>Slaganz</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_TEXT">
 			<Text>
@@ -2223,24 +2133,16 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS">
-			<Text>
-				Furor Teutonicus
-			</Text>
+			<Text>Furor Teutonicus</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS_HELP">
-			<Text>
-				+50% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Barbarians[ENDCOLOR].
-			</Text>
+			<Text>+50% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Barbarians[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE">
-			<Text>
-				Barbarian Alliance
-			</Text>
+			<Text>Barbarian Alliance</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE_HELP">
-			<Text>
-				Unit [COLOR_POSITIVE_TEXT]can convert Barbarian Unit[ENDCOLOR] to your side [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. +5 [ICON_INFLUENCE] Influence to the nearest City-State [COLOR_POSITIVE_TEXT]on Conversion[ENDCOLOR].
-			</Text>
+			<Text>Unit [COLOR_POSITIVE_TEXT]can convert Barbarian Unit[ENDCOLOR] to your side [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. +5 [ICON_INFLUENCE] Influence to the nearest City-State [COLOR_POSITIVE_TEXT]on Conversion[ENDCOLOR].</Text>
 		</Row>
 		<!-- Sofa -->		
 		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER">
@@ -2289,9 +2191,7 @@
 		<!-- Standschützen -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN">
-			<Text>
-				Schützenstand
-			</Text>
+			<Text>Schützenstand</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_TEXT">
 			<Text>
@@ -2397,9 +2297,7 @@
 		<!-- Teutonic Order -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER">
-			<Text>
-				Teutonic Order
-			</Text>
+			<Text>Teutonic Order</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_TEXT">
 			<Text>
@@ -2446,9 +2344,7 @@
 		<!-- University of Coimbra -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA">
-			<Text>
-				University of Coimbra
-			</Text>
+			<Text>University of Coimbra</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_TEXT">
 			<Text>
@@ -2466,14 +2362,10 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_AGE_OF_DISCOVERY">
-			<Text>
-				Age of Discovery
-			</Text>
+			<Text>Age of Discovery</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_AGE_OF_DISCOVERY_HELP">
-			<Text>
-				Gain [ICON_SCIENCE] Science from exploring.
-			</Text>
+			<Text>Gain [ICON_SCIENCE] Science from exploring.</Text>
 		</Row>
 		
 		<!-- Waag -->
@@ -2534,10 +2426,7 @@
 			<Text>To maximize your bonus, make sure all slots are filled with artifacts and either from the city owner or from different owners.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GREAT_WORK_THE_CROWN_JEWELS_QUOTE">
-			<Text>
-				"On the contrary. Every Bison dollar will be worth five British pounds. For that is the exchange rate that the bank of England will implement after I kidnap their queen."
-				[NEWLINE]-M. Bison
-			</Text>
+			<Text>"On the contrary. Every Bison dollar will be worth five British pounds. For that is the exchange rate that the bank of England will implement after I kidnap their queen."[NEWLINE]-M. Bison</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GREAT_WORK_THE_CROWN_JEWELS">
 			<Text>The Crown Jewels</Text>

@@ -1134,6 +1134,12 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
+        <Name>AltiCur</Name>
+        <Description>Bonuses for demanding tribute</Description>
+        <FileName>Huns/AltiCur/AltiCur.lua</FileName>
+	  </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
         <Name>Kabuki</Name>
         <Description>Adds bonuses to Guilds.</Description>
         <FileName>Japan/Kabuki/Kabuki.lua</FileName>
@@ -1906,6 +1912,10 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Germany\TeutonicOrder\TeutonicOrder.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Huns\AltiCur\AltiCur.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

@@ -54,3 +54,14 @@ VALUES
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 		BuildingClassType, 			BuildingType)
 VALUES	('CIVILIZATION_HUNS',	'BUILDINGCLASS_IRONWORKS',	'BUILDING_3UC_YURT');
+
+
+--==========================================================================================================================	
+-- EVENTS
+--==========================================================================================================================	
+--------------------------------
+-- EventChoices
+--------------------------------	
+INSERT INTO EventChoices
+			(Type,										Description,										Help,													EventDuration,	Expires,	PlayerHappiness)
+VALUES		('PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS',	'TXT_KEY_PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS',	'TXT_KEY_PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS_HELP',	20,				1,			6);
