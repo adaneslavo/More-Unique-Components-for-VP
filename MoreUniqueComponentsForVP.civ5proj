@@ -1137,12 +1137,18 @@ Latest changes: see changelog file.</Description>
         <Name>AltiCur</Name>
         <Description>Bonuses for demanding tribute</Description>
         <FileName>Huns/AltiCur/AltiCur.lua</FileName>
-	  </Content>
+      </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Kabuki</Name>
         <Description>Adds bonuses to Guilds.</Description>
         <FileName>Japan/Kabuki/Kabuki.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Indaba</Name>
+        <Description>Functions for InDuna on attack and on expend</Description>
+        <FileName>Zulu/Indaba/Indaba.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
@@ -5176,6 +5182,10 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Indaba\Indaba.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

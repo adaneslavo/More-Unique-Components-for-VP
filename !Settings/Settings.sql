@@ -7,7 +7,7 @@ UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_FOUND_RELIGION';
 --CityConstructed/Trained/Prepared
 UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_CITY';
 
---Iroquoian Great Diplomat CS missions
+--Iroquoian Great Diplomat CS missions, Zulu Great General
 UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_GREAT_PEOPLE';
 
 --Koa's bleeding and others
