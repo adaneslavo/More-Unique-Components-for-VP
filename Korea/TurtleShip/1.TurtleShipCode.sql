@@ -50,6 +50,7 @@ DELETE FROM UnitClasses WHERE Type = 'UNIT_KOREAN_TURTLE_SHIP';
 --------------------------------	
 -- FreePromotions
 --------------------------------		
+DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_KOREAN_TURTLE_SHIP' AND PromotionType = 'PROMOTION_OCEAN_IMPASSABLE';
 
 INSERT INTO		Unit_FreePromotions
 				(UnitType, 					PromotionType)
