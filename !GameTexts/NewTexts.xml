@@ -15,9 +15,9 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_TEXT">
 			<Text>
-				The Andelsbevægelse (Danish Cooperative Movement) was a means of economical organization under leadership of consumer- or producer-controlled corporations, where each individual member owned a part of the corporation. The type of organization was popular in the farming industry and in consumer organizations in Denmark from the 1790s to the 1960s. The members of the corporations sought to share the economic stress of producing or buying goods, and divided the eventual end-year financial surplus amongst themselves. The type of ownership rules varied greatly between individual corporations, as some divided the financial risk equally, while others gave more power to the most financially involved individuals.
-				[NEWLINE][NEWLINE]After the Second War of Schleswig in 1864, two new movements hit Denmark. One was a successful attempt to reclaim moors in central and western Jutland for farming, which was mostly sandy land abandoned in the 14th century as a result of the Black Plague, but in many cases good for potatoes. This movement was initiated by Hedeselskabet (the Heath Association). Equally important was an influx of agricultural imports to Great Britain, Denmark's primary market for grains, from a rapidly industrializing United States, which caused not only a sharp drop in prices, but an agriculture crisis throughout Europe in the final decade of the 19th century. This affected the income of many Danish farmers and the result was a change in production from grain to dairy products and meat. When a farmer couldn't sell his grain, he fed it to his cows and pigs.
-				[NEWLINE][NEWLINE]The change in production resulted in a need for dairies and slaughterhouses. A Danish minister visited England and studied the Rochdale system of co-operatives, which he then brought back to Denmark. The only way to pay for such massive investments was for a large group of farmers to share the cost and risk between them, thus creating the cooperative dairies and slaughterhouses. The new situation implied that farmers would buy cheap grain from Russia and feed it to their livestock, selling milk, butter, eggs and meat for a much higher price. This movement also resulted in the creation of both the Danish Bacon and Danish Lurpak Butter brands. The cooperative movement also resulted in a series of co-op stores known as Brugsen, which were under the administration of The Danish Consumers Co-operative Society. The stores kept a large share of the Danish consumer goods market. It merged with the similar retail chains in Norway and Sweden in January 2002, to form Coop Norden.
+				The Andelsbevægelse was a Danish Cooperative Movement, a group of farmer-controlled corporations where individual members each owned a share in the risks and profits of  the collective. Co-ops, as they are commonly referred to, continues to be popular in the farming industry as a way of mitigating bad harvests or bad luck on the part of a few members.
+				[NEWLINE][NEWLINE]After the disastrous Second War of Schleswig where Denmark lost considerable territory, Denmark began efforts to reclaim moors in central and western Jutland for farming. Shortly after, the rapidly industrializing United States began pouring exports of grain into Denmark's biggest customer, Great Britain, tanking the prices for Denmark's produce. With the livelihoods of many Danish farmers at risk, they formed a new strategy to switch from grain products to dairy and meat; the grain that farmers could no longer sell was fed to cows and pigs.
+				[NEWLINE][NEWLINE]This shift in Danish agriculture was full of uncertainty, requiring that farmers form the Andelsbevægelse to share in the risks. By the time prices for grain had finally stabilized, Denmark was already completely changed. Dairies and slaughterhouses dotted the landscape; now they were IMPORTING grain from Russia to feed their livestock! 
 			</Text>
 		</Row>
 		
@@ -81,7 +81,7 @@
 			<Text>Armada</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_HELP">
-			<Text>Unique Renaissance Era Naval Unit. A Slow, but incredibly dangerous ship. Adept at extended sieges and engaging other ships[NEWLINE][NEWLINE]Generates Great Admirals more quickly[NEWLINE][NEWLINE]Only the Spanish may build it.</Text>
+			<Text>Unique Renaissance Era Naval Unit. A Slow, but incredibly dangerous ship. Adept at extended sieges and engaging other ships[NEWLINE][NEWLINE]Available earlier, but more expensive than the Corvette it replaces. Generates Great Admirals more quickly, and gains additional strength and XP when at full HP.[NEWLINE][NEWLINE]Only the Spanish may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY">
 			<Text>The Armada is a powerful ship in its era. You are unlikely to chase down an enemy, but these ships can blockade cities and force an engagement. Maneuver your Armada into the borders of cities and settle in for a long siege. Your units will amass more and more experience, becoming more dangerous while they wait for a proper fight.</Text>
@@ -320,7 +320,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_HELP">
 			<Text>
-				Naval unit that specializes in piracy and disrupting maritime trade. Only Morocco can build it. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing units, pillaging resources, and plundering trade routes.
+				Naval unit that specializes in piracy and disrupting maritime trade. Only Morocco can build it. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing units, pillaging resources, and plundering trade routes.[NEWLINE][NEWLINE]Can enter rival territory.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA">
@@ -389,7 +389,7 @@
 			<Text>Dromon</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BYZANTIUM_DROMON_HELP">
-			<Text>Unique Classical Era Unit. Only the Byzantines may build it. Tougher than the Penteconter it replaces. Receives the [COLOR_POSITIVE_TEXT]Splash Damage I[ENDCOLOR] Promotion for free and units struck by the Dromon take an additional 10 damage on their turn.</Text>
+			<Text>Unique Classical Era Unit. Only the Byzantines may build it. Receives the [COLOR_POSITIVE_TEXT]Splash Damage I[ENDCOLOR] Promotion for free and units struck by the Dromon take an additional 10 damage on their turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BYZANTIUM_DROMON_STRATEGY">
 			<Text>Bring flaming death to your enemies. Stronger than the Penteconter it replaces, and deals additional burning damage to both the target unit and any enemies near the Dromon. It cannot end its turn in Deep Ocean tiles outside of the city borders.</Text>
@@ -649,7 +649,7 @@
 			<Text>Hacienda</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_HELP">
-			<Text>Available at Civil Service, the Hacienda can be built next to Cities or Luxury Resources, but not next to each other. Yields [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_GOLD] Gold from adjacent Luxury Resources. +1 [ICON_PEACE] Faith if the nearby City has built a Mission.</Text>
+			<Text>Available at Civil Service. Cannot be built next to each other. Yields [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]+2 [ICON_FOOD] Food for every adjacent Bonus Resource.[NEWLINE]+2 [ICON_PRODUCTION] Production for every adjacent Strategic Resource.[NEWLINE]+2 [ICON_GOLD] Gold for every adjacent Luxury Resource.[NEWLINE]+1 [ICON_CULTURE] Culture if adjacent to a City.[NEWLINE]+1 [ICON_PEACE] Faith if worked by a City with a [COLOR_POSITIVE_TEXT]Mission[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_TEXT">
 			<Text>
@@ -662,10 +662,10 @@
 			<Text>Build a [LINK=IMPROVEMENT_SPAIN_HACIENDA]Hacienda[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_SPAIN_HACIENDA_HELP">
-			<Text>Constructs a Hacienda, which yields [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_GOLD] Gold from adjacent Luxury Resources. +1 [ICON_PEACE] Faith if the nearby City has built a Mission.</Text>
+			<Text>Constructs a Hacienda, which yields [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE]Gains [ICON_FOOD] Food for adjacent Bonus Resource, [ICON_PRODUCTION] Production for adjacent Strategic Resources, [ICON_GOLD] Gold for adjacent Luxury Resources, and [ICON_CULTURE] Culture from adjacent Cities. +1 [ICON_PEACE] Faith if the nearby City has built a Mission.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_SPAIN_HACIENDA_REC">
-			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_GOLD] Gold from adjacent Luxury Resources. +1 [ICON_PEACE] Faith if the nearby City has built a Mission.</Text>
+			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production from adjacent resources. +1 [ICON_PEACE] Faith if the nearby City has built a Mission.</Text>
 		</Row>
 		
 		<!-- Holkan -->
@@ -726,10 +726,10 @@
 			<Text>Great Bombard</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_HELP">
-			<Text>Unique Medieval Era Siege Unit. An Incredibly powerful unit capable of smashing cities to pieces. Does very high damage to cities and naval units, but is less useful against land units compared to other siege weapons. [NEWLINE][NEWLINE]Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
+			<Text>Unique Medieval Era Siege Unit. An Incredibly powerful unit capable of smashing cities to pieces. Does very high damage to cities and naval units, but is less useful against land units compared to other siege weapons. [NEWLINE][NEWLINE]Deals 20 damage to itself on attack. Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_STRATEGY">
-			<Text>The Great Turkish Bombard is a powerful Siege Weapon well after it is researched. Devastating against cities and naval units. It is the most powerful siege weapon in its era, but be sure to protect them!</Text>
+			<Text>The Great Turkish Bombard is a powerful Siege Weapon well after it is researched. It is the most powerful seige unit in its era; so dangerous it even hurts itself! Devastating against cities and naval units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_TEXT">
 			<Text>
@@ -850,7 +850,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP">
 			<Text>
-				Unique replacement for the Grand Temple. Only the Aztec may build it.[NEWLINE]Comes with a free Temple. A [ICON_GOLDEN_AGE] Golden Age begins. Reduces [ICON_HAPPINESS_3] Religious Unrest. All Temples gain +1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture, Barracks get +2 [ICON_CULTURE] Culture, and Floating Gardens get +2 [ICON_FOOD] Food. Whenever you enter a Golden Age, permanently gain +3 [ICON_FOOD], +3 [ICON_PEACE] Faith, and +3 XP for units trained in the city (max +30 each).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				Unique replacement for the Grand Temple. Only the Aztec may build it.[NEWLINE]Comes with a free Temple. A [ICON_GOLDEN_AGE] Golden Age begins. Reduces [ICON_HAPPINESS_3] Religious Unrest. All Temples gain +2 [ICON_PEACE] Faith and [ICON_CULTURE] Culture, Barracks get +2 [ICON_CULTURE] Culture, and Floating Gardens get +2 [ICON_FOOD] Food. Whenever you enter a Golden Age, permanently gain +3 [ICON_FOOD], +3 [ICON_PEACE] Faith, and +3 XP for units trained in the city (max +30 each).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 
@@ -1307,7 +1307,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
 			<Text>
-				Unique Wall replacement. Only the Assyrians may build it. Military Units supplied by this City's population increased by 20%.
+				Unique Wall replacement. Only the Assyrians may build it. Military Units supplied by this City's population increased by 20%. Contains a Great Work of Writing slot.
 			</Text>
 		</Row>
 
@@ -1658,15 +1658,15 @@
 			<Text>Pogost - Stage 3: Eastern Orthodox Church</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP">
-			<Text>Gains traits at Banking and Architecture Technology. [NEWLINE][NEWLINE]Stage 1: Grants +3 [ICON_CULTURE] Culture and +2 [ICON_GOLD] Gold and additional [ICON_GOLD] Gold to all [ICON_SWAP] Trade Routes to/from this city respectively.[NEWLINE][NEWLINE]Unlocks access to Stage 2.
+			<Text>Unique Medieval building. [NEWLINE][NEWLINE]Grants additional [ICON_GOLD] Gold to all [ICON_SWAP] Trade Routes to/from this city respectively.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
-			<Text>Stage 2: +1 [ICON_RESEARCH] Science. Get more [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections and [ICON_CITIZEN] Population at Banking. [NEWLINE][NEWLINE]Unlocks access to Stage 3.
+			<Text>Pogost Stage 2: +1 [ICON_RESEARCH] Science. Get more [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections and [ICON_CITIZEN] Population at Banking. [NEWLINE][NEWLINE]Unlocks access to Stage 3.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_3_HELP">
-			<Text>Stage 3: Adds [ICON_PEACE] Faith to Shrines, Temples and Churches in the same city at Architecture.</Text>
+			<Text>Pogost Stage 3: Adds [ICON_PEACE] Faith to Shrines, Temples and Churches in the same city at Architecture.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_STRATEGY">
 			<Text>Unique Russian replacement for the Customs House. Initially, Pogosts are comparatively lackluster, but they develop new traits as the game progresses. The Pogost provides modest increases in gold from trade and culture, then gains significant boosts to gold and science at its second stage, and provides modest boosts to faith generation in its final stage.</Text>
@@ -1844,7 +1844,7 @@
 			<Text>Sachem's Council</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_HELP">
-			<Text>+1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens, +2 [ICON_DIPLOMAT] Great Diplomat Points, +2 [ICON_RES_PAPER] Paper +10% [ICON_PRODUCTION] Production of Diplomatic Units and 1 Civil Servant Specialist Slots.[NEWLINE][NEWLINE]All Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or War.[NEWLINE][NEWLINE]Great Diplomats gain the [COLOR_GREEN]Diplomatic Reciprocity[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food in City for every City-State Friend, and +2 [ICON_PEACE] Faith for every Ally.</Text>
+			<Text>+1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens, +3 [ICON_DIPLOMAT] Great Diplomat Points, +3 [ICON_RES_PAPER] Paper +10% [ICON_PRODUCTION] Production of Diplomatic Units and 2 Civil Servant Specialist Slots.[NEWLINE][NEWLINE]All Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or War.[NEWLINE][NEWLINE]Great Diplomats gain the [COLOR_GREEN]Diplomatic Reciprocity[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food in City for every City-State Friend, and +2 [ICON_PEACE] Faith for every Ally.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_STRATEGY">
 			<Text>Unique Iroquoian replacement for the Scrivener's Office. In addition to the normal bonuses provided by the Scrivener's Office, the Sachem's Council  provides faster generation of Great Diplomat units. Great Diplomats also receive a unique promotion, providing Science, Culture and gold for every embassy founded. All Councils in your empire also gain +1 Culture, and all Chanceries gain +2 Gold. The Sachem's Council also provides Happiness for every Defensive Pact and Declared War involving the Iroquois.</Text>
@@ -1863,7 +1863,7 @@
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME">
 			<Text>Sambadrome</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME">
 			<Text>
 				Sambadrome (Sambódromo in Portuguese language) is the name given to an exhibition place for the Samba schools parades during Carnaval in Brazil. A sambadrome generally consists of tiered spectator viewing areas surrounding a long alley for the schools to parade down.  The parades attract many thousands of Brazilians and foreign tourists each year.
 			</Text>
@@ -1914,7 +1914,7 @@
 		<!-- Seir Morb -->
 		<!-- Created by adan_eslavo on 9/12/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON">
-			<Text>Crouching Tiger Cannon</Text>
+			<Text>Coastal Cannon</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON_HELP">
 			<Text>+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].</Text>
@@ -2149,7 +2149,7 @@
 			<Text>Father of the Horse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_HELP">
-			<Text>+15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to all Friendly Mounted Units within 2 tiles for one turn[ENDCOLOR].</Text>
+			<Text>+15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to all Friendly Mounted Units within 2 tiles[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_EFFECT">
 			<Text>Nearby Sofa</Text>
@@ -2161,7 +2161,7 @@
 			<Text>Sofa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_3UC_SOFA_HELP">
-			<Text>Skirmisher Unit excelling at supporting your Cavalry. Only Songhai may build it.</Text>
+			<Text>Skirmisher Unit excelling at supporting your Cavalry. Cheaper and available earlier than the Crossbowman. Has the [COLOR_POSITIVE_TEXT]Medic I[ENDCOLOR] promotion. Only Songhai may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_3UC_SOFA_STRATEGY">
 			<Text>The Sofa is a Songhai unique unit, replacing the Crossbowman. It serves as an excellent support unit starting with the Medic I promotion and a 15% Damage increase to all Mounted units within 2 tiles. The Sofa has a slightly lower defensive strength, but is relatively cheap to train.</Text>
@@ -2176,10 +2176,10 @@
 			<Text>SPAD S.VII</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_HELP">
-			<Text>Unique Modern Era Unit. Only the French may build it. This Unit is cheaper, and has a longer range than the Triplane it replaces. Receives the [COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR] Promotion for free.[NEWLINE]Does not require Oil.</Text>
+			<Text>Unique Modern Era Unit. Only the French may build it. This Unit is cheaper than the Triplane it replaces. Receives the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] Promotion for free.[NEWLINE]Does not require Oil.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_STRATEGY">
-			<Text>The SPAD S.VII is France''s early air superiority fighter. With a longer range and a cheaper cost and no need for oil, these fighters will help create a strong French presence in the air. The SPAD S.VII's quick study ability ensures these fighters are the toughest aces in the sky.</Text>
+			<Text>The SPAD S.VII is France's early air superiority fighter. With a cheaper cost and no need for oil, these fighters will help create a strong French presence in the air. The SPAD S.VII's ability to attack twice in a turn ensures these fighters are the toughest aces in the sky.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_TEXT">
 			<Text>World War I saw rapid technological and tactical changes in how wars were fought, not the least of which was the first use of aircraft for scouting, support, and bombing. These new machines opened an entirely new theatre of war, a new avenue to gain an advantage over the enemy. Despite their promise, the first aircraft were slow, clumsy, and unreliable thanks to their underpowered combustion engines. This all changed in 1915 when Marc Birgikt invented a new V8 engine boasting 150 horsepower and weighing only 330 pounds. The French high command saw this new motor''s obvious value as an aircraft engine and set about in commissioning a new fighter aircraft designed around this new powerhouse: The Societe Pour L'Aviation et ses Derives, or "SPAD" S. VII. [NEWLINE][NEWLINE]
@@ -2258,7 +2258,7 @@
 			<Text>+2 Movement to Workers and Settlers that begin the turn stacked with this Unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SACKER">
-			<Text>Bellum Alet'</Text>
+			<Text>Bellum Alet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SACKER_HELP">
 			<Text>On Pillage, Heal all adjacent friendly units by [COLOR_POSITIVE_TEXT]10HP[ENDCOLOR].</Text>
@@ -2267,10 +2267,10 @@
 			<Text>Tarkhan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_HELP">
-			<Text>Fearsome mounted warrior who also helps build the Hunnic economy. Only the Huns may build it.</Text>
+			<Text>Mounted warrior who also supports civilian and pther military units with its unique abilities. Only the Huns may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_STRATEGY">
-			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Stationing this unit inside a city you are razing provides a large sum of Culture and Gold, and hastens the destruction of the City.</Text>
+			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Pillaging tiles with a Tarkhan heals all your adjacent units, which can be handy for healing a recently captured unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_TEXT">
 			<Text>Tarkhan were nobles and high-ranking commanders within the armies of the Xiongnu and Hunnic empires. The term spread throughout the languages and peoples of the steppes, appearing as a title within Turkic, Mongol and Iranian cultures, even becoming a common boys name. Analogous to modern day generals, the Tarkhan were the protectors and conquerors of the Hunnic empire, spurring their civilization forward to greatness.</Text>
