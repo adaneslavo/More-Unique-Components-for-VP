@@ -2507,7 +2507,7 @@
 			<Text>Big Horse Dance</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_HELP">
-			<Text>Adds [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]on Fortifying[ENDCOLOR].</Text>
+			<Text>Adds [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]on Fortifying[ENDCOLOR]. Fights at full strength when damaged.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED">
 			<Text>Big Horse Dance Performed</Text>
