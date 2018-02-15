@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <glyphgen>
     <textures width="22" height="22">
-        <texture name="" src="Coca_fonticon.dds" allowcolor="1" alloweffects="1" inuse="1" />
+        <texture name="" src="CocaFontIcon_022.dds" allowcolor="1" alloweffects="1" inuse="1" />
     </textures>
     <styles count="1">
         <style name="">

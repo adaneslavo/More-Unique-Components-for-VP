@@ -661,12 +661,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Inca/TamboAndCoca/TamboArt.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Inca/TamboAndCoca/TamboCode.sql</FileName>
+        <FileName>Inca/Tambo/Tambo.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -727,6 +722,11 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>!DummyBuildings/DummyBuildingExpAndClassYield.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Inca/Coca/Coca.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -1100,7 +1100,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Tambo</Name>
         <Description>Adds Coca Monopoly to Game</Description>
-        <FileName>Inca/TamboAndCoca/Tambo.lua</FileName>
+        <FileName>Inca/Tambo/Tambo.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -2069,51 +2069,47 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.dds">
+    <Content Include="Inca\Coca\CocaIcon_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.ggxml">
+    <Content Include="Inca\Coca\CocaIcon_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\sv_coca.dds">
+    <Content Include="Inca\Coca\CocaIcon_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons128.dds">
+    <Content Include="Inca\Coca\CocaIcon_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons256.dds">
+    <Content Include="Inca\Coca\CocaFontIcon_022.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons32.dds">
+    <Content Include="Inca\Coca\CocaFontIcon_022.ggxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons45.dds">
+    <Content Include="Inca\Coca\CocaIcon_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons64.dds">
+    <Content Include="Inca\Coca\CocaIcon_256f.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\Tambo.lua">
+    <Content Include="Inca\Coca\Coca.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\TamboArt.sql">
+    <Content Include="Inca\Tambo\Tambo.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\TamboCode.sql">
+    <Content Include="Inca\Tambo\Tambo.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -5261,9 +5257,8 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Inca" />
     <Folder Include="Inca\Chasqui" />
     <Folder Include="Inca\Chasqui\3DModel" />
-    <Folder Include="Inca\TamboAndCoca" />
-    <Folder Include="Inca\TamboAndCoca\CocaArt" />
-    <Folder Include="Inca\TamboAndCoca\CocaArt\CocaLeaf" />
+    <Folder Include="Inca\Coca" />
+    <Folder Include="Inca\Tambo" />
     <Folder Include="Japan\" />
     <Folder Include="Japan\Kabuki\" />
     <Folder Include="Japan\Yamato\" />

@@ -6,7 +6,7 @@ More Unique Components for Vox Populi changelog:
 
 v28:
 - added unique names to InDuna,
-- cleaned (Chasqui, Riad, Corsair),
+- cleaned (Chasqui, Riad, Corsair, Coca, Tambo),
 - simplified:
     - E-temenanki ==> no bonus on unit purchase,
 - reworked:
@@ -15,7 +15,7 @@ v28:
 	- Oppidum ==> added fishing boats bonus, 
 	- Corsair ==> can enter rival territory, 
 	- Armada ==> +4CS instead of +10%CS, 
-	- Tambo,
+	- Tambo ==> now placed underneath the city,
 	- Riazza ==> many unnecessary lua code, added popups.
 - fixed:
     - Tophet ==> lua - now works
