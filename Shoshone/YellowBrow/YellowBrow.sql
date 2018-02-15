@@ -73,9 +73,9 @@ VALUES		('UNIT_SHOSHONE_ATLAS', 		256, 		'YellowBrowPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 													Description, 													Help, 																Sound, 				MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE', 			'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE',				'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_HELP', 			'AS2D_IF_LEVELUP',	0,				0,			0,			0,					0,			0,					1, 				23, 			'ABILITY_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE'),
-			('PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED', 	'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED',	'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED_HELP', 	'AS2D_IF_LEVELUP',	0,				0,			20,			0,					0,			0,					1, 				23, 			'ABILITY_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED');
+	(Type, 							Description, 							Help, 									Sound, 			StrongerDamaged,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 		PediaEntry)
+VALUES	('PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE', 		'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE',		'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_HELP', 		'AS2D_IF_LEVELUP',	1,		0,		0,		0,					0,			0,					1, 				23, 			'ABILITY_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE'),
+	('PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED', 	'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED',	'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED_HELP', 	'AS2D_IF_LEVELUP',	0,		0,		20,		0,					0,			0,					1, 				23, 			'ABILITY_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -133,7 +133,6 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SPANISH_TERCIO';
 
 INSERT INTO Unit_FreePromotions
 			(UnitType, 						PromotionType)
-VALUES		('UNIT_SHOSHONE_YELLOW_BROW',	'PROMOTION_COURAGE'),
-			('UNIT_SHOSHONE_YELLOW_BROW',	'PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE');			
+VALUES		('UNIT_SHOSHONE_YELLOW_BROW',	'PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE');			
 --==========================================================================================================================
 --==========================================================================================================================
