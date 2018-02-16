@@ -14,10 +14,10 @@ function YamatoOnBuild(iPlayer, iCity, iUnit)
 		-- inform the player
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			pPlayer:AddNotification(
-				NotificationTypes.NOTIFICATION_GOLDEN_AGE_BEGUN_ACTIVE_PLAYER,
+				NotificationTypes.NOTIFICATION_INSTANT_YIELD,
 				'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] has constructed a Yamato Battleship, gaining 600 [ICON_GOLDEN_AGE] Points towards a Golden Age.', -- use TXT_KEY_ here
 				'Yamato Constructed in '..pCity:GetName()..' 600 [ICON_GOLDEN_AGE] Golden Age Points gained',
-				pCapital:GetX(), pCapital:GetY(), GameInfoTypes.UNIT_YAMATO)
+				pUnit:GetX(), pUnit:GetY(), GameInfoTypes.UNIT_YAMATO)
 		end
 	end
 end
