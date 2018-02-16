@@ -14,13 +14,15 @@ v28:
 	- Hacienda ==> yield changes, 2 more unique abilities, simplier sql code, 
 	- Oppidum ==> added fishing boats bonus, 
 	- Corsair ==> can enter rival territory, 
-	- Armada ==> +4CS instead of +10%CS, 
+	- Armada ==> +4 CS instead of +10% CS, 
 	- Tambo ==> now placed underneath the city,
-	- Riazza ==> many unnecessary lua code, added popups.
+	- Corsair ==> many unnecessary lua code, added popups,
+	- Nilometer ==> cannot be built if well is in the city.
 - fixed:
     - Tophet ==> lua - now works
 	- Oppidum ==> lua - nil value in fire tunner,
 	- Riad ==> sql - GA yields work now,
+	- Slaganz ==> art - now model and sv flag work.
 - fixed text files,
 - reworked Credits.txt.
 

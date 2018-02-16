@@ -2535,13 +2535,6 @@
 	<IconTextureAtlases>
 		<!-- Eagle Icons -->		
 		<Row>
-			<Atlas>EAGLE_FLAG</Atlas>
-			<IconSize>32</IconSize>
-			<Filename>eagleicon.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-		<Row>
 			<Atlas>YURT_ICON_ATLAS</Atlas>
 			<IconSize>256</IconSize>
 			<Filename>yurt256.dds</Filename>
