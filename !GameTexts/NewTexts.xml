@@ -726,7 +726,7 @@
 			<Text>Great Bombard</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_HELP">
-			<Text>Unique Medieval Era Siege Unit. An Incredibly powerful unit capable of smashing cities to pieces. Does very high damage to cities and naval units, but is less useful against land units compared to other siege weapons. [NEWLINE][NEWLINE]Deals 20 damage to itself on attack. Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
+			<Text>Unique Medieval Era Siege Unit. An Incredibly powerful unit capable of smashing cities to pieces. Does very high damage to cities and naval units, but is less useful against land units compared to other siege weapons. [NEWLINE][NEWLINE]Deals 20 damage to itself on attack, but heals an additional 10HP when in [COLOR_POSITIVE_TEXT]friendly territory[ENDCOLOR].[NEWLINE][NEWLINE]Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]Only Ottomans may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_STRATEGY">
 			<Text>The Great Turkish Bombard is a powerful Siege Weapon well after it is researched. It is the most powerful seige unit in its era; so dangerous it even hurts itself! Devastating against cities and naval units.</Text>
@@ -2176,7 +2176,7 @@
 			<Text>SPAD S.VII</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_HELP">
-			<Text>Unique Modern Era Unit. Only the French may build it. This Unit is cheaper than the Triplane it replaces. Receives the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] Promotion for free.[NEWLINE]Does not require Oil.</Text>
+			<Text>Unique Modern Era Unit. Only the French may build it. This Unit is cheaper than the Triplane it replaces. Receives the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] Promotion for free.[NEWLINE][NEWLINE]Does not require Oil.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_STRATEGY">
 			<Text>The SPAD S.VII is France's early air superiority fighter. With a cheaper cost and no need for oil, these fighters will help create a strong French presence in the air. The SPAD S.VII's ability to attack twice in a turn ensures these fighters are the toughest aces in the sky.</Text>
@@ -2267,7 +2267,7 @@
 			<Text>Tarkhan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_HELP">
-			<Text>Mounted warrior who also supports civilian and pther military units with its unique abilities. Only the Huns may build it.</Text>
+			<Text>Mounted warrior who also supports civilian and other military units with its unique abilities. Only the Huns may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_STRATEGY">
 			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Pillaging tiles with a Tarkhan heals all your adjacent units, which can be handy for healing a recently captured unit.</Text>
