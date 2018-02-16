@@ -17,7 +17,7 @@ function YamatoOnBuild(iPlayer, iCity, iUnit)
 				NotificationTypes.NOTIFICATION_GOLDEN_AGE_BEGUN_ACTIVE_PLAYER,
 				'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] has constructed a Yamato Battleship, gaining 600 [ICON_GOLDEN_AGE] Points towards a Golden Age.', -- use TXT_KEY_ here
 				'Yamato Constructed in '..pCity:GetName()..' 600 [ICON_GOLDEN_AGE] Golden Age Points gained',
-				pChosenPlot:GetX(), pChosenPlot:GetY(), GameInfoTypes.UNIT_YAMATO)
+				pCapital:GetX(), pCapital:GetY(), GameInfoTypes.UNIT_YAMATO)
 		end
 	end
 end
