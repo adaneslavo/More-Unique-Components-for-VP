@@ -11,7 +11,14 @@ function YamatoOnBuild(iPlayer, iCity, iUnit)
 
 	if pUnit:GetUnitType() == GameInfoTypes.UNIT_YAMATO then
 		pPlayer:ChangeGoldenAgeProgressMeter(600)
-
+		-- inform the player
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			pPlayer:AddNotification(
+				NotificationTypes.NOTIFICATION_GOLDEN_AGE_BEGUN_ACTIVE_PLAYER,
+				'The City of [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] has constructed a Yamato Battleship, gaining 600 [ICON_GOLDEN_AGE] Points towards a Golden Age.', -- use TXT_KEY_ here
+				'Yamato Constructed in '..pCity:GetName()..' 600 [ICON_GOLDEN_AGE] Golden Age Points gained',
+				pChosenPlot:GetX(), pChosenPlot:GetY(), GameInfoTypes.UNIT_YAMATO)
+		end
 	end
 end
 
@@ -22,8 +29,7 @@ function YamatoOnDeath(iPlayerKiller, iPlayerKillee, eKillerUnitType, eKilledUni
 
 	if eKilledUnitType == GameInfoTypes.UNIT_YAMATO then
 		pPlayerKiller:ChangeJONSCulture(400)
-		pPlayerKiller:ChangeGoldenAgeProgressMeter(400)
-	
+		pPlayerKiller:ChangeGoldenAgeProgressMeter(400)		
 	end		
 end
 			
