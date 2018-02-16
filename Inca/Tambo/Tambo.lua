@@ -59,10 +59,30 @@ function OnCityDestroyRemoveCoca(iHexPos, iPlayer1, iCity, iPlayer2)
 	pPlot:SetResourceType(eResourceCoca, 0)	
 end			
 
+-- Determine if player has Coca monopoly, can be combined with "function OnTurnSetPromotions" if approved. 
+--function CocaMonopolySet (iPlayer)
+--	local pPlayer = Players[iPlayer]
+--	local bHasCocaMonopoly = false
+--	local totalCoca = GameInfo:GetNumResource(RESOURCE_INCA_COCA)
+--	if GameInfo:GetNumResource(RESOURCE_INCA_COCA) < 2 then return end
+	
+--	If 2(*pPlayer:GetNumResourceTotal(RESOURCE_INCA_COCA, true)) >= totalCoca
+--		bHasCocaMonopoly = true
+-- 		-- inform the player
+--		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+--			pPlayer:AddNotification(
+--				NotificationTypes.NOTIFICATION_DISCOVERED_LUXURY_RESOURCE,
+--				'You control more than 50% of the global [ICON_RES_COCA] Coca trade, granting you a monopoly. All land military units and workers [COLOR_POSITIVE_TEXT]gain[ENDCOLOR] a free promotion', -- use TXT_KEY_ here
+--				'Global Monopoly on [ICON_RES_COCA] Coca',
+--				pCapital:GetX(), pCapital:GetY(), GameInfoTypes.RESOURCE_INCA_COCA)
+--		end
+--	end
+--end
+
 -- set promotion if player has Coca monopoly
 function OnTurnSetPromotions(iPlayer)
 	local pPlayer = Players[iPlayer]
-	local bHasCocaMonopoly = pPlayer:HasGlobalMonopoly(eResourceCoca)
+	local bHasCocaMonopoly = pPlayer:HasGlobalMonopoly(eResourceCoca) -- *PDan* would have to be modified if my alternate code is used 
 	
 	for unit in pPlayer:Units() do
 		if tEligibleCombats[ unit:GetUnitCombatType() ] then unit:SetHasPromotion(ePromotionAggresion, bHasCocaMonopoly) end
@@ -73,6 +93,7 @@ function OnTurnSetPromotions(iPlayer)
 	end
 end
 
+GameEvents.PlayerDoTurn.Add(CocaMonopolySet)
 GameEvents.PlayerDoTurn.Add(OnTurnSetPromotions)
 GameEvents.CityConstructed.Add(OnConstructionPlaceCoca)
 Events.SerialEventCityDestroyed.Add(OnCityDestroyRemoveCoca)
