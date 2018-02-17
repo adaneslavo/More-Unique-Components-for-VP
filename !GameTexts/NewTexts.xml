@@ -54,14 +54,14 @@
 		</Row>
 		<Row Tag="TXT_KEY_ALERT_ALTI_CUR_MINOR_TRIBUTE">
 			<Text>
-				Demanding tribute from the city-state has earned you {1_Num} [ICON_GOLD] Gold and +6 [ICON_HAPPINESS] Happiness for 20 turns!
+				Demanding tribute from the city-state has earned you {1_Num} [ICON_GOLD] Gold and +6 [ICON_HAPPINESS_1] Happiness for 20 turns!
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS">
 			<Text>Alti Cur tribute bonus</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS_HELP">
-			<Text>+6 [ICON_HAPPINESS] Happiness for 20 turns.</Text>
+			<Text>+6 [ICON_HAPPINESS_1] Happiness for 20 turns.</Text>
 		</Row>
 		<!-- Armada -->
 		<!-- Created by adan_eslavo on 8/11/2017 -->
