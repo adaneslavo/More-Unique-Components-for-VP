@@ -60,6 +60,11 @@ DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_HUN_HORSE_ARCHER' AND Pro
 INSERT INTO Unit_FreePromotions
 	(UnitType, 					PromotionType)
 VALUES	('UNIT_HUN_HORSE_ARCHER',  'PROMOTION_HORSE_ARCHER');
+  
+INSERT INTO Unit_FreePromotions
+	(UnitType, 			PromotionType)
+VALUES	'UNIT_HUN_HORSE_ARCHER', 	PromotionType
+FROM Unit_FreePromotions WHERE UnitType = 'UNIT_MONGOLIAN_KESHIK');
 
 INSERT INTO Unit_FreePromotions 	
 		(UnitType, 		PromotionType)
