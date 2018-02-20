@@ -43,10 +43,10 @@
 			<Text>Six-Horns Council</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_HELP">
-			<Text>Receive 25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive 50 [ICON_RESEARCH] Science and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State. A [ICON_GOLDEN_AGE] Golden Age begins whenever you successfully demand Tribute from another Major Civilization.[NEWLINE][NEWLINE]Does not require any prerequisite building. Only the Huns may build it.</Text>
+			<Text>Receive 25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite building. Only the Huns may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_STRATEGY">
-			<Text>The Six-Horns Council is the Hunnic Unique Wonder, replacing the Ironworks. In addition to the normal bonuses of the Ironworks, the Six Horns council increases Science and Culture, and boosts Culture and Production from all Stables on empire. The wonder increases the bonuses to demanding tribute from minor City-States, and will trigger a Golden Age whenever a demand is successfully made against a rival Civilization.</Text>
+			<Text>The Six-Horns Council is the Hunnic Unique Wonder, replacing the Ironworks. In addition to the normal bonuses of the Ironworks, the Six Horns council increases Science and Culture, and boosts Culture and Production from all Stables on empire. The wonder provides additional Gold and Happiness from demanding tribute from minor City-States.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_TEXT">
 			<Text>The Huns' origins remain shrouded in mystery, but one clue to their Xiongnu heritage is their rule by an Alti Cur, or "Six-Horns Council". The Alti Cur were a small council of nobles, the most powerful men within the Hunnic empire besides the emperor himself. Each was seated according to their standing with the emperor, with the emperor's favorite seated to his immediate right.[NEWLINE][NEWLINE]
@@ -2253,7 +2253,7 @@
 			<Text>Migration</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_MIGRATION_HELP">
-			<Text>+2 Movement to Workers and Settlers that begin the turn stacked with this Unit.</Text>
+			<Text>+1 Movement to Workers and Settlers that begin the turn stacked with this Unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SACKER">
 			<Text>Bellum Alet</Text>
