@@ -7,7 +7,7 @@ local tPIE = {}
 function WalkingSzekely(player, unit, x, y)
 	if Map.GetPlot(x,y) ~= nil then
 		local cUnit = Players[player]:GetUnitByID(unit);
-		if cUnit:GetUnitType() == HerdID then
+		if cUnit:IsHasPromotion(HerdID) then
 			if tPIE[cUnit] then
 				if cUnit:GetMoves() <= 0 then
 					SearchAttack(cUnit)
