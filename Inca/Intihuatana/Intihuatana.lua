@@ -1,6 +1,6 @@
 -- Intihuatana
 -- Author: pineappledan, adan_eslavo
--- DateCreated:
+-- DateCreated: 20/02/2018
 ----------------------------------------------------------------
 local eBuildingIntihuatana = GameInfoTypes.BUILDING_INCA_INTIHUATANA
 local eBuildingIntihuatana2 = GameInfoTypes.BUILDING_INCA_INTIHUATANA_2
@@ -44,13 +44,6 @@ function OnConstructionSubstituteBuilding(iPlayer, iCity, iBuilding)
 	pCity:SetNumRealBuilding(eBuildingIntihuatana, 0)
 	pCity:SetNumRealBuilding(eBuildingIntihuatana2, 1)
 	
-	if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-		local sCityName = pCity:GetName()
-		
-		pPlayer:AddNotification(0,
-			'Player has constructed Intihuatana in [COLOR_CYAN]'..sCityName..'[ENDCOLOR]. It is automatically upgraded from Sceintific Revolution Policy.', 
-			'Intihuatana upgraded in'..sCityName, 
-			pCity:GetX(), pCity:GetY())
 	end
 end
 
