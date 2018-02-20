@@ -13,7 +13,7 @@ function HunMigration_PlayerDoTurn(playerID)
 		if unit:GetUnitClassType() == unitClassSettlerID or unit:GetUnitClassType() == unitClassWorkerID then
 			local plot = unit:GetPlot()
 			if (plot:GetUnit() and plot:GetUnit():IsHasPromotion(unitPromotionMigration)) then
-				unit:ChangeMoves(120)
+				unit:ChangeMoves(60)
 			end
 		end
 	end
@@ -37,11 +37,13 @@ function BellumAlet(iPlayer, iUnit, iImprovement, iGold)
 			local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
 			for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
 				local jUnit = pAdjacentPlot:GetUnit(k)
-				--local iTeam = pPlayer:GetTeam()
+				local jPlayer = jUnit:GetOwner()
+				if jPlayer == pPlayer then
 				jUnit:ChangeDamage(-10, pPlayer)
-				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					local vUnitPosition = PositionCalculator(jUnit:GetX(), jUnit:GetY())
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_GREEN]Bellum Alet[ENDCOLOR]", 1)
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vUnitPosition = PositionCalculator(jUnit:GetX(), jUnit:GetY())
+						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_GREEN]Bellum Alet[ENDCOLOR]", 1)
+					end
 				end
 			end -- units
 		end -- for
