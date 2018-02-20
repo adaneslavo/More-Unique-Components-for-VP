@@ -6,7 +6,9 @@ More Unique Components for Vox Populi changelog:
 
 v28:
 - added unique names to InDuna,
-- cleaned (Chasqui, Riad, Corsair, Coca, Tambo),
+- added 32px icons for new resources (compatibility with "Small Resource Icons" mod),
+- cleaned (Chasqui, Riad, Corsair),
+- modified Incan UA,
 - simplified:
     - E-temenanki ==> no bonus on unit purchase,
 - reworked:
@@ -15,7 +17,7 @@ v28:
 	- Oppidum ==> added fishing boats bonus, 
 	- Corsair ==> can enter rival territory, 
 	- Armada ==> +4 CS instead of +10% CS, 
-	- Tambo ==> now placed underneath the city,
+	- Tambo, Coca ==> now changed concept to Intihuatana,
 	- Corsair ==> many unnecessary lua code, added popups,
 	- Nilometer ==> cannot be built if well is in the city.
 - fixed:

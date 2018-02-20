@@ -1,9 +1,6 @@
 --------------------------------	
 -- Promotions
 --------------------------------	
-DELETE FROM	Unit_FreePromotions WHERE UnitType = 'UNIT_HUN_HORSE_ARCHER';
-
-
 INSERT INTO UnitPromotions 
 		(Type, 								Description, 									Help, 												Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 			PediaType, 			PediaEntry)
 VALUES	('PROMOTION_HORSE_ARCHER',			'TXT_KEY_PROMOTION_HORSE_ARCHER',				'TXT_KEY_PROMOTION_HORSE_ARCHER_HELP', 				'AS2D_IF_LEVELUP',	1, 				59, 			'ABILITY_ATLAS', 	'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_HORSE_ARCHER'),
@@ -58,14 +55,14 @@ FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_HORSEMAN';
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_HUN_HORSE_ARCHER' AND PromotionType = 'PROMOTION_ACCURACY_1';
 
 INSERT INTO Unit_FreePromotions
-	(UnitType, 					PromotionType)
-VALUES	('UNIT_HUN_HORSE_ARCHER',  'PROMOTION_HORSE_ARCHER');
-  
-INSERT INTO Unit_FreePromotions
-	(UnitType, 			PromotionType)
-VALUES	'UNIT_HUN_HORSE_ARCHER', 	PromotionType
-FROM Unit_FreePromotions WHERE UnitType = 'UNIT_MONGOLIAN_KESHIK');
+			(UnitType, 					PromotionType)
+SELECT		'UNIT_HUN_HORSE_ARCHER', 	PromotionType
+FROM Unit_FreePromotions WHERE UnitType = 'UNIT_MONGOLIAN_KESHIK';
 
+INSERT INTO Unit_FreePromotions
+			(UnitType, 					PromotionType)
+VALUES		('UNIT_HUN_HORSE_ARCHER',  'PROMOTION_HORSE_ARCHER');
+  
 INSERT INTO Unit_FreePromotions 	
 		(UnitType, 		PromotionType)
 SELECT	'UNIT_JFD_ALAN_CAVALRY', 	PromotionType
@@ -88,8 +85,8 @@ VALUES	('CIVILIZATION_HUNS',	'UNITCLASS_HORSEMAN',	'UNIT_JFD_ALAN_CAVALRY');
 --------------------------------
 UPDATE Language_en_US 
 SET Text = 'Unique Hunnic Skirmisher. If all the unit''s moves are used without attacking, attacks a valid target automatically.[NEWLINE][NEWLINE]Does not require Horses.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_HUN_HORSE_ARCHER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+WHERE Tag = 'TXT_KEY_UNIT_HELP_HUN_HORSE_ARCHER';
 
 UPDATE Language_en_US 
 SET Text = 'Horse Archers are fast ranged units, deadly on open terrain. Horse Archers have the unique ability to automatically attack a random nearby target if they have run out of moves, but have not attacked yet. As a mounted unit, the Horse Archer is vulnerable to Spearmen. Unlike the Skirmisher, the Horse Archer does not require Horses.'
-WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';

@@ -1,56 +1,58 @@
---------------------------------------------------------------------------------------------------------------------------
--- INTIHUATANA
---------------------------------------------------------------------------------------------------------------------------
---Upgrade all existing Intihuatana on adoption of Scientific Revolution Policy
-local eBuildingInti = GameInfoTypes.BUILDING_4UC_INTIHUATANA
-local eBuildingInti2 = GameInfoTypes.BUILDING_4UC_INTIHUATANA_2
-local ePolicySciRev = GameInfoTypes.POLICY_SECULARISM
+-- Intihuatana
+-- Author: pineappledan, adan_eslavo
+-- DateCreated:
+----------------------------------------------------------------
+local eBuildingIntihuatana = GameInfoTypes.BUILDING_INCA_INTIHUATANA
+local eBuildingIntihuatana2 = GameInfoTypes.BUILDING_INCA_INTIHUATANA_2
+local ePolicyScientificRevolution = GameInfoTypes.POLICY_SECULARISM
+local eCivilizationInca = GameInfoTypes.CIVILIZATION_INCA
 
--- upgrade all guilds on Kabuki construction
-function IntiOnAdoption(iPlayer, iPolicy)
+-- upgrade Intihuatana after adopting Scientific Revolution policy
+function OnPolicyAdoptSubstituteBuilding(iPlayer, iPolicy)
 	local pPlayer = Players[iPlayer]
 	
-	if pPlayer:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_INCA then return end
-	if iPolicy ~= ePolicySciRev then return end
-			
-	local pCity = pPlayer:GetCityByID(iCity)
+	if pPlayer:GetCivilizationType() ~= eCivilizationInca then return end
+	if iPolicy ~= ePolicyScientificRevolution then return end
+	
+	for city in pPlayer:Cities() do	
+		if city:IsHasBuilding(eBuildingIntihuatana) then
+			city:SetNumRealBuilding(eBuildingIntihuatana, 0)
+			city:SetNumRealBuilding(eBuildingIntihuatana2, 1)
+		end
+	end
+	
+	if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+		local pCapital = pPlayer:GetCapitalCity()
 		
-	if pCity:IsHasBuilding(eBuildingInti) then
-		pCity:SetNumRealBuilding(eBuildingInti, 0)
-		pCity:SetNumRealBuilding(eBuildingInti2, 1)
+		pPlayer:AddNotification(0,
+			'Player has adopted the Scientific Revolution policy. All Intihuatana in the Empire have been upgraded.', 
+			'Intihuatanas upgraded across the Empire', 
+			pCapital:GetX(), pCapital:GetY())
 	end
-
-	NotificationLoad(0, pPlayer, pCity)
 end
 
--- upgrade constructed Intihuatana if Scientific Revolution Policy is adopted
-function IntiOnBuild(iPlayer, iCity, iBuilding)
+-- upgrade Intihuatana after construction if Scientific Revolution Policy is adopted
+function OnConstructionSubstituteBuilding(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 	
-	if pPlayer:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_INCA then return end
+	if pPlayer:GetCivilizationType() ~= eCivilizationInca then return end
+	if not pPlayer:HasPolicy(ePolicyScientificRevolution) then return end
+	if iBuilding ~= eBuildingIntihuatana then return end
 	
-	if not iPlayer:HasPolicy(ePolicySciRev) then return end
-
 	local pCity = pPlayer:GetCityByID(iCity)
-	if iBuilding == eBuildingInti then
-		pCity:SetNumRealBuilding(eBuildingInti, 0)
-		pCity:SetNumRealBuilding(eBuildingInti2, 1)
+
+	pCity:SetNumRealBuilding(eBuildingIntihuatana, 0)
+	pCity:SetNumRealBuilding(eBuildingIntihuatana2, 1)
+	
+	if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+		local sCityName = pCity:GetName()
+		
+		pPlayer:AddNotification(0,
+			'Player has constructed Intihuatana in [COLOR_CYAN]'..sCityName..'[ENDCOLOR]. It is automatically upgraded from Sceintific Revolution Policy.', 
+			'Intihuatana upgraded in'..sCityName, 
+			pCity:GetX(), pCity:GetY())
 	end
 end
 
-function NotificationLoad(iSet, pPlayer, pCity)
-	if not (pPlayer:IsHuman() and pPlayer:IsTurnActive()) then return end
-	
-	local sCityName = pCity:GetName()
-	local sTitle, sText
-
-	if iSet == 0 then
-		sTitle = 'Intihuatana upgraded across the Empire'
-    sText = 'Player has adopted the Scientific Revolution policy. All Intihuatana in the Empire have been upgraded.'
-  end
-
-  pPlayer:AddNotification(0, sText, sTitle, pCity:GetX(), pCity:GetY())
-end
-
-GameEvents.PlayerAdoptPolicy.Add(IntiOnAdoption)
-GameEvents.CityConstructed.Add(IntiOnBuild)
+GameEvents.PlayerAdoptPolicy.Add(OnPolicyAdoptSubstituteBuilding)
+GameEvents.CityConstructed.Add(OnConstructionSubstituteBuilding)

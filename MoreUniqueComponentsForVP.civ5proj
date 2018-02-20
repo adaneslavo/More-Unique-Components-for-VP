@@ -661,11 +661,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Inca/Tambo/Tambo.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Songhai/Qadi/Qadi.sql</FileName>
       </Action>
       <Action>
@@ -726,7 +721,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Inca/Coca/Coca.sql</FileName>
+        <FileName>Inca/GreatAndeanRoad/GreatAndeanRoad.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Inca/Intihuatana/Intihuatana.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -1098,12 +1098,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Tambo</Name>
-        <Description>Adds Coca Monopoly to Game</Description>
-        <FileName>Inca/Tambo/Tambo.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Tarkhan</Name>
         <Description>Adds Tarkhan Promotions</Description>
         <FileName>Huns/Tarkhan/2.Tarkhan.lua</FileName>
@@ -1149,6 +1143,12 @@ Latest changes: see changelog file.</Description>
         <Name>Indaba</Name>
         <Description>Functions for InDuna on attack and on expend</Description>
         <FileName>Zulu/Indaba/Indaba.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Intihuatana</Name>
+        <Description>Upgrades Intihuatana.</Description>
+        <FileName>Inca/Intihuatana/Intihuatana.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
@@ -1741,6 +1741,10 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Egypt\Flax\FlaxIcon_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Egypt\Flax\FlaxIcon_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -2069,49 +2073,33 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Coca\CocaIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\Coca\CocaIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\Coca\CocaIcon_080.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\Coca\CocaIcon_128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\Coca\CocaFontIcon_022.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\Coca\CocaFontIcon_022.ggxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\Coca\CocaIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\Coca\CocaIcon_256f.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\Coca\Coca.sql">
+    <Content Include="Inca\GreatAndeanRoad\GreatAndeanRoad.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Tambo\Tambo.lua">
+    <Content Include="Inca\Intihuatana\Intihuatana.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Tambo\Tambo.sql">
+    <Content Include="Inca\Intihuatana\Intihuatana.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Inca\Intihuatana\IntihuatanaPicture_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Inca\Intihuatana\IntihuatanaPicture_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Inca\Intihuatana\IntihuatanaPicture_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Inca\Intihuatana\IntihuatanaPicture_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Japan\Kabuki\JapGuilds128.dds">
       <SubType>Lua</SubType>
@@ -2534,6 +2522,10 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Rome\Figs\FigsFontIcon_022.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Rome\Figs\FigsIcon_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5257,8 +5249,8 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Inca" />
     <Folder Include="Inca\Chasqui" />
     <Folder Include="Inca\Chasqui\3DModel" />
-    <Folder Include="Inca\Coca" />
-    <Folder Include="Inca\Tambo" />
+    <Folder Include="Inca\GreatAndeanRoad" />
+    <Folder Include="Inca\Intihuatana" />
     <Folder Include="Japan\" />
     <Folder Include="Japan\Kabuki\" />
     <Folder Include="Japan\Yamato\" />
