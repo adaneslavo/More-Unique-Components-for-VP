@@ -37,13 +37,12 @@ function BellumAlet(iPlayer, iUnit, iImprovement, iGold)
 			local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
 			for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
 				local jUnit = pAdjacentPlot:GetUnit(k)
-				local jPlayer = jUnit:GetOwner()
-				if jPlayer == pPlayer then
+				--iTeam = pPlayer:GetTeam()
+				--local jPlayer = jUnit:GetOwner()
 				jUnit:ChangeDamage(-10, pPlayer)
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vUnitPosition = PositionCalculator(jUnit:GetX(), jUnit:GetY())
-						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_GREEN]Bellum Alet[ENDCOLOR]", 1)
-					end
+				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+					local vUnitPosition = PositionCalculator(jUnit:GetX(), jUnit:GetY())
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_GREEN]Bellum Alet[ENDCOLOR]", 1)
 				end
 			end -- units
 		end -- for
