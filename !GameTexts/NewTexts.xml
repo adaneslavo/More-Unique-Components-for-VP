@@ -1005,32 +1005,16 @@
 		</Row>
 
 		<!-- Intihuatana -->
-		<Row Tag="TXT_KEY_BUILDING_4UC_INTIHUATANA">
+		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA">
 			<Text>Intihuatana</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_4UC_INTIHUATANA_HELP">
+		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_HELP">
 			<Text>Unique Observatory. Only the Inca may build it. +2 [ICON_RESEARCH] Science and +2 [ICON_FOOD] for every mountain within 3 tiles of the City.[NEWLINE][NEWLINE]Scientists in the city produce +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Adopting the Scientific Revolution[ENDCOLOR] policy gives +4 [ICON_RESEARCH] Science to all Intihuatana on Empire.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_4UC_INTIHUATANA_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_STRATEGY">
 			<Text>The Intihuatana is the unique Observatory of the Inca. Unlike the Observatory it replaces, the Intihuatana is unlocked by the Theology tech, much sooner than the policy which unlocks Observatories. In addition to Science, Intihuatana also boost Food and Faith production, and makes Scientist specialists in the City produce Faith. Unlocking the Scientific Revolution policy further increases the Intihuatana's Science production</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_4UC_INTIHUATANA_TEXT">
-			<Text>
-			Astronomy was very important[NEWLINE][NEWLINE]
-			Intihuatana's use for farming
-			</Text>
-		</Row>
-		
-		<Row Tag="TXT_KEY_BUILDING_4UC_INTIHUATANA_2">
-			<Text>Intihuatana</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_4UC_INTIHUATANA_2_HELP">
-			<Text>Unique Observatory. Only the Inca may build it. +2 [ICON_RESEARCH] Science and +2 [ICON_FOOD] for every mountain within 3 tiles of the City.[NEWLINE][NEWLINE]Scientists in the city produce +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Adopting the Scientific Revolution[ENDCOLOR] policy gives +4 [ICON_RESEARCH] Science to Intihuatana on Empire.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_4UC_INTIHUATANA_2_STRATEGY">
-			<Text>The Intihuatana is the unique Observatory of the Inca. Unlike the Observatory it replaces, the Intihuatana is unlocked by the Theology tech, much sooner than the policy which unlocks Observatories. In addition to Science, Intihuatana also boost Food and Faith production, and makes Scientist specialists in the City produce Faith. Unlocking the Scientific Revolution policy further increases the Intihuatana's Science production</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_4UC_INTIHUATANA_2_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_TEXT">
 			<Text>
 			Astronomy was very important[NEWLINE][NEWLINE]
 			Intihuatana's use for farming

@@ -43,8 +43,6 @@ function OnConstructionSubstituteBuilding(iPlayer, iCity, iBuilding)
 
 	pCity:SetNumRealBuilding(eBuildingIntihuatana, 0)
 	pCity:SetNumRealBuilding(eBuildingIntihuatana2, 1)
-	
-	end
 end
 
 GameEvents.PlayerAdoptPolicy.Add(OnPolicyAdoptSubstituteBuilding)

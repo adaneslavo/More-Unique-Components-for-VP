@@ -17,10 +17,10 @@ VALUES	('CIVILIZATION_INCA',	'BUILDINGCLASS_OBSERVATORY',	'BUILDING_INCA_INTIHUA
 ------------------------------
 INSERT INTO IconTextureAtlases 
 		(Atlas, 		IconSize, 	Filename, 			IconsPerRow, IconsPerColumn)
-VALUES		('BUILDING_INCA_ATLAS', 256, 		'IntihuatanaPicture_256.dds',	2, 		1),
-		('BUILDING_INCA_ATLAS', 128, 		'IntihuatanaPicture_128.dds',	2, 		1),
-		('BUILDING_INCA_ATLAS', 64, 		'IntihuatanaPicture_064.dds',	2, 		1),
-		('BUILDING_INCA_ATLAS', 45, 		'IntihuatanaPicture_045.dds',	2, 		1);
+VALUES		('BUILDING_INCA_ATLAS', 256, 		'IntihuatanaPicture_256.dds',	1, 		1),
+		('BUILDING_INCA_ATLAS', 128, 		'IntihuatanaPicture_128.dds',	1, 		1),
+		('BUILDING_INCA_ATLAS', 64, 		'IntihuatanaPicture_064.dds',	1, 		1),
+		('BUILDING_INCA_ATLAS', 45, 		'IntihuatanaPicture_045.dds',	1, 		1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -36,7 +36,7 @@ FROM Buildings WHERE Type = 'BUILDING_OBSERVATORY';
 
 INSERT INTO Buildings 	
 		(Type,				BuildingClass,	GoldMaintenance,	Cost, 		FaithCost,	UnlockedByBelief,	EnhancedYieldTech,	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, 	ArtDefineTag, IlliteracyHappinessChange, GreatPeopleRateChange,	SpecialistType,	SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	Help,						Description,				Civilopedia,					Strategy,					IconAtlas,		PortraitIndex)
-SELECT		'BUILDING_INCA_INTIHUATANA_2',	BuildingClass,	0,			Cost-200, 	FaithCost,	UnlockedByBelief,	EnhancedYieldTech,	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_THEOLOGY', 	ArtDefineTag, IlliteracyHappinessChange, GreatPeopleRateChange,	SpecialistType,	SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_INCA_INTIHUATANA_HELP',	'TXT_KEY_BUILDING_INCA_INTIHUATANA', 	'TXT_KEY_BUILDING_INCA_INTIHUATANA_TEXT',	'TXT_KEY_BUILDING_INCA_INTIHUATANA_STRATEGY',	'BUILDING_INCA_ATLAS',	1
+SELECT		'BUILDING_INCA_INTIHUATANA_2',	BuildingClass,	0,			Cost-200, 	FaithCost,	UnlockedByBelief,	EnhancedYieldTech,	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_THEOLOGY', 	ArtDefineTag, IlliteracyHappinessChange, GreatPeopleRateChange,	SpecialistType,	SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_INCA_INTIHUATANA_HELP',	'TXT_KEY_BUILDING_INCA_INTIHUATANA', 	'TXT_KEY_BUILDING_INCA_INTIHUATANA_TEXT',	'TXT_KEY_BUILDING_INCA_INTIHUATANA_STRATEGY',	'BUILDING_INCA_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_OBSERVATORY';
 ------------------------------	
 -- Building_Flavors
