@@ -66,10 +66,6 @@ function IbuthoGainXP(iPlayer, iUnitOrCity, iRole, bIsCity)
 	GameInfoTypes.UNITCOMBAT_ARMOR,
 	GameInfoTypes.UNITCOMBAT_HELICOPTER
 }
-	local rangeCombat = {
-	GameInfoTypes.UNITCOMBAT_ARCHER,
-	GameInfoTypes.UNITCOMBAT_SIEGE,
-}
 		
 		for k = 0, pPlot:GetNumUnits() - 1, 1 do
 			local pStackedUnit = pPlot:GetUnit(k)
