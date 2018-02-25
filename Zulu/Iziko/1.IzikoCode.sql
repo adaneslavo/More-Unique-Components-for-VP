@@ -29,11 +29,6 @@ VALUES
 	('BUILDING_IZIKO', 'YIELD_FAITH', 2),
 	('BUILDING_IZIKO', 'YIELD_CULTURE', 3);
 
-INSERT INTO Building_YieldFromUnitLevelUp
-	(BuildingType, YieldType, Yield)
-VALUES
-	('BUILDING_IZIKO', 'YIELD_CULTURE', 5);
-
 INSERT INTO Building_ResourceYieldChanges
 		(BuildingType, ResourceType, YieldType, Yield)
 SELECT	'BUILDING_IZIKO', ResourceType, YieldType, Yield
