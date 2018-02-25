@@ -928,7 +928,7 @@
 			<Text>Ibutho</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_IBUTHO_HELP">
-			<Text>Grants 5XP to a stacked unit [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR].</Text>
+			<Text>Grants extra XP to a stacked unit [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR].</Text>
 		</Row>	
 		<Row Tag="TXT_KEY_PROMOTION_IQAWE">
 			<Text>Iqawe</Text>
@@ -940,7 +940,7 @@
 			<Text>InDuna</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_STRATEGY">
-			<Text>The InDuna is a Zulu unique unit. May construct a Citadel. +15% Combat bonus to all Land units within 2 tiles.[NEWLINE][NEWLINE]A unit stacked with an InDuna receives an additional 5XP when attacking other units.[NEWLINE][NEWLINE]Expending an InDuna gives 30XP to the unit that was stacked with it, and deals 30 damage adjacent enemy units.
+			<Text>The InDuna is a Zulu unique unit. May construct a Citadel. +15% Combat bonus to all Land units within 2 tiles.[NEWLINE][NEWLINE]A unit stacked with an InDuna receives additional XP when attacking other units.[NEWLINE][NEWLINE]Expending an InDuna gives 30XP to the unit that was stacked with it, and deals 30 damage adjacent enemy units.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_HELP">
@@ -1016,8 +1016,8 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_TEXT">
 			<Text>
-			Astronomy was very important[NEWLINE][NEWLINE]
-			Intihuatana's use for farming
+			Astronomy played an important life in Incan daily life, especially agriculture and religion. The high altitudes in the Andean mountains meant Incan society was sensitive to variations in rainfall and daylight, but were also well-suited to observe the sky for clues. The sun itself was a chief deity of the Incan religion known as the 'Inti'. Precise measurements were taken of the time and position of Inti's rising and setting to determine what altitudes to plant crops. The city of Cusco itself was built on a radial plain, mimicking the rising and setting of the sun, and pointing to specific astronomical events.[NEWLINE][NEWLINE]
+			Intihuatanas, (lit. "hitching posts of the sun") were ritual stone pillars used to measure the sun's position as it rose and set each day. The Inca built these observatories in high places surrounding their cities to capture the first and last light of the sun each day, helping them to know the season for planting. The most famous of these Intihuatana is still located in the ruins of Machu Picchu.
 			</Text>
 		</Row>
 		
@@ -1027,11 +1027,11 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IZIKO_TEXT">
 			<Text>An Iziko is a simple hearth used as a gathering place for Zulu communities. The fireplace is revered as a resource for food, warmth, dreams, and for communicating with ancestors. It is from these gatherings that a sense of community and identity was formed, and young Zulus could perform and bond.[NEWLINE][NEWLINE]
-			The fireplace is used metaphorically for the "cooking of songs" in isicathamiya stage performances, a traditional, yet somewhat modern offshoot of traditional Zulu music. Dreams were an essential part of communicating with ancestors and formed part of a deeply rooted Zulu religion. Some isicathamiya musicians claim some of their songs were created in the spiritual realm given to them by ancestors.[NEWLINE][NEWLINE]
+			The fireplace is used metaphorically for the "cooking of songs" in isicathamiya stage performances, a traditional, yet somewhat modern offshoot of Zulu music. Dreams were an essential part of communicating with ancestors and formed part of a deeply rooted Zulu religion. Some isicathamiya musicians claim some of their songs were created in the spiritual realm given to them by ancestors.[NEWLINE][NEWLINE]
 			"A person is a person because of other people"[NEWLINE]-Zulu proverb</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IZIKO_HELP">
-			<Text>+33% [ICON_GREAT_WRITER] Great Writer Rate in the City, and all Writers'' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE]+1 [ICON_CULTURE] Culture for every Great Work in City.[NEWLINE][NEWLINE]Whenever a unit gains a level, receive +5 [ICON_CULTURE] Culture in the City, scaling with Era.[NEWLINE]Nearby [ICON_RES_DYE] Dye: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILK] Silk: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+33% [ICON_GREAT_WRITER] Great Writer Rate in the City, and all Writers'' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE]+1 [ICON_CULTURE] Culture for every Great Work in City.[NEWLINE][NEWLINE]Whenever a unit gains a level, receive +5 [ICON_CULTURE] Culture in the City, scaling with Unit level and Era.[NEWLINE]Nearby [ICON_RES_DYE] Dye: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILK] Silk: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IZIKO_STRATEGY">
 			<Text>Unique Zulu replacement for the Amphitheater. Build . Also boosts the City''s Great Writer rate and the value of Writers'' Guilds, and the Culture of Great Works. Provides Culture in the City whenever a military unit gains a level.</Text>
