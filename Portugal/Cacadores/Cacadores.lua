@@ -9,9 +9,10 @@ function CacadorPromotion(iPlayer, iUnit, iPromotionType)
 
 	if (pUnit:IsHasPromotion(GameInfoTypes.TXT_KEY_PROMOTION_CACADOR)) then
 		local rand = math.random(2)
-
+		--no need to go further if unit has all promotions
 		if  pUnit:IsHasPromotion(PROMOTION_WOODLAND_TRAILBLAZER_III) and pUnit:IsHasPromotion(PROMOTION_SURVIVALISM_3) then return end
 
+		--Check for trailblazer line
 		if (rand == 1) and pUnit:IsHasPromotion(PROMOTION_WOODLAND_TRAILBLAZER_III) and pUnit:IsHasPromotion(PROMOTION_SURVIVALISM_2) then
 			pUnit:SetHasPromotion(PROMOTION_SURVIVALISM_3, true);
 
@@ -30,6 +31,7 @@ function CacadorPromotion(iPlayer, iUnit, iPromotionType)
 		elseif (rand == 1) then
 			pUnit:SetHasPromotion(PROMOTION_WOODLAND_TRAILBLAZER_I);
 
+		--then for survivalism line
 		elseif pUnit:IsHasPromotion(PROMOTION_WOODLAND_TRAILBLAZER_II) and pUnit:IsHasPromotion(PROMOTION_SURVIVALISM_3) then
 			pUnit:SetHasPromotion(PROMOTION_WOODLAND_TRAILBLAZER_III, true);
 
