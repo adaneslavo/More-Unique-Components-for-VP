@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------------------------------------------------
 -- TARKHAN
 -- 2018-01-27 updated by Infixo
+-- 2018-02-26 updated by Infixo (IsPlayerFriendly)
 --------------------------------------------------------------------------------------------------------------------------
 --4UC Tarkhan Migration promotion
 local unitClassSettlerID = GameInfoTypes.UNITCLASS_SETTLER
@@ -26,23 +27,39 @@ GameEvents.PlayerDoTurn.Add(HunMigration_PlayerDoTurn)
 include("FLuaVector.lua")
 include("InstanceManager")
 
-function BellumAlet(iPlayer, iUnit, iImprovement, iGold)
+function IsPlayerFriendly(ePlayer, ePlayer2)
+	if ePlayer == ePlayer2 then return true end -- obvious
+	local pPlayer, pPlayer2 = Players[ePlayer], Players[ePlayer2]
+	if not( pPlayer or pPlayer2 ) then return false end -- assert
+	local pTeam, pTeam2 = Teams[pPlayer:GetTeam()], Teams[pPlayer2:GetTeam()]
+	if not( pTeam or pTeam2 ) then return false end -- assert
+
+	if pTeam:GetID() == pTeam2:GetID() then return true end
+	if pTeam:IsAtWar(pTeam2:GetID()) then return false end
+	if pPlayer2:IsMinorCiv() then
+		if pPlayer:IsFriends(ePlayer2) or pPlayer:IsAllies(ePlayer2) then return true end
+	end
+	-- any other conditions?
+	return false
+end
+
+function OnUnitPillageGoldBellumAlet(iPlayer, iUnit, iImprovement, iGold)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	
 	if pUnit and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SACKER) then
-		local unitPlot = pUnit:GetPlot()
-		local iX, iY = unitPlot:GetX(), unitPlot:GetY()
+		local pUnitPlot = pUnit:GetPlot()
+		local iX, iY = pUnitPlot:GetX(), pUnitPlot:GetY()
 		for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 			local pAdjacentPlot = Map.PlotDirection(iX, iY, eDirection)
 			for k = 0, pAdjacentPlot:GetNumUnits() - 1 do
-				local jUnit = pAdjacentPlot:GetUnit(k)
-				--iTeam = pPlayer:GetTeam()
-				--local jPlayer = jUnit:GetOwner()
-				jUnit:ChangeDamage(-10, pPlayer)
-				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					local vUnitPosition = PositionCalculator(jUnit:GetX(), jUnit:GetY())
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_GREEN]Bellum Alet[ENDCOLOR]", 1)
+				local pAdjacentUnit = pAdjacentPlot:GetUnit(k)
+				if IsPlayerFriendly(iPlayer, pAdjacentUnit:GetOwner()) then
+					pAdjacentUnit:ChangeDamage(-10, iPlayer)
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vUnitPosition = PositionCalculator(pAdjacentUnit:GetX(), pAdjacentUnit:GetY())
+						Events.AddPopupTextEvent(vUnitPosition, "[COLOR_GREEN]Bellum Alet[ENDCOLOR]", 1)
+					end
 				end
 			end -- units
 		end -- for
@@ -53,4 +70,4 @@ function PositionCalculator(i1, i2)
     return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.UnitPillageGold.Add(BellumAlet)
+GameEvents.UnitPillageGold.Add(OnUnitPillageGoldBellumAlet)
