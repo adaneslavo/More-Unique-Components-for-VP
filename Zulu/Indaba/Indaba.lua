@@ -1,5 +1,6 @@
 -- Indaba
 -- Author: Blue Ghost, pineappledan
+-- 2018-02-26 updated by Infixo
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
@@ -53,25 +54,26 @@ function PositionCalculator(i1, i2)
     return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
+local tEligibleCombats = {
+	[GameInfoTypes.UNITCOMBAT_MELEE] = true,
+	[GameInfoTypes.UNITCOMBAT_GUN] = true,
+	[GameInfoTypes.UNITCOMBAT_MOUNTED] = true,
+	[GameInfoTypes.UNITCOMBAT_ARMOR] = true,
+	[GameInfoTypes.UNITCOMBAT_RECON] = true,
+	[GameInfoTypes.UNITCOMBAT_HELICOPTER] = true,
+}
+	
 function IbuthoGainXP(iPlayer, iUnitOrCity, iRole, bIsCity) 
 	if iRole == 0 and not bIsCity then -- Attacker
 		local pPlayer = Players[iPlayer]
 		local pUnit = pPlayer:GetUnitByID(iUnitOrCity)
 		local pPlot = pUnit:GetPlot()
-		local meleeCombat = {
-	GameInfoTypes.UNITCOMBAT_RECON,
-	GameInfoTypes.UNITCOMBAT_MOUNTED,
-	GameInfoTypes.UNITCOMBAT_MELEE,
-	GameInfoTypes.UNITCOMBAT_GUN,
-	GameInfoTypes.UNITCOMBAT_ARMOR,
-	GameInfoTypes.UNITCOMBAT_HELICOPTER
-}
 		
 		for k = 0, pPlot:GetNumUnits() - 1, 1 do
 			local pStackedUnit = pPlot:GetUnit(k)
 			local eOwner = pStackedUnit:GetOwner()
 			if Players[eOwner] == pPlayer and pStackedUnit:IsHasPromotion(GameInfoTypes.PROMOTION_IBUTHO) then
-				if pUnit:GetUnitCombatType() == meleeCombat then
+				if tEligibleCombats[ pUnit:GetUnitCombatType() ] then
 					pUnit:ChangeExperience(5)
 				else
 					pUnit:ChangeExperience(2)
