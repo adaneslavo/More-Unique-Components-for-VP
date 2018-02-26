@@ -8,7 +8,7 @@ function CacadorPromotion(iPlayer, iUnit, iPromotionType)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_WOODLAND_TRAILBLAZER_III) and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SURVIVALISM_3) then return end
 
-	if (pUnit:IsHasPromotion(GameInfoTypes.TXT_KEY_GameInfoTypes.PROMOTION_CACADOR)) then
+	if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CACADOR)) then
 		local rand = math.random(2)
 		--no need to go further if unit has all promotions
 		if  pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_WOODLAND_TRAILBLAZER_III) and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SURVIVALISM_3) then return end
@@ -88,7 +88,7 @@ GameEvents.UnitPromoted.Add(CacadorPromotion)
 -- 	local pUnit = pPlayer:GetUnitByID(iUnit)
 --	if  pUnit:IsHasPromotion(PROMOTION_WOODLAND_TRAILBLAZER_III) and pUnit:IsHasPromotion(PROMOTION_SURVIVALISM_3) then return end
 --
---	if (pUnit:IsHasPromotion(GameInfoTypes.TXT_KEY_PROMOTION_CACADOR)) then
+--	if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CACADOR)) then
 -- 		local rand = math.random(2)
 --		local promoList = TableConcat(trailblazerPromos, survivalismPromos)
 --		if (rand == 1) then
