@@ -686,12 +686,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Zulu/Indaba/3UC_ZULU.sql</FileName>
+        <FileName>Zulu/Indaba/Indaba.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Zulu/Iziko/1.IzikoCode.sql</FileName>
+        <FileName>Zulu/Iziko/Iziko.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1149,6 +1149,12 @@ Latest changes: see changelog file.</Description>
         <Name>Intihuatana</Name>
         <Description>Upgrades Intihuatana.</Description>
         <FileName>Inca/Intihuatana/Intihuatana.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Iziko</Name>
+        <Description>Adds Culture on Unit Level to all Cities.</Description>
+        <FileName>Zulu/Iziko/Iziko.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
@@ -5121,83 +5127,87 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3IzuUnitAlphaAtlas.dds">
+    <Content Include="Zulu\Indaba\IndabaFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3UC_ZULU.sql">
+    <Content Include="Zulu\Indaba\Indaba.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral128.dds">
+    <Content Include="Zulu\Indaba\IndabaPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral256.dds">
+    <Content Include="Zulu\Indaba\IndabaPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral45.dds">
+    <Content Include="Zulu\Indaba\IndabaPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral64.dds">
+    <Content Include="Zulu\Indaba\IndabaPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral80.dds">
+    <Content Include="Zulu\Indaba\IndabaPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.blend">
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.blend">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.br2">
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.br2">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.dds">
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.fxsxml">
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.fxsxml">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.gr2">
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.gr2">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear_sref.dds">
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear_sref.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Zulu\Indaba\Indaba.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\1.IzikoCode.sql">
+    <Content Include="Zulu\Indaba\IndabaFlag_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Iziko\Iziko.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko128.dds">
+    <Content Include="Zulu\Iziko\Iziko.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Iziko\IzikoPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko256.dds">
+    <Content Include="Zulu\Iziko\IzikoPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko45.dds">
+    <Content Include="Zulu\Iziko\IzikoPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Zulu\Iziko\sv_3izu.dds">
+    <Content Include="Zulu\Iziko\IzikoPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5407,7 +5417,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Venice\Laguna\" />
     <Folder Include="Zulu" />
     <Folder Include="Zulu\Indaba" />
-    <Folder Include="Zulu\Indaba\AlternativeUnitModel" />
+    <Folder Include="Zulu\Indaba\3DModel" />
     <Folder Include="Zulu\Iziko" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />

@@ -924,83 +924,82 @@
 		</Row>
 		
 		<!-- InDuna -->	
-		<Row Tag="TXT_KEY_PROMOTION_IBUTHO">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO">
 			<Text>Ibutho</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_IBUTHO_HELP">
-			<Text>Grants extra XP to a stacked unit [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR].</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO_HELP">
+			<Text>Friendly Units stacked with this unit gain extra XP [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR].</Text>
 		</Row>	
-		<Row Tag="TXT_KEY_PROMOTION_IQAWE">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE">
 			<Text>Iqawe</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_IQAWE_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]When Expended[ENDCOLOR], grants 30XP to a stacked unit and inflicts 30 damage to every adjacent enemy unit.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]On Expending[ENDCOLOR], [COLOR_POSITIVE_TEXT]grants XP[ENDCOLOR] to a stacked Friendly Unit and [COLOR_POSITIVE_TEXT]inflicts flat damage to every adjacent Enemy Unit[ENDCOLOR].</Text>
 		</Row>		
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA">
 			<Text>InDuna</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_STRATEGY">
 			<Text>The InDuna is a Zulu unique unit. May construct a Citadel. +15% Combat bonus to all Land units within 2 tiles.[NEWLINE][NEWLINE]A unit stacked with an InDuna receives additional XP when attacking other units.[NEWLINE][NEWLINE]Expending an InDuna gives 30XP to the unit that was stacked with it, and deals 30 damage adjacent enemy units.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_HELP">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_HELP">
 			<Text>
 				Unique Zulu Great General that grants a Combat Bonus to all nearby troops. Units stacked with an InDuna gain bonus experience in combat. Expending an InDuna gives bonus experience to a stacked unit, and immediately deals 30 damage to adjacent enemy units.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_TEXT">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_TEXT">
 			<Text>Leadership was not a complicated affair for the Zulu military. An inDuna guided each regiment, or 'ibutho', and he in turn answered to senior izinDuna who controlled the corps grouping. Overall guidance of the host was furnished by elder izinDuna usually with many years of experience. One or more of these elder chiefs might accompany a big force on an important mission, but there was no single "field marshal" in supreme command of all Zulu forces. Regimental izinDuna, like the non-commissioned officers of today's army, and yesterday's Roman Centurions, were extremely important to morale and discipline. This was shown during the battle of Isandhlwana. Blanketed by a hail of British bullets, rockets and artillery, the advance of the Zulu faltered. Echoing from the mountain, however, were the shouted cadences and fiery exhortations of their regimental izinDuna, who reminded the warriors that their king did not send them to run away. Thus encouraged, the encircling regiments remained in place, maintaining continual pressure, until weakened British dispositions enabled the host to make a final surge forward.</Text>
 		</Row>		
-		<!--Unique Names-->
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_1">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_1">
 			<Text>Mzilikazi</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_2">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_2">
 			<Text>Mbopa</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_3">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_3">
 			<Text>Ntshingwayo kaMahole</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_4">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_4">
 			<Text>Nathaniel Isaacs</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_5">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_5">
 			<Text>Ndlela kaSompisi</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_6">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_6">
 			<Text>Umgobhozi Ovela Entabeni</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_7">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_7">
 			<Text>Nongalaza KaNondela</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_8">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_8">
 			<Text>Dabulamanzi kaMpande</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_9">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_9">
 			<Text>Dambuza Nzobo</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_10">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_10">
 			<Text>Nqoboka Mthiyane</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_11">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_11">
 			<Text>Mabhodla Mbuyazi</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_12">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_12">
 			<Text>Menziwa Biyela</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_13">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_13">
 			<Text>Gala ka Nodade</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_14">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_14">
 			<Text>Vumindaba kaNthati</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_15">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_15">
 			<Text>Mavumengwana kaNdlela</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_16">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_16">
 			<Text>Zibhebhu kaMaphitha</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_ZULU3_GENERAL_17">
+		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_17">
 			<Text>Manyosi</Text>
 		</Row>
 
@@ -1022,18 +1021,18 @@
 		</Row>
 		
 		<!-- Iziko -->		
-		<Row Tag="TXT_KEY_BUILDING_IZIKO">
+		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO">
 			<Text>Iziko</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_IZIKO_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO_TEXT">
 			<Text>An Iziko is a simple hearth used as a gathering place for Zulu communities. The fireplace is revered as a resource for food, warmth, dreams, and for communicating with ancestors. It is from these gatherings that a sense of community and identity was formed, and young Zulus could perform and bond.[NEWLINE][NEWLINE]
 			The fireplace is used metaphorically for the "cooking of songs" in isicathamiya stage performances, a traditional, yet somewhat modern offshoot of Zulu music. Dreams were an essential part of communicating with ancestors and formed part of a deeply rooted Zulu religion. Some isicathamiya musicians claim some of their songs were created in the spiritual realm given to them by ancestors.[NEWLINE][NEWLINE]
 			"A person is a person because of other people"[NEWLINE]-Zulu proverb</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_IZIKO_HELP">
+		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO_HELP">
 			<Text>+33% [ICON_GREAT_WRITER] Great Writer Rate in the City, and all Writers'' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE]+1 [ICON_CULTURE] Culture for every Great Work in City.[NEWLINE][NEWLINE]Whenever a unit gains a level, receive +5 [ICON_CULTURE] Culture in the City, scaling with Unit level and Era.[NEWLINE]Nearby [ICON_RES_DYE] Dye: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILK] Silk: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_IZIKO_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO_STRATEGY">
 			<Text>Unique Zulu replacement for the Amphitheater. Build . Also boosts the City''s Great Writer rate and the value of Writers'' Guilds, and the Culture of Great Works. Provides Culture in the City whenever a military unit gains a level.</Text>
 		</Row>	
 		
@@ -2587,51 +2586,6 @@
 			<Atlas>SOFA_ATLAS</Atlas>
 			<IconSize>45</IconSize>
 			<Filename>SofaIcon045.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-		
-		<!-- InDuna Icons -->			
-		<Row>
-			<Atlas>ZULU3_GENERAL_ATLAS</Atlas>
-			<IconSize>256</IconSize>
-			<Filename>3ZuluGeneral256.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-		<Row>
-			<Atlas>ZULU3_GENERAL_ATLAS</Atlas>
-			<IconSize>128</IconSize>
-			<Filename>3ZuluGeneral128.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-		<Row>
-			<Atlas>ZULU3_GENERAL_ATLAS</Atlas>
-			<IconSize>80</IconSize>
-			<Filename>3ZuluGeneral80.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-		<Row>
-			<Atlas>ZULU3_GENERAL_ATLAS</Atlas>
-			<IconSize>64</IconSize>
-			<Filename>3ZuluGeneral64.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-		<Row>
-			<Atlas>ZULU3_GENERAL_ATLAS</Atlas>
-			<IconSize>45</IconSize>
-			<Filename>3ZuluGeneral45.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-
-		<Row>
-			<Atlas>UNIT_ALPHA_3IZU_ATLAS</Atlas>
-			<IconSize>32</IconSize>
-			<Filename>3IzuUnitAlphaAtlas.dds</Filename>
 			<IconsPerRow>1</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>

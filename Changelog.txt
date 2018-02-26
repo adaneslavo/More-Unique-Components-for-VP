@@ -4,6 +4,16 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 
+v29:
+- cleaned (Zulu),
+- fixed and tweaked:
+    - Iziko ==> added lua for culture in cities on unit levelling,
+	- InDuna ==> changed XP gained,
+	- Cacadores ==> fixed lua,
+	- University of Coimbra ==> fixed lua,
+- tweaked texts,
+- minor fixes.
+
 v28:
 - added unique names to InDuna,
 - added 32px icons for new resources (compatibility with "Small Resource Icons" mod),
