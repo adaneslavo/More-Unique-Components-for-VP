@@ -7,7 +7,7 @@ INSERT INTO	Buildings
 			GoldenAge, NeverCapture, NukeImmune, NumCityCostMod, GreatWorkSlotType, GreatWorkCount,
 			NationalPopRequired, MinorityHappinessChange)
 SELECT      'BUILDING_3UC_YURT', 'TXT_KEY_BUILDING_3UC_YURT', 'TXT_KEY_BUILDING_3UC_YURT_TEXT', 'TXT_KEY_BUILDING_3UC_YURT_STRATEGY', 'TXT_KEY_BUILDING_3UC_YURT_HELP', GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,
-			BuildingClass, ArtDefineTag, PrereqTech, 0, 'YURT_ICON_ATLAS', GreatWorkYieldType,
+			BuildingClass, ArtDefineTag, 'TECH_PHYSICS', 0, 'YURT_ICON_ATLAS', GreatWorkYieldType,
 			GoldenAge, NeverCapture, NukeImmune, NumCityCostMod, GreatWorkSlotType, GreatWorkCount,
 			NationalPopRequired, MinorityHappinessChange
 FROM		Buildings

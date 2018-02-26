@@ -167,7 +167,7 @@
 		<!-- Barbican -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLAND_BARBICAN">
-			<Text>Barbican</Text>
+			<Text>Embrasure</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLAND_BARBICAN_HELP">
 			<Text>+33% [ICON_RANGE_STRENGTH] Range Combat Strength [COLOR_POSITIVE_TEXT]on Garrison in the City[ENDCOLOR].</Text>
@@ -185,7 +185,7 @@
 			<Text>	
 				A Barbican is a fortified outpost or archery tower, forming part of a city’s outer defense. The towers were often situated outside the main line of defenses with a clear line of fire towards the city’s gates, and connected to the city walls via a walled road called the ‘neck’. [NEWLINE][NEWLINE]
 				
-				The most well-known barbican was built in Kraków in 1498-1499 during the reign of Jan Olbracht. It was inspired by two other Barbicans in Torun (1429) and Chelm (1449), and motivated by the danger posed by Encroaching Ottoman and Wallachian forces. The Warsaw barbican was erected in 1540 in place of an older gate to protect Nowomiejska Street and almost immediately became an anachronism serving no practical purpose. With the improvement in siege tactics and artillery in the 15th century, barbicans had largely lost their significance. The Warsaw barbican was used in the defense of the city only once, during the Swedish invasion of Poland in 1656, when it had to be recaptured from the Swedes by the polish army.
+				The most well-known Barbican was built in Kraków in 1498-1499 during the reign of Jan Olbracht. It was inspired by two other Barbicans in Torun (1429) and Chelm (1449), and motivated by the danger posed by Encroaching Ottoman and Wallachian forces. The Warsaw barbican was erected in 1540 in place of an older gate to protect Nowomiejska Street and almost immediately became an anachronism serving no practical purpose. With the improvement in siege tactics and artillery in the 15th century, barbicans had largely lost their significance. The Warsaw barbican was used in the defense of the city only once, during the Swedish invasion of Poland in 1656, when it had to be recaptured from the Swedes by the polish army.
 			</Text>
 		</Row>
 		
