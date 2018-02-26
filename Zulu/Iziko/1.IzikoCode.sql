@@ -16,8 +16,8 @@ VALUES	('CIVILIZATION_ZULU',	'BUILDINGCLASS_AMPHITHEATER', 	'BUILDING_IZIKO');
 --==========================================================================================================================
 
 INSERT INTO Buildings 	
-		(Type, 				BuildingClass, Cost, GoldMaintenance, 	PrereqTech,	Water, TradeRouteSeaDistanceModifier, TradeRouteSeaGoldBonus, Description, 					Civilopedia, 					Help, 							Strategy,								PlotBuyCostModifier, ArtDefineTag, 	ArtInfoEraVariation, FreeStartEra, DisplayPosition, AllowsWaterRoutes, MinAreaSize, ConquestProb, 	GreatPeopleRateModifier, FreshWater, HurryCostModifier, PortraitIndex, 	IconAtlas)
-SELECT	'BUILDING_IZIKO',	BuildingClass, Cost, 0, 				PrereqTech, Water, TradeRouteSeaDistanceModifier, TradeRouteSeaGoldBonus, 'TXT_KEY_BUILDING_IZIKO', 	'TXT_KEY_BUILDING_IZIKO_TEXT', 	'TXT_KEY_BUILDING_IZIKO_HELP', 	'TXT_KEY_BUILDING_IZIKO_STRATEGY',		PlotBuyCostModifier, 'COLESSEUM',	ArtInfoEraVariation, 'ERA_RENAISSANCE', DisplayPosition, AllowsWaterRoutes, -1, 66, 					GreatPeopleRateModifier, FreshWater, HurryCostModifier, 0,			 	'IZIKO_ATLAS'
+	(Type, 			BuildingClass, Cost, GoldMaintenance, 	PrereqTech, Water, TradeRouteSeaDistanceModifier, TradeRouteSeaGoldBonus, Description, 			Civilopedia, 			Help, 				Strategy,				PlotBuyCostModifier, GreatWorkSlotType, GreatWorkCount, ArtDefineTag, 	ArtInfoEraVariation, FreeStartEra, DisplayPosition, AllowsWaterRoutes, MinAreaSize, ConquestProb, 	GreatPeopleRateModifier, FreshWater, HurryCostModifier, PortraitIndex, 	IconAtlas)
+SELECT	'BUILDING_IZIKO',	BuildingClass, Cost, 0, 		PrereqTech, Water, TradeRouteSeaDistanceModifier, TradeRouteSeaGoldBonus, 'TXT_KEY_BUILDING_IZIKO', 	'TXT_KEY_BUILDING_IZIKO_TEXT', 	'TXT_KEY_BUILDING_IZIKO_HELP', 	'TXT_KEY_BUILDING_IZIKO_STRATEGY',	PlotBuyCostModifier, GreatWorkSlotType, GreatWorkCount, 'COLESSEUM',	 ArtInfoEraVariation, 'ERA_RENAISSANCE', DisplayPosition, AllowsWaterRoutes, -1, 66, 					GreatPeopleRateModifier, FreshWater, HurryCostModifier, 0,			 	'IZIKO_ATLAS'
 FROM Buildings WHERE Type = 'BUILDING_AMPHITHEATER';	
 
 ------------------------------	
@@ -28,11 +28,6 @@ INSERT INTO Building_YieldChanges
 VALUES
 	('BUILDING_IZIKO', 'YIELD_FAITH', 2),
 	('BUILDING_IZIKO', 'YIELD_CULTURE', 3);
-
-INSERT INTO Building_YieldFromUnitLevelUp
-	(BuildingType, YieldType, Yield)
-VALUES
-	('BUILDING_IZIKO', 'YIELD_CULTURE', 5);
 
 INSERT INTO Building_ResourceYieldChanges
 		(BuildingType, ResourceType, YieldType, Yield)

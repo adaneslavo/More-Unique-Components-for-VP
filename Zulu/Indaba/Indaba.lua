@@ -58,11 +58,24 @@ function IbuthoGainXP(iPlayer, iUnitOrCity, iRole, bIsCity)
 		local pPlayer = Players[iPlayer]
 		local pUnit = pPlayer:GetUnitByID(iUnitOrCity)
 		local pPlot = pUnit:GetPlot()
+		local meleeCombat = {
+	GameInfoTypes.UNITCOMBAT_RECON,
+	GameInfoTypes.UNITCOMBAT_MOUNTED,
+	GameInfoTypes.UNITCOMBAT_MELEE,
+	GameInfoTypes.UNITCOMBAT_GUN,
+	GameInfoTypes.UNITCOMBAT_ARMOR,
+	GameInfoTypes.UNITCOMBAT_HELICOPTER
+}
+		
 		for k = 0, pPlot:GetNumUnits() - 1, 1 do
 			local pStackedUnit = pPlot:GetUnit(k)
 			local eOwner = pStackedUnit:GetOwner()
 			if Players[eOwner] == pPlayer and pStackedUnit:IsHasPromotion(GameInfoTypes.PROMOTION_IBUTHO) then
-				pUnit:ChangeExperience(5)
+				if pUnit:GetUnitCombatType() == meleeCombat then
+					pUnit:ChangeExperience(5)
+				else
+					pUnit:ChangeExperience(2)
+				end
 			end
 		end
 	end
