@@ -128,14 +128,14 @@ VALUES		('PROMOTION_UNIT_NETHERLANDS_GOEDENDAG',			'TXT_KEY_PROMOTION_UNIT_NETHE
 ------------------------------	
 INSERT INTO	UnitPromotions_UnitCombatMods
 			(PromotionType,								UnitCombatType,			Modifier)
-VALUES		('PROMOTION_UNIT_NETHERLANDS_GOEDENDAG',	'UNITCOMBAT_MOUNTED', 	10);
+VALUES		('PROMOTION_UNIT_NETHERLANDS_GOEDENDAG',	'UNITCOMBAT_MOUNTED', 	25);
 --------------------------------
 -- Unit_FreePromotions
 --------------------------------
-INSERT INTO Unit_FreePromotions 	
-			(UnitType, 						PromotionType)
-SELECT		'UNIT_NETHERLANDS_GOEDENDAG', 	PromotionType
-FROM Unit_FreePromotions WHERE UnitType = 'UNIT_PIKEMAN';
+--INSERT INTO Unit_FreePromotions 	
+--			(UnitType, 						PromotionType)
+--SELECT		'UNIT_NETHERLANDS_GOEDENDAG', 	PromotionType
+--FROM Unit_FreePromotions WHERE UnitType = 'UNIT_PIKEMAN';
 
 INSERT INTO Unit_FreePromotions
 			(UnitType, 						PromotionType)
