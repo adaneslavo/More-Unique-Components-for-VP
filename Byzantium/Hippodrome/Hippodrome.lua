@@ -40,7 +40,7 @@ function HippodromeHooliganism(eTeam, eEra, bFirst)
 							pCapital:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 						
 							if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-								pPlayer:AddNotification(0, 'Your Empire entered new Era, causing hooligan eccesses across your Cities. Your Empire falls into 1 turn of [ICON_RESISTANCE] Resistance, after which your [ICON_CITIZEN] Citizens will [ICON_HAPPINESS_1] love their king for '..(iWLTKDLength - 1)..' turns.', 'Hooliganism in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())
+								pPlayer:AddNotification(0, 'Your Empire entered new Era, causing a massive riot across your Empire. Your Empire falls into 1 turn of [ICON_RESISTANCE] Resistance, after which your [ICON_CITIZEN] Citizens will [ICON_HAPPINESS_1] love their king for '..(iWLTKDLength - 1)..' turns.', 'Hooliganism in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())
 							end
 						
 							break
