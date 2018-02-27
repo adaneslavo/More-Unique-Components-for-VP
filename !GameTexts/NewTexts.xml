@@ -8,7 +8,7 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>+5% [ICON_FOOD] Food and +10% [ICON_PRODUCTION] Production when constructing buildings in City. Unlike the Agribusiness which it replaces, it does not require horses.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food on Plains tiles, and +2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, and +1 [ICON_GOLD] Gold from Pastures. [NEWLINE][NEWLINE]Only Denmark can build it.</Text>
+			<Text>+5% [ICON_FOOD] Food and +10% [ICON_PRODUCTION] Production when constructing buildings in City. Unlike the Agribusiness which it replaces, it does not require horses.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food on Plains tiles, and +3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, and +2 [ICON_GOLD] Gold from Pastures. [NEWLINE][NEWLINE]Only Denmark can build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production and can help your City grow quickly, especially when surrounded by plains and pastures.</Text>
@@ -761,7 +761,7 @@
 			<Text>Goedendag!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_HELP">
-			<Text>+10% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR]. +10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to all adjacent Friendly Units for one turn[ENDCOLOR].</Text>
+			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR]. +10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to all adjacent Friendly Units for one turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT">
 			<Text>Golden Spurs</Text>
