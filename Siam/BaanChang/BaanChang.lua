@@ -36,8 +36,8 @@ function BaanChangGetsUnitFromCS(iMinor, iMajor, iUnitType)
 
 		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 
-		local iGain1 = math.floor(5 * iNumberOfBaanChangs * iEraModifier * fGameSpeedModifier1)
-		local iGain2 = math.floor(5 * iNumberOfBaanChangs * iEraModifier * fGameSpeedModifier2)
+		local iGain1 = math.floor(10 * iNumberOfBaanChangs * iEraModifier * fGameSpeedModifier1)
+		local iGain2 = math.floor(10 * iNumberOfBaanChangs * iEraModifier * fGameSpeedModifier2)
 				
 		pCapital:ChangeProduction(iGain1)
 		pPlayer:ChangeJONSCulture(iGain2)
