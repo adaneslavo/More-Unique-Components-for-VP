@@ -315,7 +315,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_STRATEGY">
 			<Text>
-				The Corsair is the unique Moroccan replacement for the Corvette. It specializes in raiding and pillaging maritime trade routes, earning Food and Production for each enemy unit killed and trade route plundered.
+				The Corsair is the unique Moroccan replacement for the Corvette. It specializes in raiding and pillaging maritime trade routes, earning Food and Production for each enemy unit killed and trade route plundered. The unit can enter other Civilization's borders, even without an open borders agreement, which can be exploited to disrupt better protected trade routes.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_HELP">
@@ -503,7 +503,7 @@
 			<Text>Requires Monument in City.[NEWLINE]+30% [ICON_GREAT_PEOPLE] Great Person rate in City. Receive +15% of the City's [ICON_CULTURE] Culture output in in the city as [ICON_CULTURE] Culture whenever a citizen is born, and 50 [ICON_GOLDEN_AGE] Golden Age Points as an instant boost whenever a policy is unlocked, scaling with Era. [NEWLINE][NEWLINE]Receive 15% of the City's [ICON_RESEARCH] Science and [ICON_FOOD] Food output as an instant boost in the City whenever you invest in a building. All monuments gain +1 [ICON_RESEARCH] Science and all Shrines gain +2 [ICON_FOOD] Food. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_STRATEGY">
-			<Text>E-temenanki is the Babylonian Unique Wonder, replacing the National Monument. In addition to the normal bonuses of a National Monument, E-temenanki awards Food and Science whenever a building is invested on empire, so invest in buildings early and often.  All monuments in empire gain +1 Science and all Shrines gain +2 Food.</Text>
+			<Text>E-temenanki is the Babylonian Unique Wonder, replacing the National Monument. In addition to the normal bonuses of a National Monument, E-temenanki awards Food and Science whenever a building is invested on empire, so invest in buildings early and often.  All monuments in empire gain +1 Science and all Shrines gain +2 Food. Available earlier than the National Monument</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_TEXT">
 			<Text>E-temenanki was the Ziggurat of Marduk, god of storms and head of the Babylonian pantheon. Ziggurats were religious temples erected in Mesopotamian cities as the literal dwelling places of each city's patron god. The Ziggurats were constructed to replicate the high mountains, where it believed the gods originally lived, in order to make the gods feel more at home.</Text>
@@ -823,10 +823,10 @@
 			<Text>Hippodrome</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
-			<Text>Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on the Palace, all Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. On completion, triggers an Event. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
+			<Text>Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion. All Arenas gain +4 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
-			<Text>The Hippodrome is the Byzantine Unique Wonder, replacing the Circus Maximus. In comparison to the Circus Maximus, The Hippodrome greatly increases Gold and Culture yields during "We Love the King Days" and begins a "We Love the King Day" on completion. The Palace gains Culture and Gold, and all Arenas in the empire receive gold, while circuses receive Culture, and Horses get both. In addition to the "We Love the King Day", a unique event is triggered on completion, giving your choice of additional bonuses. Choose wisely!</Text>
+			<Text>The Hippodrome is the Byzantine Unique Wonder, replacing the Circus Maximus. In comparison to the Circus Maximus, The Hippodrome greatly increases Gold and Culture yields during "We Love the King Days" and begins a "We Love the King Day" on completion. All Arenas in the empire receive gold, while circuses receive Culture, and Horses get both.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_TEXT">
 			<Text>The Hippodrome was a chariot racing track and the beating heart of Byzantine social and political life. Located immediately next to the palace, the track was built by Constantine shortly after moving his capital to the city. The track was U-shaped, with ten monuments lining the center. Though slightly smaller in footprint than the Circus Maximus in Rome, the Hippodrome was adorned with art and treasures from all corners of the empire.[NEWLINE][NEWLINE]
@@ -845,7 +845,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_STRATEGY">
 			<Text>
-				The Huey Teocalli is the unique Aztec replacement for the Grand Temple. It does not require a Temple, and provides a free Temple in the city. It provides a global bonus to Barracks and Floating Gardens. Every time you enter a Golden Age, the Huey Teocalli permanently gains Food, Faith, and additional XP to units built in the city.
+				The Huey Teocalli is the unique Aztec replacement for the Grand Temple. It does not require a Temple, and provides a free Temple in the city. It provides a global bonus to Temples, Barracks, and Floating Gardens. The wonder immediately triggers a Golden Age, and Every time you enter a Golden Age the Huey Teocalli permanently gains Food, Faith, and additional XP to units built in the city.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP">
@@ -1011,7 +1011,7 @@
 			<Text>Unique Observatory. Only the Inca may build it. +2 [ICON_RESEARCH] Science and +2 [ICON_FOOD] for every mountain within 3 tiles of the City.[NEWLINE][NEWLINE]Scientists in the city produce +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Adopting the Scientific Revolution[ENDCOLOR] policy gives +4 [ICON_RESEARCH] Science to all Intihuatana on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_STRATEGY">
-			<Text>The Intihuatana is the unique Observatory of the Inca. Unlike the Observatory it replaces, the Intihuatana is unlocked by the Theology tech, much sooner than the policy which unlocks Observatories. In addition to Science, Intihuatana also boost Food and Faith production, and makes Scientist specialists in the City produce Faith. Unlocking the Scientific Revolution policy further increases the Intihuatana's Science production</Text>
+			<Text>The Intihuatana is the unique Observatory of the Inca. Unlike the Observatory it replaces, the Intihuatana is unlocked by the Theology tech, much sooner than the Observatory, and without needing the Scientific Revolution policy. In addition to Science, Intihuatana also boost Food and Faith production, and makes Scientist specialists in the City produce Faith. Unlocking the Scientific Revolution policy further increases the Intihuatana's Science production</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_TEXT">
 			<Text>
@@ -1169,7 +1169,7 @@
 			<Text>Legacy</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_HELP">
-			<Text>Unit gets +8% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]every 2 levels gained[ENDCOLOR] until level [COLOR_POSITIVE_TEXT]10[ENDCOLOR], then additional +10% on level [COLOR_POSITIVE_TEXT]12[ENDCOLOR] and 25% on level [COLOR_POSITIVE_TEXT]15[ENDCOLOR].</Text>
+			<Text>+10% [ICON_STRENGTH] Defense against [COLOR_POSITIVE_TEXT]Ranged[ENDCOLOR] attacks.[NEWLINE]Unit gets +8% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]every 2 levels gained[ENDCOLOR] until level [COLOR_POSITIVE_TEXT]15[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_1">
 			<Text>Legacy I</Text>
@@ -1318,12 +1318,12 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_STRATEGY">
 			<Text>
-				The Lamassu Gate is an Assyrian unique building, replacing the Walls. It increases the unit supply cap in the city more than the standard Walls. It also grants +1 [ICON_CULTURE] Culture and a Writer specialist slot.
+				The Lamassu Gate is an Assyrian unique building, replacing the Walls. It increases the unit supply cap in the city more than the standard Walls. It also contains a Great Work of Writing slot and a Writer specialist slot.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
 			<Text>
-				Unique Wall replacement. Only the Assyrians may build it. Military Units supplied by this City's population increased by 20%. Contains a Great Work of Writing slot.
+				Unique Wall replacement. Only the Assyrians may build it. Military Units supplied by this City's population increased by 20%. Contains a Writer specialist slot and a Great Work of Writing slot to help your empire get an early start on great works.
 			</Text>
 		</Row>
 
@@ -1846,7 +1846,7 @@
 			<Text>The Riad is the Moroccan unique replacement for the Garden. In addition to the bonuses of a normal Garden, the Riad grants culture in the city for every 5 citizens in the city, and Gold generation in the city is greatly increased during a Golden Age. Trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_HELP">
-			<Text>Unique Moroccan replacement for the Garden. +1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens in City. Trade routes originating in the city gain +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn. [NEWLINE][NEWLINE]+30% [ICON_GREAT_PEOPLE] Great People generation in this City. [NEWLINE]+15% [ICON_GOLD] Gold in the city during a [ICON_GOLDEN_AGE] Golden Age</Text>
+			<Text>Unique Moroccan replacement for the Garden. +1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens in City. Trade routes originating in the city gain +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn. [NEWLINE][NEWLINE]+25% [ICON_GREAT_PEOPLE] Great People generation in this City. [NEWLINE]+15% [ICON_GOLD] Gold in the city during a [ICON_GOLDEN_AGE] Golden Age</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
