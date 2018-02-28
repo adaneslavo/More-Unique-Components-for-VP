@@ -10,10 +10,11 @@ local eBuildingIziko = GameInfoTypes.BUILDING_ZULU_IZIKO
 function OnLevelCityGainCulture(iPlayer, iUnit, iPromotionType)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
-	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-	local iLevelModifier = math.max(pUnit:GetLevel() - 1, 0)
-	local iGain = iLevelModifier * iEraModifier
+	local iGain = math.max(pUnit:GetLevel() - 1, 0)
 	local pCapital = pPlayer:GetCapitalCity()
+--	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+--	local iLevelModifier = math.max(pUnit:GetLevel() - 1, 0)
+--	local iGain = iLevelModifier * iEraModifier
 
 	for city in pPlayer:Cities() do
 		if city:IsHasBuilding(eBuildingIziko) then
