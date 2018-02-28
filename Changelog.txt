@@ -25,6 +25,7 @@ v29:
 	- Sofa ==> moved forward 1 tech (Chivalry)
 	- Riad ==> lowered % GPP modifier to 25%
 	- Andelsbevagelse ==> raised food from farms and pastures, added gold to pastures, and increased base yields
+	- Hippodrome ==> increase to Horse resource yields now applied across empire.
 - tweaked texts,
 - minor fixes.
 
