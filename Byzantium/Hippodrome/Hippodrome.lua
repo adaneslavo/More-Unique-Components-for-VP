@@ -14,6 +14,7 @@ function HippodromeBuilt(iPlayer, iCity, iBuilding)
 				local iWLTKDLength = math.floor(20 * iGameSpeedModifier)
 				local pCapital = pPlayer:GetCapitalCity()
 				
+				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_HIPPO_DUMMY, 1)
 				pCity:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 				
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -56,5 +57,19 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
+--remove bonus gold and culture to horses on empire if hippodrome is destroyed
+function FallOfConstantinople(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop, bConquest)
+	local pPlayer = Players[iOldOwner]
+	local cCity = plot:GetPlotCity()
+	if pPlayer:GetName() == "Theodora" then --If not a Byzantine city then go no further
+		if cCity:IsCapital() then --only need to check if Byzantine capital was captured. Hippodrome can only be built in capital
+			for pCity in pPlayer:Cities() do
+				
+				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_HIPPO_DUMMY, 0)
+			end
+		end
+	end
+end		
 GameEvents.CityConstructed.Add(HippodromeBuilt)
 GameEvents.TeamSetEra.Add(HippodromeHooliganism)
+GameEvents.CityCaptureComplete.Add(FallOfConstantinople)
