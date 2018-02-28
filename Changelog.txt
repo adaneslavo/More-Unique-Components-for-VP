@@ -12,7 +12,8 @@ v29:
 	- Cacadores ==> fixed lua,
 	- University of Coimbra ==> fixed lua,
 	- Alti Cur ==> moved forward 1 tech (Physics),
-	- Tarkhan ==> fixed lua
+	- Tarkhan ==> fixed lua,
+	- Elephant Camp ==> now gives bonus to each city instead of capital. Bonus increased.
 - tweaked texts,
 - minor fixes.
 
