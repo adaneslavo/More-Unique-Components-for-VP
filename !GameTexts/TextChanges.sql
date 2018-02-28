@@ -98,7 +98,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
 ------------------------------
 -- Polder
 UPDATE Language_en_US 
-SET Text = 'A Polder can be built on tiles with access to fresh water or on marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy units entering a tile with a Polder lose all remaining movement. Provides additional yields once later techs are researched.'
+SET Text = 'A Polder can be built on tiles with access to fresh water or on marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy units entering a tile with a Polder lose all remaining movement as if crossing a river. Provides additional yields once later techs are researched.'
 WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP';
 
 UPDATE Language_en_US 
