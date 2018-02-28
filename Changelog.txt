@@ -7,13 +7,24 @@ More Unique Components for Vox Populi changelog:
 v29:
 - cleaned (Zulu),
 - fixed and tweaked:
-	- Iziko ==> added lua for culture in cities on unit levelling,
+	- Iziko ==> added lua for culture in cities on unit levelling
 	- InDuna ==> changed XP gained,
 	- Cacadores ==> fixed lua,
 	- University of Coimbra ==> fixed lua,
 	- Alti Cur ==> moved forward 1 tech (Physics),
 	- Tarkhan ==> fixed lua,
 	- Elephant Camp ==> now gives bonus to each city instead of capital. Bonus increased.
+	- Goedendag ==> increased CP to 18, increased bonus vs mounted on Goedendag promotion, removed bonus v mounted promotion
+	- Etemenanki ==> moved forward 1 tech (mathematics), added +2 base faith
+	- Longbowman ==> lowered RCP to 22
+	- Kibitum ==> lowered base movement to 2, gave legacy promotion +10% ranged attack defense
+	- Pogost ==> added 5% gold on city connections to Stage 1 Pogost
+	- Polders ==> added exemption for movement loss if unit has a "no movement penalties" promotion (recon units, etc.)
+	- Dhanurgraha ==> lowered RCP to 7 and raised CP to 5
+	- Xiafan Guanjun ==> lowered CP to 28
+	- Sofa ==> moved forward 1 tech (Chivalry)
+	- Riad ==> lowered % GPP modifier to 25%
+	- Andelsbevagelse ==> raised food from farms and pastures, added gold to pastures, and increased base yields
 - tweaked texts,
 - minor fixes.
 
