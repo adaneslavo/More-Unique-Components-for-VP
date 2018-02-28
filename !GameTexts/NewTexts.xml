@@ -1674,7 +1674,7 @@
 			<Text>Pogost - Stage 3: Eastern Orthodox Church</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP">
-			<Text>Unique Medieval building. [NEWLINE][NEWLINE]Grants additional [ICON_GOLD] Gold to all [ICON_SWAP] Trade Routes to/from this city respectively.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.
+			<Text>Unique Medieval building. [NEWLINE][NEWLINE]Grants additional [ICON_GOLD] Gold to all [ICON_CONNECTED] City Connections and [ICON_SWAP] Trade Routes to/from this city respectively.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
