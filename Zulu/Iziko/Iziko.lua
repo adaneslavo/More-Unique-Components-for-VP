@@ -23,15 +23,13 @@ function OnLevelCityGainCulture(iPlayer, iUnit, iPromotionType)
 				local vCityPosition = PositionCalculator(city:GetX(), city:GetY())
 
 				Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iGain.."[ICON_CULTURE][ENDCOLOR]", 1)
-			end
-		end
-	end
 
-	if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-		pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
-			'Unit gained new level. Each City with Iziko built gains [ICON_CULTURE] Culture.',
-			'Culture for Cities with Iziko',
-			pCapital:GetX(), pCapital:GetY(), pCapital:GetID())
+				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
+					'Unit gained new level. Each City with Iziko built gains [ICON_CULTURE] Culture.',
+					'Culture for Cities with Iziko',
+					pCapital:GetX(), pCapital:GetY(), pCapital:GetID())
+			end	
+		end
 	end
 end
 
