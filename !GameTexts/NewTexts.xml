@@ -487,7 +487,13 @@
 		<Row Tag="TXT_KEY_BUILDING_DUMMYFOOD">
 			<Text>Dummy Food Building</Text>
 		</Row>
+
 		
+		<!-- Dummy Horse Yields Building -->
+		<!-- Created by pineappledan 28/02/2018 -->
+		<Row Tag="TXT_KEY_BUILDING_HIPPO_DUMMY">
+			<Text>Dummy Hippodrome Building</Text>
+		</Row>		
 		<!-- Dummy Happiness Building -->
 		<!-- Created by adan_eslavo 24/10/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_DUMMYHAPPINESS">
