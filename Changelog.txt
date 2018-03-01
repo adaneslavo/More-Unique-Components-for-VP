@@ -18,7 +18,7 @@ v29:
 	- Etemenanki ==> moved forward 1 tech (mathematics), added +2 base faith
 	- Longbowman ==> lowered RCP to 22
 	- Kibitum ==> lowered base movement to 2, gave legacy promotion +10% ranged attack defense
-	- Pogost ==> added 5% gold on city connections to Stage 1 Pogost
+	- Pogost ==> added 5% gold on city connections to Stage 1 Pogost, increased faith on Stage 3
 	- Polders ==> added exemption for movement loss if unit has a "no movement penalties" promotion (recon units, etc.)
 	- Dhanurgraha ==> lowered RCP to 7 and raised CP to 5
 	- Xiafan Guanjun ==> lowered CP to 28
