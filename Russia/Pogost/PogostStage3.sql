@@ -48,9 +48,9 @@ VALUES	('BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_RUSSIA_POGOST_2');
 ------------------------------
 INSERT INTO Building_BuildingClassLocalYieldChanges 	
 			(BuildingType,					BuildingClassType,		YieldType,		YieldChange)
-VALUES		('BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_CHURCH',	'YIELD_FAITH',	1),
-			('BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_SHRINE',	'YIELD_FAITH',	1),
-			('BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_TEMPLE',	'YIELD_FAITH',	1);
+VALUES		('BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_MONASTERY',	'YIELD_FAITH',	2),
+			('BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_SHRINE',	'YIELD_FAITH',	2),
+			('BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_TEMPLE',	'YIELD_FAITH',	2);
 --==========================================================================================================================
 --==========================================================================================================================
 
