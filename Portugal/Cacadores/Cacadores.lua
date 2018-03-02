@@ -6,13 +6,11 @@
 function CacadorPromotion(iPlayer, iUnit, iPromotionType)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_WOODLAND_TRAILBLAZER_III) and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SURVIVALISM_3) then return end
+		--If unit is level 8 or higher it has all the promotions. No need to go further
+	if (pUnit:getLevel() >= 8) then return end
 
 	if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CACADOR)) then
 		local rand = math.random(2)
-		--no need to go further if unit has all promotions
-		if  pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_WOODLAND_TRAILBLAZER_III) and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SURVIVALISM_3) then return end
-
 		--Check for trailblazer line
 		if (rand == 1) and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_WOODLAND_TRAILBLAZER_III) and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SURVIVALISM_2) then
 			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_SURVIVALISM_3, true);
@@ -86,8 +84,7 @@ GameEvents.UnitPromoted.Add(CacadorPromotion)
 --function CacadorPromotion(iPlayer, iUnit, iPromotionType)
 --	local pPlayer = Players[iPlayer]
 -- 	local pUnit = pPlayer:GetUnitByID(iUnit)
---	if  pUnit:IsHasPromotion(PROMOTION_WOODLAND_TRAILBLAZER_III) and pUnit:IsHasPromotion(PROMOTION_SURVIVALISM_3) then return end
---
+--	if (pUnit:getLevel() >= 8) then return end
 --	if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CACADOR)) then
 -- 		local rand = math.random(2)
 --		local promoList = TableConcat(trailblazerPromos, survivalismPromos)
