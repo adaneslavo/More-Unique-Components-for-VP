@@ -50,7 +50,7 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 				local tGP, iGPPMax = nil, 0
 				for _,spec in ipairs(tGPs) do
 					local gpProgress = city:GetSpecialistGreatPersonProgressTimes100(spec.GPType);
-					if gpProgress > iGPPMax then tGP = spec end
+					if gpProgress > iGPPMax then iGPPMax = gpProgress; tGP = spec end
 				end
 				if not tGP then
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
