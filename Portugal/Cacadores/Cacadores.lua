@@ -2,7 +2,38 @@
 -- Author: pineappledan
 -- DateCreated:
 -- 2018-02-26 updated by Infixo
+-- 2018-03-04 rewritten by Infixo
 --------------------------------------------------------------	
+
+local tEligiblePromotions = {
+	GameInfoTypes.PROMOTION_WOODLAND_TRAILBLAZER_I,
+	GameInfoTypes.PROMOTION_WOODLAND_TRAILBLAZER_II,
+	GameInfoTypes.PROMOTION_WOODLAND_TRAILBLAZER_III,
+	GameInfoTypes.PROMOTION_SURVIVALISM_1,
+	GameInfoTypes.PROMOTION_SURVIVALISM_2,
+	GameInfoTypes.PROMOTION_SURVIVALISM_3,
+}
+
+function OnUnitPromotedCacadorPromotion(iPlayer, iUnit, iPromotionType)
+	local pPlayer = Players[iPlayer]
+	if not pPlayer then return end -- assert
+	local pUnit = pPlayer:GetUnitByID(iUnit)
+	-- No need to go further if unit has all eligible promotions
+	if not (pUnit and pUnit.IsHasPromotion(GameInfoTypes.PROMOTION_CACADOR) and pUnit:GetLevel() < #tEligiblePromotions + 2) then return end
+	
+	-- Create a list of available promotions
+	-- There's a Lua function that checks in a unit can be promoted with a specific promotion!
+	local tAvailablePromotions = {}
+	for _,promo in ipairs(tEligiblePromotions) do
+		if pUnit:CanPromote(promo, -1) then table.insert(tAvailablePromotions, promo) end
+	end
+	if #tAvailablePromotions == 0 then return end -- assert
+	
+	-- Grant a random one
+	pUnit:SetHasPromotion(tAvailablePromotions[ math.random(1, #tAvailablePromotions) ], true)
+end
+GameEvents.UnitPromoted.Add(OnUnitPromotedCacadorPromotion)
+
 function CacadorPromotion(iPlayer, iUnit, iPromotionType)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
@@ -52,7 +83,6 @@ function CacadorPromotion(iPlayer, iUnit, iPromotionType)
 	end
 end
 	
-GameEvents.UnitPromoted.Add(CacadorPromotion)
 
 --local trailblazerPromos = {
 --	GameInfoTypes.PROMOTION_WOODLAND_TRAILBLAZER_I,
