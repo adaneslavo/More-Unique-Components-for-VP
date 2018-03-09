@@ -30,7 +30,13 @@ VALUES		('BUILDING_RUSSIA3_ATLAS', 			256, 		'Pogost3Picture_256.dds',			1, 				
 INSERT INTO Buildings 	
 			(Type,						BuildingClass,						CivilizationRequired,	GoldMaintenance, Cost,	FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech,			ArtDefineTag, MinAreaSize, ConquestProb, HurryCostModifier,	Help,									Description,						IconAtlas,					PortraitIndex)
 SELECT		'BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_RUSSIA_POGOST_3',	'CIVILIZATION_RUSSIA',	0,				-1,		-1,			EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_ARCHITECTURE', ArtDefineTag, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_RUSSIA_POGOST_3_HELP',	'TXT_KEY_BUILDING_RUSSIA_POGOST_3',	'BUILDING_RUSSIA3_ATLAS',	0
-FROM Buildings WHERE Type = 'BUILDING_MINT';	
+FROM Buildings WHERE Type = 'BUILDING_MINT';
+------------------------------	
+-- Building_YieldChanges
+------------------------------	
+INSERT INTO Building_YieldChanges 	
+			(BuildingType, 					YieldType,			Yield)
+VALUES		('BUILDING_RUSSIA_POGOST_2',	'YIELD_FAITH',	2);
 ------------------------------	
 -- Building_Flavors
 ------------------------------		
