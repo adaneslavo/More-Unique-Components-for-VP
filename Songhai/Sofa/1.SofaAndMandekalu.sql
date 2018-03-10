@@ -117,7 +117,7 @@ DELETE FROM Civilization_UnitClassOverrides WHERE CivilizationType = 'CIVILIZATI
 -- Units
 --------------------------------
 UPDATE Units
-SET Cost = 200, Combat = 25, Class = 'UNITCLASS_KNIGHT', PrereqTech = 'TECH_CHIVALRY', ObsoleteTech = 'TECH_COMBUSTION', GoodyHutUpgradeUnitClass = 'UNITCLASS_LANCER'
+SET Cost = 200, Combat = 25, FaithCost = 300, Class = 'UNITCLASS_KNIGHT', PrereqTech = 'TECH_CHIVALRY', ObsoleteTech = 'TECH_COMBUSTION', GoodyHutUpgradeUnitClass = 'UNITCLASS_LANCER'
 WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
 
 --------------------------------	
