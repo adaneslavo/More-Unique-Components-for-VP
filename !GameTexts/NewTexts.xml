@@ -1758,7 +1758,7 @@
 			<Text>A nimble attacker excelling in rough terrain. Only the Iroquois may build it. Cheaper than the Musketman, this Unit can attack from behind obstacles and retreat after enemy attack.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_IROQUOIS_PROWLER_STRATEGY">
-			<Text>Prowler is cheap unit that makes perfect use from surrounding rough terrain. His "Indirect Fire" promotion allows him to attack unseen from deep forests and hills, with the aid of reconnaissance or friendly borders. When attacked by an enemy unit, he can withdraw from combat. The prowler's evasiveness makes him an ideal guerilla Unit.</Text>
+			<Text>The Prowler is a cheap unit that makes perfect use of surrounding rough terrain. The Prowler's "Indirect Fire" promotion allows him to attack unseen from deep forests and hills, with the aid of reconnaissance or friendly borders. When attacked by an enemy unit, he can withdraw from combat. The prowler's evasiveness makes him an ideal guerilla Unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_IROQUOIS_PROWLER_TEXT">
 			<Text>
@@ -1984,19 +1984,19 @@
 		</Row>
 
 
-		<!-- Shophet -->
+		<!-- Suffet -->
 		<!-- Created by pineappledan -->
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET">
-			<Text>Shophet</Text>
+			<Text>Suffet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP">
 			<Text>Unique replacement for the Great General. Disembarks onto water tiles as a Great Admiral. Causes friendly units beginning in the same or adjacent tile to ignore enemy Zone of Control for that turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY">
-			<Text>The Shophet is the unique Great General replacement for Carthage, for Hannibal. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Shophet to supplement your military strategies when waging war against other civilizations.</Text>
+			<Text>The Suffet is the unique Great General replacement for Carthage, for Hannibal. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Suffet to supplement your military strategies when waging war against other civilizations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_TEXT">
-			<Text>In the various independent city states constituting Phoenicia proper (coasts of present Lebanon and Syria) and its "Punic" Mediterranean colonies a shofet (in Punic, suffet or suffete) was a non-royal magistrate granted control over a city-state, sometimes functioning much in the same way as a Roman consul.[NEWLINE][NEWLINE]The term is mostly widely known from the suffetes of Carthage, a former Phoenician colony. Following the overthrow of its monarchy in the 5th century BC, Carthage was ruled by a number of aristocratic councils presided over by two suffetes, who served in similar capacity to Roman consuls.</Text>
+			<Text>In the various independent city states constituting Phoenicia proper (coasts of present Lebanon and Syria) and its "Punic" Mediterranean colonies a Suffet, or Shophet, was a non-royal magistrate granted control over a city-state, sometimes functioning much in the same way as a Roman consul.[NEWLINE][NEWLINE]The term is mostly widely known from the suffetes of Carthage, a former Phoenician colony. Following the overthrow of its monarchy in the 5th century BC, Carthage was ruled by a number of aristocratic councils presided over by two suffetes, who served in similar capacity to Roman consuls.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL">
 			<Text>Admiralty</Text>
@@ -2185,7 +2185,7 @@
 			<Text>Skirmisher Unit excelling at supporting your Cavalry. Cheaper and available earlier than the Crossbowman. Has the [COLOR_POSITIVE_TEXT]Medic I[ENDCOLOR] promotion. Only Songhai may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_3UC_SOFA_STRATEGY">
-			<Text>The Sofa is a Songhai unique unit, replacing the Crossbowman. It serves as an excellent support unit starting with the Medic I promotion and a 15% Damage increase to all Mounted units within 2 tiles. The Sofa has a slightly lower defensive strength, but is relatively cheap to train.</Text>
+			<Text>The Sofa is a Songhai unique unit, replacing the Crossbowman. It serves as an excellent support unit starting with the Medic I promotion and a 15% Damage increase to all Mounted units within 2 tiles. The Sofa has lower offensive strength, but is relatively cheap to train and available earlier.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_3UC_SOFA_TEXT">
 			<Text>Sofa is a Mandinka term for slave soldiers who served in the army of the various Empires of West Africa. Originally, the Sofas were horse  grooms of the soldier nobility, the Farari, but their role slowly changed to become skirmishers and soldiers in their own right. Sofas were recruited from "jonow" (slaves) captured in battle or bought from afar. The institution of slavery in the Mali and Songhai Empires heavily rewarded loyalty, and jonow could rise to civil or military positions of prominence. Jonow became part of their master's clan, and were often freed after a certain amount of years. [NEWLINE][NEWLINE]Sofas were equipped with two quivers, and their bow was small by European standards, so sofas employed deadly poisons and fired in arcs to give their arrows strength.</Text>
