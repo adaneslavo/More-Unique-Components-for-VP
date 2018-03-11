@@ -22,6 +22,7 @@ v29:
 	- Polders ==> added exemption for movement loss if unit has a "no movement penalties" promotion (recon units, etc.)
 	- Dhanurgraha ==> lowered RCP to 7 and raised CP to 5
 	- Xiafan Guanjun ==> lowered CP to 28
+	- Exam Hall ==> GPP to the GP with the most GPPs, instead of a random one
 	- Sofa ==> moved forward 1 tech (Chivalry)
 	- Riad ==> lowered % GPP modifier to 25%
 	- Andelsbevagelse ==> raised food from farms and pastures, added gold to pastures, and increased base yields
