@@ -1679,18 +1679,16 @@
 			<Text>Pogost - Stage 3: Eastern Orthodox Church</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP">
-			<Text>Unique Medieval building. [NEWLINE][NEWLINE]Grants additional [ICON_GOLD] Gold to all [ICON_CONNECTED] City Connections and [ICON_SWAP] Trade Routes to/from this city respectively.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.
-			</Text>
+			<Text>Unique Medieval building. [NEWLINE][NEWLINE]Grants additional [ICON_GOLD] Gold to all [ICON_CONNECTED] City Connections and [ICON_SWAP] Trade Routes to/from this city respectively. +1 [ICON_GOLD] Gold to nearby Village and Town improvements.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
-			<Text>Pogost Stage 2: +1 [ICON_RESEARCH] Science. Get more [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections and [ICON_CITIZEN] Population at Banking. [NEWLINE][NEWLINE]Unlocks access to Stage 3.
-			</Text>
+			<Text>Pogost Stage 2: Get more [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections.[NEWLINE][NEWLINE]Unlocks access to Stage 3.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_3_HELP">
-			<Text>Pogost Stage 3: Adds [ICON_PEACE] Faith to Shrines, Temples and Monasteries in the same city at Architecture.</Text>
+			<Text>Pogost Stage 3: Adds [ICON_PEACE] Faith to Shrines, Temples and Monasteries in the same city at Architecture.Get more [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_STRATEGY">
-			<Text>Unique Russian replacement for the Customs House. Initially, Pogosts are comparatively lackluster, but they develop new traits as the game progresses. The Pogost provides modest increases in gold from trade and culture, then gains significant boosts to gold and science at its second stage, and provides modest boosts to faith generation in its final stage.</Text>
+			<Text>Unique Russian replacement for the Customs House. Initially, Pogosts are comparatively lackluster, but they develop new traits as the game progresses. Each stage increases Gold generated from City Connections, and The Pogost provides modest increases in gold from trade and culture, then gains modest boosts to gold and science at its second stage, and provides boosts to faith generation in its final stage.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_TEXT">
 			<Text>In many medieval Russian states, Pogosts began as inns and lodging for the nobility and priesthood, but may have doubled as community centers and trading hubs. By the end of the 10th century, however, Pogosts had evolved into administrative and legislative hubs throughout the Slavic states. By 1775 the last Pogost-led administrative district was abolished, and the buildings were repurposed as parishes of the Eastern Orthodox Church.</Text>
