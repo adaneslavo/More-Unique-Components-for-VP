@@ -64,7 +64,7 @@ VALUES		('BUILDING_SWEDEN_BASTU', 	'BUILDINGCLASS_AMPHITHEATER', 	'YIELD_GOLD', 
 INSERT INTO Building_GoldenAgeYieldMod
 			(BuildingType, 				YieldType, 			Yield)
 VALUES		('BUILDING_SWEDEN_BASTU', 	'YIELD_FOOD', 		10),
-			('BUILDING_SWEDEN_BASTU', 	'YIELD_CULTURE', 	15);	
+			('BUILDING_SWEDEN_BASTU', 	'YIELD_CULTURE', 	10);	
 ------------------------------	
 -- Building_GrowthExtraYield
 ------------------------------	
