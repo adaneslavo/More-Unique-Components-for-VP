@@ -5,10 +5,10 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>28</ModVersion>
+    <ModVersion>29</ModVersion>
     <Stability>Beta</Stability>
     <Teaser>More Unique Components mod. Compatible with latest VP.</Teaser>
-    <Description>More Unique Components mod. Compatible with latest VP (2-7).
+    <Description>More Unique Components mod. Compatible with latest VP (3-11).
 
 Latest changes: see changelog file.</Description>
     <Authors>adan_eslavo</Authors>
@@ -641,17 +641,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Huns/AltiCur/AltiCurCode.sql</FileName>
+        <FileName>Huns/AltiCur/AltiCur.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Huns/Tarkhan/1.TarkhanArt.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Huns/Tarkhan/3.TarkhanCode.sql</FileName>
+        <FileName>Huns/Tarkhan/Tarkhan.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -732,6 +727,11 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>!DummyBuildings/DummyBuildingHorseYields.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Huns/HorseArcher/HorseArcher.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -1105,7 +1105,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Tarkhan</Name>
         <Description>Adds Tarkhan Promotions</Description>
-        <FileName>Huns/Tarkhan/2.Tarkhan.lua</FileName>
+        <FileName>Huns/Tarkhan/Tarkhan.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1160,6 +1160,12 @@ Latest changes: see changelog file.</Description>
         <Name>Iziko</Name>
         <Description>Adds Culture on Unit Level to all Cities.</Description>
         <FileName>Zulu/Iziko/Iziko.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Horse Archer</Name>
+        <Description>Automatic attack for Horse Archer</Description>
+        <FileName>Huns/HorseArcher/HorseArcher.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
@@ -2036,91 +2042,91 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\AltiCurCode.sql">
+    <Content Include="Huns\AltiCur\AltiCur.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt128.dds">
+    <Content Include="Huns\AltiCur\AltiCurPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt256.dds">
+    <Content Include="Huns\AltiCur\AltiCurPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt45.dds">
+    <Content Include="Huns\AltiCur\AltiCurPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt64.dds">
+    <Content Include="Huns\AltiCur\AltiCurPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\1.TarkhanArt.sql">
+    <Content Include="Huns\HorseArcher\HorseArcher.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\2.Tarkhan.lua">
+    <Content Include="Huns\HorseArcher\HorseArcher.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\3.TarkhanCode.sql">
+    <Content Include="Huns\Tarkhan\Tarkhan.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey.dds">
+    <Content Include="Huns\Tarkhan\Tarkhan.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Huns\Tarkhan\3DModel\Horseman_Turkey.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey.fxsxml">
+    <Content Include="Huns\Tarkhan\3DModel\Horseman_Turkey.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey.gr2">
+    <Content Include="Huns\Tarkhan\3DModel\Horseman_Turkey.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey_gloss.dds">
+    <Content Include="Huns\Tarkhan\3DModel\Horseman_Turkey_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey_Horse.dds">
+    <Content Include="Huns\Tarkhan\3DModel\Horseman_Turkey_Horse.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_AlanCavalryUnitFlag_32.dds">
+    <Content Include="Huns\Tarkhan\3DModel\no_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_128.dds">
+    <Content Include="Huns\Tarkhan\TarkhanFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_256.dds">
+    <Content Include="Huns\Tarkhan\TarkhanPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_32.dds">
+    <Content Include="Huns\Tarkhan\TarkhanPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_45.dds">
+    <Content Include="Huns\Tarkhan\TarkhanPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_64.dds">
+    <Content Include="Huns\Tarkhan\TarkhanPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_80.dds">
+    <Content Include="Huns\Tarkhan\TarkhanPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\no_gloss.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Huns\Tarkhan\sv_AlanCavalry.dds">
+    <Content Include="Huns\Tarkhan\TarkhanFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5359,8 +5365,9 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Germany\Slaganz" />
     <Folder Include="Huns" />
     <Folder Include="Huns\AltiCur" />
-    <Folder Include="Huns\HorseArcherChange" />
+    <Folder Include="Huns\HorseArcher" />
     <Folder Include="Huns\Tarkhan" />
+    <Folder Include="Huns\Tarkhan\3DModel" />
     <Folder Include="Inca" />
     <Folder Include="Inca\Chasqui" />
     <Folder Include="Inca\Chasqui\3DModel" />

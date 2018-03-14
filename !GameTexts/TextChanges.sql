@@ -86,6 +86,15 @@ WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_STRATEGY' AND EXISTS (SELECT * FROM C
 UPDATE Language_en_US 
 SET Text = 'Korean replacement for the Caravel. High [ICON_STRENGTH] Combat Strength, and more effective against other melee naval units. Moves slowly in Deep Ocean'
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+-- Horse Archer
+UPDATE Language_en_US 
+SET Text = 'Unique Hunnic Skirmisher. If all the unit''s moves are used without attacking, attacks a valid target automatically.[NEWLINE][NEWLINE]Does not require Horses.'
+WHERE Tag = 'TXT_KEY_UNIT_HELP_HUN_HORSE_ARCHER';
+
+UPDATE Language_en_US 
+SET Text = 'Horse Archers are fast ranged units, deadly on open terrain. Horse Archers have the unique ability to automatically attack a random nearby target if they have run out of moves, but have not attacked yet. As a mounted unit, the Horse Archer is vulnerable to Spearmen. Unlike the Skirmisher, the Horse Archer does not require Horses.'
+WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';
 ------------------------------
 -- Building Texts
 ------------------------------

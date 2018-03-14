@@ -5,7 +5,7 @@
 More Unique Components for Vox Populi changelog:
 
 v29:
-- cleaned (Zulu),
+- cleaned (Zulu, Huns),
 - fixed and tweaked:
 	- Iziko ==> added lua for culture in cities on unit levelling
 	- InDuna ==> changed XP gained,
@@ -28,6 +28,7 @@ v29:
 	- Andelsbevagelse ==> raised food from farms and pastures, added gold to pastures, and increased base yields
 	- Hippodrome ==> increase to Horse resource yields now applied across empire.
 	- Intihuatana ==> reduced base science, increased build cost
+	- Yamato ==> fixed animation
 - overhaul of civilopedia entries
 - minor fixes.
 
