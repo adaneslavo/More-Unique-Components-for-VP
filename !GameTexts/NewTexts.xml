@@ -1882,7 +1882,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY">
 			<Text>
-				The Homestead is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Homestead increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it.
+				The Homestead is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Homestead increases border growth, and gives [ICON_FOOD] Food and [ICON_CULTURE] Culture when borders grow. Only America may build it. The Homestead boosts Bison in addition to all the resources normally boosted by a Ranch, and all boosted resources gain additional food. 
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
