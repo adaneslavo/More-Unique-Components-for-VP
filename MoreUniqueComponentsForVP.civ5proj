@@ -1176,6 +1176,98 @@ Latest changes: see changelog file.</Description>
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="!Animations\edited_aim_ms_attack_city_to_run.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_attack_to_run_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_bombard_defend_loop_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_combat_ready_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_death_final_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_death_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_enter_bombard_defend_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_enter_combat_ready_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_enter_fortify.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_fidgets_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_fortify_fidget_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_fortify_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_fortify_leave_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_idle_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_leave_bombard_defend_trans_idle_a_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_leave_combat_ready.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_modern_ship_attacks.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_running_loop.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_start_running.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_stop_running.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_transitions_for_idles.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_running_loop.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_modern_ship_aim_state_01.fsmxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="!DummyBuildings\DummyBuildingDefense.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -5222,6 +5314,11 @@ Latest changes: see changelog file.</Description>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="!Animations" />
+    <Folder Include="!DummyBuildings" />
+    <Folder Include="!GameTexts" />
+    <Folder Include="!Settings" />
+    <Folder Include="!SharedAssets" />
     <Folder Include="America\" />
     <Folder Include="America\Monitor\" />
     <Folder Include="America\Ranch\" />
@@ -5257,7 +5354,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="England\Longbowman" />
     <Folder Include="England\WhiteTower" />
     <Folder Include="Egypt" />
-    <Folder Include="!SharedAssets" />
     <Folder Include="Germany\Slaganz\3DModel" />
     <Folder Include="Germany\TeutonicOrder" />
     <Folder Include="Germany\Slaganz" />
@@ -5318,7 +5414,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Ethiopia\MehalSefari" />
     <Folder Include="Ethiopia\Shotelai" />
     <Folder Include="Ethiopia\Shotelai\3DModel" />
-    <Folder Include="!Settings" />
     <Folder Include="France\GrandeEcole" />
     <Folder Include="France\Napoleon" />
     <Folder Include="France\SPAD" />
@@ -5345,9 +5440,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Babylon" />
     <Folder Include="Byzantium" />
     <Folder Include="India" />
-    <Folder Include="!DummyBuildings" />
     <Folder Include="Denmark" />
-    <Folder Include="!GameTexts" />
     <Folder Include="Aztecs" />
     <Folder Include="Persia" />
     <Folder Include="Persia\Qizilbash" />
