@@ -55,11 +55,6 @@ INSERT INTO Building_YieldChanges
 			(BuildingType, 					YieldType,			Yield)
 VALUES		('BUILDING_RUSSIA_POGOST_1',	'YIELD_CULTURE',	4),
 			('BUILDING_RUSSIA_POGOST_1',	'YIELD_GOLD',		2);
-			
-	('IMPROVEMENT_POLDER', 'IMPROVEMENT_TRADING_POST', 'YIELD_GOLD', 1),
-	('IMPROVEMENT_POLDER', 'IMPROVEMENT_CUSTOMS_HOUSE', 'YIELD_GOLD', 1),
-	('IMPROVEMENT_POLDER', 'IMPROVEMENT_CUSTOMS_HOUSE_VENICE', 'YIELD_GOLD', 1);
-	IMPROVEMENT_CELTS_OPPIDUM
 ------------------------------
 -- Building_ImprovementYieldChanges
 ------------------------------		

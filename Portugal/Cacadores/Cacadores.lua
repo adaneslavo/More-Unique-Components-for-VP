@@ -19,7 +19,7 @@ function OnUnitPromotedCacadorPromotion(iPlayer, iUnit, iPromotionType)
 	if not pPlayer then return end -- assert
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	-- No need to go further if unit has all eligible promotions
-	if not (pUnit and pUnit.IsHasPromotion(GameInfoTypes.PROMOTION_CACADOR) and pUnit:GetLevel() < #tEligiblePromotions + 2) then return end
+	if not (pUnit and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CACADOR) and pUnit:GetLevel() < #tEligiblePromotions + 2) then return end
 	
 	-- Create a list of available promotions
 	-- There's a Lua function that checks in a unit can be promoted with a specific promotion!
