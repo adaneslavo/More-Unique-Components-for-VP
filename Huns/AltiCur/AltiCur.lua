@@ -1,31 +1,51 @@
-local iAltiCurEvent = GameInfoTypes.PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS
+-- Alti Cur
+-- Author: 
+-- DateCreated: 
+--------------------------------------------------------------
+local eAltiCurEvent = GameInfoTypes.PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS
+local eBuildingAltiCur = GameInfoTypes.BUILDING_HUNS_ALTI_CUR
+local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
 
-function AltiCurMinorTribute(iPlayer, iCS)
+-- adds gold and 6 turn of happiness after demanding tribute from CS
+function OnDemandTributeAddGoldAndHappiness(iPlayer, iCS)
 	local pPlayer = Players[iPlayer]
-	local hasAltiCur = false
-	for pCity in pPlayer:Cities() do
-		if pCity:IsHasBuilding(GameInfoTypes.BUILDING_3UC_YURT) then
-			hasAltiCur = true
+	local bHasAltiCur = false
+	local pCity
+
+	for city in pPlayer:Cities() do
+		if city:IsHasBuilding(GameInfoTypes.BUILDING_HUNS_ALTI_CUR) then
+			bHasAltiCur = true
+			pCity = city
+			break
 		end
 	end
 
-	if not hasAltiCur then
+	if not bHasAltiCur then
 		return
 	end
 	
 	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-	local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
-	local iGoldGain = 100 * iEraModifier * iGameSpeedModifier
+	local iGoldGain = 100 * iEraModifier * fGameSpeedModifier
+	
 	pPlayer:ChangeGold(iGoldGain)
-	if iPlayer == Game:GetActivePlayer() then
-		pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, Locale.ConvertTextKey("TXT_KEY_ALERT_ALTI_CUR_MINOR_TRIBUTE", iGoldGain), "Alti Cur Tribute Bonus")
+	
+	if pPlayer:IsEventChoiceActive(eAltiCurEvent) then
+		pPlayer:DoCancelEventChoice(eAltiCurEvent)
 	end
 
-	if pPlayer:IsEventChoiceActive(iAltiCurEvent) then
-		pPlayer:DoCancelEventChoice(iAltiCurEvent)
-	end
+	pPlayer:DoEventChoice(eAltiCurEvent)
 
-	pPlayer:DoEventChoice(iAltiCurEvent)
+	if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+		local iX, iY = pCity:GetX(), pCity:GetY()
+		local vCityPosition = PositionCalculator(iX, iY)
+
+		Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_GOLD]+"..iGoldGain.."[ICON_GOLD][ENDCOLOR]", 1)
+
+		pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC,
+			'Player demanded tribute from City-State. People admire your power. You gain Gold and Happiness.',
+			'Demanding tribute from City-State',
+			iX, iY, pCity:GetID())
+	end
 end
 
-GameEvents.PlayerBullied.Add(AltiCurMinorTribute)
+GameEvents.PlayerBullied.Add(OnDemandTributeAddGoldAndHappiness)

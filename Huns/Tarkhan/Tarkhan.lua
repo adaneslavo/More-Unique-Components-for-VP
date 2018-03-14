@@ -6,7 +6,7 @@
 --4UC Tarkhan Migration promotion
 local unitClassSettlerID = GameInfoTypes.UNITCLASS_SETTLER
 local unitClassWorkerID = GameInfoTypes.UNITCLASS_WORKER
-local unitPromotionMigration = GameInfoTypes["PROMOTION_MIGRATION"]
+local unitPromotionMigration = GameInfoTypes["PROMOTION_UNIT_HUNS_MIGRATION"]
 function HunMigration_PlayerDoTurn(playerID)
 	local player = Players[playerID]
 	if (not player:IsAlive()) then return end
@@ -47,7 +47,7 @@ function OnUnitPillageGoldBellumAlet(iPlayer, iUnit, iImprovement, iGold)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	
-	if pUnit and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SACKER) then
+	if pUnit and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_HUNS_SACKER) then
 		local pUnitPlot = pUnit:GetPlot()
 		local iX, iY = pUnitPlot:GetX(), pUnitPlot:GetY()
 		for eDirection = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do

@@ -5,7 +5,7 @@
 More Unique Components for Vox Populi changelog:
 
 v29:
-- cleaned (Zulu),
+- cleaned (Zulu, Huns),
 - fixed and tweaked:
 	- Iziko ==> added lua for culture in cities on unit levelling
 	- InDuna ==> changed XP gained,

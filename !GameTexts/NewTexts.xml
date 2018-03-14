@@ -39,16 +39,16 @@
 			</Text>
 		</Row>
 		<!-- Alti Cur -->
-		<Row Tag="TXT_KEY_BUILDING_3UC_YURT">
+		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR">
 			<Text>Six-Horns Council</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_HELP">
+		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_HELP">
 			<Text>Receive 25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite building. Only the Huns may build it.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_STRATEGY">
 			<Text>The Six-Horns Council is the Hunnic Unique Wonder, replacing the Ironworks. In addition to the normal bonuses of the Ironworks, the Six Horns council increases Science and Culture, and boosts Culture and Production from all Stables on empire. The wonder provides additional Gold and Happiness from demanding tribute from minor City-States.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_3UC_YURT_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_TEXT">
 			<Text>The Huns' origins remain shrouded in mystery, but one clue to their Xiongnu heritage is their rule by an Alti Cur, or "Six-Horns Council". The Alti Cur was a small council of nobles, the most powerful men within the Hunnic Empire besides the emperor himself. Each was seated according to their standing with the emperor, with the emperor's favorite seated to his immediate right.[NEWLINE][NEWLINE]
 			An emperor's legitimacy depended heavily on the tributes he could extract from the surrounding kingdoms and distribute to his nobles. It is surmised that insufficient tributes from the Chinese and other client tribes triggered the decline and disappearance of the Xiongnu in East Asia, only for them reappear as the Huns of Eastern Europe.</Text>
 		</Row>
@@ -2296,36 +2296,37 @@
 		</Row>
 				
 		<!-- Tarkhan -->		
-		<Row Tag="TXT_KEY_PROMOTION_HORSE_ARCHER">
-			<Text>Horse Archer</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_HORSE_ARCHER">
+			<Text>Last Chance</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_HORSE_ARCHER_HELP">
-			<Text>If all moves are used without attacking, attacks a valid target automatically.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_HORSE_ARCHER_HELP">
+			<Text>Unit Attacks a valid target automatically [COLOR_POSITIVE_TEXT]if spent all [ICON_ARROW_RIGHT] Movement Points without Attacking[ENDCOlOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_MIGRATION">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_MIGRATION">
 			<Text>Migration</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_MIGRATION_HELP">
-			<Text>+1 Movement to Workers and Settlers that begin the turn stacked with this Unit.</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_MIGRATION_HELP">
+			<Text>+1 [ICON_ARROW_RIGHT] Movement Point to Workers and Settlers [COLOR_POSITIVE_TEXT]that begin the turn stacked with this unit[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_SACKER">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_SACKER">
 			<Text>Bellum Alet</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_SACKER_HELP">
-			<Text>On Pillage, Heal all adjacent friendly units by [COLOR_POSITIVE_TEXT]10HP[ENDCOLOR].</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_SACKER_HELP">
+			<Text>10 HP to all adjacent Friendly Units [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY">
+		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN">
 			<Text>Tarkhan</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_HELP">
+		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_HELP">
 			<Text>Mounted warrior who also supports civilian and other military units with its unique abilities. Only the Huns may build it.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_STRATEGY">
 			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Pillaging tiles with a Tarkhan heals all your adjacent units, which can be handy for healing a recently captured unit.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_JFD_ALAN_CAVALRY_TEXT">
+		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_TEXT">
 			<Text>Tarkhan were nobles and high-ranking commanders within the armies of the Xiongnu and Hunnic empires. The term spread throughout the languages and peoples of the steppes, appearing as a title within Turkic, Mongol and Iranian cultures, even becoming a common boys name. Analogous to modern day generals, the Tarkhan were the protectors and conquerors of the Hunnic empire, spurring their civilization forward to greatness.</Text>
 		</Row>
+		
 		<!-- Tersane -->
 		<!-- Created by adan_eslavo 1/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE">
@@ -2586,37 +2587,6 @@
 		</Row>
 	</Language_en_US>
 	<IconTextureAtlases>
-		<!-- Eagle Icons -->		
-		<Row>
-			<Atlas>YURT_ICON_ATLAS</Atlas>
-			<IconSize>256</IconSize>
-			<Filename>yurt256.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-		<!-- Alti Cur Icons -->
-		<Row>
-			<Atlas>YURT_ICON_ATLAS</Atlas>
-			<IconSize>128</IconSize>
-			<Filename>yurt128.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-		<Row>
-			<Atlas>YURT_ICON_ATLAS</Atlas>
-			<IconSize>64</IconSize>
-			<Filename>yurt64.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-		<Row>
-			<Atlas>YURT_ICON_ATLAS</Atlas>
-			<IconSize>45</IconSize>
-			<Filename>yurt45.dds</Filename>
-			<IconsPerRow>1</IconsPerRow>
-			<IconsPerColumn>1</IconsPerColumn>
-		</Row>
-
 		<!-- Sofa Icons -->		
 		<Row>
 			<Atlas>UNIT_ALPHA_SOFA_ATLAS</Atlas>
