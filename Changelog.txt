@@ -28,6 +28,7 @@ v29:
 	- Andelsbevagelse ==> raised food from farms and pastures, added gold to pastures, and increased base yields
 	- Hippodrome ==> increase to Horse resource yields now applied across empire.
 	- Intihuatana ==> reduced base science, increased build cost
+	- Yamato ==> fixed animation
 - overhaul of civilopedia entries
 - minor fixes.
 
