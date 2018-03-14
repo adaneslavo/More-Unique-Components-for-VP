@@ -19,7 +19,7 @@ DELETE FROM Civilization_UnitClassOverrides WHERE CivilizationType = 'CIVILIZATI
 --------------------------------	
 -- Units
 --------------------------------
-UPDATE Units SET Cost = '625', FaithCost = '600', WHERE Type = 'UNIT_SWEDISH_CAROLEAN';
+UPDATE Units SET Cost = '625', FaithCost = '600' WHERE Type = 'UNIT_SWEDISH_CAROLEAN';
 UPDATE Units SET Class = 'UNITCLASS_RIFLEMAN' WHERE Type = 'UNIT_SWEDISH_CAROLEAN';
 UPDATE Units SET PrereqTech = 'TECH_RIFLING' WHERE Type = 'UNIT_SWEDISH_CAROLEAN';
 UPDATE Units SET Combat = '38' WHERE Type = 'UNIT_SWEDISH_CAROLEAN';
