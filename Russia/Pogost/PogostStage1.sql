@@ -53,7 +53,7 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_MINT';
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
-VALUES		('BUILDING_RUSSIA_POGOST_1',	'YIELD_CULTURE',	4),
+VALUES		('BUILDING_RUSSIA_POGOST_1',	'YIELD_CULTURE',	3),
 			('BUILDING_RUSSIA_POGOST_1',	'YIELD_GOLD',		2);
 ------------------------------
 -- Building_ImprovementYieldChanges
