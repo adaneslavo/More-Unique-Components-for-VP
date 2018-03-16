@@ -3,6 +3,11 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v29:
+- fixed and tweaked:
+	- Qila ==> reduced yields
+	- Kampong ==> reduced yields
+	- Horse Archer ==> reduced RCS
 
 v29:
 - cleaned (Zulu, Huns),
