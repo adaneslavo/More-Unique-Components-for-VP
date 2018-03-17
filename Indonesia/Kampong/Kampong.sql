@@ -74,8 +74,8 @@ VALUES		('IMPROVEMENT_INDONESIA_KAMPONG',	'IMPROVEMENT_FISHING_BOATS',		'YIELD_P
 ------------------------------
 INSERT INTO Improvement_TechYieldChanges
 			(ImprovementType,						TechType,			YieldType,			Yield)
-VALUES		('IMPROVEMENT_INDONESIA_KAMPONG',		'TECH_COMPASS',		'YIELD_CULTURE',	1),
-			('IMPROVEMENT_INDONESIA_KAMPONG',		'TECH_NAVIGATION',	'YIELD_PRODUCTION',	1),
+VALUES		('IMPROVEMENT_INDONESIA_KAMPONG',		'TECH_COMPASS',		'YIELD_PRODUCTION',	1),
+			('IMPROVEMENT_INDONESIA_KAMPONG',		'TECH_NAVIGATION',	'YIELD_CULTURE',	1),
 			('IMPROVEMENT_INDONESIA_KAMPONG',		'TECH_DYNAMITE',	'YIELD_FOOD',		1),
 			('IMPROVEMENT_INDONESIA_KAMPONG',		'TECH_ECOLOGY',		'YIELD_SCIENCE',	1);
 --==========================================================================================================================
