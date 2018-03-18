@@ -69,8 +69,7 @@ VALUES		('BUILDING_SIAM_BAAN_CHANG',	'FEATURE_FOREST',	'YIELD_PRODUCTION',		1),
 ------------------------------
 INSERT INTO Building_ResourceYieldChanges	
 			(BuildingType,					ResourceType,		YieldType,			Yield)
-VALUES		('BUILDING_SIAM_BAAN_CHANG',	'RESOURCE_IVORY',	'YIELD_PRODUCTION',	1),
-			('BUILDING_SIAM_BAAN_CHANG',	'RESOURCE_IVORY',	'YIELD_FAITH',		1);
+VALUES		('BUILDING_SIAM_BAAN_CHANG',	'RESOURCE_IVORY',	'YIELD_FAITH',		1);
 ------------------------------
 -- Building_ImprovementYieldChanges
 ------------------------------		
