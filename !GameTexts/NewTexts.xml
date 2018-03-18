@@ -468,6 +468,12 @@
 			<Text>Dummy Defense Building</Text>
 		</Row>
 
+		<!-- Dummy Defense Building -->
+		<!-- Created by adan_eslavo 14/01/2018 -->
+		<Row Tag="TXT_KEY_BUILDING_DUMMY_1_DEFENSE">
+			<Text>Dummy 1 Defense Building</Text>
+		</Row>		
+		
 		<!-- Dummy Defense, HP and Promotion Building -->
 		<!-- Created by adan_eslavo 14/01/2018 -->
 		<Row Tag="TXT_KEY_BUILDING_DUMMYDEFENSEHPPROMOTION">
@@ -1862,13 +1868,13 @@
 			<Text>Mughal Fort</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>Unique replacement for the Castle. 5% of [ICON_FOOD] Food is converted into [ICON_CULTURE] Culture every turn and 1 [ICON_GREAT_PEOPLE] Great Artist Point. Contains 1 slot for a Great Work of Art. Gains +3 [ICON_TOURISM] Tourism at Flight. Requires Walls in City.</Text>
+			<Text>Unique replacement for the Castle. +1 [ICON_STRENGTH] City Defense for every World Wonder built [COLOR_POSITIVE_TEXT]in the City[ENDCOLOR], and 15% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn. Contains 1 slot for a Great Work of Art and generates 1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. Gains +3 [ICON_TOURISM] Tourism at Flight. Requires Walls in City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
-			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Food and Culture. 5% of [ICON_FOOD] Food is converted into Culture every turn and 1 Great Artist Point. Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
+			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Culture and Great Artist Points. 15% of City Defense is converted into Culture every turn and the city gains 1 Defense for every World Wonder built in the city.[NEWLINE][NEWLINE]Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_TEXT">
-			<Text>The Mughals were an Islamic empire that invaded India in the 15th century, and ruled most of the sub-continent until the mid 19th. During their rule, they constructed elaborate forts across the countryside which served as administrative centers and living quarters for the occupiers. These forts were beautiful structures, fitting palaces for the rulers of a vast empire. Several--including the magnificent "Lahore Fort" and Red Fort of Agra--survive today and remain as some of the largest tourist attractions to India, monuments to the Mughals' power and style.</Text>
+			<Text>The Mughals were an Islamic empire that invaded India in the 15th century, and ruled most of the sub-continent until the mid 19th. During their rule, they constructed elaborate forts called Qila across the countryside which served as administrative centers and living quarters for the occupiers. These forts were beautiful structures, fitting palaces for the rulers of a vast empire. Several--including the magnificent "Lahore Fort" and Red Fort of Agra--survive today and remain as some of the largest tourist attractions to India, monuments to the Mughals' power and style.</Text>
 		</Row>
 
 		<!-- Ranch -->
