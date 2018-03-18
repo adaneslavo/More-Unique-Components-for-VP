@@ -3,10 +3,12 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
-v29:
+v30:
+- Reworked: 
+	- Qila ==> 15% culture from city defense, and wonders in city increase defense by 1.
 - fixed and tweaked:
-	- Qila ==> reduced yields
-	- Kampong ==> reduced yields
+	- Ball Court ==> reduced base culture by 1
+	- Kampong ==> reduced yields from techs
 	- Horse Archer ==> reduced RCS
 
 v29:
