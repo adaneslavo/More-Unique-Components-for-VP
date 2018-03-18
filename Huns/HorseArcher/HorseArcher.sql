@@ -1,7 +1,7 @@
 --------------------------------	
 -- Unit
 --------------------------------
-UPDATE Units SET RangedCombat = '12' WHERE Type = 'UNIT_HUN_HORSE_ARCHER'
+UPDATE Units SET RangedCombat = '12' WHERE Type = 'UNIT_HUN_HORSE_ARCHER';
 --------------------------------	
 -- UnitPromotions
 --------------------------------	
