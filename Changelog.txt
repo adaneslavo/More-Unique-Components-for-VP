@@ -7,6 +7,8 @@ v30:
 - Reworked: 
 	- Qila ==> 15% culture from city defense, and wonders in city increase defense by 1.
 - fixed and tweaked:
+	- Agora ==> removed bonus yields from olives and wine
+	- Elephant Camp ==> removed production from ivory (now only +1 faith)
 	- Ball Court ==> reduced base culture by 1
 	- Kampong ==> reduced yields from techs
 	- Horse Archer ==> reduced RCS
