@@ -70,12 +70,13 @@ VALUES		('BUILDING_GREECE_AGORA',	'YIELD_GOLD',	2);
 ------------------------------
 INSERT INTO Building_ResourceYieldChanges	
 			(BuildingType,				ResourceType,		YieldType,			Yield)
-VALUES		('BUILDING_GREECE_AGORA',	'RESOURCE_SUGAR',	'YIELD_FOOD',		1),
-			('BUILDING_GREECE_AGORA',	'RESOURCE_SUGAR',	'YIELD_GOLD',		1),
-			('BUILDING_GREECE_AGORA',	'RESOURCE_SPICES',	'YIELD_FOOD',		1),
-			('BUILDING_GREECE_AGORA',	'RESOURCE_SPICES',	'YIELD_PRODUCTION',	1),
-			('BUILDING_GREECE_AGORA',	'RESOURCE_WINE',	'YIELD_CULTURE',	1),
-			('BUILDING_GREECE_AGORA',	'RESOURCE_OLIVE',	'YIELD_FOOD',		1);
+SELECT	'BUILDING_GREECE_AGORA',	ResourceType,		YieldType,			Yield
+FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_MARKET';
+
+--INSERT INTO Building_ResourceYieldChanges	
+--			(BuildingType,				ResourceType,		YieldType,			Yield)
+--VALUES			('BUILDING_GREECE_AGORA',	'RESOURCE_WINE',	'YIELD_CULTURE',	1),
+--			('BUILDING_GREECE_AGORA',	'RESOURCE_OLIVE',	'YIELD_FOOD',		1);
 ------------------------------	
 -- Building_UnitCombatProductionModifiers
 ------------------------------		
