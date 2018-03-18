@@ -10,6 +10,7 @@ v30:
 	- Ball Court ==> reduced base culture by 1
 	- Kampong ==> reduced yields from techs
 	- Horse Archer ==> reduced RCS
+	- Pogost ==> reduced city connection gold on stage 2 (5% on all stages now)
 
 v29:
 - cleaned (Zulu, Huns),
