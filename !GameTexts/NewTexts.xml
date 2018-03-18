@@ -1673,7 +1673,8 @@
 				[NEWLINE][ICON_BULLET]Hun: 5XP, +5% [ICON_STRENGTH] Combat Strength
 				[NEWLINE][ICON_BULLET]Ka'a: 10XP, +10% [ICON_STRENGTH] Combat Strength, +5% [ICON_STRENGTH] Combat Strength in Forest/Jungle
 				[NEWLINE][ICON_BULLET]Oox: 10XP, +10% [ICON_STRENGTH] Combat Strength, +15% [ICON_STRENGTH] Combat Strength in Forest/Jungle
-				[NEWLINE][ICON_BULLET]Kan: 15XP, +10% [ICON_STRENGTH] Combat Strength, +15% [ICON_STRENGTH] Combat Strength in Forest/Jungle, +10 HP on Heal in Friendly Territory</Text>
+				[NEWLINE][ICON_BULLET]Kan: 15XP, +10% [ICON_STRENGTH] Combat Strength, +15% [ICON_STRENGTH] Combat Strength in Forest/Jungle, +10 HP on Heal in Friendly Territory
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_TEXT">
 			<Text>
@@ -1861,10 +1862,10 @@
 			<Text>Mughal Fort</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>Unique replacement for the Castle. 10% of [ICON_FOOD] Food is converted into [ICON_CULTURE] Culture every turn and 1 [ICON_GREAT_PEOPLE] Great Artist Point. Contains 1 slot for a Great Work of Art. Gains +3 [ICON_TOURISM] Tourism at Flight. Requires Walls in City.</Text>
+			<Text>Unique replacement for the Castle. 5% of [ICON_FOOD] Food is converted into [ICON_CULTURE] Culture every turn and 1 [ICON_GREAT_PEOPLE] Great Artist Point. Contains 1 slot for a Great Work of Art. Gains +3 [ICON_TOURISM] Tourism at Flight. Requires Walls in City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
-			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Food, and Culture. 10% of [ICON_FOOD] Food is converted into Culture every turn and 1 Great Artist Point. Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
+			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Food and Culture. 5% of [ICON_FOOD] Food is converted into Culture every turn and 1 Great Artist Point. Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_TEXT">
 			<Text>The Mughals were an Islamic empire that invaded India in the 15th century, and ruled most of the sub-continent until the mid 19th. During their rule, they constructed elaborate forts across the countryside which served as administrative centers and living quarters for the occupiers. These forts were beautiful structures, fitting palaces for the rulers of a vast empire. Several--including the magnificent "Lahore Fort" and Red Fort of Agra--survive today and remain as some of the largest tourist attractions to India, monuments to the Mughals' power and style.</Text>
