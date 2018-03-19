@@ -30,7 +30,7 @@
 			<Text>Unique Ancient Era building. Only the Greeks may build it. Increases [ICON_GOLD] Gold in this city for every Allied City-State. +20% [ICON_PRODUCTION] Production towards Diplomatic Units in City. [ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City owner and the Trade Route owner.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_STRATEGY">
-			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora generates Gold for every City-State ally, and boosts the production Diplomatic Units. In addition to the normal bonuses to Spices and Sugar, the Agora also provides bonuses to Wine and Olives.</Text>
+			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora generates Gold for every City-State ally, and boosts the production Diplomatic Units. Use your quick production of diplomatic units to secure a steady stream of gold in all your cities.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_TEXT">
 			<Text>
@@ -105,7 +105,7 @@
 			<Text>Unique Siamese replacement for the Workshop.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production on all Forest and +1 [ICON_CULTURE] Culture for all Lumber Mills and Logging Camps[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resource received as City-State gifts.  Receive 10 [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture in as an instant boost every time a city state gifts a unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this city along Trade Routes inside your civilization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY">
-			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills and logging camps, and gives Production and Faith from Ivory. [NEWLINE][NEWLINE]City state gifts, both Strategic Resources and units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
+			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills and logging camps, and gives Faith from Ivory. [NEWLINE][NEWLINE]City-State gifts, both Strategic Resources and Units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_TEXT">
 			<Text>
