@@ -5,6 +5,7 @@
 More Unique Components for Vox Populi changelog:
 v30:
 - Reworked: 
+	- Sambadrome ==> +1 Gold and +2 GAP to Musicians, instead of the guilds themselves
 	- Qila ==> 15% culture from city defense, and wonders in city increase defense by 1.
 - fixed and tweaked:
 	- Agora ==> removed bonus yields from olives and wine
