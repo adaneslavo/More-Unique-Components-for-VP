@@ -1953,12 +1953,12 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY">
 			<Text>
-				The Sambadrome is the unique Brazilian replacement for the Opera House. In addition to the bonuses of an Opera House, it provides more Culture than the Opera House, and it also provides Golden Age Points and Tourism. The Sambadrome comes with a Musician specialist slot.
+				The Sambadrome is the unique Brazilian replacement for the Opera House. In addition to the bonuses of an Opera House, the Sambadrome also generates Golden Age Points and Tourism. The Sambadrome comes with a Musician specialist slot, and all Musicians in the city generate extra Gold and Golden Age Points.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP">
 			<Text>
-				Unique Brazilian replacement for the Opera House. +7% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +3 [ICON_TOURISM] Tourism at Radio.
+				Unique Brazilian replacement for the Opera House. +7% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold. Musicians in City produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +3 [ICON_TOURISM] Tourism at Radio.
 			</Text>
 		</Row>
 		
