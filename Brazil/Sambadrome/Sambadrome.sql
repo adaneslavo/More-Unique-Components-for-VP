@@ -17,7 +17,7 @@ VALUES		('CIVILIZATION_BRAZIL', 'BUILDINGCLASS_OPERA_HOUSE',	'BUILDING_BRAZIL_SA
 --------------------------------
 INSERT INTO	Buildings
 			(Type,							Description,							Civilopedia,							Strategy,										Help,										GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier,		GreatWorkSlotType, GreatWorkCount,	SpecialistType,			SpecialistCount,	EnhancedYieldTech,	TechEnhancedTourism)
-SELECT		'BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_TEXT',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_BRAZIL_ATLAS',	GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier+5,	GreatWorkSlotType, GreatWorkCount,	'SPECIALIST_MUSICIAN',	SpecialistCount+1,	'TECH_RADIO',		4
+SELECT		'BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_TEXT',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_BRAZIL_ATLAS',	GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier+5,	GreatWorkSlotType, GreatWorkCount,	'SPECIALIST_MUSICIAN',	SpecialistCount+1,	'TECH_RADIO',		2
 FROM Buildings WHERE Type = 'BUILDING_OPERA_HOUSE';
 --------------------------------
 -- Building_BuildingClassYieldChanges
@@ -63,6 +63,12 @@ INSERT INTO Building_YieldChanges
 			(BuildingType,					YieldType,					Yield)
 VALUES		('BUILDING_BRAZIL_SAMBADROME',	'YIELD_CULTURE',	4),
 		('BUILDING_BRAZIL_SAMBADROME',	'YIELD_GOLDEN_AGE_POINTS',	4);
+--------------------------------
+-- Building_GoldenAgeYieldMod
+--------------------------------		
+INSERT INTO Building_GoldenAgeYieldMod
+	(BuildingType, YieldType, Yield)
+VALUES	('BUILDING_STELE', 'YIELD_GOLDEN_AGE_POINTS', 25);
 --==========================================================================================================================	
 
 --==========================================================================================================================
