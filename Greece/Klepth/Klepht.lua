@@ -48,3 +48,14 @@ function PositionCalculator(i1, i2)
 end
 
 GameEvents.CombatEnded.Add(Philhellenism)
+
+function ProxenosGold(iPlayer, iUnit, iUnitType, iX, iY)
+	local pPlayer = Players[iPlayer]
+	local pUnit = pPlayer:GetUnitByID(iUnit)
+
+	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_GREECE_PROXENOS) then
+		pUnit:BaseGold == 3
+	end
+end
+
+GameEvents.UnitCreated.Add(ProxenosGold)
