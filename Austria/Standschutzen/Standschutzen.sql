@@ -36,13 +36,13 @@ VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'FLAVOR_CITY_DEFENSE',	50),
 			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'FLAVOR_GOLD',			10),
 			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'FLAVOR_CULTURE',		6);
 
---------------------------------	
+--------------------------------
 -- Building_YieldChanges
---------------------------------	
+--------------------------------
 INSERT INTO Building_YieldChanges
-			(BuildingType,						YieldType, Yield)
-SELECT		'BUILDING_AUSTRIA_STANDSCHUTZEN',	YieldType, Yield
-FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_ARSENAL';
+			(BuildingType,					YieldType,					Yield)
+VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_CULTURE',	3),
+		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_PRODUCTION',	3);
 --------------------------------	
 -- Building_YieldPerAlly
 --------------------------------	
