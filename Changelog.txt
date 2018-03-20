@@ -8,6 +8,7 @@ v30:
 	- Sambadrome ==> +1 Gold and +2 GAP to Musicians, instead of the guilds themselves
 	- Qila ==> 15% culture from city defense, and wonders in city increase defense by 1.
 - fixed and tweaked:
+	- Standschutzen ==> added base yields (3 prod, 3 culture)
 	- Agora ==> removed bonus yields from olives and wine
 	- Elephant Camp ==> removed production from ivory (now only +1 faith)
 	- Ball Court ==> reduced base culture by 1
