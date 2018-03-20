@@ -1948,7 +1948,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_TEXT">
 			<Text>
-				Sambadrome (Sambódromo in Portuguese language) is the name given to an exhibition place for the Samba schools parades during Carnaval in Brazil. A sambadrome generally consists of tiered spectator viewing areas surrounding a long alley for the schools to parade down.  The parades attract many thousands of Brazilians and foreign tourists each year.
+				A Sambadrome is an exhibition place for the Samba schools parades during Carnaval in Brazil. A sambadrome generally consists of tiered spectator viewing areas surrounding a long alley for the schools to parade down.  The parades attract many thousands of Brazilians and foreign tourists each year.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY">
@@ -1958,7 +1958,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP">
 			<Text>
-				Unique Brazilian replacement for the Opera House. +7% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold. Musicians in City produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +3 [ICON_TOURISM] Tourism at Radio.
+				Unique Brazilian replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold. Musicians in City produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +25% [ICON_GOLDEN_AGE] Golden Age Points during Golden Ages. +3 [ICON_TOURISM] Tourism at Radio.
 			</Text>
 		</Row>
 		
