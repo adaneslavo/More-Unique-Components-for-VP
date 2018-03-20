@@ -23,14 +23,21 @@
 		
 		<!-- Agora -->
 		<!-- Created by adan_eslavo 3/11/2017 -->
+		<Row Tag="TXT_KEY_PROMOTION_GREECE_PROXENOS">
+			<Text>Proxenos</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GREECE_PROXENOS_HELP">
+			<Text>+2 [ICON_GOLD] Gold income from [COLOR_POSITIVE_TEXT]Diplomatic Missions[ENDCOLOR].</Text>
+		</Row>
+		
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA">
 			<Text>Agora</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_HELP">
-			<Text>Unique Ancient Era building. Only the Greeks may build it. Increases [ICON_GOLD] Gold in this city for every Allied City-State. +20% [ICON_PRODUCTION] Production towards Diplomatic Units in City. [ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City owner and the Trade Route owner.</Text>
+			<Text>Unique Ancient Era building. Only the Greeks may build it. +20% [ICON_PRODUCTION] Production towards Diplomatic Units in City, and Diplomatic units trained in this city receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City owner and the Trade Route owner.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_STRATEGY">
-			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora generates Gold for every City-State ally, and boosts the production Diplomatic Units. Use your quick production of diplomatic units to secure a steady stream of gold in all your cities.</Text>
+			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora boosts the production Diplomatic Units. Diplomatic units trained in a city with an Agora gain the Proxenos promotion, which increases Gold income from Diplomatic Missions. Use your quick production of diplomatic units to secure a steady stream of gold for your empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_TEXT">
 			<Text>
