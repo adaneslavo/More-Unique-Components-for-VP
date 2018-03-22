@@ -16,11 +16,11 @@ INSERT INTO	Buildings
 			(Type, Description, Civilopedia, Strategy, Help, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,
 			BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas, GreatWorkYieldType,
 			ThemingBonusHelp, NeverCapture, NukeImmune, NumCityCostMod, GreatWorkSlotType, GreatWorkCount,
-			NationalPopRequired, IlliteracyHappinessChange)
+			NationalPopRequired, IlliteracyHappinessChange, FreePromotion)
 SELECT		'BUILDING_VP_UNIVERSITY_OF_COIMBRA', 'TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA', 'TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_TEXT', 'TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_STRATEGY', 'TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_HELP', GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,
 			BuildingClass, ArtDefineTag, PrereqTech, 2, 'BUILDING_APIG4UC_ATLAS', GreatWorkYieldType,
 			ThemingBonusHelp, NeverCapture, NukeImmune, NumCityCostMod, GreatWorkSlotType, GreatWorkCount,
-			NationalPopRequired, IlliteracyHappinessChange
+			NationalPopRequired, IlliteracyHappinessChange, 'PROMOTION_AGE_OF_DISCOVERY'
 FROM		Buildings
 WHERE		Type = 'BUILDING_OXFORD_UNIVERSITY';
 
@@ -100,7 +100,13 @@ INSERT INTO UnitPromotions
 			CannotBeChosen,		Sound,			PortraitIndex,	IconAtlas,			PediaType,		PediaEntry)
 VALUES		('PROMOTION_AGE_OF_DISCOVERY',				'TXT_KEY_PROMOTION_AGE_OF_DISCOVERY',		'TXT_KEY_PROMOTION_AGE_OF_DISCOVERY_HELP',
 			1,				'AS2D_IF_LEVELUP',	59,				'ABILITY_ATLAS',	'PEDIA_NAVAL',			'TXT_KEY_PROMOTION_AGE_OF_DISCOVERY');
-
+--------------------------------	
+-- UnitPromotions_UnitCombats
+--------------------------------
+INSERT INTO UnitPromotions_UnitCombats
+	(PromotionType, UnitCombatType)
+VALUES	('PROMOTION_AGE_OF_DISCOVERY', 'UNITCOMBAT_NAVALMELEE'),
+	('PROMOTION_AGE_OF_DISCOVERY', 'UNITCOMBAT_NAVALRANGED');
 --------------------------------	
 -- UnitPromotions_YieldFromScouting
 --------------------------------	
