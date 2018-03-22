@@ -37,7 +37,7 @@ VALUES		('PROMOTION_GREECE_PROXENOS',	'TXT_KEY_PROMOTION_GREECE_PROXENOS',	'TXT_
 INSERT INTO UnitPromotions_UnitCombats
 	(PromotionType, UnitCombatType)
 VALUES
-	('PROMOTION_GREECE_PROXENOS', 'UNITCOMBAT_DIPLOMACY'),
+	('PROMOTION_GREECE_PROXENOS', 'UNITCOMBAT_DIPLOMACY');
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
