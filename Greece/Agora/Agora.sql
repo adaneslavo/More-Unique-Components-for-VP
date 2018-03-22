@@ -29,8 +29,8 @@ VALUES	('BUILDING_GREECE_ATLAS', 			256, 		'AgoraPicture_256.dds',			1, 				1),
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-		(Type,				Description,				Help,						CannotBeChosen,	Sound,			PortraitIndex,		IconAtlas,		PediaType,	PediaEntry,				LostWithUpgrade)
-VALUES		('PROMOTION_GREECE_PROXENOS',	'TXT_KEY_PROMOTION_GREECE_PROXENOS',	'TXT_KEY_PROMOTION_GREECE_PROXENOS_HELP',	1,		'AS2D_IF_LEVELUP',	9,			'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_GREECE_PROXENOS',	0);
+		(Type,				Description,				Help,						CannotBeChosen,	Sound,			PortraitIndex,		IconAtlas,		PediaType,	PediaEntry,				LostWithUpgrade, TradeMissionInfluenceModifier)
+VALUES		('PROMOTION_GREECE_PROXENOS',	'TXT_KEY_PROMOTION_GREECE_PROXENOS',	'TXT_KEY_PROMOTION_GREECE_PROXENOS_HELP',	1,		'AS2D_IF_LEVELUP',	9,			'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_GREECE_PROXENOS',	0, 				5);
 ------------------------------	
 -- UnitPromotions_UnitCombats
 ------------------------------		
