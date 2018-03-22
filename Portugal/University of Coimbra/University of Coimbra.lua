@@ -19,15 +19,15 @@ function CoimbraBuiltGrantPromotion(iPlayer, iCity, iBuilding)
 	end
 end
 
-function CoimbraUnitCheckGrantPromotion(iPlayer, iCity, iUnit)
-	local player = Players[iPlayer]
-	local unit = player:GetUnitByID(iUnit)
-	if unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED then
-		for city in player:Cities() do
-			unit:SetHasPromotion(GameInfoTypes.PROMOTION_AGE_OF_DISCOVERY, city:IsHasBuilding(eBuildingCoimbraID))
-		end
-	end
-end
+--function CoimbraUnitCheckGrantPromotion(iPlayer, iCity, iUnit)
+--	local player = Players[iPlayer]
+--	local unit = player:GetUnitByID(iUnit)
+--	if unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED then
+--		for city in player:Cities() do
+--			unit:SetHasPromotion(GameInfoTypes.PROMOTION_AGE_OF_DISCOVERY, city:IsHasBuilding(eBuildingCoimbraID))
+--		end
+--	end
+--end
 
 function OnTileImprovementChangedCoimbraFeitoria(iPlotX, iPlotY, iOwner, iOldImprovement, iNewImprovement, bIsPillaged)
 
