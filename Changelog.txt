@@ -5,14 +5,16 @@
 More Unique Components for Vox Populi changelog:
 v30:
 - Reworked: 
-	- Agora ==> replaced +2 Gold for CS Ally with unique diplomatic promotion
-		    Diplomatic units built in city with Agora receive Proxenos promotion - +2 Gold income from diplomatic missions
+	- Agora ==> replaced +2 Gold for CS Ally with unique diplomatic promotion - Proxenos
+	            Proxenos promotion - +5 influence and +2 Gold income from diplomatic missions
 	- Sambadrome ==> +1 Gold and +2 GAP to Musicians, instead of the guilds themselves
 			10% culture in city
 			25% GAP in city during golden age
 	- Qila ==> 15% culture from city defense 
 		   Wonders in city increase defense by 1.
 - fixed and tweaked:
+	- Goedendag ==> increased CS (20)
+	- University of Coimbra ==> all ships now receive Age of Discovery promotion on construction
 	- Standschutzen ==> added base yields (3 prod, 3 culture)
 	- Agora ==> removed bonus yields from olives and wine
 	- Elephant Camp ==> removed production from ivory (now only +1 faith)
