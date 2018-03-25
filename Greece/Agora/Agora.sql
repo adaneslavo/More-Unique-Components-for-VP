@@ -73,7 +73,7 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_MARKET';
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 				YieldType,			Yield)
 VALUES		('BUILDING_GREECE_AGORA',	'YIELD_CULTURE',	2),
-			('BUILDING_GREECE_AGORA',	'YIELD_GOLD',		2);
+			('BUILDING_GREECE_AGORA',	'YIELD_GOLD',		3);
 ------------------------------	
 -- Building_YieldPerAlly
 ------------------------------
@@ -98,7 +98,7 @@ FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_MARKET';
 ------------------------------		
 INSERT INTO Building_UnitCombatProductionModifiers 	
 			(BuildingType, 				UnitCombatType,			Modifier)
-VALUES		('BUILDING_GREECE_AGORA',	'UNITCOMBAT_DIPLOMACY',	20);
+VALUES		('BUILDING_GREECE_AGORA',	'UNITCOMBAT_DIPLOMACY',	25);
 
 --==========================================================================================================================
 --==========================================================================================================================
