@@ -34,7 +34,7 @@
 			<Text>Agora</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_HELP">
-			<Text>Unique Ancient Era building. Only the Greeks may build it. +20% [ICON_PRODUCTION] Production towards Diplomatic Units in City, and Diplomatic units trained in this city receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City owner and the Trade Route owner.</Text>
+			<Text>Unique Ancient Era building. Only the Greeks may build it. +25% [ICON_PRODUCTION] Production towards Diplomatic Units in City, and Diplomatic units trained in this city receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City owner and the Trade Route owner.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_STRATEGY">
 			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora boosts the production Diplomatic Units. Diplomatic units trained in a city with an Agora gain the Proxenos promotion, which increases influence and gold income from Diplomatic Missions. Use your quick production of diplomatic units to secure a steady stream of gold for your empire.</Text>
