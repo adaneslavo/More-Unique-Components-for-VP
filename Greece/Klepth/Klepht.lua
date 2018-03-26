@@ -49,7 +49,7 @@ end
 
 GameEvents.CombatEnded.Add(Philhellenism)
 
-function ProxenosGold(iPlayer, iUnit, iUnitType, iX, iY)
+function ProxenosGold(iPlayer, iUnit, iUnitType, iX, iY, iDelay, iKiller)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	local pGold = GameInfoTypes.BUILDING_DUMMYGOLD
