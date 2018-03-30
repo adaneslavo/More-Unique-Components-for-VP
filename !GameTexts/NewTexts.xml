@@ -1078,11 +1078,11 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO_HELP">
-			<Text>+33% [ICON_GREAT_WRITER] Great Writer Rate in the City, and all Writers'' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE]+1 [ICON_CULTURE] Culture for every Great Work in City.[NEWLINE][NEWLINE]Whenever a unit gains a level, receive [ICON_CULTURE] Culture in the City, scaling with Unit level.[NEWLINE]Nearby [ICON_RES_DYE] Dye: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILK] Silk: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+33% [ICON_GREAT_WRITER] Great Writer Rate in the City, and all Writers'' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Whenever a unit gains a level, receive [ICON_CULTURE] Culture in the City, scaling with Unit level.[NEWLINE]Nearby [ICON_RES_DYE] Dye: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILK] Silk: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO_STRATEGY">
 			<Text>
-				Unique Zulu replacement for the Amphitheater. Build . Also boosts the City's Great Writer rate and the value of Writers' Guilds, and the Culture of Great Works. Provides Culture in the City whenever a military unit gains a level.
+				Unique Zulu replacement for the Amphitheater. Build . Also boosts the City's Great Writer rate and the value of Writers' Guilds. Provides Culture in the City whenever a military unit gains a level.
 			</Text>
 		</Row>	
 		
