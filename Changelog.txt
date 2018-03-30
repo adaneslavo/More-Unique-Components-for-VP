@@ -16,7 +16,7 @@ v30:
 	- Iziko ==> Removed Culture from Great works. Global effect, so multiple Iziko on empire stacked. Too powerful.
 	- Kabuki ==> reduced culture modifier in city to 5%
 	- Goedendag ==> increased CS (20)
-	- University of Coimbra ==> all ships now receive Age of Discovery promotion on construction
+	- University of Coimbra ==> all ships now get Age of Discovery promotion on construction, switched to gold on explore
 	- Standschutzen ==> added base yields (3 prod, 3 culture)
 	- Agora ==> removed bonus yields from olives and wine
 	- Elephant Camp ==> removed production from ivory (now only +1 faith)
