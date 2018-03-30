@@ -2531,7 +2531,7 @@
 			<Text>Yamato</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_YAMATO_HELP">
-			<Text>A powerful Japanese battleship. Has more range, power, and higher defense than the Battleship. Earns [ICON_GREAT_ADMIRAL] Great Admiral Points on kills.[NEWLINE]Receive 600 [ICON_GOLDEN_AGE] Golden Age Points whenever a Yamato is constructed. Enemies receive 300 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points whenever they destroy a Yamato</Text>
+			<Text>A powerful Japanese battleship. Has more range, power, and higher defense than the Battleship. Earns [ICON_GREAT_ADMIRAL] Great Admiral Points on kills.[NEWLINE]Receive 600 [ICON_GOLDEN_AGE] Golden Age Points whenever a Yamato is constructed. Enemies receive 400 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points whenever they destroy a Yamato</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_YAMATO_STRATEGY">
 			<Text>The Yamato is the unique Battleship replacement for Japan which is significantly more powerful. It has increased range, attack, strength, defense against attack and earns Great Admiral Points on kills. Use them to dominate the seas in the end game, giving you the edge for a Domination Victory.[NEWLINE][NEWLINE]
