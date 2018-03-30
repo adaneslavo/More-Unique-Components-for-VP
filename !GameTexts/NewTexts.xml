@@ -2418,7 +2418,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_STRATEGY">
 			<Text>
-				The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. In addition to the normal bonuses of the Oxford University, it gives all naval units the ability to gain science from exploration, and generates Gold and Production in the city for every Feitoria built in foreign lands.
+				The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. In addition to the normal bonuses of the Oxford University, it gives all naval units the ability to gain gold from exploration, and generates Gold and Production in the city for every Feitoria built in foreign lands.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_HELP">
@@ -2430,7 +2430,7 @@
 			<Text>Age of Discovery</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_AGE_OF_DISCOVERY_HELP">
-			<Text>Gain [ICON_SCIENCE] Science from exploring.</Text>
+			<Text>Gain [ICON_GOLD] Gold from exploring.</Text>
 		</Row>
 		
 		<!-- Waag -->
