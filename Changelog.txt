@@ -24,6 +24,7 @@ v30:
 	- Kampong ==> reduced yields from techs
 	- Horse Archer ==> reduced RCS
 	- Pogost ==> reduced city connection gold on stage 2 (5% on all stages now)
+	- Tersane ==> added 30% production to naval ranged units
 - New icon for Cacador
 
 v29:
