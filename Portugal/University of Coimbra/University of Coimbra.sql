@@ -112,4 +112,4 @@ VALUES	('PROMOTION_AGE_OF_DISCOVERY', 'UNITCOMBAT_NAVALMELEE'),
 --------------------------------	
 INSERT INTO UnitPromotions_YieldFromScouting
 			(PromotionType, YieldType, Yield)
-VALUES		('PROMOTION_AGE_OF_DISCOVERY', 'YIELD_SCIENCE', 1);
+VALUES		('PROMOTION_AGE_OF_DISCOVERY', 'YIELD_GOLD', 1);
