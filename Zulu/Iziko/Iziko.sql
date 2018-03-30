@@ -70,9 +70,9 @@ VALUES		('BUILDING_ZULU_IZIKO', 'BUILDINGCLASS_MONUMENT');
 ------------------------------	
 -- Building_GreatWorkYieldChanges
 ------------------------------	
-INSERT INTO Building_GreatWorkYieldChanges
-			(BuildingType,			YieldType,			Yield)
-VALUES		('BUILDING_ZULU_IZIKO', 'YIELD_CULTURE',	1);
+--INSERT INTO Building_GreatWorkYieldChanges
+--			(BuildingType,			YieldType,			Yield)
+--VALUES		('BUILDING_ZULU_IZIKO', 'YIELD_CULTURE',	1);
 ------------------------------	
 -- Building_Flavors
 ------------------------------		
