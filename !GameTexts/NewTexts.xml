@@ -210,7 +210,7 @@
 		<!-- Cacadores -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES">
-			<Text>Cacadores</Text>
+			<Text>Cacador</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_TEXT">
 			<Text>
@@ -231,7 +231,7 @@
 			<Text>Fighting Cock</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CACADOR_HELP">
-			<Text>When this unit levels up, it gains a Trailblazer or Survivalism promotion.</Text>
+			<Text>When this unit levels up, it gains a free Trailblazer or Survivalism promotion.</Text>
 		</Row>
 		
 		<!-- Buffalo Pound -->
