@@ -49,17 +49,18 @@ end
 
 GameEvents.CombatEnded.Add(Philhellenism)
 
-function ProxenosGold(iPlayer, iUnit, iUnitType, iX, iY, iDelay, iKiller)
-	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
+function ProxenosGold(unitOwnerId, unitId, iUnitType, unitX, unitY, bDelay, eKillingPlayer)
+	local pPlayer = Players[unitOwnerId]
+	local pUnit = pPlayer:GetUnitByID(unitId)
 
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_GREECE_PROXENOS) then
 		local pPlot = Map.GetPlot(pUnit:GetX(), pUnit:GetY())
 		local pCiv = pPlot:GetOwner()
-		local pCapital = pPlayer:GetCapitalCity()
-		local pGold = GameInfoTypes.BUILDING_DUMMYGOLD
+       
+		if pCiv:IsMinorCiv() and eKillingPlayer == null then
+			local pCapital = pPlayer:GetCapitalCity()
+			local pGold = GameInfoTypes.BUILDING_DUMMYGOLD
 
-		if pCiv:IsMinorCiv() then 
 			pCapital:SetNumRealBuilding(pGold, (pCapital:GetNumRealBuilding(pGold) + 2))
 		end
 	end
