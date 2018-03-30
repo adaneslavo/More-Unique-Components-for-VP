@@ -13,6 +13,8 @@ v30:
 	- Qila ==> 15% culture from city defense 
 		   Wonders in city increase defense by 1.
 - fixed and tweaked:
+	- Iziko ==> Removed Culture from Great works. Global effect, so multiple Iziko on empire stacked. Too powerful.
+	- Kabuki ==> reduced culture modifier in city to 5%
 	- Goedendag ==> increased CS (20)
 	- University of Coimbra ==> all ships now receive Age of Discovery promotion on construction
 	- Standschutzen ==> added base yields (3 prod, 3 culture)
@@ -22,6 +24,7 @@ v30:
 	- Kampong ==> reduced yields from techs
 	- Horse Archer ==> reduced RCS
 	- Pogost ==> reduced city connection gold on stage 2 (5% on all stages now)
+- New icon for Cacador
 
 v29:
 - cleaned (Zulu, Huns),
