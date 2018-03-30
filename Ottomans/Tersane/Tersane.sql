@@ -95,7 +95,8 @@ UPDATE Units SET CombatClass = 'UNITCOMBAT_CARGO' WHERE Type = 'UNIT_CARGO_SHIP'
 INSERT INTO Building_UnitCombatProductionModifiers  	
 			(BuildingType, 					UnitCombatType,				Modifier)
 VALUES		('BUILDING_OTTOMANS_TERSANE',	'UNITCOMBAT_CARGO',			50),
-			('BUILDING_OTTOMANS_TERSANE',	'UNITCOMBAT_NAVALMELEE',	30);
+			('BUILDING_OTTOMANS_TERSANE',	'UNITCOMBAT_NAVALMELEE',	30),
+			('BUILDING_OTTOMANS_TERSANE',	'UNITCOMBAT_NAVALRANGED',	30);
 --==========================================================================================================================
 --==========================================================================================================================
 
