@@ -129,6 +129,17 @@ WHERE Tag = 'TXT_KEY_TRAIT_FAITH_FROM_NATURE';
 UPDATE Language_en_US
 SET Text = 'Units ignore terrain costs when on Hills and may cross Mountains. Cities, Roads, and Railroads may be built on Mountains, and Mountains produce [ICON_RESEARCH] Science and [ICON_GOLD] Gold, scaling with Era.'
 WHERE Tag = 'TXT_KEY_TRAIT_GREAT_ANDEAN_ROAD';
+--------------------------------	
+-- Promotion Text
+--------------------------------
+-- Atlatlist
+UPDATE Language_en_US 
+SET Text = 'Poisoned Weapon' 
+WHERE Tag = 'TXT_KEY_PROMOTION_ATLATL_ATTACK';
+
+UPDATE Language_en_US 
+SET Text = '+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength [COLOR_POSITIVE_TEXT]against Wounded Units[ENDCOLOR]' 
+WHERE Tag = 'TXT_KEY_PROMOTION_ATLATL_ATTACK_HELP';
 --==========================================================================================================================
 --==========================================================================================================================
 
