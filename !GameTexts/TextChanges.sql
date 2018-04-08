@@ -40,7 +40,7 @@ WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_CAROLEAN_STRATEGY';
 
 -- Hakkapeliitta
 UPDATE Language_en_US 
-SET Text = 'Unique Swedish Lancer. This Unit is stronger and more effective against wounded units than the Lancer. [ICON_GREAT_GENERAL] Great Generals are generated more quickly by this Unit, and they transfer their movement to [ICON_GREAT_GENERAL] Great Generals when beginning a turn stacked. Is available earlier than the Lancer.'
+SET Text = 'Unique Swedish Lancer. This Unit is stronger and more effective against wounded units than the Lancer. [ICON_GREAT_GENERAL] Great Generals are generated more quickly by this Unit, and they transfer their movement to [ICON_GREAT_GENERAL] Great Generals when beginning a turn stacked.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_SWEDISH_HAKKAPELIITTA';
 
 UPDATE Language_en_US 
