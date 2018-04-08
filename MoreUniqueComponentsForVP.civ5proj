@@ -3584,7 +3584,7 @@ Latest changes: see changelog file.</Description>
     </Content>
     <Content Include="Greece\Klepth\Klepht.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="India\Dhanuraashi\3DModel\EthiopiaCompBow.dds">
       <SubType>Lua</SubType>
