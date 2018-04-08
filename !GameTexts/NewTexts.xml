@@ -231,7 +231,7 @@
 			<Text>Fighting Cock</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CACADOR_HELP">
-			<Text>When this unit levels up, it gains a free Trailblazer or Survivalism promotion.</Text>
+			<Text>Unit gets a free Trailblazer or Survivalism promotion [COLOR_POSITIVE_TEXT]on Levelling[ENDCOLOR].</Text>
 		</Row>
 		
 		<!-- Buffalo Pound -->
@@ -2244,6 +2244,7 @@
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE_HELP">
 			<Text>Unit [COLOR_POSITIVE_TEXT]can convert Barbarian Unit[ENDCOLOR] to your side [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. +5 [ICON_INFLUENCE] Influence to the nearest City-State [COLOR_POSITIVE_TEXT]on Conversion[ENDCOLOR].</Text>
 		</Row>
+		
 		<!-- Sofa -->		
 		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER">
 			<Text>Father of the Horse</Text>
