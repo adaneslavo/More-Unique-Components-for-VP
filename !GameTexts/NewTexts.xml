@@ -1393,11 +1393,11 @@
 		<!-- Landwehr -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR">
-			<Text>Landwehr</Text>
+			<Text>K. K. Landwehr</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_TEXT">
 			<Text>
-				The Austro-Hungarian Dual Monarchy sponsored two separate land armies to defend its Austrian and Hungarian portions. The Landwehr were one of three (or maybe six?) components of the Austrian national defense force between 1868 and 1918, the Austrian counterpart to the Hungarian Honved. Ludwig van Beethoven himself was commissioned to write the marching song for the Bohemian division, now famously known as the Yorkscher Marsch.[NEWLINE[NEWLINE]
+				The Austro-Hungarian Dual Monarchy sponsored two separate land armies to defend its Austrian and Hungarian portions. The Kaiserlich-Königliche Landwehr were one of three (or maybe six?) components of the Austrian national defense force between 1868 and 1918, the Austrian counterpart to the Hungarian Honved. Ludwig van Beethoven himself was commissioned to write the marching song for the Bohemian division, now famously known as the Yorkscher Marsch.[NEWLINE[NEWLINE]
 				While the Hungarian Honved was generously supported by their parliament in Budapest, legislators in Vienna generally failed to do the same for the Landwehr, leaving it a skeletal force with only the appearance of parity. Nationalist interests led to a gradual strengthening and improvement of the Landwehr leading up to the First World War, just in time to see the entire Austro-Hungarian Empire collapse for good.
 			</Text>
 		</Row>
