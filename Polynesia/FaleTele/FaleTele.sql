@@ -68,10 +68,10 @@ VALUES		('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_SCIENCE',	5);
 ------------------------------		
 INSERT INTO Building_YieldFromConstruction	
 			(BuildingType, 						YieldType,			Yield)
-VALUES		('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_GOLD',		2),
-			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_FOOD',		2),
-			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_FAITH',		2),
-			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_CULTURE',	2);
+VALUES		('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_GOLD',		3),
+			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_FOOD',		3),
+			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_FAITH',		3),
+			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_CULTURE',	3);
 ------------------------------	
 -- Building_ImprovementYieldChanges
 ------------------------------		
