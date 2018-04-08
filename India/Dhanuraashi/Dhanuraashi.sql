@@ -152,6 +152,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_ARCHER';
 INSERT INTO Unit_FreePromotions
 			(UnitType, 					PromotionType)
 VALUES		('UNIT_INDIA_DHANURAASHI',	'PROMOTION_UNIT_INDIA_EPIC'),
-			('UNIT_INDIA_DHANURAASHI',	'PROMOTION_UNIT_INDIA_DHANURVIDYA');
+			('UNIT_INDIA_DHANURAASHI',	'PROMOTION_UNIT_INDIA_DHANURVIDYA'),
+			('UNIT_INDIAN_WARELEPHANT',  'PROMOTION_ACCURACY_1');
 --==========================================================================================================================
 --==========================================================================================================================
