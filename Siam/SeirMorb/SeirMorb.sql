@@ -175,3 +175,11 @@ DELETE FROM Unit_FreePromotions	WHERE UnitType = 'UNIT_SIAM_SEIR_MORB' AND Promo
 DELETE FROM Unit_FreePromotions	WHERE UnitType = 'UNIT_SIAM_SEIR_MORB' AND PromotionType = 'PROMOTION_NAVAL_MISFIRE';
 --==========================================================================================================================
 --==========================================================================================================================
+--==========================================================================================================================	
+--Siamese Naresuan's Elephant, give General Stacking bonus promotion.  Increase Cost by 10%
+--==========================================================================================================================
+INSERT INTO Unit_FreePromotions
+			(UnitType, 					PromotionType)
+VALUES		('UNIT_SIAMESE_WARELEPHANT',  'PROMOTION_GENERAL_STACKING');
+
+UPDATE Units SET Cost = '220' WHERE Type = 'UNIT_SIAMESE_WARELEPHANT';

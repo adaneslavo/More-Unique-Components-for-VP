@@ -103,7 +103,7 @@ VALUES		('PROMOTION_UNIT_INDIA_EPIC',	'YIELD_CULTURE',	150);
 --------------------------------	
 INSERT INTO Units 	
 			(Type,						Class,	PrereqTech,			Range,	BaseSightRange, Combat,		RangedCombat,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	BaseLandAirDefense,	Description, 						Civilopedia, 							Strategy, 									Help, 									Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 						UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,			MoveRate)
-SELECT		'UNIT_INDIA_DHANURAASHI',	Class,	'TECH_TRAPPING',	Range,	BaseSightRange, Combat,	RangedCombat+1,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_MACHINERY',	GoodyHutUpgradeUnitClass,	XPValueAttack,	BaseLandAirDefense,	'TXT_KEY_UNIT_INDIA_DHANURAASHI',	'TXT_KEY_UNIT_INDIA_DHANURAASHI_TEXT',	'TXT_KEY_UNIT_INDIA_DHANURAASHI_STRATEGY',	'TXT_KEY_UNIT_INDIA_DHANURAASHI_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_INDIA_DHANURAASHI', 	0,					'UNIT_INDIA_FLAG_ATLAS',	0, 				'UNIT_INDIA_ATLAS',	MoveRate
+SELECT		'UNIT_INDIA_DHANURAASHI',	Class,	'TECH_TRAPPING',	Range,	BaseSightRange, Combat,	RangedCombat+2,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_MACHINERY',	GoodyHutUpgradeUnitClass,	XPValueAttack,	BaseLandAirDefense,	'TXT_KEY_UNIT_INDIA_DHANURAASHI',	'TXT_KEY_UNIT_INDIA_DHANURAASHI_TEXT',	'TXT_KEY_UNIT_INDIA_DHANURAASHI_STRATEGY',	'TXT_KEY_UNIT_INDIA_DHANURAASHI_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_INDIA_DHANURAASHI', 	0,					'UNIT_INDIA_FLAG_ATLAS',	0, 				'UNIT_INDIA_ATLAS',	MoveRate
 FROM Units WHERE Type = 'UNIT_ARCHER';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -152,6 +152,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_ARCHER';
 INSERT INTO Unit_FreePromotions
 			(UnitType, 					PromotionType)
 VALUES		('UNIT_INDIA_DHANURAASHI',	'PROMOTION_UNIT_INDIA_EPIC'),
-			('UNIT_INDIA_DHANURAASHI',	'PROMOTION_UNIT_INDIA_DHANURVIDYA');
+			('UNIT_INDIA_DHANURAASHI',	'PROMOTION_UNIT_INDIA_DHANURVIDYA'),
+			('UNIT_INDIAN_WARELEPHANT',  'PROMOTION_ACCURACY_1');
 --==========================================================================================================================
 --==========================================================================================================================
