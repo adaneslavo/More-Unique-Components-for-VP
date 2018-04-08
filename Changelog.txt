@@ -11,8 +11,11 @@ v30:
 			10% culture in city
 			25% GAP in city during golden age
 	- Qila ==> 15% culture from city defense 
-		   Wonders in city increase defense by 1.
+		   World Wonders in city increase defense by 1.
 - fixed and tweaked:
+	- Fale Tele ==> Increased yields on building completion to 3 of each (from 2)
+	- Dhanurgraha ==> raised RCP to 8
+	- Hakkapeliitta ==> moved back to Metallurgy
 	- Iziko ==> Removed Culture from Great works. Global effect, so multiple Iziko on empire stacked. Too powerful.
 	- Kabuki ==> reduced culture modifier in city to 5%
 	- Goedendag ==> increased CS (20)
@@ -25,7 +28,12 @@ v30:
 	- Horse Archer ==> reduced RCS
 	- Pogost ==> reduced city connection gold on stage 2 (5% on all stages now)
 	- Tersane ==> added 30% production to naval ranged units
-- changed icon for Cacador
+- Base VP Changes:
+	- Impi ==> Bonus vs. Gunpowder carries forward
+	- Naresuan's Elephant ==> Gave General Stacking Promotion
+	- Naga Malla ==> Gave Accuracy I
+	- all unique units now have at least 1 promotion that carries forward.
+- changed icon for Cacador and Etemenanki
 - added mipmaps to Seir Morb's promotion icons,
 - added 16px versions for all new promotion icons.
 
