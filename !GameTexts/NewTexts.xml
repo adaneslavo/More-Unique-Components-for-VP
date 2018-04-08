@@ -268,18 +268,7 @@
 				Chaebol continue to dominate the South Korean economy and social fabric, and some like Samsung and Hyundai have become household names worldwide. Today, Chaebol account for over 80% of South Korea's exports, and the largest single Chaebol accounts for 17% of the entire nation's GDP.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE">
-			<Text>Double Movement on Coast</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE_HELP">
-			<Text>Double Movement on Coast.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_DECK_SPIKES">
-			<Text>Deck Spikes</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_DECK_SPIKES_HELP">
-			<Text>+25% [ICON_STRENGTH] vs Melee Ships.</Text>
-		</Row>		
+		
 		<!-- Chasqui -->		
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI">
 			<Text>Chasqui</Text>
@@ -1159,6 +1148,7 @@
 				Unique Japanese replacement for the Musicians' Guild. Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. All Musician and Civil Servant specialists in this city generate +2 [ICON_PEACE] Faith. +1 [ICON_CULTURE] Culture to all Kabuki Theaters on Empire
 			</Text>
 		</Row>
+		
 		<!-- Kampong -->
 		<!-- Created by pineappledan; incorporated by adan_eslavo on 24/11/2017 -->
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG">
@@ -1203,7 +1193,7 @@
 			<Text>Skillful</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit gets -20% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]until it Fortifies[ENDCOLOR].</Text>
+			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Melee Unit gets -20% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]until it Fortifies[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1">
 			<Text>Fatigue</Text>
@@ -1350,6 +1340,21 @@
 				In battle, Koa warriors were well-versed in many weapons, including the less conventional knuckle-dusters, slings, and garrotes, but were also capable hand-to-hand fighters. More conventional daggers and clubs would occasionally be fitted with shark teeth along their edges, creating devastating serrated weapons called 'Leiomano'. These weapons were used similarly to the obsidian-tipped Macuahuitl of Central America.
 			</Text>
 		</Row>
+
+		<!-- Kobukseon -->
+		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE">
+			<Text>Coastal Patrol</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE_HELP">
+			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Coast[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DECK_SPIKES">
+			<Text>Deck Spikes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DECK_SPIKES_HELP">
+			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Naval Melee Units[ENDCOLOR].</Text>
+		</Row>
+
 		<!-- Laguna -->
 		<Row Tag="TXT_KEY_BUILDING_LAGUNA">
 			<Text>Laguna</Text>
@@ -2548,7 +2553,7 @@
 			<Text>Kantai Kessen</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_YAMATO_HELP">
-			<Text>Unit gains [ICON_CAPITAL] Great Admiral Points [COLOR_POSITIVE_TEXT]on Kills[ENDCOLOR].</Text>
+			<Text>Unit gains [ICON_CAPITAL] Great Admiral Points [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR].</Text>
 		</Row>
 		
 		<!-- Yassa Court -->

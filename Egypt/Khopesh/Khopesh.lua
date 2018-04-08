@@ -13,7 +13,7 @@ function KhopeshFatigue(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAtta
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		
 		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE) then
-			if iDefenderFinalDamage < iDefenderMaxHP then
+			if iDefenderFinalDamage < iDefenderMaxHP and pDefendingUnit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_MELEE then
 				pDefendingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_EGYPT_FATIGUE_1, true)
 			end
 		end
