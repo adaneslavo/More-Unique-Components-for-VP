@@ -1,6 +1,7 @@
 -- Klepht
 -- Author: adan_eslavo
 -- DateCreated: 5/11/2017
+-- 2018-04-08: Infixo, fixed Proxenos ability
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
@@ -49,21 +50,27 @@ end
 
 GameEvents.CombatEnded.Add(Philhellenism)
 
-function ProxenosGold(unitOwnerId, unitId, iUnitType, unitX, unitY, bDelay, eKillingPlayer)
+--------------------------------------------------------------
+-- Proxenos ability is actually related to Agora building, not Klepht unit!
+
+function OnUnitPrekillProxenosGold(unitOwnerId, unitId, iUnitType, unitX, unitY, bDelay, eKillingPlayer)
+	--print("ProxenosGold",unitOwnerId, unitId, iUnitType, unitX, unitY, bDelay, eKillingPlayer)
+	
+	if not (bDelay and eKillingPlayer == -1) then return end -- this check is important as this event is called TWICE; eKillingPlayer is always -1 when bDelay = false, only when bDelay = true it contains a correct player ID
+	
 	local pPlayer = Players[unitOwnerId]
+	if not pPlayer then return end -- assert
 	local pUnit = pPlayer:GetUnitByID(unitId)
+	if not pUnit then return end -- assert
 
 	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_GREECE_PROXENOS) then
-		local pPlot = Map.GetPlot(pUnit:GetX(), pUnit:GetY())
-		local pCiv = pPlot:GetOwner()
-       
-		if pCiv:IsMinorCiv() and eKillingPlayer == null then
+		local pPlot = Map.GetPlot(unitX, unitY)
+		local eCiv = pPlot:GetOwner()
+		if eCiv ~= -1 and Players[eCiv]:IsMinorCiv() then
 			local pCapital = pPlayer:GetCapitalCity()
-			local pGold = GameInfoTypes.BUILDING_DUMMYGOLD
-
-			pCapital:SetNumRealBuilding(pGold, (pCapital:GetNumRealBuilding(pGold) + 2))
+			pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGOLD, pCapital:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGOLD) + 2)
 		end
 	end
 end
 
-GameEvents.UnitPrekill.Add(ProxenosGold)
+GameEvents.UnitPrekill.Add(OnUnitPrekillProxenosGold)
