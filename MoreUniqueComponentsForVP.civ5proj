@@ -556,12 +556,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Venice/Fusta/1.FustaArt.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Venice/Fusta/2.FustaCode.sql</FileName>
+        <FileName>Venice/Fusta/Fusta.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -666,7 +661,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Songhai/Sofa/1.SofaAndMandekalu.sql</FileName>
+        <FileName>Songhai/Sofa/Sofa.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -732,6 +727,16 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Huns/HorseArcher/HorseArcher.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Venice/GreatGalleas/GreatGalleas.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Songhai/MandekaluCavalry/MandekaluCavalry.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -1129,7 +1134,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Sofa</Name>
         <Description>Adds HorseFather promotion to Sofa</Description>
-        <FileName>Songhai/Sofa/2.Sofa.lua</FileName>
+        <FileName>Songhai/Sofa/Sofa.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -2838,6 +2843,10 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Songhai\MandekaluCavalry\MandekaluCavalry.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Songhai\Qadi\Qadi.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2870,67 +2879,67 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\1.SofaAndMandekalu.sql">
+    <Content Include="Songhai\Sofa\Sofa.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\2.Sofa.lua">
+    <Content Include="Songhai\Sofa\Sofa.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\Fx_Triggers_ZuluJavelineer.ftsxml">
+    <Content Include="Songhai\Sofa\3DModel\Fx_Triggers_ZuluJavelineer.ftsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\MaliUnitAlphaAtlas.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\SofaIcon045.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer.fbx">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\SofaIcon064.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\SofaIcon080.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\SofaIcon128.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\SofaIcon256.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer_Template.blend">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\sv_Mali_Unit_Mod.dds">
+    <Content Include="Songhai\Sofa\SofaFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer.dds">
+    <Content Include="Songhai\Sofa\SofaPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer.fbx">
+    <Content Include="Songhai\Sofa\SofaPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer.fxsxml">
+    <Content Include="Songhai\Sofa\SofaPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer.gr2">
+    <Content Include="Songhai\Sofa\SofaPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer_sref.dds">
+    <Content Include="Songhai\Sofa\SofaPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer_Template.blend">
+    <Content Include="Songhai\Sofa\SofaFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5214,91 +5223,79 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Fusta\1.FustaArt.sql">
+    <Content Include="Venice\Fusta\Fusta.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Fusta\2.FustaCode.sql">
+    <Content Include="Venice\Fusta\3DModel\lanternas.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\3DModel\lanternas.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\3DModel\lanternas_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\3DModel\lanternas_dmg_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\3DModel\lanternas_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaPicture_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaPicture_080.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaPicture_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaPicture_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaPicture_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaFlag_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaFlag_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\GreatGalleas\GreatGalleas.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_ByzantiumAlexiusAtlas_128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_ByzantiumAlexiusAtlas_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_ByzantiumAlexiusAtlas_45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_ByzantiumAlexiusAtlas_64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_ByzantiumAlexiusAtlas_80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_LanternasUnitFlag_32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\lanternas.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\lanternas.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\lanternas_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\lanternas_dmg_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\lanternas_sref.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\sv_Lanternas.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Venice\Laguna\Laguna.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Laguna\Laguna128.dds">
+    <Content Include="Venice\Laguna\LagunaPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Laguna\Laguna216.dds">
+    <Content Include="Venice\Laguna\LagunaPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Laguna\Laguna256.dds">
+    <Content Include="Venice\Laguna\LagunaPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Laguna\Laguna40.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Laguna\Laguna45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Laguna\Laguna64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Laguna\Laguna80.dds">
+    <Content Include="Venice\Laguna\LagunaPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5468,8 +5465,10 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Siam\Wat" />
     <Folder Include="Siam\Ramkhamhaeng" />
     <Folder Include="Songhai\" />
+    <Folder Include="Songhai\MandekaluCavalry" />
     <Folder Include="Songhai\Qadi\" />
     <Folder Include="Songhai\Sofa\" />
+    <Folder Include="Songhai\Sofa\3DModel" />
     <Folder Include="Spain\Conquistador" />
     <Folder Include="Aztecs\Eagle" />
     <Folder Include="Aztecs\HueyTeocalli" />
@@ -5591,7 +5590,9 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Ottomans\Tersane" />
     <Folder Include="Venice\" />
     <Folder Include="Venice\Fusta\" />
+    <Folder Include="Venice\Fusta\3DModel" />
     <Folder Include="Venice\Laguna\" />
+    <Folder Include="Venice\GreatGalleas" />
     <Folder Include="Zulu" />
     <Folder Include="Zulu\Indaba" />
     <Folder Include="Zulu\Indaba\3DModel" />

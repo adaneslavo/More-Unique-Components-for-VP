@@ -1,11 +1,8 @@
 INSERT INTO IconTextureAtlases (Atlas, IconSize, Filename, IconsPerRow, IconsPerColumn)
-SELECT 'ATLAS_LAGUNA', 256, 'Laguna256.dds', 1, 1 UNION ALL
-SELECT 'ATLAS_LAGUNA', 214, 'Laguna214.dds', 1, 1 UNION ALL
-SELECT 'ATLAS_LAGUNA', 128, 'Laguna128.dds', 1, 1 UNION ALL
-SELECT 'ATLAS_LAGUNA', 80, 'Laguna80.dds', 1, 1 UNION ALL
-SELECT 'ATLAS_LAGUNA', 64, 'Laguna64.dds', 1, 1 UNION ALL
-SELECT 'ATLAS_LAGUNA', 45, 'Laguna45.dds', 1, 1 UNION ALL
-SELECT 'ATLAS_LAGUNA', 40, 'Laguna40.dds', 1, 1;
+SELECT 'ATLAS_LAGUNA', 256, 'LagunaPicture_256.dds', 1, 1 UNION ALL
+SELECT 'ATLAS_LAGUNA', 128, 'LagunaPicture_128.dds', 1, 1 UNION ALL
+SELECT 'ATLAS_LAGUNA', 64, 'LagunaPicture_064.dds', 1, 1 UNION ALL
+SELECT 'ATLAS_LAGUNA', 45, 'LagunaPicture_045.dds', 1, 1;
 
 
 INSERT INTO Buildings 

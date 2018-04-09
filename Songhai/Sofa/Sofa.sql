@@ -1,3 +1,14 @@
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES	('SONGHAI_UNIT_ATLAS', 			256, 		'SofaPicture_256.dds',		1, 				1),
+		('SONGHAI_UNIT_ATLAS', 			128, 		'SofaPicture_128.dds',		1, 				1),
+		('SONGHAI_UNIT_ATLAS', 			80, 		'SofaPicture_080.dds',		1, 				1),
+		('SONGHAI_UNIT_ATLAS', 			64, 		'SofaPicture_064.dds',		1, 				1),
+		('SONGHAI_UNIT_ATLAS', 			45, 		'SofaPicture_045.dds',		1, 				1),
+		('SONGHAI_UNIT_FLAG_ATLAS', 	32, 		'SofaFlag_032.dds',			1, 				1);
 
 INSERT INTO ArtDefine_UnitInfos (Type,DamageStates,Formation)
 	SELECT	('ART_DEF_UNIT_SOFA'), DamageStates, Formation
@@ -20,7 +31,7 @@ INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, Mate
 	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_CROSSBOWMAN');
 
 INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
-	VALUES	('ART_DEF_UNIT_SOFA', 'Unit', 'MaliUnitAlphaAtlas.dds');
+	VALUES	('ART_DEF_UNIT_SOFA', 'Unit', 'SofaFlag_128.dds');
 
 --------------------------------	
 -- Promotions
@@ -36,7 +47,7 @@ VALUES		('PROMOTION_HORSE_FATHER',				'TXT_KEY_PROMOTION_HORSE_FATHER',				'TXT_
 --------------------------------
 INSERT INTO Units 	
 		(Type, 		Class,	PrereqTech, RangedCombat, 	Range, Special, Combat, Cost, ObsoleteTech, GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain, DefaultUnitAI, Help, Description, 					  Civilopedia, 								Strategy, 		 									Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 						UnitFlagIconOffset,	UnitFlagAtlas,						 PortraitIndex, 	IconAtlas,			 MoveRate)
-SELECT	'UNIT_3UC_SOFA',	Class,	'TECH_CHIVALRY', RangedCombat-2, 	Range, Special, Combat, Cost-30, 'TECH_DYNAMITE', GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain,  DefaultUnitAI,  'TXT_KEY_UNIT_3UC_SOFA_HELP', 'TXT_KEY_UNIT_3UC_SOFA',  'TXT_KEY_UNIT_3UC_SOFA_TEXT',	'TXT_KEY_UNIT_3UC_SOFA_STRATEGY',  	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_SOFA',	0,					'UNIT_ALPHA_SOFA_ATLAS',					  0, 				'SOFA_ATLAS',	 MoveRate
+SELECT	'UNIT_3UC_SOFA',	Class,	'TECH_CHIVALRY', RangedCombat-2, 	Range, Special, Combat, Cost-30, 'TECH_DYNAMITE', GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves, CombatClass, Domain,  DefaultUnitAI,  'TXT_KEY_UNIT_3UC_SOFA_HELP', 'TXT_KEY_UNIT_3UC_SOFA',  'TXT_KEY_UNIT_3UC_SOFA_TEXT',	'TXT_KEY_UNIT_3UC_SOFA_STRATEGY',  	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_SOFA',	0,					'SONGHAI_UNIT_FLAG_ATLAS',					  0, 				'SONGHAI_UNIT_ATLAS',	 MoveRate
 FROM Units WHERE Type = 'UNIT_CROSSBOWMAN';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -92,35 +103,3 @@ VALUES	('UNIT_3UC_SOFA',  'PROMOTION_MEDIC'),
 INSERT INTO Civilization_UnitClassOverrides 
 		(CivilizationType, 					UnitClassType, 			UnitType)
 VALUES	('CIVILIZATION_SONGHAI',	'UNITCLASS_CROSSBOWMAN',	'UNIT_3UC_SOFA');
-
---MANDEKALU CAVALRY CHANGES
-
---==========================================================================================================================	
--- CIVILIZATIONS
---==========================================================================================================================	
---------------------------------	
--- Civilization_UnitClassOverrides 
---------------------------------
-INSERT INTO Civilization_UnitClassOverrides 
-			(CivilizationType, 			UnitClassType, 			UnitType)
-VALUES		('CIVILIZATION_SONGHAI', 	'UNITCLASS_KNIGHT',	'UNIT_SONGHAI_MUSLIMCAVALRY');
---------------------------------	
--- Civilization_UnitClassOverrides Deletion 
---------------------------------
-DELETE FROM Civilization_UnitClassOverrides WHERE CivilizationType = 'CIVILIZATION_SONGHAI' AND UnitClassType = 'UNITCLASS_HORSEMAN';
---==========================================================================================================================	
-
---==========================================================================================================================	
--- UNITS
---==========================================================================================================================	
---------------------------------	
--- Units
---------------------------------
-UPDATE Units
-SET Cost = 200, Combat = 25, FaithCost = 300, Class = 'UNITCLASS_KNIGHT', PrereqTech = 'TECH_CHIVALRY', ObsoleteTech = 'TECH_COMBUSTION', GoodyHutUpgradeUnitClass = 'UNITCLASS_LANCER'
-WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY';
-
---------------------------------	
--- Unit_ClassUpgrades
---------------------------------
-UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_LANCER' WHERE UnitType = 'UNIT_SONGHAI_MUSLIMCAVALRY';
