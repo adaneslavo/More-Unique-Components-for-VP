@@ -14,6 +14,8 @@ v30:
 		   World Wonders in city increase defense by 1.
 - fixed and tweaked:
 	- Fale Tele ==> Increased yields on building completion to 3 of each (from 2)
+	- Khopesh ==> Fatigue malus increased to 30% and restricted to non-mounted melee units
+	- Pairidaeza ==> removed all gold bonuses (base building and on all guilds)
 	- Dhanurgraha ==> raised RCP to 8
 	- Hakkapeliitta ==> moved back to Metallurgy
 	- Iziko ==> Removed Culture from Great works. Global effect, so multiple Iziko on empire stacked. Too powerful.
