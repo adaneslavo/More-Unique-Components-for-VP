@@ -883,7 +883,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP">
 			<Text>
-				Unique replacement for the Grand Temple. Only the Aztec may build it.[NEWLINE]Comes with a free Temple. A [ICON_GOLDEN_AGE] Golden Age begins. Reduces [ICON_HAPPINESS_3] Religious Unrest. All Temples gain +2 [ICON_PEACE] Faith and [ICON_CULTURE] Culture, Barracks get +2 [ICON_CULTURE] Culture, and Floating Gardens get +2 [ICON_FOOD] Food. Whenever you enter a Golden Age, permanently gain +3 [ICON_FOOD], +3 [ICON_PEACE] Faith, and +3 XP for units trained in the city (max +30 each).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				Unique replacement for the Grand Temple. Only the Aztec may build it.[NEWLINE]Comes with a free Temple. A [ICON_GOLDEN_AGE] Golden Age begins. [NEWLINE]Reduces [ICON_HAPPINESS_3] Religious Unrest. All Temples gain +2 [ICON_PEACE] Faith and [ICON_CULTURE] Culture, Barracks get +2 [ICON_CULTURE] Culture, and Floating Gardens get +2 [ICON_FOOD] Food. [NEWLINE]Whenever you enter a Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith, and +3 XP for units trained in the city (max +30 each).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 
@@ -1187,19 +1187,19 @@
 			<Text>The Khopesh is the unique Egyptian replacement for the Spearman. It's a strong early unit that has an edge in direct combat. However, unlike the Spearman it replaces, it does not have a combat bonus against mounted units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_HELP">
-			<Text>Strong, front-line land Unit of the Ancient Era. Only Egypt may build it. Deals increased damage vs heavily damaged units, and has the Skillful promotion, which temporarily reduces the combat power of a unit that it attacks.</Text>
+			<Text>Strong, front-line land Unit of the Ancient Era. Only Egypt may build it. Deals increased damage vs heavily damaged units, and has the Skillful promotion, which temporarily reduces the combat power of any non-mounted melee unit that it attacks.[NEWLINE]Does not have a bonus against mounted units</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE">
 			<Text>Skillful</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Melee Unit gets -20% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]until it Fortifies[ENDCOLOR].</Text>
+			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Melee Unit gets -30% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]until it Fortifies[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1">
 			<Text>Fatigue</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1_HELP">
-			<Text>-20% [ICON_STRENGTH] Combat Strength. Penalty is removed [COLOR_POSITIVE_TEXT]after Fortifying[ENDCOLOR].</Text>
+			<Text>-30% [ICON_STRENGTH] Combat Strength. Penalty is removed [COLOR_POSITIVE_TEXT]after Fortifying[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY">
 			<Text>Mercy</Text>
@@ -1403,12 +1403,12 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_STRATEGY">
 			<Text>
-				The Landwehr is the backbone of the Industrial-era Austrian army. It excels in defending in owned territory and the territory of allied city-states.
+				The Landwehr is the backbone of the Industrial-era Austrian army. It excels in defending in owned territory and the territory of allied city-states. Each Landwehr can in the empire can also act as a passive source of culture if garrisoned in a city, fort or citadel.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_HELP">
 			<Text>
-				The Landwehr is the Austrian replacement for the Fusilier. It gets a combat bonus when fighting in territory owned by Austria and allied city-states.
+				The Landwehr is the Austrian replacement for the Fusilier. It gets a combat bonus when fighting in territory owned by Austria and allied city-states.[NEWLINE]Generates culture every turn if stationed in a friendly fort, citadel or city.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE">
@@ -1582,7 +1582,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
-			<Text>Available at Theology, the Monolithic Church can be built on [ICON_RES_STONE] Stone or [ICON_RES_MARBLE] Marble Resources, or on Unfeatured Hills, but not next to each other. Improves sources of [ICON_RES_STONE] Stone and [ICON_RES_MARBLE] Marble. Each Monolithic Church yields [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture and [ICON_FAITH] Faith. Monolithic Churches are improved by the completion of Social Policy Trees instead of by Technologies</Text>
+			<Text>Available at Theology, the Monolithic Church can be built on [ICON_RES_STONE] Stone or on Unfeatured Hills, but not next to each other. Improves sources of [ICON_RES_STONE] Stone. Each Monolithic Church yields [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture and [ICON_FAITH] Faith. Monolithic Churches are improved by the completion of Social Policy Trees instead of by Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH">
 			<Text>Construct a [LINK=IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH]Monolithic Church[\LINK]</Text>
@@ -1616,7 +1616,18 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
 			<Text>
-				An Oppidum is a large defended settlement associated with the late La Tene culture. These fortified villages were often built in naturally protected areas and full of circular constructions. In times of conflict, the people who lived in open fields moved to these strategically located compounds to ensure their safety. Oppida could also have other purposes such as control of territory or safeguarding of crops. The most famous oppidum was Alesia, the site of the battle between Julius Caesar and Vercingetorix and the final defeat of the Gauls, ending of Gallic independence in France and Belgium.
+				An Oppidum is a large defended settlement associated with the late La Tene culture. These fortified villages were often built in naturally protected areas and full of circular constructions. In times of conflict, the people who lived in open fields moved to these strategically located compounds to ensure their safety. Oppida could also have other purposes such as control of territory or safeguarding of crops. The most famous oppidum was Alesia, the site of the battle between Julius Caesar and Vercingetorix and the final defeat of the Gauls, ending of Gallic independence in France and Belgium.[NEWLINE][NEWLINE]
+				
+				Oppidum improve the yields of adjacent, pre-industrial improvements:[NEWLINE]
+				[ICON_BULLET]+1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production to Farms[NEWLINE]
+				[ICON_BULLET]+1 [ICON_FOOD] Food and +1 [ICON_PEACE] Faith to Camps[NEWLINE]
+				[ICON_BULLET]+1 [ICON_PRODUCTION] Production and +1 [ICON_PEACE] Faith  to Pastures[NEWLINE]
+				[ICON_BULLET]+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold to Mines[NEWLINE]
+				[ICON_BULLET]+1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science to Quarries[NEWLINE]
+				[ICON_BULLET]+1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture to Plantations[NEWLINE]
+				[ICON_BULLET]+1 [ICON_FOOD] Food and +1 [ICON_RESEARCH] Science to Lumbermills[NEWLINE]
+				[ICON_BULLET]+1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture to Logging Camps[NEWLINE]
+				[ICON_BULLET]+1 [ICON_GOLD] Gold and +1 [ICON_PEACE] Faith to Fishing Boats[NEWLINE]
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM">
@@ -1635,10 +1646,10 @@
 			<Text>Paradise Garden</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>Unique Persian replacement for the Garden.[NEWLINE]Increases the rate of [ICON_GREAT_PEOPLE] Great People generation in City. Receive 30 [ICON_CULTURE] Culture as an instant boost in City when a [ICON_GOLDEN_AGE] Golden Age begins. +1 [ICON_CULTURE] Culture and [ICON_GOLD] Gold for every guild on Empire.</Text>
+			<Text>Unique Persian replacement for the Garden.[NEWLINE]Increases the rate of [ICON_GREAT_PEOPLE] Great People generation in City. Receive 30 [ICON_CULTURE] Culture as an instant boost in City when a [ICON_GOLDEN_AGE] Golden Age begins. +1 [ICON_CULTURE] Culture for every guild on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
-			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, the Pairidaeza provides culture and gold to all guilds in the Empire. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city, even if you do not have a guild.</Text>
+			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, the Pairidaeza provides Culture to all guilds in the Empire. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_TEXT">
 			<Text>
@@ -2510,10 +2521,10 @@
 			<Text>Xiafan Guanjun</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_HELP">
-			<Text>Sturdy Renaissance era ranged naval unit. Only China may build it.</Text>
+			<Text>Sturdy Renaissance era ranged naval unit. Only China may build it. Generates [ICON_INFLUENCE] Influence every turn when stationed in a City-State's borders. Has the [COLOR_POSITIVE_TEXT]Broadside[ENDCOLOR] promotion for free. Can enter rival territory.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_STRATEGY">
-			<Text>The Xiafan Guanjun is a Chinese unique unit. It is much sturdier than the Frigate it replaces, is available earlier, and has the Supply promotion. When stationed in a city-state territory, gain 2 Influence with that city-state per turn.</Text>
+			<Text>The Xiafan Guanjun is a Chinese unique unit. It is much sturdier than the Frigate it replaces, and is available earlier. You can use your Xiafan Guanjun to passively bring city-states under your sway, or take advantage of its bonus against cities and dominate coastal empires.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_TEXT">
 			<Text>
