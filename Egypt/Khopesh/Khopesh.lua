@@ -31,7 +31,7 @@ function RemoveFatigue(iPlayer)
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 					local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 				
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_LIGHT_GREY]-20% [COMBAT_STRENGTH] Fatigue[ENDCOLOR]", 1)
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_LIGHT_GREY]-30% [COMBAT_STRENGTH] Fatigue[ENDCOLOR]", 1)
 				end
 			end
 		end
