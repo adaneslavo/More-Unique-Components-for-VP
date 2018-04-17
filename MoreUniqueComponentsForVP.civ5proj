@@ -681,12 +681,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Korea/Chaebol/2.ChaebolCodet.sql</FileName>
+        <FileName>Korea/Chaebol/Chaebol.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Korea/TurtleShip/1.TurtleShipCode.sql</FileName>
+        <FileName>Korea/TurtleShip/TurtleShip.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -2346,7 +2346,7 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\2.ChaebolCodet.sql">
+    <Content Include="Korea\Chaebol\Chaebol.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2354,31 +2354,23 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_128.dds">
+    <Content Include="Korea\Chaebol\ChaebolPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_256.dds">
+    <Content Include="Korea\Chaebol\ChaebolPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_32.dds">
+    <Content Include="Korea\Chaebol\ChaebolPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_45.dds">
+    <Content Include="Korea\Chaebol\ChaebolPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Korea\TurtleShip\1.TurtleShipCode.sql">
+    <Content Include="Korea\TurtleShip\TurtleShip.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

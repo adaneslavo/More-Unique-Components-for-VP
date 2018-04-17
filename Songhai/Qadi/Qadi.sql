@@ -6,7 +6,7 @@
 --------------------------------		
 INSERT INTO Civilization_BuildingClassOverrides 
 			(CivilizationType, 			BuildingClassType, 			BuildingType)
-VALUES		('CIVILIZATION_SONGHAI',	'BUILDINGCLASS_COURTHOUSE',	'BUILDING_QADI_COURT');
+VALUES		('CIVILIZATION_SONGHAI',	'BUILDINGCLASS_COURTHOUSE',	'BUILDING_SONGHAI_QADI_COURT');
 --==========================================================================================================================	
 
 --==========================================================================================================================
@@ -31,29 +31,29 @@ VALUES		('BUILDING_QADI_ATLAS', 		256, 		'QadiPicture_256.dds',		1, 				1),
 ------------------------------	
 INSERT INTO Buildings 	
 			(Type,					BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	BuildAnywhere,	NumCityCostMod,	NoOccupiedUnhappiness,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	Help,											Description,							Civilopedia,									Strategy,											IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_QADI_COURT',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	1,				NumCityCostMod,	1,						DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange-25,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_QADI_COURT_HELP',	'TXT_KEY_BUILDING_QADI_COURT', 'TXT_KEY_BUILDING_QADI_COURT_TEXT',	'TXT_KEY_BUILDING_QADI_COURT_STRATEGY',	'BUILDING_QADI_ATLAS',	0
+SELECT		'BUILDING_SONGHAI_QADI_COURT',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	1,				NumCityCostMod,	1,						DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange-25,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_SONGHAI_QADI_COURT_HELP',	'TXT_KEY_BUILDING_SONGHAI_QADI_COURT', 'TXT_KEY_BUILDING_SONGHAI_QADI_COURT_TEXT',	'TXT_KEY_BUILDING_SONGHAI_QADI_COURT_STRATEGY',	'BUILDING_QADI_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_COURTHOUSE';	
 ------------------------------	
 -- Building_Flavors
 ------------------------------		
 INSERT INTO Building_Flavors 	
 			(BuildingType, 			FlavorType,				Flavor)
-VALUES		('BUILDING_QADI_COURT',	'FLAVOR_GOLD',			10),
-			('BUILDING_QADI_COURT',	'FLAVOR_HAPPINESS',		60),
-			('BUILDING_QADI_COURT',	'FLAVOR_CULTURE',		30),
-			('BUILDING_QADI_COURT',	'FLAVOR_RELIGION',		20);
+VALUES		('BUILDING_SONGHAI_QADI_COURT',	'FLAVOR_GOLD',			10),
+			('BUILDING_SONGHAI_QADI_COURT',	'FLAVOR_HAPPINESS',		60),
+			('BUILDING_SONGHAI_QADI_COURT',	'FLAVOR_CULTURE',		30),
+			('BUILDING_SONGHAI_QADI_COURT',	'FLAVOR_RELIGION',		20);
 ------------------------------	
 -- Building_ClassesNeededInCity
 ------------------------------		
 INSERT INTO Building_ClassesNeededInCity 	
 			(BuildingType, 			BuildingClassType)
-SELECT		'BUILDING_QADI_COURT',	BuildingClassType
+SELECT		'BUILDING_SONGHAI_QADI_COURT',	BuildingClassType
 FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_COURTHOUSE';
 ------------------------------	
 -- Building_YieldChanges
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
-VALUES		('BUILDING_QADI_COURT',	'YIELD_FAITH',		2);
+VALUES		('BUILDING_SONGHAI_QADI_COURT',	'YIELD_FAITH',		2);
 --==========================================================================================================================
 --==========================================================================================================================

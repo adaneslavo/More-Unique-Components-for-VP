@@ -39,11 +39,13 @@ function OnEraSetAnarchyAndWLTKD(eTeam, eEra, bFirst)
 					
 			if pCapital:IsHasBuilding(eBuildingHippodrome) then
 				if not pPlayer:IsAnarchy() then
-					local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
 					local iWLTKDLength = math.floor(10 * fGameSpeedModifier) + 1
 						
 					pPlayer:ChangeAnarchyNumTurns(2)
-					pCapital:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
+					
+					for city in pPlayer:Cities() do
+						city:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
+					end
 						
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 						pPlayer:AddNotification(0, 'Your Empire entered new Era, causing a massive riot across your Empire. Your Empire falls into 1 turn of [ICON_RESISTANCE] Resistance, after which your [ICON_CITIZEN] Citizens will [ICON_HAPPINESS_1] love their king for '..(iWLTKDLength - 1)..' turns.', 'Hooliganism in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())

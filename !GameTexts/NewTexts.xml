@@ -253,16 +253,16 @@
 			</Text>
 		</Row>
 		<!-- Chaebol -->		
-		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL">
+		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL">
 			<Text>Chaebol</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_HELP">
+		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL_HELP">
 			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 10%.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +2% [ICON_GREAT_PEOPLE] Great Person Points (GPP) for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol in the Empire.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL_STRATEGY">
 			<Text>The Chaebol is the unique Stock Exchange replacement for South Korea. In addition to the normal bonuses of a Stock Exchange, the Chaebol boosts the production of Factories in Cities where the Chaebol is built. Chaebol produce additional Gold and increase the production of Great People for every International Trade Route the Empire controls. In addition, every Chaebol increases the Gold, Culture and Science of every other Chaebol in the empire; the more you build, the more they produce.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_PEDIA">
+		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL_PEDIA">
 			<Text>
 				Chaebol are powerful multi-national corporations originating in South Korea. Beginning as family businesses, generous government investment allowed the Chaebols to quickly industrialize South Korea's agricultural society, in what was to be called the miracle of the Han River. The Chaebol became central to the South Korean economy and came to represent the invincibility of South Korea’s industrial might until the financial crashes the late 20th century, which saw several important Chaebol declare bankruptcy.[NEWLINE][NEWLINE]
 				Chaebol continue to dominate the South Korean economy and social fabric, and some like Samsung and Hyundai have become household names worldwide. Today, Chaebol account for over 80% of South Korea's exports, and the largest single Chaebol accounts for 17% of the entire nation's GDP.
@@ -1851,16 +1851,16 @@
 		</Row>
 		
 		<!-- Qadi -->
-		<Row Tag="TXT_KEY_BUILDING_QADI_COURT">
+		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT">
 			<Text>Qadi Court</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_QADI_COURT_HELP">
+		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_HELP">
 			<Text>Unique Classical Era Building which can be built in non-occupied cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City.[NEWLINE][NEWLINE]Provides [ICON_GOLD] Gold for every [ICON_CITIZEN] not of the City's majority religion. 10% of [ICON_PRODUCTION] Production in the City is converted to [ICON_CULTURE] Culture. Reduces [ICON_HAPPINESS_3] Religious Tension in the City. Only Songhai may build it.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_QADI_COURT_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_STRATEGY">
 			<Text>The Qadi Court is a Songhai unique building that replaces the Courthouse. In addition to The normal bonuses of a Courthouse, the Qadi Court also yields [ICON_PEACE] Faith and reduces religious unrest in the city. Every citizen not following the city's majority religion provides extra Gold, and 10% of Production in the city is converted to Culture. The Qadi Court can be built in any City.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_QADI_COURT_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_TEXT">
 			<Text>
 				During his rule, Askia Muhammad centralized the administration of the Songhai Empire and established an efficient bureaucracy which was responsible for, among other things, tax collection and the administration of justice. Judges, or ‘Qadis’ were appointed directly by the king and dealt with common-law misdemeanors according to Sharia law, found in the precepts of the Qur'an and the hadiths. These ministers worked at the local level and were positioned in important trading towns such as Timbuktu and Djenne.[NEWLINE][NEWLINE]
 				The Songhai’s Criminal justice was based entirely on Islamic principles, especially during the rule of Askia Muhammad. Results of a trial were announced by the town crier and punishment for most trivial crimes consisted of confiscation of merchandise or imprisonment.

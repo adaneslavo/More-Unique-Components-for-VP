@@ -6,19 +6,17 @@
 --------------------------------		
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 		BuildingClassType, 				BuildingType)
-VALUES	('CIVILIZATION_KOREA',	'BUILDINGCLASS_STOCK_EXCHANGE',	'BUILDING_C15_SKOREA_CHAEBOL');
+VALUES	('CIVILIZATION_KOREA',	'BUILDINGCLASS_STOCK_EXCHANGE',	'BUILDING_KOREA_CHAEBOL');
 
 
 
 
 INSERT INTO IconTextureAtlases 
 			(Atlas, 				IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('CHAEBOL_ATLAS', 		256, 		'Chaebol_Isolated_256.dds',		1, 				1),
-			('CHAEBOL_ATLAS', 		128, 		'Chaebol_Isolated_128.dds',		1, 				1),
-			('CHAEBOL_ATLAS', 		80, 		'Chaebol_Isolated_80.dds',		1, 				1),
-			('CHAEBOL_ATLAS', 		64, 		'Chaebol_Isolated_64.dds',		1, 				1),
-			('CHAEBOL_ATLAS', 		45, 		'Chaebol_Isolated_45.dds',		1, 				1),
-			('CHAEBOL_ATLAS', 		32, 		'Chaebol_Isolated_32.dds',		1,				1);
+VALUES		('CHAEBOL_ATLAS', 		256, 		'ChaebolPicture_256.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		128, 		'ChaebolPicture_128.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		64, 		'ChaebolPicture_064.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		45, 		'ChaebolPicture_045.dds',		1, 				1);
 
 --==========================================================================================================================	
 
@@ -30,24 +28,24 @@ VALUES		('CHAEBOL_ATLAS', 		256, 		'Chaebol_Isolated_256.dds',		1, 				1),
 ------------------------------	
 INSERT INTO Buildings 	
 			(Type,							BuildingClass,	GoldMaintenance,	Cost, FaithCost,	UnlockedByBelief,	EnhancedYieldTech,	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, IlliteracyHappinessChange,		GreatPeopleRateChange,	SpecialistType,			SpecialistCount,	MinAreaSize, ConquestProb, HurryCostModifier,	Help,											Description,							Civilopedia,									Strategy,											IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_C15_SKOREA_CHAEBOL',	BuildingClass,	GoldMaintenance,	Cost, FaithCost,	UnlockedByBelief,	EnhancedYieldTech,	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, IlliteracyHappinessChange,	GreatPeopleRateChange,	SpecialistType,			SpecialistCount,	MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_HELP',	'TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL', 'TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_PEDIA',	'TXT_KEY_BUILDING_C15_SKOREA_CHAEBOL_STRATEGY',	'CHAEBOL_ATLAS',	0
+SELECT		'BUILDING_KOREA_CHAEBOL',	BuildingClass,	GoldMaintenance,	Cost, FaithCost,	UnlockedByBelief,	EnhancedYieldTech,	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, IlliteracyHappinessChange,	GreatPeopleRateChange,	SpecialistType,			SpecialistCount,	MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_KOREA_CHAEBOL_HELP',	'TXT_KEY_BUILDING_KOREA_CHAEBOL', 'TXT_KEY_BUILDING_KOREA_CHAEBOL_PEDIA',	'TXT_KEY_BUILDING_KOREA_CHAEBOL_STRATEGY',	'CHAEBOL_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_STOCK_EXCHANGE';	
 ------------------------------	
 -- Building_Flavors
 ------------------------------		
 INSERT INTO Building_Flavors 	
 			(BuildingType, 						FlavorType,					Flavor)
-VALUES		('BUILDING_C15_SKOREA_CHAEBOL',	'FLAVOR_GOLD',					90),
-			('BUILDING_C15_SKOREA_CHAEBOL',	'FLAVOR_GREAT_PEOPLE',			10),
-			('BUILDING_C15_SKOREA_CHAEBOL',	'FLAVOR_PRODUCTION',			50),
-			('BUILDING_C15_SKOREA_CHAEBOL',	'FLAVOR_CULTURE',				30),
-			('BUILDING_C15_SKOREA_CHAEBOL',	'FLAVOR_SCIENCE',				30);
+VALUES		('BUILDING_KOREA_CHAEBOL',	'FLAVOR_GOLD',					90),
+			('BUILDING_KOREA_CHAEBOL',	'FLAVOR_GREAT_PEOPLE',			10),
+			('BUILDING_KOREA_CHAEBOL',	'FLAVOR_PRODUCTION',			50),
+			('BUILDING_KOREA_CHAEBOL',	'FLAVOR_CULTURE',				30),
+			('BUILDING_KOREA_CHAEBOL',	'FLAVOR_SCIENCE',				30);
 ------------------------------	
 -- Building_ClassesNeededInCity
 ------------------------------		
 INSERT INTO Building_ClassesNeededInCity 	
 		(BuildingType, 					BuildingClassType)
-SELECT	'BUILDING_C15_SKOREA_CHAEBOL',	BuildingClassType
+SELECT	'BUILDING_KOREA_CHAEBOL',	BuildingClassType
 FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_STOCK_EXCHANGE';
 
 
@@ -56,8 +54,8 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_STOCK_EXCHANGE'
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
-VALUES		('BUILDING_C15_SKOREA_CHAEBOL',	'YIELD_GOLD',		5),
-			('BUILDING_C15_SKOREA_CHAEBOL',	'YIELD_PRODUCTION',	3);
+VALUES		('BUILDING_KOREA_CHAEBOL',	'YIELD_GOLD',		5),
+			('BUILDING_KOREA_CHAEBOL',	'YIELD_PRODUCTION',	3);
 
 
 ------------------------------	
@@ -65,20 +63,20 @@ VALUES		('BUILDING_C15_SKOREA_CHAEBOL',	'YIELD_GOLD',		5),
 ------------------------------
 INSERT INTO Building_YieldChangesPerPop 	
 			(BuildingType,						YieldType,	Yield)
-SELECT		'BUILDING_C15_SKOREA_CHAEBOL',		YieldType,	Yield
+SELECT		'BUILDING_KOREA_CHAEBOL',		YieldType,	Yield
 FROM Building_YieldChangesPerPop WHERE BuildingType = 'BUILDING_STOCK_EXCHANGE';
 
 INSERT INTO Building_HurryModifiersLocal
 			(BuildingType,					HurryType, HurryCostModifier)
-SELECT		'BUILDING_C15_SKOREA_CHAEBOL',	HurryType, HurryCostModifier
+SELECT		'BUILDING_KOREA_CHAEBOL',	HurryType, HurryCostModifier
 FROM Building_HurryModifiersLocal WHERE BuildingType = 'BUILDING_STOCK_EXCHANGE';
 
 INSERT INTO Building_BuildingClassLocalYieldChanges
 			(BuildingType,					BuildingClassType,			YieldType,			YieldChange)
-VALUES		('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_FACTORY',	'YIELD_PRODUCTION', 3);
+VALUES		('BUILDING_KOREA_CHAEBOL', 'BUILDINGCLASS_FACTORY',	'YIELD_PRODUCTION', 3);
 
 INSERT INTO Building_BuildingClassYieldChanges 
 			(BuildingType,					BuildingClassType,				YieldType,			YieldChange)
-VALUES		('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_GOLD', 		2),
-			('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_CULTURE', 	2),
-			('BUILDING_C15_SKOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_SCIENCE', 	2);
+VALUES		('BUILDING_KOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_GOLD', 		2),
+			('BUILDING_KOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_CULTURE', 	2),
+			('BUILDING_KOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_SCIENCE', 	2);
