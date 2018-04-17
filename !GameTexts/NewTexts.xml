@@ -850,7 +850,7 @@
 			<Text>Double [ICON_ARROW_RIGHT] Movement and +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on Desert[ENDCOLOR].</Text>
 		</Row>
 
-		<!-- Hippodorme -->
+		<!-- Hippodrome -->
 		<!-- Created by adan_eslavo 2/12/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME">
 			<Text>Hippodrome</Text>
@@ -858,7 +858,7 @@
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
 			<Text>
 				Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion.[NEWLINE] 
-				At the beginning of every new Era, 1 turn of Resistance occurs across the Empire, and a "We Love the King Day" is triggered in the capital.[NEWLINE]
+				At the beginning of every new Era, 1 turn of Resistance occurs, followed by "We Love the King Day" is triggered across the Empire.[NEWLINE]
 				All Arenas gain +4 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
@@ -2328,7 +2328,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP">
 			<Text>
-				+2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per city-state ally. +20% [ICON_PRODUCTION] Production toward land military units.[NEWLINE][NEWLINE]Increases [ICON_STRENGTH] City Defense by 25 and Hit Points by 200. Military Units supplied by this City's population increased by 10%.
+				+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture per city-state ally. +30% [ICON_PRODUCTION] Production toward Gunpowder Units, and +30% [ICON_PRODUCTION] Production to all other Land Military Units.[NEWLINE][NEWLINE]Increases [ICON_STRENGTH] City Defense by 25 and Hit Points by 200. Military Units supplied by this City's population increased by 10%.
 			</Text>
 		</Row>
 				
