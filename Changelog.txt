@@ -23,6 +23,8 @@ v30:
 	- Goedendag ==> increased CS (20)
 	- University of Coimbra ==> all ships now get Age of Discovery promotion on construction, switched to gold on explore
 	- Standschutzen ==> added base yields (3 prod, 3 culture)
+			==> Changed per CS bonus to 1 production and culture (was 2 gold and 1 culture)
+			==> Increased production of gun units to 30%, reduced the others to 15%. Gave gun units +15XP
 	- Agora ==> removed bonus yields from olives and wine
 	- Elephant Camp ==> removed production from ivory (now only +1 faith)
 	- Ball Court ==> reduced base culture by 1
@@ -30,6 +32,8 @@ v30:
 	- Horse Archer ==> reduced RCS
 	- Pogost ==> reduced city connection gold on stage 2 (5% on all stages now)
 	- Tersane ==> added 30% production to naval ranged units
+	- Landwehr ==> renamed Yorkscher marsch to Regimentsmarsch, reduced culture to 1 per turn and removed gamespeed scaling
+	- Hippodrome ==> WLTKD on era change now on empire. 
 - Base VP Changes:
 	- Impi ==> Bonus vs. Gunpowder carries forward
 	- Naresuan's Elephant ==> Gave General Stacking Promotion
