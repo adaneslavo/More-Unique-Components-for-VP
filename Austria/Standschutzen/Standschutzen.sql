@@ -48,19 +48,26 @@ VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_CULTURE',	3),
 --------------------------------	
 INSERT INTO Building_YieldPerAlly
 			(BuildingType,						YieldType,			Yield)
-VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_GOLD',		2),
+VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_PRODUCTION',		1),
 			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_CULTURE',	1);
 --------------------------------	
 -- Building_UnitCombatProductionModifiers
 --------------------------------	
 INSERT INTO Building_UnitCombatProductionModifiers
 			(BuildingType,						UnitCombatType,			Modifier)
-VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_RECON',		20),
-			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_ARCHER',	20),
-			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_MOUNTED',	20),
-			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_MELEE',		20),
-			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_SIEGE',		20),
-			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_GUN',		20),
-			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_ARMOR',		20);
+VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_RECON',		15),
+			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_ARCHER',	15),
+			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_MOUNTED',	15),
+			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_MELEE',		15),
+			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_SIEGE',		15),
+			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_GUN',		30),
+			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_ARMOR',		15);
+--------------------------------	
+-- Building_UnitCombatProductionModifiers
+--------------------------------
+INSERT INTO Building_UnitCombatFreeExperiences
+			(BuildingType,						UnitCombatType,			Experience)
+VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_GUN',		15),
+
 --==========================================================================================================================
 --==========================================================================================================================
