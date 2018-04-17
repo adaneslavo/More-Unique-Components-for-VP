@@ -666,7 +666,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Japan/Yamato/1.Yamato.sql</FileName>
+        <FileName>Japan/Yamato/Yamato.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1111,7 +1111,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Yamato</Name>
         <Description>Adds yields on build and kill for Yamato</Description>
-        <FileName>Japan/Yamato/2.Yamato.lua</FileName>
+        <FileName>Japan/Yamato/Yamato.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -2246,19 +2246,19 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\JapGuilds128.dds">
+    <Content Include="Japan\Kabuki\JapaneseGuildsPictures_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\JapGuilds256.dds">
+    <Content Include="Japan\Kabuki\JapaneseGuildsPictures_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\JapGuilds45.dds">
+    <Content Include="Japan\Kabuki\JapaneseGuildsPictures_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\JapGuilds64.dds">
+    <Content Include="Japan\Kabuki\JapaneseGuildsPictures_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -2270,79 +2270,71 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\Kabuki128.dds">
+    <Content Include="Japan\Kabuki\KabukiPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\Kabuki256.dds">
+    <Content Include="Japan\Kabuki\KabukiPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\Kabuki32.dds">
+    <Content Include="Japan\Kabuki\KabukiPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\Kabuki45.dds">
+    <Content Include="Japan\Kabuki\KabukiPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\Kabuki64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Kabuki\Kabuki80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\1.Yamato.sql">
+    <Content Include="Japan\Yamato\Yamato.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\2.Yamato.lua">
+    <Content Include="Japan\Yamato\Yamato.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\JFD_JapanTojoAtlas_128.dds">
+    <Content Include="Japan\Yamato\3DModel\Yamato_Class.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\JFD_JapanTojoAtlas_256.dds">
+    <Content Include="Japan\Yamato\3DModel\Yamato_Class.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\JFD_JapanTojoAtlas_45.dds">
+    <Content Include="Japan\Yamato\3DModel\Yamato_Class.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\JFD_JapanTojoAtlas_64.dds">
+    <Content Include="Japan\Yamato\3DModel\Yamato_Class_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\JFD_JapanTojoAtlas_80.dds">
+    <Content Include="Japan\Yamato\YamatoPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\sv_Yamato.dds">
+    <Content Include="Japan\Yamato\YamatoPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\UnitFlagYamatoAtlas_32.dds">
+    <Content Include="Japan\Yamato\YamatoPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\Yamato_Class.dds">
+    <Content Include="Japan\Yamato\YamatoPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\Yamato_Class.fxsxml">
+    <Content Include="Japan\Yamato\YamatoPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\Yamato_Class.gr2">
+    <Content Include="Japan\Yamato\YamatoFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\Yamato_Class_gloss.dds">
+    <Content Include="Japan\Yamato\YamatoFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5420,6 +5412,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Japan\" />
     <Folder Include="Japan\Kabuki\" />
     <Folder Include="Japan\Yamato\" />
+    <Folder Include="Japan\Yamato\3DModel" />
     <Folder Include="Korea\" />
     <Folder Include="Korea\Chaebol\" />
     <Folder Include="Korea\TurtleShip\" />

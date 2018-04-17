@@ -1083,74 +1083,74 @@
 		</Row>	
 		
 		<!-- Kabuki & the Japanese Guilds-->
-		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_KABUKI">
 			<Text>Kabuki Theater</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_KABUKI_TEXT">
 			<Text>
 				Kabuki is a classical Japanese dance-drama known for the stylization of its drama and for the elaborate make-up worn by some of its performers. The art form was created in 1603 when Izumo no Okuni, a miko of Izumo-taisha, began performing a new style of dance drama in the dry riverbeds of Kyoto. Despite many the upheaval of Japans modernization, Kabuki remains the most popular of the traditional styles of Japanese drama, and has helped renew interest in other forms of traditional Japanese art.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_KABUKI_STRATEGY">
 			<Text>
 				The Kabuki is the unique Japanese replacement for the Opera House. In addition to the bonuses of an Opera House, it boosts the effect of all [ICON_CULTURE] Cultural Specialists in the City. On construction, All guilds in the city are replaced with a unique Japanese guild.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_KABUKI_HELP">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_KABUKI_HELP">
 			<Text>
 				Unique Japanese replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN] Musician, [ICON_GREAT_ARTIST] Artist, and [ICON_GREAT_WRITER] Writer Specialists in the City produce 33% more [ICON_GREAT_PEOPLE] Great Person Points.[NEWLINE][NEWLINE]All Writers', Artists' and Musicians' Guilds in this city are replaced with powerful unique guild equivalents. 
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_MONOGATARI">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI">
 			<Text>Monogatari Guild</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_MONOGATARI_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI_TEXT">
 			<Text>
 				Monogatari are a classical form of Japanses literature which gained popularity during the 10th century Heian period. Monogatari were traditionally epics and semi-religious tales, but later works included secular stories of courtly life, including Genji Monogatari, widely regarded as the first novel. Many of the most prolific and successful writers of Monogatari were noble women.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_MONOGATARI_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI_STRATEGY">
 			<Text>
 				The Monogatari Guild is the unique Japanese replacement for the Writers' Guild. It generates Great Writers more quickly than the Writers' Guild, gives Gold for Writer specialists in the City, and provides Production for every Kabuki Theater in the Empire.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_MONOGATARI_HELP">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI_HELP">
 			<Text>
 				Unique Japanese replacement for the Writers' Guild. Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. All Writer specialists in this city generate +2 [ICON_GOLD] Gold. +1 [ICON_PRODUCTION] Production to all Kabuki Theaters on Empire
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_UKIYOE">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE">
 			<Text>Ukiyo-e Guild</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_UKIYOE_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE_TEXT">
 			<Text>
 				Ukiyo-e is a style of Japanese painting on woodblocks which flourished in the 17th century. The production of ukiyo-e was a collaborative affair, often with a separate painter who crafted the designs, a woodcarver who crafted the woodblock, and a printer who inked and reproduced the artwork. The striking angles, shapes and colours of Ukiyo-e would leave a lasting impression on Western art, informing the impressionist and modernist movements.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_UKIYOE_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE_STRATEGY">
 			<Text>
 				The Ukiyo-e Guild is the unique Japanese replacement for the Artists' Guild. It generates Great Artists more quickly than the Artists' Guild, gives Science for Artist specialists in the City, and provides Tourism for every Kabuki Theater in the Empire.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_UKIYOE_HELP">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE_HELP">
 			<Text>
 				Unique Japanese replacement for the Artists' Guild. Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. All Artist specialists in this city generate +2 [ICON_RESEARCH] Science. +1 [ICON_TOURISM] Tourism to all Kabuki Theaters on Empire
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_GAGAKU">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU">
 			<Text>Gagaku Guild</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_GAGAKU_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU_TEXT">
 			<Text>
 				Gagaku is the oldest existing form of orchestral music in the world. The style was brought in from mainland China in the 6th century, and reached its peak in the 10th century's imperial court. Modern ensembles consist of three wind instruments, three percussion instruments, and a supporting string instrument. 
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_GAGAKU_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU_STRATEGY">
 			<Text>
 				The Gagaku Guild is the unique Japanese replacement for the Musicians' Guild. It generates Great Musicians more quickly than the Musicians' Guild, gives Faith for Musician and Civil Servant specialists in the City, and provides Culture for every Kabuki Theater in the Empire
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_GAGAKU_HELP">
+		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU_HELP">
 			<Text>
 				Unique Japanese replacement for the Musicians' Guild. Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. All Musician and Civil Servant specialists in this city generate +2 [ICON_PEACE] Faith. +1 [ICON_CULTURE] Culture to all Kabuki Theaters on Empire
 			</Text>
@@ -2551,27 +2551,27 @@
 		<!-- Created by Blue Ghost-->
 
 		<!-- Yamato -->
-		<Row Tag="TXT_KEY_UNIT_YAMATO">
+		<Row Tag="TXT_KEY_UNIT_JAPAN_YAMATO">
 			<Text>Yamato</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_YAMATO_HELP">
+		<Row Tag="TXT_KEY_UNIT_JAPAN_YAMATO_HELP">
 			<Text>A powerful Japanese battleship. Has more range, power, and higher defense than the Battleship. Earns [ICON_GREAT_ADMIRAL] Great Admiral Points on kills.[NEWLINE]Receive 600 [ICON_GOLDEN_AGE] Golden Age Points whenever a Yamato is constructed. Enemies receive 400 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points whenever they destroy a Yamato</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_YAMATO_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_JAPAN_YAMATO_STRATEGY">
 			<Text>The Yamato is the unique Battleship replacement for Japan which is significantly more powerful. It has increased range, attack, strength, defense against attack and earns Great Admiral Points on kills. Use them to dominate the seas in the end game, giving you the edge for a Domination Victory.[NEWLINE][NEWLINE]
 			Each Yamato gives points towards a Golden Age when constructed, but sinking a Yamato rewards enemies with Golden Age points and Culture, so don't leave your Yamatos without an escort.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_YAMATO_TEXT">
+		<Row Tag="TXT_KEY_UNIT_JAPAN_YAMATO_TEXT">
 			<Text>
 				The Yamato-class battleships were the crown jewel of the Imperial Japanese Navy during World War II. Displacing 73,000 tonnes at full load, the vessels were the heaviest and most powerfully armed battleships ever constructed. Each Yamato carried nine 18.1 inch guns, the largest naval artillery ever fitted to a warship, each capable of firing 3,000 lb. shells over 26 miles. Two battleships of the class, Yamato and Musashi, were completed while a third, Shinano, was converted to an aircraft carrier during construction. All were sunk by American forces during WWII.[NEWLINE][NEWLINE]
 			
 				Due to their size, speed, and power, The Yamato-class visibly embodied Japan's determination and readiness to defend its interests against the western powers, especially the United States. One of the reasons that the warship may have such significance in Japanese culture is that the word "Yamato" was often used as a poetic name for Japan itself. Thus, the construction and destruction of the Yamato battleships became symbolic for the rise and fall of Japanese imperial aspirations.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_YAMATO">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_JAPAN_YAMATO">
 			<Text>Kantai Kessen</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_YAMATO_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_JAPAN_YAMATO_HELP">
 			<Text>Unit gains [ICON_CAPITAL] Great Admiral Points [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR].</Text>
 		</Row>
 		

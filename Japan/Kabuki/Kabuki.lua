@@ -2,13 +2,13 @@
 -- Author: Pineappledan, adan_eslavo
 -- DateCreated: 10/02/2017
 --------------------------------------------------------------
-local eBuildingKabuki = GameInfoTypes.BUILDING_VP_KABUKI
+local eBuildingKabuki = GameInfoTypes.BUILDING_JAPAN_KABUKI
 local eBuildingWritersGuild = GameInfoTypes.BUILDING_WRITERS_GUILD
 local eBuildingArtistsGuild = GameInfoTypes.BUILDING_ARTISTS_GUILD
 local eBuildingMusiciansGuild = GameInfoTypes.BUILDING_MUSICIANS_GUILD
-local eBuildingMonogatari = GameInfoTypes.BUILDING_MONOGATARI
-local eBuildingUkiyoe = GameInfoTypes.BUILDING_UKIYOE
-local eBuildingGagaku = GameInfoTypes.BUILDING_GAGAKU
+local eBuildingMonogatari = GameInfoTypes.BUILDING_JAPAN_MONOGATARI
+local eBuildingUkiyoe = GameInfoTypes.BUILDING_JAPAN_UKIYOE
+local eBuildingGagaku = GameInfoTypes.BUILDING_JAPAN_GAGAKU
 
 -- upgrade all guilds on Kabuki construction
 function OnConstructionUpgradeGuilds(iPlayer, iCity, iBuilding)
