@@ -856,10 +856,17 @@
 			<Text>Hippodrome</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
-			<Text>Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion. All Arenas gain +4 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
+			<Text>
+				Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion.[NEWLINE] 
+				At the beginning of every new Era, 1 turn of Resistance occurs across the Empire, and a "We Love the King Day" is triggered in the capital.[NEWLINE]
+				All Arenas gain +4 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
-			<Text>The Hippodrome is the Byzantine Unique Wonder, replacing the Circus Maximus. In comparison to the Circus Maximus, The Hippodrome greatly increases Gold and Culture yields during "We Love the King Days" and begins a "We Love the King Day" on completion. All Arenas in the empire receive gold, while circuses receive Culture, and Horses get both.</Text>
+			<Text>
+				The Hippodrome is the Byzantine Unique Wonder, replacing the Circus Maximus. In comparison to the Circus Maximus, The Hippodrome greatly increases Gold and Culture yields during "We Love the King Days" and begins a "We Love the King Day" on completion. All Arenas in the empire receive gold, while circuses receive Culture, and Horses get both.[NEWLINE][NEWLINE]
+				Be careful to time when your transition into a new era comes. A turn of resistance could is a small price to pay for a free "We Love the King Day", but it could slow down a crucial wonder or come during a war.
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_TEXT">
 			<Text>The Hippodrome was a chariot racing track and the beating heart of Byzantine social and political life. Located immediately next to the palace, the track was built by Constantine shortly after moving his capital to the city. The track was U-shaped, with ten monuments lining the center. Though slightly smaller in footprint than the Circus Maximus in Rome, the Hippodrome was adorned with art and treasures from all corners of the empire.[NEWLINE][NEWLINE]
@@ -1393,7 +1400,7 @@
 		<!-- Landwehr -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR">
-			<Text>K. K. Landwehr</Text>
+			<Text>Landwehr</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_TEXT">
 			<Text>
@@ -1428,7 +1435,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE">
-			<Text>Yorkscher Marsche</Text>
+			<Text>Regimentsmarsche</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP">
 			<Text>
