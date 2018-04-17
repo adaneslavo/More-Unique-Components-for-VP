@@ -656,11 +656,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Songhai/Qadi/SonghaiQadiCourt.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Songhai/Sofa/Sofa.sql</FileName>
       </Action>
       <Action>
@@ -2855,29 +2850,21 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi128.dds">
+    <Content Include="Songhai\Qadi\QadiPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi256.dds">
+    <Content Include="Songhai\Qadi\QadiPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi256.xcf">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Songhai\Qadi\Qadi45.dds">
+    <Content Include="Songhai\Qadi\QadiPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi64.dds">
+    <Content Include="Songhai\Qadi\QadiPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Songhai\Qadi\SonghaiQadiCourt.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Songhai\Sofa\Sofa.sql">
       <SubType>Lua</SubType>
