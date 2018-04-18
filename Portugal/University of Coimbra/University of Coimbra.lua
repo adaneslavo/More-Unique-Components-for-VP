@@ -3,7 +3,7 @@
 -- 2018-02-26 Updated by Infixo (feitoria removed/pillaged)
 ----------------------------------------------------------------------------
 
-local eBuildingCoimbraID = GameInfoTypes.BUILDING_VP_UNIVERSITY_OF_COIMBRA
+local eBuildingCoimbraID = GameInfoTypes.BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA
 local eBuildingDummyGoldID = GameInfoTypes.BUILDING_DUMMYGOLD
 local eBuildingDummyProductionID = GameInfoTypes.BUILDING_DUMMYPRODUCTION
 local eImprovementFeitoria = GameInfoTypes.IMPROVEMENT_FEITORIA
@@ -14,7 +14,7 @@ function CoimbraBuiltGrantPromotion(iPlayer, iCity, iBuilding)
 	local pCity = pPlayer:GetCityByID(iCity)
 	if iBuilding == eBuildingCoimbraID then
 		for unit in pPlayer:Units() do
-			unit:SetHasPromotion(GameInfoTypes.PROMOTION_AGE_OF_DISCOVERY, (unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED))
+			unit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY, (unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED))
 		end
 	end
 end
@@ -24,7 +24,7 @@ end
 --	local unit = player:GetUnitByID(iUnit)
 --	if unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED then
 --		for city in player:Cities() do
---			unit:SetHasPromotion(GameInfoTypes.PROMOTION_AGE_OF_DISCOVERY, city:IsHasBuilding(eBuildingCoimbraID))
+--			unit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY, city:IsHasBuilding(eBuildingCoimbraID))
 --		end
 --	end
 --end

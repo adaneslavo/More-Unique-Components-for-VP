@@ -74,7 +74,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_GATLINGGUN';
 
 INSERT INTO		Unit_FreePromotions
 				(UnitType,			PromotionType)
-VALUES			('UNIT_PORTUGUESE_CACADORES', 'PROMOTION_CACADOR');
+VALUES			('UNIT_PORTUGUESE_CACADORES', 'PROMOTION_UNIT_PORTUGAL_CACADOR');
 
 --------------------------------	
 -- UnitPromotions
@@ -82,15 +82,15 @@ VALUES			('UNIT_PORTUGUESE_CACADORES', 'PROMOTION_CACADOR');
 INSERT INTO UnitPromotions
 			(Type,										Description,								Help,						
 			CannotBeChosen,		Sound,			PortraitIndex,	IconAtlas,			PediaType,		PediaEntry)
-VALUES		('PROMOTION_CACADOR',				'TXT_KEY_PROMOTION_CACADOR',		'TXT_KEY_PROMOTION_CACADOR_HELP',
-			1,				'AS2D_IF_LEVELUP',	46,				'PROMOTION_ATLAS',	'PEDIA_MELEE',			'TXT_KEY_PROMOTION_CACADOR');
+VALUES		('PROMOTION_UNIT_PORTUGAL_CACADOR',				'TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR',		'TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR_HELP',
+			1,				'AS2D_IF_LEVELUP',	46,				'PROMOTION_ATLAS',	'PEDIA_MELEE',			'TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR');
 
 
 
 
 INSERT OR REPLACE INTO ArtDefine_StrategicView 
 			(StrategicViewType, 				TileType,	Asset)
-VALUES		('ART_DEF_UNIT_4UC_CACADOR', 	'Unit', 	'sv_3UC_CACADOR.dds');
+VALUES		('ART_DEF_UNIT_4UC_CACADOR', 	'Unit', 	'CacadoresFlag_128.dds');
 --==========================================================================================================================
 -- ArtDefine_UnitInfos
 --==========================================================================================================================	
@@ -131,9 +131,9 @@ FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_RIFLEMAN');
 --==========================================================================================================================	
 INSERT OR REPLACE INTO IconTextureAtlases 
 			(Atlas, 									IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
-VALUES		('4UC_CACADOR_ATLAS', 						256, 		'4CACADOR256.dds',					1, 				1),
-			('4UC_CACADOR_ATLAS', 						128, 		'4CACADOR128.dds',					1, 				1),
-			('4UC_CACADOR_ATLAS', 						80, 		'4CACADOR80.dds',					1, 				1),
-			('4UC_CACADOR_ATLAS', 						45, 		'4CACADOR45.dds',					1, 				1),
-			('4UC_CACADOR_ATLAS', 						64, 		'4CACADOR64.dds',					1, 				1),
-			('UNITS_4UC_CACADOR_FLAG_ATLAS', 		32, 		'Unit_CACADOR_Flag_4UC_32.dds',				1, 				1);
+VALUES		('4UC_CACADOR_ATLAS', 						256, 		'CacadoresPicture_256.dds',					1, 				1),
+			('4UC_CACADOR_ATLAS', 						128, 		'CacadoresPicture_128.dds',					1, 				1),
+			('4UC_CACADOR_ATLAS', 						80, 		'CacadoresPicture_080.dds',					1, 				1),
+			('4UC_CACADOR_ATLAS', 						45, 		'CacadoresPicture_045.dds',					1, 				1),
+			('4UC_CACADOR_ATLAS', 						64, 		'CacadoresPicture_064.dds',					1, 				1),
+			('UNITS_4UC_CACADOR_FLAG_ATLAS', 		32, 		'CacadoresFlag_032.dds',				1, 				1);

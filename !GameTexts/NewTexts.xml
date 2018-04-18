@@ -23,10 +23,10 @@
 		
 		<!-- Agora -->
 		<!-- Created by adan_eslavo 3/11/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_GREECE_PROXENOS">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GREECE_PROXENOS">
 			<Text>Proxenos</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_GREECE_PROXENOS_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_GREECE_PROXENOS_HELP">
 			<Text>+5 [ICON_INFLUENCE] Influence and +2 [ICON_GOLD] Gold in Capital on completion of [COLOR_POSITIVE_TEXT]Diplomatic Mission[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA">
@@ -227,10 +227,10 @@
 				Ranged unit of the Industrial era. Only Portugal may build it. Whenever it levels up, it gains a random promotion from the Trailblazer or Survivalism lines.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CACADOR">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR">
 			<Text>Fighting Cock</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CACADOR_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR_HELP">
 			<Text>Unit gets a free Trailblazer or Survivalism promotion [COLOR_POSITIVE_TEXT]on Levelling[ENDCOLOR].</Text>
 		</Row>
 		
@@ -635,13 +635,13 @@
 		</Row>
 		
 		<!-- Fusta -->
-		<Row Tag="TXT_KEY_UNIT_JFD_LANTERNAS">
+		<Row Tag="TXT_KEY_UNIT_VENICE_FUSTA">
 			<Text>Fusta</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_JFD_LANTERNAS">
 			<Text>A small and fast compliment to the Galleas, rather than a replacement. Weaker, but cheaper, and does not contribute to unit maintenance. May withdraw before melee attacks.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_JFD_LANTERNAS_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_VENICE_FUSTA_STRATEGY">
 			<Text>
 				Fusta are quick, cheap, and do not cost any unit maintenance. Use these ships in combination with the bigger Galleass to monitor and protect your shipping lanes without causing an undue burden on your economy.
 			</Text>
@@ -1349,30 +1349,30 @@
 		</Row>
 
 		<!-- Kobukseon -->
-		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_KOREA_COAST_MOVE">
 			<Text>Coastal Patrol</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_COAST_MOVE_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_KOREA_COAST_MOVE_HELP">
 			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Coast[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_DECK_SPIKES">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_KOREA_DECK_SPIKES">
 			<Text>Deck Spikes</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_DECK_SPIKES_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_KOREA_DECK_SPIKES_HELP">
 			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Naval Melee Units[ENDCOLOR].</Text>
 		</Row>
 
 		<!-- Laguna -->
-		<Row Tag="TXT_KEY_BUILDING_LAGUNA">
+		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA">
 			<Text>Laguna</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_LAGUNA_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_TEXT">
 			<Text>When a [ICON_INTERNATIONAL_TRADE] Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from Coast and Ocean Tiles, +2 [ICON_FOOD] Food and +2 [ICON_PRODUCTION] Production to Atolls and +1 [ICON_PRODUCTION] Production from Sea Resources worked by this City. Sea Trade Routes gain +75% Range and +4 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_GOLD] Gold to Rialto District, +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science to Venetian Arsenale, and +1 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism to Murano Glassworks.[NEWLINE][NEWLINE]+15% [ICON_PRODUCTION] Production of Naval units, and increases Military Units supplied by this City's population by 10%. [NEWLINE][NEWLINE]City must be built on the Coast.[NEWLINE]Requires a Lighthouse in the City.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_LAGUNA_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_STRATEGY">
 			<Text>The Laguna is a Medieval-era building, requiring a Lighthouse. It improves the range and [ICON_GOLD] Gold yield of sea trade routes, and boosts the value of sea tiles and resources. The Laguna also increases the [ICON_PRODUCTION] Production of Naval units by 15%, and increases Military Units supplied by this City''s population by 10%. The Laguna additionally provide bonus yields to Murano Glassworks, Rialto District, and Arsenale di Venezia.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_LAGUNA_PEDIA">
+		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_PEDIA">
 			<Text>Laguna (eng. Lagoons) are shallow bodies of salt water separated from a larger sea by barrier islands or reefs. Venice itself is situated on the bank of a large lagoon, artificially maintained and enlarged by the dredging of the Venetian canals. The Venice Lagoon is also the largest wetland in the Mediterranean, offering protection as well as a rich source of food to its inhabitants.</Text>
 		</Row>
 		
@@ -2264,28 +2264,28 @@
 		</Row>
 		
 		<!-- Sofa -->		
-		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_SONGHAI_HORSE_FATHER">
 			<Text>Father of the Horse</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_SONGHAI_HORSE_FATHER_HELP">
 			<Text>+15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to all Friendly Mounted Units within 2 tiles[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_EFFECT">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_SONGHAI_HORSE_FATHER_EFFECT">
 			<Text>Nearby Sofa</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_HORSE_FATHER_EFFECT_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_SONGHAI_HORSE_FATHER_EFFECT_HELP">
 			<Text>+15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from Sofa[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_3UC_SOFA">
+		<Row Tag="TXT_KEY_UNIT_SONGHAI_SOFA">
 			<Text>Sofa</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_3UC_SOFA_HELP">
+		<Row Tag="TXT_KEY_UNIT_SONGHAI_SOFA_HELP">
 			<Text>Skirmisher Unit excelling at supporting your Cavalry. Cheaper and available earlier than the Crossbowman. Has the [COLOR_POSITIVE_TEXT]Medic I[ENDCOLOR] promotion. Only Songhai may build it.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_3UC_SOFA_STRATEGY">
+		<Row Tag="TXT_KEY_UNIT_SONGHAI_SOFA_STRATEGY">
 			<Text>The Sofa is a Songhai unique unit, replacing the Crossbowman. It serves as an excellent support unit starting with the Medic I promotion and a 15% Damage increase to all Mounted units within 2 tiles. The Sofa has lower offensive strength, but is relatively cheap to train and available earlier.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_3UC_SOFA_TEXT">
+		<Row Tag="TXT_KEY_UNIT_SONGHAI_SOFA_TEXT">
 			<Text>
 				Sofa is a Mandinka term for slave soldiers who served in the army of the various Empires of West Africa. Originally, the Sofas were horse grooms of the soldier-nobility, the Farari, but their role slowly changed to become skirmishers and soldiers in their own right. Sofas were recruited from "jonow" (slaves) captured in battle or bought from afar. The institution of slavery in the Mali and Songhai Empires heavily rewarded loyalty, and jonow could rise to civil or military positions of prominence. Jonow became part of their master's clan, and were often freed after a certain amount of years.[NEWLINE][NEWLINE]
 				Sofas were equipped with two quivers, and their bow was small by European standards, so sofas employed deadly poisons and fired in arcs to give their arrows strength.
@@ -2432,28 +2432,28 @@
 
 		<!-- University of Coimbra -->
 		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA">
+		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA">
 			<Text>University of Coimbra</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_TEXT">
 			<Text>
 				Opened in 1290, the University of Coimbra is one of the oldest centers of higher learning in the world, and the oldest in Portugal. The university was founded by King Dinis as the Lisbon Estudo Geral, originally with faculties of Arts, Law, Canon Law and Medicine. As the only university in Portugal for 350 years, the University of Coimbra became a focus of educational, political, and social influence in Portugal.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_STRATEGY">
+		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_STRATEGY">
 			<Text>
 				The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. In addition to the normal bonuses of the Oxford University, it gives all naval units the ability to gain gold from exploration, and generates Gold and Production in the city for every Feitoria built in foreign lands.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VP_UNIVERSITY_OF_COIMBRA_HELP">
+		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_HELP">
 			<Text>
 				Unique Portuguese replacement for the Oxford University. Gain a free University, and a Great Scientist appears near the City. +75 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Contains 2 slots for Great Works of Writing. Reduces [ICON_HAPPINESS_3] Illiteracy. +2 [ICON_GOLD] Gold to Universities. All naval units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] promotion. Whenever a Feitoria is built in city-state territory, permanently gain +2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE][NEWLINE]+3 [ICON_RESEARCH] Science if Themed.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_AGE_OF_DISCOVERY">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY">
 			<Text>Age of Discovery</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_AGE_OF_DISCOVERY_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY_HELP">
 			<Text>Gain [ICON_GOLD] Gold from exploring.</Text>
 		</Row>
 		

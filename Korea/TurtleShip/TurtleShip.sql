@@ -14,16 +14,16 @@ VALUES		('CIVILIZATION_KOREA', 	'UNITCLASS_CARAVEL',	'UNIT_KOREAN_TURTLE_SHIP');
 --==========================================================================================================================
 INSERT INTO UnitPromotions
 			(Type,						Description,						Help,									Sound,				PortraitIndex,	CannotBeChosen,	IconAtlas,			PediaType,			PediaEntry)
-VALUES		('PROMOTION_COAST_MOVE',	'TXT_KEY_PROMOTION_COAST_MOVE',		'TXT_KEY_PROMOTION_COAST_MOVE_HELP',	'AS2D_IF_LEVELUP',	44,				1,				'PROMOTION_ATLAS', 'PEDIA_ATTRIBUTES',	'TXT_KEY_PROMOTION_COAST_MOVE'),
-			('PROMOTION_DECK_SPIKES',	'TXT_KEY_PROMOTION_DECK_SPIKES',	'TXT_KEY_PROMOTION_DECK_SPIKES_HELP',	'AS2D_IF_LEVELUP',	25,				1,				'PROMOTION_ATLAS', 'PEDIA_ATTRIBUTES',	'TXT_KEY_PROMOTION_DECK_SPIKES');
+VALUES		('PROMOTION_UNIT_KOREA_COAST_MOVE',	'TXT_KEY_PROMOTION_UNIT_KOREA_COAST_MOVE',		'TXT_KEY_PROMOTION_UNIT_KOREA_COAST_MOVE_HELP',	'AS2D_IF_LEVELUP',	44,				1,				'PROMOTION_ATLAS', 'PEDIA_ATTRIBUTES',	'TXT_KEY_PROMOTION_UNIT_KOREA_COAST_MOVE'),
+			('PROMOTION_UNIT_KOREA_DECK_SPIKES',	'TXT_KEY_PROMOTION_UNIT_KOREA_DECK_SPIKES',	'TXT_KEY_PROMOTION_UNIT_KOREA_DECK_SPIKES_HELP',	'AS2D_IF_LEVELUP',	25,				1,				'PROMOTION_ATLAS', 'PEDIA_ATTRIBUTES',	'TXT_KEY_PROMOTION_UNIT_KOREA_DECK_SPIKES');
 
 INSERT INTO UnitPromotions_Terrains
 			(PromotionType,				TerrainType,		DoubleMove)
-VALUES		('PROMOTION_COAST_MOVE',	'TERRAIN_COAST',	1);
+VALUES		('PROMOTION_UNIT_KOREA_COAST_MOVE',	'TERRAIN_COAST',	1);
 
 INSERT INTO UnitPromotions_UnitCombatMods
 			(PromotionType,				UnitCombatType,				Modifier)
-VALUES		('PROMOTION_DECK_SPIKES',	'UNITCOMBAT_NAVALMELEE',	25);	
+VALUES		('PROMOTION_UNIT_KOREA_DECK_SPIKES',	'UNITCOMBAT_NAVALMELEE',	25);	
 --==========================================================================================================================	
 -- UNITS
 --==========================================================================================================================	
@@ -59,5 +59,5 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_CARAVEL';
 
 INSERT INTO		Unit_FreePromotions
 				(UnitType, 					PromotionType)
-VALUES			('UNIT_KOREAN_TURTLE_SHIP', 'PROMOTION_COAST_MOVE'),
-				('UNIT_KOREAN_TURTLE_SHIP', 'PROMOTION_DECK_SPIKES');
+VALUES			('UNIT_KOREAN_TURTLE_SHIP', 'PROMOTION_UNIT_KOREA_COAST_MOVE'),
+				('UNIT_KOREAN_TURTLE_SHIP', 'PROMOTION_UNIT_KOREA_DECK_SPIKES');

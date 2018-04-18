@@ -12,7 +12,7 @@ VALUES		('UNITCLASS_VENICE_FUSTA',	'TXT_KEY_UNIT_VENICE_FUSTA',	'NONE');
 --------------------------------
 INSERT INTO Civilization_UnitClassOverrides 
 			(CivilizationType, 			UnitClassType, 				UnitType)
-VALUES		('CIVILIZATION_VENICE', 	'UNITCLASS_VENICE_FUSTA',	'UNIT_JFD_LANTERNAS');
+VALUES		('CIVILIZATION_VENICE', 	'UNITCLASS_VENICE_FUSTA',	'UNIT_VENICE_FUSTA');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -21,7 +21,7 @@ VALUES		('CIVILIZATION_VENICE', 	'UNITCLASS_VENICE_FUSTA',	'UNIT_JFD_LANTERNAS')
 --------------------------------	
 -- Units
 --------------------------------
-INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType) SELECT 'UNIT_JFD_LANTERNAS','BUILDINGCLASS_HARBOR';
+INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType) SELECT 'UNIT_VENICE_FUSTA','BUILDINGCLASS_HARBOR';
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -31,38 +31,38 @@ INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType) SE
 --------------------------------	
 INSERT INTO Units 	
 		(Type, 						Class, 						PurchaseOnly,	NoMaintenance,	PrereqTech, 	ObsoleteTech, 		RangedCombat, 	Range, 	Special, Combat, 	Cost, 	FaithCost, 	RequiresFaithPurchaseEnabled, Moves, 	CombatClass, Domain, DefaultUnitAI, Description, 						Strategy, 									  Help, 									Civilopedia, 						Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 						UnitFlagIconOffset, UnitFlagAtlas,					PortraitIndex, 	IconAtlas,						MoveRate)
-SELECT	'UNIT_JFD_LANTERNAS',		'UNITCLASS_VENICE_FUSTA',	0,				1, 				'TECH_GUILDS', 	'TECH_DYNAMITE',	RangedCombat-3, Range, 	Special, Combat-3, 	Cost-50, 150, 		RequiresFaithPurchaseEnabled, Moves+1, 	CombatClass, Domain, DefaultUnitAI, 'TXT_KEY_UNIT_JFD_LANTERNAS',		'TXT_KEY_UNIT_JFD_LANTERNAS_STRATEGY',		  'TXT_KEY_UNIT_HELP_JFD_LANTERNAS',		'TXT_KEY_CIV5_JFD_LANTERNAS_TEXT',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_JFD_LANTERNAS',		0,					'VENICE_UNIT_FLAG_ATLAS',	0, 				'VENICE_UNIT_ATLAS',	MoveRate
+SELECT	'UNIT_VENICE_FUSTA',		'UNITCLASS_VENICE_FUSTA',	0,				1, 				'TECH_GUILDS', 	'TECH_DYNAMITE',	RangedCombat-3, Range, 	Special, Combat-3, 	Cost-50, 150, 		RequiresFaithPurchaseEnabled, Moves+1, 	CombatClass, Domain, DefaultUnitAI, 'TXT_KEY_UNIT_VENICE_FUSTA',		'TXT_KEY_UNIT_VENICE_FUSTA_STRATEGY',		  'TXT_KEY_UNIT_HELP_JFD_LANTERNAS',		'TXT_KEY_CIV5_JFD_LANTERNAS_TEXT',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_VENICE_FUSTA',		0,					'VENICE_UNIT_FLAG_ATLAS',	0, 				'VENICE_UNIT_ATLAS',	MoveRate
 FROM Units WHERE Type = 'UNIT_GALLEASS';																																																								  																																																																	  
 --------------------------------	
 -- UnitGameplay2DScripts
 --------------------------------		
 INSERT INTO UnitGameplay2DScripts 	
 		(UnitType, 					SelectionSound, FirstSelectionSound)
-SELECT	'UNIT_JFD_LANTERNAS',		SelectionSound, FirstSelectionSound
+SELECT	'UNIT_VENICE_FUSTA',		SelectionSound, FirstSelectionSound
 FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_GALLEASS';
 --------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	
 		(UnitType, 					UnitAIType)
-SELECT	'UNIT_JFD_LANTERNAS',		UnitAIType
+SELECT	'UNIT_VENICE_FUSTA',		UnitAIType
 FROM Unit_AITypes WHERE UnitType = 'UNIT_GALLEASS';
 
 
 INSERT INTO Unit_FreePromotions 
 		(UnitType, 					PromotionType)
-VALUES	('UNIT_JFD_LANTERNAS', 		'PROMOTION_WITHDRAW_BEFORE_MELEE');
+VALUES	('UNIT_VENICE_FUSTA', 		'PROMOTION_WITHDRAW_BEFORE_MELEE');
 
 INSERT INTO		Unit_FreePromotions
 				(UnitType, 			PromotionType)
-SELECT			'UNIT_JFD_LANTERNAS', 	PromotionType
+SELECT			'UNIT_VENICE_FUSTA', 	PromotionType
 FROM Unit_FreePromotions WHERE UnitType = 'UNIT_GALLEASS';
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------		
 INSERT INTO Unit_ClassUpgrades 	
 		(UnitType, 					UnitClassType)
-SELECT	'UNIT_JFD_LANTERNAS',		UnitClassType
+SELECT	'UNIT_VENICE_FUSTA',		UnitClassType
 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_GALLEASS';	
 --==========================================================================================================================
 
@@ -85,20 +85,20 @@ VALUES	('VENICE_UNIT_ATLAS', 			256, 		'FustaPicture_256.dds',		1, 				1),
 ------------------------------
 INSERT INTO ArtDefine_StrategicView 
 		(StrategicViewType, 						TileType,		Asset)
-VALUES	('ART_DEF_UNIT_JFD_LANTERNAS',				'Unit', 		'FustaFlag_128.dds');
+VALUES	('ART_DEF_UNIT_VENICE_FUSTA',				'Unit', 		'FustaFlag_128.dds');
 ------------------------------
 -- ArtDefine_UnitInfos
 ------------------------------	
 INSERT INTO ArtDefine_UnitInfos 
 		(Type, 										DamageStates,	Formation)
-SELECT	'ART_DEF_UNIT_JFD_LANTERNAS',				DamageStates, 	Formation
+SELECT	'ART_DEF_UNIT_VENICE_FUSTA',				DamageStates, 	Formation
 FROM ArtDefine_UnitInfos WHERE Type = 'ART_DEF_UNIT_GALLEASS';
 ------------------------------
 -- ArtDefine_UnitInfoMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitInfoMemberInfos 	
 		(UnitInfoType,								UnitMemberInfoType,						NumMembers)
-SELECT	'ART_DEF_UNIT_JFD_LANTERNAS',				'ART_DEF_UNIT_MEMBER_JFD_LANTERNAS',	NumMembers
+SELECT	'ART_DEF_UNIT_VENICE_FUSTA',				'ART_DEF_UNIT_MEMBER_JFD_LANTERNAS',	NumMembers
 FROM ArtDefine_UnitInfoMemberInfos WHERE UnitInfoType = 'ART_DEF_UNIT_GALLEASS';
 ------------------------------
 -- ArtDefine_UnitMemberCombats

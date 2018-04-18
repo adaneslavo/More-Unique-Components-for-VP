@@ -3,8 +3,8 @@
 -- DateCreated: 02/02/2018
 -- 2018-02-04 Modified by Infixo
 --------------------------------------------------------------
-local iSofa = GameInfoTypes.PROMOTION_HORSE_FATHER
-local iHorseDadEffect = GameInfoTypes.PROMOTION_HORSE_FATHER_EFFECT
+local iSofa = GameInfoTypes.PROMOTION_UNIT_SONGHAI_HORSE_FATHER
+local iHorseDadEffect = GameInfoTypes.PROMOTION_UNIT_SONGHAI_HORSE_FATHER_EFFECT
 local eUnitCombatMounted = GameInfoTypes.UNITCOMBAT_MOUNTED
 
 function HorseDaddy(iPlayer)

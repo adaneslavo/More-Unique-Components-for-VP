@@ -2482,39 +2482,43 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\4CACADOR128.dds">
+    <Content Include="Portugal\Cacadores\3DModel\ausgw1.blend">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\4CACADOR256.dds">
+    <Content Include="Portugal\Cacadores\3DModel\ausgw1.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\4CACADOR45.dds">
+    <Content Include="Portugal\Cacadores\3DModel\ausgw1.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\4CACADOR64.dds">
+    <Content Include="Portugal\Cacadores\3DModel\ausgw1.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\4CACADOR80.dds">
+    <Content Include="Portugal\Cacadores\3DModel\no_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\ausgw1.blend">
+    <Content Include="Portugal\Cacadores\CacadoresPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\ausgw1.dds">
+    <Content Include="Portugal\Cacadores\CacadoresPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\ausgw1.fxsxml">
+    <Content Include="Portugal\Cacadores\CacadoresPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\ausgw1.gr2">
+    <Content Include="Portugal\Cacadores\CacadoresPicture_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Portugal\Cacadores\CacadoresPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -2526,15 +2530,11 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\no_gloss.dds">
+    <Content Include="Portugal\Cacadores\CacadoresFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\sv_3UC_CACADOR.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Portugal\Cacadores\Unit_CACADOR_Flag_4UC_32.dds">
+    <Content Include="Portugal\Cacadores\CacadoresFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5425,6 +5425,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Persia\Darius" />
     <Folder Include="Portugal\" />
     <Folder Include="Portugal\Cacadores\" />
+    <Folder Include="Portugal\Cacadores\3DModel" />
     <Folder Include="Portugal\University of Coimbra\" />
     <Folder Include="Rome" />
     <Folder Include="Poland\Pancerny\Grunwald" />

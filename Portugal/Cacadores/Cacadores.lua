@@ -19,7 +19,7 @@ function OnUnitPromotedCacadorPromotion(iPlayer, iUnit, iPromotionType)
 	if not pPlayer then return end -- assert
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	-- No need to go further if unit has all eligible promotions
-	if not (pUnit and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CACADOR) and pUnit:GetLevel() < #tEligiblePromotions + 2) then return end
+	if not (pUnit and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_PORTUGAL_CACADOR) and pUnit:GetLevel() < #tEligiblePromotions + 2) then return end
 	
 	-- Create a list of available promotions
 	-- There's a Lua function that checks in a unit can be promoted with a specific promotion!
@@ -40,7 +40,7 @@ function CacadorPromotion(iPlayer, iUnit, iPromotionType)
 		--If unit is level 8 or higher it has all the promotions. No need to go further
 	if (pUnit:getLevel() >= 8) then return end
 
-	if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CACADOR)) then
+	if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_PORTUGAL_CACADOR)) then
 		local rand = math.random(2)
 		--Check for trailblazer line
 		if (rand == 1) and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_WOODLAND_TRAILBLAZER_III) and pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_SURVIVALISM_2) then
@@ -115,7 +115,7 @@ end
 --	local pPlayer = Players[iPlayer]
 -- 	local pUnit = pPlayer:GetUnitByID(iUnit)
 --	if (pUnit:getLevel() >= 8) then return end
---	if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CACADOR)) then
+--	if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_PORTUGAL_CACADOR)) then
 -- 		local rand = math.random(2)
 --		local promoList = TableConcat(trailblazerPromos, survivalismPromos)
 --		if (rand == 1) then
