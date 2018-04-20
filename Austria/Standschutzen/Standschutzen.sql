@@ -67,7 +67,7 @@ VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_RECON',		15),
 --------------------------------
 INSERT INTO Building_UnitCombatFreeExperiences
 			(BuildingType,						UnitCombatType,			Experience)
-VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_GUN',		15),
+VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'UNITCOMBAT_GUN',		15);
 
 --==========================================================================================================================
 --==========================================================================================================================
