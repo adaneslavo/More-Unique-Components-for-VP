@@ -30,7 +30,7 @@ v30:
 	- Ball Court ==> reduced base culture by 1
 	- Kampong ==> reduced yields from techs
 	- Horse Archer ==> reduced RCS
-	- Pogost ==> reduced city connection gold on stage 2 (5% on all stages now)
+	- Pogost ==> reduced city connection gold on stage 2 (5% on all stages now).  Added reduction in poverty
 	- Tersane ==> added 30% production to naval ranged units
 	- Landwehr ==> renamed Yorkscher marsch to Regimentsmarsch, reduced culture to 1 per turn and removed gamespeed scaling
 	- Hippodrome ==> WLTKD on era change now on empire. 
