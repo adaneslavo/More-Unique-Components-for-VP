@@ -4,42 +4,41 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v30:
-- reworked: 
-	- Agora ==> replaced +2 Gold for CS Ally with unique diplomatic promotion - Proxenos
-	            Proxenos promotion - +5 influence and +2 Gold income from diplomatic missions
-	- Sambadrome ==> +1 Gold and +2 GAP to Musicians, instead of the guilds themselves
-			10% culture in city
-			25% GAP in city during golden age
-	- Qila ==> 15% culture from city defense 
-		   World Wonders in city increase defense by 1.
 - fixed and tweaked:
-	- Fale Tele ==> Increased yields on building completion to 3 of each (from 2)
-	- Khopesh ==> Fatigue malus increased to 30% and restricted to non-mounted melee units
-	- Pairidaeza ==> removed all gold bonuses (base building and on all guilds)
-	- Dhanurgraha ==> raised RCP to 8
-	- Hakkapeliitta ==> moved back to Metallurgy
+	- Agora ==> replaced +2 Gold for CS Ally with unique diplomatic promotion - Proxenos,
+	        ==> Proxenos promotion - +5 influence and +2 Gold income from diplomatic missions.
+	- Sambadrome ==> +1 Gold and +2 GAP to Musicians, instead of the guilds themselves,
+				 ==> 10% culture in city,
+				 ==> 25% GAP in city during golden age.
+	- Qila ==> 15% culture from city defense,
+		   ==> World Wonders in city increase defense by 1.
+	- Fale Tele ==> Increased yields on building completion to 3 of each (from 2).
+	- Khopesh ==> Fatigue malus increased to 30% and restricted to non-mounted melee units.
+	- Pairidaeza ==> removed gold bonuses from base building and all guilds.
+	- Dhanurgraha ==> raised RCP to 8.
+	- Hakkapeliitta ==> moved back to Metallurgy.
 	- Iziko ==> Removed Culture from Great works. Global effect, so multiple Iziko on empire stacked. Too powerful.
-	- Kabuki ==> reduced culture modifier in city to 5%
-	- Goedendag ==> increased CS (20)
-	- University of Coimbra ==> all ships now get Age of Discovery promotion on construction, switched to gold on explore
-	- Standschutzen ==> added base yields (3 prod, 3 culture)
-			==> Changed per CS bonus to 1 production and culture (was 2 gold and 1 culture)
-			==> Increased production of gun units to 30%, reduced the others to 15%. Gave gun units +15XP
-	- Agora ==> removed bonus yields from olives and wine
-	- Elephant Camp ==> removed production from ivory (now only +1 faith)
-	- Ball Court ==> reduced base culture by 1
-	- Kampong ==> reduced yields from techs
-	- Horse Archer ==> reduced RCS
-	- Pogost ==> reduced city connection gold on stage 2 (5% on all stages now).  Added reduction in poverty
-	- Tersane ==> added 30% production to naval ranged units
-	- Landwehr ==> renamed Yorkscher marsch to Regimentsmarsch, reduced culture to 1 per turn and removed gamespeed scaling
+	- Kabuki ==> reduced culture modifier in city to 5%.
+	- Goedendag ==> increased CS to 20.
+	- University of Coimbra ==> all ships now get Age of Discovery promotion on construction, switched to gold on explore.
+	- Standschutzen ==> added base yields (3 prod, 3 culture),
+					==> Changed per CS bonus to 1 production and culture (was 2 gold and 1 culture),
+					==> Increased production of gun units to 30%, reduced the others to 15%. Gave gun units +15XP.
+	- Agora ==> removed bonus yields from olives and wine.
+	- Elephant Camp ==> removed production from ivory (now only +1 faith).
+	- Ball Court ==> reduced base culture by 1.
+	- Kampong ==> reduced yields from techs.
+	- Horse Archer ==> reduced RCS.
+	- Pogost ==> reduced city connection gold on stage 2 (5% on all stages now). Added reduction in poverty.
+	- Tersane ==> added 30% production to naval ranged units.
+	- Landwehr ==> renamed Yorkscher marsch to Regimentsmarsch, reduced culture to 1 per turn and removed gamespeed scaling.
 	- Hippodrome ==> WLTKD on era change now on empire. 
-- Base VP Changes:
-	- Impi ==> Bonus vs. Gunpowder carries forward
-	- Naresuan's Elephant ==> Gave General Stacking Promotion
-	- Naga Malla ==> Gave Accuracy I
+- base VP Changes:
+	- Impi ==> Bonus vs. Gunpowder carries forward.
+	- Naresuan's Elephant ==> Gave General Stacking Promotion.
+	- Naga Malla ==> Gave Accuracy I.
 	- all unique units now have at least 1 promotion that carries forward.
-- changed icon for Cacador and Etemenanki
+- changed icon for Cacador and Etemenanki,
 - added mipmaps to Seir Morb's promotion icons,
 - added 16px versions for all new promotion icons.
 

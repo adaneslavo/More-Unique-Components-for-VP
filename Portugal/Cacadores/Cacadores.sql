@@ -97,7 +97,7 @@ VALUES		('ART_DEF_UNIT_4UC_CACADOR', 	'Unit', 	'CacadoresFlag_128.dds');
 INSERT OR REPLACE INTO ArtDefine_UnitInfos 
 			(Type,							DamageStates, Formation)
 SELECT		('ART_DEF_UNIT_4UC_CACADOR'),	DamageStates, Formation
-FROM "ArtDefine_UnitInfos" WHERE (Type = 'ART_DEF_UNIT_RIFLEMAN');
+FROM ArtDefine_UnitInfos WHERE (Type = 'ART_DEF_UNIT_RIFLEMAN');
 --==========================================================================================================================
 -- ArtDefine_UnitInfos
 --==========================================================================================================================	
