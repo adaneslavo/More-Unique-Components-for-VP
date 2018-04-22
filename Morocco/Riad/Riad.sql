@@ -51,9 +51,9 @@ VALUES		('BUILDING_MAROCCO_RIAD',	'FEATURE_OASIS',	'YIELD_GOLD',	3),
 --------------------------------	
 -- Building_YieldChangesPerPop
 --------------------------------	
-INSERT INTO	Building_YieldChangesPerPop
-			(BuildingType,				YieldType,			Yield)
-VALUES		('BUILDING_MAROCCO_RIAD',	'YIELD_CULTURE',	20);
+--INSERT INTO	Building_YieldChangesPerPop
+--			(BuildingType,				YieldType,			Yield)
+--VALUES		('BUILDING_MAROCCO_RIAD',	'YIELD_CULTURE',	20);
 --------------------------------	
 -- Building_GoldenAgeYieldMod
 --------------------------------
