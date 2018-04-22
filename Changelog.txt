@@ -33,11 +33,15 @@ v30:
 	- Tersane ==> added 30% production to naval ranged units.
 	- Landwehr ==> renamed Yorkscher marsch to Regimentsmarsch, reduced culture to 1 per turn and removed gamespeed scaling.
 	- Hippodrome ==> WLTKD on era change now on empire. 
+	- added WLTKD scaling to Oppidum
+	- removed culture per 5 Population from Riad
+	- altered Scythed Chariot unit action
 - base VP Changes:
 	- Impi ==> Bonus vs. Gunpowder carries forward.
 	- Naresuan's Elephant ==> Gave General Stacking Promotion.
 	- Naga Malla ==> Gave Accuracy I.
 	- all unique units now have at least 1 promotion that carries forward.
+	
 - changed icon for Cacador and Etemenanki,
 - added mipmaps to Seir Morb's promotion icons,
 - added 16px versions for all new promotion icons.
