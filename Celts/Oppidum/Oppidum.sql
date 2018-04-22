@@ -140,6 +140,12 @@ INSERT INTO BuildFeatures
 			(BuildType, 			FeatureType, PrereqTech, Production, Remove)
 SELECT		'BUILD_CELTS_OPPIDUM',	FeatureType, PrereqTech, Production, Remove
 FROM BuildFeatures WHERE BuildType = 'BUILD_POLDER';
+------------------------------				
+-- Unit_ScalingFromOwnedImprovements
+------------------------------	
+INSERT INTO Unit_ScalingFromOwnedImprovements	
+		(UnitType, 		ImprovementType, 		Amount)
+VALUES		('UNIT_MERCHANT', 	'IMPROVEMENT_CELTS_OPPIDUM', 	1);
 --==========================================================================================================================
 
 --==========================================================================================================================
