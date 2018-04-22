@@ -2458,7 +2458,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_HELP">
 			<Text>
-				Unique Portuguese replacement for the Oxford University. Gain a free University, and a Great Scientist appears near the City. +75 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Contains 2 slots for Great Works of Writing. Reduces [ICON_HAPPINESS_3] Illiteracy. +2 [ICON_GOLD] Gold to Universities. All naval units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] promotion. Whenever a Feitoria is built in city-state territory, permanently gain +2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE][NEWLINE]+3 [ICON_RESEARCH] Science if Themed.
+				Unique Portuguese replacement for the Oxford University. Gain a free University, and a Great Scientist appears near the City. +50 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Contains 2 slots for Great Works of Writing. Reduces [ICON_HAPPINESS_3] Illiteracy. +2 [ICON_GOLD] Gold to Universities.[NEWLINE][NEWLINE]All naval units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] promotion. Whenever a Feitoria is built in city-state territory, permanently gain +2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE][NEWLINE]+3 [ICON_RESEARCH] Science if Themed.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY">
