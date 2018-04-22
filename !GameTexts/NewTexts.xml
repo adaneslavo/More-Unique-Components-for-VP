@@ -180,7 +180,7 @@
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
-			<Text>+2 [ICON_CULTURE] Culture, +2 [ICON_PEACE] Faith, +2 [ICON_RESEARCH] Science and +10 [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this city, and ranged units in the city have increased attack.[NEWLINE][NEWLINE]Only Polish may build it.</Text>
+			<Text>+10 [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this city, and ranged units in the city have increased attack.[NEWLINE][NEWLINE]Only Polish may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
 			<Text>Unique Polish replacement for the Armory. Must have built Walls in the city. In addition to the normal bonuses provided by the Armory, this building provides Culture, Faith, and increased city defense. Ranged and Siege garrisoned in the city have increased attack.</Text>
@@ -518,7 +518,9 @@
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_HELP">
 			<Text>
 				Requires Monument in City.[NEWLINE]+30% [ICON_GREAT_PEOPLE] Great Person rate in City. Receive 15 [ICON_CULTURE] Culture in the city as an instant boost Culture whenever a citizen is born, and 50 [ICON_GOLDEN_AGE] Golden Age Points as an instant boost whenever a policy is unlocked, scaling with Era.[NEWLINE][NEWLINE]
-				Receive 15% of the City's [ICON_RESEARCH] Science and [ICON_FOOD] Food output as an instant boost in the City whenever you invest in a building. All monuments gain +1 [ICON_RESEARCH] Science and all Shrines gain +2 [ICON_FOOD] Food. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
+				Receive 15% of the City's [ICON_RESEARCH] Science and [ICON_FOOD] Food output as an instant boost in the City whenever you invest in a building. All monuments gain +1 [ICON_RESEARCH] Science and all Shrines gain +2 [ICON_FOOD] Food. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE][NEWLINE]
+				The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_STRATEGY">
 			<Text>E-temenanki is the Babylonian Unique Wonder, replacing the National Monument. In addition to the normal bonuses of a National Monument, E-temenanki awards Food and Science whenever a building is invested on empire, so invest in buildings early and often.  All monuments in empire gain +1 Science and all Shrines gain +2 Food. Available earlier than the National Monument</Text>
@@ -857,9 +859,10 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
 			<Text>
-				Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion.[NEWLINE] 
-				At the beginning of every new Era, 1 turn of Resistance occurs, followed by "We Love the King Day" is triggered across the Empire.[NEWLINE]
-				All Arenas gain +4 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion.[NEWLINE][NEWLINE]
+				At the beginning of every new Era, 1 turn of Resistance occurs, followed by "We Love the King Day" is triggered across the Empire.[NEWLINE][NEWLINE]
+				All Arenas gain +4 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. 
+				[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
@@ -890,7 +893,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP">
 			<Text>
-				Unique replacement for the Grand Temple. Only the Aztec may build it.[NEWLINE]Comes with a free Temple. A [ICON_GOLDEN_AGE] Golden Age begins. [NEWLINE]Reduces [ICON_HAPPINESS_3] Religious Unrest. All Temples gain +2 [ICON_PEACE] Faith and [ICON_CULTURE] Culture, Barracks get +2 [ICON_CULTURE] Culture, and Floating Gardens get +2 [ICON_FOOD] Food. [NEWLINE]Whenever you enter a Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith, and +3 XP for units trained in the city (max +30 each).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				Unique replacement for the Grand Temple. Only the Aztec may build it.[NEWLINE]Comes with a free Temple. A [ICON_GOLDEN_AGE] Golden Age begins. [NEWLINE][NEWLINE]Reduces [ICON_HAPPINESS_3] Religious Unrest. All Temples gain +2 [ICON_PEACE] Faith and [ICON_CULTURE] Culture, Barracks get +2 [ICON_CULTURE] Culture, and Floating Gardens get +2 [ICON_FOOD] Food. [NEWLINE][NEWLINE]Whenever you enter a Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith, and +3 XP for units trained in the city (max +30 each).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 
@@ -1098,7 +1101,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_KABUKI_HELP">
 			<Text>
-				Unique Japanese replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_GREAT_MUSICIAN] Musician, [ICON_GREAT_ARTIST] Artist, and [ICON_GREAT_WRITER] Writer Specialists in the City produce 33% more [ICON_GREAT_PEOPLE] Great Person Points.[NEWLINE][NEWLINE]All Writers', Artists' and Musicians' Guilds in this city are replaced with powerful unique guild equivalents. 
+				Unique Japanese replacement for the Opera House. +5% [ICON_CULTURE] Culture in the City. +66% [ICON_GREAT_MUSICIAN] Great Musician Rate. +33% [ICON_GREAT_ARTIST] Great Artist [ICON_GREAT_WRITER] Great Writer Rates in City. All Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]All Writers', Artists' and Musicians' Guilds in this City are replaced with powerful unique guild equivalents. 
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI">
@@ -1562,7 +1565,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
 			<Text>
-				+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE] Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 20 [ICON_RESEARCH] Science (or 100 for a Great Person purchase), scaling with era.
+				+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 20 [ICON_RESEARCH] Science (or 100 for a Great Person purchase), scaling with era.
 			</Text>
 		</Row>
 		
@@ -1610,7 +1613,7 @@
 			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_PRODUCTION] Production output. On construction, 2 Flax resources spawn near the city, which provide additional culture and Production. This building can be built anywhere, as long as you don't have a Well in the City already.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_EGYPT_NILOMETER_HELP">
-			<Text>Unique Egyptian replacement for the Water Mill.[NEWLINE]+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the city.</Text>
+			<Text>Unique Egyptian replacement for the Water Mill.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the city.</Text>
 		</Row>
 
 		<!-- Oppidum -->
@@ -1619,7 +1622,10 @@
 			<Text>Oppidum</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP">
-			<Text>Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a +50% [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to a nearby Cities. Adjacent Improvements gain additional bonus yields</Text>
+			<Text>
+				Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a +50% [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to a nearby Cities. Adjacent Improvements gain additional bonus yields[NEWLINE][NEWLINE]
+				Increases the length of 'We Love the King Days' from Great Merchants.
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
 			<Text>
@@ -1700,7 +1706,7 @@
 			<Text>Ball Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
-			<Text>Unique Mayan replacement for the Arena.[NEWLINE]Receive 20 [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the beginning of every B'ak'tun. Land Units trained in this City Receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] promotion, gaining new abilities every 20 turns[NEWLINE]Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Reduces [ICON_HAPPINESS_3] Boredom.</Text>
+			<Text>Unique Mayan replacement for the Arena.[NEWLINE][NEWLINE]Receive 20 [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the beginning of every B'ak'tun. Land Units trained in this City Receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] promotion, gaining new abilities every 20 turns[NEWLINE][NEWLINE]Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Reduces [ICON_HAPPINESS_3] Boredom.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
 			<Text>
@@ -1923,7 +1929,9 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
 			<Text>
-				Unique American Stable replacement. +33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the Military Unit Supply Cap from Population in the City by 10%.[NEWLINE][NEWLINE]+25% border growth rate in city. Whenever the city borders expand, gain 10 [ICON_FOOD] Food and [ICON_CULTURE] Culture, scaling with Era.
+				Unique American Stable replacement. +33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the Military Unit Supply Cap from Population in the City by 10%.[NEWLINE][NEWLINE]
+				+25% border growth rate in city. Whenever the city borders expand, gain 10 [ICON_FOOD] Food and [ICON_CULTURE] Culture, scaling with Era.
+				+2 [ICON_FOOD], [ICON_PRODUCTION] Production and [ICON_GOLD] Gold to all Resources [ICON_RES_COW] Cattle, [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, and [ICON_RES_BISON] Bison in City.
 			</Text>
 		</Row>
 
@@ -1987,13 +1995,16 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP">
 			<Text>
-				Unique Brazilian replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold. Musicians in City produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +25% [ICON_GOLDEN_AGE] Golden Age Points during Golden Ages. +3 [ICON_TOURISM] Tourism at Radio.
+				Unique Brazilian replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Musicians in City produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +25% [ICON_GOLDEN_AGE] Golden Age Points during Golden Ages. +3 [ICON_TOURISM] Tourism at Radio.
 			</Text>
 		</Row>
 		
 		<!-- Scythed Chariot -->
 		<!-- Created by adan_eslavo on 26/10/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE">
+			<Text>Scythe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MISC_YOU_UNIT_WAS_DAMAGED_AOE_STRIKE_ON_MOVE">
 			<Text>Scythe</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE_HELP">
@@ -2490,13 +2501,13 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP">
 			<Text>Unique replacement for the Hermitage. Only England may build it
-			[NEWLINE]+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Population in city.
-			[NEWLINE]+2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% Spy stealing rate on Empire 
-			[NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City.
-			[NEWLINE]+1 [ICON_HAPPINESS_1] Happiness on Empire for every enemy spy killed on Empire.
-			[NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. 
-			[NEWLINE]+5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.
+			[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Population in city.
+			[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City. +2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% Spy stealing rate on Empire 
+
+			[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Happiness on Empire for every enemy spy killed on Empire.
+			[NEWLINE][NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.
 			[NEWLINE][NEWLINE]Available earlier, requires Castle in City.
+			[NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.	
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY">
