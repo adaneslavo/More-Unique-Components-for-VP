@@ -761,12 +761,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Scythed Chariot</Name>
-        <Description>Adds Scythe promotion.</Description>
-        <FileName>Celts/ScythedChariot/ScythedChariot.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Pogost</Name>
         <Description>Builds next stages of Pogost.</Description>
         <FileName>Russia/Pogost/Pogost.lua</FileName>
