@@ -240,7 +240,7 @@
 			<Text>Buffalo Pound</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_HELP">
-			<Text>Unique Shoshone replacement for the Well. [NEWLINE]Increases [ICON_FOOD] Food from nearby [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle and [ICON_RES_BISON] Bison and a [ICON_RES_BISON] Bison resource appears near the City[NEWLINE]Additional [ICON_FOOD] Food for every 4 [ICON_CITIZEN] Population in City.[NEWLINE][NEWLINE]Can be built anywhere, including cities with a Water Mill.</Text>
+			<Text>Unique Shoshone replacement for the Well. [NEWLINE]Increases [ICON_FOOD] Food from nearby [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle and [ICON_RES_BISON] Bison and a [ICON_RES_BISON] Bison resource appears near the City[NEWLINE]Additional [ICON_FOOD] Food for every 5 [ICON_CITIZEN] Population in City.[NEWLINE][NEWLINE]Can be built anywhere, including cities with a Water Mill.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_STRATEGY">
 			<Text>The Buffalo Pound is the Shoshone unique building, replacing the Well.  In addition to the normal bonuses of the Well, the Buffalo Pound provides food from Horses, Cattle, Sheep and Bison.  It can also be constructed in cities with access to fresh water, even if a Water Mill has already been built there.</Text>
