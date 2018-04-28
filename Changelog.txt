@@ -3,6 +3,12 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v31:
+- adjusted Tarkhan flags,
+- changed:
+    - Oppidum ==> added compatibility with Koreana UA,
+- fixed some text issues.
+
 v30:
 - fixed and tweaked:
 	- Agora ==> replaced +2 Gold for CS Ally with unique diplomatic promotion - Proxenos,
