@@ -84,7 +84,7 @@ SET Text = 'The Turtle Ship is an early incarnation of the Ironclad for tactical
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 UPDATE Language_en_US 
-SET Text = 'Korean replacement for the Caravel. High [ICON_STRENGTH] Combat Strength, and more effective against other melee naval units. Moves slowly in Deep Ocean'
+SET Text = 'Korean replacement for the Caravel. High [ICON_STRENGTH] Combat Strength, and more effective against other melee naval units. Moves slowly in Deep Ocean.'
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 -- Horse Archer
@@ -98,7 +98,7 @@ WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';
 
 -- Great Galleas
 UPDATE Language_en_US 
-SET Text = 'Unique Venetian Galleass. This Unit is stronger than the Galleas it replaces'
+SET Text = 'Unique Venetian Galleass. This Unit is stronger than the Galleas it replaces.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_VENETIAN_GALLEASS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 UPDATE Language_en_US 
