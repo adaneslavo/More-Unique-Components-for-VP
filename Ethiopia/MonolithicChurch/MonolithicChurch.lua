@@ -11,22 +11,38 @@ local eBuildingMCReligion = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_FO
 local eBuildingMCEnhancing = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_ENHANCER
 local eBuildingMCReforming = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION
 local eReligionState
+local bIdeologyState
 local eCivilizationEthiopia = GameInfoTypes.CIVILIZATION_ETHIOPIA
+local ePolicyTraditionFinisher = GameInfoTypes.POLICY_TRADITION_FINISHER
+local ePolicyLibertyFinisher = GameInfoTypes.POLICY_LIBERTY_FINISHER
+local ePolicyHonorFinisher = GameInfoTypes.POLICY_HONOR_FINISHER
+local ePolicyPietyFinisher = GameInfoTypes.POLICY_PIETY_FINISHER
+local ePolicyPatronageFinisher = GameInfoTypes.POLICY_PATRONAGE_FINISHER
+local ePolicyAestheticsFinisher = GameInfoTypes.POLICY_AESTHETICS_FINISHER
+local ePolicyRationalismFinisher = GameInfoTypes.POLICY_RATIONALISM_FINISHER
+local ePolicyExplorationFinisher = GameInfoTypes.POLICY_EXPLORATION_FINISHER
+local ePolicyCommerceFinisher = GameInfoTypes.POLICY_COMMERCE_FINISHER
+local eBuildingMCTradition = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION
+local eBuildingMCLiberty = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_LIBERTY
+local eBuildingMCHonor = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_HONOR
+local eBuildingMCPiety = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_PIETY
+local eBuildingMCPatronage = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_PATRONAGE
+local eBuildingMCAesthetics = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_AESTHETICS
+local eBuildingMCRationalism = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_RATIONALISM
+local eBuildingMCExploration = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_EXPLORATION
+local eBuildingMCCommerce = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_COMMERCE
+local eBuildingMCIdeology = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY
 
 -- adds yields after adopting ideology
-function OnIdeologyAddYields(iPlayer, iPolicy)
+function OnPolicyAndIdeologyAddYields(iPlayer, iPolicy)
 	local pPlayer = Players[iPlayer]
-	
+	print("Policy or Ideology adopted")
 	if (pPlayer:IsPolicyBranchUnlocked(ePolicyFreedom) == true or pPlayer:IsPolicyBranchUnlocked(ePolicyOrder) == true or pPlayer:IsPolicyBranchUnlocked(ePolicyAutocracy) == true) then
-		local pTeam = Teams[pPlayer:GetTeam()]
-		
-		if pTeam:GetImprovementYieldChange(eImprovementMonolithicChurch, 2) == 0 then
-			pTeam:ChangeImprovementYieldChange(eImprovementMonolithicChurch, 2, 2)
-		end
+		bIdeologyState = true
+		CityPlotChecking(pPlayer)
+		print("Ideology")
 	end
 end
-
-GameEvents.PlayerAdoptPolicy.Add(OnIdeologyAddYields)
 
 --1. adds yields to all cities for each Monolithic Church worked by that city after setting Pantheon
 function OnPatheonCountMonoChurches(iPlayer, iCapitalCity, iReligion, iBelief1)
@@ -93,6 +109,9 @@ function CityPlotChecking(pPlayer)
 		city:SetNumRealBuilding(eBuildingMCReligion, 0)
 		city:SetNumRealBuilding(eBuildingMCEnhancing, 0)
 		city:SetNumRealBuilding(eBuildingMCReforming, 0)
+		city:SetNumRealBuilding(eBuildingMCIdeology, 0)
+
+		local iMonolithicChurchCount = 0
 
 		for iCityPlot = 1, city:GetNumCityPlots() - 1, 1 do
 			print("Sprawdzam hex nr: ", iCityPlot)
@@ -100,36 +119,40 @@ function CityPlotChecking(pPlayer)
 
 			if pSpecificPlot:GetImprovementType() == eImprovementMonolithicChurch then
 				print("Hex jest w zasiegu i jest na nim MC, wiec dokladam bonus")
-				if iReligionState == 1 then
-					city:SetNumRealBuilding(eBuildingMCPantheon, city:GetNumRealBuilding(eBuildingMCPantheon) + 1)
-					print("Liczba bonusow - Panteon: ", city:GetNumRealBuilding(eBuildingMCPantheon))
-				elseif iReligionState == 2 then
-					city:SetNumRealBuilding(eBuildingMCPantheon, city:GetNumRealBuilding(eBuildingMCPantheon) + 1)
-					city:SetNumRealBuilding(eBuildingMCReligion, city:GetNumRealBuilding(eBuildingMCReligion) + 1)
-					print("Liczba bonusow - Panteon: ", city:GetNumRealBuilding(eBuildingMCPantheon))
-					print("Liczba bonusow - Religion: ", city:GetNumRealBuilding(eBuildingMCReligion))
-				elseif iReligionState == 3 then
-					city:SetNumRealBuilding(eBuildingMCPantheon, city:GetNumRealBuilding(eBuildingMCPantheon) + 1)
-					city:SetNumRealBuilding(eBuildingMCReligion, city:GetNumRealBuilding(eBuildingMCReligion) + 1)
-					city:SetNumRealBuilding(eBuildingMCEnhancing, city:GetNumRealBuilding(eBuildingMCEnhancing) + 1)
-					print("Liczba bonusow - Panteon: ", city:GetNumRealBuilding(eBuildingMCPantheon))
-					print("Liczba bonusow - Religion: ", city:GetNumRealBuilding(eBuildingMCReligion))
-					print("Liczba bonusow - Enhancing: ", city:GetNumRealBuilding(eBuildingMCEnhancing))
-				elseif iReligionState == 4 then
-					city:SetNumRealBuilding(eBuildingMCPantheon, city:GetNumRealBuilding(eBuildingMCPantheon) + 1)
-					city:SetNumRealBuilding(eBuildingMCReligion, city:GetNumRealBuilding(eBuildingMCReligion) + 1)
-					city:SetNumRealBuilding(eBuildingMCEnhancing, city:GetNumRealBuilding(eBuildingMCEnhancing) + 1)
-					city:SetNumRealBuilding(eBuildingMCReforming, city:GetNumRealBuilding(eBuildingMCReforming) + 1)
-					print("Liczba bonusow - Panteon: ", city:GetNumRealBuilding(eBuildingMCPantheon))
-					print("Liczba bonusow - Religion: ", city:GetNumRealBuilding(eBuildingMCReligion))
-					print("Liczba bonusow - Enhancing: ", city:GetNumRealBuilding(eBuildingMCEnhancing))
-					print("Liczba bonusow - Reforming: ", city:GetNumRealBuilding(eBuildingMCReforming))
-				end
+				iMonolithicChurchCount = iMonolithicChurchCount + 1
 			end
+		end
+
+		print("Liczba bonusow: ", iMonolithicChurchCount)
+
+		if iReligionState == 1 then
+			city:SetNumRealBuilding(eBuildingMCPantheon, iMonolithicChurchCount)
+			print("P")
+		elseif iReligionState == 2 then
+			city:SetNumRealBuilding(eBuildingMCPantheon, iMonolithicChurchCount)
+			city:SetNumRealBuilding(eBuildingMCReligion, iMonolithicChurchCount)
+			print("F")
+		elseif iReligionState == 3 then
+			city:SetNumRealBuilding(eBuildingMCPantheon, iMonolithicChurchCount)
+			city:SetNumRealBuilding(eBuildingMCReligion, iMonolithicChurchCount)
+			city:SetNumRealBuilding(eBuildingMCEnhancing, iMonolithicChurchCount)
+			print("E")
+		elseif iReligionState == 4 then
+			city:SetNumRealBuilding(eBuildingMCPantheon, iMonolithicChurchCount)
+			city:SetNumRealBuilding(eBuildingMCReligion, iMonolithicChurchCount)
+			city:SetNumRealBuilding(eBuildingMCEnhancing, iMonolithicChurchCount)
+			city:SetNumRealBuilding(eBuildingMCReforming, iMonolithicChurchCount)
+			print("R")
+		end
+
+		if bIdeologyState then
+			city:SetNumRealBuilding(eBuildingMCIdeology, iMonolithicChurchCount)
+			print("I")
 		end
 	end
 end
 
+GameEvents.PlayerAdoptPolicy.Add(OnPolicyAndIdeologyAddYields)
 GameEvents.PantheonFounded.Add(OnPatheonCountMonoChurches)
 GameEvents.ReligionFounded.Add(OnReligionCountMonoChurches)
 GameEvents.ReligionEnhanced.Add(OnEnhaningCountMonoChurches)
@@ -145,9 +168,16 @@ function OnCityCaptureResetBonuses(iPlayer, iCapital, iX, iY, iNewPlayer, iConqu
 	if pNewPlayer:GetCivilizationType() == eCivilizationEthiopia then
 		print("...przez Etiopie")
 		OneCityPlotChecking(pPlayer, pCity)
+	else
+		pCity:SetNumRealBuilding(eBuildingMCPantheon, 0)
+		pCity:SetNumRealBuilding(eBuildingMCReligion, 0)
+		pCity:SetNumRealBuilding(eBuildingMCEnhancing, 0)
+		pCity:SetNumRealBuilding(eBuildingMCReforming, 0)
+		pCity:SetNumRealBuilding(eBuildingMCIdeology, 0)
 	end
 end
 
+--adds yields for each MC in range on city founding
 function OnCityFoundAddBonuses(iPlayer, iX, iY)
 	print("Miasto zalozone...")
 	local pPlayer = Players[iPlayer]
@@ -161,43 +191,43 @@ end
 
 --plot scanner in one owned city
 function OneCityPlotChecking(pPlayer, pCity)
-	pCity:SetNumRealBuilding(eBuildingMCPantheon, 0)
-	pCity:SetNumRealBuilding(eBuildingMCReligion, 0)
-	pCity:SetNumRealBuilding(eBuildingMCEnhancing, 0)
-	pCity:SetNumRealBuilding(eBuildingMCReforming, 0)
+	local iMonolithicChurchCount = 0
 
-	for iCityPlot = 1, pCity:GetNumCityPlots() - 1, 1 do
+	for iCityPlot = 1, city:GetNumCityPlots() - 1, 1 do
 		print("Sprawdzam hex nr: ", iCityPlot)
-		local pSpecificPlot = pCity:GetCityIndexPlot(iCityPlot)
+		local pSpecificPlot = city:GetCityIndexPlot(iCityPlot)
 
 		if pSpecificPlot:GetImprovementType() == eImprovementMonolithicChurch then
 			print("Hex jest w zasiegu i jest na nim MC, wiec dokladam bonus")
-			if iReligionState == 1 then
-				pCity:SetNumRealBuilding(eBuildingMCPantheon, pCity:GetNumRealBuilding(eBuildingMCPantheon) + 1)
-				print("Liczba bonusow - Panteon: ", pCity:GetNumRealBuilding(eBuildingMCPantheon))
-			elseif iReligionState == 2 then
-				pCity:SetNumRealBuilding(eBuildingMCPantheon, pCity:GetNumRealBuilding(eBuildingMCPantheon) + 1)
-				pCity:SetNumRealBuilding(eBuildingMCReligion, pCity:GetNumRealBuilding(eBuildingMCReligion) + 1)
-				print("Liczba bonusow - Panteon: ", pCity:GetNumRealBuilding(eBuildingMCPantheon))
-				print("Liczba bonusow - Religion: ", pCity:GetNumRealBuilding(eBuildingMCReligion))
-			elseif iReligionState == 3 then
-				pCity:SetNumRealBuilding(eBuildingMCPantheon, pCity:GetNumRealBuilding(eBuildingMCPantheon) + 1)
-				pCity:SetNumRealBuilding(eBuildingMCReligion, pCity:GetNumRealBuilding(eBuildingMCReligion) + 1)
-				pCity:SetNumRealBuilding(eBuildingMCEnhancing, pCity:GetNumRealBuilding(eBuildingMCEnhancing) + 1)
-				print("Liczba bonusow - Panteon: ", pCity:GetNumRealBuilding(eBuildingMCPantheon))
-				print("Liczba bonusow - Religion: ", pCity:GetNumRealBuilding(eBuildingMCReligion))
-				print("Liczba bonusow - Enhancing: ", pCity:GetNumRealBuilding(eBuildingMCEnhancing))
-			elseif iReligionState == 4 then
-				pCity:SetNumRealBuilding(eBuildingMCPantheon, pCity:GetNumRealBuilding(eBuildingMCPantheon) + 1)
-				pCity:SetNumRealBuilding(eBuildingMCReligion, pCity:GetNumRealBuilding(eBuildingMCReligion) + 1)
-				pCity:SetNumRealBuilding(eBuildingMCEnhancing, pCity:GetNumRealBuilding(eBuildingMCEnhancing) + 1)
-				pCity:SetNumRealBuilding(eBuildingMCReforming, pCity:GetNumRealBuilding(eBuildingMCReforming) + 1)
-				print("Liczba bonusow - Panteon: ", pCity:GetNumRealBuilding(eBuildingMCPantheon))
-				print("Liczba bonusow - Religion: ", pCity:GetNumRealBuilding(eBuildingMCReligion))
-				print("Liczba bonusow - Enhancing: ", pCity:GetNumRealBuilding(eBuildingMCEnhancing))
-				print("Liczba bonusow - Reforming: ", pCity:GetNumRealBuilding(eBuildingMCReforming))
-			end
+			iMonolithicChurchCount = iMonolithicChurchCount + 1
 		end
+	end
+
+	print("Liczba bonusow: ", iMonolithicChurchCount)
+
+	if iReligionState == 1 then
+		city:SetNumRealBuilding(eBuildingMCPantheon, iMonolithicChurchCount)
+		print("P")
+	elseif iReligionState == 2 then
+		city:SetNumRealBuilding(eBuildingMCPantheon, iMonolithicChurchCount)
+		city:SetNumRealBuilding(eBuildingMCReligion, iMonolithicChurchCount)
+		print("F")
+	elseif iReligionState == 3 then
+		city:SetNumRealBuilding(eBuildingMCPantheon, iMonolithicChurchCount)
+		city:SetNumRealBuilding(eBuildingMCReligion, iMonolithicChurchCount)
+		city:SetNumRealBuilding(eBuildingMCEnhancing, iMonolithicChurchCount)
+		print("E")
+	elseif iReligionState == 4 then
+		city:SetNumRealBuilding(eBuildingMCPantheon, iMonolithicChurchCount)
+		city:SetNumRealBuilding(eBuildingMCReligion, iMonolithicChurchCount)
+		city:SetNumRealBuilding(eBuildingMCEnhancing, iMonolithicChurchCount)
+		city:SetNumRealBuilding(eBuildingMCReforming, iMonolithicChurchCount)
+		print("R")
+	end
+
+	if bIdeologyState then
+		city:SetNumRealBuilding(eBuildingMCIdeology, iMonolithicChurchCount)
+		print("I")
 	end
 end
 
