@@ -46,7 +46,7 @@ function OnReligionCountMonoChurches(iPlayer, iHolyCity, iReligion, iBelief1, iB
 	if pPlayer:GetCivilizationType() == eCivilizationEthiopia then
 		print("To jest Hajle")
 		iReligionState = 2
-		CityPlotChecking(pPlayer, iReligionState)
+		CityPlotChecking(pPlayer)
 	end
 end
 
@@ -57,7 +57,7 @@ function OnEnhaningCountMonoChurches(iPlayer, iReligion, iBelief1, iBelief2)
 	if pPlayer:GetCivilizationType() == eCivilizationEthiopia then
 		print("To jest Hajle")
 		iReligionState = 3
-		CityPlotChecking(pPlayer, iReligionState)
+		CityPlotChecking(pPlayer)
 	end
 end
 
@@ -68,14 +68,32 @@ function OnReformingCountMonoChurches(iPlayer, iReligion, iBelief1)
 	if pPlayer:GetCivilizationType() == eCivilizationEthiopia then
 		print("To jest Hajle")
 		iReligionState = 4
-		CityPlotChecking(pPlayer, iReligionState)
+		CityPlotChecking(pPlayer)
+	end
+end
+
+--adds yields to all cities after creating or deleting Monolithic Church
+function OnTileChangeResetBonuses(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged)
+	local pPlayer = Players[iOwner]
+	print("Cos pojawilo sie lub zniklo")
+	if pPlayer:GetCivilizationType() == eCivilizationEthiopia then
+		print("To jest Hajle")
+		if (iNewImprovement == eImprovementMonolithicChurch or iOldImprovement == eImprovementMonolithicChurch) then
+			print("To jest MC")
+			CityPlotChecking(pPlayer)
+		end
 	end
 end
 
 --plot scanner in all owned cities
-function CityPlotChecking(pPlayer, iReligionState)
+function CityPlotChecking(pPlayer)
 	for city in pPlayer:Cities() do
 		print("Sprawdzam kolejne miasto")
+		city:SetNumRealBuilding(eBuildingMCPantheon, 0)
+		city:SetNumRealBuilding(eBuildingMCReligion, 0)
+		city:SetNumRealBuilding(eBuildingMCEnhancing, 0)
+		city:SetNumRealBuilding(eBuildingMCReforming, 0)
+
 		for iCityPlot = 1, city:GetNumCityPlots() - 1, 1 do
 			print("Sprawdzam hex nr: ", iCityPlot)
 			local pSpecificPlot = city:GetCityIndexPlot(iCityPlot)
@@ -83,20 +101,14 @@ function CityPlotChecking(pPlayer, iReligionState)
 			if pSpecificPlot:GetImprovementType() == eImprovementMonolithicChurch then
 				print("Hex jest w zasiegu i jest na nim MC, wiec dokladam bonus")
 				if iReligionState == 1 then
-					city:SetNumRealBuilding(eBuildingMCPantheon, 0)
 					city:SetNumRealBuilding(eBuildingMCPantheon, city:GetNumRealBuilding(eBuildingMCPantheon) + 1)
 					print("Liczba bonusow - Panteon: ", city:GetNumRealBuilding(eBuildingMCPantheon))
 				elseif iReligionState == 2 then
-					city:SetNumRealBuilding(eBuildingMCPantheon, 0)
-					city:SetNumRealBuilding(eBuildingMCReligion, 0)
 					city:SetNumRealBuilding(eBuildingMCPantheon, city:GetNumRealBuilding(eBuildingMCPantheon) + 1)
 					city:SetNumRealBuilding(eBuildingMCReligion, city:GetNumRealBuilding(eBuildingMCReligion) + 1)
 					print("Liczba bonusow - Panteon: ", city:GetNumRealBuilding(eBuildingMCPantheon))
 					print("Liczba bonusow - Religion: ", city:GetNumRealBuilding(eBuildingMCReligion))
 				elseif iReligionState == 3 then
-					city:SetNumRealBuilding(eBuildingMCPantheon, 0)
-					city:SetNumRealBuilding(eBuildingMCReligion, 0)
-					city:SetNumRealBuilding(eBuildingMCEnhancing, 0)
 					city:SetNumRealBuilding(eBuildingMCPantheon, city:GetNumRealBuilding(eBuildingMCPantheon) + 1)
 					city:SetNumRealBuilding(eBuildingMCReligion, city:GetNumRealBuilding(eBuildingMCReligion) + 1)
 					city:SetNumRealBuilding(eBuildingMCEnhancing, city:GetNumRealBuilding(eBuildingMCEnhancing) + 1)
@@ -104,10 +116,6 @@ function CityPlotChecking(pPlayer, iReligionState)
 					print("Liczba bonusow - Religion: ", city:GetNumRealBuilding(eBuildingMCReligion))
 					print("Liczba bonusow - Enhancing: ", city:GetNumRealBuilding(eBuildingMCEnhancing))
 				elseif iReligionState == 4 then
-					city:SetNumRealBuilding(eBuildingMCPantheon, 0)
-					city:SetNumRealBuilding(eBuildingMCReligion, 0)
-					city:SetNumRealBuilding(eBuildingMCEnhancing, 0)
-					city:SetNumRealBuilding(eBuildingMCReforming, 0)
 					city:SetNumRealBuilding(eBuildingMCPantheon, city:GetNumRealBuilding(eBuildingMCPantheon) + 1)
 					city:SetNumRealBuilding(eBuildingMCReligion, city:GetNumRealBuilding(eBuildingMCReligion) + 1)
 					city:SetNumRealBuilding(eBuildingMCEnhancing, city:GetNumRealBuilding(eBuildingMCEnhancing) + 1)
@@ -126,3 +134,72 @@ GameEvents.PantheonFounded.Add(OnPatheonCountMonoChurches)
 GameEvents.ReligionFounded.Add(OnReligionCountMonoChurches)
 GameEvents.ReligionEnhanced.Add(OnEnhaningCountMonoChurches)
 GameEvents.ReligionReformed.Add(OnReformingCountMonoChurches)
+GameEvents.TileImprovementChanged.Add(OnTileChangeResetBonuses)
+
+--adds yields to the captured city for each Monolithic Church in range
+function OnCityCaptureResetBonuses(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, iConquest2)
+	print("Miasto zdobyte...")
+	local pNewPlayer = Players[iNewPlayer]
+	local pCity = Map.GetPlot(iX, iY):GetWorkingCity()
+	
+	if pNewPlayer:GetCivilizationType() == eCivilizationEthiopia then
+		print("...przez Etiopie")
+		OneCityPlotChecking(pPlayer, pCity)
+	end
+end
+
+function OnCityFoundAddBonuses(iPlayer, iX, iY)
+	print("Miasto zalozone...")
+	local pPlayer = Players[iPlayer]
+	local pCity = Map.GetPlot(iX, iY):GetWorkingCity()
+	
+	if pPlayer:GetCivilizationType() == eCivilizationEthiopia then
+		print("...przez Etiopie")
+		OneCityPlotChecking(pPlayer, pCity)
+	end
+end
+
+--plot scanner in one owned city
+function OneCityPlotChecking(pPlayer, pCity)
+	pCity:SetNumRealBuilding(eBuildingMCPantheon, 0)
+	pCity:SetNumRealBuilding(eBuildingMCReligion, 0)
+	pCity:SetNumRealBuilding(eBuildingMCEnhancing, 0)
+	pCity:SetNumRealBuilding(eBuildingMCReforming, 0)
+
+	for iCityPlot = 1, pCity:GetNumCityPlots() - 1, 1 do
+		print("Sprawdzam hex nr: ", iCityPlot)
+		local pSpecificPlot = pCity:GetCityIndexPlot(iCityPlot)
+
+		if pSpecificPlot:GetImprovementType() == eImprovementMonolithicChurch then
+			print("Hex jest w zasiegu i jest na nim MC, wiec dokladam bonus")
+			if iReligionState == 1 then
+				pCity:SetNumRealBuilding(eBuildingMCPantheon, pCity:GetNumRealBuilding(eBuildingMCPantheon) + 1)
+				print("Liczba bonusow - Panteon: ", pCity:GetNumRealBuilding(eBuildingMCPantheon))
+			elseif iReligionState == 2 then
+				pCity:SetNumRealBuilding(eBuildingMCPantheon, pCity:GetNumRealBuilding(eBuildingMCPantheon) + 1)
+				pCity:SetNumRealBuilding(eBuildingMCReligion, pCity:GetNumRealBuilding(eBuildingMCReligion) + 1)
+				print("Liczba bonusow - Panteon: ", pCity:GetNumRealBuilding(eBuildingMCPantheon))
+				print("Liczba bonusow - Religion: ", pCity:GetNumRealBuilding(eBuildingMCReligion))
+			elseif iReligionState == 3 then
+				pCity:SetNumRealBuilding(eBuildingMCPantheon, pCity:GetNumRealBuilding(eBuildingMCPantheon) + 1)
+				pCity:SetNumRealBuilding(eBuildingMCReligion, pCity:GetNumRealBuilding(eBuildingMCReligion) + 1)
+				pCity:SetNumRealBuilding(eBuildingMCEnhancing, pCity:GetNumRealBuilding(eBuildingMCEnhancing) + 1)
+				print("Liczba bonusow - Panteon: ", pCity:GetNumRealBuilding(eBuildingMCPantheon))
+				print("Liczba bonusow - Religion: ", pCity:GetNumRealBuilding(eBuildingMCReligion))
+				print("Liczba bonusow - Enhancing: ", pCity:GetNumRealBuilding(eBuildingMCEnhancing))
+			elseif iReligionState == 4 then
+				pCity:SetNumRealBuilding(eBuildingMCPantheon, pCity:GetNumRealBuilding(eBuildingMCPantheon) + 1)
+				pCity:SetNumRealBuilding(eBuildingMCReligion, pCity:GetNumRealBuilding(eBuildingMCReligion) + 1)
+				pCity:SetNumRealBuilding(eBuildingMCEnhancing, pCity:GetNumRealBuilding(eBuildingMCEnhancing) + 1)
+				pCity:SetNumRealBuilding(eBuildingMCReforming, pCity:GetNumRealBuilding(eBuildingMCReforming) + 1)
+				print("Liczba bonusow - Panteon: ", pCity:GetNumRealBuilding(eBuildingMCPantheon))
+				print("Liczba bonusow - Religion: ", pCity:GetNumRealBuilding(eBuildingMCReligion))
+				print("Liczba bonusow - Enhancing: ", pCity:GetNumRealBuilding(eBuildingMCEnhancing))
+				print("Liczba bonusow - Reforming: ", pCity:GetNumRealBuilding(eBuildingMCReforming))
+			end
+		end
+	end
+end
+
+GameEvents.CityCaptureComplete.Add(OnCityCaptureResetBonuses)
+GameEvents.PlayerCityFounded.Add(OnCityFoundAddBonuses)
