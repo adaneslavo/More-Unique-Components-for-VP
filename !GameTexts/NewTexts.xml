@@ -2226,7 +2226,7 @@
 			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI">
-			<Text>Shotel Swordsman</Text>
+			<Text>Shotelai</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_HELP">
 			<Text>Unique Medieval Era Unit. Only the Ethiopians may build it. Has bonus damage against Mounted Units, unlike the Longswordsman it replaces. Enemies attacked by this Unit have -1 [ICON_MOVES] Movement on their next turn.</Text>
