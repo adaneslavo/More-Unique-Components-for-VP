@@ -55,8 +55,7 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_GARDEN';
 ------------------------------		
 INSERT INTO Building_YieldChanges	
 			(BuildingType, 					YieldType,			Yield)
-VALUES		('BUILDING_PERSIA_PAIRIDAEZA',	'YIELD_GOLD',		3),
-			('BUILDING_PERSIA_PAIRIDAEZA',	'YIELD_CULTURE',	3),
+VALUES		('BUILDING_PERSIA_PAIRIDAEZA',	'YIELD_CULTURE',	3),
 			('BUILDING_PERSIA_PAIRIDAEZA',	'YIELD_TOURISM',	3);
 ------------------------------	
 -- Building_FeatureYieldChanges
@@ -79,11 +78,8 @@ VALUES		('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_COCOA',	'YIELD_GOLD',		1),
 INSERT INTO Building_BuildingClassYieldChanges 
 	(BuildingType, BuildingClassType, YieldType, YieldChange)
 VALUES
-	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_ARTISTS_GUILD', 'YIELD_GOLD', 1),
 	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_ARTISTS_GUILD', 'YIELD_CULTURE', 1),
-	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_MUSICIANS_GUILD', 'YIELD_GOLD', 1),
 	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_MUSICIANS_GUILD', 'YIELD_CULTURE', 1),
-	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_WRITERS_GUILD', 'YIELD_GOLD', 1),
 	('BUILDING_PERSIA_PAIRIDAEZA', 'BUILDINGCLASS_WRITERS_GUILD', 'YIELD_CULTURE', 1);
 
 --==========================================================================================================================

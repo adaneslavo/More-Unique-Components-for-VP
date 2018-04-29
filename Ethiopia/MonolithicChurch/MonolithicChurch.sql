@@ -90,10 +90,9 @@ VALUES		('UNIT_WORKER',		'BUILD_ETHIOPIA_MONOLITHIC_CHURCH');
 -- BuildFeatures
 ------------------------------				
 INSERT INTO BuildFeatures	
-			(BuildType, 							FeatureType, 		PrereqTech,					Time, 		Production,	Remove)
-VALUES		('BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'FEATURE_JUNGLE',	'TECH_IRON_WORKING',		500,		20,			1),
-			('BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'FEATURE_FOREST',	'TECH_BRONZE_WORKING',		400,		30,			1),
-			('BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'FEATURE_MARSH',	'TECH_MACHINERY',			600,		0,			1);
+			(BuildType, 						FeatureType, PrereqTech, Time, Production, Remove)
+SELECT		'BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	FeatureType, PrereqTech, Time, Production, Remove
+FROM BuildFeatures WHERE BuildType = 'BUILD_POLDER';
 --==========================================================================================================================
 
 --==========================================================================================================================

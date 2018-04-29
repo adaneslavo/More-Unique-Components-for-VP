@@ -5,10 +5,10 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>27</ModVersion>
+    <ModVersion>30</ModVersion>
     <Stability>Beta</Stability>
     <Teaser>More Unique Components mod. Compatible with latest VP.</Teaser>
-    <Description>More Unique Components mod. Compatible with latest VP (2-1).
+    <Description>More Unique Components mod. Compatible with latest VP (4-20).
 
 Latest changes: see changelog file.</Description>
     <Authors>adan_eslavo</Authors>
@@ -556,12 +556,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Venice/Fusta/1.FustaArt.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Venice/Fusta/2.FustaCode.sql</FileName>
+        <FileName>Venice/Fusta/Fusta.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -641,17 +636,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Huns/AltiCur/AltiCurCode.sql</FileName>
+        <FileName>Huns/AltiCur/AltiCur.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Huns/Tarkhan/1.TarkhanArt.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Huns/Tarkhan/3.TarkhanCode.sql</FileName>
+        <FileName>Huns/Tarkhan/Tarkhan.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -661,27 +651,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Inca/TamboAndCoca/TamboArt.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Inca/TamboAndCoca/TamboCode.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Songhai/Qadi/Qadi.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Songhai/Qadi/SonghaiQadiCourt.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Songhai/Sofa/1.SofaAndMandekalu.sql</FileName>
+        <FileName>Songhai/Sofa/Sofa.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -691,27 +666,27 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Japan/Yamato/1.Yamato.sql</FileName>
+        <FileName>Japan/Yamato/Yamato.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Zulu/Indaba/3UC_ZULU.sql</FileName>
+        <FileName>Zulu/Indaba/Indaba.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Zulu/Iziko/1.IzikoCode.sql</FileName>
+        <FileName>Zulu/Iziko/Iziko.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Korea/Chaebol/2.ChaebolCodet.sql</FileName>
+        <FileName>Korea/Chaebol/Chaebol.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Korea/TurtleShip/1.TurtleShipCode.sql</FileName>
+        <FileName>Korea/TurtleShip/TurtleShip.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -727,6 +702,36 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>!DummyBuildings/DummyBuildingExpAndClassYield.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Inca/GreatAndeanRoad/GreatAndeanRoad.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Inca/Intihuatana/Intihuatana.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>!DummyBuildings/DummyBuildingHorseYields.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Huns/HorseArcher/HorseArcher.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Venice/GreatGalleas/GreatGalleas.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Songhai/MandekaluCavalry/MandekaluCavalry.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -753,12 +758,6 @@ Latest changes: see changelog file.</Description>
         <Name>Sachems Council</Name>
         <Description>Adds Diplomatic Reciprocity promotion to Great Diplomats and adds 1 Happiness for every Defensive Pact and War.</Description>
         <FileName>Iroquois/SachemsCouncil/SachemsCouncil.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>Scythed Chariot</Name>
-        <Description>Adds Scythe promotion.</Description>
-        <FileName>Celts/ScythedChariot/ScythedChariot.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1098,21 +1097,15 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Tambo</Name>
-        <Description>Adds Coca Monopoly to Game</Description>
-        <FileName>Inca/TamboAndCoca/Tambo.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Tarkhan</Name>
         <Description>Adds Tarkhan Promotions</Description>
-        <FileName>Huns/Tarkhan/2.Tarkhan.lua</FileName>
+        <FileName>Huns/Tarkhan/Tarkhan.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Yamato</Name>
         <Description>Adds yields on build and kill for Yamato</Description>
-        <FileName>Japan/Yamato/2.Yamato.lua</FileName>
+        <FileName>Japan/Yamato/Yamato.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1130,19 +1123,43 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Sofa</Name>
         <Description>Adds HorseFather promotion to Sofa</Description>
-        <FileName>Songhai/Sofa/2.Sofa.lua</FileName>
+        <FileName>Songhai/Sofa/Sofa.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>AltiCur</Name>
         <Description>Bonuses for demanding tribute</Description>
         <FileName>Huns/AltiCur/AltiCur.lua</FileName>
-	  </Content>
+      </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Kabuki</Name>
         <Description>Adds bonuses to Guilds.</Description>
         <FileName>Japan/Kabuki/Kabuki.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Indaba</Name>
+        <Description>Functions for InDuna on attack and on expend</Description>
+        <FileName>Zulu/Indaba/Indaba.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Intihuatana</Name>
+        <Description>Upgrades Intihuatana.</Description>
+        <FileName>Inca/Intihuatana/Intihuatana.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Iziko</Name>
+        <Description>Adds Culture on Unit Level to all Cities.</Description>
+        <FileName>Zulu/Iziko/Iziko.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Horse Archer</Name>
+        <Description>Automatic attack for Horse Archer</Description>
+        <FileName>Huns/HorseArcher/HorseArcher.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
@@ -1159,6 +1176,98 @@ Latest changes: see changelog file.</Description>
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="!Animations\edited_aim_ms_attack_city_to_run.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_attack_to_run_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_bombard_defend_loop_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_combat_ready_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_death_final_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_death_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_enter_bombard_defend_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_enter_combat_ready_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_enter_fortify.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_fidgets_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_fortify_fidget_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_fortify_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_fortify_leave_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_idle_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_leave_bombard_defend_trans_idle_a_graph.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_leave_combat_ready.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_modern_ship_attacks.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_running_loop.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_start_running.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_stop_running.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_ms_transitions_for_idles.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_aim_running_loop.dge">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Animations\edited_modern_ship_aim_state_01.fsmxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="!DummyBuildings\DummyBuildingDefense.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1180,6 +1289,10 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="!DummyBuildings\DummyBuildingClassYield.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="!DummyBuildings\DummyBuildingHorseYields.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1459,6 +1572,26 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Babylon\Kibitum\Legacy\LegacyFourIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Babylon\Kibitum\Legacy\LegacyIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Babylon\Kibitum\Legacy\LegacyOneIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Babylon\Kibitum\Legacy\LegacyThreeIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Babylon\Kibitum\Legacy\LegacyTwoIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Brazil\Pracinha\Pracinha.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1576,6 +1709,14 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Carthage\Tophet\TophetPicture_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\ScythedChariot\Carnyx\CarnyxIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Celts\ScythedChariot\Scythe\ScytheIcon_016.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1732,6 +1873,10 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Egypt\Flax\FlaxFontIcon_022.ggxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Flax\FlaxIcon_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1919,91 +2064,91 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\AltiCurCode.sql">
+    <Content Include="Huns\AltiCur\AltiCur.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt128.dds">
+    <Content Include="Huns\AltiCur\AltiCurPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt256.dds">
+    <Content Include="Huns\AltiCur\AltiCurPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt45.dds">
+    <Content Include="Huns\AltiCur\AltiCurPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\AltiCur\yurt64.dds">
+    <Content Include="Huns\AltiCur\AltiCurPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\1.TarkhanArt.sql">
+    <Content Include="Huns\HorseArcher\HorseArcher.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\2.Tarkhan.lua">
+    <Content Include="Huns\HorseArcher\HorseArcher.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\3.TarkhanCode.sql">
+    <Content Include="Huns\Tarkhan\Tarkhan.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey.dds">
+    <Content Include="Huns\Tarkhan\Tarkhan.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Huns\Tarkhan\3DModel\Horseman_Turkey.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey.fxsxml">
+    <Content Include="Huns\Tarkhan\3DModel\Horseman_Turkey.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey.gr2">
+    <Content Include="Huns\Tarkhan\3DModel\Horseman_Turkey.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey_gloss.dds">
+    <Content Include="Huns\Tarkhan\3DModel\Horseman_Turkey_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\Horseman_Turkey_Horse.dds">
+    <Content Include="Huns\Tarkhan\3DModel\Horseman_Turkey_Horse.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_AlanCavalryUnitFlag_32.dds">
+    <Content Include="Huns\Tarkhan\3DModel\no_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_128.dds">
+    <Content Include="Huns\Tarkhan\TarkhanFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_256.dds">
+    <Content Include="Huns\Tarkhan\TarkhanPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_32.dds">
+    <Content Include="Huns\Tarkhan\TarkhanPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_45.dds">
+    <Content Include="Huns\Tarkhan\TarkhanPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_64.dds">
+    <Content Include="Huns\Tarkhan\TarkhanPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\JFD_VandalsAtlas_80.dds">
+    <Content Include="Huns\Tarkhan\TarkhanPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\Tarkhan\no_gloss.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Huns\Tarkhan\sv_AlanCavalry.dds">
+    <Content Include="Huns\Tarkhan\TarkhanFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -2063,67 +2208,51 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\Coca_fonticon.ggxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\CocaLeaf\sv_coca.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\CocaArt\NewAymaraIcons80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Inca\TamboAndCoca\Tambo.lua">
+    <Content Include="Inca\GreatAndeanRoad\GreatAndeanRoad.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\TamboArt.sql">
+    <Content Include="Inca\Intihuatana\Intihuatana.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\TamboAndCoca\TamboCode.sql">
+    <Content Include="Inca\Intihuatana\Intihuatana.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\JapGuilds128.dds">
+    <Content Include="Inca\Intihuatana\IntihuatanaPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\JapGuilds256.dds">
+    <Content Include="Inca\Intihuatana\IntihuatanaPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\JapGuilds45.dds">
+    <Content Include="Inca\Intihuatana\IntihuatanaPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\JapGuilds64.dds">
+    <Content Include="Inca\Intihuatana\IntihuatanaPicture_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="India\Dhanuraashi\Dhanurvidya\DhanurvidyaIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Japan\Kabuki\JapaneseGuildsPictures_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Japan\Kabuki\JapaneseGuildsPictures_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Japan\Kabuki\JapaneseGuildsPictures_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Japan\Kabuki\JapaneseGuildsPictures_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -2135,83 +2264,75 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\Kabuki128.dds">
+    <Content Include="Japan\Kabuki\KabukiPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\Kabuki256.dds">
+    <Content Include="Japan\Kabuki\KabukiPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\Kabuki32.dds">
+    <Content Include="Japan\Kabuki\KabukiPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\Kabuki45.dds">
+    <Content Include="Japan\Kabuki\KabukiPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Kabuki\Kabuki64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Kabuki\Kabuki80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Japan\Yamato\1.Yamato.sql">
+    <Content Include="Japan\Yamato\Yamato.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\2.Yamato.lua">
+    <Content Include="Japan\Yamato\Yamato.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\JFD_JapanTojoAtlas_128.dds">
+    <Content Include="Japan\Yamato\3DModel\Yamato_Class.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\JFD_JapanTojoAtlas_256.dds">
+    <Content Include="Japan\Yamato\3DModel\Yamato_Class.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\JFD_JapanTojoAtlas_45.dds">
+    <Content Include="Japan\Yamato\3DModel\Yamato_Class.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\JFD_JapanTojoAtlas_64.dds">
+    <Content Include="Japan\Yamato\3DModel\Yamato_Class_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\JFD_JapanTojoAtlas_80.dds">
+    <Content Include="Japan\Yamato\YamatoPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\sv_Yamato.dds">
+    <Content Include="Japan\Yamato\YamatoPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\UnitFlagYamatoAtlas_32.dds">
+    <Content Include="Japan\Yamato\YamatoPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\Yamato_Class.dds">
+    <Content Include="Japan\Yamato\YamatoPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\Yamato_Class.fxsxml">
+    <Content Include="Japan\Yamato\YamatoPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\Yamato_Class.gr2">
+    <Content Include="Japan\Yamato\YamatoFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Japan\Yamato\Yamato_Class_gloss.dds">
+    <Content Include="Japan\Yamato\YamatoFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\2.ChaebolCodet.sql">
+    <Content Include="Korea\Chaebol\Chaebol.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2219,33 +2340,29 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_128.dds">
+    <Content Include="Korea\Chaebol\ChaebolPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_256.dds">
+    <Content Include="Korea\Chaebol\ChaebolPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_32.dds">
+    <Content Include="Korea\Chaebol\ChaebolPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_45.dds">
+    <Content Include="Korea\Chaebol\ChaebolPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Korea\Chaebol\Chaebol_Isolated_80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Korea\TurtleShip\1.TurtleShipCode.sql">
+    <Content Include="Korea\TurtleShip\TurtleShip.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Maya\Calendar\CalendarIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Morocco\Corsair\3DModel\tcmAmmiratus.fxsxml">
       <SubType>Lua</SubType>
@@ -2327,6 +2444,18 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Persia\Qizilbash\SafaviAgitator\SafaviAgitatorIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -2343,39 +2472,47 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\4CACADOR128.dds">
+    <Content Include="Polynesia\Koa\KapuKuialua\KapuKuialuaIcon_016.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\4CACADOR256.dds">
+    <Content Include="Portugal\Cacadores\3DModel\ausgw1.blend">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\4CACADOR45.dds">
+    <Content Include="Portugal\Cacadores\3DModel\ausgw1.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\4CACADOR64.dds">
+    <Content Include="Portugal\Cacadores\3DModel\ausgw1.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\4CACADOR80.dds">
+    <Content Include="Portugal\Cacadores\3DModel\ausgw1.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\ausgw1.blend">
+    <Content Include="Portugal\Cacadores\3DModel\no_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\ausgw1.dds">
+    <Content Include="Portugal\Cacadores\CacadoresPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\ausgw1.fxsxml">
+    <Content Include="Portugal\Cacadores\CacadoresPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\ausgw1.gr2">
+    <Content Include="Portugal\Cacadores\CacadoresPicture_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Portugal\Cacadores\CacadoresPicture_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Portugal\Cacadores\CacadoresPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -2387,15 +2524,11 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\no_gloss.dds">
+    <Content Include="Portugal\Cacadores\CacadoresFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Portugal\Cacadores\sv_3UC_CACADOR.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Portugal\Cacadores\Unit_CACADOR_Flag_4UC_32.dds">
+    <Content Include="Portugal\Cacadores\CacadoresFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -2535,6 +2668,10 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Rome\Figs\FigsIcon_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Rome\Figs\FigsIcon_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -2659,7 +2796,27 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Siam\SeirMorb\CoastalCannon\CoastalCannonIcon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger1Icon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger2Icon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger3Icon_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Siam\Wat\Wat.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Songhai\MandekaluCavalry\MandekaluCavalry.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2671,91 +2828,83 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi128.dds">
+    <Content Include="Songhai\Qadi\QadiPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi256.dds">
+    <Content Include="Songhai\Qadi\QadiPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi256.xcf">
+    <Content Include="Songhai\Qadi\QadiPicture_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Songhai\Qadi\QadiPicture_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Songhai\Sofa\Sofa.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Songhai\Qadi\Qadi64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Songhai\Qadi\SonghaiQadiCourt.xml">
+    <Content Include="Songhai\Sofa\Sofa.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\1.SofaAndMandekalu.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Songhai\Sofa\2.Sofa.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Songhai\Sofa\Fx_Triggers_ZuluJavelineer.ftsxml">
+    <Content Include="Songhai\Sofa\3DModel\Fx_Triggers_ZuluJavelineer.ftsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\MaliUnitAlphaAtlas.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\SofaIcon045.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer.fbx">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\SofaIcon064.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\SofaIcon080.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\SofaIcon128.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\SofaIcon256.dds">
+    <Content Include="Songhai\Sofa\3DModel\ZuluJavelineer_Template.blend">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\sv_Mali_Unit_Mod.dds">
+    <Content Include="Songhai\Sofa\SofaFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer.dds">
+    <Content Include="Songhai\Sofa\SofaPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer.fbx">
+    <Content Include="Songhai\Sofa\SofaPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer.fxsxml">
+    <Content Include="Songhai\Sofa\SofaPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer.gr2">
+    <Content Include="Songhai\Sofa\SofaPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer_sref.dds">
+    <Content Include="Songhai\Sofa\SofaPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Sofa\ZuluJavelineer_Template.blend">
+    <Content Include="Songhai\Sofa\SofaFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -3409,7 +3558,7 @@ Latest changes: see changelog file.</Description>
     </Content>
     <Content Include="Greece\Klepth\Klepht.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="India\Dhanuraashi\3DModel\EthiopiaCompBow.dds">
       <SubType>Lua</SubType>
@@ -4679,10 +4828,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Celts\ScythedChariot\ScythedChariot.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Celts\ScythedChariot\ScythedChariotPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -5039,172 +5184,173 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Fusta\1.FustaArt.sql">
+    <Content Include="Venice\Fusta\Fusta.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Fusta\2.FustaCode.sql">
+    <Content Include="Venice\Fusta\3DModel\lanternas.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\3DModel\lanternas.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\3DModel\lanternas_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\3DModel\lanternas_dmg_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\3DModel\lanternas_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaPicture_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaPicture_080.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaPicture_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaPicture_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaPicture_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaFlag_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\Fusta\FustaFlag_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Venice\GreatGalleas\GreatGalleas.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_ByzantiumAlexiusAtlas_128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_ByzantiumAlexiusAtlas_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_ByzantiumAlexiusAtlas_45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_ByzantiumAlexiusAtlas_64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_ByzantiumAlexiusAtlas_80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\JFD_LanternasUnitFlag_32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\lanternas.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\lanternas.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\lanternas_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\lanternas_dmg_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\lanternas_sref.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Fusta\sv_Lanternas.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Venice\Laguna\Laguna.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Laguna\Laguna128.dds">
+    <Content Include="Venice\Laguna\LagunaPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Laguna\Laguna216.dds">
+    <Content Include="Venice\Laguna\LagunaPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Laguna\Laguna256.dds">
+    <Content Include="Venice\Laguna\LagunaPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Laguna\Laguna40.dds">
+    <Content Include="Venice\Laguna\LagunaPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Laguna\Laguna45.dds">
+    <Content Include="Zulu\Indaba\IndabaFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Venice\Laguna\Laguna64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Venice\Laguna\Laguna80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Zulu\Indaba\3IzuUnitAlphaAtlas.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Zulu\Indaba\3UC_ZULU.sql">
+    <Content Include="Zulu\Indaba\Indaba.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral128.dds">
+    <Content Include="Zulu\Indaba\IndabaPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral256.dds">
+    <Content Include="Zulu\Indaba\IndabaPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral45.dds">
+    <Content Include="Zulu\Indaba\IndabaPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral64.dds">
+    <Content Include="Zulu\Indaba\IndabaPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3ZuluGeneral80.dds">
+    <Content Include="Zulu\Indaba\IndabaPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.blend">
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.blend">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.br2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Indaba\Indaba.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.br2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Zulu\Indaba\AlternativeUnitModel\BA_SonghaiSpear_sref.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Zulu\Iziko\1.IzikoCode.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Zulu\Iziko\Iziko128.dds">
+    <Content Include="Zulu\Indaba\IndabaFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko256.dds">
+    <Content Include="Zulu\Iziko\Iziko.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Iziko\Iziko.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Zulu\Iziko\IzikoPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko45.dds">
+    <Content Include="Zulu\Iziko\IzikoPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\Iziko64.dds">
+    <Content Include="Zulu\Iziko\IzikoPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Iziko\sv_3izu.dds">
+    <Content Include="Zulu\Iziko\IzikoPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="!Animations" />
+    <Folder Include="!DummyBuildings" />
+    <Folder Include="!GameTexts" />
+    <Folder Include="!Settings" />
+    <Folder Include="!SharedAssets" />
     <Folder Include="America\" />
     <Folder Include="America\Monitor\" />
     <Folder Include="America\Ranch\" />
@@ -5240,23 +5386,23 @@ Latest changes: see changelog file.</Description>
     <Folder Include="England\Longbowman" />
     <Folder Include="England\WhiteTower" />
     <Folder Include="Egypt" />
-    <Folder Include="!SharedAssets" />
     <Folder Include="Germany\Slaganz\3DModel" />
     <Folder Include="Germany\TeutonicOrder" />
     <Folder Include="Germany\Slaganz" />
     <Folder Include="Huns" />
     <Folder Include="Huns\AltiCur" />
-    <Folder Include="Huns\HorseArcherChange" />
+    <Folder Include="Huns\HorseArcher" />
     <Folder Include="Huns\Tarkhan" />
+    <Folder Include="Huns\Tarkhan\3DModel" />
     <Folder Include="Inca" />
     <Folder Include="Inca\Chasqui" />
     <Folder Include="Inca\Chasqui\3DModel" />
-    <Folder Include="Inca\TamboAndCoca" />
-    <Folder Include="Inca\TamboAndCoca\CocaArt" />
-    <Folder Include="Inca\TamboAndCoca\CocaArt\CocaLeaf" />
+    <Folder Include="Inca\GreatAndeanRoad" />
+    <Folder Include="Inca\Intihuatana" />
     <Folder Include="Japan\" />
     <Folder Include="Japan\Kabuki\" />
     <Folder Include="Japan\Yamato\" />
+    <Folder Include="Japan\Yamato\3DModel" />
     <Folder Include="Korea\" />
     <Folder Include="Korea\Chaebol\" />
     <Folder Include="Korea\TurtleShip\" />
@@ -5269,6 +5415,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Persia\Darius" />
     <Folder Include="Portugal\" />
     <Folder Include="Portugal\Cacadores\" />
+    <Folder Include="Portugal\Cacadores\3DModel" />
     <Folder Include="Portugal\University of Coimbra\" />
     <Folder Include="Rome" />
     <Folder Include="Poland\Pancerny\Grunwald" />
@@ -5281,8 +5428,10 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Siam\Wat" />
     <Folder Include="Siam\Ramkhamhaeng" />
     <Folder Include="Songhai\" />
+    <Folder Include="Songhai\MandekaluCavalry" />
     <Folder Include="Songhai\Qadi\" />
     <Folder Include="Songhai\Sofa\" />
+    <Folder Include="Songhai\Sofa\3DModel" />
     <Folder Include="Spain\Conquistador" />
     <Folder Include="Aztecs\Eagle" />
     <Folder Include="Aztecs\HueyTeocalli" />
@@ -5302,7 +5451,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Ethiopia\MehalSefari" />
     <Folder Include="Ethiopia\Shotelai" />
     <Folder Include="Ethiopia\Shotelai\3DModel" />
-    <Folder Include="!Settings" />
     <Folder Include="France\GrandeEcole" />
     <Folder Include="France\Napoleon" />
     <Folder Include="France\SPAD" />
@@ -5329,9 +5477,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Babylon" />
     <Folder Include="Byzantium" />
     <Folder Include="India" />
-    <Folder Include="!DummyBuildings" />
     <Folder Include="Denmark" />
-    <Folder Include="!GameTexts" />
     <Folder Include="Aztecs" />
     <Folder Include="Persia" />
     <Folder Include="Persia\Qizilbash" />
@@ -5407,10 +5553,12 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Ottomans\Tersane" />
     <Folder Include="Venice\" />
     <Folder Include="Venice\Fusta\" />
+    <Folder Include="Venice\Fusta\3DModel" />
     <Folder Include="Venice\Laguna\" />
+    <Folder Include="Venice\GreatGalleas" />
     <Folder Include="Zulu" />
     <Folder Include="Zulu\Indaba" />
-    <Folder Include="Zulu\Indaba\AlternativeUnitModel" />
+    <Folder Include="Zulu\Indaba\3DModel" />
     <Folder Include="Zulu\Iziko" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />

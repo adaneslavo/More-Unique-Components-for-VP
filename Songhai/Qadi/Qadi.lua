@@ -8,7 +8,7 @@ function OnPlayerDoTurnQadi(iPlayer)
 
 	if pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_SONGHAI then
 		for pCity in pPlayer:Cities() do
-			if pCity:IsHasBuilding(GameInfoTypes.BUILDING_QADI_COURT) then
+			if pCity:IsHasBuilding(GameInfoTypes.BUILDING_SONGHAI_QADI_COURT) then
 				-- culture
 				local iCultureChange = math.floor( 0.1 * pCity:GetBaseYieldRate(YieldTypes.YIELD_PRODUCTION) )
 				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCULTURE, iCultureChange)

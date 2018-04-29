@@ -25,9 +25,8 @@ FROM Buildings WHERE Type = 'BUILDING_CASTLE';
 INSERT INTO Building_Flavors 	
 			(BuildingType, 			FlavorType,				Flavor)
 VALUES		('BUILDING_INDIA_QILA',	'FLAVOR_GREAT_PEOPLE',	15),
-			('BUILDING_INDIA_QILA',	'FLAVOR_CITY_DEFENSE',	50),
-			('BUILDING_INDIA_QILA',	'FLAVOR_CULTURE',		100),
-			('BUILDING_INDIA_QILA',	'FLAVOR_GROWTH',		50);			
+			('BUILDING_INDIA_QILA',	'FLAVOR_CITY_DEFENSE',	60),
+			('BUILDING_INDIA_QILA',	'FLAVOR_CULTURE',		100);			
 ------------------------------	
 -- Building_ClassesNeededInCity
 ------------------------------		
@@ -40,8 +39,7 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_CASTLE';
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 			YieldType,			Yield)
-VALUES		('BUILDING_INDIA_QILA',	'YIELD_CULTURE',	3),
-			('BUILDING_INDIA_QILA',	'YIELD_FOOD',		2);
+VALUES		('BUILDING_INDIA_QILA',	'YIELD_CULTURE',	2);
 ------------------------------	
 -- Building_TechEnhancedYieldChanges
 ------------------------------

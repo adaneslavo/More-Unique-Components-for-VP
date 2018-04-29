@@ -2,16 +2,17 @@
 -- Author: adan_eslavo
 -- DateCreated: 12/12/2017
 -- 2018-01-22 Infixo, RESOURCECLASS_LUXURY used
+-- 2018-03-14 Infixo, no self-boost for Goedendags
 --------------------------------------------------------------
-local iGoedendag = GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_GOEDENDAG
-local iGoedendagEffect = GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT
+local eGoedendag = GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_GOEDENDAG
+local eGoedendagEffect = GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT
 
 function GoedendagBonus(iPlayer)
 	local pPlayer = Players[iPlayer]
 
 	for pUnit in pPlayer:Units() do
 		if pUnit:GetUnitCombatType() >= 0 and pUnit:GetDomainType() == GameInfoTypes.DOMAIN_LAND then
-			pUnit:SetHasPromotion(iGoedendagEffect, pUnit:IsWithinDistanceOfUnitPromotion(iGoedendag, 1, true, false))
+			pUnit:SetHasPromotion(eGoedendagEffect, pUnit:IsAdjacentToUnitPromotion(eGoedendag, true, false))
 		end
 	end
 end

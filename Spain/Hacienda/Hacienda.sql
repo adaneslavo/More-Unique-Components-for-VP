@@ -135,10 +135,9 @@ VALUES		('UNIT_WORKER',		'BUILD_SPAIN_HACIENDA');
 -- BuildFeatures
 ------------------------------				
 INSERT INTO BuildFeatures	
-			(BuildType, 				FeatureType, 		PrereqTech,					Time, 		Production,	Remove)
-VALUES		('BUILD_SPAIN_HACIENDA',	'FEATURE_JUNGLE',	'TECH_IRON_WORKING',		500,		20,			1),
-			('BUILD_SPAIN_HACIENDA',	'FEATURE_FOREST',	'TECH_BRONZE_WORKING',		400,		30,			1),
-			('BUILD_SPAIN_HACIENDA',	'FEATURE_MARSH',	'TECH_MACHINERY',			600,		0,			1);
+			(BuildType, 			FeatureType, PrereqTech, Time, Production, Remove)
+SELECT		'BUILD_SPAIN_HACIENDA',	FeatureType, PrereqTech, Time, Production, Remove
+FROM BuildFeatures WHERE BuildType = 'BUILD_POLDER';
 --==========================================================================================================================
 
 --==========================================================================================================================

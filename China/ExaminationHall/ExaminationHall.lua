@@ -2,6 +2,7 @@
 -- Author: Blue Ghost
 -- DateCreated:
 -- 2018-01-20 updated by Infixo
+-- 2018-03-03 updated by Infixo (highest points)
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
@@ -44,7 +45,21 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 				local iGPP = 7.5 * iEraModifier * iGameSpeedModifier
 				iGPP = math.floor(iGPP)
 				
-				local tGP = tGPs[ math.random( #tGPs ) ] -- pick random GP
+				--local tGP = tGPs[ math.random( #tGPs ) ] -- pick random GP
+				-- Find GP with highest points
+				local tGP, iGPPMax = nil, 0
+				for _,spec in ipairs(tGPs) do
+					local gpProgress = city:GetSpecialistGreatPersonProgressTimes100(spec.GPType);
+					if gpProgress > iGPPMax then iGPPMax = gpProgress; tGP = spec end
+				end
+				if not tGP then
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]No Great People Points produced in the City so far[ENDCOLOR]", 1)
+					end
+					return 
+				end
+				
 				--print("Civil Examinations", tGP.GPType, tGP.GPStr, iGPP) -- debug
 				pCity:ChangeSpecialistGreatPersonProgressTimes100(tGP.GPType, iGPP * 100)
 				

@@ -49,13 +49,7 @@ VALUES	('BUILDING_RUSSIA_POGOST_2',	'BUILDINGCLASS_MINT');
 ------------------------------	
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
-VALUES		('BUILDING_RUSSIA_POGOST_2',	'YIELD_SCIENCE',	1);
-------------------------------	
--- Building_YieldChangesPerPop
-------------------------------
-INSERT INTO Building_YieldChangesPerPop 	
-			(BuildingType,					YieldType,		Yield)
-VALUES		('BUILDING_RUSSIA_POGOST_2',	'YIELD_GOLD',	20);
+VALUES		('BUILDING_RUSSIA_POGOST_2',	'YIELD_SCIENCE',	2);
 --==========================================================================================================================
 --==========================================================================================================================
 

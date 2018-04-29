@@ -64,6 +64,7 @@ VALUES		('UNIT_PERSIA_ATLAS', 				256, 		'QizilbashPicture_256.dds',			1, 				1)
 			('UNIT_PERSIA_ATLAS', 				64, 		'QizilbashPicture_064.dds',			1, 				1),
 			('UNIT_PERSIA_ATLAS', 				45, 		'QizilbashPicture_045.dds',			1, 				1),
 			('UNIT_PERSIA_FLAG_ATLAS', 			32, 		'QizilbashFlag_032.dds',			1, 				1),
+			('UNIT_PERSIA_PROMOTION_ATLAS',		16, 		'SafaviAgitatorIcon_016.dds',		1, 				1),
 			('UNIT_PERSIA_PROMOTION_ATLAS',		32, 		'SafaviAgitatorIcon_032.dds',		1, 				1),
 			('UNIT_PERSIA_PROMOTION_ATLAS',		45, 		'SafaviAgitatorIcon_045.dds',		1, 				1),
 			('UNIT_PERSIA_PROMOTION_ATLAS',		64, 		'SafaviAgitatorIcon_064.dds',		1, 				1),

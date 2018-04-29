@@ -40,7 +40,7 @@ WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_CAROLEAN_STRATEGY';
 
 -- Hakkapeliitta
 UPDATE Language_en_US 
-SET Text = 'Unique Swedish Lancer. This Unit is stronger and more effective against wounded units than the Lancer. [ICON_GREAT_GENERAL] Great Generals are generated more quickly by this Unit, and they transfer their movement to [ICON_GREAT_GENERAL] Great Generals when beginning a turn stacked. Is available earlier than the Lancer.'
+SET Text = 'Unique Swedish Lancer. This Unit is stronger and more effective against wounded units than the Lancer. [ICON_GREAT_GENERAL] Great Generals are generated more quickly by this Unit, and they transfer their movement to [ICON_GREAT_GENERAL] Great Generals when beginning a turn stacked.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_SWEDISH_HAKKAPELIITTA';
 
 UPDATE Language_en_US 
@@ -84,8 +84,28 @@ SET Text = 'The Turtle Ship is an early incarnation of the Ironclad for tactical
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 UPDATE Language_en_US 
-SET Text = 'Korean replacement for the Caravel. High [ICON_STRENGTH] Combat Strength, and more effective against other melee naval units. Moves slowly in Deep Ocean'
+SET Text = 'Korean replacement for the Caravel. High [ICON_STRENGTH] Combat Strength, and more effective against other melee naval units. Moves slowly in Deep Ocean.'
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+-- Horse Archer
+UPDATE Language_en_US 
+SET Text = 'Unique Hunnic Skirmisher. If all the unit''s moves are used without attacking, attacks a valid target automatically.[NEWLINE][NEWLINE]Does not require Horses.'
+WHERE Tag = 'TXT_KEY_UNIT_HELP_HUN_HORSE_ARCHER';
+
+UPDATE Language_en_US 
+SET Text = 'Horse Archers are fast ranged units, deadly on open terrain. Horse Archers have the unique ability to automatically attack a random nearby target if they have run out of moves, but have not attacked yet. As a mounted unit, the Horse Archer is vulnerable to Spearmen. Unlike the Skirmisher, the Horse Archer does not require Horses.'
+WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';
+
+-- Great Galleas
+UPDATE Language_en_US 
+SET Text = 'Unique Venetian Galleass. This Unit is stronger than the Galleas it replaces.'
+WHERE Tag = 'TXT_KEY_UNIT_HELP_VENETIAN_GALLEASS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+UPDATE Language_en_US 
+SET Text = 'The Great Galleass is slightly more powerful than the normal Galleass. The Venetian fleet''s terrible bombarding was famous in the Medieval Era and is well represented with this unit.'
+WHERE Tag = 'TXT_KEY_UNIT_VENETIAN_GALLEASS_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+
 ------------------------------
 -- Building Texts
 ------------------------------
@@ -98,7 +118,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
 ------------------------------
 -- Polder
 UPDATE Language_en_US 
-SET Text = 'A Polder can be built on tiles with access to fresh water or on marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy units entering a tile with a Polder lose all remaining movement. Provides additional yields once later techs are researched.'
+SET Text = 'A Polder can be built on tiles with access to fresh water or on marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy units entering a tile with a Polder lose all remaining movement as if crossing a river. Provides additional yields once later techs are researched.'
 WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP';
 
 UPDATE Language_en_US 
@@ -115,6 +135,22 @@ VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'Constructs a Polder, which increases [ICO
 UPDATE Language_en_US
 SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion neither generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if city adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] GMP in your [ICON_CAPITAL] Capital after you found a Pantheon, and in Holy City for every religious milestone.'
 WHERE Tag = 'TXT_KEY_TRAIT_FAITH_FROM_NATURE';
+
+-- Great Andean Road
+UPDATE Language_en_US
+SET Text = 'Units ignore terrain costs when on Hills and may cross Mountains. Cities, Roads, and Railroads may be built on Mountains, and Mountains produce [ICON_RESEARCH] Science and [ICON_GOLD] Gold, scaling with Era.'
+WHERE Tag = 'TXT_KEY_TRAIT_GREAT_ANDEAN_ROAD';
+--------------------------------	
+-- Promotion Text
+--------------------------------
+-- Atlatlist
+UPDATE Language_en_US 
+SET Text = 'Poisoned Weapon' 
+WHERE Tag = 'TXT_KEY_PROMOTION_ATLATL_ATTACK';
+
+UPDATE Language_en_US 
+SET Text = '+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength [COLOR_POSITIVE_TEXT]against Wounded Units[ENDCOLOR]' 
+WHERE Tag = 'TXT_KEY_PROMOTION_ATLATL_ATTACK_HELP';
 --==========================================================================================================================
 --==========================================================================================================================
 

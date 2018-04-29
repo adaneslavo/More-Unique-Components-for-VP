@@ -57,7 +57,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_PRIVATEER';
 
 INSERT INTO	Unit_FreePromotions
 			(UnitType,					PromotionType)
-VALUES		('UNIT_MOROCCO_CORSAIR',	'PROMOTION_UNIT_MAROCCO_RIAZZA'),
+VALUES		('UNIT_MOROCCO_CORSAIR',	'PROMOTION_UNIT_MOROCCO_RAZZIA'),
 			('UNIT_MOROCCO_CORSAIR',	'PROMOTION_TARGETING_4');
 --==========================================================================================================================	
 
@@ -69,7 +69,7 @@ VALUES		('UNIT_MOROCCO_CORSAIR',	'PROMOTION_UNIT_MAROCCO_RIAZZA'),
 ------------------------------
 INSERT INTO UnitPromotions
 			(Type,								Description,								Help,											CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,						PediaType,		PediaEntry,									RivalTerritory)
-VALUES		('PROMOTION_UNIT_MAROCCO_RIAZZA',	'TXT_KEY_PROMOTION_UNIT_MAROCCO_RIAZZA',	'TXT_KEY_PROMOTION_UNIT_MAROCCO_RIAZZA_HELP',	1,				'AS2D_IF_LEVELUP',	5,				'EXPANSION_PROMOTION_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_MAROCCO_RIAZZA',	1);
+VALUES		('PROMOTION_UNIT_MOROCCO_RAZZIA',	'TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA',	'TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA_HELP',	1,				'AS2D_IF_LEVELUP',	5,				'EXPANSION_PROMOTION_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA',	1);
 --==========================================================================================================================	
 
 --==========================================================================================================================

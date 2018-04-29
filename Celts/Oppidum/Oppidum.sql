@@ -137,10 +137,15 @@ VALUES		('UNIT_MERCHANT',	'BUILD_CELTS_OPPIDUM');
 -- BuildFeatures
 ------------------------------				
 INSERT INTO BuildFeatures	
-			(BuildType, 			FeatureType, 		PrereqTech,					Production,	Remove)
-VALUES		('BUILD_CELTS_OPPIDUM',	'FEATURE_JUNGLE',	'TECH_IRON_WORKING',		20,			1),
-			('BUILD_CELTS_OPPIDUM',	'FEATURE_FOREST',	'TECH_BRONZE_WORKING',		30,			1),
-			('BUILD_CELTS_OPPIDUM',	'FEATURE_MARSH',	'TECH_MACHINERY',			0,			1);
+			(BuildType, 			FeatureType, PrereqTech, Production, Remove)
+SELECT		'BUILD_CELTS_OPPIDUM',	FeatureType, PrereqTech, Production, Remove
+FROM BuildFeatures WHERE BuildType = 'BUILD_POLDER';
+------------------------------				
+-- Unit_ScalingFromOwnedImprovements
+------------------------------	
+INSERT INTO Unit_ScalingFromOwnedImprovements	
+		(UnitType, 		ImprovementType, 		Amount)
+VALUES		('UNIT_MERCHANT', 	'IMPROVEMENT_CELTS_OPPIDUM', 	1);
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -156,3 +161,9 @@ VALUES		('POLICY_NEW_DEAL',				'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_GOLD',		5),
 			('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_PRODUCTION',	1),
 			('POLICY_MOBILIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_SCIENCE',	3),
 			('POLICY_URBANIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		2);
+--==========================================================================================================================
+-- TRAIT
+--==========================================================================================================================
+INSERT INTO Trait_ImprovementYieldChanges
+			(TraitType,					ImprovementType,				YieldType,			Yield)
+VALUES		('TRAIT_SCHOLARS_JADE_HALL',				'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_SCIENCE',		2);

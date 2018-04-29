@@ -64,22 +64,27 @@ VALUES		('UNIT_BABYLON_ATLAS', 				256, 		'KibitumPicture_256.dds',	1, 				1),
 			('UNIT_BABYLON_ATLAS', 				64, 		'KibitumPicture_064.dds',	1, 				1),
 			('UNIT_BABYLON_ATLAS', 				45, 		'KibitumPicture_045.dds',	1, 				1),
 			('UNIT_BABYLON_FLAG_ATLAS', 		32, 		'KibitumFlag_032.dds',		1, 				1),
+			('UNIT_BABYLON_PROMOTION_1_ATLAS',	16, 		'LegacyOneIcon_016.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_1_ATLAS',	32, 		'LegacyOneIcon_032.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_1_ATLAS',	45, 		'LegacyOneIcon_045.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_1_ATLAS',	64, 		'LegacyOneIcon_064.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_1_ATLAS',	256, 		'LegacyOneIcon_256.dds',	1, 				1),
+			('UNIT_BABYLON_PROMOTION_2_ATLAS',	16, 		'LegacyTwoIcon_016.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_2_ATLAS',	32, 		'LegacyTwoIcon_032.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_2_ATLAS',	45, 		'LegacyTwoIcon_045.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_2_ATLAS',	64, 		'LegacyTwoIcon_064.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_2_ATLAS',	256, 		'LegacyTwoIcon_256.dds',	1, 				1),
+			('UNIT_BABYLON_PROMOTION_3_ATLAS',	16, 		'LegacyThreeIcon_016.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_3_ATLAS',	32, 		'LegacyThreeIcon_032.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_3_ATLAS',	45, 		'LegacyThreeIcon_045.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_3_ATLAS',	64, 		'LegacyThreeIcon_064.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_3_ATLAS',	256, 		'LegacyThreeIcon_256.dds',	1, 				1),
+			('UNIT_BABYLON_PROMOTION_4_ATLAS',	16, 		'LegacyFourIcon_016.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_4_ATLAS',	32, 		'LegacyFourIcon_032.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_4_ATLAS',	45, 		'LegacyFourIcon_045.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_4_ATLAS',	64, 		'LegacyFourIcon_064.dds',	1, 				1),
 			('UNIT_BABYLON_PROMOTION_4_ATLAS',	256, 		'LegacyFourIcon_256.dds',	1, 				1),
+			('UNIT_BABYLON_PROMOTION_5_ATLAS',	16, 		'LegacyIcon_016.dds',		1, 				1),
 			('UNIT_BABYLON_PROMOTION_5_ATLAS',	32, 		'LegacyIcon_032.dds',		1, 				1),
 			('UNIT_BABYLON_PROMOTION_5_ATLAS',	45, 		'LegacyIcon_045.dds',		1, 				1),
 			('UNIT_BABYLON_PROMOTION_5_ATLAS',	64, 		'LegacyIcon_064.dds',		1, 				1),
@@ -93,15 +98,15 @@ VALUES		('UNIT_BABYLON_ATLAS', 				256, 		'KibitumPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 								Description, 								Help, 												Sound, 				BarbarianCombatBonus,	MovesChange,	CombatPercent,	ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_BABYLON_LEGACY', 	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_HELP', 		'AS2D_IF_LEVELUP',	0,						0,				0,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_5_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY'),
-			('PROMOTION_UNIT_BABYLON_LEGACY_1', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_1',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_1_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				8,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_1_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_1'),
-			('PROMOTION_UNIT_BABYLON_LEGACY_2', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_2',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_2_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				16,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_2_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_2'),
-			('PROMOTION_UNIT_BABYLON_LEGACY_3', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_3',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_3_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				24,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_2_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_3'),
-			('PROMOTION_UNIT_BABYLON_LEGACY_4', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_4',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_4_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				32,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_3_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_4'),
-			('PROMOTION_UNIT_BABYLON_LEGACY_5', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_5',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_5_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				40,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_3_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_5'),
-			('PROMOTION_UNIT_BABYLON_LEGACY_6', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_6',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_6_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				50,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_4_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_6'),
-			('PROMOTION_UNIT_BABYLON_LEGACY_7', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_7',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_7_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				75,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_4_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_7');
+			(Type, 								Description, 								Help, 												Sound, 				BarbarianCombatBonus,	MovesChange,	RangedDefenseMod, CombatPercent,	ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_BABYLON_LEGACY', 	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_HELP', 		'AS2D_IF_LEVELUP',	0,						0,				10, 			0,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_5_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY'),
+			('PROMOTION_UNIT_BABYLON_LEGACY_1', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_1',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_1_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0, 			8,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_1_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_1'),
+			('PROMOTION_UNIT_BABYLON_LEGACY_2', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_2',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_2_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0, 			16,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_2_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_2'),
+			('PROMOTION_UNIT_BABYLON_LEGACY_3', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_3',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_3_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0, 			24,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_2_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_3'),
+			('PROMOTION_UNIT_BABYLON_LEGACY_4', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_4',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_4_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0, 			32,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_3_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_4'),
+			('PROMOTION_UNIT_BABYLON_LEGACY_5', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_5',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_5_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0, 			40,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_3_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_5'),
+			('PROMOTION_UNIT_BABYLON_LEGACY_6', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_6',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_6_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0, 			50,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_4_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_6'),
+			('PROMOTION_UNIT_BABYLON_LEGACY_7', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_7',	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_7_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0, 			75,				0,					0,			0,					1, 				0, 				'UNIT_BABYLON_PROMOTION_4_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_7');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -112,7 +117,7 @@ VALUES		('PROMOTION_UNIT_BABYLON_LEGACY', 	'TXT_KEY_PROMOTION_UNIT_BABYLON_LEGAC
 --------------------------------	
 INSERT INTO Units 	
 			(Type,					Class, 	PrereqTech,	Range,	BaseSightRange, Combat,		Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves,		Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 							Strategy, 									Help, 									Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense,		UnitArtInfo, 						UnitFlagIconOffset,	UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate)
-SELECT		'UNIT_BABYLON_KIBITUM',	Class,	PrereqTech,	Range,	BaseSightRange, Combat+1,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves+1,	Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_GUNPOWDER',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_BABYLON_KIBITUM',	'TXT_KEY_UNIT_BABYLON_KIBITUM_TEXT',	'TXT_KEY_UNIT_BABYLON_KIBITUM_STRATEGY',	'TXT_KEY_UNIT_BABYLON_KIBITUM_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense,	'ART_DEF_UNIT_BABYLON_KIBITUM', 	0,					'UNIT_BABYLON_FLAG_ATLAS',	0, 				'UNIT_BABYLON_ATLAS',	MoveRate
+SELECT		'UNIT_BABYLON_KIBITUM',	Class,	PrereqTech,	Range,	BaseSightRange, Combat+1,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves,	Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_GUNPOWDER',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_BABYLON_KIBITUM',	'TXT_KEY_UNIT_BABYLON_KIBITUM_TEXT',	'TXT_KEY_UNIT_BABYLON_KIBITUM_STRATEGY',	'TXT_KEY_UNIT_BABYLON_KIBITUM_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense,	'ART_DEF_UNIT_BABYLON_KIBITUM', 	0,					'UNIT_BABYLON_FLAG_ATLAS',	0, 				'UNIT_BABYLON_ATLAS',	MoveRate
 FROM Units WHERE Type = 'UNIT_SPEARMAN';
 --------------------------------	
 -- UnitGameplay2DScripts

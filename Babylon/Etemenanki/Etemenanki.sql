@@ -31,7 +31,7 @@ VALUES	('BUILDING_BABYLON_ATLAS', 			256, 		'EtemenankiPicture_256.dds',			1, 		
 ------------------------------	
 INSERT INTO Buildings 	
 			(Type,							BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier,	GreatWorkSlotType,	GreatWorkCount,		FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired,	NumCityCostMod,	NukeImmune,	Help,										ThemingBonusHelp,									Description,							Civilopedia,								Strategy,										IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_BABYLON_ETEMENANKI',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier+5,	GreatWorkSlotType,	GreatWorkCount+1,	FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired,	NumCityCostMod,	NukeImmune,	'TXT_KEY_BUILDING_BABYLON_ETEMENANKI_HELP',	'TXT_KEY_BUILDING_BABYLON_ETEMENANKI_THEME_HELP',	'TXT_KEY_BUILDING_BABYLON_ETEMENANKI', 'TXT_KEY_BUILDING_BABYLON_ETEMENANKI_TEXT',	'TXT_KEY_BUILDING_BABYLON_ETEMENANKI_STRATEGY',	'BUILDING_BABYLON_ATLAS',	0
+SELECT		'BUILDING_BABYLON_ETEMENANKI',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier+5,	GreatWorkSlotType,	GreatWorkCount+1,	FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_MATHEMATICS', ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired,	NumCityCostMod,	NukeImmune,	'TXT_KEY_BUILDING_BABYLON_ETEMENANKI_HELP',	'TXT_KEY_BUILDING_BABYLON_ETEMENANKI_THEME_HELP',	'TXT_KEY_BUILDING_BABYLON_ETEMENANKI', 'TXT_KEY_BUILDING_BABYLON_ETEMENANKI_TEXT',	'TXT_KEY_BUILDING_BABYLON_ETEMENANKI_STRATEGY',	'BUILDING_BABYLON_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_NATIONAL_EPIC';	
 ------------------------------	
 -- Building_Flavors
@@ -41,14 +41,16 @@ INSERT INTO Building_Flavors
 VALUES		('BUILDING_BABYLON_ETEMENANKI',	'FLAVOR_GROWTH',		80),
 			('BUILDING_BABYLON_ETEMENANKI',	'FLAVOR_GREAT_PEOPLE',	60),
 			('BUILDING_BABYLON_ETEMENANKI',	'FLAVOR_SCIENCE',		80),
-			('BUILDING_BABYLON_ETEMENANKI',	'FLAVOR_CULTURE',		15);
+			('BUILDING_BABYLON_ETEMENANKI',	'FLAVOR_CULTURE',		15),
+			('BUILDING_BABYLON_ETEMENANKI',	'FLAVOR_RELIGION',		10);
 ------------------------------	
 -- Building_YieldChanges
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
 VALUES		('BUILDING_BABYLON_ETEMENANKI',	'YIELD_CULTURE',	3),
-			('BUILDING_BABYLON_ETEMENANKI',	'YIELD_FOOD',		3);
+			('BUILDING_BABYLON_ETEMENANKI',	'YIELD_FOOD',		3),
+			('BUILDING_BABYLON_ETEMENANKI',	'YIELD_FAITH',		2);
 ------------------------------	
 -- Building_YieldFromPolicyUnlock
 ------------------------------

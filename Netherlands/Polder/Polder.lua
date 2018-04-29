@@ -16,7 +16,10 @@ function EnemyUnitOnMyPolder(iPlayer, iUnit, iX, iY)
 	local pPlayer = Players[iPlayer];
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	local pPlot = pUnit:GetPlot()
-
+	
+	--quit if unit has free movement promotion (ie scout or guerilla) or is a hovering unit
+	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_IGNORE_TERRAIN_COST) or pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_LITERACY) or pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_GUERILLA_FIGHTER) or pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_HOVER_UNIT) then return end
+	
 	if pPlot ~= nil then
 		if pPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_POLDER or pPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_POLDER_2 then
 			if pPlot:GetOwner() ~= nil then

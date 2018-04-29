@@ -4,7 +4,7 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
-local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
+--local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 						
 function ImperialVigilance(iPlayer)
 	local pPlayer = Players[iPlayer]
@@ -33,14 +33,14 @@ function YorkscherMarche(iPlayer)
 			if pPlot ~= nil then
 				local iImprovementOnTile = pPlot:GetImprovementType()
 				
-				if pUnit:IsGarrisoned() or iImprovementOnTile == GameInfoTypes.IMPROVEMENT_CITADEL or iImprovementOnTile == GameInfoTypes.IMPROVEMENT_FORT or iImprovementOnTile == GameInfoTypes.IMPROVEMENT_FORT then
+				if pUnit:IsGarrisoned() or iImprovementOnTile == GameInfoTypes.IMPROVEMENT_CITADEL or iImprovementOnTile == GameInfoTypes.IMPROVEMENT_FORT then
 					local iOwner = pPlot:GetOwner()
 					local pOwner = Players[iOwner]
 
 					if pOwner == pPlayer then
-						local iGain = math.floor(0.75 * fGameSpeedModifier)
+--						local iGain = math.floor(0.75 * fGameSpeedModifier)
 
-						pPlayer:ChangeJONSCulture(iGain)
+						pPlayer:ChangeJONSCulture(1)
 
 						if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 							local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())

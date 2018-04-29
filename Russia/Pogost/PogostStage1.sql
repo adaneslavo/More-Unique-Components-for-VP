@@ -30,8 +30,8 @@ VALUES		('BUILDING_RUSSIA_ATLAS', 			256, 		'PogostPicture_256.dds',			1, 				1)
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,						BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteRecipientBonus,	TradeRouteTargetBonus,	FinishLandTRTourism,	FinishSeaTRTourism,		Help,										Description,						Civilopedia,								Strategy,									IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_RUSSIA_POGOST_1',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteRecipientBonus+2,	TradeRouteTargetBonus,	FinishLandTRTourism,	FinishSeaTRTourism,		'TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP',	'TXT_KEY_BUILDING_RUSSIA_POGOST_1',	'TXT_KEY_BUILDING_RUSSIA_POGOST_TEXT',		'TXT_KEY_BUILDING_RUSSIA_POGOST_STRATEGY',	'BUILDING_RUSSIA_ATLAS',	0
+			(Type,						BuildingClass,	GoldMaintenance, CityConnectionTradeRouteModifier, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	PovertyHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteRecipientBonus,	TradeRouteTargetBonus,	FinishLandTRTourism,	FinishSeaTRTourism,		Help,										Description,						Civilopedia,								Strategy,									IconAtlas,					PortraitIndex)
+SELECT		'BUILDING_RUSSIA_POGOST_1',	BuildingClass,	GoldMaintenance, 5, 				Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	PovertyHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteRecipientBonus+2,	TradeRouteTargetBonus,	FinishLandTRTourism,	FinishSeaTRTourism,		'TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP',	'TXT_KEY_BUILDING_RUSSIA_POGOST_1',	'TXT_KEY_BUILDING_RUSSIA_POGOST_TEXT',		'TXT_KEY_BUILDING_RUSSIA_POGOST_STRATEGY',	'BUILDING_RUSSIA_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_MINT';
 ------------------------------	
 -- Building_Flavors
@@ -55,6 +55,15 @@ INSERT INTO Building_YieldChanges
 			(BuildingType, 					YieldType,			Yield)
 VALUES		('BUILDING_RUSSIA_POGOST_1',	'YIELD_CULTURE',	3),
 			('BUILDING_RUSSIA_POGOST_1',	'YIELD_GOLD',		2);
+------------------------------
+-- Building_ImprovementYieldChanges
+------------------------------		
+INSERT INTO Building_ImprovementYieldChanges	
+			(BuildingType, 					ImprovementType,					YieldType,		Yield)
+VALUES		('BUILDING_RUSSIA_POGOST_1',	'IMPROVEMENT_TRADING_POST', 		'YIELD_GOLD',	1),
+			('BUILDING_RUSSIA_POGOST_1',	'IMPROVEMENT_CUSTOMS_HOUSE',		'YIELD_GOLD',	1),
+			('BUILDING_RUSSIA_POGOST_1',	'IMPROVEMENT_CUSTOMS_HOUSE_VENICE',	'YIELD_GOLD',	1),
+			('BUILDING_RUSSIA_POGOST_1',	'IMPROVEMENT_CELTS_OPPIDUM',		'YIELD_GOLD',	1);
 --==========================================================================================================================
 --==========================================================================================================================
 

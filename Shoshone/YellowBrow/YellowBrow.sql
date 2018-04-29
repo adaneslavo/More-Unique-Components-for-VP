@@ -22,21 +22,21 @@ VALUES		('ART_DEF_UNIT_SHOSHONE_YELLOW_BROW',	'Unit',		'YellowBrowFlag_128.dds')
 -- ArtDefine_UnitInfos
 ------------------------------		
 INSERT INTO ArtDefine_UnitInfos 
-			(Type,									DamageStates,	Formation)
+			(Type,				DamageStates,	Formation)
 SELECT		'ART_DEF_UNIT_SHOSHONE_YELLOW_BROW',	DamageStates, 	Formation
-FROM ArtDefine_UnitInfos WHERE Type = 'ART_DEF_UNIT_U_SPANISH_TERCIO';
+FROM ArtDefine_UnitInfos WHERE Type = 'ART_DEF_UNIT_U_ZULU_IMPI_WARRIOR';
 ------------------------------
 -- ArtDefine_UnitInfoMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitInfoMemberInfos 	
-			(UnitInfoType,							UnitMemberInfoType,								NumMembers)
+			(UnitInfoType,			UnitMemberInfoType,				NumMembers)
 SELECT		'ART_DEF_UNIT_SHOSHONE_YELLOW_BROW',	'ART_DEF_UNIT_MEMBER_SHOSHONE_YELLOW_BROW', 	NumMembers
 FROM ArtDefine_UnitInfoMemberInfos WHERE UnitInfoType = 'ART_DEF_UNIT_U_SPANISH_TERCIO';
 ------------------------------
 -- ArtDefine_UnitMemberCombats
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberCombats 
-			(UnitMemberType,							EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation)
+			(UnitMemberType,			EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation)
 SELECT		'ART_DEF_UNIT_MEMBER_SHOSHONE_YELLOW_BROW',	EnableActions, DisableActions, MoveRadius, ShortMoveRadius, ChargeRadius, AttackRadius, RangedAttackRadius, MoveRate, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, RollRateMin, RollRateMax, PitchRateMin, PitchRateMax, LOSRadiusScale, TargetRadius, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasLeftRightAttack, HasStationaryMelee, HasStationaryRangedAttack, HasRefaceAfterCombat, ReformBeforeCombat, HasIndependentWeaponFacing, HasOpponentTracking, HasCollisionAttack, AttackAltitude, AltitudeDecelerationDistance, OnlyTurnInMovementActions, RushAttackFormation
 FROM ArtDefine_UnitMemberCombats WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_PIQUERO';
 ------------------------------
@@ -50,7 +50,7 @@ FROM ArtDefine_UnitMemberCombatWeapons WHERE UnitMemberType = 'ART_DEF_UNIT_MEMB
 -- ArtDefine_UnitMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberInfos 	
-		(Type, 										Scale, ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
+		(Type, 					Scale, ZOffset, Domain, Model, 			MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_SHOSHONE_YELLOW_BROW',	Scale, ZOffset, Domain, 'MC_BlackMouth.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_PIQUERO';
 ------------------------------
@@ -73,9 +73,9 @@ VALUES		('UNIT_SHOSHONE_ATLAS', 		256, 		'YellowBrowPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 													Description, 													Help, 																Sound, 				MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE', 			'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE',				'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_HELP', 			'AS2D_IF_LEVELUP',	0,				0,			0,			0,					0,			0,					1, 				23, 			'ABILITY_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE'),
-			('PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED', 	'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED',	'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED_HELP', 	'AS2D_IF_LEVELUP',	0,				0,			20,			0,					0,			0,					1, 				23, 			'ABILITY_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED');
+			(Type, 													Description, 													Help, 																Sound, 				StrongerDamaged,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE', 			'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE',				'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_HELP', 			'AS2D_IF_LEVELUP',	1,					0,			0,			0,					0,			0,					1, 				23, 			'ABILITY_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE'),
+			('PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED', 	'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED',	'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED_HELP', 	'AS2D_IF_LEVELUP',	0,					0,			20,			0,					0,			0,					1, 				23, 			'ABILITY_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -133,7 +133,6 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SPANISH_TERCIO';
 
 INSERT INTO Unit_FreePromotions
 			(UnitType, 						PromotionType)
-VALUES		('UNIT_SHOSHONE_YELLOW_BROW',	'PROMOTION_COURAGE'),
-			('UNIT_SHOSHONE_YELLOW_BROW',	'PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE');			
+VALUES		('UNIT_SHOSHONE_YELLOW_BROW',	'PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE');			
 --==========================================================================================================================
 --==========================================================================================================================
