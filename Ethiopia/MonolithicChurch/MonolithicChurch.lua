@@ -144,11 +144,17 @@ end
 function OnTileChangeResetBonuses(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged)
 	local pPlayer = Players[iOwner]
 	print("Cos pojawilo sie lub zniklo", iOwner, iOldImprovement, iNewImprovement)
-	if pPlayer and pPlayer:GetCivilizationType() == eCivilizationEthiopia then
-		print("To jest Hajle")
-		if (iNewImprovement == eImprovementMonolithicChurch or iOldImprovement == eImprovementMonolithicChurch) then
-			print("To jest MC")
+	if (iNewImprovement == eImprovementMonolithicChurch or iOldImprovement == eImprovementMonolithicChurch) then
+		print("To jest MC")
+			if pPlayer and pPlayer:GetCivilizationType() == eCivilizationEthiopia then
+			print("To jest Hajle")
 			CityPlotChecking(pPlayer)
+		end
+	else
+		for id, player in pairs(Players) do
+			if player == pPlayer then
+				CityPlotChecking(pPlayer)
+			end
 		end
 	end
 end
