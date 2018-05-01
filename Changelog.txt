@@ -4,7 +4,8 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v32:
-- 
+- fixes:
+    - Sambadrome ==> increased Culture modifier to 10%.
 
 v31.2:
 - fixes:
