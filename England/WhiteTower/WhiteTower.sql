@@ -53,8 +53,13 @@ VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'YIELD_CULTURE',	2);
 ------------------------------
 INSERT INTO Building_BuildingClassYieldChanges 	
 			(BuildingType,						BuildingClassType,			YieldType,				YieldChange)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CASTLE',		'YIELD_CULTURE',		1),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CONSTABLE',	'YIELD_GOLD',			3),
+VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CASTLE',		'YIELD_CULTURE',		2);
+------------------------------	
+-- Building_BuildingClassLocalYieldChanges
+------------------------------
+INSERT INTO Building_BuildingClassLocalYieldChanges 	
+			(BuildingType,						BuildingClassType,			YieldType,				YieldChange)
+VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CONSTABLE',	'YIELD_GOLD',			3),
 			('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_ARSENAL',	'YIELD_FOOD',			3);
 ------------------------------	
 -- Building_YieldChangesPerPop
