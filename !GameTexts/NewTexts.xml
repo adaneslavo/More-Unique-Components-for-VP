@@ -1637,16 +1637,16 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
-			<Text>Available at Theology, the Monolithic Church can be built on [ICON_RES_STONE] Stone or on Unfeatured Hills, but not next to each other. Improves sources of [ICON_RES_STONE] Stone. Each Monolithic Church yields [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture and [ICON_FAITH] Faith. Monolithic Churches are improved by the completion of Social Policy Trees instead of by Technologies.</Text>
+			<Text>Available at Theology, the Monolithic Church can be built on [ICON_RES_STONE] Stone or on Unfeatured Hills, but not next to each other. Improves sources of [ICON_RES_STONE] Stone. Each Monolithic Church yields small amount of [ICON_PRODUCTION] Production and [ICON_FAITH] Faith. Instead Monolithic Churches are improved by the completion of Social Policy Trees, adopting Idelogies or developing Religion. Every Monolithic Church benefits from Ethiopia's level of developement even if it is located outside Ethiopia's borders.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH">
 			<Text>Construct a [LINK=IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH]Monolithic Church[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
-			<Text>Constructs a Monolithic Church, which increases [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture and [ICON_FAITH] Faith.</Text>
+			<Text>Constructs a Monolithic Church, which increases [ICON_PRODUCTION] Production and [ICON_FAITH] Faith. Monolithic Churches increase yields if Ethiopia increases its level of developement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC">
-			<Text>It will increase [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture and [ICON_FAITH] Faith.</Text>
+			<Text>It will increase [ICON_PRODUCTION] Production and [ICON_FAITH] Faith.</Text>
 		</Row>
 
 		<!-- Nilometer -->
