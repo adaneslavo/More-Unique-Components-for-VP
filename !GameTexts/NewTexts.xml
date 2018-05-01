@@ -509,7 +509,52 @@
 		<Row Tag="TXT_KEY_BUILDING_DUMMYHAPPINESS">
 			<Text>Dummy Happiness Building</Text>
 		</Row>
-		
+
+		<!-- Dummy MC Buildings -->
+		<!-- Created by adan_eslavo 29/04/2018 -->
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION">
+			<Text>Dummy Tradition Finisher Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_LIBERTY">
+			<Text>Dummy Liberty Finisher Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_HONOR">
+			<Text>Dummy Honor Finisher Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_PIETY">
+			<Text>Dummy Piety Finisher Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_PATRONAGE">
+			<Text>Dummy Patronage Finisher Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_AESTHETICS">
+			<Text>Dummy Aesthetics Finisher Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_RATIONALISM">
+			<Text>Dummy Rationalism Finisher Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_EXPLORATION">
+			<Text>Dummy Exploration Finisher Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_COMMERCE">
+			<Text>Dummy Commerce Finisher Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY">
+			<Text>Dummy Ideology Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_PANTHEON">
+			<Text>Dummy Pantheon Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_FOUNDER">
+			<Text>Dummy Founder Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_ENHANCER">
+			<Text>Dummy Enhancer Building</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION">
+			<Text>Dummy Reformator Building</Text>
+		</Row>
+
 		<!-- E-temenanki -->
 		<!-- Created by adan_eslavo 28/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI">
@@ -1592,16 +1637,16 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
-			<Text>Available at Theology, the Monolithic Church can be built on [ICON_RES_STONE] Stone or on Unfeatured Hills, but not next to each other. Improves sources of [ICON_RES_STONE] Stone. Each Monolithic Church yields [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture and [ICON_FAITH] Faith. Monolithic Churches are improved by the completion of Social Policy Trees instead of by Technologies.</Text>
+			<Text>Available at Theology, the Monolithic Church can be built on [ICON_RES_STONE] Stone or on Unfeatured Hills, but not next to each other. Improves sources of [ICON_RES_STONE] Stone. Each Monolithic Church yields small amount of [ICON_PRODUCTION] Production and [ICON_FAITH] Faith. Instead Monolithic Churches are improved by the completion of Social Policy Trees, adopting Idelogies or developing Religion. Every Monolithic Church benefits from Ethiopia's level of developement even if it is located outside Ethiopia's borders.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH">
 			<Text>Construct a [LINK=IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH]Monolithic Church[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
-			<Text>Constructs a Monolithic Church, which increases [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture and [ICON_FAITH] Faith.</Text>
+			<Text>Constructs a Monolithic Church, which increases [ICON_PRODUCTION] Production and [ICON_FAITH] Faith. Monolithic Churches increase yields if Ethiopia increases its level of developement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC">
-			<Text>It will increase [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture and [ICON_FAITH] Faith.</Text>
+			<Text>It will increase [ICON_PRODUCTION] Production and [ICON_FAITH] Faith.</Text>
 		</Row>
 
 		<!-- Nilometer -->

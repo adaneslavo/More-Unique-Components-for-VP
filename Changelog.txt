@@ -4,6 +4,7 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v31:
+- reworked Monolithic Church bonuses,
 - adjusted Tarkhan flags,
 - changed:
     - Oppidum ==> added compatibility with Koreana UA,
