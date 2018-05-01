@@ -3,6 +3,11 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v32:
+- fixes:
+    - Waag ==> added required building class (Market),
+	       ==> added yields to local buildings (Caravansary, Custom House).
+
 v31:
 - reworked Monolithic Church bonuses (now it gains yields depending on Ethiopia's policies, ideologies and religon level),
 - renamed back Shotel Swordsman to Shotelai (much easier to say, much more natural),

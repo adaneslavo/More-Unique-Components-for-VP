@@ -45,6 +45,12 @@ VALUES		('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_GREAT_PEOPLE',			50),
 			('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_PRODUCTION',			5),
 			('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_SCIENCE',				40);
 ------------------------------	
+-- Building_ClassesNeededInCity
+------------------------------		
+INSERT INTO Building_ClassesNeededInCity 	
+		(BuildingType, 					BuildingClassType)
+VALUES	('BUILDING_NETHERLANDS_WAAG',	'BUILDINGCLASS_MARKET');
+------------------------------	
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------
 INSERT INTO Building_BuildingClassLocalYieldChanges
