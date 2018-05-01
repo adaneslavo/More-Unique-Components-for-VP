@@ -4,11 +4,12 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v31:
-- reworked Monolithic Church bonuses,
-- adjusted Tarkhan flags,
+- reworked Monolithic Church bonuses (now it gains yields depending on Ethiopia's policies, ideologies and religon level),
+- renamed back Shotel Swordsman to Shotelai (much easier to say, much more natural),
+- adjusted Tarkhan flags (now they do not cross the borders),
 - changed:
-    - Oppidum ==> added compatibility with Koreana UA,
-- fixed some text issues.
+    - Oppidum ==> added compatibility with Korean UA,
+- fixed many text issues.
 
 v30:
 - fixed and tweaked:
