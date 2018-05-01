@@ -4,11 +4,16 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v32:
+- 
+
+v31.2:
 - fixes:
-    - Waag ==> added required building class (Market),
+    - Oppidum ==> reverted changes regarding Korean UA,
+	- Waag ==> added required building class (Market),
 	       ==> added yields to local buildings (Caravansary, Custom House),
 	- White Tower ==> now adds 2 Culture to Castles instead of 1,
 				  ==> two bonuses to building class moved to another table for local changes instead of global (Arsenal, Constabulary).
+- text corrections.
 
 v31:
 - reworked Monolithic Church bonuses (now it gains yields depending on Ethiopia's policies, ideologies and religon level),
