@@ -552,7 +552,7 @@
 			<Text>Dummy Enhancer Building</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION">
-			<Text>Dummy Reformator Building</Text>
+			<Text>Dummy Reformation Building</Text>
 		</Row>
 
 		<!-- E-temenanki -->
@@ -1637,16 +1637,27 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
-			<Text>Available at Theology, the Monolithic Church can be built on [ICON_RES_STONE] Stone or on Unfeatured Hills, but not next to each other. Improves sources of [ICON_RES_STONE] Stone. Each Monolithic Church yields small amount of [ICON_PRODUCTION] Production and [ICON_FAITH] Faith. Instead Monolithic Churches are improved by the completion of Social Policy Trees, adopting Idelogies or developing Religion. Every Monolithic Church benefits from Ethiopia's level of developement even if it is located outside Ethiopia's borders.</Text>
+			<Text>
+				Available at Theology, the Monolithic Church can be built on [ICON_RES_STONE] Stone or on Unfeatured Hills, but not next to each other. Improves sources of [ICON_RES_STONE] Stone. Each Monolithic Church yields small amount of [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of technologies, Monolithic Churches are improved by the completion of [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR], adopting [COLOR_POSITIVE_TEXT]an Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
+				+1 [ICON_CULTURE] for every [COLOR_POSITIVE_TEXT]Ancient Policy Tree[ENDCOLOR][NEWLINE]
+				+1 [ICON_PEACE] for every [COLOR_POSITIVE_TEXT]Medieval Policy Tree[ENDCOLOR][NEWLINE]
+				+1 [ICON_RESEARCH] for every [COLOR_POSITIVE_TEXT]Industrial Policy Tree[ENDCOLOR][NEWLINE]
+				+1 [ICON_PEACE] for [COLOR_POSITIVE_TEXT]Adopting a Pantheon[ENDCOLOR][NEWLINE]
+				+1 [ICON_PRODUCTION] for [COLOR_POSITIVE_TEXT]Founding a Religion[ENDCOLOR][NEWLINE]
+				+1 [ICON_CULTURE] and [ICON_PRODUCTION] for [COLOR_POSITIVE_TEXT]Enhancing a Religion[ENDCOLOR][NEWLINE]
+				+1 [ICON_GOLD] and [ICON_PRODUCTION] for [COLOR_POSITIVE_TEXT]Reforming a Religion[ENDCOLOR][NEWLINE]
+				+2 [ICON_GOLD] for [COLOR_POSITIVE_TEXT]Adopting an Ideology[ENDCOLOR][NEWLINE]
+				[NEWLINE]Every Monolithic Church benefits from [COLOR_POSITIVE_TEXT]Ethiopia's[ENDCOLOR] policies and beliefs, even if located outside Ethiopia's borders.
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH">
 			<Text>Construct a [LINK=IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH]Monolithic Church[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
-			<Text>Constructs a Monolithic Church, which increases [ICON_PRODUCTION] Production and [ICON_FAITH] Faith. Monolithic Churches increase yields if Ethiopia increases its level of developement.</Text>
+			<Text>Constructs a Monolithic Church, which increases [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Monolithic Churches increase yields if [COLOR_POSITIVE_TEXT]Ethiopia Adopts[ENDCOLOR] more Policies and Beliefs.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC">
-			<Text>It will increase [ICON_PRODUCTION] Production and [ICON_FAITH] Faith.</Text>
+			<Text>It will increase [ICON_PRODUCTION] Production and [ICON_PEACE] Faith.</Text>
 		</Row>
 
 		<!-- Nilometer -->
@@ -1692,7 +1703,7 @@
 			<Text>Construct an [LINK=IMPROVEMENT_CELTS_OPPIDUM]Oppidum[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_HELP">
-			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_FAITH] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to nearby cities. Provides bonus yields to all non-road and non-great person land improvements.</Text>
+			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to nearby cities. Provides bonus yields to all non-road and non-great person land improvements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_REC">
 			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to all Cities in workable range. Adjacent Improvements gain additional bonus yields.</Text>
