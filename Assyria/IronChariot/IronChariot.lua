@@ -13,8 +13,10 @@ function IronChariotResourceCheck(iPlayer)
 		end
 	end
 	
-	local iNumHorses = pPlayer:GetNumResourceAvailable(GameInfoTypes.RESOURCE_HORSE)
-	local iNumIron = pPlayer:GetNumResourceAvailable(GameInfoTypes.RESOURCE_IRON)
+	if #tIronChariots <= 0 then return end
+
+	local iNumHorses = pPlayer:GetNumResourceAvailable(GameInfoTypes.RESOURCE_HORSE, 1)
+	local iNumIron = pPlayer:GetNumResourceAvailable(GameInfoTypes.RESOURCE_IRON, 1)
 	local iResourceBonuses = 0
 	
 	if (iNumHorses >= #tIronChariots) then
