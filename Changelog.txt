@@ -8,7 +8,8 @@ v32:
 	- Barbican ==> lua logs sometimes shown nil value processing. I reworked the Barbican.lua code,
 	- Iron Chariot ==> decreased number of iterations made in lua (countries withou IC will not be checked),
 				   ==> added imported resources to the variables (now if you have 6 iron (4 yours and 2 imported) and 5 ICs you will get bonus),
-    - Sambadrome ==> increased Culture modifier to 10%.
+    - Sambadrome ==> increased Culture modifier to 10%,
+	- smany small text corrections.
 
 v31.2:
 - fixes:

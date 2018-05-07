@@ -33,7 +33,7 @@
 			<Text>Agora</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_HELP">
-			<Text>Unique Ancient Era building. Only the Greeks may build it. +25% [ICON_PRODUCTION] Production towards Diplomatic Units in City, and Diplomatic units trained in this city receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City owner and the Trade Route owner.</Text>
+			<Text>Unique Ancient Era Building. +25% [ICON_PRODUCTION] Production towards Diplomatic Units in City, and Diplomatic Units trained in this City receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City Owner and the Trade Route Owner.[NEWLINE][NEWLINE]Only the Greeks may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_STRATEGY">
 			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora boosts the production Diplomatic Units. Diplomatic units trained in a city with an Agora gain the Proxenos promotion, which increases influence and gold income from Diplomatic Missions. Use your quick production of diplomatic units to secure a steady stream of gold for your empire.</Text>
@@ -49,7 +49,7 @@
 			<Text>Six-Horns Council</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_HELP">
-			<Text>Receive 25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite building. Only the Huns may build it.</Text>
+			<Text>Receive 25 [ICON_RESEARCH] Science as an instant boost whenever a Building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite Building.[NEWLINE][NEWLINE]Only the Huns may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_STRATEGY">
 			<Text>The Six-Horns Council is the Hunnic Unique Wonder, replacing the Ironworks. In addition to the normal bonuses of the Ironworks, the Six Horns council increases Science and Culture, and boosts Culture and Production from all Stables on empire. The wonder provides additional Gold and Happiness from demanding tribute from minor City-States.</Text>
@@ -180,7 +180,7 @@
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
-			<Text>+10 [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this city, and ranged units in the city have increased attack.[NEWLINE][NEWLINE]Only Polish may build it.</Text>
+			<Text>+10 [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this City, and Ranged and Siege Units in the City have increased [ICON_RANGED_STRENGTH] Ranged Combat Strength.[NEWLINE][NEWLINE]Only Polish may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
 			<Text>Unique Polish replacement for the Armory. Must have built Walls in the city. In addition to the normal bonuses provided by the Armory, this building provides Culture, Faith, and increased city defense. Ranged and Siege garrisoned in the city have increased attack.</Text>
@@ -317,7 +317,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_HELP">
 			<Text>
-				Naval unit that specializes in piracy and disrupting maritime trade. Only Morocco can build it. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing units, pillaging resources, and plundering trade routes.[NEWLINE][NEWLINE]Can enter rival territory.
+				Naval Unit that specializes in piracy and disrupting maritime trade. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing Units, pillaging Resources, and plundering [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][NEWLINE]Can enter Rival Territory.[NEWLINE][NEWLINE]Only Morocco can build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA">
@@ -959,7 +959,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP">
 			<Text>
-				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require Horses, and gains +2 combat strength if you have sufficient Horses for all Iron Chariots, and likewise for Iron. Gains +10% combat strength for each adjacent enemy unit.
+				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require [ICON_RES_HORSE] Horses. [NEWLINE][NEWLINE]Unit gains +2 [ICON_STRENGTH] Combat Strength if you have sufficient [ICON_RES_HORSE] Horses for all Iron Chariots, and likewise for [ICON_RES_IRON] Iron. Gains +10% [ICON_STRENGTH] Combat Strength for each adjacent Enemy Unit.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL">
@@ -1341,7 +1341,7 @@
 			<Text>Klepht</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_HELP">
-			<Text>Unique Industrial Era Unit.  Only the Greeks may build it. This unit is slightly weaker than the Gatling Gun it replaces and does not have the [COLOR_RED]Covering Fire I[ENDCOLOR] Promotion, but can move quickly through hills and can move after attacking. Receives the [COLOR_POSITIVE_TEXT]Philhellenism[ENDCOLOR] Promotion for free.</Text>
+			<Text>Unique Greek Industrial Era Unit. This Unit is slightly weaker than the Gatling Gun it replaces and does not have the [COLOR_RED]Covering Fire I[ENDCOLOR] Promotion, but can move quickly through Hills and can move after attacking. Receives the [COLOR_POSITIVE_TEXT]Philhellenism[ENDCOLOR] Promotion for free.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_STRATEGY">
 			<Text>A quick and elusive guerilla fighter. The Klepht is not as powerful as the Gatling Gun it replaces, but can move quickly through hills, even after attacking. This unit also gains gold and production for every city-state ally every time it attacks a unit.</Text>
@@ -1436,12 +1436,12 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_STRATEGY">
 			<Text>
-				Unique Wall replacement. Only the Assyrians may build it. Military Units supplied by this City's population increased by 20%. Contains a Writer specialist slot and a Great Work of Writing slot to help your empire get an early start on great works.
+				Unique Wall replacement. Military Units supplied by this City's population increased by 20%. Contains a Writer specialist slot and a Great Work of Writing slot to help your empire get an early start on great works.[NEWLINE][NEWLINE]Only the Assyrians may build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
 			<Text>
-				The Lamassu Gate is an Assyrian unique building, replacing the Walls. It increases the unit supply cap in the city more than the standard Walls. It also contains a Great Work of Writing slot and a Writer specialist slot.
+				The Lamassu Gate is an Assyrian unique Building, replacing the Walls. It increases the [ICON_WAR] Military Supply Cap in the City more than the standard Walls. It also contains slots for a [ICON_GREAT_WORK] Great Work of Writing and a [ICON_GREAT_WRITER] Writer Specialist.
 			</Text>
 		</Row>
 
@@ -1528,7 +1528,7 @@
 			<Text>Latifundium</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP">
-			<Text>Available at Calendar, the Latifundium can be built on [ICON_RES_WHEAT] Wheat, and any resource normally requiring a plantation. Cannot be built adjacent to another Latifundium.[NEWLINE][NEWLINE]Yields [ICON_FOOD] Food, [ICON_CULTURE] Culture. [NEWLINE][NEWLINE]On construction, immediately spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the latifundium. The new Figs tile is automatically claimed by Rome.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production to adjacent Farms.[NEWLINE]+1 [ICON_CULTURE] Culture to adjacent Plantations.[NEWLINE][NEWLINE]Cannot be removed.</Text>
+			<Text>+1 [ICON_FOOD] Food and [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]Unique Roman Tile Improvement available at Calendar. The Latifundium can be built on [ICON_RES_WHEAT] Wheat or any Resource normally requiring a Plantation. Cannot be built adjacent to another Latifundium or removed.[NEWLINE][NEWLINE]On construction, immediately spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the Latifundium. The new Figs tile is automatically claimed by Rome.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production to adjacent Farms.[NEWLINE]+1 [ICON_CULTURE] Culture to adjacent Plantations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT">
 			<Text>An ancient precursor to today’s agribusinesses, A Latifundium was an expansive privately owned farm specializing in intensive agriculture. The first latifundia were accumulated from the spoils of war, confiscated from conquered peoples beginning in the early 2nd century BC in Magna Graecia (Southern Italy). The Latifundia system later expanded with conquest, to the Roman provinces of the Maghreb and Hispania Baetica in southern Spain
@@ -1572,7 +1572,7 @@
 			<Text>Licorne</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIA_LICORNE_HELP">
-			<Text>Unique Industrial Era Siege Unit. Only the Russians may build it. This Unit has better mobility in enemy territory, can move after attacking, and is more effective against Unmounted Melee units.</Text>
+			<Text>Unique Industrial Era Siege Unit. This Unit has better mobility in Enemy Territory, can move after attacking, and is more effective against Melee Units.[NEWLINE][NEWLINE]Only the Russians may build it. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIA_LICORNE_STRATEGY">
 			<Text>Licorne is a siege unit that can change the course of battle. Innovative construction allows moving after attacks and no penalty while attacking melee units. Is available earlier than the Field Gun.</Text>
@@ -1679,8 +1679,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP">
 			<Text>
-				Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a +50% [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to a nearby Cities. Adjacent Improvements gain additional bonus yields[NEWLINE][NEWLINE]
-				Increases the length of 'We Love the King Days' from Great Merchants.
+				Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the Trade Network. Gives a +50% [ICON_STRENGTH] Defense Bonus to Units stationed on it, and +20 HP to a nearby Cities. Adjacent Improvements gain additional bonus yields[NEWLINE][NEWLINE]Increases the length of [ICON_HAPPINESS_1] WLTKD granted by Great Merchants.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
@@ -1799,7 +1798,7 @@
 			<Text>Pancerni</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLAND_PANCERNY_HELP">
-			<Text>A sturdy Mounted Skirmisher. Only the Polish may build it. Earns [ICON_PEACE] Faith from each enemy killed and double the amount from Barbarians. This unit is stronger in both defense and offense than the Heavy Skirmisher, and has additional protection against Ranged Units.</Text>
+			<Text>A sturdy Mounted Skirmisher. Earns [ICON_PEACE] Faith from each Enemy killed and double the amount from Barbarians. This unit is stronger in both defense and offense than the Heavy Skirmisher, and has additional protection against Ranged Units.[NEWLINE][NEWLINE]Only the Polish may build it. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLAND_PANCERNY_STRATEGY">
 			<Text>Pancerni is the Polish replacement for the Heavy Skirmisher. It has stronger attack and defense than the Heavy Skirmisher, and takes reduced damage from Ranged attacks. The Pancerny also earns Faith for each enemy killed. As mounted unit, the Pancerny is vulnerable to Pikemen.</Text>
@@ -1824,13 +1823,13 @@
 			<Text>Pogost - Stage 3: Eastern Orthodox Church</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP">
-			<Text>Unique Medieval building. [NEWLINE][NEWLINE]Grants additional [ICON_GOLD] Gold to all [ICON_CONNECTED] City Connections and [ICON_SWAP] Trade Routes to/from this city respectively. +1 [ICON_GOLD] Gold to nearby Village and Town improvements.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
+			<Text>Unique Russian Medieval Building.[NEWLINE][NEWLINE]Grants additional [ICON_GOLD] Gold to all [ICON_CONNECTED] City Connections and all [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold to nearby Village and Town Improvements.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
-			<Text>Pogost Stage 2: Get more [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections.[NEWLINE][NEWLINE]Unlocks access to Stage 3.</Text>
+			<Text>Pogost Stage 2: +2 [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Get more [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections.[NEWLINE][NEWLINE]Unlocks access to Stage 3.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_3_HELP">
-			<Text>Pogost Stage 3: Adds [ICON_PEACE] Faith to Shrines, Temples and Monasteries in the same city at Architecture.Get more [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections.</Text>
+			<Text>Pogost Stage 3: +2 [ICON_PEACE] Faith. Adds [ICON_PEACE] Faith to Shrines, Temples and Monasteries in the same city at Architecture. Get even more [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_STRATEGY">
 			<Text>Unique Russian replacement for the Customs House. Initially, Pogosts are comparatively lackluster, but they develop new traits as the game progresses. Each stage increases Gold generated from City Connections, and The Pogost provides modest increases in gold from trade and culture, then gains modest boosts to gold and science at its second stage, and provides boosts to faith generation in its final stage.</Text>
@@ -1917,7 +1916,7 @@
 			<Text>Qadi Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_HELP">
-			<Text>Unique Classical Era Building which can be built in non-occupied cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City.[NEWLINE][NEWLINE]Provides [ICON_GOLD] Gold for every [ICON_CITIZEN] not of the City's majority religion. 10% of [ICON_PRODUCTION] Production in the City is converted to [ICON_CULTURE] Culture. Reduces [ICON_HAPPINESS_3] Religious Tension in the City. Only Songhai may build it.</Text>
+			<Text>Unique Classical Era Building which can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. 10% of [ICON_PRODUCTION] Production in the City is converted to [ICON_CULTURE] Culture. [NEWLINE][NEWLINE]Provides [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen not of the City's Majority Religion. Reduces [ICON_HAPPINESS_3] Religious Tension in the City. [NEWLINE][NEWLINE]Only Songhai may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_STRATEGY">
 			<Text>The Qadi Court is a Songhai unique building that replaces the Courthouse. In addition to The normal bonuses of a Courthouse, the Qadi Court also yields [ICON_PEACE] Faith and reduces religious unrest in the city. Every citizen not following the city's majority religion provides extra Gold, and 10% of Production in the city is converted to Culture. The Qadi Court can be built in any City.</Text>
@@ -2006,7 +2005,7 @@
 			<Text>The Riad is the Moroccan unique replacement for the Garden. In addition to the bonuses of a normal Garden, the Riad grants culture in the city for every 5 citizens in the city, and Gold generation in the city is greatly increased during a Golden Age. Trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_HELP">
-			<Text>Unique Moroccan replacement for the Garden. +1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens in City. Trade routes originating in the city gain +2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn. [NEWLINE][NEWLINE]+25% [ICON_GREAT_PEOPLE] Great People generation in this City. [NEWLINE]+15% [ICON_GOLD] Gold in the city during a [ICON_GOLDEN_AGE] Golden Age</Text>
+			<Text>Unique Moroccan replacement for the Garden. +1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens in City. [ICON_INTERNATIONAL_TRADE] Trade Routes originating in the City gain [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn.[NEWLINE][NEWLINE]+25% [ICON_GREAT_PEOPLE] Great People Points in this City.[NEWLINE][NEWLINE]+15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age.</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
@@ -2076,7 +2075,7 @@
 			<Text>Scythed Chariot</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP">
-			<Text>A dangerous unit on open terrain. Only the Celts may build it. This unit is stronger against Archer and Melee Units, has more vision and ignores enemy Zone of Control. After moving, all newly adjacent enemy units take 10 damage. Moving into rough terrain ends all movement.</Text>
+			<Text>A dangerous Unit on Open Terrain. This unit is stronger against Archer and Melee Units, has more vision and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]After moving, all newly adjacent Enemy Units take 10 damage. Moving into Rough Terrain uses rest of [ICON_ARROW_RIGHT] Movement Points.[NEWLINE][NEWLINE]Only the Celts may build it. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY">
 			<Text>The Scythed Chariot is a Celtic unique unit made for destroying enemy lines. Enemies take damage whenever the Scythed Chariot moves adjacent to them, making this unit deadly in open terrain. Make every move count to maximize damage, but be careful not to leave your Chariots exposed to enemies on their turn. A mounted unit, the Scythed Chariot is vulnerable to Spearmen.</Text>
@@ -2314,7 +2313,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_HELP">
 			<Text>
-				Cheap German warrior replacement. +50% [ICON_STRENGTH] Strength against Barbarians, and has a chance of converting defeated Barbarian units. On Barbarian kills, earn 5 [ICON_INFLUENCE] Influence with the nearest City-State.
+				Cheap German Warrior replacement. +50% [ICON_STRENGTH] Combat Strength against Barbarians, and has a chance of converting defeated Barbarian Units. On Barbarian kills, earn 5 [ICON_INFLUENCE] Influence with the nearest City-State.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS">
@@ -2347,7 +2346,7 @@
 			<Text>Sofa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SONGHAI_SOFA_HELP">
-			<Text>Skirmisher Unit excelling at supporting your Cavalry. Cheaper and available earlier than the Crossbowman. Has the [COLOR_POSITIVE_TEXT]Medic I[ENDCOLOR] promotion. Only Songhai may build it.</Text>
+			<Text>Skirmisher Unit excelling at supporting your cavalry. Cheaper and available earlier than the Crossbowman. Has the [COLOR_POSITIVE_TEXT]Medic I[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Songhai may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SONGHAI_SOFA_STRATEGY">
 			<Text>The Sofa is a Songhai unique unit, replacing the Crossbowman. It serves as an excellent support unit starting with the Medic I promotion and a 15% Damage increase to all Mounted units within 2 tiles. The Sofa has lower offensive strength, but is relatively cheap to train and available earlier.</Text>
@@ -2422,7 +2421,7 @@
 			<Text>Tarkhan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_HELP">
-			<Text>Mounted warrior who also supports civilian and other military units with its unique abilities. Only the Huns may build it.</Text>
+			<Text>Mounted Warrior who also supports Civilian and other Land Military Units with its unique abilities.[NEWLINE][NEWLINE]Only the Huns may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_STRATEGY">
 			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Pillaging tiles with a Tarkhan heals all your adjacent units, which can be handy for healing a recently captured unit.</Text>
@@ -2470,7 +2469,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
-				Unique German replacement for the Heroic Epic. Gain a free Armory in the City. Contains 1 slot for a Great Work of Writing. +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP to all Cities in the Empire with a Barracks.[NEWLINE][NEWLINE]All melee land units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] promotion. New units trained in Cities with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] promotion.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				Unique German replacement for the Heroic Epic. Gain a free Armory in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. [NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP to all Cities in the Empire with a Barracks, and new Units trained in Cities with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. All Melee Land Units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] Promotion.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_CHAPTER">

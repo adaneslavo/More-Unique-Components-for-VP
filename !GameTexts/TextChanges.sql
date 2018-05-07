@@ -3,7 +3,7 @@
 --==========================================================================================================================	
 -- Ballista
 UPDATE Language_en_US 
-SET Text = 'Unique Roman replacement for the Catapult. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against land Units. When near a Great General, has double movement in open terrain while in enemy territory.'
+SET Text = 'Unique Roman replacement for the Catapult. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against Land Units. When near a [ICON_GREAT_GENERAL] Great General, has double [ICON_ARROW_RIGHT] Movement in Open Terrain while in Enemy Territory.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_BALLISTA';
 
 UPDATE Language_en_US 
