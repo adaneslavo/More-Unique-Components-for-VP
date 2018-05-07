@@ -1441,7 +1441,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
 			<Text>
-				The Lamassu Gate is an Assyrian unique Building. Provides [ICON_CULTURE] Culture, [ICON_STRENGTH] Defense and City HP in the City.[NEWLINE][NEWLINE]It increases the [ICON_WAR] Military Supply Cap in the City more than the standard Walls it replaces. It also contains slots for a [ICON_GREAT_WORK] Great Work of Writing and a [ICON_GREAT_WRITER] Writer Specialist.
+				The Lamassu Gate is an Assyrian Unique Building. Provides [ICON_CULTURE] Culture, [ICON_STRENGTH] Defense and City HP in the City.[NEWLINE][NEWLINE]It increases the [ICON_WAR] Military Supply Cap in the City more than the standard Walls it replaces. It also contains slots for a [ICON_GREAT_WORK] Great Work of Writing and a [ICON_GREAT_WRITER] Writer Specialist.
 			</Text>
 		</Row>
 
@@ -2149,10 +2149,10 @@
 			<Text>Suffet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP">
-			<Text>Unique replacement for the Great General. Disembarks onto water tiles as a [ICON_GREAT_ADMIRAL] Great Admiral. Causes Friendly Units beginning in the same or adjacent tile to ignore Enemy Zone of Control for that turn.[NEWLINE][NEWLINE]Only Carthagians can build it.</Text>
+			<Text>Unique replacement for the [ICON_GREAT_GENERAL] Great General. Disembarks onto water tiles as a [ICON_GREAT_ADMIRAL] Great Admiral. Causes Friendly Units beginning in the same or adjacent tile to ignore Enemy Zone of Control for that turn.[NEWLINE][NEWLINE]Only Carthagians can build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY">
-			<Text>The Suffet is the unique [ICON_GREAT_GENERAL] Great General replacement for Carthage, for Hannibal. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Suffet to supplement your military strategies when waging war against other civilizations.</Text>
+			<Text>The Suffet is the unique Great General replacement for Carthage, for Hannibal. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Suffet to supplement your military strategies when waging war against other civilizations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_TEXT">
 			<Text>
