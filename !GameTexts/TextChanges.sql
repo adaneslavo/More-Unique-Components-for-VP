@@ -17,7 +17,7 @@ WHERE Tag = 'TXT_KEY_UNIT_ROMAN_LEGION_STRATEGY';
 
 -- Longbowman
 UPDATE Language_en_US 
-SET Text = 'Unique ranged unit of the English civilization. Replaces the Crossbowman. Begins with the [COLOR_POSITIVE_TEXT]Range[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Agincourt[ENDCOLOR] Promotions, giving increased attack range and a bonus against Mounted units.'
+SET Text = 'Unique Crossbowman replacement for the English Civilization. Begins with the [COLOR_POSITIVE_TEXT]Range[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Agincourt[ENDCOLOR] Promotions, giving increased Attack Range and a bonus against Mounted Units.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_LONGBOWMAN';
 
 UPDATE Language_en_US 
@@ -56,7 +56,7 @@ UPDATE Language_en_US
 SET Text = 'A powerful Industrial-era naval unit. Only America may build it. It has the Cover I promotion, and gives a defensive bonus to nearby friendly cities. Monitors are effective combatants when at war, and can be used to reduce crime in peacetime.'
 WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_STRATEGY';
 
---Mandekalu Cavalry
+-- Mandekalu Cavalry
 UPDATE Language_en_US
 SET Text = 'This is a Songhai unique unit, replacing the Knight. This unit is stronger than the Horseman, and it gains a significant bonus when attacking cities. The Mandekalu Cavalry can move after attacking. Its speed makes it difficult for an enemy to build a defensive line before the Mandekalu Cavalry reaches the target.'
 WHERE Tag = 'TXT_KEY_UNIT_SONGHAI_MUSLIMCAVALRY_STRATEGY';
@@ -65,7 +65,7 @@ UPDATE Language_en_US
 SET Text = 'Powerful Medieval Mounted Unit, weak to Pikemen. Only the Songhai may build it. This Unit is not penalized when attacking Cities, unlike the Knight which it replaces, and starts with the Raider promotion.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_MUSLIM_CAVALRY';
 
---Pracinha
+-- Pracinha
 UPDATE	Language_en_US
 SET	Text = 'This melee unit is stronger in faraway lands and earns Tourism when it defeats an enemy. Use them to fight wars in foreign lands to push your Civilization towards a Culture victory.'
 WHERE	Tag = 'TXT_KEY_UNIT_BRAZILIAN_PRACINHA_STRATEGY';
@@ -78,7 +78,7 @@ UPDATE Language_en_US
 SET Text = 'Unique Venetian Caravel. This Unit is much stronger than the Caravel it replaces, but moves slowly in Deep Ocean.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_VENETIAN_GALLEASS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
---Turtle Ship
+-- Turtle Ship
 UPDATE Language_en_US 
 SET Text = 'The Turtle Ship is an early incarnation of the Ironclad for tactical purposes, and is best used to defend coastlines. Thanks to its high Combat Strength, it can easily fight off enemy Caravels and even Frigates. Its main drawback is that, unlike the Caravel that it replaces, it cannot move easily through deep oceans.'
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
@@ -98,13 +98,12 @@ WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';
 
 -- Great Galleas
 UPDATE Language_en_US 
-SET Text = 'Unique Venetian Galleass. This Unit is stronger than the Galleas it replaces.'
+SET Text = 'Unique Venetian Galleass. This Unit has lower [ICON_PRODUCTION] Production Cost than the Galleas it replaces, and has bigger both [ICON_STRENGTH] Combat Strength and [ICON_RANGED_STRENGTH] Ranged Combat Strength.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_VENETIAN_GALLEASS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 UPDATE Language_en_US 
 SET Text = 'The Great Galleass is slightly more powerful than the normal Galleass. The Venetian fleet''s terrible bombarding was famous in the Medieval Era and is well represented with this unit.'
 WHERE Tag = 'TXT_KEY_UNIT_VENETIAN_GALLEASS_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
 
 ------------------------------
 -- Building Texts
@@ -113,6 +112,7 @@ WHERE Tag = 'TXT_KEY_UNIT_VENETIAN_GALLEASS_STRATEGY' AND EXISTS (SELECT * FROM 
 UPDATE Language_en_US
 SET Text = 'Reduces enemy spy stealing rate by 50%, and prevents the disruption of Building and Wonder construction by Spy Advanced Actions, and enemy Spies cannot cause Unrest in the City. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City, and reduces [ICON_HAPPINESS_3] Crime.'
 WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
+
 ------------------------------
 -- UI Texts
 ------------------------------
@@ -128,6 +128,7 @@ WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT';
 INSERT INTO Language_en_US
 			(Tag,							Text)
 VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'Constructs a Polder, which increases [ICON_FOOD] Food,  [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy units entering a tile with a Polder lose all remaining movement.');
+
 ------------------------------
 -- UA Texts
 ------------------------------
@@ -140,6 +141,7 @@ WHERE Tag = 'TXT_KEY_TRAIT_FAITH_FROM_NATURE';
 UPDATE Language_en_US
 SET Text = 'Units ignore terrain costs when on Hills and may cross Mountains. Cities, Roads, and Railroads may be built on Mountains, and Mountains produce [ICON_RESEARCH] Science and [ICON_GOLD] Gold, scaling with Era.'
 WHERE Tag = 'TXT_KEY_TRAIT_GREAT_ANDEAN_ROAD';
+
 --------------------------------	
 -- Promotion Text
 --------------------------------

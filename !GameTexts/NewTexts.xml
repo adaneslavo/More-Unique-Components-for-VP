@@ -33,7 +33,7 @@
 			<Text>Agora</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_HELP">
-			<Text>Unique Ancient Era Building. +25% [ICON_PRODUCTION] Production towards Diplomatic Units in City, and Diplomatic Units trained in this City receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City Owner and the Trade Route Owner.[NEWLINE][NEWLINE]Provides [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and one slot for [ICON_GREAT_MERCHANT] Merchant Specialist. Adds bonus Yields to [ICON_RES_SPICES] Spices and [ICON_RES_SUGAR] Sugar Resources.[NEWLINE][NEWLINE]Only the Greeks may build it.</Text>
+			<Text>Unique Ancient Era Building. +25% [ICON_PRODUCTION] Production towards Diplomatic Units in City, and Diplomatic Units trained in this City receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City Owner and the Trade Route Owner.[NEWLINE][NEWLINE]Provides [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and one slot for [ICON_GREAT_MERCHANT] Merchant Specialist in the City. Adds yields to [ICON_RES_SPICES] Spices and [ICON_RES_SUGAR] Sugar Resources.[NEWLINE][NEWLINE]Only the Greeks may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_STRATEGY">
 			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora boosts the production Diplomatic Units. Diplomatic units trained in a city with an Agora gain the Proxenos promotion, which increases influence and gold income from Diplomatic Missions. Use your quick production of diplomatic units to secure a steady stream of gold for your empire.</Text>
@@ -49,7 +49,7 @@
 			<Text>Six-Horns Council</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_HELP">
-			<Text>Unique Ironqorks replacement, which does not require any prerequisite Building. Receive 25 [ICON_RESEARCH] Science as an instant boost whenever a Building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Only the Huns may build it.</Text>
+			<Text>Unique Ironqorks replacement, which does not require any prerequisite Building. Beside [ICON_PRODUCTION] Production it provides also [ICON_RESEARCH] Science and [ICON_CULTURE] Culture, and all Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Player receives 25 [ICON_RESEARCH] Science as an instant boost whenever a Building is constructed in City, scaling with Era.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Only the Huns may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_STRATEGY">
 			<Text>The Six-Horns Council is the Hunnic Unique Wonder, replacing the Ironworks. In addition to the normal bonuses of the Ironworks, the Six Horns council increases Science and Culture, and boosts Culture and Production from all Stables on empire. The wonder provides additional Gold and Happiness from demanding tribute from minor City-States.</Text>
@@ -180,7 +180,7 @@
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
-			<Text>Unique Polish Armory replacement. Provides additional [ICON_CULTURE] Culture [ICON_PEACE] Faith, and [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this City.[NEWLINE][NEWLINE]Ranged and Siege Units garrisoned in this City have increased [ICON_RANGED_STRENGTH] Ranged Combat Strength.[NEWLINE][NEWLINE]Only Polish may build it.</Text>
+			<Text>Unique Polish Armory replacement. In addition to [ICON_RESEARCH] Science it provides also [ICON_CULTURE] Culture, [ICON_PEACE] Faith, and [ICON_STRENGTH] Defense to the City. Reduces [ICON_STRENGTH] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this City.[NEWLINE][NEWLINE]Ranged and Siege Units garrisoned in this City have increased [ICON_RANGED_STRENGTH] Ranged Combat Strength.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
 			<Text>Unique Polish replacement for the Armory. Must have built Walls in the city. In addition to the normal bonuses provided by the Armory, this building provides Culture, Faith, and increased city defense. Ranged and Siege garrisoned in the city have increased attack.</Text>
@@ -317,7 +317,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_HELP">
 			<Text>
-				Naval Unit that specializes in piracy and disrupting maritime trade, can enter Rival Territory and ignore Enemy Zone of Control. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing Units, pillaging Resources, and plundering [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][NEWLINE]Only Morocco can build it.
+				Unique Naval Unit that specializes in piracy and disrupting maritime trade, can enter Rival Territory and ignores Enemy Zone of Control. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing Units, pillaging Resources, and plundering [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][NEWLINE]Only Morocco can build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA">
@@ -686,7 +686,7 @@
 			<Text>Fusta</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_JFD_LANTERNAS">
-			<Text>A small and fast compliment to the Galleas, rather than a replacement. Weaker, but cheaper, and does not contribute to unit maintenance. May withdraw before melee attacks.</Text>
+			<Text>A small and fast compliment to the Great Galleas, rather than a replacement. Weaker, but cheaper, and does not contribute to Unit [ICON_GOLD] Gold Maintenance. May withdraw before melee attacks.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_VENICE_FUSTA_STRATEGY">
 			<Text>
@@ -1415,7 +1415,7 @@
 			<Text>Laguna</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_TEXT">
-			<Text>When a [ICON_INTERNATIONAL_TRADE] Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from Coast and Ocean Tiles, +2 [ICON_FOOD] Food and +2 [ICON_PRODUCTION] Production to Atolls and +1 [ICON_PRODUCTION] Production from Sea Resources worked by this City. Sea Trade Routes gain +75% Range and +4 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_GOLD] Gold to Rialto District, +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science to Venetian Arsenale, and +1 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism to Murano Glassworks.[NEWLINE][NEWLINE]+15% [ICON_PRODUCTION] Production of Naval units, and increases Military Units supplied by this City's population by 10%. [NEWLINE][NEWLINE]City must be built on the Coast.[NEWLINE]Requires a Lighthouse in the City.</Text>
+			<Text>Unique Harbor replacement. It greatly increases base [ICON_FOOD] Food, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold income in the City as well as yields given by Coast and Ocean Tiles, Atolls, and Sea Resources worked by this City. Provides various bonuses to Rialto District, Venetian Arsenale or Murano Glassworks.[NEWLINE][NEWLINE]+100 HP to the City, +15% [ICON_PRODUCTION] Production of Naval units, and +10% [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE]Sea Trade Routes gain +75% Range and +4 [ICON_GOLD] Gold, and when a [ICON_INTERNATIONAL_TRADE] Sea Trade Route originating here and targeting another Player is completed, receive a [ICON_TOURISM] Tourism boost with him based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism Output.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_STRATEGY">
 			<Text>The Laguna is a Medieval-era building, requiring a Lighthouse. It improves the range and [ICON_GOLD] Gold yield of sea trade routes, and boosts the value of sea tiles and resources. The Laguna also increases the [ICON_PRODUCTION] Production of Naval units by 15%, and increases Military Units supplied by this City''s population by 10%. The Laguna additionally provide bonus yields to Murano Glassworks, Rialto District, and Arsenale di Venezia.</Text>
@@ -1441,7 +1441,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
 			<Text>
-				The Lamassu Gate is an Assyrian Unique Building. Provides [ICON_CULTURE] Culture, [ICON_STRENGTH] Defense and City HP in the City.[NEWLINE][NEWLINE]It increases the [ICON_WAR] Military Supply Cap in the City more than the standard Walls it replaces. It also contains slots for a [ICON_GREAT_WORK] Great Work of Writing and a [ICON_GREAT_WRITER] Writer Specialist.
+				The Lamassu Gate is an Assyrian Unique Building. Provides [ICON_CULTURE] Culture, [ICON_STRENGTH] Defense and additional HP to the City.[NEWLINE][NEWLINE]It increases the [ICON_WAR] Military Supply Cap in the City more than the standard Walls it replaces. It also contains slots for a [ICON_GREAT_WORK] Great Work of Writing and a [ICON_GREAT_WRITER] Writer Specialist.
 			</Text>
 		</Row>
 
@@ -1528,7 +1528,7 @@
 			<Text>Latifundium</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP">
-			<Text>Unique Roman Tile Improvement available at Calendar. The Latifundium provides additional [ICON_FOOD] Food and [ICON_CULTURE] Culture, and can be built on [ICON_RES_WHEAT] Wheat or any Resource normally requiring a Plantation. Cannot be built adjacent to another Latifundium or removed.[NEWLINE][NEWLINE]On construction, immediately spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the Latifundium. The new Figs tile is automatically claimed by Rome.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production to adjacent Farms.[NEWLINE]+1 [ICON_CULTURE] Culture to adjacent Plantations.</Text>
+			<Text>Unique Roman Tile Improvement available at Calendar. The Latifundium provides additional [ICON_FOOD] Food and [ICON_CULTURE] Culture, and can be built on [ICON_RES_WHEAT] Wheat or any Resource normally requiring a Plantation. Cannot be built adjacent to another Latifundium or removed once it is built.[NEWLINE][NEWLINE]On construction, immediately spawns an Improved [ICON_RES_FIGS] Figs Resource on an adjacent tile to the Latifundium. The new Figs tile is automatically claimed by Rome.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production to adjacent Farms.[NEWLINE]+1 [ICON_CULTURE] Culture to adjacent Plantations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT">
 			<Text>An ancient precursor to today’s agribusinesses, A Latifundium was an expansive privately owned farm specializing in intensive agriculture. The first latifundia were accumulated from the spoils of war, confiscated from conquered peoples beginning in the early 2nd century BC in Magna Graecia (Southern Italy). The Latifundia system later expanded with conquest, to the Roman provinces of the Maghreb and Hispania Baetica in southern Spain
@@ -1679,7 +1679,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP">
 			<Text>
-				Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the Trade Network. Gives a +50% [ICON_STRENGTH] Defense Bonus to Units stationed on it, and +20 HP to a nearby Cities. Adjacent Basic Tile Improvements gain additional bonus yields[NEWLINE][NEWLINE]Increases the length of [ICON_HAPPINESS_1] WLTKDs granted by Great Merchants.
+				Unique Celtic Great Tile Improvement, which does not replace the Town. It will connect Strategic Resources on this Tile to the [ICON_INTERNATIONAL_TRADE] Trade Network. Provides [ICON_CULTURE] Culture and [ICON_PEACE] Faith in addition to standard yields, +50% [ICON_STRENGTH] Defense Bonus to Units stationed on it, and +20 HP to a nearby Cities.[NEWLINE][NEWLINE]Adjacent Basic Tile Improvements gain additional bonus yields.[NEWLINE][NEWLINE]When created, it increases [ICON_HAPPINESS_1] WLTKD length in the City.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
@@ -1714,7 +1714,7 @@
 			<Text>Paradise Garden</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>Unique Persian replacement for the Garden. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. Receive 30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Grant +1 [ICON_CULTURE] Culture to every Guild on Empire.</Text>
+			<Text>Unique Persian replacement for the Garden. +3 [ICON_CULTURE] Culture, +3 [ICON_TOURISM] Tourism, and +25% [ICON_GREAT_PEOPLE] Great People Points in the City. Receive 30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Grant +1 [ICON_CULTURE] Culture to every Guild on Empire.[NEWLINE][NEWLINE]Building grants additonal bonuses to [ICON_RES_CITRUS] Citrus and [ICON_RES_COCOA] Cocoa Resources, as well as Oasis Tiles.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
 			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, the Pairidaeza provides Culture to all guilds in the Empire. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
@@ -1823,7 +1823,7 @@
 			<Text>Pogost - Stage 3: Eastern Orthodox Church</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP">
-			<Text>Unique Russian Medieval Building.[NEWLINE][NEWLINE]Grants additional [ICON_GOLD] Gold to all [ICON_CONNECTED] City Connections. Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] for both City Owner and Trade Route Owner. +1 [ICON_GOLD] Gold to nearby Village and Town Improvements.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
+			<Text>Unique Russian Medieval Building.[NEWLINE][NEWLINE]Provides more [ICON_GOLD] Gold and [ICON_CULTURE] Culture to the City. Grants additional [ICON_GOLD] Gold to all [ICON_CONNECTED] City Connections, and to nearby Village and Town Improvements.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
 			<Text>Pogost Stage 2: +2 [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Get more [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections.[NEWLINE][NEWLINE]Unlocks access to Stage 3.</Text>
@@ -1916,7 +1916,7 @@
 			<Text>Qadi Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_HELP">
-			<Text>Unique Classical Era Building which can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. 10% of [ICON_PRODUCTION] Production in the City is converted to [ICON_CULTURE] Culture. [NEWLINE][NEWLINE]Provides [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen not of the City's Majority Religion. Reduces [ICON_HAPPINESS_3] Religious Tension in the City. [NEWLINE][NEWLINE]Only Songhai may build it.</Text>
+			<Text>Unique Classical Era Building which can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. 10% of [ICON_PRODUCTION] Production in the City is converted to [ICON_CULTURE] Culture. [NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith. Provides [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen not of the City's Majority Religion. Reduces [ICON_PEACE] Religious Unrest in the City. [NEWLINE][NEWLINE]Only Songhai may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_STRATEGY">
 			<Text>The Qadi Court is a Songhai unique building that replaces the Courthouse. In addition to The normal bonuses of a Courthouse, the Qadi Court also yields [ICON_PEACE] Faith and reduces religious unrest in the city. Every citizen not following the city's majority religion provides extra Gold, and 10% of Production in the city is converted to Culture. The Qadi Court can be built in any City.</Text>
@@ -2005,7 +2005,7 @@
 			<Text>The Riad is the Moroccan unique replacement for the Garden. Gold generation in the city is greatly increased during a Golden Age. Trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_HELP">
-			<Text>Unique Moroccan replacement for the Garden. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. +15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes originating in the City gain [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn.[NEWLINE][NEWLINE]Building grants additonal bonuses to [ICON_RES_CITRUS] Citrus and [ICON_RES_COCOA] Cocoa Resources, as well as Oasis Tiles.</Text>
+			<Text>Unique Moroccan replacement for the Garden that has no [ICON_GOLD] Mainteneance Cost. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. +15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes originating in the City gain [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn.[NEWLINE][NEWLINE]Building grants additonal bonuses to [ICON_RES_CITRUS] Citrus and [ICON_RES_COCOA] Cocoa Resources, as well as Oasis Tiles.</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
@@ -2469,7 +2469,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
-				Unique German replacement for the Heroic Epic. Grants a free Armory in the City on construction. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. [NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP to all Cities in the Empire with a Barracks, and new Units trained in Cities with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. All Melee Land Units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] Promotion.
+				Unique German replacement for the Heroic Epic, available earlier. Grants a free Armory in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. [NEWLINE][NEWLINE]Provides [ICON_CULTURE] Culture and [ICON_PEACE] Faith. All Baracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and new Units trained in this City gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. All Melee Land Units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] Promotion.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_CHAPTER">
@@ -2484,7 +2484,7 @@
 			<Text>Tophet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_HELP">
-			<Text>Provides [ICON_CULTURE] Culture and [ICON_PEACE] Faith in the City. [NEWLINE]Receive 10 [ICON_CULTURE] Culture in the City whenever a Unit is purchased, scaling with Era, and Units purchased in this City receive full XP from Buildings.</Text>
+			<Text>Unique Shrine replacement available for Carthage. Provides [ICON_CULTURE] Culture and more [ICON_PEACE] Faith in the City, than standard Shrine. [NEWLINE]Receive 10 [ICON_CULTURE] Culture in the City whenever a Unit is purchased, scaling with Era, and Units purchased in this City receive full XP from Buildings.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_STRATEGY">
 			<Text>The Tophet is the unique Shrine replacement for Carthage. In addition to the normal bonuses of a Shrine, the Tophet provides Culture whenever a unit is purchased in the City. Military Units purchased in a City with a Tophet are not affected by the normal half XP penalty for purchasing.</Text>
@@ -2555,14 +2555,8 @@
 			<Text>White Tower</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP">
-			<Text>Unique replacement for the Hermitage. Only England may build it
-			[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Population in city.
-			[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City. +2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% Spy stealing rate on Empire 
-
-			[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Happiness on Empire for every enemy spy killed on Empire.
-			[NEWLINE][NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.
-			[NEWLINE][NEWLINE]Available earlier, requires Castle in City.
-			[NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.	
+			<Text>
+				Unique English Hermitage replacement, available eralier. It requires less [ICON_CITIZEN] Population as well as Castle constructed in the City, and provides various [ICON_CULTURE] Culture sources. +3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in the City, and +2 [ICON_CULTURE] Culture to all Castles in the Empire.[NEWLINE][NEWLINE]-25% [ICON_SPY] Spy Stealing Rate on Empire. +1 [ICON_HAPPINESS_1] Happiness on Empire for every [ICON_SPY] Enemy Spy killed by the Player.[NEWLINE][NEWLINE]Contains 3 slots for [ICON_GREAT_WORK] Great Works of Art or Artifact, and comes with one free [ICON_GREAT_WORK] Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY">
