@@ -1679,7 +1679,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP">
 			<Text>
-				Unique Celtic Great Tile Improvement, which does not replace the Town. It will connect Strategic Resources on this Tile to the [ICON_INTERNATIONAL_TRADE] Trade Network. Provides [ICON_CULTURE] Culture and [ICON_PEACE] Faith in addition to standard yields, +50% [ICON_STRENGTH] Defense Bonus to Units stationed on it, and +20 HP to a nearby Cities.[NEWLINE][NEWLINE]Adjacent Basic Tile Improvements gain additional bonus yields.[NEWLINE][NEWLINE]Each Oppidum on Empire increases the length of [ICON_HAPPINESS_1] 'We Love the King Days' from Trade Missions.
+				Unique Celtic Great Tile Improvement, which does not replace the Town. It will connect Strategic Resources on this Tile to the [ICON_INTERNATIONAL_TRADE] Trade Network. Provides [ICON_CULTURE] Culture and [ICON_PEACE] Faith in addition to standard yields, +50% [ICON_STRENGTH] Defense Bonus to Units stationed on it, and +20 HP to a nearby Cities.[NEWLINE][NEWLINE]Adjacent Basic Tile Improvements gain additional bonus yields.[NEWLINE][NEWLINE]Each Oppidum on Empire increases the length of [ICON_HAPPINESS_1] 'We Love the King Days' from Trade Missions conducted by Great Merchants.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
