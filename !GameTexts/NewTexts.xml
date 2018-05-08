@@ -2057,10 +2057,7 @@
 		<!-- Scythed Chariot -->
 		<!-- Created by adan_eslavo on 26/10/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE">
-			<Text>Scythe</Text>
-		</Row>
-		<Row Tag="TXT_KEY_MISC_YOU_UNIT_WAS_DAMAGED_AOE_STRIKE_ON_MOVE">
-			<Text>Scythe</Text>
+			<Text>Rending Scythe</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE_HELP">
 			<Text>[COLOR_POSITIVE_TEXT]On Move[ENDCOLOR] unit inflicts flat damage [COLOR_POSITIVE_TEXT]to all new adjacent Enemy Units[ENDCOLOR]. +1 Sight.</Text>
