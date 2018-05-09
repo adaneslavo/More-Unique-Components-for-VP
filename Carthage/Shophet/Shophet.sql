@@ -76,8 +76,8 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_GREATGENERAL_KH
 -- Units
 ------------------------------	
 INSERT INTO Units 	
-		(Type, 						Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, Description,						Civilopedia,							Strategy,									Help,									AdvancedStartCost,	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, UnitArtInfo,  					UnitFlagIconOffset,	UnitFlagAtlas,				MoveRate, PortraitIndex, IconAtlas)
-SELECT	'UNIT_CARTHAGE_SHOPHET',	Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, 'TXT_KEY_UNIT_CARTHAGE_SHOPHET',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_TEXT',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP',	AdvancedStartCost, 	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, 'ART_DEF_UNIT_CARTHAGE_SHOPHET',  0,					'UNIT_CARTHAGE_FLAG_ATLAS',	MoveRate, 0, 			 'UNIT_CARTHAGE_ATLAS'
+		(Type, 						Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, Description,						Civilopedia,							Strategy,									Help,									AdvancedStartCost,	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, UnitArtInfo,  						UnitFlagIconOffset,	UnitFlagAtlas,				MoveRate, PortraitIndex, IconAtlas,				PurchaseCooldown, GlobalFaithPurchaseCooldown)
+SELECT	'UNIT_CARTHAGE_SHOPHET',	Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, 'TXT_KEY_UNIT_CARTHAGE_SHOPHET',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_TEXT',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP',	AdvancedStartCost, 	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, 'ART_DEF_UNIT_CARTHAGE_SHOPHET',	0,					'UNIT_CARTHAGE_FLAG_ATLAS',	MoveRate, 0, 			 'UNIT_CARTHAGE_ATLAS',	PurchaseCooldown, GlobalFaithPurchaseCooldown
 FROM Units WHERE Type = 'UNIT_GREAT_GENERAL';	
 --------------------------------
 -- UnitGameplay2DScripts

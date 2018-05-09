@@ -10,7 +10,7 @@ v32:
 				   ==> added imported resources to the variables (now if you have 6 iron (4 yours and 2 imported) and 5 ICs you will get bonus),
 	- Riad ==> deleted culture gain commented code and text mentioning (1c per 5),
 	- Sambadrome ==> increased Culture modifier to 10%,
-	- smany small text corrections, added many text icons, added some missing text infos.
+	- many small text corrections, added many text icons, added some missing text infos, few important text corrections.
 - changes:
     - Scythed Chariot ==> unique promotion name is "Rending Scythes" now,
 					  ==> deleted one text value to fit VP changes.

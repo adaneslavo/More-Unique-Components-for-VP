@@ -2466,7 +2466,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
-				Unique German replacement for the Heroic Epic, available earlier. Grants a free Armory in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. [NEWLINE][NEWLINE]Provides [ICON_CULTURE] Culture and [ICON_PEACE] Faith. All Baracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and new Units trained in this City gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. All Melee Land Units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] Promotion.
+				Unique German replacement for the Heroic Epic, available earlier. Grants a free Armory in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. [NEWLINE][NEWLINE]Provides [ICON_CULTURE] Culture and [ICON_PEACE] Faith. All Baracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and new Units trained in City with Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. All Melee Land Units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] Promotion.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_CHAPTER">
