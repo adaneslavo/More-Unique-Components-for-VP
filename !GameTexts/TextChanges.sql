@@ -35,6 +35,10 @@ WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_HELP';
 
 -- Carolean
 UPDATE Language_en_US 
+SET Text = 'Unique Sedish replacement for Fusilier. It is key unit of Swedish Industrial army. Starts with [COLOR_POSITIVE_TEXT]March[ENDCOLOR], gets additional bonuses from [ICON_GREAT_GENERAL] Great Generals and deals AOE damage to Enemy Units.'
+WHERE Tag = 'TXT_KEY_UNIT_HELP_SWEDISH_CAROLEAN';
+
+UPDATE Language_en_US 
 SET Text = 'Caroleans are the backbone of the Industrial era Swedish army. They start with the March promotion that allows it to Heal every turn, even if it performs an action. The Carolean also receives a 15% combat bonus when stacked with a Great General, and deals damage to all adjacent units after advancing from killing a unit.'
 WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_CAROLEAN_STRATEGY';
 
@@ -98,7 +102,7 @@ WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';
 
 -- Great Galleas
 UPDATE Language_en_US 
-SET Text = 'Unique Venetian Galleass. This Unit has lower [ICON_PRODUCTION] Production Cost than the Galleas it replaces, and has bigger both [ICON_STRENGTH] Combat Strength and [ICON_RANGED_STRENGTH] Ranged Combat Strength.'
+SET Text = 'Unique Venetian Galleass. This Unit has lower [ICON_PRODUCTION] Production Cost than the Galleas it replaces, and has bigger both [ICON_STRENGTH] Combat Strength and [ICON_RANGE_STRENGTH] Ranged Combat Strength.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_VENETIAN_GALLEASS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 UPDATE Language_en_US 

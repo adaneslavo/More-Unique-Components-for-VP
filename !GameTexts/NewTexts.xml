@@ -135,7 +135,7 @@
 			<Text>Unique Swedish replacement for the Baths. In addition to the bonuses of the Baths, the Bastu provides bonuses for lakes and tundra. Science and Culture is generated whenever a citizen is born, and extra Food is generated during Golden Ages. Unlike the Baths, the Bastu does not require a river,</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_HELP">
-			<Text>Golden Ages increase [ICON_CULTURE] Culture and [ICON_FOOD] Food by 10%. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City. +1 [ICON_RESEARCH] Science from Lake and Tundra Tiles.</Text>
+			<Text>Unique Baths replacement. Provides [ICON_FOOD] Food and [ICON_CULTURE] Culture, and adds +1 [ICON_RESEARCH] Science to Lake and Tundra Tiles.[NEWLINE][NEWLINE]+10% [ICON_CULTURE] Culture and [ICON_FOOD] Food in the City during [ICON_GOLDEN_AGE]Golden Ages. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]Can only be built by Swedes.</Text>
 		</Row>
 		
 		<!-- Black Tug -->
@@ -156,7 +156,7 @@
 			<Text>Black Tug</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_HELP">
-			<Text>Aggressive and menacing Medieval Era Mounted Unit. Only the Mongols may build it. It is stronger against wounded units or while standing on pillaged tiles. Gains additional XP for pillaging.</Text>
+			<Text>Aggressive and menacing Medieval Era Melee Mounted Unit. It is stronger against Wounded Units or while standing on Pillaged Tiles. Gains additional XP for pillaging. [NEWLINE][NEWLINE]Only the Mongols may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_STRATEGY">
 			<Text>Black Tug is a Mongolian unique unit, replacing the Knight. It is stronger and deals more damage to wounded units, and while standing on pillaged tiles. As mounted unit, the Black Tug is vulnerable to Pikemen.</Text>
@@ -348,7 +348,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_HELP">
 			<Text>
-				Unique Ancient Era Unit.  Only the Indians may build it. Gains additional [ICON_CULTURE] Culture and experience for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled on barbarians.
+				Unique Ancient Era Unit. Slightly stronger than Archer which it replaces. Gains additional [ICON_CULTURE] Culture and XP for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled on Barbarians.[NEWLINE][NEWLINE]Only the Indians may build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_STRATEGY">
@@ -1216,7 +1216,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG_HELP">
-			<Text>Available at Sailing, the Kampong can be built by embarked Workers on Coastal tiles. Each Kampong yields [ICON_FOOD] Food and [ICON_CULTURE] Culture and adjacent Sea Resources receive +1 [ICON_PRODUCTION] Production. Cannot be built adjacent to each other.</Text>
+			<Text>Unique Indonesian Tile Improvement. Available at Sailing, the Kampong can be built by embarked [ICON_WORKER] Workers on Coastal Tiles. Each Kampong yields [ICON_FOOD] Food and [ICON_CULTURE] Culture, and adjacent Sea Resources receive +1 [ICON_PRODUCTION] Production. Cannot be built next to another Kampong.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_INDONESIA_KAMPONG">
 			<Text>Build a [LINK=IMPROVEMENT_INDONESIA_KAMPONG]Kampong[\LINK]</Text>
@@ -1414,13 +1414,13 @@
 		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA">
 			<Text>Laguna</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_TEXT">
-			<Text>Unique Harbor replacement. It greatly increases base [ICON_FOOD] Food, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold income in the City as well as yields given by Coast and Ocean Tiles, Atolls, and Sea Resources worked by this City. Provides various bonuses to Rialto District, Venetian Arsenale or Murano Glassworks.[NEWLINE][NEWLINE]+100 HP to the City, +15% [ICON_PRODUCTION] Production of Naval units, and +10% [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE]Sea Trade Routes gain +75% Range and +4 [ICON_GOLD] Gold, and when a [ICON_INTERNATIONAL_TRADE] Sea Trade Route originating here and targeting another Player is completed, receive a [ICON_TOURISM] Tourism boost with him based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism Output.</Text>
+		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_HELP">
+			<Text>Unique Venetian Harbor replacement. It greatly increases base [ICON_FOOD] Food, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold income in the City as well as yields given by Coast and Ocean Tiles, Atolls, and Sea Resources worked by this City. Provides various bonuses to Rialto District, Venetian Arsenale or Murano Glassworks.[NEWLINE][NEWLINE]+100 HP to the City, +15% [ICON_PRODUCTION] Production of Naval units, and +10% [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE]Sea Trade Routes gain +75% Range and +4 [ICON_GOLD] Gold, and when a [ICON_INTERNATIONAL_TRADE] Sea Trade Route originating here and targeting another Player is completed, receive a [ICON_TOURISM] Tourism boost with him based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism Output.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_STRATEGY">
 			<Text>The Laguna is a Medieval-era building, requiring a Lighthouse. It improves the range and [ICON_GOLD] Gold yield of sea trade routes, and boosts the value of sea tiles and resources. The Laguna also increases the [ICON_PRODUCTION] Production of Naval units by 15%, and increases Military Units supplied by this City''s population by 10%. The Laguna additionally provide bonus yields to Murano Glassworks, Rialto District, and Arsenale di Venezia.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_PEDIA">
+		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_TEXT">
 			<Text>Laguna (eng. Lagoons) are shallow bodies of salt water separated from a larger sea by barrier islands or reefs. Venice itself is situated on the bank of a large lagoon, artificially maintained and enlarged by the dredging of the Venetian canals. The Venice Lagoon is also the largest wetland in the Mediterranean, offering protection as well as a rich source of food to its inhabitants.</Text>
 		</Row>
 		
@@ -1860,7 +1860,7 @@
 			<Text>The Prau is faster and cheaper than the Trireme it replaces and ignores zone of control. It is great for early game scouting and raiding.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_HELP">
-			<Text>Early naval Unit. Replaces the Trireme. Only Indonesia may build it. It's available earlier, moves quickly and ignores zone of control.</Text>
+			<Text>Early naval Unit. Replaces the Trireme. It's available earlier, has +1 [ICON_ARROW_RIGHT] Movement Point and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]Only Indonesia may build it.</Text>
 		</Row>
 		
 		<!-- Penteconter -->
@@ -1958,7 +1958,7 @@
 			<Text>Mughal Fort</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>Unique replacement for the Castle. +1 [ICON_STRENGTH] City Defense for every World Wonder built [COLOR_POSITIVE_TEXT]in the City[ENDCOLOR], and 15% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn. Contains 1 slot for a Great Work of Art and generates 1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. Gains +3 [ICON_TOURISM] Tourism at Flight. Requires Walls in City.</Text>
+			<Text>Unique Indian replacement for the Castle. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates 1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. Gains +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]Provides [ICON_CULTURE] Culture, [ICON_STRENGTH] Defense and additional HP to the City. +1 [ICON_STRENGTH] City Defense for every World Wonder built in the City, and 15% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
 			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Culture and Great Artist Points. 15% of City Defense is converted into Culture every turn and the city gains 1 Defense for every World Wonder built in the city.[NEWLINE][NEWLINE]Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
@@ -2638,7 +2638,7 @@
 			<Text>Yassa Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_HELP">
-			<Text>Unique Classical Era Building which can be built in non-occupied cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Military Units. Conquering enemy city starts 10-turn long [ICON_HAPPINESS_1] WLTKD. [NEWLINE][NEWLINE]Slightly reduces [ICON_HAPPINESS_3] Crime, Boredom, Illiteracy and Religious Tension. Building cost is slightly increased with number of Cities.[NEWLINE][NEWLINE]Only Mongols can build it.</Text>
+			<Text>Unique Classical Era Building which can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. Slightly reduces [ICON_STRENGTH] Crime, [ICON_CULTURE] Boredom, [ICON_RESEARCH] Illiteracy and [ICON_PEACE] Religious Unrest.[NEWLINE][NEWLINE]Provides +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Units. Conquering Enemy City starts 10-turn long [ICON_HAPPINESS_1] WLTKD. [NEWLINE][NEWLINE]Only Mongols can build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_STRATEGY">
 			<Text>Unique Mongolian replacement for the Courthouse. Can be built in non-occupied Cities. In addition elimination Unhappiness in Occupied Cities, this building reduces unhappiness from Crime, Illiteracy, Boredom and Religious Tensions, and increases production of all Land-based military units, except Unmounted Melee. Conquering Cities triggers a small WLTKD. It is also slightly cheaper than the Courthouse.</Text>
