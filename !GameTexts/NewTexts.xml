@@ -8,7 +8,7 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>Unique Industrial Era Building. Unlike the Agribusiness which it replaces, it does not require [ICON_RES_HORSE] Horses. Boosts construction of Buildings in the City.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food to Farms.[NEWLINE]+3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Pastures.[NEWLINE][NEWLINE]Only Denmark may build it.</Text>
+			<Text>Unique Industrial Era Building. Unlike the Agribusiness which it replaces, it does not require [ICON_RES_HORSE] Horses. Boosts construction of Buildings in the City.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food to Farms.[NEWLINE]+3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Pastures, and +1 [ICON_FOOD] Food to Plains.[NEWLINE][NEWLINE]Only Denmark may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production and can help your City grow quickly, especially when surrounded by plains and pastures.</Text>
