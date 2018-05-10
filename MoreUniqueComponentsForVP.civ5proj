@@ -21,7 +21,15 @@ Latest changes: see changelog file.</Description>
     <SupportsMac>true</SupportsMac>
     <AssemblyName>MoreUniqueComponentsForVP</AssemblyName>
     <RootNamespace>MoreUniqueComponentsForVP</RootNamespace>
-    <ModReferences />
+    <ModReferences>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Enlightement Era for VP</Name>
+        <Id>87b2deae-83cb-9b88-9017-79e741d3739c</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModReferences>
     <ModActions>
       <Action>
         <Set>OnModActivated</Set>

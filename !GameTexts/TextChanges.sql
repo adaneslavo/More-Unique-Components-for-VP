@@ -3,7 +3,7 @@
 --==========================================================================================================================	
 -- Ballista
 UPDATE Language_en_US 
-SET Text = 'Unique Roman replacement for the Catapult. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against Land Units.[NEWLINE][NEWLINE]When near a [ICON_GREAT_GENERAL] Great General, has double [ICON_ARROW_RIGHT] Movement in Open Terrain while in Enemy Territory.'
+SET Text = 'Unique Roman replacement for the Catapult. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against Land Units.[NEWLINE][NEWLINE]When near a [ICON_GREAT_GENERAL] Great General, has double [ICON_ARROW_RIGHT] Movement in Open Terrain and while crossing Rivers.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_BALLISTA';
 
 UPDATE Language_en_US 
@@ -44,7 +44,7 @@ WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_CAROLEAN_STRATEGY';
 
 -- Hakkapeliitta
 UPDATE Language_en_US 
-SET Text = 'Unique Swedish Lancer. This Unit is stronger and more effective against wounded units than the Lancer. [ICON_GREAT_GENERAL] Great Generals are generated more quickly by this Unit, and they transfer their movement to [ICON_GREAT_GENERAL] Great Generals when beginning a turn stacked.'
+SET Text = 'Unique Swedish Lancer, stronger and more effective against Wounded Units. [ICON_GREAT_GENERAL] Great Generals are generated more quickly by this Unit, and it transfers its [ICON_ARROW_RIGHT] Movement Points to stacked [ICON_GREAT_GENERAL] Great Generals at the beginning of the turn.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_SWEDISH_HAKKAPELIITTA';
 
 UPDATE Language_en_US 
@@ -102,7 +102,7 @@ WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';
 
 -- Great Galleas
 UPDATE Language_en_US 
-SET Text = 'Unique Venetian Galleass. This Unit has lower [ICON_PRODUCTION] Production Cost than the Galleas it replaces, and has bigger both [ICON_STRENGTH] Combat Strength and [ICON_RANGE_STRENGTH] Ranged Combat Strength.'
+SET Text = 'Unique Venetian Galleass. This Unit is cheaper than the Galleas it replaces, and stronger in both melee and range attacks.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_VENETIAN_GALLEASS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 UPDATE Language_en_US 

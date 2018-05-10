@@ -8,7 +8,7 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>+5% [ICON_FOOD] Food and +10% [ICON_PRODUCTION] Production when constructing buildings in City. Unlike the Agribusiness which it replaces, it does not require horses.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food on Plains tiles, and +3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, and +2 [ICON_GOLD] Gold from Pastures. [NEWLINE][NEWLINE]Only Denmark can build it.</Text>
+			<Text>Unique Industrial Era Building. Unlike the Agribusiness which it replaces, it does not require [ICON_RES_HORSE] Horses. Provides [ICON_FOOD] Food, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold, and improves Plains Tiles. Boosts construction of Buildings in the City.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food to Farms.[NEWLINE]+1 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Pastures.[NEWLINE][NEWLINE]Only Denmark can build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production and can help your City grow quickly, especially when surrounded by plains and pastures.</Text>
@@ -135,7 +135,7 @@
 			<Text>Unique Swedish replacement for the Baths. In addition to the bonuses of the Baths, the Bastu provides bonuses for lakes and tundra. Science and Culture is generated whenever a citizen is born, and extra Food is generated during Golden Ages. Unlike the Baths, the Bastu does not require a river,</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_HELP">
-			<Text>Unique Baths replacement. Provides [ICON_FOOD] Food and [ICON_CULTURE] Culture, and adds +1 [ICON_RESEARCH] Science to Lake and Tundra Tiles.[NEWLINE][NEWLINE]+10% [ICON_CULTURE] Culture and [ICON_FOOD] Food in the City during [ICON_GOLDEN_AGE]Golden Ages. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]Can only be built by Swedes.</Text>
+			<Text>Unique Baths replacement, which does not require any prerequisite Building. Provides [ICON_FOOD] Food and [ICON_CULTURE] Culture, adds +1 [ICON_RESEARCH] Science to Lake and Tundra Tiles, and provides additional yields to Temple, Amphitheater and Garden in the City.[NEWLINE][NEWLINE]+10% [ICON_CULTURE] Culture and [ICON_FOOD] Food in the City during [ICON_GOLDEN_AGE]Golden Ages. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]Only the Swedes may build it.</Text>
 		</Row>
 		
 		<!-- Black Tug -->
@@ -685,7 +685,7 @@
 		<Row Tag="TXT_KEY_UNIT_VENICE_FUSTA">
 			<Text>Fusta</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UNIT_HELP_JFD_LANTERNAS">
+		<Row Tag="TXT_KEY_UNIT_VENICE_FUSTA_HELP">
 			<Text>A small and fast compliment to the Great Galleas, rather than a replacement. Weaker, but cheaper, and does not contribute to Unit [ICON_GOLD] Gold Maintenance. May withdraw before melee attacks.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_VENICE_FUSTA_STRATEGY">
@@ -693,7 +693,7 @@
 				Fusta are quick, cheap, and do not cost any unit maintenance. Use these ships in combination with the bigger Galleass to monitor and protect your shipping lanes without causing an undue burden on your economy.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_JFD_LANTERNAS_TEXT">
+		<Row Tag="TXT_KEY_UNIT_VENICE_FUSTA_TEXT">
 			<Text>
 				Fusta, or galliots, were small galleys with no more than 35 sailors. Exceptionally light and fast, the Venetians originally used them to maintain a standing navy against pirates, but the ship quickly became a favorite of the pirates themselves. The shallow draft, maneuverability and speed of the Fusta made them a legend throughout the Mediterranean.
 			</Text>
@@ -881,7 +881,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_HELP">
 			<Text>
-				The Hashemite Raider is the Arabian replacement for the Light Tank. It is available earlier than the unit it replaces, and does not require Aluminum. Double Movement and +25% [ICON_STRENGTH] Strength in Desert. This unit requires no movement to pillage, and deals damage to adjacent enemy units when pillaging improvements.
+				The Hashemite Raider is the Arabian replacement for the Light Tank. It is available earlier, and does not require [ICON_RES_ALUMINUM] Aluminum. It is faster and stronger in Desert, requires no [ICON_MOVES] Movement to pillage Tile Improvements, and deals damage to adjacent Units on pillage.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ARABIA_GARLAND_MINE">
@@ -959,7 +959,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP">
 			<Text>
-				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require [ICON_RES_HORSE] Horses, and gains +10% [ICON_STRENGTH] Combat Strength for each adjacent Enemy Unit.[NEWLINE][NEWLINE]Unit gains +2 [ICON_STRENGTH] Combat Strength if Player has sufficient [ICON_RES_HORSE] Horses for all Iron Chariots, and likewise for [ICON_RES_IRON] Iron.
+				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require [ICON_RES_HORSE] Horses, and gains [ICON_STRENGTH] Combat Strength for each adjacent Enemy Unit.[NEWLINE][NEWLINE]Unit gains +2 [ICON_STRENGTH] Combat Strength if Player has sufficient [ICON_RES_HORSE] Horses for all Iron Chariots, and likewise for [ICON_RES_IRON] Iron.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL">
@@ -1216,7 +1216,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG_HELP">
-			<Text>Unique Indonesian Tile Improvement. Available at Sailing, the Kampong can be built by embarked [ICON_WORKER] Workers on Coastal Tiles. Each Kampong yields [ICON_FOOD] Food and [ICON_CULTURE] Culture, and adjacent Sea Resources receive +1 [ICON_PRODUCTION] Production. Cannot be built next to another Kampong.</Text>
+			<Text>Unique Indonesian Tile Improvement. Available at Sailing, the Kampong can be built by [ICON_WORKER] Embarked Workers on Coastal Tiles, and cannot be built next to another Kampong.[NEWLINE][NEWLINE]Each Kampong yields [ICON_FOOD] Food and [ICON_CULTURE] Culture, and adjacent Fishing Boats receive +1 [ICON_PRODUCTION] Production.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_INDONESIA_KAMPONG">
 			<Text>Build a [LINK=IMPROVEMENT_INDONESIA_KAMPONG]Kampong[\LINK]</Text>
@@ -1497,7 +1497,7 @@
 			<Text>Longship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_HELP">
-			<Text>Early naval unit. Starts with 20 [ICON_STRENGTH] CP instead of the 25 of the Caravel, which it replaces, but is available at Physics. Starts with the [COLOR_GREEN]Viking Exploration[ENDCOLOR] promotion, [COLOR_GREEN]Can move after attacking[ENDCOLOR], and [COLOR_GREEN]Medic I[ENDCOLOR] Promotions. Only Denmark may build it.</Text>
+			<Text>Early Unique Naval Unit. It is much stronger and available erarlier than the Caravel, which it replaces. Unit can move after attacking, boosts movement of Embarked Civilian Units starting turn on the same tile, and has [COLOR_GREEN]Medic I[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Denmark may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_STRATEGY">
 			<Text>The Danish Longship is an early ship unit which allow Denmark to have early sea control. This allows Denmark to begin scouting the far seas earlier than the other players to prepare future waves of colonization, defend your colonies abroad and provides support to raids with its bonuses to healing at sea and performing hit-and-run tactics.</Text>
@@ -1610,7 +1610,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
 			<Text>
-				+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 20 [ICON_RESEARCH] Science (or 100 for a Great Person purchase), scaling with era.
+				Unique replacement for University. Provides [ICON_PEACE] Faith, multiple sources of [ICON_RESEARCH] Science, and a slot for [ICON_GREAT_SCIENTIST] Scientist Specialist. +25% [ICON_GREAT_PEOPLE] Great People Points. Reduces [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]Whenever you make a [ICON_PEACE] Faith purchase in the City, gain 20 [ICON_RESEARCH] Science (or 100 for a [ICON_GREAT_PEOPLE] Great Person purchase), scaling with Era.
 			</Text>
 		</Row>
 		
@@ -1638,16 +1638,16 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
 			<Text>
-				Available at Theology, the Monolithic Church can be built on [ICON_RES_STONE] Stone or on Unfeatured Hills, but not next to each other. Improves sources of [ICON_RES_STONE] Stone. Each Monolithic Church yields small amount of [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of technologies, Monolithic Churches are improved by the completion of [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR], adopting [COLOR_POSITIVE_TEXT]an Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
-				+1 [ICON_CULTURE] for every [COLOR_POSITIVE_TEXT]Ancient Policy Tree[ENDCOLOR][NEWLINE]
-				+1 [ICON_PEACE] for every [COLOR_POSITIVE_TEXT]Medieval Policy Tree[ENDCOLOR][NEWLINE]
-				+1 [ICON_RESEARCH] for every [COLOR_POSITIVE_TEXT]Industrial Policy Tree[ENDCOLOR][NEWLINE]
-				+1 [ICON_PEACE] for [COLOR_POSITIVE_TEXT]Adopting a Pantheon[ENDCOLOR][NEWLINE]
-				+1 [ICON_PRODUCTION] for [COLOR_POSITIVE_TEXT]Founding a Religion[ENDCOLOR][NEWLINE]
-				+1 [ICON_CULTURE] and [ICON_PRODUCTION] for [COLOR_POSITIVE_TEXT]Enhancing a Religion[ENDCOLOR][NEWLINE]
-				+1 [ICON_GOLD] and [ICON_PRODUCTION] for [COLOR_POSITIVE_TEXT]Reforming a Religion[ENDCOLOR][NEWLINE]
-				+2 [ICON_GOLD] for [COLOR_POSITIVE_TEXT]Adopting an Ideology[ENDCOLOR][NEWLINE]
-				[NEWLINE]Every Monolithic Church benefits from [COLOR_POSITIVE_TEXT]Ethiopia's[ENDCOLOR] policies and beliefs, even if located outside Ethiopia's borders.
+				Unique Ethiopian Tile Improvement, available at Theology. The Monolithic Church can be built on Unfeatured Hills or on source of [ICON_RES_STONE] Stone, which it improves. Canot be built next to another Monolithic Church.[NEWLINE][NEWLINE]Each Monolithic Church yields small amount of [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completion of [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR], adopting [COLOR_POSITIVE_TEXT]an Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
+				+1 [ICON_CULTURE] for every Ancient Policy Tree,[NEWLINE]
+				+1 [ICON_PEACE] for every Medieval Policy Tree,[NEWLINE]
+				+1 [ICON_RESEARCH] for every Industrial Policy Tree,[NEWLINE]
+				+1 [ICON_PEACE] for adopting a Pantheon,[NEWLINE]
+				+1 [ICON_PRODUCTION] for founding a Religion,[NEWLINE]
+				+1 [ICON_CULTURE] and [ICON_PRODUCTION] for enhancing a Religion,[NEWLINE]
+				+1 [ICON_GOLD] and [ICON_PRODUCTION] for reforming a Religion,[NEWLINE]
+				+2 [ICON_GOLD] for adopting an Ideology.[NEWLINE]
+				[NEWLINE]Every Monolithic Church benefits from [COLOR_POSITIVE_TEXT]Ethiopia's[ENDCOLOR] Policies and Religious Beliefs, even if located outside Ethiopia's borders.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH">
@@ -1679,7 +1679,16 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP">
 			<Text>
-				Unique Celtic Great Tile Improvement, which does not replace the Town. It will connect Strategic Resources on this Tile to the [ICON_INTERNATIONAL_TRADE] Trade Network. Provides [ICON_CULTURE] Culture and [ICON_PEACE] Faith in addition to standard yields, +50% [ICON_STRENGTH] Defense Bonus to Units stationed on it, and +20 HP to a nearby Cities.[NEWLINE][NEWLINE]Adjacent Basic Tile Improvements gain additional bonus yields.[NEWLINE][NEWLINE]Each Oppidum on Empire increases the length of [ICON_HAPPINESS_1] 'We Love the King Days' from Trade Missions conducted by Great Merchants.
+				Unique Celtic Great Tile Improvement. It will improve Strategic Resources. Provides various yields, [ICON_STRENGTH] Defense Bonus to Units, and HP to a nearby Cities. Improves Tile Improvements:[NEWLINE]
+				+1 [ICON_FOOD] and +1 [ICON_PRODUCTION] to Farms,[NEWLINE]
+				+1 [ICON_FOOD] and +1 [ICON_PEACE] to Camps,[NEWLINE]
+				+1 [ICON_PRODUCTION] and +1 [ICON_PEACE] to Pastures,[NEWLINE]
+				+1 [ICON_PRODUCTION] and +1 [ICON_GOLD] to Mines,[NEWLINE]
+				+1 [ICON_PRODUCTION] and +1 [ICON_RESEARCH] to Quarries,[NEWLINE]
+				+1 [ICON_GOLD] and +1 [ICON_CULTURE] to Plantations,[NEWLINE]
+				+1 [ICON_FOOD] and +1 [ICON_RESEARCH] to Lumbermills,[NEWLINE]
+				+1 [ICON_FOOD] and +1 [ICON_CULTURE] to Logging Camps,[NEWLINE]
+				+1 [ICON_GOLD] and +1 [ICON_PEACE] to Fishing Boats.[NEWLINE][NEWLINE]Each Oppidum on Empire increases the length of [ICON_HAPPINESS_1] WLTKDs from Trade Missions conducted by [ICON_GREAT_MERCHANT] Great Merchants.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
@@ -1860,7 +1869,7 @@
 			<Text>The Prau is faster and cheaper than the Trireme it replaces and ignores zone of control. It is great for early game scouting and raiding.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_HELP">
-			<Text>Early naval Unit. Replaces the Trireme. It's available earlier, has +1 [ICON_ARROW_RIGHT] Movement Point and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]Only Indonesia may build it.</Text>
+			<Text>Early naval Unit. Replaces the Trireme, and can be treated as sea Reconaissance Unit. It's available earlier, is faster and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]Only Indonesia may build it.</Text>
 		</Row>
 		
 		<!-- Penteconter -->
@@ -1940,7 +1949,7 @@
 			<Text>Qizilbash</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_HELP">
-			<Text>Unique replacement for the Lancer. Can always be purchased with [ICON_PEACE] Faith. [NEWLINE][NEWLINE]Generates +1 [ICON_PEACE] Faith, +2 [ICON_GOLD] Gold, and +2 [ICON_GOLDEN_AGE] Golden Age Points every turn spent in Enemy Territory.[NEWLINE][NEWLINE]Only the Persians may build it.</Text>
+			<Text>Unique replacement for the Lancer. Can always be purchased with [ICON_PEACE] Faith. [NEWLINE][NEWLINE]Generates [ICON_PEACE] Faith, [ICON_GOLD] Gold, and [ICON_GOLDEN_AGE] Golden Age Points every turn spent in Enemy Territory.[NEWLINE][NEWLINE]Only the Persians may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_STRATEGY">
 			<Text>The Qizilbash is the Unique Persian replacement for the Lancer. Stronger than the Lancer, the Qizilbash also generates Faith, Gold and Golden Age Points for every turn they spend in enemy territory. This unit can also be purchased with Faith without needing a religious tenet. Maintaining a strong presence in enemy territory allows Persia to generate Faith for more Qizilbash, and trigger more Golden Ages to increase your army's power.</Text>
@@ -1958,7 +1967,7 @@
 			<Text>Mughal Fort</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>Unique Indian replacement for the Castle. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates 1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. Gains +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]Provides [ICON_CULTURE] Culture, [ICON_STRENGTH] Defense and additional HP to the City. +1 [ICON_STRENGTH] City Defense for every World Wonder built in the City, and 15% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
+			<Text>Unique Indian replacement for the Castle. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates 1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +1 [ICON_PRODUCTION] Production to Quarries, +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]Provides [ICON_CULTURE] Culture, [ICON_STRENGTH] Defense and additional HP to the City. +1 [ICON_STRENGTH] City Defense for every World Wonder built in the City, and 15% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
 			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Culture and Great Artist Points. 15% of City Defense is converted into Culture every turn and the city gains 1 Defense for every World Wonder built in the city.[NEWLINE][NEWLINE]Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
@@ -2072,7 +2081,7 @@
 			<Text>Scythed Chariot</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP">
-			<Text>A dangerous Unit on Open Terrain. This unit is stronger against Archer and Melee Units, has more vision and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]After moving, all newly adjacent Enemy Units take 10 damage. Moving into Rough Terrain uses rest of [ICON_ARROW_RIGHT] Movement Points.[NEWLINE][NEWLINE]Only the Celts may build it. </Text>
+			<Text>A dangerous Unit on Open Terrain. This unit is stronger against Archer and Melee Units, has more vision and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]After moving, deals damage to adjacent Enemy Units. Moving into Rough Terrain uses rest of [ICON_ARROW_RIGHT] Movement Points left for that turn.[NEWLINE][NEWLINE]Only the Celts may build it. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY">
 			<Text>The Scythed Chariot is a Celtic unique unit made for destroying enemy lines. Enemies take damage whenever the Scythed Chariot moves adjacent to them, making this unit deadly in open terrain. Make every move count to maximize damage, but be careful not to leave your Chariots exposed to enemies on their turn. A mounted unit, the Scythed Chariot is vulnerable to Spearmen.</Text>
@@ -2281,7 +2290,7 @@
 			<Text>Shotelai</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_HELP">
-			<Text>Unique Medieval Era Unit. Only the Ethiopians may build it. Has bonus damage against Mounted Units, unlike the Longswordsman it replaces. Enemies attacked by this Unit have -1 [ICON_MOVES] Movement on their next turn.</Text>
+			<Text>Unique Medieval Era Unit. It is stronger against Mounted Units, unlike the Longswordsman it replaces. Enemies attacked by this Unit have -1 [ICON_MOVES] Movement Point on their next turn.[NEWLINE][NEWLINE]Only the Ethiopians may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_STRATEGY">
 			<Text>Unique Ethiopian replacement for the Longswordsman. This unit specializes in combating Mounted opponents and hobbling retreating units. </Text>
@@ -2310,7 +2319,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_HELP">
 			<Text>
-				Cheap German Warrior replacement. +50% [ICON_STRENGTH] Combat Strength against Barbarians, and has a chance of converting defeated Barbarian Units. On Barbarian kills, earn 5 [ICON_INFLUENCE] Influence with the nearest City-State.
+				Cheap German Warrior replacement. Much stronger against Barbarians, and has a chance of converting defeated Barbarian Units. Starts with [COLOR_POSITIVE_TEXT]Barbarian Alliance[ENDCOLOR] Promotion, allowing him to create faster Alliances with City-States.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS">

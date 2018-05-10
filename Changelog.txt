@@ -5,17 +5,21 @@
 More Unique Components for Vox Populi changelog:
 v32:
 - fixes:
+	- Andelsbevaegelse ==> now +1fo to Pastures instead of +3fo,
+					   ==> now +3g to Pastures instead of +2g,
+					   ==> now +3p instead of +5p (all values consistent with data in the main thread),
 	- Barbican ==> lua logs sometimes shown nil value processing. I reworked the Barbican.lua code,
 	- Indaba, Suffet ==> added PurchaseCooldown and GlobalFaithPurchaseCooldown values to the table,
 	- Iron Chariot ==> decreased number of iterations made in lua (countries withou IC will not be checked),
 				   ==> added imported resources to the variables (now if you have 6 iron (4 yours and 2 imported) and 5 ICs you will get bonus),
 	- Riad ==> deleted culture gain commented code and text mentioning (1c per 5),
-	- Sambadrome ==> increased Culture modifier to 10%,
+	- Sambadrome ==> increased Culture Modifier to 10% (now consistent with data in the main thread),
 	- almost all units received missing PurchaseCooldown value,
 	- many small text corrections, added many text icons, added some missing text infos, few important text corrections.
 - changes:
     - Scythed Chariot ==> unique promotion name is "Rending Scythes" now,
 					  ==> deleted one text value to fit VP changes.
+- added reference for Enlightement Era for VP to load it before this mod.
 
 v31.2:
 - fixes:
