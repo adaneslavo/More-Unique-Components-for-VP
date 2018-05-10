@@ -8,7 +8,7 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>Unique Industrial Era Building. Unlike the Agribusiness which it replaces, it does not require [ICON_RES_HORSE] Horses. Provides [ICON_FOOD] Food, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold, and improves Plains Tiles. Boosts construction of Buildings in the City.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food to Farms.[NEWLINE]+1 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Pastures.[NEWLINE][NEWLINE]Only Denmark can build it.</Text>
+			<Text>Unique Industrial Era Building. Unlike the Agribusiness which it replaces, it does not require [ICON_RES_HORSE] Horses. Boosts construction of Buildings in the City.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food to Farms.[NEWLINE]+3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Pastures.[NEWLINE][NEWLINE]Only Denmark may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production and can help your City grow quickly, especially when surrounded by plains and pastures.</Text>
@@ -317,7 +317,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_HELP">
 			<Text>
-				Unique Naval Unit that specializes in piracy and disrupting maritime trade, can enter Rival Territory and ignores Enemy Zone of Control. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing Units, pillaging Resources, and plundering [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][NEWLINE]Only Morocco can build it.
+				Unique Naval Unit that specializes in piracy and disrupting maritime trade, can enter Rival Territory and ignores Enemy Zone of Control. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing Units, pillaging Resources, and plundering [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][NEWLINE]Only Morocco may build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA">
@@ -1497,7 +1497,7 @@
 			<Text>Longship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_HELP">
-			<Text>Early Unique Naval Unit. It is much stronger and available erarlier than the Caravel, which it replaces. Unit can move after attacking, boosts movement of Embarked Civilian Units starting turn on the same tile, and has [COLOR_GREEN]Medic I[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Denmark may build it.</Text>
+			<Text>Early Unique Naval Unit. It is much stronger and available earlier than the Caravel, which it replaces. Unit can move after attacking, boosts movement of Embarked Civilian Units starting turn on the same tile, and has [COLOR_GREEN]Medic I[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Denmark may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_STRATEGY">
 			<Text>The Danish Longship is an early ship unit which allow Denmark to have early sea control. This allows Denmark to begin scouting the far seas earlier than the other players to prepare future waves of colonization, defend your colonies abroad and provides support to raids with its bonuses to healing at sea and performing hit-and-run tactics.</Text>
@@ -2155,7 +2155,7 @@
 			<Text>Suffet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP">
-			<Text>Unique replacement for the [ICON_GREAT_GENERAL] Great General. Disembarks onto water tiles as a [ICON_GREAT_ADMIRAL] Great Admiral. Causes Friendly Units beginning in the same or adjacent tile to ignore Enemy Zone of Control for that turn.[NEWLINE][NEWLINE]Only Carthagians can build it.</Text>
+			<Text>Unique replacement for the [ICON_GREAT_GENERAL] Great General. Disembarks onto water tiles as a [ICON_GREAT_ADMIRAL] Great Admiral. Causes Friendly Units beginning in the same or adjacent tile to ignore Enemy Zone of Control for that turn.[NEWLINE][NEWLINE]Only Carthage may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY">
 			<Text>The Suffet is the unique Great General replacement for Carthage, for Hannibal. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Suffet to supplement your military strategies when waging war against other civilizations.</Text>
@@ -2647,7 +2647,7 @@
 			<Text>Yassa Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_HELP">
-			<Text>Unique Classical Era Building which can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. Slightly reduces [ICON_STRENGTH] Crime, [ICON_CULTURE] Boredom, [ICON_RESEARCH] Illiteracy and [ICON_PEACE] Religious Unrest.[NEWLINE][NEWLINE]Provides +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Units. Conquering Enemy City starts 10-turn long [ICON_HAPPINESS_1] WLTKD. [NEWLINE][NEWLINE]Only Mongols can build it.</Text>
+			<Text>Unique Classical Era Building which can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. Slightly reduces [ICON_STRENGTH] Crime, [ICON_CULTURE] Boredom, [ICON_RESEARCH] Illiteracy and [ICON_PEACE] Religious Unrest.[NEWLINE][NEWLINE]Provides +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Units. Conquering Enemy City starts 10-turn long [ICON_HAPPINESS_1] WLTKD. [NEWLINE][NEWLINE]Only Mongols may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_STRATEGY">
 			<Text>Unique Mongolian replacement for the Courthouse. Can be built in non-occupied Cities. In addition elimination Unhappiness in Occupied Cities, this building reduces unhappiness from Crime, Illiteracy, Boredom and Religious Tensions, and increases production of all Land-based military units, except Unmounted Melee. Conquering Cities triggers a small WLTKD. It is also slightly cheaper than the Courthouse.</Text>
