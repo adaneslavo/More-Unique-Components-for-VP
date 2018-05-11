@@ -5,9 +5,9 @@
 More Unique Components for Vox Populi changelog:
 v32:
 - fixes:
-	- Andelsbevaegelse ==> now +1fo to Pastures instead of +3fo,
-					   ==> now +3g to Pastures instead of +2g,
-					   ==> now +3p instead of +5p (all values consistent with data in the main thread),
+	- Andelsbevaegelse ==> Pastures 3f, 2g, 1p
+				 ==> removed 5% food in city
+				 ==> now +3p instead of +5p (all values now consistent with data in the main thread and text),
 	- Barbican ==> lua logs sometimes shown nil value processing. I reworked the Barbican.lua code,
 	- Indaba, Suffet ==> added PurchaseCooldown and GlobalFaithPurchaseCooldown values to the table,
 	- Iron Chariot ==> decreased number of iterations made in lua (countries withou IC will not be checked),
