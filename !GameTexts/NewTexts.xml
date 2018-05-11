@@ -8,7 +8,7 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>Unique Industrial Era Building. Unlike the Agribusiness which it replaces, it does not require [ICON_RES_HORSE] Horses. Boosts construction of Buildings in the City.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food to Farms.[NEWLINE]+3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Pastures, and +1 [ICON_FOOD] Food to Plains.[NEWLINE][NEWLINE]Only Denmark may build it.</Text>
+			<Text>Unique Industrial Era Building. Unlike the Agribusiness which it replaces, it does not require [ICON_RES_HORSE] Horses. Boosts construction of Buildings in the City. Yields [ICON_FOOD] Food, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food to Farms.[NEWLINE]+3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Pastures.[NEWLINE]+1 [ICON_FOOD] Food to Plains.[NEWLINE][NEWLINE]Only Denmark may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production and can help your City grow quickly, especially when surrounded by plains and pastures.</Text>
@@ -87,7 +87,7 @@
 			<Text>Armada</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_HELP">
-			<Text>Unique Renaissance Era Naval Unit. A Slow, but incredibly dangerous ship. Adept at extended sieges and engaging other ships[NEWLINE][NEWLINE]Available earlier, but more expensive than the Corvette it replaces. Generates Great Admirals more quickly, and gains additional strength and XP when at full HP.[NEWLINE][NEWLINE]Only the Spanish may build it.</Text>
+			<Text>Unique Renaissance Era Naval Unit. A Slow, but incredibly dangerous ship. Adept at extended sieges and engaging other Naval Units[NEWLINE][NEWLINE]Available earlier, but more expensive than the Corvette it replaces. Generates [ICON_GREAT_ADMIRAL] Great Admirals more quickly, and gains additional [ICON_STRENGTH] Combat Strength and XP when at full HP.[NEWLINE][NEWLINE]Only the Spanish may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY">
 			<Text>The Armada is a powerful ship in its era. You are unlikely to chase down an enemy, but these ships can blockade cities and force an engagement. Maneuver your Armada into the borders of cities and settle in for a long siege. Your units will amass more and more experience, becoming more dangerous while they wait for a proper fight.</Text>
@@ -224,7 +224,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_HELP">
 			<Text>
-				Ranged unit of the Industrial era. Only Portugal may build it. Whenever it levels up, it gains a random promotion from the Trailblazer or Survivalism lines.
+				Ranged unit of the Industrial era. Whenever it levels up, it gains a random Promotion from the Trailblazer or Survivalism lines. [NEWLINE][NEWLINE]Only Portugal may build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR">
@@ -641,7 +641,7 @@
 			<Text>Fale Tele</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_HELP">
-			<Text>Unique Ancient Era building. Only the Polynesians may build it. Increases [ICON_GOLD] Gold from Work Boats. Gain [ICON_RESEARCH] Science when a [ICON_CITIZEN] Citizen is born in this City, scaling with era, and gain [ICON_CULTURE] Culture, [ICON_PEACE] Faith, [ICON_GOLD] Gold and [ICON_FOOD] Food when a building is constructed in this City, scaling with era.</Text>
+			<Text>Unique Ancient Era Polynesian Building. Provides [ICON_RESEARCH] Science and [ICON_CULTURE] Culture, and gains [ICON_RESEARCH] Science when a [ICON_CITIZEN] Citizen is born in this City, scaling with Era.[NEWLINE][NEWLINE]Grants [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture and [ICON_PEACE] Faith when a Building is constructed in this City, scaling with Era.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold from Fishing Boats.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_STRATEGY">
 			<Text>Unique Council replacement for the Polynesians. In addition to the normal bonuses of a Council, the Fale Tele provides Gold on Improved Sea Resources and a small amount of Culture, Faith, Gold and Food whenever a building is constructed in the city. Build the Fale tele as a first priority to maximize the bonuses for all later buildings.</Text>
@@ -723,7 +723,12 @@
 			<Text>Hacienda</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_HELP">
-			<Text>Available at Civil Service. Cannot be built next to each other. Yields [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]+2 [ICON_FOOD] Food for every adjacent Bonus Resource.[NEWLINE]+2 [ICON_PRODUCTION] Production for every adjacent Strategic Resource.[NEWLINE]+2 [ICON_GOLD] Gold for every adjacent Luxury Resource.[NEWLINE]+1 [ICON_CULTURE] Culture if adjacent to a City.[NEWLINE]+1 [ICON_PEACE] Faith if worked by a City with a [COLOR_POSITIVE_TEXT]Mission[ENDCOLOR].</Text>
+			<Text>
+				Available at Civil Service. Cannot be built next to another Hacienda. Provides [ICON_FOOD] Food, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold. Grants additional bonuses for every adjacent map component:[NEWLINE]
+				+2 [ICON_FOOD] - Bonus Resource,[NEWLINE]
+				+2 [ICON_PRODUCTION] - Strategic Resource,[NEWLINE]
+				+2 [ICON_GOLD] - Luxury Resource,[NEWLINE]
+				+1 [ICON_CULTURE] - City.[NEWLINE][NEWLINE]Additionaly every Mission provides +1 [ICON_PEACE] Faith to the City for every worked Hacienda.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_TEXT">
 			<Text>
@@ -1384,7 +1389,7 @@
 			<Text>Koa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_HELP">
-			<Text>Unique Classical Era Unit, only Polynesia may build it. This unit is slightly stronger than the Scout it replaces, has the [COLOR_GREEN]Amphibious[ENDCOLOR] promotion, and deals an additional 10 damage to units at the beginning of their turn.</Text>
+			<Text>Unique Classical Era Unit. This Unit is slightly stronger than the Scout it replaces, especially against Barbarians, and starts with the [COLOR_GREEN]Amphibious[ENDCOLOR] Promotion. [NEWLINE][NEWLINE]After attack, defending Unit receives an additional damage at the beginning of its turn.[NEWLINE][NEWLINE]Only Polynesia may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_STRATEGY">
 			<Text>The Koa is an effective early scout, able to hold its own against barbarians. It is stronger than the Scout, and can fight equally well across rivers and while embarked. This unit also deals an additional 10 'bleed' damage to enemies it attacks at the beginning of the enemy's turn, making them effective at clearing barbarians and preventing healing.</Text>
@@ -1463,7 +1468,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_HELP">
 			<Text>
-				The Landwehr is the Austrian replacement for the Fusilier. It gets a combat bonus when fighting in territory owned by Austria and allied city-states.[NEWLINE]Generates culture every turn if stationed in a friendly fort, citadel or city.
+				The Landwehr is the Austrian replacement for the Fusilier. Slightly stronger, gets additional [ICON_STRENGTH] Combat Bonus when fighting in Territory owned by Austria or Allied City-States. Generates [ICON_CULTURE] Culture every turn if stationed in a Friendly Fort, Citadel or City.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE">
@@ -1908,7 +1913,7 @@
 			<Text>Prowler</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_IROQUOIS_PROWLER_HELP">
-			<Text>A nimble attacker excelling in rough terrain. Only the Iroquois may build it. Cheaper than the Musketman, this Unit can attack from behind obstacles and retreat after enemy attack.</Text>
+			<Text>Unique Iroquian Unit. A nimble attacker excelling in Rough Terrain. Cheaper than the Musketman, this Unit can attack from behind obstacles and retreat after enemy attack.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_IROQUOIS_PROWLER_STRATEGY">
 			<Text>The Prowler is a cheap unit that makes perfect use of surrounding rough terrain. The Prowler's "Indirect Fire" promotion allows him to attack unseen from deep forests and hills, with the aid of reconnaissance or friendly borders. When attacked by an enemy unit, he can withdraw from combat. The prowler's evasiveness makes him an ideal guerilla Unit.</Text>
@@ -2028,7 +2033,7 @@
 			<Text>Sachem's Council</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_HELP">
-			<Text>+1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens, +2 [ICON_DIPLOMAT] Great Diplomat Points, +3 [ICON_RES_PAPER] Paper +10% [ICON_PRODUCTION] Production of Diplomatic Units and 2 Civil Servant Specialist Slots.[NEWLINE][NEWLINE]All Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or War.[NEWLINE][NEWLINE]Great Diplomats gain the [COLOR_GREEN]Diplomatic Reciprocity[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food in City for every City-State Friend, and +2 [ICON_PEACE] Faith for every Ally.</Text>
+			<Text>Unique ealry National Wonder available for the Iroquois. Provides [ICON_CULTURE] Culture per [ICON_CITIZEN] Citizen, all Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Adds various diplomatic perks: +2 [ICON_DIPLOMAT] Great Diplomat Points, +3 [ICON_RES_PAPER] Paper, +10% [ICON_PRODUCTION] Production of Diplomatic Units, 2 [ICON_DIPLOMAT] Civil Servant Specialist slots, and 1 free Emissary Unit. [ICON_DIPLOMAT] Great Diplomats gain the [COLOR_GREEN]Diplomatic Reciprocity[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food in City for every City-State Friend, and +2 [ICON_PEACE] Faith for every Ally.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or War.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_STRATEGY">
 			<Text>Unique Iroquoian replacement for the Scrivener's Office. In addition to the normal bonuses provided by the Scrivener's Office, the Sachem's Council  provides faster generation of Great Diplomat units. Great Diplomats also receive a unique promotion, providing Science, Culture and gold for every embassy founded. All Councils in your empire also gain +1 Culture, and all Chanceries gain +2 Gold. The Sachem's Council also provides Happiness for every Defensive Pact and Declared War involving the Iroquois.</Text>
@@ -2400,7 +2405,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP">
 			<Text>
-				+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture per city-state ally. +30% [ICON_PRODUCTION] Production and 15XP toward Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units.[NEWLINE][NEWLINE]Increases [ICON_STRENGTH] City Defense by 25 and Hit Points by 200. Military Units supplied by this City's population increased by 10%.
+				Unique Austrian Arsenal replacement. Cheaper, provides [ICON_PRODUCTION] Production and [ICON_CULTURE] Culture, and increase those yields for each City-State Ally.[NEWLINE][NEWLINE]+30% [ICON_PRODUCTION] Production and 15 XP toward Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units.[NEWLINE][NEWLINE]Increases [ICON_STRENGTH] City Defense, adds HP to the City, and increases [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population.
 			</Text>
 		</Row>
 				
@@ -2519,14 +2524,14 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_HELP">
 			<Text>
-				Unique Portuguese replacement for the Oxford University. Gain a free University, and a Great Scientist appears near the City. +50 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Contains 2 slots for Great Works of Writing. Reduces [ICON_HAPPINESS_3] Illiteracy. +2 [ICON_GOLD] Gold to Universities.[NEWLINE][NEWLINE]All naval units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] promotion. Whenever a Feitoria is built in city-state territory, permanently gain +2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production. [NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE][NEWLINE]+3 [ICON_RESEARCH] Science if Themed.
+				Unique Portuguese replacement for the Oxford University. Requires no University in the City, and provides [ICON_RESEARCH] Science and [ICON_CULTURE] Culture. Grants a free [ICON_GREAT_SCIENTIST] Great Scientist Unit and a University in the City, and Universities gain +2 [ICON_GOLD] Gold. 50 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Reduces [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY">
 			<Text>Age of Discovery</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY_HELP">
-			<Text>Gain [ICON_GOLD] Gold from exploring.</Text>
+			<Text>Gain [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]for revealing new areas[ENDCOLOR] on the map.</Text>
 		</Row>
 		
 		<!-- Waag -->

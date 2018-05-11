@@ -5,15 +5,15 @@
 More Unique Components for Vox Populi changelog:
 v32:
 - fixes:
-	- Andelsbevaegelse ==> Pastures 3f, 2g, 1p
-				 ==> removed 5% food in city
-				 ==> now +3p instead of +5p (all values now consistent with data in the main thread and text),
+	- Andelsbevaegelse ==> Pastures have now 3f, 1p and 2g,
+					   ==> removed 5%f bonus,
+				       ==> now +3p instead of +5p (all values now consistent with data in the main thread and text),
 	- Barbican ==> lua logs sometimes shown nil value processing. I reworked the Barbican.lua code,
 	- Indaba, Suffet ==> added PurchaseCooldown and GlobalFaithPurchaseCooldown values to the table,
 	- Iron Chariot ==> decreased number of iterations made in lua (countries withou IC will not be checked),
-				   ==> added imported resources to the variables (now if you have 6 iron (4 yours and 2 imported) and 5 ICs you will get bonus),
+				   ==> added imported resources to the variables (now if you have 6 Iron (4 yours and 2 imported) and 5 Iron Chariots you will get bonus),
 	- Riad ==> deleted culture gain commented code and text mentioning (1c per 5),
-	- Sambadrome ==> increased Culture Modifier to 10% (now consistent with data in the main thread),
+	- Sambadrome ==> increased culture modifier to 10% (now consistent with data in the main thread),
 	- almost all units received missing PurchaseCooldown value,
 	- many small text corrections, added many text icons, added some missing text infos, few important text corrections.
 - changes:
