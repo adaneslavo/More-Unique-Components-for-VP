@@ -9,6 +9,7 @@ v32:
 					   ==> removed 5%f bonus,
 				       ==> now +3p instead of +5p (all values now consistent with data in the main thread and text),
 	- Barbican ==> lua logs sometimes shown nil value processing. I reworked the Barbican.lua code,
+	- Eagle ==> now cannot get worker from capturing the city,
 	- Indaba, Suffet ==> added PurchaseCooldown and GlobalFaithPurchaseCooldown values to the table,
 	- Iron Chariot ==> decreased number of iterations made in lua (countries withou IC will not be checked),
 				   ==> added imported resources to the variables (now if you have 6 Iron (4 yours and 2 imported) and 5 Iron Chariots you will get bonus),
