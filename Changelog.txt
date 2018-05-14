@@ -11,6 +11,7 @@ v32:
 	- Barbican ==> lua logs sometimes shown nil value processing. I reworked the Barbican.lua code,
 	- Eagle ==> now cannot get worker from capturing the city,
 	- Indaba, Suffet ==> added PurchaseCooldown and GlobalFaithPurchaseCooldown values to the table,
+	- Intihuatana ==> now bonus +1fa to Scientists is local not global,
 	- Iron Chariot ==> decreased number of iterations made in lua (countries withou IC will not be checked),
 				   ==> added imported resources to the variables (now if you have 6 Iron (4 yours and 2 imported) and 5 Iron Chariots you will get bonus),
 	- Riad ==> deleted culture gain commented code and text mentioning (1c per 5),

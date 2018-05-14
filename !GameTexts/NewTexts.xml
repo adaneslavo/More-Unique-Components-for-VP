@@ -240,7 +240,7 @@
 			<Text>Buffalo Pound</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_HELP">
-			<Text>Unique Shoshone replacement for the Well. [NEWLINE]Increases [ICON_FOOD] Food from nearby [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle and [ICON_RES_BISON] Bison and a [ICON_RES_BISON] Bison resource appears near the City[NEWLINE]Additional [ICON_FOOD] Food for every 5 [ICON_CITIZEN] Population in City.[NEWLINE][NEWLINE]Can be built anywhere, including cities with a Water Mill.</Text>
+			<Text>Unique Shoshone replacement for the Well. Available at Trapping, can be built anywhere, including cities with a Water Mill. Provides great amount of [ICON_FOOD] Food and some [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Increases [ICON_FOOD] Food from nearby [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle and [ICON_RES_BISON] Bison Resources, and a [ICON_RES_BISON] Bison Resource appears near the City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_STRATEGY">
 			<Text>The Buffalo Pound is the Shoshone unique building, replacing the Well.  In addition to the normal bonuses of the Well, the Buffalo Pound provides food from Horses, Cattle, Sheep and Bison.  It can also be constructed in cities with access to fresh water, even if a Water Mill has already been built there.</Text>
@@ -274,7 +274,7 @@
 			<Text>Chasqui</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_HELP">
-			<Text>Unique replacement for the Scout. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15HP every turn in friendly territory.[NEWLINE]Receives the Altitude Training Promotion for free.</Text>
+			<Text>Unique Incan replacement for the Scout. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15 HP every turn in Friendly Territory. Receives the [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotion for free.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_STRATEGY">
 			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
@@ -763,7 +763,7 @@
 			<Text>Holkan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_HELP">
-			<Text>Unique Ancient Era Unit. This unit is stronger than the Pathfinder it replaces, has no penalty against Barbarians. Heals 30 HP every 20 turns, and gains [ICON_RESEARCH] Science with every Ancient Ruin explored. Unit receives the [COLOR_POSITIVE_TEXT]Trailblazer I[ENDCOLOR] promotion for free.[NEWLINE][NEWLINE]Only the Maya may build it.</Text>
+			<Text>Unique Ancient Era Unit. This unit is stronger than the Pathfinder it replaces, has no penalty against Barbarians. Heals 30 HP every 20 turns, and gains [ICON_RESEARCH] Science with every Ancient Ruin explored. Unit receives the [COLOR_POSITIVE_TEXT]Trailblazer I[ENDCOLOR] Promotion for free.[NEWLINE][NEWLINE]Only the Maya may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_STRATEGY">
 			<Text>The Holkan is a quick and independent scout for the Maya. Because of their free Trailblazer I promotion, the Holkan explores more quickly, and gains experience more easily than the Pathfinders. Their increased power against barbarians and ability to heal makes Holkans capable of ranging farther and taking more risks than a normal scout. Use these units to grab ruins quickly, and gain an early scientific edge.</Text>
@@ -1101,7 +1101,7 @@
 			<Text>Intihuatana</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_HELP">
-			<Text>Unique Observatory. Only the Inca may build it. +2 [ICON_RESEARCH] Science and +2 [ICON_FOOD] for every mountain within 3 tiles of the City.[NEWLINE][NEWLINE]Scientists in the city produce +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Adopting the Scientific Revolution[ENDCOLOR] policy gives +4 [ICON_RESEARCH] Science to all Intihuatana on Empire.</Text>
+			<Text>Unique Observatory, available earlier with no [ICON_GOLD] Gold Maintenance. Yields [ICON_RESEARCH] Science and [ICON_PEACE] Faith, and provides 1 slot for [ICON_GREAT_SCIENTIST] Scientist Specialist. [ICON_GREAT_SCIENTIST] Scientist Specialists in the City produce +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food and +2 [ICON_RESEARCH] Science for every Mountain within 3 tiles of the City.[NEWLINE][NEWLINE]Adopting the [COLOR_POSITIVE_TEXT]Scientific Revolution[ENDCOLOR] Policy gives +4 [ICON_RESEARCH] Science to all Intihuatanas on Empire.[NEWLINE][NEWLINE]Only the Inca may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_STRATEGY">
 			<Text>The Intihuatana is the unique Observatory of the Inca. Unlike the Observatory it replaces, the Intihuatana is unlocked by the Theology tech, much sooner than the Observatory, and without needing the Scientific Revolution policy. In addition to Science, Intihuatana also boost Food and Faith production, and makes Scientist specialists in the City produce Faith. Unlocking the Scientific Revolution policy further increases the Intihuatana's Science production</Text>
@@ -1245,7 +1245,7 @@
 			<Text>The Khopesh is the unique Egyptian replacement for the Spearman. It's a strong early unit that has an edge in direct combat. However, unlike the Spearman it replaces, it does not have a combat bonus against mounted units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_HELP">
-			<Text>Strong, front-line land Unit of the Ancient Era. Only Egypt may build it. Deals increased damage vs heavily damaged units, and has the Skillful promotion, which temporarily reduces the combat power of any non-mounted melee unit that it attacks.[NEWLINE]Does not have a bonus against mounted units</Text>
+			<Text>Strong, front-line Unique Land Unit of the Ancient Era. Deals increased damage against heavily damaged Units. Does not have a bonus against Mounted Units. [NEWLINE][NEWLINE]Has the [COLOR_POSITIVE_TEXT]Skillful[ENDCOLOR] Promotion, which temporarily reduces the [ICON_STRENGTH] Combat Strength of any Non-mounted Melee Unit that it attacks.[NEWLINE][NEWLINE]Only Egypt may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE">
 			<Text>Skillful</Text>
@@ -1672,7 +1672,7 @@
 			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_PRODUCTION] Production output. On construction, 2 Flax resources spawn near the city, which provide additional culture and Production. This building can be built anywhere, as long as you don't have a Well in the City already.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_EGYPT_NILOMETER_HELP">
-			<Text>Unique Egyptian replacement for the Water Mill.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the city.</Text>
+			<Text>Unique Egyptian replacement for the Water Mill. Yields [ICON_FOOD] Food, [ICON_CULTURE] Culture and great amount of [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]2 [ICON_RES_FLAX] Flax Resources spawn near the City.</Text>
 		</Row>
 
 		<!-- Oppidum -->
@@ -1774,7 +1774,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
 			<Text>
-				Mayan Unique Building, replacing the Arena. Provides +2 [ICON_PRODUCTION] Production to Armory, Barracks and Forge in the City, and reduces -20% [ICON_CULTURE] Boredom. Grants ​[ICON_RESEARCH] Science and [ICON_FAITH] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture to [ICON_RES_PERFUME] Perfume, +1 [ICON_FOOD] Food and +1 Gold [ICON_GOLD] to [ICON_RES_OLIVES] Olives.
+				Mayan Unique Building, replacing the Arena. Yields [ICON_CULTURE] Culture, [ICON_PEACE] Faith and [ICON_TOURISM] Tourism, and provides +2 [ICON_PRODUCTION] Production to Armory, Barracks and Forge in the City, and reduces -20% [ICON_CULTURE] Boredom.[NEWLINE][NEWLINE]Grants ​[ICON_RESEARCH] Science and [ICON_FAITH] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture to [ICON_RES_PERFUME] Perfume, +1 [ICON_FOOD] Food and +1 Gold [ICON_GOLD] to [ICON_RES_OLIVES] Olives.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
@@ -2064,7 +2064,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP">
 			<Text>
-				Unique Brazilian replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate in the City, and all Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Musicians in City produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +25% [ICON_GOLDEN_AGE] Golden Age Points during Golden Ages. +3 [ICON_TOURISM] Tourism at Radio.
+				Unique Brazilian replacement for the Opera House. Provides massive [ICON_CULTURE] Culture boost in the City, as well as adds some [ICON_GOLDEN_AGE] Golden Age Points. +33% [ICON_GREAT_MUSICIAN] Great Musician Points in the City. All Musicians' Guilds adds +1 [ICON_GOLD] Gold and [ICON_GREAT_MUSICIAN] Musician Specialists in the City produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points.[NEWLINE][NEWLINE]Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music and [ICON_GREAT_MUSICIAN] Musician Specialist, and provides +3 [ICON_TOURISM] Tourism at Radio.[NEWLINE][NEWLINE]+25% [ICON_GOLDEN_AGE] Golden Age Points during [ICON_GOLDEN_AGE] Golden Ages.
 			</Text>
 		</Row>
 		
@@ -2681,7 +2681,7 @@
 			<Text>Yellow Brow</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_HELP">
-			<Text>Unique Renaissance Era Unit. Only the Shoshone may build it. This Unit is slightly stronger than the Tercio it replaces. Has the Anti-Cavalry promotion, fights at full strength when damaged, and has double the normal strength from fortifying.</Text>
+			<Text>Unique Renaissance Era Unit. This Unit is slightly stronger than the Tercio it replaces. Has the [COLOR_POSITIVE_TEXT]Anti-Cavalry[ENDCOLOR] Promotion, fights at full strength when damaged, and has double combat bonus from fortifying.[NEWLINE][NEWLINE]Only the Shoshone may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_STRATEGY">
 			<Text>The Yellow Brow is unmatched for its ability to hold ground. Never one to retreat, the Yellow brow fights at full strength regardless of health, and has double the normal bonus from fortifying. This unit is very effective against enemy cavalry</Text>
