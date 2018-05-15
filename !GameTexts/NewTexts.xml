@@ -8,7 +8,7 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>Unique Danish replacement for the Agribusiness. Does not require [ICON_RES_HORSE] Horses. Boosts construction of Buildings in the City. Yields [ICON_FOOD] Food, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food to Farms.[NEWLINE]+3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Pastures.[NEWLINE]+1 [ICON_FOOD] Food to Plains.[NEWLINE][NEWLINE]Only Denmark may build it.</Text>
+			<Text>Does not require [ICON_RES_HORSE] Horses.[NEWLINE][NEWLINE]+10% [ICON_PRODUCTION] Production when constructing Buildings in this City.[NEWLINE]+3 [ICON_FOOD] Food to Nearby Farms.[NEWLINE]+3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Nearby Pastures.[NEWLINE]+1 [ICON_FOOD] Food to Plains tiles near the City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production and can help your City grow quickly, especially when surrounded by plains and pastures.</Text>
@@ -33,7 +33,7 @@
 			<Text>Agora</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_HELP">
-			<Text>Unique Ancient Era Building. +25% [ICON_PRODUCTION] Production towards Diplomatic Units in City, and Diplomatic Units trained in this City receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City Owner and the Trade Route Owner.[NEWLINE][NEWLINE]Nearby [ICON_RES_SPICES] Spices: +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production[NEWLINE]Nearby [ICON_RES_SUGAR] Sugar: +1 [ICON_FOOD] Food and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Only the Greeks may build it.</Text>
+			<Text>+25% [ICON_PRODUCTION] Production towards Diplomatic Units in this City, and Diplomatic Units trained in this City receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City Owner and the Trade Route Owner.[NEWLINE]Nearby [ICON_RES_SPICES] Spices: +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production[NEWLINE]Nearby [ICON_RES_SUGAR] Sugar: +1 [ICON_FOOD] Food and +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_STRATEGY">
 			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora boosts the production Diplomatic Units. Diplomatic units trained in a city with an Agora gain the Proxenos promotion, which increases influence and gold income from Diplomatic Missions. Use your quick production of diplomatic units to secure a steady stream of gold for your empire.</Text>
@@ -50,7 +50,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_HELP">
 			<Text>
-				Receive +25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and 100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite building. Only the Huns may build it.
+				Gain +25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and +100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite building. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_STRATEGY">
@@ -89,7 +89,7 @@
 			<Text>Armada</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_HELP">
-			<Text>Unique Renaissance Era Naval Unit. A Slow, but incredibly dangerous ship. Adept at extended sieges and engaging other Naval Units[NEWLINE][NEWLINE]Available earlier, but more expensive than the Corvette it replaces. Generates [ICON_GREAT_ADMIRAL] Great Admirals more quickly, and gains additional [ICON_STRENGTH] Combat Strength and XP when at full HP.[NEWLINE][NEWLINE]Only the Spanish may build it.</Text>
+			<Text>Unique Renaissance Era Naval Unit. Only Spain may build it. A Slow, but incredibly dangerous ship. Adept at extended sieges and engaging other Naval Units[NEWLINE][NEWLINE]Available earlier, but more expensive than the Corvette it replaces. Generates [ICON_GREAT_ADMIRAL] Great Admirals more quickly, and gains additional [ICON_STRENGTH] Combat Strength and XP when at full HP.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY">
 			<Text>The Armada is a powerful ship in its era. You are unlikely to chase down an enemy, but these ships can blockade cities and force an engagement. Maneuver your Armada into the borders of cities and settle in for a long siege. Your units will amass more and more experience, becoming more dangerous while they wait for a proper fight.</Text>
@@ -138,7 +138,7 @@
 			<Text>Unique Swedish replacement for the Baths. In addition to the bonuses of the Baths, the Bastu provides bonuses for lakes and tundra. Science and Culture is generated whenever a citizen is born, and extra Food is generated during Golden Ages. Unlike the Baths, the Bastu does not require a river,</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_HELP">
-			<Text>Unique Baths replacement, which does not require any prerequisite Building. Provides [ICON_FOOD] Food and [ICON_CULTURE] Culture, adds +1 [ICON_RESEARCH] Science to Lake and Tundra Tiles, and provides additional yields to Temple, Amphitheater and Garden in the City.[NEWLINE][NEWLINE]+10% [ICON_CULTURE] Culture and [ICON_FOOD] Food in the City during [ICON_GOLDEN_AGE]Golden Ages. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]Only the Swedes may build it.</Text>
+			<Text>+1 [ICON_RESEARCH] Science to Lake and Tundra Tiles. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture to Temples, Amphitheaters and Gardens in this City. +10% [ICON_CULTURE] Culture and [ICON_FOOD] Food in the City during [ICON_GOLDEN_AGE]Golden Ages. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]Does not require a river, or any prerequisite buildings.</Text>
 		</Row>
 		
 		<!-- Black Tug -->
@@ -159,7 +159,7 @@
 			<Text>Black Tug</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_HELP">
-			<Text>Aggressive and menacing Medieval Era Melee Mounted Unit. It is stronger against Wounded Units or while standing on Pillaged Tiles. Gains additional XP for pillaging. [NEWLINE][NEWLINE]Only the Mongols may build it.</Text>
+			<Text>Aggressive and menacing Medieval Era Melee Mounted Unit. Only the Mongols may build it. It is stronger against Wounded Units or while standing on Pillaged Tiles. Gains additional XP for pillaging.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_STRATEGY">
 			<Text>Black Tug is a Mongolian unique unit, replacing the Knight. It is stronger and deals more damage to wounded units, and while standing on pillaged tiles. As mounted unit, the Black Tug is vulnerable to Pikemen.</Text>
