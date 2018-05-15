@@ -89,7 +89,7 @@
 			<Text>Armada</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_HELP">
-			<Text>Unique Renaissance Era Naval Unit. Only Spain may build it. A Slow, but incredibly dangerous ship. Adept at extended sieges and engaging other Naval Units[NEWLINE][NEWLINE]Available earlier, but more expensive than the Corvette it replaces. Generates [ICON_GREAT_ADMIRAL] Great Admirals more quickly, and gains additional [ICON_STRENGTH] Combat Strength and XP when at full HP.</Text>
+			<Text>A Slow, but incredibly dangerous ship. Adept at extended sieges and engaging other Naval Units. Only Spain may build it. Available earlier, but more expensive than the Corvette it replaces. Generates [ICON_GREAT_ADMIRAL] Great Admirals more quickly, and gains XP every turn it spends in enemy territory when a full health. Gains additional [ICON_STRENGTH] Combat Strength when at full health.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY">
 			<Text>The Armada is a powerful ship in its era. You are unlikely to chase down an enemy, but these ships can blockade cities and force an engagement. Maneuver your Armada into the borders of cities and settle in for a long siege. Your units will amass more and more experience, becoming more dangerous while they wait for a proper fight.</Text>
@@ -184,7 +184,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
 			<Text>
-				+10 [ICON_STRENGTH] Defense to the City. Reduces [ICON_HAPPINESS_3] Crime.[NEWLINE][NEWLINE]+25 XP for all new Units trained in this city.[NEWLINE][NEWLINE]Ranged and Siege Units garrisoned in this City have increased [ICON_RANGED_STRENGTH] Ranged Combat Strength.[NEWLINE][NEWLINE]Only Poland may build it.
+				Reduces [ICON_HAPPINESS_3] Crime. +25 Experience for all new Units trained in this city.[NEWLINE][NEWLINE]Ranged and Siege Units garrisoned in this City have increased [ICON_RANGED_STRENGTH] Ranged Combat Strength.[NEWLINE][NEWLINE]Requires Walls in this City.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
@@ -229,7 +229,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PORTUGUESE_CACADORES_HELP">
 			<Text>
-				Ranged unit of the Industrial era. Whenever it levels up, it gains a random Promotion from the Trailblazer or Survivalism lines. [NEWLINE][NEWLINE]Only Portugal may build it.
+				Ranged unit of the Industrial era. Only Portugal may build it. Whenever it levels up, it gains a random Promotion from the Trailblazer or Survivalism lines. Starts with [COLOR_POSITIVE_TEXT]Covering Fire I[ENDCOLOR].
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR">
@@ -245,7 +245,11 @@
 			<Text>Buffalo Pound</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_HELP">
-			<Text>Unique Shoshone replacement for the Well. Available at Trapping, can be built anywhere, including cities with a Water Mill. +1 [ICON_FOOD] Food for every 5 [ICON_CITIZEN] Population in City.[NEWLINE][NEWLINE]Increases [ICON_FOOD] Food from nearby [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle and [ICON_RES_BISON] Bison Resources, and a [ICON_RES_BISON] Bison Resource appears near the City.</Text>
+			<Text>Available at Trapping. Can be built anywhere, including cities with a Water Mill.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food for every 5 [ICON_CITIZEN] Citizens in the City. A [ICON_RES_BISON] Bison Resource appears near the City.
+			[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +1 [ICON_FOOD] Food.
+			[NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +1 [ICON_FOOD] Food.
+			[NEWLINE]Nearby [ICON_RES_COW] Cattle: +1 [ICON_FOOD] Food.
+			[NEWLINE]Nearby [ICON_RES_BISON] Bison: +1 [ICON_FOOD] Food.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_STRATEGY">
 			<Text>The Buffalo Pound is the Shoshone unique building, replacing the Well.  In addition to the normal bonuses of the Well, the Buffalo Pound provides food from Horses, Cattle, Sheep and Bison.  It can also be constructed in cities with access to fresh water, even if a Water Mill has already been built there.</Text>
@@ -279,7 +283,7 @@
 			<Text>Chasqui</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_HELP">
-			<Text>Unique Incan replacement for the Scout. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15 HP every turn in Friendly Territory. Receives the [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotion for free.</Text>
+			<Text>Flexible Scout of the Classical Era. Only the Inca may build it. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15 HP every turn in Friendly Territory. Receives the [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotion for free.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_STRATEGY">
 			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
@@ -322,7 +326,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_HELP">
 			<Text>
-				Unique Naval Unit that specializes in piracy and disrupting maritime trade, can enter Rival Territory and ignores Enemy Zone of Control. It gains [ICON_FOOD] Food and [ICON_PRODUCTION] Production from killing Units, pillaging Resources, and plundering [ICON_INTERNATIONAL_TRADE] Trade Routes.[NEWLINE][NEWLINE]Only Morocco may build it.
+				Unique Naval Unit specializing in disrupting maritime trade. Only Morocco may build it. Can enter Rival Territory and ignores Enemy Zone of Control. Gain [ICON_FOOD] Food and [ICON_PRODUCTION] Production Whenever a Corsair Kills a Units, Pillages a Resource, or Plunders a [ICON_INTERNATIONAL_TRADE] Trade Route.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA">
@@ -353,7 +357,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_HELP">
 			<Text>
-				Unique Ancient Era Unit. Slightly stronger than Archer which it replaces. Gains additional [ICON_CULTURE] Culture and XP for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled on Barbarians.[NEWLINE][NEWLINE]Only the Indians may build it.
+				Unique Ancient Era Unit. Only India may build it. Slightly stronger than Archer which it replaces. Gains [ICON_CULTURE] Culture and bonus XP for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled vs Barbarians.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_STRATEGY">
@@ -567,7 +571,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_HELP">
 			<Text>
-				Unique National Monument replacement. +30% [ICON_GREAT_PEOPLE] GPP in the City. +15 [ICON_CULTURE] Culture in the City as an instant boost whenever a [ICON_CITIZEN] Citizen is born and +50 [ICON_GOLDEN_AGE] Golden Age Points whenever a Policy is unlocked, scaling with Era. Gain 15% of the City's [ICON_FOOD] Food and [ICON_RESEARCH] Science output whenever you invest in a Building on Empire.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science to all Monuments and +2 [ICON_FOOD] Food to all Shrines.[NEWLINE][NEWLINE]Contains 2 slot for [ICON_GREAT_WORK] Great Works of Writing, +4 [ICON_FOOD] Food when themed.[NEWLINE][NEWLINE]Requires Monument in City.[NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				+30% [ICON_GREAT_PEOPLE] GPP in the City. +15 [ICON_CULTURE] Culture in the City as an instant boost whenever a [ICON_CITIZEN] Citizen is born and +50 [ICON_GOLDEN_AGE] Golden Age Points whenever a Policy is unlocked, scaling with Era. Gain 15% of the City's [ICON_FOOD] Food and [ICON_RESEARCH] Science output whenever you invest in a Building on Empire.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science to all Monuments and +2 [ICON_FOOD] Food to all Shrines.[NEWLINE][NEWLINE]Contains 2 slot for [ICON_GREAT_WORK] Great Works of Writing.[NEWLINE][NEWLINE]Requires Monument in City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE][NEWLINE]+4 [ICON_FOOD] Food when themed.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_STRATEGY">
@@ -601,7 +605,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_HELP">
 			<Text>
-				Strong, front-line Unit of the Classical Era. Does not require [ICON_RES_IRON] Iron. Gains the [COLOR_POSITIVE_TEXT]Sentry[ENDCOLOR] Promotion for free. 50% chance of converting any unit killed into a [ICON_WORKER] Worker.[NEWLINE][NEWLINE]Only the Aztecs may build it.
+				Strong, front-line Unit of the Classical Era. Only the Aztecs may build it. Does not require [ICON_RES_IRON] Iron. 50% chance of converting any unit killed into a [ICON_WORKER] Worker. Starts with the [COLOR_POSITIVE_TEXT]Sentry[ENDCOLOR] Promotion.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR">
@@ -634,7 +638,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_HELP">
 			<Text>
-				Unique replacement for the Chancery. +10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] for Diplomatic Units in the city in which it is built.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% [ICON_GREAT_PEOPLE] Great People rate in the city, increased to +10% during We Love the King Day.[NEWLINE][NEWLINE]Whenever a citizen is born, gain 15 [ICON_GREAT_PEOPLE] points toward a Great Person, scaling with era.[NEWLINE][NEWLINE]Only China may build it.
+				+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% [ICON_GREAT_PEOPLE] Great People rate in the city, increased to +10% during 'We Love the King' Day.[NEWLINE][NEWLINE]Whenever a citizen is born, gain +15 [ICON_GREAT_PEOPLE] points toward a Great Person, scaling with era.
 			</Text>
 		</Row>
 		
@@ -644,7 +648,7 @@
 			<Text>Fale Tele</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_HELP">
-			<Text>Unique Replacement for the Council. +5 [ICON_RESEARCH] Science whenever a [ICON_CITIZEN] Citizen is born in this City, scaling with Era.[NEWLINE][NEWLINE]++3 [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture and [ICON_PEACE] Faith whenever a Building is Constructed in this City, scaling with Era.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold from Fishing Boats.[NEWLINE][NEWLINE]Only Polynesia may build it.</Text>
+			<Text>+5 [ICON_RESEARCH] Science whenever a [ICON_CITIZEN] Citizen is born in this City, scaling with Era. +3 [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture and [ICON_PEACE] Faith whenever a Building is Constructed in this City, scaling with Era.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold from nearby Fishing Boats.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_STRATEGY">
 			<Text>Unique Council replacement for the Polynesians. In addition to the normal bonuses of a Council, the Fale Tele provides Gold on Improved Sea Resources and a small amount of Culture, Faith, Gold and Food whenever a building is constructed in the city. Build the Fale tele as a first priority to maximize the bonuses for all later buildings.</Text>
@@ -708,7 +712,7 @@
 			<Text>Grande École</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_HELP">
-			<Text>Unique replacement for the Public School. Requires University in the City. Greatly reduces [ICON_HAPPINESS_3] Illiteracy. +1 [ICON_PRODUCTION] Production and +1 [ICON_SCIENCE] Science for every 2 [ICON_CITIZEN] Population in this City. +2 [ICON_GREAT_SCIENTIST] Scientist and [ICON_GREAT_ENGINEER] Engineer Specialists.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production and +2 [ICON_SCIENCE] Science at Computers Technology.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this city.[NEWLINE][NEWLINE]Only France may build it.</Text>
+			<Text>Requires University in the City. Greatly reduces [ICON_HAPPINESS_3] Illiteracy. +1 [ICON_PRODUCTION] Production and +1 [ICON_SCIENCE] Science for every 2 [ICON_CITIZEN] Population in this City. +2 [ICON_PRODUCTION] Production to Scientist Specialists and +2 [ICON_RESEARCH] Science to Engineer Specialists in this City.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production and +2 [ICON_RESEARCH] Science at Computers Technology.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_STRATEGY">
 			<Text>The Grande Ecole is the French unique building, replacing the Public School. In addition to the normal bonuses of a Public School, The Grande Ecole increases production for every citizen in the City, has more Scientist Specialist slots, and helps to generate Great Engineers. In addition, all Scientists generate more Production, and all Engineers generate more Science, making any city with a Grande Ecole a powerhouse of scientific and technical achievement.</Text>
@@ -768,7 +772,7 @@
 			<Text>Holkan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_HELP">
-			<Text>Unique Ancient Era Unit. A dangerous scout, has no penalty against Barbarians. Heals 30 HP every 20 turns, and gains [ICON_RESEARCH] Science with every Ancient Ruin explored. Receives the [COLOR_POSITIVE_TEXT]Trailblazer I[ENDCOLOR] Promotion for free.[NEWLINE][NEWLINE]Only the Maya may build it.</Text>
+			<Text>A dangerous scout with no penalty against Barbarians. Only the Maya may build it. Heals 30 HP every 20 turns, and gains [ICON_RESEARCH] Science with every Ancient Ruin explored. Starts with the [COLOR_POSITIVE_TEXT]Trailblazer I[ENDCOLOR] Promotion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_STRATEGY">
 			<Text>The Holkan is a quick and independent scout for the Maya. Because of their free Trailblazer I promotion, the Holkan explores more quickly, and gains experience more easily than the Pathfinders. Their increased power against barbarians and ability to heal makes Holkans capable of ranging farther and taking more risks than a normal scout. Use these units to grab ruins quickly, and gain an early scientific edge.</Text>
@@ -811,7 +815,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_HELP">
 			<Text>
-				Unique Medieval Era Siege Unit. An Incredibly powerful unit capable of smashing cities to pieces. Does very high damage to cities and naval units, but is less useful against land units compared to other siege weapons. [NEWLINE][NEWLINE]Deals 20 damage to itself on attack, but heals an additional 10HP when in [COLOR_POSITIVE_TEXT]friendly territory[ENDCOLOR].[NEWLINE][NEWLINE]Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]Only Ottomans may build it.
+				An Incredibly powerful unit capable of smashing cities to pieces. Only the Ottomans may build it. Does very high damage to cities and naval units, but is less useful against land units compared to other siege weapons.[NEWLINE][NEWLINE]Deals 20 damage to itself on attack, but heals an additional 10 HP when in [COLOR_POSITIVE_TEXT]friendly territory[ENDCOLOR].[NEWLINE][NEWLINE]Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_STRATEGY">
@@ -833,7 +837,7 @@
 			<Text>Goedendag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_HELP">
-			<Text>Unique Medieval Era Melee Unit. A cheap and effective unit in groups, provides a combat boost to all units adjacent to it and has increased [ICON_STRENGTH] Strength when standing on a Luxury Resource tile. Stagnates growth in cities while built. Excess food contributes to production.[NEWLINE]Only the Dutch may build it.</Text>
+			<Text>A cheap and effective unit in groups. Only the Dutch may build it. Provides a combat boost to all units adjacent to it and has increased [ICON_STRENGTH] Strength when standing on a Luxury Resource tile. [NEWLINE][NEWLINE]Stagnates growth in cities while built. Excess food contributes to production.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_STRATEGY">
 			<Text>The Goedendag is an odd unit, but effective in groups. While effective on their own against cavalry, the Goedendag provides increased attack against all units adjacent to it, and has additional combat strength if standing on a luxury resource. Goedendag's do not boost their own combat strength, however, so they must be adjacent to another Goedendag to receive the benefit of their own promotion. These units can be built very quickly, so an army can be raised in the event of a surprise war.</Text>
@@ -889,7 +893,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_HELP">
 			<Text>
-				Unique replacement for the Light Tank. Available earlier, and does not require [ICON_RES_ALUMINUM] Aluminum. Moves faster and stronger in Desert, requires no [ICON_MOVES] Movement to pillage Tile Improvements, and deals damage to adjacent Units on pillage. Only Arabia may build it.
+				Fast and dangerous Modern Era Cavalry Unit. Only Arabia may build it. Available earlier, and does not require [ICON_RES_ALUMINUM] Aluminum. Moves faster and is stronger in Desert. Does not require [ICON_MOVES] Movement to pillage Tile Improvements, and deals damage to adjacent Enemy Units whenever it Pillages a tile.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ARABIA_GARLAND_MINE">
@@ -912,10 +916,10 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
 			<Text>
-				Requires Arena in City. +20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion.[NEWLINE][NEWLINE]
-				At the beginning of every new Era, 1 turn of Resistance occurs, followed by "We Love the King Day" is triggered across the Empire.[NEWLINE][NEWLINE]
-				All Arenas gain +4 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses. 
-				[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				+20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion.[NEWLINE][NEWLINE]
+				At the beginning of every new Era, 1 turn of Resistance occurs in this City, after which a "We Love the King Day" is triggered across the Empire.[NEWLINE][NEWLINE]
+				All Arenas gain +4 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire. 
+				[NEWLINE][NEWLINE]Requires Arena in City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
@@ -936,7 +940,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_TEXT">
 			<Text>
-				In the Aztec Empire, a teocalli was a terraced pyramid, surmounted by a temple on top, site of all the important religious rituals in the town. The greatest was located in the heart of Tenochtitlan, the Huey Teocalli (or, according to the Spanish, the Templo Mayor) dedicated to a pair of gods: Huitzilopochtli, the god of war, and Tlaloc, the god of agriculture (an indication of what was important in Aztec culture). Each god had a separate temple, reached by separate staircases.
+				In the Aztec Empire, a teocalli was a terraced pyramid surmounted by a roofed temple, and acted as the site of all the important religious rituals in the town. The greatest of these teocalli was located in the heart of Tenochtitlan, the Huey Teocalli (or, according to the Spanish, the Templo Mayor) dedicated to a pair of gods: Huitzilopochtli, the god of war, and Tlaloc, the god of agriculture (an indication of what was important in Aztec culture). Each god had a separate temple, reached by separate staircases.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_STRATEGY">
@@ -946,7 +950,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP">
 			<Text>
-				Unique replacement for the Grand Temple. Comes with a free Temple, and starts a [ICON_GOLDEN_AGE] Golden Age.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and [ICON_CULTURE] Culture to all Temples, +2 [ICON_CULTURE] Culture to all Barracks, and +2 [ICON_FOOD] Food to all Floating Gardens on Empire. Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music, and reduces [ICON_HAPPINESS_3] Religious Unrest. [NEWLINE][NEWLINE]Whenever you enter a [ICON_GOLDEN_AGE] Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith and +3 XP for Units trained in the City (max +30).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE]Only the Aztec may build it.
+				Does not require a Temple. Free Temple in City, and triggers a [ICON_GOLDEN_AGE] Golden Age on Completion.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +2 [ICON_CULTURE] Culture to all Temples, +2 [ICON_CULTURE] Culture to all Barracks, and +2 [ICON_FOOD] Food to all Floating Gardens on Empire. Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music, and reduces [ICON_HAPPINESS_3] Religious Unrest. [NEWLINE][NEWLINE]Whenever you enter a [ICON_GOLDEN_AGE] Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith and +3 XP for Units trained in the City (max +30).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 
@@ -967,7 +971,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP">
 			<Text>
-				The Iron Chariot is the Assyrian replacement for the Horseman. It does not require [ICON_RES_HORSE] Horses, and gains [ICON_STRENGTH] Combat Strength for each adjacent Enemy Unit.[NEWLINE][NEWLINE]Unit gains +2 [ICON_STRENGTH] Combat Strength if Player has sufficient [ICON_RES_HORSE] Horses for all Iron Chariots, and likewise for [ICON_RES_IRON] Iron.
+				Durable shock cavalry of the Ancient Era. Only Assyria may build it. Gains [ICON_STRENGTH] Combat Strength for each adjacent Enemy Unit.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses, but gains +2 [ICON_STRENGTH] Combat Strength if Player has sufficient [ICON_RES_HORSE] Horses for all Iron Chariots, and again for [ICON_RES_IRON] Iron. Ends turn if entering rough terrain.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL">
@@ -1040,7 +1044,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_HELP">
 			<Text>
-				Unique Great General that grants a Combat Bonus to all nearby troops. Units stacked with an InDuna gain bonus experience in combat. Expending an InDuna gives bonus experience to a stacked unit, and immediately deals 30 damage to adjacent enemy units.
+				This Zulu unique Great Person replaces the Great General. Aside from the ability to boost nearby troops and construct citadels, Units stacked with an InDuna gain bonus experience when attacking. Expending an InDuna gives bonus experience to a stacked unit, and immediately deals 30 damage to adjacent enemy units.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_TEXT">
@@ -1105,7 +1109,7 @@
 			<Text>Intihuatana</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_HELP">
-			<Text>Unique Observatory replacement, unlocked via Technology instead of a Policy. [ICON_GREAT_SCIENTIST] Scientist Specialists in the City produce +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food and +2 [ICON_RESEARCH] Science for every Mountain within 3 tiles of the City.[NEWLINE][NEWLINE]Adopting the [COLOR_POSITIVE_TEXT]Scientific Revolution[ENDCOLOR] Policy gives +4 [ICON_RESEARCH] Science to all Intihuatanas on Empire.[NEWLINE][NEWLINE]Only the Inca may build it.</Text>
+			<Text>Available via Technology instead of a Policy. [ICON_GREAT_SCIENTIST] Scientist Specialists in the City produce +1 [ICON_PEACE] Faith. +2 [ICON_FOOD] Food and +2 [ICON_RESEARCH] Science for every Mountain within 3 tiles of the City.[NEWLINE][NEWLINE]Adopting the [COLOR_POSITIVE_TEXT]Scientific Revolution[ENDCOLOR] Policy gives +4 [ICON_RESEARCH] Science to all Intihuatanas on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_STRATEGY">
 			<Text>The Intihuatana is the unique Observatory of the Inca. Unlike the Observatory it replaces, the Intihuatana is unlocked by the Theology tech, much sooner than the Observatory, and without needing the Scientific Revolution policy. In addition to Science, Intihuatana also boost Food and Faith production, and makes Scientist specialists in the City produce Faith. Unlocking the Scientific Revolution policy further increases the Intihuatana's Science production</Text>
@@ -1129,7 +1133,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO_HELP">
-			<Text>+33% [ICON_GREAT_WRITER] Great Writer Rate in the City, and all Writers'' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Whenever a unit gains a level, receive [ICON_CULTURE] Culture in the City, scaling with Unit level.[NEWLINE]Nearby [ICON_RES_DYE] Dye: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILK] Silk: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+33% [ICON_GREAT_WRITER] Great Writer Rate in the City, and all Writers' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Whenever a unit gains a level, receive [ICON_CULTURE] Culture in the City, scaling with Unit level.[NEWLINE]Nearby [ICON_RES_DYE] Dye: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILK] Silk: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO_STRATEGY">
 			<Text>
@@ -1153,7 +1157,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_KABUKI_HELP">
 			<Text>
-				Unique replacement for the Opera House. Does not require Amphiteater. +66% [ICON_GREAT_MUSICIAN] Great Musician Rate. +33% [ICON_GREAT_ARTIST] Great Artist [ICON_GREAT_WRITER] Great Writer Rates in City. All Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]All Writers', Artists' and Musicians' Guilds in this City are replaced with powerful unique guild equivalents.
+				Does not require an Amphitheater in the City. +66% [ICON_GREAT_MUSICIAN] Great Musician Rate. +33% [ICON_GREAT_ARTIST] Great Artist [ICON_GREAT_WRITER] Great Writer Rates in City. All Musicians' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]All Writers', Artists' and Musicians' Guilds in this City are replaced with powerful unique guild equivalents.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI">
@@ -1171,7 +1175,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI_HELP">
 			<Text>
-				Unique Japanese replacement for the Writers' Guild. Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. +2 [ICON_GOLD] Gold to Writer specialists in this city. +1 [ICON_PRODUCTION] Production to all Kabuki Theaters on Empire.
+				Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. +2 [ICON_GOLD] Gold to Writer specialists in this city. +1 [ICON_PRODUCTION] Production to all Kabuki Theaters on Empire.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE">
@@ -1189,7 +1193,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE_HELP">
 			<Text>
-				Unique Japanese replacement for the Artists' Guild. Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. +2 [ICON_RESEARCH] Science to Artist specialists in this city. +1 [ICON_TOURISM] Tourism to all Kabuki Theaters on Empire.
+				Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. +2 [ICON_RESEARCH] Science to Artist specialists in this city. +1 [ICON_TOURISM] Tourism to all Kabuki Theaters on Empire.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU">
@@ -1207,7 +1211,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU_HELP">
 			<Text>
-				Unique Japanese replacement for the Musicians' Guild. Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. +2 [ICON_PEACE] Faith to Musician and Civil Servant specialists in this city. +1 [ICON_CULTURE] Culture to all Kabuki Theaters on Empire.
+				Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. +2 [ICON_PEACE] Faith to Musician and Civil Servant specialists in this city. +1 [ICON_CULTURE] Culture to all Kabuki Theaters on Empire.
 			</Text>
 		</Row>
 		
@@ -1223,7 +1227,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG_HELP">
-			<Text>Unique Indonesian Tile Improvement. Available at Sailing, the Kampong can be built by [ICON_WORKER] Embarked Workers on Coastal Tiles, and cannot be built next to another Kampong.[NEWLINE][NEWLINE]Each Kampong yields [ICON_FOOD] Food and [ICON_CULTURE] Culture, and adjacent Fishing Boats receive +1 [ICON_PRODUCTION] Production.</Text>
+			<Text>The Kampong can be built by [ICON_WORKER] Embarked Workers on Coastal Tiles, and cannot be built next to another Kampong.[NEWLINE][NEWLINE]Each Kampong yields [ICON_FOOD] Food and [ICON_CULTURE] Culture, and adjacent Fishing Boats receive +1 [ICON_PRODUCTION] Production.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_INDONESIA_KAMPONG">
 			<Text>Build a [LINK=IMPROVEMENT_INDONESIA_KAMPONG]Kampong[\LINK]</Text>
@@ -1249,7 +1253,7 @@
 			<Text>The Khopesh is the unique Egyptian replacement for the Spearman. It's a strong early unit that has an edge in direct combat. However, unlike the Spearman it replaces, it does not have a combat bonus against mounted units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_HELP">
-			<Text>Strong, front-line Unit of the Ancient Era. Deals increased damage against heavily damaged Units. Does not have a bonus against Mounted Units. [NEWLINE][NEWLINE]Has the [COLOR_POSITIVE_TEXT]Skillful[ENDCOLOR] Promotion, which temporarily reduces the [ICON_STRENGTH] Combat Strength of any Non-mounted Melee Unit that it attacks.[NEWLINE][NEWLINE]Only Egypt may build it.</Text>
+			<Text>Strong, front-line Unit of the Ancient Era. Only Egypt may build it. Deals increased damage against heavily damaged Units. Does not have a bonus against Mounted Units. Temporarily reduces the [ICON_STRENGTH] Combat Strength of any Non-mounted Melee Unit that it attacks.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE">
 			<Text>Skillful</Text>
@@ -1324,7 +1328,7 @@
 			<Text>Sabum Kibitum</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BABYLON_KIBITUM_HELP">
-			<Text>Unique Ancient Era Unit. This unit is stronger than the Spearman it replaces. Receives additional [ICON_STRENGTH] Combat Strength for every few levels and gains more XP from fights.[NEWLINE][NEWLINE]Only the Babylonians may build it.</Text>
+			<Text>Unique Ancient Era Unit. Only the Babylonians may build it. This unit is stronger than the Spearman it replaces. Receives additional [ICON_STRENGTH] Combat Strength for every few levels and gains more XP from fights.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BABYLON_KIBITUM_STRATEGY">
 			<Text>A soldier to stand the test of time. The Khibitum is not the strongest unit in its era, but its true strength lies in how it gains more power from experience than normal units. Keep these soldiers alive, and they will form an indispensable core for your army.</Text>
@@ -1391,7 +1395,7 @@
 			<Text>Koa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_HELP">
-			<Text>Unique Classical Era Unit. Slightly stronger than the Scout it replaces, and starts with the [COLOR_GREEN]Amphibious[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]After attack, defending Unit receives an additional damage at the beginning of its turn.[NEWLINE][NEWLINE]Only Polynesia may build it.</Text>
+			<Text>Unique Classical Era Unit. Only Polynesia may build it. Slightly stronger than the Scout it replaces, and starts with the [COLOR_GREEN]Amphibious[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]After attack, defending Unit receives additional damage at the beginning of its turn, stacking up to 3 times.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_STRATEGY">
 			<Text>The Koa is an effective early scout, able to hold its own against barbarians. It is stronger than the Scout, and can fight equally well across rivers and while embarked. This unit also deals an additional 10 'bleed' damage to enemies it attacks at the beginning of the enemy's turn, making them effective at clearing barbarians and preventing healing.</Text>
@@ -1423,15 +1427,14 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_HELP">
 			<Text>
-				When a [ICON_INTERNATIONAL_TRADE] Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.
-				[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from Coast and Ocean Tiles, +2 [ICON_FOOD] Food and +2 [ICON_PRODUCTION] Production to Atolls and +1 [ICON_PRODUCTION] Production from Sea Resources worked by this City. Sea Trade Routes gain +75% Range and +4 [ICON_GOLD] Gold.
-				[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_GOLD] Gold to Rialto District, +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science to Venetian Arsenale, and +1 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism to Murano Glassworks.
-				[NEWLINE][NEWLINE]+15% [ICON_PRODUCTION] Production of Naval units, and increases Military Units supplied by this City's population by 10%. [NEWLINE][NEWLINE]City must be built on the Coast.
-				[NEWLINE]Requires a Lighthouse in the City. Only Venice may build it.
+				+15% [ICON_PRODUCTION] Production of Naval units, and increases Military Units supplied by this City's population by 10%. When a [ICON_INTERNATIONAL_TRADE] Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.
+				[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from Coast and Ocean Tiles, +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production to nearby Atolls and +1 [ICON_PRODUCTION] Production from Sea Resources worked by this City. Sea Trade Routes gain +75% Range and +4 [ICON_GOLD] Gold.
+				[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_GOLD] Gold to Rialto District.[NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science to Venetian Arsenale.[NEWLINE]+1 [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism to Murano Glassworks.
+				[NEWLINE][NEWLINE]City must be built on the Coast. Requires a Lighthouse in the City.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_STRATEGY">
-			<Text>The Laguna is a Medieval-era building, requiring a Lighthouse. It improves the range and [ICON_GOLD] Gold yield of sea trade routes, and boosts the value of sea tiles and resources. The Laguna also increases the [ICON_PRODUCTION] Production of Naval units by 15%, and increases Military Units supplied by this City''s population by 10%. The Laguna additionally provide bonus yields to Murano Glassworks, Rialto District, and Arsenale di Venezia.</Text>
+			<Text>The Laguna is a Medieval-era building, replacing the Harbor. It improves the range and [ICON_GOLD] Gold yield of sea trade routes, and boosts the value of sea tiles and resources. The Laguna also increases the [ICON_PRODUCTION] Production of Naval units by 15%, and increases Military Units supplied by this City''s population by 10%. The Laguna additionally provide bonus yields to Murano Glassworks, Rialto District, and Arsenale di Venezia.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_VENICE_LAGUNA_TEXT">
 			<Text>Laguna (eng. Lagoons) are shallow bodies of salt water separated from a larger sea by barrier islands or reefs. Venice itself is situated on the bank of a large lagoon, artificially maintained and enlarged by the dredging of the Venetian canals. The Venice Lagoon is also the largest wetland in the Mediterranean, offering protection as well as a rich source of food to its inhabitants.</Text>
@@ -1454,7 +1457,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
 			<Text>
-				The Lamassu Gate is an Assyrian Unique Building. Provides [ICON_CULTURE] Culture, [ICON_STRENGTH] Defense and additional HP to the City.[NEWLINE][NEWLINE]It increases the [ICON_WAR] Military Supply Cap in the City more than the standard Walls it replaces. It also contains slots for a [ICON_GREAT_WORK] Great Work of Writing and a [ICON_GREAT_WRITER] Writer Specialist.
+				[ICON_WAR] Military Supplies by this City's population increased by 20%. It contains a slot for a [ICON_GREAT_WORK] Great Work of Writing.
 			</Text>
 		</Row>
 
@@ -1476,7 +1479,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_HELP">
 			<Text>
-				Stalwart defensive unit. Has additional [ICON_STRENGTH] Combat Bonus when fighting in Territory owned by Austria or Allied City-States. Generates [ICON_CULTURE] Culture every turn if stationed in a Friendly Fort, Citadel or City. Only Austria may build it.
+				Stalwart defensive unit. Only Austria may build it. Has additional [ICON_STRENGTH] Combat Bonus when fighting in Territory owned by you or Allied City-States. Generates [ICON_CULTURE] Culture every turn if stationed in a Friendly Fort, Citadel or City.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE">
@@ -1510,7 +1513,7 @@
 			<Text>Longship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_HELP">
-			<Text>Early Unique Naval Unit. Available earlier, can move after attacking, and has [COLOR_GREEN]Medic I[ENDCOLOR] Promotion. Embarked Civilian Units starting their turn on the same tile as a longship can enter deep ocean.[NEWLINE][NEWLINE]Only Denmark may build it.</Text>
+			<Text>Early Naval Exploration Unit. Only Denmark may build it. Available earlier, can move after attacking, and has [COLOR_GREEN]Medic I[ENDCOLOR] Promotion. Embarked Civilian Units starting their turn on the same tile as a longship may enter deep ocean.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_STRATEGY">
 			<Text>The Danish Longship is an early ship unit which allow Denmark to have early sea control. This allows Denmark to begin scouting the far seas earlier than the other players to prepare future waves of colonization, defend your colonies abroad and provides support to raids with its bonuses to healing at sea and performing hit-and-run tactics.</Text>
@@ -1541,7 +1544,7 @@
 			<Text>Latifundium</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP">
-			<Text>Provides additional [ICON_FOOD] Food and [ICON_CULTURE] Culture, and can be built on [ICON_RES_WHEAT] Wheat or any Resource normally requiring a Plantation. Cannot be built adjacent to another Latifundium, and cannot be removed once it is built.[NEWLINE][NEWLINE]On construction, immediately spawns an Improved [ICON_RES_FIGS] Figs Resource on a Non-city Tile adjacent to the Latifundium, and claims that tile if not already owned by Rome.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production to adjacent Farms.[NEWLINE]+1 [ICON_CULTURE] Culture to adjacent Plantations.</Text>
+			<Text>Can be built on [ICON_RES_WHEAT] Wheat or any Resource normally requiring a Plantation, and not adjacent to another Latifundium. Cannot be removed once it is built.[NEWLINE][NEWLINE]On construction, immediately spawns an Improved [ICON_RES_FIGS] Figs Resource on a Non-city Tile adjacent to the Latifundium, and claims that tile if not already owned by Rome.[NEWLINE][NEWLINE]Provides additional [ICON_CULTURE] Culture and [ICON_FOOD] Food. +1 [ICON_PRODUCTION] Production to adjacent Farms.[NEWLINE]+1 [ICON_CULTURE] Culture to adjacent Plantations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT">
 			<Text>An ancient precursor to today’s agribusinesses, A Latifundium was an expansive privately owned farm specializing in intensive agriculture. The first latifundia were accumulated from the spoils of war, confiscated from conquered peoples beginning in the early 2nd century BC in Magna Graecia (Southern Italy). The Latifundia system later expanded with conquest, to the Roman provinces of the Maghreb and Hispania Baetica in southern Spain
@@ -1579,13 +1582,13 @@
 			<Text>Grapeshot</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_RUSSIA_GRAPESHOT_HELP">
-			<Text>+50% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Melee Units[ENDCOLOR].</Text>
+			<Text>+50% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Melee and Gunpowder Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIA_LICORNE">
 			<Text>Licorne</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIA_LICORNE_HELP">
-			<Text>Unique Renaissance Era Siege Unit. This Unit has better mobility in Enemy Territory, can move after attacking, and is more effective against Melee Units.[NEWLINE][NEWLINE]Only Russia may build it. </Text>
+			<Text>Unique Renaissance Era Siege Unit. Only Russia may build it. This Unit is available earlier, has better mobility in Enemy Territory, and can move after attacking. Very effective against enemy Melee and Gunpowder Units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIA_LICORNE_STRATEGY">
 			<Text>Licorne is a siege unit that can change the course of battle. Innovative construction allows moving after attacks and no penalty while attacking melee units. Is available earlier than the Field Gun.</Text>
@@ -1651,7 +1654,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
 			<Text>
-				Unique Ethiopian Tile Improvement, available at Theology. The Monolithic Church can be built on Unfeatured Hills or on source of [ICON_RES_STONE] Stone, which it improves. Canot be built next to another Monolithic Church.[NEWLINE][NEWLINE]Each Monolithic Church yields small amount of [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completion of [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR], adopting [COLOR_POSITIVE_TEXT]an Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
+				Can be built on Unfeatured Hills or on source of [ICON_RES_STONE] Stone, and not next to another Monolithic Church. Improves [ICON_RES_STONE] Stone resources[NEWLINE][NEWLINE]Provides [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completing [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR] and adopting [COLOR_POSITIVE_TEXT]an Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
 				+1 [ICON_CULTURE] for every Ancient Policy Tree,[NEWLINE]
 				+1 [ICON_PEACE] for every Medieval Policy Tree,[NEWLINE]
 				+1 [ICON_RESEARCH] for every Industrial Policy Tree,[NEWLINE]
@@ -1682,7 +1685,7 @@
 			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_PRODUCTION] Production output. On construction, 2 Flax resources spawn near the city, which provide additional culture and Production. This building can be built anywhere, as long as you don't have a Well in the City already.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_EGYPT_NILOMETER_HELP">
-			<Text>Unique replacement for the Water Mill. +2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the City. Only Egypt may build it</Text>
+			<Text>+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. 2 [ICON_RES_FLAX] Flax Resources spawn near the City.</Text>
 		</Row>
 
 		<!-- Oppidum -->
@@ -1692,7 +1695,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP">
 			<Text>
-				Unique Celtic Great Tile Improvement. It will improve Strategic Resources. Provides various yields, [ICON_STRENGTH] Defense Bonus to Units, and HP to a nearby Cities. Improves Tile Improvements:[NEWLINE]
+				Unique Celtic Great Tile Improvement. It will improve Strategic Resources. Provides various yields, [ICON_STRENGTH] Defense Bonus to Units, and HP to a nearby Cities. Improves Adjacent Tile Improvements:[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_PRODUCTION] to Farms,[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_PEACE] to Camps,[NEWLINE]
 				+1 [ICON_PRODUCTION] and +1 [ICON_PEACE] to Pastures,[NEWLINE]
@@ -1701,7 +1704,7 @@
 				+1 [ICON_GOLD] and +1 [ICON_CULTURE] to Plantations,[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_RESEARCH] to Lumbermills,[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_CULTURE] to Logging Camps,[NEWLINE]
-				+1 [ICON_GOLD] and +1 [ICON_PEACE] to Fishing Boats.[NEWLINE][NEWLINE]Each Oppidum on Empire increases the length of [ICON_HAPPINESS_1] WLTKDs from Trade Missions conducted by [ICON_GREAT_MERCHANT] Great Merchants.
+				+1 [ICON_GOLD] and +1 [ICON_PEACE] to Fishing Boats.[NEWLINE][NEWLINE]Each Oppidum on Empire increases the length of [ICON_HAPPINESS_1] "We Love the King Days" from Trade Missions conducted by [ICON_GREAT_MERCHANT] Great Merchants.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
@@ -1724,7 +1727,7 @@
 			<Text>Construct an [LINK=IMPROVEMENT_CELTS_OPPIDUM]Oppidum[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_HELP">
-			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to nearby cities. Provides bonus yields to all non-road and non-great person land improvements.</Text>
+			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to nearby cities. Provides bonus yields to pre-Industrial non-road and non-great person Improvements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_REC">
 			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to all Cities in workable range. Adjacent Improvements gain additional bonus yields.</Text>
@@ -1733,10 +1736,10 @@
 		<!-- Pairidaeza -->
 		<!-- Created by adan_eslavo 16/12/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA">
-			<Text>Paradise Garden</Text>
+			<Text>Pairidaeza</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. Receive 30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Grant +1 [ICON_CULTURE] Culture to every Guild on Empire.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. Gain +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture on every Guild on Empire.[NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
 			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, the Pairidaeza provides Culture to all guilds in the Empire. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
@@ -1784,7 +1787,9 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
 			<Text>
-				Unique replacement for the Arena. Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Reduces [ICON_HAPPINESS_3] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_FAITH] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture to [ICON_RES_PERFUME] Perfume, +1 [ICON_FOOD] Food and +1 Gold [ICON_GOLD] to [ICON_RES_OLIVES] Olives[NEWLINE][NEWLINE]Only the Maya may build it.
+				Unique replacement for the Arena. Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Reduces [ICON_HAPPINESS_3] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_FAITH] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]
+				Nearby [ICON_RES_PERFUME] Perfume: +2 [ICON_CULTURE] Culture.[NEWLINE]
+				Nearby [ICON_RES_OLIVES] Perfume: +1 [ICON_FOOD] Food, +1 Gold [ICON_GOLD].
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
@@ -1847,13 +1852,13 @@
 			<Text>Pogost - Stage 3: Eastern Orthodox Church</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP">
-			<Text>Unique replacement for the Customs House.[NEWLINE][NEWLINE]+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in City. +1 [ICON_GOLD] Gold to Villages and Towns. Reduces [ICON_HAPPINESS_3] Poverty.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
+			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns. Reduces [ICON_HAPPINESS_3] Poverty.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
-			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in City.[NEWLINE][NEWLINE]Unlocks access to Stage 3.</Text>
+			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City.[NEWLINE][NEWLINE]Unlocks access to Stage 3.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_3_HELP">
-			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in City. +2 [ICON_PEACE] Faith to Shrines, Temples and Monasteries.</Text>
+			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +2 [ICON_PEACE] Faith to Shrines, Temples and Monasteries.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_STRATEGY">
 			<Text>Unique Russian replacement for the Customs House. Initially, Pogosts are comparatively lackluster, but they develop new traits as the game progresses. Each stage increases Gold generated from City Connections, and The Pogost provides modest increases in gold from trade and culture, then gains modest boosts to gold and science at its second stage, and provides boosts to faith generation in its final stage.</Text>
@@ -1884,7 +1889,7 @@
 			<Text>The Prau is faster and cheaper than the Trireme it replaces and ignores zone of control. It is great for early game scouting and raiding.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_HELP">
-			<Text>effective early naval scout. Available earlier, is faster and ignores Enemy Zone of Control. Only Indonesia may build it.</Text>
+			<Text>Effective early naval scout. Only Indonesia may build it. Available earlier, and faster than the Trireme it replaces, and ignores Enemy Zone of Control.</Text>
 		</Row>
 		
 		<!-- Penteconter -->
@@ -1923,7 +1928,7 @@
 			<Text>Prowler</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_IROQUOIS_PROWLER_HELP">
-			<Text>Unique Iroquian Unit. A nimble attacker excelling in Rough Terrain. Cheaper than the Musketman, this Unit can attack from behind obstacles and retreat after enemy attack.</Text>
+			<Text>A nimble attacker excelling in Rough Terrain. Only the Iroquois may build it. Cheaper than the Musketman, this Unit can attack from behind obstacles and withdraw from enemy attacks.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_IROQUOIS_PROWLER_STRATEGY">
 			<Text>The Prowler is a cheap unit that makes perfect use of surrounding rough terrain. The Prowler's "Indirect Fire" promotion allows him to attack unseen from deep forests and hills, with the aid of reconnaissance or friendly borders. When attacked by an enemy unit, he can withdraw from combat. The prowler's evasiveness makes him an ideal guerilla Unit.</Text>
@@ -1940,7 +1945,7 @@
 			<Text>Qadi Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_HELP">
-			<Text>Unique Classical Era Building which can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. 10% of [ICON_PRODUCTION] Production in the City is converted to [ICON_CULTURE] Culture. [NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith. Provides [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen not of the City's Majority Religion. Reduces [ICON_PEACE] Religious Unrest in the City. [NEWLINE][NEWLINE]Only Songhai may build it.</Text>
+			<Text>Can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. 10% of [ICON_PRODUCTION] Production in the City is converted to [ICON_CULTURE] Culture. [NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith. Provides [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen not of the City's Majority Religion. Reduces [ICON_PEACE] Religious Unrest in the City. [NEWLINE][NEWLINE]Only Songhai may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_STRATEGY">
 			<Text>The Qadi Court is a Songhai unique building that replaces the Courthouse. In addition to The normal bonuses of a Courthouse, the Qadi Court also yields [ICON_PEACE] Faith and reduces religious unrest in the city. Every citizen not following the city's majority religion provides extra Gold, and 10% of Production in the city is converted to Culture. The Qadi Court can be built in any City.</Text>
@@ -1964,7 +1969,7 @@
 			<Text>Qizilbash</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_HELP">
-			<Text>Unique replacement for the Lancer. Can always be purchased with [ICON_PEACE] Faith. [NEWLINE][NEWLINE]Generates [ICON_PEACE] Faith, [ICON_GOLD] Gold, and [ICON_GOLDEN_AGE] Golden Age Points every turn spent in Enemy Territory.[NEWLINE][NEWLINE]Only the Persians may build it.</Text>
+			<Text>Potent Mid-game cavalry, focused on economic warfare. Only the Persians may build it. Can always be purchased with [ICON_PEACE] Faith.[NEWLINE][NEWLINE]Generates [ICON_PEACE] Faith, [ICON_GOLD] Gold, and [ICON_GOLDEN_AGE] Golden Age Points every turn spent in Enemy Territory.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_STRATEGY">
 			<Text>The Qizilbash is the Unique Persian replacement for the Lancer. Stronger than the Lancer, the Qizilbash also generates Faith, Gold and Golden Age Points for every turn they spend in enemy territory. This unit can also be purchased with Faith without needing a religious tenet. Maintaining a strong presence in enemy territory allows Persia to generate Faith for more Qizilbash, and trigger more Golden Ages to increase your army's power.</Text>
@@ -1982,7 +1987,7 @@
 			<Text>Mughal Fort</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +1 [ICON_PRODUCTION] Production to Quarries. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]Provides [ICON_CULTURE] Culture, [ICON_STRENGTH] Defense and additional HP to the City. +1 [ICON_STRENGTH] City Defense for every World Wonder built in the City, and 15% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
+			<Text>Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +1 [ICON_PRODUCTION] Production to Quarries. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every World Wonder built in the City, and 15% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
 			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Culture and Great Artist Points. 15% of City Defense is converted into Culture every turn and the city gains 1 Defense for every World Wonder built in the city.[NEWLINE][NEWLINE]Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
@@ -2008,9 +2013,11 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
 			<Text>
-				+33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the Military Unit Supply Cap from Population in the City by 10%.[NEWLINE][NEWLINE]
-				+25% border growth rate in city. Whenever the city borders expand, gain 10 [ICON_FOOD] Food and [ICON_CULTURE] Culture, scaling with Era.
-				+2 [ICON_FOOD], [ICON_PRODUCTION] Production and [ICON_GOLD] Gold to all Resources [ICON_RES_COW] Cattle, [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, and [ICON_RES_BISON] Bison in City.
+				+33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the Military Unit Supply Cap from Population in the City by 10%.+25% border growth rate in city. Whenever the city borders expand, gain 10 [ICON_FOOD] Food and [ICON_CULTURE] Culture, scaling with Era.
+				[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.
+				[NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.
+				[NEWLINE]Nearby [ICON_RES_COW] Cattle: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.
+				[NEWLINE]Nearby [ICON_RES_BISON] Bison: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.
 			</Text>
 		</Row>
 
@@ -2029,12 +2036,12 @@
 			<Text>The Riad is the Moroccan unique replacement for the Garden. Gold generation in the city is greatly increased during a Golden Age. Trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_HELP">
-			<Text>Unique Moroccan replacement for the Garden that has no [ICON_GOLD] Maintenance Cost. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. +15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn for every [ICON_INTERNATIONAL_TRADE] Trade Routes originating in the City.[NEWLINE][NEWLINE]Building grants additonal bonuses to [ICON_RES_CITRUS] Citrus and [ICON_RES_COCOA] Cocoa Resources, as well as Oasis Tiles.</Text>
+			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. +15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn for every [ICON_INTERNATIONAL_TRADE] Trade Routes originating in the City.[NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY">
-			<Text>Indian Giver</Text>
+			<Text>Reciprocity</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY_HELP">
 			<Text>After creating an [COLOR_POSITIVE_TEXT]Embassy[ENDCOLOR] its yields are permanently added to your [ICON_CAPITAL] Capital's revenue if target City-State [COLOR_POSITIVE_TEXT]is an Ally[ENDCOLOR] or only half, if it [COLOR_NEGATIVE_TEXT]is not[ENDCOLOR] one.</Text>
@@ -2043,7 +2050,12 @@
 			<Text>Sachem's Council</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_HELP">
-			<Text>Unique ealry National Wonder available for the Iroquois. Provides [ICON_CULTURE] Culture per [ICON_CITIZEN] Citizen, all Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Adds various diplomatic perks: +2 [ICON_DIPLOMAT] Great Diplomat Points, +3 [ICON_RES_PAPER] Paper, +10% [ICON_PRODUCTION] Production of Diplomatic Units, 2 [ICON_DIPLOMAT] Civil Servant Specialist slots, and 1 free Emissary Unit. [ICON_DIPLOMAT] Great Diplomats gain the [COLOR_GREEN]Diplomatic Reciprocity[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food in City for every City-State Friend, and +2 [ICON_PEACE] Faith for every Ally.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or War.</Text>
+			<Text>
+				+1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens in this City. All Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]
+				+10% [ICON_PRODUCTION] Production of Diplomatic Units. A free Emissary Unit appears on completion. All [ICON_DIPLOMAT] Great Diplomats gain the [COLOR_GREEN]Reciprocity[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]
+				+1 [ICON_FOOD] Food in City for every City-State Friend, and +2 [ICON_PEACE] Faith for every Ally.[NEWLINE][NEWLINE]
+				+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or Ongoing War.
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_STRATEGY">
 			<Text>Unique Iroquoian replacement for the Scrivener's Office. In addition to the normal bonuses provided by the Scrivener's Office, the Sachem's Council  provides faster generation of Great Diplomat units. Great Diplomats also receive a unique promotion, providing Science, Culture and gold for every embassy founded. All Councils in your empire also gain +1 Culture, and all Chanceries gain +2 Gold. The Sachem's Council also provides Happiness for every Defensive Pact and Declared War involving the Iroquois.</Text>
@@ -2096,7 +2108,7 @@
 			<Text>Scythed Chariot</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP">
-			<Text>A dangerous Unit on Open Terrain. This unit is stronger against Archer and Melee Units, has more vision and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]After moving, deals damage to adjacent Enemy Units. Moving into Rough Terrain uses rest of [ICON_ARROW_RIGHT] Movement Points left for that turn.[NEWLINE][NEWLINE]Only the Celts may build it. </Text>
+			<Text>A dangerous Unit on Open Terrain. Only the Celts may build it. This unit is stronger against Archer and Melee Units, has more vision and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]After moving, deals damage to all newly adjacent Enemy Units. Moving into Rough Terrain consumes all movement points.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY">
 			<Text>The Scythed Chariot is a Celtic unique unit made for destroying enemy lines. Enemies take damage whenever the Scythed Chariot moves adjacent to them, making this unit deadly in open terrain. Make every move count to maximize damage, but be careful not to leave your Chariots exposed to enemies on their turn. A mounted unit, the Scythed Chariot is vulnerable to Spearmen.</Text>
@@ -2152,7 +2164,7 @@
 			<Text>Seir Morb</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_HELP">
-			<Text>Unique Industrial Era Unit.  Only the Siamese may build it. More powerful than the Field Gun it replaces and has a bonus against naval units instead of a penalty, but does not have the [COLOR_RED]Bonus vs Cities[ENDCOLOR] promotion. Deals more damage in a turn the less the unit has moved and receives [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] promotions for free.</Text>
+			<Text>Industrial Era Unit specializing in coastal defense. Only the Siamese may build it. More powerful than the Field Gun it replaces and has a bonus against naval units instead of a penalty, but does not have the [COLOR_RED]Bonus vs Cities[ENDCOLOR] promotion. Deals more damage in a turn the less the unit has moved. Starts with the [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] Promotions.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_STRATEGY">
 			<Text>A powerful coastal defense cannon, the Seir Morb is more powerful than the Field Gun it replaces, especially against naval targets, but deals less damage to cities. The Seir Morb receives a combat boost for every remaining movement point when attacking, so pick a good spot and keep it steady.  Location, Location, Location.</Text>
@@ -2170,7 +2182,7 @@
 			<Text>Suffet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP">
-			<Text>Unique replacement for the [ICON_GREAT_GENERAL] Great General. Disembarks onto water tiles as a [ICON_GREAT_ADMIRAL] Great Admiral. Causes Friendly Units beginning in the same or adjacent tile to ignore Enemy Zone of Control for that turn.[NEWLINE][NEWLINE]Only Carthage may build it.</Text>
+			<Text>This Zulu unique Great Person replaces the Great General. Aside from the ability to boost nearby troops and construct citadels, this unit disembarks onto water tiles as a [ICON_GREAT_ADMIRAL] Great Admiral. Causes Friendly Units beginning in the same or adjacent tile to ignore Enemy Zone of Control for that turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY">
 			<Text>The Suffet is the unique Great General replacement for Carthage, for Hannibal. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Suffet to supplement your military strategies when waging war against other civilizations.</Text>
@@ -2305,7 +2317,7 @@
 			<Text>Shotelai</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_HELP">
-			<Text>Unique Medieval Era Unit. It is stronger against Mounted Units, unlike the Longswordsman it replaces. Enemies attacked by this Unit have -1 [ICON_MOVES] Movement Point on their next turn.[NEWLINE][NEWLINE]Only the Ethiopians may build it.</Text>
+			<Text>Front-line Medieval Era land Unit. Only Ethiopia may build it. It is stronger against Mounted Units, unlike the Longswordsman it replaces. Enemies attacked by this Unit have -1 [ICON_MOVES] Movement Point on their next turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_STRATEGY">
 			<Text>Unique replacement for the Longswordsman. This unit specializes in combating Mounted opponents and hobbling retreating units. Only Ethiopia may build it.</Text>
@@ -2334,7 +2346,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_HELP">
 			<Text>
-				Cheap Warrior replacement. Much stronger against Barbarians, and has a chance of converting defeated Barbarian Units. Starts with [COLOR_POSITIVE_TEXT]Barbarian Alliance[ENDCOLOR] Promotion, allowing him to create faster Alliances with City-States. Only Germany may build it.
+				Cheap early-game warrior. Only Germany may build it. Much stronger against Barbarians, and has a chance of converting defeated Barbarian Units. Starts with [COLOR_POSITIVE_TEXT]Barbarian Alliance[ENDCOLOR] Promotion, allowing him to create faster Alliances with City-States. 
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS">
@@ -2367,7 +2379,7 @@
 			<Text>Sofa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SONGHAI_SOFA_HELP">
-			<Text>Skirmisher Unit excelling at supporting your cavalry. Cheaper and available earlier than the Crossbowman. Has the [COLOR_POSITIVE_TEXT]Medic I[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only Songhai may build it.</Text>
+			<Text>Ranged Unit excelling at supporting your cavalry. Only the Songhai may build it. Cheaper and available earlier than the Crossbowman, and all mounted units within two tiles receive a [ICON_STRENGTH] Combat boost. Starts with the [COLOR_POSITIVE_TEXT]Medic I[ENDCOLOR] Promotion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SONGHAI_SOFA_STRATEGY">
 			<Text>The Sofa is a Songhai unique unit, replacing the Crossbowman. It serves as an excellent support unit starting with the Medic I promotion and a 15% Damage increase to all Mounted units within 2 tiles. The Sofa has lower offensive strength, but is relatively cheap to train and available earlier.</Text>
@@ -2385,7 +2397,7 @@
 			<Text>SPAD S.VII</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_HELP">
-			<Text>Unique Modern Era Unit. Has a longer range, is cheaper, and does not require [ICON_RES_OIL] Oil. Receives the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR] Promotions for free.</Text>
+			<Text>Potent Modern Era flying Unit. Only France may build it. Has a longer range, is cheaper, and does not require [ICON_RES_OIL] Oil, unlike the Triplane it reaplces. Starts with the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR] Promotions.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_STRATEGY">
 			<Text>The SPAD S.VII is France's early air superiority fighter. With a cheaper cost and no need for oil, these fighters will help create a strong French presence in the air. The SPAD S.VII's ability to attack twice in a turn ensures these fighters are the toughest aces in the sky.</Text>
@@ -2415,7 +2427,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP">
 			<Text>
-				Unique Arsenal replacement. +1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture for each City-State Ally.[NEWLINE][NEWLINE]+30% [ICON_PRODUCTION] Production and 15 XP toward Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units.[NEWLINE][NEWLINE]Increases [ICON_STRENGTH] City Defense, adds HP to the City, and increases [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population.[NEWLINE][NEWLINE]Only Austria may build it.
+				+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture for each City-State Ally.[NEWLINE][NEWLINE]+30% [ICON_PRODUCTION] Production and 15 XP toward Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units. Increases [ICON_WAR] Military Supply Generated from [ICON_CITIZEN] Population by 10%.
 			</Text>
 		</Row>
 				
@@ -2442,7 +2454,7 @@
 			<Text>Tarkhan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_HELP">
-			<Text>Mounted warrior who also supports Civilian and other Land Military Units with its unique abilities.[NEWLINE][NEWLINE]Only the Huns may build it.</Text>
+			<Text>Mounted warrior who supports Civilian and other Land Military Units with its unique abilities. Only the Huns may build it. Slightly cheaper than the Horseman it replaces. +1 Movement to Settlers and Workers that begin the turn stacked with this unit, and +10HP to all adjacent friendly units whenever this unit pillages a tile.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_STRATEGY">
 			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Pillaging tiles with a Tarkhan heals all your adjacent units, which can be handy for healing a recently captured unit.</Text>
@@ -2457,7 +2469,7 @@
 			<Text>Tersane</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_HELP">
-			<Text>Unique Medieval Era Building.[NEWLINE]When a Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the civ based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Melee Units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Only the Ottomans may build it.</Text>
+			<Text>When a Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the civ based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Melee Units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from Coast and Ocean Tiles, +2 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production from Sea Resources worked by this City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_STRATEGY">
 			<Text>Tersane is the unique Harbor replacement of the Ottomans. In addition to the bonuses of a Harbor, the Tersane increases the yields of work boats. The building also greatly improves production towards trade and military vessels, greatly improving the Ottoman's naval capabilities. All Melee Ships built in this city also receive the Prize Ships promotion, allowing them to capture defeated enemy units.</Text>
@@ -2491,7 +2503,7 @@
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
 				Unique replacement for the Heroic Epic, available earlier. Grants a free Armory in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. +2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.
-				[NEWLINE][NEWLINE]All Baracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and new Units trained in City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. All Melee Land Units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] Promotion.
+				[NEWLINE][NEWLINE]All Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and new Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. All Land Melee Units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] Promotion.
 				[NEWLINE][NEWLINE][NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own. Only Germany may build it.
 			</Text>
 		</Row>
@@ -2536,7 +2548,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_HELP">
 			<Text>
-				Does not require a University in the City. Provides a free [ICON_GREAT_SCIENTIST] Great Scientist and a University on Completion. Universities gain +2 [ICON_GOLD] Gold. +50 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE]Only Portugal may build it.
+				Does not require a University in the City. Provides a free [ICON_GREAT_SCIENTIST] Great Scientist and a University on Completion. All Universities gain +2 [ICON_GOLD] Gold. +50 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY">
@@ -2552,7 +2564,7 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text>Available earlier.[NEWLINE][NEWLINE][ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. Markets, Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great Person Generation and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire, up to a maximum of 10 traded resources.[NEWLINE][NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. Reduces [ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. Markets, Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great Person Generation and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire, up to a maximum of 10 traded resources.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
 			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier than the Bank, and provides bonuses to Great Person Generation and defense for every luxury imported or exported in the Empire. Be sure to keep peaceful and lucrative relationships with your neighbors; a surprise war with a trading partner could suddenly weaken your city's defenses!</Text>
@@ -2579,7 +2591,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP">
 			<Text>
-				Unique Hermitage replacement, available eralier. Requires a Castle in the City.[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in the City, and +2 [ICON_CULTURE] Culture to all Castles on Empire.[NEWLINE][NEWLINE]-25% [ICON_SPY] Spy Stealing Rate on Empire. +1 [ICON_HAPPINESS_1] Happiness on Empire for every [ICON_SPY] Enemy Spy killed by the Player.[NEWLINE][NEWLINE]Contains 3 slots for [ICON_GREAT_WORK] Great Works of Art or Artifact, and comes with one free [ICON_GREAT_WORK] Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE]Only England may build it.
+				+3 [ICON_GOLD] Gold to Constabularies and +3 [ICON_FOOD] Food to Arsenals in this City, and +2 [ICON_CULTURE] Culture to all Castles on Empire.[NEWLINE][NEWLINE]-25% [ICON_SPY] Spy Stealing Rate on Empire. +1 [ICON_HAPPINESS_1] Happiness on Empire for every [ICON_SPY] Enemy Spy killed by the Player.[NEWLINE][NEWLINE]Contains 3 slots for [ICON_GREAT_WORK] Great Works of Art or Artifact, and comes with one free [ICON_GREAT_WORK] Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.[NEWLINE][NEWLINE]Requires a Castle in the City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY">
@@ -2642,7 +2654,7 @@
 			<Text>Yamato</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JAPAN_YAMATO_HELP">
-			<Text>A powerful Unique Battleship. Has more range, power and higher defense than the Battleship. Earns [ICON_GREAT_ADMIRAL] Great Admiral Points on kills.[NEWLINE][NEWLINE]Receive +600 [ICON_GOLDEN_AGE] Golden Age Points whenever a Yamato is constructed.[NEWLINE][NEWLINE]Enemies receive +400 [ICON_CULTURE] Culture and [ICON_GOLDEN_AGE] Golden Age Points whenever they destroy a Yamato.</Text>
+			<Text>A powerful naval ranged Unit. Only Japan may build it. Has more range, power and higher defense than the Battleship it replaces. Earns [ICON_GREAT_ADMIRAL] Great Admiral Points on kills.[NEWLINE][NEWLINE]Receive +600 [ICON_GOLDEN_AGE] Golden Age Points whenever a Yamato is constructed.[NEWLINE]Enemies receive +400 [ICON_CULTURE] Culture and +400 [ICON_GOLDEN_AGE] Golden Age Points whenever they destroy a Yamato.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JAPAN_YAMATO_STRATEGY">
 			<Text>The Yamato is the unique Battleship replacement for Japan which is significantly more powerful. It has increased range, attack, strength, defense against attack and earns Great Admiral Points on kills. Use them to dominate the seas in the end game, giving you the edge for a Domination Victory.[NEWLINE][NEWLINE]
@@ -2668,7 +2680,7 @@
 			<Text>Yassa Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_HELP">
-			<Text>Unique Classical Era Building which can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. Slightly reduces [ICON_HAPPINESS_3] Crime, Boredom, Illiteracy, and Religious Unrest.[NEWLINE][NEWLINE]Provides +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Units. Conquering Enemy City starts 10-turn long [ICON_HAPPINESS_1] WLTKD. [NEWLINE][NEWLINE]Only the Mongols may build it.</Text>
+			<Text>Can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. Slightly reduces [ICON_HAPPINESS_3] Crime, Boredom, Illiteracy, and Religious Unrest.[NEWLINE][NEWLINE]Provides +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Units. Conquering Enemy City starts 10-turn long [ICON_HAPPINESS_1] "We Love the King Day".</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_STRATEGY">
 			<Text>Unique Mongolian replacement for the Courthouse. Can be built in non-occupied Cities. In addition elimination Unhappiness in Occupied Cities, this building reduces unhappiness from Crime, Illiteracy, Boredom and Religious Tensions, and increases production of all Land-based military units, except Unmounted Melee. Conquering Cities triggers a small WLTKD. It is also slightly cheaper than the Courthouse.</Text>
@@ -2697,14 +2709,14 @@
 			<Text>Yellow Brow</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_HELP">
-			<Text>Unique Renaissance Era Unit. Has the [COLOR_POSITIVE_TEXT]Anti-Cavalry[ENDCOLOR] Promotion, fights at full strength when damaged, and has double combat bonus from fortifying.[NEWLINE][NEWLINE]Only the Shoshone may build it.</Text>
+			<Text>Unique Renaissance Era Unit. Only the Shoshone may build it. Has the [COLOR_POSITIVE_TEXT]Anti-Cavalry[ENDCOLOR] Promotion, fights at full strength when damaged, and has double combat bonus from fortifying.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_STRATEGY">
 			<Text>The Yellow Brow is unmatched for its ability to hold ground. Never one to retreat, the Yellow brow fights at full strength regardless of health, and has double the normal bonus from fortifying. This unit is very effective against enemy cavalry</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_TEXT">
 			<Text>
-				Yellow Brows (Ohamupe) were one of two military societies within the Shoshone, playing an integral role in hunting, scouting, and policing within their bands. Yellow Brow braves shaved their heads into a cockscomb 'mohawk', and painted their exposed heads yellow, hence their common English name. [NEWLINE][NEWLINE]
+				Yellow Brows (Sh. Ohamupe) were one of two military societies within the Shoshone, playing an integral role in hunting, scouting, and policing within their bands. Yellow Brow braves shaved their heads into a cockscomb 'mohawk', and painted their exposed heads yellow, hence their common English name.[NEWLINE][NEWLINE]
 				The Yellow Brows were composed of only the bravest and most daring of the young men, tasked with keeping order on hunting expeditions, scouting, and soldiering. The Society never had more than a few hundred members at a time; members elected their replacement upon graduation. A young Yellow Brow was expected to act and speak in a contrarian way as a sign of membership.  For instance, when asked if he would like to join the Yellow Brows, it was expected that the young man would say 'No' as a sign of willingness to join, or 'Yes' if he wished to decline.[NEWLINE][NEWLINE]
 				In battle, Yellow Brows were led by a war chief who carried a long cane tipped with a stone or metal dagger.  The cane was used to grab and unhorse opponents, or as a No-Retreat signal. If the enemy was gaining the upper hand, the chief would drive his staff into the ground and the braves would defend him to the last. Yellow Brows were banned from leaving their chief's side until another member of the tribe came and released the braves from their charge. Deserting the chief was met with abject mockery, and often resulted in banishment from the tribe.
 			</Text>

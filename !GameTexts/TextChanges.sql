@@ -26,7 +26,7 @@ WHERE Tag = 'TXT_KEY_UNIT_ENGLISH_LONGBOWMAN_STRATEGY';
 
 -- Dromon
 UPDATE Language_en_US 
-SET Text = 'Unique naval unit of the Byzantines. Replaces the Penteconter. Deals an additional 10 damage to units it has attacked at the beginning of the enemy''s turn, stacking up to 3 times. Rush to logistics and reign fire down on your enemies'
+SET Text = 'Unique naval unit of the Byzantines, replacing the Penteconter. Allows early naval supremacy. Works better in groups because of its stacking damage. Rush to logistics and reign fire down on your enemies.'
 WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_STRATEGY';
 
 UPDATE Language_en_US 
