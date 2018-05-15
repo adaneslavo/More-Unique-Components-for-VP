@@ -3,25 +3,25 @@
 --==========================================================================================================================	
 -- Ballista
 UPDATE Language_en_US 
-SET Text = 'Tough and accurate early siege weapon. Only Rome may build it. This Unit is stronger than the catapult, has no vision penalties, and has no penalty against Land Units. When near a [ICON_GREAT_GENERAL] Great General, has double [ICON_ARROW_RIGHT] Movement in Open Terrain and while crossing Rivers.'
+SET Text = 'Tough and accurate early Siege weapon. Only Rome may build it. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against Land Units. When near a [ICON_GREAT_GENERAL] Great General, has double [ICON_ARROW_RIGHT] Movement in Open Terrain and while crossing Rivers.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_BALLISTA';
 
 UPDATE Language_en_US 
-SET Text = 'The Ballista is a potent replacement for the Catapult, with few of the drawbacks of a normal Siege unit. When near a Great General the Ballista can move freely in unhindering terrain, even in enemy territory. Use these war machines in conjunction with your Legions to expand quickly and consolidate your early empire. The power and flexibility of the Ballista may allow your army to ignore producing Composite Bowmen entirely.'
+SET Text = 'The Ballista is a potent replacement for the Catapult, with few of the drawbacks of a normal Siege Unit. When near a Great General the Ballista can move freely in unhindering terrain, even in Enemy Territory. Use these war machines in conjunction with your Legions to expand quickly and consolidate your early Empire. The power and flexibility of the Ballista may allow your army to ignore producing Composite Bowmen entirely.'
 WHERE Tag = 'TXT_KEY_UNIT_ROMAN_BALLISTA_STRATEGY';
 
 -- Legion
 UPDATE Language_en_US
-SET Text = 'The Legion is the Roman unique unit, replacing the Swordsman. The Legion is more powerful than the Swordsman, making it the one of the most powerful melee units of the Classical Era. The Legion can also construct roads and forts. When near a Great General, the Legion constructs improvements faster.'
+SET Text = 'The Legion is more powerful than the Swordsman, making it the one of the most powerful Melee Units of the Classical Era. The Legion can also construct Roads and Forts. When near a Great General, the Legion constructs Improvements faster.'
 WHERE Tag = 'TXT_KEY_UNIT_ROMAN_LEGION_STRATEGY';
 
 -- Longbowman
 UPDATE Language_en_US 
-SET Text = 'Formidable long-range archery unit. Only England may build it. Begins with the [COLOR_POSITIVE_TEXT]Range[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Agincourt[ENDCOLOR] Promotions, giving increased Attack Range and a bonus against Mounted Units.'
+SET Text = 'Formidable long-range Archery Unit. Only England may build it. Begins with the [COLOR_POSITIVE_TEXT]Range[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Agincourt[ENDCOLOR] Promotions, giving increased Attack Range and a bonus against Mounted Units.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_LONGBOWMAN';
 
 UPDATE Language_en_US 
-SET Text = ' The Longbowman has a greater range than the Crossbowman, allowing it to attack enemies three hexes away, often destroying them before they can strike back. Longbows also are more effective against Mounted opponents, thanks to their Agincourt Promotion. Like other ranged units, Longbowmen are vulnerable to melee attack.'
+SET Text = ' The Longbowman has a greater Range than the Crossbowman, allowing it to attack Enemies three hexes away, often destroying them before they can strike back. Longbows also are more effective against Mounted opponents, thanks to their Agincourt Promotion. Like other Ranged Units, Longbowmen are vulnerable to Melee attack.'
 WHERE Tag = 'TXT_KEY_UNIT_ENGLISH_LONGBOWMAN_STRATEGY';
 
 -- Dromon
@@ -30,16 +30,16 @@ SET Text = 'Unique naval unit of the Byzantines. Replaces the Penteconter. Deals
 WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_STRATEGY';
 
 UPDATE Language_en_US 
-SET Text = 'A powerful early ranged naval unit. Only the Byzantines may build it. Each attack by a Dromon inflicts an additional 10 damage at the beginning of the enemy unit''s turn, up to 3 attacks. Starts with [COLOR_POSITIVE_TEXT]Splash Damage I[ENDCOLOR].'
+SET Text = 'A powerful early Naval Ranged Unit. Only the Byzantines may build it. Each attack by a Dromon inflicts an additional 10 damage at the beginning of the enemy unit''s turn, up to 3 attacks. Starts with [COLOR_POSITIVE_TEXT]Splash Damage I[ENDCOLOR] Promotion.'
 WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_HELP';
 
 -- Carolean
 UPDATE Language_en_US 
-SET Text = 'Strong frontline land unit specializing in long marches far from Swedish land. Only Sweden may build it. Starts with [COLOR_POSITIVE_TEXT]March[ENDCOLOR], gets additional bonuses from [ICON_GREAT_GENERAL] Great Generals and deals AOE damage to Enemy Units on kills.'
+SET Text = 'Strong frontline Land Unit specializing in long marches far from Swedish land. Only Sweden may build it. Starts with [COLOR_POSITIVE_TEXT]March[ENDCOLOR], gets additional bonuses from [ICON_GREAT_GENERAL] Great Generals and deals AOE damage to Enemy Units on kills.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_SWEDISH_CAROLEAN';
 
 UPDATE Language_en_US 
-SET Text = 'Caroleans are the backbone of the Industrial era Swedish army. They start with the March promotion that allows it to Heal every turn, even if it performs an action. The Carolean also receives a 15% combat bonus when stacked with a Great General, and deals damage to all adjacent units after advancing from killing a unit.'
+SET Text = 'Caroleans are the backbone of the Industrial era Swedish army. They start with the March promotion that allows it to Heal every turn, even if it performs an action. The Carolean also receives a 15% Combat Bonus when stacked with a Great General, and deals damage to all adjacent Units after advancing from killing a Unit.'
 WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_CAROLEAN_STRATEGY';
 
 -- Hakkapeliitta
@@ -48,16 +48,16 @@ SET Text = 'Mid-game cavalry, stronger and more effective against Wounded Units.
 WHERE Tag = 'TXT_KEY_UNIT_HELP_SWEDISH_HAKKAPELIITTA';
 
 UPDATE Language_en_US 
-SET Text = 'Strong against wounded units. Stack a Great General with them if possible. The Great General receives the movement allowance of the Hakkapeliitta if they start the turn stacked.'
+SET Text = 'Strong against Wounded Units. Stack a Great General with them if possible. The Great General receives the Movement allowance of the Hakkapeliitta if they start the turn stacked.'
 WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_HAKKAPELIITTA_STRATEGY';
 
 -- Monitor
 UPDATE Language_en_US 
-SET Text = 'Durable coastal defense craft. Only America may build it. Has double movement on coast, and Increases the [ICON_STRENGTH] Combat Strength of your cities when adjacent to or inside the city. Starts with [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR].'
+SET Text = 'Durable coastal defense craft. Only America may build it. Has double [ICON_ARROW_RIGHT] Movement on Coast, and increases the [ICON_STRENGTH] Combat Strength of your Cities when adjacent to or inside the City. Starts with [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] Promotion.'
 WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_HELP';
 
 UPDATE Language_en_US 
-SET Text = 'A powerful Industrial-era naval unit. Only America may build it. It has the Cover I promotion, and gives a defensive bonus to nearby friendly cities. Monitors are effective combatants when at war, and can be used to reduce crime in peacetime.'
+SET Text = 'A powerful Industrial Era Naval Unit. Only America may build it. It has the Cover I Promotion, and gives a Defensive Bonus to nearby Friendly Cities. Monitors are effective combatants when at War, and can be used to reduce Crime in peacetime.'
 WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_STRATEGY';
 
 -- Mandekalu Cavalry
@@ -80,16 +80,16 @@ WHERE	Tag = 'TXT_KEY_UNIT_HELP_BRAZILIAN_PRACINHA';
 
 -- Turtle Ship
 UPDATE Language_en_US 
-SET Text = 'The Turtle Ship is an early incarnation of the Ironclad for tactical purposes, and is best used to defend coastlines. Thanks to its high Combat Strength, it can easily fight off enemy Caravels and even Frigates. Its main drawback is that, unlike the Caravel that it replaces, it cannot move easily through deep oceans.'
+SET Text = 'The Turtle Ship is an early incarnation of the Ironclad for tactical purposes, and is best used to defend coastlines. Thanks to its high combat strength, it can easily fight off enemy Caravels and even Frigates. Its main drawback is that, unlike the Caravel that it replaces, it cannot move easily through deep Oceans.'
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_STRATEGY';
 
 UPDATE Language_en_US 
-SET Text = 'Overpowering defensive ship. Only Korea may build it. High [ICON_STRENGTH] Combat Strength, and more effective against other melee naval units. Moves slowly in Deep Ocean.'
+SET Text = 'Overpowering defensive ship. Only Korea may build it. High [ICON_STRENGTH] Combat Strength, and more effective against other Naval Melee Units. Moves slowly in deep Ocean.'
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_HELP';
 
 -- Horse Archer
 UPDATE Language_en_US 
-SET Text = 'Terrifying Classical era ranged unit. Only the Huns may build it. Does not require [ICON_RES_HORSE] Horses, unlike the Skirmisher it replaces. If all the unit''s moves are used without attacking, attacks a valid target automatically.'
+SET Text = 'Terrifying Classical Era Ranged Unit. Only the Huns may build it. Does not require [ICON_RES_HORSE] Horses, unlike the Skirmisher it replaces. If all the Unit''s [ICON_ARROW_RIGHT] Movement Points are used without attacking, attacks a valid target automatically.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_HUN_HORSE_ARCHER';
 
 UPDATE Language_en_US 
@@ -110,7 +110,7 @@ WHERE Tag = 'TXT_KEY_UNIT_VENETIAN_GALLEASS_STRATEGY';
 ------------------------------
 -- Wat
 UPDATE Language_en_US
-SET Text = 'Reduces enemy spy stealing rate by 50%. Blocks the disruption of Building and Wonder construction by Spies, and enemy Spies cannot cause Unrest in the City. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City, and reduces [ICON_HAPPINESS_3] Crime. Available earlier'
+SET Text = 'Reduces Enemy Spy Stealing Rate by 50%. Blocks the disruption of Building and Wonder construction by Spies, and enemy Spies cannot cause Unrest in the City. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City, and reduces [ICON_HAPPINESS_3] Crime. Available earlier'
 WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
 
 ------------------------------
@@ -118,7 +118,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
 ------------------------------
 -- Polder
 UPDATE Language_en_US 
-SET Text = 'A Polder can be built on tiles with access to fresh water or on marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy units entering a tile with a Polder lose all remaining movement as if crossing a river. Provides additional yields once later techs are researched.'
+SET Text = 'A Polder can be built on tiles with access to Fresh Water or on Marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy Units entering a tile with a Polder lose all remaining [ICON_ARROW_RIGHT] Movement Points as if crossing a River. Provides additional yields once later Technologies are researched.'
 WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP';
 
 UPDATE Language_en_US 
@@ -127,14 +127,14 @@ WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT';
 
 INSERT INTO Language_en_US
 			(Tag,							Text)
-VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'Constructs a Polder, which increases [ICON_FOOD] Food,  [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy units entering a tile with a Polder lose all remaining movement.');
+VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'Constructs a Polder, which increases [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy Units entering a tile with a Polder lose all remaining movement.');
 
 ------------------------------
 -- UA Texts
 ------------------------------
 -- Druidic Lore
 UPDATE Language_en_US
-SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion do not generate or receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if city adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] GMP in your [ICON_CAPITAL] Capital after you found a Pantheon, and in Holy City for every religious milestone.'
+SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion do not generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if City adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] GMP in your [ICON_CAPITAL] Capital after you found a Pantheon, and in Holy City for every religious milestone.'
 WHERE Tag = 'TXT_KEY_TRAIT_FAITH_FROM_NATURE';
 
 -- Great Andean Road
