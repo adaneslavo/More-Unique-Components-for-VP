@@ -8,7 +8,7 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>Does not require [ICON_RES_HORSE] Horses.[NEWLINE][NEWLINE]+10% [ICON_PRODUCTION] Production when constructing Buildings in this City.[NEWLINE]+3 [ICON_FOOD] Food to Nearby Farms.[NEWLINE]+3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Nearby Pastures.[NEWLINE]+1 [ICON_FOOD] Food to Plains tiles near the City.</Text>
+			<Text>+10% [ICON_PRODUCTION] Production when constructing Buildings in this City.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food to Plains Tiles near the City. +3 [ICON_FOOD] Food to Nearby Farms. +3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Nearby Pastures.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production and can help your City grow quickly, especially when surrounded by plains and pastures.</Text>
@@ -50,7 +50,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_HELP">
 			<Text>
-				Gain +25 [ICON_RESEARCH] Science as an intant boost whenever a building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and +100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite building. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				Gain +25 [ICON_RESEARCH] Science as an instant boost whenever a Building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and +100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite building. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_STRATEGY">
@@ -110,7 +110,7 @@
 			<Text>Elephant Camp</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP">
-			<Text>+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production on all Forests worked by this City, and +1 [ICON_CULTURE] Culture to Lumber Mills and Logging Camps[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resource imported from City-State Allies.  +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture as an instant boost every time a City State gifts a unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this city along Trade Routes inside your civilization.</Text>
+			<Text>+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production to all Forests worked by this City, and +1 [ICON_CULTURE] Culture to Lumber Mills and Logging Camps.[NEWLINE]Nearby [ICON_RES_IVORY] Ivory: +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture as an instant boost every time a City State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY">
 			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills and logging camps, and gives Faith from Ivory. [NEWLINE][NEWLINE]City-State gifts, both Strategic Resources and Units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
@@ -138,7 +138,7 @@
 			<Text>Unique Swedish replacement for the Baths. In addition to the bonuses of the Baths, the Bastu provides bonuses for lakes and tundra. Science and Culture is generated whenever a citizen is born, and extra Food is generated during Golden Ages. Unlike the Baths, the Bastu does not require a river,</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_HELP">
-			<Text>+1 [ICON_RESEARCH] Science to Lake and Tundra Tiles. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture to Temples, Amphitheaters and Gardens in this City. +10% [ICON_CULTURE] Culture and [ICON_FOOD] Food in the City during [ICON_GOLDEN_AGE]Golden Ages. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]Does not require a river, or any prerequisite buildings.</Text>
+			<Text>+1 [ICON_RESEARCH] Science to Lake and Tundra Tiles. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture to Temples, Amphitheaters and Gardens in this City. +10% [ICON_CULTURE] Culture and [ICON_FOOD] Food in the City during [ICON_GOLDEN_AGE]Golden Ages.[NEWLINE][NEWLINE]Does not require a River, or any prerequisite Buildings.</Text>
 		</Row>
 		
 		<!-- Black Tug -->
@@ -159,7 +159,7 @@
 			<Text>Black Tug</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_HELP">
-			<Text>Aggressive and menacing Medieval Era Melee Mounted Unit. Only the Mongols may build it. It is stronger against Wounded Units or while standing on Pillaged Tiles. Gains additional XP for pillaging.</Text>
+			<Text>Aggressive and menacing Medieval Era Mounted Melee Unit. Only the Mongols may build it. It is stronger against Wounded Units or while standing on Pillaged Tiles. Gains additional XP for pillaging.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_STRATEGY">
 			<Text>Black Tug is a Mongolian unique unit, replacing the Knight. It is stronger and deals more damage to wounded units, and while standing on pillaged tiles. As mounted unit, the Black Tug is vulnerable to Pikemen.</Text>
