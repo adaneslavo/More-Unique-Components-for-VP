@@ -8,7 +8,7 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>Does not require [ICON_RES_HORSE] Horses.[NEWLINE][NEWLINE]+10% [ICON_PRODUCTION] Production when constructing Buildings in this City.[NEWLINE]+3 [ICON_FOOD] Food to Nearby Farms.[NEWLINE]+3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Nearby Pastures.[NEWLINE]+1 [ICON_FOOD] Food to Plains Tiles near the City.</Text>
+			<Text>+10% [ICON_PRODUCTION] Production when constructing Buildings in this City.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food to Plains Tiles near the City. +3 [ICON_FOOD] Food to Nearby Farms. +3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Nearby Pastures.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production and can help your City grow quickly, especially when surrounded by plains and pastures.</Text>
