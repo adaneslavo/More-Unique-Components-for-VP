@@ -110,7 +110,7 @@ WHERE Tag = 'TXT_KEY_UNIT_VENETIAN_GALLEASS_STRATEGY';
 ------------------------------
 -- Wat
 UPDATE Language_en_US
-SET Text = 'Reduces Enemy Spy Stealing Rate by 50%. Blocks the disruption of Building and Wonder construction by Spies, and enemy Spies cannot cause Unrest in the City. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City, and reduces [ICON_HAPPINESS_3] Crime. Available earlier'
+SET Text = 'Reduces Enemy [ICON_SPY] Spy Stealing Rate by 50%. Blocks the disruption of Building and Wonder construction by Spies, and enemy Spies cannot cause Unrest in the City. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City, and reduces [ICON_HAPPINESS_3] Crime. Available earlier'
 WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
 
 ------------------------------
