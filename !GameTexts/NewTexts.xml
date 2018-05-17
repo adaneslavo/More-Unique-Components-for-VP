@@ -1227,7 +1227,7 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG_HELP">
-			<Text>The Kampong can be built by [ICON_WORKER] Embarked Workers on Coastal Tiles, and cannot be built next to another Kampong.[NEWLINE][NEWLINE]Each Kampong yields [ICON_FOOD] Food and [ICON_CULTURE] Culture, and adjacent Fishing Boats receive +1 [ICON_PRODUCTION] Production.</Text>
+			<Text>The Kampong can be built by [ICON_WORKER] Embarked Workers on Coastal and Lake Tiles, and not next to another Kampong.[NEWLINE][NEWLINE]Each Kampong yields [ICON_FOOD] Food and [ICON_CULTURE] Culture, and adjacent Fishing Boats receive +1 [ICON_PRODUCTION] Production.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_INDONESIA_KAMPONG">
 			<Text>Build a [LINK=IMPROVEMENT_INDONESIA_KAMPONG]Kampong[\LINK]</Text>
