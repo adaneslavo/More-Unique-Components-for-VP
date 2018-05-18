@@ -1352,10 +1352,10 @@
 			<Text>Klepht</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_HELP">
-			<Text>Unique Greek Industrial Era Unit. This Unit is slightly weaker than the Gatling Gun it replaces and does not have the [COLOR_RED]Covering Fire I[ENDCOLOR] Promotion. Moves quickly through Hills and can move after attacking. Receives the [COLOR_POSITIVE_TEXT]Philhellenism[ENDCOLOR] Promotion for free.</Text>
+			<Text>A quick and elusive guerilla fighter. Only Greece may build it. slightly weaker than the Gatling Gun it replaces and does not have the [COLOR_RED]Covering Fire I[ENDCOLOR] Promotion. Moves quickly through Hills and can move after attacking. Receives the [COLOR_POSITIVE_TEXT]Philhellenism[ENDCOLOR] Promotion for free.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_STRATEGY">
-			<Text>A quick and elusive guerilla fighter. The Klepht is not as powerful as the Gatling Gun it replaces, but can move quickly through hills, even after attacking. This unit also gains gold and production for every city-state ally every time it attacks a unit.</Text>
+			<Text>The Klepht is not as powerful as the Gatling Gun it replaces, but can move quickly through hills, even after attacking. This unit also gains gold and production for every city-state ally every time it attacks a unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_TEXT">
 			<Text>
