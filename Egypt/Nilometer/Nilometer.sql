@@ -45,7 +45,7 @@ FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_WATERMILL';
 
 INSERT INTO Building_YieldChanges
 			(BuildingType,					YieldType,			Yield)
-VALUES		('BUILDING_EGYPT_NILOMETER',	'YIELD_CULTURE',	2);
+VALUES		('BUILDING_EGYPT_NILOMETER',	'YIELD_CULTURE',	1);
 --------------------------------	
 -- Building_YieldChangesPerPop
 --------------------------------	
