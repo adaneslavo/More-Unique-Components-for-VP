@@ -14,6 +14,7 @@ v32:
 	- Intihuatana ==> now bonus +1fa to Scientists is local not global,
 	- Iron Chariot ==> decreased number of iterations made in lua (countries withou IC will not be checked),
 				   ==> added imported resources to the variables (now if you have 6 Iron (4 yours and 2 imported) and 5 Iron Chariots you will get bonus),
+	- Milometer ==> reduced base culture to +1
 	- Riad ==> deleted culture gain commented code and text mentioning (1c per 5),
 	- Sambadrome ==> increased culture modifier to 10% (now consistent with data in the main thread),
 	- almost all units received missing PurchaseCooldown value,
