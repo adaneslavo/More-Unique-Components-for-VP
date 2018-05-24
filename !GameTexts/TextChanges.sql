@@ -24,15 +24,6 @@ UPDATE Language_en_US
 SET Text = ' The Longbowman has a greater Range than the Crossbowman, allowing it to attack Enemies three hexes away, often destroying them before they can strike back. Longbows also are more effective against Mounted opponents, thanks to their Agincourt Promotion. Like other Ranged Units, Longbowmen are vulnerable to Melee attack.'
 WHERE Tag = 'TXT_KEY_UNIT_ENGLISH_LONGBOWMAN_STRATEGY';
 
--- Dromon
-UPDATE Language_en_US 
-SET Text = 'Unique naval unit of the Byzantines, replacing the Penteconter. Allows early naval supremacy. Works better in groups because of its stacking damage. Rush to logistics and reign fire down on your enemies.'
-WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_STRATEGY';
-
-UPDATE Language_en_US 
-SET Text = 'A powerful early Naval Ranged Unit. Only the Byzantines may build it. Each attack by a Dromon inflicts an additional 10 damage at the beginning of the enemy unit''s turn, up to 3 attacks. Starts with [COLOR_POSITIVE_TEXT]Splash Damage I[ENDCOLOR] Promotion.'
-WHERE Tag = 'TXT_KEY_UNIT_BYZANTIUM_DROMON_HELP';
-
 -- Carolean
 UPDATE Language_en_US 
 SET Text = 'Strong frontline Land Unit specializing in long marches far from Swedish land. Only Sweden may build it. Starts with [COLOR_POSITIVE_TEXT]March[ENDCOLOR], gets additional bonuses from [ICON_GREAT_GENERAL] Great Generals and deals AOE damage to Enemy Units on kills.'
@@ -84,7 +75,7 @@ SET Text = 'The Turtle Ship is an early incarnation of the Ironclad for tactical
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_STRATEGY';
 
 UPDATE Language_en_US 
-SET Text = 'Overpowering defensive ship. Only Korea may build it. High [ICON_STRENGTH] Combat Strength, and more effective against other Naval Melee Units. Moves slowly in deep Ocean.'
+SET Text = 'Overpowering defensive ship. Only Korea may build it. Has higher [ICON_STRENGTH] Combat Strength, and is more effective against other Naval Melee Units. Moves slowly in deep Ocean.'
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_HELP';
 
 -- Horse Archer

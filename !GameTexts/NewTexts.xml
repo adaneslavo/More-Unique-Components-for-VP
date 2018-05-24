@@ -50,7 +50,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_HELP">
 			<Text>
-				Gain +25 [ICON_RESEARCH] Science as an instant boost whenever a Building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and +100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite building. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				Gain +25 [ICON_RESEARCH] Science as an instant boost whenever a Building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and +100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite building. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_STRATEGY">
@@ -266,7 +266,7 @@
 			<Text>Chaebol</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL_HELP">
-			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 10%.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +2% [ICON_GREAT_PEOPLE] Great Person Points (GPP) for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]Each Chaebol gains +2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol on Empire.</Text>
+			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 10%.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +2% [ICON_GREAT_PEOPLE] Great People Points for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]Each Chaebol gains +2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL_STRATEGY">
 			<Text>The Chaebol is the unique Stock Exchange replacement for South Korea. In addition to the normal bonuses of a Stock Exchange, the Chaebol boosts the production of Factories in Cities where the Chaebol is built. Chaebol produce additional Gold and increase the production of Great People for every International Trade Route the Empire controls. In addition, every Chaebol increases the Gold, Culture and Science of every other Chaebol in the empire; the more you build, the more they produce.</Text>
@@ -401,7 +401,7 @@
 			<Text>Dromon</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BYZANTIUM_DROMON_HELP">
-			<Text>Unique Classical Era Unit. Only the Byzantines may build it. Receives the [COLOR_POSITIVE_TEXT]Splash Damage I[ENDCOLOR] Promotion for free and units struck by the Dromon take an additional 10 damage on their turn.</Text>
+			<Text>A powerful early Naval Ranged Unit. Only the Byzantines may build it. Each attack by a Dromon inflicts an additional 10 damage at the beginning of the enemy unit''s turn, up to 3 attacks. Starts with [COLOR_POSITIVE_TEXT]Splash Damage I[ENDCOLOR] Promotion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BYZANTIUM_DROMON_STRATEGY">
 			<Text>Bring flaming death to your enemies. Stronger than the Penteconter it replaces, and deals additional burning damage to both the target unit and any enemies near the Dromon. It cannot end its turn in Deep Ocean tiles outside of the city borders.</Text>
@@ -571,7 +571,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_HELP">
 			<Text>
-				+30% [ICON_GREAT_PEOPLE] GPP in the City. +15 [ICON_CULTURE] Culture in the City as an instant boost whenever a [ICON_CITIZEN] Citizen is born and +50 [ICON_GOLDEN_AGE] Golden Age Points whenever a Policy is unlocked, scaling with Era. Gain 15% of the City's [ICON_FOOD] Food and [ICON_RESEARCH] Science output whenever you invest in a Building on Empire.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science to all Monuments and +2 [ICON_FOOD] Food to all Shrines.[NEWLINE][NEWLINE]Contains 2 slot for [ICON_GREAT_WORK] Great Works of Writing.[NEWLINE][NEWLINE]Requires Monument in City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.[NEWLINE][NEWLINE]+4 [ICON_FOOD] Food when themed.
+				+30% [ICON_GREAT_PEOPLE] GPP in the City. +15 [ICON_CULTURE] Culture in the City as an instant boost whenever a [ICON_CITIZEN] Citizen is born and +50 [ICON_GOLDEN_AGE] Golden Age Points whenever a Policy is unlocked, scaling with Era. Gain 15% of the City's [ICON_FOOD] Food and [ICON_RESEARCH] Science output whenever you invest in a Building on Empire.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science to all Monuments and +2 [ICON_FOOD] Food to all Shrines.[NEWLINE][NEWLINE]Contains 2 slot for [ICON_GREAT_WORK] Great Works of Writing.[NEWLINE][NEWLINE]Requires Monument in City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.[NEWLINE][NEWLINE]+4 [ICON_FOOD] Food when themed.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_STRATEGY">
@@ -638,7 +638,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_HELP">
 			<Text>
-				+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% [ICON_GREAT_PEOPLE] Great People rate in the city, increased to +10% during 'We Love the King' Day.[NEWLINE][NEWLINE]Whenever a citizen is born, gain +15 [ICON_GREAT_PEOPLE] points toward a Great Person, scaling with era.
+				+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% [ICON_GREAT_PEOPLE] Great People Points in the City, increased to +10% during [ICON_HAPPINESS_1] 'We Love the King' Day.[NEWLINE][NEWLINE]Whenever a [ICON_CITIZEN] Citizen is born, gain +15 [ICON_GREAT_PEOPLE] points toward a [ICON_GREAT_PEOPLE] Great Person, scaling with Era.
 			</Text>
 		</Row>
 		
@@ -815,7 +815,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_HELP">
 			<Text>
-				An Incredibly powerful unit capable of smashing cities to pieces. Only the Ottomans may build it. Does very high damage to cities and naval units, but is less useful against land units compared to other siege weapons.[NEWLINE][NEWLINE]Deals 20 damage to itself on attack, but heals an additional 10 HP when in [COLOR_POSITIVE_TEXT]friendly territory[ENDCOLOR].[NEWLINE][NEWLINE]Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]
+				An Incredibly powerful Unit capable of smashing Cities to pieces. Only the Ottomans may build it. Does very high damage to Cities and Naval Units, but is less useful against Land Units compared to other Siege Weapons.[NEWLINE][NEWLINE]Deals 20 damage to itself on attack, but heals an additional 10 HP when in Friendly Territory.[NEWLINE][NEWLINE]Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_STRATEGY">
@@ -837,7 +837,7 @@
 			<Text>Goedendag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_HELP">
-			<Text>A cheap and effective unit in groups. Only the Dutch may build it. Provides a combat boost to all units adjacent to it and has increased [ICON_STRENGTH] Strength when standing on a Luxury Resource tile. [NEWLINE][NEWLINE]Stagnates growth in cities while built. Excess food contributes to production.</Text>
+			<Text>A cheap and effective Unit in groups. Only the Dutch may build it. Provides a combat boost to all Units adjacent to it and has increased [ICON_STRENGTH] Combat Strength when standing on a Luxury Resource Tile. [NEWLINE][NEWLINE]Stagnates Growth in Cities while built. Excess [ICON_FOOD] Food contributes to [ICON_PRODUCTION] Production.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_STRATEGY">
 			<Text>The Goedendag is an odd unit, but effective in groups. While effective on their own against cavalry, the Goedendag provides increased attack against all units adjacent to it, and has additional combat strength if standing on a luxury resource. Goedendag's do not boost their own combat strength, however, so they must be adjacent to another Goedendag to receive the benefit of their own promotion. These units can be built very quickly, so an army can be raised in the event of a surprise war.</Text>
@@ -916,10 +916,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
 			<Text>
-				+20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during "We Love the King Day" and a "We Love the King Day" begins immediately on Completion.[NEWLINE][NEWLINE]
-				At the beginning of every new Era, 1 turn of Resistance occurs in this City, after which a "We Love the King Day" is triggered across the Empire.[NEWLINE][NEWLINE]
-				All Arenas gain +4 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire. 
-				[NEWLINE][NEWLINE]Requires Arena in City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				+20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, 1 turn of [ICON_RESISTANCE] Resistance occurs in this City, after which a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +4 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]Requires Arena in City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
@@ -950,7 +947,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP">
 			<Text>
-				Does not require a Temple. Free Temple in City, and triggers a [ICON_GOLDEN_AGE] Golden Age on Completion.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +2 [ICON_CULTURE] Culture to all Temples, +2 [ICON_CULTURE] Culture to all Barracks, and +2 [ICON_FOOD] Food to all Floating Gardens on Empire. Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music, and reduces [ICON_HAPPINESS_3] Religious Unrest. [NEWLINE][NEWLINE]Whenever you enter a [ICON_GOLDEN_AGE] Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith and +3 XP for Units trained in the City (max +30).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				Does not require a Temple. Free Temple in City, and triggers a [ICON_GOLDEN_AGE] Golden Age on Completion.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +2 [ICON_CULTURE] Culture to all Temples, +2 [ICON_CULTURE] Culture to all Barracks, and +2 [ICON_FOOD] Food to all Floating Gardens on Empire. Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music, and reduces [ICON_HAPPINESS_3] Religious Unrest. [NEWLINE][NEWLINE]Whenever you enter a [ICON_GOLDEN_AGE] Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith and +3 XP for Units trained in the City (max +30).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
 			</Text>
 		</Row>
 
@@ -1044,7 +1041,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_HELP">
 			<Text>
-				This Zulu unique Great Person replaces the Great General. Aside from the ability to boost nearby troops and construct citadels, Units stacked with an InDuna gain bonus experience when attacking. Expending an InDuna gives bonus experience to a stacked unit, and immediately deals 30 damage to adjacent enemy units.
+				This Zulu Unique Great Person replaces the Great General. Aside from the ability to boost nearby troops and construct Citadels, Units stacked with an InDuna gain bonus XP when attacking. Expending an InDuna gives bonus XP to a Stacked Unit, and immediately deals 30 damage to adjacent Enemy Units.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_TEXT">
@@ -1704,7 +1701,7 @@
 				+1 [ICON_GOLD] and +1 [ICON_CULTURE] to Plantations,[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_RESEARCH] to Lumbermills,[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_CULTURE] to Logging Camps,[NEWLINE]
-				+1 [ICON_GOLD] and +1 [ICON_PEACE] to Fishing Boats.[NEWLINE][NEWLINE]Each Oppidum on Empire increases the length of [ICON_HAPPINESS_1] "We Love the King Days" from Trade Missions conducted by [ICON_GREAT_MERCHANT] Great Merchants.
+				+1 [ICON_GOLD] and +1 [ICON_PEACE] to Fishing Boats.[NEWLINE][NEWLINE]Each Oppidum on Empire increases the length of [ICON_HAPPINESS_1] 'We Love the King' Days from Trade Missions conducted by [ICON_GREAT_MERCHANT] Great Merchants.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
@@ -2013,7 +2010,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
 			<Text>
-				+33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the Military Unit Supply Cap from Population in the City by 10%.+25% border growth rate in city. Whenever the city borders expand, gain 10 [ICON_FOOD] Food and [ICON_CULTURE] Culture, scaling with Era.
+				+33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population in the City by 10%. [NEWLINE][NEWLINE]+25% Border Growth Rate in City. Whenever the City Borders expand, gain 10 [ICON_FOOD] Food and [ICON_CULTURE] Culture, scaling with Era.
 				[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.
 				[NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.
 				[NEWLINE]Nearby [ICON_RES_COW] Cattle: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.
@@ -2469,7 +2466,7 @@
 			<Text>Tersane</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_HELP">
-			<Text>When a Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the civ based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Melee Units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from Coast and Ocean Tiles, +2 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production from Sea Resources worked by this City.</Text>
+			<Text>When a Sea Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Melee Units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from Coast and Ocean Tiles, +2 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production from Sea Resources worked by this City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_STRATEGY">
 			<Text>Tersane is the unique Harbor replacement of the Ottomans. In addition to the bonuses of a Harbor, the Tersane increases the yields of work boats. The building also greatly improves production towards trade and military vessels, greatly improving the Ottoman's naval capabilities. All Melee Ships built in this city also receive the Prize Ships promotion, allowing them to capture defeated enemy units.</Text>
@@ -2504,7 +2501,7 @@
 			<Text>
 				Unique replacement for the Heroic Epic, available earlier. Grants a free Armory in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. +2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.
 				[NEWLINE][NEWLINE]All Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and new Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. All Land Melee Units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] Promotion.
-				[NEWLINE][NEWLINE][NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own. Only Germany may build it.
+				[NEWLINE][NEWLINE][NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own. Only Germany may build it.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_CHAPTER">
@@ -2548,7 +2545,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_HELP">
 			<Text>
-				Does not require a University in the City. Provides a free [ICON_GREAT_SCIENTIST] Great Scientist and a University on Completion. All Universities gain +2 [ICON_GOLD] Gold. +50 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				Does not require a University in the City. Provides a free [ICON_GREAT_SCIENTIST] Great Scientist and a University on Completion. All Universities gain +2 [ICON_GOLD] Gold. +50 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY">
@@ -2564,7 +2561,7 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text>Available earlier. Reduces [ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. Markets, Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great Person Generation and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire, up to a maximum of 10 traded resources.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. Reduces [ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. Markets, Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great People Points and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire, up to a maximum of 10 traded Resources.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
 			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier than the Bank, and provides bonuses to Great Person Generation and defense for every luxury imported or exported in the Empire. Be sure to keep peaceful and lucrative relationships with your neighbors; a surprise war with a trading partner could suddenly weaken your city's defenses!</Text>
@@ -2591,7 +2588,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP">
 			<Text>
-				+3 [ICON_GOLD] Gold to Constabularies and +3 [ICON_FOOD] Food to Arsenals in this City, and +2 [ICON_CULTURE] Culture to all Castles on Empire.[NEWLINE][NEWLINE]-25% [ICON_SPY] Spy Stealing Rate on Empire. +1 [ICON_HAPPINESS_1] Happiness on Empire for every [ICON_SPY] Enemy Spy killed by the Player.[NEWLINE][NEWLINE]Contains 3 slots for [ICON_GREAT_WORK] Great Works of Art or Artifact, and comes with one free [ICON_GREAT_WORK] Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.[NEWLINE][NEWLINE]Requires a Castle in the City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				+3 [ICON_GOLD] Gold to Constabularies and +3 [ICON_FOOD] Food to Arsenals in this City, and +2 [ICON_CULTURE] Culture to all Castles on Empire.[NEWLINE][NEWLINE]-25% [ICON_SPY] Spy Stealing Rate on Empire. +1 [ICON_HAPPINESS_1] Happiness on Empire for every [ICON_SPY] Enemy Spy killed by the Player.[NEWLINE][NEWLINE]Contains 3 slots for [ICON_GREAT_WORK] Great Works of Art or Artifact, and comes with one free [ICON_GREAT_WORK] Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.[NEWLINE][NEWLINE]Requires a Castle in the City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY">
@@ -2603,7 +2600,7 @@
 				[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City. +2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% [ICON_SPY] Spy stealing rate on Empire. +1 [ICON_HAPPINESS_1] Happiness on Empire for every enemy spy killed.
 				[NEWLINE][NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.
 				[NEWLINE][NEWLINE]Available earlier, requires Castle in City.
-				[NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.
+				[NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_WHITE_TOWER_NATIONAL">
@@ -2627,7 +2624,7 @@
 			<Text>Xiafan Guanjun</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_HELP">
-			<Text>Sturdy Renaissance era ranged naval unit. Only China may build it. Generates [ICON_INFLUENCE] Influence every turn when stationed in a City-State's borders. Has the [COLOR_POSITIVE_TEXT]Broadside[ENDCOLOR] promotion for free. Can enter rival territory.</Text>
+			<Text>Sturdy Renaissance Era Naval Ranged Unit. Only China may build it. Generates [ICON_INFLUENCE] Influence every turn when stationed in a City-State's borders. Has the [COLOR_POSITIVE_TEXT]Broadside[ENDCOLOR] Promotion for free. Can enter Rival Territory.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_STRATEGY">
 			<Text>The Xiafan Guanjun is a Chinese unique unit. It is much sturdier than the Frigate it replaces, and is available earlier. You can use your Xiafan Guanjun to passively bring city-states under your sway, or take advantage of its bonus against cities and dominate coastal empires.</Text>
@@ -2680,7 +2677,7 @@
 			<Text>Yassa Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_HELP">
-			<Text>Can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. Slightly reduces [ICON_HAPPINESS_3] Crime, Boredom, Illiteracy, and Religious Unrest.[NEWLINE][NEWLINE]Provides +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Units. Conquering Enemy City starts 10-turn long [ICON_HAPPINESS_1] "We Love the King Day".</Text>
+			<Text>Can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. Slightly reduces [ICON_HAPPINESS_3] Crime, Boredom, Illiteracy, and Religious Unrest.[NEWLINE][NEWLINE]Provides +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Units. Conquering Enemy City starts 10-turn long [ICON_HAPPINESS_1] 'We Love the King' Day.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_STRATEGY">
 			<Text>Unique Mongolian replacement for the Courthouse. Can be built in non-occupied Cities. In addition elimination Unhappiness in Occupied Cities, this building reduces unhappiness from Crime, Illiteracy, Boredom and Religious Tensions, and increases production of all Land-based military units, except Unmounted Melee. Conquering Cities triggers a small WLTKD. It is also slightly cheaper than the Courthouse.</Text>

@@ -4,7 +4,7 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v33:
-- ???
+- text adjustments.
 
 v32:
 - fixes:
