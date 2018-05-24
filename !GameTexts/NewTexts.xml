@@ -326,7 +326,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_HELP">
 			<Text>
-				Unique Naval Unit specializing in disrupting maritime trade. Only Morocco may build it. Can enter Rival Territory and ignores Enemy Zone of Control. Gain [ICON_FOOD] Food and [ICON_PRODUCTION] Production Whenever a Corsair Kills a Units, Pillages a Resource, or Plunders a [ICON_INTERNATIONAL_TRADE] Trade Route.
+				Naval Unit specializing in disrupting maritime trade. Only Morocco may build it. Can enter Rival Territory and ignores Enemy Zone of Control. Gain [ICON_FOOD] Food and [ICON_PRODUCTION] Production whenever a Corsair Kills a Units, Pillages a Resource, or Plunders a [ICON_INTERNATIONAL_TRADE] Trade Route.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA">
@@ -357,7 +357,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_HELP">
 			<Text>
-				Unique Ancient Era Unit. Only India may build it. Slightly stronger than Archer which it replaces. Gains [ICON_CULTURE] Culture and bonus XP for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled vs Barbarians.
+				Potent early Archery Unit. Only India may build it. Slightly stronger than Archer which it replaces. Gains [ICON_CULTURE] Culture and bonus XP for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled vs Barbarians.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_STRATEGY">
@@ -925,9 +925,9 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_TEXT">
-			<Text>The Hippodrome was a chariot racing track and the beating heart of Byzantine social and political life. Located immediately next to the palace, the track was built by Constantine shortly after moving his capital to the city. The track was U-shaped, with ten monuments lining the center. Though slightly smaller in footprint than the Circus Maximus in Rome, the Hippodrome was adorned with art and treasures from all corners of the empire.[NEWLINE][NEWLINE]
-			Not just a pastime of the rich, the chariot races become the one place where the common people could see and interact with the emperor in a single venue. Commoners took this opportunity to begin chants for political or religious reforms during sporting events. Four political parties, or demes, existed within Constantinople which each sponsored a different racing team: The Blues, the Whites, the Greens and the Reds. Enormous sums of money were wagered on the outcomes of these races, which became further heated by the religious, societal, and political leanings which each team came to represent. One such feud in particular would come to overshadow them all: the Nika riots.[NEWLINE][NEWLINE] 
-			During the reign of Justinian I (an ardent supporter of the Blues), a dispute arose concerning the conviction of two hooligans, arrested for murder from a prior riot. The sentencing of these men unified the Blues and the Greens against Justinian in a terrible mob, and disgruntled nobles seized the opportunity to try to depose him as revenge for Justinian’s new taxes. Though at first he considered fleeing, Justinian rallied his loyal generals to corral the rioters into the Hippodrome, where they were butchered by royal guardsmen and Gothic mercenaries. By the time the Nika riots had ended, half of Constantinople had been burned down and 30,000 rioters and conspirators lay dead -- the most violent riot in world history.</Text>
+			<Text>Hippodromes were a chariot racing tracks and the beating heart of Byzantine social and political life. Though slightly smaller in footprint than the Circus Maximus in Rome, there was no equal to the Hippodrome of Constantinople's grandeur, adorned with art and treasures from all corners of the empire. The Constantinople Hippodrome was built by Constantine himself shortly after he moved his capital to the city. The track was placed adjacent to the palace, taking the shape of a massive 'U', with ten monuments lining its center.[NEWLINE][NEWLINE]
+			Not just a pastime of the rich, the chariot races became the one place where the common people could see and interact with the emperor in a single venue. Commoners took the opportunity to begin chants for political or religious reforms during sporting events. Four political parties, or demes, existed within Constantinople which each sponsored a different racing team: The Blues, the Whites, the Greens and the Reds. Enormous sums of money were wagered on the outcomes of these races, which became further heated by the religious, societal, and political leanings which each team came to represent. One such feud in particular would come to overshadow them all: the Nika riots.[NEWLINE][NEWLINE] 
+			During the reign of Justinian I (an ardent supporter of the Blues), a dispute arose concerning the conviction of two hooligans, arrested for murder from a prior riot. The sentencing of these men unified the Blues and the Greens against Justinian in a terrible mob, and disgruntled nobles seized the opportunity to try to depose him as revenge for Justinian’s new taxes. Though at first he considered fleeing, Justinian rallied his loyal generals to corral the rioters into the Hippodrome, where they were butchered by royal guardsmen and Gothic mercenaries. By the time the Nika riots had ended, half of Constantinople had been burned down and 30,000 people were killed -- the deadliest riot in world history.</Text>
 		</Row>
 
 		<!-- Huey Teocalli -->
@@ -1324,7 +1324,7 @@
 			<Text>Sabum Kibitum</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BABYLON_KIBITUM_HELP">
-			<Text>Unique Ancient Era Unit. Only the Babylonians may build it. This unit is stronger than the Spearman it replaces. Receives additional [ICON_STRENGTH] Combat Strength for every few levels and gains more XP from fights.</Text>
+			<Text>Front-line Unit which grows more powerful with experience. Only Babylon may build it. This unit is stronger than the Spearman it replaces. Receives additional [ICON_STRENGTH] Combat Strength for every few levels and gains more XP from fights.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BABYLON_KIBITUM_STRATEGY">
 			<Text>A soldier to stand the test of time. The Khibitum is not the strongest unit in its era, but its true strength lies in how it gains more power from experience than normal units. Keep these soldiers alive, and they will form an indispensable core for your army.</Text>
@@ -1391,7 +1391,7 @@
 			<Text>Koa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_HELP">
-			<Text>Unique Classical Era Unit. Only Polynesia may build it. Slightly stronger than the Scout it replaces, and starts with the [COLOR_GREEN]Amphibious[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]After attack, defending Unit receives additional damage at the beginning of its turn, stacking up to 3 times.</Text>
+			<Text>Both a strong scout and front-line Unit. Only Polynesia may build it. Slightly stronger than the Scout it replaces, and starts with the [COLOR_GREEN]Amphibious[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]After attack, defending Unit receives additional damage at the beginning of its turn, stacking up to 3 times.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_STRATEGY">
 			<Text>The Koa is an effective early scout, able to hold its own against barbarians. It is stronger than the Scout, and can fight equally well across rivers and while embarked. This unit also deals an additional 10 'bleed' damage to enemies it attacks at the beginning of the enemy's turn, making them effective at clearing barbarians and preventing healing.</Text>
@@ -1584,7 +1584,7 @@
 			<Text>Licorne</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIA_LICORNE_HELP">
-			<Text>Unique Renaissance Era Siege Unit. Only Russia may build it. This Unit is available earlier, has better mobility in Enemy Territory, and can move after attacking. Very effective against enemy Melee and Gunpowder Units.</Text>
+			<Text>Highly mobile Siege Unit. Only Russia may build it. This Unit is available earlier, has better mobility in Enemy Territory, and can move after attacking. Very effective against enemy Melee and Gunpowder Units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIA_LICORNE_STRATEGY">
 			<Text>Licorne is a siege unit that can change the course of battle. Innovative construction allows moving after attacks and no penalty while attacking melee units. Is available earlier than the Field Gun.</Text>
@@ -1823,7 +1823,7 @@
 			<Text>Pancerni</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLAND_PANCERNY_HELP">
-			<Text>A sturdy Mounted Skirmisher. Earns [ICON_PEACE] Faith from each Enemy killed and double the amount from Barbarians. This Unit is stronger in both defense and offense than the Heavy Skirmisher, and has additional protection against Ranged Units.[NEWLINE][NEWLINE]Only the Polish may build it. </Text>
+			<Text>A sturdy Mounted Skirmisher. Only Poland may build it. Earns [ICON_PEACE] Faith from each Enemy killed and double the amount from Barbarians. This Unit is stronger in both defense and offense than the Heavy Skirmisher, and has additional protection against Ranged Units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLAND_PANCERNY_STRATEGY">
 			<Text>Pancerni is the Polish replacement for the Heavy Skirmisher. It has stronger attack and defense than the Heavy Skirmisher, and takes reduced damage from Ranged attacks. The Pancerny also earns Faith for each enemy killed. As mounted unit, the Pancerny is vulnerable to Pikemen.</Text>
@@ -1965,7 +1965,7 @@
 			<Text>Qizilbash</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_HELP">
-			<Text>Potent Mid-game cavalry, focused on economic warfare. Only the Persians may build it. Can always be purchased with [ICON_PEACE] Faith.[NEWLINE][NEWLINE]Generates [ICON_PEACE] Faith, [ICON_GOLD] Gold, and [ICON_GOLDEN_AGE] Golden Age Points every turn spent in Enemy Territory.</Text>
+			<Text>Potent Mid-game cavalry focused on economic warfare. Only Persia may build it. Can always be purchased with [ICON_PEACE] Faith.[NEWLINE][NEWLINE]Generates [ICON_PEACE] Faith, [ICON_GOLD] Gold, and [ICON_GOLDEN_AGE] Golden Age Points every turn spent in Enemy Territory.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_STRATEGY">
 			<Text>The Qizilbash is the Unique Persian replacement for the Lancer. Stronger than the Lancer, the Qizilbash also generates Faith, Gold and Golden Age Points for every turn they spend in enemy territory. This unit can also be purchased with Faith without needing a religious tenet. Maintaining a strong presence in enemy territory allows Persia to generate Faith for more Qizilbash, and trigger more Golden Ages to increase your army's power.</Text>
@@ -2160,7 +2160,7 @@
 			<Text>Seir Morb</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_HELP">
-			<Text>Industrial Era Unit specializing in coastal defense. Only the Siamese may build it. More powerful than the Field Gun it replaces and has a bonus against naval units instead of a penalty, but does not have the [COLOR_RED]Bonus vs Cities[ENDCOLOR] promotion. Deals more damage in a turn the less the unit has moved. Starts with the [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] Promotions.</Text>
+			<Text>Industrial Era Unit specializing in coastal defense. Only Siam may build it. More powerful than the Field Gun it replaces and has a bonus against naval units instead of a penalty, but does not have the [COLOR_RED]Bonus vs Cities[ENDCOLOR] promotion. Deals more damage in a turn the less the unit has moved. Starts with the [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] Promotions.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_STRATEGY">
 			<Text>A powerful coastal defense cannon, the Seir Morb is more powerful than the Field Gun it replaces, especially against naval targets, but deals less damage to cities. The Seir Morb receives a combat boost for every remaining movement point when attacking, so pick a good spot and keep it steady.  Location, Location, Location.</Text>
@@ -2178,7 +2178,7 @@
 			<Text>Suffet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP">
-			<Text>This Zulu unique Great Person replaces the Great General. Aside from the ability to boost nearby troops and construct citadels, this unit disembarks onto water tiles as a [ICON_GREAT_ADMIRAL] Great Admiral. Causes Friendly Units beginning in the same or adjacent tile to ignore Enemy Zone of Control for that turn.</Text>
+			<Text>This Carthaginian unique Great Person replaces the Great General. Aside from the ability to boost nearby troops and construct citadels, this unit disembarks onto water tiles as a [ICON_GREAT_ADMIRAL] Great Admiral. Causes Friendly Units beginning in the same or adjacent tile to ignore Enemy Zone of Control for that turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY">
 			<Text>The Suffet is the unique Great General replacement for Carthage, for Hannibal. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Suffet to supplement your military strategies when waging war against other civilizations.</Text>
@@ -2650,7 +2650,7 @@
 			<Text>Yamato</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JAPAN_YAMATO_HELP">
-			<Text>A powerful naval ranged Unit. Only Japan may build it. Has more range, power and higher defense than the Battleship it replaces. Earns [ICON_GREAT_ADMIRAL] Great Admiral Points on kills.[NEWLINE][NEWLINE]Receive +600 [ICON_GOLDEN_AGE] Golden Age Points whenever a Yamato is constructed.[NEWLINE]Enemies receive +400 [ICON_CULTURE] Culture and +400 [ICON_GOLDEN_AGE] Golden Age Points whenever they destroy a Yamato.</Text>
+			<Text>Powerful naval ranged Unit. Only Japan may build it. Has more range, power and higher defense than the Battleship it replaces. Earns [ICON_GREAT_ADMIRAL] Great Admiral Points on kills.[NEWLINE][NEWLINE]Receive +600 [ICON_GOLDEN_AGE] Golden Age Points whenever a Yamato is constructed.[NEWLINE]Enemies receive +400 [ICON_CULTURE] Culture and +400 [ICON_GOLDEN_AGE] Golden Age Points whenever they destroy a Yamato.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JAPAN_YAMATO_STRATEGY">
 			<Text>The Yamato is the unique Battleship replacement for Japan which is significantly more powerful. It has increased range, attack, strength, defense against attack and earns Great Admiral Points on kills. Use them to dominate the seas in the end game, giving you the edge for a Domination Victory.[NEWLINE][NEWLINE]
@@ -2705,7 +2705,7 @@
 			<Text>Yellow Brow</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_HELP">
-			<Text>Unique Renaissance Era Unit. Only the Shoshone may build it. Has the [COLOR_POSITIVE_TEXT]Anti-Cavalry[ENDCOLOR] Promotion, fights at full strength when damaged, and has double combat bonus from fortifying.</Text>
+			<Text>Tenacious Renaissance Era Unit. Only the Shoshone may build it. Has the [COLOR_POSITIVE_TEXT]Anti-Cavalry[ENDCOLOR] Promotion, fights at full strength when damaged, and has double combat bonus from fortifying.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_STRATEGY">
 			<Text>The Yellow Brow is unmatched for its ability to hold ground. Never one to retreat, the Yellow brow fights at full strength regardless of health, and has double the normal bonus from fortifying. This unit is very effective against enemy cavalry</Text>
