@@ -66,7 +66,7 @@ SET	Text = 'This melee unit is stronger in faraway lands and earns Tourism when 
 WHERE	Tag = 'TXT_KEY_UNIT_BRAZILIAN_PRACINHA_STRATEGY';
 
 UPDATE	Language_en_US
-SET	Text = 'Devastating late-game Infantry. Only Brazil may build it. Pracinha are much faster and start with [COLOR_POSITIVE_TEXT]Amphibious[ENDCOLOR] Promotion. It is also stronger in foreign lands and earns [ICON_TOURISM] Tourism when it defeats an Enemy Unit.'
+SET	Text = 'Devastating late-game Infantry. Only Brazil may build it. Pracinha are much faster and start with [COLOR_POSITIVE_TEXT]Amphibious[ENDCOLOR] Promotion. It is also stronger in Foreign Lands and earns [ICON_TOURISM] Tourism when it defeats an Enemy Unit.'
 WHERE	Tag = 'TXT_KEY_UNIT_HELP_BRAZILIAN_PRACINHA';
 
 -- Turtle Ship
