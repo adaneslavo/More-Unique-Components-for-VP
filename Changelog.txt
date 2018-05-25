@@ -4,6 +4,8 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v33:
+- fixes: 
+	- Madrasah ==> set faith purchase to 20/100, as stated in description (was set to 10/50 only)
 - text adjustments.
 
 v32:
