@@ -1249,9 +1249,9 @@
 			<Text>The Khopesh is the unique Egyptian replacement for the Spearman. It's a strong early unit that has an edge in direct combat. However, unlike the Spearman it replaces, it does not have a combat bonus against mounted units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_HELP">
-			<Text>Strong, front-line Unit of the Ancient Era. Only Egypt may build it. Deals increased damage against heavily damaged Units. Does not have a bonus against Mounted Units. Temporarily reduces the [ICON_STRENGTH] Combat Strength of any Non-mounted Melee Unit that it attacks.</Text>
+			<Text>Strong, front-line Unit of the Ancient Era. Only Egypt may build it. Deals increased damage against heavily damaged Units. Does not have a bonus against Mounted Units.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE">
+<!--		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE">
 			<Text>Skillful</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP">
@@ -1262,7 +1262,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1_HELP">
 			<Text>-30% [ICON_STRENGTH] Combat Strength. Penalty is removed [COLOR_POSITIVE_TEXT]after Fortifying[ENDCOLOR].</Text>
-		</Row>
+		</Row>		-->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY">
 			<Text>Mercy</Text>
 		</Row>
