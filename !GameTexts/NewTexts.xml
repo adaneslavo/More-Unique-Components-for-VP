@@ -184,7 +184,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
 			<Text>
-				Reduces [ICON_HAPPINESS_3] Crime. +25 Experience for all new Units trained in this city.[NEWLINE][NEWLINE]Ranged and Siege Units garrisoned in this City have increased [ICON_RANGED_STRENGTH] Ranged Combat Strength.[NEWLINE][NEWLINE]Requires Walls in this City.
+				Reduces [ICON_HAPPINESS_3] Crime. +25 Experience for all new Units trained in this City.[NEWLINE][NEWLINE]Ranged and Siege Units garrisoned in this City have increased [ICON_RANGE_STRENGTH] Ranged Combat Strength.[NEWLINE][NEWLINE]Requires Walls in this City.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
@@ -357,7 +357,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_HELP">
 			<Text>
-				Potent early Archery Unit. Only India may build it. Slightly stronger than Archer which it replaces. Gains [ICON_CULTURE] Culture and bonus XP for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled vs Barbarians.
+				Potent early Archery Unit. Only India may build it. Slightly stronger than Archer which it replaces. Gains [ICON_CULTURE] Culture and bonus XP for every kill, and gains [ICON_PEACE] Faith and [ICON_CULTURE] Culture when levelling up. [ICON_CULTURE] Culture from kills is doubled against Barbarians.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDIA_DHANURAASHI_STRATEGY">
@@ -967,7 +967,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP">
 			<Text>
-				Durable shock cavalry of the Ancient Era. Only Assyria may build it. Gains [ICON_STRENGTH] Combat Strength for each adjacent Enemy Unit.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses, but gains +2 [ICON_STRENGTH] Combat Strength if Player has sufficient [ICON_RES_HORSE] Horses for all Iron Chariots, and again for [ICON_RES_IRON] Iron. Ends turn if entering rough terrain.
+				Durable shock cavalry of the Ancient Era. Only Assyria may build it. Gains [ICON_STRENGTH] Combat Strength for each adjacent Enemy Unit.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses, but gains +2 [ICON_STRENGTH] Combat Strength if Player has sufficient [ICON_RES_HORSE] Horses for all Iron Chariots, and again for [ICON_RES_IRON] Iron. Ends turn if entering Rough Terrain.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL">
@@ -1509,7 +1509,7 @@
 			<Text>Longship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_HELP">
-			<Text>Early Naval Exploration Unit. Only Denmark may build it. Available earlier, can move after attacking, and has [COLOR_GREEN]Medic I[ENDCOLOR] Promotion. Embarked Civilian Units starting their turn on the same tile as a longship may enter deep ocean.</Text>
+			<Text>Early Naval Exploration Unit. Only Denmark may build it. Available earlier, can move after attacking, and has [COLOR_GREEN]Medic I[ENDCOLOR] Promotion. Embarked Civilian Units starting their turn on the same tile as a longship may enter deep Ocean.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_STRATEGY">
 			<Text>The Danish Longship is an early ship unit which allow Denmark to have early sea control. This allows Denmark to begin scouting the far seas earlier than the other players to prepare future waves of colonization, defend your colonies abroad and provides support to raids with its bonuses to healing at sea and performing hit-and-run tactics.</Text>
@@ -1622,7 +1622,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
 			<Text>
-				+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 20 [ICON_RESEARCH] Science (or 100 for a Great Person purchase), scaling with era.
+				+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 20 [ICON_RESEARCH] Science (or 100 [ICON_RESEARCH] Science for a Great Person purchase), scaling with Era.
 			</Text>
 		</Row>
 		
@@ -1650,7 +1650,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
 			<Text>
-				Can be built on Unfeatured Hills or on source of [ICON_RES_STONE] Stone, and not next to another Monolithic Church. Improves [ICON_RES_STONE] Stone resources[NEWLINE][NEWLINE]Provides [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completing [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR] and adopting [COLOR_POSITIVE_TEXT]an Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
+				Can be built on Unfeatured Hills or on source of [ICON_RES_STONE] Stone, and not next to another Monolithic Church. Improves [ICON_RES_STONE] Stone resources[NEWLINE][NEWLINE]Provides [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completing [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR] and adopting an [COLOR_POSITIVE_TEXT]Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
 				+1 [ICON_CULTURE] for every Ancient Policy Tree,[NEWLINE]
 				+1 [ICON_PEACE] for every Medieval Policy Tree,[NEWLINE]
 				+1 [ICON_RESEARCH] for every Industrial Policy Tree,[NEWLINE]
@@ -1883,7 +1883,7 @@
 			<Text>The Prau is faster and cheaper than the Trireme it replaces and ignores zone of control. It is great for early game scouting and raiding.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_HELP">
-			<Text>Effective early naval scout. Only Indonesia may build it. Available earlier, and faster than the Trireme it replaces, and ignores Enemy Zone of Control.</Text>
+			<Text>Effective early Naval Scout. Only Indonesia may build it. Available earlier, and faster than the Trireme it replaces, and ignores Enemy Zone of Control.</Text>
 		</Row>
 		
 		<!-- Penteconter -->
@@ -2045,10 +2045,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_HELP">
 			<Text>
-				+1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens in this City. All Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]
-				+10% [ICON_PRODUCTION] Production of Diplomatic Units. A free Emissary Unit appears on completion. All [ICON_DIPLOMAT] Great Diplomats gain the [COLOR_GREEN]Reciprocity[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]
-				+1 [ICON_FOOD] Food in City for every City-State Friend, and +2 [ICON_PEACE] Faith for every Ally.[NEWLINE][NEWLINE]
-				+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or Ongoing War.
+				+1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens in this City. All Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+10% [ICON_PRODUCTION] Production of Diplomatic Units. A free Emissary Unit appears on completion. All [ICON_DIPLOMAT] Great Diplomats gain the [COLOR_GREEN]Reciprocity[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food in City for every City-State Friend, and +2 [ICON_PEACE] Faith for every Ally.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or Ongoing War.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_STRATEGY">
@@ -2102,7 +2099,7 @@
 			<Text>Scythed Chariot</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP">
-			<Text>A dangerous Unit on Open Terrain. Only the Celts may build it. This unit is stronger against Archer and Melee Units, has more vision and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]After moving, deals damage to all newly adjacent Enemy Units. Moving into Rough Terrain consumes all movement points.</Text>
+			<Text>A dangerous Unit on Open Terrain. Only the Celts may build it. This unit is stronger against Archer and Melee Units, has more vision and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]After moving, deals damage to all newly adjacent Enemy Units. Moving into Rough Terrain consumes all [ICON_MOVES] Movement Points.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY">
 			<Text>The Scythed Chariot is a Celtic unique unit made for destroying enemy lines. Enemies take damage whenever the Scythed Chariot moves adjacent to them, making this unit deadly in open terrain. Make every move count to maximize damage, but be careful not to leave your Chariots exposed to enemies on their turn. A mounted unit, the Scythed Chariot is vulnerable to Spearmen.</Text>
@@ -2448,7 +2445,7 @@
 			<Text>Tarkhan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_HELP">
-			<Text>Mounted warrior who supports Civilian and other Land Military Units with its unique abilities. Only the Huns may build it. Slightly cheaper than the Horseman it replaces. +1 Movement to Settlers and Workers that begin the turn stacked with this unit, and +10HP to all adjacent friendly units whenever this unit pillages a tile.</Text>
+			<Text>Mounted warrior who supports Civilian and other Land Military Units with its unique abilities. Only the Huns may build it. Slightly cheaper than the Horseman it replaces. +1 Movement to [ICON_TEAM_1] Settlers and [ICON_WORKER] Workers that begin the turn stacked with this Unit, and +10HP to all adjacent friendly units whenever this unit pillages a tile.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_STRATEGY">
 			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Pillaging tiles with a Tarkhan heals all your adjacent units, which can be handy for healing a recently captured unit.</Text>
@@ -2703,7 +2700,7 @@
 			<Text>Yellow Brow</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_HELP">
-			<Text>Tenacious Renaissance Era Unit. Only the Shoshone may build it. Has the [COLOR_POSITIVE_TEXT]Anti-Cavalry[ENDCOLOR] Promotion, fights at full strength when damaged, and has double combat bonus from fortifying.</Text>
+			<Text>Tenacious Renaissance Era Unit. Only the Shoshone may build it. Has the [COLOR_POSITIVE_TEXT]Anti-cavalry[ENDCOLOR] Promotion, fights at full strength when damaged, and has double combat bonus from fortifying.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_STRATEGY">
 			<Text>The Yellow Brow is unmatched for its ability to hold ground. Never one to retreat, the Yellow brow fights at full strength regardless of health, and has double the normal bonus from fortifying. This unit is very effective against enemy cavalry</Text>
