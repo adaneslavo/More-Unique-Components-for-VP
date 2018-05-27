@@ -283,7 +283,7 @@
 			<Text>Chasqui</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_HELP">
-			<Text>Flexible Scout of the Classical Era. Only the Inca may build it. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15 HP every turn in Friendly Territory. Receives the [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotion for free.</Text>
+			<Text>Flexible Scout of the Classical Era. Only the Inca may build it. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15 HP every turn in Friendly Territory. Starts with the [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_STRATEGY">
 			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
@@ -1348,7 +1348,7 @@
 			<Text>Klepht</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_HELP">
-			<Text>A quick and elusive guerilla fighter. Only Greece may build it. slightly weaker than the Gatling Gun it replaces and does not have the [COLOR_RED]Covering Fire I[ENDCOLOR] Promotion. Moves quickly through Hills and can move after attacking. Receives the [COLOR_POSITIVE_TEXT]Philhellenism[ENDCOLOR] Promotion for free.</Text>
+			<Text>A quick and elusive guerilla fighter. Only Greece may build it. Slightly weaker than the Gatling Gun it replaces and does not have the [COLOR_RED]Covering Fire I[ENDCOLOR] Promotion. Starts with the [COLOR_POSITIVE_TEXT]Philhellenism[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotions, and can move after attacking.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_STRATEGY">
 			<Text>The Klepht is not as powerful as the Gatling Gun it replaces, but can move quickly through hills, even after attacking. This unit also gains gold and production for every city-state ally every time it attacks a unit.</Text>
@@ -2391,7 +2391,7 @@
 			<Text>SPAD S.VII</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_HELP">
-			<Text>Potent Modern Era flying Unit. Only France may build it. Has a longer range, is cheaper, and does not require [ICON_RES_OIL] Oil, unlike the Triplane it replaces. Starts with the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Quick Study[ENDCOLOR] Promotions.</Text>
+			<Text>Potent Modern Era flying Unit. Only France may build it. Has a longer range, is cheaper, and does not require [ICON_RES_OIL] Oil, unlike the Triplane it replaces. Starts with the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] Promotion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_STRATEGY">
 			<Text>The SPAD S.VII is France's early air superiority fighter. With a cheaper cost and no need for oil, these fighters will help create a strong French presence in the air. The SPAD S.VII's ability to attack twice in a turn ensures these fighters are the toughest aces in the sky.</Text>
