@@ -4,8 +4,11 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v33:
-- ???
-
+- changes:
+	- Huey Teocalli ==> removed bonus to watermills, and changed bonus to barracks to +2 food.
+				- this is in response to a VP patch update which boosts floating gardens
+- fixes: 
+	- SPAD ==> fixed bug which prevented unit from being able to rebase
 v32.1:
 - changes:
 	- Khopesh ==> deactivated "Skilful" promotion.
