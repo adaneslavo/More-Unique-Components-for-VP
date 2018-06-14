@@ -19,7 +19,7 @@ UPDATE Units SET MinorCivGift = '0' WHERE Type = 'UNIT_ROMAN_BALLISTA';
 UPDATE Units SET Class = 'UNITCLASS_CATAPULT' WHERE Type = 'UNIT_ROMAN_BALLISTA';
 UPDATE Units SET Cost = '100' WHERE Type = 'UNIT_ROMAN_BALLISTA';
 UPDATE Units SET ObsoleteTech = 'TECH_GUNPOWDER' WHERE Type = 'UNIT_ROMAN_BALLISTA';
-UPDATE Units SET Combat = '6' WHERE Type = 'UNIT_ROMAN_BALLISTA';
+UPDATE Units SET Combat = '8' WHERE Type = 'UNIT_ROMAN_BALLISTA';
 --------------------------------	
 -- Unit_BuildingClassPurchaseRequireds
 --------------------------------
