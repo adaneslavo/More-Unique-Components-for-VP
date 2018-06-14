@@ -8,6 +8,7 @@ v33:
 	- Huey Teocalli ==> removed bonus to watermills, and changed bonus to barracks to +2 food.
 				- this is in response to a VP patch update which boosts floating gardens
 	- Etemenanki ==> removed theming bonus
+	- Lamassu Gate ==> added +1 base faith (help differentiate more from Walls of Babylon)
 - fixes: 
 	- SPAD ==> fixed bug which prevented unit from being able to rebase
 	- updated RCS and CS values which needed changing with newest VP patch: Sofa, Pancerni, Klepht, Ballista
