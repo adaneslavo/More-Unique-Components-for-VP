@@ -1129,14 +1129,19 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO_HELP">
-			<Text>+33% [ICON_GREAT_WRITER] Great Writer Rate in the City, and all Writers' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Whenever a unit gains a level, receive [ICON_CULTURE] Culture in the City, scaling with Unit level.[NEWLINE]Nearby [ICON_RES_DYE] Dye: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILK] Silk: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+33% [ICON_GREAT_WRITER] Great Writer Rate in the City, and all Writers' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Whenever a unit gains a level, receive [ICON_CULTURE] Culture in the City, scaling with Unit level.[NEWLINE]Nearby [ICON_RES_DYE] Dye: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILK] Silk: +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Contains 2 slots for Great Works of Writing[NEWLINE]+2 [ICON_CULTURE] Culture when Themed</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO_STRATEGY">
 			<Text>
 				The Iziko is the unique Zulu replacement for the Amphitheater. In addition to the bonuses of an Amphitheater, the Iziko provides Culture in the City whenever a military unit gains a level, with higher levels granting more culture. Make war an essential part of your empire's cultural development.
 			</Text>
 		</Row>	
-		
+		<Row Tag="TXT_KEY_THEMING_BONUS_ZULU_IZIKO">
+			<Text>Collection of {2_CivAdjective} Folktales</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO_THEMING_BONUS_HELP">
+			<Text>To maximize your bonus, make sure the Great Work Slots are all filled with Writings either from your own Civilization, or from Civilizations other than your own.</Text>
+		</Row>	
 		<!-- Kabuki & the Japanese Guilds-->
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_KABUKI">
 			<Text>Kabuki Theater</Text>
