@@ -9,6 +9,9 @@ v33:
 				- this is in response to a VP patch update which boosts floating gardens
 - fixes: 
 	- SPAD ==> fixed bug which prevented unit from being able to rebase
+	- updated RCS and CS values which needed changing with newest VP patch: Sofa, Pancerni, Klepht, Ballista
+	- included theming bonus on Iziko, consistent with latest VP patch. (+2 culture when themed). Reduced base culture to +2 (same as amphitheater)
+	
 v32.1:
 - changes:
 	- Khopesh ==> deactivated "Skilful" promotion.
