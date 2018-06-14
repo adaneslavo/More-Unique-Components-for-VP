@@ -26,6 +26,7 @@ INSERT INTO	Building_Flavors
 			(BuildingType,						FlavorType,					Flavor)
 VALUES		('BUILDING_ASSYRIA_LAMASSU_GATE',	'FLAVOR_CITY_DEFENSE',		50),
 			('BUILDING_ASSYRIA_LAMASSU_GATE',	'FLAVOR_CULTURE',			30),
+			('BUILDING_ASSYRIA_LAMASSU_GATE',	'FLAVOR_RELIGION',			10),
 			('BUILDING_ASSYRIA_LAMASSU_GATE',	'FLAVOR_MILITARY_TRAINING', 20);
 --------------------------------	
 -- Building_YieldChanges
@@ -37,7 +38,8 @@ FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_WALLS';
 
 INSERT INTO Building_YieldChanges
 			(BuildingType,						YieldType,			Yield)
-VALUES		('BUILDING_ASSYRIA_LAMASSU_GATE',	'YIELD_CULTURE',	1);
+VALUES		('BUILDING_ASSYRIA_LAMASSU_GATE',	'YIELD_CULTURE',	1),
+		('BUILDING_ASSYRIA_LAMASSU_GATE',	'YIELD_FAITH',		1);
 --==========================================================================================================================	
 
 --==========================================================================================================================
