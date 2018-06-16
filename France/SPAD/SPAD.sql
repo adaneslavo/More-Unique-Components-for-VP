@@ -74,7 +74,7 @@ VALUES		('UNIT_FRANCE_ATLAS', 			256, 		'SPADPicture_256.dds',			1, 				1),
 --------------------------------	
 INSERT INTO Units 	
 			(Type,				Class, 	PrereqTech,	Range,	BaseSightRange, RangedCombat,	Combat, Cost,		FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	AirInterceptRange,		Description, 				Civilopedia, 						Strategy, 								Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	UnitArtInfo, 					UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate,	Special, 	PurchaseCooldown)
-SELECT		'UNIT_FRANCE_SPAD',	Class,	PrereqTech,	Range,	BaseSightRange, RangedCombat,	Combat, Cost-220,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_LASERS',		GoodyHutUpgradeUnitClass,	XPValueAttack,	AirInterceptRange+1,	'TXT_KEY_UNIT_FRANCE_SPAD',	'TXT_KEY_UNIT_FRANCE_SPAD_TEXT',	'TXT_KEY_UNIT_FRANCE_SPAD_STRATEGY',	'TXT_KEY_UNIT_FRANCE_SPAD_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	'ART_DEF_UNIT_FRANCE_SPAD', 	0,					'UNIT_FRANCE_FLAG_ATLAS',	0, 				'UNIT_FRANCE_ATLAS',	MoveRate,	Special, 	PurchaseCooldown
+SELECT		'UNIT_FRANCE_SPAD',	Class,	PrereqTech,	Range,	BaseSightRange, RangedCombat-5,	Combat, Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_LASERS',		GoodyHutUpgradeUnitClass,	XPValueAttack,	AirInterceptRange+1,	'TXT_KEY_UNIT_FRANCE_SPAD',	'TXT_KEY_UNIT_FRANCE_SPAD_TEXT',	'TXT_KEY_UNIT_FRANCE_SPAD_STRATEGY',	'TXT_KEY_UNIT_FRANCE_SPAD_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	'ART_DEF_UNIT_FRANCE_SPAD', 	0,					'UNIT_FRANCE_FLAG_ATLAS',	0, 				'UNIT_FRANCE_ATLAS',	MoveRate,	Special, 	PurchaseCooldown
 FROM Units WHERE Type = 'UNIT_TRIPLANE';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -98,6 +98,13 @@ INSERT INTO Unit_ClassUpgrades
 			(UnitType, 				UnitClassType)
 SELECT		'UNIT_FRANCE_SPAD', 	UnitClassType
 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_TRIPLANE';
+--------------------------------	
+-- Unit_ResourceQuantityRequirements
+--------------------------------		
+INSERT INTO Unit_ResourceQuantityRequirements 	
+			(UnitType, 					ResourceType)
+SELECT		'UNIT_FRANCE_SPAD',	ResourceType
+FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_TRIPLANE';
 --------------------------------	
 -- Unit_Flavors
 --------------------------------		
