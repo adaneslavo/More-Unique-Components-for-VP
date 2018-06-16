@@ -2240,10 +2240,10 @@
 			<Text>SPAD S.VII</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_HELP">
-			<Text>Potent Modern Era flying Unit. Only France may build it. Has a longer range, is cheaper, and does not require [ICON_RES_OIL] Oil, unlike the Triplane it replaces. Starts with the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] Promotion.</Text>
+			<Text>Potent Modern Era flying Unit. Only France may build it. Has a longer range and is slightly weaker than the Triplane it replaces. Starts with the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] Promotion. Requires [ICON_RES_OIL] Oil.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_STRATEGY">
-			<Text>The SPAD S.VII is France's early air superiority fighter. With a cheaper cost and no need for oil, these fighters will help create a strong French presence in the air. The SPAD S.VII's ability to attack twice in a turn ensures these fighters are the toughest aces in the sky.</Text>
+			<Text>The SPAD S.VII is France's early air superiority fighter. These fighters will help create a strong French presence in the air with their ability to attack twice in a turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_TEXT">
 			<Text>
