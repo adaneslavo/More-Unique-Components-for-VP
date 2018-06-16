@@ -11,12 +11,15 @@ v33:
 	- Lamassu Gate ==> added +1 base faith (help differentiate more from Walls of Babylon)
 - fixes: 
 	- SPAD ==> fixed bug which prevented unit from being able to rebase
+			- reduced RCS to 45
+			- increased build cost (increased to same as triplane)
+			- gave back oil requirement
 	- updated RCS and CS values which needed changing with newest VP patch: Sofa, Pancerni, Klepht, Ballista
 	- included theming bonus on Iziko, consistent with latest VP patch. (+2 culture when themed). Reduced base culture to +2 (same as amphitheater)
 	
 v32.1:
 - changes:
-	- Khopesh ==> deactivated "Skilful" promotion.
+	- Khopesh ==> deactivated "Skillful" promotion.
 - fixes: 
 	- Madrasah ==> set faith purchase to 20/100, as stated in description (was set to 10/50 only).
 - further text adjustments.
