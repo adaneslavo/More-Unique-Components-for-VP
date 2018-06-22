@@ -7,6 +7,7 @@ v33:
 - changes:
 	- Huey Teocalli ==> removed bonus to watermills, and changed bonus to barracks to +2 food.
 				- this is in response to a VP patch update which boosts floating gardens
+	- Hippodrom ==> dropped Arena bonus gold to +2 (down from +4)
 	- Etemenanki ==> removed theming bonus
 	- Lamassu Gate ==> added +1 base faith (help differentiate more from Walls of Babylon)
 	- SPAD ==> reduced RCS to 45
@@ -14,6 +15,8 @@ v33:
 		- gave back oil requirement
 - fixes: 
 	- SPAD ==> fixed bug which prevented unit from being able to rebase
+	- Iziko ==> fixed theming bonuses
+	- civ5proj ==> dropped Khopesh.lua from file, so people stop bothering me about it
 
 	- updated RCS and CS values which needed changing with newest VP patch: Sofa, Pancerni, Klepht, Ballista)
 	- included theming bonus on Iziko, consistent with latest VP patch. (+2 culture when themed). Reduced base culture to +2 (same as amphitheater)
