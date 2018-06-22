@@ -5,9 +5,10 @@
 More Unique Components for Vox Populi changelog:
 v33:
 - changes:
+	- Flax/Nilometer ==> split the gold, and moved production back to improvement. Now 1g/1c on resource, 1g/1p on improvement
 	- Huey Teocalli ==> removed bonus to watermills, and changed bonus to barracks to +2 food.
 				- this is in response to a VP patch update which boosts floating gardens
-	- Hippodrom ==> dropped Arena bonus gold to +2 (down from +4)
+	- Hippodrome ==> dropped Arena bonus gold to +2 (down from +4)
 	- Etemenanki ==> removed theming bonus
 	- Lamassu Gate ==> added +1 base faith (help differentiate more from Walls of Babylon)
 	- SPAD ==> reduced RCS to 45
