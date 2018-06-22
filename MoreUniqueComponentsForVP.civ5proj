@@ -972,12 +972,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Khopesh</Name>
-        <Description>Adds Fatigue promotion.</Description>
-        <FileName>Egypt/Khopesh/Khopesh.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Nilometer</Name>
         <Description>Spans 2 Flax Resources on construction.</Description>
         <FileName>Egypt/Nilometer/Nilometer.lua</FileName>
@@ -1956,10 +1950,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Egypt\Khopesh\KhopeshPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Egypt\Khopesh\Khopesh.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Egypt\Khopesh\Khopesh.sql">
       <SubType>Lua</SubType>
