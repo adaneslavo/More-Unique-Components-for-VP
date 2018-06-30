@@ -4,8 +4,7 @@
 ----------------------------------------------------------------------------
 
 local eBuildingCoimbraID = GameInfoTypes.BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA
-local eBuildingDummyGoldID = GameInfoTypes.BUILDING_DUMMYGOLD
-local eBuildingDummyProductionID = GameInfoTypes.BUILDING_DUMMYPRODUCTION
+local eBuildingDummyProductionGoldID = GameInfoTypes.BUILDING_FEITORIADUMMY
 local eImprovementFeitoria = GameInfoTypes.IMPROVEMENT_FEITORIA
 
 
@@ -37,10 +36,8 @@ function OnTileImprovementChangedCoimbraFeitoria(iPlotX, iPlotY, iOwner, iOldImp
 			if player:IsAlive() and player:IsMajorCiv() then
 				for city in player:Cities() do
 					if city:IsHasBuilding(eBuildingCoimbraID) then
-						local iDummies = city:GetNumRealBuilding(eBuildingDummyProductionID)
-						city:SetNumRealBuilding(eBuildingDummyProductionID, iDummies + iChange) -- +1/-1 production
-						iDummies = city:GetNumRealBuilding(eBuildingDummyGoldID)
-						city:SetNumRealBuilding(eBuildingDummyGoldID, iDummies + iChange + iChange) -- +2/-2 gold
+						local iDummies = city:GetNumRealBuilding(eBuildingDummyProductionGoldID)
+						city:SetNumRealBuilding(eBuildingDummyProductionGoldID, iDummies + iChange) -- +1/-1 production, +2/-2 gold
 					end
 				end
 			end
