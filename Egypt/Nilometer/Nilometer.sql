@@ -6,7 +6,8 @@
 --------------------------------	
 INSERT INTO	Civilization_BuildingClassOverrides
 			(CivilizationType,		BuildingClassType,			BuildingType)
-VALUES		('CIVILIZATION_EGYPT', 'BUILDINGCLASS_WATERMILL',	'BUILDING_EGYPT_NILOMETER');
+VALUES		('CIVILIZATION_EGYPT', 'BUILDINGCLASS_WATERMILL',	'BUILDING_EGYPT_NILOMETER'),
+		('CIVILIZATION_EGYPT', 'BUILDINGCLASS_WELL',	null);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
