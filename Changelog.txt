@@ -3,6 +3,13 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v34:
+- changes:
+	- Chaebol ==> removed gold for trade routes
+- fixes: 
+	- Nilometer ==> disabled well for Egypt; AI and puppets won't ever be tricked into building wells instead of Nilometers
+	- University of Coimbra ==> altered dummy buildings so they are exposed to UI
+
 v33:
 - changes:
 	- Flax/Nilometer ==> split the gold, and moved production back to improvement. Now 1g/1c on resource, 1g/1p on improvement
