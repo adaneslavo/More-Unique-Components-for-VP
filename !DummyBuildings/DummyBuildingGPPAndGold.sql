@@ -21,8 +21,8 @@ VALUES		('BUILDING_DUMMYGPPANDGOLD',	'BUILDINGCLASS_DUMMYGPPANDGOLD',	'TXT_KEY_B
 ------------------------------	
 -- Building_YieldChanges
 ------------------------------		
-INSERT INTO Building_YieldChanges 	
-			(BuildingType, 				YieldType,			Yield)
-VALUES		('BUILDING_DUMMYGPPANDGOLD',	'YIELD_GOLD',	1);
+--INSERT INTO Building_YieldChanges 	
+--			(BuildingType, 				YieldType,			Yield)
+--VALUES		('BUILDING_DUMMYGPPANDGOLD',	'YIELD_GOLD',	1);
 --==========================================================================================================================
 --==========================================================================================================================
