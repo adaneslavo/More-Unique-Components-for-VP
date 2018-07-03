@@ -12,7 +12,7 @@ function DefenseToCulture(iPlayer)
 				local iDefenseChange = pCity:NumWorldWonders()
 				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMY_1_DEFENSE, iDefenseChange)
 				-- 15% Defense converted to culture in City
-				local iCultureChange = 0.0015 * pCity:GetStrengthValue()
+				local iCultureChange = 0.0010 * pCity:GetStrengthValue()
 				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCASTLECULTURE, iCultureChange)
 			end
 		end
