@@ -8,6 +8,7 @@ v34:
 	- Chaebol ==> removed gold for trade routes
 	- Mughal Fort/Qila ==> reduced Defense to culture conversion to 10%
 	- Pairidaeza ==> removed 1 culture to all guilds on empire. changed to +5% GA length
+	- Fale t'ele ==> removed +1g to fishing boats (Polynesia needed a nerf)
 	- Name changes ==> changed Mughal Fort to Qila. Changed Sauna to Bastu
 	
 - fixes: 
