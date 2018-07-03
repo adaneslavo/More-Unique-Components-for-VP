@@ -624,10 +624,10 @@
 			<Text>Fale Tele</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_HELP">
-			<Text>+5 [ICON_RESEARCH] Science whenever a [ICON_CITIZEN] Citizen is born in this City, scaling with Era. +3 [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture and [ICON_PEACE] Faith whenever a Building is Constructed in this City, scaling with Era.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold from nearby Fishing Boats.</Text>
+			<Text>+5 [ICON_RESEARCH] Science whenever a [ICON_CITIZEN] Citizen is born in this City, scaling with Era. +3 [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture and [ICON_PEACE] Faith whenever a Building is Constructed in this City, scaling with Era.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_STRATEGY">
-			<Text>Unique Council replacement for the Polynesians. In addition to the normal bonuses of a Council, the Fale Tele provides Gold on Improved Sea Resources and a small amount of Culture, Faith, Gold and Food whenever a building is constructed in the city. Build the Fale tele as a first priority to maximize the bonuses for all later buildings.</Text>
+			<Text>Unique Council replacement for the Polynesians. In addition to the normal bonuses of a Council, the Fale Tele provides Faith, Gold and Food whenever a building is constructed in the city. Build the Fale tele as a first priority to maximize the bonuses for all later buildings.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_TEXT">
 			<Text>
