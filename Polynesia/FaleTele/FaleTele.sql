@@ -75,9 +75,9 @@ VALUES		('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_GOLD',		3),
 ------------------------------	
 -- Building_ImprovementYieldChanges
 ------------------------------		
-INSERT INTO Building_ImprovementYieldChanges	
-			(BuildingType, 						ImprovementType,				YieldType,		Yield)
-VALUES		('BUILDING_POLYNESIA_FALE_TELE',	'IMPROVEMENT_FISHING_BOATS',	'YIELD_GOLD',	1);
+--INSERT INTO Building_ImprovementYieldChanges	
+--			(BuildingType, 						ImprovementType,				YieldType,		Yield)
+--VALUES		('BUILDING_POLYNESIA_FALE_TELE',	'IMPROVEMENT_FISHING_BOATS',	'YIELD_GOLD',	1);
 --==========================================================================================================================
 --==========================================================================================================================
 
