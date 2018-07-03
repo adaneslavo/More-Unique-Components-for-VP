@@ -14,7 +14,7 @@ function OnPlayerDoTurnQadi(iPlayer)
 				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCULTURE, iCultureChange)
 				-- gold for non-followers
 				if pPlayer:GetMajorityReligion() ~= -1 then
-					pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGOLD, pCity:GetPopulation() - pCity:GetNumFollowers(pPlayer:GetMajorityReligion()))
+					pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCOURTHOUSEGOLD, pCity:GetPopulation() - pCity:GetNumFollowers(pPlayer:GetMajorityReligion()))
 				end
 			end
 		end
