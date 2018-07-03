@@ -125,7 +125,7 @@
 		<!-- Bastu -->
 		<!-- Created by pineppledan 25/11/2017, modified and incorporated by adan_eslavo 17/12/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU">
-			<Text>Sauna</Text>
+			<Text>Bastu</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_TEXT">
 			<Text>
@@ -781,7 +781,7 @@
 			<Text>An Incredibly powerful Unit capable of smashing Cities to pieces. Only the Ottomans may build it. Does very high damage to Cities and Naval Units, but is less useful against Land Units compared to other Siege Weapons.[NEWLINE][NEWLINE]Deals 20 damage to itself on attack, but heals an additional 10 HP when in Friendly Territory.[NEWLINE][NEWLINE]Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_STRATEGY">
-			<Text>The Great Turkish Bombard is a powerful Siege Weapon well after it is researched. It is the most powerful seige unit in its era; so dangerous it even hurts itself! Devastating against cities and naval units.</Text>
+			<Text>The Great Bombard is a powerful Siege Weapon well after it is researched. It is the most powerful seige unit in its era; so dangerous it even hurts itself! Devastating against cities and naval units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_TEXT">
 			<Text>
@@ -1240,7 +1240,7 @@
 			<Text>Front-line Unit which grows more powerful with experience. Only Babylon may build it. This unit is stronger than the Spearman it replaces. Receives additional [ICON_STRENGTH] Combat Strength for every few levels and gains more XP from fights.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BABYLON_KIBITUM_STRATEGY">
-			<Text>A soldier to stand the test of time. The Khibitum is not the strongest unit in its era, but its true strength lies in how it gains more power from experience than normal units. Keep these soldiers alive, and they will form an indispensable core for your army.</Text>
+			<Text>A soldier to stand the test of time. The Kibitum is not the strongest unit in its era, but its true strength lies in how it gains more power from experience than normal units. Keep these soldiers alive, and they will form an indispensable core for your army.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BABYLON_KIBITUM_TEXT">
 			<Text>
@@ -1852,7 +1852,7 @@
 		<!-- Qila -->
 		<!-- Created by adan_eslavo 5/12/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA">
-			<Text>Mughal Fort</Text>
+			<Text>Qila</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
 			<Text>Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +1 [ICON_PRODUCTION] Production to Quarries. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every World Wonder built in the City, and 15% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
@@ -2036,7 +2036,7 @@
 			<Text>This Carthaginian unique Great Person replaces the Great General. Aside from the ability to boost nearby troops and construct citadels, this unit disembarks onto water tiles as a [ICON_GREAT_ADMIRAL] Great Admiral. Causes Friendly Units beginning in the same or adjacent tile to ignore Enemy Zone of Control for that turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY">
-			<Text>The Suffet is the unique Great General replacement for Carthage, for Hannibal. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Suffet to supplement your military strategies when waging war against other civilizations.</Text>
+			<Text>The Suffet is the unique Great General replacement for Carthage. This unit causes all friendly units beginning in the same or an adjacent tile to ignore an enemy's Zone of Control for that turn. In addition, whenever this unit embarks into a water tile, it becomes a Great Admiral. It returns to Great General status upon disembarking into a city. Use a Suffet to supplement your military strategies when waging war against other civilizations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_TEXT">
 			<Text>In the various independent city-states and colonies of Phoenicia a Suffet (or Shophet) was a non-royal magistrate granted control over a city-state, sometimes functioning much in the same way as a Roman consul. Following the overthrow of its monarchy in the 5th century BC, Carthage was ruled by a number of aristocratic councils presided over by two suffets. The exceptional leadership of suffet generals like Hannibal Barca have become legendary, handing Rome the greatest defeats it had ever suffered.</Text>
@@ -2412,19 +2412,13 @@
 			<Text>White Tower</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP">
-			<Text>+3 [ICON_GOLD] Gold to Constabularies and +3 [ICON_FOOD] Food to Arsenals in this City, and +2 [ICON_CULTURE] Culture to all Castles on Empire.[NEWLINE][NEWLINE]-25% [ICON_SPY] Spy Stealing Rate on Empire. +1 [ICON_HAPPINESS_1] Happiness on Empire for every [ICON_SPY] Enemy Spy killed by the Player.[NEWLINE][NEWLINE]Contains 3 slots for [ICON_GREAT_WORK] Great Works of Art or Artifact, and comes with one free [ICON_GREAT_WORK] Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.[NEWLINE][NEWLINE]Requires a Castle in the City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Population in city.[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City. +2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% [ICON_SPY] Spy stealing rate on Empire. +1 [ICON_HAPPINESS_1] Happiness on Empire for every enemy spy killed.[NEWLINE][NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.[NEWLINE][NEWLINE]Available earlier, requires Castle in City.[NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY">
 			<Text>Unique English replacement for the Hermitage. This National Wonder produces +1 Culture for every 4 Citizens in the City, and 2 culture for every castle in the empire. The White Tower reduces the stealing rate of enemy spies on empire, and gives Happiness for every enemy spy killed. Your citizens will love you if you can keep a tight lid on English secrets, so station spies in your cities to take advantage of this wonder.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_TEXT">
-			<Text>
-				[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Population in city.
-				[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City. +2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% [ICON_SPY] Spy stealing rate on Empire. +1 [ICON_HAPPINESS_1] Happiness on Empire for every enemy spy killed.
-				[NEWLINE][NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.
-				[NEWLINE][NEWLINE]Available earlier, requires Castle in City.
-				[NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
-			</Text>
+			<Text>The White Tower is the old keep at the Tower of London. It was built by William the Conqueror during the early 1080s, and was later extended. The White Tower was the castle's strongest defensive point, and originally housed the king and his representatives. Throughout its long history, the Tower has been many things to England: A symbol of tyranny, a treasury, a menagerie, a mint, a palace and a prison. Today, the Tower of London is a vast museum which boasts, amongst its many treasures, the Crown Jewels of the English Monarchy.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_WHITE_TOWER_NATIONAL">
 			<Text>{2_CivAdjective} Colonial Treasures Collection</Text>
