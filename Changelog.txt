@@ -6,7 +6,7 @@ More Unique Components for Vox Populi changelog:
 v34:
 - changes:
 	- Chaebol ==> removed gold for trade routes
-	- Mughal Fort/Qila ==> reduced Defense to culture conversion to 10%
+	- Mughal Fort/Qila ==> Added National wonders to Defense calculation. Reduced Defense to culture conversion to 10%
 	- Pairidaeza ==> removed 1 culture to all guilds on empire. changed to +5% GA length
 	- Fale t'ele ==> removed +1g to fishing boats (Polynesia needed a nerf)
 	- Name changes ==> changed Mughal Fort to Qila. Changed Sauna to Bastu
@@ -16,6 +16,7 @@ v34:
 	- University of Coimbra ==> altered dummy buildings so they are exposed to UI
 	- Mughal Fort/Qila ==> altered dummy buildings so they are exposed to UI
 	- Qadi ==> altered dummy buildings so they are exposed to UI
+	- Baan Chang ==> altered dummy buildings so they are exposed to UI
 	- Added missing faith costs to: Ballista, Hakkapeliitta, Longbowman, Great Galleass, Turtle Ship
 	- fixed text for Sabum Kibitum, White Tower, and Great Bombard
 
