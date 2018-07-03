@@ -1618,10 +1618,10 @@
 			<Text>Pairidaeza</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. Gain +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture on every Guild on Empire.[NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. Length of [ICON_GOLDEN_AGE] Golden Ages increased by 5%, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
-			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, the Pairidaeza provides Culture to all guilds in the Empire. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
+			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, each Pairidaeza increases the length of Golden Ages on Empire. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_TEXT">
 			<Text>A Pairidaeza is a walled garden popularized by the Achaemenid. As a tool of state, Pairidaeza were invaluable in flaunting a kingdom’s ability to bring life to an area that would otherwise have none; its rectangular, ordered construction serving as a contrast the chaos of nature. The Achaemenid dynasty melded the pairidaeza with their royal hunting parks, an unsubtle way to show their command over both their empire and the natural world within it. The Persian gardens form the root of the greek “paradise”, informing western notions of an earthly Eden in art and poetry.</Text>
@@ -1855,10 +1855,10 @@
 			<Text>Qila</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +1 [ICON_PRODUCTION] Production to Quarries. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every World Wonder built in the City, and 15% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
+			<Text>Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +1 [ICON_PRODUCTION] Production to Quarries. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every World Wonder built in the City, and 10% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
-			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Culture and Great Artist Points. 15% of City Defense is converted into Culture every turn and the city gains 1 Defense for every World Wonder built in the city.[NEWLINE][NEWLINE]Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
+			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Culture and Great Artist Points. 10% of City Defense is converted into Culture every turn and the city gains 1 Defense for every World Wonder built in the city.[NEWLINE][NEWLINE]Contains 1 slot for a Great Work of Art. Additional Tourism when Flight is Researched.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_TEXT">
 			<Text>The Mughals were an Islamic empire that invaded India in the 15th century, and ruled most of the sub-continent until the mid 19th. During their rule, they constructed elaborate forts called Qila across the countryside which served as administrative centers and living quarters for the occupiers. These forts were beautiful structures, fitting palaces for the rulers of a vast empire. Several--including the magnificent "Lahore Fort" and Red Fort of Agra--survive today and remain as some of the largest tourist attractions to India, monuments to the Mughals' power and style.</Text>
