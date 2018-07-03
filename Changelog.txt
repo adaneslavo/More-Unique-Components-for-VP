@@ -15,6 +15,7 @@ v34:
 	- Nilometer ==> disabled well for Egypt; AI and puppets won't ever be tricked into building wells instead of Nilometers
 	- University of Coimbra ==> altered dummy buildings so they are exposed to UI
 	- Mughal Fort/Qila ==> altered dummy buildings so they are exposed to UI
+	- Qadi ==> altered dummy buildings so they are exposed to UI
 	- Added missing faith costs to: Ballista, Hakkapeliitta, Longbowman, Great Galleass, Turtle Ship
 	- fixed text for Sabum Kibitum, White Tower, and Great Bombard
 
