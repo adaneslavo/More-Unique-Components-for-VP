@@ -12,6 +12,7 @@ v34:
 	- Name changes ==> changed Mughal Fort to Qila. Changed Sauna to Bastu
 	
 - fixes: 
+	- Added Faith cost for Kabuki and Sambadrome (reformation belief)
 	- Nilometer ==> disabled well for Egypt; AI and puppets won't ever be tricked into building wells instead of Nilometers
 	- University of Coimbra ==> altered dummy buildings so they are exposed to UI
 	- Mughal Fort/Qila ==> altered dummy buildings so they are exposed to UI
