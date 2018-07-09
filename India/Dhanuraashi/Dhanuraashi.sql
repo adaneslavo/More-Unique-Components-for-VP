@@ -92,7 +92,7 @@ VALUES		('PROMOTION_UNIT_INDIA_EPIC',	'YIELD_CULTURE',	75);
 ------------------------------
 INSERT INTO UnitPromotions_YieldFromBarbarianKills
 			(PromotionType, 				YieldType,			Yield)
-VALUES		('PROMOTION_UNIT_INDIA_EPIC',	'YIELD_CULTURE',	75);
+VALUES		('PROMOTION_UNIT_INDIA_EPIC',	'YIELD_CULTURE',	150);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
