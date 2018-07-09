@@ -13,8 +13,8 @@ VALUES		('CIVILIZATION_JAPAN', 'BUILDINGCLASS_OPERA_HOUSE', 'BUILDING_JAPAN_KABU
 -- Buildings
 --------------------------------
 INSERT INTO	Buildings
-		(Type, 			Description, 			Civilopedia, 			Strategy, 				Help, 					GoldMaintenance, 	Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, 	IconAtlas, 	GreatWorkYieldType, UnlockedByBelief, CultureRateModifier, 	GreatWorkSlotType, GreatWorkCount)
-SELECT		'BUILDING_JAPAN_KABUKI', 'TXT_KEY_BUILDING_JAPAN_KABUKI', 	'TXT_KEY_BUILDING_JAPAN_KABUKI_TEXT',  'TXT_KEY_BUILDING_JAPAN_KABUKI_STRATEGY',  'TXT_KEY_BUILDING_JAPAN_KABUKI_HELP', 	GoldMaintenance-2, 	Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 0, 		'KABUKI_ATLAS', GreatWorkYieldType, UnlockedByBelief, CultureRateModifier, 	GreatWorkSlotType, GreatWorkCount
+		(Type, 			Description, 			Civilopedia, 			Strategy, 				Help, 					GoldMaintenance, 	Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, 	IconAtlas, 	GreatWorkYieldType, UnlockedByBelief, CultureRateModifier, 	GreatWorkSlotType, GreatWorkCount)
+SELECT		'BUILDING_JAPAN_KABUKI', 'TXT_KEY_BUILDING_JAPAN_KABUKI', 	'TXT_KEY_BUILDING_JAPAN_KABUKI_TEXT',  'TXT_KEY_BUILDING_JAPAN_KABUKI_STRATEGY',  'TXT_KEY_BUILDING_JAPAN_KABUKI_HELP', 	GoldMaintenance-2, 	Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 0, 		'KABUKI_ATLAS', GreatWorkYieldType, UnlockedByBelief, CultureRateModifier, 	GreatWorkSlotType, GreatWorkCount
 FROM		Buildings
 WHERE		Type = 'BUILDING_OPERA_HOUSE';
 
