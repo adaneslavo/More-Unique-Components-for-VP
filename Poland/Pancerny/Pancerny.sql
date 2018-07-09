@@ -95,7 +95,7 @@ VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'YIELD_FAITH',	150);
 ------------------------------
 -- UnitPromotions_YieldFromBarbarianKills
 ------------------------------
-INSERT INTO UnitPromotions_YieldFromKills
+INSERT INTO UnitPromotions_YieldFromBarbarianKills
 			(PromotionType, 						YieldType,		Yield)
 VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'YIELD_FAITH',	300);
 ------------------------------
