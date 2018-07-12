@@ -22,10 +22,10 @@ FROM Buildings WHERE Type = 'BUILDING_ARSENAL';
 --------------------------------
 -- Building_ClassesNeededInCity
 --------------------------------
-INSERT INTO Building_ClassesNeededInCity
-			(BuildingType,						BuildingClassType)
-SELECT		'BUILDING_AUSTRIA_STANDSCHUTZEN',	BuildingClassType
-FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_ARSENAL';
+--INSERT INTO Building_ClassesNeededInCity
+--			(BuildingType,						BuildingClassType)
+--SELECT		'BUILDING_AUSTRIA_STANDSCHUTZEN',	BuildingClassType
+--FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_ARSENAL';
 --------------------------------	
 -- Building_Flavors
 --------------------------------	
