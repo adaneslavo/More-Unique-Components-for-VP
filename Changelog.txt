@@ -5,6 +5,7 @@
 More Unique Components for Vox Populi changelog:
 v34:
 - changes:
+	- Schutzenstand ==> removed building requirements
 	- Chaebol ==> removed gold for trade routes
 	- Mughal Fort/Qila ==> Added National wonders to Defense calculation. Reduced Defense to culture conversion to 10%
 	- Pairidaeza ==> removed 1 culture to all guilds on empire. changed to +5% GA length
