@@ -14,6 +14,7 @@ v34:
 	
 - fixes: 
 	- Added Faith cost for Kabuki and Sambadrome (reformation belief)
+	- adjusted faith costs for Pracinha and Fusta
 	- Nilometer ==> disabled well for Egypt; AI and puppets won't ever be tricked into building wells instead of Nilometers
 	- University of Coimbra ==> altered dummy buildings so they are exposed to UI
 	- Mughal Fort/Qila ==> altered dummy buildings so they are exposed to UI
