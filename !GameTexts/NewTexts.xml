@@ -2336,7 +2336,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
-				Unique replacement for the Heroic Epic, available earlier. Grants a free Armory in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. +2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.
+				Unique replacement for the Heroic Epic, available later. Grants a free Armory in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. +2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.
 				[NEWLINE][NEWLINE]All Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and new Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. All Land Melee Units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] Promotion.
 				[NEWLINE][NEWLINE][NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own. Only Germany may build it.
 			</Text>
