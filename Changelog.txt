@@ -5,6 +5,10 @@
 More Unique Components for Vox Populi changelog:
 v34:
 - changes:
+	- Promotion overhaul updates: Slipstream has been removed from the game. affected units have been changed accordingly:
+		Prau => Has Pincer promotion for free
+		Corsair => removed Slipstream
+		Scythed Chariot => removed Slipstream, ZOC ignore added to Rend promotion
 	- Schutzenstand ==> removed building requirements
 	- Chaebol ==> removed gold for trade routes
 	- Mughal Fort/Qila ==> Added National wonders to Defense calculation. Reduced Defense to culture conversion to 10%
