@@ -184,7 +184,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
 			<Text>
-				Reduces [ICON_HAPPINESS_3] Crime. +25 Experience for all new Units trained in this City.[NEWLINE][NEWLINE]Ranged and Siege Units garrisoned in this City have increased [ICON_RANGE_STRENGTH] Ranged Combat Strength.[NEWLINE][NEWLINE]Requires Walls in this City.
+				Greatly Reduces [ICON_HAPPINESS_3] Distress. +25 Experience for all new Units trained in this City.[NEWLINE][NEWLINE]Ranged and Siege Units garrisoned in this City have increased [ICON_RANGE_STRENGTH] Ranged Combat Strength.[NEWLINE][NEWLINE]Requires Walls in this City.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
@@ -871,7 +871,7 @@
 			<Text>Hippodrome</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
-			<Text>+20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, 1 turn of [ICON_RESISTANCE] Resistance occurs in this City, after which a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]Requires Arena in City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Slightly reduces [ICON_HAPPINESS_3] Boredom. +20% [ICON_GOLD] Gold and [ICON_CULTURE] Culture in the City during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, 1 turn of [ICON_RESISTANCE] Resistance occurs in this City, after which a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]Requires Arena in City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
 			<Text>
@@ -896,7 +896,7 @@
 			<Text>The Huey Teocalli is the unique Aztec replacement for the Grand Temple. It does not require a Temple, and immediately triggers a Golden Age on completion. Every time you enter a Golden Age the Huey Teocalli permanently gains Food, Faith, and additional XP to units built in the city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP">
-			<Text>Does not require a Temple. Free Temple in City, and triggers a [ICON_GOLDEN_AGE] Golden Age on Completion.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +2 [ICON_CULTURE] Culture to all Temples, and +2 [ICON_FOOD] Food to all Barracks on Empire. Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music, and reduces [ICON_HAPPINESS_3] Religious Unrest. [NEWLINE][NEWLINE]Whenever you enter a [ICON_GOLDEN_AGE] Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith and +3 XP for Units trained in the City (max +30).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Does not require a Temple. Free Temple in City, and triggers a [ICON_GOLDEN_AGE] Golden Age on Completion.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +2 [ICON_CULTURE] Culture to all Temples, and +2 [ICON_FOOD] Food to all Barracks on Empire. Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music, and slightly reduces [ICON_HAPPINESS_3] Religious Unrest. [NEWLINE][NEWLINE]Whenever you enter a [ICON_GOLDEN_AGE] Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith and +3 XP for Units trained in the City (max +30).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 
 		<!-- Iron Chariot -->
@@ -1663,7 +1663,7 @@
 			<Text>Ball Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
-			<Text>Unique replacement for the Arena. Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Reduces [ICON_HAPPINESS_3] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_FAITH] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +2 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVES] Perfume: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Unique replacement for the Arena. Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Slightly reduces [ICON_HAPPINESS_3] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_FAITH] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +2 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVES] Perfume: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
 			<Text>
@@ -1813,7 +1813,7 @@
 			<Text>Qadi Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_HELP">
-			<Text>Can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. 10% of [ICON_PRODUCTION] Production in the City is converted to [ICON_CULTURE] Culture. [NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith. Provides [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen not of the City's Majority Religion. Reduces [ICON_PEACE] Religious Unrest in the City. [NEWLINE][NEWLINE]Only Songhai may build it.</Text>
+			<Text>Can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. 10% of [ICON_PRODUCTION] Production in the City is converted to [ICON_CULTURE] Culture. [NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith. Provides [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen not of the City's Majority Religion. Reduces [ICON_HAPPINESS_3] Religious Unrest in the City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_QADI_COURT_STRATEGY">
 			<Text>The Qadi Court is a Songhai unique building that replaces the Courthouse. In addition to The normal bonuses of a Courthouse, the Qadi Court also yields [ICON_PEACE] Faith and reduces religious unrest in the city. Every citizen not following the city's majority religion provides extra Gold, and 10% of Production in the city is converted to Culture. The Qadi Court can be built in any City.</Text>
@@ -1855,7 +1855,7 @@
 			<Text>Qila</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +1 [ICON_PRODUCTION] Production to Quarries. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every National Wonder and World Wonder built in the City. 10% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
+			<Text>Slightly reduces [ICON_HAPPINESS_3] Distress. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +1 [ICON_PRODUCTION] Production to Quarries. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every National Wonder and World Wonder built in the City. 10% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
 			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Culture and Great Artist Points. 10% of City Defense is converted into Culture every turn and the city gains more defense for wonders built in the city. Your most magnificent cities also become more difficult to capture.</Text>
@@ -2389,7 +2389,7 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text>Available earlier. Reduces [ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. Markets, Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great People Points and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire, up to a maximum of 10 traded Resources.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. Greatly reduces [ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. Markets, Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great People Points and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire, up to a maximum of 10 traded Resources.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
 			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier than the Bank, and provides bonuses to Great Person Generation and defense for every luxury imported or exported in the Empire. Be sure to keep peaceful and lucrative relationships with your neighbors; a surprise war with a trading partner could suddenly weaken your city's defenses!</Text>
@@ -2488,10 +2488,10 @@
 			<Text>Yassa Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_HELP">
-			<Text>Can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. Slightly reduces [ICON_HAPPINESS_3] Crime, Boredom, Illiteracy, and Religious Unrest.[NEWLINE][NEWLINE]Provides +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Units. Conquering Enemy City starts 10-turn long [ICON_HAPPINESS_1] 'We Love the King' Day.</Text>
+			<Text>Can be built in Non-occupied Cities. Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. Slightly reduces [ICON_HAPPINESS_3] Distress, Boredom, Illiteracy, and Religious Unrest.[NEWLINE][NEWLINE]Provides +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Units. Conquering Enemy City starts 10-turn long [ICON_HAPPINESS_1] 'We Love the King' Day.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_STRATEGY">
-			<Text>Unique Mongolian replacement for the Courthouse. Can be built in non-occupied Cities. In addition elimination Unhappiness in Occupied Cities, this building reduces unhappiness from Crime, Illiteracy, Boredom and Religious Tensions, and increases production of all Land-based military units, except Unmounted Melee. Conquering Cities triggers a small WLTKD. It is also slightly cheaper than the Courthouse.</Text>
+			<Text>Unique Mongolian replacement for the Courthouse. Can be built in non-occupied Cities. In addition elimination Unhappiness in Occupied Cities, this building reduces unhappiness from Distress, Illiteracy, Boredom and Religious Tensions, and increases production of all Land-based military units, except Unmounted Melee. Conquering Cities triggers a small WLTKD. It is also slightly cheaper than the Courthouse.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_TEXT">
 			<Text>Yassa was a secret written code of law created by Genghis Khan. The word Yassa translates into "order" or "decree". It was the de facto law of the Mongol Empire even though the "law" was never actually made public. The Yassa seems to have originated from decrees issued in war time, and was later codified and expanded to include cultural and life-style conventions. By keeping the Yassa secret, the decrees could be modified and used selectively. It is believed that the Yassa was supervised by Genghis Khan himself with the help of the high judge of the Mongol Empire: His stepbrother, Shihihutag. Genghis Khan appointed his second son Chagatai (later Chagatai Khan) to oversee the execution of the laws.</Text>
