@@ -131,7 +131,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_TRIREME';
 INSERT INTO Unit_FreePromotions
 			(UnitType, 				PromotionType)
 VALUES		('UNIT_INDONESIA_PRAU',	'PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA'),
-			('UNIT_INDONESIA_PRAU',	'PROMOTION_TARGETING_4'),
+			('UNIT_INDONESIA_PRAU',	'PROMOTION_BOARDING_PARTY_4'),
 			('UNIT_INDONESIA_PRAU',	'PROMOTION_SENTRY');
 --==========================================================================================================================
 --==========================================================================================================================
