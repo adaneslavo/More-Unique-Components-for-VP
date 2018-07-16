@@ -79,8 +79,8 @@ VALUES		('BUILDING_ENGLAND_WHITE_TOWER', 'YIELD_CULTURE', 	5),
 ------------------------------	
 INSERT INTO Building_ThemingBonuses	
 			(BuildingType,						Description,									Bonus,	RequiresOwner,	RequiresUniquePlayers,	MustBeArtifact,	AIPriority)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_NATIONAL',	8,		1,				0,						1,				1),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_GLOBAL',		4,		0,				1,						1,				1);
+VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_NATIONAL',	6,		1,				0,						1,				1),
+			('BUILDING_ENGLAND_WHITE_TOWER',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_GLOBAL',		6,		0,				1,						1,				1);
 ------------------------------	
 -- Building_ClassesNeededInCity
 ------------------------------		
