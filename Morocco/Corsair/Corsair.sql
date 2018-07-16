@@ -57,8 +57,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_PRIVATEER';
 
 INSERT INTO	Unit_FreePromotions
 			(UnitType,					PromotionType)
-VALUES		('UNIT_MOROCCO_CORSAIR',	'PROMOTION_UNIT_MOROCCO_RAZZIA'),
-			('UNIT_MOROCCO_CORSAIR',	'PROMOTION_TARGETING_4');
+VALUES		('UNIT_MOROCCO_CORSAIR',	'PROMOTION_UNIT_MOROCCO_RAZZIA');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
