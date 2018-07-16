@@ -326,7 +326,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MOROCCO_CORSAIR_HELP">
 			<Text>
-				Naval Unit specializing in disrupting maritime trade. Only Morocco may build it. Can enter Rival Territory and ignores Enemy Zone of Control. Gain [ICON_FOOD] Food and [ICON_PRODUCTION] Production whenever a Corsair Kills a Units, Pillages a Resource, or Plunders a [ICON_INTERNATIONAL_TRADE] Trade Route.
+				Naval Unit specializing in disrupting maritime trade. Only Morocco may build it. Can enter Rival Territory. Gain [ICON_FOOD] Food and [ICON_PRODUCTION] Production whenever a Corsair Kills a Units, Pillages a Resource, or Plunders a [ICON_INTERNATIONAL_TRADE] Trade Route.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA">
@@ -1757,7 +1757,7 @@
 			<Text>The Prau is faster and cheaper than the Trireme it replaces and ignores zone of control. It is great for early game scouting and raiding.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_HELP">
-			<Text>Effective early Naval Scout. Only Indonesia may build it. Available earlier, and faster than the Trireme it replaces, and ignores Enemy Zone of Control.</Text>
+			<Text>Effective early Naval Scout. Only Indonesia may build it. Available earlier, and faster than the Trireme it replaces. Starts with the Sentry and Pincer Promotions.</Text>
 		</Row>
 		
 		<!-- Penteconter -->
@@ -1946,10 +1946,10 @@
 		<!-- Scythed Chariot -->
 		<!-- Created by adan_eslavo on 26/10/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE">
-			<Text>Rending Scythe</Text>
+			<Text>Rend</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]On Move[ENDCOLOR] unit inflicts flat damage [COLOR_POSITIVE_TEXT]to all new adjacent Enemy Units[ENDCOLOR]. +1 Sight.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]On Move[ENDCOLOR] unit inflicts 10 [COLOR_POSITIVE_TEXT]to all new adjacent Enemy Units[ENDCOLOR]. Ignores Zone of Control.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CELTS_CARNYX">
 			<Text>Carnyx</Text>
