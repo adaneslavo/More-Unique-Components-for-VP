@@ -84,7 +84,7 @@ VALUES		('UNIT_CELTS_ATLAS', 				256, 		'ScythedChariotPicture_256.dds',	1, 				
 ------------------------------
 INSERT INTO UnitPromotions 
 			(Type, 							Description, 							Help, 										Sound, 				VisibilityChange,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, AoEDamageOnMove, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_CELTS_SCYTHE',	'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE',	'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE_HELP',	'AS2D_IF_LEVELUP',	1,					0,				0,			0,			0,					0,			1,					1, 		10, 				0, 				'UNIT_CELTS_PROMOTION_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE'),
+VALUES		('PROMOTION_UNIT_CELTS_SCYTHE',	'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE',	'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					1,			1,					1, 		10, 				0, 				'UNIT_CELTS_PROMOTION_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE'),
 			('PROMOTION_UNIT_CELTS_CARNYX',	'TXT_KEY_PROMOTION_UNIT_CELTS_CARNYX',	'TXT_KEY_PROMOTION_UNIT_CELTS_CARNYX_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			0,					1, 	0, 					0, 				'UNIT_CELTS_PROMOTION_2_ATLAS', 'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_CELTS_CARNYX');
 ------------------------------
 -- UnitPromotions_UnitCombatMods
@@ -153,7 +153,6 @@ INSERT INTO Unit_FreePromotions
 			(UnitType, 						PromotionType)
 VALUES		('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_UNIT_CELTS_SCYTHE'),
 			('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_UNIT_CELTS_CARNYX'),
-			('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_TARGETING_4'),
 			('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_ROUGH_TERRAIN_ENDS_TURN');
 --==========================================================================================================================
 --==========================================================================================================================
