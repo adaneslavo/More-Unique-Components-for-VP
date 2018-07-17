@@ -5,10 +5,17 @@
 More Unique Components for Vox Populi changelog:
 v34:
 - changes:
+	- Crime/Distress overhaul
+		- changed the unhappiness reduction values from the old -10/-20/-30/-50 to the new -25/-50/-75 system for distress/poverty/illiteracy/boredom/religious tension reductions. 
+		- changed crime to distress in all text
+	- Theming bonus overhaul:
+		Wat => increased tourism bonus when themed, and increased bonus to +3sci/+3Faith when themed
+		White Tower => increased tourism bonus when themed
 	- Promotion overhaul updates: Slipstream has been removed from the game. affected units have been changed accordingly:
 		Prau => Has Pincer promotion for free
 		Corsair => removed Slipstream
 		Scythed Chariot => removed Slipstream, ZOC ignore added to Rend promotion
+	- Ballista => changed legatus legionis from double movement in open terrain to +1 movement
 	- Schutzenstand ==> removed building requirements
 	- Chaebol ==> removed gold for trade routes
 	- Mughal Fort/Qila ==> Added National wonders to Defense calculation. Reduced Defense to culture conversion to 10%
