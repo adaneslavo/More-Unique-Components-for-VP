@@ -6,7 +6,7 @@ More Unique Components for Vox Populi changelog:
 v34:
 - changes:
 	- Crime/Distress overhaul
-		- changed the unhappiness reduction values from the old -10/-20/-30/-50 to the new -25/-50/-75 system for distress/poverty/illiteracy/boredom/religious tension reductions. 
+		- Old -10/-20/-30/-50 changed to the new -25/-50/-75 for distress/poverty/etc. unhappiness reductions. 
 		- changed crime to distress in all text
 	- Theming bonus overhaul:
 		Wat => increased tourism bonus when themed, and increased bonus to +3sci/+3Faith when themed
