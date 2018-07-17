@@ -22,6 +22,9 @@ v34:
 	- Pairidaeza ==> removed 1 culture to all guilds on empire. changed to +5% GA length
 	- Fale t'ele ==> removed +1g to fishing boats (Polynesia needed a nerf)
 	- Name changes ==> changed Mughal Fort to Qila. Changed Sauna to Bastu
+	- Etemenanki ==> instant boost from building investment now scales off the capital's current food and science yields
+			- Bonus was a static 15 sci/food * Era * Gamespeed before
+			- Because the formula uses the capital, the building is now restricted to being built in the capital
 	
 - fixes: 
 	- Added Faith cost for Kabuki and Sambadrome (reformation belief)
