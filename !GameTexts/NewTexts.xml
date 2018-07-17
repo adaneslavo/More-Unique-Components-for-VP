@@ -203,13 +203,13 @@
 			<Text>Legatus Legionis</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA_HELP">
-			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Open Terrain[ENDCOLOR] if unit [COLOR_POSITIVE_TEXT]starts turn within 2 tiles from Great General[ENDCOLOR].</Text>
+			<Text>+1 [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]if unit [COLOR_POSITIVE_TEXT]starts turn within 2 tiles from Great General[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT">
 			<Text>Siege Mobility</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT_HELP">
-			<Text>Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Open Terrain[ENDCOLOR].</Text>
+			<Text>+1 [ICON_ARROW_RIGHT] Movement.</Text>
 		</Row>
 
 		<!-- Cacadores -->
