@@ -3,11 +3,11 @@
 --==========================================================================================================================	
 -- Ballista
 UPDATE Language_en_US 
-SET Text = 'Tough and accurate early Siege weapon. Only Rome may build it. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against Land Units. When near a [ICON_GREAT_GENERAL] Great General, has double [ICON_ARROW_RIGHT] Movement in Open Terrain and while crossing Rivers.'
+SET Text = 'Tough and accurate early Siege weapon. Only Rome may build it. This Unit is stronger than the Catapult, has no vision penalties, and has no penalty against Land Units. When near a [ICON_GREAT_GENERAL] Great General, has +1 [ICON_ARROW_RIGHT] Movement.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_BALLISTA';
 
 UPDATE Language_en_US 
-SET Text = 'The Ballista is a potent replacement for the Catapult, with few of the drawbacks of a normal Siege Unit. When near a Great General the Ballista can move freely in unhindering terrain, even in Enemy Territory. Use these war machines in conjunction with your Legions to expand quickly and consolidate your early Empire. The power and flexibility of the Ballista may allow your army to ignore producing Composite Bowmen entirely.'
+SET Text = 'The Ballista is a potent replacement for the Catapult, with few of the drawbacks of a normal Siege Unit. When near a Great General the Ballista can move freely, able to move and fire even in Enemy Territory. Use these war machines in conjunction with your Legions to expand quickly and consolidate your early Empire. The power and flexibility of the Ballista may allow your army to ignore producing Composite Bowmen entirely.'
 WHERE Tag = 'TXT_KEY_UNIT_ROMAN_BALLISTA_STRATEGY';
 
 -- Legion
