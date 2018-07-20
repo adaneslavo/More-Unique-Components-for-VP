@@ -746,6 +746,11 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>!DummyBuildings/DummyBuildingsForMonoChurch.sql</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>!GenericBonus/GenericBonus.sql</FileName>
+      </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -1168,6 +1173,12 @@ Latest changes: see changelog file.</Description>
         <Description>Automatic attack for Horse Archer</Description>
         <FileName>Huns/HorseArcher/HorseArcher.lua</FileName>
       </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>GenericBonus</Name>
+        <Description />
+        <FileName>!GenericBonus/GenericBonus.lua</FileName>
+      </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
   </PropertyGroup>
@@ -1312,6 +1323,14 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="!GameTexts\TextChanges.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="!GenericBonus\GenericBonus.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="!GenericBonus\GenericBonus.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -5419,6 +5438,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Morocco\Riad\" />
     <Folder Include="Germany" />
     <Folder Include="China" />
+    <Folder Include="!GenericBonus" />
     <Folder Include="Persia\Darius" />
     <Folder Include="Portugal\" />
     <Folder Include="Portugal\Cacadores\" />
