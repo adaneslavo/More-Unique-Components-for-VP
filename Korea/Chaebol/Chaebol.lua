@@ -4,7 +4,7 @@
 --------------------------------------------------------------
 function TradeRoutesToGPPAndGold(iPlayer)
 	local pPlayer = Players[iPlayer]
-  numTR = pPlayer:GetNumInternationalTradeRoutes()
+  numTR = pPlayer:GetNumInternationalTradeRoutesUsed()
 	for pCity in pPlayer:Cities() do
 		if pCity:IsHasBuilding(GameInfoTypes.BUILDING_KOREA_CHAEBOL) then
 				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGPPANDGOLD, numTR)
