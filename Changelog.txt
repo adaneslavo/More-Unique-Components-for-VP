@@ -18,6 +18,7 @@ v34:
 	- Ballista => changed legatus legionis from double movement in open terrain to +1 movement
 	- Schutzenstand ==> removed building requirements
 	- Chaebol ==> removed gold for trade routes
+	- Riad ==> removed scaling by Era and gamespeed from the gold/culture/GMP per trade route
 	- Mughal Fort/Qila ==> Added National wonders to Defense calculation. Reduced Defense to culture conversion to 10%
 	- Pairidaeza ==> removed 1 culture to all guilds on empire. changed to +5% GA length
 	- Fale t'ele ==> removed +1g to fishing boats (Polynesia needed a nerf)
