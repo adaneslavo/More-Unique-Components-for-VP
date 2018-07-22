@@ -15,7 +15,8 @@ v34:
 		Prau => Has Pincer promotion for free
 		Corsair => removed Slipstream
 		Scythed Chariot => removed Slipstream, ZOC ignore added to Rend promotion
-	- Ballista => changed legatus legionis from double movement in open terrain to +1 movement
+	- Ballista ==> changed legatus legionis from double movement in open terrain to +1 movement
+	- Latifundia ==> reduced build time to 14 turns (down from 18)
 	- Schutzenstand ==> removed building requirements
 	- Chaebol ==> removed gold for trade routes
 	- Riad ==> removed scaling by Era and gamespeed from the gold/culture/GMP per trade route
