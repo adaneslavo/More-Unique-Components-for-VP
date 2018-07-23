@@ -9,7 +9,7 @@ function DefenseToCulture(iPlayer)
 		for pCity in pPlayer:Cities() do
 			if pCity:IsHasBuilding(GameInfoTypes.BUILDING_INDIA_QILA) then
 				-- 1 Defense per National or World Wonder in City
-				local iDefenseChange = (pCity:GetNumWorldWonders() + pCity:GetNumNationalWonders())
+				local iDefenseChange = 100 * (pCity:GetNumWorldWonders() + pCity:GetNumNationalWonders())
 				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMY_1_DEFENSE, iDefenseChange)
 				-- 10% Defense converted to culture in City
 				local iCultureChange = 0.0010 * pCity:GetStrengthValue()
