@@ -15,6 +15,8 @@ v34:
 		Prau => Has Pincer promotion for free
 		Corsair => removed Slipstream
 		Scythed Chariot => removed Slipstream, ZOC ignore added to Rend promotion
+	- Turtle ship ==> changed from 2 moves and double move in coast to 4 moves and half move in ocean
+	- Waag ==> added -20% spy stealing rate in city 
 	- Ballista ==> changed legatus legionis from double movement in open terrain to +1 movement
 	- Latifundia ==> reduced build time to 14 turns (down from 18)
 	- Schutzenstand ==> removed building requirements
