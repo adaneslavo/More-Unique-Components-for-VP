@@ -39,7 +39,7 @@ v34:
 	- Qadi ==> altered dummy buildings so they are exposed to UI
 	- Baan Chang ==> altered dummy buildings so they are exposed to UI
 	- Added missing faith costs to: Ballista, Hakkapeliitta, Longbowman, Great Galleass, Turtle Ship
-	- fixed text for Sabum Kibitum, White Tower, and Great Bombard
+	- fixed text for Sabum Kibitum, White Tower, Waag, Mandekalu Cavalry, and Great Bombard
 
 v33:
 - changes:
