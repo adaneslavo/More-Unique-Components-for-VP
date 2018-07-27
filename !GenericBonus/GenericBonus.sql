@@ -63,11 +63,9 @@ VALUES		('BUILDINGCLASS_GENERIC_BONUS_DUMMY',	'BUILDING_GENERIC_BONUS_DUMMY',	1)
 
 INSERT INTO Buildings
 			(Type,										BuildingClass,	
-			Cost,	FaithCost,	GreatWorkCount, PrereqTech, NeverCapture,	NukeImmune,
-			Airlift)
+			Cost,	FaithCost,	GreatWorkCount, PrereqTech, NeverCapture,	NukeImmune)
 VALUES		('BUILDING_GENERIC_BONUS_DUMMY',		'BUILDINGCLASS_GENERIC_BONUS_DUMMY',
-			-1,		-1,			-1,				NULL,		1,				1,
-			1);
+			-1,		-1,			-1,				NULL,		1);
 
 INSERT INTO Building_YieldChanges
 			(BuildingType,						YieldType,			Yield)
