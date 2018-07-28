@@ -5,41 +5,41 @@
 More Unique Components for Vox Populi changelog:
 v34:
 - changes:
-	- Crime/Distress overhaul
-		- Old -10/-20/-30/-50 changed to the new -25/-50/-75 for distress/poverty/etc. unhappiness reductions. 
-		- changed crime to distress in all text
-	- Theming bonus overhaul:
-		Wat => increased tourism bonus when themed, and increased bonus to +3sci/+3Faith when themed
-		White Tower => increased tourism bonus when themed
-	- Promotion overhaul updates: Slipstream has been removed from the game. affected units have been changed accordingly:
-		Prau => Has Pincer promotion for free
-		Corsair => removed Slipstream
-		Scythed Chariot => removed Slipstream, ZOC ignore added to Rend promotion
-	- Turtle ship ==> changed from 2 moves and double move in coast to 4 moves and half move in ocean
-	- Waag ==> added -20% spy stealing rate in city 
-	- Ballista ==> changed legatus legionis from double movement in open terrain to +1 movement
-	- Latifundia ==> reduced build time to 12 turns (down from 18)
-	- Schutzenstand ==> removed building requirements
-	- Chaebol ==> removed gold for trade routes
-	- Riad ==> removed scaling by Era and gamespeed from the gold/culture/GMP per trade route
-	- Mughal Fort/Qila ==> Added National wonders to Defense calculation. Reduced Defense to culture conversion to 10%
-	- Pairidaeza ==> removed 1 culture to all guilds on empire. changed to +5% GA length
-	- Fale t'ele ==> removed +1g to fishing boats (Polynesia needed a nerf)
-	- Name changes ==> changed Mughal Fort to Qila. Changed Sauna to Bastu
-	- Etemenanki ==> instant boost from building investment now scales off the capital's current food and science yields
+	- crime/distress overhaul from latest VP update:
+		- old scaler -10/-20/-30/-50 changed to the new one -25/-50/-75 for distress/poverty/etc. unhappiness reductions,
+		- changed crime to distress in all text.
+	- theming bonus overhaul from latest VP update:
+		- Wat ==> increased tourism bonus when themed, and increased bonus to +3s/+3fa when themed,
+		- White Tower ==> increased tourism bonus when themed.
+	- promotion overhaul updates from latest VP update:
+		- Slipstream has been removed from the game. affected units have been changed accordingly:
+			- Prau ==> has Pincer promotion for free,
+			- Corsair ==> removed Slipstream,
+			- Scythed Chariot ==> removed Slipstream, ZOC ignore added to Rend promotion.
+	- Turtle ship ==> changed from 2 moves and double move in coast to 4 moves and half move in ocean,
+	- Waag ==> added -20% spy stealing rate in city,
+	- Ballista ==> changed Legatus Legionis from double movement in open terrain to +1 movement,
+	- Latifundia ==> reduced build time to 12 turns (down from 18),
+	- Schutzenstand ==> removed building requirements,
+	- Chaebol ==> removed gold for trade routes,
+	- Riad ==> removed scaling by era and gamespeed from the gold/culture/great merchant points per trade route,
+	- Mughal Fort/Qila ==> added national wonders to defense calculation. Reduced defense to culture conversion to 10%,
+	- Pairidaeza ==> removed 1 culture to all guilds on empire. Changed to +5% golden age length,
+	- Fale Tele ==> removed +1g to fishing boats (Polynesia needed a nerf),
+	- Etemenanki:
+			- instant boost from building investment now scales off the capital's current food and science yields
 			- Bonus was a static 15 sci/food * Era * Gamespeed before
 			- Because the formula uses the capital, the building is now restricted to being built in the capital
-	
+	- name changes:
+			- Mughal Fort ==> Qila
+			- Sauna ==> Bastu
 - fixes: 
-	- Added Faith cost for Kabuki and Sambadrome (reformation belief)
-	- adjusted faith costs for Pracinha, Prau, Licorne and Fusta. Reduced cost of Licorne
-	- Nilometer ==> disabled well for Egypt; AI and puppets won't ever be tricked into building wells instead of Nilometers
-	- University of Coimbra ==> altered dummy buildings so they are exposed to UI
-	- Mughal Fort/Qila ==> altered dummy buildings so they are exposed to UI
-	- Qadi ==> altered dummy buildings so they are exposed to UI
-	- Baan Chang ==> altered dummy buildings so they are exposed to UI
-	- Added missing faith costs to: Ballista, Hakkapeliitta, Longbowman, Great Galleass, Turtle Ship
-	- fixed text for Sabum Kibitum, White Tower, Waag, Mandekalu Cavalry, and Great Bombard
+	- added Faith cost for Kabuki and Sambadrome (reformation belief),
+	- adjusted faith costs for Pracinha, Prau, Licorne and Fusta. Reduced cost of Licorne,
+	- Nilometer ==> disabled well for Egypt (AI and puppets won't ever be tricked into building wells instead of Nilometers),
+	- altered dummy buildings so they are exposed to UI: University of Coimbra, Qila, Qadi, Baan Chang,
+	- added missing faith costs to: Ballista, Hakkapeliitta, Longbowman, Great Galleass, Turtle Ship,
+	- fixed text for Sabum Kibitum, White Tower, Waag, Mandekalu Cavalry, and Great Bombard.
 
 v33:
 - changes:
