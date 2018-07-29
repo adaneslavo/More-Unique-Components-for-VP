@@ -1663,7 +1663,7 @@
 			<Text>Ball Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
-			<Text>Unique replacement for the Arena. Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Slightly reduces [ICON_HAPPINESS_3] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_FAITH] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +2 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVES] Perfume: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Unique replacement for the Arena. Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Slightly reduces [ICON_HAPPINESS_3] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +2 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVE] Olives: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
 			<Text>
