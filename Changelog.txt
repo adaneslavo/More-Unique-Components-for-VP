@@ -3,6 +3,11 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v35:
+- changes:
+	- 
+- fixes: 
+	- minor fix for Exam Hall lua
 v34:
 - changes:
 	- crime/distress overhaul from latest VP update:
