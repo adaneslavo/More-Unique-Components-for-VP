@@ -183,12 +183,10 @@
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
-			<Text>
-				Greatly Reduces [ICON_HAPPINESS_3] Distress. +25 Experience for all new Units trained in this City.[NEWLINE][NEWLINE]Ranged and Siege Units garrisoned in this City have increased [ICON_RANGE_STRENGTH] Ranged Combat Strength.[NEWLINE][NEWLINE]Requires Walls in this City.
-			</Text>
+			<Text>Requires Walls in this City. Reduces [ICON_HAPPINESS_3] Distress. +25 Experience for all new Units trained in this City.[NEWLINE][NEWLINE]+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength for City Bombardment, Ranged units, and Siege Units garrisoned in this City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
-			<Text>Unique Polish replacement for the Armory. Must have built Walls in the city. In addition to the normal bonuses provided by the Armory, this building provides Culture, Faith, and increased city defense. Ranged and Siege garrisoned in the city have increased attack.</Text>
+			<Text>Unique Polish replacement for the Armory. Must have built Walls in the city. In addition to the normal bonuses provided by the Armory, this building provides Culture, Faith, and increased city defense. The City's ranged attack, and the attacks of Ranged and Siege units garrisoned in the city, are increased.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_TEXT">
 			<Text>	
@@ -1355,10 +1353,10 @@
 			<Text>Lamassu are Assyrian protective deities, often depicted as having a human head, the body of a bull or lion, and bird's wings. The Lamassu were household protective spirits of Babylonian and Assyrian commoners, and were later adopted as royal protectors. Depictions of Lamassu are found throughout Assyrian architecture, positioned as sentinels at the thresholds of buildings and as colossal statues on each side of the city and palace gates. Common folk, for their part, engraved Lamassi onto clay tablets and buried them under their door's threshold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_STRATEGY">
-			<Text>Unique Wall replacement. Military Units supplied by this City's population increased by 20%. Contains a Writer specialist slot and a Great Work of Writing slot to help your empire get an early start on great works.[NEWLINE][NEWLINE]Only the Assyrians may build it.</Text>
+			<Text>Unique Wall replacement. Military Units supplied by this City's population increases by 20% and Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 25%. Contains a Writer specialist slot and a Great Work of Writing slot to help your empire get an early start on great works.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
-			<Text>[ICON_WAR] Military Supplies by this City's population increased by 20%. It contains a slot for a [ICON_GREAT_WORK] Great Work of Writing.</Text>
+			<Text>[ICON_WAR] Military Supplies by this City's population increased by 20%. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 25%. Contains a slot for a [ICON_GREAT_WORK] Great Work of Writing.</Text>
 		</Row>
 
 		<!-- Landwehr -->
@@ -1855,7 +1853,7 @@
 			<Text>Qila</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>Slightly reduces [ICON_HAPPINESS_3] Distress. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +1 [ICON_PRODUCTION] Production to Quarries. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every National Wonder and World Wonder built in the City. 10% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
+			<Text>City must have Walls. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 25%. Slightly reduces [ICON_HAPPINESS_3] Distress. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every National Wonder and World Wonder built in the City. 10% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
 			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Culture and Great Artist Points. 10% of City Defense is converted into Culture every turn and the city gains more defense for wonders built in the city. Your most magnificent cities also become more difficult to capture.</Text>
@@ -2259,13 +2257,13 @@
 			<Text>Schützenstand</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_TEXT">
-			<Text>The Schützenstand were originally rifle guilds and rifle companies that had been formed in the 15th and 16th centuries, and were regularly involved in military operations within the borders of the Austrian county of Tyrol. A Standschütze was a member of a Schützenstand ("shooting club"), into which he was enrolled, which automatically committed him to the voluntary military protection of the state of Tyrol (and Vorarlberg). In effect this made Standschütze a Tyrolean local militia and home guard.</Text>
+			<Text>The Schützenstand were originally rifle guilds and rifle companies that had been formed in the 15th and 16th centuries, and were regularly involved in military operations within the borders of the Austrian county of Tyrol. A Standschütze was a member of a Schützenstand ("shooting club"), into which he was enrolled, which automatically committed him to the voluntary military protection of the state of Tyrol (and Vorarlberg). In effect this made Standschützen a Tyrolean local militia and home guard.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_STRATEGY">
-			<Text>The Schützenstand is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. It allows for faster construction of land military units in the city. It also provides +1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture per city-state ally.</Text>
+			<Text>The Schützenstand is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. Increases the City's [ICON_RANGE_STRENGTH] Ranged Strike Range by 1, and also allows the City to Ranged Strike indirectly, ignoring Line of Sight. It allows for faster construction of land military units in the city. It also provides +1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture per city-state ally.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP">
-			<Text>+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture for each City-State Ally.[NEWLINE][NEWLINE]+30% [ICON_PRODUCTION] Production and 15 XP toward Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units. Increases [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population by 10%.</Text>
+			<Text>City must have a Castle. Military Units supplied by this City's population increased by 15%. Increases the City's [ICON_RANGE_STRENGTH] Ranged Strike Range by 1, and allows Indirect Fire.[NEWLINE][NEWLINE]Garrisoned units receive an additional 10 Health when healing in this city. Foreign Spies cannot steal [ICON_RESEARCH] Science from this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture for each City-State Ally. +30% [ICON_PRODUCTION] Production and 15 XP toward Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units. Increases [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population by 10%.</Text>
 		</Row>
 				
 		<!-- Tarkhan -->		
