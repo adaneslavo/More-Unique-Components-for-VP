@@ -64,6 +64,7 @@ VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'YIELD_CULTURE',	1),
 INSERT INTO Improvement_TechYieldChanges
 			(ImprovementType,							TechType,				YieldType,			Yield)
 VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_CURRENCY',		'YIELD_GOLD',		2),
+			('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_CIVIL_SERVICE',	'YIELD_FOOD',		1),
 			('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_CIVIL_SERVICE',	'YIELD_PRODUCTION',	1),
 			('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_ECONOMICS',		'YIELD_GOLD',		1),
 			('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_FERTILIZER',		'YIELD_FOOD',		1),
@@ -98,8 +99,7 @@ VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_CITRUS',		1,					1),
 ------------------------------
 INSERT INTO Improvement_AdjacentImprovementYieldChanges
 			(ImprovementType,							OtherImprovementType,		YieldType,			Yield)
-VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'IMPROVEMENT_FARM',			'YIELD_PRODUCTION',	1),
-			('IMPROVEMENT_ROME_LATIFUNDIUM',			'IMPROVEMENT_PLANTATION',	'YIELD_CULTURE',	1);
+VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'IMPROVEMENT_PLANTATION',	'YIELD_CULTURE',	1);
 --==========================================================================================================================
 
 --==========================================================================================================================
