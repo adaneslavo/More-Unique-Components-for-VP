@@ -8,7 +8,7 @@
     <ModVersion>35</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>More Unique Components mod. Compatible with latest VP.</Teaser>
-    <Description>More Unique Components mod. Compatible with latest VP (08-06).
+    <Description>More Unique Components mod. Compatible with latest VP (8-6).
 
 Latest changes: see changelog file.</Description>
     <Authors>adan_eslavo</Authors>
@@ -746,7 +746,7 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>!DummyBuildings/DummyBuildingsForMonoChurch.sql</FileName>
       </Action>
-<!--      <Action>
+      <!--      <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>!GenericBonus/GenericBonus.sql</FileName>
@@ -1173,7 +1173,7 @@ Latest changes: see changelog file.</Description>
         <Description>Automatic attack for Horse Archer</Description>
         <FileName>Huns/HorseArcher/HorseArcher.lua</FileName>
       </Content>
-<!--      <Content>
+      <!--      <Content>
         <Type>InGameUIAddin</Type>
         <Name>GenericBonus</Name>
         <Description />
@@ -1326,7 +1326,7 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-<!--    <Content Include="!GenericBonus\GenericBonus.lua">
+    <!--    <Content Include="!GenericBonus\GenericBonus.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -5438,7 +5438,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Morocco\Riad\" />
     <Folder Include="Germany" />
     <Folder Include="China" />
-<!--    <Folder Include="!GenericBonus" /> -->
+    <!--    <Folder Include="!GenericBonus" /> -->
     <Folder Include="Persia\Darius" />
     <Folder Include="Portugal\" />
     <Folder Include="Portugal\Cacadores\" />

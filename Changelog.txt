@@ -5,14 +5,15 @@
 More Unique Components for Vox Populi changelog:
 v35:
 - changes:
-	- Defensive building updates
-		- Standschutzen: added default bonuses from Arsenal
-		- Qila: added default bonus from Castle
-		- Lamassu Gate: added deafult bonus from Walls, and +25% city strike
-		- Barbican: added +33% city strike and reduced distress reduction
-	- Latifundium: removed +1 prod to adjacent farms. Added +1 food at Civil Service
+	- defensive building updates (VP version 8-6):
+		- Standschutzen ==> added default bonuses from Arsenal,
+		- Qila ==> added default bonus from Castle,
+		- Lamassu Gate ==> added deafult bonus from Walls; additional +25% city strike,
+		- Barbican ==> added +33% city strike and reduced distress reduction.
+	- Latifundium ==> removed +1 prod to adjacent farms. Added +1 food at Civil Service.
 - fixes: 
-	- minor fix for Exam Hall lua
+	- minor fix for Exam Hall lua.
+
 v34:
 - changes:
 	- crime/distress overhaul from latest VP update:
