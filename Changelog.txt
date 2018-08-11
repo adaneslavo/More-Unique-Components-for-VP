@@ -3,6 +3,10 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+
+- changes:
+	Pogost ==> City Connection gold is now local instead of global (old caravansary code)
+- fixes: 
 v35:
 - changes:
 	- defensive building updates (VP version 8-6):
