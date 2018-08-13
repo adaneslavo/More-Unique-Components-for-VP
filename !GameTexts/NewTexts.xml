@@ -264,7 +264,7 @@
 			<Text>Chaebol</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL_HELP">
-			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 10%.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great People Points for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]Each Chaebol gains +2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol on Empire.</Text>
+			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City and +2 [ICON_GOLD] Gold for Towns near the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 10%.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great People Points for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]Each Chaebol gains +2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL_STRATEGY">
 			<Text>The Chaebol is the unique Stock Exchange replacement for South Korea. In addition to the normal bonuses of a Stock Exchange, the Chaebol boosts the production of Factories in Cities where the Chaebol is built. Chaebols increase the production of Great People for every International Trade Route the Empire controls. In addition, every Chaebol increases the Gold, Culture and Science of every other Chaebol in the empire; the more you build, the more they produce.</Text>
