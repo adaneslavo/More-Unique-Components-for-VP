@@ -56,8 +56,13 @@ INSERT INTO Building_YieldChanges
 			(BuildingType, 					YieldType,			Yield)
 VALUES		('BUILDING_KOREA_CHAEBOL',	'YIELD_GOLD',		5),
 			('BUILDING_KOREA_CHAEBOL',	'YIELD_PRODUCTION',	3);
-
-
+------------------------------	
+-- Building_ImprovementYieldChanges
+------------------------------
+INSERT INTO Building_ImprovementYieldChanges
+	(BuildingType, ImprovementType, YieldType, Yield)
+SELECT		'BUILDING_KOREA_CHAEBOL',	ImprovementType, YieldType, Yield
+FROM Building_ImprovementYieldChanges WHERE BuildingType = 'BUILDING_STOCK_EXCHANGE';
 ------------------------------	
 -- Building_YieldChangesPerPop
 ------------------------------
