@@ -1356,7 +1356,7 @@
 			<Text>Unique Wall replacement. Military Units supplied by this City's population increases by 20% and Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 25%. Contains a Writer specialist slot and a Great Work of Writing slot to help your empire get an early start on great works.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
-			<Text>[ICON_WAR] Military Supplies by this City's population increased by 20%. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 25%. Contains a slot for a [ICON_GREAT_WORK] Great Work of Writing.</Text>
+			<Text>[ICON_WAR] Military Supplies by this City's population increased by 20%. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 25% and Strike Range by 1. Contains a slot for a [ICON_GREAT_WORK] Great Work of Writing.</Text>
 		</Row>
 
 		<!-- Landwehr -->
@@ -1722,13 +1722,13 @@
 			<Text>Pogost - Stage 3: Eastern Orthodox Church</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP">
-			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns. Reduces [ICON_HAPPINESS_3] Poverty.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
+			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns. Reduces [ICON_HAPPINESS_3] Poverty.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
-			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City.[NEWLINE][NEWLINE]Unlocks access to Stage 3.</Text>
+			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City.[NEWLINE][NEWLINE]Unlocks access to Stage 3.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_3_HELP">
-			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +2 [ICON_PEACE] Faith to Shrines, Temples and Monasteries.</Text>
+			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +2 [ICON_PEACE] Faith to Shrines, Temples and Monasteries.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_STRATEGY">
 			<Text>Unique Russian replacement for the Customs House. Initially, Pogosts are comparatively lackluster, but they develop new traits as the game progresses. Each stage increases Gold generated from City Connections, and The Pogost provides modest increases in gold from trade and culture, then gains modest boosts to gold and science at its second stage, and provides boosts to faith generation in its final stage.</Text>
