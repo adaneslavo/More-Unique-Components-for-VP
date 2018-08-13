@@ -7,6 +7,7 @@ More Unique Components for Vox Populi changelog:
 - changes:
 	Pogost ==> City Connection gold is now local instead of global (old caravansary code)
 - fixes: 
+	Chaebol ==> Added +2 gold to Towns (same as stock exchange)
 v35:
 - changes:
 	- defensive building updates (VP version 8-6):
