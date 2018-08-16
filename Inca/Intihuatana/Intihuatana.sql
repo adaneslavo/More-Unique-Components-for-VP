@@ -60,7 +60,7 @@ INSERT INTO Building_YieldChanges
 		(BuildingType, 			YieldType,		Yield)
 VALUES		('BUILDING_INCA_INTIHUATANA',	'YIELD_SCIENCE',	2),
 		('BUILDING_INCA_INTIHUATANA',	'YIELD_FAITH',		2),
-		('BUILDING_INCA_INTIHUATANA_2',	'YIELD_SCIENCE',	6),
+		('BUILDING_INCA_INTIHUATANA_2',	'YIELD_SCIENCE',	8),
 		('BUILDING_INCA_INTIHUATANA_2',	'YIELD_FAITH',		2);
 ------------------------------	
 -- Building_YieldPerXTerrainTimes100
