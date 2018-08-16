@@ -6,6 +6,7 @@ More Unique Components for Vox Populi changelog:
 
 v36:
 - changes:
+	- Intihuatana ==> Changed base yields per mountain (1sci/2food); changed the social policy improvement (6sci, 2sci/3food from mountains)
 	- Pogost ==> gold from city connection now local instead of global (old Caravansary code).
 - fixes: 
 	- Chaebol ==> added +2 gold to Towns (same as stock exchange).
