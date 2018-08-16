@@ -1755,7 +1755,7 @@
 			<Text>The Prau is faster and cheaper than the Trireme it replaces and ignores zone of control. It is great for early game scouting and raiding.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_HELP">
-			<Text>Effective early Naval Scout. Only Indonesia may build it. Available earlier, and faster than the Trireme it replaces. Starts with the Sentry and Pincer Promotions.</Text>
+			<Text>Effective early Naval Scout. Only Indonesia may build it. This unit is faster and available earlier than the Trireme it replaces. Starts with the Sentry and Pincer Promotions.</Text>
 		</Row>
 		
 		<!-- Penteconter -->
