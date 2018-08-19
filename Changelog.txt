@@ -6,6 +6,8 @@ More Unique Components for Vox Populi changelog:
 
 v36:
 - changes:
+	- Black Tug ==> Changed Mingghan to +20% CS when on pillaged tile, not just +20% attack (eliminates need for lua).
+	- Armada ==> Added invincible promotion for full HP which gives 2XP per turn from spotting (Makes lua easier). 
 	- Intihuatana ==> Changed base yields per mountain (1sci/2food); changed the social policy improvement (6sci, 2sci/3food from mountains)
 	- Pogost ==> gold from city connection now local instead of global (old Caravansary code).
 - fixes: 
