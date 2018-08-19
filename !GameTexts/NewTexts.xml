@@ -77,13 +77,19 @@
 			<Text>Santa María</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA_HELP">
-			<Text>Unit gains [ICON_CAPITAL] Great Admiral Points [COLOR_POSITIVE_TEXT]on Kills[ENDCOLOR].</Text>
+			<Text>Unit gains [ICON_GREAT_ADMIRAL] Great Admiral Points [COLOR_POSITIVE_TEXT]on Kills[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE">
 			<Text>Invincible</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP">
 			<Text>+2 XP if unit is sailing [COLOR_POSITIVE_TEXT]inside Enemy Territory at full Health[ENDCOLOR]. +4 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. Lost after unit upgrade.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL">
+			<Text>Full Health</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL_HELP">
+			<Text>+2 XP if unit is [COLOR_POSITIVE_TEXT]inside Enemy Territory at full Health[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA">
 			<Text>Armada</Text>
@@ -2477,7 +2483,7 @@
 			<Text>Kantai Kessen</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_JAPAN_YAMATO_HELP">
-			<Text>Unit gains [ICON_CAPITAL] Great Admiral Points [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR].</Text>
+			<Text>Unit gains [ICON_GREAT_ADMIRAL] Great Admiral Points [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR].</Text>
 		</Row>
 		
 		<!-- Yassa Court -->
