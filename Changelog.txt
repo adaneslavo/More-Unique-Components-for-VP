@@ -3,6 +3,17 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v37:
+- changed:
+	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion.
+- fixed:
+	- pedia categories for some promotions:
+		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
+		- Great Tactician (Suffet) ==> to SHARED,
+		- Reciprocity (Great Diplomat) ==> to DIPLO,
+		- Deck Spikes, Coastal Patrol (Turtle Ship) ==> to NAVAL,
+		- Siege Mobility (Ballista) ==> to SIEGE,
+		- Mingghan, Massacre (Black Tug) ==> to MOUNTED.
 
 v36:
 - changes:

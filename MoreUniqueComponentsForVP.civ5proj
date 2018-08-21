@@ -785,12 +785,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Tug Banner Warrior</Name>
-        <Description>Adds Massacre promotion.</Description>
-        <FileName>Mongolia/BlackTug/BlackTug.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Yassa Court</Name>
         <Description>Starts WLTKD after capturing enemy city.</Description>
         <FileName>Mongolia/YassaCourt/YassaCourt.lua</FileName>
@@ -1173,12 +1167,6 @@ Latest changes: see changelog file.</Description>
         <Description>Automatic attack for Horse Archer</Description>
         <FileName>Huns/HorseArcher/HorseArcher.lua</FileName>
       </Content>
-      <!--      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>GenericBonus</Name>
-        <Description />
-        <FileName>!GenericBonus/GenericBonus.lua</FileName>
-      </Content> -->
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
   </PropertyGroup>
@@ -4109,10 +4097,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Mongolia\BlackTug\3DModel\Knight_Turkey_Horse_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Mongolia\BlackTug\BlackTug.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Mongolia\BlackTug\BlackTugFlag_032.dds">
       <SubType>Lua</SubType>

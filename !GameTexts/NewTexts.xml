@@ -155,12 +155,6 @@
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN_HELP">
 			<Text>+5 XP [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. +20% [ICON_STRENGTH] Combat Strength if unit is standing [COLOR_POSITIVE_TEXT]on Pillaged Tile[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE">
-			<Text>Massacre</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_MONGOLIA_MASSACRE_HELP">
-			<Text>+20% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from Pillaged Tile[ENDCOLOR].</Text>
-		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIA_BLACK_TUG">
 			<Text>Black Tug</Text>
 		</Row>
