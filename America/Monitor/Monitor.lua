@@ -2,7 +2,7 @@
 -- Author: adan_eslavo
 -- DateCreated: 15/01/2018
 --------------------------------------------------------------
-local eUnitMonitor = GameInfoTypes.PROMOTION_UNIT_AMERICA_MONITOR
+--[[local eUnitMonitor = GameInfoTypes.PROMOTION_UNIT_AMERICA_MONITOR
 local eBuildingDummyDefense = GameInfoTypes.BUILDING_DUMMYDEFENSE
 
 function OnTurnEndAddCityDefense(iPlayer)
