@@ -5,7 +5,9 @@
 More Unique Components for Vox Populi changelog:
 v37:
 - changed:
-	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion.
+	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion,
+	- Barbican ==> total rework; now it's merged version of Castle and Armory, stronger from both with more offensive potential, blocks Armory building (gives dummy Armory instead),
+	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains.
 - fixed:
 	- pedia categories for some promotions:
 		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
@@ -13,7 +15,8 @@ v37:
 		- Reciprocity (Great Diplomat) ==> to DIPLO,
 		- Deck Spikes, Coastal Patrol (Turtle Ship) ==> to NAVAL,
 		- Siege Mobility (Ballista) ==> to SIEGE,
-		- Mingghan, Massacre (Black Tug) ==> to MOUNTED.
+		- Mingghan (Black Tug) ==> to MOUNTED.
+	- Pancerny ==> now 300% yields from Barbarian kills (was 150%, same as normal kills).
 
 v36:
 - changes:

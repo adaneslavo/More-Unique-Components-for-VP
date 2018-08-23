@@ -6,7 +6,7 @@
 --------------------------------		
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 		BuildingClassType, 		BuildingType)
-VALUES	('CIVILIZATION_POLAND',	'BUILDINGCLASS_ARMORY',	'BUILDING_POLAND_BARBICAN');
+VALUES	('CIVILIZATION_POLAND',	'BUILDINGCLASS_CASTLE',	'BUILDING_POLAND_BARBICAN');
 --==========================================================================================================================	
 
 --==========================================================================================================================
@@ -30,26 +30,26 @@ VALUES	('BUILDING_POLAND_ATLAS', 			256, 		'BarbicanPicture_256.dds',			1, 				1
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,						BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense, RangedStrikeModifier, 			ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,		DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	Help,										Description,						Civilopedia,								Strategy,										IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_POLAND_BARBICAN', BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense+1000, 33, 			ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat+1,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_POLAND_BARBICAN_HELP',	'TXT_KEY_BUILDING_POLAND_BARBICAN', 'TXT_KEY_BUILDING_POLAND_BARBICAN_TEXT',	'TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY',	'BUILDING_POLAND_ATLAS',	0
-FROM Buildings WHERE Type = 'BUILDING_ARMORY';	
+			(Type,						BuildingClass,	GoldMaintenance, Cost,		FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,		RangedStrikeModifier, 	ExtraCityHitPoints,		TrainedFreePromotion,	CitySupplyFlat,		CitySupplyModifier,		DefenseHappinessChange,		GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech,		ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, DisplayPosition,	Help,										Description,						Civilopedia,								Strategy,										IconAtlas,					PortraitIndex)
+SELECT		'BUILDING_POLAND_BARBICAN', BuildingClass,	GoldMaintenance, Cost+100,	FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense+500,	RangedStrikeModifier+8, ExtraCityHitPoints+25,	TrainedFreePromotion,	CitySupplyFlat+2,	CitySupplyModifier+5,	DefenseHappinessChange-50,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_STEEL',	ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, DisplayPosition,	'TXT_KEY_BUILDING_POLAND_BARBICAN_HELP',	'TXT_KEY_BUILDING_POLAND_BARBICAN', 'TXT_KEY_BUILDING_POLAND_BARBICAN_TEXT',	'TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY',	'BUILDING_POLAND_ATLAS',	0
+FROM Buildings WHERE Type = 'BUILDING_CASTLE';	
 ------------------------------	
 -- Building_Flavors
 ------------------------------		
 INSERT INTO Building_Flavors 	
 			(BuildingType, 					FlavorType,					Flavor)
-VALUES		('BUILDING_POLAND_BARBICAN',	'FLAVOR_MILITARY_TRAINING', 60),
-			('BUILDING_POLAND_BARBICAN',	'FLAVOR_CITY_DEFENSE',		15),
+VALUES		('BUILDING_POLAND_BARBICAN',	'FLAVOR_MILITARY_TRAINING', 40),
+			('BUILDING_POLAND_BARBICAN',	'FLAVOR_CITY_DEFENSE',		50),
 			('BUILDING_POLAND_BARBICAN',	'FLAVOR_CULTURE',			10),
-			('BUILDING_POLAND_BARBICAN',	'FLAVOR_RELIGION',			10),
 			('BUILDING_POLAND_BARBICAN',	'FLAVOR_SCIENCE',			10),
-			('BUILDING_POLAND_BARBICAN',	'FLAVOR_RANGED',			10);			
+			('BUILDING_POLAND_BARBICAN',	'FLAVOR_RANGED',			30);			
 ------------------------------	
 -- Building_ClassesNeededInCity
 ------------------------------		
 INSERT INTO Building_ClassesNeededInCity 	
-		(BuildingType, 				BuildingClassType)
-VALUES	('BUILDING_POLAND_BARBICAN',	'BUILDINGCLASS_WALLS');
+			(BuildingType, 				BuildingClassType)
+SELECT		'BUILDING_POLAND_BARBICAN',	BuildingClassType
+FROM Building_ClassesNeededInCity WHERE Type = 'BUILDING_CASTLE';
 ------------------------------	
 -- Building_Free_XP
 ------------------------------		
@@ -63,9 +63,15 @@ VALUES		('BUILDING_POLAND_BARBICAN',	'DOMAIN_LAND',	25),
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
-VALUES		('BUILDING_POLAND_BARBICAN',	'YIELD_CULTURE',	2),
-			('BUILDING_POLAND_BARBICAN',	'YIELD_FAITH',		2),
-			('BUILDING_POLAND_BARBICAN',	'YIELD_SCIENCE',	2);
+VALUES		('BUILDING_POLAND_BARBICAN',	'YIELD_CULTURE',	3),
+			('BUILDING_POLAND_BARBICAN',	'YIELD_SCIENCE',	3);
+------------------------------	
+-- Building_ImprovementYieldChanges
+------------------------------		
+INSERT INTO Building_ImprovementYieldChanges 	
+			(BuildingType, 				ImprovementType,	YieldType,	Yield)
+SELECT		'BUILDING_POLAND_BARBICAN',	ImprovementType,	YieldType,	Yield
+FROM Building_ImprovementYieldChanges WHERE Type = 'BUILDING_CASTLE';
 --==========================================================================================================================	
 
 --==========================================================================================================================	

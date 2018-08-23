@@ -746,11 +746,11 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>!DummyBuildings/DummyBuildingsForMonoChurch.sql</FileName>
       </Action>
-      <!--      <Action>
+      <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!GenericBonus/GenericBonus.sql</FileName>
-      </Action> -->
+        <FileName>!DummyBuildings/DummyBuildingArmory.sql</FileName>
+      </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -1273,6 +1273,10 @@ Latest changes: see changelog file.</Description>
     <Content Include="!Animations\edited_modern_ship_aim_state_01.fsmxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!DummyBuildings\DummyBuildingArmory.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="!DummyBuildings\DummyBuildingDefense.sql">
       <SubType>Lua</SubType>
@@ -2463,26 +2467,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5429,7 +5413,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Portugal\Cacadores\3DModel" />
     <Folder Include="Portugal\University of Coimbra\" />
     <Folder Include="Rome" />
-    <Folder Include="Poland\Pancerny\Grunwald" />
     <Folder Include="Rome\Figs" />
     <Folder Include="Rome\Figs\3DModel" />
     <Folder Include="Rome\Latifundium" />
