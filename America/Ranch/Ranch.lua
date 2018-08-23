@@ -20,7 +20,9 @@ function OnConstructionClaimResources(iPlayer, iCity, iBuilding)
 	if pPlayer:GetCivilizationType() == eCivilizationAmerica then
 		if iBuilding == eBuildingRanch then
 			local pCity = pPlayer:GetCityByID(iCity)
-
+			local pPlotClaimer = 0
+			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+			
 			for iCityPlot = 1, pCity:GetNumCityPlots() - 1, 1 do
 				local pSpecificPlot = pCity:GetCityIndexPlot(iCityPlot)
 				local iPlotOwner = pSpecificPlot:GetOwner()
@@ -29,25 +31,31 @@ function OnConstructionClaimResources(iPlayer, iCity, iBuilding)
 				if iResourceTypeOnTile == eResourceHorse or iResourceTypeOnTile == eResourceCattle or iResourceTypeOnTile == eResourceSheep or iResourceTypeOnTile == eResourceBison then
 					if iPlotOwner == -1 then
 						pSpecificPlot:SetOwner(iPlayer, iCity, 1, 1)
+						pPlotClaimer = pPlotClaimer + 1
 					end
 				end
+			
+			local iYield = (20* pPlotClaimer * iEraModifier)
+			pCity:ChangeProduction(iYield)
+				
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				local vCityPosition = PositionCalculator(iCityX, iCityY)
+			
+				Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+"..iYield.." [ICON_PRODUCTION][ENDCOLOR]", 1)
+			
+				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_TILE, 
+					sCurrency..'[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iYield..' [ICON_PRODUCTION] Production', 
+					'Bonus Yields in '..sCityName, 
+					iCityX, iCityY)
 			end
 		end
 	end
 end
 			
---[[			local vCityPosition = PositionCalculator(iCityX, iCityY)
 			
-			Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_FOOD]+"..iYield1.." [ICON_FOOD][ENDCOLOR]", 1)
-			Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iYield2.." [ICON_CULTURE][ENDCOLOR]", 1.5)
-			
-			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_TILE, 
-				sCurrency..'[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iYield1..' [ICON_FOOD] Food[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iYield2..' [ICON_CULTURE] Culture', 
-				'Bonus Yields in '..sCityName, 
-				iCityX, iCityY)
 
 function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
-end--]]
+end
 
 GameEvents.CityConstructed.Add(OnConstructionClaimResources)
