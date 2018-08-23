@@ -67,14 +67,14 @@ VALUES		('BUILDING_INCA_INTIHUATANA',	'YIELD_SCIENCE',	2),
 ------------------------------
 INSERT INTO Building_YieldPerXTerrainTimes100
 		(BuildingType, 			TerrainType, 		YieldType, 		Yield)
-VALUES		('BUILDING_INCA_INTIHUATANA', 	'TERRAIN_MOUNTAIN', 	'YIELD_SCIENCE', 	200),
+VALUES		('BUILDING_INCA_INTIHUATANA', 	'TERRAIN_MOUNTAIN', 	'YIELD_SCIENCE', 	100),
 		('BUILDING_INCA_INTIHUATANA', 	'TERRAIN_MOUNTAIN', 	'YIELD_FOOD', 		200),
 		('BUILDING_INCA_INTIHUATANA_2', 'TERRAIN_MOUNTAIN', 	'YIELD_SCIENCE', 	200),
-		('BUILDING_INCA_INTIHUATANA_2', 'TERRAIN_MOUNTAIN', 	'YIELD_FOOD', 		200);
+		('BUILDING_INCA_INTIHUATANA_2', 'TERRAIN_MOUNTAIN', 	'YIELD_FOOD', 		300);
 ------------------------------	
 -- Building_SpecialistYieldChanges
 ------------------------------			
-INSERT INTO Building_SpecialistYieldChanges 	
+INSERT INTO Building_SpecialistYieldChangesLocal 	
 		(BuildingType, 			SpecialistType, 	YieldType,	Yield)
 VALUES		('BUILDING_INCA_INTIHUATANA',	'SPECIALIST_SCIENTIST', 'YIELD_FAITH',	1),
 		('BUILDING_INCA_INTIHUATANA_2',	'SPECIALIST_SCIENTIST', 'YIELD_FAITH',	1);

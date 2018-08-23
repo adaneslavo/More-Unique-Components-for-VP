@@ -64,6 +64,7 @@ VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'YIELD_CULTURE',	1),
 INSERT INTO Improvement_TechYieldChanges
 			(ImprovementType,							TechType,				YieldType,			Yield)
 VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_CURRENCY',		'YIELD_GOLD',		2),
+			('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_CIVIL_SERVICE',	'YIELD_FOOD',		1),
 			('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_CIVIL_SERVICE',	'YIELD_PRODUCTION',	1),
 			('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_ECONOMICS',		'YIELD_GOLD',		1),
 			('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_FERTILIZER',		'YIELD_FOOD',		1),
@@ -98,8 +99,7 @@ VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_CITRUS',		1,					1),
 ------------------------------
 INSERT INTO Improvement_AdjacentImprovementYieldChanges
 			(ImprovementType,							OtherImprovementType,		YieldType,			Yield)
-VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'IMPROVEMENT_FARM',			'YIELD_PRODUCTION',	1),
-			('IMPROVEMENT_ROME_LATIFUNDIUM',			'IMPROVEMENT_PLANTATION',	'YIELD_CULTURE',	1);
+VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'IMPROVEMENT_PLANTATION',	'YIELD_CULTURE',	1);
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -110,7 +110,7 @@ VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'IMPROVEMENT_FARM',			'YIELD_PRODUCTI
 ------------------------------		
 INSERT INTO Builds		
 			(Type,						PrereqTech,			ImprovementType, 				Description, 						Help, 									Recommendation, 						EntityEvent, 				Time,	OrderPriority, 	Kill, 	IconIndex, 	IconAtlas)
-VALUES		('BUILD_ROME_LATIFUNDIUM',	'TECH_CALENDAR',	'IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM_HELP',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM_REC',	'ENTITY_EVENT_IRRIGATE',	1800,	95,				0,		0,			'IMPROVEMENT_ROME_2_ATLAS');
+VALUES		('BUILD_ROME_LATIFUNDIUM',	'TECH_CALENDAR',	'IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM_HELP',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM_REC',	'ENTITY_EVENT_IRRIGATE',	1200,	95,				0,		0,			'IMPROVEMENT_ROME_2_ATLAS');
 ------------------------------				
 -- Unit_Builds
 ------------------------------				

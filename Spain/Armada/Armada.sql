@@ -73,9 +73,10 @@ VALUES		('UNIT_SPAIN_ATLAS', 		256, 		'ArmadaPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 											Description, 										Help, 														Sound, 				CombatPercent,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_SPAIN_SANTA_MARIA', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA',			'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA_HELP', 			'AS2D_IF_LEVELUP',	0,				0,				0,			0,			0,					0,			0,					1, 				16, 			'PROMOTION_ATLAS', 					'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA'),
-			('PROMOTION_UNIT_SPAIN_INVINCIBLE', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE',			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP', 			'AS2D_IF_LEVELUP',	0,				0,				0,			0,			0,					0,			1,					1, 				0, 				'UNIT_BABYLON_PROMOTION_5_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE');
+			(Type, 						Description, 							Help, 									Sound, 			GainsXPFromSpotting, LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 	PediaEntry)
+VALUES		('PROMOTION_UNIT_SPAIN_SANTA_MARIA', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA',			'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA_HELP', 			'AS2D_IF_LEVELUP',	0, 			0,			1, 		16, 		'PROMOTION_ATLAS', 			'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA'),
+		('PROMOTION_UNIT_SPAIN_INVINCIBLE', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE',			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP', 			'AS2D_IF_LEVELUP',	0, 			1,			1, 		0, 		'UNIT_BABYLON_PROMOTION_5_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE'),
+		('PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL', 		'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL',		'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL_HELP', 		'AS2D_IF_LEVELUP',	1, 			1,			1, 		0, 		'UNIT_BABYLON_PROMOTION_5_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL');
 ------------------------------
 -- UnitPromotions_YieldFromKills
 ------------------------------
@@ -91,8 +92,8 @@ VALUES		('PROMOTION_UNIT_SPAIN_SANTA_MARIA',	'YIELD_GREAT_ADMIRAL_POINTS',	100);
 -- Units
 --------------------------------	
 INSERT INTO Units 	
-			(Type,					Class, 	PrereqTech,			Range,	BaseSightRange, Combat,		Cost,		FaithCost,	RequiresFaithPurchaseEnabled,	Moves,		Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 						Strategy, 								Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 					UnitFlagIconOffset,	UnitFlagAtlas,				PortraitIndex, 	IconAtlas,			MoveRate)
-SELECT		'UNIT_SPAIN_ARMADA',	Class,	'TECH_GUNPOWDER',	Range,	BaseSightRange, Combat+4,	Cost+60,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves-1,	Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_ROCKETRY',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_SPAIN_ARMADA',	'TXT_KEY_UNIT_SPAIN_ARMADA_TEXT',	'TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY',	'TXT_KEY_UNIT_SPAIN_ARMADA_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_SPAIN_ARMADA', 	0,					'UNIT_SPAIN_FLAG_ATLAS',	0, 				'UNIT_SPAIN_ATLAS',	MoveRate
+			(Type,					Class, 	PrereqTech,			Range,	BaseSightRange, Combat,		Cost,		FaithCost,	RequiresFaithPurchaseEnabled,	Moves,		Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 						Strategy, 								Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 					UnitFlagIconOffset,	UnitFlagAtlas,				PortraitIndex, 	IconAtlas,			MoveRate,	PurchaseCooldown)
+SELECT		'UNIT_SPAIN_ARMADA',	Class,	'TECH_GUNPOWDER',	Range,	BaseSightRange, Combat+4,	Cost+60,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves-1,	Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_ROCKETRY',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_SPAIN_ARMADA',	'TXT_KEY_UNIT_SPAIN_ARMADA_TEXT',	'TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY',	'TXT_KEY_UNIT_SPAIN_ARMADA_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_SPAIN_ARMADA', 	0,					'UNIT_SPAIN_FLAG_ATLAS',	0, 				'UNIT_SPAIN_ATLAS',	MoveRate,	PurchaseCooldown
 FROM Units WHERE Type = 'UNIT_PRIVATEER';
 --------------------------------	
 -- UnitGameplay2DScripts

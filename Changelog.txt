@@ -3,12 +3,139 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
-v31:
-- reworked Monolithic Church bonuses,
-- adjusted Tarkhan flags,
+v37:
 - changed:
-    - Oppidum ==> added compatibility with Koreana UA,
-- fixed some text issues.
+	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion.
+- fixed:
+	- pedia categories for some promotions:
+		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
+		- Great Tactician (Suffet) ==> to SHARED,
+		- Reciprocity (Great Diplomat) ==> to DIPLO,
+		- Deck Spikes, Coastal Patrol (Turtle Ship) ==> to NAVAL,
+		- Siege Mobility (Ballista) ==> to SIEGE,
+		- Mingghan, Massacre (Black Tug) ==> to MOUNTED.
+
+v36:
+- changes:
+	- Armada ==> added invincible promotion for full HP which gives 2XP per turn from spotting (makes lua easier),
+	- Intihuatana ==> changed base yields per mountain (1sci/2food); changed the social policy improvement (6sci, 2sci/3food from mountains).
+- fixes: 
+	- Chaebol ==> added +2 gold to Towns (same as stock exchange),
+	- Pogost ==> gold from city connection now local instead of global (old Caravansary code),
+	- Black Tug ==> fixed lua error.
+
+v35:
+- changes:
+	- defensive building updates (VP version 8-6):
+		- Standschutzen ==> added default bonuses from Arsenal,
+		- Qila ==> added default bonus from Castle,
+		- Lamassu Gate ==> added deafult bonus from Walls; additional +25% city strike,
+		- Barbican ==> added +33% city strike and reduced distress reduction.
+	- Latifundium ==> removed +1 prod to adjacent farms. Added +1 food at Civil Service.
+- fixes: 
+	- minor fix for Exam Hall lua.
+
+v34:
+- changes:
+	- crime/distress overhaul from latest VP update:
+		- old scaler -10/-20/-30/-50 changed to the new one -25/-50/-75 for distress/poverty/etc. unhappiness reductions,
+		- changed crime to distress in all text.
+	- theming bonus overhaul from latest VP update:
+		- Wat ==> increased tourism bonus when themed, and increased bonus to +3s/+3fa when themed,
+		- White Tower ==> increased tourism bonus when themed.
+	- promotion overhaul updates from latest VP update:
+		- Slipstream has been removed from the game. affected units have been changed accordingly:
+			- Prau ==> has Pincer promotion for free,
+			- Corsair ==> removed Slipstream,
+			- Scythed Chariot ==> removed Slipstream, ZOC ignore added to Rend promotion.
+	- Turtle ship ==> changed from 2 moves and double move in coast to 4 moves and half move in ocean,
+	- Waag ==> added -20% spy stealing rate in city,
+	- Ballista ==> changed Legatus Legionis from double movement in open terrain to +1 movement,
+	- Latifundia ==> reduced build time to 12 turns (down from 18),
+	- Schutzenstand ==> removed building requirements,
+	- Chaebol ==> removed gold for trade routes,
+	- Riad ==> removed scaling by era and gamespeed from the gold/culture/great merchant points per trade route,
+	- Mughal Fort/Qila ==> added national wonders to defense calculation. Reduced defense to culture conversion to 10%,
+	- Pairidaeza ==> removed 1 culture to all guilds on empire. Changed to +5% golden age length,
+	- Fale Tele ==> removed +1g to fishing boats (Polynesia needed a nerf),
+	- Etemenanki:
+			- instant boost from building investment now scales off the capital's current food and science yields
+			- Bonus was a static 15 sci/food * Era * Gamespeed before
+			- Because the formula uses the capital, the building is now restricted to being built in the capital
+	- name changes:
+			- Mughal Fort ==> Qila
+			- Sauna ==> Bastu
+- fixes: 
+	- added Faith cost for Kabuki and Sambadrome (reformation belief),
+	- adjusted faith costs for Pracinha, Prau, Licorne and Fusta. Reduced cost of Licorne,
+	- Nilometer ==> disabled well for Egypt (AI and puppets won't ever be tricked into building wells instead of Nilometers),
+	- altered dummy buildings so they are exposed to UI: University of Coimbra, Qila, Qadi, Baan Chang,
+	- added missing faith costs to: Ballista, Hakkapeliitta, Longbowman, Great Galleass, Turtle Ship,
+	- fixed text for Sabum Kibitum, White Tower, Waag, Mandekalu Cavalry, and Great Bombard.
+
+v33:
+- changes:
+	- Flax/Nilometer ==> split the gold, and moved production back to improvement. Now 1g/1c on resource, 1g/1p on improvement
+	- Huey Teocalli ==> removed bonus to watermills, and changed bonus to barracks to +2 food.
+				- this is in response to a VP patch update which boosts floating gardens
+	- Hippodrome ==> dropped Arena bonus gold to +2 (down from +4)
+	- Etemenanki ==> removed theming bonus
+	- Lamassu Gate ==> added +1 base faith (help differentiate more from Walls of Babylon)
+	- SPAD ==> reduced RCS to 45
+		- increased build cost (increased to same as triplane)
+		- gave back oil requirement
+- fixes: 
+	- SPAD ==> fixed bug which prevented unit from being able to rebase
+	- Iziko ==> fixed theming bonuses
+	- civ5proj ==> dropped Khopesh.lua from file, so people stop bothering me about it
+
+	- updated RCS and CS values which needed changing with newest VP patch: Sofa, Pancerni, Klepht, Ballista)
+	- included theming bonus on Iziko, consistent with latest VP patch. (+2 culture when themed). Reduced base culture to +2 (same as amphitheater)
+	
+v32.1:
+- changes:
+	- Khopesh ==> deactivated "Skillful" promotion.
+- fixes: 
+	- Madrasah ==> set faith purchase to 20/100, as stated in description (was set to 10/50 only).
+- further text adjustments.
+
+v32:
+- fixes:
+	- Andelsbevaegelse ==> Pastures have now 3f, 1p and 2g,
+					   ==> removed 5%f bonus,
+				       ==> now +3p instead of +5p (all values now consistent with data in the main thread and text),
+	- Barbican ==> lua logs sometimes shown nil value processing. I reworked the Barbican.lua code,
+	- Eagle ==> now cannot get worker from capturing the city,
+	- Indaba, Suffet ==> added PurchaseCooldown and GlobalFaithPurchaseCooldown values to the table,
+	- Intihuatana ==> now bonus +1fa to Scientists is local not global,
+	- Iron Chariot ==> decreased number of iterations made in lua (countries withou IC will not be checked),
+				   ==> added imported resources to the variables (now if you have 6 Iron (4 yours and 2 imported) and 5 Iron Chariots you will get bonus),
+	- Milometer ==> reduced base culture to +1
+	- Riad ==> deleted culture gain commented code and text mentioning (1c per 5),
+	- Sambadrome ==> increased culture modifier to 10% (now consistent with data in the main thread),
+	- almost all units received missing PurchaseCooldown value,
+	- great text rework.
+- changes:
+    - Scythed Chariot ==> unique promotion name is "Rending Scythes" now,
+					  ==> deleted one text value to fit VP changes.
+- added reference for Enlightement Era for VP to load it before this mod.
+
+v31.2:
+- fixes:
+    - Oppidum ==> reverted changes regarding Korean UA,
+	- Waag ==> added required building class (Market),
+	       ==> added yields to local buildings (Caravansary, Custom House),
+	- White Tower ==> now adds 2 Culture to Castles instead of 1,
+				  ==> two bonuses to building class moved to another table for local changes instead of global (Arsenal, Constabulary).
+- text corrections.
+
+v31:
+- reworked Monolithic Church bonuses (now it gains yields depending on Ethiopia's policies, ideologies and religon level),
+- renamed back Shotel Swordsman to Shotelai (much easier to say, much more natural),
+- adjusted Tarkhan flags (now they do not cross the borders),
+- changed:
+    - Oppidum ==> added compatibility with Korean UA,
+- fixed many text issues.
 
 v30:
 - fixed and tweaked:

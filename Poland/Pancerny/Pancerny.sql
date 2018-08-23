@@ -95,9 +95,9 @@ VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'YIELD_FAITH',	150);
 ------------------------------
 -- UnitPromotions_YieldFromBarbarianKills
 ------------------------------
-INSERT INTO UnitPromotions_YieldFromKills
+INSERT INTO UnitPromotions_YieldFromBarbarianKills
 			(PromotionType, 						YieldType,		Yield)
-VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'YIELD_FAITH',	300);
+VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'YIELD_FAITH',	150);
 ------------------------------
 -- UnitPromotions_Features
 ------------------------------
@@ -115,8 +115,8 @@ VALUES		('PROMOTION_UNIT_POLAND_GRUNWALD',	'FEATURE_FOREST',	25),
 -- Units
 --------------------------------	
 INSERT INTO Units 	
-			(Type,					Class, 	PrereqTech,	Range,	BaseSightRange, RangedCombat,	Combat, Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,					GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 							Strategy, 									Help, 									Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	UnitArtInfo, 						UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate)
-SELECT		'UNIT_POLAND_PANCERNY',	Class,	PrereqTech,	Range,	BaseSightRange, RangedCombat+2,	Combat,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_MILITARY_SCIENCE',		GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_POLAND_PANCERNY',	'TXT_KEY_UNIT_POLAND_PANCERNY_TEXT',	'TXT_KEY_UNIT_POLAND_PANCERNY_STRATEGY',	'TXT_KEY_UNIT_POLAND_PANCERNY_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	'ART_DEF_UNIT_POLAND_PANCERNY', 	0,					'UNIT_POLAND_FLAG_ATLAS',	0, 				'UNIT_POLAND_ATLAS',	MoveRate
+			(Type,					Class, 	PrereqTech,	Range,	BaseSightRange, RangedCombat,	Combat, Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,					GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 							Strategy, 									Help, 									Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	UnitArtInfo, 						UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate,	PurchaseCooldown)
+SELECT		'UNIT_POLAND_PANCERNY',	Class,	PrereqTech,	Range,	BaseSightRange, RangedCombat+2,	Combat+2,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_MILITARY_SCIENCE',		GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_POLAND_PANCERNY',	'TXT_KEY_UNIT_POLAND_PANCERNY_TEXT',	'TXT_KEY_UNIT_POLAND_PANCERNY_STRATEGY',	'TXT_KEY_UNIT_POLAND_PANCERNY_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	'ART_DEF_UNIT_POLAND_PANCERNY', 	0,					'UNIT_POLAND_FLAG_ATLAS',	0, 				'UNIT_POLAND_ATLAS',	MoveRate,	PurchaseCooldown
 FROM Units WHERE Type = 'UNIT_MOUNTED_BOWMAN';
 --------------------------------	
 -- UnitGameplay2DScripts

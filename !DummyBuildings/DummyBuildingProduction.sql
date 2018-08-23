@@ -6,7 +6,9 @@
 ------------------------------
 INSERT INTO BuildingClasses 	
 			(Type,								DefaultBuilding,				NoLimit)
-VALUES		('BUILDINGCLASS_DUMMYPRODUCTION',	'BUILDING_DUMMYPRODUCTION',		1);
+VALUES		('BUILDINGCLASS_DUMMYPRODUCTION',	'BUILDING_DUMMYPRODUCTION',		1),
+		('BUILDINGCLASS_FEITORIADUMMY',		'BUILDING_FEITORIADUMMY',		1),
+		('BUILDINGCLASS_DUMMYWORKSHOPPRODUCTION',		'BUILDING_DUMMYWORKSHOPPRODUCTION',		1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -17,12 +19,30 @@ VALUES		('BUILDINGCLASS_DUMMYPRODUCTION',	'BUILDING_DUMMYPRODUCTION',		1);
 ------------------------------	
 INSERT INTO Buildings 	
 			(Type,							BuildingClass,						Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex)
-VALUES		('BUILDING_DUMMYPRODUCTION',	'BUILDINGCLASS_DUMMYPRODUCTION',	'TXT_KEY_BUILDING_DUMMYPRODUCTION',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0);
+VALUES		('BUILDING_DUMMYPRODUCTION',	'BUILDINGCLASS_DUMMYPRODUCTION',	'TXT_KEY_BUILDING_DUMMYPRODUCTION',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
+		('BUILDING_FEITORIADUMMY',	'BUILDINGCLASS_FEITORIADUMMY',	'TXT_KEY_BUILDING_DUMMYPRODUCTION',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
+		('BUILDING_DUMMYWORKSHOPPRODUCTION',	'BUILDINGCLASS_DUMMYWORKSHOPPRODUCTION',	'TXT_KEY_BUILDING_DUMMYPRODUCTION',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0);
+
 ------------------------------	
 -- Building_YieldChanges
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
 VALUES		('BUILDING_DUMMYPRODUCTION',	'YIELD_PRODUCTION',	1);
+------------------------------	
+-- Building_BuildingClassYieldChanges
+------------------------------
+INSERT INTO Building_BuildingClassYieldChanges
+			(BuildingType,						BuildingClassType,				YieldType,		YieldChange)
+VALUES		('BUILDING_FEITORIADUMMY',	'BUILDINGCLASS_OXFORD_UNIVERSITY',	'YIELD_PRODUCTION',	1),
+		('BUILDING_FEITORIADUMMY',	'BUILDINGCLASS_OXFORD_UNIVERSITY',	'YIELD_GOLD',	2);
+------------------------------	
+-- Building_BuildingClassLocalYieldChanges
+------------------------------
+INSERT INTO Building_BuildingClassLocalYieldChanges
+			(BuildingType,					BuildingClassType,		YieldType,		YieldChange)
+VALUES		('BUILDING_DUMMYWORKSHOPPRODUCTION',	'BUILDINGCLASS_WORKSHOP', 'YIELD_PRODUCTION',	1),
+		('BUILDING_DUMMYWORKSHOPPRODUCTION',	'BUILDINGCLASS_WORKSHOP', 'YIELD_GOLD',	1);
+
 --==========================================================================================================================
 --==========================================================================================================================

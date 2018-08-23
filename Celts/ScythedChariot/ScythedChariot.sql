@@ -84,7 +84,7 @@ VALUES		('UNIT_CELTS_ATLAS', 				256, 		'ScythedChariotPicture_256.dds',	1, 				
 ------------------------------
 INSERT INTO UnitPromotions 
 			(Type, 							Description, 							Help, 										Sound, 				VisibilityChange,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, AoEDamageOnMove, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_CELTS_SCYTHE',	'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE',	'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE_HELP',	'AS2D_IF_LEVELUP',	1,					0,				0,			0,			0,					0,			1,					1, 		10, 				0, 				'UNIT_CELTS_PROMOTION_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE'),
+VALUES		('PROMOTION_UNIT_CELTS_SCYTHE',	'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE',	'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					1,			1,					1, 		10, 				0, 				'UNIT_CELTS_PROMOTION_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE'),
 			('PROMOTION_UNIT_CELTS_CARNYX',	'TXT_KEY_PROMOTION_UNIT_CELTS_CARNYX',	'TXT_KEY_PROMOTION_UNIT_CELTS_CARNYX_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			0,					1, 	0, 					0, 				'UNIT_CELTS_PROMOTION_2_ATLAS', 'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_CELTS_CARNYX');
 ------------------------------
 -- UnitPromotions_UnitCombatMods
@@ -102,8 +102,8 @@ VALUES		('PROMOTION_UNIT_CELTS_CARNYX',	'UNITCOMBAT_MELEE',		10),
 -- Units
 --------------------------------	
 INSERT INTO Units 	
-			(Type,							Class, 	PrereqTech,	Range,	BaseSightRange, Combat,		RangedCombat,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 							Civilopedia, 								Strategy, 										Help, 										Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	UnitArtInfo, 							UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate)
-SELECT		'UNIT_CELTS_SCYTHED_CHARIOT',	Class,	PrereqTech,	Range,	BaseSightRange, Combat-2,	RangedCombat+1,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_METALLURGY',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT',	'TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_TEXT',	'TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY',	'TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	'ART_DEF_UNIT_CELTS_SCYTHED_CHARIOT', 	0,					'UNIT_CELTS_FLAG_ATLAS',	0, 				'UNIT_CELTS_ATLAS',		MoveRate
+			(Type,							Class, 	PrereqTech,	Range,	BaseSightRange, Combat,		RangedCombat,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 							Civilopedia, 								Strategy, 										Help, 										Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	UnitArtInfo, 							UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate,	PurchaseCooldown)
+SELECT		'UNIT_CELTS_SCYTHED_CHARIOT',	Class,	PrereqTech,	Range,	BaseSightRange, Combat-2,	RangedCombat+1,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_METALLURGY',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT',	'TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_TEXT',	'TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY',	'TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	'ART_DEF_UNIT_CELTS_SCYTHED_CHARIOT', 	0,					'UNIT_CELTS_FLAG_ATLAS',	0, 				'UNIT_CELTS_ATLAS',		MoveRate,	PurchaseCooldown
 FROM Units WHERE Type = 'UNIT_MONGOLIAN_KESHIK';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -153,7 +153,6 @@ INSERT INTO Unit_FreePromotions
 			(UnitType, 						PromotionType)
 VALUES		('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_UNIT_CELTS_SCYTHE'),
 			('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_UNIT_CELTS_CARNYX'),
-			('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_TARGETING_4'),
 			('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_ROUGH_TERRAIN_ENDS_TURN');
 --==========================================================================================================================
 --==========================================================================================================================

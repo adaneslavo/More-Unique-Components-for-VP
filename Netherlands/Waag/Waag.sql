@@ -30,8 +30,8 @@ VALUES		('BUILDING_NETHERLANDS_ATLAS', 				256, 		'WaagPicture_256.dds',			1, 		
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,							BuildingClass,	GoldMaintenance, Cost,		EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, TrainedFreePromotion,	CitySupplyFlat,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, PrereqTech, 			ArtDefineTag, SpecialistType, SpecialistCount, 		MinAreaSize, ConquestProb, HurryCostModifier,	PovertyHappinessChange,		Help,										Description,							Civilopedia,								Strategy,										IconAtlas,						PortraitIndex)
-SELECT		'BUILDING_NETHERLANDS_WAAG', 	BuildingClass,	GoldMaintenance, Cost-150,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, TrainedFreePromotion,	CitySupplyFlat,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, 'TECH_CIVIL_SERVICE',	ArtDefineTag, SpecialistType, SpecialistCount+1, 	MinAreaSize, ConquestProb, HurryCostModifier,	-10,							'TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG_TEXT',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY',	'BUILDING_NETHERLANDS_ATLAS',	0
+			(Type,							BuildingClass,	GoldMaintenance, Cost,		EspionageModifier, 	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, TrainedFreePromotion,	CitySupplyFlat,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, PrereqTech, 			ArtDefineTag, SpecialistType, SpecialistCount, 		MinAreaSize, ConquestProb, HurryCostModifier, PovertyHappinessChange, Help,										Description,							Civilopedia,								Strategy,										IconAtlas,						PortraitIndex)
+SELECT		'BUILDING_NETHERLANDS_WAAG', 	BuildingClass,	GoldMaintenance, Cost-150,	-20, 			EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, TrainedFreePromotion,	CitySupplyFlat,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, 'TECH_CIVIL_SERVICE',	ArtDefineTag, SpecialistType, SpecialistCount+1, 	MinAreaSize, ConquestProb, HurryCostModifier, PovertyHappinessChange, 'TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG_TEXT',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY',	'BUILDING_NETHERLANDS_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_BANK';	
 ------------------------------	
 -- Building_Flavors
@@ -44,6 +44,12 @@ VALUES		('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_GREAT_PEOPLE',			50),
 			('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_GOLD',					100),
 			('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_PRODUCTION',			5),
 			('BUILDING_NETHERLANDS_WAAG',	'FLAVOR_SCIENCE',				40);
+------------------------------	
+-- Building_ClassesNeededInCity
+------------------------------		
+INSERT INTO Building_ClassesNeededInCity 	
+		(BuildingType, 					BuildingClassType)
+VALUES	('BUILDING_NETHERLANDS_WAAG',	'BUILDINGCLASS_MARKET');
 ------------------------------	
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------

@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_BRAZIL', 'BUILDINGCLASS_OPERA_HOUSE',	'BUILDING_BRAZIL_SA
 -- Buildings
 --------------------------------
 INSERT INTO	Buildings
-			(Type,							Description,							Civilopedia,							Strategy,										Help,										GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier,		GreatWorkSlotType, GreatWorkCount,	SpecialistType,			SpecialistCount,	EnhancedYieldTech,	TechEnhancedTourism)
-SELECT		'BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_TEXT',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_BRAZIL_ATLAS',	GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier+5,	GreatWorkSlotType, GreatWorkCount,	'SPECIALIST_MUSICIAN',	SpecialistCount+1,	'TECH_RADIO',		2
+			(Type,							Description,							Civilopedia,							Strategy,										Help,										GoldMaintenance, Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier,		GreatWorkSlotType, GreatWorkCount,	SpecialistType,			SpecialistCount,	EnhancedYieldTech,	TechEnhancedTourism)
+SELECT		'BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_TEXT',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP',	GoldMaintenance, Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_BRAZIL_ATLAS',	GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier+10,	GreatWorkSlotType, GreatWorkCount,	'SPECIALIST_MUSICIAN',	SpecialistCount+1,	'TECH_RADIO',		2
 FROM Buildings WHERE Type = 'BUILDING_OPERA_HOUSE';
 --------------------------------
 -- Building_BuildingClassYieldChanges

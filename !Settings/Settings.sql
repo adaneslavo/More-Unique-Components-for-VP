@@ -59,3 +59,6 @@ UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_MINORS_INTERACTION';
 
 -- Instead of OnMove/OnBuild/OnCreate functions
 UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_RED_TURN';
+
+-- Proxenos promotion trigger
+UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_UNIT_PREKILL';

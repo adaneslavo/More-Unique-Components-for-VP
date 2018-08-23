@@ -5,10 +5,10 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>30</ModVersion>
-    <Stability>Beta</Stability>
+    <ModVersion>36</ModVersion>
+    <Stability>Stable</Stability>
     <Teaser>More Unique Components mod. Compatible with latest VP.</Teaser>
-    <Description>More Unique Components mod. Compatible with latest VP (4-20).
+    <Description>More Unique Components mod. Compatible with latest VP (8-19).
 
 Latest changes: see changelog file.</Description>
     <Authors>adan_eslavo</Authors>
@@ -21,7 +21,15 @@ Latest changes: see changelog file.</Description>
     <SupportsMac>true</SupportsMac>
     <AssemblyName>MoreUniqueComponentsForVP</AssemblyName>
     <RootNamespace>MoreUniqueComponentsForVP</RootNamespace>
-    <ModReferences />
+    <ModReferences>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Enlightement Era for VP</Name>
+        <Id>87b2deae-83cb-9b88-9017-79e741d3739c</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModReferences>
     <ModActions>
       <Action>
         <Set>OnModActivated</Set>
@@ -738,6 +746,11 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>!DummyBuildings/DummyBuildingsForMonoChurch.sql</FileName>
       </Action>
+      <!--      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>!GenericBonus/GenericBonus.sql</FileName>
+      </Action> -->
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -769,12 +782,6 @@ Latest changes: see changelog file.</Description>
         <Name>Pogost</Name>
         <Description>Builds next stages of Pogost.</Description>
         <FileName>Russia/Pogost/Pogost.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>Tug Banner Warrior</Name>
-        <Description>Adds Massacre promotion.</Description>
-        <FileName>Mongolia/BlackTug/BlackTug.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -961,12 +968,6 @@ Latest changes: see changelog file.</Description>
         <Name>White Tower</Name>
         <Description>Adds Happiness on Spy Kill.</Description>
         <FileName>England/WhiteTower/WhiteTower.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>Khopesh</Name>
-        <Description>Adds Fatigue promotion.</Description>
-        <FileName>Egypt/Khopesh/Khopesh.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1313,6 +1314,14 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <!--    <Content Include="!GenericBonus\GenericBonus.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="!GenericBonus\GenericBonus.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content> -->
     <Content Include="!SharedAssets\SharedAtlas.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1948,10 +1957,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Egypt\Khopesh\KhopeshPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Egypt\Khopesh\Khopesh.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Egypt\Khopesh\Khopesh.sql">
       <SubType>Lua</SubType>
@@ -4093,10 +4098,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Mongolia\BlackTug\BlackTug.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Mongolia\BlackTug\BlackTugFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -5421,6 +5422,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Morocco\Riad\" />
     <Folder Include="Germany" />
     <Folder Include="China" />
+    <!--    <Folder Include="!GenericBonus" /> -->
     <Folder Include="Persia\Darius" />
     <Folder Include="Portugal\" />
     <Folder Include="Portugal\Cacadores\" />

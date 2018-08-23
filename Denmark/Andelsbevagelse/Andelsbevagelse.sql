@@ -54,14 +54,14 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_STOCKYARD';
 INSERT INTO Building_YieldChanges
 			(BuildingType,							YieldType,		Yield)
 VALUES		('BUILDING_DENMARK_ANDELSBEVAEGELSE',	'YIELD_FOOD',	5),
-		('BUILDING_DENMARK_ANDELSBEVAEGELSE',	'YIELD_PRODUCTION',	5),
+		('BUILDING_DENMARK_ANDELSBEVAEGELSE',	'YIELD_PRODUCTION',	3),
 		('BUILDING_DENMARK_ANDELSBEVAEGELSE',	'YIELD_GOLD',	3);
 ------------------------------	
 -- Building_YieldModifiers
 ------------------------------
-INSERT INTO Building_YieldModifiers 	
-			(BuildingType,							YieldType, 		Yield)
-VALUES		('BUILDING_DENMARK_ANDELSBEVAEGELSE',	'YIELD_FOOD',	5);
+--INSERT INTO Building_YieldModifiers 	
+--			(BuildingType,							YieldType, 		Yield)
+--VALUES		('BUILDING_DENMARK_ANDELSBEVAEGELSE',	'YIELD_FOOD',	5);
 ------------------------------
 -- Building_ImprovementYieldChanges
 ------------------------------
