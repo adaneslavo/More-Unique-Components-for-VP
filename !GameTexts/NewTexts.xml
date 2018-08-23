@@ -410,6 +410,12 @@
 			</Text>
 		</Row>
 		
+		<!-- Dummy Armory Building -->
+		<!-- Created by adan_eslavo 23/08/2018 -->
+		<Row Tag="TXT_KEY_BUILDING_DUMMYARMORY">
+			<Text>Dummy Armory Building</Text>
+		</Row>
+
 		<!-- Dummy City HP Building -->
 		<!-- Created by adan_eslavo 30/10/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_DUMMYCITYHP">
@@ -427,7 +433,7 @@
 		<Row Tag="TXT_KEY_BUILDING_DUMMYCLASSYIELD">
 			<Text>Dummy Class Yield Building</Text>
 		</Row>
-		
+
 		<!-- Dummy Gold Building -->
 		<!-- Created by adan_eslavo 5/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_DUMMYGOLD">
@@ -1686,13 +1692,7 @@
 			<Text>Bogurodzica</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA_HELP">
-			<Text>Unit gains [ICON_PEACE] Faith [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. Bonus doubled [COLOR_POSITIVE_TEXT]on Barbarian Kills[ENDCOLOR].</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLAND_GRUNWALD">
-			<Text>Grunwald</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLAND_GRUNWALD_HELP">
-			<Text>+25% [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]in Forest and Jungle[ENDCOLOR] and +10% [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]on Marsh[ENDCOLOR]</Text>
+			<Text>Unit gains [ICON_PEACE] Faith [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. Bonus doubled [COLOR_POSITIVE_TEXT]on Barbarian Kills[ENDCOLOR]. +25% [ICON_STRENGTH] Defense Bonus.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLAND_PANCERNY">
 			<Text>Pancerni</Text>

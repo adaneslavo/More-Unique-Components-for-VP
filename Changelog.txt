@@ -7,7 +7,8 @@ v37:
 - changed:
 	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion,
 	- Barbican ==> total rework; now it's merged version of Castle and Armory, stronger from both with more offensive potential, blocks Armory building (gives dummy Armory instead),
-	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains.
+	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains,
+	- Homestead ==> instead of yields from border growth it claims all Horse, Cattle, Sheep and Bison sources on construction.
 - fixed:
 	- pedia categories for some promotions:
 		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,

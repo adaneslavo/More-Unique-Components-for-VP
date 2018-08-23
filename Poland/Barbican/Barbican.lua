@@ -41,16 +41,24 @@ function OnConstructionBuildDummyArmory(iPlayer, iCity, iBuilding)
 
 	if pPlayer:GetCivilizationType() == eCivilizationPoland then
 		if iBuilding == eBuildingBarbican then
-			city:SetNumRealBuilding(eBuildingDummyArmory, 1)
+			local pCity = pPlayer:GetCityByID(iCity)
+
+			pCity:SetNumRealBuilding(eBuildingDummyArmory, 1)
 		end
 	end
 end
 
 -- blocks the possibility of construction of the Armory
 function ConstructionOfArmoryBlocked(iPlayer, iCity, iBuilding)
+	local pPlayer = Players[iPlayer]
+
+	if pPlayer:GetCivilizationType() ~= eCivilizationPoland then return true end
+	
 	if iBuilding == eBuildingArmory then
 		return false
 	end
+
+	return true
 end
 
 GameEvents.UnitSetXY.Add(GarrisonRangePower)
