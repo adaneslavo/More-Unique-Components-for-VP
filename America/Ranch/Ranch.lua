@@ -34,7 +34,7 @@ function OnConstructionClaimResources(iPlayer, iCity, iBuilding)
 						pPlotClaimer = pPlotClaimer + 1
 					end
 				end
-			
+			end
 			local iYield = (20* pPlotClaimer * iEraModifier)
 			pCity:ChangeProduction(iYield)
 				
