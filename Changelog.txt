@@ -8,7 +8,8 @@ v37:
 	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion,
 	- Barbican ==> total rework; now it's merged version of Castle and Armory, stronger from both with more offensive potential, blocks Armory building (gives dummy Armory instead),
 	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains,
-	- Homestead ==> instead of yields from border growth it claims all Horse, Cattle, Sheep and Bison sources on construction.
+	- Homestead ==> instead of yields from border growth it claims all Horse, Cattle, Sheep and Bison sources on construction. For each tile claimed that way city gets boost from american UA,
+	- Monitor ==> lua deleted, sql does the same thing. Added Hardened promotion instead of Cover I.
 - fixed:
 	- pedia categories for some promotions:
 		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
@@ -17,7 +18,6 @@ v37:
 		- Deck Spikes, Coastal Patrol (Turtle Ship) ==> to NAVAL,
 		- Siege Mobility (Ballista) ==> to SIEGE,
 		- Mingghan (Black Tug) ==> to MOUNTED.
-	- Pancerny ==> now 300% yields from Barbarian kills (was 150%, same as normal kills).
 
 v36:
 - changes:

@@ -21,7 +21,6 @@ function OnConstructionClaimResources(iPlayer, iCity, iBuilding)
 		if iBuilding == eBuildingRanch then
 			local pCity = pPlayer:GetCityByID(iCity)
 			local pPlotClaimer = 0
-			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 			
 			for iCityPlot = 1, pCity:GetNumCityPlots() - 1, 1 do
 				local pSpecificPlot = pCity:GetCityIndexPlot(iCityPlot)
@@ -35,24 +34,26 @@ function OnConstructionClaimResources(iPlayer, iCity, iBuilding)
 					end
 				end
 			end
-			local iYield = (20* pPlotClaimer * iEraModifier)
+
+			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+			local iYield = (20 * pPlotClaimer * iEraModifier)
+
 			pCity:ChangeProduction(iYield)
 				
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vCityPosition = PositionCalculator(iCityX, iCityY)
-			
+				local sCityName = pCity:GetName()
+				
 				Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+"..iYield.." [ICON_PRODUCTION][ENDCOLOR]", 1)
 			
-				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_TILE, 
-					sCurrency..'[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iYield..' [ICON_PRODUCTION] Production', 
-					'Bonus Yields in '..sCityName, 
-					iCityX, iCityY)
+				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_TILE,
+					'The City of [COLOR_CYAN]'..sCityName..'[ENDCOLOR] constructed Homestead and automatically claimed tiles with [ICON_RES_HORSE] Horses, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle or [ICON_RES_BISON] Bison within city range.',
+					'New resources claimed by '..sCityName,
+					pCity:GetX(), pCity:GetY(), iCity)
 			end
 		end
 	end
 end
-			
-			
 
 function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
