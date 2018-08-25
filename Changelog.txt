@@ -3,13 +3,16 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+
 v37:
-- changed:
+- simplified:
 	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion,
+	- Monitor ==> lua deleted, sql does the same thing.
+- reworked:
 	- Barbican ==> total rework; now it's merged version of Castle and Armory, stronger from both with more offensive potential, blocks Armory building (gives dummy Armory instead),
 	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains,
 	- Homestead ==> instead of yields from border growth it claims all Horse, Cattle, Sheep and Bison sources on construction. For each tile claimed that way city gets boost from american UA,
-	- Monitor ==> lua deleted, sql does the same thing. Added Hardened promotion instead of Cover I.
+	- Monitor ==> added Hardened promotion instead of Cover I.
 - fixed:
 	- pedia categories for some promotions:
 		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
