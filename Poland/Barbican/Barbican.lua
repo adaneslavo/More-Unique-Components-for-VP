@@ -49,7 +49,7 @@ function OnConstructionBuildDummyArmory(iPlayer, iCity, iBuilding)
 end
 
 -- blocks the possibility of construction of the Armory
-function ConstructionOfArmoryBlocked(iPlayer, iCity, iBuilding)
+--[[function ConstructionOfArmoryBlocked(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 
 	if pPlayer:GetCivilizationType() ~= eCivilizationPoland then return true end
@@ -59,8 +59,8 @@ function ConstructionOfArmoryBlocked(iPlayer, iCity, iBuilding)
 	end
 
 	return true
-end
+end --]]
 
 GameEvents.UnitSetXY.Add(GarrisonRangePower)
 GameEvents.CityConstructed.Add(OnConstructionBuildDummyArmory)
-GameEvents.CityCanConstruct.Add(ConstructionOfArmoryBlocked)
+--GameEvents.CityCanConstruct.Add(ConstructionOfArmoryBlocked)
