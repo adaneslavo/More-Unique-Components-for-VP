@@ -18,6 +18,8 @@ v37:
 		- Deck Spikes, Coastal Patrol (Turtle Ship) ==> to NAVAL,
 		- Siege Mobility (Ballista) ==> to SIEGE,
 		- Mingghan (Black Tug) ==> to MOUNTED.
+	- Proxenos ==> now works properly; can be used on Diplomatic missions to all nations not only CS,
+	- Chaebol ==> now code runs only for Korea. STILL NEEDS A FIX!
 
 v36:
 - changes:

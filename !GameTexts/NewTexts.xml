@@ -500,10 +500,10 @@
 			<Text>Dummy GPP Building</Text>
 		</Row>
 
-		<!-- Dummy GPP And Gold Building -->
+		<!-- Dummy GPP 2 Building -->
 		<!-- Created by adan_eslavo 13/12/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYGPPANDGOLD">
-			<Text>Dummy GPP And Gold Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_DUMMYGPP2">
+			<Text>Dummy GPP 2 Building</Text>
 		</Row>
 		
 		<!-- Dummy Food Building -->

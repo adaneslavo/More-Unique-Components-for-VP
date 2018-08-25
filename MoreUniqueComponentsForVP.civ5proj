@@ -639,7 +639,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGPPAndGold.sql</FileName>
+        <FileName>!DummyBuildings/DummyBuildingGPP2.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1167,6 +1167,12 @@ Latest changes: see changelog file.</Description>
         <Description>Automatic attack for Horse Archer</Description>
         <FileName>Huns/HorseArcher/HorseArcher.lua</FileName>
       </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Agora</Name>
+        <Description>Adds Proxenos promotion.</Description>
+        <FileName>Greece/Agora/Agora.lua</FileName>
+      </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
   </PropertyGroup>
@@ -1286,7 +1292,7 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGPPAndGold.sql">
+    <Content Include="!DummyBuildings\DummyBuildingGPP2.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2075,6 +2081,10 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Germany\TeutonicOrder\TeutonicOrder.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Greece\Agora\Agora.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
