@@ -16,13 +16,13 @@ function TradeRoutesToGPP(iPlayer)
 	local tTradeRoutes = pPlayer:GetTradeRoutes()
 
 	for i, tradeRoute in ipairs(tTradeRoutes) do
-        local eFromCiv = tradeRoute.FromCivilizationType
-        local eToCiv = tradeRoute.ToCivilizationType
+		local eFromCiv = tradeRoute.FromCivilizationType
+		local eToCiv = tradeRoute.ToCivilizationType
 
-        if (eFromCiv ~= eToCiv) and (eFromCiv == eCivilizationKorea) then
-            iCounter = iCounter + 1
-        end
-    end
+		if (eFromCiv ~= eToCiv) and (eFromCiv == eCivilizationKorea) then
+			iCounter = iCounter + 1
+		end
+	end
 
 	for city in pPlayer:Cities() do
 		if city:IsHasBuilding(eBuildingChaebol) then
