@@ -3,13 +3,14 @@
 -- DateCreated:
 --------------------------------------------------------------
 include("FLuaVector.lua")
-local eBuildingRiad = GameInfoTypes.BUILDING_MAROCCO_RIAD			
+local eBuildingRiad = GameInfoTypes.BUILDING_MAROCCO_RIAD
+local eBuildingDummyRiad = GameInfoTypes.BUILDING_DUMMYGPPGOLDANDCULTURE			
 
 -- gain yields each turn for each trade route if Riad is built in the city
 function OnTurnGainYieldsFromTR(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
-	for i, tradeRoute in pairs(pPlayer:GetTradeRoutes()) do
+	--[[for i, tradeRoute in pairs(pPlayer:GetTradeRoutes()) do
 		local pCity = tradeRoute.FromCity
 
 		if pCity:IsHasBuilding(eBuildingRiad) then
@@ -27,8 +28,19 @@ function OnTurnGainYieldsFromTR(iPlayer)
 				Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_GOLD]+"..iGain1.."[ICON_GOLD][ENDCOLOR]", 1)
 				Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iGain1.."[ICON_CULTURE][ENDCOLOR]", 1.5)
 				Events.AddPopupTextEvent(vCityPosition, "[COLOR_GREAT_PEOPLE_STORED]+"..iGain2.."[ICON_GREAT_PEOPLE][ENDCOLOR]", 2)
-				--pPlayer:AddNotification(0, '[ICON_PEACE] Faith purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iScience..' [ICON_RESEARCH] Science', 'Bonus Yields in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
 			end
+		end
+	end--]]
+
+	for city in Player:Cities() do
+		city:SetNumRealBuilding(eBuildingDummyRiad, 0)
+	end
+
+	for i, tradeRoute in pairs(pPlayer:GetTradeRoutes()) do
+		local pCity = tradeRoute.FromCity
+
+		if pCity:IsHasBuilding(eBuildingRiad) then
+			city:SetNumRealBuilding(eBuildingDummyRiad, GetNumRealBuilding(eBuildingDummyRiad) + 1)
 		end
 	end
 end

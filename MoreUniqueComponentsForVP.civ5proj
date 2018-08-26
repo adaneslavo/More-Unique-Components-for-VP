@@ -751,6 +751,11 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>!DummyBuildings/DummyBuildingArmory.sql</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>!DummyBuildings/DummyBuildingGPPGoldAndCulture.sql</FileName>
+      </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -1305,6 +1310,10 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="!DummyBuildings\DummyBuildingClassYield.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="!DummyBuildings\DummyBuildingGPPGoldAndCulture.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
