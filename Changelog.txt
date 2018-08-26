@@ -12,7 +12,8 @@ v37:
 	- Barbican ==> total rework; now it's merged version of Castle and Armory, stronger from both with more offensive potential, blocks Armory building (gives dummy Armory instead),
 	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains,
 	- Homestead ==> instead of yields from border growth it claims all Horse, Cattle, Sheep and Bison sources on construction. For each tile claimed that way city gets boost from american UA,
-	- Monitor ==> added Hardened promotion instead of Cover I.
+	- Monitor ==> added Hardened promotion instead of Cover I,
+	- Madrasah ==> lowered value of faith on purchase (if player got fealty and pacifism then it was too op).
 - fixed:
 	- pedia categories for some promotions:
 		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
@@ -22,7 +23,7 @@ v37:
 		- Siege Mobility (Ballista) ==> to SIEGE,
 		- Mingghan (Black Tug) ==> to MOUNTED.
 	- Proxenos ==> now works properly,
-	- Chaebol ==> now code runs only for Korea.
+	- Chaebol ==> now code runs only for Korea, fixed code (wrong function was used).
 
 v36:
 - changes:
