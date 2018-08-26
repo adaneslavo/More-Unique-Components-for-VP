@@ -19,7 +19,7 @@ function OnUnitPrekillProxenosGold(unitOwnerId, unitId, iUnitType, unitX, unitY,
 		local pPlot = Map.GetPlot(unitX, unitY)
 		local eCiv = pPlot:GetOwner()
 
-		if eCiv ~= -1 then
+		if eCiv ~= -1 and Players[eCiv]:IsMinorCiv() then
 			local pCapital = pPlayer:GetCapitalCity()
 
 			pCapital:SetNumRealBuilding(eBuildingDummyGold, pCapital:GetNumRealBuilding(eBuildingDummyGold) + 2)

@@ -5,7 +5,7 @@
 -- BuildingClasses
 ------------------------------
 INSERT INTO BuildingClasses 	
-			(Type,									DefaultBuilding,					NoLimit)
+			(Type,						DefaultBuilding,			NoLimit)
 VALUES		('BUILDINGCLASS_DUMMYGPP2',	'BUILDING_DUMMYGPP2',		1);
 --==========================================================================================================================	
 
@@ -16,7 +16,7 @@ VALUES		('BUILDINGCLASS_DUMMYGPP2',	'BUILDING_DUMMYGPP2',		1);
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,							BuildingClass,						Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateModifier)
+			(Type,					BuildingClass,				Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateModifier)
 VALUES		('BUILDING_DUMMYGPP2',	'BUILDINGCLASS_DUMMYGPP2',	'TXT_KEY_BUILDING_DUMMYGPP2',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2);
 --==========================================================================================================================
 --==========================================================================================================================

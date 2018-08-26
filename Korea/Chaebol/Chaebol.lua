@@ -7,22 +7,28 @@ local eBuildingChaebol = GameInfoTypes.BUILDING_KOREA_CHAEBOL
 local eCivilizationKorea = GameInfoTypes.CIVILIZATION_KOREA
 
 -- adds GPP for every TR
-function TradeRoutesToGPPAndGold(iPlayer)
+function TradeRoutesToGPP(iPlayer)
 	local pPlayer = Players[iPlayer]
-	
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationKorea) then 
-		return 
-	end
 
-	numTR = pPlayer:GetNumInternationalTradeRoutesUsed()
-	
-	print("numTR", numTR)
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationKorea) then return end
 
-	for pCity in pPlayer:Cities() do
-		if pCity:IsHasBuilding(eBuildingChaebol) then
-			pCity:SetNumRealBuilding(eBuildingDummyGPP2, numTR)
+	local iCounter = 0
+	local tTradeRoutes = pPlayer:GetTradeRoutes()
+
+	for i, tradeRoute in ipairs(tTradeRoutes) do
+        local eFromCiv = tradeRoute.FromCivilizationType
+        local eToCiv = tradeRoute.ToCivilizationType
+
+        if (eFromCiv ~= eToCiv) and (eFromCiv == eCivilizationKorea) then
+            iCounter = iCounter + 1
+        end
+    end
+
+	for city in pPlayer:Cities() do
+		if city:IsHasBuilding(eBuildingChaebol) then
+			city:SetNumRealBuilding(eBuildingDummyGPP2, iCounter)
 		end
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(TradeRoutesToGPPAndGold)
+GameEvents.PlayerDoTurn.Add(TradeRoutesToGPP)

@@ -27,7 +27,7 @@
 			<Text>Proxenos</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GREECE_PROXENOS_HELP">
-			<Text>+5 [ICON_INFLUENCE] Influence and +2 [ICON_GOLD] Gold in Capital on completion of [COLOR_POSITIVE_TEXT]Diplomatic Mission[ENDCOLOR].</Text>
+			<Text>+5 [ICON_INFLUENCE] Influence and +2 [ICON_GOLD] Gold in Capital on completion of [COLOR_POSITIVE_TEXT]Diplomatic Mission in City-State's territotry[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA">
 			<Text>Agora</Text>
