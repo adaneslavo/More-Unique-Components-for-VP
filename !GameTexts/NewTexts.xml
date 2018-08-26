@@ -183,7 +183,7 @@
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
-			<Text>Replaces both the Armory and the Castle.[NEWLINE][NEWLINE]Requires Walls in this City. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Reduces [ICON_HAPPINESS_3] Distress. +25 Experience for all new Units trained in this City.[NEWLINE][NEWLINE]+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength for City Bombardment, Ranged units, and Siege Units garrisoned in this City.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art.</Text>
+			<Text>Replaces both the Armory and the Castle.[NEWLINE][NEWLINE]Requires Walls in this City. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Reduces [ICON_HAPPINESS_3] Distress. +25 Experience for all new Units trained in this City. +33% [ICON_RANGE_STRENGTH] Ranged Combat Strength for City Bombardment, Ranged units, and Siege Units garrisoned in this City.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
 			<Text>Unique Polish replacement for both the Castle and the Armory, but a bit stronger than both. Must have built Walls in the city. In addition to the city defense and unit training bonuses, the attacks of Ranged and Siege units garrisoned in the city are increased.</Text>
@@ -1513,7 +1513,7 @@
 			<Text>Unique Arabian replacement for the University. In addition to the bonuses of a University, increases Great Person rate. Whenever you make a Faith purchase, the Madrasah generates additional Science.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
-			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 20 [ICON_RESEARCH] Science (or 100 [ICON_RESEARCH] Science for a Great Person purchase), scaling with Era.</Text>
+			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 15 [ICON_RESEARCH] Science (or 75 [ICON_RESEARCH] Science for a Great Person purchase), scaling with Era.</Text>
 		</Row>
 		
 		<!-- Monitor -->
