@@ -41,7 +41,7 @@ end
 
 function SendXPOnKill(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
-	print("1")
+
 	if pAttackingPlayer ~= nil then
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 
@@ -54,11 +54,7 @@ function SendXPOnKill(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttack
 						plotDistance = Map.PlotDistance(pAttackingUnit:GetX(), pAttackingUnit:GetY(), unit:GetX(), unit:GetY());
 
 						if plotDistance <= 3 then
-							unit:ChangeExperience(math.floor(5 * fGameSpeedModifier), -1, 1) -- the #3 param must be number, 1 for true, 0 or none for false
-						elseif plotDistance <= 10 then
-							unit:ChangeExperience(math.floor(3 * fGameSpeedModifier), -1, 1)
-						else
-							unit:ChangeExperience(math.floor(2 * fGameSpeedModifier), -1, 1)
+							unit:ChangeExperience(math.floor(2 * fGameSpeedModifier), -1, 1) -- the #3 param must be number, 1 for true, 0 or none for false
 						end
 					end
 				end

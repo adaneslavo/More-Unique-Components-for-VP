@@ -16,10 +16,11 @@ v37:
 	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains,
 	- Homestead ==> instead of yields from border growth it claims all Horse, Cattle, Sheep and Bison sources on construction. For each tile claimed that way city gets boost from american UA,
 	- Monitor ==> added Hardened promotion instead of Cover I,
-	- Armada ==> Invincible change: no more XP from sailing at full health; instead on each Armada kill, rest of Armadas get bonus XP. Value of that bonus depends on deistance from unit that made a kill:
-					- 5 XP if unit is at most 3 tiles away,
-					- 3 XP if unit is at most 10 tiles away,
-					- 2 XP for the rest.
+	- Armada ==> Invincible change: no more XP from sailing at full health; instead on each Armada kill, rest of Armadas in 5-tile range get bonus XP.
+- deleted:
+	- Qadi (in progress).
+- created:
+	- Treasury (in progress) ==> substitution for Qadi.
 - fixed:
 	- pedia categories for some promotions:
 		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
