@@ -3,6 +3,7 @@
 -- DateCreated:
 --------------------------------------------------------------
 include("FLuaVector.lua")
+
 local eBuildingRiad = GameInfoTypes.BUILDING_MAROCCO_RIAD
 local eBuildingDummyRiad = GameInfoTypes.BUILDING_DUMMYGPPGOLDANDCULTURE			
 
