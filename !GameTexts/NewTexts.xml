@@ -494,6 +494,12 @@
 			<Text>Dummy GPP And City Defense Building</Text>
 		</Row>
 
+		<!-- Dummy GPP, Gold and Culture Building -->
+		<!-- Created by adan_eslavo 13/12/2017 -->
+		<Row Tag="TXT_KEY_BUILDING_DUMMYGPPGOLDANDCULTURE">
+			<Text>Dummy GPP Gold and Culture Building</Text>
+		</Row>
+
 		<!-- Dummy GPP Building -->
 		<!-- Created by adan_eslavo 13/12/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_DUMMYGPP">

@@ -17,10 +17,10 @@ v37:
 	- Homestead ==> instead of yields from border growth it claims all Horse, Cattle, Sheep and Bison sources on construction. For each tile claimed that way city gets boost from american UA,
 	- Monitor ==> added Hardened promotion instead of Cover I,
 	- Armada ==> Invincible change: no more XP from sailing at full health; instead on each Armada kill, rest of Armadas in 5-tile range get bonus XP.
-- deleted:
-	- Qadi (in progress).
-- created:
-	- Treasury (in progress) ==> substitution for Qadi.
+	- Yassa Court ==> now granted after conquering the city; bonus yields on conquering; global unhappiness reduction instead of local,
+	- Andelsbevægelse ==> now increases Worker's work rate by 3%.
+- substituted:
+	- Qadi to Gumey/Daca (in progress) ==> replaces Caravansary.
 - fixed:
 	- pedia categories for some promotions:
 		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
@@ -30,7 +30,8 @@ v37:
 		- Siege Mobility (Ballista) ==> to SIEGE,
 		- Mingghan (Black Tug) ==> to MOUNTED.
 	- Proxenos ==> now works properly,
-	- Chaebol ==> now code runs only for Korea, fixed code (wrong function was used).
+	- Chaebol ==> fixed code (wrong function was used);
+	- Chaebol, Riad, Paradise Garden ==> now code runs only for UC's owner civ.
 
 v36:
 - changes:

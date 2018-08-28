@@ -53,7 +53,7 @@ function SendXPOnKill(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttack
 					if unit:IsHasPromotion(ePromotionInvincible) and unit ~= pAttackingUnit then
 						plotDistance = Map.PlotDistance(pAttackingUnit:GetX(), pAttackingUnit:GetY(), unit:GetX(), unit:GetY());
 
-						if plotDistance <= 3 then
+						if plotDistance <= 5 then
 							unit:ChangeExperience(math.floor(2 * fGameSpeedModifier), -1, 1) -- the #3 param must be number, 1 for true, 0 or none for false
 						end
 					end

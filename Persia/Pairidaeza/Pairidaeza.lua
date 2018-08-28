@@ -5,16 +5,22 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
+local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
+local eCivilizationPersia = GameInfoTypes.CIVILIZATION_PERSIA
+
 function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 	local pPlayer = Players[iPlayer]
 	
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationPersia) then 
+		return 
+	end
+
 	if bStart then
 		for pCity in pPlayer:Cities() do
 			if pCity:IsHasBuilding(GameInfoTypes.BUILDING_PERSIA_PAIRIDAEZA) then
-				local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 				local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 				
-				local iGain = math.floor(15 * iEraModifier * iGameSpeedModifier)
+				local iGain = math.floor(15 * iEraModifier * fGameSpeedModifier)
 
 				pPlayer:ChangeJONSCulture(iGain)
 

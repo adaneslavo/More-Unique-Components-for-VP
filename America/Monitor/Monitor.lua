@@ -20,4 +20,4 @@ function OnTurnEndAddCityDefense(iPlayer)
 	end
 end
 
-GameEvents.PlayerEndTurnCompleted.Add(OnTurnEndAddCityDefense)
+GameEvents.PlayerEndTurnCompleted.Add(OnTurnEndAddCityDefense)--]]
