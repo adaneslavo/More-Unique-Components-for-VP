@@ -83,8 +83,7 @@
 			<Text>Invincible</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP">
-			<Text>+4 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. All Armadas within 5 tiles gain +2XP [COLOR_POSITIVE_TEXT]on Kills[ENDCOLOR]. Lost after unit upgrade.</Text>
-		</Row>
+			<Text>+4 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR], all Armadas [COLOR_POSITIVE_TEXT]within 5-tile range[ENDCOLOR] gain 2 XP. Lost after unit upgrade.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA">
 			<Text>Armada</Text>

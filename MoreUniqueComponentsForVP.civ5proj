@@ -579,7 +579,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Songhai/Qadi/Qadi.sql</FileName>
+        <FileName>Songhai/Gumey/Gumey.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1018,7 +1018,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Qadi</Name>
         <Description>Adds Effects for Qadi</Description>
-        <FileName>Songhai/Qadi/Qadi.lua</FileName>
+        <FileName>Songhai/Gumey/Gumey.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -2691,27 +2691,27 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi.lua">
+    <Content Include="Songhai\Gumey\Gumey.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi.sql">
+    <Content Include="Songhai\Gumey\Gumey.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\QadiPicture_128.dds">
+    <Content Include="Songhai\Gumey\QadiPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\QadiPicture_256.dds">
+    <Content Include="Songhai\Gumey\QadiPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\QadiPicture_045.dds">
+    <Content Include="Songhai\Gumey\QadiPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\QadiPicture_064.dds">
+    <Content Include="Songhai\Gumey\QadiPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5244,7 +5244,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Siam\Ramkhamhaeng" />
     <Folder Include="Songhai\" />
     <Folder Include="Songhai\MandekaluCavalry" />
-    <Folder Include="Songhai\Qadi\" />
+    <Folder Include="Songhai\Gumey" />
     <Folder Include="Songhai\Sofa\" />
     <Folder Include="Songhai\Sofa\3DModel" />
     <Folder Include="Spain\Conquistador" />
