@@ -405,133 +405,77 @@
 			</Text>
 		</Row>
 		
-		<!-- Dummy Armory Building -->
-		<!-- Created by adan_eslavo 23/08/2018 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYARMORY">
-			<Text>Dummy Armory Building</Text>
+		<!-- Dummies -->
+		<!-- Created by adan_eslavo 29/08/2018 -->
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_BARBICAN">
+			<Text>DF Barbican</Text>
 		</Row>
-
-		<!-- Dummy City HP Building -->
-		<!-- Created by adan_eslavo 30/10/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYCITYHP">
-			<Text>Dummy City HP Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_OPPIDUM">
+			<Text>DF Oppidum</Text>
 		</Row>
-		
-		<!-- Dummy Culture Building -->
-		<!-- Created by adan_eslavo 5/11/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYCULTURE">
-			<Text>Dummy Culture Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_PROXENOS">
+			<Text>DF Proxenos</Text>
 		</Row>
-
-		<!-- Dummy Class Yield Building -->
-		<!-- Created by adan_eslavo 5/11/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYCLASSYIELD">
-			<Text>Dummy Class Yield Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_HUEY">
+			<Text>DF Huey</Text>
 		</Row>
-
-		<!-- Dummy Gold Building -->
-		<!-- Created by adan_eslavo 5/11/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYGOLD">
-			<Text>Dummy Gold Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_GUMEY">
+			<Text>DF Gumey</Text>
 		</Row>
-
-		<!-- Dummy Exp And Class Yield Building -->
-		<!-- Created by adan_eslavo 5/11/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYEXPANDCLASSYIELD">
-			<Text>Dummy Exp And Class Yield Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_DRUIDIC">
+			<Text>DF Druidic Lore</Text>
 		</Row>
-
-		<!-- Dummy BuildingClass yields - Caravansary -->
-		<!-- Created by adan_eslavo 5/11/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYSONGHAICLASSYIELD">
-			<Text>Dummy BuildingClass yields - Caravansary</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_SACHEM_1">
+			<Text>DF Sachem 1</Text>
 		</Row>
-		
-		<!-- Dummy Science Building -->
-		<!-- Created by adan_eslavo 5/11/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYSCIENCE">
-			<Text>Dummy Science Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_SACHEM_2">
+			<Text>DF Sachem 2</Text>
 		</Row>
-		
-		<!-- Dummy GMP Building -->
-		<!-- Created by adan_eslavo 31/10/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYGMP">
-			<Text>Dummy GMP Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_SACHEM_3">
+			<Text>DF Sachem 3</Text>
 		</Row>
-		
-		<!-- Dummy Faith Building -->
-		<!-- Created by adan_eslavo 5/11/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYFAITH">
-			<Text>Dummy Faith Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_SACHEM_4">
+			<Text>DF Sachem 4</Text>
 		</Row>
-		
-		<!-- Dummy Production Building -->
-		<!-- Created by adan_eslavo 24/10/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYPRODUCTION">
-			<Text>Dummy Production Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_SACHEM_5">
+			<Text>DF Sachem 5</Text>
 		</Row>
-
-		<!-- Dummy Defense Building -->
-		<!-- Created by adan_eslavo 14/01/2018 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYDEFENSE">
-			<Text>Dummy Defense Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_SACHEM_6">
+			<Text>DF Sachem 6</Text>
 		</Row>
-
-		<!-- Dummy Defense Building -->
-		<!-- Created by adan_eslavo 14/01/2018 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMY_1_DEFENSE">
-			<Text>Dummy 1 Defense Building</Text>
-		</Row>		
-		
-		<!-- Dummy Defense, HP and Promotion Building -->
-		<!-- Created by adan_eslavo 14/01/2018 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYDEFENSEHPPROMOTION">
-			<Text>Dummy Defense, HP and Promotion Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_QILA_1">
+			<Text>DF Qila 1</Text>
 		</Row>
-		
-		<!-- Dummy GPP And City Defense Building -->
-		<!-- Created by adan_eslavo 13/12/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYGPPANDDEFENSE">
-			<Text>Dummy GPP And City Defense Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_QILA_2">
+			<Text>DF Qila 2</Text>
 		</Row>
-
-		<!-- Dummy GPP, Gold and Culture Building -->
-		<!-- Created by adan_eslavo 13/12/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYGPPGOLDANDCULTURE">
-			<Text>Dummy GPP Gold and Culture Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_TEUTONIC">
+			<Text>DF Teutonic</Text>
 		</Row>
-
-		<!-- Dummy GPP Building -->
-		<!-- Created by adan_eslavo 13/12/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYGPP">
-			<Text>Dummy GPP Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_WAAG">
+			<Text>DF Waag</Text>
 		</Row>
-
-		<!-- Dummy GPP 2 Building -->
-		<!-- Created by adan_eslavo 13/12/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYGPP2">
-			<Text>Dummy GPP 2 Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_RIAD">
+			<Text>DF Riad</Text>
 		</Row>
-		
-		<!-- Dummy Food Building -->
-		<!-- Created by adan_eslavo 24/10/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYFOOD">
-			<Text>Dummy Food Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_EXAM">
+			<Text>DF Exam Hall</Text>
 		</Row>
-		
-		<!-- Dummy Horse Yields Building -->
-		<!-- Created by pineappledan 28/02/2018 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYHORSEYIELDS">
-			<Text>Dummy Horse Yields Building</Text>
-		</Row>		
-		<!-- Dummy Happiness Building -->
-		<!-- Created by adan_eslavo 24/10/2017 -->
-		<Row Tag="TXT_KEY_BUILDING_DUMMYHAPPINESS">
-			<Text>Dummy Happiness Building</Text>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_CHAEBOL">
+			<Text>DF Chaebol</Text>
 		</Row>
-
-		<!-- Dummy MC Buildings -->
-		<!-- Created by adan_eslavo 29/04/2018 -->
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_HIPPODROME">
+			<Text>DF Hippodrome</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_TOWER">
+			<Text>DF White Tower</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_BAAN">
+			<Text>DF Baan Chang</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_FEITORIA">
+			<Text>DF Feitoria</Text>
+		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION">
 			<Text>Dummy Tradition Finisher Building</Text>
 		</Row>

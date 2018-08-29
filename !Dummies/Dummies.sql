@@ -57,7 +57,7 @@ VALUES		('BUILDING_D_FOR_BARBICAN',		'BUILDINGCLASS_ARMORY',				'TXT_KEY_BUILDIN
 			('BUILDING_D_FOR_HUEY',			'BUILDINGCLASS_D_FOR_HUEY',			'TXT_KEY_BUILDING_D_FOR_HUEY',			0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
 			('BUILDING_D_FOR_HIPPODROME',	'BUILDINGCLASS_D_FOR_HIPPODROME',	'TXT_KEY_BUILDING_D_FOR_HIPPODROME',	0,					-1,		-1,			-1,				1,				1,          0,				-1,					'CIV_COLOR_ATLAS',	0),
 			('BUILDING_D_FOR_PROXENOS',		'BUILDINGCLASS_D_FOR_PROXENOS',		'TXT_KEY_BUILDING_D_FOR_PROXENOS',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
-			('BUILDING_D_FOR_QILA_2',		'BUILDINGCLASS_D_FOR_QILA_2',		'TXT_KEY_BUILDING_DUMMYCULTURE',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
+			('BUILDING_D_FOR_QILA_2',		'BUILDINGCLASS_D_FOR_QILA_2',		'TXT_KEY_BUILDING_D_FOR_QILA_2',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
 			('BUILDING_D_FOR_SACHEM_1',		'BUILDINGCLASS_D_FOR_SACHEM_1',		'TXT_KEY_BUILDING_D_FOR_SACHEM_1',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
 			('BUILDING_D_FOR_SACHEM_2',		'BUILDINGCLASS_D_FOR_SACHEM_2',		'TXT_KEY_BUILDING_D_FOR_SACHEM_2',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
 			('BUILDING_D_FOR_SACHEM_3',		'BUILDINGCLASS_D_FOR_SACHEM_3',		'TXT_KEY_BUILDING_D_FOR_SACHEM_3',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
@@ -71,7 +71,7 @@ INSERT INTO Buildings
 			(Type,							BuildingClass,						Description,							GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateChange,	SpecialistType)
 VALUES		('BUILDING_D_FOR_DRUIDIC_1',	'BUILDINGCLASS_D_FOR_DRUIDIC_1',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2,						'SPECIALIST_MERCHANT'),
 			('BUILDING_D_FOR_DRUIDIC_2',	'BUILDINGCLASS_D_FOR_DRUIDIC_2',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				4,						'SPECIALIST_MERCHANT'),
-			('BUILDING_D_FOR_DRUIDIC_3',	'BUILDINGCLASS_D_FOR_DRUIDIC_3',	'TXT_KEY_BUILDING_D_FOR_DRUIDICP',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				6,						'SPECIALIST_MERCHANT'),
+			('BUILDING_D_FOR_DRUIDIC_3',	'BUILDINGCLASS_D_FOR_DRUIDIC_3',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				6,						'SPECIALIST_MERCHANT'),
 			('BUILDING_D_FOR_DRUIDIC_4',	'BUILDINGCLASS_D_FOR_DRUIDIC_4',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				8,						'SPECIALIST_MERCHANT'),
 			('BUILDING_D_FOR_RIAD',			'BUILDINGCLASS_D_FOR_RIAD',			'TXT_KEY_BUILDING_D_FOR_RIAD',			0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2,						'SPECIALIST_MERCHANT');
 
