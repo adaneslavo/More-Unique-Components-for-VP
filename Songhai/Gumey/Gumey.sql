@@ -30,8 +30,8 @@ VALUES		('BUILDING_GUMEY_ATLAS', 		256, 		'GumeyPicture_256.dds',		1, 				1),
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,						BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier, 		EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	Help,									Description,						Civilopedia,							Strategy,									IconAtlas,				PortraitIndex)
-SELECT		'BUILDING_SONGHAI_GUMEY',	BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier+25, 	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_SONGHAI_GUMEY_HELP',	'TXT_KEY_BUILDING_SONGHAI_GUMEY', 	'TXT_KEY_BUILDING_SONGHAI_GUMEY_TEXT',	'TXT_KEY_BUILDING_SONGHAI_GUMEY_STRATEGY',	'BUILDING_GUMEY_ATLAS',	0
+			(Type,						FreeBuildingThisCity, 							BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier, 		EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	Help,									Description,						Civilopedia,							Strategy,									IconAtlas,				PortraitIndex)
+SELECT		'BUILDING_SONGHAI_GUMEY',	'BUILDINGCLASS_D_FOR_GUMEY_LUX', 	BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier+25, 	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_SONGHAI_GUMEY_HELP',	'TXT_KEY_BUILDING_SONGHAI_GUMEY', 	'TXT_KEY_BUILDING_SONGHAI_GUMEY_TEXT',	'TXT_KEY_BUILDING_SONGHAI_GUMEY_STRATEGY',	'BUILDING_GUMEY_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_CARAVANSARY';	
 ------------------------------	
 -- Building_Flavors
@@ -53,45 +53,9 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_CARAVANSARY';
 -- Building_ResourceYieldChanges
 --------------------------------	
 INSERT INTO Building_ResourceYieldChanges
-			(BuildingType,				ResourceType, 			YieldType, 			Yield)
-VALUES		('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_TRUFFLES',	'YIELD_GOLD', 		3),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_COTTON',		'YIELD_GOLD', 		1),	
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_COTTON',		'YIELD_PRODUCTION', 1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_COTTON',		'YIELD_CULTURE', 	1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_FUR',			'YIELD_GOLD', 		2),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_FUR',			'YIELD_PRODUCTION', 1),	
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_AMBER',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_CITRUS',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_CLOVES',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_COFFEE',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_COPPER',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_CORAL',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_CRAB',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_DYE',			'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_GEMS',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_GLASS',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_GOLD',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_INCENSE',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_IVORY',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_JADE',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_JEWELRY',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_LAPIS',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_MARBLE',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_NUTMEG',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_OLIVE',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_PEARLS',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_PEPPER',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_PERFUME',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_PORCELAIN',	'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_SALT',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_SILK',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_SILVER',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_SPICES',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_SUGAR',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_TEA',			'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_TOBACCO',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_WHALE',		'YIELD_GOLD', 		1),
-			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_WINE',		'YIELD_GOLD', 		1);
+			(BuildingType,				ResourceType, YieldType, Yield)
+SELECT		'BUILDING_SONGHAI_GUMEY',	ResourceType, YieldType, Yield
+FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_CARAVANSARY';
 --------------------------------	
 -- Building_SpecialistYieldChangesLocal
 --------------------------------	
