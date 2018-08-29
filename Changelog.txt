@@ -17,7 +17,7 @@ v37:
 	- Homestead ==> instead of yields from border growth it claims all Horse, Cattle, Sheep and Bison sources on construction. For each tile claimed that way city gets boost from american UA,
 	- Monitor ==> added Hardened promotion instead of Cover I,
 	- Armada ==> Invincible change: no more XP from sailing at full health; instead on each Armada kill, rest of Armadas in 5-tile range get bonus XP.
-	- Yassa Court ==> now granted after conquering the city; bonus yields on conquering; global unhappiness reduction instead of local,
+	- Yassa Court ==> now granted after founding the city or researching Philosophy; bonus yields on conquering; global unhappiness reduction instead of local,
 	- Andelsbevægelse ==> now increases Worker's work rate by 3%; deleted 5% food bonus.
 - substituted:
 	- Qadi to Gumey ==> replaces Caravansary; bonuses from luxury resources and global monopolies on them; focus on gold+++, production++ and culture+.
