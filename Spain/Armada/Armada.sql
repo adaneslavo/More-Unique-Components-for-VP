@@ -73,22 +73,9 @@ VALUES		('UNIT_SPAIN_ATLAS', 		256, 		'ArmadaPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-<<<<<<< HEAD
-			(Type, 											Description, 										Help, 														Sound, 				CombatPercent,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_SPAIN_SANTA_MARIA', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA',			'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA_HELP', 			'AS2D_IF_LEVELUP',	0,				0,				0,			0,			0,					0,			0,					1, 				16, 			'PROMOTION_ATLAS', 					'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA'),
-			('PROMOTION_UNIT_SPAIN_INVINCIBLE', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE',			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP', 			'AS2D_IF_LEVELUP',	0,				0,				0,			0,			0,					0,			1,					1, 				0, 				'UNIT_BABYLON_PROMOTION_5_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE');
-=======
 			(Type, 						Description, 							Help, 									Sound, 			GainsXPFromSpotting, LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 	PediaEntry)
 VALUES		('PROMOTION_UNIT_SPAIN_SANTA_MARIA', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA',			'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA_HELP', 			'AS2D_IF_LEVELUP',	0, 			0,			1, 		16, 		'PROMOTION_ATLAS', 			'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA'),
-		('PROMOTION_UNIT_SPAIN_INVINCIBLE', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE',			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP', 			'AS2D_IF_LEVELUP',	0, 			1,			1, 		0, 		'UNIT_BABYLON_PROMOTION_5_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE'),
-		('PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL', 		'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL',		'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL_HELP', 		'AS2D_IF_LEVELUP',	1, 			1,			1, 		0, 		'UNIT_BABYLON_PROMOTION_5_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL');
-------------------------------
--- UnitPromotions_YieldFromKills
-------------------------------
-INSERT INTO UnitPromotions_YieldFromKills
-			(PromotionType, 						YieldType,						Yield)
-VALUES		('PROMOTION_UNIT_SPAIN_SANTA_MARIA',	'YIELD_GREAT_ADMIRAL_POINTS',	100);
->>>>>>> 4f05c6b7a1d5177869f3f2e86971519de6bc805d
+			('PROMOTION_UNIT_SPAIN_INVINCIBLE', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE',			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP', 			'AS2D_IF_LEVELUP',	0, 			1,			1, 		0, 		'UNIT_BABYLON_PROMOTION_5_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
