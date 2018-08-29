@@ -17,7 +17,6 @@ if bXPScaling then
 end
 
 local ePromotionInvincible = GameInfoTypes.PROMOTION_UNIT_SPAIN_INVINCIBLE
-local ePromotionInvincibleAtFull = GameInfoTypes.PROMOTION_UNIT_SPAIN_INVINCIBLE_AT_FULL
 
 function GetStrongerAtFullHealth(iPlayer)
 	local pPlayer = Players[iPlayer]
@@ -29,10 +28,8 @@ function GetStrongerAtFullHealth(iPlayer)
 				local iY = pUnit:GetY()
 				local pPlot = Map.GetPlot(iX, iY)
 
-				pUnit:SetHasPromotion(ePromotionInvincibleAtFull, true)
 				pUnit:SetBaseCombatStrength(44)
 			else
-				pUnit:SetHasPromotion(ePromotionInvincibleAtFull, false)
 				pUnit:SetBaseCombatStrength(40)
 			end
 		end
