@@ -72,16 +72,17 @@ VALUES		('RESOURCE_EGYPT_FLAX',	null,			null,				'TXT_KEY_RESOURCE_EGYPT_FLAX',	
 -- Resource_YieldChanges
 ------------------------------
 INSERT INTO Resource_YieldChanges 	
-			(ResourceType, 				YieldType, 				Yield)
-VALUES		('RESOURCE_EGYPT_FLAX',		'YIELD_PRODUCTION',		1),
-			('RESOURCE_EGYPT_FLAX',		'YIELD_CULTURE',		1);
+			(ResourceType, 				YieldType, 			Yield)
+VALUES			('RESOURCE_EGYPT_FLAX',		'YIELD_GOLD',		1),
+			('RESOURCE_EGYPT_FLAX',		'YIELD_CULTURE',	1);
 ------------------------------
 -- Resource_Flavors
 ------------------------------
 INSERT INTO Resource_Flavors 	
 			(ResourceType, 			FlavorType, 				Flavor)
-VALUES		('RESOURCE_EGYPT_FLAX',	'FLAVOR_PRODUCTION',		10),
-			('RESOURCE_EGYPT_FLAX',	'FLAVOR_CULTURE',			10);
+VALUES		('RESOURCE_EGYPT_FLAX',	'FLAVOR_GOLD',				10),
+		('RESOURCE_EGYPT_FLAX',	'FLAVOR_PRODUCTION',			10),
+		('RESOURCE_EGYPT_FLAX',	'FLAVOR_CULTURE',			10);
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -98,7 +99,8 @@ VALUES		('RESOURCE_EGYPT_FLAX',	'IMPROVEMENT_PLANTATION');
 ------------------------------
 INSERT INTO Improvement_ResourceType_Yields
 			(ResourceType, 			ImprovementType,			YieldType,			Yield)
-VALUES		('RESOURCE_EGYPT_FLAX',	'IMPROVEMENT_PLANTATION',	'YIELD_GOLD',		2);
+VALUES		('RESOURCE_EGYPT_FLAX',	'IMPROVEMENT_PLANTATION',	'YIELD_GOLD',		1),
+		('RESOURCE_EGYPT_FLAX',	'IMPROVEMENT_PLANTATION', 	'YIELD_PRODUCTION',		1);
 --==========================================================================================================================
 
 --==========================================================================================================================

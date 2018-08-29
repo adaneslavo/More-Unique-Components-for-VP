@@ -16,9 +16,9 @@ function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 		local pUnit = pPlayer:GetUnitByID(iUnit)
 
 		if pUnit:IsGreatPerson() then
-			iScience = math.floor(50 * iEraModifier * iGameSpeedModifier)
+			iScience = math.floor(75 * iEraModifier * iGameSpeedModifier)
 		else
-			iScience = math.floor(10 * iEraModifier * iGameSpeedModifier)
+			iScience = math.floor(15 * iEraModifier * iGameSpeedModifier)
 		end
 
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -40,7 +40,7 @@ function MadrasahScienceBuilding(iPlayer, iCity, iBuilding, bGold, bFaith)
 		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 		local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 
-		local iScience = math.floor(10 * iEraModifier * iGameSpeedModifier)
+		local iScience = math.floor(15 * iEraModifier * iGameSpeedModifier)
 		
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())

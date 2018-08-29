@@ -52,8 +52,8 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_WELL';
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 						YieldType,			Yield)
-VALUES		('BUILDING_SHOSHONE_BUFFALO_POUND',	'YIELD_FOOD',		2),
-			('BUILDING_SHOSHONE_BUFFALO_POUND',	'YIELD_PRODUCTION',	1);
+VALUES		('BUILDING_SHOSHONE_BUFFALO_POUND',	'YIELD_FOOD',		1),
+			('BUILDING_SHOSHONE_BUFFALO_POUND',	'YIELD_PRODUCTION',	2);
 ------------------------------	
 -- Building_YieldChangesPerPop
 ------------------------------

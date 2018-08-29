@@ -5,8 +5,8 @@
 -- BuildingClasses
 ------------------------------
 INSERT INTO BuildingClasses 	
-			(Type,									DefaultBuilding,					NoLimit)
-VALUES		('BUILDINGCLASS_DUMMYGPPANDGOLD',	'BUILDING_DUMMYGPPANDGOLD',		1);
+			(Type,										DefaultBuilding,						NoLimit)
+VALUES		('BUILDINGCLASS_DUMMYGPPGOLDANDCULTURE',	'BUILDING_DUMMYGPPGOLDANDCULTURE',		1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -16,13 +16,14 @@ VALUES		('BUILDINGCLASS_DUMMYGPPANDGOLD',	'BUILDING_DUMMYGPPANDGOLD',		1);
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,							BuildingClass,						Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateModifier)
-VALUES		('BUILDING_DUMMYGPPANDGOLD',	'BUILDINGCLASS_DUMMYGPPANDGOLD',	'TXT_KEY_BUILDING_DUMMYGPPANDGOLD',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2);
+			(Type,								BuildingClass,							Description,								GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateChange,	SpecialistType)
+VALUES		('BUILDING_DUMMYGPPGOLDANDCULTURE',	'BUILDINGCLASS_DUMMYGPPGOLDANDCULTURE',	'TXT_KEY_BUILDING_DUMMYGPPGOLDANDCULTURE',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2,						'SPECIALIST_MERCHANT');
 ------------------------------	
--- Building_YieldChanges
-------------------------------		
-INSERT INTO Building_YieldChanges 	
-			(BuildingType, 				YieldType,			Yield)
-VALUES		('BUILDING_DUMMYGPPANDGOLD',	'YIELD_GOLD',	1);
+-- Building_BuildingClassLocalYieldChanges
+------------------------------
+INSERT INTO Building_BuildingClassLocalYieldChanges
+			(BuildingType,					BuildingClassType,		YieldType,		YieldChange)
+VALUES		('BUILDING_DUMMYGPPGOLDANDCULTURE',	'BUILDINGCLASS_GARDEN', 'YIELD_CULTURE',	2),
+		('BUILDING_DUMMYGPPGOLDANDCULTURE',	'BUILDINGCLASS_GARDEN', 'YIELD_GOLD',		2);
 --==========================================================================================================================
 --==========================================================================================================================

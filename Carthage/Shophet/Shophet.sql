@@ -76,8 +76,8 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_GREATGENERAL_KH
 -- Units
 ------------------------------	
 INSERT INTO Units 	
-		(Type, 						Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, Description,						Civilopedia,							Strategy,									Help,									AdvancedStartCost,	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, UnitArtInfo,  					UnitFlagIconOffset,	UnitFlagAtlas,				MoveRate, PortraitIndex, IconAtlas)
-SELECT	'UNIT_CARTHAGE_SHOPHET',	Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, 'TXT_KEY_UNIT_CARTHAGE_SHOPHET',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_TEXT',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP',	AdvancedStartCost, 	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, 'ART_DEF_UNIT_CARTHAGE_SHOPHET',  0,					'UNIT_CARTHAGE_FLAG_ATLAS',	MoveRate, 0, 			 'UNIT_CARTHAGE_ATLAS'
+		(Type, 						Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, Description,						Civilopedia,							Strategy,									Help,									AdvancedStartCost,	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, UnitArtInfo,  						UnitFlagIconOffset,	UnitFlagAtlas,				MoveRate, PortraitIndex, IconAtlas,				PurchaseCooldown, GlobalFaithPurchaseCooldown)
+SELECT	'UNIT_CARTHAGE_SHOPHET',	Class, Cost, Moves, Special, SupplyCapBoost, 	MoveAfterPurchase,	Domain, DefaultUnitAI, 'TXT_KEY_UNIT_CARTHAGE_SHOPHET',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_TEXT',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_STRATEGY',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_HELP',	AdvancedStartCost, 	WorkRate, CombatLimit, DontShowYields, UnitArtInfoEraVariation, 'ART_DEF_UNIT_CARTHAGE_SHOPHET',	0,					'UNIT_CARTHAGE_FLAG_ATLAS',	MoveRate, 0, 			 'UNIT_CARTHAGE_ATLAS',	PurchaseCooldown, GlobalFaithPurchaseCooldown
 FROM Units WHERE Type = 'UNIT_GREAT_GENERAL';	
 --------------------------------
 -- UnitGameplay2DScripts
@@ -128,9 +128,9 @@ VALUES	('UNIT_CARTHAGE_SHOPHET', 	'PROMOTION_UNIT_CARTHAGE_GENERAL'),
 ------------------------------
 INSERT INTO UnitPromotions 
 		(Type, 								Description, 									Help, 												Sound, 				IgnoreZoC,  CannotBeChosen, PortraitIndex,	IconAtlas, 			PediaType, 			PediaEntry)
-VALUES	('PROMOTION_UNIT_CARTHAGE_ADMIRAL',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL_HELP', 	'AS2D_IF_LEVELUP',	0, 			1, 				48, 			'PROMOTION_ATLAS', 	'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL'),
-		('PROMOTION_UNIT_CARTHAGE_GENERAL',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL_HELP', 	'AS2D_IF_LEVELUP',	0, 			1, 				48, 			'PROMOTION_ATLAS', 	'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL'),
-		('PROMOTION_UNIT_CARTHAGE_ZOC',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC',			'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC_HELP',			'AS2D_IF_LEVELUP',	1, 			1, 				33, 			'PROMOTION_ATLAS', 	'PEDIA_ATTRIBUTES', 'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC');
+VALUES	('PROMOTION_UNIT_CARTHAGE_ADMIRAL',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL_HELP', 	'AS2D_IF_LEVELUP',	0, 			1, 				48, 			'PROMOTION_ATLAS', 	'PEDIA_CIVILIAN',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL'),
+		('PROMOTION_UNIT_CARTHAGE_GENERAL',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL_HELP', 	'AS2D_IF_LEVELUP',	0, 			1, 				48, 			'PROMOTION_ATLAS', 	'PEDIA_CIVILIAN',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL'),
+		('PROMOTION_UNIT_CARTHAGE_ZOC',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC',			'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC_HELP',			'AS2D_IF_LEVELUP',	1, 			1, 				33, 			'PROMOTION_ATLAS', 	'PEDIA_SHARED',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC');
 --==========================================================================================================================
 
 --==========================================================================================================================

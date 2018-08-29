@@ -4,8 +4,8 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
-local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GrowthPercent / 100
-local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
+--local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GrowthPercent / 100
+--local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 
 function EtemenankiBuildingInvestment(iPlayer, iCity, iBuildingClass, bValue)
 	local pPlayer = Players[iPlayer]
@@ -16,9 +16,8 @@ function EtemenankiBuildingInvestment(iPlayer, iCity, iBuildingClass, bValue)
 	
 	if not pCapital:IsHasBuilding(GameInfoTypes.BUILDING_BABYLON_ETEMENANKI) then return end
 
-	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)										
-	local iChange1 = math.floor(15 * iEraModifier * fGameSpeedModifier1)
-	local iChange2 = math.floor(15 * iEraModifier * fGameSpeedModifier2)
+	local iChange1 = math.floor(0.15 * pCapital:GetYieldRate( YieldTypes.YIELD_FOOD ))
+	local iChange2 = math.floor(0.15 * pCapital:GetYieldRate( YieldTypes.YIELD_SCIENCE ))
 							
 	pCapital:ChangeFood(iChange1)
 	pPlayer:ChangeOverflowResearch(iChange2)

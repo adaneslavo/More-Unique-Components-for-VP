@@ -17,11 +17,11 @@ DELETE FROM Building_FeatureYieldChanges WHERE BuildingType = 'BUILDING_WAT';
 ------------------------------
 INSERT INTO Building_ThemingYieldBonus
 			(BuildingType, YieldType, Yield)
-VALUES		('BUILDING_WAT', 'YIELD_SCIENCE', 	2),
-			('BUILDING_WAT', 'YIELD_FAITH',		2);
+VALUES		('BUILDING_WAT', 'YIELD_SCIENCE', 	3),
+			('BUILDING_WAT', 'YIELD_FAITH',		3);
 ------------------------------	
 -- Building_ThemingBonuses
 ------------------------------	
 INSERT INTO Building_ThemingBonuses	
 			(BuildingType,				Description,								  Bonus,	SameEra,	RequiresSamePlayer,	AIPriority)
-VALUES		('BUILDING_WAT',	'TXT_KEY_THEMING_BONUS_WAT',	2,		  1,		    1,						          2);
+VALUES		('BUILDING_WAT',	'TXT_KEY_THEMING_BONUS_WAT',	4,		  1,		    1,						          2);

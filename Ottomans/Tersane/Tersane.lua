@@ -6,6 +6,8 @@ function TrainPrizeShips(iPlayer, iCity, iUnit)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
+	if pUnit:GetUnitType() == GameInfoTypes.UNIT_DUTCH_SEA_BEGGAR then return end
+	
 	if pUnit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE then
 		local pCity = pPlayer:GetCityByID(iCity)
 

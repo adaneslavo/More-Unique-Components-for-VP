@@ -49,7 +49,7 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 				-- Find GP with highest points
 				local tGP, iGPPMax = nil, 0
 				for _,spec in ipairs(tGPs) do
-					local gpProgress = city:GetSpecialistGreatPersonProgressTimes100(spec.GPType);
+					local gpProgress = pCity:GetSpecialistGreatPersonProgressTimes100(spec.GPType);
 					if gpProgress > iGPPMax then iGPPMax = gpProgress; tGP = spec end
 				end
 				if not tGP then

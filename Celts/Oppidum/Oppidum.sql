@@ -162,8 +162,13 @@ VALUES		('POLICY_NEW_DEAL',				'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_GOLD',		5),
 			('POLICY_MOBILIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_SCIENCE',	3),
 			('POLICY_URBANIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		2);
 --==========================================================================================================================
--- TRAIT
---==========================================================================================================================
-INSERT INTO Trait_ImprovementYieldChanges
-			(TraitType,					ImprovementType,				YieldType,			Yield)
-VALUES		('TRAIT_SCHOLARS_JADE_HALL',				'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_SCIENCE',		2);
+-- BELIEF
+--==========================================================================================================================				
+------------------------------
+-- Belief_ImprovementYieldChanges
+------------------------------	
+INSERT INTO Belief_ImprovementYieldChanges
+	(BeliefType, ImprovementType, YieldType, Yield)
+VALUES
+	('BELIEF_UNITY_OF_PROPHETS', 'IMPROVEMENT_CELTS_OPPIDUM', 'YIELD_FAITH', 4),
+	('BELIEF_UNITY_OF_PROPHETS', 'IMPROVEMENT_CELTS_OPPIDUM', 'YIELD_SCIENCE', 4);
