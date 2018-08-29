@@ -49,72 +49,42 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingCulture.sql</FileName>
+        <FileName>!Dummies/DummyBuildingCulture.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingFaith.sql</FileName>
+        <FileName>!Dummies/DummyBuildingFaith.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingFood.sql</FileName>
+        <FileName>!Dummies/DummyBuildingFood.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGold.sql</FileName>
+        <FileName>!Dummies/DummyBuildingGold.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingProduction.sql</FileName>
+        <FileName>!Dummies/DummyBuildingProduction.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingScience.sql</FileName>
+        <FileName>!Dummies/DummyBuildingScience.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGMP1.sql</FileName>
+        <FileName>!Dummies/DummyBuildingDefense.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGMP2.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGMP3.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGMP4.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingHappiness.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingCityHP.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingDefense.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGPPAndDefense.sql</FileName>
+        <FileName>!Dummies/DummyBuildingGPPAndDefense.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -634,12 +604,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGPP.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGPP2.sql</FileName>
+        <FileName>!Dummies/DummyBuildingGPP2.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -699,17 +664,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingDefenseHPPromotion.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingClassYield.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingExpAndClassYield.sql</FileName>
+        <FileName>!Dummies/DummyBuildingClassYield.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -720,11 +675,6 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Inca/Intihuatana/Intihuatana.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingHorseYields.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -744,17 +694,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingsForMonoChurch.sql</FileName>
+        <FileName>!Dummies/Dummies.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingArmory.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGPPGoldAndCulture.sql</FileName>
+        <FileName>!Dummies/DummyBuildingGPPGoldAndCulture.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -1285,43 +1230,23 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingArmory.sql">
+    <Content Include="!Dummies\Dummies.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingDefense.sql">
+    <Content Include="!Dummies\DummyBuildingDefense.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGPP.sql">
+    <Content Include="!Dummies\DummyBuildingGPP2.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGPP2.sql">
+    <Content Include="!Dummies\DummyBuildingClassYield.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingDefenseHPPromotion.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingExpAndClassYield.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingClassYield.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGPPGoldAndCulture.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingHorseYields.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingsForMonoChurch.sql">
+    <Content Include="!Dummies\DummyBuildingGPPGoldAndCulture.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -3277,55 +3202,31 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingCityHP.sql">
+    <Content Include="!Dummies\DummyBuildingCulture.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingCulture.sql">
+    <Content Include="!Dummies\DummyBuildingFaith.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingFaith.sql">
+    <Content Include="!Dummies\DummyBuildingFood.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingFood.sql">
+    <Content Include="!Dummies\DummyBuildingGold.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGMP1.sql">
+    <Content Include="!Dummies\DummyBuildingProduction.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGMP2.sql">
+    <Content Include="!Dummies\DummyBuildingScience.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGMP3.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGMP4.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGold.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingHappiness.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingProduction.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingScience.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGPPAndDefense.sql">
+    <Content Include="!Dummies\DummyBuildingGPPAndDefense.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -5360,7 +5261,7 @@ Latest changes: see changelog file.</Description>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="!Animations" />
-    <Folder Include="!DummyBuildings" />
+    <Folder Include="!Dummies" />
     <Folder Include="!GameTexts" />
     <Folder Include="!Settings" />
     <Folder Include="!SharedAssets" />

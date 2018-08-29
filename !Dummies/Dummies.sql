@@ -5,8 +5,17 @@
 -- BuildingClasses
 ------------------------------
 INSERT INTO BuildingClasses 	
-			(Type,														DefaultBuilding,										NoLimit)
-VALUES		('BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',		'BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',		1),
+			(Type,									DefaultBuilding,				NoLimit)
+VALUES		('BUILDINGCLASS_D_FOR_HUEY',			'BUILDING_D_FOR_HUEY',			1),
+			('BUILDINGCLASS_D_FOR_HIPPODROME',		'BUILDING_D_FOR_HIPPODROME',	1);
+			('BUILDINGCLASS_D_FOR_DRUIDIC_1',		'BUILDING_D_FOR_DRUIDIC_1',		1);
+			('BUILDINGCLASS_D_FOR_DRUIDIC_2',		'BUILDING_D_FOR_DRUIDIC_2',		1);
+			('BUILDINGCLASS_D_FOR_DRUIDIC_3',		'BUILDING_D_FOR_DRUIDIC_3',		1);
+			('BUILDINGCLASS_D_FOR_DRUIDIC_4',		'BUILDING_D_FOR_DRUIDIC_4',		1);
+			('BUILDINGCLASS_D_FOR_OPPIDUM',			'BUILDING_D_FOR_OPPIDUM',		1);
+			('BUILDINGCLASS_D_FOR_EXAM',			'BUILDING_D_FOR_EXAM',			1);
+			('BUILDINGCLASS_D_FOR_TOWER',			'BUILDING_D_FOR_TOWER',			1);
+			('BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',		'BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',		1),
 			('BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_LIBERTY',		'BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_LIBERTY',			1),
 			('BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_HONOR',			'BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_HONOR',			1),
 			('BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_PIETY',			'BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_PIETY',			1),
@@ -20,14 +29,40 @@ VALUES		('BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',		'BUILDING_ETHIOP
 			('BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_ENHANCER',		'BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_ENHANCER',			1),
 			('BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION',	'BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION',		1),
 			('BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',		'BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',			1);
---==========================================================================================================================	
-
+			('BUILDINGCLASS_D_FOR_TEUTONIC',		'BUILDING_D_FOR_TEUTONIC',		1);
+			('BUILDINGCLASS_D_FOR_PROXENOS',		'BUILDING_D_FOR_PROXENOS',		1),
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
 ------------------------------
 -- Buildings
 ------------------------------	
+INSERT INTO Buildings 	
+			(Type,							BuildingClass,						Description,							GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex)
+VALUES		('BUILDING_D_FOR_BARBICAN',		'BUILDINGCLASS_ARMORY',				'TXT_KEY_BUILDING_D_FOR_BARBICAN',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0);
+			('BUILDING_D_FOR_HUEY',			'BUILDINGCLASS_D_FOR_HUEY',			'TXT_KEY_BUILDING_D_FOR_HUEY',			0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0);
+			('BUILDING_D_FOR_HIPPODROME',	'BUILDINGCLASS_D_FOR_HIPPODROME',	'TXT_KEY_BUILDING_D_FOR_HIPPODROME',	0,					-1,		-1,			-1,				1,				1,          0,				-1,					'CIV_COLOR_ATLAS',	0);
+			('BUILDING_D_FOR_PROXENOS',		'BUILDINGCLASS_D_FOR_PROXENOS',		'TXT_KEY_BUILDING_D_FOR_PROXENOS',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
+
+INSERT INTO Buildings 	
+			(Type,							BuildingClass,						Description,							GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateChange,	SpecialistType)
+VALUES		('BUILDING_D_FOR_DRUIDIC_1',	'BUILDINGCLASS_D_FOR_DRUIDIC_1',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2,						'SPECIALIST_MERCHANT');
+			('BUILDING_D_FOR_DRUIDIC_2',	'BUILDINGCLASS_D_FOR_DRUIDIC_2',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				4,						'SPECIALIST_MERCHANT');
+			('BUILDING_D_FOR_DRUIDIC_3',	'BUILDINGCLASS_D_FOR_DRUIDIC_3',	'TXT_KEY_BUILDING_D_FOR_DRUIDICP',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				6,						'SPECIALIST_MERCHANT');
+			('BUILDING_D_FOR_DRUIDIC_4',	'BUILDINGCLASS_D_FOR_DRUIDIC_4',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				8,						'SPECIALIST_MERCHANT');
+
+INSERT INTO Buildings 	
+			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	ExtraCityHitPoints)
+VALUES		('BUILDING_D_FOR_OPPIDUM',	'BUILDINGCLASS_D_FOR_OPPIDUM',	'TXT_KEY_BUILDING_D_FOR_OPPIDUM',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				20);
+
+INSERT INTO Buildings 	
+			(Type,					BuildingClass,				Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateModifier)
+VALUES		('BUILDING_D_FOR_EXAM',	'BUILDINGCLASS_D_FOR_EXAM',	'TXT_KEY_BUILDING_D_FOR_EXAM',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				5);
+
+INSERT INTO Buildings 	
+			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	UnmoddedHappiness)
+VALUES		('BUILDING_D_FOR_TOWER',	'BUILDINGCLASS_D_FOR_TOWER',	'TXT_KEY_BUILDING_D_FOR_TOWER',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				1);
+
 INSERT INTO Buildings 	
 			(Type,												BuildingClass,											Description,												GoldMaintenance,	Cost, FaithCost,	GreatWorkCount, NeverCapture,  NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex)
 VALUES		('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',	'BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',	'TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',	0,					-1,   -1,			-1,				1,             1,          0,				-1,					'CIV_COLOR_ATLAS',	0),
@@ -44,6 +79,32 @@ VALUES		('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',	'BUILDINGCLASS_ETHIOPI
 			('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_ENHANCER',	'BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_ENHANCER',	'TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_ENHANCER',		0,					-1,   -1,			-1,				1,             1,          0,				-1,					'CIV_COLOR_ATLAS',	0),
 			('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION',	'BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION',	'TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION',	0,					-1,   -1,			-1,				1,             1,          0,				-1,					'CIV_COLOR_ATLAS',	0),
 			('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',	'BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',	'TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',		0,					-1,   -1,			-1,				1,             1,          0,				-1,					'CIV_COLOR_ATLAS',	0);
+
+INSERT INTO Buildings 	
+			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	Defense,	ExtraCityHitPoints,	TrainedFreePromotion)
+VALUES		('BUILDING_D_FOR_TEUTONIC',	'BUILDINGCLASS_D_FOR_TEUTONIC',	'TXT_KEY_BUILDING_D_FOR_TEUTONIC',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				500,		50,					'PROMOTION_MORALE');
+------------------------------	
+-- Building_BuildingClassYieldChanges
+------------------------------
+INSERT INTO Building_BuildingClassYieldChanges
+			(BuildingType,			BuildingClassType,				YieldType,		YieldChange)
+VALUES		('BUILDING_D_FOR_HUEY',	'BUILDINGCLASS_GRAND_TEMPLE',	'YIELD_FOOD',	3),
+			('BUILDING_D_FOR_HUEY',	'BUILDINGCLASS_GRAND_TEMPLE',	'YIELD_FAITH',	3);
+------------------------------	
+-- Building_DomainFreeExperiences
+------------------------------
+INSERT INTO Building_DomainFreeExperiences
+			(BuildingType,			DomainType,		Experience)
+VALUES		('BUILDING_D_FOR_HUEY',	'DOMAIN_LAND',	3),
+			('BUILDING_D_FOR_HUEY',	'DOMAIN_AIR',	3),
+			('BUILDING_D_FOR_HUEY',	'DOMAIN_SEA',	3);
+------------------------------
+-- Building_ResourceYieldChanges
+------------------------------
+INSERT INTO Building_ResourceYieldChanges
+			(BuildingType,					ResourceType,     YieldType,			Yield)
+VALUES		('BUILDING_D_FOR_HIPPODROME',	'RESOURCE_HORSE', 'YIELD_CULTURE',		1),
+			('BUILDING_D_FOR_HIPPODROME',	'RESOURCE_HORSE', 'YIELD_GOLD',			1);
 ------------------------------	
 -- Building_ImprovementYieldChanges
 ------------------------------		
@@ -65,5 +126,11 @@ VALUES		('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',	'IMPROVEMENT_ETHIOPIA_
 			('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_PRODUCTION',	1),
 			('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_GOLD',		1),
 			('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_GOLD',		2);
+------------------------------	
+-- Building_YieldChanges
+------------------------------		
+INSERT INTO Building_YieldChanges 	
+			(BuildingType, 				YieldType,		Yield)
+VALUES		('BUILDING_D_FOR_PROXENOS',	'YIELD_GOLD',	2);
 --==========================================================================================================================
 --==========================================================================================================================

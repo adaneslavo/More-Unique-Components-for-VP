@@ -5,24 +5,27 @@
 local iUnitX
 local iUnitY
 
+local eBuildingDummyForOppidum = GameInfoTypes.BUILDING_D_FOR_OPPIDUM
+local eImprovementOppidum = GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM
+
 function OppidumAddsHP(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged)
 	local pPlayer = Players[iOwner]
 	
-	if (iNewImprovement == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and iNewImprovement ~= iOldImprovement) or (iNewImprovement == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and iNewImprovement == iOldImprovement and not bPillaged) then
+	if (iNewImprovement == eImprovementOppidum and iNewImprovement ~= iOldImprovement) or (iNewImprovement == eImprovementOppidum and iNewImprovement == iOldImprovement and not bPillaged) then
 		local pPlot = Map.GetPlot(iX, iY)
 
 		if pPlot ~= nil then
 			pCity = GetNearestCity(pPlayer, pPlot)
-			pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) + 1)
+			pCity:SetNumRealBuilding(eBuildingDummyForOppidum, pCity:GetNumBuilding(eBuildingDummyForOppidum) + 1)
 		end
 	end
 
-	if (iOldImprovement == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and iOldImprovement ~= iNewImprovement) or (iOldImprovement == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and iOldImprovement == iNewImprovement and bPillaged) then
+	if (iOldImprovement == eImprovementOppidum and iOldImprovement ~= iNewImprovement) or (iOldImprovement == eImprovementOppidum and iOldImprovement == iNewImprovement and bPillaged) then
 		local pPlot = Map.GetPlot(iX, iY)
 
 		if pPlot ~= nil then
 			pCity = GetNearestCity(pPlayer, pPlot)
-			pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) - 1)
+			pCity:SetNumRealBuilding(eBuildingDummyForOppidum, pCity:GetNumBuilding(eBuildingDummyForOppidum) - 1)
 		end
 	end
 end
@@ -34,13 +37,13 @@ function OppidumMoveHP(iPlayer, iX, iY)
 	for iCityPlot = 1, pFoundCity:GetNumCityPlots() - 1, 1 do
 		local pSpecificPlot = pFoundCity:GetCityIndexPlot(iCityPlot)
 
-		if pSpecificPlot and pSpecificPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and not pSpecificPlot:IsImprovementPillaged() then
+		if pSpecificPlot and pSpecificPlot:GetImprovementType() == eImprovementOppidum and not pSpecificPlot:IsImprovementPillaged() then
 			local pCheckedCity = GetNearestCity(pPlayer, pSpecificPlot)
 
 			if pCheckedCity == pFoundCity then
 				pFirstCity = GetNearestCityExcluded(pPlayer, pSpecificPlot, pFoundCity)
-				pFirstCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pFirstCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) - 1)
-				pFoundCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pFoundCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) + 1)
+				pFirstCity:SetNumRealBuilding(eBuildingDummyForOppidum, pFirstCity:GetNumBuilding(eBuildingDummyForOppidum) - 1)
+				pFoundCity:SetNumRealBuilding(eBuildingDummyForOppidum, pFoundCity:GetNumBuilding(eBuildingDummyForOppidum) + 1)
 			end
 		end
 	end
@@ -55,21 +58,21 @@ function OppidumOnCapture(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, iCo
 		for iCityPlot = 1, pCapturedCity:GetNumCityPlots() - 1, 1 do
 			local pSpecificPlot = pCapturedCity:GetCityIndexPlot(iCityPlot)
 
-			if pSpecificPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM and not pSpecificPlot:IsImprovementPillaged() then
+			if pSpecificPlot:GetImprovementType() == eImprovementOppidum and not pSpecificPlot:IsImprovementPillaged() then
 				local pCheckedPlayer = Players[pSpecificPlot:GetOwner()]
 				local pCheckedCity = GetNearestCityFor2Players(pOldPlayer, pNewPlayer, pSpecificPlot)
 				
 				if pCheckedCity == pCapturedCity then
 					if pCheckedPlayer ~= pNewPlayer then
 						pNewCity = GetNearestCity(pOldPlayer, pSpecificPlot)
-						pCapturedCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pCapturedCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) - 1)
-						pNewCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pNewCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) + 1)
+						pCapturedCity:SetNumRealBuilding(eBuildingDummyForOppidum, pCapturedCity:GetNumBuilding(eBuildingDummyForOppidum) - 1)
+						pNewCity:SetNumRealBuilding(eBuildingDummyForOppidum, pNewCity:GetNumBuilding(eBuildingDummyForOppidum) + 1)
 					else
-						pCapturedCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pCapturedCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) + 1)
+						pCapturedCity:SetNumRealBuilding(eBuildingDummyForOppidum, pCapturedCity:GetNumBuilding(eBuildingDummyForOppidum) + 1)
 					end
 				else
 					if pCheckedPlayer == pNewPlayer then
-						pCheckedCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP, pCheckedCity:GetNumBuilding(GameInfoTypes.BUILDING_DUMMYCITYHP) - 1)
+						pCheckedCity:SetNumRealBuilding(eBuildingDummyForOppidum, pCheckedCity:GetNumBuilding(eBuildingDummyForOppidum) - 1)
 					end
 				end
 			end
@@ -156,7 +159,7 @@ function OppidumGarrisonAfter(iAttackingPlayer, iAttackingUnit, attackerDamage, 
 			if iUnitX and iUnitY then	
 				local pPlot = Map.GetPlot(iUnitX, iUnitY)
 
-				if pPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_CELTS_OPPIDUM then
+				if pPlot:GetImprovementType() == eImprovementOppidum then
 					local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 			
 					pAttackingUnit:SetXY(iUnitX, iUnitY)

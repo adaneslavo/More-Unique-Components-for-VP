@@ -4,8 +4,6 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
---local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
-						
 function ImperialVigilance(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
@@ -38,8 +36,6 @@ function YorkscherMarche(iPlayer)
 					local pOwner = Players[iOwner]
 
 					if pOwner == pPlayer then
---						local iGain = math.floor(0.75 * fGameSpeedModifier)
-
 						pPlayer:ChangeJONSCulture(1)
 
 						if pPlayer:IsHuman() and pPlayer:IsTurnActive() then

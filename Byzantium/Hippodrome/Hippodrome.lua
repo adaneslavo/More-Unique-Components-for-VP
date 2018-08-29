@@ -6,7 +6,7 @@ include("FLuaVector.lua")
 
 local eBuildingHippodrome = GameInfoTypes.BUILDING_BYZANTIUM_HIPPODROME
 local eCivilizationByzantium = GameInfoTypes.CIVILIZATION_BYZANTIUM
-local eBuildingDummyHorseYields = GameInfoTypes.BUILDING_DUMMYHORSEYIELDS
+local eBuildingDummyForHippodrome = GameInfoTypes.BUILDING_D_FOR_HIPPODROME
 local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
 				
 -- adds WLTKD and Yields to all Horses in empire after its construction
@@ -21,7 +21,7 @@ function OnConstructionAddBonuses(iPlayer, iCity, iBuilding)
 				
 				city:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 				
-				city:SetNumRealBuilding(eBuildingDummyHorseYields, 1)
+				city:SetNumRealBuilding(eBuildingDummyForHippodrome, 1)
 
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 					pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCapital:GetName()..'[ENDCOLOR] constructed Hippodrome. People love you. '..iWLTKDLength..'-turn WLTKD has started in '..city:GetName()..'.', 'Hippodrome constructed in '..pCapital:GetName(), city:GetX(), city:GetY())
@@ -65,7 +65,7 @@ function OnCaptureRemoveHorseYields(iOldOwner, bIsCapital, iX, iY, iNewOwner, iP
 	if pOldPlayer:GetCivilizationType() ~= eCivilizationByzantium or not bIsCapital then return end
 
 	for city in pOldPlayer:Cities() do
-		city:SetNumRealBuilding(eBuildingDummyHorseYields, 0)
+		city:SetNumRealBuilding(eBuildingDummyForHippodrome, 0)
 	end
 end
 	

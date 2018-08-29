@@ -6,8 +6,8 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
-local iBuilding = GameInfoTypes.BUILDING_CHINA_EXAMINATION_HALL
-local iDummy = GameInfoTypes.BUILDING_DUMMYGPP
+local eBuildingExamHall = GameInfoTypes.BUILDING_CHINA_EXAMINATION_HALL
+local eBuildingDummyForExamHall = GameInfoTypes.BUILDING_D_FOR_EXAM
 
 -- build table of valid specialists and corresponding GPs
 local tGPs = {}
@@ -22,10 +22,10 @@ end
 function WLTKDGreatPersonBonus(iPlayer)
 	local pPlayer = Players[iPlayer]
 	for pCity in pPlayer:Cities() do
-		if pCity:IsHasBuilding(iBuilding) and pCity:GetWeLoveTheKingDayCounter() > 0 then
-			pCity:SetNumRealBuilding(iDummy, 1)
+		if pCity:IsHasBuilding(eBuildingExamHall) and pCity:GetWeLoveTheKingDayCounter() > 0 then
+			pCity:SetNumRealBuilding(eBuildingDummyForExamHall, 1)
 		else
-			pCity:SetNumRealBuilding(iDummy, 0)
+			pCity:SetNumRealBuilding(eBuildingDummyForExamHall, 0)
 		end
 	end
 end
@@ -37,7 +37,7 @@ function GPPOnGrowth(iX, iY, iOld, iNew)
 		local pPlot = Map.GetPlot(iX, iY)
 		if pPlot then
 			local pCity = pPlot:GetPlotCity()
-			if pCity and pCity:IsHasBuilding(iBuilding) then
+			if pCity and pCity:IsHasBuilding(eBuildingExamHall) then
 				local iPlayer = pCity:GetOwner()
 				local pPlayer = Players[iPlayer]
 				local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)

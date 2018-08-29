@@ -4,7 +4,6 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
-local eCivilizationMorocco = GameInfoTypes.CIVILIZATION_MOROCCO
 local eBuildingRiad = GameInfoTypes.BUILDING_MAROCCO_RIAD
 local eBuildingDummyRiad = GameInfoTypes.BUILDING_DUMMYGPPGOLDANDCULTURE			
 
@@ -12,10 +11,6 @@ local eBuildingDummyRiad = GameInfoTypes.BUILDING_DUMMYGPPGOLDANDCULTURE
 function OnTurnGainYieldsFromTR(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationMorocco) then 
-		return 
-	end
-
 	for city in Player:Cities() do
 		city:SetNumRealBuilding(eBuildingDummyRiad, 0)
 	end

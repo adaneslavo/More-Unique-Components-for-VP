@@ -9,12 +9,13 @@ local eBuildingMusiciansGuild = GameInfoTypes.BUILDING_MUSICIANS_GUILD
 local eBuildingMonogatari = GameInfoTypes.BUILDING_JAPAN_MONOGATARI
 local eBuildingUkiyoe = GameInfoTypes.BUILDING_JAPAN_UKIYOE
 local eBuildingGagaku = GameInfoTypes.BUILDING_JAPAN_GAGAKU
+local eCivilizationJapan = GameInfoTypes.CIVILIZATION_JAPAN
 
 -- upgrade all guilds on Kabuki construction
 function OnConstructionUpgradeGuilds(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 	
-	if pPlayer:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_JAPAN then return end
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationJapan) then return end
 	if iBuilding ~= eBuildingKabuki then return end
 			
 	local pCity = pPlayer:GetCityByID(iCity)

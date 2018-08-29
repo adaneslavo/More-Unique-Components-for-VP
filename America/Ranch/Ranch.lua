@@ -17,7 +17,7 @@ local eResourceBison = GameInfoTypes.RESOURCE_BISON
 function OnConstructionClaimResources(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 
-	if pPlayer:GetCivilizationType() == eCivilizationAmerica then
+	if pPlayer and pPlayer:GetCivilizationType() == eCivilizationAmerica then
 		if iBuilding == eBuildingRanch then
 			local pCity = pPlayer:GetCityByID(iCity)
 			local pPlotClaimer = 0

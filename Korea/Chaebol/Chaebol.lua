@@ -4,13 +4,10 @@
 --------------------------------------------------------------
 local eBuildingDummyGPP2 = GameInfoTypes.BUILDING_DUMMYGPP2
 local eBuildingChaebol = GameInfoTypes.BUILDING_KOREA_CHAEBOL
-local eCivilizationKorea = GameInfoTypes.CIVILIZATION_KOREA
 
 -- adds GPP for every TR
 function TradeRoutesToGPP(iPlayer)
 	local pPlayer = Players[iPlayer]
-
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationKorea) then return end
 
 	local iCounter = 0
 	local tTradeRoutes = pPlayer:GetTradeRoutes()

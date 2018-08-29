@@ -4,9 +4,6 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
---local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GrowthPercent / 100
---local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
-
 function EtemenankiBuildingInvestment(iPlayer, iCity, iBuildingClass, bValue)
 	local pPlayer = Players[iPlayer]
 

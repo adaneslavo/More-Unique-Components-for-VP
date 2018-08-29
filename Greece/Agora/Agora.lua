@@ -2,7 +2,7 @@
 -- Author: adan_eslavo, pineappledan
 -- DateCreated: 25/08/2018
 --------------------------------------------------------------
-local eBuildingDummyGold = GameInfoTypes.BUILDING_DUMMYGOLD
+local eBuildingDummyForProxenos = GameInfoTypes.BUILDING_D_FOR_PROXENOS
 local ePromotionProxenos = GameInfoTypes.PROMOTION_UNIT_GREECE_PROXENOS
 -- adds gold to the city after performing diplo missions
 function OnUnitPrekillProxenosGold(unitOwnerId, unitId, iUnitType, unitX, unitY, bDelay, eKillingPlayer)
@@ -22,7 +22,7 @@ function OnUnitPrekillProxenosGold(unitOwnerId, unitId, iUnitType, unitX, unitY,
 		if eCiv ~= -1 and Players[eCiv]:IsMinorCiv() then
 			local pCapital = pPlayer:GetCapitalCity()
 
-			pCapital:SetNumRealBuilding(eBuildingDummyGold, pCapital:GetNumRealBuilding(eBuildingDummyGold) + 2)
+			pCapital:SetNumRealBuilding(eBuildingDummyForProxenos, pCapital:GetNumRealBuilding(eBuildingDummyForProxenos) + 1)
 		end
 	end
 end

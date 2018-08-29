@@ -6,6 +6,7 @@
 local eBuildingTeutonicOrder = GameInfoTypes.BUILDING_GERMANY_TEUTONIC_ORDER
 local eBuildingBarracks = GameInfoTypes.BUILDING_BARRACKS
 local ePantheon = ReligionTypes.RELIGION_PANTHEON
+local eBuildingDummyForTeutonicOrder = GameInfoTypes.BUILDING_D_FOR_TEUTONIC
 
 -- helper checks if Teutonic Order is present
 function PlayerHasTeutonicOrder(pPlayer)
@@ -21,12 +22,12 @@ function OnCityConstructedTeutonicOrder(iPlayer, iCity, eBuilding)
 	if eBuilding == eBuildingTeutonicOrder then
 		for city in pPlayer:Cities() do
 			if city:IsHasBuilding(eBuildingBarracks) then
-				city:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSEHPPROMOTION, 1)
+				city:SetNumRealBuilding(eBuildingDummyForTeutonicOrder, 1)
 			end
 		end
 	elseif eBuilding == eBuildingBarracks then
 		if PlayerHasTeutonicOrder(pPlayer) then
-			pPlayer:GetCityByID(iCity):SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYDEFENSEHPPROMOTION, 1)
+			pPlayer:GetCityByID(iCity):SetNumRealBuilding(eBuildingDummyForTeutonicOrder, 1)
 		end
 	end
 end

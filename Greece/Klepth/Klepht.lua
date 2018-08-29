@@ -5,6 +5,10 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
+local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
+local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
+local ePromotionPhilhellenism = GameInfoTypes.PROMOTION_UNIT_GREECE_PHILHELLENISM
+			
 function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
@@ -13,7 +17,7 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 				
-		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_GREECE_PHILHELLENISM) then
+		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(ePromotionPhilhellenism) then
 			local iPlayer = iAttackingPlayer
 			local pPlayer = Players[iPlayer]
 			local pCapital = pPlayer:GetCapitalCity()
@@ -24,9 +28,6 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 					iAlliesOrFriends = iAlliesOrFriends + 1
 				end
 			end
-			
-			local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
-			local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
 			
 			local iGain1 = math.floor(1.25 *  iGameSpeedModifier1 * (iAlliesOrFriends + 1))
 			local iGain2 = math.floor(1.25 *  iGameSpeedModifier2 * (iAlliesOrFriends + 1))

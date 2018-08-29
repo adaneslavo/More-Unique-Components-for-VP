@@ -3,7 +3,7 @@
 -- DateCreated: 20/10/2017
 --------------------------------------------------------------
 local eBuildingBarbican = GameInfoTypes.BUILDING_POLAND_BARBICAN
-local eBuildingDummyArmory = GameInfoTypes.BUILDING_DUMMYARMORY
+local eBuildingDummyForBarbican = GameInfoTypes.BUILDING_D_FOR_BARBICAN
 local eBuildingArmory = GameInfoTypes.BUILDING_ARMORY
 local eCivilizationPoland = GameInfoTypes.CIVILIZATION_POLAND
 local ePromotionBarbican = GameInfoTypes.PROMOTION_UNIT_POLAND_BARBICAN
@@ -43,7 +43,7 @@ function OnConstructionBuildDummyArmory(iPlayer, iCity, iBuilding)
 		if iBuilding == eBuildingBarbican then
 			local pCity = pPlayer:GetCityByID(iCity)
 
-			pCity:SetNumRealBuilding(eBuildingDummyArmory, 1)
+			pCity:SetNumRealBuilding(eBuildingDummyForBarbican, 1)
 		end
 	end
 end

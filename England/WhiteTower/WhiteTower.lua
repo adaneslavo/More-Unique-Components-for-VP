@@ -3,15 +3,19 @@
 -- DateCreated: 6/01/2018
 -- 2018-01-25 updated by Infixo
 --------------------------------------------------------------
+local eBuildingDummyForWhiteTower = GameInfoTypes.BUILDING_D_FOR_TOWER
+local eBuildingWhiteTower = GameInfoTypes.BUILDING_ENGLAND_WHITE_TOWER
+local eCivilizationEngland = GameInfoTypes.CIVILIZATION_ENGLAND
+
 function WhiteTowerEspionageResult(iPlayer, iSpy, iResult, iCityX, iCityY) 
 	local pPlayer = Players[iPlayer]
 	
-	if pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_ENGLAND then
+	if pPlayer:GetCivilizationType() == eCivilizationEngland then
 		if iResult == 3 then
 			local pCity = Map.GetPlot(iCityX, iCityY):GetWorkingCity()
 			
-			if pCity:IsHasBuilding(GameInfoTypes.BUILDING_ENGLAND_WHITE_TOWER) then
-				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYHAPPINESS, pCity:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYHAPPINESS) + 1);
+			if pCity:IsHasBuilding(eBuildingWhiteTower) then
+				pCity:SetNumRealBuilding(eBuildingDummyForWhiteTower, pCity:GetNumRealBuilding(eBuildingDummyForWhiteTower) + 1);
 
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 					Players[pCity:GetOwner()]:AddNotification(

@@ -30,8 +30,8 @@ VALUES	('UNIT_AMERICA_ATLAS', 	256, 		'RanchPicture_256.dds',		1, 				1),
 -- Buildings
 --------------------------------
 INSERT INTO	Buildings
-			(Type,						Description,						Civilopedia,							Strategy,									Help,									GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,				GreatWorkYieldType, CitySupplyModifier, PlotCultureCostModifier)
-SELECT		'BUILDING_AMERICA_RANCH',	'TXT_KEY_BUILDING_AMERICA_RANCH',	'TXT_KEY_BUILDING_AMERICA_RANCH_TEXT',	'TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY',	'TXT_KEY_BUILDING_AMERICA_RANCH_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,BuildingClass, ArtDefineTag, PrereqTech, 0,				'UNIT_AMERICA_ATLAS', GreatWorkYieldType, CitySupplyModifier, PlotCultureCostModifier-25
+			(Type,						Description,						Civilopedia,							Strategy,									Help,									GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, NeverCapture,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,				GreatWorkYieldType, CitySupplyModifier, PlotCultureCostModifier)
+SELECT		'BUILDING_AMERICA_RANCH',	'TXT_KEY_BUILDING_AMERICA_RANCH',	'TXT_KEY_BUILDING_AMERICA_RANCH_TEXT',	'TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY',	'TXT_KEY_BUILDING_AMERICA_RANCH_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, NeverCapture,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'UNIT_AMERICA_ATLAS', GreatWorkYieldType, CitySupplyModifier, PlotCultureCostModifier-25
 FROM Buildings WHERE Type = 'BUILDING_STABLE';
 --------------------------------
 -- Building_Flavors
