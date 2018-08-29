@@ -76,6 +76,12 @@ INSERT INTO UnitPromotions
 			(Type, 						Description, 							Help, 									Sound, 			GainsXPFromSpotting, LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 	PediaEntry)
 VALUES		('PROMOTION_UNIT_SPAIN_SANTA_MARIA', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA',			'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA_HELP', 			'AS2D_IF_LEVELUP',	0, 			0,			1, 		16, 		'PROMOTION_ATLAS', 			'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_SANTA_MARIA'),
 			('PROMOTION_UNIT_SPAIN_INVINCIBLE', 			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE',			'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP', 			'AS2D_IF_LEVELUP',	0, 			1,			1, 		0, 		'UNIT_BABYLON_PROMOTION_5_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE');
+------------------------------
+-- UnitPromotions_YieldFromKills
+------------------------------
+INSERT INTO UnitPromotions_YieldFromKills
+			(PromotionType, 						YieldType,						Yield)
+VALUES		('PROMOTION_UNIT_SPAIN_SANTA_MARIA',	'YIELD_GREAT_ADMIRAL_POINTS',	100);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
