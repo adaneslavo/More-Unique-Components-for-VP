@@ -7,6 +7,7 @@ include("FLuaVector.lua")
 local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
 local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 local eBuildingBaanChang = GameInfoTypes.BUILDING_SIAM_BAAN_CHANG
+local eBuildingDummyForBaanChang = GameInfoTypes.BUILDING_D_FOR_BAAN
 
 function BaanChangCSBonus(iPlayer)
 	local pPlayer = Players[iPlayer]
@@ -15,7 +16,7 @@ function BaanChangCSBonus(iPlayer)
 		if city:IsHasBuilding(eBuildingBaanChang) then
 			local iStrategicResourcesFromMinors = 0.5 * (pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_HORSE) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_IRON) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_COAL) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_OIL) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_ALUMINUM) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_URANIUM))
 			
-			city:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYWORKSHOPPRODUCTION, iStrategicResourcesFromMinors)
+			city:SetNumRealBuilding(eBuildingDummyForBaanChang, iStrategicResourcesFromMinors)
 		end
 	end
 end

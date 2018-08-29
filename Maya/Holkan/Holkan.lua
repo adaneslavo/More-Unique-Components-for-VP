@@ -5,6 +5,8 @@
 include("FLuaVector.lua")
 
 local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
+local ePromotionRenewalCycle = GameInfoTypes.PROMOTION_UNIT_MAYA_RENEWAL_CYCLE
+local ePromotionTreasureHunter2 = GameInfoTypes.PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2
 
 function RenewalCycleOnHolkan(iPlayer)
 	local pPlayer = Players[iPlayer]
@@ -12,7 +14,7 @@ function RenewalCycleOnHolkan(iPlayer)
 
 	if Game.GetElapsedGameTurns() % iCounter == 0 then
 		for pUnit in pPlayer:Units() do
-			if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_RENEWAL_CYCLE) then
+			if pUnit:IsHasPromotion(ePromotionRenewalCycle) then
 				pUnit:ChangeDamage(-30)
 				
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -29,7 +31,7 @@ function HolkansGoodyHuts(iPlayer, iUnit, eGoody, iX, iY)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2) then
+	if pUnit:IsHasPromotion(ePromotionTreasureHunter2) then
 		local iResearchBonus = math.floor(10 * fGameSpeedModifier)
 			
 		pPlayer:ChangeOverflowResearch(iResearchBonus)

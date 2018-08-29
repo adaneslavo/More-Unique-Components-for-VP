@@ -20,6 +20,8 @@ end
 
 local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
+local ePromotionIndiaEpic = GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC
+local ePromotionIndiaDhanurvidya = GameInfoTypes.PROMOTION_UNIT_INDIA_DHANURVIDYA
 		
 function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
@@ -29,11 +31,11 @@ function DhanurvidyaXPGain(iAttackingPlayer, iAttackingUnit, attackerDamage, att
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 		
-		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then
+		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(ePromotionIndiaEpic) then
 			if pDefendingUnit:IsDead() then
 				pAttackingUnit:ChangeExperience(math.floor(5 * fGameSpeedModifier), -1, 1) -- the #3 param must be number, 1 for true, 0 or none for false
 			end
-		elseif pDefendingUnit ~= nil and pDefendingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_EPIC) then			
+		elseif pDefendingUnit ~= nil and pDefendingUnit:IsHasPromotion(ePromotionIndiaEpic) then			
 			if pAttackingUnit:IsDead() then
 				pDefendingUnit:ChangeExperience(math.floor(5 * fGameSpeedModifier), -1, 1) -- the #3 param must be number, 1 for true, 0 or none for false
 			end
@@ -45,7 +47,7 @@ function DhanurvidyaCultureGain(iPlayer, iUnit)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INDIA_DHANURVIDYA) then
+	if pUnit:IsHasPromotion(ePromotionIndiaDhanurvidya) then
 		local iChange1 = math.floor(5 * (pUnit:GetLevel() - 1) * fGameSpeedModifier1) -- faith
 		local iChange2 = math.floor(5 * (pUnit:GetLevel() - 1) * fGameSpeedModifier2) -- culture
 		

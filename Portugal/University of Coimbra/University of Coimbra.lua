@@ -4,29 +4,21 @@
 ----------------------------------------------------------------------------
 
 local eBuildingCoimbraID = GameInfoTypes.BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA
-local eBuildingDummyProductionGoldID = GameInfoTypes.BUILDING_FEITORIADUMMY
+local eBuildingDummyProductionGoldID = GameInfoTypes.BUILDING_D_FOR_FEITORIA
 local eImprovementFeitoria = GameInfoTypes.IMPROVEMENT_FEITORIA
+local ePromotionAgeOfDiscovery = GameInfoTypes.PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY
 
 
 function CoimbraBuiltGrantPromotion(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
+	
 	if iBuilding == eBuildingCoimbraID then
 		for unit in pPlayer:Units() do
-			unit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY, (unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED))
+			unit:SetHasPromotion(ePromotionAgeOfDiscovery, (unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED))
 		end
 	end
 end
-
---function CoimbraUnitCheckGrantPromotion(iPlayer, iCity, iUnit)
---	local player = Players[iPlayer]
---	local unit = player:GetUnitByID(iUnit)
---	if unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALMELEE or unit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_NAVALRANGED then
---		for city in player:Cities() do
---			unit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY, city:IsHasBuilding(eBuildingCoimbraID))
---		end
---	end
---end
 
 function OnTileImprovementChangedCoimbraFeitoria(iPlotX, iPlotY, iOwner, iOldImprovement, iNewImprovement, bIsPillaged)
 

@@ -2,7 +2,7 @@
 -- Author: hokath
 -- DateCreated: 27/1/18
 --------------------------------------------------------------
-local eBuildingDummyGPP2 = GameInfoTypes.BUILDING_DUMMYGPP2
+local eBuildingDummyForChaebol = GameInfoTypes.BUILDING_D_FOR_CHAEBOL
 local eBuildingChaebol = GameInfoTypes.BUILDING_KOREA_CHAEBOL
 
 -- adds GPP for every TR
@@ -23,7 +23,7 @@ function TradeRoutesToGPP(iPlayer)
 
 	for city in pPlayer:Cities() do
 		if city:IsHasBuilding(eBuildingChaebol) then
-			city:SetNumRealBuilding(eBuildingDummyGPP2, iCounter)
+			city:SetNumRealBuilding(eBuildingDummyForChaebol, iCounter)
 		end
 	end
 end
