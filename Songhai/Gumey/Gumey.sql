@@ -17,10 +17,10 @@ VALUES		('CIVILIZATION_SONGHAI',	'BUILDINGCLASS_CARAVANSARY',	'BUILDING_SONGHAI_
 ------------------------------
 INSERT INTO IconTextureAtlases 
 			(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_QADI_ATLAS', 		256, 		'QadiPicture_256.dds',		1, 				1),
-			('BUILDING_QADI_ATLAS', 		128, 		'QadiPicture_128.dds',		1, 				1),
-			('BUILDING_QADI_ATLAS', 		64, 		'QadiPicture_064.dds',		1, 				1),
-			('BUILDING_QADI_ATLAS', 		45, 		'QadiPicture_045.dds',		1, 				1);
+VALUES		('BUILDING_GUMEY_ATLAS', 		256, 		'GumeyPicture_256.dds',		1, 				1),
+			('BUILDING_GUMEY_ATLAS', 		128, 		'GumeyPicture_128.dds',		1, 				1),
+			('BUILDING_GUMEY_ATLAS', 		64, 		'GumeyPicture_064.dds',		1, 				1),
+			('BUILDING_GUMEY_ATLAS', 		45, 		'GumeyPicture_045.dds',		1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -31,7 +31,7 @@ VALUES		('BUILDING_QADI_ATLAS', 		256, 		'QadiPicture_256.dds',		1, 				1),
 ------------------------------	
 INSERT INTO Buildings 	
 			(Type,						BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier, 		EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	Help,									Description,						Civilopedia,							Strategy,									IconAtlas,				PortraitIndex)
-SELECT		'BUILDING_SONGHAI_GUMEY',	BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier+25, 	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_SONGHAI_GUMEY_HELP',	'TXT_KEY_BUILDING_SONGHAI_GUMEY', 	'TXT_KEY_BUILDING_SONGHAI_GUMEY_TEXT',	'TXT_KEY_BUILDING_SONGHAI_GUMEY_STRATEGY',	'BUILDING_QADI_ATLAS',	0
+SELECT		'BUILDING_SONGHAI_GUMEY',	BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier+25, 	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_SONGHAI_GUMEY_HELP',	'TXT_KEY_BUILDING_SONGHAI_GUMEY', 	'TXT_KEY_BUILDING_SONGHAI_GUMEY_TEXT',	'TXT_KEY_BUILDING_SONGHAI_GUMEY_STRATEGY',	'BUILDING_GUMEY_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_CARAVANSARY';	
 ------------------------------	
 -- Building_Flavors

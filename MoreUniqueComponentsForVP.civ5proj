@@ -872,12 +872,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Monitor</Name>
-        <Description>Monitor promotion for the American Monitor</Description>
-        <FileName>America/Monitor/Monitor.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Ranch</Name>
         <Description>Culture on border growth from the Ranch</Description>
         <FileName>America/Ranch/Ranch.lua</FileName>
@@ -1222,10 +1216,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="America\Monitor\Monitor.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="America\Monitor\Monitor.sql">
       <SubType>Lua</SubType>
@@ -2699,19 +2689,19 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Gumey\QadiPicture_128.dds">
+    <Content Include="Songhai\Gumey\GumeyPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Gumey\QadiPicture_256.dds">
+    <Content Include="Songhai\Gumey\GumeyPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Gumey\QadiPicture_045.dds">
+    <Content Include="Songhai\Gumey\GumeyPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Gumey\QadiPicture_064.dds">
+    <Content Include="Songhai\Gumey\GumeyPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
