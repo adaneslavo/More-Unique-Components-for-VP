@@ -44,7 +44,8 @@ VALUES		('BUILDINGCLASS_D_FOR_HUEY',			'BUILDING_D_FOR_HUEY',			1),
 			('BUILDINGCLASS_D_FOR_WAAG',			'BUILDING_D_FOR_WAAG',			1),
 			('BUILDINGCLASS_D_FOR_FEITORIA',		'BUILDING_D_FOR_FEITORIA',		1),
 			('BUILDINGCLASS_D_FOR_BAAN',			'BUILDING_D_FOR_BAAN',			1),
-			('BUILDINGCLASS_D_FOR_GUMEY',			'BUILDING_D_FOR_GUMEY',			1);
+			('BUILDINGCLASS_D_FOR_GUMEY',			'BUILDING_D_FOR_GUMEY',			1),
+			('BUILDINGCLASS_D_FOR_GUMEY_LUX',		'BUILDING_D_FOR_GUMEY_LUX',		1);
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -65,7 +66,8 @@ VALUES		('BUILDING_D_FOR_BARBICAN',		'BUILDINGCLASS_ARMORY',				'TXT_KEY_BUILDIN
 			('BUILDING_D_FOR_SACHEM_5',		'BUILDINGCLASS_D_FOR_SACHEM_5',		'TXT_KEY_BUILDING_D_FOR_SACHEM_5',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
 			('BUILDING_D_FOR_SACHEM_6',		'BUILDINGCLASS_D_FOR_SACHEM_6',		'TXT_KEY_BUILDING_D_FOR_SACHEM_6',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
 			('BUILDING_D_FOR_FEITORIA',		'BUILDINGCLASS_D_FOR_FEITORIA',		'TXT_KEY_BUILDING_D_FOR_FEITORIA',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
-			('BUILDING_D_FOR_BAAN',			'BUILDINGCLASS_D_FOR_BAAN',			'TXT_KEY_BUILDING_D_FOR_BAAN',			0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0);
+			('BUILDING_D_FOR_BAAN',			'BUILDINGCLASS_D_FOR_BAAN',			'TXT_KEY_BUILDING_D_FOR_BAAN',			0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0),
+			('BUILDING_D_FOR_GUMEY_LUX',		'BUILDINGCLASS_D_FOR_GUMEY_LUX',	'TXT_KEY_BUILDING_D_FOR_GUMEY_LUX',			0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0);
 
 INSERT INTO Buildings 	
 			(Type,							BuildingClass,						Description,							GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateChange,	SpecialistType)
@@ -156,6 +158,12 @@ INSERT INTO Building_ResourceYieldChanges
 			(BuildingType,					ResourceType,     YieldType,			Yield)
 VALUES		('BUILDING_D_FOR_HIPPODROME',	'RESOURCE_HORSE', 'YIELD_CULTURE',		1),
 			('BUILDING_D_FOR_HIPPODROME',	'RESOURCE_HORSE', 'YIELD_GOLD',			1);
+			
+INSERT INTO Building_ResourceYieldChanges	
+			(BuildingType,		ResourceType,	YieldType,		Yield)
+SELECT		'BUILDING_D_FOR_GUMEY_LUX',	Type,			'YIELD_GOLD',	1
+FROM Resources WHERE ResourceClassType = 'RESOURCECLASS_LUXURY';
+
 ------------------------------	
 -- Building_ImprovementYieldChanges
 ------------------------------		
