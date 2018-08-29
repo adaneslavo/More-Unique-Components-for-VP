@@ -54,7 +54,7 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_CARAVANSARY';
 --------------------------------	
 INSERT INTO Building_ResourceYieldChanges
 			(BuildingType,				ResourceType, 			YieldType, 			Yield)
-SELECT		('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_TRUFFLES',	'YIELD_GOLD', 		3),
+VALUES		('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_TRUFFLES',	'YIELD_GOLD', 		3),
 			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_COTTON',		'YIELD_GOLD', 		1),	
 			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_COTTON',		'YIELD_PRODUCTION', 1),
 			('BUILDING_SONGHAI_GUMEY', 	'RESOURCE_COTTON',		'YIELD_CULTURE', 	1),

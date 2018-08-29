@@ -18,9 +18,9 @@ v37:
 	- Monitor ==> added Hardened promotion instead of Cover I,
 	- Armada ==> Invincible change: no more XP from sailing at full health; instead on each Armada kill, rest of Armadas in 5-tile range get bonus XP.
 	- Yassa Court ==> now granted after conquering the city; bonus yields on conquering; global unhappiness reduction instead of local,
-	- Andelsbevægelse ==> now increases Worker's work rate by 3%.
+	- Andelsbevægelse ==> now increases Worker's work rate by 3%; deleted 5% food bonus.
 - substituted:
-	- Qadi to Gumey/Daca (in progress) ==> replaces Caravansary.
+	- Qadi to Gumey ==> replaces Caravansary; bonuses from luxury resources and global monopolies on them; focus on gold+++, production++ and culture+.
 - fixed:
 	- pedia categories for some promotions:
 		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
@@ -31,7 +31,9 @@ v37:
 		- Mingghan (Black Tug) ==> to MOUNTED.
 	- Proxenos ==> now works properly,
 	- Chaebol ==> fixed code (wrong function was used),
-	- Homeastead, Kabuki Guilds ==> now NeverCapture value is 1 like base for buildings.
+	- Homeastead, Kabuki Guilds ==> now NeverCapture value is 1 like base for buildings,
+-other:
+	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies).
 
 v36:
 - changes:
