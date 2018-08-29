@@ -27,7 +27,7 @@ INSERT INTO Building_BuildingClassYieldChanges
 			(BuildingType,						BuildingClassType,					YieldType,			YieldChange)
 VALUES		('BUILDING_DUMMYCLASSYIELD',		'BUILDINGCLASS_OXFORD_UNIVERSITY',	'YIELD_GOLD',		2),
 			('BUILDING_DUMMYCLASSYIELD',		'BUILDINGCLASS_OXFORD_UNIVERSITY',	'YIELD_PRODUCTION',	2),
-			('BUILDING_DUMMYSONGHAICLASSYIELD',	'BUILDINGCLASS_CARAVANSARY',		'YIELD_CULTURE',	2),
-			('BUILDING_DUMMYSONGHAICLASSYIELD',	'BUILDINGCLASS_CARAVANSARY',		'YIELD_PRODUCTION',	2);
+			('BUILDING_DUMMYSONGHAICLASSYIELD',	'BUILDINGCLASS_CARAVANSARY',		'YIELD_CULTURE',	1),
+			('BUILDING_DUMMYSONGHAICLASSYIELD',	'BUILDINGCLASS_CARAVANSARY',		'YIELD_PRODUCTION',	1);
 --==========================================================================================================================
 --==========================================================================================================================
