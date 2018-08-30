@@ -8,10 +8,15 @@ local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].Const
 local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 local eBuildingBaanChang = GameInfoTypes.BUILDING_SIAM_BAAN_CHANG
 local eBuildingDummyForBaanChang = GameInfoTypes.BUILDING_D_FOR_BAAN
+local eCivilizationSiam = GameInfoTypes.CIVILIZATION_SIAM
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
-function BaanChangCSBonus(iPlayer)
+-- adds bonus yields for each 2 strategic resources importet from CSs
+function OnTurnUpdateYieldsFromStrategic(iPlayer)
 	local pPlayer = Players[iPlayer]
-
+	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationSiam or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	
 	for city in pPlayer:Cities() do
 		if city:IsHasBuilding(eBuildingBaanChang) then
 			local iStrategicResourcesFromMinors = 0.5 * (pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_HORSE) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_IRON) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_COAL) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_OIL) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_ALUMINUM) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_URANIUM))
@@ -21,9 +26,12 @@ function BaanChangCSBonus(iPlayer)
 	end
 end
 
-function BaanChangGetsUnitFromCS(iMinor, iMajor, iUnitType)
+-- gains yields for every unit gifted from CSs
+function OnCSGiftGiveYields(iMinor, iMajor, iUnitType)
 	local pPlayer = Players[iMajor]
-	local pPlayer2 = Players[iMinor]
+	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationSiam or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+
 	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 
 	for city in pPlayer:Cities() do
@@ -55,5 +63,5 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.PlayerDoTurn.Add(BaanChangCSBonus)
-GameEvents.MinorGiftUnit.Add(BaanChangGetsUnitFromCS)
+GameEvents.PlayerDoTurn.Add(OnTurnUpdateYieldsFromStrategic)
+GameEvents.MinorGiftUnit.Add(OnCSGiftGiveYields)

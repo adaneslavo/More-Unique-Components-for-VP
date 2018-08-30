@@ -13,15 +13,15 @@ function GarrisonRangePower(iPlayer, iUnit, iX, iY)
 	-- check for Poland
 	local pPlayer = Players[iPlayer]
 
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationPoland) then 
-		return 
-	end
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationPoland) then return end
+	
 	-- check for archer or siege
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if not (pUnit and (pUnit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_ARCHER or pUnit:GetUnitCombatType() == GameInfoTypes.UNITCOMBAT_SIEGE)) then 
 		return 
 	end
+	
 	-- process promo
 	local bHasBarbican = false
 	local pPlot = pUnit:GetPlot()

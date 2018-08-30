@@ -33,7 +33,10 @@ v37:
 	- Chaebol ==> fixed code (wrong function was used),
 	- Homeastead, Kabuki Guilds ==> now NeverCapture value is 1 like base for buildings,
 -other:
-	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies).
+	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies),
+	- lua code tweaked for most UCs,
+	- Iziko, Gumey, Baan Chang, Pogost ==> now code runs only for appropriate civ and for Rome,
+	- U. of Coimbra ==> now code runs only for appropriate civ.
 
 v36:
 - changes:

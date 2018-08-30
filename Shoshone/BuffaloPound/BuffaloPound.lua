@@ -5,23 +5,29 @@
 --------------------------------------------------------------
 local eResourceBison = GameInfoTypes.RESOURCE_BISON
 local eCivilizationShoshone = GameInfoTypes.CIVILIZATION_SHOSHONE
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 local eBuildingBuffaloPound = GameInfoTypes.BUILDING_SHOSHONE_BUFFALO_POUND
 
-function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
-	--print("BuffaloPoundPlaceBison",iPlayer, iCity, iBuilding)
-	-- check for Shoshone
+-- created Bison source on construction
+function OnConstructionPlaceBison(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
-	if not( pPlayer and pPlayer:GetCivilizationType() == eCivilizationShoshone) then return end
-	-- check for Buffalo Pound
+	
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationShoshone) then return end
+	
 	if iBuilding ~= eBuildingBuffaloPound then return end
+	
 	local pCity = pPlayer:GetCityByID(iCity)
+	
 	if not pCity then return end
+	
 	-- find suitable places
 	local tPossibleSpots = {}
 	local tPossibleSpotsFree = {}
+	
 	for iCityPlot = 1, pCity:GetNumCityPlots() - 1, 1 do
 		local pSpecificPlot = pCity:GetCityIndexPlot(iCityPlot)
 		local iPlotOwner = pSpecificPlot:GetOwner()
+		
 		if iPlotOwner == iPlayer or iPlotOwner == -1 then
 			if (pSpecificPlot:GetTerrainType() == TerrainTypes.TERRAIN_GRASS or pSpecificPlot:GetTerrainType() == TerrainTypes.TERRAIN_PLAINS) then
 				if pSpecificPlot:GetFeatureType() == (-1) or pSpecificPlot:GetFeatureType() == FeatureTypes.FEATURE_FOREST then
@@ -35,10 +41,12 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 			end
 		end
 	end
+	
 	-- roll for a plot and create a resource if found
 	local bBisonCreated = false
 	local pChosenPlot
 	local pSpotsTable
+	
 	if #tPossibleSpots > 0 then  
 		pSpotsTable = tPossibleSpots
 		bBisonCreated = true
@@ -46,10 +54,12 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 		pSpotsTable = tPossibleSpotsFree
 		bBisonCreated = true
 	end
+	
 	if bBisonCreated then
 		pChosenPlot = pSpotsTable[ math.random(#pSpotsTable) ]
 		pChosenPlot:SetResourceType(eResourceBison, 1)
 	end
+	
 	-- send a proper notification
 	if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 		if bBisonCreated then 
@@ -68,4 +78,4 @@ function BuffaloPoundPlaceBison(iPlayer, iCity, iBuilding)
 	end
 end
 
-GameEvents.CityConstructed.Add(BuffaloPoundPlaceBison)
+GameEvents.CityConstructed.Add(OnConstructionPlaceBison)

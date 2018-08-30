@@ -49,14 +49,20 @@ local tMonopolyResources = {
 
 local eBuildingGumey = GameInfoTypes.BUILDING_SONGHAI_GUMEY
 local eBuildingDummyForGumey = GameInfoTypes.BUILDING_D_FOR_GUMEY
+local eCivilizationSonghai = GameInfoTypes.CIVILIZATION_SONGHAI
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
+-- adds bonuses to TRs for each monopoly Songhai or Rome has
 function OnTurnAddMonopolyBonus (iPlayer)
 	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationSonghai or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	
 	local iMonopolyCounter = 0
 	
 	for i, resource in pairs(tMonopolyResources) do
 		if (pPlayer:GetNumResourceTotal(resource) / Map.GetNumResources(resource)) > 0.5 then
-			iMonopolyCounter = iMonopolyCounter +1
+			iMonopolyCounter = iMonopolyCounter + 1
 		end
 	end
 	
