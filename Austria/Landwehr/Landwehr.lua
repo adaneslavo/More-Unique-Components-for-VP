@@ -21,7 +21,7 @@ function ImperialVigilance(iPlayer)
 	end
 end
 
-function YorkscherMarche(iPlayer)
+function YorkscherMarsch(iPlayer)
 	local pPlayer = Players[iPlayer]
 
 	for pUnit in pPlayer:Units() do
@@ -41,7 +41,7 @@ function YorkscherMarche(iPlayer)
 						if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 							local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+"..iGain.." [ICON_CULTURE] Yorksher Marche[ENDCOLOR]", 1)
+							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+1 [ICON_CULTURE] Regimentsmarsche[ENDCOLOR]", 1)
 						end
 					end
 				end
@@ -55,4 +55,4 @@ function PositionCalculator(i1, i2)
 end
 
 GameEvents.PlayerEndTurnCompleted.Add(ImperialVigilance)
-GameEvents.PlayerDoTurn.Add(YorkscherMarche)
+GameEvents.PlayerDoTurn.Add(YorkscherMarsch)
