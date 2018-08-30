@@ -65,7 +65,7 @@ function OnFoundAddYassa(iPlayer, iX, iY)
 	local pPlayer = Players[iPlayer]
 	local pFoundCity = Map.GetPlot(iX, iY):GetWorkingCity()
 
-	if Teams[pNewPlayer:GetTeam()]:GetTeamTechs():HasTech(eTechPhilosophy) then
+	if Teams[pPlayer:GetTeam()]:GetTeamTechs():HasTech(eTechPhilosophy) then
 		pFoundCity:SetNumRealBuilding(eBuildingYassa, 1)
 	end
 end
