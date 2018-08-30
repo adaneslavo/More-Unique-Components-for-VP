@@ -5,12 +5,17 @@
 include("FLuaVector.lua")
 
 local eBuildingTophet = GameInfoTypes.BUILDING_CARTHAGE_TOPHET
+local eCivilizationCarthage = GameInfoTypes.CIVILIZATION_CARTHAGE
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 
 function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
 
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationCarthage or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+
+	
 	if pCity:IsHasBuilding(eBuildingTophet) then
 		if bGold then
 			local pUnit = pPlayer:GetUnitByID(iUnit)
