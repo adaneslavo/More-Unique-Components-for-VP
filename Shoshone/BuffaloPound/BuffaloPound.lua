@@ -5,7 +5,6 @@
 --------------------------------------------------------------
 local eResourceBison = GameInfoTypes.RESOURCE_BISON
 local eCivilizationShoshone = GameInfoTypes.CIVILIZATION_SHOSHONE
-local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 local eBuildingBuffaloPound = GameInfoTypes.BUILDING_SHOSHONE_BUFFALO_POUND
 
 -- created Bison source on construction
