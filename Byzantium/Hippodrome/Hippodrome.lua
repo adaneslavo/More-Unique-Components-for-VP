@@ -21,7 +21,7 @@ function OnConstructionAddBonuses(iPlayer, iCity, iBuilding)
 				
 				city:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 				
-				city:SetNumRealBuilding(eBuildingDummyForHippodrome, 1)
+--				city:SetNumRealBuilding(eBuildingDummyForHippodrome, 1)
 
 				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 					pPlayer:AddNotification(0, 'The City of [COLOR_POSITIVE_TEXT]'..pCapital:GetName()..'[ENDCOLOR] constructed Hippodrome. People love you. '..iWLTKDLength..'-turn WLTKD has started in '..city:GetName()..'.', 'Hippodrome constructed in '..pCapital:GetName(), city:GetX(), city:GetY())
