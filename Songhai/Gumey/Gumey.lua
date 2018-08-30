@@ -60,7 +60,7 @@ function OnTurnAddMonopolyBonus (iPlayer)
 		end
 	end
 	
-	for city in nPlayer:Cities() do
+	for city in pPlayer:Cities() do
 		if city:IsHasBuilding(eBuildingGumey) then
 			city:SetNumRealBuilding(eBuildingDummyForGumey, iMonopolyCounter)
 		end
