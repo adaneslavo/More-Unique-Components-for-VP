@@ -422,7 +422,7 @@
 			<Text>DF Gumey</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_GUMEY_LUX">
-			<Text>+1 Gold for all Luxuries</Text>
+			<Text>+1 [ICON_GOLD] Gold for all Nearby Luxuries</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_DRUIDIC">
 			<Text>DF Druidic Lore</Text>
