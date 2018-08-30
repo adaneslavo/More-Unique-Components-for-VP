@@ -467,7 +467,7 @@
 			<Text>DF Chaebol</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_HIPPODROME">
-			<Text>DF Hippodrome</Text>
+			<Text>[ICON_RES_HORSE] Horses on Empire: +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_TOWER">
 			<Text>DF White Tower</Text>
