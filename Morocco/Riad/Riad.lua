@@ -11,7 +11,7 @@ local eBuildingDummyForRiad = GameInfoTypes.BUILDING_D_FOR_RIAD
 function OnTurnGainYieldsFromTR(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
-	for city in Player:Cities() do
+	for city in pPlayer:Cities() do
 		city:SetNumRealBuilding(eBuildingDummyForRiad, 0)
 	end
 
