@@ -4,9 +4,14 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
+local eCivilizationArabia = GameInfoTypes.CIVILIZATION_ARABIA
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
+
 function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
+
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationArabia or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
 	local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
@@ -35,6 +40,8 @@ end
 function MadrasahScienceBuilding(iPlayer, iCity, iBuilding, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	local pCity = pPlayer:GetCityByID(iCity)
+	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationArabia or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
 	if pCity:IsHasBuilding(GameInfoTypes.BUILDING_ARABIA_MADRASAH) and bFaith then
 		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
