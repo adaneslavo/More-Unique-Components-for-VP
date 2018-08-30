@@ -55,7 +55,7 @@ function OnTechResearchedBuildYassa(iTeam, iTech)
 	if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 		pPlayer:AddNotification(0, 
 			'Player researched Philosophy and received free Yassa Court in every [COLOR_CYAN]non-occupied city[ENDCOLOR].', 
-			'Yassa Court built in '..pCity:GetName(), 
+			'Yassa Courts built across the Empire, 
 			pCity:GetX(), pCity:GetY())
 	end
 end
