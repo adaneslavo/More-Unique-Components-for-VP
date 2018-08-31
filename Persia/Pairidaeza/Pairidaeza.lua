@@ -7,9 +7,13 @@ include("FLuaVector.lua")
 
 local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 local eBuildingParadiseGarden = GameInfoTypes.BUILDING_PERSIA_PAIRIDAEZA
+local eCivilizationPersia = GameInfoTypes.CIVILIZATION_PERSIA
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
 function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationPersia or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
 	if bStart then
 		for city in pPlayer:Cities() do

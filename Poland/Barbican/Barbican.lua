@@ -39,7 +39,7 @@ end
 function OnConstructionBuildDummyArmory(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 
-	if pPlayer:GetCivilizationType() == eCivilizationPoland then
+	if pPlayer and pPlayer:GetCivilizationType() == eCivilizationPoland then
 		if iBuilding == eBuildingBarbican then
 			local pCity = pPlayer:GetCityByID(iCity)
 

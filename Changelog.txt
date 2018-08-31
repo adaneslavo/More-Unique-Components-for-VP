@@ -7,10 +7,12 @@ More Unique Components for Vox Populi changelog:
 v37:
 - simplified:
 	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion,
-	- Monitor ==> lua deleted, sql does the same thing.
+	- Monitor, Tersane ==> lua deleted, sql does the same thing,
+	- Waag, Hippodrome ==> serious lua optimization.
 - tweaked:
 	- Riad ==> now uses dummies to show updated top bar with gold and culture income and merchant bar with GMP points. No notification now,
-	- Madrasah ==> lowered value of faith on purchase (if player got fealty and pacifism then it was too op).
+	- Madrasah ==> lowered value of faith on purchase (if player got fealty and pacifism then it was too op),
+	- Tersane, Agora ==> NeverCapture value set to 1 (Rome would get too strong with free promotions from building).
 - reworked:
 	- Barbican ==> total rework; now it's merged version of Castle and Armory, stronger from both with more offensive potential, blocks Armory building (gives dummy Armory instead),
 	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains,
@@ -20,7 +22,7 @@ v37:
 	- Yassa Court ==> now granted after founding the city or researching Philosophy; bonus yields on conquering; global unhappiness reduction instead of local,
 	- Andelsbevægelse ==> now increases Worker's work rate by 3%; deleted 5% food bonus.
 - substituted:
-	- Qadi to Gumey ==> replaces Caravansary; bonuses from luxury resources and global monopolies on them; focus on gold+++, production++ and culture+.
+	- Qadi to Gumey ==> Qadi deleted; new Gumey: replaces Caravansary; bonuses from luxury resources and global monopolies on them; focus on gold+++, production++ and culture+.
 - fixed:
 	- pedia categories for some promotions:
 		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
@@ -34,9 +36,9 @@ v37:
 	- Homeastead, Kabuki Guilds ==> now NeverCapture value is 1 like base for buildings,
 -other:
 	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies),
-	- lua code tweaked for most UCs,
-	- Iziko, Gumey, Baan Chang, Pogost ==> now code runs only for appropriate civ and for Rome,
-	- U. of Coimbra ==> now code runs only for appropriate civ.
+	- Iziko, Gumey, Baan Chang, Pogost, P. Garden, Waag, Madrasah, Tophet ==> now code runs only for appropriate civ and for Rome,
+	- U. of Coimbra, Tersane ==> now code runs only for appropriate civ,
+	- lua code tweaked for most UCs.
 
 v36:
 - changes:

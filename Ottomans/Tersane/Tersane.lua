@@ -5,9 +5,14 @@
 local eUnitSeaBeggar = GameInfoTypes.UNIT_DUTCH_SEA_BEGGAR
 local ePromotionPrizeShips = GameInfoTypes.PROMOTION_PRIZE_SHIPS
 local eBuildingTersane = GameInfoTypes.BUILDING_OTTOMANS_TERSANE
+local eCivilizationOttoman = GameInfoTypes.CIVILIZATION_OTTOMAN
 
-function TrainPrizeShips(iPlayer, iCity, iUnit)
+-- add Prize Ships promotion on unit training
+function OnTrainAddPrizeShips(iPlayer, iCity, iUnit)
 	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationOttoman) then return end
+	
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:GetUnitType() == eUnitSeaBeggar then return end
@@ -19,4 +24,4 @@ function TrainPrizeShips(iPlayer, iCity, iUnit)
 	end
 end
 
-GameEvents.CityTrained.Add(TrainPrizeShips)
+GameEvents.CityTrained.Add(OnTrainAddPrizeShips)

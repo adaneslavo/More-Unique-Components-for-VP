@@ -5,21 +5,40 @@
 --------------------------------------------------------------
 local eBuildingWaag = GameInfoTypes.BUILDING_NETHERLANDS_WAAG
 local eBuildingDummyForWaag = GameInfoTypes.BUILDING_D_FOR_WAAG
+local eCivilizationNetherlands = GameInfoTypes.CIVILIZATION_NETHERLANDS
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
-function ImportedResourcesToGPPAndDefense(iPlayer)
+-- add bonuses from Waag for each resource imported or exported
+function OnTurnAddDefenseFromResources(iPlayer)
 	local pPlayer = Players[iPlayer]
 
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationNetherlands or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	
+	local iTradedResources = 0
+	local bIsAnyWaag = false
+	
 	for city in pPlayer:Cities() do
 		if city:IsHasBuilding(eBuildingWaag) then
-			local iTradedResources = 0
-			
 			for res in GameInfo.Resources("ResourceClassType = 'RESOURCECLASS_LUXURY'") do
 				iTradedResources = iTradedResources + pPlayer:GetResourceImport(res.ID) + pPlayer:GetResourceExport(res.ID)
+				
+				if iTradedResources == 10 then
+					break
+				end
 			end
 			
-			city:SetNumRealBuilding(eBuildingDummyForWaag, math.min(iTradedResources, 10))
+			bIsAnyWaag = true
+			break
+		end
+	end
+	
+	if bIsAnyWaag then
+		for city in pPlayer:Cities() do
+			if city:IsHasBuilding(eBuildingWaag) then
+				city:SetNumRealBuilding(eBuildingDummyForWaag, iTradedResources)
+			end
 		end
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(ImportedResourcesToGPPAndDefense)
+GameEvents.PlayerDoTurn.Add(OnTurnAddDefenseFromResources)
