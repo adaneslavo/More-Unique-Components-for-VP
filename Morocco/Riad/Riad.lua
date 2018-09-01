@@ -22,8 +22,8 @@ function OnTurnGainYieldsFromTR(iPlayer)
 		
 		for city in pPlayer:Cities() do
 			if city:IsHasBuilding(eBuildingRiad) then
-				iCurrentRiad = iCurrentRiad + 1
 				city:SetNumRealBuilding(eBuildingDummyForRiad, 0)
+				iCurrentRiad = iCurrentRiad + 1
 				
 				if iCurrentRiad == iNumberOfRiads then
 					break

@@ -32,29 +32,42 @@ function OnCSGiftGiveYields(iMinor, iMajor, iUnitType)
 	
 	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationSiam or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 
-	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+	local iNumberOfBaans = pPlayer:CountNumBuildings(eBuildingBaanChang)
+		
+	if iNumberOfBaans > 0 then
+		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+		local iGain1 = math.floor(10 * iEraModifier * fGameSpeedModifier1)
+		local iGain2 = math.floor(10 * iEraModifier * fGameSpeedModifier2)
+		local iCurrentBaan = 0
+		
+		for city in pPlayer:Cities() do
+			if city:IsHasBuilding(eBuildingBaanChang) then
+				city:ChangeProduction(iGain1)
+				pPlayer:ChangeJONSCulture(iGain2)
+				iCurrentBaan = iCurrentBaan + 1
 
-	for city in pPlayer:Cities() do
-		if city:IsHasBuilding(eBuildingBaanChang) then
-			local iGain1 = math.floor(10 * iEraModifier * fGameSpeedModifier1)
-			local iGain2 = math.floor(10 * iEraModifier * fGameSpeedModifier2)
-				
-			city:ChangeProduction(iGain1)
-			pPlayer:ChangeJONSCulture(iGain2)
+				if pPlayer:IsHuman() then
+					local vCityPosition = PositionCalculator(iX, iY)
 
-			local sCityName = city:GetName()
-			local iX, iY = city:GetX(), city:GetY()
-			
-			if pPlayer:IsHuman() then
-				local vCityPosition = PositionCalculator(iX, iY)
+					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain1.." [ICON_PRODUCTION][ENDCOLOR]", 1)
+					Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+ "..iGain2.." [ICON_CULTURE][ENDCOLOR]", 1.5)
+				end
 
-				Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain1.." [ICON_PRODUCTION][ENDCOLOR]", 1)
-				Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+ "..iGain2.." [ICON_CULTURE][ENDCOLOR]", 1.5)
-				pPlayer:AddNotification(0, 
-					'City-State gift:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iGain1..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iGain2..' [ICON_CULTURE] Culture', 
-					'Bonus Yields in '..sCityName, 
-					iX, iY)
+				if iCurrentBaan == iNumberOfBaans then
+					break
+				end
 			end
+		end
+
+		if pPlayer:IsHuman() then
+			local pCapital = pPlayer:GetCapitalCity()
+			local iX, iY = pCapital:GetX(), pCapital:GetY()
+			local vCityPosition = PositionCalculator(iX, iY)
+
+			pPlayer:AddNotification(0, 
+				'City-State gift. Every City with Baan Chang gained:[NEWLINE][ICON_BULLET]+'..iGain1..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET]+'..iGain2..' [ICON_CULTURE] Culture', 
+				'Bonus Yields from City-State gift across the Empire', 
+				iX, iY)
 		end
 	end
 end

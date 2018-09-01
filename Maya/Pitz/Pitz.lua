@@ -26,21 +26,25 @@ local tEligibleCombats = {
 	GameInfoTypes.UNITCOMBAT_ARMOR
 }
 
-function KatunAhaw(iPlayer, iCity, iUnit)
+-- on unit training give it Khatun promotion
+function OnTrainGiveKhatun(iPlayer, iCity, iUnit)
 	local pPlayer = Players[iPlayer]
 	
 	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationMaya) then return end
 	
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	
-	for i, iUnitCombatType in pairs(tEligibleCombats) do
-		if pUnit and pUnit:GetUnitCombatType() == iUnitCombatType then
-			pUnit:SetHasPromotion(ePromotionKhatun, pPlayer:GetCityByID(iCity):IsHasBuilding(eBuildingPitz))
+	if pPlayer:GetCityByID(iCity):IsHasBuilding(eBuildingPitz) then
+		for i, unitCombatType in pairs(tEligibleCombats) do
+			if pUnit and pUnit:GetUnitCombatType() == unitCombatType then
+				pUnit:SetHasPromotion(ePromotionKhatun, true)
+			end
 		end
 	end
 end
 
-function KatunAhawUpgrade(iPlayer)
+-- upgrade all Khatun promotions every 20 turns
+function OnTurnCheckForUpgrade(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
 	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationMaya) then return end
@@ -73,32 +77,49 @@ function KatunAhawUpgrade(iPlayer)
 	end
 end
 
-function OnBaktunBonus(iPlayer, iBaktun, iBaktunPreviousTurn)
+-- gain bonus every B'aktun
+function OnBaktunGetBonus(iPlayer, iBaktun, iBaktunPreviousTurn)
 	local pPlayer = Players[iPlayer]
 	
 	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationMaya) then return end
 	
 	if pPlayer:IsUsingMayaCalendar() then
-		for city in pPlayer:Cities() do
-			if city:IsHasBuilding(eBuildingPitz) then
-				local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-											
-				local iChange1 = math.floor(20 * iEraModifier * fGameSpeedModifier1)
-				local iChange2 = math.floor(20 * iEraModifier * fGameSpeedModifier2)
-							
-				pPlayer:ChangeFaith(iChange2)
-				pPlayer:ChangeOverflowResearch(iChange1)
-	
-				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					local vCityPosition = PositionCalculator(city:GetX(), city:GetY())
+		local iNumberOfPitz = pPlayer:CountNumBuildings(eBuildingPitz)
+		
+		if iNumberOfPitz > 0 then
+			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)								
+			local iChange1 = math.floor(20 * iEraModifier * fGameSpeedModifier1)
+			local iChange2 = math.floor(20 * iEraModifier * fGameSpeedModifier2)
+			local iCurrentPitz = 0
 				
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE][ENDCOLOR]", 1)
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
-					pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
-						'Baktun '..iBaktun..' has ended:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..city:GetName()..': [ENDCOLOR]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..city:GetName()..': [ENDCOLOR]+'..iChange2..' [ICON_PEACE] Faith',
-						'Bonus Yields in '..city:GetName(),
-						city:GetX(), city:GetY(), city:GetID())
+			for city in pPlayer:Cities() do
+				if city:IsHasBuilding(eBuildingPitz) then			
+					pPlayer:ChangeOverflowResearch(iChange1)
+					pPlayer:ChangeFaith(iChange2)
+					iCurrentPitz = iCurrentPitz + 1
+					
+					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+						local vCityPosition = PositionCalculator(city:GetX(), city:GetY())
+				
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange1.."[ICON_RESEARCH][ENDCOLOR]", 1)
+						Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iChange2.."[ICON_PEACE][ENDCOLOR]", 1.5)
+					end
+
+					if iCurrentPitz == iNumberOfPitz then
+						break
+					end
 				end
+			end
+
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				local pCapital = pPlayer:GetCapitalCity()
+				local iX, iY = pCapital:GetX(), pCapital:GetY()
+				local vCityPosition = PositionCalculator(iX, iY)
+				
+				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
+					'Baktun '..iBaktun..' has ended. Every City with Pitz Court gained:[NEWLINE][ICON_BULLET]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iChange2..' [ICON_PEACE] Faith',
+					'Bonus Yields from new B''aktun across the Empire',
+					iX, iY, pCapital:GetID())
 			end
 		end
 	end
@@ -108,6 +129,6 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.CityTrained.Add(KatunAhaw)
-GameEvents.PlayerDoTurn.Add(KatunAhawUpgrade)
-GameEvents.PlayerEndOfMayaLongCount.Add(OnBaktunBonus)
+GameEvents.CityTrained.Add(OnTrainGiveKhatun)
+GameEvents.PlayerDoTurn.Add(OnTurnCheckForUpgrade)
+GameEvents.PlayerEndOfMayaLongCount.Add(OnBaktunGetBonus)
