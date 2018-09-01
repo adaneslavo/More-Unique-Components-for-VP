@@ -117,8 +117,8 @@ function OnBaktunGetBonus(iPlayer, iBaktun, iBaktunPreviousTurn)
 				local vCityPosition = PositionCalculator(iX, iY)
 				
 				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
-					'Baktun '..iBaktun..' has ended. Every City with Pitz Court gained:[NEWLINE][ICON_BULLET]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iChange2..' [ICON_PEACE] Faith',
-					'Bonus Yields from new B''aktun across the Empire',
+					'B\textquotesingle aktun '..iBaktun..' has ended. Every City with Pitz Court gained:[NEWLINE][ICON_BULLET]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iChange2..' [ICON_PEACE] Faith',
+					'Bonus Yields from new B\textquotesingle aktun across the Empire',
 					iX, iY, pCapital:GetID())
 			end
 		end
