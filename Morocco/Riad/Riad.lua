@@ -6,20 +6,37 @@ include("FLuaVector.lua")
 
 local eBuildingRiad = GameInfoTypes.BUILDING_MAROCCO_RIAD
 local eBuildingDummyForRiad = GameInfoTypes.BUILDING_D_FOR_RIAD			
+local eCivilizationMorocco = GameInfoTypes.CIVILIZATION_MOROCCO
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
 -- gain yields each turn for each trade route if Riad is built in the city
 function OnTurnGainYieldsFromTR(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
-	for city in pPlayer:Cities() do
-		city:SetNumRealBuilding(eBuildingDummyForRiad, 0)
-	end
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationMorocco or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	
+	local iNumberOfRiads = pPlayer:CountNumBuildings(eBuildingRiad)
 
-	for i, tradeRoute in pairs(pPlayer:GetTradeRoutes()) do
-		local pCity = tradeRoute.FromCity
+	if iNumberOfRiads > 0 then
+		local iCurrentRiad = 0
+		
+		for city in pPlayer:Cities() do
+			if city:IsHasBuilding(eBuildingRiad) then
+				iCurrentRiad = iCurrentRiad + 1
+				city:SetNumRealBuilding(eBuildingDummyForRiad, 0)
+				
+				if iCurrentRiad == iNumberOfRiads then
+					break
+				end
+			end
+		end
 
-		if pCity:IsHasBuilding(eBuildingRiad) then
-			city:SetNumRealBuilding(eBuildingDummyForRiad, GetNumRealBuilding(eBuildingDummyForRiad) + 1)
+		for i, tradeRoute in pairs(pPlayer:GetTradeRoutes()) do
+			local pFromCity = tradeRoute.FromCity
+
+			if pFromCity:IsHasBuilding(eBuildingRiad) then
+				pFromCity:SetNumRealBuilding(eBuildingDummyForRiad, pFromCity:GetNumRealBuilding(eBuildingDummyForRiad) + 1)
+			end
 		end
 	end
 end

@@ -47,4 +47,3 @@ function OnTurnAddDefenseFromResources(iPlayer)
 end
 
 GameEvents.PlayerDoTurn.Add(OnTurnAddDefenseFromResources)
-GameEvents.CitySoldBuilding.Add(OnSellDestroyDummies)
