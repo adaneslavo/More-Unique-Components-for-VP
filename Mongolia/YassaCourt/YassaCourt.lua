@@ -15,11 +15,8 @@ local eTechPhilosophy = GameInfoTypes.TECH_PHILOSOPHY
 function OnCaptureCityBonuses(iPlayer, iCapital, iResourceX, iResourceY, iNewPlayer, iConquest, iConquest2)
 	local pNewPlayer = Players[iNewPlayer]
 
-	if not (pNewPlayer and pNewPlayer:GetCivilizationType() == eCivilizationMongolia) then 
-		return 
-	end
+	if not (pNewPlayer and pNewPlayer:GetCivilizationType() == eCivilizationMongolia) then return end
 
-	local pCity = Map.GetPlot(iResourceX, iResourceY):GetWorkingCity()
 	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 	
 	local iCulture = math.floor(5 * fGameSpeedModifier1 * iEraModifier)
@@ -44,6 +41,8 @@ function OnTechResearchedBuildYassa(iTeam, iTech)
 	local pTeam = Teams[iTeam]
 	local pPlayer = Players[pTeam:GetLeaderID()]
 
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationMongolia) then return end
+
 	if iTech == eTechPhilosophy then
 		for city in pPlayer:Cities() do
 			if not city:IsOccupied() then
@@ -53,16 +52,21 @@ function OnTechResearchedBuildYassa(iTeam, iTech)
 	end
 
 	if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+		local pCapital = pPlayer:GetCapitalCity()
+		
 		pPlayer:AddNotification(0, 
-			'Player researched Philosophy and received free Yassa Court in every [COLOR_CYAN]non-occupied city[ENDCOLOR].', 
-			'Yassa Courts built across the Empire, 
-			pCity:GetX(), pCity:GetY())
+			'Player researched Philosophy and received free Yassa Court in every [COLOR_CYAN]non-occupied City[ENDCOLOR].', 
+			'Yassa Courts built across the Empire', 
+			pCapital:GetX(), pCapital:GetY())
 	end
 end
 
 -- builds Yassa Court in founded city
 function OnFoundAddYassa(iPlayer, iX, iY)
 	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationMongolia) then return end
+
 	local pFoundCity = Map.GetPlot(iX, iY):GetWorkingCity()
 
 	if Teams[pPlayer:GetTeam()]:GetTeamTechs():HasTech(eTechPhilosophy) then
