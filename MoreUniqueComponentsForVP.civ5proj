@@ -698,12 +698,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Tersane</Name>
-        <Description>Adds Prize Ships promotion to naval melee units.</Description>
-        <FileName>Ottomans/Tersane/Tersane.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Koa</Name>
         <Description>Adds Kapu Ku'ialua promotion.</Description>
         <FileName>Polynesia/Koa/Koa.lua</FileName>
@@ -4962,10 +4956,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Ottomans\Suleiman\SuleimanFlavors.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Ottomans\Tersane\Tersane.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

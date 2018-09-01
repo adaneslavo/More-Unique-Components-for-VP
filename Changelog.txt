@@ -7,8 +7,7 @@ More Unique Components for Vox Populi changelog:
 v37:
 - simplified:
 	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion,
-	- Monitor, Tersane (in progress) ==> lua deleted, sql does the same thing,
-	- Waag, Hippodrome, Riad ==> serious lua optimization.
+	- Monitor, Tersane ==> lua deleted, sql does the same thing.
 - tweaked:
 	- Riad ==> now uses dummies to show updated top bar with gold and culture income and merchant bar with GMP points. No notification now,
 	- Madrasah ==> lowered value of faith on purchase (if player got fealty and pacifism then it was too op),
@@ -33,11 +32,12 @@ v37:
 		- Mingghan (Black Tug) ==> to MOUNTED.
 	- Proxenos ==> now works properly,
 	- Chaebol ==> fixed code (wrong function was used),
-	- Homeastead, Kabuki Guilds ==> now NeverCapture value is 1 like base for buildings,
+	- Homeastead, Kabuki Guilds ==> now NeverCapture value is 1 like base for buildings.
 -other:
 	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies),
 	- Iziko, Gumey, Baan Chang, Pogost, P. Garden, Waag, Madrasah, Tophet, Riad ==> now code runs only for appropriate civ and for Rome,
-	- U. of Coimbra, Tersane, Yassa Court ==> now code runs only for appropriate civ,
+	- U. of Coimbra, Tersane, Yassa Court ==> now code runs only for appropriate civ,	
+	- Waag, Hippodrome, Riad, Paradise Garden, Chaebol, Pitz Court, Baan Chang ==> serious lua optimization,
 	- lua code tweaked for most UCs.
 
 v36:
