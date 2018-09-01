@@ -7,7 +7,7 @@ More Unique Components for Vox Populi changelog:
 v37:
 - simplified:
 	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion,
-	- Monitor, Tersane ==> lua deleted, sql does the same thing,
+	- Monitor, Tersane (in progress) ==> lua deleted, sql does the same thing,
 	- Waag, Hippodrome ==> serious lua optimization.
 - tweaked:
 	- Riad ==> now uses dummies to show updated top bar with gold and culture income and merchant bar with GMP points. No notification now,

@@ -16,29 +16,35 @@ function OnTurnAddDefenseFromResources(iPlayer)
 	
 	local iTradedResources = 0
 	local bIsAnyWaag = false
-	
-	for city in pPlayer:Cities() do
-		if city:IsHasBuilding(eBuildingWaag) then
-			for res in GameInfo.Resources("ResourceClassType = 'RESOURCECLASS_LUXURY'") do
-				iTradedResources = iTradedResources + pPlayer:GetResourceImport(res.ID) + pPlayer:GetResourceExport(res.ID)
-				
-				if iTradedResources == 10 then
-					break
-				end
+	local iNumberOfWaags = pPlayer:CountNumBuildings(eBuildingWaag)
+
+	if iNumberOfWaags > 0 then
+		for res in GameInfo.Resources("ResourceClassType = 'RESOURCECLASS_LUXURY'") do
+			iTradedResources = iTradedResources + pPlayer:GetResourceImport(res.ID) + pPlayer:GetResourceExport(res.ID)
+
+			if iTradedResources == 10 then
+				break
 			end
-			
-			bIsAnyWaag = true
-			break
 		end
+			
+		bIsAnyWaag = true
 	end
 	
 	if bIsAnyWaag then
+		local iCurrentWaag = 0
+
 		for city in pPlayer:Cities() do
 			if city:IsHasBuilding(eBuildingWaag) then
 				city:SetNumRealBuilding(eBuildingDummyForWaag, iTradedResources)
+				iCurrentWaag = iCurrentWaag + 1
+
+				if iCurrentWaag == iNumberOfWaags then
+					break
+				end
 			end
 		end
-	end
+	end		
 end
 
 GameEvents.PlayerDoTurn.Add(OnTurnAddDefenseFromResources)
+GameEvents.CitySoldBuilding.Add(OnSellDestroyDummies)
