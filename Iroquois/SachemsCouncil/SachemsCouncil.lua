@@ -36,7 +36,6 @@ function OnTurnAddHappinessFromDefOrWar(iPlayer)
 			local pCapital = pPlayer:GetCapitalCity()
 			
 			pCapital:SetNumRealBuilding(eBuildingDummyForSachem7, iHappiness)
-			break
 		end
 	end
 end
@@ -46,10 +45,10 @@ function OnCreateGiveReciprocity(iPlayer, iUnit, iUnitType, iX, iY)
 	local pPlayer = Players[iPlayer]
 
 	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationIroquois) then return end
-	
+
 	if iUnitType == eUnitGreatDiplomat then
 		local iNumberOfSachems = pPlayer:CountNumBuildings(eBuildingSachemsCouncil)
-		
+
 		if iNumberOfSachems > 0 then
 			local pUnit = pPlayer:GetUnitByID(iUnit)
 
@@ -71,13 +70,7 @@ function OnEmbassyAddYields(iPlayer, iUnit, iUnitType, iX, iY)
 		local pPlot = Map.GetPlot(iX, iY)
 		local pMinor = Players[pPlot:GetOwner()]
 		local pCapital = pPlayer:GetCapitalCity()
-				
-		if pMinor:IsAllies(iPlayer) then
-			YieldCalculation(pPlot, pPlayer, pCapital, 1)
-		else
-			YieldCalculation(pPlot, pPlayer, pCapital, 2)
-		end
-
+		
 		local function YieldCalculation(pPlot, pPlayer, pCapital, iDivisor)
 			local iFood = pPlot:GetYield(0) / iDivisor
 			local iProduction = pPlot:GetYield(1) / iDivisor
@@ -101,6 +94,12 @@ function OnEmbassyAddYields(iPlayer, iUnit, iUnitType, iX, iY)
 					'Yields added in '..sName, 
 					pPlot:GetX(), pPlot:GetY(), pCapital:GetID())
 			end
+		end
+				
+		if pMinor:IsAllies(iPlayer) then
+			YieldCalculation(pPlot, pPlayer, pCapital, 1)
+		else
+			YieldCalculation(pPlot, pPlayer, pCapital, 2)
 		end
 	end
 end
