@@ -12,7 +12,9 @@ local eBuildingDummyForSachem3 = GameInfoTypes.BUILDING_D_FOR_SACHEM_3
 local eBuildingDummyForSachem4 = GameInfoTypes.BUILDING_D_FOR_SACHEM_4
 local eBuildingDummyForSachem5 = GameInfoTypes.BUILDING_D_FOR_SACHEM_5
 local eBuildingDummyForSachem6 = GameInfoTypes.BUILDING_D_FOR_SACHEM_6
-local eBuildingDummyForSachem7 = GameInfoTypes.BUILDING_D_FOR_TOWER --same as for White Tower
+local eBuildingDummyForSachem7 = GameInfoTypes.BUILDING_D_FOR_SACHEM_7
+local eBuildingDummyForSachem8 = GameInfoTypes.BUILDING_D_FOR_TOWER --same as for White Tower
+
 
 -- increase global happiness for each war or defensive pact
 function OnTurnAddHappinessFromDefOrWar(iPlayer)
@@ -35,9 +37,52 @@ function OnTurnAddHappinessFromDefOrWar(iPlayer)
 
 			local pCapital = pPlayer:GetCapitalCity()
 			
-			pCapital:SetNumRealBuilding(eBuildingDummyForSachem7, iHappiness)
+			pCapital:SetNumRealBuilding(eBuildingDummyForSachem8, iHappiness)
 			break
 		end
+	end
+end
+
+-- add dummies on Sachem construction
+function OnCityConstructedSachemsCouncil(iPlayer, iCity, eBuilding)
+	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationIroquois) then return end
+	
+	if eBuilding == eBuildingSachemsCouncil then
+		for city in pPlayer:Cities() do
+			city:SetNumRealBuilding(eBuildingDummyForSachem7, 1)
+		end
+	end
+end
+
+-- builds dummy for Sachem in founded city
+function OnFoundAddDummyForSachem(iPlayer, iX, iY)
+	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationIroquois) then return end
+
+	local iNumberOfSachems = pPlayer:CountNumBuildings(eBuildingSachemsCouncil)
+		
+	if iNumberOfSachems > 0 then
+		local pFoundCity = Map.GetPlot(iX, iY):GetWorkingCity()
+	
+		pFoundCity:SetNumRealBuilding(eBuildingDummyForSachem7, 1)
+	end
+end
+
+-- builds dummy after city Capture
+function OnCaptureAddDummiesForSachem(iPlayer, iCapital, iResourceX, iResourceY, iNewPlayer, iConquest, iConquest2)
+	local pNewPlayer = Players[iNewPlayer]
+
+	if not (pNewPlayer and pNewPlayer:GetCivilizationType() == eCivilizationIroquois) then return end
+
+	local iNumberOfSachems = pNewPlayer:CountNumBuildings(eBuildingSachemsCouncil)
+		
+	if iNumberOfSachems > 0 then
+		local pCity = Map.GetPlot(iResourceX, iResourceY):GetWorkingCity()
+	
+		pCity:SetNumRealBuilding(eBuildingDummyForSachem7, 1)
 	end
 end
 
@@ -89,4 +134,7 @@ function OnEmbassyAddYields(iPlayer, iUnit, iUnitType, iX, iY)
 end
 
 GameEvents.PlayerDoTurn.Add(OnTurnAddHappinessFromDefOrWar)
+GameEvents.CityConstructed.Add(OnCityConstructedSachemsCouncil)
+GameEvents.PlayerCityFounded.Add(OnFoundAddDummyForSachem)
+GameEvents.CityCaptureComplete.Add(OnCaptureAddDummiesForSachem)
 GameEvents.GreatPersonExpended.Add(OnEmbassyAddYields)
