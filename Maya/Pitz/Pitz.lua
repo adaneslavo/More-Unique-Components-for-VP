@@ -114,7 +114,6 @@ function OnBaktunGetBonus(iPlayer, iBaktun, iBaktunPreviousTurn)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local pCapital = pPlayer:GetCapitalCity()
 				local iX, iY = pCapital:GetX(), pCapital:GetY()
-				local vCityPosition = PositionCalculator(iX, iY)
 				
 				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
 					'B\textquotesingle aktun '..iBaktun..' has ended. Every City with Pitz Court gained:[NEWLINE][ICON_BULLET]+'..iChange1..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iChange2..' [ICON_PEACE] Faith',

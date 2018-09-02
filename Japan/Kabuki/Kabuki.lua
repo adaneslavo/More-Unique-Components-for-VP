@@ -42,7 +42,7 @@ end
 function OnConstructionUpgradeThatGuild(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 	
-	if pPlayer:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_JAPAN then return end
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationJapan) then return end
 	
 	local pCity = pPlayer:GetCityByID(iCity)
 	

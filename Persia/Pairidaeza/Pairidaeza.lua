@@ -43,7 +43,6 @@ function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local pCapital = pPlayer:GetCapitalCity()
 				local iX, iY = pCapital:GetX(), pCapital:GetY()
-				local vCityPosition = PositionCalculator(iX, iY)
 			
 				pPlayer:AddNotification(
 					NotificationTypes.NOTIFICATION_INSTANT_YIELD,

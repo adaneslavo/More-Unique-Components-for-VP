@@ -62,7 +62,6 @@ function OnCSGiftGiveYields(iMinor, iMajor, iUnitType)
 		if pPlayer:IsHuman() then
 			local pCapital = pPlayer:GetCapitalCity()
 			local iX, iY = pCapital:GetX(), pCapital:GetY()
-			local vCityPosition = PositionCalculator(iX, iY)
 
 			pPlayer:AddNotification(0, 
 				'City-State gift. Every City with Baan Chang gained:[NEWLINE][ICON_BULLET]+'..iGain1..' [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET]+'..iGain2..' [ICON_CULTURE] Culture', 
