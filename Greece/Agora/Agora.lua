@@ -21,8 +21,16 @@ function OnUnitPrekillProxenosGold(unitOwnerId, unitId, iUnitType, unitX, unitY,
 
 		if eCiv ~= -1 and Players[eCiv]:IsMinorCiv() then
 			local pCapital = pPlayer:GetCapitalCity()
+			local sName = pCapital:GetName()
 
 			pCapital:SetNumRealBuilding(eBuildingDummyForProxenos, pCapital:GetNumRealBuilding(eBuildingDummyForProxenos) + 1)
+			
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
+					'[ICON_INFLUENCE] Diplomatic Mission performed by Unit with Proxenos ability. The City of '..sName..' gained additional 2 [ICON_GOLD] Gold',
+					'Gold added in '..sName, 
+					unitX, unitY, pCapital:GetID())
+			end
 		end
 	end
 end

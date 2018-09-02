@@ -30,8 +30,8 @@ VALUES		('BUILDING_IROQUOIS_ATLAS', 			256, 		'SachemsCouncilPicture_256.dds',		
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,									BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, GreatPeopleRateChange,		SpecialistType, SpecialistCount,	MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired,	Help,												Description,								Civilopedia,										Strategy,												IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_IROQUOIS_SACHEMS_COUNCIL',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, GreatPeopleRateChange+1,	SpecialistType, SpecialistCount+1,	MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired-5,	'TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_HELP',	'TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL', 'TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_TEXT',	'TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_STRATEGY',	'BUILDING_IROQUOIS_ATLAS',	0
+			(Type,									BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, FreePromotion,										TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, GreatPeopleRateChange,		SpecialistType, SpecialistCount,	MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired,	Help,												Description,								Civilopedia,										Strategy,												IconAtlas,					PortraitIndex)
+SELECT		'BUILDING_IROQUOIS_SACHEMS_COUNCIL',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, 'PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY',	TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, GreatPeopleRateChange+1,	SpecialistType, SpecialistCount+1,	MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired-5,	'TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_HELP',	'TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL', 'TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_TEXT',	'TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_STRATEGY',	'BUILDING_IROQUOIS_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_COURT_SCRIBE';	
 ------------------------------	
 -- Building_Flavors
@@ -104,6 +104,20 @@ VALUES		('BUILDING_IROQUOIS_SACHEMS_COUNCIL',	'UNIT_EMISSARY',	1);
 INSERT INTO UnitPromotions 
 			(Type, 												Description, 												Help, 															Sound, 				MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
 VALUES		('PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY',	'TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY',	'TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY_HELP',	'AS2D_IF_LEVELUP',	0,				0,			0,			0,					0,			1,					1, 				11, 			'EXPANSION2_PROMOTION_ATLAS', 	'PEDIA_DIPLO',	'TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY');
+------------------------------	
+-- UnitCombatInfos + Update Great Diplomat
+------------------------------		
+INSERT INTO UnitCombatInfos  	
+			(Type,							Description)
+VALUES		('UNITCOMBAT_GREAT_DIPLOMAT',	'Great Diplomat Units');
+
+UPDATE Units SET CombatClass = 'UNITCOMBAT_GREAT_DIPLOMAT' WHERE Type = 'UNIT_GREAT_DIPLOMAT';
+------------------------------	
+-- UnitPromotions_UnitCombats
+------------------------------		
+INSERT INTO UnitPromotions_UnitCombats  	
+			(PromotionType, 									UnitCombatType)
+VALUES		('PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY',	'UNITCOMBAT_GREAT_DIPLOMAT');
 --==========================================================================================================================
 --==========================================================================================================================
 
