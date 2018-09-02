@@ -49,15 +49,15 @@ function OnTechResearchedBuildYassa(iTeam, iTech)
 				city:SetNumRealBuilding(eBuildingYassa, 1)
 			end
 		end
-	end
-
-	if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-		local pCapital = pPlayer:GetCapitalCity()
+	
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			local pCapital = pPlayer:GetCapitalCity()
 		
-		pPlayer:AddNotification(0, 
-			'Player researched Philosophy and received free Yassa Court in every [COLOR_CYAN]non-occupied City[ENDCOLOR].', 
-			'Yassa Courts built across the Empire', 
-			pCapital:GetX(), pCapital:GetY())
+			pPlayer:AddNotification(0, 
+				'Player researched Philosophy and received free Yassa Court in every [COLOR_CYAN]non-occupied City[ENDCOLOR].', 
+				'Yassa Courts built across the Empire', 
+				pCapital:GetX(), pCapital:GetY())
+		end
 	end
 end
 
