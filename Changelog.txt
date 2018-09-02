@@ -7,7 +7,7 @@ More Unique Components for Vox Populi changelog:
 v37:
 - simplified:
 	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion,
-	- (Monitor, Tersane, S. Council) ==> lua deleted, sql does the same thing.
+	- (Monitor, Tersane, S. Council, U. of Coimbra) ==> lua deleted, sql does the same thing.
 - tweaked:
 	- Riad ==> now uses dummies to show updated top bar with gold and culture income and merchant bar with GMP points. No notification now,
 	- Madrasah ==> lowered value of faith on purchase (if player got fealty and pacifism then it was too op),
