@@ -102,22 +102,8 @@ VALUES		('BUILDING_IROQUOIS_SACHEMS_COUNCIL',	'UNIT_EMISSARY',	1);
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 												Description, 												Help, 															Sound, 				MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY',	'TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY',	'TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY_HELP',	'AS2D_IF_LEVELUP',	0,				0,			0,			0,					0,			1,					1, 				11, 			'EXPANSION2_PROMOTION_ATLAS', 	'PEDIA_DIPLO',	'TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY');
-------------------------------	
--- UnitCombatInfos + Update Great Diplomat
-------------------------------		
-INSERT INTO UnitCombatInfos  	
-			(Type,							Description)
-VALUES		('UNITCOMBAT_GREAT_DIPLOMAT',	'Great Diplomat Units');
-
-UPDATE Units SET CombatClass = 'UNITCOMBAT_GREAT_DIPLOMAT' WHERE Type = 'UNIT_GREAT_DIPLOMAT';
-------------------------------	
--- UnitPromotions_UnitCombats
-------------------------------		
-INSERT INTO UnitPromotions_UnitCombats  	
-			(PromotionType, 									UnitCombatType)
-VALUES		('PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY',	'UNITCOMBAT_GREAT_DIPLOMAT');
+			(Type, 												Description, 												Help, 															Sound, 				LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY',	'TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY',	'TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY_HELP',	'AS2D_IF_LEVELUP',	1,					1, 				11, 			'EXPANSION2_PROMOTION_ATLAS', 	'PEDIA_DIPLO',	'TXT_KEY_PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY');
 --==========================================================================================================================
 --==========================================================================================================================
 

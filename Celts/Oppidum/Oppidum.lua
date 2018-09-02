@@ -58,7 +58,7 @@ function OppidumOnCapture(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, iCo
 		for iCityPlot = 1, pCapturedCity:GetNumCityPlots() - 1, 1 do
 			local pSpecificPlot = pCapturedCity:GetCityIndexPlot(iCityPlot)
 
-			if pSpecificPlot:GetImprovementType() == eImprovementOppidum and not pSpecificPlot:IsImprovementPillaged() then
+			if pSpecificPlot and pSpecificPlot:GetImprovementType() == eImprovementOppidum and not pSpecificPlot:IsImprovementPillaged() then
 				local pCheckedPlayer = Players[pSpecificPlot:GetOwner()]
 				local pCheckedCity = GetNearestCityFor2Players(pOldPlayer, pNewPlayer, pSpecificPlot)
 				
