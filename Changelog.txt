@@ -38,8 +38,8 @@ v37:
 -other:
 	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies),
 	- (Iziko, Gumey, Baan Chang, Pogost, P. Garden, Waag, Madrasah, Tophet, Riad) ==> now code runs only for appropriate civ and for Rome,
-	- (U. of Coimbra, Tersane, Yassa Court) ==> now code runs only for appropriate civ,	
-	- (Waag, Hippodrome, Riad, Paradise Garden, Chaebol, Pitz Court, Baan Chang, Yamato) ==> serious lua optimization,
+	- (U. of Coimbra, Tersane, Yassa Court, AltiCur) ==> now code runs only for appropriate civ,	
+	- (Waag, Hippodrome, Riad, Paradise Garden, Chaebol, Pitz Court, Baan Chang, Yamato, Qila, Intihuatana, AltiCur) ==> serious lua optimization,
 	- lua code tweaked for most UCs.
 
 v36:

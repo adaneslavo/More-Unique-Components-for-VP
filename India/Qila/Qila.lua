@@ -7,14 +7,21 @@ local eBuildingDummyForQila1 = GameInfoTypes.BUILDING_D_FOR_QILA_1
 local eBuildingDummyForQila2 = GameInfoTypes.BUILDING_D_FOR_QILA_2
 local eBuildingQila = GameInfoTypes.BUILDING_INDIA_QILA
 
+-- add defense per Wonder and convert defense to culture
 function DefenseToCulture(iPlayer)
 	local pPlayer = Players[iPlayer]
 
-	if pPlayer and pPlayer:GetCivilizationType() == eCivilizationIndia then
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationIndia) then return end
+
+	local iNumberOfQilas = pPlayer:CountNumBuildings(eBuildingQila)
+
+	if iNumberOfQilas > 0 then
+		local iCurrentQila = 0
+		
 		for city in pPlayer:Cities() do
 			if city:IsHasBuilding(eBuildingQila) then
 				-- 1 Defense per National or World Wonder in City
-				local iDefenseChange = (city:GetNumWorldWonders() + city:GetNumNationalWonders())
+				local iDefenseChange = city:GetNumWorldWonders() + city:GetNumNationalWonders()
 				
 				city:SetNumRealBuilding(eBuildingDummyForQila1, iDefenseChange)
 				
@@ -22,6 +29,12 @@ function DefenseToCulture(iPlayer)
 				local iCultureChange = 0.001 * city:GetStrengthValue()
 				
 				city:SetNumRealBuilding(eBuildingDummyForQila2, iCultureChange)
+
+				iCurrentQila = iCurrentQila + 1
+
+				if iCurrentQila == iNumberOfQilas then
+					break
+				end
 			end
 		end
 	end
