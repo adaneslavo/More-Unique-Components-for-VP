@@ -9,33 +9,34 @@ local eCivilizationCarthage = GameInfoTypes.CIVILIZATION_CARTHAGE
 local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 
+-- add yields to the city on unit training. Unit gains full xp instead of half
 function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
-	local pCity = pPlayer:GetCityByID(iCity)
-
+	
 	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationCarthage or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 
-	
+	local pCity = pPlayer:GetCityByID(iCity)
+
 	if pCity:IsHasBuilding(eBuildingTophet) then
+		-- give double amount of xp on unit purchase (reduce XP penalty on purchase)
 		if bGold then
 			local pUnit = pPlayer:GetUnitByID(iUnit)
-			-- give double amount of xp on unit purchase (reduce XP penalty on purchase)
+			
 			pUnit:ChangeExperience(2 * pUnit:GetExperience())
 		end
-	
+		
+		-- gain yields on any purchase
 		if bGold or bFaith then
-			-- gain yields on purchase (faith or gold)	
 			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 			local iCultureGain = math.floor(10 * iEraModifier * fGameSpeedModifier)
 		
 			pPlayer:ChangeJONSCulture(iCultureGain)
 		
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-				local iCityX = pCity:GetX()
-				local iCityY = pCity:GetY()
-				local vCityPosition = PositionCalculator(iCityX, iCityY)
+				local iX, iY = pCity:GetX(), pCity:GetY()
+				local vCityPosition = PositionCalculator(iX, iY)
 							
-				Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iCultureGain.." [ICON_CULTURE] Tophet[ENDCOLOR]", 1)
+				Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iCultureGain.." [ICON_CULTURE][ENDCOLOR]", 1)
 			
 				local sCityName = pCity:GetName()
 				local sCurrency
@@ -49,8 +50,7 @@ function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 				pPlayer:AddNotification(0, 
 					sCurrency..' Unit Purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iCultureGain..' [ICON_CULTURE] Culture', 
 					'Bonus Yields in '..sCityName, 
-					iCityX, iCityY)
-			
+					iX, iY)
 			end
 		end
 	end

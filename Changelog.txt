@@ -13,7 +13,8 @@ v37:
 	- Madrasah ==> lowered value of faith on purchase (if player got fealty and pacifism then it was too op),
 	- (Tersane, Agora) ==> NeverCapture value set to 1 (Rome would get too strong with free promotions from building),
 	- Cacadores ==> now use "Scout" stance,
-	- Agora ==> added notification after using Proxenos ability.
+	- Agora ==> added notification after using Proxenos ability,
+	- (Examination Hall, Buffalo Pound, Nilometer) ==> expanded help tooltip to give more useful information.
 - reworked:
 	- Barbican ==> total rework; now it's merged version of Castle and Armory, stronger from both with more offensive potential, blocks Armory building (gives dummy Armory instead),
 	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains,
@@ -38,9 +39,9 @@ v37:
 	- White Tower ==> now code looks for White Tower in empire not only in targeted city.
 -other:
 	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies),
-	- (Iziko, Gumey, Baan Chang, Pogost, P. Garden, Waag, Madrasah, Tophet, Riad) ==> now code runs only for appropriate civ and for Rome,
+	- (Iziko, Gumey, Baan Chang, Pogost, P. Garden, Waag, Madrasah, Tophet, Riad, E. Hall) ==> now code runs only for appropriate civ and for Rome,
 	- (U. of Coimbra, Tersane, Yassa Court, AltiCur, Agora) ==> now code runs only for appropriate civ,	
-	- (Waag, Hippodrome, Riad, Paradise Garden, Chaebol, Pitz Court, Baan Chang, Yamato, Qila, Intihuatana, AltiCur, Agora, T. Order, W. Tower) ==> serious lua optimization,
+	- (Waag, Hippodrome, Riad, Paradise Garden, Chaebol, Pitz Court, Baan Chang, Yamato, Qila, Intihuatana, AltiCur, Agora, T. Order, W. Tower, E. Hall) ==> serious lua optimization,
 	- lua code tweaked for most UCs.
 
 v36:
