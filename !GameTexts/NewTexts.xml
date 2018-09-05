@@ -572,7 +572,7 @@
 			<Text>The Examination Hall is a Chinese unique building, replacing the Chancery. In addition to the normal bonuses of a Chancery, the Exam Hall boosts Great People generation in the city, and adds Great Person Points to whichever great person currently has the most points in the city whenever a citizen is born.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_HELP">
-			<Text>+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% [ICON_GREAT_PEOPLE] Great People Points in the City, increased to +10% during [ICON_HAPPINESS_1] 'We Love the King' Day.[NEWLINE][NEWLINE]Whenever a [ICON_CITIZEN] Citizen is born, gain +15 [ICON_GREAT_PEOPLE] points toward [ICON_GREAT_PEOPLE] Great Person with the biggest progress, scaling with Era.</Text>
+			<Text>+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% [ICON_GREAT_PEOPLE] Great People Points in the City, increased to +10% during [ICON_HAPPINESS_1] 'We Love the King' Day.[NEWLINE][NEWLINE]Whenever a [ICON_CITIZEN] Citizen is born, gain +15 [ICON_GREAT_PEOPLE] points toward [ICON_GREAT_PEOPLE] Great Person with the highest progress, scaling with Era.</Text>
 		</Row>
 		
 		<!-- Fale Tel'e -->
@@ -1527,7 +1527,7 @@
 			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_PRODUCTION] Production output. On construction, 2 Flax resources spawn near the city, which provide additional culture and Production. This building can be built anywhere, as long as you don't have a Well in the City already.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_EGYPT_NILOMETER_HELP">
-			<Text>+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. [NEWLINE][NEWLINE]2 [ICON_RES_FLAX] Flax Resources spawn near the City. Flax prefers River tiles with Flood Plainsto standard Plains, Grassland, Desert or Tundra tiles with or without Forest or Jungle. As a last option it looks for tiles without any River in nearby.</Text>
+			<Text>+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]2 [ICON_RES_FLAX] Flax Resources spawn near the City. Flax prefers River tiles and Flood Plains and will not spawn on snow.</Text>
 		</Row>
 
 		<!-- Oppidum -->
