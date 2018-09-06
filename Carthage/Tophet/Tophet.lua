@@ -22,7 +22,7 @@ function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 		if bGold then
 			local pUnit = pPlayer:GetUnitByID(iUnit)
 			
-			pUnit:ChangeExperience(2 * pUnit:GetExperience())
+			pUnit:ChangeExperience(5)
 		end
 		
 		-- gain yields on any purchase
