@@ -24,7 +24,7 @@ local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].Cultur
 		fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100 
 	end
 
--- add yields to the city on unit training. Unit gains full xp instead of half
+-- two abilities: additional xp on purchasing and culture to the city on purchasing
 function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
 	
@@ -32,38 +32,39 @@ function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 
 	local pCity = pPlayer:GetCityByID(iCity)
 
-	if pCity:IsHasBuilding(eBuildingTophet) then
-		-- give double amount of xp on unit purchase (reduce XP penalty on purchase)
-		if bGold or bFaith then
-			local pUnit = pPlayer:GetUnitByID(iUnit)
+	if not pCity:IsHasBuilding(eBuildingTophet) then return end
+		
+	if bGold or bFaith then
+		-- adds 5 XP to purchased units
+		local pUnit = pPlayer:GetUnitByID(iUnit)
 			
-			pUnit:ChangeExperience(math.floor(5 * fGameSpeedModifier2), -1, 1)
+		pUnit:ChangeExperience(math.floor(5 * fGameSpeedModifier2), -1, 1)
 
-			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-			local iCultureGain = math.floor(10 * iEraModifier * fGameSpeedModifier)
+		-- yields culture on purchasing
+		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+		local iCultureGain = math.floor(10 * iEraModifier * fGameSpeedModifier)
 		
-			pPlayer:ChangeJONSCulture(iCultureGain)
+		pPlayer:ChangeJONSCulture(iCultureGain)
 		
-			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-				local iX, iY = pCity:GetX(), pCity:GetY()
-				local vCityPosition = PositionCalculator(iX, iY)
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			local iX, iY = pCity:GetX(), pCity:GetY()
+			local vCityPosition = PositionCalculator(iX, iY)
 							
-				Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iCultureGain.." [ICON_CULTURE][ENDCOLOR]", 1)
+			Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iCultureGain.." [ICON_CULTURE][ENDCOLOR]", 1)
 			
-				local sCityName = pCity:GetName()
-				local sCurrency
+			local sCityName = pCity:GetName()
+			local sCurrency
 
-				if bGold then
-					sCurrency = '[ICON_GOLD] '
-				elseif bFaith then
-					sCurrency = '[ICON_PEACE] '
-				end	
+			if bGold then
+				sCurrency = '[ICON_GOLD] '
+			elseif bFaith then
+				sCurrency = '[ICON_PEACE] '
+			end	
 
-				pPlayer:AddNotification(0, 
-					sCurrency..' Unit Purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iCultureGain..' [ICON_CULTURE] Culture', 
-					'Bonus Yields in '..sCityName, 
-					iX, iY)
-			end
+			pPlayer:AddNotification(0, 
+				sCurrency..' Unit Purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sCityName..': [ENDCOLOR]+'..iCultureGain..' [ICON_CULTURE] Culture', 
+				'Bonus Yields in '..sCityName, 
+				iX, iY)
 		end
 	end
 end

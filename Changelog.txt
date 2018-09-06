@@ -15,8 +15,8 @@ v37:
 	- Cacadores ==> now use "Scout" stance,
 	- Agora ==> added notification after using Proxenos ability,
 	- (Examination Hall, Buffalo Pound, Nilometer, AltiCur) ==> expanded help tooltip to give more useful information,
-	- Barbican ==> now +125% attack,
-	- Pitz Court ==> changed SQL for Building_ResourceYieldChanges and Building_BuildingClassLocalYieldChanges.
+	- Barbican ==> now +125% attack (for VP 9-6),
+	- Pitz Court ==> changed yield values according to VP 9-6 changes.
 - reworked:
 	- Barbican ==> total rework; now it's merged version of Castle and Armory, stronger from both with more offensive potential, blocks Armory building (gives dummy Armory instead),
 	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains,
@@ -45,7 +45,8 @@ v37:
 	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies),
 	- (Iziko, Gumey, Baan Chang, Pogost, P. Garden, Waag, Madrasah, Tophet, Riad, E. Hall) ==> now code runs only for appropriate civ and for Rome,
 	- (U. of Coimbra, Tersane, Yassa Court, AltiCur, Agora) ==> now code runs only for appropriate civ,	
-	- (Waag, Hippodrome, Riad, Paradise Garden, Chaebol, Pitz Court, Baan Chang, Yamato, Qila, Intihuatana, AltiCur, Agora, T. Order, W. Tower, E. Hall) ==> serious lua optimization,
+	- (Waag, Hippodrome, Riad, Paradise Garden, Chaebol, Pitz Court, Baan Chang, Yamato, Qila, Intihuatana, AltiCur, Agora, 
+			T. Order, W. Tower, E. Hall, Tophet, Tarkhan) ==> serious lua optimization,
 	- lua code tweaked for most UCs.
 
 v36:

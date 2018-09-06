@@ -72,7 +72,6 @@ function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
 	
 	if pCity and pCity:IsHasBuilding(eBuildingExamHall) then
 		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-		local iGPP = math.floor(7.5 * iEraModifier * iGameSpeedModifier)
 				
 		-- find GP with highest points
 		local tBestGP = nil 
@@ -83,13 +82,17 @@ function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
 			
 			if iGPProgress > iGPMax then 
 				iGPMax = iGPProgress
-				tBestGP = spec 
+				tBestGP = nil
+				table.insert(tBestGP, spec)
+			elseif iGPProgress == iGPMax then
+				table.insert(tBestGP, spec)
 			end
 		end
 
 		local iX, iY = pCity:GetX(), pCity:GetY()
 		local vCityPosition = PositionCalculator(iX, iY)
 
+		-- not found
 		if not tBestGP then
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]No Great People Points produced in the City so far[ENDCOLOR]", 1)
@@ -97,18 +100,23 @@ function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
 
 			return 
 		end
+		
+		-- found
+		local iGPP = math.floor(7.5 * iEraModifier * iGameSpeedModifier)
+		
+		for _, spec in ipairs(tBestGP) do		
+			pCity:ChangeSpecialistGreatPersonProgressTimes100(spec.GPType, iGPP * 100)
 				
-		pCity:ChangeSpecialistGreatPersonProgressTimes100(tBestGP.GPType, iGPP * 100)
-				
-		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-			Events.AddPopupTextEvent(vCityPosition, "[COLOR_GREAT_PEOPLE_STORED]+"..iGPP.."[ICON_GREAT_PEOPLE][ENDCOLOR]", 1)
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				Events.AddPopupTextEvent(vCityPosition, "[COLOR_GREAT_PEOPLE_STORED]+"..iGPP.."[ICON_GREAT_PEOPLE][ENDCOLOR]", 1)
 			
-			sName = pCity:GetName()
+				sName = pCity:GetName()
 
-			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_GROWTH,
-				'New [ICON_CITIZEN] Citizen born in '..sName..'. City gained '..iGPP..' [ICON_GREAT_PEOPLE] Great Person Points towards '..tBestGP.GPStr..'.',
-				'Citizen born in '..sName,
-				iX, iY, pCity:GetID())
+				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_GROWTH,
+					'New [ICON_CITIZEN] Citizen born in '..sName..'. City gained '..iGPP..' [ICON_GREAT_PEOPLE] Great Person Points towards '..spec.GPStr..'.',
+					'Citizen born in '..sName,
+					iX, iY, pCity:GetID())
+			end
 		end
 	end
 end
