@@ -177,7 +177,7 @@
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
-			<Text>Replaces both the Armory and the Castle.[NEWLINE][NEWLINE]Requires Walls in this City. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Reduces [ICON_HAPPINESS_3] Distress. +25 XP for all new Units trained in this City. +33% [ICON_RANGE_STRENGTH] Ranged Combat Strength for City Bombardment, Ranged units, and Siege Units garrisoned in this City.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art.</Text>
+			<Text>Replaces both the Armory and the Castle.[NEWLINE][NEWLINE]Requires Walls in this City. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Reduces [ICON_HAPPINESS_3] Distress. +25 XP for all new Units trained in this City. +125% [ICON_RANGE_STRENGTH] Ranged Combat Strength for City Bombardment and +33% [ICON_RANGE_STRENGTH] Ranged Combat Strength for Ranged units, and Siege Units garrisoned in this City.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
 			<Text>Unique Polish replacement for both the Castle and the Armory, but a bit stronger than both. Must have built Walls in the city. In addition to the city defense and unit training bonuses, the attacks of Ranged and Siege units garrisoned in the city are increased.</Text>
@@ -237,14 +237,14 @@
 			<Text>Buffalo Pound</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_HELP">
-			<Text>Available at Trapping. Can be built anywhere, including Cities with a Water Mill.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food for every 5 [ICON_CITIZEN] Citizens in the City. A [ICON_RES_BISON] Bison Resource appears near the City if that city has flat Plains or Grassland tiles with or without Forest.
+			<Text>Available at Trapping. Can be built anywhere, including Cities with a Water Mill.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food for every 5 [ICON_CITIZEN] Citizens in the City. A [ICON_RES_BISON] Bison Resource appears near the City.
 			[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +1 [ICON_FOOD] Food.
 			[NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +1 [ICON_FOOD] Food.
 			[NEWLINE]Nearby [ICON_RES_COW] Cattle: +1 [ICON_FOOD] Food.
 			[NEWLINE]Nearby [ICON_RES_BISON] Bison: +1 [ICON_FOOD] Food.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_STRATEGY">
-			<Text>The Buffalo Pound is the Shoshone unique building, replacing the Well.  In addition to the normal bonuses of the Well, the Buffalo Pound provides food from Horses, Cattle, Sheep and Bison.  It can also be constructed in cities with access to fresh water, even if a Water Mill has already been built there.</Text>
+			<Text>The Buffalo Pound is the Shoshone unique building, replacing the Well.  In addition to the normal bonuses of the Well, the Buffalo Pound provides food from Horses, Cattle, Sheep and Bison.  It can also be constructed in cities with access to fresh water, even if a Water Mill has already been built there.[NEWLINE][NEWLINE]Buffalo will only spawn on flat plains or grassland tiles, with or without Forest.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND_TEXT">
 			<Text>
@@ -1524,10 +1524,10 @@
 			<Text>Nilometer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_EGYPT_NILOMETER_STRATEGY">
-			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_PRODUCTION] Production output. On construction, 2 Flax resources spawn near the city, which provide additional culture and Production. This building can be built anywhere.</Text>
+			<Text>The Nilometer is an Egyptian unique building, replacing the Water Mill. It greatly increases the city's [ICON_PRODUCTION] Production output. On construction, 2 Flax resources spawn near the city, which provide additional culture and Production. This building can be built anywhere.[NEWLINE][NEWLINE]Flax prefers to spawn on rivers and flood plains, and will not spawn on hills or snow.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_EGYPT_NILOMETER_HELP">
-			<Text>+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]2 [ICON_RES_FLAX] Flax Resources spawn near the City. Flax prefers River tiles and Flood Plains and will not spawn on hills or snow.</Text>
+			<Text>+2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]2 [ICON_RES_FLAX] Flax Resources spawn near the City.</Text>
 		</Row>
 
 		<!-- Oppidum -->
@@ -1625,7 +1625,7 @@
 			<Text>Ball Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
-			<Text>Unique replacement for the Arena. Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Slightly reduces [ICON_HAPPINESS_3] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +2 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVE] Olives: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Slightly reduces [ICON_HAPPINESS_3] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVE] Olives: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
 			<Text>
@@ -1811,7 +1811,7 @@
 			<Text>Qila</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>City must have Walls. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 25%. Slightly reduces [ICON_HAPPINESS_3] Distress. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every National Wonder and World Wonder built in the City. 10% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
+			<Text>City must have Walls. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 100%. Slightly reduces [ICON_HAPPINESS_3] Distress. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every National Wonder and World Wonder built in the City. 10% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
 			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Culture and Great Artist Points. 10% of City Defense is converted into Culture every turn and the city gains more defense for wonders built in the city. Your most magnificent cities also become more difficult to capture.</Text>
@@ -2309,10 +2309,10 @@
 			<Text>Tophet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_HELP">
-			<Text>Gain +10 [ICON_CULTURE] Culture in the City whenever a Unit is purchased, scaling with Era, and Units purchased in this City receive additional experience.[NEWLINE][NEWLINE]Only Carthage may build it.</Text>
+			<Text>Gain +10 [ICON_CULTURE] Culture in the City whenever a Unit is purchased, scaling with Era. Units purchased in this City receive additional experience.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_STRATEGY">
-			<Text>The Tophet is the unique Shrine replacement for Carthage. In addition to the normal bonuses of a Shrine, the Tophet provides Culture whenever a unit is purchased in the City. Military Units purchased in a City with a Tophet are not affected by the normal half XP penalty for purchasing.</Text>
+			<Text>The Tophet is the unique Shrine replacement for Carthage. In addition to the normal bonuses of a Shrine, the Tophet provides Culture whenever a unit is purchased in the City. Military Units purchased in a City with a Tophet gain +5XP at normal speed, giving them a small boost before barracks, and mitigating the experience penalty on purchased units slightly.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_TEXT">
 			<Text>"Tophet" is a Hebrew term for a place of worship and human sacrifice to the Canaanite gods, and has become a colorful synonym for hell within Judeo-Christian theology. Usually located outside cities, Tophets were holy places where sacrifices to the gods could be presented to the heads of the Phoenician pantheon, Ba'al Hammon, the god of weather and vegetation, and his consort, Tanit.[NEWLINE][NEWLINE]Regular sacrifices were made to ensure the prosperity of Carthage, and the ashes of burnt offerings were sealed within the Tophet. Child sacrifice, once prevalent throughout the Near-East, was a persistent hallmark of Carthaginian religious life long after contemporary cultures had shunned the practice. Modern archaeological evidence suggests children were sacrificed in times of great stress such as wars, plagues, and natural disasters as an act of divine supplication.</Text>
