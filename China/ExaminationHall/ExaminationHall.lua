@@ -74,7 +74,8 @@ function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
 		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 				
 		-- find GP with highest points
-		local tBestGP = nil 
+		local bBestGP = nil
+		local tBestGP = {} 
 		local iGPMax = 0
 		
 		for _, spec in ipairs(tGPs) do
@@ -82,9 +83,10 @@ function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
 			
 			if iGPProgress > iGPMax then 
 				iGPMax = iGPProgress
-				tBestGP = nil
+				tBestGP = {}
+				bBestGP = true
 				table.insert(tBestGP, spec)
-			elseif iGPProgress == iGPMax then
+			elseif iGPMax ~= 0 and iGPProgress == iGPMax then
 				table.insert(tBestGP, spec)
 			end
 		end
@@ -93,7 +95,7 @@ function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
 		local vCityPosition = PositionCalculator(iX, iY)
 
 		-- not found
-		if not tBestGP then
+		if not bBestGP then
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]No Great People Points produced in the City so far[ENDCOLOR]", 1)
 			end

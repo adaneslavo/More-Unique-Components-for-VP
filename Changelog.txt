@@ -40,7 +40,8 @@ v37:
 	- Chaebol ==> fixed code (wrong function was used),
 	- (Homeastead, Kabuki Guilds) ==> now NeverCapture value is 1 like base for buildings,
 	- White Tower ==> now code looks for White Tower in empire not only in targeted city,
-	- Sachem Council ==> values from CSs swapped.
+	- Sachem Council ==> values from CSs swapped,
+	- Bellum Alet' ==> wrong logic function changed.
 -other:
 	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies),
 	- (Iziko, Gumey, Baan Chang, Pogost, P. Garden, Waag, Madrasah, Tophet, Riad, E. Hall) ==> now code runs only for appropriate civ and for Rome,
