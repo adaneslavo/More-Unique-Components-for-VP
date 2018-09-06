@@ -64,18 +64,16 @@ VALUES		('BUILDING_MAYA_PITZ',	'YIELD_FAITH',		2),
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------		
 INSERT INTO Building_BuildingClassLocalYieldChanges
-			(BuildingType, 			BuildingClassType, 			YieldType, 			YieldChange)
-VALUES		('BUILDING_MAYA_PITZ', 	'BUILDINGCLASS_ARMORY', 	'YIELD_PRODUCTION', 1),
-			('BUILDING_MAYA_PITZ', 	'BUILDINGCLASS_BARRACKS', 	'YIELD_PRODUCTION', 1),
-			('BUILDING_MAYA_PITZ', 	'BUILDINGCLASS_FORGE', 		'YIELD_PRODUCTION', 1);
+			(BuildingType, 			BuildingClassType, YieldType, YieldChange)
+SELECT		'BUILDING_MAYA_PITZ',	BuildingClassType, YieldType, YieldChange
+FROM Building_BuildingClassLocalYieldChanges WHERE BuildingType = 'BUILDING_COLOSSEUM';
 ------------------------------	
 -- Building_ResourceYieldChanges
 ------------------------------
 INSERT INTO Building_ResourceYieldChanges	
 			(BuildingType,			ResourceType,		YieldType,			Yield)
-VALUES		('BUILDING_MAYA_PITZ',	'RESOURCE_PERFUME',	'YIELD_CULTURE',	2),
-			('BUILDING_MAYA_PITZ',	'RESOURCE_OLIVE',	'YIELD_FOOD',		1),
-			('BUILDING_MAYA_PITZ',	'RESOURCE_OLIVE',	'YIELD_PRODUCTION',	1);
+SELECT		'BUILDING_MAYA_PITZ',	ResourceType, YieldType, Yield
+FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_COLOSSEUM';
 --==========================================================================================================================	
 
 --==========================================================================================================================	
