@@ -79,14 +79,16 @@ VALUES		('BUILDING_IROQUOIS_SACHEMS_COUNCIL',	'BUILDINGCLASS_GROVE',		'YIELD_CUL
 -- Building_YieldPerAlly
 ------------------------------
 INSERT INTO Building_YieldPerAlly 	
-			(BuildingType,							YieldType,		Yield)
-VALUES		('BUILDING_IROQUOIS_SACHEMS_COUNCIL',	'YIELD_FOOD',	1);
+			(BuildingType,							YieldType, Yield)
+SELECT		'BUILDING_IROQUOIS_SACHEMS_COUNCIL',	YieldType, Yield
+FROM Building_YieldPerAlly WHERE BuildingType = 'BUILDING_COURT_SCRIBE';
 ------------------------------	
 -- Building_YieldPerFriend
 ------------------------------
 INSERT INTO Building_YieldPerFriend 	
-			(BuildingType,							YieldType,		Yield)
-VALUES		('BUILDING_IROQUOIS_SACHEMS_COUNCIL',	'YIELD_FAITH',	2);
+			(BuildingType,							YieldType, Yield)
+SELECT		'BUILDING_IROQUOIS_SACHEMS_COUNCIL',	YieldType, Yield
+FROM Building_YieldPerFriend WHERE BuildingType = 'BUILDING_COURT_SCRIBE';
 ------------------------------	
 -- Building_FreeUnits
 ------------------------------
