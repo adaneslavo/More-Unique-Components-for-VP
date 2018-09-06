@@ -34,14 +34,11 @@ function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 
 	if pCity:IsHasBuilding(eBuildingTophet) then
 		-- give double amount of xp on unit purchase (reduce XP penalty on purchase)
-		if bGold then
+		if bGold or bFaith then
 			local pUnit = pPlayer:GetUnitByID(iUnit)
 			
 			pUnit:ChangeExperience(math.floor(5 * fGameSpeedModifier2), -1, 1)
-		end
-		
-		-- gain yields on any purchase
-		if bGold or bFaith then
+
 			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 			local iCultureGain = math.floor(10 * iEraModifier * fGameSpeedModifier)
 		
