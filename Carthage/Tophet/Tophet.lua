@@ -9,6 +9,21 @@ local eCivilizationCarthage = GameInfoTypes.CIVILIZATION_CARTHAGE
 local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 
+-- xp scaling
+	-- check XP scaling
+	local bXPScaling = true -- default VP
+
+	for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do 
+		bXPScaling = (tValue == 1) 
+	end
+
+	-- acquire game speed modifier
+	local fGameSpeedModifier2 = 1.0 -- it is float, so use 'f' at begining
+
+	if bXPScaling then 
+		fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100 
+	end
+
 -- add yields to the city on unit training. Unit gains full xp instead of half
 function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 	local pPlayer = Players[iPlayer]
@@ -22,7 +37,7 @@ function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 		if bGold then
 			local pUnit = pPlayer:GetUnitByID(iUnit)
 			
-			pUnit:ChangeExperience(5)
+			pUnit:ChangeExperience(math.floor(5 * fGameSpeedModifier2), -1, 1)
 		end
 		
 		-- gain yields on any purchase

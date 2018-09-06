@@ -14,7 +14,9 @@ v37:
 	- (Tersane, Agora) ==> NeverCapture value set to 1 (Rome would get too strong with free promotions from building),
 	- Cacadores ==> now use "Scout" stance,
 	- Agora ==> added notification after using Proxenos ability,
-	- (Examination Hall, Buffalo Pound, Nilometer) ==> expanded help tooltip to give more useful information.
+	- (Examination Hall, Buffalo Pound, Nilometer, AltiCur) ==> expanded help tooltip to give more useful information,
+	- Barbican ==> now +125% attack,
+	- Pitz Court ==> changed SQL for Building_ResourceYieldChanges and Building_BuildingClassLocalYieldChanges.
 - reworked:
 	- Barbican ==> total rework; now it's merged version of Castle and Armory, stronger from both with more offensive potential, blocks Armory building (gives dummy Armory instead),
 	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains,
@@ -22,7 +24,8 @@ v37:
 	- Monitor ==> added Hardened promotion instead of Cover I,
 	- Armada ==> Invincible change: no more XP from sailing at full health; instead on each Armada kill, rest of Armadas in 5-tile range get bonus XP.
 	- Yassa Court ==> now granted after founding the city or researching Philosophy; bonus yields on conquering; global unhappiness reduction instead of local,
-	- Andelsbevægelse ==> now increases Worker's work rate by 3%; deleted 5% food bonus.
+	- Andelsbevægelse ==> now increases Worker's work rate by 3%; deleted 5% food bonus,
+	- Tophet ==> now gains 5 instead of full XP on training.
 - substituted:
 	- Qadi to Gumey ==> Qadi deleted; new Gumey: replaces Caravansary; bonuses from luxury resources and global monopolies on them; focus on gold+++, production++ and culture+.
 - fixed:
@@ -36,7 +39,8 @@ v37:
 	- Proxenos ==> now works properly,
 	- Chaebol ==> fixed code (wrong function was used),
 	- (Homeastead, Kabuki Guilds) ==> now NeverCapture value is 1 like base for buildings,
-	- White Tower ==> now code looks for White Tower in empire not only in targeted city.
+	- White Tower ==> now code looks for White Tower in empire not only in targeted city,
+	- Sachem Council ==> values from CSs swapped.
 -other:
 	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies),
 	- (Iziko, Gumey, Baan Chang, Pogost, P. Garden, Waag, Madrasah, Tophet, Riad, E. Hall) ==> now code runs only for appropriate civ and for Rome,

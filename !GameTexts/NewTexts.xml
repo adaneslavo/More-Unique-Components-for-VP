@@ -50,7 +50,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_HELP">
 			<Text>
-				Gain +25 [ICON_RESEARCH] Science as an instant boost whenever a Building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and +100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era.[NEWLINE][NEWLINE]Does not require any prerequisite building. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
+				Gain +25 [ICON_RESEARCH] Science as an instant boost whenever a Building is constructed in City, scaling with Era. All Stables gain +2 [ICON_CULTURE] Culture and +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Receive +6 [ICON_HAPPINESS_1] Happiness for 20 turns and +100 [ICON_GOLD] Gold as an intant boost whenever you successfully demand Tribute from a City-State, scaling with Era. Bonus resets on each new Tribute.[NEWLINE][NEWLINE]Does not require any prerequisite building. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_STRATEGY">
@@ -2309,7 +2309,7 @@
 			<Text>Tophet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_HELP">
-			<Text>Gain +10 [ICON_CULTURE] Culture in the City whenever a Unit is purchased, scaling with Era, and Units purchased in this City receive full XP from Buildings.[NEWLINE][NEWLINE]Only Carthage may build it.</Text>
+			<Text>Gain +10 [ICON_CULTURE] Culture in the City whenever a Unit is purchased, scaling with Era, and Units purchased in this City receive additional experience.[NEWLINE][NEWLINE]Only Carthage may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_STRATEGY">
 			<Text>The Tophet is the unique Shrine replacement for Carthage. In addition to the normal bonuses of a Shrine, the Tophet provides Culture whenever a unit is purchased in the City. Military Units purchased in a City with a Tophet are not affected by the normal half XP penalty for purchasing.</Text>
