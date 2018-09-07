@@ -47,7 +47,7 @@ v37:
 	- (Iziko, Gumey, Baan Chang, Pogost, P. Garden, Waag, Madrasah, Tophet, Riad, E. Hall) ==> now code runs only for appropriate civ and for Rome,
 	- (U. of Coimbra, Tersane, Yassa Court, AltiCur, Agora) ==> now code runs only for appropriate civ,	
 	- (Waag, Hippodrome, Riad, Paradise Garden, Chaebol, Pitz Court, Baan Chang, Yamato, Qila, Intihuatana, AltiCur, Agora, 
-			T. Order, W. Tower, E. Hall, Tophet, Tarkhan) ==> serious lua optimization,
+			T. Order, W. Tower, E. Hall, Tophet, Tarkhan, Huey Teocalli, Homestead, Madrasah) ==> serious lua optimization,
 	- lua code tweaked for most UCs.
 
 v36:
