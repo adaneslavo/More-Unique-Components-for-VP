@@ -65,5 +65,17 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
+-- removes bonus gold and culture to horses on empire if Hippodrome is destroyed
+function OnCaptureRemoveHorseYields(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop, bConquest)
+	local pOldPlayer = Players[iOldOwner]
+	
+	if pOldPlayer:GetCivilizationType() ~= eCivilizationByzantium or not bIsCapital then return end
+
+	for city in pOldPlayer:Cities() do
+		city:SetNumRealBuilding(eBuildingDummyHorseYields, 0)
+	end
+end
+
 GameEvents.CityConstructed.Add(OnConstructionAddBonuses)
 GameEvents.TeamSetEra.Add(OnEraSetAnarchyAndWLTKD)
+GameEvents.CityCaptureComplete.Add(OnCaptureRemoveHorseYields)
