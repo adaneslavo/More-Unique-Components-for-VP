@@ -29,8 +29,8 @@ VALUES	('BUILDING_GREECE_ATLAS', 			256, 		'AgoraPicture_256.dds',			1, 				1),
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-		(Type,				Description,				Help,						CannotBeChosen,	Sound,			PortraitIndex,		IconAtlas,		PediaType,	PediaEntry,				LostWithUpgrade, TradeMissionInfluenceModifier)
-VALUES		('PROMOTION_UNIT_GREECE_PROXENOS',	'TXT_KEY_PROMOTION_UNIT_GREECE_PROXENOS',	'TXT_KEY_PROMOTION_UNIT_GREECE_PROXENOS_HELP',	1,		'AS2D_IF_LEVELUP',	42,			'PROMOTION_ATLAS',	'PEDIA_DIPLO',	'TXT_KEY_PROMOTION_UNIT_GREECE_PROXENOS',	0, 				5);
+			(Type,								Description,								Help,											CannotBeChosen,	Sound,				PortraitIndex,		IconAtlas,			PediaType,		PediaEntry,									LostWithUpgrade,	TradeMissionInfluenceModifier)
+VALUES		('PROMOTION_UNIT_GREECE_PROXENOS',	'TXT_KEY_PROMOTION_UNIT_GREECE_PROXENOS',	'TXT_KEY_PROMOTION_UNIT_GREECE_PROXENOS_HELP',	1,				'AS2D_IF_LEVELUP',	42,					'PROMOTION_ATLAS',	'PEDIA_DIPLO',	'TXT_KEY_PROMOTION_UNIT_GREECE_PROXENOS',	0, 					5);
 ------------------------------	
 -- UnitPromotions_UnitCombats
 ------------------------------		
@@ -46,7 +46,7 @@ VALUES
 ------------------------------	
 INSERT INTO Buildings 	
 			(Type,						BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType,			SpecialistCount,	MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteRecipientBonus,	TradeRouteTargetBonus,	Help,										Description,						Civilopedia,								Strategy,										IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_GREECE_AGORA',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, 'PROMOTION_UNIT_GREECE_PROXENOS',	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType,			SpecialistCount,	MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteRecipientBonus,	TradeRouteTargetBonus,	'TXT_KEY_BUILDING_GREECE_AGORA_HELP',	'TXT_KEY_BUILDING_GREECE_AGORA', 'TXT_KEY_BUILDING_GREECE_AGORA_TEXT',	'TXT_KEY_BUILDING_GREECE_AGORA_STRATEGY',	'BUILDING_GREECE_ATLAS',	0
+SELECT		'BUILDING_GREECE_AGORA',	BuildingClass,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, 'PROMOTION_UNIT_GREECE_PROXENOS',	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, 1, PrereqTech, ArtDefineTag, SpecialistType,			SpecialistCount,	MinAreaSize, ConquestProb, HurryCostModifier,	TradeRouteRecipientBonus,	TradeRouteTargetBonus,	'TXT_KEY_BUILDING_GREECE_AGORA_HELP',	'TXT_KEY_BUILDING_GREECE_AGORA', 'TXT_KEY_BUILDING_GREECE_AGORA_TEXT',	'TXT_KEY_BUILDING_GREECE_AGORA_STRATEGY',	'BUILDING_GREECE_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_MARKET';	
 ------------------------------	
 -- Building_Flavors
@@ -75,24 +75,12 @@ INSERT INTO Building_YieldChanges
 VALUES		('BUILDING_GREECE_AGORA',	'YIELD_CULTURE',	2),
 			('BUILDING_GREECE_AGORA',	'YIELD_GOLD',		3);
 ------------------------------	
--- Building_YieldPerAlly
-------------------------------
---INSERT INTO Building_YieldPerAlly 	
---			(BuildingType,				YieldType,		Yield)
---VALUES		('BUILDING_GREECE_AGORA',	'YIELD_GOLD',	2);
-
-------------------------------	
 -- Building_ResourceYieldChanges
 ------------------------------
 INSERT INTO Building_ResourceYieldChanges	
 			(BuildingType,				ResourceType,		YieldType,			Yield)
 SELECT	'BUILDING_GREECE_AGORA',	ResourceType,		YieldType,			Yield
 FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_MARKET';
-
---INSERT INTO Building_ResourceYieldChanges	
---			(BuildingType,				ResourceType,		YieldType,			Yield)
---VALUES			('BUILDING_GREECE_AGORA',	'RESOURCE_WINE',	'YIELD_CULTURE',	1),
---			('BUILDING_GREECE_AGORA',	'RESOURCE_OLIVE',	'YIELD_FOOD',		1);
 ------------------------------	
 -- Building_UnitCombatProductionModifiers
 ------------------------------		

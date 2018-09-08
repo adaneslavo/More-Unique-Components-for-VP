@@ -3,31 +3,39 @@
 -- DateCreated:
 --------------------------------------------------------------
 include("FLuaVector.lua")
-local eBuildingRiad = GameInfoTypes.BUILDING_MAROCCO_RIAD			
+
+local eBuildingRiad = GameInfoTypes.BUILDING_MAROCCO_RIAD
+local eBuildingDummyForRiad = GameInfoTypes.BUILDING_D_FOR_RIAD			
+local eCivilizationMorocco = GameInfoTypes.CIVILIZATION_MOROCCO
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
 -- gain yields each turn for each trade route if Riad is built in the city
 function OnTurnGainYieldsFromTR(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
-	for i, tradeRoute in pairs(pPlayer:GetTradeRoutes()) do
-		local pCity = tradeRoute.FromCity
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationMorocco or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	
+	local iNumberOfRiads = pPlayer:CountNumBuildings(eBuildingRiad)
 
-		if pCity:IsHasBuilding(eBuildingRiad) then
-
-			iGain1 = 2
-			iGain2 = 100
-
-			pPlayer:ChangeGold(iGain1)
-			pPlayer:ChangeJONSCulture(iGain1)
-			pCity:ChangeSpecialistGreatPersonProgressTimes100(GameInfoTypes.SPECIALIST_MERCHANT, iGain2)
-
-			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-				local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
+	if iNumberOfRiads > 0 then
+		local iCurrentRiad = 0
+		
+		for city in pPlayer:Cities() do
+			if city:IsHasBuilding(eBuildingRiad) then
+				city:SetNumRealBuilding(eBuildingDummyForRiad, 0)
+				iCurrentRiad = iCurrentRiad + 1
 				
-				Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_GOLD]+"..iGain1.."[ICON_GOLD][ENDCOLOR]", 1)
-				Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iGain1.."[ICON_CULTURE][ENDCOLOR]", 1.5)
-				Events.AddPopupTextEvent(vCityPosition, "[COLOR_GREAT_PEOPLE_STORED]+"..iGain2.."[ICON_GREAT_PEOPLE][ENDCOLOR]", 2)
-				--pPlayer:AddNotification(0, '[ICON_PEACE] Faith purchase:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..pCity:GetName()..': [ENDCOLOR]+'..iScience..' [ICON_RESEARCH] Science', 'Bonus Yields in '..pCity:GetName()..'!', pCity:GetX(), pCity:GetY())
+				if iCurrentRiad == iNumberOfRiads then
+					break
+				end
+			end
+		end
+
+		for i, tradeRoute in pairs(pPlayer:GetTradeRoutes()) do
+			local pFromCity = tradeRoute.FromCity
+
+			if pFromCity:IsHasBuilding(eBuildingRiad) then
+				pFromCity:SetNumRealBuilding(eBuildingDummyForRiad, pFromCity:GetNumRealBuilding(eBuildingDummyForRiad) + 1)
 			end
 		end
 	end

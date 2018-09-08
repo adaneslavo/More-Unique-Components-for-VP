@@ -2,37 +2,42 @@
 -- Author: adan_eslavo
 -- DateCreated: 5/12/2017
 --------------------------------------------------------------
+local eCivilizationIndia = GameInfoTypes.CIVILIZATION_INDIA
+local eBuildingDummyForQila1 = GameInfoTypes.BUILDING_D_FOR_QILA_1
+local eBuildingDummyForQila2 = GameInfoTypes.BUILDING_D_FOR_QILA_2
+local eBuildingQila = GameInfoTypes.BUILDING_INDIA_QILA
+
+-- add defense per Wonder and convert defense to culture
 function DefenseToCulture(iPlayer)
 	local pPlayer = Players[iPlayer]
 
-	if pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_INDIA then
-		for pCity in pPlayer:Cities() do
-			if pCity:IsHasBuilding(GameInfoTypes.BUILDING_INDIA_QILA) then
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationIndia) then return end
+
+	local iNumberOfQilas = pPlayer:CountNumBuildings(eBuildingQila)
+
+	if iNumberOfQilas > 0 then
+		local iCurrentQila = 0
+		
+		for city in pPlayer:Cities() do
+			if city:IsHasBuilding(eBuildingQila) then
 				-- 1 Defense per National or World Wonder in City
-				local iDefenseChange = (pCity:GetNumWorldWonders() + pCity:GetNumNationalWonders())
-				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMY_1_DEFENSE, iDefenseChange)
+				local iDefenseChange = city:GetNumWorldWonders() + city:GetNumNationalWonders()
+				
+				city:SetNumRealBuilding(eBuildingDummyForQila1, iDefenseChange)
+				
 				-- 10% Defense converted to culture in City
-				local iCultureChange = 0.0010 * pCity:GetStrengthValue()
-				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCASTLECULTURE, iCultureChange)
+				local iCultureChange = 0.001 * city:GetStrengthValue()
+				
+				city:SetNumRealBuilding(eBuildingDummyForQila2, iCultureChange)
+
+				iCurrentQila = iCurrentQila + 1
+
+				if iCurrentQila == iNumberOfQilas then
+					break
+				end
 			end
 		end
 	end
 end
 
 GameEvents.PlayerDoTurn.Add(DefenseToCulture)
-
---function YieldFoodToCulture(iPlayer)
---	local pPlayer = Players[iPlayer]
---
---	if pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_INDIA then
---		for pCity in pPlayer:Cities() do
---			if pCity:IsHasBuilding(GameInfoTypes.BUILDING_INDIA_QILA) then
---				local iCultureChange = 0.05 * pCity:GetBaseYieldRate(YieldTypes.YIELD_FOOD)
-
---				pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYCULTURE, iCultureChange)
---			end
---		end
---	end
---end
-
---GameEvents.PlayerDoTurn.Add(YieldFoodToCulture)

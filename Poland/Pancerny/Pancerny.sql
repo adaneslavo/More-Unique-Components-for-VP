@@ -84,8 +84,7 @@ VALUES		('UNIT_POLAND_ATLAS', 			256, 		'PancernyPicture_256.dds',			1, 				1),
 ------------------------------
 INSERT INTO UnitPromotions 
 			(Type, 									Description, 									Help, 												Sound, 				MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA',	'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA_HELP',	'AS2D_IF_LEVELUP',	0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_POLAND_PROMOTION_ATLAS', 		'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA'),
-			('PROMOTION_UNIT_POLAND_GRUNWALD',		'TXT_KEY_PROMOTION_UNIT_POLAND_GRUNWALD',		'TXT_KEY_PROMOTION_UNIT_POLAND_GRUNWALD_HELP',		'AS2D_IF_LEVELUP',	0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_POLAND_PROMOTION_2_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_POLAND_GRUNWALD');
+VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA',	'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA_HELP',	'AS2D_IF_LEVELUP',	0,				0,			25,			0,					0,			0,					1, 				0, 				'UNIT_POLAND_PROMOTION_ATLAS', 		'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA');
 ------------------------------
 -- UnitPromotions_YieldFromKills
 ------------------------------
@@ -98,14 +97,6 @@ VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'YIELD_FAITH',	150);
 INSERT INTO UnitPromotions_YieldFromBarbarianKills
 			(PromotionType, 						YieldType,		Yield)
 VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'YIELD_FAITH',	150);
-------------------------------
--- UnitPromotions_Features
-------------------------------
-INSERT INTO UnitPromotions_Features
-			(PromotionType, 					FeatureType,		Defense)
-VALUES		('PROMOTION_UNIT_POLAND_GRUNWALD',	'FEATURE_FOREST',	25),
-			('PROMOTION_UNIT_POLAND_GRUNWALD',	'FEATURE_JUNGLE',	25),
-			('PROMOTION_UNIT_POLAND_GRUNWALD',	'FEATURE_MARSH',	10);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -115,7 +106,7 @@ VALUES		('PROMOTION_UNIT_POLAND_GRUNWALD',	'FEATURE_FOREST',	25),
 -- Units
 --------------------------------	
 INSERT INTO Units 	
-			(Type,					Class, 	PrereqTech,	Range,	BaseSightRange, RangedCombat,	Combat, Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,					GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 							Strategy, 									Help, 									Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	UnitArtInfo, 						UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate,	PurchaseCooldown)
+			(Type,					Class, 	PrereqTech,	Range,	BaseSightRange, RangedCombat,	Combat,		Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,					GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 							Strategy, 									Help, 									Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	UnitArtInfo, 						UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate,	PurchaseCooldown)
 SELECT		'UNIT_POLAND_PANCERNY',	Class,	PrereqTech,	Range,	BaseSightRange, RangedCombat+2,	Combat+2,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_MILITARY_SCIENCE',		GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_POLAND_PANCERNY',	'TXT_KEY_UNIT_POLAND_PANCERNY_TEXT',	'TXT_KEY_UNIT_POLAND_PANCERNY_STRATEGY',	'TXT_KEY_UNIT_POLAND_PANCERNY_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, IsMounted,	'ART_DEF_UNIT_POLAND_PANCERNY', 	0,					'UNIT_POLAND_FLAG_ATLAS',	0, 				'UNIT_POLAND_ATLAS',	MoveRate,	PurchaseCooldown
 FROM Units WHERE Type = 'UNIT_MOUNTED_BOWMAN';
 --------------------------------	
@@ -166,7 +157,6 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_MOUNTED_BOWMAN';
 INSERT INTO Unit_FreePromotions
 			(UnitType, 			PromotionType)
 VALUES		('UNIT_POLAND_PANCERNY', 'PROMOTION_UNIT_POLAND_BOGURODZICA'),
-			('UNIT_POLAND_PANCERNY', 'PROMOTION_UNIT_POLAND_GRUNWALD'),
 			('UNIT_POLAND_PANCERNY', 'PROMOTION_COVER_1');
 --==========================================================================================================================
 --==========================================================================================================================

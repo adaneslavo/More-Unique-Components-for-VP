@@ -44,11 +44,11 @@ WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_HAKKAPELIITTA_STRATEGY';
 
 -- Monitor
 UPDATE Language_en_US 
-SET Text = 'Durable coastal defense craft. Only America may build it. Has double [ICON_ARROW_RIGHT] Movement on Coast, and increases the [ICON_STRENGTH] Combat Strength of your Cities when adjacent to or inside the City. Starts with [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] Promotion.'
+SET Text = 'Durable coastal defense craft. Only America may build it. Has double [ICON_ARROW_RIGHT] Movement on Coast, and increases the [ICON_STRENGTH] Combat Strength of your Cities when adjacent to or inside the City. Takes reduced damage from enemy attacks.'
 WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_HELP';
 
 UPDATE Language_en_US 
-SET Text = 'A powerful Industrial Era Naval Unit. Only America may build it. It has the Cover I Promotion, and gives a Defensive Bonus to nearby Friendly Cities. Monitors are effective combatants when at War, and can be used to reduce Crime in peacetime.'
+SET Text = 'A powerful Industrial Era Naval Unit. Only America may build it. Takes slightly reduced damage from all sources, and gives a Defensive Bonus to nearby Friendly Cities. Their rock hard defensive abilities make them a dangerous adversary in coastal engagements.'
 WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_STRATEGY';
 
 -- Mandekalu Cavalry

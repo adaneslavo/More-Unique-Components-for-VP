@@ -5,10 +5,10 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>36</ModVersion>
+    <ModVersion>37</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>More Unique Components mod. Compatible with latest VP.</Teaser>
-    <Description>More Unique Components mod. Compatible with latest VP (8-19).
+    <Description>More Unique Components mod. Compatible with latest VP (9-6).
 
 Latest changes: see changelog file.</Description>
     <Authors>adan_eslavo</Authors>
@@ -45,76 +45,6 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>!Settings/Settings.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingCulture.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingFaith.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingFood.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGold.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingProduction.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingScience.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGMP1.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGMP2.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGMP3.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGMP4.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingHappiness.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingCityHP.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingDefense.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGPPAndDefense.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -634,16 +564,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGPP.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingGPPAndGold.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Huns/AltiCur/AltiCur.sql</FileName>
       </Action>
       <Action>
@@ -659,7 +579,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Songhai/Qadi/Qadi.sql</FileName>
+        <FileName>Songhai/Gumey/Gumey.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -699,32 +619,12 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingDefenseHPPromotion.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingClassYield.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingExpAndClassYield.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Inca/GreatAndeanRoad/GreatAndeanRoad.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Inca/Intihuatana/Intihuatana.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingHorseYields.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -744,13 +644,8 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!DummyBuildings/DummyBuildingsForMonoChurch.sql</FileName>
+        <FileName>!Dummies/Dummies.sql</FileName>
       </Action>
-      <!--      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>!GenericBonus/GenericBonus.sql</FileName>
-      </Action> -->
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -800,12 +695,6 @@ Latest changes: see changelog file.</Description>
         <Name>Druidic Lore</Name>
         <Description>Modifies Celtic UA.</Description>
         <FileName>Celts/DruidicLore/DruidicLore.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>Tersane</Name>
-        <Description>Adds Prize Ships promotion to naval melee units.</Description>
-        <FileName>Ottomans/Tersane/Tersane.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -977,12 +866,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Monitor</Name>
-        <Description>Monitor promotion for the American Monitor</Description>
-        <FileName>America/Monitor/Monitor.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Ranch</Name>
         <Description>Culture on border growth from the Ranch</Description>
         <FileName>America/Ranch/Ranch.lua</FileName>
@@ -1123,7 +1006,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Qadi</Name>
         <Description>Adds Effects for Qadi</Description>
-        <FileName>Songhai/Qadi/Qadi.lua</FileName>
+        <FileName>Songhai/Gumey/Gumey.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1166,6 +1049,12 @@ Latest changes: see changelog file.</Description>
         <Name>Horse Archer</Name>
         <Description>Automatic attack for Horse Archer</Description>
         <FileName>Huns/HorseArcher/HorseArcher.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Agora</Name>
+        <Description>Adds Proxenos promotion.</Description>
+        <FileName>Greece/Agora/Agora.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
@@ -1274,35 +1163,7 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="!DummyBuildings\DummyBuildingDefense.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGPP.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGPPAndGold.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingDefenseHPPromotion.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingExpAndClassYield.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingClassYield.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingHorseYields.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingsForMonoChurch.sql">
+    <Content Include="!Dummies\Dummies.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1349,10 +1210,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.80.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="America\Monitor\Monitor.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="America\Monitor\Monitor.sql">
       <SubType>Lua</SubType>
@@ -2074,6 +1931,10 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Greece\Agora\Agora.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Huns\AltiCur\AltiCur.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2466,26 +2327,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Grunwald\GrunwaldIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Polynesia\Koa\KapuKuialua\KapuKuialuaIcon_016.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -2834,27 +2675,27 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi.lua">
+    <Content Include="Songhai\Gumey\Gumey.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\Qadi.sql">
+    <Content Include="Songhai\Gumey\Gumey.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\QadiPicture_128.dds">
+    <Content Include="Songhai\Gumey\GumeyPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\QadiPicture_256.dds">
+    <Content Include="Songhai\Gumey\GumeyPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\QadiPicture_045.dds">
+    <Content Include="Songhai\Gumey\GumeyPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Songhai\Qadi\QadiPicture_064.dds">
+    <Content Include="Songhai\Gumey\GumeyPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -3273,58 +3114,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Denmark\Langskib\LangskibPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingCityHP.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingCulture.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingFaith.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingFood.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGMP1.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGMP2.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGMP3.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGMP4.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGold.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingHappiness.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingProduction.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingScience.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="!DummyBuildings\DummyBuildingGPPAndDefense.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Ethiopia\MehalSefari\MehalSefari.sql">
       <SubType>Lua</SubType>
@@ -5170,10 +4959,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Ottomans\Tersane\Tersane.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Ottomans\Tersane\Tersane.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -5357,7 +5142,7 @@ Latest changes: see changelog file.</Description>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="!Animations" />
-    <Folder Include="!DummyBuildings" />
+    <Folder Include="!Dummies" />
     <Folder Include="!GameTexts" />
     <Folder Include="!Settings" />
     <Folder Include="!SharedAssets" />
@@ -5429,7 +5214,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Portugal\Cacadores\3DModel" />
     <Folder Include="Portugal\University of Coimbra\" />
     <Folder Include="Rome" />
-    <Folder Include="Poland\Pancerny\Grunwald" />
     <Folder Include="Rome\Figs" />
     <Folder Include="Rome\Figs\3DModel" />
     <Folder Include="Rome\Latifundium" />
@@ -5440,7 +5224,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Siam\Ramkhamhaeng" />
     <Folder Include="Songhai\" />
     <Folder Include="Songhai\MandekaluCavalry" />
-    <Folder Include="Songhai\Qadi\" />
+    <Folder Include="Songhai\Gumey" />
     <Folder Include="Songhai\Sofa\" />
     <Folder Include="Songhai\Sofa\3DModel" />
     <Folder Include="Spain\Conquistador" />

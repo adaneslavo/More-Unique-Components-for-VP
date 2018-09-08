@@ -5,6 +5,10 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
+local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
+local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
+local ePromotionPhilhellenism = GameInfoTypes.PROMOTION_UNIT_GREECE_PHILHELLENISM
+			
 function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
@@ -13,7 +17,7 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 		local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
 		local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 				
-		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_GREECE_PHILHELLENISM) then
+		if pAttackingUnit ~= nil and pAttackingUnit:IsHasPromotion(ePromotionPhilhellenism) then
 			local iPlayer = iAttackingPlayer
 			local pPlayer = Players[iPlayer]
 			local pCapital = pPlayer:GetCapitalCity()
@@ -24,9 +28,6 @@ function Philhellenism(iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 					iAlliesOrFriends = iAlliesOrFriends + 1
 				end
 			end
-			
-			local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
-			local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
 			
 			local iGain1 = math.floor(1.25 *  iGameSpeedModifier1 * (iAlliesOrFriends + 1))
 			local iGain2 = math.floor(1.25 *  iGameSpeedModifier2 * (iAlliesOrFriends + 1))
@@ -49,28 +50,3 @@ function PositionCalculator(i1, i2)
 end
 
 GameEvents.CombatEnded.Add(Philhellenism)
-
---------------------------------------------------------------
--- Proxenos ability is actually related to Agora building, not Klepht unit!
-
-function OnUnitPrekillProxenosGold(unitOwnerId, unitId, iUnitType, unitX, unitY, bDelay, eKillingPlayer)
-	--print("ProxenosGold",unitOwnerId, unitId, iUnitType, unitX, unitY, bDelay, eKillingPlayer)
-	
-	if not (bDelay and eKillingPlayer == -1) then return end -- this check is important as this event is called TWICE; eKillingPlayer is always -1 when bDelay = false, only when bDelay = true it contains a correct player ID
-	
-	local pPlayer = Players[unitOwnerId]
-	if not pPlayer then return end -- assert
-	local pUnit = pPlayer:GetUnitByID(unitId)
-	if not pUnit then return end -- assert
-
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_GREECE_PROXENOS) then
-		local pPlot = Map.GetPlot(unitX, unitY)
-		local eCiv = pPlot:GetOwner()
-		if eCiv ~= -1 and Players[eCiv]:IsMinorCiv() then
-			local pCapital = pPlayer:GetCapitalCity()
-			pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGOLD, pCapital:GetNumRealBuilding(GameInfoTypes.BUILDING_DUMMYGOLD) + 2)
-		end
-	end
-end
-
-GameEvents.UnitPrekill.Add(OnUnitPrekillProxenosGold)

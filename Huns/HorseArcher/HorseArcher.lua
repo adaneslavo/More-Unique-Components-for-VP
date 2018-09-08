@@ -5,11 +5,12 @@
 local ePromotionHorseArcher = GameInfoTypes.PROMOTION_UNIT_HUNS_HORSE_ARCHER;
 local eMissionAttack = GameInfoTypes.MISSION_RANGE_ATTACK;
 
+-- performs attack if ran out of moves
 function OnLastMoveAttack(iPlayer, iUnit, iX, iY)
 	if Map.GetPlot(iX, iY) ~= nil then
 		local pUnit = Players[iPlayer]:GetUnitByID(iUnit);
 		
-		if pUnit:IsHasPromotion(ePromotionHorseArcher) then
+		if pUnit and pUnit:IsHasPromotion(ePromotionHorseArcher) then
 			if pUnit:GetMoves() <= 0 then
 				SearchAttack(pUnit)
 			end
@@ -38,6 +39,7 @@ function SearchAttack(pUnit)
 
 	if #tPotentialTargets > 0 then
 		local pPlot = tPotentialTargets[math.random(1, #tPotentialTargets)];
+		
 		pUnit:PushMission(eMissionAttack, pPlot:GetX(), pPlot:GetY())
 	end
 

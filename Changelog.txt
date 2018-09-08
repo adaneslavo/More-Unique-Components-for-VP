@@ -3,9 +3,31 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+
 v37:
-- changed:
-	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion.
+- simplified:
+	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion,
+	- (Monitor, Tersane, U. of Coimbra (partially)) ==> lua deleted, sql does the same thing.
+- tweaked:
+	- Riad ==> now uses dummies to show updated top bar with gold and culture income and merchant bar with GMP points. No notification now,
+	- Madrasah ==> lowered value of faith on purchase (if player got fealty and pacifism then it was too op),
+	- (Tersane, Agora) ==> NeverCapture value set to 1 (Rome would get too strong with free promotions from building),
+	- Cacadores ==> now use "Scout" stance,
+	- Agora ==> added notification after using Proxenos ability,
+	- (Examination Hall, Buffalo Pound, Nilometer, AltiCur) ==> expanded help tooltip to give more useful information,
+	- Barbican ==> now +125% attack (for VP 9-6),
+	- Pitz Court ==> changed yield values according to VP 9-6 changes.
+- reworked:
+	- Barbican ==> total rework; now it's merged version of Castle and Armory, stronger from both with more offensive potential, blocks Armory building (gives dummy Armory instead),
+	- Pancerny ==> unit's promotion simplified: Grunwald is gone, Bogurodzica gets additional 25% Defense in all terrains,
+	- Homestead ==> instead of yields from border growth it claims all Horse, Cattle, Sheep and Bison sources on construction. For each tile claimed that way city gets boost from american UA,
+	- Monitor ==> added Hardened promotion instead of Cover I,
+	- Armada ==> Invincible change: no more XP from sailing at full health; instead on each Armada kill, rest of Armadas in 5-tile range get bonus XP.
+	- Yassa Court ==> now granted after founding the city or researching Philosophy; bonus yields on conquering; global unhappiness reduction instead of local,
+	- Andelsbevægelse ==> now increases Worker's work rate by 3%; deleted 5% food bonus,
+	- Tophet ==> now gains 5 instead of full XP on training.
+- substituted:
+	- Qadi to Gumey ==> Qadi deleted; new Gumey: replaces Caravansary; bonuses from luxury resources and global monopolies on them; focus on gold+++, production++ and culture+.
 - fixed:
 	- pedia categories for some promotions:
 		- Commandering, Admiralty (Suffet) ==> to CIVILIAN,
@@ -13,7 +35,20 @@ v37:
 		- Reciprocity (Great Diplomat) ==> to DIPLO,
 		- Deck Spikes, Coastal Patrol (Turtle Ship) ==> to NAVAL,
 		- Siege Mobility (Ballista) ==> to SIEGE,
-		- Mingghan, Massacre (Black Tug) ==> to MOUNTED.
+		- Mingghan (Black Tug) ==> to MOUNTED.
+	- Proxenos ==> now works properly,
+	- Chaebol ==> fixed code (wrong function was used),
+	- (Homeastead, Kabuki Guilds) ==> now NeverCapture value is 1 like base for buildings,
+	- White Tower ==> now code looks for White Tower in empire not only in targeted city,
+	- Sachem Council ==> values from CSs swapped,
+	- Bellum Alet' ==> wrong logic function changed.
+-other:
+	- merged all dummy buildings into one file; all dummies have new names now; added some missing texts; deleted relicts of the past (unused dummies),
+	- (Iziko, Gumey, Baan Chang, Pogost, P. Garden, Waag, Madrasah, Tophet, Riad, E. Hall) ==> now code runs only for appropriate civ and for Rome,
+	- (U. of Coimbra, Tersane, Yassa Court, AltiCur, Agora) ==> now code runs only for appropriate civ,	
+	- (Waag, Hippodrome, Riad, Paradise Garden, Chaebol, Pitz Court, Baan Chang, Yamato, Qila, Intihuatana, AltiCur, Agora, 
+			T. Order, W. Tower, E. Hall, Tophet, Tarkhan, Huey Teocalli, Homestead, Madrasah) ==> serious lua optimization,
+	- lua code tweaked for most UCs.
 
 v36:
 - changes:

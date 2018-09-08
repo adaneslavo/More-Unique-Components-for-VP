@@ -6,73 +6,118 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
-local iBuilding = GameInfoTypes.BUILDING_CHINA_EXAMINATION_HALL
-local iDummy = GameInfoTypes.BUILDING_DUMMYGPP
+local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GreatPeoplePercent / 100
+local eBuildingExamHall = GameInfoTypes.BUILDING_CHINA_EXAMINATION_HALL
+local eBuildingDummyForExamHall = GameInfoTypes.BUILDING_D_FOR_EXAM
+local eCivilizationChina = GameInfoTypes.CIVILIZATION_CHINA
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
--- build table of valid specialists and corresponding GPs
-local tGPs = {}
-for sp in GameInfo.Specialists() do 
-	if sp.GreatPeopleRateChange > 0 then
-		local spec = { GPType = sp.ID, GPStr = Locale.ConvertTextKey(GameInfo.UnitClasses[ GameInfoTypes[sp.GreatPeopleUnitClass] ].Description) }
-		table.insert(tGPs, spec)
+-- entry function
+	-- build table of valid specialists and corresponding GPs
+	local tGPs = {}
+
+	for specialist in GameInfo.Specialists() do 
+		if specialist.GreatPeopleRateChange > 0 then
+			local spec = {
+				GPType = specialist.ID, 
+				GPStr = Locale.ConvertTextKey(GameInfo.UnitClasses[GameInfoTypes[specialist.GreatPeopleUnitClass]].Description)
+			}
+			
+			table.insert(tGPs, spec)
+		end
 	end
-end
---for k,v in pairs(tGPs) do print(k, v.GPType, v.GPStr) end -- debug
 
-function WLTKDGreatPersonBonus(iPlayer)
+-- double great people generation during WLTKDs
+function OnWLTKDIncreaseGPGeneration(iPlayer)
 	local pPlayer = Players[iPlayer]
-	for pCity in pPlayer:Cities() do
-		if pCity:IsHasBuilding(iBuilding) and pCity:GetWeLoveTheKingDayCounter() > 0 then
-			pCity:SetNumRealBuilding(iDummy, 1)
-		else
-			pCity:SetNumRealBuilding(iDummy, 0)
+	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationChina or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	
+	local iNumberOfExamHalls = pPlayer:CountNumBuildings(eBuildingExamHall)
+
+	if iNumberOfExamHalls > 0 then
+		for city in pPlayer:Cities() do
+			iCurrentExamHall = 0
+
+			if city:IsHasBuilding(eBuildingExamHall) then
+				iCurrentExamHall = iCurrentExamHall + 1
+
+				if city:GetWeLoveTheKingDayCounter() > 0 then
+					city:SetNumRealBuilding(eBuildingDummyForExamHall, 1)
+				else
+					city:SetNumRealBuilding(eBuildingDummyForExamHall, 0)
+				end
+
+				if iCurrentExamHall == iNumberOfExamHalls then
+					break
+				end
+			end
 		end
 	end
 end
 
-function GPPOnGrowth(iX, iY, iOld, iNew)
-	local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GreatPeoplePercent / 100
+-- adds GP points to the most advanced GP in city on citizen bierth
+function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
+	if not (iNew > iOld and iNew > 1) then return end
+
+	local pPlot = Map.GetPlot(iX, iY)
 	
-	if iNew > iOld and iNew > 1 then
-		local pPlot = Map.GetPlot(iX, iY)
-		if pPlot then
-			local pCity = pPlot:GetPlotCity()
-			if pCity and pCity:IsHasBuilding(iBuilding) then
-				local iPlayer = pCity:GetOwner()
-				local pPlayer = Players[iPlayer]
-				local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+	if not pPlot then return end
+
+	local pPlayer = Players[pPlot:GetOwner()]
+
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationChina or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	
+	local pCity = pPlot:GetPlotCity()
+	
+	if pCity and pCity:IsHasBuilding(eBuildingExamHall) then
+		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 				
-				local iGPP = 7.5 * iEraModifier * iGameSpeedModifier
-				iGPP = math.floor(iGPP)
+		-- find GP with highest points
+		local bBestGP = nil
+		local tBestGP = {} 
+		local iGPMax = 0
+		
+		for _, spec in ipairs(tGPs) do
+			local iGPProgress = pCity:GetSpecialistGreatPersonProgressTimes100(spec.GPType)
+			
+			if iGPProgress > iGPMax then 
+				iGPMax = iGPProgress
+				tBestGP = {}
+				bBestGP = true
+				table.insert(tBestGP, spec)
+			elseif iGPMax ~= 0 and iGPProgress == iGPMax then
+				table.insert(tBestGP, spec)
+			end
+		end
+
+		local iX, iY = pCity:GetX(), pCity:GetY()
+		local vCityPosition = PositionCalculator(iX, iY)
+
+		-- not found
+		if not bBestGP then
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]No Great People Points produced in the City so far[ENDCOLOR]", 1)
+			end
+
+			return 
+		end
+		
+		-- found
+		local iGPP = math.floor(7.5 * iEraModifier * iGameSpeedModifier)
+		
+		for _, spec in ipairs(tBestGP) do		
+			pCity:ChangeSpecialistGreatPersonProgressTimes100(spec.GPType, iGPP * 100)
 				
-				--local tGP = tGPs[ math.random( #tGPs ) ] -- pick random GP
-				-- Find GP with highest points
-				local tGP, iGPPMax = nil, 0
-				for _,spec in ipairs(tGPs) do
-					local gpProgress = pCity:GetSpecialistGreatPersonProgressTimes100(spec.GPType);
-					if gpProgress > iGPPMax then iGPPMax = gpProgress; tGP = spec end
-				end
-				if not tGP then
-					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-						Events.AddPopupTextEvent(vCityPosition, "[COLOR_RED]No Great People Points produced in the City so far[ENDCOLOR]", 1)
-					end
-					return 
-				end
-				
-				--print("Civil Examinations", tGP.GPType, tGP.GPStr, iGPP) -- debug
-				pCity:ChangeSpecialistGreatPersonProgressTimes100(tGP.GPType, iGPP * 100)
-				
-				if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-					local vCityPosition = PositionCalculator(pCity:GetX(), pCity:GetY())
-				
-					Events.AddPopupTextEvent(vCityPosition, "[COLOR_GREAT_PEOPLE_STORED]+"..iGPP.."[ICON_GREAT_PEOPLE][ENDCOLOR]", 1)
-					pPlayer:AddNotification(
-						NotificationTypes.NOTIFICATION_CITY_GROWTH,
-						'New [ICON_CITIZEN] Citizen born in '..pCity:GetName()..'. City gained '..iGPP..' [ICON_GREAT_PEOPLE] Great Person Points towards '..tGP.GPStr..'.',
-						'Citizen born in '..pCity:GetName(),
-						pCity:GetX(), pCity:GetY(), pCity:GetID())
-				end
+			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+				Events.AddPopupTextEvent(vCityPosition, "[COLOR_GREAT_PEOPLE_STORED]+"..iGPP.."[ICON_GREAT_PEOPLE][ENDCOLOR]", 1)
+			
+				sName = pCity:GetName()
+
+				pPlayer:AddNotification(NotificationTypes.NOTIFICATION_CITY_GROWTH,
+					'New [ICON_CITIZEN] Citizen born in '..sName..'. City gained '..iGPP..' [ICON_GREAT_PEOPLE] Great Person Points towards '..spec.GPStr..'.',
+					'Citizen born in '..sName,
+					iX, iY, pCity:GetID())
 			end
 		end
 	end
@@ -82,5 +127,5 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.PlayerDoTurn.Add(WLTKDGreatPersonBonus)
-GameEvents.SetPopulation.Add(GPPOnGrowth)
+GameEvents.PlayerDoTurn.Add(OnWLTKDIncreaseGPGeneration)
+GameEvents.SetPopulation.Add(OnBirthAddGPPointsToTheBest)

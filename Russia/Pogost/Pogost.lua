@@ -7,9 +7,15 @@ local iBuilding2 = GameInfoTypes.BUILDING_RUSSIA_POGOST_2
 local iBuilding3 = GameInfoTypes.BUILDING_RUSSIA_POGOST_3
 local iTech1 = GameInfoTypes.TECH_BANKING
 local iTech2 = GameInfoTypes.TECH_ARCHITECTURE
+local eCivilizationRussia = GameInfoTypes.CIVILIZATION_RUSSIA
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
-function Pogost(iPlayer, iCity, iBuilding)
+-- if Russia constructs Pogosts add additional Stages if tech requirement are fullfiled
+function OnConstructionAddStages(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationRussia) then return end
+	
 	local pCity = pPlayer:GetCityByID(iCity)
 
 	if iBuilding == iBuilding1 then
@@ -29,16 +35,19 @@ function Pogost(iPlayer, iCity, iBuilding)
 	end
 end
 
-function OnTechResearched(iTeam, iTech)
+-- add Pogost stages on tech research
+function OnTechResearchedAddStages(iTeam, iTech)
 	local pTeam = Teams[iTeam]
 	local pPlayer = Players[pTeam:GetLeaderID()]
-
+	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationRussia or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	
 	if iTech == iTech1 then
-		for pCity in pPlayer:Cities() do
-			if pCity:IsHasBuilding(iBuilding1) and not pCity:IsHasBuilding(iBuilding2) then
-				pCity:SetNumRealBuilding(iBuilding2, 1)
+		for city in pPlayer:Cities() do
+			if city:IsHasBuilding(iBuilding1) and not city:IsHasBuilding(iBuilding2) then
+				city:SetNumRealBuilding(iBuilding2, 1)
 				
-				NotificationLoad(2, pPlayer, pCity)
+				NotificationLoad(2, pPlayer, city)
 			end
 		end
 	end
@@ -47,17 +56,18 @@ function OnTechResearched(iTeam, iTech)
 		local pTeam = Teams[iTeam]
 		local pPlayer = Players[pTeam:GetLeaderID()]
 
-		for pCity in pPlayer:Cities() do
-			if pCity:IsHasBuilding(iBuilding1) and not pCity:IsHasBuilding(iBuilding3) then
-				pCity:SetNumRealBuilding(iBuilding3, 1)
+		for city in pPlayer:Cities() do
+			if city:IsHasBuilding(iBuilding1) and not city:IsHasBuilding(iBuilding3) then
+				city:SetNumRealBuilding(iBuilding3, 1)
 				
-				NotificationLoad(3, pPlayer, pCity)
+				NotificationLoad(3, pPlayer, city)
 			end
 		end
 	end
 end
 
-function PogostOnCapture(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, iConquest2)
+-- set Pogost Stages on city capture according to techs
+function OnCaptureAddStages(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, iConquest2)
 	local pNewPlayer = Players[iNewPlayer]
 	local pTeam = Teams[pNewPlayer:GetTeam()]
 	local pCity = Map.GetPlot(iX, iY):GetWorkingCity()
@@ -114,6 +124,6 @@ function NotificationLoad(iSet, pPlayer, pCity)
 	end
 end
 
-GameEvents.CityConstructed.Add(Pogost)
-GameEvents.TeamTechResearched.Add(OnTechResearched)
-GameEvents.CityCaptureComplete.Add(PogostOnCapture)
+GameEvents.CityConstructed.Add(OnConstructionAddStages)
+GameEvents.TeamTechResearched.Add(OnTechResearchedAddStages)
+GameEvents.CityCaptureComplete.Add(OnCaptureAddStages)

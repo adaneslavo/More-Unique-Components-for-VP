@@ -5,19 +5,22 @@
 include("FLuaVector.lua")
 
 local eBuildingIziko = GameInfoTypes.BUILDING_ZULU_IZIKO
+local eCivilizationZulu = GameInfoTypes.CIVILIZATION_ZULU
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
 -- adds culture to each city with Iziko if unit levels up
 function OnLevelCityGainCulture(iPlayer, iUnit, iPromotionType)
 	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationZulu or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	local iGain = math.max(pUnit:GetLevel() - 1, 0)
-	local pCapital = pPlayer:GetCapitalCity()
 	local bHasIziko = false
 
 	for city in pPlayer:Cities() do
 		if city:IsHasBuilding(eBuildingIziko) then
 			pPlayer:ChangeJONSCulture(iGain)
-
 			bHasIziko = true
 
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -29,6 +32,8 @@ function OnLevelCityGainCulture(iPlayer, iUnit, iPromotionType)
 	end
 	
 	if pPlayer:IsHuman() and pPlayer:IsTurnActive() and bHasIziko then
+		local pCapital = pPlayer:GetCapitalCity()
+	
 		pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
 			'Unit gained new level. Each City with Iziko built gains [ICON_CULTURE] Culture.',
 			'Culture for Cities with Iziko',

@@ -3,16 +3,18 @@
 -- DateCreated: 25/12/2017
 --------------------------------------------------------------
 local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ConstructPercent / 100
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
+local eImprovementLatifundium = GameInfoTypes.IMPROVEMENT_ROME_LATIFUNDIUM
 
 function LatifundiumSpawnFigs(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged)
 	local pPlayer = Players[iOwner]
 
-	if not (pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_ROME) then return end
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationRome) then return end
 
-	if iNewImprovement == GameInfoTypes.IMPROVEMENT_ROME_LATIFUNDIUM then			
+	if iNewImprovement == eImprovementLatifundium then			
 		local pMainPlot = Map.GetPlot(iX, iY)
 
-		if not (pMainPlot:GetOwner() ~= nil and Players[pMainPlot:GetOwner()]:GetCivilizationType() == GameInfoTypes.CIVILIZATION_ROME) then return end
+		if not (pMainPlot:GetOwner() ~= nil and Players[pMainPlot:GetOwner()]:GetCivilizationType() == eCivilizationRome) then return end
 
 		local tPossibleSpots = {}
 								
@@ -68,7 +70,7 @@ function LatifundiumSpawnFigs(iX, iY, iOwner, iOldImprovement, iNewImprovement, 
 				'Borders of '..pNearestCity:GetName()..' have grown', 
 				pChosenPlot:GetX(), pChosenPlot:GetY(), pNearestCity:GetID())
 			end
-		elseif pCheckedPlayer:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_ROME then
+		elseif pCheckedPlayer:GetCivilizationType() ~= eCivilizationRome then
 			pChosenPlot:SetOwner(iOwner, pNearestCity:GetID(), true, true)	
 
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
