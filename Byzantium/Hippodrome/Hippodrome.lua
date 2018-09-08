@@ -34,6 +34,28 @@ function OnConstructionAddBonuses(iPlayer, iCity, iBuilding)
 	end
 end
 
+-- removes bonus gold and culture to horses on empire if Hippodrome is destroyed
+function OnCaptureRemoveHorseYields(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop, bConquest)
+	local pOldPlayer = Players[iOldOwner]
+	
+	if pOldPlayer:GetCivilizationType() ~= eCivilizationByzantium or not bIsCapital then return end
+	
+	local iNumberOfDummiesForExam = pOldPlayer:CountNumBuildings(eBuildingDummyHorseYields)
+
+	if iNumberOfDummiesForExam > 0 then
+		local iCurrentDummyForExam = 0
+
+		for city in pOldPlayer:Cities() do
+			city:SetNumRealBuilding(eBuildingDummyHorseYields, 0)
+			iCurrentDummyForExam = iCurrentDummyForExam + 1
+
+			if iCurrentDummyForExam == iNumberOfDummiesForExam then
+				break
+			end
+		end
+	end
+end
+
 -- sets Anarchy and WLTKD on new Era
 function OnEraSetAnarchyAndWLTKD(eTeam, eEra, bFirst)
 	for id, pPlayer in pairs(Players) do
@@ -63,17 +85,6 @@ end
 
 function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
-end
-
--- removes bonus gold and culture to horses on empire if Hippodrome is destroyed
-function OnCaptureRemoveHorseYields(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop, bConquest)
-	local pOldPlayer = Players[iOldOwner]
-	
-	if pOldPlayer:GetCivilizationType() ~= eCivilizationByzantium or not bIsCapital then return end
-
-	for city in pOldPlayer:Cities() do
-		city:SetNumRealBuilding(eBuildingDummyHorseYields, 0)
-	end
 end
 
 GameEvents.CityConstructed.Add(OnConstructionAddBonuses)
