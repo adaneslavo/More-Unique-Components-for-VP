@@ -4,6 +4,13 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 
+v37.1:
+- added:
+	- merged standalone MUCfVP-EE compatibility patch,
+	- added MUCfVP-ENW compatibility patch.
+- fixed:
+	- Prize Ships ==> CannnotBeChosen value now 1.
+
 v37:
 - simplified:
 	- Black Tug ==> lua deletion, sql value instead, deleted Massacre promotion,
