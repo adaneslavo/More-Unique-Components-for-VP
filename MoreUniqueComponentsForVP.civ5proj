@@ -646,6 +646,11 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>!Dummies/Dummies.sql</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>!Compatibility/VPEE.sql</FileName>
+      </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -1162,6 +1167,14 @@ Latest changes: see changelog file.</Description>
     <Content Include="!Animations\edited_modern_ship_aim_state_01.fsmxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!Compatibility\ENW.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="!Compatibility\VPEE.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="!Dummies\Dummies.sql">
       <SubType>Lua</SubType>
@@ -5208,6 +5221,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Germany" />
     <Folder Include="China" />
     <!--    <Folder Include="!GenericBonus" /> -->
+    <Folder Include="!Compatibility" />
     <Folder Include="Persia\Darius" />
     <Folder Include="Portugal\" />
     <Folder Include="Portugal\Cacadores\" />

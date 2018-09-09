@@ -103,6 +103,12 @@ VALUES		('BUILDING_OTTOMANS_TERSANE',	'UNITCOMBAT_CARGO',			50),
 INSERT INTO UnitPromotions_UnitCombats  	
 			(PromotionType, 			UnitCombatType)
 VALUES		('PROMOTION_PRIZE_SHIPS',	'UNITCOMBAT_NAVALMELEE');
+------------------------------	
+-- UnitPromotions
+------------------------------		
+INSERT INTO UnitPromotions_UnitCombats  	
+			(PromotionType, 			CannotBeChosen)
+VALUES		('PROMOTION_PRIZE_SHIPS',	1);
 --==========================================================================================================================
 --==========================================================================================================================
 
