@@ -754,7 +754,7 @@
 			<Text>Goedendag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_HELP">
-			<Text>A cheap and effective Unit in groups. Only the Dutch may build it. Provides a combat boost to all Units adjacent to it and has increased [ICON_STRENGTH] Combat Strength when standing on a Luxury Resource Tile. [NEWLINE][NEWLINE]Stagnates Growth in Cities while built. Excess [ICON_FOOD] Food contributes to [ICON_PRODUCTION] Production.</Text>
+			<Text>A cheap, versatile offensive unit with supporting abilities. Only the Dutch may build it. Provides a combat boost to all Units adjacent to it and has increased [ICON_STRENGTH] Combat Strength when standing on a Luxury Resource Tile. [NEWLINE][NEWLINE]Stagnates Growth in Cities while built. Excess [ICON_FOOD] Food contributes to [ICON_PRODUCTION] Production.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_STRATEGY">
 			<Text>The Goedendag is an odd unit, but effective in groups. While effective on their own against cavalry, the Goedendag provides increased attack against all units adjacent to it, and has additional combat strength if standing on a luxury resource. Goedendag's do not boost their own combat strength, however, so they must be adjacent to another Goedendag to receive the benefit of their own promotion. These units can be built very quickly, so an army can be raised in the event of a surprise war.</Text>

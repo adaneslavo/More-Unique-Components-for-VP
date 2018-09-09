@@ -4,6 +4,19 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 
+v37.2:
+- fixed:
+	- Goedendag ==> description.
+- fixed VPEE:
+	- Turtle Ship ==> now unlocks at Astronomy; obsoletes at Industrialization,
+	- Armada ==> now obsoletes at Rocketry,
+	- Yellow Brow ==> now obsoletes at Rifling.
+- fixed ENW:
+	- Armada ==> now obsoletes at Combustion,
+	- Yamato ==> deleted - not needed after adding reference.
+- added:
+	- reference for Enahnced Naval Warfare.
+
 v37.1:
 - added:
 	- merged standalone MUCfVP-EE compatibility patch,
