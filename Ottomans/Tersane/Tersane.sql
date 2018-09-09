@@ -106,9 +106,7 @@ VALUES		('PROMOTION_PRIZE_SHIPS',	'UNITCOMBAT_NAVALMELEE');
 ------------------------------	
 -- UnitPromotions
 ------------------------------		
-INSERT INTO UnitPromotions_UnitCombats  	
-			(PromotionType, 			CannotBeChosen)
-VALUES		('PROMOTION_PRIZE_SHIPS',	1);
+UPDATE UnitPromotions SET CannotBeChosen = '1' WHERE Type = 'PROMOTION_PRIZE_SHIPS';
 --==========================================================================================================================
 --==========================================================================================================================
 
