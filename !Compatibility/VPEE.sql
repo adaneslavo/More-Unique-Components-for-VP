@@ -227,7 +227,7 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Buildings WHERE Type='BUILDIN
 		SET Text = '+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture per city-state ally. +30% [ICON_PRODUCTION] Production and 15XP toward Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units. +2 Unit Supply Cap.'
 		WHERE Tag = 'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Language_en_US 
-		SET Text = 'The Schützenstand is an Austrian unique building, replacing the Gunsmith. It is cheaper than the Gunsmith, and allows for faster construction of land military units in the city. It also provides +1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture per city-state ally.'
+		SET Text = 'The SchÃ¼tzenstand is an Austrian unique building, replacing the Gunsmith. It is cheaper than the Gunsmith, and allows for faster construction of land military units in the city. It also provides +1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture per city-state ally.'
 		WHERE Tag = 'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- Waag
@@ -240,7 +240,7 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Buildings WHERE Type='BUILDIN
 	UPDATE Buildings SET TradeRouteSeaGoldBonus = '100' WHERE Type = 'BUILDING_NETHERLANDS_WAAG' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Buildings SET PovertyHappinessChange = '-25' WHERE Type = 'BUILDING_NETHERLANDS_WAAG' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Building_YieldChanges SET Yield = '5' WHERE BuildingType = 'BUILDING_NETHERLANDS_WAAG' AND YieldType = 'YIELD_GOLD' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1); 
-	INSERT INTO Building_YieldChangesPerPop VALUES ('BUILDING_NETHERLANDS_WAAG', 'YIELD_GOLD', 50);
+	UPDATE Building_YieldChangesPerPop SET Yield = '50' WHERE BuildingType = 'BUILDING_NETHERLANDS_WAAG' AND YieldType = 'YIELD_GOLD' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	DELETE FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_NETHERLANDS_WAAG' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	DELETE FROM Building_YieldFromPurchase WHERE BuildingType = 'BUILDING_NETHERLANDS_WAAG' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	DELETE FROM Building_BuildingClassLocalYieldChanges WHERE BuildingType = 'BUILDING_NETHERLANDS_WAAG' AND BuildingClassType = 'BUILDINGCLASS_MINT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
