@@ -79,7 +79,7 @@ VALUES		('BUILDING_D_FOR_DRUIDIC_1',	'BUILDINGCLASS_D_FOR_DRUIDIC_1',	'TXT_KEY_B
 
 INSERT INTO Buildings 	
 			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	ExtraCityHitPoints)
-VALUES		('BUILDING_D_FOR_OPPIDUM',	'BUILDINGCLASS_D_FOR_OPPIDUM',	'TXT_KEY_BUILDING_D_FOR_OPPIDUM',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				20);
+VALUES		('BUILDING_D_FOR_OPPIDUM',	'BUILDINGCLASS_D_FOR_OPPIDUM',	'TXT_KEY_BUILDING_D_FOR_OPPIDUM',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				10);
 
 INSERT INTO Buildings 	
 			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateModifier)

@@ -22,7 +22,7 @@ function OnTurnAddDefenseFromResources(iPlayer)
 		for res in GameInfo.Resources("ResourceClassType = 'RESOURCECLASS_LUXURY'") do
 			iTradedResources = iTradedResources + pPlayer:GetResourceImport(res.ID) + pPlayer:GetResourceExport(res.ID)
 
-			if iTradedResources == 10 then
+			if iTradedResources >= 10 then
 				break
 			end
 		end
