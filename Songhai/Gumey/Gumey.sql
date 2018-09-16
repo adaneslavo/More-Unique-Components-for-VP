@@ -77,6 +77,6 @@ INSERT INTO Building_YieldChanges
 			(BuildingType, 				YieldType,			Yield)
 VALUES		('BUILDING_SONGHAI_GUMEY',	'YIELD_CULTURE',		1),
 			('BUILDING_SONGHAI_GUMEY',	'YIELD_GOLD',			2),
-			('BUILDING_SONGHAI_GUMEY',	'YIELD_PRODUCTION',		1);
+			('BUILDING_SONGHAI_GUMEY',	'YIELD_PRODUCTION',		2);
 --==========================================================================================================================
 --==========================================================================================================================
