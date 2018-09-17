@@ -76,9 +76,9 @@ FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_IRONCLAD';
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-			(Type,										Description,										Help,													CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry, 	ChangeDamageValue, AdjacentCityDefenseMod)
-VALUES		('PROMOTION_UNIT_AMERICA_MONITOR',			'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR',			'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP',			1,				'AS2D_IF_LEVELUP',	23,				'ABILITY_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR', 		0, 		5),
-		('PROMOTION_UNIT_AMERICA_HARDENED',			'TXT_KEY_PROMOTION_UNIT_AMERICA_HARDENED',			'TXT_KEY_PROMOTION_UNIT_AMERICA_HARDENED_HELP',			1,				'AS2D_IF_LEVELUP',	23,				'ABILITY_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR', 		-3, 		0);
+			(Type,										Description,										Help,													CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry, 									ChangeDamageValue,	AdjacentCityDefenseMod)
+VALUES		('PROMOTION_UNIT_AMERICA_MONITOR',			'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR',			'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP',			1,				'AS2D_IF_LEVELUP',	23,				'ABILITY_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR', 		0, 					5),
+			('PROMOTION_UNIT_AMERICA_HARDENED',			'TXT_KEY_PROMOTION_UNIT_AMERICA_HARDENED',			'TXT_KEY_PROMOTION_UNIT_AMERICA_HARDENED_HELP',			1,				'AS2D_IF_LEVELUP',	23,				'ABILITY_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_AMERICA_HARDENED', 		-3, 				0);
 --==========================================================================================================================	
 
 --==========================================================================================================================
