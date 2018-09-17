@@ -45,32 +45,35 @@ GameEvents.CombatEnded.Add(OppidumGarrisonAfter)
 
 -- adds or removes HP on construction, destroying or pillaging Oppidum
 function OnImprovementChangeMoveHP(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged)
+	if not (iNewImprovement == eImprovementOppidum and iNewImprovement ~= iOldImprovement) then return end
+
+	local pPlot = Map.GetPlot(iX, iY)
+
+	if not pPlot then return end
+
 	local pPlayer = Players[iOwner]
+	local pCity = GetNearestCity(pPlayer, pPlot)
 	
-	if (iNewImprovement == eImprovementOppidum and iNewImprovement ~= iOldImprovement) or (iNewImprovement == eImprovementOppidum and iNewImprovement == iOldImprovement and not bPillaged) then
-		local pPlot = Map.GetPlot(iX, iY)
-
-		if pPlot ~= nil then
-			pCity = GetNearestCity(pPlayer, pPlot)
-			pCity:SetNumRealBuilding(eBuildingDummyForOppidum, pCity:GetNumBuilding(eBuildingDummyForOppidum) + 1)
-		end
+	if pCity then
+		pCity:SetNumRealBuilding(eBuildingDummyForOppidum, pCity:GetNumBuilding(eBuildingDummyForOppidum) + 1)
 	end
 end
 
-function GetNearestCity(pPlayer, pPlot)
-	local iDistance = 10000
-	local pNearestCity = nil
+	-- side function looking for nearest city
+	function GetNearestCity(pPlayer, pPlot)
+		local iDistance = 10000
+		local pNearestCity = nil
 
-	for pCity in pPlayer:Cities() do
-		local iDistanceToCity = Map.PlotDistance(pCity:GetX(), pCity:GetY(), pPlot:GetX(), pPlot:GetY())
+		for pCity in pPlayer:Cities() do
+			local iDistanceToCity = Map.PlotDistance(pCity:GetX(), pCity:GetY(), pPlot:GetX(), pPlot:GetY())
 
-		if(iDistanceToCity < iDistance and iDistanceToCity <= 3) then
-			iDistance = iDistanceToCity
-			pNearestCity = pCity
+			if(iDistanceToCity < iDistance and iDistanceToCity <= 3) then
+				iDistance = iDistanceToCity
+				pNearestCity = pCity
+			end
 		end
-	end
 
-	return pNearestCity
-end
+		return pNearestCity
+	end
 
 GameEvents.TileImprovementChanged.Add(OnImprovementChangeMoveHP)

@@ -45,7 +45,7 @@
 			</Text>
 		</Row>
 		<!-- Alti Cur -->
-		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CURidum">
+		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR">
 			<Text>Six-Horns Council</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUNS_ALTI_CUR_HELP">
@@ -278,7 +278,7 @@
 			<Text>Flexible Scout of the Classical Era. Only the Inca may build it. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15 HP every turn in Friendly Territory. Starts with the [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_STRATEGY">
-			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
+			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15 HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_TEXT">
 			<Text>
@@ -1121,18 +1121,6 @@
 		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_HELP">
 			<Text>Strong, front-line Unit of the Ancient Era. Only Egypt may build it. Deals increased damage against heavily damaged Units. Does not have a bonus against Mounted Units.</Text>
 		</Row>
-<!--		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE">
-			<Text>Skillful</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Melee Unit gets -30% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]until it Fortifies[ENDCOLOR].</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1">
-			<Text>Fatigue</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1_HELP">
-			<Text>-30% [ICON_STRENGTH] Combat Strength. Penalty is removed [COLOR_POSITIVE_TEXT]after Fortifying[ENDCOLOR].</Text>
-		</Row>		-->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY">
 			<Text>Mercy</Text>
 		</Row>
@@ -1568,10 +1556,10 @@
 			<Text>Construct an [LINK=IMPROVEMENT_CELTS_OPPIDUM]Oppidum[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_HELP">
-			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and +10HP to nearby city. Provides bonus yields to pre-Industrial non-road and non-great person Improvements.</Text>
+			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and permanent +10 HP to nearby city. Provides bonus yields to pre-Industrial non-road and non-great person Improvements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_REC">
-			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20HP to all Cities in workable range. Adjacent Improvements gain additional bonus yields.</Text>
+			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20 HP to all Cities in workable range. Adjacent Improvements gain additional bonus yields.</Text>
 		</Row>
 
 		<!-- Pairidaeza -->
@@ -2247,7 +2235,7 @@
 			<Text>Tarkhan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_HELP">
-			<Text>Mounted warrior who supports Civilian and other Land Military Units with its unique abilities. Only the Huns may build it. Slightly cheaper than the Horseman it replaces. +1 Movement to [ICON_TEAM_1] Settlers and [ICON_WORKER] Workers that begin the turn stacked with this Unit, and +10HP to all adjacent friendly units whenever this unit pillages a tile.</Text>
+			<Text>Mounted warrior who supports Civilian and other Land Military Units with its unique abilities. Only the Huns may build it. Slightly cheaper than the Horseman it replaces. +1 Movement to [ICON_TEAM_1] Settlers and [ICON_WORKER] Workers that begin the turn stacked with this Unit, and +10 HP to all adjacent friendly units whenever this unit pillages a tile.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_STRATEGY">
 			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Pillaging tiles with a Tarkhan heals all your adjacent units, which can be handy for healing a recently captured unit.</Text>

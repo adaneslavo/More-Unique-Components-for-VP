@@ -4,7 +4,10 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 
-v38: 
+v38:
+- ???
+
+v37.3: 
 - fixed:
 	- Iziko ==> added faith cost (update to 'Faith of the Masses' reformation belief),
 	- (Burial tomb, Caravansary, Grocer, Coffee House) ==> added Flax or Figs to help texts.
