@@ -12,7 +12,7 @@ function OnUnitPrekillProxenosGold(unitOwnerId, unitId, iUnitType, unitX, unitY,
 
 	local pPlayer = Players[unitOwnerId]
 	
-	if not (pPlayer and pPlayer == eCivilizationGreece) then return end
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationGreece) then return end
 
 	local pUnit = pPlayer:GetUnitByID(unitId)
 	
