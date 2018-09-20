@@ -7,6 +7,7 @@ v38:
 - fixed:
 	- Hardened ==> now correct naming in Civilopedia.
 	- Proxenos ==> fixed lua (was aborting prematurely)
+	- Oppidum ==> added +2food/tourism bonus from Murano Glassworks
 v37.3: 
 - fixed:
 	- Iziko ==> added faith cost (update to 'Faith of the Masses' reformation belief),
