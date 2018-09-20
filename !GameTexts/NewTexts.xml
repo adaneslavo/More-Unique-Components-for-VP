@@ -1556,7 +1556,7 @@
 			<Text>Construct an [LINK=IMPROVEMENT_CELTS_OPPIDUM]Oppidum[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_HELP">
-			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and permanent +10 HP to nearby city. Provides bonus yields to pre-Industrial non-road and non-great person Improvements.</Text>
+			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and permanent +10 HP to a nearby city. Provides bonus yields to pre-Industrial non-road and non-great person Improvements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_REC">
 			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +20 HP to all Cities in workable range. Adjacent Improvements gain additional bonus yields.</Text>
