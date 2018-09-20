@@ -162,6 +162,17 @@ VALUES		('POLICY_NEW_DEAL',				'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_GOLD',		5),
 			('POLICY_MOBILIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_SCIENCE',	3),
 			('POLICY_URBANIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		2);
 --==========================================================================================================================
+-- BUILDING
+--==========================================================================================================================				
+------------------------------
+-- Building_ImprovementYieldChangesGlobal
+------------------------------	
+INSERT INTO Building_ImprovementYieldChangesGlobal
+	(BuildingType, ImprovementType, YieldType, Yield)
+VALUES
+	('BUILDING_MURANO_GLASSWORKS', 'IMPROVEMENT_CELTS_OPPIDUM', 'YIELD_FOOD', 2),
+	('BUILDING_MURANO_GLASSWORKS', 'IMPROVEMENT_CELTS_OPPIDUM', 'YIELD_TOURISM', 2);
+--==========================================================================================================================
 -- BELIEF
 --==========================================================================================================================				
 ------------------------------
