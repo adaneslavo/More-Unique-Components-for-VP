@@ -874,43 +874,7 @@
 			<Text>Fury of Nergal</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_HELP">
-			<Text>+7% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for each adjacent Enemy Unit for one turn[ENDCOLOR].</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1">
-			<Text>Fury of Nergal I</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_1_HELP">
-			<Text>+7% [ICON_STRENGTH] Combat Strength.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_2">
-			<Text>Fury of Nergal II</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_2_HELP">
-			<Text>+14% [ICON_STRENGTH] Combat Strength.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_3">
-			<Text>Fury of Nergal III</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_3_HELP">
-			<Text>+21% [ICON_STRENGTH] Combat Strength.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_4">
-			<Text>Fury of Nergal IV</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_4_HELP">
-			<Text>+28% [ICON_STRENGTH] Combat Strength.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_5">
-			<Text>Fury of Nergal V</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_5_HELP">
-			<Text>+35% [ICON_STRENGTH] Combat Strength.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_6">
-			<Text>In a Pickle</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_6_HELP">
-			<Text>+42% [ICON_STRENGTH] Combat Strength.</Text>
+			<Text>+7% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]for each adjacent Enemy Land[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE">
 			<Text>Hard and Fast</Text>
