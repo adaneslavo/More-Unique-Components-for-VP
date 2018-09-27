@@ -4,10 +4,13 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v38:
+- simplified:
+	- Iron Chariot ==> deleted "Fury of Nergal" lua. new SQL table does the same thing
 - fixed:
 	- Hardened ==> now correct naming in Civilopedia.
 	- Proxenos ==> fixed lua (was aborting prematurely)
 	- Oppidum ==> added +2food/tourism bonus from Murano Glassworks
+
 v37.3: 
 - fixed:
 	- Iziko ==> added faith cost (update to 'Faith of the Masses' reformation belief),
