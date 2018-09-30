@@ -1291,7 +1291,7 @@
 			<Text>Imperial Vigilance</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE_HELP">
-			<Text>+25% [COMBAT_STRENGTH] Combat Strength if unit [COLOR_POSITIVE_TEXT]starts turn inside your, Friendly or Allied City-State Territory[ENDCOLOR].</Text>
+			<Text>+25% [COMBAT_STRENGTH] Combat Strength if unit [COLOR_POSITIVE_TEXT]starts turn inside your, or Friendly or Allied City-State Territory[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS">
 			<Text>Guard</Text>

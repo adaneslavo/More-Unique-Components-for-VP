@@ -4,12 +4,14 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v38:
+- added:
+	- dependencies from 3rd and 4th VP components to prevent some compatibility errors.
 - simplified:
-	- Iron Chariot ==> deleted "Fury of Nergal" lua. new SQL table does the same thing
+	- Iron Chariot ==> deleted "Fury of Nergal" lua. new SQL table does the same thing.
 - fixed:
-	- Hardened ==> now correct naming in Civilopedia.
-	- Proxenos ==> fixed lua (was aborting prematurely)
-	- Oppidum ==> added +2food/tourism bonus from Murano Glassworks
+	- Hardened ==> now correct naming in Civilopedia,
+	- Proxenos ==> fixed lua (was aborting prematurely),
+	- Oppidum ==> added +2food/tourism bonus from Murano Glassworks.
 
 v37.3: 
 - fixed:
