@@ -4,23 +4,6 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
-function ImperialVigilance(iPlayer)
-	local pPlayer = Players[iPlayer]
-	
-	for pUnit in pPlayer:Units() do
-		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE) then
-			local pPlot = pUnit:GetPlot()
-	
-			if pPlot ~= nil then
-				local iOwner = pPlot:GetOwner()
-				local pOwner = Players[iOwner]
-			
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS, (iOwner >= GameDefines.MAX_MAJOR_CIVS and iOwner <= GameDefines.MAX_CIV_PLAYERS and pOwner:GetMinorCivFriendshipLevelWithMajor(iPlayer) >= 1))
-			end
-		end
-	end
-end
-
 function YorkscherMarsch(iPlayer)
 	local pPlayer = Players[iPlayer]
 
@@ -54,5 +37,4 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.PlayerEndTurnCompleted.Add(ImperialVigilance)
 GameEvents.PlayerDoTurn.Add(YorkscherMarsch)

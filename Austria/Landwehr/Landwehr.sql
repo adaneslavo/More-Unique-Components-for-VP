@@ -68,7 +68,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_RIFLEMAN';
 INSERT INTO	Unit_FreePromotions
 			(UnitType,					PromotionType)
 VALUES		('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE'),
-			('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE');
+			('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_HOMELAND_GUARDIAN');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -79,9 +79,7 @@ VALUES		('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE'),
 --------------------------------	
 INSERT INTO UnitPromotions
 			(Type,											Description,											Help,														CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,						PediaType,		PediaEntry,												FriendlyLandsModifier)
-VALUES		('PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE_HELP',	1,				'AS2D_IF_LEVELUP',	23,				'ABILITY_ATLAS',				'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_IMPERIAL_VIGILANCE',	25),
-			('PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS_HELP',	1,				'AS2D_IF_LEVELUP',	59,				'ABILITY_ATLAS',				'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_LANDWEHR_CS_BONUS',		25),
-			('PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP',		1,				'AS2D_IF_LEVELUP',	3,				'EXPANSION2_PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		0);
+VALUES		('PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP',		1,				'AS2D_IF_LEVELUP',	3,				'EXPANSION2_PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		0);
 --==========================================================================================================================	
 
 --==========================================================================================================================

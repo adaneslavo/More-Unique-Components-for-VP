@@ -3,15 +3,19 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
-v38:
+v37.4:
 - added:
 	- dependencies from 3rd and 4th VP components to prevent some compatibility errors.
 - simplified:
-	- Iron Chariot ==> deleted "Fury of Nergal" lua. new SQL table does the same thing.
+	- Iron Chariot ==> deleted "Fury of Nergal" lua; new SQL table does the same thing,
+	- Landwehr ==> deleted Imperial Vigilance; put Homeland Guardian instead.
 - fixed:
 	- Hardened ==> now correct naming in Civilopedia,
 	- Proxenos ==> fixed lua (was aborting prematurely),
-	- Oppidum ==> added +2food/tourism bonus from Murano Glassworks.
+	- Oppidum ==> added +2 food/tourism bonus from Murano Glassworks,
+	- SPAD ==> now has 0 CS instead of -5 CS.
+- updated:
+	- authors, description, teaser and homepage in main file.
 
 v37.3: 
 - fixed:

@@ -7,12 +7,13 @@
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
     <ModVersion>37</ModVersion>
     <Stability>Stable</Stability>
-    <Teaser>More Unique Components mod. Compatible with latest VP.</Teaser>
-    <Description>More Unique Components mod. Compatible with latest VP (9-25-3).
+    <Teaser>3rd and 4th unique component for each civilization</Teaser>
+    <Description>More Unique Components mod. Compatible with latest VP (9-6 up to 9-25-3).
+Compatible with VPEE and ENW from @Infixo.
 
 Latest changes: see changelog file.</Description>
-    <Authors>adan_eslavo</Authors>
-    <SpecialThanks>Hinin and others mentioned in credits.</SpecialThanks>
+    <Authors>adan_eslavo, pineappledan, Blue Ghost, Hinin and many others</Authors>
+    <SpecialThanks>Hinin and others mentioned in credits</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
@@ -1088,7 +1089,7 @@ Latest changes: see changelog file.</Description>
         <FileName>Greece/Agora/Agora.lua</FileName>
       </Content>
     </ModContent>
-    <Homepage>http://https://forums.civfanatics.com/threads/3uc-4uc-for-vp-project-coordination-thread.623355/</Homepage>
+    <Homepage>http://https://forums.civfanatics.com/threads/3rd-and-4th-unique-components-for-vp-official-thread.631657/</Homepage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
