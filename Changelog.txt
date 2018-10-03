@@ -3,6 +3,10 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v37.4.1:
+- fixed:
+	- SPAD ==> now 0 value set properly, allowing air striking.
+
 v37.4:
 - added:
 	- dependencies from 3rd and 4th VP components to prevent some compatibility errors.
