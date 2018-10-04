@@ -581,10 +581,10 @@
 			<Text>Fale Tele</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_HELP">
-			<Text>+5 [ICON_RESEARCH] Science whenever a [ICON_CITIZEN] Citizen is born in this City, scaling with Era. +3 [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture and [ICON_PEACE] Faith whenever a Building is Constructed in this City, scaling with Era.</Text>
+			<Text>+5 [ICON_RESEARCH] Science whenever a [ICON_CITIZEN] Citizen is born in this City, scaling with Era. +3 [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_CULTURE] Culture whenever a Building is Constructed in this City, scaling with Era.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_STRATEGY">
-			<Text>Unique Council replacement for the Polynesians. In addition to the normal bonuses of a Council, the Fale Tele provides Faith, Gold and Food whenever a building is constructed in the city. Build the Fale tele as a first priority to maximize the bonuses for all later buildings.</Text>
+			<Text>Unique Council replacement for the Polynesians. In addition to the normal bonuses of a Council, the Fale Tele provides Gold, Food and Culture whenever a building is constructed in the city. Build the Fale tele as a first priority to maximize the bonuses for all later buildings.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLYNESIA_FALE_TELE_TEXT">
 			<Text>
@@ -1653,7 +1653,7 @@
 			<Text>The Prau is faster and cheaper than the Trireme it replaces and ignores zone of control. It is great for early game scouting and raiding.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_HELP">
-			<Text>Effective early Naval Scout. Only Indonesia may build it. This unit is faster and available earlier than the Trireme it replaces. Starts with the Sentry and Pincer Promotions.</Text>
+			<Text>Effective early Naval Scout. Only Indonesia may build it. This unit is faster and available earlier than the Trireme it replaces. Starts with the [COLOR_POSITIVE_TEXT]Pincer[ENDCOLOR] Promotion.</Text>
 		</Row>
 		
 		<!-- Penteconter -->
