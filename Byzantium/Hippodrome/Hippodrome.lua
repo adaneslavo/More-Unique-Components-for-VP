@@ -39,20 +39,8 @@ function OnCaptureRemoveHorseYields(iOldOwner, bIsCapital, iX, iY, iNewOwner, iP
 	local pOldPlayer = Players[iOldOwner]
 	
 	if pOldPlayer:GetCivilizationType() ~= eCivilizationByzantium or not bIsCapital then return end
-	
-	local iNumberOfDummiesForExam = pOldPlayer:CountNumBuildings(eBuildingDummyHorseYields)
-
-	if iNumberOfDummiesForExam > 0 then
-		local iCurrentDummyForExam = 0
-
-		for city in pOldPlayer:Cities() do
-			city:SetNumRealBuilding(eBuildingDummyHorseYields, 0)
-			iCurrentDummyForExam = iCurrentDummyForExam + 1
-
-			if iCurrentDummyForExam == iNumberOfDummiesForExam then
-				break
-			end
-		end
+ 	for city in pOldPlayer:Cities() do
+		city:SetNumRealBuilding(eBuildingDummyHorseYields, 0)
 	end
 end
 
