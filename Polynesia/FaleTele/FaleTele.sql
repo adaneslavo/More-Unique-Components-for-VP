@@ -41,7 +41,6 @@ INSERT INTO Building_Flavors
 VALUES		('BUILDING_POLYNESIA_FALE_TELE',	'FLAVOR_GOLD',		20),
 			('BUILDING_POLYNESIA_FALE_TELE',	'FLAVOR_SCIENCE',	35),
 			('BUILDING_POLYNESIA_FALE_TELE',	'FLAVOR_CULTURE',	15),
-			('BUILDING_POLYNESIA_FALE_TELE',	'FLAVOR_RELIGION',	5),
 			('BUILDING_POLYNESIA_FALE_TELE',	'FLAVOR_GROWTH',	5);
 ------------------------------	
 -- Building_ClassesNeededInCity
@@ -70,7 +69,6 @@ INSERT INTO Building_YieldFromConstruction
 			(BuildingType, 						YieldType,			Yield)
 VALUES		('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_GOLD',		3),
 			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_FOOD',		3),
-			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_FAITH',		3),
 			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_CULTURE',	3);
 ------------------------------	
 -- Building_ImprovementYieldChanges
