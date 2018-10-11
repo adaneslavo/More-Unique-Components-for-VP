@@ -2041,16 +2041,10 @@
 			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked. Marked unit has reduced [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT">
-			<Text>Hobbled</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT_HELP">
-			<Text>Unit has reduced movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_2_ON_UNIT">
 			<Text>Maimed</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_2_ON_UNIT_HELP">
-			<Text>Unit has reduced movement [COLOR_POSITIVE_TEXT]this turn[ENDCOLOR].</Text>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT_HELP">
+			<Text>-1 [ICON_ARROW_RIGHT] movement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON">
 			<Text>Hooked Weapon</Text>
