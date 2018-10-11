@@ -760,12 +760,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Shotelai</Name>
-        <Description>Adds Maim promotion.</Description>
-        <FileName>Ethiopia/Shotelai/Shotelai.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Monolithic Church</Name>
         <Description>Adds yields from ideologies.</Description>
         <FileName>Ethiopia/MonolithicChurch/MonolithicChurch.lua</FileName>
@@ -3242,10 +3236,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Ethiopia\Shotelai\ShotelaiFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Ethiopia\Shotelai\Shotelai.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Ethiopia\Shotelai\Shotelai.sql">
       <SubType>Lua</SubType>
