@@ -11,6 +11,7 @@ v38:
 	- Carolean: increased CS to 39 (up 1 from 38)
 - simplified:
 	- Shotelai: removed Lua (can use SQL now)
+	- Koa: removed Lua. Changed effect of debuff placer: Reduces max HP by 20HP and healing by -10 for 2 turns.
 
 v37.4.1:
 - fixed:
