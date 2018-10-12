@@ -1192,31 +1192,19 @@
 			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked. [COLOR_POSITIVE_TEXT]At the beginning of its turn[ENDCOLOR] it takes an additional 10 "bleed" damage for every mark. Effect can stack up to [COLOR_POSITIVE_TEXT]3[ENDCOLOR] times after battles with 3 different units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_ON_UNIT">
-			<Text>Bleeding</Text>
+			<Text>Leiomano</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_ON_UNIT_HELP">
-			<Text>Unit takes an additional 10 "bleed" damage [COLOR_POSITIVE_TEXT]at the start of its turn[ENDCOLOR].</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_2_ON_UNIT">
-			<Text>Heavy Bleeding</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_2_ON_UNIT_HELP">
-			<Text>Unit takes an additional 20 "bleed" damage [COLOR_POSITIVE_TEXT]at the start of its turn[ENDCOLOR].</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_3_ON_UNIT">
-			<Text>Hemorrhaging</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_3_ON_UNIT_HELP">
-			<Text>Unit takes an additional 30 "bleed" damage [COLOR_POSITIVE_TEXT]at the start of its turn[ENDCOLOR].</Text>
+			<Text>Max HP reduced by 20 and Healing reduced by 10 for 2 turns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA">
 			<Text>Koa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_HELP">
-			<Text>Both a strong scout and front-line Unit. Only Polynesia may build it. Slightly stronger than the Scout it replaces, and starts with the [COLOR_GREEN]Amphibious[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]After attack, defending Unit receives additional damage at the beginning of its turn, stacking up to 3 times.</Text>
+			<Text>Both a strong scout and front-line Unit. Only Polynesia may build it. Slightly stronger than the Scout it replaces, and starts with the [COLOR_GREEN]Amphibious[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]Inflicts Leiomano status on enemies during melee combat, reducing Max HP by 20 and reducing Healing by 10 for 2 turns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_STRATEGY">
-			<Text>The Koa is an effective early scout, able to hold its own against barbarians. It is stronger than the Scout, and can fight equally well across rivers and while embarked. This unit also deals an additional 10 'bleed' damage to enemies it attacks at the beginning of the enemy's turn, making them effective at clearing barbarians and preventing healing.</Text>
+			<Text>The Koa is an effective early scout, able to hold its own against barbarians. It is stronger than the Scout, and can fight equally well across rivers and while embarked. This unit also inflicts Max HP and healing reduction to enemies it attacks for 2 turns, making them effective at clearing barbarians and preventing healing.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA_TEXT">
 			<Text>Deadly warriors from the islands of Hawai'i, Koa are named after the koa tree from which most of their weapons were fashioned. These warriors were trained extensively in Kapu Ku'ialua, a traditional Hawai'ian martial art specializing in weaponry and the focusing of mana into bone-shattering attacks.[NEWLINE][NEWLINE]In battle, Koa warriors were well-versed in many weapons, including the less conventional knuckle-dusters, slings, and garrotes, but were also capable hand-to-hand fighters. More conventional daggers and clubs would occasionally be fitted with shark teeth along their edges, creating devastating serrated weapons called 'Leiomano'. These weapons were used similarly to the obsidian-tipped Macuahuitl of Central America.</Text>
