@@ -730,12 +730,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Koa</Name>
-        <Description>Adds Kapu Ku'ialua promotion.</Description>
-        <FileName>Polynesia/Koa/Koa.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Yellow Brow</Name>
         <Description>Adds Big Horse Dance promotion.</Description>
         <FileName>Shoshone/YellowBrow/YellowBrow.lua</FileName>
@@ -3768,10 +3762,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Polynesia\Koa\KoaPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Polynesia\Koa\Koa.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Polynesia\Koa\KapuKuialua\KapuKuialuaIcon_032.dds">
       <SubType>Lua</SubType>
