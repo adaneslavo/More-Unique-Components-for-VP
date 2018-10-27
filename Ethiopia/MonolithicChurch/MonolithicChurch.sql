@@ -104,6 +104,43 @@ INSERT INTO Policy_ImprovementYieldChanges
 			(PolicyType,					ImprovementType,							YieldType,			Yield)
 VALUES		('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_PRODUCTION',	1),
 			('POLICY_MOBILIZATION',			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_SCIENCE',	3),
-			('POLICY_URBANIZATION',			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_FOOD',		2);
+			('POLICY_URBANIZATION',			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_FOOD',		2),
+			('POLICY_TRADITION_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_CULTURE',	1),
+			('POLICY_LIBERTY_FINISHER',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_CULTURE',	1),
+			('POLICY_HONOR_FINISHER',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_CULTURE',	1),
+			('POLICY_PIETY_FINISHER',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_FAITH',		1),
+			('POLICY_PATRONAGE_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_FAITH',		1),
+			('POLICY_AESTHETICS_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_FAITH',		1),
+			('POLICY_RATIONALISM_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_SCIENCE',	1),
+			('POLICY_EXPLORATION_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_SCIENCE',	1),
+			('POLICY_COMMERCE_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_SCIENCE',	1);
+------------------------------
+-- Belief_ImprovementYieldChanges
+------------------------------	
+INSERT INTO Belief_ImprovementYieldChanges
+		(BeliefClass, 	ImprovementType, 							YieldType, 		Yield)
+SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH', 	'YIELD_FAITH', 	1
+FROM Beliefs WHERE Pantheon = 1;
+
+INSERT INTO Belief_ImprovementYieldChanges
+		(BeliefClass, 	ImprovementType, 							YieldType, 		Yield)
+SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH', 	'YIELD_CULTURE', 	1
+FROM Beliefs WHERE Founder = 1;
+
+INSERT INTO Belief_ImprovementYieldChanges
+		(BeliefType, 	ImprovementType, 							YieldType, 				Yield)
+SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH', 	'YIELD_PRODUCTION', 	1
+FROM Beliefs WHERE Follower = 1;
+
+INSERT INTO Belief_ImprovementYieldChanges
+		(BeliefType, 	ImprovementType, 							YieldType, 			Yield)
+SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH', 	'YIELD_CULTURE', 	1
+FROM Beliefs WHERE Enhancer = 1;
+
+INSERT INTO Belief_ImprovementYieldChanges
+		(BeliefType, 	ImprovementType, 							YieldType, 		Yield)
+SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH', 	'YIELD_GOLD', 	1
+FROM Beliefs WHERE Reformation = 1;
+
 --==========================================================================================================================
 --==========================================================================================================================
