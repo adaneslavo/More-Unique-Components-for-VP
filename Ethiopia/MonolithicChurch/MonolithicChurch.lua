@@ -2,7 +2,33 @@
 -- Author: adan_eslavo
 -- DateCreated: 22/11/2017
 --------------------------------------------------------------
-local eImprovementMonolithicChurch = GameInfoTypes.IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH
+local bIdeologyState = false
+local eBuildingMCIdeology = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY
+
+-- adds yields to all Monolitihic Churches in the world after adopting ideology or finishing policy branch
+function OnIdeologyAddYields(iPlayer, iPolicy)
+	local pPlayer = Players[iPlayer]
+
+	if not bIdeologyState and (pPlayer:IsPolicyBranchUnlocked(eBranchFreedom) == true or pPlayer:IsPolicyBranchUnlocked(eBranchOrder) == true or pPlayer:IsPolicyBranchUnlocked(eBranchAutocracy) == true) then
+		bIdeologyState = true
+		pPlayer:GetCapitalCity():SetNumRealBuilding(GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY, 1)
+	end
+end
+
+function OnCaptureResetMonoBonus(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop, bConquest)
+	local pOldPlayer = Players[iOldOwner]
+	
+	if not bIsCapital then return end
+	
+	if (bIdeologyState = true) then
+		pOldPlayer:GetCapitalCity():SetNumRealBuilding(GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY, 1)
+	end
+end	
+
+GameEvents.PlayerAdoptPolicy.Add(OnIdeologyAddYields)
+GameEvents.CityCaptureComplete.Add(OnCaptureResetMonoBonus)
+
+--[[local eImprovementMonolithicChurch = GameInfoTypes.IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH
 local eCivilizationEthiopia = GameInfoTypes.CIVILIZATION_ETHIOPIA
 
 local eBranchFreedom = GameInfoTypes.POLICY_BRANCH_FREEDOM
@@ -209,4 +235,4 @@ function CountAndSet(pCity)
 	if bCommerceFinisherState then
 		pCity:SetNumRealBuilding(eBuildingMCCommerce, 1)
 	end
-end
+end ]]--
