@@ -5,14 +5,15 @@
 More Unique Components for Vox Populi changelog:
 v38:
 - tweaked:
-	- Fale Tele: removed faith on building completion (too strong, polynesia is early runaway)
-	- Prau: removed Sentry promotion (too much synergy with new naval promotion line)
-	- Langskib: increased build cost to 150 (very cheap, new naval promotions makes them even scarier)
-	- Carolean: increased CS to 39 (up 1 from 38)
+	- Fale Tele ==> removed faith on building completion (too strong, polynesia is early runaway)
+	- Prau ==> removed Sentry promotion (too much synergy with new naval promotion line)
+	- Langskib ==> increased build cost to 150 (very cheap, new naval promotions makes them even scarier)
+	- Carolean ==> increased CS to 39 (up 1 from 38)
 - simplified:
-	- Shotelai: removed Lua (can use SQL now)
-	- Koa: removed Lua. Changed effect of debuff placer: Reduces max HP by 20HP and healing by -10 for 2 turns.
-	- Pogost: Stages 2 and 3 fully replace the previous stage now. All bonuses are cumulative on the buildings, and the old stage is removed (1 building in city screen instead of 3, but no balance changes)
+	- Monolithic Church: added bonus yields from policies/beliefs directly onto policies/beliefs, instead of lua. Yields from ideology still require lua 
+	- Shotelai ==> removed Lua (can use SQL now)
+	- Koa ==> removed Lua. Changed effect of debuff placer: Reduces max HP by 20HP and healing by -10 for 2 turns.
+	- Pogost ==> Stages 2 and 3 fully replace the previous stage now. All bonuses are cumulative on the buildings, and the old stage is removed (1 building in city screen instead of 3, but no balance changes)
 
 - Bug Fixes
 	- removed CapitalOnly from Hippodrome and Etemenanki, replaced with adding palace as a building requirement (CapitalOnly interacts with policies in a weird way)
