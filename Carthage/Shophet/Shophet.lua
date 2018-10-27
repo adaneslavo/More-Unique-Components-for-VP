@@ -28,6 +28,7 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetGeneral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionGreatGeneral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, true)
+			pNewShophet:SetMoves(0)
 		end
 	elseif (pUnit and pPlot and pUnit:IsHasPromotion(iUnitPromotionShophetAdmiral)) then
 		if not pPlot:IsWater() then
@@ -37,6 +38,7 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetGeneral, true)
+			pNewShophet:SetMoves(0)
 		end
 	end
 end
