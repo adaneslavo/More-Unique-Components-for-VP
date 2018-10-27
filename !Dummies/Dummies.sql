@@ -166,7 +166,7 @@ FROM Resources WHERE ResourceClassType = 'RESOURCECLASS_LUXURY';
 ------------------------------	
 -- Building_ImprovementYieldChanges
 ------------------------------		
-INSERT INTO Building_ImprovementYieldChanges	
+INSERT INTO Building_ImprovementYieldChangesGlobal	
 			(BuildingType, 										ImprovementType,							YieldType,			Yield)
 VALUES		('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_TRADITION',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_CULTURE',	1),
 			('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_LIBERTY',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_CULTURE',	1),
