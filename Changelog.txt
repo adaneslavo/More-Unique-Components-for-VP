@@ -5,6 +5,7 @@
 More Unique Components for Vox Populi changelog:
 v38:
 - tweaked:
+	- Move after attacking Promotion ==> lost on upgrade (effects Langskib)
 	- Fale Tele ==> removed faith on building completion (too strong, polynesia is early runaway)
 	- Prau ==> removed Sentry promotion (too much synergy with new naval promotion line)
 	- Langskib ==> increased build cost to 150 (very cheap, new naval promotions makes them even scarier)
