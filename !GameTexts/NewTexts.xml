@@ -1195,7 +1195,7 @@
 			<Text>Leiomano</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_ON_UNIT_HELP">
-			<Text>Max HP reduced by 20 and Healing reduced by 10 for 2 turns.</Text>
+			<Text>-20 Maximum HP and -10 HP [COLOR_POSITIVE_TEXT]on Heal[ENDCOLOR]. Both effects last [COLOR_POSITIVE_TEXT]2[ENDCOLOR] turns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA">
 			<Text>Koa</Text>

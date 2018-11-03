@@ -5,22 +5,22 @@
 More Unique Components for Vox Populi changelog:
 v38:
 - tweaked:
-	- Move after attacking Promotion ==> lost on upgrade (affects Langskib)
-	- Fale Tele ==> removed faith on building completion (too strong, polynesia is early runaway)
-	- Prau ==> removed Sentry promotion (too much synergy with new naval promotion line)
-	- Langskib ==> increased build cost to 150 (very cheap, new naval promotions makes them even scarier)
-	- Carolean ==> increased CS to 39 (up 1 from 38)
-	- Rome ==> reduces CS/RCS to 7/13 (Rome doesn't need any more help)
+	- Move Ater Attacking promotion ==> now lost on upgrade (affects Langskib),
+	- Fale Tele ==> removed faith on building completion (too strong, Polynesia is early runaway),
+	- Prau ==> removed Sentry promotion (too much synergy with new naval promotion line),
+	- Langskib ==> increased build cost to 150 (very cheap, new naval promotions makes them even scarier),
+	- Carolean ==> increased CS to 39 (up from 38),
+	- Rome ==> reduces CS/RCS to 7/13 (down from 8/14, Rome doesn't need any more help).
 - simplified:
-	- Monolithic Church: added bonus yields from policies/beliefs directly onto policies/beliefs, instead of lua. Yields from ideology still require lua 
-	- Shotelai ==> removed Lua (can use SQL now)
-	- Koa ==> removed Lua. Changed effect of debuff placer: Reduces max HP by 20HP and healing by -10 for 2 turns.
-	- Pogost ==> Stages 2 and 3 fully replace the previous stage now. All bonuses are cumulative on the buildings, and the old stage is removed (1 building in city screen instead of 3, but no balance changes)
+	- Monolithic Church ==> added bonus yields from policies/beliefs directly onto policies/beliefs, instead of using lua; yields from ideology still require lua,
+	- Shotelai ==> used sql instead of lua,
+	- Koa ==> used sql instead of lua; changed effect of debuff placer: "Reduces max HP by 20HP and healing by -10 for 2 turns",
+	- Pogost ==> stages 2 and 3 fully replace the previous stage now; all bonuses are cumulative on the buildings, and the old stage is removed; no balance changes.
+- fixes
+	- Hippodrome, Etemeneanki ==> removed CapitalOnly; now Palace as a building requirement (CapitalOnly interacts with policies in a weird way),
+	- all Dummies except Barbican ==> added IsDummy=true (needs to be recognized as a non-dummy building in case Rome captures it),
+	- Suffet ==> embarking and disembarking removes all movement; (prevents bug with multi-tile canals).
 
-- Bug Fixes
-	- removed CapitalOnly from Hippodrome and Etemenanki, replaced with adding palace as a building requirement (CapitalOnly interacts with policies in a weird way)
-	- added IsDummy=true to all dummy buildings except Barbican Dummy (needs to be recognized as a non-dummy building in case Rome captures it)
-	- Suffet: Embarking and Disembarking removes all movement. prevents bug with multi-tile canals
 v37.4.1:
 - fixed:
 	- SPAD ==> now 0 value set properly, allowing air striking.
