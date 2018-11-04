@@ -19,7 +19,8 @@ v38:
 - fixes
 	- Hippodrome, Etemeneanki ==> removed CapitalOnly; now Palace as a building requirement (CapitalOnly interacts with policies in a weird way),
 	- all Dummies except Barbican ==> added IsDummy=true (needs to be recognized as a non-dummy building in case Rome captures it),
-	- Suffet ==> embarking and disembarking removes all movement; (prevents bug with multi-tile canals).
+	- Suffet ==> embarking and disembarking removes all movement; (prevents bug with multi-tile canals),
+	- Gumey ==> now correct calculation method for monopolies.
 
 v37.4.1:
 - fixed:

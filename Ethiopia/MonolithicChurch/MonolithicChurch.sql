@@ -118,12 +118,12 @@ VALUES		('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YI
 -- Belief_ImprovementYieldChanges
 ------------------------------	
 INSERT INTO Belief_ImprovementYieldChanges
-		(BeliefClass, 	ImprovementType, 							YieldType, 		Yield)
+		(BeliefType, 	ImprovementType, 							YieldType, 		Yield)
 SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH', 	'YIELD_FAITH', 	1
 FROM Beliefs WHERE Pantheon = 1;
 
 INSERT INTO Belief_ImprovementYieldChanges
-		(BeliefClass, 	ImprovementType, 							YieldType, 		Yield)
+		(BeliefType, 	ImprovementType, 							YieldType, 		Yield)
 SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH', 	'YIELD_CULTURE', 	1
 FROM Beliefs WHERE Founder = 1;
 

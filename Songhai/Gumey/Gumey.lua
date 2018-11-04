@@ -61,7 +61,7 @@ function OnTurnAddMonopolyBonus (iPlayer)
 	local iMonopolyCounter = 0
 	
 	for i, resource in pairs(tMonopolyResources) do
-		if (pPlayer:GetNumResourceTotal(resource) / Map.GetNumResources(resource)) > 0.5 then
+		if ((pPlayer:GetNumResourceTotal(resource) + pPlayer:GetResourceExport(resource)) / Map.GetNumResources(resource)) > 0.5 then
 			iMonopolyCounter = iMonopolyCounter + 1
 		end
 	end
