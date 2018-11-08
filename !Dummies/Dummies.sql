@@ -70,7 +70,7 @@ VALUES		('BUILDING_D_FOR_BARBICAN',		'BUILDINGCLASS_ARMORY',				'TXT_KEY_BUILDIN
 			('BUILDING_D_FOR_GUMEY_LUX',	'BUILDINGCLASS_D_FOR_GUMEY_LUX',	'TXT_KEY_BUILDING_D_FOR_GUMEY_LUX',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1);
 
 INSERT INTO Buildings 	
-			(Type,							BuildingClass,						Description,							GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateChange,	SpecialistType)
+			(Type,							BuildingClass,						Description,							GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateChange,	SpecialistType, IsDummy)
 VALUES		('BUILDING_D_FOR_DRUIDIC_1',	'BUILDINGCLASS_D_FOR_DRUIDIC_1',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2,						'SPECIALIST_MERCHANT', 1),
 			('BUILDING_D_FOR_DRUIDIC_2',	'BUILDINGCLASS_D_FOR_DRUIDIC_2',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				4,						'SPECIALIST_MERCHANT', 1),
 			('BUILDING_D_FOR_DRUIDIC_3',	'BUILDINGCLASS_D_FOR_DRUIDIC_3',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				6,						'SPECIALIST_MERCHANT', 1),
