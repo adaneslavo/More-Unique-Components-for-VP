@@ -663,21 +663,21 @@ Latest changes: see changelog file.</Description>
         <Type>Mod</Type>
         <Name>(3) City-State Diplomacy Mod for CBP</Name>
         <Id>eead0050-1e3f-4178-a91f-26cf1881ac39</Id>
-        <MinVersion>0</MinVersion>
+        <MinVersion>27</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
       <Association>
         <Type>Mod</Type>
         <Name>(4) C4DF - CBP</Name>
         <Id>c7bf7064-d1b1-4708-9e93-7a1560868582</Id>
-        <MinVersion>0</MinVersion>
+        <MinVersion>11</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
       <Association>
         <Type>Mod</Type>
         <Name>(5) More Luxuries - CBO Edition</Name>
         <Id>be2d13ee-d18d-410e-8f04-7cd19cd99a98</Id>
-        <MinVersion>0</MinVersion>
+        <MinVersion>155</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
     </ModDependencies>
