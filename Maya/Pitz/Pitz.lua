@@ -9,6 +9,7 @@ local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].Resea
 local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 local fGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent/ 100
 local eCivilizationMaya = GameInfoTypes.CIVILIZATION_MAYA
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 local ePromotionKhatun = GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW
 local ePromotionKhatun1 = GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1
 local ePromotionKhatun2 = GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_2
@@ -30,7 +31,7 @@ local tEligibleCombats = {
 function OnTrainGiveKhatun(iPlayer, iCity, iUnit)
 	local pPlayer = Players[iPlayer]
 	
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationMaya) then return end
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationMaya or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	
@@ -47,7 +48,7 @@ end
 function OnTurnCheckForUpgrade(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationMaya) then return end
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationMaya or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
 	local iCounter = math.floor(20 * fGameSpeedModifier3)
 	
@@ -81,7 +82,7 @@ end
 function OnBaktunGetBonus(iPlayer, iBaktun, iBaktunPreviousTurn)
 	local pPlayer = Players[iPlayer]
 	
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationMaya) then return end
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationMaya or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
 	if pPlayer:IsUsingMayaCalendar() then
 		local iNumberOfPitz = pPlayer:CountNumBuildings(eBuildingPitz)
@@ -128,6 +129,8 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.CityTrained.Add(OnTrainGiveKhatun)
-GameEvents.PlayerDoTurn.Add(OnTurnCheckForUpgrade)
-GameEvents.PlayerEndOfMayaLongCount.Add(OnBaktunGetBonus)
+if Game.IsCivEverActive(eCivilizationMaya) then
+	GameEvents.CityTrained.Add(OnTrainGiveKhatun)
+	GameEvents.PlayerDoTurn.Add(OnTurnCheckForUpgrade)
+	GameEvents.PlayerEndOfMayaLongCount.Add(OnBaktunGetBonus)
+end

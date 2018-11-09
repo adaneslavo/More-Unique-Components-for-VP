@@ -117,4 +117,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 	end
 end
 
-GameEvents.CityConstructed.Add(NilometerPlaceFlax)
+if Game.IsCivEverActive(eCivilizationEgypt) then
+	GameEvents.CityConstructed.Add(NilometerPlaceFlax)
+end
+

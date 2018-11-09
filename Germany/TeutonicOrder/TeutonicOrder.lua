@@ -68,5 +68,7 @@ function OnCaptureConvertCitizens(eOldOwner, bIsCapital, iX, iY, eNewOwner, iOld
 	end
 end
 
-GameEvents.CityConstructed.Add(OnCityConstructionAddDummyForTO)
-GameEvents.CityCaptureComplete.Add(OnCaptureConvertCitizens)
+if Game.IsCivEverActive(eCivilizationGermany) then
+	GameEvents.CityConstructed.Add(OnCityConstructionAddDummyForTO)
+	GameEvents.CityCaptureComplete.Add(OnCaptureConvertCitizens)
+end

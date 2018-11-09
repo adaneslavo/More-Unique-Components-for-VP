@@ -41,4 +41,6 @@ function OnGoldenAgeStartAddYieldsAndXP(iPlayer, bStart, iTurns)
 	end
 end
 
-GameEvents.PlayerGoldenAge.Add(OnGoldenAgeStartAddYieldsAndXP)
+if Game.IsCivEverActive(eCivilizationAztec) then
+	GameEvents.PlayerGoldenAge.Add(OnGoldenAgeStartAddYieldsAndXP)
+end

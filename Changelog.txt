@@ -4,6 +4,9 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v38:
+- reworked:
+	- Inca Intihuatana reverted to Tambo (caravansary replacement)
+
 - tweaked:
 	- Move Ater Attacking promotion ==> now lost on upgrade (affects Langskib),
 	- Fale Tele ==> removed faith on building completion (too strong, Polynesia is early runaway),
@@ -12,6 +15,8 @@ v38:
 	- Carolean ==> increased CS to 39 (up from 38),
 	- Rome ==> reduces CS/RCS to 7/13 (down from 8/14, Rome doesn't need any more help).
 - simplified:
+	- Added new Rome compatibility to: Maya, Poland, India, & Mongolia
+	- all building/improvement lua: added filter on game start to shut down lua hooks for civs that are not in the game.
 	- Monolithic Church ==> added bonus yields from policies/beliefs directly onto policies/beliefs, instead of using lua; yields from ideology still require lua,
 	- Shotelai ==> used sql instead of lua,
 	- Koa ==> used sql instead of lua; changed effect of debuff placer: "Reduces max HP by 20HP and healing by -10 for 2 turns",

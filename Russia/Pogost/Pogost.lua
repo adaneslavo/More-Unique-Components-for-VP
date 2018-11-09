@@ -127,6 +127,9 @@ function NotificationLoad(iSet, pPlayer, pCity)
 	end
 end
 
-GameEvents.CityConstructed.Add(OnConstructionAddStages)
-GameEvents.TeamTechResearched.Add(OnTechResearchedAddStages)
-GameEvents.CityCaptureComplete.Add(OnCaptureAddStages)
+if Game.IsCivEverActive(eCivilizationRussia) then
+	GameEvents.CityConstructed.Add(OnConstructionAddStages)
+	GameEvents.TeamTechResearched.Add(OnTechResearchedAddStages)
+	GameEvents.CityCaptureComplete.Add(OnCaptureAddStages)
+end
+

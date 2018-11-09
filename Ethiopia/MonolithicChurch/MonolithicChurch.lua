@@ -25,8 +25,11 @@ function OnCaptureResetMonoBonus(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop,
 	end
 end	
 
-GameEvents.PlayerAdoptPolicy.Add(OnIdeologyAddYields)
-GameEvents.CityCaptureComplete.Add(OnCaptureResetMonoBonus)
+if Game.IsCivEverActive(GameInfoTypes.CIVILIZATION_ETHIOPIA) then
+	GameEvents.PlayerAdoptPolicy.Add(OnIdeologyAddYields)
+	GameEvents.CityCaptureComplete.Add(OnCaptureResetMonoBonus)
+end
+
 
 --[[local eImprovementMonolithicChurch = GameInfoTypes.IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH
 local eCivilizationEthiopia = GameInfoTypes.CIVILIZATION_ETHIOPIA

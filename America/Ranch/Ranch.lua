@@ -64,4 +64,8 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.CityConstructed.Add(OnConstructionClaimResources)
+if Game.IsCivEverActive(eCivilizationAmerica) then
+	GameEvents.CityConstructed.Add(OnConstructionClaimResources)
+end
+
+

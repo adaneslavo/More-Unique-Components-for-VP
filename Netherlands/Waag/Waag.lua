@@ -46,4 +46,6 @@ function OnTurnAddDefenseFromResources(iPlayer)
 	end		
 end
 
-GameEvents.PlayerDoTurn.Add(OnTurnAddDefenseFromResources)
+if Game.IsCivEverActive(eCivilizationNetherlands) then
+	GameEvents.PlayerDoTurn.Add(OnTurnAddDefenseFromResources)
+end
