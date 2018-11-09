@@ -10,7 +10,7 @@ VALUES	('CIVILIZATION_INCA', 	'BUILDINGCLASS_CARAVANSARY', 	'BUILDING_INCA_TAMBO
 --==========================================================================================================================	
 INSERT INTO BuildingClasses 	
 			(Type,							DefaultBuilding)
-VALUES		('BUILDINGCLASS_INCA_QULLQA',	'BUILDINGCLASS_INCA_QULLQA');
+VALUES		('BUILDINGCLASS_INCA_QULLQA',	'BUILDING_INCA_QULLQA');
 
 --==========================================================================================================================
 -- BUILDINGS
@@ -48,8 +48,7 @@ VALUES	('PROMOTION_COCA',	15,				1,					'TXT_KEY_PROMOTION_COCA',	'TXT_KEY_PROMO
 ------------------------------
 INSERT INTO Building_YieldChanges
 		(BuildingType, 			YieldType, 			Yield)
-VALUES	('BUILDING_INCA_TAMBO', 'YIELD_PRODUCTION', 2),
-		('BUILDING_INCA_TAMBO', 'YIELD_GOLD', 		2);
+VALUES	('BUILDING_INCA_TAMBO', 'YIELD_GOLD', 		1);
 	
 INSERT INTO Building_YieldChanges 	
 		(BuildingType, 				YieldType,			Yield)
@@ -81,6 +80,7 @@ INSERT INTO Building_Flavors
 		(BuildingType,			FlavorType,				Flavor)
 VALUES	('BUILDING_INCA_TAMBO',		'FLAVOR_HAPPINESS',		40),
 		('BUILDING_INCA_TAMBO',		'FLAVOR_PRODUCTION',	20),
+		('BUILDING_INCA_QULLQA',	'FLAVOR_PRODUCTION',	20),
 		('BUILDING_INCA_TAMBO',		'FLAVOR_CULTURE',		20),
 		('BUILDING_INCA_TAMBO',		'FLAVOR_GOLD',			40);
 		
