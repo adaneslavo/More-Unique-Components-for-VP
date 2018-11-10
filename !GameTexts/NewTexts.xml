@@ -275,10 +275,10 @@
 			<Text>Chasqui</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_HELP">
-			<Text>Flexible Scout of the Classical Era. Only the Inca may build it. Provides [ICON_GOLD] Gold whenever it reveals new tiles, and heals 15 HP every turn in Friendly Territory. Starts with the [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotion.</Text>
+			<Text>Flexible Scout of the Classical Era. Only the Inca may build it. Heals an additional 10 HP, and gains +1 [ICON_ARROW_RIGHT] Movement in Friendly Territory. Starts with the [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_STRATEGY">
-			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills, and generates Gold for the empire with every tile it reveals. The Chasqui also heals 15 HP every turn spent in friendly territory, allowing you to lose no time exploring.</Text>
+			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills and friendly territory. The Chasqui also heals 10 additional HP whenever it heals, making it recover very quickly when exploring or fighting.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_TEXT">
 			<Text>
@@ -286,17 +286,11 @@
 				Chasquis were dispatched along thousands of miles of Andean trails, taking advantage of a vast system of roads and rope bridges maintained throughout the mountains of Peru and Ecuador. Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. Each Chasqui carried a conch trumpet which was blown to signalling to a fresh chasqui that one runner was close so that they could prepare to run.
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_KHIPU_RUNNER">
-			<Text>Khipu Runner</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_KHIPU_RUNNER_HELP">
-			<Text>Unit gains [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]on revealing new tiles[ENDCOLOR].</Text>
-		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI">
 			<Text>Chasquiwasi</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]At the beginning of its turn[ENDCOLOR] unit Heals 15 HP if it is standing [COLOR_POSITIVE_TEXT]inside Friendly Territory and is not Fortified[ENDCOLOR].</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Heal 10 Additional HP[ENDCOLOR] per turn. +1 [ICON_ARROW_RIGHT] Movement when [COLOR_POSITIVE_TEXT]inside Friendly Territory[ENDCOLOR].</Text>
 		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->
@@ -2134,10 +2128,10 @@
 			<Text>Tambo</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO_HELP">
-			<Text>Units stationed in this city heal [COLOR_POSITIVE_TEXT]5HP[ENDCOLOR] every turn, regardless of any actions taken.[NEWLINE][NEWLINE]A free [COLOR_POSITIVE_TEXT]Qullqa[ENDCOLOR] is built in this City.[NEWLINE][NEWLINE]When a [ICON_INTERNATIONAL_TRADE] Land Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Land Trade Routes gain +50% Range and +3 [ICON_GOLD] Gold, Merchant Specialists in this City gain +1 [ICON_GOLD] Gold.</Text>
+			<Text>Units stationed in this city heal [COLOR_POSITIVE_TEXT]5HP[ENDCOLOR] every turn, regardless of any actions taken.[NEWLINE][NEWLINE]City Receives a free [ICON_RES_COCA] Coca Luxury Resource.[NEWLINE][NEWLINE]When a [ICON_INTERNATIONAL_TRADE] Land Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Land Trade Routes gain +50% Range and +3 [ICON_GOLD] Gold, Merchant Specialists in this City gain +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO_STRATEGY">
-			<Text>The Tambo is the unique Caravansary replacement for the Inca. In addition to the normal bonuses of a Caravansary, the Tambo Provides bonuses to the city's defense. On construction, a Qullqa appears in the city, granting the City 1 free copy of the [ICON_RES_COCA] Coca Luxury Resource.</Text>
+			<Text>The Tambo is the unique Caravansary replacement for the Inca. In addition to the normal bonuses of a Caravansary, the Tambo Provides bonuses to the city's defense. On construction, a [ICON_RES_COCA] Coca Luxury Resource appears beneath the city. [ICON_RES_COCA] Coca replaces any existing resource that was below the city previously.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO_TEXT">
 			<Text>
@@ -2146,23 +2140,6 @@
 				Tambos were frequently positioned for interregional contact and travel, as opposed to being positioned near large local villages. Historians suggest that the Tambo system was a part of an "artificial urbanism" created by the Inca to enable cohesion and communication across their vast empire.
 			</Text>
 		</Row>
-
-		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA">
-			<Text>Qullqa</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_HELP">
-			<Text>Unique building Granted by the Tambo. City Receives a free [ICON_RES_COCA] Coca Luxury Resource.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_STRATEGY">
-			<Text>Qullqa are immediately built on the construction of a Tambo and provide a unique luxury resource: [ICON_RES_COCA] Coca. Coca increases the speed of improvements, but also makes mountains passable to any civilization which controls it. Guard your Qullqa, so that other civilizations cannot follow your troops into the mountains.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_TEXT">
-			<Text>
-				Qullqa were storage silos located along roadsides near cities and political centers across the Tawantinsuyu. The vast network of Qullqa stored food and supplies for the military and were administered by the nearby Tambo, each located within a day's march of the next. This system relieved soldiers from the need to forage, but required constant maintenance from the local populace.[NEWLINE][NEWLINE]
-				Royal Qullqa stored the luxury and ceremonial goods of the Incan nobility including feathers, precious stones, and Coca leaves. Coca production was jealously guarded as an imperial monopoly; cultivation and distribution of coca was strictly under the control of the nobles and a few favored classes.
-			</Text>
-		</Row>
-		
 		<Row Tag="TXT_KEY_RESOURCE_COCA">
 			<Text>Coca</Text>
 		</Row>
