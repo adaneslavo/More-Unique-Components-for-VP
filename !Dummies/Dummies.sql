@@ -167,7 +167,13 @@ INSERT INTO Building_ResourceYieldChanges
 			(BuildingType,		ResourceType,	YieldType,		Yield)
 SELECT		'BUILDING_D_FOR_GUMEY_LUX',	Type,			'YIELD_GOLD',	1
 FROM Resources WHERE ResourceClassType = 'RESOURCECLASS_LUXURY';
-
+------------------------------	
+-- Building_WLTKDYieldMod
+------------------------------
+INSERT INTO Building_WLTKDYieldMod	
+			(BuildingType,						YieldType,			Yield)
+VALUES		('BUILDING_D_FOR_HIPPODROME',	'YIELD_CULTURE',	15),
+			('BUILDING_D_FOR_HIPPODROME',	'YIELD_GOLD',		15);
 ------------------------------	
 -- Building_ImprovementYieldChanges
 ------------------------------		
