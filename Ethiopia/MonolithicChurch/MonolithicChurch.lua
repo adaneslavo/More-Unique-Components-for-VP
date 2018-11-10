@@ -20,7 +20,7 @@ function OnCaptureResetMonoBonus(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop,
 	
 	if not bIsCapital then return end
 	
-	if (bIdeologyState = true) then
+	if bIdeologyState == true then
 		pOldPlayer:GetCapitalCity():SetNumRealBuilding(GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY, 1)
 	end
 end	
