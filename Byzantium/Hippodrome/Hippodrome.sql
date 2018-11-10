@@ -60,13 +60,6 @@ INSERT INTO Building_BuildingClassYieldChanges
 			(BuildingType,						BuildingClassType,			YieldType,			YieldChange)
 VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_CIRCUS',		'YIELD_CULTURE',	2),
 			('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_COLOSSEUM',	'YIELD_GOLD',		2);
-------------------------------	
--- Building_WLTKDYieldMod
-------------------------------
-INSERT INTO Building_WLTKDYieldMod	
-			(BuildingType,						YieldType,			Yield)
-VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'YIELD_CULTURE',	20),
-			('BUILDING_BYZANTIUM_HIPPODROME',	'YIELD_GOLD',		20);
 --==========================================================================================================================
 --==========================================================================================================================
 
