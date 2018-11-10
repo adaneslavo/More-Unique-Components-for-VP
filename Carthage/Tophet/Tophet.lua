@@ -73,4 +73,6 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.CityTrained.Add(OnTrainAddXPAndYields)
+if Game.IsCivEverActive(eCivilizationCarthage) then
+	GameEvents.CityTrained.Add(OnTrainAddXPAndYields)
+end

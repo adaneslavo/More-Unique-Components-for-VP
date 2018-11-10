@@ -5,6 +5,7 @@
 include("FLuaVector.lua")
 
 local eCivilizationMongolia = GameInfoTypes.CIVILIZATION_MONGOL
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 local fGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
 local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
 local fGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
@@ -15,7 +16,7 @@ local eTechPhilosophy = GameInfoTypes.TECH_PHILOSOPHY
 function OnCaptureCityBonuses(iPlayer, iCapital, iResourceX, iResourceY, iNewPlayer, iConquest, iConquest2)
 	local pNewPlayer = Players[iNewPlayer]
 
-	if not (pNewPlayer and pNewPlayer:GetCivilizationType() == eCivilizationMongolia) then return end
+	if not (pNewPlayer and (pNewPlayer:GetCivilizationType() == eCivilizationMongolia or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 
 	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 	
@@ -78,6 +79,10 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.CityCaptureComplete.Add(OnCaptureCityBonuses)
-GameEvents.TeamTechResearched.Add(OnTechResearchedBuildYassa)
-GameEvents.PlayerCityFounded.Add(OnFoundAddYassa)
+if Game.IsCivEverActive(eCivilizationMongolia) then
+	GameEvents.CityCaptureComplete.Add(OnCaptureCityBonuses)
+	GameEvents.TeamTechResearched.Add(OnTechResearchedBuildYassa)
+	GameEvents.PlayerCityFounded.Add(OnFoundAddYassa)
+end
+
+

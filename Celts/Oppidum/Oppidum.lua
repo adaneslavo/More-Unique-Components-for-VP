@@ -40,9 +40,6 @@ function OppidumGarrisonAfter(iAttackingPlayer, iAttackingUnit, attackerDamage, 
 	end
 end
 
-GameEvents.CombatResult.Add(OppidumGarrisonBefore)
-GameEvents.CombatEnded.Add(OppidumGarrisonAfter)
-
 -- adds or removes HP on construction, destroying or pillaging Oppidum
 function OnImprovementChangeMoveHP(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged)
 	if not (iNewImprovement == eImprovementOppidum and iNewImprovement ~= iOldImprovement) then return end
@@ -76,4 +73,8 @@ end
 		return pNearestCity
 	end
 
-GameEvents.TileImprovementChanged.Add(OnImprovementChangeMoveHP)
+if Game.IsCivEverActive(GameInfoTypes.CIVILIZATION_CELTS) then
+	GameEvents.TileImprovementChanged.Add(OnImprovementChangeMoveHP)
+	GameEvents.CombatResult.Add(OppidumGarrisonBefore)
+	GameEvents.CombatEnded.Add(OppidumGarrisonAfter)
+end

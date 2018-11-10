@@ -77,5 +77,8 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.CityTrained.Add(MadrasahScienceUnit)
-GameEvents.CityConstructed.Add(MadrasahScienceBuilding)
+if Game.IsCivEverActive(eCivilizationArabia) then
+	GameEvents.CityTrained.Add(MadrasahScienceUnit)
+	GameEvents.CityConstructed.Add(MadrasahScienceBuilding)
+end
+

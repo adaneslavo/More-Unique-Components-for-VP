@@ -93,5 +93,9 @@ function NotificationLoad(iSet, pPlayer, pCity)
 	pPlayer:AddNotification(0, sText, sTitle, pCity:GetX(), pCity:GetY())
 end
 
-GameEvents.CityConstructed.Add(OnConstructionUpgradeGuilds)
-GameEvents.CityConstructed.Add(OnConstructionUpgradeThatGuild)
+if Game.IsCivEverActive(eCivilizationJapan) then
+	GameEvents.CityConstructed.Add(OnConstructionUpgradeGuilds)
+	GameEvents.CityConstructed.Add(OnConstructionUpgradeThatGuild)
+end
+
+

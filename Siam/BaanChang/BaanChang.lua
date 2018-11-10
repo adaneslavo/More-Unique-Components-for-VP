@@ -75,5 +75,8 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.PlayerDoTurn.Add(OnTurnUpdateYieldsFromStrategic)
-GameEvents.MinorGiftUnit.Add(OnCSGiftGiveYields)
+if Game.IsCivEverActive(eCivilizationSiam) then
+	GameEvents.PlayerDoTurn.Add(OnTurnUpdateYieldsFromStrategic)
+	GameEvents.MinorGiftUnit.Add(OnCSGiftGiveYields)
+end
+

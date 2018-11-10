@@ -43,4 +43,6 @@ function TradeRoutesToGPP(iPlayer)
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(TradeRoutesToGPP)
+if Game.IsCivEverActive(eCivilizationKorea) then
+	GameEvents.PlayerDoTurn.Add(TradeRoutesToGPP)
+end

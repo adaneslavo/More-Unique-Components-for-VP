@@ -77,4 +77,6 @@ function OnConstructionPlaceBison(iPlayer, iCity, iBuilding)
 	end
 end
 
-GameEvents.CityConstructed.Add(OnConstructionPlaceBison)
+if Game.IsCivEverActive(eCivilizationShoshone) then
+	GameEvents.CityConstructed.Add(OnConstructionPlaceBison)
+end

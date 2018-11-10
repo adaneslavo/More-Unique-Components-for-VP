@@ -45,4 +45,6 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.UnitPromoted.Add(OnLevelCityGainCulture)
+if Game.IsCivEverActive(eCivilizationZulu) then
+	GameEvents.UnitPromoted.Add(OnLevelCityGainCulture)
+end

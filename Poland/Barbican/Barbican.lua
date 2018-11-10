@@ -6,14 +6,15 @@ local eBuildingBarbican = GameInfoTypes.BUILDING_POLAND_BARBICAN
 local eBuildingDummyForBarbican = GameInfoTypes.BUILDING_D_FOR_BARBICAN
 local eBuildingArmory = GameInfoTypes.BUILDING_ARMORY
 local eCivilizationPoland = GameInfoTypes.CIVILIZATION_POLAND
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 local ePromotionBarbican = GameInfoTypes.PROMOTION_UNIT_POLAND_BARBICAN
 
 -- adds temporary promotion to range units when garrisoned in city with Barbican built
 function GarrisonRangePower(iPlayer, iUnit, iX, iY)
-	-- check for Poland
+	-- check for Poland/Rome
 	local pPlayer = Players[iPlayer]
 
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationPoland) then return end
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationPoland or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
 	-- check for archer or siege
 	local pUnit = pPlayer:GetUnitByID(iUnit)
@@ -48,5 +49,8 @@ function OnConstructionBuildDummyArmory(iPlayer, iCity, iBuilding)
 	end
 end
 
-GameEvents.UnitSetXY.Add(GarrisonRangePower)
-GameEvents.CityConstructed.Add(OnConstructionBuildDummyArmory)
+if Game.IsCivEverActive(eCivilizationPoland) then
+	GameEvents.UnitSetXY.Add(GarrisonRangePower)
+	GameEvents.CityConstructed.Add(OnConstructionBuildDummyArmory)
+end
+

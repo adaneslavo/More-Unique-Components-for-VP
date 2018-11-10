@@ -104,6 +104,9 @@ function OnEmbassyAddYields(iPlayer, iUnit, iUnitType, iX, iY)
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(OnTurnAddHappinessFromDefOrWar)
-GameEvents.UnitCreated.Add(OnCreateGiveReciprocity)
-GameEvents.GreatPersonExpended.Add(OnEmbassyAddYields)
+if Game.IsCivEverActive(eCivilizationIroquois) then
+	GameEvents.PlayerDoTurn.Add(OnTurnAddHappinessFromDefOrWar)
+	GameEvents.UnitCreated.Add(OnCreateGiveReciprocity)
+	GameEvents.GreatPersonExpended.Add(OnEmbassyAddYields)
+end
+

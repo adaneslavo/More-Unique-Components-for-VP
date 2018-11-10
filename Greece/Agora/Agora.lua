@@ -37,4 +37,6 @@ function OnUnitPrekillProxenosGold(unitOwnerId, unitId, iUnitType, unitX, unitY,
 	end
 end
 
-GameEvents.UnitPrekill.Add(OnUnitPrekillProxenosGold)
+if Game.IsCivEverActive(eCivilizationGreece) then
+	GameEvents.UnitPrekill.Add(OnUnitPrekillProxenosGold)
+end

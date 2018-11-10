@@ -35,4 +35,6 @@ function WhiteTowerEspionageResult(iPlayer, iSpy, iResult, iCityX, iCityY)
 	end
 end
 
-GameEvents.EspionageResult.Add(WhiteTowerEspionageResult)
+if Game.IsCivEverActive(eCivilizationEngland) then
+	GameEvents.EspionageResult.Add(WhiteTowerEspionageResult)
+end

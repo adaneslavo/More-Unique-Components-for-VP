@@ -128,4 +128,6 @@ function GetNearestCity(pPlayer, pPlot)
 	return pNearestCity
 end
 
-GameEvents.TileImprovementChanged.Add(LatifundiumSpawnFigs)
+if Game.IsCivEverActive(eCivilizationRome) then
+	GameEvents.TileImprovementChanged.Add(LatifundiumSpawnFigs)
+end

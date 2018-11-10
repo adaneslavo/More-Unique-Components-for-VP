@@ -3,6 +3,7 @@
 -- DateCreated: 5/12/2017
 --------------------------------------------------------------
 local eCivilizationIndia = GameInfoTypes.CIVILIZATION_INDIA
+local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 local eBuildingDummyForQila1 = GameInfoTypes.BUILDING_D_FOR_QILA_1
 local eBuildingDummyForQila2 = GameInfoTypes.BUILDING_D_FOR_QILA_2
 local eBuildingQila = GameInfoTypes.BUILDING_INDIA_QILA
@@ -11,7 +12,7 @@ local eBuildingQila = GameInfoTypes.BUILDING_INDIA_QILA
 function DefenseToCulture(iPlayer)
 	local pPlayer = Players[iPlayer]
 
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationIndia) then return end
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationIndia or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 
 	local iNumberOfQilas = pPlayer:CountNumBuildings(eBuildingQila)
 
@@ -40,4 +41,6 @@ function DefenseToCulture(iPlayer)
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(DefenseToCulture)
+if Game.IsCivEverActive(eCivilizationIndia) then
+	GameEvents.PlayerDoTurn.Add(DefenseToCulture)
+end

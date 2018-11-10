@@ -41,4 +41,6 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.CityInvestedBuilding.Add(OnInvestAddYieldsToCapital)
+if Game.IsCivEverActive(eCivilizationBabylon) then
+	GameEvents.CityInvestedBuilding.Add(OnInvestAddYieldsToCapital)
+end

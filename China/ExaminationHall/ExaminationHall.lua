@@ -127,5 +127,7 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.PlayerDoTurn.Add(OnWLTKDIncreaseGPGeneration)
-GameEvents.SetPopulation.Add(OnBirthAddGPPointsToTheBest)
+if Game.IsCivEverActive(eCivilizationChina) then
+	GameEvents.PlayerDoTurn.Add(OnWLTKDIncreaseGPGeneration)
+	GameEvents.SetPopulation.Add(OnBirthAddGPPointsToTheBest)
+end

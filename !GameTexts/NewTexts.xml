@@ -960,23 +960,6 @@
 			<Text>Manyosi</Text>
 		</Row>
 
-		<!-- Intihuatana -->
-		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA">
-			<Text>Intihuatana</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_HELP">
-			<Text>Available via Technology instead of a Policy. [ICON_GREAT_SCIENTIST] Scientist Specialists in the City produce +1 [ICON_PEACE] Faith. +2 [ICON_FOOD] Food and +1 [ICON_RESEARCH] Science for every Mountain within 3 tiles of the City.[NEWLINE][NEWLINE]Adopting the [COLOR_POSITIVE_TEXT]Scientific Revolution[ENDCOLOR] Policy improves all Intihuatanas on Empire, increasing their yields to +6 [ICON_RESEARCH] Science and +2 [ICON_RESEARCH] and +3 [ICON_FOOD] Food for every Mountain within 3 tiles of the City.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_STRATEGY">
-			<Text>The Intihuatana is the unique Observatory of the Inca. Unlike the Observatory it replaces, the Intihuatana is unlocked by the Theology tech, much sooner than the Observatory, and without needing the Scientific Revolution policy. In addition to Science, Intihuatana also boost Food and Faith production, and makes Scientist specialists in the City produce Faith. Unlocking the Scientific Revolution policy further increases the Intihuatana's Science and Food production</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_INCA_INTIHUATANA_TEXT">
-			<Text>
-				Astronomy played an important life in Incan daily life, especially agriculture and religion. The high altitudes in the Andean mountains meant Incan society was sensitive to variations in rainfall and daylight, but also well-suited to observe the heavenly bodies. The sun itself was a chief deity of the Incan religion known as Inti. Precise measurements were taken of the time and position of Inti's rising and setting to determine what altitudes to plant crops. The city of Cusco itself was built on a radial plain, mimicking the rising and setting of the sun, and pointing to specific astronomical events.[NEWLINE][NEWLINE]
-				Intihuatanas, (lit. "hitching posts of the sun") were ritual stone pillars used to measure the sun's position as it rose and set each day. The Inca built these observatories in high places surrounding their cities to capture the first and last light of the sun each day, helping them to know the season for planting. The most famous of these Intihuatana is still located in the ruins of Machu Picchu.
-			</Text>
-		</Row>
-		
 		<!-- Iziko -->		
 		<Row Tag="TXT_KEY_BUILDING_ZULU_IZIKO">
 			<Text>Iziko</Text>
@@ -2145,7 +2128,54 @@
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP">
 			<Text>City must have a Castle. Military Units supplied by this City's population increased by 15%. Increases the City's [ICON_RANGE_STRENGTH] Ranged Strike Range by 1, and allows Indirect Fire.[NEWLINE][NEWLINE]Garrisoned units receive an additional 10 Health when healing in this city. Foreign Spies cannot steal [ICON_RESEARCH] Science from this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture for each City-State Ally. +30% [ICON_PRODUCTION] Production and 15 XP for Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units.</Text>
 		</Row>
-				
+
+		<!-- Tambo, Qullqa & Coca -->	
+		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO">
+			<Text>Tambo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO_HELP">
+			<Text>Units stationed in this city heal [COLOR_POSITIVE_TEXT]5HP[ENDCOLOR] every turn, regardless of any actions taken.[NEWLINE][NEWLINE]A free [COLOR_POSITIVE_TEXT]Qullqa[ENDCOLOR] is built in this City.[NEWLINE][NEWLINE]When a [ICON_INTERNATIONAL_TRADE] Land Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Land Trade Routes gain +50% Range and +3 [ICON_GOLD] Gold, Merchant Specialists in this City gain +1 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO_STRATEGY">
+			<Text>The Tambo is the unique Caravansary replacement for the Inca. In addition to the normal bonuses of a Caravansary, the Tambo Provides bonuses to the city's defense. On construction, a Qullqa appears in the city, granting the City 1 free copy of the [ICON_RES_COCA] Coca Luxury Resource.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO_TEXT">
+			<Text>
+				A Tambo is an Incan military and administrative waystation. Found along roads across the empire, Tambos typically contained lodgings for state personnel, garrisons, and the Incan messengers, the Chasqui. At a minimum, Tambos would contain housing, cooking facilities, and storage silos called qullqas, but some Tambos grew to become large cities of their own.[NEWLINE][NEWLINE]
+				Beyond taking care of various kinds of travelers, larger Tambos would contain facilities for various specialists like potters and weavers. They could also served as administrative centers from which local lords would oversee the region. Additionally, coca production and exploitation was often carried within a safe distance of the Tambo to provide protection to the Incan coca monopoly.[NEWLINE][NEWLINE]
+				Tambos were frequently positioned for interregional contact and travel, as opposed to being positioned near large local villages. Historians suggest that the Tambo system was a part of an "artificial urbanism" created by the Inca to enable cohesion and communication across their vast empire.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA">
+			<Text>Qullqa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_HELP">
+			<Text>Unique building Granted by the Tambo. City Receives a free [ICON_RES_COCA] Coca Luxury Resource.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_STRATEGY">
+			<Text>Qullqa are immediately built on the construction of a Tambo and provide a unique luxury resource: [ICON_RES_COCA] Coca. Coca increases the speed of improvements, but also makes mountains passable to any civilization which controls it. Guard your Qullqa, so that other civilizations cannot follow your troops into the mountains.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_TEXT">
+			<Text>
+				Qullqa were storage silos located along roadsides near cities and political centers across the Tawantinsuyu. The vast network of Qullqa stored food and supplies for the military and were administered by the nearby Tambo, each located within a day's march of the next. This system relieved soldiers from the need to forage, but required constant maintenance from the local populace.[NEWLINE][NEWLINE]
+				Royal Qullqa stored the luxury and ceremonial goods of the Incan nobility including feathers, precious stones, and Coca leaves. Coca production was jealously guarded as an imperial monopoly; cultivation and distribution of coca was strictly under the control of the nobles and a few favored classes.
+			</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_RESOURCE_COCA">
+			<Text>Coca</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_COCA_TEXT">
+			<Text>Coca is the leaf of any of four cultivated species of the family Erythroxylaceae native to western South America. The plant is famous for its various medicinal and nutritional uses, increasing alertness, dulling pain, supressing appetite, and treating altitude sickness. The leaves are traditionally chewed or brewed into a tea. Coca made an impression on the Spanish conquerors for its ability to help people work harder, even through exhaustion or hunger.[NEWLINE][NEWLINE]Today, coca is best known for its psychoactive alkaloid, cocaine. The alkaloid content of coca leaves is relatively low, requiring a large number of leaves for a single batch of cocaine. Coca leaf extract began being used in Coca-Cola products in 1885, but cocaine was completely eliminated from the products around 1903.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COCA">
+			<Text>Coca Monopoly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COCA_HELP">
+			<Text>Can cross Mountains. +15% Improvement Speed.</Text>
+		</Row>
+			
 		<!-- Tarkhan -->		
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_HORSE_ARCHER">
 			<Text>Last Chance</Text>
@@ -2177,7 +2207,7 @@
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_TEXT">
 			<Text>Tarkhan were nobles and high-ranking commanders within the armies of the Xiongnu and Hunnic empires. The term spread throughout the languages and peoples of the steppes, appearing as a title within Turkic, Mongol and Iranian cultures, even becoming a common boys name. Analogous to modern day generals, the Tarkhan were the protectors and conquerors of the Hunnic empire, spurring their civilization forward to greatness.</Text>
 		</Row>
-		
+
 		<!-- Tersane -->
 		<!-- Created by adan_eslavo 1/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE">

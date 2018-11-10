@@ -58,4 +58,6 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.PlayerGoldenAge.Add(PairidaezaGoldenAgeStartBonus)
+if Game.IsCivEverActive(eCivilizationPersia) then
+	GameEvents.PlayerGoldenAge.Add(PairidaezaGoldenAgeStartBonus)
+end

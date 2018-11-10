@@ -1,5 +1,5 @@
 -- Riad
--- Author: Blue, Ghost, adan_eslavo
+-- Author: Blue Ghost, adan_eslavo
 -- DateCreated:
 --------------------------------------------------------------
 include("FLuaVector.lua")
@@ -45,4 +45,6 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.PlayerDoTurn.Add(OnTurnGainYieldsFromTR)
+if Game.IsCivEverActive(eCivilizationMorocco) then
+	GameEvents.PlayerDoTurn.Add(OnTurnGainYieldsFromTR)
+end

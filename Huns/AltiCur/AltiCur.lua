@@ -50,4 +50,6 @@ function OnDemandTributeAddGoldAndHappiness(iPlayer, iCS)
 	end
 end
 
-GameEvents.PlayerBullied.Add(OnDemandTributeAddGoldAndHappiness)
+if Game.IsCivEverActive(eCivilizationHuns) then
+	GameEvents.PlayerBullied.Add(OnDemandTributeAddGoldAndHappiness)
+end

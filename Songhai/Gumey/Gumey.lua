@@ -73,4 +73,6 @@ function OnTurnAddMonopolyBonus (iPlayer)
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(OnTurnAddMonopolyBonus)
+if Game.IsCivEverActive(eCivilizationSonghai) then
+	GameEvents.PlayerDoTurn.Add(OnTurnAddMonopolyBonus)
+end
