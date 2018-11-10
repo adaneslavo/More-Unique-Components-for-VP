@@ -3,11 +3,7 @@
 -- DateCreated: 26/01/2018
 -- 2018-02-04 Modified by Infixo
 --------------------------------------------------------------
-include("FLuaVector.lua")
-
-local ePromotionChasquiwasi = GameInfoTypes.PROMOTION_UNIT_INCA_CHASQUIWASI
-
--- heals unit when in firendly territory and not fortfied
+-- +1 movement to unit when in friendly territory
 function Chasquiwasi(iPlayer)
 	local pPlayer = Players[iPlayer]
 
