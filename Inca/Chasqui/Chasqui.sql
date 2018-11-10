@@ -115,8 +115,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SCOUT';
 
 INSERT INTO Unit_FreePromotions 	
 			(UnitType, 					PromotionType)
-VALUES		('UNIT_INCA_CHASQUI',		'PROMOTION_UNIT_INCA_KHIPU_RUNNER'),
-			('UNIT_INCA_CHASQUI',		'PROMOTION_UNIT_INCA_CHASQUIWASI'),
+VALUES		('UNIT_INCA_CHASQUI',		'PROMOTION_UNIT_INCA_CHASQUIWASI'),
 			('UNIT_INCA_CHASQUI',		'PROMOTION_ALTITUDE_TRAINING');
 --==========================================================================================================================	
 
@@ -127,15 +126,14 @@ VALUES		('UNIT_INCA_CHASQUI',		'PROMOTION_UNIT_INCA_KHIPU_RUNNER'),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 									Description, 									Help, 												Sound, 				CannotBeChosen, 	PortraitIndex,	IconAtlas, 			LostWithUpgrade, 	PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_INCA_KHIPU_RUNNER',	'TXT_KEY_PROMOTION_UNIT_INCA_KHIPU_RUNNER',		'TXT_KEY_PROMOTION_UNIT_INCA_KHIPU_RUNNER_HELP', 	'AS2D_IF_LEVELUP',	1, 					31, 			'PROMOTION_ATLAS', 	0, 					'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_INCA_KHIPU_RUNNER'),
-			('PROMOTION_UNIT_INCA_CHASQUIWASI',		'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI',		'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP', 	'AS2D_IF_LEVELUP',	1, 					37, 			'PROMOTION_ATLAS', 	0, 					'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI');
+			(Type, 									Description, 									Help, EnemyHealChange, 	NeutralHealChange, 	FriendlyHealChange,												Sound, 				CannotBeChosen, 	PortraitIndex,	IconAtlas, 			LostWithUpgrade, 	PediaType, 			PediaEntry)
+VALUES		('PROMOTION_UNIT_INCA_CHASQUIWASI',		'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI',		'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP', 	10, 		10, 		10, 		'AS2D_IF_LEVELUP',	1, 					37, 			'PROMOTION_ATLAS', 	0, 					'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI');
 ------------------------------
 -- UnitPromotions_YieldFromScouting
 ------------------------------
-INSERT INTO UnitPromotions_YieldFromScouting
-			(PromotionType,							YieldType,		Yield)
-VALUES		('PROMOTION_UNIT_INCA_KHIPU_RUNNER',	'YIELD_GOLD',	1);
+--INSERT INTO UnitPromotions_YieldFromScouting
+--			(PromotionType,							YieldType,		Yield)
+--VALUES		('PROMOTION_UNIT_INCA_KHIPU_RUNNER',	'YIELD_GOLD',	1);
 --==========================================================================================================================
 --==========================================================================================================================
 
