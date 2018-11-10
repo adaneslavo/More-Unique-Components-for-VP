@@ -6,6 +6,7 @@ More Unique Components for Vox Populi changelog:
 v38:
 - reworked:
 	- Inca Intihuatana reverted to Tambo (caravansary replacement)
+	- Inca Chasqui: Gold on exploration removed. Chasquiwasi unique promotion now +1 move in friendly land and +10 healing
 
 - tweaked:
 	- Move Ater Attacking promotion ==> now lost on upgrade (affects Langskib),
@@ -13,7 +14,8 @@ v38:
 	- Prau ==> removed Sentry promotion (too much synergy with new naval promotion line),
 	- Langskib ==> increased build cost to 150 (very cheap, new naval promotions makes them even scarier),
 	- Carolean ==> increased CS to 39 (up from 38),
-	- Rome ==> reduces CS/RCS to 7/13 (down from 8/14, Rome doesn't need any more help).
+	- Ballista ==> reduces CS/RCS to 7/13 (down from 8/14, Rome doesn't need any more help).
+	- Hippodrome ==> +20% Gold/Culture in CITY on WLTKD changed to +15% Gold/Culture on EMPIRE on WLTKD.
 - simplified:
 	- Added new Rome compatibility to: Maya, Poland, India, & Mongolia
 	- all building/improvement lua: added filter on game start to shut down lua hooks for civs that are not in the game.
@@ -26,6 +28,7 @@ v38:
 	- all Dummies except Barbican ==> added IsDummy=true (needs to be recognized as a non-dummy building in case Rome captures it),
 	- Suffet ==> embarking and disembarking removes all movement; (prevents bug with multi-tile canals),
 	- Gumey ==> now correct calculation method for monopolies.
+	- Rome ==> Can no longer capture unique national wonders.
 
 v37.4.1:
 - fixed:
