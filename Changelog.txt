@@ -6,6 +6,7 @@ More Unique Components for Vox Populi changelog:
 v38:
 - reworked:
 	- Inca Intihuatana reverted to Tambo (caravansary replacement)
+	   - Inca UA reverted to Science/Food, since it was changed to accomodate Intihuatana 
 	- Inca Chasqui: Gold on exploration removed. Chasquiwasi unique promotion now +1 move in friendly land and +10 healing
 
 - tweaked:
