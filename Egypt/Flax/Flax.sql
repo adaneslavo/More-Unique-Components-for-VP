@@ -10,7 +10,8 @@ VALUES		('RESOURCE_EGYPT_ATLAS',		256, 		'FlaxIcon_256.dds',		1, 				1),
 			('RESOURCE_EGYPT_ATLAS',		128, 		'FlaxIcon_128.dds',		1, 				1),
 			('RESOURCE_EGYPT_ATLAS',		80, 		'FlaxIcon_080.dds',		1, 				1),
 			('RESOURCE_EGYPT_ATLAS',		64, 		'FlaxIcon_064.dds',		1, 				1),
-			('RESOURCE_EGYPT_ATLAS',		45, 		'FlaxIcon_045.dds',		1, 				1);	
+			('RESOURCE_EGYPT_ATLAS',		45, 		'FlaxIcon_045.dds',		1, 				1),
+			('RESOURCE_EGYPT_ATLAS',		32, 		'FlaxIcon_032.dds',		1, 				1);
 --==========================================================================================================================
 
 --==========================================================================================================================

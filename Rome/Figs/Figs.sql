@@ -10,7 +10,8 @@ VALUES		('RESOURCE_ROME_ATLAS',		256, 		'FigsIcon_256.dds',		1, 				1),
 			('RESOURCE_ROME_ATLAS',		128, 		'FigsIcon_128.dds',		1, 				1),
 			('RESOURCE_ROME_ATLAS',		80, 		'FigsIcon_080.dds',		1, 				1),
 			('RESOURCE_ROME_ATLAS',		64, 		'FigsIcon_064.dds',		1, 				1),
-			('RESOURCE_ROME_ATLAS',		45, 		'FigsIcon_045.dds',		1, 				1);	
+			('RESOURCE_ROME_ATLAS',		45, 		'FigsIcon_045.dds',		1, 				1),
+			('RESOURCE_ROME_ATLAS',		32, 		'FigsIcon_032.dds',		1, 				1);	
 --==========================================================================================================================
 
 --==========================================================================================================================

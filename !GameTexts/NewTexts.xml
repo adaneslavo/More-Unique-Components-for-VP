@@ -290,7 +290,7 @@
 			<Text>Chasquiwasi</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Heal 10 Additional HP[ENDCOLOR] per turn. +1 [ICON_ARROW_RIGHT] Movement when [COLOR_POSITIVE_TEXT]inside Friendly Territory[ENDCOLOR].</Text>
+			<Text>+10 HP [COLOR_POSITIVE_TEXT]on Heal[ENDCOLOR]. +1 [ICON_ARROW_RIGHT] Movement Point if unit is [COLOR_POSITIVE_TEXT]inside Friendly Territory[ENDCOLOR].</Text>
 		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->

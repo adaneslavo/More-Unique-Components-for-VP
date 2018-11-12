@@ -5,31 +5,32 @@
 More Unique Components for Vox Populi changelog:
 v38:
 - reworked:
-	- Inca Intihuatana reverted to Tambo (caravansary replacement)
-	   - Inca UA reverted to Science/Food, since it was changed to accomodate Intihuatana 
-	- Inca Chasqui: Gold on exploration removed. Chasquiwasi unique promotion now +1 move in friendly land and +10 healing
-
+	- Inca:
+		- deleted Intihuatana; reverted to Tambo (caravansary replacement),
+		- UA ==> reverted to science/food, since it was changed to accomodate Intihuatana,
+		- Chasqui ==> gold on exploration removed,
+				  ==> Chasquiwasi ==> now +1 move in friendly lands and +10 HP on heal.
 - tweaked:
 	- Move Ater Attacking promotion ==> now lost on upgrade (affects Langskib),
 	- Fale Tele ==> removed faith on building completion (too strong, Polynesia is early runaway),
 	- Prau ==> removed Sentry promotion (too much synergy with new naval promotion line),
 	- Langskib ==> increased build cost to 150 (very cheap, new naval promotions makes them even scarier),
 	- Carolean ==> increased CS to 39 (up from 38),
-	- Ballista ==> reduces CS/RCS to 7/13 (down from 8/14, Rome doesn't need any more help).
-	- Hippodrome ==> +20% Gold/Culture in CITY on WLTKD changed to +15% Gold/Culture on EMPIRE on WLTKD.
+	- Ballista ==> reduces CS/RCS to 7/13 (down from 8/14, Rome doesn't need any more help),
+	- Hippodrome ==> +20% gold/culture in CITY on WLTKD changed to +15% Gold/Culture on EMPIRE on WLTKD.
 - simplified:
-	- Added new Rome compatibility to: Maya, Poland, India, & Mongolia
-	- all building/improvement lua: added filter on game start to shut down lua hooks for civs that are not in the game.
+	- (Maya, Poland, India, Mongolia) ==> added new Rome compatibility, 
+	- all building/improvement luas ==> added filter on game start to shut down lua hooks for civs that are not in the game,
 	- Monolithic Church ==> added bonus yields from policies/beliefs directly onto policies/beliefs, instead of using lua; yields from ideology still require lua,
 	- Shotelai ==> used sql instead of lua,
 	- Koa ==> used sql instead of lua; changed effect of debuff placer: "Reduces max HP by 20HP and healing by -10 for 2 turns",
 	- Pogost ==> stages 2 and 3 fully replace the previous stage now; all bonuses are cumulative on the buildings, and the old stage is removed; no balance changes.
-- fixes
+- fixed:
 	- Hippodrome, Etemeneanki ==> removed CapitalOnly; now Palace as a building requirement (CapitalOnly interacts with policies in a weird way),
 	- all Dummies except Barbican ==> added IsDummy=true (needs to be recognized as a non-dummy building in case Rome captures it),
 	- Suffet ==> embarking and disembarking removes all movement; (prevents bug with multi-tile canals),
-	- Gumey ==> now correct calculation method for monopolies.
-	- Rome ==> Can no longer capture unique national wonders.
+	- Gumey ==> now correct calculation method for monopolies,
+	- Rome ==> can no longer capture unique national wonders.
 
 v37.4.1:
 - fixed:
