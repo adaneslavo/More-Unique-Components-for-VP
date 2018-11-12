@@ -2123,23 +2123,24 @@
 			<Text>City must have a Castle. Military Units supplied by this City's population increased by 15%. Increases the City's [ICON_RANGE_STRENGTH] Ranged Strike Range by 1, and allows Indirect Fire.[NEWLINE][NEWLINE]Garrisoned units receive an additional 10 Health when healing in this city. Foreign Spies cannot steal [ICON_RESEARCH] Science from this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture for each City-State Ally. +30% [ICON_PRODUCTION] Production and 15 XP for Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units.</Text>
 		</Row>
 
-		<!-- Tambo, Qullqa & Coca -->	
-		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO">
-			<Text>Tambo</Text>
+		<!-- Qullqa & Coca -->	
+		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA">
+			<Text>Qullqa</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO_HELP">
-			<Text>Units stationed in this city heal [COLOR_POSITIVE_TEXT]5HP[ENDCOLOR] every turn, regardless of any actions taken.[NEWLINE][NEWLINE]City Receives a free [ICON_RES_COCA] Coca Luxury Resource.[NEWLINE][NEWLINE]When a [ICON_INTERNATIONAL_TRADE] Land Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Land Trade Routes gain +50% Range and +3 [ICON_GOLD] Gold, Merchant Specialists in this City gain +1 [ICON_GOLD] Gold.</Text>
+		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_HELP">
+			<Text>Units stationed in this city heal [COLOR_POSITIVE_TEXT]5HP[ENDCOLOR] every turn, regardless of any actions taken. City Receives a free [ICON_RES_COCA] Coca Luxury Resource.[NEWLINE][NEWLINE]15% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born.[NEWLINE][NEWLINE]Allows [ICON_FOOD] Food to be moved from this city along trade routes inside your civilization.[NEWLINE]Nearby [ICON_RES_WHEAT] Wheat: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BANANA] Bananas: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_DEER] Deer: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BISON] Bison: +1 [ICON_FOOD] Food.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO_STRATEGY">
-			<Text>The Tambo is the unique Caravansary replacement for the Inca. In addition to the normal bonuses of a Caravansary, the Tambo Provides bonuses to the city's defense. On construction, a [ICON_RES_COCA] Coca Luxury Resource appears beneath the city. [ICON_RES_COCA] Coca replaces any existing resource that was below the city previously.</Text>
+		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_STRATEGY">
+			<Text>The Qullqa is the unique Granary replacement for the Inca. In addition to the normal bonuses of a Granary, the Qullqa heals your garrisoned units every turn. On construction, a [ICON_RES_COCA] Coca Luxury Resource appears beneath the city. [ICON_RES_COCA] Coca replaces any existing resource that was below the city previously.[NEWLINE][NEWLINE]Coca increases the speed of constructing improvements, but also makes mountains passable to any civilization which controls it. Guard your Qullqa, so that other civilizations cannot follow your troops into the mountains.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_BUILDING_INCA_TAMBO_TEXT">
+		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_TEXT">
 			<Text>
-				A Tambo is an Incan military and administrative waystation. Found along roads across the empire, Tambos typically contained lodgings for state personnel, garrisons, and the Incan messengers, the Chasqui. At a minimum, Tambos would contain housing, cooking facilities, and storage silos called qullqas, but some Tambos grew to become large cities of their own.[NEWLINE][NEWLINE]
-				Beyond taking care of various kinds of travelers, larger Tambos would contain facilities for various specialists like potters and weavers. They could also served as administrative centers from which local lords would oversee the region. Additionally, coca production and exploitation was often carried within a safe distance of the Tambo to provide protection to the Incan coca monopoly.[NEWLINE][NEWLINE]
-				Tambos were frequently positioned for interregional contact and travel, as opposed to being positioned near large local villages. Historians suggest that the Tambo system was a part of an "artificial urbanism" created by the Inca to enable cohesion and communication across their vast empire.
+				Qullqa were storage silos located along roadsides near cities and political centers across the Tawantinsuyu. The vast network of Qullqa stored food and supplies for the military. Maintaining and stocking the Qullqa system fell to local lords who resided in military resupplying stations called Tambo, each located within a day's march of the next. This system relieved soldiers from the need to forage, but required constant maintenance from the local populace.[NEWLINE][NEWLINE]
+				Royal Qullqa stored the luxury and ceremonial goods of the Incan nobility, including feathers, precious stones, and Coca leaves. Coca production was jealously guarded as an imperial monopoly; cultivation and distribution of coca was strictly under the control of the nobles and a few favored classes.
 			</Text>
 		</Row>
+		
+		
 		<Row Tag="TXT_KEY_RESOURCE_COCA">
 			<Text>Coca</Text>
 		</Row>
