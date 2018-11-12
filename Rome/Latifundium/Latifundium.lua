@@ -133,7 +133,7 @@ function OnCaptureRemoveNationalWonders(iOldOwner, bIsCapital, iX, iY, iNewOwner
 
 	if pNewPlayer:GetCivilizationType() ~= eCivilizationRome then return end
 
-    local pCity = Map.GetPlot(iX, iY):GetPlotCity()
+	local pCity = Map.GetPlot(iX, iY):GetPlotCity()
 
 	for building in GameInfo.Buildings() do
 		if pCity:IsHasBuilding(building.ID) and building.NumCityCostMod >= 1 then
