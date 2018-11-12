@@ -6,7 +6,7 @@ More Unique Components for Vox Populi changelog:
 v38:
 - reworked:
 	- Inca:
-		- deleted Intihuatana; reverted to Tambo (caravansary replacement),
+		- deleted Intihuatana; changed to Qullqa (granary replacement),
 		- UA ==> reverted to science/food, since it was changed to accomodate Intihuatana,
 		- Chasqui ==> gold on exploration removed,
 				  ==> Chasquiwasi ==> now +1 move in friendly lands and +10 HP on heal.
