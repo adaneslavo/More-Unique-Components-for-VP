@@ -128,6 +128,21 @@ function GetNearestCity(pPlayer, pPlot)
 	return pNearestCity
 end
 
+function OnCaptureRemoveNationalWonders(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop, bConquest)
+	local pNewPlayer = Players[iNewOwner]
+
+	if pNewPlayer:GetCivilizationType() ~= eCivilizationRome then return end
+
+    local pCity = Map.GetPlot(iX, iY):GetPlotCity()
+
+	for building in GameInfo.Buildings() do
+		if pCity:IsHasBuilding(building.ID) and building.NumCityCostMod >= 1 then
+			pCity:SetNumRealBuilding(building.ID, 0)
+		end
+	end
+end
+
 if Game.IsCivEverActive(eCivilizationRome) then
+	GameEvents.CityCaptureComplete.Add(OnCaptureRemoveNationalWonders)
 	GameEvents.TileImprovementChanged.Add(LatifundiumSpawnFigs)
 end
