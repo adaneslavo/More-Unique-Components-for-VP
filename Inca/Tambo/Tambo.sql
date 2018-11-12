@@ -57,6 +57,6 @@ INSERT INTO IconTextureAtlases
 VALUES	('BUILDING_INCA_ATLAS', 	256, 		'TamboIcon_256.dds',	1, 				1),
 		('BUILDING_INCA_ATLAS', 	128, 		'TamboIcon_128.dds',	1, 				1),
 		('BUILDING_INCA_ATLAS', 	64, 		'TamboIcon_064.dds',	1, 				1),
-		('BUILDING_INCA_ATLAS', 	45, 		'TamboIcon_45.dds',		1, 				1);
+		('BUILDING_INCA_ATLAS', 	45, 		'TamboIcon_045.dds',	1, 				1);
 --==========================================================================================================================
 --==========================================================================================================================

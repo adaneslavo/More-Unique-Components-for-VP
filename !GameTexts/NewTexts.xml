@@ -2146,11 +2146,14 @@
 		<Row Tag="TXT_KEY_RESOURCE_COCA_TEXT">
 			<Text>Coca is the leaf of any of four cultivated species of the family Erythroxylaceae native to western South America. The plant is famous for its various medicinal and nutritional uses, increasing alertness, dulling pain, supressing appetite, and treating altitude sickness. The leaves are traditionally chewed or brewed into a tea. Coca made an impression on the Spanish conquerors for its ability to help people work harder, even through exhaustion or hunger.[NEWLINE][NEWLINE]Today, coca is best known for its psychoactive alkaloid, cocaine. The alkaloid content of coca leaves is relatively low, requiring a large number of leaves for a single batch of cocaine. Coca leaf extract began being used in Coca-Cola products in 1885, but cocaine was completely eliminated from the products around 1903.</Text>
 		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_MONOPOLY_COCA">
+			<Text>[COLOR_POSITIVE_TEXT]Monopoly Bonus: [ENDCOLOR]Grants [COLOR_POSITIVE_TEXT]Coca Leaves[ENDCOLOR] Promotion to all Units.</Text>
+		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COCA">
-			<Text>Coca Monopoly</Text>
+			<Text>Coca Leaves</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COCA_HELP">
-			<Text>Can cross Mountains. +15% Improvement Speed.</Text>
+			<Text>Unit [COLOR_POSITIVE_TEXT]can cross Mountains[ENDCOLOR]. +15% [ICON_WORKER] Work Rate.</Text>
 		</Row>
 			
 		<!-- Tarkhan -->		
