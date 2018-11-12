@@ -14,7 +14,7 @@ function OnConstructionPlaceCoca(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 	
 	if not(pPlayer and pPlayer:GetCivilizationType() == eCivilizationInca) then return end
-	if iBuilding ~= GameInfoTypes.BUILDING_INCA_TAMBO then return end
+	if iBuilding ~= GameInfoTypes.BUILDING_INCA_QULLQA then return end
 	
 	local pCity = pPlayer:GetCityByID(iCity)
 	
