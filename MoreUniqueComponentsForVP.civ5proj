@@ -2141,13 +2141,29 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Tambo\Tambo.lua">
+    <Content Include="Inca\Tambo\Qullqa.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Tambo\Tambo.sql">
+    <Content Include="Inca\Tambo\Qullqa.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Inca\Tambo\Qullqa.045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Inca\Tambo\Qullqa.064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Inca\Tambo\Qullqa.128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Inca\Tambo\Qullqa.256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="India\Dhanuraashi\Dhanurvidya\DhanurvidyaIcon_016.dds">
       <SubType>Lua</SubType>
