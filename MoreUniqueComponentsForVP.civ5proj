@@ -652,7 +652,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Inca/Tambo/Tambo.sql</FileName>
+        <FileName>Inca/Tambo/Qullqa.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -1062,9 +1062,9 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Tambo</Name>
+        <Name>Qullqa</Name>
         <Description>Adds Coca resource.</Description>
-        <FileName>Inca/Tambo/Tambo.lua</FileName>
+        <FileName>Inca/Tambo/Qullqa.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3rd-and-4th-unique-components-for-vp-official-thread.631657/</Homepage>
