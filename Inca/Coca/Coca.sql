@@ -9,8 +9,7 @@ VALUES		('RESOURCE_COCA',	null,			null,				'TXT_KEY_RESOURCE_COCA',	'TXT_KEY_RES
 ------------------------------
 INSERT INTO Resource_YieldChanges 	
 			(ResourceType, 			YieldType, 			Yield)
-VALUES		('RESOURCE_COCA',		'YIELD_PRODUCTION',	2),
-			('RESOURCE_COCA',		'YIELD_FOOD',		2);
+VALUES		('RESOURCE_COCA',		'YIELD_PRODUCTION',	2);
 ------------------------------
 -- Resource_Flavors
 ------------------------------
