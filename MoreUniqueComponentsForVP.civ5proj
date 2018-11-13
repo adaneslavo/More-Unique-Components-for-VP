@@ -1205,27 +1205,19 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.128.dds">
+    <Content Include="!SharedAssets\SharedAssets_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.256.dds">
+    <Content Include="!SharedAssets\SharedAssets_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.32.dds">
+    <Content Include="!SharedAssets\SharedAssets_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="!SharedAssets\tambo.stnd.UofC.Ord.80.dds">
+    <Content Include="!SharedAssets\SharedAssets_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

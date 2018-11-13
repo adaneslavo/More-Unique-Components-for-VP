@@ -30,7 +30,7 @@ VALUES		('PROMOTION_UNIT_GERMANY_CHAPTER',	'UNITCOMBAT_MELEE');
 --------------------------------	
 -- Buildings
 --------------------------------	
-UPDATE Buildings SET PortraitIndex = '3', IconAtlas = 'BUILDING_APIG4UC_ATLAS' WHERE Type = 'BUILDING_ORDER';
+UPDATE Buildings SET PortraitIndex = '2', IconAtlas = 'BUILDING_APIG4UC_ATLAS' WHERE Type = 'BUILDING_ORDER';
 
 INSERT INTO	Buildings
 			(Type,								Description,								Civilopedia,									Strategy,											Help,											GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech,		PortraitIndex, IconAtlas,			GreatWorkYieldType,	NeverCapture, NukeImmune, NumCityCostMod, TrainedFreePromotion, FreePromotion,						GreatWorkSlotType, GreatWorkCount, NationalPopRequired, CitySupplyModifier, ExtraCityHitPoints,		FreeBuildingThisCity)

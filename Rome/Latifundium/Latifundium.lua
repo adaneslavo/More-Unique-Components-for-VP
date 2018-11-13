@@ -136,8 +136,10 @@ function OnCaptureRemoveNationalWonders(iOldOwner, bIsCapital, iX, iY, iNewOwner
 	local pCity = Map.GetPlot(iX, iY):GetPlotCity()
 
 	for building in GameInfo.Buildings() do
-		if pCity:IsHasBuilding(building.ID) and building.NumCityCostMod >= 1 then
-			pCity:SetNumRealBuilding(building.ID, 0)
+		local iBuilding = building.ID
+		
+		if pCity:IsHasBuilding(iBuilding) and building.NumCityCostMod >= 1 then
+			pCity:SetNumRealBuilding(iBuilding, 0)
 		end
 	end
 end

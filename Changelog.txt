@@ -30,7 +30,9 @@ v38:
 	- all Dummies except Barbican ==> added IsDummy=true (needs to be recognized as a non-dummy building in case Rome captures it),
 	- Suffet ==> embarking and disembarking removes all movement; (prevents bug with multi-tile canals),
 	- Gumey ==> now correct calculation method for monopolies,
-	- Rome ==> can no longer capture unique national wonders.
+	- Rome ==> can no longer capture unique national wonders,
+- deleted:
+	- Tambo ==> art assets deleted; cleaned sql; deleted 32 and 80 px art.
 
 v37.4.1:
 - fixed:

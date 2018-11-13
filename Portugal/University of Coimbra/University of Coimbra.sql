@@ -18,7 +18,7 @@ INSERT INTO	Buildings
 			ThemingBonusHelp, NeverCapture, NukeImmune, NumCityCostMod, GreatWorkSlotType, GreatWorkCount,
 			NationalPopRequired, IlliteracyHappinessChange, FreePromotion)
 SELECT		'BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA', 'TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA', 'TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_TEXT', 'TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_STRATEGY', 'TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_HELP', GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,
-			BuildingClass, ArtDefineTag, PrereqTech, 2, 'BUILDING_APIG4UC_ATLAS', GreatWorkYieldType,
+			BuildingClass, ArtDefineTag, PrereqTech, 1, 'BUILDING_APIG4UC_ATLAS', GreatWorkYieldType,
 			ThemingBonusHelp, NeverCapture, NukeImmune, NumCityCostMod, GreatWorkSlotType, GreatWorkCount,
 			NationalPopRequired, IlliteracyHappinessChange, 'PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY'
 FROM		Buildings
