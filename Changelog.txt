@@ -4,10 +4,17 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v39:
+- added:
+	- "Alternative Names" feature:
+		- you can set 3 options: mixed names/only endonyms/only xenonyms by changing special value in !GameTexts/AlternativeNames.sql file,
+		- all names, where it was possible, are changed to use native language of the nation (for xenonyms) or english names (for endonyms); if names where very similar, easier to read was left,
+		- changed VP as well as MUCfVP names.
 - fixed:
 	- Qullqa ==> text,
 	- Cacadores ==> added shadow to flag icon,
 	- Chasqui ==> added shadow and mipmaps to flag icons.
+- modified:
+	- renamed few folders and files.
 
 v38:
 - reworked:

@@ -5,11 +5,12 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>38</ModVersion>
+    <ModVersion>39</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>3rd and 4th unique component for each civilization</Teaser>
     <Description>More Unique Components mod. Compatible with latest VP (11-9).
 Compatible with VPEE and ENW from @Infixo.
+Includes "Alternative Names" feature.
 
 Latest changes: see changelog file.</Description>
     <Authors>adan_eslavo, pineappledan, Blue Ghost, Hinin and many others</Authors>
@@ -42,17 +43,17 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!GameTexts/NewTexts.xml</FileName>
+        <FileName>!GameTexts/NewComponentTexts.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!GameTexts/TextChanges.sql</FileName>
+        <FileName>!GameTexts/ComponentTextChanges.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!Settings/Settings.sql</FileName>
+        <FileName>!Settings/MUCSettings.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -632,17 +633,17 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!Dummies/Dummies.sql</FileName>
+        <FileName>!Dummies/MUCDummies.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!Compatibility/VPEE.sql</FileName>
+        <FileName>!Compatibility/MUC-VPEE.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>!Compatibility/ENW.sql</FileName>
+        <FileName>!Compatibility/MUC-ENW.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -653,6 +654,11 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Inca/Tambo/Qullqa.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>!GameTexts/AlternativeNames.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -1173,23 +1179,27 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="!Compatibility\ENW.sql">
+    <Content Include="!Compatibility\MUC-ENW.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!Compatibility\VPEE.sql">
+    <Content Include="!Compatibility\MUC-VPEE.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!Dummies\Dummies.sql">
+    <Content Include="!Dummies\MUCDummies.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!GameTexts\NewTexts.xml">
+    <Content Include="!GameTexts\AlternativeNames.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="!GameTexts\TextChanges.sql">
+    <Content Include="!GameTexts\NewComponentTexts.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="!GameTexts\ComponentTextChanges.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -3273,7 +3283,7 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="!Settings\Settings.sql">
+    <Content Include="!Settings\MUCSettings.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

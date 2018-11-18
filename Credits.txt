@@ -3,8 +3,8 @@
 -- DateCreated: 20/10/2017
 --------------------------------------------------------------
 Special thanks to:
-
   - Hinin - ideas and early developement of 3rd and 4th Unique Component mod. Mod support, spreadsheets and summarizing, Playtesting, bug reports,
+  - adan_eslavo - main part of coding, puttings things together, main post developement, ideas, bug fixes, art, advices, some part of early testing, game texts, project collaborator and many more,
   - pineappledan - ideas, research, sql programming, art and game texts. Mod support, spreadsheets and summarizing. Too many forum posts than is healthy, project collaborator, 
   - Blue Ghost - main page developement, coding, bug fixes, merging, game texts, ideas and help with coding other people's parts, project collaborator,
   - Infixo - dll coding, ideas and bug reports, lua code, Github help, coding suggestions, VP cooperation and implementations, project collaborator,
@@ -25,8 +25,8 @@ Special thanks to:
   - CrazyG - ideas and bug reports,
   - Gazebo - patience during answering on many questions, author of VP,
 and I should thank myself but at least I can put what I managed to give to this mod:
-  - adan_eslavo - main part of coding, puttings things together, main post developement, ideas, bug fixes, art, advices, some part of early testing, game texts, promotion overhaul and many more, project collaborator,
-If I forgot to mention someone please give me a call.
+  
+If we forgot to mention someone please give us a call.
 
 Things borrowed from other mods:
 	America:
@@ -120,7 +120,7 @@ Things borrowed from other mods:
 	Inca:
 		- Leugi - idea, picture and flag of Chasqui UU,
 		- JTitan - 3D model of Chasqui,
-		- TAMBO???
+		- Qullqa - ???
 		
 	India:
 		- Danmacsch - picture and 3D model of Dhanuraashi UU (Agaw Archer),
@@ -200,7 +200,7 @@ Things borrowed from other mods:
 		- Salamandre - icon of Kapu Ku'ialua promotion.
   
 	Portugal:
-	   - CACADORES???
+	   - Cacadores - ???
 
 	Rome:
 		- Hypereon, Uighur_Ceasar - idea of Latifundium UI,
