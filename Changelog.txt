@@ -4,6 +4,9 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v39:
+- tweaks
+	- Suffet ==> added Suffet conversion onto all Admirals. Now Carthage can swap all GAs/GGs back and forth.
+	- Scythed Chariot ==> removed ZOC on Scythe promotion
 - added:
 	- "Alternative Names" feature:
 		- you can set 3 options: mixed names/only endonyms/only xenonyms by changing special value in !GameTexts/AlternativeNames.sql file,
