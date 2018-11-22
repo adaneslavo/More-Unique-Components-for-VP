@@ -7,6 +7,10 @@
 INSERT INTO Civilization_UnitClassOverrides 
 		(CivilizationType, 			UnitClassType, 				UnitType)
 VALUES	('CIVILIZATION_CARTHAGE', 	'UNITCLASS_GREAT_GENERAL', 	'UNIT_CARTHAGE_SHOPHET');
+
+INSERT INTO Trait_FreePromotionUnitClass
+	(TraitType, UnitClassType, PromotionType)
+VALUES	('TRAIT_PHOENICIAN_HERITAGE', 'UNITCLASS_GREAT_ADMIRAL', 'PROMOTION_UNIT_CARTHAGE_ADMIRAL');
 --==========================================================================================================================
 
 --==========================================================================================================================
