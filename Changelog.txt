@@ -16,8 +16,13 @@ v39:
 	- Qullqa ==> text,
 	- Cacadores ==> added shadow to flag icon,
 	- Chasqui ==> added shadow and mipmaps to flag icons.
+	- Pictish warrior ==> Druidism is now lost on promotion
+	- Oppidum ==> WLTKD scaling now matches Towns
 - modified:
 	- renamed few folders and files.
+	- Suffet/InDuna ==> locked lua hooks to if Carthage/Zulu is in the game
+	- Gumey ==> simplified monopoly bonus calculation loop
+	- Seir Morb ==> removed unnecessary citytrained hooks
 
 v38:
 - reworked:
