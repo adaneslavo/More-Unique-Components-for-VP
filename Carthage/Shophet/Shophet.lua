@@ -58,5 +58,8 @@ function ShophetZoneOfControl(iPlayer)
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(ShophetZoneOfControl)
-GameEvents.UnitSetXY.Add(ShophetChange)
+if Game.IsCivEverActive(eCivilizationCarthage) then
+	GameEvents.PlayerDoTurn.Add(ShophetZoneOfControl)
+	GameEvents.UnitSetXY.Add(ShophetChange)
+end
+
