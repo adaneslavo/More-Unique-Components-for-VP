@@ -16,8 +16,8 @@ VALUES		('TXT_KEY_PROMOTION_UNIT_CELTS_DRUIDISM',			'Druidism'),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 								Description, 								Help, 											Sound, 				VisibilityChange,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_CELTS_DRUIDISM',	'TXT_KEY_PROMOTION_UNIT_CELTS_DRUIDISM',	'TXT_KEY_PROMOTION_UNIT_CELTS_DRUIDISM_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_POLAND_PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_CELTS_DRUIDISM');
+			(Type, 				Description, 					Help, 						Sound, 			VisibilityChange,			MovesChange,			AttackMod,		DefenseMod, 		ExperiencePercent,			IgnoreZOC,		LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_CELTS_DRUIDISM',	'TXT_KEY_PROMOTION_UNIT_CELTS_DRUIDISM',	'TXT_KEY_PROMOTION_UNIT_CELTS_DRUIDISM_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			1,					1, 				0, 				'UNIT_POLAND_PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_CELTS_DRUIDISM');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
