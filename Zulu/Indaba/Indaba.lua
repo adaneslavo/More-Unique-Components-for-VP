@@ -97,5 +97,7 @@ function PositionCalculator(i1, i2)
     return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.GreatPersonExpended.Add(OnExpendingGrantXPAndDealDmg)
-GameEvents.CombatEnded.Add(OnAttackGainExtraXP)
+if Game.IsCivEverActive(GameInfoTypes.CIVILIZATION_ZULU) then
+	GameEvents.GreatPersonExpended.Add(OnExpendingGrantXPAndDealDmg)
+	GameEvents.CombatEnded.Add(OnAttackGainExtraXP)
+end
