@@ -1558,17 +1558,17 @@
 			<Text>Unit gains [ICON_PEACE] Faith [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. Bonus doubled [COLOR_POSITIVE_TEXT]on Barbarian Kills[ENDCOLOR]. +25% [ICON_STRENGTH] Defense Bonus.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLAND_PANCERNY">
-			<Text>Pancerni</Text>
+			<Text>Pancerny</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLAND_PANCERNY_HELP">
 			<Text>A sturdy Mounted Skirmisher. Only Poland may build it. Earns [ICON_PEACE] Faith from each Enemy killed and double the amount from Barbarians. This Unit is stronger in both defense and offense than the Heavy Skirmisher, and has additional protection against Ranged Units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLAND_PANCERNY_STRATEGY">
-			<Text>Pancerni is the Polish replacement for the Heavy Skirmisher. It has stronger attack and defense than the Heavy Skirmisher, and takes reduced damage from Ranged attacks. The Pancerny also earns Faith for each enemy killed. As mounted unit, the Pancerny is vulnerable to Pikemen.</Text>
+			<Text>Pancerny is the Polish replacement for the Heavy Skirmisher. It has stronger attack and defense than the Heavy Skirmisher, and takes reduced damage from Ranged attacks. The Pancerny also earns Faith for each enemy killed. As mounted unit, the Pancerny is vulnerable to Pikemen.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLAND_PANCERNY_TEXT">
 			<Text>
-				Towarzysz Pancerni (Mailed Companion) was a rank of Polish cavalryman from the 10th to 18th century, named for their chainmail armor. Pancerni were organized into companies, with each company consisting of 60 to 200 horsemen. Exceptionally well-armored, they used chainmail or platemail armor, vambraces, helmets, and buckler shields. The most common armaments were sabres, reflex bows and, with the arrival of gunpowder, flintlock pistols and carbines.[NEWLINE][NEWLINE]
+				Towarzysz Pancerny (Mailed Companion) was a rank of Polish cavalryman from the 10th to 18th century, named for their chainmail armor. Pancerni were organized into companies, with each company consisting of 60 to 200 horsemen. Exceptionally well-armored, they used chainmail or platemail armor, vambraces, helmets, and buckler shields. The most common armaments were sabres, reflex bows and, with the arrival of gunpowder, flintlock pistols and carbines.[NEWLINE][NEWLINE]
 				After the rise of heavy cavalry the Pancerni often worked in concert with the newer and more heavily armed husaria, augmenting a cavalry charge and chasing down routing enemy soldiers. By the second half of the 17th century, they represented approximately 70% of all soldiers in the Polish military, fighting against Cossacks, Tatars, and the Swedish. The Husaria and Pancerni were eventually combined to form the ‘Kawaleria Narodowa’, the Polish-Lithuanian National Cavalry.
 			</Text>
 		</Row>
