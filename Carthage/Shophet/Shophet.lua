@@ -11,10 +11,15 @@ local iUnitAdmiral = GameInfoTypes["UNIT_GREAT_ADMIRAL"]
 local iUnitShophet = GameInfoTypes["UNIT_CARTHAGE_SHOPHET"]
 local iDomain = GameInfoTypes["DOMAIN_LAND"]
 local iUnitPromotionShophetZoC = GameInfoTypes["PROMOTION_UNIT_CARTHAGE_ZOC"]
+local eCivilizationCarthage = GameInfoTypes.CIVILIZATION_CARTHAGE
+
 
 -- ShophetChange
 function ShophetChange(iPlayer, iUnit, iX, iY)
 	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationCarthage) then return end
+	
 	local pPlot = Map.GetPlot(iX, iY)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	
@@ -47,6 +52,8 @@ end
 function ShophetZoneOfControl(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationCarthage) then return end	
+		
 	if (pPlayer:IsAlive() and (not pPlayer:IsBarbarian())) then	
 		for pUnit in pPlayer:Units() do
 			if (pUnit:GetDomainType() == iDomain and (not pUnit:IsEmbarked())) then
@@ -58,5 +65,8 @@ function ShophetZoneOfControl(iPlayer)
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(ShophetZoneOfControl)
-GameEvents.UnitSetXY.Add(ShophetChange)
+if Game.IsCivEverActive(eCivilizationCarthage) then
+	GameEvents.PlayerDoTurn.Add(ShophetZoneOfControl)
+	GameEvents.UnitSetXY.Add(ShophetChange)
+end
+

@@ -13,6 +13,7 @@ local tMonopolyResources = {
 	GameInfoTypes.RESOURCE_AMBER,
 	GameInfoTypes.RESOURCE_CITRUS,
 	GameInfoTypes.RESOURCE_CLOVES,
+	GameInfoTypes.RESOURCE_COCA,
 	GameInfoTypes.RESOURCE_COFFEE,
 	GameInfoTypes.RESOURCE_COPPER,
 	GameInfoTypes.RESOURCE_CORAL,
@@ -61,7 +62,7 @@ function OnTurnAddMonopolyBonus (iPlayer)
 	local iMonopolyCounter = 0
 	
 	for i, resource in pairs(tMonopolyResources) do
-		if ((pPlayer:GetNumResourceTotal(resource) + pPlayer:GetResourceExport(resource)) / Map.GetNumResources(resource)) > 0.5 then
+		if pPlayer:HasGlobalMonopoly(resource) then
 			iMonopolyCounter = iMonopolyCounter + 1
 		end
 	end
