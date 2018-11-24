@@ -6,6 +6,7 @@ include("FLuaVector.lua")
 
 local ePromotionIbutho = GameInfoTypes.PROMOTION_UNIT_ZULU_IBUTHO
 local ePromotionIqawe = GameInfoTypes.PROMOTION_UNIT_ZULU_IQAWE
+local eCivilizationZulu = GameInfoTypes.CIVILIZATION_ZULU
 
 local tEligibleCombats = {
 	[GameInfoTypes.UNITCOMBAT_MELEE] = true,
@@ -19,6 +20,8 @@ local tEligibleCombats = {
 -- adds XP to stacked unit and deals damage to adjacent enemy units
 function OnExpendingGrantXPAndDealDmg(iPlayer, iUnit, iUnitType, iX, iY)
 	local pPlayer = Players[iPlayer]
+
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationZulu) then return end
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if not pUnit:IsHasPromotion(ePromotionIqawe) then return end
@@ -71,8 +74,8 @@ end
 function OnAttackGainExtraXP(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP) 
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	
-	if pAttackingPlayer == nil then return end
-		
+	if not (pAttackingPlayer and pAttackingPlayer:GetCivilizationType() == eCivilizationZulu) then return end
+
 	local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 	
 	if pAttackingUnit == nil then return end
@@ -97,7 +100,7 @@ function PositionCalculator(i1, i2)
     return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-if Game.IsCivEverActive(GameInfoTypes.CIVILIZATION_ZULU) then
+if Game.IsCivEverActive(eCivilizationZulu) then
 	GameEvents.GreatPersonExpended.Add(OnExpendingGrantXPAndDealDmg)
 	GameEvents.CombatEnded.Add(OnAttackGainExtraXP)
 end
