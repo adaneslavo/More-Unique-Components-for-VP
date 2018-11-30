@@ -28,20 +28,6 @@ function OnConstructionPlaceCoca(iPlayer, iCity, iBuilding)
 	end
 end
 
--- deletes Coca if city is razed
-function OnRazeRemoveCoca(hexPos, iOldOwner, iCity, iNewOwner)
-	local pPlayer = Players[iOldOwner]
-	local pCity = pPlayer:GetCityByID(iCity)
-	
-	if pCity then
-		local pPlot = Map.GetPlot(pCity:GetX(), pCity:GetY())
-	
-		if pPlot and pPlot:GetResourceType() == eResourceCoca then
-			pPlot:SetResourceType(-1)
-		end
-	end
-end
-
 -- checks from monopoly bonus for Coca
 function OnTurnCheckMonopoly(iPlayer)
 	local pPlayer = Players[iPlayer]
