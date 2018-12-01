@@ -40,9 +40,8 @@ VALUES		('BUILDING_AZTEC_HUEY_TEOCALLI',	'FLAVOR_RELIGION',			50),
 -- Building_YieldChanges
 --------------------------------	
 INSERT INTO Building_YieldChanges
-			(BuildingType,					YieldType, Yield)
-SELECT		'BUILDING_AZTEC_HUEY_TEOCALLI', YieldType, Yield
-FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_GRAND_TEMPLE';
+			(BuildingType,		YieldType, Yield)
+VALUES		('BUILDING_AZTEC_HUEY_TEOCALLI', YIELD_FAITH, 3);
 --==========================================================================================================================	
 
 --==========================================================================================================================
