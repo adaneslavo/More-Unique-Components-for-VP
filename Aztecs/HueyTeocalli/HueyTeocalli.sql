@@ -17,7 +17,7 @@ VALUES		('CIVILIZATION_AZTEC',	'BUILDINGCLASS_GRAND_TEMPLE',	'BUILDING_AZTEC_HUE
 --------------------------------	
 INSERT INTO	Buildings
 			(Type,							Description,							Civilopedia,									Strategy,											Help,											GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,				GreatWorkYieldType,	GoldenAge,	NeverCapture, NukeImmune, NumCityCostMod, GreatWorkSlotType, GreatWorkCount,	NationalPopRequired, MinorityHappinessChange,	FreeBuildingThisCity)
-SELECT		'BUILDING_AZTEC_HUEY_TEOCALLI', 'TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI', 'TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_TEXT',	'TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_STRATEGY',	'TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_AZTEC_ATLAS',	GreatWorkYieldType,	1,			NeverCapture, NukeImmune, NumCityCostMod, GreatWorkSlotType, GreatWorkCount,	NationalPopRequired, MinorityHappinessChange,	'BUILDINGCLASS_TEMPLE'
+SELECT		'BUILDING_AZTEC_HUEY_TEOCALLI', 'TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI', 'TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_TEXT',	'TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_STRATEGY',	'TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_AZTEC_ATLAS',	GreatWorkYieldType,	1,			NeverCapture, NukeImmune, NumCityCostMod, GreatWorkSlotType, GreatWorkCount,	NationalPopRequired, MinorityHappinessChange,	'BUILDINGCLASS_D_FOR_HUEY'
 FROM Buildings WHERE Type = 'BUILDING_GRAND_TEMPLE';
 --------------------------------	
 -- Building_ClassYieldChanges
