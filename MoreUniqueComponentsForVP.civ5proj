@@ -3,14 +3,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
-    <Name>More Unique Components for VP</Name>
+    <Name>(over) More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
     <ModVersion>39</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>3rd and 4th unique component for each civilization</Teaser>
     <Description>More Unique Components mod. Compatible with latest VP (11-9).
 Compatible with VPEE and ENW from @Infixo.
-Includes "Alternative Names" feature.
 
 Latest changes: see changelog file.</Description>
     <Authors>adan_eslavo, pineappledan, Blue Ghost, Hinin and many others</Authors>
