@@ -14,7 +14,7 @@ v39:
 		- all names, where it was possible, are changed to use native language of the nation (for xenonyms) or english names (for endonyms); if names where very similar, easier to read was left,
 		- changed VP as well as MUCfVP names.
 - fixed:
-	- Qullqa ==> text,
+	- Qullqa ==> text, Resolved issue with cities on mountains disappearing when Qullqa is built 
 	- Cacadores ==> added shadow to flag icon,
 	- Chasqui ==> added shadow and mipmaps to flag icons.
 	- Pictish warrior ==> Druidism is now lost on promotion
