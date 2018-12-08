@@ -14,7 +14,7 @@ v39:
 	- Gumey ==> simplified monopoly bonus calculation loop,
 	- Seir Morb ==> removed unnecessary citytrained hooks.
 - fixed:
-	- Qullqa ==> text,
+	- Qullqa ==> text, Resolved issue with cities on mountains disappearing when Qullqa is built 
 	- Cacadores ==> added shadow to flag icon,
 	- Chasqui ==> added shadow and mipmaps to flag icons.
 	- Druidism ==> now lost on promotion,
