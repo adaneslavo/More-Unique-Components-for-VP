@@ -4,26 +4,22 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v39:
-- tweaks
-	- Suffet ==> added Suffet conversion onto all Admirals. Now Carthage can swap all GAs/GGs back and forth.
-	- Scythed Chariot ==> removed ZOC on Scythe promotion
-	- Huey Teocalli ==> Reduced base faith to +3. Replaced free temple with a free immediate +3 food/faith/XP dummy building (sick of this "bug")
-- added:
-	- "Alternative Names" feature:
-		- you can set 3 options: mixed names/only endonyms/only xenonyms by changing special value in !GameTexts/AlternativeNames.sql file,
-		- all names, where it was possible, are changed to use native language of the nation (for xenonyms) or english names (for endonyms); if names where very similar, easier to read was left,
-		- changed VP as well as MUCfVP names.
+- tweaked:
+	- Suffet ==> added Suffet conversion onto all Admirals (now Carthage can swap all GAs/GGs back and forth),
+	- Scythed Chariot ==> removed ZOC from Scythe promotion,
+	- Huey Teocalli ==> reduced base faith to +3; replaced free Temple with a free immediate +3 food/faith/XP dummy building (sick of this "bug").
+- modified:
+	- renamed few folders and files,
+	- Suffet/InDuna ==> locked lua hooks to if Carthage/Zulu is in the game,
+	- Gumey ==> simplified monopoly bonus calculation loop,
+	- Seir Morb ==> removed unnecessary citytrained hooks.
 - fixed:
 	- Qullqa ==> text,
 	- Cacadores ==> added shadow to flag icon,
 	- Chasqui ==> added shadow and mipmaps to flag icons.
-	- Pictish warrior ==> Druidism is now lost on promotion
-	- Oppidum ==> WLTKD scaling now matches Towns
-- modified:
-	- renamed few folders and files.
-	- Suffet/InDuna ==> locked lua hooks to if Carthage/Zulu is in the game
-	- Gumey ==> simplified monopoly bonus calculation loop
-	- Seir Morb ==> removed unnecessary citytrained hooks
+	- Druidism ==> now lost on promotion,
+	- Oppidum ==> WLTKD scaling now matches Towns,
+	- Dhanuraashi, Armada, Tophet ==> "tValue" instaed of "t.Value" for XP scaling.
 
 v38:
 - reworked:

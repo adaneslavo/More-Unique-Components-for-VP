@@ -8,7 +8,7 @@ include("FLuaVector.lua")
 local bXPScaling = true -- default VP
 
 for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do 
-	bXPScaling = (tValue == 1) 
+	bXPScaling = (t.Value == 1) 
 end
 
 -- acquire game speed modifier
