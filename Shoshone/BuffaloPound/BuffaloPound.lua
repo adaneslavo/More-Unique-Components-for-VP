@@ -6,6 +6,7 @@
 local eResourceBison = GameInfoTypes.RESOURCE_BISON
 local eCivilizationShoshone = GameInfoTypes.CIVILIZATION_SHOSHONE
 local eBuildingBuffaloPound = GameInfoTypes.BUILDING_SHOSHONE_BUFFALO_POUND
+local eBuffaloDummy = GameInfoTypes.BUILDING_D_FOR_BUFFALO
 
 -- created Bison source on construction
 function OnConstructionPlaceBison(iPlayer, iCity, iBuilding)
@@ -18,6 +19,7 @@ function OnConstructionPlaceBison(iPlayer, iCity, iBuilding)
 	local pCity = pPlayer:GetCityByID(iCity)
 	
 	if not pCity then return end
+	if pCity:IsHasBuilding(eBuffaloDummy) then return end
 	
 	-- find suitable places
 	local tPossibleSpots = {}
@@ -75,6 +77,7 @@ function OnConstructionPlaceBison(iPlayer, iCity, iBuilding)
 				pCity:GetX(), pCity:GetY(), eResourceBison)
 		end
 	end
+pCity:SetNumRealBuilding(eBuffaloDummy, 1)
 end
 
 if Game.IsCivEverActive(eCivilizationShoshone) then
