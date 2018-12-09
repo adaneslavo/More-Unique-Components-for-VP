@@ -107,7 +107,8 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 	iFlaxCount = iFlaxCount + TryToPlaceFlax(     -1, LookForRiverFlats,  2-iFlaxCount)
 	iFlaxCount = iFlaxCount + TryToPlaceFlax(iPlayer, LookForOtherPlaces, 2-iFlaxCount)
 	iFlaxCount = iFlaxCount + TryToPlaceFlax(     -1, LookForOtherPlaces, 2-iFlaxCount)
-	
+	pCity:SetNumRealBuilding(eFlaxDummy, 1)
+
 	-- send a negative notification if no flax was placed
 	if pPlayer:IsHuman() and pPlayer:IsTurnActive() and iFlaxCount == 0 then 
 		local sName = pCity:GetName()
@@ -117,7 +118,6 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 			'New source of [ICON_RES_FLAX] Flax near '..sName..' [COLOR_NEGATIVE_TEXT]not created[ENDCOLOR]',
 			pCity:GetX(), pCity:GetY(), eResourceFlax)
 	end
-pCity:SetNumRealBuilding(eFlaxDummy, 1)
 end
 
 if Game.IsCivEverActive(eCivilizationEgypt) then
