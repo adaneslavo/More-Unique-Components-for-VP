@@ -5,6 +5,7 @@
 More Unique Components for Vox Populi changelog:
 v39:
 - tweaked:
+	- Holkan ==> removed renewal cycle promotion. Lost codices now gives 5 culture/5 science
 	- Suffet ==> added Suffet conversion onto all Admirals (now Carthage can swap all GAs/GGs back and forth),
 	- Scythed Chariot ==> removed ZOC from Scythe promotion,
 	- Huey Teocalli ==> reduced base faith to +3; replaced free Temple with a free immediate +3 food/faith/XP dummy building (sick of this "bug").
