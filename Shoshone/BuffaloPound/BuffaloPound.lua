@@ -59,6 +59,7 @@ function OnConstructionPlaceBison(iPlayer, iCity, iBuilding)
 	if bBisonCreated then
 		pChosenPlot = pSpotsTable[ math.random(#pSpotsTable) ]
 		pChosenPlot:SetResourceType(eResourceBison, 1)
+		pCity:SetNumRealBuilding(eBuffaloDummy, 1)
 	end
 	
 	-- send a proper notification
@@ -77,7 +78,6 @@ function OnConstructionPlaceBison(iPlayer, iCity, iBuilding)
 				pCity:GetX(), pCity:GetY(), eResourceBison)
 		end
 	end
-pCity:SetNumRealBuilding(eBuffaloDummy, 1)
 end
 
 if Game.IsCivEverActive(eCivilizationShoshone) then
