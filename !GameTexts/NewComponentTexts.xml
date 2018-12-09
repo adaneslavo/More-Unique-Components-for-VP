@@ -671,26 +671,20 @@
 		
 		<!-- Holkan -->
 		<!-- Created by adan_eslavo on 16/12/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_RENEWAL_CYCLE">
-			<Text>Renewal Cycle</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_RENEWAL_CYCLE_HELP">
-			<Text>Unit is healed for 30 HP [COLOR_POSITIVE_TEXT]in regular turn cycles[ENDCOLOR].</Text>
-		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2">
 			<Text>Lost Codices</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2_HELP">
-			<Text>Unit gains [ICON_RESEARCH] Science [COLOR_POSITIVE_TEXT]from Ancient Ruins[ENDCOLOR].</Text>
+			<Text>Unit gains [ICON_RESEARCH] Science and [ICON_CULTURE] Culture [COLOR_POSITIVE_TEXT]from Ancient Ruins[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN">
 			<Text>Holkan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_HELP">
-			<Text>A dangerous scout with no penalty against Barbarians. Only the Maya may build it. Heals 30 HP every 20 turns, and gains [ICON_RESEARCH] Science with every Ancient Ruin explored. Starts with the [COLOR_POSITIVE_TEXT]Trailblazer I[ENDCOLOR] Promotion.</Text>
+			<Text>A dangerous scout with no penalty against Barbarians. Only the Maya may build it. Gains [ICON_RESEARCH] Science and [ICON_CULTURE] Culture with every Ancient Ruin explored. Starts with the [COLOR_POSITIVE_TEXT]Trailblazer I[ENDCOLOR] Promotion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_STRATEGY">
-			<Text>The Holkan is a quick and independent scout for the Maya. Because of their free Trailblazer I promotion, the Holkan explores more quickly, and gains experience more easily than the Pathfinders. Their increased power against barbarians and ability to heal makes Holkans capable of ranging farther and taking more risks than a normal scout. Use these units to grab ruins quickly, and gain an early scientific edge.</Text>
+			<Text>The Holkan is a quick and independent scout for the Maya. Because of their free Trailblazer I promotion, the Holkan explores more quickly, and gains experience more easily than the Pathfinders. Their increased power against barbarians makes Holkans capable of ranging farther and taking more risks than a normal scout. Use these units to grab ruins quickly, and gain an early scientific edge and cultural edge.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_TEXT">
 			<Text>
