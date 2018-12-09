@@ -5,10 +5,10 @@
 include("FLuaVector.lua")
 
 local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].ResearchPercent / 100
-local ePromotionRenewalCycle = GameInfoTypes.PROMOTION_UNIT_MAYA_RENEWAL_CYCLE
+--local ePromotionRenewalCycle = GameInfoTypes.PROMOTION_UNIT_MAYA_RENEWAL_CYCLE
 local ePromotionTreasureHunter2 = GameInfoTypes.PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2
 
-function RenewalCycleOnHolkan(iPlayer)
+--[[function RenewalCycleOnHolkan(iPlayer)
 	local pPlayer = Players[iPlayer]
 	local iCounter = math.floor(20 * GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100)
 
@@ -25,7 +25,7 @@ function RenewalCycleOnHolkan(iPlayer)
 			end
 		end
 	end
-end
+end --]]
 
 function HolkansGoodyHuts(iPlayer, iUnit, eGoody, iX, iY)
 	local pPlayer = Players[iPlayer]
@@ -48,5 +48,5 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.PlayerDoTurn.Add(RenewalCycleOnHolkan)
+--GameEvents.PlayerDoTurn.Add(RenewalCycleOnHolkan)
 GameEvents.GoodyHutReceivedBonus.Add(HolkansGoodyHuts)
