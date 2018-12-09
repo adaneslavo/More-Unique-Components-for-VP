@@ -17,8 +17,8 @@ VALUES		('CIVILIZATION_EGYPT', 'BUILDINGCLASS_WATERMILL',	'BUILDING_EGYPT_NILOME
 -- Buildings
 --------------------------------	
 INSERT INTO	Buildings
-		(Type,				Description,				Civilopedia,					Strategy,					Help,						River,	MutuallyExclusiveGroup,	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,		GreatWorkYieldType)
-SELECT		'BUILDING_EGYPT_NILOMETER',	'TXT_KEY_BUILDING_EGYPT_NILOMETER',	'TXT_KEY_CIV5_BUILDINGS_NILOMETER_TEXT',	'TXT_KEY_BUILDING_EGYPT_NILOMETER_STRATEGY',	'TXT_KEY_BUILDING_EGYPT_NILOMETER_HELP',	0,	MutuallyExclusiveGroup,	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 2,		'BUILDING_EGYPT_ATLAS',	GreatWorkYieldType
+		(Type,				Description,				Civilopedia,					Strategy,					Help,						River,	MutuallyExclusiveGroup,	GoldMaintenance, 	Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,		GreatWorkYieldType)
+SELECT		'BUILDING_EGYPT_NILOMETER',	'TXT_KEY_BUILDING_EGYPT_NILOMETER',	'TXT_KEY_CIV5_BUILDINGS_NILOMETER_TEXT',	'TXT_KEY_BUILDING_EGYPT_NILOMETER_STRATEGY',	'TXT_KEY_BUILDING_EGYPT_NILOMETER_HELP',	0,	MutuallyExclusiveGroup,	0, 			Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 2,		'BUILDING_EGYPT_ATLAS',	GreatWorkYieldType
 FROM Buildings WHERE Type = 'BUILDING_WATERMILL';
 --------------------------------
 -- Building_ClassesNeededInCity
