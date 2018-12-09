@@ -6,6 +6,7 @@
 local eBuildingNilometer = GameInfoTypes.BUILDING_EGYPT_NILOMETER
 local eResourceFlax = GameInfoTypes.RESOURCE_EGYPT_FLAX
 local eCivilizationEgypt = GameInfoTypes.CIVILIZATION_EGYPT
+local eFlaxDummy = GameInfoTypes.BUILDING_D_FOR_FLAX
 
 -- creates 2 sources of flax if possible. Checks 6 different conditions in total prioritizing player tiles over unowned ones
 function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
@@ -17,6 +18,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 	local pCity = pPlayer:GetCityByID(iCity)
 	
 	if not pCity then return end
+	if pCity:IsHasBuilding(eFlaxDummy) then return end
 	
 	-- local functions for plaing flax under certain conditions
 		-- 1st pass - flood plains, close to river
@@ -115,6 +117,7 @@ function NilometerPlaceFlax(iPlayer, iCity, iBuilding)
 			'New source of [ICON_RES_FLAX] Flax near '..sName..' [COLOR_NEGATIVE_TEXT]not created[ENDCOLOR]',
 			pCity:GetX(), pCity:GetY(), eResourceFlax)
 	end
+pCity:SetNumRealBuilding(eFlaxDummy, 1)
 end
 
 if Game.IsCivEverActive(eCivilizationEgypt) then
