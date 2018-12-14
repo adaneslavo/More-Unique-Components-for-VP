@@ -16,7 +16,7 @@ local eTechPhilosophy = GameInfoTypes.TECH_PHILOSOPHY
 function OnCaptureCityBonuses(iPlayer, iCapital, iResourceX, iResourceY, iNewPlayer, iConquest, iConquest2)
 	local pNewPlayer = Players[iNewPlayer]
 
-	if not (pNewPlayer and (pNewPlayer:GetCivilizationType() == eCivilizationMongolia or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	if not (pNewPlayer and (pNewPlayer:GetCivilizationType() == eCivilizationMongolia or pNewPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 
 	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
 	
