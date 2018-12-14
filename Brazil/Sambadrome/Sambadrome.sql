@@ -68,7 +68,7 @@ VALUES		('BUILDING_BRAZIL_SAMBADROME',	'YIELD_CULTURE',	4),
 --------------------------------		
 INSERT INTO Building_GoldenAgeYieldMod
 	(BuildingType, YieldType, Yield)
-VALUES	('BUILDING_STELE', 'YIELD_GOLDEN_AGE_POINTS', 25);
+VALUES	('BUILDING_BRAZIL_SAMBADROME', 'YIELD_GOLDEN_AGE_POINTS', 25);
 --==========================================================================================================================	
 
 --==========================================================================================================================
