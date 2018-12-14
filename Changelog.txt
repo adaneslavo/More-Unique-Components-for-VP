@@ -15,6 +15,8 @@ v39:
 	- Gumey ==> simplified monopoly bonus calculation loop,
 	- Seir Morb ==> removed unnecessary citytrained hooks.
 - fixed:
+	- Yassa Court ==> lua bug fix
+	- Sambadrome ==> SQL bug fix
 	- Nilometer/Buffalo Pound ==> set dummy buildings so flax/buffalo won't spawn in a city if built >1 in same city
 	- Qullqa ==> text, Resolved issue with cities on mountains disappearing when Qullqa is built 
 	- Cacadores ==> added shadow to flag icon,
