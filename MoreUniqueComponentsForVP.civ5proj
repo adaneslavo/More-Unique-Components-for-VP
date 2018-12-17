@@ -3849,19 +3849,23 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Shoshone\YellowBrow\3DModel\MC_BlackMouth.fxsxml">
+    <Content Include="Shoshone\YellowBrow\3DModel\civ5_iropi1.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Shoshone\YellowBrow\3DModel\MC_BlackMouth.gr2">
+    <Content Include="Shoshone\YellowBrow\3DModel\civ5_iropi1.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Shoshone\YellowBrow\3DModel\MC_BlackMouth_32.dds">
+    <Content Include="Shoshone\YellowBrow\3DModel\iropi1.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Shoshone\YellowBrow\3DModel\MC_BlackMouth_diff.dds">
+    <Content Include="Shoshone\YellowBrow\3DModel\iropi1_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Shoshone\YellowBrow\3DModel\Iroquois_Pikeman1IX.blend">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

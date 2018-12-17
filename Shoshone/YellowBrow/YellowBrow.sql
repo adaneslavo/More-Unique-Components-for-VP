@@ -51,7 +51,7 @@ FROM ArtDefine_UnitMemberCombatWeapons WHERE UnitMemberType = 'ART_DEF_UNIT_MEMB
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberInfos 	
 		(Type, 					Scale, ZOffset, Domain, Model, 			MaterialTypeTag, MaterialTypeSoundOverrideTag)
-SELECT	'ART_DEF_UNIT_MEMBER_SHOSHONE_YELLOW_BROW',	Scale, ZOffset, Domain, 'MC_BlackMouth.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
+SELECT	'ART_DEF_UNIT_MEMBER_SHOSHONE_YELLOW_BROW',	Scale, ZOffset, Domain, 'civ5_iropi1.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_PIQUERO';
 ------------------------------
 -- IconTextureAtlases

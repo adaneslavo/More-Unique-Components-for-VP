@@ -18,7 +18,7 @@ local eCivilizationCarthage = GameInfoTypes.CIVILIZATION_CARTHAGE
 function ShophetChange(iPlayer, iUnit, iX, iY)
 	local pPlayer = Players[iPlayer]
 	
-	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationCarthage) then return end
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationCarthage)) then return end
 	
 	local pPlot = Map.GetPlot(iX, iY)
 	local pUnit = pPlayer:GetUnitByID(iUnit)
