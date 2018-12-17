@@ -9,6 +9,8 @@ v39:
 	- Suffet ==> added Suffet conversion onto all Admirals (now Carthage can swap all GAs/GGs back and forth),
 	- Scythed Chariot ==> removed ZOC from Scythe promotion,
 	- Huey Teocalli ==> reduced base faith to +3; replaced free Temple with a free immediate +3 food/faith/XP dummy building (sick of this "bug").
+	- Dhanurgraha ==> changed unit flag and SV flag (unstacked from Nubian archer)
+	- Yellowbrow ==> changed unit model (icon and flag unchanged)
 - modified:
 	- renamed few folders and files,
 	- Suffet/InDuna ==> locked lua hooks to if Carthage/Zulu is in the game,
