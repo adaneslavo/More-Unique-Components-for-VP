@@ -115,16 +115,14 @@ Things borrowed from other mods:
 		- JFD - idea of Tarkhan UU (Alan Cavalry)
 		- janboruta - picture and flag of Tarkhan,
 		- danrell - 3D model of Tarkhan,
-		- Wodhann - idea and picture of Alti Cur UB (Yurt).
+		- Wodhann - Picture of Alti Cur UB (Yurt).
 		  
 	Inca:
-		- Leugi - idea, picture and flag of Chasqui UU,
+		- Leugi - idea, picture and flag of Chasqui UU and Coca UR,
 		- JTitan - 3D model of Chasqui,
-		- Qullqa - ???
 		
 	India:
 		- Danmacsch - picture and 3D model of Dhanuraashi UU (Agaw Archer),
-		- janboruta - flag of Dhanuraashi (Apedemak Archer).
 
 	Indonesia:
 		- mikeburnfire - idea of Prau UU (Kapal Jung),
@@ -200,7 +198,7 @@ Things borrowed from other mods:
 		- Salamandre - icon of Kapu Ku'ialua promotion.
   
 	Portugal:
-	   - Cacadores - ???
+	   	- janboruta - Icon and unit flag for Cacador 
 
 	Rome:
 		- Hypereon, Uighur_Ceasar - idea of Latifundium UI,
@@ -213,7 +211,8 @@ Things borrowed from other mods:
 		- Wolfdog - 3D model of Licorne.
 
 	Shoshone:
-		- Sukritact - idea, picture and 3D model of Yellow Brow UU (Black Mouth),
+		- Sukritact - Picture Yellow Brow UU (Black Mouth),
+		- Unit model by Patum333
 		- TPangolin - idea and picture of Buffalo Pound UB.
 
 	Siam:
