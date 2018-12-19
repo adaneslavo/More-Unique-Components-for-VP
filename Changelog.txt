@@ -4,6 +4,7 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v39:
+- Compatibility with VP 12-18
 - tweaked:
 	- Holkan ==> removed renewal cycle promotion. Lost codices now gives 5 culture/5 science
 	- Suffet ==> added Suffet conversion onto all Admirals (now Carthage can swap all GAs/GGs back and forth),
