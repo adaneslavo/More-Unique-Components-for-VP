@@ -4,29 +4,28 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v39:
-- Compatibility with VP 12-18
-- tweaked:
-	- Holkan ==> removed renewal cycle promotion. Lost codices now gives 5 culture/5 science
+- compatibility with VP 12-18 (incompatible with older versions!),
+- renamed few folders and files,
+- tweaked/modified:
+	- Holkan ==> removed renewal cycle promotion; lost codices now gives 5 culture/5 science,
 	- Suffet ==> added Suffet conversion onto all Admirals (now Carthage can swap all GAs/GGs back and forth),
-	- Scythed Chariot ==> removed ZOC from Scythe promotion,
-	- Huey Teocalli ==> reduced base faith to +3; replaced free Temple with a free immediate +3 food/faith/XP dummy building (sick of this "bug").
-	- Dhanurgraha ==> changed unit flag and SV flag (unstacked from Nubian archer)
-	- Yellowbrow ==> changed unit model (icon and flag unchanged)
-- modified:
-	- renamed few folders and files,
-	- Suffet/InDuna ==> locked lua hooks to if Carthage/Zulu is in the game,
+	- Scythe ==> removed ZOC,
+	- Huey Teocalli ==> reduced base faith to +3; replaced free Temple with a free immediate +3 food/faith/XP dummy building (sick of this "bug"),
 	- Gumey ==> simplified monopoly bonus calculation loop,
-	- Seir Morb ==> removed unnecessary citytrained hooks.
+	- Suffet/InDuna ==> locked lua hooks checking if Carthage/Zulu is in the game,
+	- Dhanurgraha ==> changed unit flag and SV flag (unstacked from Nubian archer),
+	- Yellowbrow ==> changed unit model (icon and flag unchanged).
 - fixed:
-	- Yassa Court ==> lua bug fix
-	- Sambadrome ==> SQL bug fix
-	- Nilometer/Buffalo Pound ==> set dummy buildings so flax/buffalo won't spawn in a city if built >1 in same city
-	- Qullqa ==> text, Resolved issue with cities on mountains disappearing when Qullqa is built 
+	- Yassa Court ==> fixed lua,
+	- Sambadrome ==> fixed SQ,
+	- Nilometer/Buffalo Pound ==> set dummy buildings so flax/buffalo won't spawn in a city if built more than once in same city,
+	- Qullqa ==> fixed text; resolved issue with cities on mountains disappearing when Qullqa is built,
 	- Cacadores ==> added shadow to flag icon,
 	- Chasqui ==> added shadow and mipmaps to flag icons.
 	- Druidism ==> now lost on promotion,
 	- Oppidum ==> WLTKD scaling now matches Towns,
-	- Dhanuraashi, Armada, Tophet ==> "tValue" instaed of "t.Value" for XP scaling.
+	- Dhanuraashi, Armada, Tophet ==> "tValue" instaed of "t.Value" for XP scaling,
+	- Seir Morb ==> removed unnecessary citytrained hooks.
 
 v38:
 - reworked:
