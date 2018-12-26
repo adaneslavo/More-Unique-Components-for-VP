@@ -15,14 +15,21 @@ local eTechPhilosophy = GameInfoTypes.TECH_PHILOSOPHY
 -- adds yields to conquered city		
 function OnCaptureCityBonuses(iPlayer, iCapital, iResourceX, iResourceY, iNewPlayer, iConquest, iConquest2)
 	local pNewPlayer = Players[iNewPlayer]
+	local iCurrentYassa = 0;
 
 	if not (pNewPlayer and (pNewPlayer:GetCivilizationType() == eCivilizationMongolia or pNewPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 
-	local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
+	local iEraModifier = math.max(pNewPlayer:GetCurrentEra(), 1)
+
+	for city in pNewPlayer:Cities() do
+		if city:IsHasBuilding(eBuildingYassa) then
+			iCurrentYassa = iCurrentYassa + 1
+		end
+	end
 	
-	local iCulture = math.floor(5 * fGameSpeedModifier1 * iEraModifier)
-	local iResearch = math.floor(5 * fGameSpeedModifier2 * iEraModifier)
-	local iGold = math.floor(5 * fGameSpeedModifier3 * iEraModifier)
+	local iCulture = math.floor(iCurrentYassa * 5 * fGameSpeedModifier1 * iEraModifier)
+	local iResearch = math.floor(iCurrentYassa * 5 * fGameSpeedModifier2 * iEraModifier)
+	local iGold = math.floor(iCurrentYassa * 5 * fGameSpeedModifier3 * iEraModifier)
 
 	pNewPlayer:ChangeJONSCulture(iCulture)
 	pNewPlayer:ChangeOverflowResearch(iResearch)
