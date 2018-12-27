@@ -7,6 +7,12 @@
 INSERT INTO	Civilization_BuildingClassOverrides
 (CivilizationType,						BuildingClassType,		BuildingType)
 VALUES		('CIVILIZATION_AMERICA',	'BUILDINGCLASS_STABLE', 'BUILDING_AMERICA_RANCH');
+--------------------------------	
+-- Civilization_UnitClassOverrides
+--------------------------------	
+INSERT INTO	Civilization_UnitClassOverrides
+			(CivilizationType,			UnitClassType,			UnitType)
+VALUES		('CIVILIZATION_AMERICA',	'UNITCLASS_PIONEER',	'UNIT_AMERICA_PIONEER');
 --==========================================================================================================================	
 
 --==========================================================================================================================
@@ -22,7 +28,61 @@ VALUES	('UNIT_AMERICA_ATLAS', 	256, 		'RanchPicture_256.dds',		1, 				1),
 		('UNIT_AMERICA_ATLAS', 	45, 		'RanchPicture_045.dds',		1, 				1),
 		('UNIT_AMERICA_ATLAS', 	64, 		'RanchPicture_064.dds',		1, 				1);
 --==========================================================================================================================	
-
+--==========================================================================================================================	
+-- UNITS
+--==========================================================================================================================
+INSERT INTO 	Units
+	(Class, Type, Moves, Capture, CivilianAttackPriority, HurryCostModifier, Domain, DefaultUnitAI, Description, Civilopedia, Strategy, Help, PrereqTech, ObsoleteTech, Food, Found, FoundMid, FoundLate, CombatLimit, UnitArtInfo, UnitArtInfoCulturalVariation, PortraitIndex, IconAtlas, ShowInPedia)
+VALUES
+	('UNITCLASS_PIONEER', 'UNIT_AMERICA_PIONEER', 3, 'UNITCLASS_WORKER', 'CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY', -1, 'DOMAIN_LAND', 'UNITAI_SETTLE', 'TXT_KEY_UNIT_PIONEER', 'TXT_KEY_CIV5_PIONEER_TEXT', 'TXT_KEY_UNIT_PIONEER_STRATEGY', 'TXT_KEY_UNIT_HELP_PIONEER', 'TECH_CHIVALRY', 'TECH_BIOLOGY', 1, 1, 1, 0, 0, 'ART_DEF_UNIT_PIONEER', 1, 2, 'COMMUNITY_ATLAS', 0);
+--------------------------------
+-- Unit_BuildingClassRequireds
+--------------------------------
+INSERT INTO 	Unit_BuildingClassRequireds
+	(UnitType, 	BuildingClassType)
+VALUES ('UNIT_AMERICA_PIONEER',	'BUILDINGCLASS_STABLE');
+--------------------------------
+-- UnitGameplay2DScripts
+--------------------------------
+INSERT INTO UnitGameplay2DScripts
+	(UnitType, SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_AMERICA_PIONEER', SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_PIONEER';
+--------------------------------
+-- Unit_AITypes
+--------------------------------
+INSERT INTO Unit_AITypes
+	(UnitType, UnitAIType)
+SELECT		'UNIT_AMERICA_PIONEER', UnitAIType
+FROM Unit_AITypes WHERE UnitType = 'UNIT_PIONEER';
+--------------------------------
+-- Unit_Flavors
+--------------------------------
+INSERT INTO Unit_Flavors
+	(UnitType, FlavorType, Flavor)
+SELECT		'UNIT_AMERICA_PIONEER', FlavorType, Flavor
+FROM Unit_Flavors WHERE UnitType = 'UNIT_PIONEER';
+--------------------------------
+-- Unit_FreePromotions
+--------------------------------
+INSERT INTO Unit_FreePromotions
+	(UnitType, PromotionType)
+SELECT		'UNIT_AMERICA_PIONEER', PromotionType
+FROM Unit_FreePromotions WHERE UnitType = 'UNIT_PIONEER';
+--------------------------------
+-- Unit_ClassUpgrades
+--------------------------------
+INSERT INTO Unit_ClassUpgrades
+	(UnitType, UnitClassType)
+SELECT		'UNIT_AMERICA_PIONEER', UnitClassType
+FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_PIONEER';
+--------------------------------
+-- Unit_BuildOnFound
+--------------------------------
+INSERT INTO Unit_BuildOnFound
+	(UnitType, BuildingClassType)
+SELECT		'UNIT_AMERICA_PIONEER', BuildingClassType
+FROM Unit_BuildOnFound WHERE UnitType = 'UNIT_PIONEER';
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -31,7 +91,7 @@ VALUES	('UNIT_AMERICA_ATLAS', 	256, 		'RanchPicture_256.dds',		1, 				1),
 --------------------------------
 INSERT INTO	Buildings
 			(Type,						Description,						Civilopedia,							Strategy,									Help,									GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, NeverCapture,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,				GreatWorkYieldType, CitySupplyModifier, PlotCultureCostModifier)
-SELECT		'BUILDING_AMERICA_RANCH',	'TXT_KEY_BUILDING_AMERICA_RANCH',	'TXT_KEY_BUILDING_AMERICA_RANCH_TEXT',	'TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY',	'TXT_KEY_BUILDING_AMERICA_RANCH_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, NeverCapture,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'UNIT_AMERICA_ATLAS', GreatWorkYieldType, CitySupplyModifier, PlotCultureCostModifier-25
+SELECT		'BUILDING_AMERICA_RANCH',	'TXT_KEY_BUILDING_AMERICA_RANCH',	'TXT_KEY_BUILDING_AMERICA_RANCH_TEXT',	'TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY',	'TXT_KEY_BUILDING_AMERICA_RANCH_HELP',	GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, NeverCapture,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'UNIT_AMERICA_ATLAS', GreatWorkYieldType, CitySupplyModifier, PlotCultureCostModifier
 FROM Buildings WHERE Type = 'BUILDING_STABLE';
 --------------------------------
 -- Building_Flavors
@@ -67,11 +127,26 @@ INSERT INTO Building_YieldChanges
 			(BuildingType,				YieldType, Yield)
 SELECT		'BUILDING_AMERICA_RANCH',	YieldType, Yield
 FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_STABLE';
+------------------------------	
+-- UnitCombatInfos + Update Settlers/Workers
+------------------------------		
+INSERT INTO UnitCombatInfos  	
+			(Type,					Description)
+VALUES		('UNITCOMBAT_SETTLER',	'Settler Units'),
+	('UNITCOMBAT_WORKER',	'Worker Units');
+
+UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_SETTLER';
+UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_PIONEER';
+UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_AMERICA_PIONEER';
+UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_COLONIST';
+UPDATE Units SET CombatClass = 'UNITCOMBAT_WORKER' WHERE Type = 'UNIT_WORKER';
 --------------------------------
 -- Building_UnitCombatProductionModifiers
 --------------------------------
 INSERT INTO Building_UnitCombatProductionModifiers
 			(BuildingType,				UnitCombatType,			Modifier)
-VALUES		('BUILDING_AMERICA_RANCH',	'UNITCOMBAT_MOUNTED',	33);
+VALUES		('BUILDING_AMERICA_RANCH',	'UNITCOMBAT_MOUNTED',	33),
+	('BUILDING_AMERICA_RANCH',	'UNITCOMBAT_SETTLER',			25),
+	('BUILDING_AMERICA_RANCH',	'UNITCOMBAT_WORKER',			25);
 --==========================================================================================================================
 --==========================================================================================================================
