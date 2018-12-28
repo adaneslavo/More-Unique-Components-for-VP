@@ -1485,7 +1485,7 @@
 			<Text>Pairidaeza</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. Length of [ICON_GOLDEN_AGE] Golden Ages increased by 5%, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. Length of [ICON_GOLDEN_AGE] Golden Ages increased by 5%, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
 			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, each Pairidaeza increases the length of Golden Ages on Empire. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
@@ -1738,7 +1738,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
 			<Text>
-				+33% [ICON_PRODUCTION] Production when building Mounted Units. Increases the [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population in the City by 10%. [NEWLINE][NEWLINE]+25% Border Growth Rate in City. On completion, the city immediately claims all [ICON_RES_HORSE] Horse, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle, and [ICON_RES_BISON] Bison within 3 tiles of the City, and the City gains 20 [ICON_PRODUCTION] Production, scaling with Era, for each tile claimed.
+				+33% [ICON_PRODUCTION] Production when building Mounted Units and +25% [ICON_PRODUCTION] Production when building Worker and Settler units. Increases the [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population in the City by 10%.[NEWLINE][NEWLINE]Gain 15 [ICON_PRODUCTION] Production whenever a [ICON_CITIZEN] Citizen is born in the City, scaling with Era. On completion, the city immediately claims all [ICON_RES_HORSE] Horse, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle, and [ICON_RES_BISON] Bison within 3 tiles of the City, and the City gains 20 [ICON_PRODUCTION] Production for each tile claimed, scaling with Era.
 				[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.
 				[NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.
 				[NEWLINE]Nearby [ICON_RES_COW] Cattle: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.
@@ -2221,20 +2221,14 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_STRATEGY">
-			<Text>The Teutonic Order is Germany's unique wonder, replacing the Heroic Epic. This wonder is available much later than the Heroic epic, but provides strong bonuses to all cities in your empire with a Barracks comparable to that of a full Order. All new units trained in any city with a Barracks receive the Morale promotion for free, and all melee land units immediately receive the Chapter promotion.[NEWLINE][NEWLINE]With the Chapter promotion, your melee units gain additional power in foreign lands, and can aid the quick spread of your religion by removing foreign religions from newly conquered cities. This will allow Germans to spread their influence and reform quickly through military expansionism.</Text>
+			<Text>The Teutonic Order is Germany's unique wonder, replacing the Heroic Epic. This wonder provides strong bonuses to all cities in your empire with a Barracks comparable to that of a full Order. All new units trained in any city with a Barracks receive the Morale promotion for free.[NEWLINE][NEWLINE]With this wonder, Germany is able to reform much more easilly and quickly than other civilizations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
-				Unique replacement for the Heroic Epic, available later. Grants a free Armory in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. +2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.
-				[NEWLINE][NEWLINE]All Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and new Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. All Land Melee Units gain the [COLOR_POSITIVE_TEXT]Chapter[ENDCOLOR] Promotion.
+				Does not require a Barracks. Grants a free Barracks in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. +2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.
+				[NEWLINE][NEWLINE]All Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and new Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. Enables you to select a Reformation Belief at 5% below its normal Global [ICON_RELIGION] Follower requirement (20% on Standard).
 				[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own. Only Germany may build it.
 			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_CHAPTER">
-			<Text>Chapter</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_CHAPTER_HELP">
-			<Text>+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]outside Friendly Territory[ENDCOLOR]. [COLOR_POSITIVE_TEXT]On City Capture[ENDCOLOR], [ICON_CITIZEN] Citizens not following your Majority Religion are un-converted and [COLOR_POSITIVE_TEXT]do not follow any Religion[ENDCOLOR].</Text>
 		</Row>
 		<!-- Tophet -->
 		<!-- Created by pineappledan -->
