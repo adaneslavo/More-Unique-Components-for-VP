@@ -3,6 +3,25 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v40:
+- tweaked/modified:
+	- Teutonic Order rework,
+		==> Removed Chapter promotion
+		==> Increased faith to +4
+		==> Moved forward to Iron Working
+		==> Added -5% population threshhold for Reformation
+		==> Added 25 Faith on Kill
+	- Homestead rework
+		==> removed 25% border Growth
+		==> added +25% settler/worker production
+		==> Homestead unlocks Pioneer early
+		==> Added 15 production on citizen birth
+	- Persia rework
+		==> removed +50% GA length on UA (unstacked from Pairidaeza)
+		==> increased Gold to GAP to 15%, up from 10%
+		==> Moved Pairidaeza unlock to Currency, reduced cost to 200
+		==> Increased yield per population on Satraps Court to 1 per 4, up from 1 per 5
+
 v39:
 - compatibility with VP 12-18 (incompatible with older versions!),
 - renamed few folders and files,
