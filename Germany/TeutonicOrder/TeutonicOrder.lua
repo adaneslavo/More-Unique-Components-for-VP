@@ -41,34 +41,22 @@ function OnCityConstructionAddDummyForTO(iPlayer, iCity, eBuilding)
 	end
 end
 
--- convert followers of different faith on city capture
-function OnCaptureConvertCitizens(eOldOwner, bIsCapital, iX, iY, eNewOwner, iOldPopulation, bConquest, iNumGreatWorks, iCaptureGreatWorks)
-	local pPlayer = Players[eNewOwner]
+function OnFoundAddDummyForTO(iPlayer, iX, iY)
+	local pPlayer = Players[iPlayer]
 	
 	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationGermany) then return end
-	if pPlayer:CountNumBuildings(eBuildingTeutonicOrder) == 0 then return end
-	
-	local eReligion = -1
 
-	if pPlayer:HasCreatedReligion() then
-		eReligion = pPlayer:GetReligionCreatedByPlayer()
-	elseif pPlayer:HasStateReligion() then 
-		eReligion = pPlayer:GetStateReligion() 
-	else
-		return
-	end
+	if pPlayer:CountNumBuildings(eBuildingTeutonicOrder) > 0 then
 
-	local pCity = Map.GetPlot(iX, iY):GetPlotCity()
-	
-	for religion in GameInfo.Religions() do
-		if religion.ID ~= ePantheon and religion.ID ~= eReligion and pCity:GetNumFollowers(religion.ID) > 0 then
-			--ConvertPercentFollowers(eToReligion, eFromReligion, iPercent) -- works with religious pressure so calling it for all religions could create weird effects
-			pCity:ConvertPercentFollowers(ePantheon, religion.ID, 100)
+		local pFoundCity = Map.GetPlot(iX, iY):GetWorkingCity()
+		if pFoundCity:IsHasBuilding(eBuildingBarracks) then
+
+			pFoundCity:SetNumRealBuilding(eBuildingDummyForTeutonicOrder, 1)
 		end
 	end
 end
 
 if Game.IsCivEverActive(eCivilizationGermany) then
 	GameEvents.CityConstructed.Add(OnCityConstructionAddDummyForTO)
-	GameEvents.CityCaptureComplete.Add(OnCaptureConvertCitizens)
+	GameEvents.PlayerCityFounded.Add(OnFoundAddDummyForTO)
 end
