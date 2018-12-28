@@ -27,9 +27,9 @@ function OnCaptureCityBonuses(iPlayer, iCapital, iResourceX, iResourceY, iNewPla
 		end
 	end
 	
-	local iCulture = math.floor(iCurrentYassa * 5 * fGameSpeedModifier1 * iEraModifier)
-	local iResearch = math.floor(iCurrentYassa * 5 * fGameSpeedModifier2 * iEraModifier)
-	local iGold = math.floor(iCurrentYassa * 5 * fGameSpeedModifier3 * iEraModifier)
+	local iCulture = math.floor(iCurrentYassa * 10 * fGameSpeedModifier1 * iEraModifier)
+	local iResearch = math.floor(iCurrentYassa * 10 * fGameSpeedModifier2 * iEraModifier)
+	local iGold = math.floor(iCurrentYassa * 10 * fGameSpeedModifier3 * iEraModifier)
 
 	pNewPlayer:ChangeJONSCulture(iCulture)
 	pNewPlayer:ChangeOverflowResearch(iResearch)
