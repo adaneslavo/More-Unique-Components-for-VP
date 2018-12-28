@@ -51,5 +51,11 @@ VALUES		('BUILDING_GERMANY_TEUTONIC_ORDER', 'YIELD_CULTURE',	1),
 INSERT INTO Building_YieldChangesPerPop 	
 			(BuildingType,						YieldType,				Yield)
 VALUES		('BUILDING_GERMANY_TEUTONIC_ORDER',	'YIELD_PRODUCTION', 	40);
+--------------------------------	
+-- Building_YieldFromVictory
+--------------------------------
+INSERT INTO Building_YieldFromVictory
+	(BuildingType, YieldType, Yield)
+VALUES	('BUILDING_GERMANY_TEUTONIC_ORDER', 'YIELD_FAITH', 25);
 --==========================================================================================================================
 --==========================================================================================================================
