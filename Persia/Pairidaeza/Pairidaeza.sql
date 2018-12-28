@@ -46,10 +46,10 @@ VALUES		('BUILDING_PERSIA_PAIRIDAEZA',	'FLAVOR_GREAT_PEOPLE',			30),
 ------------------------------	
 -- Building_ClassesNeededInCity
 ------------------------------		
-INSERT INTO Building_ClassesNeededInCity 	
-			(BuildingType, 					BuildingClassType)
-SELECT		'BUILDING_PERSIA_PAIRIDAEZA',	BuildingClassType
-FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_GARDEN';
+--INSERT INTO Building_ClassesNeededInCity 	
+--			(BuildingType, 					BuildingClassType)
+--SELECT		'BUILDING_PERSIA_PAIRIDAEZA',	BuildingClassType
+--FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_GARDEN';
 ------------------------------	
 -- Building_YieldChanges
 ------------------------------		
