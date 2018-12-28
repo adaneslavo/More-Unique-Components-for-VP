@@ -128,6 +128,12 @@ INSERT INTO Building_YieldChanges
 SELECT		'BUILDING_AMERICA_RANCH',	YieldType, Yield
 FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_STABLE';
 ------------------------------	
+-- Building_YieldFromBirth
+------------------------------		
+INSERT INTO Building_YieldFromBirth	
+			(BuildingType, 				YieldType,			Yield)
+VALUES		('BUILDING_AMERICA_RANCH',	'YIELD_PRODUCTION',	15);
+------------------------------	
 -- UnitCombatInfos + Update Settlers/Workers
 ------------------------------		
 INSERT INTO UnitCombatInfos  	
