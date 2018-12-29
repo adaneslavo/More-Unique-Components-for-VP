@@ -21,6 +21,7 @@ v40:
 		==> increased Gold to GAP to 15%, up from 10%
 		==> Moved Pairidaeza unlock to Currency, reduced cost to 200
 		==> Increased yield per population on Satraps Court to 1 per 4, up from 1 per 5
+	- E-temenanki ==> increased instant yield from purchase to 25% of food/science
 
 v39:
 - compatibility with VP 12-18 (incompatible with older versions!),
