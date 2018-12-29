@@ -48,8 +48,8 @@ VALUES		('BUILDING_BABYLON_ETEMENANKI',	'FLAVOR_GROWTH',		80),
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
-VALUES		('BUILDING_BABYLON_ETEMENANKI',	'YIELD_CULTURE',	3),
-			('BUILDING_BABYLON_ETEMENANKI',	'YIELD_FOOD',		3),
+VALUES		('BUILDING_BABYLON_ETEMENANKI',	'YIELD_CULTURE',	4),
+			('BUILDING_BABYLON_ETEMENANKI',	'YIELD_FOOD',		4),
 			('BUILDING_BABYLON_ETEMENANKI',	'YIELD_FAITH',		2);
 ------------------------------	
 -- Building_YieldFromPolicyUnlock
@@ -63,7 +63,7 @@ VALUES		('BUILDING_BABYLON_ETEMENANKI',	'YIELD_GOLDEN_AGE_POINTS',	50);
 INSERT INTO Building_BuildingClassYieldChanges 	
 			(BuildingType,					BuildingClassType,			YieldType,			YieldChange)
 VALUES		('BUILDING_BABYLON_ETEMENANKI',	'BUILDINGCLASS_SHRINE',		'YIELD_FOOD',		2),
-			('BUILDING_BABYLON_ETEMENANKI',	'BUILDINGCLASS_MONUMENT',	'YIELD_SCIENCE',	1);
+			('BUILDING_BABYLON_ETEMENANKI',	'BUILDINGCLASS_MONUMENT',	'YIELD_SCIENCE',	2);
 ------------------------------	
 -- Building_YieldFromBirth
 ------------------------------
