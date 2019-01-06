@@ -63,7 +63,7 @@ VALUES		('BUILDING_BABYLON_ETEMENANKI',	'YIELD_GOLDEN_AGE_POINTS',	50);
 INSERT INTO Building_BuildingClassYieldChanges 	
 			(BuildingType,					BuildingClassType,			YieldType,			YieldChange)
 VALUES		('BUILDING_BABYLON_ETEMENANKI',	'BUILDINGCLASS_SHRINE',		'YIELD_FOOD',		2),
-			('BUILDING_BABYLON_ETEMENANKI',	'BUILDINGCLASS_MONUMENT',	'YIELD_SCIENCE',	2);
+			('BUILDING_BABYLON_ETEMENANKI',	'BUILDINGCLASS_MONUMENT',	'YIELD_SCIENCE',	1);
 ------------------------------	
 -- Building_YieldFromBirth
 ------------------------------
