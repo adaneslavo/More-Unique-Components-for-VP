@@ -17,22 +17,18 @@ function GoedendagBonus(iPlayer)
 	end
 end
 
-function GoedendagResource(iPlayer, iUnit, iX, iY)
+function ThisIsMyTown(iPlayer)
 	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE) then
-		local pPlot = pUnit:GetPlot()
-			
-		if pPlot ~= nil then	
-			local eResType = pPlot:GetResourceType(pPlayer:GetTeam())
-			local bIsLuxury = false
-			
-			if eResType ~= -1 then bIsLuxury = (GameInfo.Resources[ eResType ].ResourceClassType == "RESOURCECLASS_LUXURY") end
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT, bIsLuxury)
-		end			
+	
+	for pUnit in pPlayer:Units() do
+		if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE) and pUnit:IsGarrisoned()) then
+				pUnit:SetBaseCombatStrength(30)
+			else
+				pUnit:SetBaseCombatStrength(20)
+			end
+		end
 	end
 end
 
 GameEvents.PlayerEndTurnCompleted.Add(GoedendagBonus)
-GameEvents.UnitSetXY.Add(GoedendagResource)
+GameEvents.PlayerDoTurn.Add(ThisIsMyTown)

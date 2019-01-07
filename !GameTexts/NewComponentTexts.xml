@@ -454,6 +454,9 @@
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_TEUTONIC">
 			<Text>DF Teutonic</Text>
 		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_D_FOR_WAAG">
+			<Text>Waag</Text>
+		</Row>
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_WAAG">
 			<Text>DF Waag</Text>
 		</Row>
@@ -527,7 +530,7 @@
 			<Text>E-temenanki</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_HELP">
-			<Text>+30% [ICON_GREAT_PEOPLE] GPP in the City. +15 [ICON_CULTURE] Culture in the City as an instant boost whenever a [ICON_CITIZEN] Citizen is born and +50 [ICON_GOLDEN_AGE] Golden Age Points whenever a Policy is unlocked, scaling with Era. Gain 25% of the City's [ICON_FOOD] Food and [ICON_RESEARCH] Science output whenever you invest in a Building on Empire.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science to all Monuments and +2 [ICON_FOOD] Food to all Shrines.[NEWLINE][NEWLINE]Requires Monument in City. Can only be built in the [ICON_CAPITAL] Capital. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>+30% [ICON_GREAT_PEOPLE] GPP in the City. +15 [ICON_CULTURE] Culture in the City as an instant boost whenever a [ICON_CITIZEN] Citizen is born and +50 [ICON_GOLDEN_AGE] Golden Age Points whenever a Policy is unlocked, scaling with Era. Gain 25% of the City's [ICON_FOOD] Food and [ICON_RESEARCH] Science output whenever you invest in a Building on Empire.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science to all Monuments and +2 [ICON_FOOD] Food to all Shrines.[NEWLINE][NEWLINE]Requires Monument in City. Can only be built in the [ICON_CAPITAL] Capital. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_STRATEGY">
 			<Text>E-temenanki is the Babylonian Unique Wonder, replacing the National Monument. In addition to the normal bonuses of a National Monument, E-temenanki awards Food and Science whenever a building is invested on empire, so invest in buildings early and often.  All monuments in empire gain +1 Science and all Shrines gain +2 Food. Available earlier than the National Monument</Text>
@@ -748,10 +751,10 @@
 			<Text>Goedendag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_HELP">
-			<Text>A cheap, versatile offensive unit with supporting abilities. Only the Dutch may build it. Provides a combat boost to all Units adjacent to it and has increased [ICON_STRENGTH] Combat Strength when standing on a Luxury Resource Tile. [NEWLINE][NEWLINE]Stagnates Growth in Cities while built. Excess [ICON_FOOD] Food contributes to [ICON_PRODUCTION] Production.</Text>
+			<Text>A cheap, versatile Defensive unit with supporting abilities. Only the Dutch may build it. Provides a combat boost to all Units adjacent to it and has increased [ICON_STRENGTH] Combat Strength if Garrisoned in a City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_STRATEGY">
-			<Text>The Goedendag is an odd unit, but effective in groups. While effective on their own against cavalry, the Goedendag provides increased attack against all units adjacent to it, and has additional combat strength if standing on a luxury resource. Goedendag's do not boost their own combat strength, however, so they must be adjacent to another Goedendag to receive the benefit of their own promotion. These units can be built very quickly, so an army can be raised in the event of a surprise war.</Text>
+			<Text>The Goedendag is an odd unit, but effective in groups. While effective on their own against cavalry, the Goedendag provides increased attack against all units adjacent to it, and has additional combat strength if Garrisoned in a City at the beginning of your turn. Goedendag's do not boost their own combat strength, so Goedendags must be adjacent to each other to receive the benefit of their own promotion. These units can be built very quickly, so an army can be raised in the event of a surprise war.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NETHERLANDS_GOEDENDAG_TEXT">
 			<Text>
@@ -776,15 +779,8 @@
 			<Text>Burgemeeste</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_HELP">
-			<Text>+25% [ICON_STRENGTH] Combat Strength if unit is standing [COLOR_POSITIVE_TEXT]on a Luxury Resource[ENDCOLOR].</Text>
+			<Text>+10 [ICON_STRENGTH] Combat Strength if unit begins its turn [COLOR_POSITIVE_TEXT]Garrisoned in a City[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT">
-			<Text>Goodies!</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT_HELP">
-			<Text>+25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from Luxury Resource[ENDCOLOR].</Text>
-		</Row>
-
 		<!-- Hashemite Raider -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER">
@@ -1752,10 +1748,10 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_STRATEGY">
-			<Text>The Riad is the Moroccan unique replacement for the Garden. Gold generation in the city is greatly increased during a Golden Age. Trade routes originating from the city generate additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden.</Text>
+			<Text>The Riad is the Moroccan unique replacement for the Garden. Gold generation in the city is greatly increased during a Golden Age and Gold income in the city is coverted into [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden. Unlike other buildings, the Riad's base yields increase with each Era.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_HELP">
-			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. +15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_GREAT_PEOPLE] Great Merchant Points per turn for every [ICON_INTERNATIONAL_TRADE] Trade Routes originating in the City.[NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. +15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age. 15% of [ICON_GOLD] Gold in the City is converted into [ICON_GREAT_PEOPLE] Great Merchant Points.[NEWLINE][NEWLINE]Gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism every Era[NEWLINE]Nearby Oases: +3 [ICON_GOLD] Gold, +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
@@ -2220,7 +2216,7 @@
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
 				Does not require a Barracks. Grants a free Barracks in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. +2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.
-				[NEWLINE][NEWLINE]All Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. Enables you to select a Reformation Belief at 5% below its normal Global [ICON_RELIGION] Follower requirement (20% on Standard).
+				[NEWLINE][NEWLINE]All Castles gain +2 [ICON_PRODUCTION] Production and all Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. Enables you to select a Reformation Belief at 5% below its normal Global [ICON_RELIGION] Follower requirement (20% on Standard).
 				[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own. Only Germany may build it.
 			</Text>
 		</Row>
@@ -2251,7 +2247,7 @@
 			<Text>The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. In addition to the normal bonuses of the Oxford University, it gives all naval units the ability to gain gold from exploration, and generates Gold and Production in the city for every Feitoria built in foreign lands.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_HELP">
-			<Text>Does not require a University in the City. Provides a free [ICON_GREAT_SCIENTIST] Great Scientist and a University on Completion. All Universities gain +2 [ICON_GOLD] Gold. +75 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Does not require a University in the City. Provides a free [ICON_GREAT_SCIENTIST] Great Scientist and a University on Completion. All Universities gain +3 [ICON_GOLD] Gold. +75 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY">
 			<Text>Age of Discovery</Text>
@@ -2266,10 +2262,10 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text>Available earlier. Requires a Market in City.[NEWLINE]Reduces Enemy [ICON_SPY] Spy Stealing Rate by 20%, and greatly reduces [ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science. Markets, Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great People Points and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource Imported or Exported from Other Civilizations, up to a maximum of 10 traded Resources.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. Requires a Market in City.[NEWLINE]Reduces Enemy [ICON_SPY] Spy Stealing Rate by 20%, and greatly reduces [ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold. +3 [ICON_GOLD] Gold and +3 [ICON_PRODUCTION] Production if a [ICON_INTERNATIONAL_TRADE] Caravan passes through the City.[NEWLINE][NEWLINE]+1% [ICON_GREAT_PEOPLE] Great People Rate and reduction of [ICON_HAPPINESS_3] Distress for every unique Luxury Resource on Empire.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
-			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier than the Bank, and provides bonuses to Great Person Generation and defense for every luxury imported or exported in the Empire. Be sure to keep peaceful and lucrative relationships with your neighbors; a surprise war with a trading partner could suddenly weaken your city's defenses!</Text>
+			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier and provides bonuses to Defense, Distress, and Great Person Generation. The Waag's bonuses scale with the total number of unique luxuries that the Dutch have access to, so be sure to keep peaceful and lucrative relationships with your neighbors.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_TEXT">
 			<Text>A Waag ("weigh house") was a public building in which goods were weighed for market. Prior to international standards of weights and measures, the Waags performed an indispensable service in preventing the fraudulent sale of goods. Waags were operated by local authorities who would also use them for the levying of taxes on goods transported through or sold within the city. This necessitated weigh houses be near a market square or town centre.[NEWLINE][NEWLINE]Of particular note is the Amsterdam Waag, built in the 15th-century on Nieuwmarkt square in Amsterdam. A number of guilds were housed on the top floors of the building: the blacksmiths' guild, the painter's guild, the masons' guild and the surgeons' guild, each with its own entrance gate. In 1632 Rembrandt van Rijn was commissioned to paint the surgeons at work; the resulting painting, ‘The Anatomy Lesson of Dr. Nicolaes Tulp’, made his reputation.</Text>

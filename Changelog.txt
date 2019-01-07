@@ -5,8 +5,24 @@
 More Unique Components for Vox Populi changelog:
 v40:
 - tweaked/modified:
+	- Goedendag ==> Burgemeeste rework: now +10CS if beginning turn in City
+	- Waag rework
+		==> Removed bonus Defense and %GPP for every import/export luxury
+		==> Removed +3 gold to Market in City
+		==> Added +5 base city defense
+		==> Added 3 Gold, 3 Production if a Caravan moves through city (same as village improvement)
+		==> Added 1% Distress reduction and 1% GPP rate in city for evey unique luxury on empire. 
+	- Polder lua rework
+		==> removed movement sap on enemy movement onto Polder (too lua-intensive)
+		==> Completion of a Polder now adds a Marsh beneath it (costs 3 movement to enter a Marsh tile)
+	- Riad rework
+		==> Removed bonus for TRs in city
+		==> Added +1 gold and +1 tourism per Era
+		==> Added 15% of gold converted to G Merchant Points in city
+		==> fixed minor text error
 	- Teutonic Order rework,
 		==> Removed Chapter promotion
+		==> Added +2 production to Castles on Empire
 		==> Increased faith to +4
 		==> Moved forward to Iron Working
 		==> Added -5% population threshhold for Reformation
@@ -21,7 +37,11 @@ v40:
 		==> increased Gold to GAP to 15%, up from 10%
 		==> Moved Pairidaeza unlock to Currency, reduced cost to 200
 		==> Increased yield per population on Satraps Court to 1 per 4, up from 1 per 5
-	- E-temenanki ==> increased instant yield from purchase to 25% of food/science
+	- E-temenanki 	==> increased instant yield from purchase to 25% of food/science
+					==> increased base yields to 4 culture, 4 food, 2 faith
+	- University of Coimbra ==> increased bonus to Universities to 3 gold
+- fixed:
+	- Shophet ==> fixed lua error	
 
 v39:
 - compatibility with VP 12-18 (incompatible with older versions!),

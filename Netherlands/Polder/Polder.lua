@@ -4,6 +4,9 @@
 --------------------------------------------------------------
 include("FLuaVector.lua")
 
+local eCivilizationNetherlands = GameInfoTypes.CIVILIZATION_NETHERLANDS
+local eImprovementPolder = GameInfoTypes.IMPROVEMENT_POLDER
+
 function PolderCanBeOnMarsh (iPlayer, iUnit, iX, iY, iBuild)
 	if iBuild == GameInfoTypes.BUILD_POLDER_2 and Players[iPlayer]:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_NETHERLANDS then
 		return false
@@ -12,36 +15,22 @@ function PolderCanBeOnMarsh (iPlayer, iUnit, iX, iY, iBuild)
 	end
 end
 
-function EnemyUnitOnMyPolder(iPlayer, iUnit, iX, iY)
-	local pPlayer = Players[iPlayer];
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-	local pPlot = pUnit:GetPlot()
-	
-	--quit if unit has free movement promotion (ie scout or guerilla) or is a hovering unit
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_IGNORE_TERRAIN_COST) or pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_LITERACY) or pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_GUERILLA_FIGHTER) or pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_HOVER_UNIT) then return end
-	
-	if pPlot ~= nil then
-		if pPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_POLDER or pPlot:GetImprovementType() == GameInfoTypes.IMPROVEMENT_POLDER_2 then
-			if pPlot:GetOwner() ~= nil then
-				if pPlot:GetOwner() ~= iPlayer then
-					if pPlayer:IsAtWar(Players[pPlot:GetOwner()]:GetTeam()) then
-						pUnit:SetMoves(0)
-				
-						if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-							local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-				
-							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_NEGATIVE_TEXT]No [ICON_ARROW_RIGHT] Polder[ENDCOLOR]", 2)
-						end
-					end
-				end
-			end
-		end
-	end	
-end
+function OnImprovementMakeMarsh(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged)
+	local pPlayer = Players[iOwner]
+    
+    if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationNetherlands) then return end
 
-function PositionCalculator(i1, i2)
-	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
+	if (iNewImprovement == eImprovementPolder and iNewImprovement ~= iOldImprovement) then
+		local pPlot = Map.GetPlot(iX, iY)
+
+		if pPlot then
+			pPlot:SetFeatureType(FeatureTypes.FEATURE_MARSH, -1)
+		end
+	end
 end
 
 GameEvents.PlayerCanBuild.Add(PolderCanBeOnMarsh)
-GameEvents.UnitSetXY.Add(EnemyUnitOnMyPolder)
+
+if Game.IsCivEverActive(eCivilizationNetherlands) then
+	GameEvents.TileImprovementChanged.Add(OnImprovementMakeMarsh)
+end

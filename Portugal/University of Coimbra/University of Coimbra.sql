@@ -31,11 +31,9 @@ WHERE Type = 'BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA';
 --------------------------------	
 -- Building_ClassYieldChanges
 --------------------------------	
-
 INSERT INTO	Building_BuildingClassYieldChanges
 			(BuildingType,  BuildingClassType, YieldType, YieldChange)
-VALUES		('BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA', 'BUILDINGCLASS_UNIVERSITY', 'YIELD_GOLD', 2);
-
+VALUES		('BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA', 'BUILDINGCLASS_UNIVERSITY', 'YIELD_GOLD', 3);
 --------------------------------	
 -- Building_Flavors
 --------------------------------	

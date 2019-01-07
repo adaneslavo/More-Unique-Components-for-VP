@@ -10,41 +10,43 @@ local eCivilizationMorocco = GameInfoTypes.CIVILIZATION_MOROCCO
 local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
 -- gain yields each turn for each trade route if Riad is built in the city
-function OnTurnGainYieldsFromTR(iPlayer)
+
+-- sets Anarchy and WLTKD on new Era
+function OnEraRiadYields(eTeam, eEra, bFirst)
+	for id, pPlayer in pairs(Players) do
+		if pPlayer:IsEverAlive() and pPlayer:GetTeam() == eTeam and pPlayer:GetCivilizationType() == eCivilizationMorocco then
+			local pCapital = pPlayer:GetCapitalCity()
+
+			pCapital:SetNumRealBuilding(eBuildingDummyForRiad, math.max(pPlayer:GetCurrentEra(), 0))
+		end
+	end
+end
+
+function RiadGoldToGPPs(iPlayer)
 	local pPlayer = Players[iPlayer]
-	
+
 	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationMorocco or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
-	
+
 	local iNumberOfRiads = pPlayer:CountNumBuildings(eBuildingRiad)
 
 	if iNumberOfRiads > 0 then
 		local iCurrentRiad = 0
-		
+
 		for city in pPlayer:Cities() do
 			if city:IsHasBuilding(eBuildingRiad) then
-				city:SetNumRealBuilding(eBuildingDummyForRiad, 0)
-				iCurrentRiad = iCurrentRiad + 1
-				
+				-- 15% of gold in city converted to G Merchant Points
+
+				city:ChangeSpecialistGreatPersonProgressTimes100(GameInfoTypes["SPECIALIST_MERCHANT"], math.floor(0.15 * city:GetYieldRate( YieldTypes.YIELD_GOLD )))
+
 				if iCurrentRiad == iNumberOfRiads then
 					break
 				end
 			end
 		end
-
-		for i, tradeRoute in pairs(pPlayer:GetTradeRoutes()) do
-			local pFromCity = tradeRoute.FromCity
-
-			if pFromCity:IsHasBuilding(eBuildingRiad) then
-				pFromCity:SetNumRealBuilding(eBuildingDummyForRiad, pFromCity:GetNumRealBuilding(eBuildingDummyForRiad) + 1)
-			end
-		end
 	end
 end
 
-function PositionCalculator(i1, i2)
-	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
-end
-
 if Game.IsCivEverActive(eCivilizationMorocco) then
-	GameEvents.PlayerDoTurn.Add(OnTurnGainYieldsFromTR)
+	GameEvents.TeamSetEra.Add(OnEraRiadYields)
+	GameEvents.PlayerDoTurn.Add(RiadGoldToGPPs)
 end

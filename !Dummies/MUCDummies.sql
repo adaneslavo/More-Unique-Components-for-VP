@@ -42,31 +42,31 @@ VALUES		('BUILDINGCLASS_D_FOR_HUEY',				'BUILDING_D_FOR_HUEY',			1),
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,							BuildingClass,						Description,							GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex, IsDummy)
-VALUES		('BUILDING_D_FOR_BARBICAN',		'BUILDINGCLASS_ARMORY',				'TXT_KEY_BUILDING_D_FOR_BARBICAN',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 0),
-			('BUILDING_D_FOR_HUEY',			'BUILDINGCLASS_D_FOR_HUEY',			'TXT_KEY_BUILDING_D_FOR_HUEY',			0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_HIPPODROME',	'BUILDINGCLASS_D_FOR_HIPPODROME',	'TXT_KEY_BUILDING_D_FOR_HIPPODROME',	0,					-1,		-1,			-1,				1,				1,          0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_PROXENOS',		'BUILDINGCLASS_D_FOR_PROXENOS',		'TXT_KEY_BUILDING_D_FOR_PROXENOS',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_BUFFALO',		'BUILDINGCLASS_D_FOR_BUFFALO',		'TXT_KEY_BUILDING_D_FOR_BUFFALO',		0,					-1,		-1,			-1,				0,				1,			100,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_FLAX',			'BUILDINGCLASS_D_FOR_FLAX',		'TXT_KEY_BUILDING_D_FOR_FLAX',			0,					-1,		-1,			-1,				0,				1,			100,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_QILA_2',		'BUILDINGCLASS_D_FOR_QILA_2',		'TXT_KEY_BUILDING_D_FOR_QILA_2',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_SACHEM_1',		'BUILDINGCLASS_D_FOR_SACHEM_1',		'TXT_KEY_BUILDING_D_FOR_SACHEM_1',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_SACHEM_2',		'BUILDINGCLASS_D_FOR_SACHEM_2',		'TXT_KEY_BUILDING_D_FOR_SACHEM_2',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_SACHEM_3',		'BUILDINGCLASS_D_FOR_SACHEM_3',		'TXT_KEY_BUILDING_D_FOR_SACHEM_3',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_SACHEM_4',		'BUILDINGCLASS_D_FOR_SACHEM_4',		'TXT_KEY_BUILDING_D_FOR_SACHEM_4',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_SACHEM_5',		'BUILDINGCLASS_D_FOR_SACHEM_5',		'TXT_KEY_BUILDING_D_FOR_SACHEM_5',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_SACHEM_6',		'BUILDINGCLASS_D_FOR_SACHEM_6',		'TXT_KEY_BUILDING_D_FOR_SACHEM_6',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_FEITORIA',		'BUILDINGCLASS_D_FOR_FEITORIA',		'TXT_KEY_BUILDING_D_FOR_FEITORIA',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_BAAN',			'BUILDINGCLASS_D_FOR_BAAN',			'TXT_KEY_BUILDING_D_FOR_BAAN',			0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_GUMEY_LUX',	'BUILDINGCLASS_D_FOR_GUMEY_LUX',	'TXT_KEY_BUILDING_D_FOR_GUMEY_LUX',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1);
+			(Type,							BuildingClass,						Description,							CapitalOnly, 	GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex, IsDummy)
+VALUES		('BUILDING_D_FOR_BARBICAN',		'BUILDINGCLASS_ARMORY',				'TXT_KEY_BUILDING_D_FOR_BARBICAN',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 0),
+			('BUILDING_D_FOR_HUEY',			'BUILDINGCLASS_D_FOR_HUEY',			'TXT_KEY_BUILDING_D_FOR_HUEY',			0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_HIPPODROME',	'BUILDINGCLASS_D_FOR_HIPPODROME',	'TXT_KEY_BUILDING_D_FOR_HIPPODROME',	0, 				0,					-1,		-1,			-1,				1,				1,          0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_PROXENOS',		'BUILDINGCLASS_D_FOR_PROXENOS',		'TXT_KEY_BUILDING_D_FOR_PROXENOS',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_BUFFALO',		'BUILDINGCLASS_D_FOR_BUFFALO',		'TXT_KEY_BUILDING_D_FOR_BUFFALO',		0, 				0,					-1,		-1,			-1,				0,				1,			100,			-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_FLAX',			'BUILDINGCLASS_D_FOR_FLAX',			'TXT_KEY_BUILDING_D_FOR_FLAX',			0, 				0,					-1,		-1,			-1,				0,				1,			100,			-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_QILA_2',		'BUILDINGCLASS_D_FOR_QILA_2',		'TXT_KEY_BUILDING_D_FOR_QILA_2',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_SACHEM_1',		'BUILDINGCLASS_D_FOR_SACHEM_1',		'TXT_KEY_BUILDING_D_FOR_SACHEM_1',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_SACHEM_2',		'BUILDINGCLASS_D_FOR_SACHEM_2',		'TXT_KEY_BUILDING_D_FOR_SACHEM_2',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_SACHEM_3',		'BUILDINGCLASS_D_FOR_SACHEM_3',		'TXT_KEY_BUILDING_D_FOR_SACHEM_3',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_SACHEM_4',		'BUILDINGCLASS_D_FOR_SACHEM_4',		'TXT_KEY_BUILDING_D_FOR_SACHEM_4',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_SACHEM_5',		'BUILDINGCLASS_D_FOR_SACHEM_5',		'TXT_KEY_BUILDING_D_FOR_SACHEM_5',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_SACHEM_6',		'BUILDINGCLASS_D_FOR_SACHEM_6',		'TXT_KEY_BUILDING_D_FOR_SACHEM_6',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_FEITORIA',		'BUILDINGCLASS_D_FOR_FEITORIA',		'TXT_KEY_BUILDING_D_FOR_FEITORIA',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_BAAN',			'BUILDINGCLASS_D_FOR_BAAN',			'TXT_KEY_BUILDING_D_FOR_BAAN',			0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_GUMEY_LUX',	'BUILDINGCLASS_D_FOR_GUMEY_LUX',	'TXT_KEY_BUILDING_D_FOR_GUMEY_LUX',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_D_FOR_RIAD',			'BUILDINGCLASS_D_FOR_RIAD',			'TXT_KEY_BUILDING_D_FOR_RIAD',			1, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1);
 
 INSERT INTO Buildings 	
 			(Type,							BuildingClass,						Description,							GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateChange,	SpecialistType, IsDummy)
 VALUES		('BUILDING_D_FOR_DRUIDIC_1',	'BUILDINGCLASS_D_FOR_DRUIDIC_1',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2,						'SPECIALIST_MERCHANT', 1),
 			('BUILDING_D_FOR_DRUIDIC_2',	'BUILDINGCLASS_D_FOR_DRUIDIC_2',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				4,						'SPECIALIST_MERCHANT', 1),
 			('BUILDING_D_FOR_DRUIDIC_3',	'BUILDINGCLASS_D_FOR_DRUIDIC_3',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				6,						'SPECIALIST_MERCHANT', 1),
-			('BUILDING_D_FOR_DRUIDIC_4',	'BUILDINGCLASS_D_FOR_DRUIDIC_4',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				8,						'SPECIALIST_MERCHANT', 1),
-			('BUILDING_D_FOR_RIAD',			'BUILDINGCLASS_D_FOR_RIAD',			'TXT_KEY_BUILDING_D_FOR_RIAD',			0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2,						'SPECIALIST_MERCHANT', 1);
+			('BUILDING_D_FOR_DRUIDIC_4',	'BUILDINGCLASS_D_FOR_DRUIDIC_4',	'TXT_KEY_BUILDING_D_FOR_DRUIDIC',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				8,						'SPECIALIST_MERCHANT', 1);
 
 INSERT INTO Buildings 	
 			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	ExtraCityHitPoints, IsDummy)
@@ -94,8 +94,8 @@ INSERT INTO Buildings
 VALUES		('BUILDING_D_FOR_QILA_1',	'BUILDINGCLASS_D_FOR_QILA_1',	'TXT_KEY_BUILDING_D_FOR_QILA_1',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				100, 1);
 
 INSERT INTO Buildings 	
-			(Type,					BuildingClass,				Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateModifier,	Defense, IsDummy)
-VALUES		('BUILDING_D_FOR_WAAG',	'BUILDINGCLASS_D_FOR_WAAG',	'TXT_KEY_BUILDING_D_FOR_WAAG',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2,							100, 1);
+			(Type,					BuildingClass,				Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateModifier,	DefenseHappinessChange, IsDummy)
+VALUES		('BUILDING_D_FOR_WAAG',	'BUILDINGCLASS_D_FOR_WAAG',	'TXT_KEY_BUILDING_D_FOR_WAAG',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				1,							-1, 					1);
 
 INSERT INTO Buildings 	
 			(Type,						BuildingClass,					Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	TradeRouteRecipientBonus, 	TradeRouteTargetBonus, IsDummy)
@@ -116,8 +116,6 @@ VALUES		('BUILDING_D_FOR_HUEY',		'BUILDINGCLASS_GRAND_TEMPLE',		'YIELD_FOOD',		3
 INSERT INTO Building_BuildingClassLocalYieldChanges
 			(BuildingType,				BuildingClassType,			YieldType,			YieldChange)
 VALUES		('BUILDING_D_FOR_QILA_2',	'BUILDINGCLASS_CASTLE',		'YIELD_CULTURE',	1),
-			('BUILDING_D_FOR_RIAD',		'BUILDINGCLASS_GARDEN',		'YIELD_CULTURE',	2),
-			('BUILDING_D_FOR_RIAD',		'BUILDINGCLASS_GARDEN',		'YIELD_GOLD',		2),
 			('BUILDING_D_FOR_BAAN',		'BUILDINGCLASS_WORKSHOP',	'YIELD_PRODUCTION',	1),
 			('BUILDING_D_FOR_BAAN',		'BUILDINGCLASS_WORKSHOP',	'YIELD_GOLD',		1);
 ------------------------------	
@@ -153,7 +151,13 @@ VALUES		('BUILDING_D_FOR_HIPPODROME',	'YIELD_CULTURE',	15),
 INSERT INTO Building_ImprovementYieldChangesGlobal	
 			(BuildingType, 										ImprovementType,							YieldType,			Yield)
 VALUES		('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_GOLD',		2);
-
+--------------------------------	
+-- Building_ClassYieldChanges
+--------------------------------	
+INSERT INTO	Building_BuildingClassYieldChanges
+			(BuildingType,  		BuildingClassType, 		YieldType, 			YieldChange)
+VALUES		('BUILDING_D_FOR_RIAD',	'BUILDINGCLASS_GARDEN',	'YIELD_GOLD',		1),
+			('BUILDING_D_FOR_RIAD',	'BUILDINGCLASS_GARDEN',	'YIELD_TOURISM',	1);
 ------------------------------	
 -- Building_YieldChanges
 ------------------------------		

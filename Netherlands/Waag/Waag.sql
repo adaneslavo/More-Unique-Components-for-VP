@@ -30,8 +30,8 @@ VALUES		('BUILDING_NETHERLANDS_ATLAS', 				256, 		'WaagPicture_256.dds',			1, 		
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,							BuildingClass,	GoldMaintenance, Cost,		EspionageModifier, 	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, TrainedFreePromotion,	CitySupplyFlat,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, PrereqTech, 			ArtDefineTag, SpecialistType, SpecialistCount, 		MinAreaSize, ConquestProb, HurryCostModifier, PovertyHappinessChange, Help,										Description,							Civilopedia,								Strategy,										IconAtlas,						PortraitIndex)
-SELECT		'BUILDING_NETHERLANDS_WAAG', 	BuildingClass,	GoldMaintenance, Cost-150,	-20, 			EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, TrainedFreePromotion,	CitySupplyFlat,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, 'TECH_CIVIL_SERVICE',	ArtDefineTag, SpecialistType, SpecialistCount+1, 	MinAreaSize, ConquestProb, HurryCostModifier, PovertyHappinessChange, 'TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG_TEXT',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY',	'BUILDING_NETHERLANDS_ATLAS',	0
+			(Type,							BuildingClass,	GoldMaintenance, Cost,		EspionageModifier, 	Defense, 	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, TrainedFreePromotion, CitySupplyFlat, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, PrereqTech, 			ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, PovertyHappinessChange, Help,										Description,							Civilopedia,								Strategy,										IconAtlas,						PortraitIndex)
+SELECT		'BUILDING_NETHERLANDS_WAAG', 	BuildingClass,	GoldMaintenance, Cost-150,	-20, 				500, 		EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, TrainedFreePromotion, CitySupplyFlat, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, 'TECH_CIVIL_SERVICE',	ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, PovertyHappinessChange, 'TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG_TEXT',	'TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY',	'BUILDING_NETHERLANDS_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_BANK';	
 ------------------------------	
 -- Building_Flavors
@@ -57,10 +57,6 @@ INSERT INTO Building_BuildingClassLocalYieldChanges
 			(BuildingType,					BuildingClassType, YieldType, YieldChange)
 SELECT		'BUILDING_NETHERLANDS_WAAG',	BuildingClassType, YieldType, YieldChange
 FROM Building_BuildingClassYieldChanges WHERE BuildingType = 'BUILDING_BANK';
-
-INSERT INTO Building_BuildingClassLocalYieldChanges
-			(BuildingType,					BuildingClassType,		YieldType,		YieldChange)
-VALUES		('BUILDING_NETHERLANDS_WAAG',	'BUILDINGCLASS_MARKET', 'YIELD_GOLD',	3);
 ------------------------------	
 -- Building_ResourceYieldChanges
 ------------------------------
@@ -78,12 +74,33 @@ FROM Building_YieldFromPurchase WHERE BuildingType = 'BUILDING_BANK';
 ------------------------------	
 -- Building_YieldChanges
 ------------------------------
-INSERT INTO Building_YieldChanges
+--INSERT INTO Building_YieldChanges
 			(BuildingType,					YieldType, Yield)
 SELECT		'BUILDING_NETHERLANDS_WAAG',	YieldType, Yield
 FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_BANK';
 --==========================================================================================================================	
 --==========================================================================================================================	
+--==========================================================================================================================
+-- IMPROVEMENTS
+--==========================================================================================================================	
+--------------------------
+-- Improvements
+--------------------------
+INSERT INTO Improvements 
+			(Type,						Description, 						Civilopedia, Help, ArtDefineTag, RequiresFeature, PillageGold, PortraitIndex, IconAtlas)
+SELECT		'IMPROVEMENT_WAAG_DUMMY',	'TXT_KEY_IMPROVEMENT_D_FOR_WAAG', 	Civilopedia, Help, ArtDefineTag, RequiresFeature, PillageGold, PortraitIndex, IconAtlas 
+FROM Improvements WHERE (Type = 'IMPROVEMENT_TRADING_POST');
+--------------------------
+-- Improvement_RouteYieldChanges
+--------------------------
+INSERT INTO Improvement_RouteYieldChanges
+	(ImprovementType, 			RouteType, 			YieldType, 			Yield)
+VALUES
+	('IMPROVEMENT_WAAG_DUMMY', 	'ROUTE_ROAD', 		'YIELD_GOLD', 		3),
+	('IMPROVEMENT_WAAG_DUMMY', 	'ROUTE_ROAD', 		'YIELD_PRODUCTION', 3),
+	('IMPROVEMENT_WAAG_DUMMY', 	'ROUTE_RAILROAD', 	'YIELD_GOLD', 		3),
+	('IMPROVEMENT_WAAG_DUMMY', 	'ROUTE_RAILROAD', 	'YIELD_PRODUCTION', 3);
+--==========================================================================================================================
 
 
 

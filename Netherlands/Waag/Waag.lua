@@ -14,28 +14,13 @@ function OnTurnAddDefenseFromResources(iPlayer)
 
 	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationNetherlands or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
-	local iTradedResources = 0
 	local bIsAnyWaag = false
 	local iNumberOfWaags = pPlayer:CountNumBuildings(eBuildingWaag)
 
 	if iNumberOfWaags > 0 then
-		for res in GameInfo.Resources("ResourceClassType = 'RESOURCECLASS_LUXURY'") do
-			iTradedResources = iTradedResources + pPlayer:GetResourceImport(res.ID) + pPlayer:GetResourceExport(res.ID)
-
-			if iTradedResources >= 10 then
-				break
-			end
-		end
-			
-		bIsAnyWaag = true
-	end
-	
-	if bIsAnyWaag then
-		local iCurrentWaag = 0
-
 		for city in pPlayer:Cities() do
 			if city:IsHasBuilding(eBuildingWaag) then
-				city:SetNumRealBuilding(eBuildingDummyForWaag, iTradedResources)
+				city:SetNumRealBuilding(eBuildingDummyForWaag, pPlayer:GetHappinessFromResources())
 				iCurrentWaag = iCurrentWaag + 1
 
 				if iCurrentWaag == iNumberOfWaags then
@@ -46,6 +31,22 @@ function OnTurnAddDefenseFromResources(iPlayer)
 	end		
 end
 
+function OnConstructionWaagDummy(iPlayer, iCity, iBuilding)
+	local pPlayer = Players[iPlayer]
+	
+	if not(pPlayer and pPlayer:GetCivilizationType() == eCivilizationNetherlands) then return end
+	if iBuilding ~= eBuildingWaag then return end
+	
+	local pCity = pPlayer:GetCityByID(iCity)
+	
+	if pCity then
+		local pPlot = Map.GetPlot(pCity:GetX(), pCity:GetY())
+	
+		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_WAAG_DUMMY)
+	end
+end
+
 if Game.IsCivEverActive(eCivilizationNetherlands) then
+	GameEvents.CityConstructed.Add(OnConstructionWaagDummy)
 	GameEvents.PlayerDoTurn.Add(OnTurnAddDefenseFromResources)
 end

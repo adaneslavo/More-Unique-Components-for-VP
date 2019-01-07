@@ -138,7 +138,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_SATRAPS_COURT_HELP';
 ------------------------------
 -- Polder
 UPDATE Language_en_US 
-SET Text = 'A Polder can be built on tiles with access to Fresh Water or on Marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy Units entering a tile with a Polder lose all remaining [ICON_ARROW_RIGHT] Movement Points as if crossing a River. Provides additional yields once later Technologies are researched.'
+SET Text = 'A Polder can be built on tiles with access to Fresh Water or on Marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy Units entering a tile with a Polder lose 3 [ICON_ARROW_RIGHT] Movement Points as if entering a Marsh. Provides additional yields once later Technologies are researched.'
 WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP';
 
 UPDATE Language_en_US 
@@ -147,7 +147,7 @@ WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT';
 
 INSERT INTO Language_en_US
 			(Tag,							Text)
-VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'Constructs a Polder, which increases [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy Units entering a tile with a Polder lose all remaining movement.');
+VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'Constructs a Polder, which increases [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy Units entering a tile with a Polder lose 3 movement.');
 
 ------------------------------
 -- UA Texts

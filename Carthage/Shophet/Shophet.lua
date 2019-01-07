@@ -52,7 +52,7 @@ end
 function ShophetZoneOfControl(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
-	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationCarthage) then return end	
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationCarthage)) then return end	
 		
 	if (pPlayer:IsAlive() and (not pPlayer:IsBarbarian())) then	
 		for pUnit in pPlayer:Units() do
