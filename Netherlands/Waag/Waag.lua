@@ -18,6 +18,8 @@ function OnTurnAddDefenseFromResources(iPlayer)
 	local iNumberOfWaags = pPlayer:CountNumBuildings(eBuildingWaag)
 
 	if iNumberOfWaags > 0 then
+		local iCurrentWaag = 0
+		
 		for city in pPlayer:Cities() do
 			if city:IsHasBuilding(eBuildingWaag) then
 				city:SetNumRealBuilding(eBuildingDummyForWaag, pPlayer:GetHappinessFromResources())
