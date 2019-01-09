@@ -22,10 +22,7 @@ function ThisIsMyTown(iPlayer)
 	
 	for pUnit in pPlayer:Units() do
 		if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE) and pUnit:IsGarrisoned()) then
-				pUnit:SetBaseCombatStrength(30)
-			else
-				pUnit:SetBaseCombatStrength(20)
-			end
+			pUnit:SetBaseCombatStrength(pUnit:GetBaseCombatStrength() + 10)
 		end
 	end
 end
