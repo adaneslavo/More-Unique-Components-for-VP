@@ -24,7 +24,7 @@ function OnImprovementMakeMarsh(iX, iY, iOwner, iOldImprovement, iNewImprovement
 		local pPlot = Map.GetPlot(iX, iY)
 
 		if pPlot then
-			pPlot:SetFeatureType(FeatureTypes.FEATURE_MARSH, -1)
+			pPlot:SetFeatureType(FeatureTypes.FEATURE_D_FOR_POLDER, -1)
 		end
 	end
 end
