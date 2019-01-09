@@ -457,6 +457,9 @@
 		<Row Tag="TXT_KEY_IMPROVEMENT_D_FOR_WAAG">
 			<Text>Marktplaats</Text>
 		</Row>
+		<Row Tag="TXT_KEY_FEATURE_D_FOR_POLDER">
+			<Text>Koog</Text>
+		</Row>
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_WAAG">
 			<Text>DF Waag</Text>
 		</Row>
@@ -779,7 +782,13 @@
 			<Text>Burgemeeste</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_HELP">
-			<Text>+10 [ICON_STRENGTH] Combat Strength if unit begins its turn [COLOR_POSITIVE_TEXT]Garrisoned in a City[ENDCOLOR].</Text>
+			<Text>+50% [ICON_STRENGTH] Combat Strength if unit begins its turn [COLOR_POSITIVE_TEXT]Garrisoned in a City[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT">
+			<Text>Merchant Militia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT_HELP">
+			<Text>+50% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from City[ENDCOLOR].</Text>
 		</Row>
 		<!-- Hashemite Raider -->
 		<!-- Created by Blue Ghost -->
