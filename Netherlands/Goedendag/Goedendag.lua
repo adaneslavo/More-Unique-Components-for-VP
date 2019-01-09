@@ -21,8 +21,8 @@ function ThisIsMyTown(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
 	for pUnit in pPlayer:Units() do
-		if (pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE) and pUnit:IsGarrisoned()) then
-			pUnit:SetBaseCombatStrength(pUnit:GetBaseCombatStrength() + 10)
+		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE) then
+			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT, pUnit:IsGarrisoned())
 		end
 	end
 end
