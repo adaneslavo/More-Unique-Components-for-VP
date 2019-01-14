@@ -36,7 +36,7 @@ function RiadGoldToGPPs(iPlayer)
 			if city:IsHasBuilding(eBuildingRiad) then
 				-- 15% of gold in city converted to G Merchant Points
 
-				city:ChangeSpecialistGreatPersonProgressTimes100(GameInfoTypes["SPECIALIST_MERCHANT"], math.floor(0.15 * city:GetYieldRate( YieldTypes.YIELD_GOLD )))
+				city:ChangeSpecialistGreatPersonProgressTimes100(GameInfoTypes["SPECIALIST_MERCHANT"], math.floor(15 * city:GetYieldRate( YieldTypes.YIELD_GOLD )))
 
 				if iCurrentRiad == iNumberOfRiads then
 					break

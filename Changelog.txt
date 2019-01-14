@@ -4,17 +4,22 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v40:
+- disabled/removed:
+	- Horse Archer ==> Disabled new Horse Archer promotion due to performance issues
+	- Generic Bonus ==> Disabled bonus for civs without 4UC. It appeared to be causing bugs
+	- Polder Movement Restriction ==> Deleted due to performance impact and poor reception
+
 - tweaked/modified:
-	- Goedendag ==> Burgemeeste rework: now +10CS if beginning turn in City
+	- Goedendag ==> Burgemeeste rework: now +50%CS if beginning turn in City
+	- Gumey rework
+		==> Removed bonus per monopoly on empire (moved to Waag)
+		==> Added +2 gold for trade routes to/from city
+		==> Added 2 Gold/Production/Culture if a Caravan moves through city (like village improvement)
 	- Waag rework
 		==> Removed bonus Defense and %GPP for every import/export luxury
 		==> Removed +3 gold to Market in City
 		==> Added +5 base city defense
-		==> Added 3 Gold, 3 Production if a Caravan moves through city (same as village improvement)
-		==> Added 1% Distress reduction and 1% GPP rate in city for evey unique luxury on empire. 
-	- Polder lua rework
-		==> removed movement sap on enemy movement onto Polder (too lua-intensive)
-		==> Completion of a Polder now adds a Marsh beneath it (costs 3 movement to enter a Marsh tile)
+		==> Added +1 Culture/Production for every Monopoly on Empire (moved from Gumey) 
 	- Riad rework
 		==> Removed bonus for TRs in city
 		==> Added +1 gold and +1 tourism per Era

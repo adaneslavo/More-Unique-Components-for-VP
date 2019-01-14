@@ -1969,14 +1969,14 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Huns\HorseArcher\HorseArcher.sql">
+    <!--    <Content Include="Huns\HorseArcher\HorseArcher.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Huns\HorseArcher\HorseArcher.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
+    </Content>  -->
     <Content Include="Huns\Tarkhan\Tarkhan.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>

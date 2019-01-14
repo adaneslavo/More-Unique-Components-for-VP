@@ -454,11 +454,8 @@
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_TEUTONIC">
 			<Text>DF Teutonic</Text>
 		</Row>
-		<Row Tag="TXT_KEY_IMPROVEMENT_D_FOR_WAAG">
-			<Text>Marktplaats</Text>
-		</Row>
-		<Row Tag="TXT_KEY_FEATURE_D_FOR_POLDER">
-			<Text>Koog</Text>
+		<Row Tag="TXT_KEY_IMPROVEMENT_D_FOR_GUMEY">
+			<Text>Suguba</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_WAAG">
 			<Text>DF Waag</Text>
@@ -1680,10 +1677,10 @@
 			<Text>Gumey</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_GUMEY_HELP">
-			<Text>Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes generate +2 [ICON_GOLD] Gold for the City and the Trade Route Owner for every Global Monopoly on Empire.[NEWLINE]+1 [ICON_CULTURE] Culture in City for every Global Monopoly on Empire.[NEWLINE][NEWLINE]When a [ICON_INTERNATIONAL_TRADE] Land Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_GOLD] Gold for every 3 Desert or 3 Tundra tiles worked by the City. [ICON_INTERNATIONAL_TRADE] Land Trade Routes gain +75% Range and +3 [ICON_GOLD] Gold, [ICON_GREAT_MERCHANT] Merchant Specialists in this City gain +1 [ICON_GOLD] Gold. [NEWLINE]Nearby [ICON_RES_TRUFFLES] Truffles: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COTTON] Cotton: +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_FUR] Furs: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production.[NEWLINE]Nearby [ICON_RES_FLAX] Flax: +1 [ICON_GOLD] Gold, +1 [ICON_PEACE] Faith.[NEWLINE]+1 [ICON_GOLD] Gold to all Nearby Luxuries.</Text>
+			<Text>When a [ICON_INTERNATIONAL_TRADE] Land Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output. +1 [ICON_FOOD] Food and [ICON_GOLD] Gold for every 3 Desert or 3 Tundra tiles worked by the City. [ICON_GREAT_MERCHANT] Merchant Specialists in this City gain +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Land Trade Routes gain +75% Range and +3 [ICON_GOLD] Gold. Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes generate +2 [ICON_GOLD] Gold for the City and the Trade Route Owner. +2 [ICON_GOLD] Gold, [ICON_PRODUCTION] Production, and [ICON_CULTURE] Culture if a [ICON_INTERNATIONAL_TRADE] Trade Unit passes through the City.[NEWLINE]Nearby [ICON_RES_TRUFFLES] Truffles: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COTTON] Cotton: +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_FUR] Furs: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production.[NEWLINE]Nearby [ICON_RES_FLAX] Flax: +1 [ICON_GOLD] Gold, +1 [ICON_PEACE] Faith.[NEWLINE]+1 [ICON_GOLD] Gold to all Nearby Luxuries.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_GUMEY_STRATEGY">
-			<Text>The Gumey is a Songhai unique building that replaces the Caravansary. In addition to The normal bonuses of a Caravansary, the Gumey provides bonuses to trade for every global monopoly the Songhai control. The Gumey also provides more gold for all luxury resource tiles. Expand your empire's territory and reap the economic benefits of a vast trade empire.</Text>
+			<Text>The Gumey is a Songhai unique building that replaces the Caravansary. The Gumey provides much larger bonuses to trade than the normal Caravansary, boosting International Trade Routes, and extra yields if a trade route passes through the city. Expand your empire's territory and reap the economic benefits of a vast trade empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_GUMEY_TEXT">
 			<Text>
@@ -2271,10 +2268,10 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text>Available earlier. Requires a Market in City.[NEWLINE]Reduces Enemy [ICON_SPY] Spy Stealing Rate by 20%, and greatly reduces [ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold. +3 [ICON_GOLD] Gold and +3 [ICON_PRODUCTION] Production if a [ICON_INTERNATIONAL_TRADE] Trade Unit passes through the City.[NEWLINE][NEWLINE]+1% [ICON_GREAT_PEOPLE] Great People Rate and reduction of [ICON_HAPPINESS_3] Distress for every unique Luxury Resource on Empire.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. Requires a Market in City.[NEWLINE]Reduces Enemy [ICON_SPY] Spy Stealing Rate by 20% and greatly reduces [ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold. +3 [ICON_GOLD] Gold. +1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PRODUCTION] Production in this City for every Global Monopoly on Empire.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
-			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier and provides bonuses to Defense, Distress, and Great Person Generation. The Waag's bonuses scale with the total number of unique luxuries that the Dutch have access to, so be sure to keep peaceful and lucrative relationships with your neighbors.</Text>
+			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier and provides bonuses to Defense and Production. The Waag's bonuses scale with the total number of global monopolies, both luxury and strategic that the Dutch control. Trade and conquer vigorously to leverage your Waag's potential strengths.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_TEXT">
 			<Text>A Waag ("weigh house") was a public building in which goods were weighed for market. Prior to international standards of weights and measures, the Waags performed an indispensable service in preventing the fraudulent sale of goods. Waags were operated by local authorities who would also use them for the levying of taxes on goods transported through or sold within the city. This necessitated weigh houses be near a market square or town centre.[NEWLINE][NEWLINE]Of particular note is the Amsterdam Waag, built in the 15th-century on Nieuwmarkt square in Amsterdam. A number of guilds were housed on the top floors of the building: the blacksmiths' guild, the painter's guild, the masons' guild and the surgeons' guild, each with its own entrance gate. In 1632 Rembrandt van Rijn was commissioned to paint the surgeons at work; the resulting painting, ‘The Anatomy Lesson of Dr. Nicolaes Tulp’, made his reputation.</Text>

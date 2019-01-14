@@ -76,9 +76,7 @@ VALUES		('BUILDING_JAPAN_KABUKI', 'FLAVOR_CULTURE', 70),
 INSERT INTO Building_SpecificGreatPersonRateModifier
 			(BuildingType, SpecialistType, Modifier)
 VALUES
-		('BUILDING_JAPAN_KABUKI', 'SPECIALIST_MUSICIAN', 66),
-		('BUILDING_JAPAN_KABUKI', 'SPECIALIST_ARTIST', 33),
-		('BUILDING_JAPAN_KABUKI', 'SPECIALIST_WRITER', 33);
+		('BUILDING_JAPAN_KABUKI', 'SPECIALIST_MUSICIAN', 33);
 
 INSERT INTO Building_SpecialistYieldChangesLocal
 		(BuildingType, 		SpecialistType, 		YieldType, 	Yield)

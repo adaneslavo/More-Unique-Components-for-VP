@@ -15,22 +15,4 @@ function PolderCanBeOnMarsh (iPlayer, iUnit, iX, iY, iBuild)
 	end
 end
 
-function OnImprovementMakeMarsh(iX, iY, iOwner, iOldImprovement, iNewImprovement, bPillaged)
-	local pPlayer = Players[iOwner]
-    
-    if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationNetherlands) then return end
-
-	if (iNewImprovement == eImprovementPolder and iNewImprovement ~= iOldImprovement) then
-		local pPlot = Map.GetPlot(iX, iY)
-
-		if pPlot then
-			pPlot:SetFeatureType(FeatureTypes.FEATURE_D_FOR_POLDER, -1)
-		end
-	end
-end
-
 GameEvents.PlayerCanBuild.Add(PolderCanBeOnMarsh)
-
-if Game.IsCivEverActive(eCivilizationNetherlands) then
-	GameEvents.TileImprovementChanged.Add(OnImprovementMakeMarsh)
-end

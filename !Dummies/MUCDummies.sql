@@ -30,10 +30,9 @@ VALUES		('BUILDINGCLASS_D_FOR_HUEY',				'BUILDING_D_FOR_HUEY',			1),
 			('BUILDINGCLASS_D_FOR_SACHEM_6',		'BUILDING_D_FOR_SACHEM_6',		1),
 			('BUILDINGCLASS_D_FOR_CHAEBOL',			'BUILDING_D_FOR_CHAEBOL',		1),
 			('BUILDINGCLASS_D_FOR_RIAD',			'BUILDING_D_FOR_RIAD',			1),
-			('BUILDINGCLASS_D_FOR_WAAG',			'BUILDING_D_FOR_WAAG',			1),
 			('BUILDINGCLASS_D_FOR_FEITORIA',		'BUILDING_D_FOR_FEITORIA',		1),
 			('BUILDINGCLASS_D_FOR_BAAN',			'BUILDING_D_FOR_BAAN',			1),
-			('BUILDINGCLASS_D_FOR_GUMEY',			'BUILDING_D_FOR_GUMEY',			1),
+			('BUILDINGCLASS_D_FOR_WAAG',			'BUILDING_D_FOR_WAAG',			1),
 			('BUILDINGCLASS_D_FOR_GUMEY_LUX',		'BUILDING_D_FOR_GUMEY_LUX',		1);
 --==========================================================================================================================	
 -- BUILDINGS
@@ -90,16 +89,12 @@ INSERT INTO Buildings
 VALUES		('BUILDING_D_FOR_TEUTONIC',	'BUILDINGCLASS_D_FOR_TEUTONIC',	'TXT_KEY_BUILDING_D_FOR_TEUTONIC',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				500,		50,					'PROMOTION_MORALE', 1);
 
 INSERT INTO Buildings 	
-			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	Defense, IsDummy)
-VALUES		('BUILDING_D_FOR_QILA_1',	'BUILDINGCLASS_D_FOR_QILA_1',	'TXT_KEY_BUILDING_D_FOR_QILA_1',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				100, 1);
+			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	Defense, 	IsDummy)
+VALUES		('BUILDING_D_FOR_QILA_1',	'BUILDINGCLASS_D_FOR_QILA_1',	'TXT_KEY_BUILDING_D_FOR_QILA_1',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				100, 		1);
 
 INSERT INTO Buildings 	
-			(Type,					BuildingClass,				Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateModifier,	DefenseHappinessChange, IsDummy)
-VALUES		('BUILDING_D_FOR_WAAG',	'BUILDINGCLASS_D_FOR_WAAG',	'TXT_KEY_BUILDING_D_FOR_WAAG',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				1,							-1, 					1);
-
-INSERT INTO Buildings 	
-			(Type,						BuildingClass,					Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	TradeRouteRecipientBonus, 	TradeRouteTargetBonus, IsDummy)
-VALUES		('BUILDING_D_FOR_GUMEY',	'BUILDINGCLASS_D_FOR_GUMEY',	'TXT_KEY_BUILDING_D_FOR_GUMEY',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2, 							2, 1);
+			(Type,					BuildingClass,				Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	IsDummy)
+VALUES		('BUILDING_D_FOR_WAAG',	'BUILDINGCLASS_D_FOR_WAAG',	'TXT_KEY_BUILDING_D_FOR_WAAG',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				1);
 ------------------------------	
 -- Building_BuildingClassYieldChanges
 ------------------------------
@@ -109,7 +104,9 @@ VALUES		('BUILDING_D_FOR_HUEY',		'BUILDINGCLASS_GRAND_TEMPLE',		'YIELD_FOOD',		3
 			('BUILDING_D_FOR_HUEY',		'BUILDINGCLASS_GRAND_TEMPLE',		'YIELD_FAITH',		3),
 			('BUILDING_D_FOR_FEITORIA',	'BUILDINGCLASS_OXFORD_UNIVERSITY',	'YIELD_PRODUCTION',	1),
 			('BUILDING_D_FOR_FEITORIA',	'BUILDINGCLASS_OXFORD_UNIVERSITY',	'YIELD_GOLD',		2),
-			('BUILDING_D_FOR_GUMEY',	'BUILDINGCLASS_CARAVANSARY',		'YIELD_CULTURE',	1);
+			('BUILDING_D_FOR_WAAG',		'BUILDINGCLASS_BANK',				'YIELD_GOLD',	1),
+			('BUILDING_D_FOR_WAAG',		'BUILDINGCLASS_BANK',				'YIELD_CULTURE',	1),
+			('BUILDING_D_FOR_WAAG',		'BUILDINGCLASS_BANK',				'YIELD_PRODUCTION',	1);
 ------------------------------	
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------

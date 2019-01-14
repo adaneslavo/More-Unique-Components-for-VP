@@ -79,13 +79,13 @@ SET Text = 'Overpowering defensive ship. Only Korea may build it. Has higher [IC
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_HELP';
 
 -- Horse Archer
-UPDATE Language_en_US 
-SET Text = 'Terrifying Classical Era Ranged Unit. Only the Huns may build it. Does not require [ICON_RES_HORSE] Horses, unlike the Skirmisher it replaces. If all the Unit''s [ICON_ARROW_RIGHT] Movement Points are used without attacking, attacks a valid target automatically.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_HUN_HORSE_ARCHER';
+--UPDATE Language_en_US 
+--SET Text = 'Terrifying Classical Era Ranged Unit. Only the Huns may build it. Does not require [ICON_RES_HORSE] Horses, unlike the Skirmisher it replaces. If all the Unit''s [ICON_ARROW_RIGHT] Movement Points are used without attacking, attacks a valid target automatically.'
+--WHERE Tag = 'TXT_KEY_UNIT_HELP_HUN_HORSE_ARCHER';
 
-UPDATE Language_en_US 
-SET Text = 'Horse Archers are fast ranged units, deadly on open terrain. Horse Archers have the unique ability to automatically attack a random nearby target if they have run out of moves, but have not attacked yet. As a mounted unit, the Horse Archer is vulnerable to Spearmen. Unlike the Skirmisher, the Horse Archer does not require Horses.'
-WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';
+--UPDATE Language_en_US 
+--SET Text = 'Horse Archers are fast ranged units, deadly on open terrain. Horse Archers have the unique ability to automatically attack a random nearby target if they have run out of moves, but have not attacked yet. As a mounted unit, the Horse Archer is vulnerable to Spearmen. Unlike the Skirmisher, the Horse Archer does not require Horses.'
+--WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';
 
 -- Great Galleas
 UPDATE Language_en_US 
@@ -137,18 +137,13 @@ WHERE Tag = 'TXT_KEY_BUILDING_SATRAPS_COURT_HELP';
 -- UI Texts
 ------------------------------
 -- Polder
-UPDATE Language_en_US 
-SET Text = 'A Polder can be built on tiles with access to Fresh Water or on Marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy Units entering a tile with a Polder lose 3 [ICON_ARROW_RIGHT] Movement Points as if entering a Marsh. Provides additional yields once later Technologies are researched.'
+UPDATE Language_en_US
+SET Text = 'A Polder can be built on tiles with access to fresh water or on marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production, and grants [ICON_GOLD] Gold to adjacent Villages and Towns. Provides additional yields once later techs are researched.'
 WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP';
 
-UPDATE Language_en_US 
-SET Text = 'A polder is a low-lying tract enclosed by dikes with the water drained. In general, polder is land reclaimed from a lake or seabed, from flood plains, or from marshes. In time, the drained land subsides so that all polder is eventually below the surrounding water level. Because of this, water seeps into the drained area and must be pumped out or otherwise drained. The dikes are usually made of readily available materials, earth or sand; in modern times these barriers might be covered or completely composed of concrete. The drained land is extremely fertile and makes excellent pasturage or cropland.[NEWLINE][NEWLINE]The first polders of reclaimed land were constructed in the 11th Century AD, although building embankments as barriers to water date back to the Romans. The Dutch have a long history of reclaiming marshes and fenland, and even the seabed, and possess half of the polder acreage in Europe. Although there are polders in other countries of Europe, and examples can be found in Asia and North America, Holland has some 3000 polders accounting for about 27 percent of the country''s land. Amsterdam itself is built largely upon polder. As the Dutch homily states, "God made the world, but the Dutch made Holland."' 
+UPDATE Language_en_US
+SET Text = 'A Polder can be built on tiles with access to fresh water or on Marshes. It generates [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production, and grants [ICON_GOLD] Gold to adjacent Villages and Towns. Provides additional yields once later techs are researched.[NEWLINE][NEWLINE]A polder is a low-lying tract enclosed by dikes with the water drained. In general, polder is land reclaimed from a lake or seabed, from flood plains, or from marshes. In time, the drained land subsides so that all polder is eventually below the surrounding water level. Because of this, water seeps into the drained area and must be pumped out or otherwise drained. The dikes are usually made of readily available materials, earth or sand; in modern times these barriers might be covered or completely composed of concrete. The drained land is extremely fertile and makes excellent pasturage or cropland.[NEWLINE][NEWLINE]The first polders of reclaimed land were constructed in the 11th Century AD, although building embankments as barriers to water date back to the Romans. The Dutch have a long history of reclaiming marshes and fenland, and even the seabed, and possess half of the polder acreage in Europe. Although there are polders in other countries of Europe, and examples can be found in Asia and North America, Holland has some 3000 polders accounting for about 27 percent of the country''s land. Amsterdam itself is built largely upon polder. As the Dutch homily states, "God made the world, but the Dutch made Holland."'
 WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT';
-
-INSERT INTO Language_en_US
-			(Tag,							Text)
-VALUES		('TXT_KEY_BUILD_POLDER_HELP',	'Constructs a Polder, which increases [ICON_FOOD] Food, [ICON_GOLD] Gold, and [ICON_PRODUCTION] Production. Enemy Units entering a tile with a Polder lose 3 movement.');
-
 ------------------------------
 -- UA Texts
 ------------------------------

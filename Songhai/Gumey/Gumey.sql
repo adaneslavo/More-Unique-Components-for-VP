@@ -30,8 +30,8 @@ VALUES		('BUILDING_GUMEY_ATLAS', 		256, 		'GumeyPicture_256.dds',		1, 				1),
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,						FreeBuildingThisCity, 							BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier, 		EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	Help,									Description,						Civilopedia,							Strategy,									IconAtlas,				PortraitIndex)
-SELECT		'BUILDING_SONGHAI_GUMEY',	'BUILDINGCLASS_D_FOR_GUMEY_LUX', 	BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier+25, 	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_SONGHAI_GUMEY_HELP',	'TXT_KEY_BUILDING_SONGHAI_GUMEY', 	'TXT_KEY_BUILDING_SONGHAI_GUMEY_TEXT',	'TXT_KEY_BUILDING_SONGHAI_GUMEY_STRATEGY',	'BUILDING_GUMEY_ATLAS',	0
+			(Type,						FreeBuildingThisCity, 				BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier, 		TradeRouteRecipientBonus, 		TradeRouteTargetBonus, 		EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	Help,									Description,						Civilopedia,							Strategy,									IconAtlas,				PortraitIndex)
+SELECT		'BUILDING_SONGHAI_GUMEY',	'BUILDINGCLASS_D_FOR_GUMEY_LUX', 	BuildingClass, FinishLandTRTourism, GoldMaintenance, Cost, FaithCost, TradeRouteLandGoldBonus, TradeRouteLandDistanceModifier+25, 	TradeRouteRecipientBonus+2, 	TradeRouteTargetBonus+2, 	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat,	NumCityCostMod,	DefenseHappinessChange,	IlliteracyHappinessChange,	UnculturedHappinessChange,	MinorityHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_SONGHAI_GUMEY_HELP',	'TXT_KEY_BUILDING_SONGHAI_GUMEY', 	'TXT_KEY_BUILDING_SONGHAI_GUMEY_TEXT',	'TXT_KEY_BUILDING_SONGHAI_GUMEY_STRATEGY',	'BUILDING_GUMEY_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_CARAVANSARY';	
 ------------------------------	
 -- Building_Flavors
@@ -75,8 +75,32 @@ FROM Building_YieldPerXTerrainTimes100 WHERE BuildingType = 'BUILDING_CARAVANSAR
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 				YieldType,			Yield)
-VALUES		('BUILDING_SONGHAI_GUMEY',	'YIELD_CULTURE',		1),
+VALUES		('BUILDING_SONGHAI_GUMEY',	'YIELD_CULTURE',		2),
 			('BUILDING_SONGHAI_GUMEY',	'YIELD_GOLD',			2),
 			('BUILDING_SONGHAI_GUMEY',	'YIELD_PRODUCTION',		2);
 --==========================================================================================================================
+--==========================================================================================================================
+--==========================================================================================================================	
+--==========================================================================================================================
+-- IMPROVEMENTS
+--==========================================================================================================================	
+--------------------------
+-- Improvements
+--------------------------
+INSERT INTO Improvements 
+			(Type,						Description, 						Civilopedia, Help, ArtDefineTag, RequiresFeature, PillageGold, PortraitIndex, IconAtlas)
+SELECT		'IMPROVEMENT_GUMEY_DUMMY',	'TXT_KEY_IMPROVEMENT_D_FOR_GUMEY', 	Civilopedia, Help, ArtDefineTag, RequiresFeature, PillageGold, PortraitIndex, IconAtlas 
+FROM Improvements WHERE (Type = 'IMPROVEMENT_TRADING_POST');
+--------------------------
+-- Improvement_RouteYieldChanges
+--------------------------
+INSERT INTO Improvement_RouteYieldChanges
+	(ImprovementType, 			RouteType, 			YieldType, 			Yield)
+VALUES
+	('IMPROVEMENT_GUMEY_DUMMY', 	'ROUTE_ROAD', 		'YIELD_GOLD', 		2),
+	('IMPROVEMENT_GUMEY_DUMMY', 	'ROUTE_ROAD', 		'YIELD_PRODUCTION', 2),
+	('IMPROVEMENT_GUMEY_DUMMY', 	'ROUTE_ROAD', 		'YIELD_CULTURE', 	2),
+	('IMPROVEMENT_GUMEY_DUMMY', 	'ROUTE_RAILROAD', 	'YIELD_GOLD', 		2),
+	('IMPROVEMENT_GUMEY_DUMMY', 	'ROUTE_RAILROAD', 	'YIELD_PRODUCTION', 2),
+	('IMPROVEMENT_GUMEY_DUMMY', 	'ROUTE_RAILROAD', 	'YIELD_CULTURE', 	2);
 --==========================================================================================================================
