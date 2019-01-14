@@ -19,13 +19,13 @@ v40:
 		==> Removed bonus Defense and %GPP for every import/export luxury
 		==> Removed +3 gold to Market in City
 		==> Added +5 base city defense
-		==> Added +1 Culture/Production for every Monopoly on Empire (moved from Gumey) 
+		==> Added +1 Culture/Production/Gold for every Monopoly on Empire (moved from Gumey) 
 	- Riad rework
 		==> Removed bonus for TRs in city
 		==> Added +1 gold and +1 tourism per Era
 		==> Added 15% of gold converted to G Merchant Points in city
 		==> fixed minor text error
-	- Teutonic Order rework,
+	- Teutonic Order rework
 		==> Removed Chapter promotion
 		==> Added +2 production to Castles on Empire
 		==> Increased faith to +4
