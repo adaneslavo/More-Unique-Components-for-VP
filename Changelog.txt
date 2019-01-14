@@ -6,9 +6,7 @@ More Unique Components for Vox Populi changelog:
 v40:
 - disabled/removed:
 	- Horse Archer ==> Disabled new Horse Archer promotion due to performance issues
-	- Generic Bonus ==> Disabled bonus for civs without 4UC. It appeared to be causing bugs
 	- Polder Movement Restriction ==> Deleted due to performance impact and poor reception
-
 - tweaked/modified:
 	- Goedendag ==> Burgemeeste rework: now +50%CS if beginning turn in City
 	- Gumey rework
@@ -62,7 +60,7 @@ v39:
 	- Yellowbrow ==> changed unit model (icon and flag unchanged).
 - fixed:
 	- Yassa Court ==> fixed lua,
-	- Sambadrome ==> fixed SQ,
+	- Sambadrome ==> fixed SQL,
 	- Nilometer/Buffalo Pound ==> set dummy buildings so flax/buffalo won't spawn in a city if built more than once in same city,
 	- Qullqa ==> fixed text; resolved issue with cities on mountains disappearing when Qullqa is built,
 	- Cacadores ==> added shadow to flag icon,
