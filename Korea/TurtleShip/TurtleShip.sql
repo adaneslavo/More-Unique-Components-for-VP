@@ -7,6 +7,12 @@
 INSERT INTO Civilization_UnitClassOverrides 
 			(CivilizationType, 		UnitClassType, 			UnitType)
 VALUES		('CIVILIZATION_KOREA', 	'UNITCLASS_CARAVEL',	'UNIT_KOREAN_TURTLE_SHIP');
+--------------------------------	
+-- Civilization_Start_Along_Ocean 
+--------------------------------
+INSERT INTO Civilization_Start_Along_Ocean 
+		(CivilizationType, 			StartAlongOcean)
+VALUES	('CIVILIZATION_KOREA',	1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
