@@ -44,7 +44,7 @@ WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_HAKKAPELIITTA_STRATEGY';
 
 -- Monitor
 UPDATE Language_en_US 
-SET Text = 'Durable coastal defense craft. Only America may build it. Has double [ICON_ARROW_RIGHT] Movement on Coast, and increases the [ICON_STRENGTH] Combat Strength of your Cities when adjacent to or inside the City. Takes reduced damage from enemy attacks.'
+SET Text = 'Durable coastal defense craft. Only America may build it. Increases the [ICON_STRENGTH] Combat Strength of your Cities when adjacent to or inside the City. Takes reduced damage from enemy attacks.'
 WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_HELP';
 
 UPDATE Language_en_US 
