@@ -4,6 +4,9 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v40:
+- 01/15 Compatibility:
+	- re-added deleted coastal biases for Byzantium/Indonesia/Korea
+	- added Building_YieldFromInternalTREnd to Baan Chang/Andelvaegelse
 - disabled/removed:
 	- Horse Archer ==> Disabled new Horse Archer promotion due to performance issues
 	- Polder Movement Restriction ==> Deleted due to performance impact and poor reception
@@ -32,6 +35,7 @@ v40:
 		==> Added 25 Faith on Kill
 	- Homestead rework
 		==> removed 25% border Growth
+		==> Ranch now claims owned resources
 		==> added +25% settler/worker production
 		==> Homestead unlocks Pioneer early
 		==> Added 15 production on citizen birth
