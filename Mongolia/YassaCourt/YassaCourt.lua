@@ -19,14 +19,15 @@ function OnCaptureCityBonuses(iPlayer, iCapital, iResourceX, iResourceY, iNewPla
 
 	if not (pNewPlayer and (pNewPlayer:GetCivilizationType() == eCivilizationMongolia or pNewPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 
-	local iEraModifier = math.max(pNewPlayer:GetCurrentEra(), 1)
-
 	for city in pNewPlayer:Cities() do
 		if city:IsHasBuilding(eBuildingYassa) then
 			iCurrentYassa = iCurrentYassa + 1
 		end
 	end
-	
+
+	if iCurrentYassa == 0 then return end
+
+	local iEraModifier = math.max(pNewPlayer:GetCurrentEra(), 1)
 	local iCulture = math.floor(iCurrentYassa * 10 * fGameSpeedModifier1 * iEraModifier)
 	local iResearch = math.floor(iCurrentYassa * 10 * fGameSpeedModifier2 * iEraModifier)
 	local iGold = math.floor(iCurrentYassa * 10 * fGameSpeedModifier3 * iEraModifier)
