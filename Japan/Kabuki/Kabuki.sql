@@ -94,7 +94,13 @@ INSERT INTO Building_YieldChanges
 SELECT		'BUILDING_JAPAN_KABUKI', YieldType, Yield
 FROM		Building_YieldChanges
 WHERE		BuildingType = 'BUILDING_OPERA_HOUSE';
-
+--------------------------------
+-- Building_YieldChanges
+--------------------------------
+INSERT INTO Building_YieldFromInternalTREnd
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_JAPAN_KABUKI', 'YIELD_CULTURE', 50);
 --------------------------------
 -- IconTextureAtlases
 --------------------------------
