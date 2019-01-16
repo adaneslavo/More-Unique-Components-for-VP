@@ -43,7 +43,7 @@ function OnCaptureCityBonuses(iPlayer, iCapital, iResourceX, iResourceY, iNewPla
 		Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iResearch.." [ICON_RESEARCH][ENDCOLOR]", 1.5)
 		Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+ "..iCulture.." [ICON_CULTURE][ENDCOLOR]", 2)	
 
-		pPlayer:AddNotification(0, 
+		pNewPlayer:AddNotification(0, 
 			'A city has been conquered for the Great Khan![NEWLINE][ICON_BULLET]+'..iGold..' [ICON_GOLD] Gold[NEWLINE][ICON_BULLET]+'..iResearch..' [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+'..iCulture..' [ICON_CULTURE] Culture', 
 			'Subjugation!', 
 			iResourceX, iResourceY)
