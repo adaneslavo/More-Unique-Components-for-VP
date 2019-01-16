@@ -77,6 +77,13 @@ INSERT INTO Building_ImprovementYieldChanges
 			(BuildingType, 					ImprovementType,					YieldType,			Yield)
 VALUES		('BUILDING_SIAM_BAAN_CHANG',	'IMPROVEMENT_LUMBERMILL_JUNGLE',	'YIELD_CULTURE',	1),
 			('BUILDING_SIAM_BAAN_CHANG',	'IMPROVEMENT_LUMBERMILL',			'YIELD_CULTURE',	1);
+------------------------------	
+-- Building_YieldFromInternalTREnd
+------------------------------		
+INSERT INTO Building_YieldFromInternalTREnd 	
+			(BuildingType, YieldType, Yield)
+SELECT		'BUILDING_SIAM_BAAN_CHANG', YieldType, Yield
+FROM Building_YieldFromInternalTREnd WHERE BuildingType = 'BUILDING_WORKSHOP';
 --==========================================================================================================================
 --==========================================================================================================================
 
