@@ -6,11 +6,16 @@ More Unique Components for Vox Populi changelog:
 v40:
 - 01/15 Compatibility:
 	- re-added deleted coastal biases for Byzantium/Indonesia/Korea
-	- added Building_YieldFromInternalTREnd to Baan Chang/Andelvaegelse
+	- added Building_YieldFromInternalTREnd to Baan Chang, Andelvaegelse, and Agora
 - disabled/removed:
 	- Horse Archer ==> Disabled new Horse Archer promotion due to performance issues
 	- Polder Movement Restriction ==> Deleted due to performance impact and poor reception
 - tweaked/modified:
+	- E-temenanki 	==> increased instant yield from purchase to 25% of food/science
+					==> increased base yields to 4 culture, 4 food, 2 faith
+	- University of Coimbra ==> increased bonus to Universities to 3 gold
+	- Huey Teocalli	==> added +3 Food to base Huey
+	- Yassa Court 	==> Removed Minority Happiness and Distress Reduction (now only reduces Illiteracy/Boredom). Needs reduction is more sensitive now; Yassa was too powerful. 
 	- Goedendag ==> Burgemeeste rework: now +50%CS if beginning turn in City
 	- Gumey rework
 		==> Removed bonus per monopoly on empire (moved to Waag)
@@ -44,9 +49,7 @@ v40:
 		==> increased Gold to GAP to 15%, up from 10%
 		==> Moved Pairidaeza unlock to Currency, reduced cost to 200
 		==> Increased yield per population on Satraps Court to 1 per 4, up from 1 per 5
-	- E-temenanki 	==> increased instant yield from purchase to 25% of food/science
-					==> increased base yields to 4 culture, 4 food, 2 faith
-	- University of Coimbra ==> increased bonus to Universities to 3 gold
+
 - fixed:
 	- Shophet ==> fixed lua error	
 

@@ -87,7 +87,13 @@ FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_MARKET';
 INSERT INTO Building_UnitCombatProductionModifiers 	
 			(BuildingType, 				UnitCombatType,			Modifier)
 VALUES		('BUILDING_GREECE_AGORA',	'UNITCOMBAT_DIPLOMACY',	25);
-
+------------------------------	
+-- Building_YieldFromInternalTREnd
+------------------------------		
+INSERT INTO Building_YieldFromInternalTREnd 	
+			(BuildingType, YieldType, Yield)
+SELECT		'BUILDING_GREECE_AGORA', YieldType, Yield
+FROM Building_YieldFromInternalTREnd WHERE BuildingType = 'BUILDING_MARKET';
 --==========================================================================================================================
 --==========================================================================================================================
 
