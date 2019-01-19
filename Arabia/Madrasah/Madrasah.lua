@@ -24,9 +24,9 @@ function MadrasahScienceUnit(iPlayer, iCity, iUnit, bGold, bFaith)
 		local iScience
 		
 		if pUnit:IsGreatPerson() then
-			iScience = math.floor(75 * iEraModifier * iGameSpeedModifier)
+			iScience = math.floor(100 * iEraModifier * iGameSpeedModifier)
 		else
-			iScience = math.floor(15 * iEraModifier * iGameSpeedModifier)
+			iScience = math.floor(20 * iEraModifier * iGameSpeedModifier)
 		end
 
 		pPlayer:ChangeOverflowResearch(iScience)
