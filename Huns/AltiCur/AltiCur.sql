@@ -44,12 +44,19 @@ VALUES		('BUILDING_HUNS_ALTI_CUR',	'FLAVOR_PRODUCTION',	100),
 			('BUILDING_HUNS_ALTI_CUR',	'FLAVOR_GOLD',			20);
 ------------------------------	
 -- Building_Yields
-------------------------------		
+------------------------------
 INSERT INTO Building_YieldChanges
 			(BuildingType,				YieldType,			Yield)
 VALUES		('BUILDING_HUNS_ALTI_CUR',	'YIELD_PRODUCTION', 10),
 			('BUILDING_HUNS_ALTI_CUR',	'YIELD_SCIENCE',	3),
 			('BUILDING_HUNS_ALTI_CUR',	'YIELD_CULTURE',	3);
+------------------------------	
+-- Building_ResourceQuantity
+------------------------------		
+INSERT INTO Building_ResourceQuantity
+			(BuildingType,				ResourceType, Quantity)
+SELECT		'BUILDING_HUNS_ALTI_CUR',	ResourceType, Quantity
+FROM Building_ResourceQuantity WHERE BuildingType = 'BUILDING_IRONWORKS';	
 ------------------------------	
 -- Building_YieldFromConstruction
 ------------------------------		
