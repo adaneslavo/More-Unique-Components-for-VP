@@ -55,15 +55,14 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_PUBLIC_SCHOOL';
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 						YieldType,			Yield)
 VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_CULTURE',	1),
-			('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_PRODUCTION',	3),
+			('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_PRODUCTION',	5),
 			('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_SCIENCE',	5);
 ------------------------------	
 -- Building_YieldChangesPerPop
 ------------------------------
 INSERT INTO Building_YieldChangesPerPop 	
 			(BuildingType,						YieldType,			Yield)
-VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_SCIENCE',	50),
-			('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_PRODUCTION',	50);
+VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_SCIENCE',	50);
 ------------------------------	
 -- Building_TechEnhancedYieldChanges
 ------------------------------
