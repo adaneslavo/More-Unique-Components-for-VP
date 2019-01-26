@@ -45,13 +45,18 @@ FROM Building_FeatureYieldChanges WHERE	BuildingType = 'BUILDING_UNIVERSITY';
 -- Building_YieldChanges
 --------------------------------
 INSERT INTO Building_YieldChanges
-			(BuildingType,				YieldType, Yield)
-SELECT		'BUILDING_ARABIA_MADRASAH', YieldType, Yield
-FROM Building_YieldChanges WHERE	BuildingType = 'BUILDING_UNIVERSITY';
-	
-INSERT INTO Building_YieldChanges
-			(BuildingType,					YieldType,		Yield)
-VALUES		('BUILDING_ARABIA_MADRASAH',	'YIELD_FAITH',	2);
+			(BuildingType,					YieldType,			Yield)
+VALUES		('BUILDING_ARABIA_MADRASAH',	'YIELD_FAITH',		2),
+			('BUILDING_ARABIA_MADRASAH',	'YIELD_SCIENCE',	3),
+			('BUILDING_ARABIA_MADRASAH',	'YIELD_CULTURE',	2);
+--------------------------------
+-- Building_YieldFromGPExpend
+--------------------------------
+INSERT INTO Building_YieldFromGPExpend
+			(BuildingType,					YieldType,			Yield)
+VALUES		('BUILDING_ARABIA_MADRASAH',	'YIELD_FAITH',		5),
+			('BUILDING_ARABIA_MADRASAH',	'YIELD_SCIENCE',	5),
+			('BUILDING_ARABIA_MADRASAH',	'YIELD_PRODUCTION',	5);
 --------------------------------
 -- Building_GrowthExtraYield
 --------------------------------
