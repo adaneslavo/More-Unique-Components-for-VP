@@ -50,6 +50,12 @@ VALUES		('BUILDING_ARABIA_MADRASAH',	'YIELD_FAITH',		2),
 			('BUILDING_ARABIA_MADRASAH',	'YIELD_SCIENCE',	3),
 			('BUILDING_ARABIA_MADRASAH',	'YIELD_CULTURE',	2);
 --------------------------------
+-- Building_YieldFromFaithPurchase
+--------------------------------
+INSERT INTO Building_YieldFromFaithPurchase
+			(BuildingType,					YieldType,			Yield)
+VALUES		('BUILDING_ARABIA_MADRASAH',	'YIELD_SCIENCE',	15);
+--------------------------------
 -- Building_YieldFromGPExpend
 --------------------------------
 INSERT INTO Building_YieldFromGPExpend
