@@ -888,12 +888,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Madrasah</Name>
-        <Description>Science on faith purchase for Madrasah</Description>
-        <FileName>Arabia/Madrasah/Madrasah.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Iron Chariot</Name>
         <Description>Fury of Nergal and bonuses from resources for Iron Chariot</Description>
         <FileName>Assyria/IronChariot/IronChariot.lua</FileName>
@@ -1304,10 +1298,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Arabia\HashemiteRaider\HashemiteRaiderPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Arabia\Madrasah\Madrasah.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Arabia\Madrasah\Madrasah.sql">
       <SubType>Lua</SubType>
