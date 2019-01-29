@@ -3,6 +3,14 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v41: 01/29 Compatibility
+	- removed medic I from Langskib
+	- Changed Teutonic Order from YieldsOnVictory to new YieldsOnVictoryGlobal
+	- Added YieldsOnFaithPurchase to Madrasah. Deleted old lua
+- tweaked/modified:
+	- Madrasa ==> Added 5 Cu/Sci/Fai on GP expend
+	- Grande Ecole ==> Removed production pop scaler. Increased base yields
+
 v40:
 - 01/15 Compatibility:
 	- re-added deleted coastal biases for Byzantium/Indonesia/Korea
