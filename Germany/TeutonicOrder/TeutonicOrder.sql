@@ -55,7 +55,7 @@ VALUES		('BUILDING_GERMANY_TEUTONIC_ORDER',	'YIELD_PRODUCTION', 	40);
 --------------------------------	
 -- Building_YieldFromVictory
 --------------------------------
-INSERT INTO Building_YieldFromVictory
+INSERT INTO Building_YieldFromVictoryGlobal
 	(BuildingType, YieldType, Yield)
 VALUES	('BUILDING_GERMANY_TEUTONIC_ORDER', 'YIELD_FAITH', 25);
 --==========================================================================================================================
