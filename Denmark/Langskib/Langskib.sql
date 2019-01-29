@@ -136,7 +136,6 @@ VALUES		('PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION',					'TXT_KEY_PROMOTION_UNI
 INSERT INTO Unit_FreePromotions
 			(UnitType, 						PromotionType)
 VALUES		('UNIT_DENMARK_LANGSKIB', 		'PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION'),
-			('UNIT_DENMARK_LANGSKIB', 		'PROMOTION_MEDIC'),
 			('UNIT_DENMARK_LANGSKIB', 		'PROMOTION_CAN_MOVE_AFTER_ATTACKING');
 --==========================================================================================================================
 --==========================================================================================================================
