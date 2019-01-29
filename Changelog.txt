@@ -7,6 +7,8 @@ v41: 01/29 Compatibility
 	- removed medic I from Langskib
 	- Changed Teutonic Order from YieldsOnVictory to new YieldsOnVictoryGlobal
 	- Added YieldsOnFaithPurchase to Madrasah. Deleted old lua
+	- Added 2 free iron to Alti Cur
+	- Increased SPAD RCS (a little too weak after fighter nerf)
 - tweaked/modified:
 	- Madrasa ==> Added 5 Cu/Sci/Fai on GP expend
 	- Grande Ecole ==> Removed production pop scaler. Increased base yields
