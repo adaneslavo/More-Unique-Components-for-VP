@@ -1373,7 +1373,7 @@
 			<Text>Unique Arabian replacement for the University. In addition to the bonuses of a University, the Madrasa generates additional yields when you purchase anything with Faith or expend a Great Person.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
-			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 25% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Gain 15% of the Cost of any [ICON_PEACE] Faith Purchase as [ICON_RESEARCH] Science in this City. Gain [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_PRODUCTION] Production in this City whenever you Expend a [ICON_GREAT_PEOPLE] Great Person on Empire, scaling with Era.</Text>
+			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 25% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Gain 15% of the Cost of any [ICON_PEACE] Faith Purchase as [ICON_RESEARCH] Science in this City. Gain 5 [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_PRODUCTION] Production in this City whenever you Expend a [ICON_GREAT_PEOPLE] Great Person, scaling with Era.</Text>
 		</Row>
 		
 		<!-- Monitor -->
