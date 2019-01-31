@@ -1267,10 +1267,10 @@
 			<Text>Longship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_HELP">
-			<Text>Early Naval Exploration Unit. Only Denmark may build it. Available earlier, can move after attacking, and has [COLOR_GREEN]Medic I[ENDCOLOR] Promotion. Embarked Civilian Units starting their turn on the same tile as a longship may enter deep Ocean.</Text>
+			<Text>Early Naval Exploration Unit. Only Denmark may build it. Available earlier, can move after attacking, and has [COLOR_GREEN]Blockade[ENDCOLOR] Promotion. Embarked Civilian Units starting their turn on the same tile as a longship may enter deep Ocean.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_STRATEGY">
-			<Text>The Danish Longship is an early ship unit which allow Denmark to have early sea control. This allows Denmark to begin scouting the far seas earlier than the other players to prepare future waves of colonization, defend your colonies abroad and provides support to raids with its bonuses to healing at sea and performing hit-and-run tactics.</Text>
+			<Text>The Danish Longship is an early ship unit which allow Denmark to have early sea control. This allows Denmark to begin scouting the far seas earlier than the other players to prepare future waves of colonization, defend your colonies abroad and provides support to raids with its bonuses to city attack at sea and performing hit-and-run tactics.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DENMARK_LANGSKIB_TEXT">
 			<Text>
