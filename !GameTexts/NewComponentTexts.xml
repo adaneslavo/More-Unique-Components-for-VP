@@ -1364,16 +1364,16 @@
 		<!-- Madrasah -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH">
-			<Text>Madrasah</Text>
+			<Text>Madrasa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_TEXT">
-			<Text>"Madrasah" is Arabic for any type of educational institution. Though often with a religious component, madrasahs were primarily secular, and could cover anything from elementary to higher learning, including medicine, law, science, philosophy or the education of women. The first madrasah, the Gama'at al-Qarawiyyn, was established in 859 AD by Fatimah al-Fihri, the daughter of a wealthy merchant. During the rule of the Fatimid, Ayyubid and Mamluk dynasties, the practice of sponsoring madrasahs by the ruling elite spread across Egypt and the Middle East. As Europe suffered through the Dark Ages, the madrasahs of the Turks and Arabs would keep the best of Western knowledge alive, blending it with that of the East.</Text>
+			<Text>"Madrasa" is Arabic for any type of educational institution. Though often with a religious component, madrasas were primarily secular, and could cover anything from elementary to higher learning, including medicine, law, science, philosophy or the education of women. The first madrasa, the Gama'at al-Qarawiyyn, was established in 859 AD by Fatimah al-Fihri, the daughter of a wealthy merchant. During the rule of the Fatimid, Ayyubid and Mamluk dynasties, the practice of sponsoring madrasas by the ruling elite spread across Egypt and the Middle East. As Europe suffered through the Dark Ages, the madrasas of the Turks and Arabs would keep the best of Western knowledge alive, blending it with that of the East.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_STRATEGY">
-			<Text>Unique Arabian replacement for the University. In addition to the bonuses of a University, increases Great Person rate. Whenever you make a Faith purchase, the Madrasah generates additional Science.</Text>
+			<Text>Unique Arabian replacement for the University. In addition to the bonuses of a University, the Madrasa generates additional yields when you purchase anything with Faith or expend a Great Person.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
-			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 33% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Whenever you make a [ICON_PEACE] Faith purchase in the city, gain 15 [ICON_RESEARCH] Science (or 75 [ICON_RESEARCH] Science for a Great Person purchase), scaling with Era.</Text>
+			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 25% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Gain 15% of the Cost of any [ICON_PEACE] Faith Purchase as [ICON_RESEARCH] Science in this City. Gain [ICON_PEACE] Faith, [ICON_CULTURE] Culture, and [ICON_PRODUCTION] Production in this City whenever you Expend a [ICON_GREAT_PEOPLE] Great Person on Empire, scaling with Era.</Text>
 		</Row>
 		
 		<!-- Monitor -->
