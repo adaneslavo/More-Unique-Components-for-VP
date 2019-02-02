@@ -834,12 +834,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Sacrificial Captives</Name>
-        <Description>Adds dummy promotion to all Aztec units.</Description>
-        <FileName>Aztecs/SacrificialCaptives/SacrificialCaptives.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Great Turkish Bombard</Name>
         <Description>Melts Bombard after shot.</Description>
         <FileName>Ottomans/GreatTurkishBombard/GreatTurkishBombard.lua</FileName>
@@ -2850,10 +2844,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Aztecs\HueyTeocalli\HueyTeocalliPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Aztecs\SacrificialCaptives\SacrificialCaptives.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Aztecs\SacrificialCaptives\SacrificialCaptives.sql">
       <SubType>Lua</SubType>
