@@ -79,8 +79,7 @@ VALUES		('UNIT_MAYA_ATLAS', 			256, 		'HolkanPicture_256.dds',		1, 				1),
 ------------------------------
 INSERT INTO UnitPromotions 
 			(Type, 											Description, 											Help, 														Sound, 				GoodyHutYieldBonus,	BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_MAYA_RENEWAL_CYCLE', 			'TXT_KEY_PROMOTION_UNIT_MAYA_RENEWAL_CYCLE',			'TXT_KEY_PROMOTION_UNIT_MAYA_RENEWAL_CYCLE_HELP', 			'AS2D_IF_LEVELUP',	0,					0,						0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_MAYA_PROMOTION_ATLAS', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_MAYA_RENEWAL_CYCLE'),
-			('PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2', 	'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2',		'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2_HELP', 	'AS2D_IF_LEVELUP',	25,					0,						0,				0,			0,			0,					0,			0,					1, 				11, 			'EXPANSION2_PROMOTION_ATLAS', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2');
+VALUES		('PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2', 	'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2',		'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2_HELP', 	'AS2D_IF_LEVELUP',	25,					0,						0,				0,			0,			0,					0,			0,					1, 				11, 			'EXPANSION2_PROMOTION_ATLAS', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
