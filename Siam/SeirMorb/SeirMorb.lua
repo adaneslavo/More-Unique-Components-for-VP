@@ -2,64 +2,38 @@
 -- Author: adan_eslavo
 -- DateCreated: 9/12/2017
 --------------------------------------------------------------
-function CroachingTigerBonusStand(iPlayer)
-	local pPlayer = Players[iPlayer]
+include("FLuaVector.lua")
 
-	for pUnit in pPlayer:Units() do
-		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER) then
-			if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_1) then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_1, false)
-			elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_2) then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_2, false)
-			elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_3) then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_3, false)
-			elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_4) then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_4, false)
+function CrouchingTigerDamage(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
+	local pAttackingPlayer = Players[iAttackingPlayer]
+	local pDefendingPlayer = Players[iDefendingPlayer]
+
+	if pAttackingPlayer == nil or pDefendingPlayer == nil then return end
+	
+	local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
+	
+	if (pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER) and (defenderFinalDamage < defenderMaxHP)) then
+		local iDamage = math.floor(pAttackingUnit:MovesLeft()/4)
+		
+		if iDamage > 0 then
+			local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
+			pDefendingUnit:ChangeDamage(iDamage)
+		
+			if not pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_LOGISTICS) then
+				pAttackingUnit:SetMoves(0)
 			end
+		
+			if (pAttackingPlayer:IsHuman() and pAttackingPlayer:IsTurnActive()) or (pDefendingPlayer:IsHuman() and pDefendingPlayer:IsTurnActive()) then
+					local vUnitPosition = PositionCalculator(pDefendingUnit:GetX(), pDefendingUnit:GetY())
 			
-			local iMovesLeft = math.floor(pUnit:MovesLeft())
-
-			if iMovesLeft >= 240 then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_4, true)
-			elseif iMovesLeft >= 180 then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_3, true)
-			elseif iMovesLeft >= 120 then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_2, true)
-			elseif iMovesLeft > 0 then
-				pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_1, true)
+					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Crouching Tiger[ENDCOLOR]", 1)
 			end
 		end
 	end
 end
 
-function CroachingTigerBonusMove(iPlayer, iUnit, iX, iY)
-	local pPlayer = Players[iPlayer]
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER) then
-		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_1) then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_1, false)
-		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_2) then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_2, false)
-		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_3) then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_3, false)
-		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_4) then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_4, false)
-		end
-			
-		local iMovesLeft = math.floor(pUnit:MovesLeft())
-
-		if iMovesLeft >= 240 then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_4, true)
-		elseif iMovesLeft >= 180 then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_3, true)
-		elseif iMovesLeft >= 120 then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_2, true)
-		elseif iMovesLeft > 0 then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER_1, true)
-		end
-	end
+function PositionCalculator(i1, i2)
+	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
-GameEvents.PlayerDoTurn.Add(CroachingTigerBonusStand)
-GameEvents.UnitSetXY.Add(CroachingTigerBonusMove)
+GameEvents.CombatResult.Add(CrouchingTigerDamage)
