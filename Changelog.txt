@@ -4,14 +4,18 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v41: 01/29 Compatibility
-	- removed medic I from Langskib
+	- replaced Medic I on Langskib with Blockade
 	- Changed Teutonic Order from YieldsOnVictory to new YieldsOnVictoryGlobal
-	- Added YieldsOnFaithPurchase to Madrasah. Deleted old lua
+	- Added YieldsOnFaithPurchase to Madrasa (15% faith cost to science). Deleted old lua
 	- Added 2 free iron to Alti Cur
-	- Increased SPAD RCS (a little too weak after fighter nerf)
+	- Increased SPAD RCS by 2 (a little too weak after fighter nerf)
 - tweaked/modified:
 	- Madrasa ==> Added 5 Cu/Sci/Fai on GP expend
 	- Grande Ecole ==> Removed production pop scaler. Increased base yields
+- simplified:
+	- Aztec UA ==> Deleted lua for dummy promotion (trait table does same thing)
+	- Seir Morb ==> Lua trigger now fires on combat resolution instead of unit movement.
+	- Madrasa ==> Deleted lua (see above)
 
 v40:
 - 01/15 Compatibility:
