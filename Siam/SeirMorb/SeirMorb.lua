@@ -2,8 +2,6 @@
 -- Author: adan_eslavo
 -- DateCreated: 9/12/2017
 --------------------------------------------------------------
-include("FLuaVector.lua")
-
 function CrouchingTigerDamage(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	local pDefendingPlayer = Players[iDefendingPlayer]
@@ -22,18 +20,8 @@ function CrouchingTigerDamage(iAttackingPlayer, iAttackingUnit, attackerDamage, 
 			if not pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_LOGISTICS) then
 				pAttackingUnit:SetMoves(0)
 			end
-		
-			if (pAttackingPlayer:IsHuman() and pAttackingPlayer:IsTurnActive()) or (pDefendingPlayer:IsHuman() and pDefendingPlayer:IsTurnActive()) then
-					local vUnitPosition = PositionCalculator(pDefendingUnit:GetX(), pDefendingUnit:GetY())
-			
-					Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Crouching Tiger[ENDCOLOR]", 1)
-			end
 		end
 	end
-end
-
-function PositionCalculator(i1, i2)
-	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
 GameEvents.CombatResult.Add(CrouchingTigerDamage)
