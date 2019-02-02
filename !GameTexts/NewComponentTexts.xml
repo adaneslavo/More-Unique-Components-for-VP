@@ -1844,37 +1844,13 @@
 			<Text>Crouching Tiger</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_HELP">
-			<Text>+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength [COLOR_POSITIVE_TEXT]for every Movement Point left[ENDCOLOR] on Seir Morb. Bonus caps at 60%.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_1">
-			<Text>Crouching Tiger I</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_1_HELP">
-			<Text>+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_2">
-			<Text>Crouching Tiger II</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_2_HELP">
-			<Text>+30% [ICON_RANGE_STRENGTH] Ranged Combat Strength.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_3">
-			<Text>Crouching Tiger III</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_3_HELP">
-			<Text>+45% [ICON_RANGE_STRENGTH] Ranged Combat Strength.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_4">
-			<Text>Eye of the Tiger</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_4_HELP">
-			<Text>+60% [ICON_RANGE_STRENGTH] Ranged Combat Strength.</Text>
+			<Text>15 Bonus Damage [COLOR_POSITIVE_TEXT]for every Remaining Movement Point[ENDCOLOR] on Attack.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB">
 			<Text>Seir Morb</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_HELP">
-			<Text>Industrial Era Unit specializing in coastal defense. Only Siam may build it. More powerful than the Field Gun it replaces, has a bonus against Naval Units instead of a penalty, and has no bonuses against Cities. Deals more damage in a turn the less the Unit has moved. Starts with the [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] Promotions.</Text>
+			<Text>Industrial Era Unit specializing in coastal defense. Only Siam may build it. Has a bonus against Naval Units instead of a penalty. No bonuses against Cities.[NEWLINE][NEWLINE]Deals more damage on attack the less the Unit has moved. Starts with the [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] Promotions.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_STRATEGY">
 			<Text>A powerful coastal defense cannon, the Seir Morb is more powerful than the Field Gun it replaces, especially against naval targets, but deals less damage to cities. The Seir Morb receives a combat boost for every remaining movement point when attacking, so pick a good spot and keep it steady.  Location, Location, Location.</Text>
