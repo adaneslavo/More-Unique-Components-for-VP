@@ -61,8 +61,7 @@ VALUES		('BUILDING_ARABIA_MADRASAH',	'YIELD_SCIENCE',	15);
 INSERT INTO Building_YieldFromGPExpend
 			(BuildingType,					YieldType,			Yield)
 VALUES		('BUILDING_ARABIA_MADRASAH',	'YIELD_FAITH',		5),
-			('BUILDING_ARABIA_MADRASAH',	'YIELD_SCIENCE',	5),
-			('BUILDING_ARABIA_MADRASAH',	'YIELD_PRODUCTION',	5);
+			('BUILDING_ARABIA_MADRASAH',	'YIELD_CULTURE',	5);
 --------------------------------
 -- Building_GrowthExtraYield
 --------------------------------
