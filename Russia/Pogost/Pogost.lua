@@ -24,12 +24,14 @@ function OnConstructionAddStages(iPlayer, iCity, iBuilding)
 		if pTeam:GetTeamTechs():HasTech(iTech1) then
 			pCity:SetNumRealBuilding(iBuilding1, 0)
 			pCity:SetNumRealBuilding(iBuilding2, 1)
+			pCity:SetNumRealBuilding(iBuilding3, 0)
 			
 			NotificationLoad(0, pPlayer, pCity)
 		end
 			
 		if pTeam:GetTeamTechs():HasTech(iTech2) then
 			pCity:SetNumRealBuilding(iBuilding1, 0)
+			pCity:SetNumRealBuilding(iBuilding2, 0)
 			pCity:SetNumRealBuilding(iBuilding3, 1)
 			
 			NotificationLoad(1, pPlayer, pCity)
@@ -49,6 +51,7 @@ function OnTechResearchedAddStages(iTeam, iTech)
 			if city:IsHasBuilding(iBuilding1) and not city:IsHasBuilding(iBuilding2) then
 				city:SetNumRealBuilding(iBuilding1, 0)
 				city:SetNumRealBuilding(iBuilding2, 1)
+				city:SetNumRealBuilding(iBuilding3, 0)
 				
 				NotificationLoad(2, pPlayer, city)
 			end
@@ -61,6 +64,7 @@ function OnTechResearchedAddStages(iTeam, iTech)
 
 		for city in pPlayer:Cities() do
 			if city:IsHasBuilding(iBuilding2) and not city:IsHasBuilding(iBuilding3) then
+				city:SetNumRealBuilding(iBuilding1, 0)
 				city:SetNumRealBuilding(iBuilding2, 0)
 				city:SetNumRealBuilding(iBuilding3, 1)
 				
@@ -82,6 +86,7 @@ function OnCaptureAddStages(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, i
 		if pTeam:GetTeamTechs():HasTech(iTech1) and not pCity:IsHasBuilding(iBuilding2) then
 			pCity:SetNumRealBuilding(iBuilding1, 0)
 			pCity:SetNumRealBuilding(iBuilding2, 1)
+			pCity:SetNumRealBuilding(iBuilding3, 0)
 			
 			NotificationLoad(2, pNewPlayer, pCity)
 		end
