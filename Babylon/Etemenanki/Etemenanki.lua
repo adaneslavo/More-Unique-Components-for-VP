@@ -17,8 +17,8 @@ function OnInvestAddYieldsToCapital(iPlayer, iCity, iBuildingClass, bValue)
 	
 	if not pCapital:IsHasBuilding(eBuildingEtemenanki) then return end
 
-	local iChange1 = math.floor(0.25 * pCapital:GetYieldRate( YieldTypes.YIELD_FOOD ))
-	local iChange2 = math.floor(0.25 * pCapital:GetYieldRate( YieldTypes.YIELD_SCIENCE ))
+	local iChange1 = math.floor(0.20 * pCapital:GetYieldRate( YieldTypes.YIELD_FOOD ))
+	local iChange2 = math.floor(0.20 * pCapital:GetYieldRate( YieldTypes.YIELD_SCIENCE ))
 							
 	pCapital:ChangeFood(iChange1)
 	pPlayer:ChangeOverflowResearch(iChange2)
