@@ -1487,10 +1487,10 @@
 			<Text>Pairidaeza</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>Available earlier. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. Length of [ICON_GOLDEN_AGE] Golden Ages increased by 5%, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. +15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
-			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, each Pairidaeza increases the length of Golden Ages on Empire. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
+			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, each the Pairidaeza increases Gold production during Golden Ages. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_TEXT">
 			<Text>A Pairidaeza is a walled garden popularized by the Achaemenid. As a tool of state, Pairidaeza were invaluable in flaunting a kingdom’s ability to bring life to an area that would otherwise have none; its rectangular, ordered construction serving as a contrast the chaos of nature. The Achaemenid dynasty melded the pairidaeza with their royal hunting parks, an unsubtle way to show their command over both their empire and the natural world within it. The Persian gardens form the root of the greek “paradise”, informing western notions of an earthly Eden in art and poetry.</Text>
@@ -1754,10 +1754,10 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_STRATEGY">
-			<Text>The Riad is the Moroccan unique replacement for the Garden. Gold generation in the city is greatly increased during a Golden Age and Gold income in the city is coverted into [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden. Unlike other buildings, the Riad's base yields increase with each Era.</Text>
+			<Text>The Riad is the Moroccan unique replacement for the Garden. Gold purchases in this city are slightly cheaper. Gold generation in the city is converted into [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden. Unlike other buildings, the Riad's base yields increase with each Era.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_HELP">
-			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. +15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age. 15% of [ICON_GOLD] Gold in the City is converted into [ICON_GREAT_PEOPLE] Great Merchant Points.[NEWLINE][NEWLINE]Gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism every Era[NEWLINE]Nearby Oases: +3 [ICON_GOLD] Gold, +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. 15% of [ICON_GOLD] Gold in the City is converted into [ICON_GREAT_PEOPLE] Great Merchant Points.[NEWLINE][NEWLINE]Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 50 [ICON_GOLD] Gold when completed, scaling with Era. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 5%.[NEWLINE][NEWLINE]Gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism every Era[NEWLINE]Nearby Oases: +3 [ICON_GOLD] Gold, +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
