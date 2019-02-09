@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_MOROCCO',	'BUILDINGCLASS_GARDEN', 'BUILDING_MAROCCO_RIAD'
 -- Buildings
 ------------------------------	
 INSERT INTO	Buildings
-			(Type,						Description,						Civilopedia,							Strategy,									Help,									GoldMaintenance,	Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	GreatPeopleRateModifier)
-SELECT		'BUILDING_MAROCCO_RIAD',	'TXT_KEY_BUILDING_MAROCCO_RIAD',	'TXT_KEY_BUILDING_MAROCCO_RIAD_TEXT',	'TXT_KEY_BUILDING_MAROCCO_RIAD_STRATEGY',	'TXT_KEY_BUILDING_MAROCCO_RIAD_HELP',	0,					Cost, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_MAROCCO_ATLAS',	GreatWorkYieldType,	GreatPeopleRateModifier
+			(Type,						Description,						Civilopedia,							Strategy,									Help,									GoldMaintenance,	Cost, ResourceDiversityModifier, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	GreatPeopleRateModifier)
+SELECT		'BUILDING_MAROCCO_RIAD',	'TXT_KEY_BUILDING_MAROCCO_RIAD',	'TXT_KEY_BUILDING_MAROCCO_RIAD_TEXT',	'TXT_KEY_BUILDING_MAROCCO_RIAD_STRATEGY',	'TXT_KEY_BUILDING_MAROCCO_RIAD_HELP',	0,					Cost, ResourceDiversityModifier, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_MAROCCO_ATLAS',	GreatWorkYieldType,	GreatPeopleRateModifier
 FROM Buildings WHERE Type = 'BUILDING_GARDEN';
 --------------------------------
 -- Building_ClassesNeededInCity
@@ -48,12 +48,20 @@ INSERT INTO Building_FeatureYieldChanges
 			(BuildingType,				FeatureType,		YieldType,		Yield)
 VALUES		('BUILDING_MAROCCO_RIAD',	'FEATURE_OASIS',	'YIELD_GOLD',	3),
 			('BUILDING_MAROCCO_RIAD',	'FEATURE_OASIS',	'YIELD_FOOD',	1);
---------------------------------	
--- Building_GoldenAgeYieldMod
 --------------------------------
-INSERT INTO Building_GoldenAgeYieldMod
-			(BuildingType,				YieldType,		Yield)
-VALUES		('BUILDING_MAROCCO_RIAD',	'YIELD_GOLD',	15);
+-- Building_YieldFromInternalTREnd
+--------------------------------
+INSERT INTO Building_YieldFromInternalTREnd
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_MAROCCO_RIAD', 'YIELD_GOLD', 50);
+--------------------------------
+-- Building_HurryModifiersLocal
+--------------------------------
+INSERT INTO Building_HurryModifiersLocal
+	(BuildingType, HurryType, HurryCostModifier)
+VALUES
+	('BUILDING_MAROCCO_RIAD', 'HURRY_GOLD', -5);
 --==========================================================================================================================	
 
 --==========================================================================================================================
