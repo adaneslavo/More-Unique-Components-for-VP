@@ -30,8 +30,8 @@ VALUES	('BUILDING_ENGLAND_ATLAS', 			256, 		'WhiteTowerPicture_256.dds',			1, 		
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,							BuildingClass,				FreeArtifacts, 	FreeGreatWork,					GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,		ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier,	GreatWorkSlotType,	GreatWorkCount,		FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, 		ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	GlobalEspionageModifier,	NationalPopRequired,	NumCityCostMod,	NukeImmune,	Help,											ThemingBonusHelp, 							Description,							Civilopedia,										Strategy,											IconAtlas,						PortraitIndex)
-SELECT		'BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_HERMITAGE',	0, 				'GREAT_WORK_THE_CROWN_JEWELS',	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense+500,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType,	GreatWorkCount,		FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_BANKING',	ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	GlobalEspionageModifier-25,	NationalPopRequired-10,	NumCityCostMod,	NukeImmune,	'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_HELP', 	'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER', 'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_TEXT',		'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY',	'BUILDING_ENGLAND_ATLAS',		0
+			(Type,							BuildingClass,				FreeArtifacts, 	FreeGreatWork,					GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,		ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier,	GreatWorkSlotType,	GreatWorkCount,		FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, 		ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	GlobalEspionageModifier, NationalPopRequired,	NumCityCostMod,	NukeImmune,	Help,											ThemingBonusHelp, 							Description,							Civilopedia,										Strategy,											IconAtlas,						PortraitIndex)
+SELECT		'BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_HERMITAGE',	0, 				'GREAT_WORK_THE_CROWN_JEWELS',	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense+500,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType,	GreatWorkCount,		FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_BANKING',	ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	GlobalEspionageModifier, NationalPopRequired-10,	NumCityCostMod,	NukeImmune,	'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_HELP', 	'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER', 'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_TEXT',		'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY',	'BUILDING_ENGLAND_ATLAS',		0
 FROM Buildings WHERE Type = 'BUILDING_HERMITAGE';	
 ------------------------------	
 -- Building_Flavors
@@ -53,7 +53,10 @@ VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'YIELD_CULTURE',	2);
 ------------------------------
 INSERT INTO Building_BuildingClassYieldChanges 	
 			(BuildingType,						BuildingClassType,			YieldType,				YieldChange)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CASTLE',		'YIELD_CULTURE',		2);
+VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CASTLE',		'YIELD_CULTURE',		3),
+			('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CONSTABLE',	'YIELD_CULTURE',		3),
+			('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_THEATRE',	'YIELD_GOLD',			3),
+			('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_ARSENAL',	'YIELD_GOLD',			3);
 ------------------------------	
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------
@@ -79,8 +82,8 @@ VALUES		('BUILDING_ENGLAND_WHITE_TOWER', 'YIELD_CULTURE', 	5),
 ------------------------------	
 INSERT INTO Building_ThemingBonuses	
 			(BuildingType,						Description,									Bonus,	RequiresOwner,	RequiresUniquePlayers,	MustBeArtifact,	AIPriority)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_NATIONAL',	6,		1,				0,						1,				1),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_GLOBAL',		6,		0,				1,						1,				1);
+VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_NATIONAL',	10,		1,				0,						1,				1),
+			('BUILDING_ENGLAND_WHITE_TOWER',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_GLOBAL',		10,		0,				1,						1,				1);
 ------------------------------	
 -- Building_ClassesNeededInCity
 ------------------------------		
