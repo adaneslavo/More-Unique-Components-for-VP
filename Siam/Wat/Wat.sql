@@ -24,4 +24,4 @@ VALUES		('BUILDING_WAT', 'YIELD_SCIENCE', 	3),
 ------------------------------	
 INSERT INTO Building_ThemingBonuses	
 			(BuildingType,				Description,								  Bonus,	SameEra,	RequiresSamePlayer,	AIPriority)
-VALUES		('BUILDING_WAT',	'TXT_KEY_THEMING_BONUS_WAT',	4,		  1,		    1,						          2);
+VALUES		('BUILDING_WAT',	'TXT_KEY_THEMING_BONUS_WAT',	6,		  1,		    1,						          2);
