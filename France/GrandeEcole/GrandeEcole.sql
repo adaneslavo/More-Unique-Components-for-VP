@@ -66,17 +66,17 @@ VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_SCIENCE',	50);
 ------------------------------	
 -- Building_TechEnhancedYieldChanges
 ------------------------------
-INSERT INTO Building_TechEnhancedYieldChanges 	
-			(BuildingType,						YieldType,			Yield)
-VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_PRODUCTION',	2),
-			('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_SCIENCE',	2);
+--INSERT INTO Building_TechEnhancedYieldChanges 	
+--			(BuildingType,						YieldType,			Yield)
+--VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_PRODUCTION',	2),
+--			('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_SCIENCE',	2);
 ------------------------------	
 -- Building_SpecialistYieldChangesLocal
 ------------------------------
 INSERT INTO Building_SpecialistYieldChangesLocal 	
 			(BuildingType,						SpecialistType,			YieldType,			Yield)
-VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'SPECIALIST_SCIENTIST',	'YIELD_PRODUCTION',	3),
-			('BUILDING_FRANCE_GRANDE_ECOLE',	'SPECIALIST_ENGINEER',	'YIELD_SCIENCE',	3);
+VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'SPECIALIST_SCIENTIST',	'YIELD_PRODUCTION',	2),
+			('BUILDING_FRANCE_GRANDE_ECOLE',	'SPECIALIST_ENGINEER',	'YIELD_SCIENCE',	2);
 --==========================================================================================================================
 --==========================================================================================================================
 
