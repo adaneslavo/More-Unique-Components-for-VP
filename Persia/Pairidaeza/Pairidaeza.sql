@@ -30,8 +30,8 @@ VALUES		('BUILDING_PERSIA_ATLAS', 			256, 		'PairidaezaPicture_256.dds',			1, 		
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,							BuildingClass,	GoldenAgeModifier, GoldMaintenance, Cost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, Cost, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	BuildingProductionModifier,	UnculturedHappinessChange,	FreshWater,	Help,								Description,					Civilopedia,						Strategy,								IconAtlas,				PortraitIndex)
-SELECT		'BUILDING_PERSIA_PAIRIDAEZA', 	BuildingClass,	5, GoldMaintenance, Cost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, 200, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, 'TECH_CURRENCY', ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	BuildingProductionModifier,	UnculturedHappinessChange,	0,			'TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP',	'TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA', 	'TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_TEXT',	'TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY',	'BUILDING_PERSIA_ATLAS',	0
+			(Type,							BuildingClass, GoldenAgeModifier, GoldMaintenance, Cost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat, DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, Cost, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	BuildingProductionModifier,	UnculturedHappinessChange,	FreshWater,	Help,								Description,					Civilopedia,						Strategy,								IconAtlas,				PortraitIndex)
+SELECT		'BUILDING_PERSIA_PAIRIDAEZA', 	BuildingClass, GoldenAgeModifier, GoldMaintenance, Cost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat, DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, 200, FreeStartEra, Happiness, NeverCapture, GoldMaintenance, 'TECH_CURRENCY', ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	BuildingProductionModifier,	UnculturedHappinessChange,	0,			'TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP',	'TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA', 	'TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_TEXT',	'TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY',	'BUILDING_PERSIA_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_GARDEN';	
 ------------------------------	
 -- Building_Flavors
@@ -72,11 +72,12 @@ VALUES		('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_COCOA',	'YIELD_GOLD',		1),
 			('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_COCOA',	'YIELD_FOOD',		1),
 			('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_CITRUS',	'YIELD_GOLD',		1),
 			('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_CITRUS',	'YIELD_FOOD',		1);
-------------------------------	
--- Building_YieldChangesPerPop
-------------------------------
-UPDATE Building_YieldChangesPerPop SET Yield = '25' WHERE BuildingType = 'BUILDING_SATRAPS_COURT' AND YieldType = 'YIELD_GOLD';
-UPDATE Building_YieldChangesPerPop SET Yield = '25' WHERE BuildingType = 'BUILDING_SATRAPS_COURT' AND YieldType = 'YIELD_GOLDEN_AGE_POINTS';
+--------------------------------	
+-- Building_GoldenAgeYieldMod
+--------------------------------
+INSERT INTO Building_GoldenAgeYieldMod
+			(BuildingType,				YieldType,		Yield)
+VALUES		('BUILDING_PERSIA_PAIRIDAEZA',	'YIELD_GOLD',	15);
 --==========================================================================================================================
 --==========================================================================================================================
 
