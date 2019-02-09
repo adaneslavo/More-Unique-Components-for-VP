@@ -10,6 +10,9 @@ tweaked/modified:
 	- Etemenanki ==> Set +GPR to the default +25%. Increased Culture for Citizen Birth to +25
 	- White Tower ==> Changed global building bonuses. Now +3 Culture on Castle/Arsenal and +3 Gold on Constabulary/Zoo
 	- Grande Ecole ==> Removed the +2 Sci/Production at computers.
+	- Added +15% gold generation to Pairidaeza. Removed GA length modifier
+	- Removed all changes to Persian UA and Satrap's Court; they are now identical to base VP
+	- Removed 15% gold generation during GAs from Riad. Added -5% hurry cost modifier and 50 gold ITR End instant boost
 fixed:
 	- Ranch: lua error resolved
 	- Teutonic Order text was missing information
