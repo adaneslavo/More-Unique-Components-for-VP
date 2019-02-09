@@ -79,8 +79,8 @@ VALUES		('BUILDING_ZULU_IZIKO', 'YIELD_CULTURE', 	2);
 INSERT INTO Building_ThemingBonuses
 	(BuildingType, Description, Bonus, RequiresOwner, RequiresAnyButOwner,  AIPriority)
 VALUES
-	('BUILDING_ZULU_IZIKO', 'TXT_KEY_THEMING_BONUS_AMPHITHEATER_NATIONAL', 2, 1, 0, 2),
-	('BUILDING_ZULU_IZIKO', 'TXT_KEY_THEMING_BONUS_AMPHITHEATER_GLOBAL', 2, 0, 1, 3);
+	('BUILDING_ZULU_IZIKO', 'TXT_KEY_THEMING_BONUS_AMPHITHEATER_NATIONAL', 4, 1, 0, 2),
+	('BUILDING_ZULU_IZIKO', 'TXT_KEY_THEMING_BONUS_AMPHITHEATER_GLOBAL', 6, 0, 1, 3);
 ------------------------------	
 -- Building_Flavors
 ------------------------------		
