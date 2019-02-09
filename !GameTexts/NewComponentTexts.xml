@@ -530,7 +530,7 @@
 			<Text>E-temenanki</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_HELP">
-			<Text>+30% [ICON_GREAT_PEOPLE] GPP in the City. +15 [ICON_CULTURE] Culture in the City as an instant boost whenever a [ICON_CITIZEN] Citizen is born and +50 [ICON_GOLDEN_AGE] Golden Age Points whenever a Policy is unlocked, scaling with Era. Gain 15% of the City's [ICON_FOOD] Food and [ICON_RESEARCH] Science output whenever you invest in a Building on Empire.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science to all Monuments and +2 [ICON_FOOD] Food to all Shrines.[NEWLINE][NEWLINE]Requires Monument in City. Can only be built in the [ICON_CAPITAL] Capital. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>+25% [ICON_GREAT_PEOPLE] GPP in the City. +25 [ICON_CULTURE] Culture in the City as an instant boost whenever a [ICON_CITIZEN] Citizen is born and +50 [ICON_GOLDEN_AGE] Golden Age Points whenever a Policy is unlocked, scaling with Era. Gain 15% of the City's [ICON_FOOD] Food and [ICON_RESEARCH] Science output whenever you invest in a Building on Empire.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science to all Monuments and +2 [ICON_FOOD] Food to all Shrines.[NEWLINE][NEWLINE]Requires Monument in City. Can only be built in the [ICON_CAPITAL] Capital. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI_STRATEGY">
 			<Text>E-temenanki is the Babylonian Unique Wonder, replacing the National Monument. In addition to the normal bonuses of a National Monument, E-temenanki awards Food and Science whenever a building is invested on empire, so invest in buildings early and often.  All monuments in empire gain +1 Science and all Shrines gain +2 Food. Available earlier than the National Monument</Text>
@@ -640,7 +640,7 @@
 			<Text>Grande École</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_HELP">
-			<Text>Requires University in the City. Reduces [ICON_HAPPINESS_3] Illiteracy. +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Population in this City. +2 [ICON_PRODUCTION] Production to [ICON_GREAT_SCIENTIST] Scientist Specialists and +2 [ICON_RESEARCH] Science to [ICON_GREAT_ENGINEER] Engineer Specialists in this City.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production and +2 [ICON_RESEARCH] Science at Computers Technology.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this City.</Text>
+			<Text>Requires University in the City. Reduces [ICON_HAPPINESS_3] Illiteracy. +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Population in this City. +2 [ICON_PRODUCTION] Production to [ICON_GREAT_SCIENTIST] Scientist Specialists and +2 [ICON_RESEARCH] Science to [ICON_GREAT_ENGINEER] Engineer Specialists in this City.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_STRATEGY">
 			<Text>The Grande École is the French unique building, replacing the Public School. In addition to the normal bonuses of a Public School, The Grande Ecole increases production for every citizen in the City, has more Scientist Specialist slots, and helps to generate Great Engineers. In addition, all Scientists generate more Production, and all Engineers generate more Science, making any city with a Grande Ecole a powerhouse of scientific and technical achievement.</Text>
@@ -2193,13 +2193,14 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_STRATEGY">
-			<Text>The Teutonic Order is Germany's unique wonder, replacing the Heroic Epic. This wonder provides strong bonuses to all cities in your empire with a Barracks comparable to that of a full Order. All new units trained in any city with a Barracks receive the Morale promotion for free.[NEWLINE][NEWLINE]With this wonder, Germany is able to reform much more easilly and quickly than other civilizations.</Text>
+			<Text>The Teutonic Order is Germany's unique wonder, replacing the Heroic Epic. This wonder provides strong bonuses to all cities in your empire with a Barracks comparable to that of a full Order. All new units trained in any city with a Barracks receive the Morale promotion for free.[NEWLINE][NEWLINE]With this wonder, Germany is able to found and reform much more easilly and quickly than other civilizations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
 				Does not require a Barracks. Grants a free Barracks in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. +2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.
-				[NEWLINE][NEWLINE]All Castles gain +2 [ICON_PRODUCTION] Production and all Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion. Enables you to select a Reformation Belief at 5% below its normal Global [ICON_RELIGION] Follower requirement (20% on Standard).
-				[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own. Only Germany may build it.
+				[NEWLINE][NEWLINE]All Castles gain +2 [ICON_PRODUCTION] Production and all Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion.
+				[NEWLINE][NEWLINE]25 [ICON_PEACE] Faith whenever you kill an enemy Unit, scaling with Era. Enables you to select a Reformation Belief at 5% below its normal Global [ICON_RELIGION] Follower requirement (20% on Standard).
+				[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
 			</Text>
 		</Row>
 		<!-- Tophet -->
@@ -2267,10 +2268,10 @@
 			<Text>White Tower</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP">
-			<Text>+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Population in city.[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City. +2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% [ICON_SPY] Spy stealing rate on Empire. +1 [ICON_HAPPINESS_1] Happiness on Empire for every enemy spy killed.[NEWLINE][NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.[NEWLINE][NEWLINE]Available earlier, requires Castle in City.[NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>+1 [ICON_CULTURE] Culture for every 4 [ICON_CITIZEN] Population in city.[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold to Constabularies and Zoos on Empire.[NEWLINE]+3 [ICON_CULTURE] Culture to Castles and Arsenals on Empire.[NEWLINE][NEWLINE]Whenever an enemy spy is killed, gain 100 [ICON_GOLD] Gold and [ICON_CULTURE] Culture as an instant boost, scaling with Era, and +1 [ICON_HAPPINESS_1] Happiness in the City, permanently.[NEWLINE][NEWLINE]Contains 3 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. +5 [ICON_GOLD] Gold and +5 [ICON_CULTURE] Culture when themed.[NEWLINE][NEWLINE]Available earlier, requires Castle in City.[NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY">
-			<Text>Unique English replacement for the Hermitage. This National Wonder produces +1 Culture for every 4 Citizens in the City, and 2 culture for every castle in the empire. The White Tower reduces the stealing rate of enemy spies on empire, and gives Happiness for every enemy spy killed. Your citizens will love you if you can keep a tight lid on English secrets, so station spies in your cities to take advantage of this wonder.</Text>
+			<Text>Unique English replacement for the Hermitage. This National Wonder produces Culture for every 4 Citizens in the City, and provides large Gold and Culture boosts for Castles, Arsenals, Constabularies, and Zoos on Empire. The White Tower provides a large reward for capturing enemy spies. Your citizens will love you if you can keep a tight lid on English secrets, so station spies in your cities to take advantage of this wonder.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_TEXT">
 			<Text>The White Tower is the old keep at the Tower of London. It was built by William the Conqueror during the early 1080s, and was later extended. The White Tower was the castle's strongest defensive point, and originally housed the king and his representatives. Throughout its long history, the Tower has been many things to England: A symbol of tyranny, a treasury, a menagerie, a mint, a palace and a prison. Today, the Tower of London is a vast museum which boasts, amongst its many treasures, the Crown Jewels of the English Monarchy.</Text>
