@@ -33,7 +33,7 @@ function OnConstructionClaimResources(iPlayer, iCity, iBuilding)
 				
 		for _, res in ipairs(tEligibleResources) do
 			if iResourceTypeOnTile == res then
-				if iPlotOwner ~= pPlayer then
+				if iPlotOwner ~= iPlayer then
 					pSpecificPlot:SetOwner(iPlayer, iCity, 1, 1)
 					pPlotClaimer = pPlotClaimer + 1
 				end
