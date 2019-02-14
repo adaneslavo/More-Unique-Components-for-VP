@@ -6,7 +6,7 @@
 --------------------------------		
 INSERT INTO Civilization_BuildingClassOverrides 
 			(CivilizationType, 			BuildingClassType, 				BuildingType)
-VALUES		('CIVILIZATION_ENGLAND',	'BUILDINGCLASS_HERMITAGE',		'BUILDING_ENGLAND_WHITE_TOWER');
+VALUES		('CIVILIZATION_ENGLAND',	'BUILDINGCLASS_FACTORY',		'BUILDING_STEAM_MILL');
 --==========================================================================================================================	
 
 --==========================================================================================================================
@@ -30,82 +30,41 @@ VALUES	('BUILDING_ENGLAND_ATLAS', 			256, 		'WhiteTowerPicture_256.dds',			1, 		
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,							BuildingClass,				FreeArtifacts, 	FreeGreatWork,					GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,		ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier,	GreatWorkSlotType,	GreatWorkCount,		FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, 		ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	GlobalEspionageModifier, NationalPopRequired,	NumCityCostMod,	NukeImmune,	Help,											ThemingBonusHelp, 							Description,							Civilopedia,										Strategy,											IconAtlas,						PortraitIndex)
-SELECT		'BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_HERMITAGE',	0, 				'GREAT_WORK_THE_CROWN_JEWELS',	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense+500,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType,	GreatWorkCount,		FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_BANKING',	ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	GlobalEspionageModifier, NationalPopRequired-10,	NumCityCostMod,	NukeImmune,	'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_HELP', 	'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER', 'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_TEXT',		'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY',	'BUILDING_ENGLAND_ATLAS',		0
-FROM Buildings WHERE Type = 'BUILDING_HERMITAGE';	
-------------------------------	
--- Building_Flavors
-------------------------------		
-INSERT INTO Building_Flavors 	
-			(BuildingType, 						FlavorType,				Flavor)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'FLAVOR_DEFENSE',		10),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'FLAVOR_GOLD',			50),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'FLAVOR_GROWTH',		25),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'FLAVOR_CULTURE',		100);
-------------------------------	
--- Building_YieldChanges
-------------------------------		
-INSERT INTO Building_YieldChanges 	
-			(BuildingType, 						YieldType,			Yield)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'YIELD_CULTURE',	2);
-------------------------------	
--- Building_BuildingClassYieldChanges
-------------------------------
-INSERT INTO Building_BuildingClassYieldChanges 	
-			(BuildingType,						BuildingClassType,			YieldType,				YieldChange)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CASTLE',		'YIELD_CULTURE',		3),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CONSTABLE',	'YIELD_GOLD',		3),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_THEATRE',	'YIELD_GOLD',			3),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_ARSENAL',	'YIELD_CULTURE',		3);
-------------------------------	
--- Building_BuildingClassLocalYieldChanges
-------------------------------
-INSERT INTO Building_BuildingClassLocalYieldChanges 	
-			(BuildingType,						BuildingClassType,			YieldType,				YieldChange)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CONSTABLE',	'YIELD_GOLD',			3),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_ARSENAL',	'YIELD_FOOD',			3);
-------------------------------	
--- Building_YieldChangesPerPop
-------------------------------	
-INSERT INTO Building_YieldChangesPerPop
-			(BuildingType, YieldType, Yield)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER', 'YIELD_CULTURE', 25);
-------------------------------	
--- Building_ThemingYieldBonus
-------------------------------
-INSERT INTO Building_ThemingYieldBonus
-			(BuildingType, YieldType, Yield)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER', 'YIELD_CULTURE', 	5),
-			('BUILDING_ENGLAND_WHITE_TOWER', 'YIELD_GOLD',		5);
-------------------------------	
--- Building_ThemingBonuses
-------------------------------	
-INSERT INTO Building_ThemingBonuses	
-			(BuildingType,						Description,									Bonus,	RequiresOwner,	RequiresUniquePlayers,	MustBeArtifact,	AIPriority)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_NATIONAL',	10,		1,				0,						1,				1),
-			('BUILDING_ENGLAND_WHITE_TOWER',	'TXT_KEY_THEMING_BONUS_WHITE_TOWER_GLOBAL',		10,		0,				1,						1,				1);
-------------------------------	
--- Building_ClassesNeededInCity
-------------------------------		
-INSERT INTO Building_ClassesNeededInCity 	
-			(BuildingType, 						BuildingClassType)
-VALUES		('BUILDING_ENGLAND_WHITE_TOWER',	'BUILDINGCLASS_CASTLE');
---==========================================================================================================================
+		(Type,			BuildingClass, Cost, 		GoldMaintenance, 	PrereqTech, 		Help, 					Description, 			Civilopedia, 					Strategy, 				ArtDefineTag, SpecialistType, SpecialistCount,	TradeRouteTargetBonus, 	TradeRouteRecipientBonus, 	MinAreaSize, ConquestProb, HurryCostModifier, IconAtlas, 		PortraitIndex)		 	
+SELECT		'BUILDING_STEAM_MILL',	BuildingClass, Cost-250, 	6, 			'TECH_STEAM_POWER', 	'TXT_KEY_BUILDING_STEAM_MILL_HELP', 	'TXT_KEY_BUILDING_STEAM_MILL', 	'TXT_KEY_CIV5_BUILDINGS_STEAM_MILL_TEXT', 	'TXT_KEY_BUILDING_STEAM_MILL_STRATEGY', ArtDefineTag, SpecialistType, 2, 		3, 			3, 				MinAreaSize, ConquestProb, HurryCostModifier, 'COMMUNITY_ATLAS',	36
+FROM Buildings WHERE Type = 'BUILDING_FACTORY';	
 
---==========================================================================================================================	
--- GREAT WORKS
---==========================================================================================================================	
-------------------------------
--- GreatWorks																																	
-------------------------------	
-INSERT INTO GreatWorks 
-			(Type, 							GreatWorkClassType,		ArtifactClassType,	Description,								Quote,												Audio,	Image)
-VALUES		('GREAT_WORK_THE_CROWN_JEWELS', 'GREAT_WORK_ARTIFACT',	'ARTIFACT_CROWN',	'TXT_KEY_GREAT_WORK_THE_CROWN_JEWELS',		'TXT_KEY_GREAT_WORK_THE_CROWN_JEWELS_QUOTE',		null,	'TheJewelSplash.dds');
-------------------------------
--- GreatWorkArtifactClasses																																	
-------------------------------	
-INSERT INTO GreatWorkArtifactClasses
-			(Type, 				Value)
-VALUES		('ARTIFACT_CROWN',	8);
---==========================================================================================================================
---==========================================================================================================================
+INSERT INTO Building_ImprovementYieldChanges
+	(BuildingType, ImprovementType, YieldType, Yield)
+VALUES
+	('BUILDING_STEAM_MILL', 'IMPROVEMENT_MANUFACTORY', 'YIELD_PRODUCTION', 4);
+
+INSERT INTO Building_YieldChanges
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_STEAM_MILL', 'YIELD_PRODUCTION', 5);
+
+INSERT INTO Building_Flavors
+	(BuildingType, FlavorType, Flavor)
+VALUES
+	('BUILDING_STEAM_MILL', 'FLAVOR_PRODUCTION', 50),
+	('BUILDING_STEAM_MILL', 'FLAVOR_SCIENCE', 15);
+
+INSERT INTO Building_YieldFromInternalTREnd
+	(BuildingType, YieldType, Yield)
+VALUES	('BUILDING_STEAM_MILL', 'YIELD_PRODUCTION', 50);
+
+INSERT INTO Building_ClassesNeededInCity
+	(BuildingType, BuildingClassType)
+VALUES
+	('BUILDING_STEAM_MILL', 'BUILDINGCLASS_WORKSHOP');
+
+INSERT INTO Building_YieldChangesPerPop
+	(BuildingType, YieldType, Yield)
+VALUES
+	('BUILDING_STEAM_MILL', 'YIELD_PRODUCTION', 50);
+	
+INSERT INTO Building_ResourceYieldChanges
+	(BuildingType, ResourceType, YieldType, Yield)
+VALUES
+	('BUILDING_STEAM_MILL', 'RESOURCE_COAL', 'YIELD_PRODUCTION', 3);
