@@ -858,12 +858,6 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>White Tower</Name>
-        <Description>Adds Happiness on Spy Kill.</Description>
-        <FileName>England/WhiteTower/WhiteTower.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Nilometer</Name>
         <Description>Spans 2 Flax Resources on construction.</Description>
         <FileName>Egypt/Nilometer/Nilometer.lua</FileName>
@@ -1830,30 +1824,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="England\Longbowman\Longbowman.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="England\WhiteTower\WhiteTowerPicture_128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="England\WhiteTower\WhiteTowerPicture_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="England\WhiteTower\WhiteTowerPicture_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="England\WhiteTower\WhiteTowerPicture_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="England\WhiteTower\TheJewelSplash.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="England\WhiteTower\WhiteTower.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
