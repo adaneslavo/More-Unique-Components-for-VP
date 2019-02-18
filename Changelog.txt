@@ -3,28 +3,24 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
-v43:
--Compatibility:
-	- White Tower now replaced with Steam Mill. No change from the original VP design for now.
--BugFix:
-	- Waag gold to customs houses and caravansaries works properly
-
 v42:
-- Compatibility: 
-	- Increased Theming Tourism bonus on Wat, White Tower, and Iziko 
-tweaked/modified:
-	- Etemenanki ==> Set +GPR to the default +25%. Increased Culture for Citizen Birth to +25
-	- White Tower 	==> Changed global building bonuses. Now +3 Culture on Castle/Arsenal and +3 Gold on Constabulary/Zoo
-			==> Removed -25% spy effectiveness
-			==> Added 100 Gold/Culture on killing spies, scaling with Era
-	- Grande Ecole 	==> Removed the +2 Sci/Production at computers.
-			==> lowered Sci/Prod on Engineers/Scientists to +2
-	- Added +15% gold generation to Pairidaeza. Removed GA length modifier
-	- Removed all changes to Persian UA and Satrap's Court; they are now identical to base VP
-	- Removed 15% gold generation during GAs from Riad. Added -5% hurry cost modifier and 50 gold ITR End instant boost
+- compatibility:
+	- White Tower ==> now replaced with Steam Mill; no change from the original VP design for now,
+	- (Wat, White Tower, Iziko) ==> increased theming tourism bonus.
+- tweaked/modified:
+	- Etemenanki ==> set +GPR to the default +25%; increased culture for citizen birth to +25,
+	- White Tower ==> changed global building bonuses: now +3 culture on Castle/Arsenal and +3 gold on Constabulary/Zoo,
+				  ==> removed -25% spy effectiveness,
+				  ==> added 100 gold/culture on killing spies, scaling with Era.
+	- Grande Ecole ==> removed the +2 science/production at computers,
+				   ==> lowered science/production on Engineers/Scientists to +2,
+	- Pairidaeza ==> added +15% gold generation; removed GA length modifier,
+	- (Persian UA and Satrap's Court) ==> removed all changes made before; they are now identical to base VP,
+	- Riad ==> removed 15% gold generation during GAs; added -5% hurry cost modifier and 50 gold ITR End instant boost.
 fixed:
-	- Ranch: lua error resolved
-	- Fixed text for Teutonic Order and Corsair
+	- Waag ==> gold to Customs Houses and Caravansaries works properly, 
+	- Ranch ==> lua error resolved,
+	- Teutonic Order and Corsair ==> fixes.
 
 v41.1:
 fixed:
@@ -410,7 +406,6 @@ v30:
 	- Naresuan's Elephant ==> Gave General Stacking Promotion.
 	- Naga Malla ==> Gave Accuracy I.
 	- all unique units now have at least 1 promotion that carries forward.
-	
 - changed icon for Cacador and Etemenanki,
 - added mipmaps to Seir Morb's promotion icons,
 - added 16px versions for all new promotion icons.
