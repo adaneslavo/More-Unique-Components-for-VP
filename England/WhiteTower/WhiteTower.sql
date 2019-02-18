@@ -8,22 +8,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 			(CivilizationType, 			BuildingClassType, 				BuildingType)
 VALUES		('CIVILIZATION_ENGLAND',	'BUILDINGCLASS_FACTORY',		'BUILDING_STEAM_MILL');
 --==========================================================================================================================	
-
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 							IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
-VALUES	('BUILDING_ENGLAND_ATLAS', 			256, 		'WhiteTowerPicture_256.dds',			1, 				1),
-		('BUILDING_ENGLAND_ATLAS', 			128, 		'WhiteTowerPicture_128.dds',			1, 				1),
-		('BUILDING_ENGLAND_ATLAS', 			64, 		'WhiteTowerPicture_064.dds',			1, 				1),
-		('BUILDING_ENGLAND_ATLAS', 			45, 		'WhiteTowerPicture_045.dds',			1, 				1);
---==========================================================================================================================
-
---==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
 ------------------------------
@@ -47,6 +31,7 @@ VALUES
 INSERT INTO Building_Flavors
 	(BuildingType, FlavorType, Flavor)
 VALUES
+	('BUILDING_STEAM_MILL', 'FLAVOR_GOLD', 40),
 	('BUILDING_STEAM_MILL', 'FLAVOR_PRODUCTION', 50),
 	('BUILDING_STEAM_MILL', 'FLAVOR_SCIENCE', 15);
 
