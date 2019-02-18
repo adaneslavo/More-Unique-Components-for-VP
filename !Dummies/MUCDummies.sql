@@ -16,7 +16,6 @@ VALUES		('BUILDINGCLASS_D_FOR_HUEY',				'BUILDING_D_FOR_HUEY',			1),
 			('BUILDINGCLASS_D_FOR_DRUIDIC_4',		'BUILDING_D_FOR_DRUIDIC_4',		1),
 			('BUILDINGCLASS_D_FOR_OPPIDUM',			'BUILDING_D_FOR_OPPIDUM',		1),
 			('BUILDINGCLASS_D_FOR_EXAM',			'BUILDING_D_FOR_EXAM',			1),
-			('BUILDINGCLASS_D_FOR_TOWER',			'BUILDING_D_FOR_TOWER',			1),
 			('BUILDINGCLASS_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',		'BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',			1),
 			('BUILDINGCLASS_D_FOR_TEUTONIC',		'BUILDING_D_FOR_TEUTONIC',		1),
 			('BUILDINGCLASS_D_FOR_PROXENOS',		'BUILDING_D_FOR_PROXENOS',		1),
@@ -75,10 +74,6 @@ INSERT INTO Buildings
 			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	GreatPeopleRateModifier, IsDummy)
 VALUES		('BUILDING_D_FOR_EXAM',		'BUILDINGCLASS_D_FOR_EXAM',		'TXT_KEY_BUILDING_D_FOR_EXAM',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				5, 1),
 			('BUILDING_D_FOR_CHAEBOL',	'BUILDINGCLASS_D_FOR_CHAEBOL',	'TXT_KEY_BUILDING_D_FOR_CHAEBOL',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				2, 1);
-
-INSERT INTO Buildings 	
-			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	UnmoddedHappiness, IsDummy)
-VALUES		('BUILDING_D_FOR_TOWER',	'BUILDINGCLASS_D_FOR_TOWER',	'TXT_KEY_BUILDING_D_FOR_TOWER',		0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				1, 1);
 
 INSERT INTO Buildings 	
 			(Type,												BuildingClass,											Description,												GoldMaintenance,	Cost, FaithCost,	GreatWorkCount, NeverCapture,  NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex, IsDummy)
