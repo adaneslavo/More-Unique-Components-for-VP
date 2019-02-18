@@ -6,7 +6,7 @@ More Unique Components for Vox Populi changelog:
 v43:
 -Compatibility:
 	- White Tower now replaced with Steam Mill. No change from the original VP design for now.
--BugFix:
+-fixed:
 	- Waag gold to customs houses and caravansaries works properly
 
 v42:
