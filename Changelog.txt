@@ -3,6 +3,12 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v43:
+-Compatibility:
+	- White Tower now replaced with Steam Mill. No change from the original VP design for now.
+-BugFix:
+	- Waag gold to customs houses and caravansaries works properly
+
 v42:
 - Compatibility: 
 	- Increased Theming Tourism bonus on Wat, White Tower, and Iziko 
