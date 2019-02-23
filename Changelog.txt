@@ -20,7 +20,8 @@ v42:
 fixed:
 	- Waag ==> gold to Customs Houses and Caravansaries works properly, 
 	- Ranch ==> lua error resolved,
-	- Teutonic Order and Corsair ==> fixes.
+	- Teutonic Order and Corsair ==> fixes,
+	- Oppidum ==> sql fixed.
 
 v41.1:
 fixed:

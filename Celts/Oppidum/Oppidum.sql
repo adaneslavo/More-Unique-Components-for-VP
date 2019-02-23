@@ -144,8 +144,8 @@ FROM BuildFeatures WHERE BuildType = 'BUILD_POLDER';
 -- Unit_ScalingFromOwnedImprovements
 ------------------------------	
 INSERT INTO Unit_ScalingFromOwnedImprovements	
-		(UnitType, 		ImprovementType, 		Amount)
-SELECT		('UNIT_MERCHANT', 	'IMPROVEMENT_CELTS_OPPIDUM', 	Amount
+			(UnitType, 			ImprovementType, 				Amount)
+SELECT		'UNIT_MERCHANT', 	'IMPROVEMENT_CELTS_OPPIDUM', 	Amount
 FROM Unit_ScalingFromOwnedImprovements WHERE ImprovementType = 'IMPROVEMENT_CUSTOMS_HOUSE';
 --==========================================================================================================================
 
