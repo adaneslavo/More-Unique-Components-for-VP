@@ -617,11 +617,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Huns/HorseArcher/HorseArcher.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Venice/GreatGalleas/GreatGalleas.sql</FileName>
       </Action>
       <Action>
@@ -1029,12 +1024,6 @@ Latest changes: see changelog file.</Description>
         <Name>Iziko</Name>
         <Description>Adds Culture on Unit Level to all Cities.</Description>
         <FileName>Zulu/Iziko/Iziko.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>Horse Archer</Name>
-        <Description>Automatic attack for Horse Archer</Description>
-        <FileName>Huns/HorseArcher/HorseArcher.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1923,14 +1912,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <!--    <Content Include="Huns\HorseArcher\HorseArcher.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Huns\HorseArcher\HorseArcher.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>  -->
     <Content Include="Huns\Tarkhan\Tarkhan.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
