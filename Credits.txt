@@ -90,8 +90,8 @@ Things borrowed from other mods:
 		- mikeburnfire - idea and 3D model of Flax UR (UI).
 
 	England:
-		- JFD - idea of White Tower UW,
-		- janboruta - picture of White Tower.
+		- Gazebo - idea of Steam Mill UB,
+		- Wodhann - picture of Steam Mill.
 
 	Ethiopia:
 		- Danmacsch - idea of Shotelai UU, idea of Monolitic Church UI, picture of Shotelai,
