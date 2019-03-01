@@ -656,6 +656,20 @@ Latest changes: see changelog file.</Description>
     <ModDependencies>
       <Association>
         <Type>Mod</Type>
+        <Name>(1) Community Patch - Core</Name>
+        <Id>eead0050-1e3f-4178-a91f-26cf1881ac39</Id>
+        <MinVersion>89</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(2) Community Balance Patch</Name>
+        <Id>d1b6328c-ff44-4b0d-aad7-c657f83610cd</Id>
+        <MinVersion>13</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
         <Name>(3) City-State Diplomacy Mod for CBP</Name>
         <Id>eead0050-1e3f-4178-a91f-26cf1881ac39</Id>
         <MinVersion>27</MinVersion>
