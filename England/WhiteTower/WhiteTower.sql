@@ -22,7 +22,7 @@ FROM Buildings WHERE Type = 'BUILDING_FACTORY';
 --------------------------------
 INSERT INTO Building_ImprovementYieldChanges
 (BuildingType, ImprovementType, YieldType, Yield)
-SELECT 'BUILDING_STEAM_MILL', ImprovementType, YieldType, Yield
+SELECT 'BUILDING_STEAM_MILL', ImprovementType, YieldType, Yield+2
 FROM Building_ImprovementYieldChanges WHERE BuildingType = 'BUILDING_FACTORY';
 --------------------------------
 -- Building_YieldChanges
@@ -69,9 +69,7 @@ VALUES ('BUILDING_STEAM_MILL', 'GREATPERSON_ENGINEER', 'ERA_INDUSTRIAL', 10);
 --------------------------------
 INSERT INTO Building_SpecialistYieldChangesLocal
 (BuildingType, SpecialistType, YieldType, Yield)
-VALUES ('BUILDING_STEAM_MILL', 'SPECIALIST_ENGINEER', 'YIELD_PRODUCTION', 1),
-		('BUILDING_STEAM_MILL', 'SPECIALIST_MERCHANT', 'YIELD_PRODUCTION', 1),
-		('BUILDING_STEAM_MILL', 'SPECIALIST_SCIENTIST', 'YIELD_PRODUCTION', 1);
+VALUES ('BUILDING_STEAM_MILL', 'SPECIALIST_ENGINEER', 'YIELD_PRODUCTION', 2);
 --------------------------------
 -- Building_SpecialistYieldChangesLocal
 --------------------------------
