@@ -10,6 +10,7 @@ local eBuildingMonogatari = GameInfoTypes.BUILDING_JAPAN_MONOGATARI
 local eBuildingUkiyoe = GameInfoTypes.BUILDING_JAPAN_UKIYOE
 local eBuildingGagaku = GameInfoTypes.BUILDING_JAPAN_GAGAKU
 local eCivilizationJapan = GameInfoTypes.CIVILIZATION_JAPAN
+local ePopDummy = GameInfoTypes.BUILDING_D_FOR_OPPIDUM
 
 -- upgrade all guilds on Kabuki construction
 function OnConstructionUpgradeGuilds(iPlayer, iCity, iBuilding)
@@ -19,25 +20,30 @@ function OnConstructionUpgradeGuilds(iPlayer, iCity, iBuilding)
 	if iBuilding ~= eBuildingKabuki then return end
 			
 	local pCity = pPlayer:GetCityByID(iCity)
-		
+	pCity:SetNumRealBuilding(ePopDummy, pCity:GetPopulation())
+	
 	if pCity:IsHasBuilding(eBuildingWritersGuild) then
+		pCity:SetPopulation(0, true)
 		pCity:SetNumRealBuilding(eBuildingWritersGuild, 0)
 		pCity:SetNumRealBuilding(eBuildingMonogatari, 1)
 	end
 
 	if pCity:IsHasBuilding(eBuildingArtistsGuild) then
+		pCity:SetPopulation(0, true)
 		pCity:SetNumRealBuilding(eBuildingArtistsGuild, 0)
 		pCity:SetNumRealBuilding(eBuildingUkiyoe, 1)
 	end
 
 	if pCity:IsHasBuilding(eBuildingMusiciansGuild) then
+		pCity:SetPopulation(0, true)
 		pCity:SetNumRealBuilding(eBuildingMusiciansGuild, 0)
 		pCity:SetNumRealBuilding(eBuildingGagaku, 1)
 	end
 
+	pCity:SetPopulation(pCity:GetNumRealBuilding(ePopDummy), true)
+	pCity:SetNumRealBuilding(ePopDummy, 0)
 	NotificationLoad(0, pPlayer, pCity)
 end
-
 -- upgrade guild on its construction
 function OnConstructionUpgradeThatGuild(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
