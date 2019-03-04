@@ -3,6 +3,14 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v43: 
+- compatibility:
+	- Steam Mill ==> Updated Steam Mill to match HungryForFood's Steam Mill, as used in his Victoria mod
+fixed:
+	- Qullqa ==> fixed minor graphics glitch introduced in lua
+	- Teutonic Order ==> fixed optimization code for blacing barracks bonus
+	- Kabuki ==> fixed bug that removed population if they were working specialist slots when the guilds get replaced
+
 v42:
 - compatibility:
 	- White Tower ==> now replaced with Steam Mill; no change from the original VP design for now,
