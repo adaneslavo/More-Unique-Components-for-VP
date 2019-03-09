@@ -2,6 +2,10 @@
 -- Author: adan_eslavo
 -- DateCreated: 28/10/2017
 --------------------------------------------------------------
+-- Pogost
+-- Author: adan_eslavo
+-- DateCreated: 28/10/2017
+--------------------------------------------------------------
 local iBuilding1 = GameInfoTypes.BUILDING_RUSSIA_POGOST_1
 local iBuilding2 = GameInfoTypes.BUILDING_RUSSIA_POGOST_2
 local iBuilding3 = GameInfoTypes.BUILDING_RUSSIA_POGOST_3
@@ -22,16 +26,12 @@ function OnConstructionAddStages(iPlayer, iCity, iBuilding)
 		local pTeam = Teams[pPlayer:GetTeam()]
 
 		if pTeam:GetTeamTechs():HasTech(iTech1) then
-			pCity:SetNumRealBuilding(iBuilding1, 0)
 			pCity:SetNumRealBuilding(iBuilding2, 1)
-			pCity:SetNumRealBuilding(iBuilding3, 0)
 			
 			NotificationLoad(0, pPlayer, pCity)
 		end
 			
 		if pTeam:GetTeamTechs():HasTech(iTech2) then
-			pCity:SetNumRealBuilding(iBuilding1, 0)
-			pCity:SetNumRealBuilding(iBuilding2, 0)
 			pCity:SetNumRealBuilding(iBuilding3, 1)
 			
 			NotificationLoad(1, pPlayer, pCity)
@@ -49,9 +49,7 @@ function OnTechResearchedAddStages(iTeam, iTech)
 	if iTech == iTech1 then
 		for city in pPlayer:Cities() do
 			if city:IsHasBuilding(iBuilding1) and not city:IsHasBuilding(iBuilding2) then
-				city:SetNumRealBuilding(iBuilding1, 0)
 				city:SetNumRealBuilding(iBuilding2, 1)
-				city:SetNumRealBuilding(iBuilding3, 0)
 				
 				NotificationLoad(2, pPlayer, city)
 			end
@@ -63,9 +61,7 @@ function OnTechResearchedAddStages(iTeam, iTech)
 		local pPlayer = Players[pTeam:GetLeaderID()]
 
 		for city in pPlayer:Cities() do
-			if city:IsHasBuilding(iBuilding2) and not city:IsHasBuilding(iBuilding3) then
-				city:SetNumRealBuilding(iBuilding1, 0)
-				city:SetNumRealBuilding(iBuilding2, 0)
+			if city:IsHasBuilding(iBuilding1) and not city:IsHasBuilding(iBuilding3) then
 				city:SetNumRealBuilding(iBuilding3, 1)
 				
 				NotificationLoad(3, pPlayer, city)
@@ -80,22 +76,21 @@ function OnCaptureAddStages(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, i
 	local pTeam = Teams[pNewPlayer:GetTeam()]
 	local pCity = Map.GetPlot(iX, iY):GetWorkingCity()
 
-	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationRussia or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	if not (pNewPlayer and (pNewPlayer:GetCivilizationType() == eCivilizationRussia or pNewPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 
-	if pCity:IsHasBuilding(iBuilding1) then
-		if pTeam:GetTeamTechs():HasTech(iTech1) and not pCity:IsHasBuilding(iBuilding2) then
-			pCity:SetNumRealBuilding(iBuilding1, 0)
-			pCity:SetNumRealBuilding(iBuilding2, 1)
-			pCity:SetNumRealBuilding(iBuilding3, 0)
-			
-			NotificationLoad(2, pNewPlayer, pCity)
-		end
-		if pTeam:GetTeamTechs():HasTech(iTech2) and not pCity:IsHasBuilding(iBuilding3) then
-			pCity:SetNumRealBuilding(iBuilding1, 0)
-			pCity:SetNumRealBuilding(iBuilding2, 0)
-			pCity:SetNumRealBuilding(iBuilding3, 1)
+	if
+		if pCity:IsHasBuilding(iBuilding1) then
+			if pTeam:GetTeamTechs():HasTech(iTech1) and not pCity:IsHasBuilding(iBuilding2) then
+				pCity:SetNumRealBuilding(iBuilding2, 1)
 				
-			NotificationLoad(3, pNewPlayer, pCity)
+				NotificationLoad(2, pNewPlayer, pCity)
+			end
+
+			if pTeam:GetTeamTechs():HasTech(iTech2) and not pCity:IsHasBuilding(iBuilding3) then
+				pCity:SetNumRealBuilding(iBuilding3, 1)
+				
+				NotificationLoad(3, pNewPlayer, pCity)
+			end
 		end
 	end
 end
@@ -104,14 +99,14 @@ function NotificationLoad(iSet, pPlayer, pCity)
 	if iSet == 0 then
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			pPlayer:AddNotification(0, 
-			'Player constructed Pogost in [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] and received automatic free upgrade to Stage 2.', 
+			'Player constructed Pogost - Stage 1 in [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] and received automatic free upgrade to Stage 2.', 
 			'Pogost upgrade in '..pCity:GetName(), 
 			pCity:GetX(), pCity:GetY())
 		end
 	elseif iSet == 1 then
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			pPlayer:AddNotification(0, 
-			'Player constructed Pogost in [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] and received automatic free upgrade to Stage 3.', 
+			'Player constructed Pogost - Stage 1 and 2 in [COLOR_CYAN]'..pCity:GetName()..'[ENDCOLOR] and received automatic free upgrade to Stage 3.', 
 			'Pogost upgrade in '..pCity:GetName(), 
 			pCity:GetX(), pCity:GetY())
 		end
@@ -137,4 +132,3 @@ if Game.IsCivEverActive(eCivilizationRussia) then
 	GameEvents.TeamTechResearched.Add(OnTechResearchedAddStages)
 	GameEvents.CityCaptureComplete.Add(OnCaptureAddStages)
 end
-
