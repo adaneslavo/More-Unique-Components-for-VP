@@ -617,11 +617,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Huns/HorseArcher/HorseArcher.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Venice/GreatGalleas/GreatGalleas.sql</FileName>
       </Action>
       <Action>
@@ -659,6 +654,20 @@ Latest changes: see changelog file.</Description>
     <ReloadUnitSystem>true</ReloadUnitSystem>
     <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
     <ModDependencies>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(1) Community Patch - Core</Name>
+        <Id>eead0050-1e3f-4178-a91f-26cf1881ac39</Id>
+        <MinVersion>89</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(2) Community Balance Patch</Name>
+        <Id>d1b6328c-ff44-4b0d-aad7-c657f83610cd</Id>
+        <MinVersion>13</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
       <Association>
         <Type>Mod</Type>
         <Name>(3) City-State Diplomacy Mod for CBP</Name>
@@ -1029,12 +1038,6 @@ Latest changes: see changelog file.</Description>
         <Name>Iziko</Name>
         <Description>Adds Culture on Unit Level to all Cities.</Description>
         <FileName>Zulu/Iziko/Iziko.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>Horse Archer</Name>
-        <Description>Automatic attack for Horse Archer</Description>
-        <FileName>Huns/HorseArcher/HorseArcher.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1923,14 +1926,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <!--    <Content Include="Huns\HorseArcher\HorseArcher.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Huns\HorseArcher\HorseArcher.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>  -->
     <Content Include="Huns\Tarkhan\Tarkhan.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>

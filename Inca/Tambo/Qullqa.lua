@@ -21,8 +21,11 @@ function OnConstructionPlaceCoca(iPlayer, iCity, iBuilding)
 	
 		pPlot:SetResourceType(eResourceCoca, 1)
 		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
+		pPlot:SetImprovementType(-1)
 		-- removes plantation after connecting Coca to trade list
-		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
+		if pPlot:IsMountain() then
+			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
+		end
 	end
 end
 

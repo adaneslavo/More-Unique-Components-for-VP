@@ -19,8 +19,9 @@ function OnCityConstructionAddDummyForTO(iPlayer, iCity, eBuilding)
 		local iNumberOfBarracks = pPlayer:CountNumBuildings(eBuildingBarracks)
 
 		if iNumberOfBarracks > 0 then
+
+			local iCurrentBarracks = 0
 			for city in pPlayer:Cities() do
-				local iCurrentBarracks = 0
 
 				if city:IsHasBuilding(eBuildingBarracks) then
 					city:SetNumRealBuilding(eBuildingDummyForTeutonicOrder, 1)
