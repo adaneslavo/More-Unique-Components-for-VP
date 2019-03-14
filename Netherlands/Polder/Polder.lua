@@ -10,9 +10,8 @@ local eImprovementPolder = GameInfoTypes.IMPROVEMENT_POLDER
 function PolderCanBeOnMarsh (iPlayer, iUnit, iX, iY, iBuild)
 	if iBuild == GameInfoTypes.BUILD_POLDER_2 and Players[iPlayer]:GetCivilizationType() ~= GameInfoTypes.CIVILIZATION_NETHERLANDS then
 		return false
-	else 
-		return true
 	end
+return true
 end
 
 GameEvents.PlayerCanBuild.Add(PolderCanBeOnMarsh)
