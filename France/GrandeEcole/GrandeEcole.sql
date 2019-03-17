@@ -30,8 +30,8 @@ VALUES		('BUILDING_FRANCE_ATLAS', 			256, 		'GrandeEcolePicture_256.dds',			1, 	
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,							BuildingClass,	GoldMaintenance,	Cost, FaithCost,	UnlockedByBelief,	EnhancedYieldTech,	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, IlliteracyHappinessChange,		GreatPeopleRateChange,	SpecialistType,			SpecialistCount,	MinAreaSize, ConquestProb, HurryCostModifier,	Help,											Description,							Civilopedia,									Strategy,											IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_FRANCE_GRANDE_ECOLE',	BuildingClass,	GoldMaintenance+1,	Cost, FaithCost,	UnlockedByBelief,	'TECH_COMPUTERS',	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, IlliteracyHappinessChange,	GreatPeopleRateChange,	SpecialistType,			SpecialistCount,	MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_HELP',	'TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE', 'TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_TEXT',	'TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_STRATEGY',	'BUILDING_FRANCE_ATLAS',	0
+			(Type,							BuildingClass,	GoldMaintenance,	Cost, FaithCost,	UnlockedByBelief,	EnhancedYieldTech,	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, IlliteracyHappinessChange, GreatPeopleRateChange, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	Help,											Description,							Civilopedia,									Strategy,											IconAtlas,					PortraitIndex)
+SELECT		'BUILDING_FRANCE_GRANDE_ECOLE',	BuildingClass,	GoldMaintenance+1,	Cost, FaithCost,	UnlockedByBelief,	'TECH_COMPUTERS',	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier,	GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, IlliteracyHappinessChange, GreatPeopleRateChange, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	'TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_HELP',	'TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE', 'TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_TEXT',	'TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_STRATEGY',	'BUILDING_FRANCE_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_PUBLIC_SCHOOL';	
 ------------------------------	
 -- Building_Flavors
@@ -70,6 +70,13 @@ VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_SCIENCE',	50);
 --			(BuildingType,						YieldType,			Yield)
 --VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_PRODUCTION',	2),
 --			('BUILDING_FRANCE_GRANDE_ECOLE',	'YIELD_SCIENCE',	2);
+------------------------------	
+-- Building_UnhappinessNeedsFlatReduction
+------------------------------
+INSERT INTO Building_UnhappinessNeedsFlatReduction 	
+			(BuildingType,					YieldType, Yield)
+SELECT		'BUILDING_FRANCE_GRANDE_ECOLE', YieldType, Yield
+FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_PUBLIC_SCHOOL');
 ------------------------------	
 -- Building_SpecialistYieldChangesLocal
 ------------------------------

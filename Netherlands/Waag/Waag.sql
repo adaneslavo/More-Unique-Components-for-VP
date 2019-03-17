@@ -71,8 +71,12 @@ INSERT INTO Building_YieldFromPurchase
 SELECT		'BUILDING_NETHERLANDS_WAAG',	YieldType, Yield
 FROM Building_YieldFromPurchase WHERE BuildingType = 'BUILDING_BANK';
 ------------------------------	
--- Building_YieldChanges
+-- Building_UnhappinessNeedsFlatReduction
 ------------------------------
+INSERT INTO Building_UnhappinessNeedsFlatReduction 	
+			(BuildingType,					YieldType, Yield)
+SELECT		'BUILDING_NETHERLANDS_WAAG', 	YieldType, Yield
+FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_BANK');
 ------------------------------	
 -- Building_YieldChanges
 ------------------------------		

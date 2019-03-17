@@ -87,9 +87,13 @@ INSERT INTO Building_YieldFromTech
 SELECT		'BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA', YieldType, Yield
 FROM		Building_YieldFromTech
 WHERE		BuildingType = 'BUILDING_OXFORD_UNIVERSITY';
-
-
-
+------------------------------	
+-- Building_UnhappinessNeedsFlatReduction
+------------------------------
+INSERT INTO Building_UnhappinessNeedsFlatReduction 	
+			(BuildingType,					YieldType, Yield)
+SELECT		'BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA', 	YieldType, Yield
+FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_OXFORD_UNIVERSITY');
 --------------------------------	
 -- UnitPromotions
 --------------------------------	

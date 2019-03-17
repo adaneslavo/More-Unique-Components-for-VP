@@ -31,7 +31,7 @@ VALUES		('BUILDING_MAYA_ATLAS', 			256, 		'PitzPicture_256.dds',			1, 				1),
 ------------------------------	
 INSERT INTO Buildings 	
 			(Type,					BuildingClass,	GoldMaintenance, Cost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, Cost, FreeStartEra, Happiness, NeverCapture,	GoldMaintenance, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb,	HurryCostModifier,	BuildingProductionModifier,	UnculturedHappinessChange,	Help,								Description,					Civilopedia,						Strategy,								IconAtlas,				PortraitIndex)
-SELECT		'BUILDING_MAYA_PITZ', 	BuildingClass,	GoldMaintenance, Cost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, Cost, FreeStartEra, Happiness, 1,				GoldMaintenance, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, 0,				HurryCostModifier,	BuildingProductionModifier,	UnculturedHappinessChange,		'TXT_KEY_BUILDING_MAYA_PITZ_HELP',	'TXT_KEY_BUILDING_MAYA_PITZ', 	'TXT_KEY_BUILDING_MAYA_PITZ_TEXT',	'TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY',	'BUILDING_MAYA_ATLAS',	0
+SELECT		'BUILDING_MAYA_PITZ', 	BuildingClass,	GoldMaintenance, Cost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, Cost, FreeStartEra, Happiness, 1,				GoldMaintenance, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, 0,				HurryCostModifier,	BuildingProductionModifier,	UnculturedHappinessChange,	'TXT_KEY_BUILDING_MAYA_PITZ_HELP',	'TXT_KEY_BUILDING_MAYA_PITZ', 	'TXT_KEY_BUILDING_MAYA_PITZ_TEXT',	'TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY',	'BUILDING_MAYA_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_COLOSSEUM';	
 ------------------------------	
 -- Building_Flavors
@@ -74,6 +74,13 @@ INSERT INTO Building_ResourceYieldChanges
 			(BuildingType,			ResourceType,		YieldType,			Yield)
 SELECT		'BUILDING_MAYA_PITZ',	ResourceType, YieldType, Yield
 FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_COLOSSEUM';
+------------------------------	
+-- Building_UnhappinessNeedsFlatReduction
+------------------------------
+INSERT INTO Building_UnhappinessNeedsFlatReduction 	
+			(BuildingType,			YieldType, Yield)
+SELECT		'BUILDING_MAYA_PITZ', 	YieldType, Yield
+FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_COLOSSEUM');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

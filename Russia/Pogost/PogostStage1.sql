@@ -105,4 +105,11 @@ INSERT INTO Building_BuildingClassLocalYieldChanges
 VALUES		('BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_MONASTERY',	'YIELD_FAITH',	2),
 			('BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_SHRINE',		'YIELD_FAITH',	2),
 			('BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_TEMPLE',		'YIELD_FAITH',	2);
+------------------------------	
+-- Building_UnhappinessNeedsFlatReduction
+------------------------------
+INSERT INTO Building_UnhappinessNeedsFlatReduction 	
+			(BuildingType,					YieldType, Yield)
+SELECT		'BUILDING_RUSSIA_POGOST_1', 	YieldType, Yield
+FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_MINT');
 --==========================================================================================================================

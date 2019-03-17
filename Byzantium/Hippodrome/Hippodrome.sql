@@ -30,8 +30,8 @@ VALUES	('BUILDING_BYZANTIUM_ATLAS', 			256, 		'HippodromePicture_256.dds',			1, 
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,								FreeBuilding, 				FreeBuildingThisCity, 				BuildingClass, NukeImmune,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, NumCityCostMod,		UnmoddedHappiness,		UnculturedHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired,	Help,											Description,								Civilopedia,									Strategy,											IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_D_FOR_HIPPODROME', 'BUILDINGCLASS_COLOSSEUM', 	BuildingClass, NukeImmune,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	NumCityCostMod,		UnmoddedHappiness+1,	UnculturedHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired,	'TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP',	'TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME',	'TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_TEXT',	'TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY',	'BUILDING_BYZANTIUM_ATLAS',	0
+			(Type,								FreeBuilding, 				FreeBuildingThisCity, 				BuildingClass, NukeImmune,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat, DefenseHappinessChange, NumCityCostMod, UnmoddedHappiness,	UnculturedHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired,	Help,											Description,								Civilopedia,									Strategy,											IconAtlas,					PortraitIndex)
+SELECT		'BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_D_FOR_HIPPODROME', 'BUILDINGCLASS_COLOSSEUM', 	BuildingClass, NukeImmune,	GoldMaintenance, Cost, FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat, DefenseHappinessChange, NumCityCostMod, UnmoddedHappiness+1,	UnculturedHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, GreatPeopleRateChange,	SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier,	NationalPopRequired,	'TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP',	'TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME',	'TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_TEXT',	'TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY',	'BUILDING_BYZANTIUM_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_CIRCUS_MAXIMUS';	
 ------------------------------	
 -- Building_YieldChanges
@@ -39,7 +39,7 @@ FROM Buildings WHERE Type = 'BUILDING_CIRCUS_MAXIMUS';
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 						YieldType,			Yield)
 VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'YIELD_CULTURE',	4),
-			('BUILDING_BYZANTIUM_HIPPODROME',	'YIELD_GOLD',		1);
+			('BUILDING_BYZANTIUM_HIPPODROME',	'YIELD_GOLD',		3);
 ------------------------------	
 -- Building_ClassesNeededInCity
 ------------------------------		
@@ -58,8 +58,15 @@ VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'FLAVOR_CULTURE',	150),
 ------------------------------
 INSERT INTO Building_BuildingClassYieldChanges 	
 			(BuildingType,						BuildingClassType,			YieldType,			YieldChange)
-VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_CIRCUS',		'YIELD_CULTURE',	2),
-			('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_COLOSSEUM',	'YIELD_GOLD',		2);
+VALUES		('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_CIRCUS',		'YIELD_CULTURE',	3),
+			('BUILDING_BYZANTIUM_HIPPODROME',	'BUILDINGCLASS_COLOSSEUM',	'YIELD_GOLD',		3);
+------------------------------	
+-- Building_UnhappinessNeedsFlatReduction
+------------------------------
+INSERT INTO Building_UnhappinessNeedsFlatReduction 	
+			(BuildingType,						YieldType, Yield)
+SELECT		'BUILDING_BYZANTIUM_HIPPODROME', 	YieldType, Yield
+FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_CIRCUS_MAXIMUS');
 --==========================================================================================================================
 --==========================================================================================================================
 

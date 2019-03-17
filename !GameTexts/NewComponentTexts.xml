@@ -177,7 +177,7 @@
 			<Text>Barbican</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_HELP">
-			<Text>Replaces both the Armory and the Castle.[NEWLINE][NEWLINE]Requires Walls in this City. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Reduces [ICON_HAPPINESS_3] Distress. +25 XP for all new Units trained in this City. +125% [ICON_RANGE_STRENGTH] Ranged Combat Strength for City Bombardment and +33% [ICON_RANGE_STRENGTH] Ranged Combat Strength for Ranged units, and Siege Units garrisoned in this City.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art.</Text>
+			<Text>Replaces both the Armory and the Castle.[NEWLINE][NEWLINE]Requires Walls in this City. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Empire [ICON_HAPPINESS_3] Needs Modifier is reduced by 5% in this City and -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_PRODUCTION] Distress. +25 XP for all new Units trained in this City. +125% [ICON_RANGE_STRENGTH] Ranged Combat Strength for City Bombardment and +33% [ICON_RANGE_STRENGTH] Ranged Combat Strength for Ranged units, and Siege Units garrisoned in this City.[NEWLINE][NEWLINE]Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY">
 			<Text>Unique Polish replacement for both the Castle and the Armory, but a bit stronger than both. Must have built Walls in the city. In addition to the city defense and unit training bonuses, the attacks of Ranged and Siege units garrisoned in the city are increased.</Text>
@@ -637,10 +637,10 @@
 			<Text>Grande École</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_HELP">
-			<Text>Requires University in the City. Reduces [ICON_HAPPINESS_3] Illiteracy. +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Population in this City. +2 [ICON_PRODUCTION] Production to [ICON_GREAT_SCIENTIST] Scientist Specialists and +2 [ICON_RESEARCH] Science to [ICON_GREAT_ENGINEER] Engineer Specialists in this City.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this City.</Text>
+			<Text>Requires University in the City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy. +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Population in this City. +2 [ICON_PRODUCTION] Production to [ICON_GREAT_SCIENTIST] Scientist Specialists and +2 [ICON_RESEARCH] Science to [ICON_GREAT_ENGINEER] Engineer Specialists in this City.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_STRATEGY">
-			<Text>The Grande École is the French unique building, replacing the Public School. In addition to the normal bonuses of a Public School, The Grande Ecole increases production for every citizen in the City, has more Scientist Specialist slots, and helps to generate Great Engineers. In addition, all Scientists generate more Production, and all Engineers generate more Science, making any city with a Grande Ecole a powerhouse of scientific and technical achievement.</Text>
+			<Text>The Grande École is the French unique building, replacing the Public School. In addition to the normal bonuses of a Public School, The Grande École increases production for every citizen in the City, has more Scientist Specialist slots, and helps to generate Great Engineers. In addition, all Scientists generate more Production, and all Engineers generate more Science, making any city with a Grande Ecole a powerhouse of scientific and technical achievement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_TEXT">
 			<Text>The French Grande École are institutions of higher learning separate from the more conventional university system. These schools are highly selective, taking only the best and brightest French graduates, and barring entry by foreigners. Once accepted, students studying at a Grande École are considered public servants, paying little to no entrance fees and even receiving a monthly government stipend.[NEWLINE][NEWLINE]The origins of the Grande Écoles lie in the French Revolution, where several military and technical écoles normale supérieure were established by distinguished French mathematicians and intellectuals. The idea was to open education to individuals based strictly on merit. By the 19th century a number of schools had sprung up for a wide array of disciplines including natural sciences, business and the humanities. The Grande Écoles continue to have a deep impact on French society, with approximately 10% of all Native-born French citizens graduate from these schools, including many of France's most renowned politicians, philosophers, scientists, and executives.</Text>
@@ -821,7 +821,7 @@
 			<Text>Hippodrome</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
-			<Text>Does not require an Arena in the City. Free Arena in the City.[NEWLINE][NEWLINE]Slightly reduces [ICON_HAPPINESS_3] Boredom. +15% [ICON_GOLD] Gold and [ICON_CULTURE] Culture on Empire during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, 1 turn of [ICON_RESISTANCE] Resistance occurs in this City, after which a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Does not require an Arena in the City. Free Arena in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom. +15% [ICON_GOLD] Gold and [ICON_CULTURE] Culture on Empire during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, 1 turn of [ICON_RESISTANCE] Resistance occurs in this City, after which a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
 			<Text>
@@ -846,7 +846,7 @@
 			<Text>The Huey Teocalli is the unique Aztec replacement for the Grand Temple. It does not require a Temple, and immediately triggers a Golden Age on completion. Every time you enter a Golden Age the Huey Teocalli permanently gains Food, Faith, and additional XP to units built in the city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP">
-			<Text>Does not require a Temple. Triggers a [ICON_GOLDEN_AGE] Golden Age on Completion.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +2 [ICON_CULTURE] Culture to all Temples, and +2 [ICON_FOOD] Food to all Barracks on Empire. Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music, and slightly reduces [ICON_HAPPINESS_3] Religious Unrest. [NEWLINE][NEWLINE]Whenever you enter a [ICON_GOLDEN_AGE] Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith and +3 XP for Units trained in the City (max +30).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Does not require a Temple. Triggers a [ICON_GOLDEN_AGE] Golden Age on Completion.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +2 [ICON_CULTURE] Culture to all Temples, and +2 [ICON_FOOD] Food to all Barracks on Empire. Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_PEACE] Religious Unrest. [NEWLINE][NEWLINE]Whenever you enter a [ICON_GOLDEN_AGE] Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith and +3 XP for Units trained in the City (max +30).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 
 		<!-- Iron Chariot -->
@@ -1231,7 +1231,7 @@
 			<Text>Unique Wall replacement. Military Units supplied by this City's population increases by 20% and Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 25%. Contains a Writer specialist slot and a Great Work of Writing slot to help your empire get an early start on great works.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ASSYRIA_LAMASSU_GATE_HELP">
-			<Text>[ICON_WAR] Military Supplies by this City's population increased by 20%. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 25% and Strike Range by 1. Contains a slot for a [ICON_GREAT_WORK] Great Work of Writing.</Text>
+			<Text>[ICON_WAR] Military Supplies by this City's population increased by 20%. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 25% and Strike Range by 1. Contains a slot for a [ICON_GREAT_WORK] Great Work of Writing.[NEWLINE][NEWLINE]Empire [ICON_HAPPINESS_3] Needs Modifier is reduced by 5% in this City.</Text>
 		</Row>
 
 		<!-- Landwehr -->
@@ -1370,7 +1370,7 @@
 			<Text>Unique Arabian replacement for the University. In addition to the bonuses of a University, the Madrasa generates additional yields when you purchase anything with Faith or expend a Great Person.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
-			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 25% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]Gain 15% of the Cost of any [ICON_PEACE] Faith Purchase as [ICON_RESEARCH] Science in this City. Gain 5 [ICON_PEACE] Faith and [ICON_CULTURE] Culture whenever you Expend a [ICON_GREAT_PEOPLE] Great Person, scaling with Era.</Text>
+			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 25% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]Gain 15% of the Cost of any [ICON_PEACE] Faith Purchase as [ICON_RESEARCH] Science in this City. Gain 5 [ICON_PEACE] Faith and [ICON_CULTURE] Culture whenever you Expend a [ICON_GREAT_PEOPLE] Great Person, scaling with Era.</Text>
 		</Row>
 		
 		<!-- Monitor -->
@@ -1526,14 +1526,14 @@
 			<Text>+15 XP. +10% [ICON_DEFENSE] Combat Strength. +5% [ICON_DEFENSE] Combat Strength [COLOR_POSITIVE_TEXT]in Forest and Jungle[ENDCOLOR]. +10 HP [COLOR_POSITIVE_TEXT]on Heal inside Friendly Territory[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ">
-			<Text>Ball Court</Text>
+			<Text>Pitz Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
-			<Text>Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. Slightly reduces [ICON_HAPPINESS_3] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in a City with a Ball Court receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVE] Olives: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in this City receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVE] Olives: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
 			<Text>
-				The Ball Court is the Mayan unique building, replacing the Arena. In addition to the normal bonuses of an Arena, the Ball Court provides Science and Faith at the end of every long count. Land units trained in a City with a Ball Court receive the 'K'atun Ahaw' promotion, which grants new abilities for every 20 turns the unit has been alive.
+				The Pitz Court is the Mayan unique building, replacing the Arena. In addition to the normal bonuses of an Arena, the Pitz Court provides Science and Faith at the end of every long count. Land units trained in a City with a Pitz Court receive the 'K'atun Ahaw' promotion, which grants new abilities for every 20 turns the unit has been alive.
 				[NEWLINE][ICON_BULLET]Hun: 5XP, +5% [ICON_STRENGTH] Combat Strength
 				[NEWLINE][ICON_BULLET]Ka'a: 10XP, +10% [ICON_STRENGTH] Combat Strength, +5% [ICON_STRENGTH] Combat Strength in Forest/Jungle
 				[NEWLINE][ICON_BULLET]Oox: 10XP, +10% [ICON_STRENGTH] Combat Strength, +15% [ICON_STRENGTH] Combat Strength in Forest/Jungle
@@ -1584,7 +1584,7 @@
 			<Text>Pogost - Stage 3: Eastern Orthodox Church</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP">
-			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns. Reduces [ICON_HAPPINESS_3] Poverty.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
+			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
 			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City.</Text>
@@ -1715,7 +1715,7 @@
 			<Text>Qila</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_HELP">
-			<Text>City must have Walls. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 100%. Slightly reduces [ICON_HAPPINESS_3] Distress. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every National Wonder and World Wonder built in the City. 10% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.</Text>
+			<Text>City must have Walls. +1 [ICON_PRODUCTION] Production for Quarries worked by this City. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 100%. Slightly reduces [ICON_HAPPINESS_3] Distress. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Art and generates +1 [ICON_GREAT_PEOPLE] Great Artist Point per turn. +3 [ICON_TOURISM] Tourism at Flight.[NEWLINE][NEWLINE]+1 [ICON_STRENGTH] City Defense for every National Wonder and World Wonder built in the City. 10% of [ICON_STRENGTH] City Defense is converted into [ICON_CULTURE] Culture every turn.[NEWLINE][NEWLINE]Empire [ICON_HAPPINESS_3] Needs Modifier is reduced by 5% in this City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDIA_QILA_STRATEGY">
 			<Text>The Qila is the unique Indian replacement for the Castle. In addition to the normal bonuses of the Castle, the Qila generates Culture and Great Artist Points. 10% of City Defense is converted into Culture every turn and the city gains more defense for wonders built in the city. Your most magnificent cities also become more difficult to capture.</Text>
@@ -2089,7 +2089,7 @@
 			<Text>The Schützenstand is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. Increases the City's [ICON_RANGE_STRENGTH] Ranged Strike Range by 1, and also allows the City to Ranged Strike indirectly, ignoring Line of Sight. It allows for faster construction of land military units in the city. It also provides +1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture per city-state ally.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP">
-			<Text>City must have a Castle. Military Units supplied by this City's population increased by 15%. Increases the City's [ICON_RANGE_STRENGTH] Ranged Strike Range by 1, and allows Indirect Fire.[NEWLINE][NEWLINE]Garrisoned units receive an additional 10 Health when healing in this city. Foreign Spies cannot steal [ICON_RESEARCH] Science from this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture for each City-State Ally. +30% [ICON_PRODUCTION] Production and 15 XP for Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units.</Text>
+			<Text>City must have a Castle. Military Units supplied by this City's population increased by 15%. Increases the City's [ICON_RANGE_STRENGTH] Ranged Strike Range by 1, and allows Indirect Fire.[NEWLINE][NEWLINE]Garrisoned units receive an additional 10 Health when healing in this city. Foreign Spies cannot steal [ICON_RESEARCH] Science from this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture for each City-State Ally. +30% [ICON_PRODUCTION] Production and 15 XP for Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units.[NEWLINE][NEWLINE]Empire [ICON_HAPPINESS_3] Needs Modifier is reduced by 5% in this City.</Text>
 		</Row>
 		
 		<!-- Steam Mill -->
@@ -2241,7 +2241,7 @@
 			<Text>The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. In addition to the normal bonuses of the Oxford University, it gives all naval units the ability to gain gold from exploration, and generates Gold and Production in the city for every Feitoria built in foreign lands.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_HELP">
-			<Text>Does not require a University in the City. Provides a free [ICON_GREAT_SCIENTIST] Great Scientist and a University on Completion. All Universities gain +3 [ICON_GOLD] Gold. +75 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. Reduces [ICON_HAPPINESS_3] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Does not require a University in the City. Provides a free [ICON_GREAT_SCIENTIST] Great Scientist and a University on Completion. All Universities gain +3 [ICON_GOLD] Gold. +75 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY">
 			<Text>Age of Discovery</Text>
@@ -2256,7 +2256,7 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text>Available earlier. Requires a Market in City.[NEWLINE]Reduces Enemy [ICON_SPY] Spy Stealing Rate by 20% and greatly reduces [ICON_HAPPINESS_3] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold. +1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PRODUCTION] Production in this City for every Global Monopoly on Empire.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. Requires a Market in City.[NEWLINE]Reduces Enemy [ICON_SPY] Spy Stealing Rate by 20%. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_GOLD] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold. +1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PRODUCTION] Production in this City for every Global Monopoly on Empire.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
 			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier and provides bonuses to Defense and Production. The Waag's bonuses scale with the total number of global monopolies, both luxury and strategic that the Dutch control. Trade and conquer vigorously to leverage your Waag's potential strengths.</Text>
@@ -2325,13 +2325,13 @@
 			<Text>Yassa Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_HELP">
-			<Text>Automatically constructed in all [COLOR_POSITIVE_TEXT]Unoccupied Cities[ENDCOLOR] after discovering Philosophy.[NEWLINE][NEWLINE]Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Military Units. +10 [ICON_RESEARCH] Science, [ICON_CULTURE]Culture, and [ICON_GOLD] Gold for every Yassa Court on Empire whenever you Conquer a City, scaling with Era.[NEWLINE][NEWLINE]Very Slightly reduces Boredom and Illiteracy in all Cities in the Empire. Building cost is slightly increased with number of Cities.</Text>
+			<Text>Automatically constructed in all [COLOR_POSITIVE_TEXT]Unoccupied Cities[ENDCOLOR] after discovering Philosophy.[NEWLINE][NEWLINE]Eliminates [ICON_OCCUPIED] Extra Unhappiness from an Occupied City. +20% [ICON_PRODUCTION] Production towards Ranged, Siege, Mounted and Armor Military Units. +10 [ICON_RESEARCH] Science, [ICON_CULTURE]Culture, and [ICON_GOLD] Gold for every Yassa Court on Empire whenever you Conquer a City, scaling with Era.[NEWLINE][NEWLINE]Illiteracy, Boredom, and Empire [ICON_HAPPINESS_3] Needs Modifier is reduced by 1% in all Cities. Building cost is slightly increased with number of Cities.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_STRATEGY">
 			<Text>Unique Mongolian replacement for the Courthouse. Is automatically built in non-occupied Cities. In addition to eliminating Unhappiness in Occupied Cities, this building reduces global unhappiness from Illiteracy and Boredom, and increases production of all Land-based military units, except Unmounted Melee. Conquering Cities triggers a small amount of Gold, Science and Culture in every city. It is also slightly cheaper than the Courthouse.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MONGOLIA_YASSA_COURT_TEXT">
-			<Text>Yassa was a secret written code of law created by Genghis Khan. The word Yassa translates into "order" or "decree". It was the de facto law of the Mongol Empire even though the "law" was never actually made public. The Yassa seems to have originated from decrees issued in war time, and was later codified and expanded to include cultural and life-style conventions. By keeping the Yassa secret, the decrees could be modified and used selectively. It is believed that the Yassa was supervised by Genghis Khan himself with the help of the high judge of the Mongol Empire: His stepbrother, Shihihutag. Genghis Khan appointed his second son Chagatai (later Chagatai Khan) to oversee the execution of the laws.</Text>
+			<Text>Yassa was a secret written code of law created by Genghis Khan. The word Yassa translates into "order" or "decree". It was the de facto law of the Mongol Empire even though the "law" was never actually made public. The Yassa seems to have originated from decrees issued in war time, and was later codified and expanded to include cultural and life-style conventions. By keeping the Yassa secret, the decrees could be modified and used selectively. It is believed that the Yassa was supervised by Genghis Khan himself with the help of the high judge of the Mongol Empire: His stepbrother, Shihihutag. Genghis Khan appointed his second son Chagatai (a.k.a. Chagatai Khan) to oversee the execution of the laws.</Text>
 		</Row>
 		
 		<!-- Yellow Brow -->

@@ -42,7 +42,14 @@ VALUES		('BUILDING_AZTEC_HUEY_TEOCALLI',	'FLAVOR_RELIGION',			50),
 INSERT INTO Building_YieldChanges
 			(BuildingType,						YieldType,		Yield)
 VALUES		('BUILDING_AZTEC_HUEY_TEOCALLI',	'YIELD_FAITH',	3),
-	('BUILDING_AZTEC_HUEY_TEOCALLI',	'YIELD_FOOD',	3);
+			('BUILDING_AZTEC_HUEY_TEOCALLI',	'YIELD_FOOD',	3);
+------------------------------	
+-- Building_UnhappinessNeedsFlatReduction
+------------------------------
+INSERT INTO Building_UnhappinessNeedsFlatReduction 	
+			(BuildingType,						YieldType, Yield)
+SELECT		'BUILDING_AZTEC_HUEY_TEOCALLI', 	YieldType, Yield
+FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_GRAND_TEMPLE');
 --==========================================================================================================================	
 
 --==========================================================================================================================

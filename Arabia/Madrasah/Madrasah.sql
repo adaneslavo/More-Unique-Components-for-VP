@@ -68,5 +68,12 @@ VALUES		('BUILDING_ARABIA_MADRASAH',	'YIELD_FAITH',		5),
 INSERT INTO Building_GrowthExtraYield
 			(BuildingType,					YieldType,			Yield)
 VALUES		('BUILDING_ARABIA_MADRASAH',	'YIELD_SCIENCE',	25);
+------------------------------	
+-- Building_UnhappinessNeedsFlatReduction
+------------------------------
+INSERT INTO Building_UnhappinessNeedsFlatReduction 	
+			(BuildingType,					YieldType, Yield)
+SELECT		'BUILDING_ARABIA_MADRASAH', 	YieldType, Yield
+FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_UNIVERSITY');
 --==========================================================================================================================
 --==========================================================================================================================
