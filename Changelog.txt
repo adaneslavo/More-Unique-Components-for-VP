@@ -6,6 +6,8 @@ More Unique Components for Vox Populi changelog:
 v43: 
 - compatibility:
 	- Steam Mill ==> Updated Steam Mill to match HungryForFood's Steam Mill, as used in his Victoria mod
+	- Flat Needs reductions ==> all UBs that replace buildings with Flat Needs Reductions have been added
+	- Coca ==> happiness reduced to 1
 fixed:
 	- Pogost ==> reverted change which made Pogosts replace each other
 	- Qullqa ==> fixed minor graphics glitch introduced in lua
