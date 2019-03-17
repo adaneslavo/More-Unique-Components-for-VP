@@ -10,7 +10,7 @@ v43:
 	- Coca ==> happiness reduced to 1
 - tweaked/modified:
 	- Yassa Court ==> added Global Empire Needs reduction
-
+	- Iron Chariot ==> unlocked at Bronze Working. Fury of Nergal now 10% per adjacent enemy unit
 fixed:
 	- Pogost ==> reverted change which made Pogosts replace each other
 	- Qullqa ==> fixed minor graphics glitch introduced in lua
