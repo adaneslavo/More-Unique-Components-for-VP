@@ -5,10 +5,10 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>(over) More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>42</ModVersion>
+    <ModVersion>43</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>3rd and 4th unique component for each civilization</Teaser>
-    <Description>More Unique Components mod. Compatible with latest VP (2-17).
+    <Description>More Unique Components mod. Compatible with latest VP (3-14).
 Compatible with VPEE and ENW from @Infixo.
 
 Latest changes: see changelog file.</Description>
@@ -656,37 +656,37 @@ Latest changes: see changelog file.</Description>
     <ModDependencies>
       <Association>
         <Type>Mod</Type>
-        <Name>(1) Community Patch - Core</Name>
-        <Id>eead0050-1e3f-4178-a91f-26cf1881ac39</Id>
+        <Name>(1) CP</Name>
+        <Id>d1b6328c-ff44-4b0d-aad7-c657f83610cd</Id>
         <MinVersion>89</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
       <Association>
         <Type>Mod</Type>
-        <Name>(2) Community Balance Patch</Name>
-        <Id>d1b6328c-ff44-4b0d-aad7-c657f83610cd</Id>
+        <Name>(2) CBP</Name>
+        <Id>8411a7a8-dad3-4622-a18e-fcc18324c799</Id>
         <MinVersion>13</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
       <Association>
         <Type>Mod</Type>
-        <Name>(3) City-State Diplomacy Mod for CBP</Name>
+        <Name>(3) CSD</Name>
         <Id>eead0050-1e3f-4178-a91f-26cf1881ac39</Id>
         <MinVersion>27</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
       <Association>
         <Type>Mod</Type>
-        <Name>(4) C4DF - CBP</Name>
+        <Name>(4) C4DF</Name>
         <Id>c7bf7064-d1b1-4708-9e93-7a1560868582</Id>
         <MinVersion>11</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
       <Association>
         <Type>Mod</Type>
-        <Name>(5) More Luxuries - CBO Edition</Name>
+        <Name>(5) CBO</Name>
         <Id>be2d13ee-d18d-410e-8f04-7cd19cd99a98</Id>
-        <MinVersion>155</MinVersion>
+        <MinVersion>100</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
     </ModDependencies>

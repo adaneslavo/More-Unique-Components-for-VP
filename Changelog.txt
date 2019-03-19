@@ -4,18 +4,24 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v43: 
-- compatibility:
-	- Steam Mill ==> Updated Steam Mill to match HungryForFood's Steam Mill, as used in his Victoria mod
-	- Flat Needs reductions ==> all UBs that replace buildings with Flat Needs Reductions have been added
-	- Coca ==> happiness reduced to 1
+- compatibility with latest VP 3-14-2b:
+	- Steam Mill ==> updated Steam Mill to match HungryForFood's one, as used in his Victoria mod,
+	- modifier: Flat Needs Reductions ==> all UBs that replace buildings with Flat Needs Reductions have been added,
+	- Coca ==> happiness reduced to 1.
 - tweaked/modified:
-	- Yassa Court ==> added Global Empire Needs reduction
-	- Iron Chariot ==> unlocked at Bronze Working. Fury of Nergal now 10% per adjacent enemy unit
-fixed:
-	- Pogost ==> reverted change which made Pogosts replace each other
-	- Qullqa ==> fixed minor graphics glitch introduced in lua
-	- Teutonic Order ==> fixed optimization code for blacing barracks bonus
-	- Kabuki ==> fixed bug that removed population if they were working specialist slots when the guilds get replaced
+	- Yassa Court ==> added Global Empire Needs reduction,
+	- Iron Chariot ==> unlocked at Bronze Working,
+				   ==> Fury of Nergal now 10% per adjacent enemy unit.
+- fixed:
+	- Pogost ==> reverted change which made Pogosts replace each other,
+	- Qullqa ==> fixed minor graphics glitch introduced in lua,
+	- Teutonic Order ==> fixed optimization code for blacing Barracks bonus,
+	- Kabuki ==> fixed bug that removed population if they were working specialist slots when the guilds get replaced.
+- ENW and ENW+EE compativbility fix:
+	- Armada ==> obsoletes at Combustion if only ENW or at Dynamite if ENW+EE,
+	- Corsair ==> obsoletes at Combustion if only ENW,
+	- Monitor ==> obsoletes at Rocketry if only ENW,
+	- Xiafan Guanjun ==> obsoletes at Radio if only ENW.
 
 v42:
 - compatibility:
