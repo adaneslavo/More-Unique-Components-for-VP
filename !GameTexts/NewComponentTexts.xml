@@ -1584,7 +1584,7 @@
 			<Text>Pogost - Stage 3: Eastern Orthodox Church</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP">
-			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
+			<Text> -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_GOLD] Poverty. +10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
 			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City.</Text>
@@ -2256,7 +2256,7 @@
 			<Text>Waag</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP">
-			<Text>Available earlier. Requires a Market in City.[NEWLINE]Reduces Enemy [ICON_SPY] Spy Stealing Rate by 20%. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_GOLD] Poverty. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold. +1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PRODUCTION] Production in this City for every Global Monopoly on Empire.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. Requires a Market in City.[NEWLINE]Reduces Enemy [ICON_SPY] Spy Stealing Rate by 20%. When you spend [ICON_GOLD] Gold to purchase Units or invest in Buildings in this City, 15% of the cost is converted into [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Caravansaries and Customs Houses in the City gain +3 [ICON_GOLD] Gold. +1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PRODUCTION] Production in this City for every Global Monopoly on Empire.[NEWLINE]Nearby [ICON_RES_GOLD] Gold: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SILVER] Silver: +1 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_GEMS] Gems: +2 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_NETHERLANDS_WAAG_STRATEGY">
 			<Text>The Waag is the Netherlands' unique replacement for the Bank. In addition to the normal bonuses of a Bank, the Waag comes earlier and provides bonuses to Defense and Production. The Waag's bonuses scale with the total number of global monopolies, both luxury and strategic that the Dutch control. Trade and conquer vigorously to leverage your Waag's potential strengths.</Text>
