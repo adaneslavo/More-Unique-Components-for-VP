@@ -3,7 +3,7 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
-v43: 
+v44: 
 	- Steam Mill ==> Updated Steam Mill to match HungryForFood's Steam Mill... Again
 	- Eagle ==> Now a Longswordsman replacement instead of Swordsman
 
