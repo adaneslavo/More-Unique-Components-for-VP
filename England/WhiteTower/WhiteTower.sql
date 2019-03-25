@@ -14,8 +14,8 @@ VALUES ('CIVILIZATION_ENGLAND', 'BUILDINGCLASS_FACTORY', 'BUILDING_STEAM_MILL');
 -- Buildings
 --------------------------------
 INSERT INTO Buildings 	
-		(Type,					BuildingClass, Cost, 		GoldMaintenance, 	PrereqTech, 		Help, 								Description, 					Civilopedia, 								Strategy, 								ArtDefineTag, SpecialistType, SpecialistCount,	TradeRouteTargetBonus, TradeRouteRecipientBonus, MinAreaSize, ConquestProb, HurryCostModifier, IconAtlas, 		PortraitIndex)		 	
-SELECT	'BUILDING_STEAM_MILL',	BuildingClass, Cost-250, 	6, 					'TECH_STEAM_POWER', 'TXT_KEY_BUILDING_STEAM_MILL_HELP', 'TXT_KEY_BUILDING_STEAM_MILL', 	'TXT_KEY_CIV5_BUILDINGS_STEAM_MILL_TEXT', 	'TXT_KEY_BUILDING_STEAM_MILL_STRATEGY', ArtDefineTag, SpecialistType, 2, 				3, 				3, 				MinAreaSize, ConquestProb, HurryCostModifier, 'COMMUNITY_ATLAS',	36
+		(Type,					BuildingClass, Cost, 		GoldMaintenance, 	PrereqTech, 		Help, 								Description, 					Civilopedia, 								Strategy, 								ArtDefineTag, SpecialistType, SpecialistCount,	TradeRouteTargetBonus, TradeRouteRecipientBonus, MinAreaSize, ConquestProb, HurryCostModifier, IconAtlas, 			PortraitIndex)		 	
+SELECT	'BUILDING_STEAM_MILL',	BuildingClass, Cost-250, 	6, 					'TECH_STEAM_POWER', 'TXT_KEY_BUILDING_STEAM_MILL_HELP', 'TXT_KEY_BUILDING_STEAM_MILL', 	'TXT_KEY_CIV5_BUILDINGS_STEAM_MILL_TEXT', 	'TXT_KEY_BUILDING_STEAM_MILL_STRATEGY', ArtDefineTag, SpecialistType, 2, 				TradeRouteTargetBonus, TradeRouteRecipientBonus, MinAreaSize, ConquestProb, HurryCostModifier, 'COMMUNITY_ATLAS',	36
 FROM Buildings WHERE Type = 'BUILDING_FACTORY';	
 --------------------------------
 -- Building_ImprovementYieldChanges

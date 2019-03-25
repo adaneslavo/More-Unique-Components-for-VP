@@ -4,6 +4,10 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v43: 
+	- Steam Mill ==> Updated Steam Mill to match HungryForFood's Steam Mill... Again
+	- Eagle ==> Now a Longswordsman replacement instead of Swordsman
+
+v43: 
 - compatibility:
 	- Steam Mill ==> Updated Steam Mill to match HungryForFood's Steam Mill, as used in his Victoria mod
 fixed:

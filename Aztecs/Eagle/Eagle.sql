@@ -6,7 +6,7 @@
 --------------------------------	
 INSERT INTO	Civilization_UnitClassOverrides
 			(CivilizationType, UnitClassType, UnitType)
-VALUES		('CIVILIZATION_AZTEC', 'UNITCLASS_SWORDSMAN', 'UNIT_AZTEC_EAGLE');
+VALUES		('CIVILIZATION_AZTEC', 'UNITCLASS_LONGSWORDSMAN', 'UNIT_AZTEC_EAGLE');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -18,28 +18,28 @@ VALUES		('CIVILIZATION_AZTEC', 'UNITCLASS_SWORDSMAN', 'UNIT_AZTEC_EAGLE');
 INSERT INTO Units
 			(Type,				Description,				Civilopedia,						Strategy,								Help,								Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, ObsoleteTech,		GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, UnitArtInfo, 			UnitFlagIconOffset, PortraitIndex,	IconAtlas,			UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
 SELECT		'UNIT_AZTEC_EAGLE', 'TXT_KEY_UNIT_AZTEC_EAGLE', 'TXT_KEY_UNIT_AZTEC_EAGLE_TEXT',	'TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY',	'TXT_KEY_UNIT_AZTEC_EAGLE_HELP',	Combat+1,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_GUNPOWDER', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_EAGLE', 	0,					0,				'UNIT_AZTEC_ATLAS', 'UNIT_AZTEC_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
-FROM Units WHERE Type = 'UNIT_SWORDSMAN';
+FROM Units WHERE Type = 'UNIT_LONGSWORDSMAN';
 --------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	
 			(UnitType, 			UnitAIType)
 SELECT		'UNIT_AZTEC_EAGLE', UnitAIType
-FROM Unit_AITypes WHERE UnitType = 'UNIT_SWORDSMAN';
+FROM Unit_AITypes WHERE UnitType = 'UNIT_LONGSWORDSMAN';
 --------------------------------	
 -- Unit_BuildingClassPurchaseRequireds
 --------------------------------		
 INSERT INTO Unit_BuildingClassPurchaseRequireds 	
 			(UnitType, 			BuildingClassType)
 SELECT		'UNIT_AZTEC_EAGLE', BuildingClassType
-FROM Unit_BuildingClassPurchaseRequireds WHERE UnitType = 'UNIT_SWORDSMAN';
+FROM Unit_BuildingClassPurchaseRequireds WHERE UnitType = 'UNIT_LONGSWORDSMAN';
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------		
 INSERT INTO Unit_ClassUpgrades 	
 			(UnitType, 			UnitClassType)
 SELECT		'UNIT_AZTEC_EAGLE', UnitClassType
-FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_SWORDSMAN';
+FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_LONGSWORDSMAN';
 --------------------------------	
 -- Unit_Flavors
 --------------------------------	
@@ -53,7 +53,7 @@ VALUES		('UNIT_AZTEC_EAGLE',	'FLAVOR_OFFENSE',	8),
 INSERT INTO		Unit_FreePromotions
 				(UnitType, 			PromotionType)
 SELECT			'UNIT_AZTEC_EAGLE', PromotionType
-FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SWORDSMAN';
+FROM Unit_FreePromotions WHERE UnitType = 'UNIT_LONGSWORDSMAN';
 
 INSERT INTO	Unit_FreePromotions
 			(UnitType,			PromotionType)
