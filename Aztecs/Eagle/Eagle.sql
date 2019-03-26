@@ -6,7 +6,7 @@
 --------------------------------	
 INSERT INTO	Civilization_UnitClassOverrides
 			(CivilizationType, UnitClassType, UnitType)
-VALUES		('CIVILIZATION_AZTEC', 'UNITCLASS_LONGSWORDSMAN', 'UNIT_AZTEC_EAGLE');
+VALUES		('CIVILIZATION_AZTEC', 'UNITCLASS_SWORDSMAN', 'UNIT_AZTEC_EAGLE');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -17,29 +17,29 @@ VALUES		('CIVILIZATION_AZTEC', 'UNITCLASS_LONGSWORDSMAN', 'UNIT_AZTEC_EAGLE');
 --------------------------------	
 INSERT INTO Units
 			(Type,				Description,				Civilopedia,						Strategy,								Help,								Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, ObsoleteTech,		GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, UnitArtInfo, 			UnitFlagIconOffset, PortraitIndex,	IconAtlas,			UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_AZTEC_EAGLE', 'TXT_KEY_UNIT_AZTEC_EAGLE', 'TXT_KEY_UNIT_AZTEC_EAGLE_TEXT',	'TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY',	'TXT_KEY_UNIT_AZTEC_EAGLE_HELP',	Combat+3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_GUNPOWDER', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_EAGLE', 	0,					0,				'UNIT_AZTEC_ATLAS', 'UNIT_AZTEC_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
-FROM Units WHERE Type = 'UNIT_LONGSWORDSMAN';
+SELECT		'UNIT_AZTEC_EAGLE', 'TXT_KEY_UNIT_AZTEC_EAGLE', 'TXT_KEY_UNIT_AZTEC_EAGLE_TEXT',	'TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY',	'TXT_KEY_UNIT_AZTEC_EAGLE_HELP',	Combat,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_GUNPOWDER', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_EAGLE', 	0,					0,				'UNIT_AZTEC_ATLAS', 'UNIT_AZTEC_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
+FROM Units WHERE Type = 'UNIT_SWORDSMAN';
 --------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	
 			(UnitType, 			UnitAIType)
 SELECT		'UNIT_AZTEC_EAGLE', UnitAIType
-FROM Unit_AITypes WHERE UnitType = 'UNIT_LONGSWORDSMAN';
+FROM Unit_AITypes WHERE UnitType = 'UNIT_SWORDSMAN';
 --------------------------------	
 -- Unit_BuildingClassPurchaseRequireds
 --------------------------------		
 INSERT INTO Unit_BuildingClassPurchaseRequireds 	
 			(UnitType, 			BuildingClassType)
 SELECT		'UNIT_AZTEC_EAGLE', BuildingClassType
-FROM Unit_BuildingClassPurchaseRequireds WHERE UnitType = 'UNIT_LONGSWORDSMAN';
+FROM Unit_BuildingClassPurchaseRequireds WHERE UnitType = 'UNIT_SWORDSMAN';
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------		
 INSERT INTO Unit_ClassUpgrades 	
 			(UnitType, 			UnitClassType)
 SELECT		'UNIT_AZTEC_EAGLE', UnitClassType
-FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_LONGSWORDSMAN';
+FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_SWORDSMAN';
 --------------------------------	
 -- Unit_Flavors
 --------------------------------	
@@ -53,12 +53,14 @@ VALUES		('UNIT_AZTEC_EAGLE',	'FLAVOR_OFFENSE',	8),
 INSERT INTO		Unit_FreePromotions
 				(UnitType, 			PromotionType)
 SELECT			'UNIT_AZTEC_EAGLE', PromotionType
-FROM Unit_FreePromotions WHERE UnitType = 'UNIT_LONGSWORDSMAN';
+FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SWORDSMAN';
 
 INSERT INTO	Unit_FreePromotions
 			(UnitType,			PromotionType)
 VALUES		('UNIT_AZTEC_EAGLE', 'PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR'),
-			('UNIT_AZTEC_EAGLE', 'PROMOTION_SENTRY');
+			('UNIT_AZTEC_EAGLE', 'PROMOTION_SENTRY'),
+			('UNIT_AZTEC_EAGLE', 'PROMOTION_HEAL_ON_KILL'),
+			('UNIT_AZTEC_JAGUAR', 'PROMOTION_CUAUHOCELOTL_1');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -69,7 +71,17 @@ VALUES		('UNIT_AZTEC_EAGLE', 'PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR'),
 --------------------------------	
 INSERT INTO UnitPromotions
 			(Type,										Description,									Help,													CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry)
-VALUES		('PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR_HELP',	1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR');
+VALUES		('PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR_HELP',	1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR'),
+		('PROMOTION_CUAUHOCELOTL_1',			'TXT_KEY_PROMOTION_CUAUHOCELOTL_1',		'TXT_KEY_PROMOTION_CUAUHOCELOTL_1_HELP',		1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_CUAUHOCELOTL_1'),
+		('PROMOTION_CUAUHOCELOTL_2',			'TXT_KEY_PROMOTION_CUAUHOCELOTL_2',		'TXT_KEY_PROMOTION_CUAUHOCELOTL_1_HELP',		1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_CUAUHOCELOTL_2'),
+		('PROMOTION_CUAUHOCELOTL_3',			'TXT_KEY_PROMOTION_CUAUHOCELOTL_3',		'TXT_KEY_PROMOTION_CUAUHOCELOTL_1_HELP',		1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_CUAUHOCELOTL_3'),
+		('PROMOTION_CUAUHOCELOTL_4',			'TXT_KEY_PROMOTION_CUAUHOCELOTL_4',		'TXT_KEY_PROMOTION_CUAUHOCELOTL_1_HELP',		1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_CUAUHOCELOTL_4'),
+		('PROMOTION_CUAUHOCELOTL_5',			'TXT_KEY_PROMOTION_CUAUHOCELOTL_5',		'TXT_KEY_PROMOTION_CUAUHOCELOTL_1_HELP',		1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_CUAUHOCELOTL_5'),
+		('PROMOTION_CUAUHOCELOTL_6',			'TXT_KEY_PROMOTION_CUAUHOCELOTL_6',		'TXT_KEY_PROMOTION_CUAUHOCELOTL_1_HELP',		1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_CUAUHOCELOTL_6'),
+		('PROMOTION_CUAUHOCELOTL_7',			'TXT_KEY_PROMOTION_CUAUHOCELOTL_7',		'TXT_KEY_PROMOTION_CUAUHOCELOTL_1_HELP',		1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_CUAUHOCELOTL_7'),
+		('PROMOTION_CUAUHOCELOTL_8',			'TXT_KEY_PROMOTION_CUAUHOCELOTL_8',		'TXT_KEY_PROMOTION_CUAUHOCELOTL_1_HELP',		1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_CUAUHOCELOTL_8'),
+		('PROMOTION_CUAUHOCELOTL_9',			'TXT_KEY_PROMOTION_CUAUHOCELOTL_9',		'TXT_KEY_PROMOTION_CUAUHOCELOTL_1_HELP',		1,					'AS2D_IF_LEVELUP',	36,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_CUAUHOCELOTL_9');
+		
 --==========================================================================================================================	
 
 --==========================================================================================================================
