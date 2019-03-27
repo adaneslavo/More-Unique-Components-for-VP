@@ -58,7 +58,7 @@ function OnCombatEndSpawnWorker(iAttackingPlayer, iAttackingUnit, iAttackerDamag
 			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_3, true)
 			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_2, false)
 		
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_true) then
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_1) then
 			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_2, true)
 			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_1, false)
 		end
