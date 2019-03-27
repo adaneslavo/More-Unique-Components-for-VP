@@ -9,7 +9,7 @@ local eUnitWorker = GameInfoTypes.UNIT_WORKER
 function OnCombatEndSpawnWorker(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP, iInterceptingPlayer, iInterceptingUnit, iInterceptorDamage, iPlotX, iPlotY)
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	
-	if not (pAttackingPlayer and (iDefenderFinalDamage >= iDefenderMaxHP) then return end
+	if not (pAttackingPlayer and (iDefenderFinalDamage >= iDefenderMaxHP)) then return end
 	
 	
 	local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
