@@ -22,45 +22,45 @@ function OnCombatEndSpawnWorker(iAttackingPlayer, iAttackingUnit, iAttackerDamag
 	if pAttackingUnit ~= nil and (pAttackingUnit:GetUnitType() == GameInfoTypes.UNIT_AZTEC_JAGUAR) then
 
 		if pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10) then
-			local eNewEagle:pAttackingPlayer:InitUnit(GameInfoTypes.UNIT_AZTEC_EAGLE, iPlotX, iPlotY, -1, DirectionTypes.NO_DIRECTION, false)
+			local eNewEagle = pAttackingPlayer:InitUnit(GameInfoTypes.UNIT_AZTEC_EAGLE, iPlotX, iPlotY, -1, DirectionTypes.NO_DIRECTION, false)
 			eNewEagle:Convert(pAttackingUnit, false, false)
-			eNewEagle:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10, 0)	
+			eNewEagle:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10, false)	
 		
 		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_9) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10, 1)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_9, 0)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_9, false)
 
 		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_8) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_9, 1)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_8, 0)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_9, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_8, false)
 
 		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_7) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_8, 1)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_7, 0)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_8, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_7, false)
 
 		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_6) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_7, 1)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_6, 0)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_7, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_6, false)
 		
 		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_5) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_6, 1)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_5, 0)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_6, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_5, false)
 		
 		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_4) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_5, 1)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_4, 0)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_5, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_4, false)
 		
 		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_3) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_4, 1)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_3, 0)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_4, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_3, false)
 		
 		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_2) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_3, 1)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_2, 0)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_3, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_2, false)
 		
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_1) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_2, 1)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_1, 0)
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_true) then
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_2, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_1, false)
 		end
 	end
 end
