@@ -24,7 +24,8 @@ function OnCombatEndSpawnWorker(iAttackingPlayer, iAttackingUnit, iAttackerDamag
 		if pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10) then
 			local eNewEagle = pAttackingPlayer:InitUnit(GameInfoTypes.UNIT_AZTEC_EAGLE, iPlotX, iPlotY, -1, DirectionTypes.NO_DIRECTION, false)
 			eNewEagle:Convert(pAttackingUnit, false, false)
-			eNewEagle:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10, false)	
+			eNewEagle:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10, false)
+			eNewEagle:SetHasPromotion(GameInfoTypes.PROMOTION_BARBARIAN_BONUS, false)
 		
 		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_9) then
 			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10, true)
