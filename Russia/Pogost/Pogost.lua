@@ -78,19 +78,17 @@ function OnCaptureAddStages(iPlayer, iCapital, iX, iY, iNewPlayer, iConquest1, i
 
 	if not (pNewPlayer and (pNewPlayer:GetCivilizationType() == eCivilizationRussia or pNewPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 
-	if
-		if pCity:IsHasBuilding(iBuilding1) then
-			if pTeam:GetTeamTechs():HasTech(iTech1) and not pCity:IsHasBuilding(iBuilding2) then
-				pCity:SetNumRealBuilding(iBuilding2, 1)
+	if pCity:IsHasBuilding(iBuilding1) then
+		if pTeam:GetTeamTechs():HasTech(iTech1) and not pCity:IsHasBuilding(iBuilding2) then
+			pCity:SetNumRealBuilding(iBuilding2, 1)
 				
-				NotificationLoad(2, pNewPlayer, pCity)
-			end
+			NotificationLoad(2, pNewPlayer, pCity)
+		end
 
-			if pTeam:GetTeamTechs():HasTech(iTech2) and not pCity:IsHasBuilding(iBuilding3) then
-				pCity:SetNumRealBuilding(iBuilding3, 1)
+		if pTeam:GetTeamTechs():HasTech(iTech2) and not pCity:IsHasBuilding(iBuilding3) then
+			pCity:SetNumRealBuilding(iBuilding3, 1)
 				
-				NotificationLoad(3, pNewPlayer, pCity)
-			end
+			NotificationLoad(3, pNewPlayer, pCity)
 		end
 	end
 end
