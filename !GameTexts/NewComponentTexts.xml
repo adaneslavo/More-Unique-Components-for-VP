@@ -550,7 +550,7 @@
 			<Text>Strong, front-line Unit of the Classical Era. Only the Aztecs may build it. Does not require [ICON_RES_IRON] Iron. 25% chance of converting any unit killed into a [ICON_WORKER] Worker. Starts with the [COLOR_POSITIVE_TEXT]Sentry[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Shock I[ENDCOLOR] Promotions.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_1">
-			<Text>Cuauhocelotl (0 kills)</Text>
+			<Text>Cuauhocelotl</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_2">
 			<Text>Cuauhocelotl (1 kill)</Text>
