@@ -4,8 +4,10 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v44: 
-	- Steam Mill ==> Updated Steam Mill to match HungryForFood's Steam Mill... Again
-	- Eagle ==> Now a Longswordsman replacement instead of Swordsman
+	- Steam Mill ==> Updated Steam Mill to match HungryForFood's Steam Mill... Again.
+	- Eagle ==> reduced worker conversion rate to 25%. gave Woodsman and 25HP heal. reduced CS to 15. 
+		==> Jaguars instantly upgrade to Eagles after 10 kills.
+	- Legions ==> Pilum is lost on upgrade.
 
 v43: 
 - compatibility:
