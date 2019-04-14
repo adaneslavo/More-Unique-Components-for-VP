@@ -50,6 +50,10 @@ function OnDemandTributeAddGoldAndHappiness(iPlayer, iCS)
 	end
 end
 
+function PositionCalculator(i1, i2)
+	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
+end
+
 if Game.IsCivEverActive(eCivilizationHuns) then
 	GameEvents.PlayerBullied.Add(OnDemandTributeAddGoldAndHappiness)
 end
