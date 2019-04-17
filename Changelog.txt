@@ -8,6 +8,9 @@ v44:
 	- Eagle ==> reduced worker conversion rate to 25%. gave Woodsman and 25HP heal. reduced CS to 15. 
 		==> Jaguars instantly upgrade to Eagles after 10 kills.
 	- Legions ==> Pilum is lost on upgrade.
+fixed:
+	- Sambadrome ==> reduced Culture modifier to the intended 10%
+	- Six Horns Council ==> fixed lua error that disabled text notification
 
 v43: 
 - compatibility:
