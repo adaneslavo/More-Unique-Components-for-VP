@@ -4,10 +4,16 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v44: 
+- compatibility:
+	- UnhappinessFromXSpecialists ==> Added no urbanization unhappiness from X specialists to Baan Chang, Pairidaeza, Riad, Steam Mill, and Japanese Guilds
+	- Polder ==> Removed ability to build on Marsh (can now do that in base VP)
+	- Removed unnecessary settings ==> Event_plot and Event_espionage no longer used with addition of Marsh Polder and White Tower to VP 
+- tweaked/modified:	
+	- Pogost ==> Added no urbanization unhappiness from 1 specialist to Stage 2
 	- Steam Mill ==> Updated Steam Mill to match HungryForFood's Steam Mill... Again.
 	- Eagle ==> reduced worker conversion rate to 25%. gave Woodsman and 25HP heal. reduced CS to 15. 
 		==> Jaguars instantly upgrade to Eagles after 10 kills.
-	- Legions ==> Pilum is lost on upgrade.
+	- Legions ==> Pilum now is lost on upgrade.
 fixed:
 	- Sambadrome ==> reduced Culture modifier to the intended 10%
 	- Six Horns Council ==> fixed lua error that disabled text notification

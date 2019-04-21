@@ -342,11 +342,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Netherlands/Polder/Polder.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Maya/Holkan/Holkan.sql</FileName>
       </Action>
       <Action>
@@ -858,12 +853,6 @@ Latest changes: see changelog file.</Description>
         <Name>Ballista</Name>
         <Description>Adds Legatus Legionis promotion</Description>
         <FileName>Rome/Ballista/Ballista.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>Polder</Name>
-        <Description>Allows building Polder on Marsh.</Description>
-        <FileName>Netherlands/Polder/Polder.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -3758,14 +3747,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Netherlands\Polder\Polder.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Netherlands\Polder\Polder.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Ottomans\GreatTurkishBombard\GreatTurkishBombard.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -5282,7 +5263,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Polynesia\Kamehameha" />
     <Folder Include="Spain" />
     <Folder Include="Polynesia\FaleTele" />
-    <Folder Include="Netherlands\Polder" />
     <Folder Include="Shoshone" />
     <Folder Include="Polynesia" />
     <Folder Include="Polynesia\Koa" />

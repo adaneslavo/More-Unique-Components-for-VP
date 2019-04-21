@@ -33,12 +33,6 @@ UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_BATTLES';
 -- Holkan's Goody Huts Bonus
 UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_GOODY_CHOICE';
 
--- Dutch Worker
-UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_PLOT';
-
--- English espionage
-UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_ESPIONAGE';
-
 -- Hippodrome resistance
 UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_NEW_ERA';
 

@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_MOROCCO',	'BUILDINGCLASS_GARDEN', 'BUILDING_MAROCCO_RIAD'
 -- Buildings
 ------------------------------	
 INSERT INTO	Buildings
-			(Type,						Description,						Civilopedia,							Strategy,									Help,									GoldMaintenance,	Cost, ResourceDiversityModifier, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	GreatPeopleRateModifier)
-SELECT		'BUILDING_MAROCCO_RIAD',	'TXT_KEY_BUILDING_MAROCCO_RIAD',	'TXT_KEY_BUILDING_MAROCCO_RIAD_TEXT',	'TXT_KEY_BUILDING_MAROCCO_RIAD_STRATEGY',	'TXT_KEY_BUILDING_MAROCCO_RIAD_HELP',	0,					Cost, ResourceDiversityModifier, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_MAROCCO_ATLAS',	GreatWorkYieldType,	GreatPeopleRateModifier
+			(Type,						Description,						Civilopedia,							Strategy,									Help,									GoldMaintenance,	Cost, NoUnhappfromXSpecialists, ResourceDiversityModifier, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	GreatPeopleRateModifier)
+SELECT		'BUILDING_MAROCCO_RIAD',	'TXT_KEY_BUILDING_MAROCCO_RIAD',	'TXT_KEY_BUILDING_MAROCCO_RIAD_TEXT',	'TXT_KEY_BUILDING_MAROCCO_RIAD_STRATEGY',	'TXT_KEY_BUILDING_MAROCCO_RIAD_HELP',	0,					Cost, NoUnhappfromXSpecialists, ResourceDiversityModifier, HurryCostModifier, MinAreaSize, ConquestProb,	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_MAROCCO_ATLAS',	GreatWorkYieldType,	GreatPeopleRateModifier
 FROM Buildings WHERE Type = 'BUILDING_GARDEN';
 --------------------------------
 -- Building_ClassesNeededInCity

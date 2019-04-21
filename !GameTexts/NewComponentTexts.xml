@@ -110,7 +110,7 @@
 			<Text>Elephant Camp</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP">
-			<Text>+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_CULTURE] Culture to Lumber Mills and Logging Camps near this City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 25 [ICON_PRODUCTION] Production when completed, scaling with Era.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.[NEWLINE]Nearby [ICON_RES_IVORY] Ivory: +1 [ICON_PEACE] Faith.</Text>
+			<Text>+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_CULTURE] Culture to Lumber Mills and Logging Camps near this City.[NEWLINE][NEWLINE]Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 25 [ICON_PRODUCTION] Production when completed, scaling with Era. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.[NEWLINE]Nearby [ICON_RES_IVORY] Ivory: +1 [ICON_PEACE] Faith.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY">
 			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills and logging camps, and gives Faith from Ivory. [NEWLINE][NEWLINE]City-State gifts, both Strategic Resources and Units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
@@ -1032,7 +1032,7 @@
 			<Text>The Monogatari Guild is the unique Japanese replacement for the Writers' Guild. It generates Great Writers more quickly than the Writers' Guild, gives Gold for Writer specialists in the City, and provides Production for every Kabuki Theater in the Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI_HELP">
-			<Text>Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. +2 [ICON_GOLD] Gold to Writer specialists in this city. +1 [ICON_PRODUCTION] Production to all Kabuki Theaters on Empire.</Text>
+			<Text>Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold to Writer specialists in this city. +1 [ICON_PRODUCTION] Production to all Kabuki Theaters on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE">
 			<Text>Ukiyo-e Guild</Text>
@@ -1044,7 +1044,7 @@
 			<Text>The Ukiyo-e Guild is the unique Japanese replacement for the Artists' Guild. It generates Great Artists more quickly than the Artists' Guild, gives Science for Artist specialists in the City, and provides Tourism for every Kabuki Theater in the Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE_HELP">
-			<Text>Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. +2 [ICON_RESEARCH] Science to Artist specialists in this city. +1 [ICON_TOURISM] Tourism to all Kabuki Theaters on Empire.</Text>
+			<Text>Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science to Artist specialists in this city. +1 [ICON_TOURISM] Tourism to all Kabuki Theaters on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU">
 			<Text>Gagaku Guild</Text>
@@ -1056,7 +1056,7 @@
 			<Text>The Gagaku Guild is the unique Japanese replacement for the Musicians' Guild. It generates Great Musicians more quickly than the Musicians' Guild, gives Faith for Musician and Civil Servant specialists in the City, and provides Culture for every Kabuki Theater in the Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU_HELP">
-			<Text>Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. +2 [ICON_PEACE] Faith to Musician and Civil Servant specialists in this city. +1 [ICON_CULTURE] Culture to all Kabuki Theaters on Empire.</Text>
+			<Text>Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith to Musician and Civil Servant specialists in this city. +1 [ICON_CULTURE] Culture to all Kabuki Theaters on Empire.</Text>
 		</Row>
 		
 		<!-- Kampong -->
@@ -1517,7 +1517,7 @@
 			<Text>Pairidaeza</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>Available earlier. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. +15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
 			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, each the Pairidaeza increases Gold production during Golden Ages. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
@@ -1620,7 +1620,7 @@
 			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
-			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City.</Text>
+			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_3_HELP">
 			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +2 [ICON_PEACE] Faith to Shrines, Temples and Monasteries.</Text>
@@ -1787,7 +1787,7 @@
 			<Text>The Riad is the Moroccan unique replacement for the Garden. Gold purchases in this city are slightly cheaper. Gold generation in the city is converted into [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden. Unlike other buildings, the Riad's base yields increase with each Era.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_HELP">
-			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. 15% of [ICON_GOLD] Gold in the City is converted into [ICON_GREAT_PEOPLE] Great Merchant Points.[NEWLINE][NEWLINE]Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 50 [ICON_GOLD] Gold when completed, scaling with Era. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 5%.[NEWLINE][NEWLINE]Gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism every Era[NEWLINE]Nearby Oases: +3 [ICON_GOLD] Gold, +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. 15% of [ICON_GOLD] Gold in the City is converted into [ICON_GREAT_PEOPLE] Great Merchant Points.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 50 [ICON_GOLD] Gold when completed, scaling with Era. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 5%.[NEWLINE][NEWLINE]Gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism every Era[NEWLINE]Nearby Oases: +3 [ICON_GOLD] Gold, +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
@@ -2134,7 +2134,7 @@
 			<Text>Stationary steam engines are fixed steam engines used for pumping or driving mills and factories, and for power generation. They are distinct from locomotive engines used on railways, traction engines for heavy steam haulage on roads, steam cars (and other motor vehicles), agricultural engines used for ploughing or threshing, marine engines, and the steam turbines used as the mechanism of power generation for most nuclear power plants. They were introduced during the 18th century and widely made for the whole of the 19th century and most of the first half of the 20th century, only declining as electricity supply and the internal combustion engine became more widespread.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_STEAM_MILL_HELP">
-			<Text>+1 [ICON_PRODUCTION] Production for every 2 [ICON_CITIZEN] Citizens in the City. Manufactories worked by the City gain +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 50 [ICON_PRODUCTION] Production when completed, scaling with Era.[NEWLINE][NEWLINE]Gain 10% of the progress towards the next [ICON_GREAT_ENGINEER] Great Engineer in the City when constructing buildings which are Industrial Era or later.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production to Engineer Specialists.[NEWLINE][NEWLINE]Nearby [ICON_RES_COAL] Coal: +3 [ICON_PRODUCTION] Production.</Text>
+			<Text>+1 [ICON_PRODUCTION] Production for every 2 [ICON_CITIZEN] Citizens in the City. Manufactories worked by the City gain +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 50 [ICON_PRODUCTION] Production when completed, scaling with Era. 2 Specialists in this City no longer produce [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]Gain 10% of the progress towards the next [ICON_GREAT_ENGINEER] Great Engineer in the City when constructing buildings which are Industrial Era or later.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production to Engineer Specialists.[NEWLINE][NEWLINE]Nearby [ICON_RES_COAL] Coal: +3 [ICON_PRODUCTION] Production.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_STEAM_MILL_STRATEGY">
 			<Text>Unique English replacement for the Factory. The Steam Mill is cheaper, requires no [ICON_RES_COAL] Coal, is available earlier than the Factory, and provides additional Production to [ICON_RES_COAL] Coal worked by the City. The Steam Mill also provides [ICON_GREAT_ENGINEER] Great Engineer points when constructing buildings, while increasing the [ICON_PRODUCTION] Production of engineer specialists. Since Steam Mills do not require Coal, you can use your Coal surplus to build Seaports and ironclads, or you can trade it away for a large amount of gold.</Text>

@@ -19,20 +19,20 @@ FROM		Buildings
 WHERE		Type = 'BUILDING_OPERA_HOUSE';
 
 INSERT INTO	Buildings
-		(Type, 					Description, 					Civilopedia, 					Strategy, 								Help, 									GreatPeopleRateChange,   SpecialistCount, SpecialistType, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, 	IconAtlas, NeverCapture)
-SELECT	'BUILDING_JAPAN_MONOGATARI', 'TXT_KEY_BUILDING_JAPAN_MONOGATARI', 	'TXT_KEY_BUILDING_JAPAN_MONOGATARI_TEXT',  'TXT_KEY_BUILDING_JAPAN_MONOGATARI_STRATEGY', 'TXT_KEY_BUILDING_JAPAN_MONOGATARI_HELP', 	GreatPeopleRateChange+2, SpecialistCount, SpecialistType, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 0, 				'JAPGUILDS_ATLAS', NeverCapture
+		(Type, 					Description, 					Civilopedia, 					Strategy, 								Help, 									GreatPeopleRateChange,   SpecialistCount, SpecialistType, NoUnhappfromXSpecialists, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, 	IconAtlas, NeverCapture)
+SELECT	'BUILDING_JAPAN_MONOGATARI', 'TXT_KEY_BUILDING_JAPAN_MONOGATARI', 	'TXT_KEY_BUILDING_JAPAN_MONOGATARI_TEXT',  'TXT_KEY_BUILDING_JAPAN_MONOGATARI_STRATEGY', 'TXT_KEY_BUILDING_JAPAN_MONOGATARI_HELP', 	GreatPeopleRateChange+2, SpecialistCount, SpecialistType, NoUnhappfromXSpecialists, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 0, 				'JAPGUILDS_ATLAS', NeverCapture
 FROM	Buildings
 WHERE	Type = 'BUILDING_WRITERS_GUILD';
 
 INSERT INTO	Buildings
-		(Type, 				Description, 				Civilopedia, 				Strategy, 							Help, 								GreatPeopleRateChange,   SpecialistCount, SpecialistType, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, 	IconAtlas, NeverCapture)
-SELECT	'BUILDING_JAPAN_UKIYOE', 'TXT_KEY_BUILDING_JAPAN_UKIYOE', 	'TXT_KEY_BUILDING_JAPAN_UKIYOE_TEXT',  'TXT_KEY_BUILDING_JAPAN_UKIYOE_STRATEGY', 'TXT_KEY_BUILDING_JAPAN_UKIYOE_HELP', 	GreatPeopleRateChange+2, SpecialistCount, SpecialistType, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 1, 				'JAPGUILDS_ATLAS', NeverCapture
+		(Type, 						Description, 						Civilopedia, 							Strategy, 								Help, 								GreatPeopleRateChange,   SpecialistCount, SpecialistType, NoUnhappfromXSpecialists, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, 	IconAtlas, NeverCapture)
+SELECT	'BUILDING_JAPAN_UKIYOE', 	'TXT_KEY_BUILDING_JAPAN_UKIYOE', 	'TXT_KEY_BUILDING_JAPAN_UKIYOE_TEXT',  'TXT_KEY_BUILDING_JAPAN_UKIYOE_STRATEGY', 'TXT_KEY_BUILDING_JAPAN_UKIYOE_HELP', 	GreatPeopleRateChange+2, SpecialistCount, SpecialistType, NoUnhappfromXSpecialists, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 1, 				'JAPGUILDS_ATLAS', NeverCapture
 FROM	Buildings
 WHERE	Type = 'BUILDING_ARTISTS_GUILD';
 
 INSERT INTO	Buildings
-		(Type, 				Description, 				Civilopedia, 				Strategy, 							Help, 								GreatPeopleRateChange,   SpecialistCount, SpecialistType, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, 	IconAtlas, NeverCapture)
-SELECT	'BUILDING_JAPAN_GAGAKU', 'TXT_KEY_BUILDING_JAPAN_GAGAKU', 	'TXT_KEY_BUILDING_JAPAN_GAGAKU_TEXT',  'TXT_KEY_BUILDING_JAPAN_GAGAKU_STRATEGY', 'TXT_KEY_BUILDING_JAPAN_GAGAKU_HELP', 	GreatPeopleRateChange+2, SpecialistCount, SpecialistType, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 2, 				'JAPGUILDS_ATLAS', NeverCapture
+		(Type, 				Description, 				Civilopedia, 				Strategy, 							Help, 								GreatPeopleRateChange,   SpecialistCount, SpecialistType, NoUnhappfromXSpecialists, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, 	IconAtlas, NeverCapture)
+SELECT	'BUILDING_JAPAN_GAGAKU', 'TXT_KEY_BUILDING_JAPAN_GAGAKU', 	'TXT_KEY_BUILDING_JAPAN_GAGAKU_TEXT',  'TXT_KEY_BUILDING_JAPAN_GAGAKU_STRATEGY', 'TXT_KEY_BUILDING_JAPAN_GAGAKU_HELP', 	GreatPeopleRateChange+2, SpecialistCount, SpecialistType, NoUnhappfromXSpecialists, GoldMaintenance, Cost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 2, 				'JAPGUILDS_ATLAS', NeverCapture
 FROM	Buildings
 WHERE	Type = 'BUILDING_MUSICIANS_GUILD';
 
