@@ -15,7 +15,7 @@ v44:
 		==> Jaguars instantly upgrade to Eagles after 10 kills.
 	- Legions ==> Pilum now is lost on upgrade.
 fixed:
-	- Sambadrome ==> reduced Culture modifier to the intended 10%
+	- Sambadrome ==> reduced Culture modifier to the intended 10%, and Tech Tourism to the intended +3 at Radio
 	- Six Horns Council ==> fixed lua error that disabled text notification
 
 v43: 
