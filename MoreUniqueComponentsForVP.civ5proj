@@ -652,14 +652,14 @@ Latest changes: see changelog file.</Description>
       <Association>
         <Type>Mod</Type>
         <Name>(1) Community Patch - Core</Name>
-        <Id>eead0050-1e3f-4178-a91f-26cf1881ac39</Id>
+        <Id>d1b6328c-ff44-4b0d-aad7-c657f83610cd</Id>
         <MinVersion>89</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
       <Association>
         <Type>Mod</Type>
         <Name>(2) Community Balance Patch</Name>
-        <Id>d1b6328c-ff44-4b0d-aad7-c657f83610cd</Id>
+        <Id>8411a7a8-dad3-4622-a18e-fcc18324c799</Id>
         <MinVersion>13</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
@@ -681,7 +681,7 @@ Latest changes: see changelog file.</Description>
         <Type>Mod</Type>
         <Name>(5) More Luxuries - CBO Edition</Name>
         <Id>be2d13ee-d18d-410e-8f04-7cd19cd99a98</Id>
-        <MinVersion>155</MinVersion>
+        <MinVersion>100</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
     </ModDependencies>
