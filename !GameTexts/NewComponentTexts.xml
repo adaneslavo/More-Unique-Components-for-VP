@@ -138,7 +138,7 @@
 			<Text>Unique Swedish replacement for the Baths. In addition to the bonuses of the Baths, the Bastu provides bonuses for lakes and tundra. Science and Culture is generated whenever a citizen is born, and extra Food is generated during Golden Ages. Unlike the Baths, the Bastu does not require a river,</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SWEDEN_BASTU_HELP">
-			<Text>+1 [ICON_RESEARCH] Science to Lake and Tundra Tiles. Gain 15% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture to Temples, Amphitheaters and Gardens in this City. +10% [ICON_CULTURE] Culture and [ICON_FOOD] Food in the City during [ICON_GOLDEN_AGE]Golden Ages.[NEWLINE][NEWLINE]Does not require a River, or any prerequisite Buildings.</Text>
+			<Text>+1 [ICON_RESEARCH] Science to Lake Tiles and +1 [ICON_RESEARCH] Science for every 2 Tundra Tiles worked. Gain 25% of the [ICON_RESEARCH] Science and 15% of the [ICON_CULTURE] Culture output of the City as an instant boost when a [ICON_CITIZEN] Citizen is born in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture to Temples, Amphitheaters and Gardens in this City. +10% [ICON_CULTURE] Culture and [ICON_FOOD] Food in the City during [ICON_GOLDEN_AGE]Golden Ages.[NEWLINE][NEWLINE]Does not require a River.</Text>
 		</Row>
 		
 		<!-- Black Tug -->
