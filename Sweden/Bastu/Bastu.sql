@@ -51,13 +51,9 @@ VALUES		('BUILDING_SWEDEN_BASTU',	'YIELD_CULTURE',	3),
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------		
 INSERT INTO Building_BuildingClassLocalYieldChanges
-			(BuildingType, 				BuildingClassType, 				YieldType, 			YieldChange)
-VALUES		('BUILDING_SWEDEN_BASTU', 	'BUILDINGCLASS_AMPHITHEATER', 	'YIELD_GOLD', 		1),
-			('BUILDING_SWEDEN_BASTU', 	'BUILDINGCLASS_TEMPLE', 		'YIELD_GOLD', 		1),
-			('BUILDING_SWEDEN_BASTU', 	'BUILDINGCLASS_GARDEN', 		'YIELD_GOLD', 		1),
-			('BUILDING_SWEDEN_BASTU', 	'BUILDINGCLASS_AMPHITHEATER', 	'YIELD_CULTURE', 	1),
-			('BUILDING_SWEDEN_BASTU', 	'BUILDINGCLASS_TEMPLE', 		'YIELD_CULTURE', 	1),
-			('BUILDING_SWEDEN_BASTU', 	'BUILDINGCLASS_GARDEN', 		'YIELD_CULTURE', 	1);	
+			(BuildingType, BuildingClassType, YieldType, YieldChange)
+SELECT		'BUILDING_SWEDEN_BASTU', BuildingClassType, YieldType, YieldChange
+FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_BATH';
 ------------------------------	
 -- Building_GoldenAgeYieldMod
 ------------------------------		
@@ -70,8 +66,8 @@ VALUES		('BUILDING_SWEDEN_BASTU', 	'YIELD_FOOD', 		10),
 ------------------------------	
 INSERT INTO Building_GrowthExtraYield
 			(BuildingType, 				YieldType,		 Yield)
-VALUES		('BUILDING_SWEDEN_BASTU', 	'YIELD_CULTURE', 100),
-			('BUILDING_SWEDEN_BASTU', 	'YIELD_SCIENCE', 100);
+VALUES		('BUILDING_SWEDEN_BASTU', 	'YIELD_CULTURE', 25),
+			('BUILDING_SWEDEN_BASTU', 	'YIELD_SCIENCE', 25);
 ------------------------------	
 -- Building_LakePlotYieldChanges
 ------------------------------
@@ -81,9 +77,9 @@ VALUES		('BUILDING_SWEDEN_BASTU', 	'YIELD_SCIENCE', 	1);
 ------------------------------	
 -- Building_TerrainYieldChanges
 ------------------------------	
-INSERT INTO Building_TerrainYieldChanges
+INSERT INTO Building_YieldPerXTerrainTimes100
 			(BuildingType, 				TerrainType, 		YieldType, 			Yield)
-VALUES		('BUILDING_SWEDEN_BASTU', 	'TERRAIN_TUNDRA', 	'YIELD_SCIENCE', 	1);
+VALUES		('BUILDING_SWEDEN_BASTU', 	'TERRAIN_TUNDRA', 	'YIELD_SCIENCE', 	50);
 ------------------------------	
 -- Building_ClassesNeededInCity
 ------------------------------		
