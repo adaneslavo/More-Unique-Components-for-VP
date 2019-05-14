@@ -51,9 +51,9 @@ VALUES		('BUILDING_SWEDEN_BASTU',	'YIELD_CULTURE',	3),
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------		
 INSERT INTO Building_BuildingClassLocalYieldChanges
-			(BuildingType, BuildingClassType, YieldType, YieldChange)
-SELECT		'BUILDING_SWEDEN_BASTU', BuildingClassType, YieldType, YieldChange
-FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_BATH';
+			(BuildingType,				BuildingClassType, YieldType, YieldChange)
+SELECT		'BUILDING_SWEDEN_BASTU',	BuildingClassType, YieldType, YieldChange
+FROM Building_BuildingClassLocalYieldChanges WHERE BuildingType = 'BUILDING_BATH';
 ------------------------------	
 -- Building_GoldenAgeYieldMod
 ------------------------------		
