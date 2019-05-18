@@ -2035,16 +2035,16 @@
 		<!-- Slaganz -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ">
-			<Text>Slaganz</Text>
+			<Text>Ulfhedinn</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_TEXT">
 			<Text>
-				The strength and ferocity of the tribal Germanic warriors was legendary among Roman writers and soldiers alike. Germanic tribesmen stood an average of 6 inches taller than a Latini, but were often overmatched by the Roman Legions' superior equipment, organization, and training. German fortunes would change, however, under the leadership of Arminius.[NEWLINE][NEWLINE] 
-				A Cherusci commander who had spent time training under the Romans, Arminius organized a coalition of five German tribes to strike back at the Roman invaders under Publius Varus. The Germans falsified reports of a northern Germanic uprising and laid an ambush for Varus deep in the Teutoburg Forest. Using their superior numbers, heavy rain, and Arminius' knowledge of Roman tactics, the Roman’s defeat at Teutoburg Forest was utterly thorough, destroying three legions. It is estimated that 20 000 in total were killed or enslaved by the Germans. This single event halted the expansion of Pax Romana, and would be remembered as Rome’s greatest humiliation.
+				The strength and ferocity of the tribal Germanic warriors was legendary among Roman writers and soldiers alike. Of particular note were the Ulfhedinn, Odin's sacred warriors who clothed themselves in wolf pelts and imitated wolves while fighting. Germanic tribesmen stood an average of 6 inches taller than a Latini, but were often overmatched by the Legions' superior equipment, organization, and training. German fortunes would change, however, under the leadership of Arminius.[NEWLINE][NEWLINE] 
+				A Cherusci commander who had spent time training under the Romans, Arminius organized a coalition of five German tribes to strike back at the Roman invaders under Publius Varus. The Germans falsified reports of a northern Germanic uprising and laid an ambush for Varus deep in the Teutoburg Forest. Using their superior numbers, heavy rain, and Arminius' knowledge of Roman tactics, the Roman’s defeat at Teutoburg Forest was thorough, with 20 000 dead or enslaved after the German onslaught. Rome's total defeat at Teutoberg halted their expansion permanently, and would be remembered as Rome’s greatest humiliation.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_STRATEGY">
-			<Text>The Slaganz is the unique Warrior replacement which only the Germans can train. It is much cheaper than the Warrior and gains an attack bonus against Barbarian Units. When a barbarian unit is defeated, the Slaganz has a chance to convert the unit to your side. Converting barbarian units also increases your influence with the nearest city-state. Use Slaganz to hunt down barbarians and form a strong coalition of early city-state allies.</Text>
+			<Text>The Ulfhedinn is the unique Warrior replacement which only the Germans can train. It is much cheaper than the Warrior and gains an attack bonus against Barbarian Units. When a barbarian unit is defeated, the Ulfhedinn has a chance to convert the unit to your side. Converting barbarian units also increases your influence with the nearest city-state. Use Slaganz to hunt down barbarians and form a strong coalition of early city-state allies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_HELP">
 			<Text>Cheap early-game warrior. Only Germany may build it. Much stronger against Barbarians, and has a chance of converting defeated Barbarian Units. Starts with [COLOR_POSITIVE_TEXT]Barbarian Alliance[ENDCOLOR] Promotion, allowing him to create faster Alliances with City-States.</Text>
@@ -2056,7 +2056,7 @@
 			<Text>+50% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Barbarians[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE">
-			<Text>Barbarian Alliance</Text>
+			<Text>Druhtiz</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE_HELP">
 			<Text>Unit [COLOR_POSITIVE_TEXT]can convert Barbarian Unit[ENDCOLOR] to your side [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. +5 [ICON_INFLUENCE] Influence to the nearest City-State [COLOR_POSITIVE_TEXT]on Conversion[ENDCOLOR].</Text>
