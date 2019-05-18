@@ -19,12 +19,12 @@ function YorkscherMarsch(iPlayer)
 					local pOwner = Players[iOwner]
 
 					if pOwner == pPlayer then
-						pPlayer:ChangeJONSCulture(1)
+						pPlayer:ChangeJONSCulture(2)
 
 						if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 							local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
 			
-							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+1 [ICON_CULTURE] Regimentsmarsche[ENDCOLOR]", 1)
+							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+2 [ICON_CULTURE] Regimentsmarsche[ENDCOLOR]", 1)
 						end
 					end
 				end
