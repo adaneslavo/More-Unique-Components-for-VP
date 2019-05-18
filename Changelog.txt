@@ -5,6 +5,7 @@
 More Unique Components for Vox Populi changelog:
 v45: 
 - tweaked/modified:	
+	- Slaganz ==> Now named Ulfhedinn. Barbarian Alliance renamed to Druhtiz 
 	- Holkan ==> increased CS to 7
 	- Bastu ==> Increased yield from birth to 25%. Yields from Tundra now 1 per 2 tiles
 	- Landwehr ==> Regimentsmarsche culture increased to 2
