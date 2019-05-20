@@ -90,7 +90,7 @@ VALUES
 --------------------------------
 INSERT INTO Building_YieldChanges
 			(BuildingType, 				YieldType, 			Yield)
-SELECT		('BUILDING_JAPAN_KABUKI', 	'YIELD_CULTURE', 	5);
+VALUES		('BUILDING_JAPAN_KABUKI', 	'YIELD_CULTURE', 	5);
 --------------------------------
 -- Building_YieldChanges
 --------------------------------
