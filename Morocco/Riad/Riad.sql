@@ -49,13 +49,6 @@ INSERT INTO Building_FeatureYieldChanges
 VALUES		('BUILDING_MAROCCO_RIAD',	'FEATURE_OASIS',	'YIELD_GOLD',	3),
 			('BUILDING_MAROCCO_RIAD',	'FEATURE_OASIS',	'YIELD_FOOD',	1);
 --------------------------------
--- Building_YieldFromInternalTREnd
---------------------------------
-INSERT INTO Building_YieldFromInternalTREnd
-	(BuildingType, YieldType, Yield)
-VALUES
-	('BUILDING_MAROCCO_RIAD', 'YIELD_GOLD', 50);
---------------------------------
 -- Building_HurryModifiersLocal
 --------------------------------
 INSERT INTO Building_HurryModifiersLocal
