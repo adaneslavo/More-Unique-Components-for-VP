@@ -1017,10 +1017,10 @@
 			<Text>Kabuki is a classical Japanese dance-drama known for the stylization of its drama and for the elaborate make-up worn by some of its performers. The art form was created in 1603 when Izumo no Okuni, a miko of Izumo-taisha, began performing a new style of dance drama in the dry riverbeds of Kyoto. Despite many the upheaval of Japans modernization, Kabuki remains the most popular of the traditional styles of Japanese drama, and has helped renew interest in other forms of traditional Japanese art.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_KABUKI_STRATEGY">
-			<Text>The Kabuki is the unique Japanese replacement for the Opera House. On construction, All guilds in the city are replaced with a unique Japanese guild.</Text>
+			<Text>The Kabuki is the unique Japanese replacement for the Opera House. On construction, Any guilds in the city are replaced with unique Japanese guilds.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_KABUKI_HELP">
-			<Text>Does not require an Amphitheater in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate. All Musicians' Guilds produce +1 [ICON_GOLD] Gold. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 50 [ICON_CULTURE] Culture when completed, scaling with Era.[NEWLINE][NEWLINE]All Writers', Artists' and Musicians' Guilds in this City are replaced with powerful unique Guild equivalents.</Text>
+			<Text>Does not require an Amphitheater in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate. All Musicians' Guilds produce +1 [ICON_GOLD] Gold. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 50 [ICON_CULTURE] Culture when completed, scaling with Era.[NEWLINE][NEWLINE]Writers', Artists' and Musicians' Guilds in this City are replaced with unique Guilds of the same type.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI">
 			<Text>Monogatari Guild</Text>
