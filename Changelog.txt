@@ -10,6 +10,9 @@ v45:
 	- Bastu ==> Increased yield from birth to 25%. Yields from Tundra now 1 per 2 tiles
 	- Landwehr ==> Regimentsmarsche culture increased to 2
 	- Schutzenstand ==> Lowered HP in city to 150 and increased supply from population to 25%
+	- Kabuki ==> removed yields on empire from unique guilds. Replaced with instant bulb effect on GWAM birth 
+	- Tophet ==> reduced faith yield to +2
+	- Shotelai ==> increased Shotel debuff effect to -2 movement (minimum of 0.16667)
 v44: 
 - compatibility:
 	- (Baan Chang, Pairidaeza, Riad, Steam Mill, and Japanese Guilds) ==> added no urbanization unhappiness from X specialists,
