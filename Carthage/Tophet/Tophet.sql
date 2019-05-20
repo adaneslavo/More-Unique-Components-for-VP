@@ -24,7 +24,7 @@ FROM Buildings WHERE Type = 'BUILDING_SHRINE';
 ------------------------------
 INSERT INTO Building_YieldChanges
 			(BuildingType,					YieldType,			Yield)
-VALUES		('BUILDING_CARTHAGE_TOPHET',	'YIELD_FAITH',		3),
+VALUES		('BUILDING_CARTHAGE_TOPHET',	'YIELD_FAITH',		2),
 			('BUILDING_CARTHAGE_TOPHET',	'YIELD_CULTURE',	1);
 ------------------------------	
 -- Building_Flavors

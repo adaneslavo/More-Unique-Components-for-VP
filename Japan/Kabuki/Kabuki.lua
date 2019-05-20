@@ -2,6 +2,8 @@
 -- Author: Pineappledan, adan_eslavo
 -- DateCreated: 10/02/2017
 --------------------------------------------------------------
+include("FLuaVector.lua")
+
 local eBuildingKabuki = GameInfoTypes.BUILDING_JAPAN_KABUKI
 local eBuildingWritersGuild = GameInfoTypes.BUILDING_WRITERS_GUILD
 local eBuildingArtistsGuild = GameInfoTypes.BUILDING_ARTISTS_GUILD
@@ -99,9 +101,76 @@ function NotificationLoad(iSet, pPlayer, pCity)
 	pPlayer:AddNotification(0, sText, sTitle, pCity:GetX(), pCity:GetY())
 end
 
+function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
+	local pPlayer = Players[iPlayer]
+
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationJapan) then return end
+
+	local pUnit = pPlayer:GetUnitByID(iUnit)
+	local pPlot = Map.GetPlot(iX, iY)
+	
+	if pUnit:GetUnitType() == GameInfoTypes.UNIT_WRITER then 
+		local iWriterBonus = math.floor(pUnit:GetGivePoliciesCulture()*0.10*pPlayer:CountNumBuildings(eBuildingMonogatari))
+		pPlayer:ChangeGold(iWriterBonus)
+		pPlayer:ChangeJONSCulture(iWriterBonus)
+		
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			local vUnitPosition = PositionCalculator(iX, iY)
+
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+"..iWriterBonus.."[ICON_CULTURE][ENDCOLOR]", 1)
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iWriterBonus.."[ICON_GOLD][ENDCOLOR]", 1.5)
+
+			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC,
+				'A Great Writer has emerged. The Monogatari guilds celebrate.',
+				'Yields from Monogatari Guilds',
+				iX, iY)
+		end
+	
+	elseif pUnit:GetUnitType() == GameInfoTypes.UNIT_ARTIST then 
+		local iArtistBonus = math.floor(pUnit:GetGAPAmount()*0.10*pPlayer:CountNumBuildings(eBuildingUkiyoe))
+		pPlayer:ChangeOverflowResearch(iArtistBonus)
+		pPlayer:ChangeGoldenAgeProgressMeter(iArtistBonus)
+
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			local vUnitPosition = PositionCalculator(iX, iY)
+
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+"..iArtistBonus.."[ICON_GOLDEN_AGE][ENDCOLOR]", 1)
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+"..iArtistBonus.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
+
+			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC,
+				'A Great Artist has emerged. The Ukiyo-e guilds celebrate.',
+				'Yields from Ukiyo-e Guilds',
+				iX, iY)
+		end
+
+	elseif pUnit:GetUnitType() == GameInfoTypes.UNIT_MUSICIAN then 
+		local iMusicianBonus = math.floor(pUnit:GetBlastTourism()*0.10*pPlayer:CountNumBuildings(eBuildingGagaku))
+		local iTourismEvent = GameInfoTypes['PLAYER_EVENT_CHOICE_GAGAKU_TOURISM']
+		pPlayer:ChangeFaith(iMusicianBonus)
+		pPlayer:DoEventChoice(iTourismEvent)
+		pPlayer:DoCancelEventChoice(iTourismEvent)
+
+		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			local vUnitPosition = PositionCalculator(iX, iY)
+
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+"..iMusicianBonus.."[ICON_PEACE][ENDCOLOR]", 1.5)
+
+			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC,
+				'A Great Musician has emerged. The Gagaku guilds celebrate.',
+				'Yields from Gagaku Guilds',
+				iX, iY)
+		end
+	end
+end
+
+function PositionCalculator(i1, i2)
+	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
+end
+
 if Game.IsCivEverActive(eCivilizationJapan) then
 	GameEvents.CityConstructed.Add(OnConstructionUpgradeGuilds)
 	GameEvents.CityConstructed.Add(OnConstructionUpgradeThatGuild)
+	GameEvents.UnitCreated.Add(JapGuildsExpendBonus)
 end
 
 
