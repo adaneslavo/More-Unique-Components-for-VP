@@ -53,8 +53,8 @@ SELECT		'BUILDING_RUSSIA_POGOST_3',	'BUILDINGCLASS_RUSSIA_POGOST_3',	10, 							
 FROM Buildings WHERE Type = 'BUILDING_MINT';
 
 INSERT INTO Buildings 	
-			(Type,						BuildingClass,						CityConnectionTradeRouteModifier,	GoldMaintenance, 	Cost,	FaithCost,	EnhancedYieldTech, NoUnhappfromXSpecialists, 	TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, 	ArtDefineTag, MinAreaSize, ConquestProb, 	HurryCostModifier,	Help,										Description,						IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_RUSSIA_POGOST_2',	'BUILDINGCLASS_RUSSIA_POGOST_2',	10,									0,					-1,		-1,			EnhancedYieldTech, 1, 							TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, 1, 			ArtDefineTag, MinAreaSize, 0, 				HurryCostModifier,	'TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP',	'TXT_KEY_BUILDING_RUSSIA_POGOST_2',	'BUILDING_RUSSIA2_ATLAS',	0
+			(Type,						BuildingClass,						CityConnectionTradeRouteModifier,	GoldMaintenance, 	Cost,	FaithCost,	EnhancedYieldTech, NoUnhappfromXSpecialists, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, 	ArtDefineTag, MinAreaSize, ConquestProb, 	HurryCostModifier,	Help,										Description,						IconAtlas,					PortraitIndex)
+SELECT		'BUILDING_RUSSIA_POGOST_2',	'BUILDINGCLASS_RUSSIA_POGOST_2',	10,									0,					-1,		-1,			EnhancedYieldTech, NoUnhappfromXSpecialists, TechEnhancedTourism, AllowsRangeStrike, Defense,	ExtraCityHitPoints, TrainedFreePromotion,	CitySupplyFlat,	DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, 1, 			ArtDefineTag, MinAreaSize, 0, 				HurryCostModifier,	'TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP',	'TXT_KEY_BUILDING_RUSSIA_POGOST_2',	'BUILDING_RUSSIA2_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_MINT';	
 ------------------------------	
 -- Building_Flavors
@@ -66,7 +66,7 @@ VALUES		('BUILDING_RUSSIA_POGOST_1',	'FLAVOR_GOLD',				120),
 			('BUILDING_RUSSIA_POGOST_1',	'FLAVOR_RELIGION',			20),
 			('BUILDING_RUSSIA_POGOST_3',	'FLAVOR_RELIGION',			50),
 			('BUILDING_RUSSIA_POGOST_2',	'FLAVOR_GOLD',				50),
-			('BUILDING_RUSSIA_POGOST_2',	'FLAVOR_SCIENCE',			5);
+			('BUILDING_RUSSIA_POGOST_2',	'FLAVOR_SCIENCE',			50);
 ------------------------------	
 -- Building_ClassesNeededInCity
 ------------------------------		
@@ -96,7 +96,11 @@ INSERT INTO Building_ImprovementYieldChanges
 VALUES		('BUILDING_RUSSIA_POGOST_1',	'IMPROVEMENT_TRADING_POST', 		'YIELD_GOLD',	1),
 			('BUILDING_RUSSIA_POGOST_1',	'IMPROVEMENT_CUSTOMS_HOUSE',		'YIELD_GOLD',	1),
 			('BUILDING_RUSSIA_POGOST_1',	'IMPROVEMENT_CUSTOMS_HOUSE_VENICE',	'YIELD_GOLD',	1),
-			('BUILDING_RUSSIA_POGOST_1',	'IMPROVEMENT_CELTS_OPPIDUM',		'YIELD_GOLD',	1);
+			('BUILDING_RUSSIA_POGOST_1',	'IMPROVEMENT_CELTS_OPPIDUM',		'YIELD_GOLD',	1),
+			('BUILDING_RUSSIA_POGOST_2',	'IMPROVEMENT_TRADING_POST', 		'YIELD_SCIENCE',	1),
+			('BUILDING_RUSSIA_POGOST_2',	'IMPROVEMENT_CUSTOMS_HOUSE',		'YIELD_SCIENCE',	1),
+			('BUILDING_RUSSIA_POGOST_2',	'IMPROVEMENT_CUSTOMS_HOUSE_VENICE',	'YIELD_SCIENCE',	1),
+			('BUILDING_RUSSIA_POGOST_2',	'IMPROVEMENT_CELTS_OPPIDUM',		'YIELD_SCIENCE',	1);
 ------------------------------	
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------
