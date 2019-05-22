@@ -1489,7 +1489,7 @@
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
 			<Text>
 				An Oppidum is a large defended settlement associated with the late La Tene culture. These fortified villages were often built in naturally protected areas and full of circular constructions. In times of conflict, the people who lived in open fields moved to these strategically located compounds to ensure their safety. Oppida could also have other purposes such as control of territory or safeguarding of crops. The most famous oppidum was Alesia, the site of the battle between Julius Caesar and Vercingetorix and the final defeat of the Gauls, ending of Gallic independence in France and Belgium.[NEWLINE][NEWLINE]
-				Oppidum improve the yields of adjacent, pre-industrial improvements:[NEWLINE]
+				Oppidum improve the yields of adjacent improvements:[NEWLINE]
 				[ICON_BULLET]+1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production to Farms[NEWLINE]
 				[ICON_BULLET]+1 [ICON_FOOD] Food and +1 [ICON_PEACE] Faith to Camps[NEWLINE]
 				[ICON_BULLET]+1 [ICON_PRODUCTION] Production and +1 [ICON_PEACE] Faith  to Pastures[NEWLINE]
@@ -1505,7 +1505,7 @@
 			<Text>Construct an [LINK=IMPROVEMENT_CELTS_OPPIDUM]Oppidum[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_HELP">
-			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and permanent +10 HP to a nearby city. Provides bonus yields to pre-Industrial non-road and non-great person Improvements.</Text>
+			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and permanent +10 HP to a nearby city. Provides bonus yields to most non-road and non-great person Improvements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_REC">
 			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +10 HP to a nearby City. Adjacent Improvements gain additional bonus yields.</Text>
@@ -1620,7 +1620,7 @@
 			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
-			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.</Text>
+			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_RESEARCH] Science to Villages and Towns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_3_HELP">
 			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +2 [ICON_PEACE] Faith to Shrines, Temples and Monasteries.</Text>
@@ -2011,7 +2011,7 @@
 			<Text>Maimed</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT_HELP">
-			<Text>-1 [ICON_ARROW_RIGHT] movement.</Text>
+			<Text>-2 [ICON_ARROW_RIGHT] Movement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON">
 			<Text>Hooked Weapon</Text>
@@ -2023,7 +2023,7 @@
 			<Text>Shotelai</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_HELP">
-			<Text>Front-line Medieval Era land Unit. Only Ethiopia may build it. It is stronger against Mounted Units, unlike the Longswordsman it replaces. Enemies attacked by this Unit have -1 [ICON_MOVES] Movement Point on their next turn.</Text>
+			<Text>Front-line Medieval Era land Unit. Only Ethiopia may build it. It is stronger against Mounted Units, unlike the Longswordsman it replaces. Enemies attacked by this Unit have -2 [ICON_MOVES] Movement Points on their next turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_STRATEGY">
 			<Text>Unique replacement for the Longswordsman. This unit specializes in combating Mounted opponents and hobbling retreating units. Only Ethiopia may build it.</Text>
