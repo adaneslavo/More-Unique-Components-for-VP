@@ -1620,7 +1620,7 @@
 			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
-			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_RESEARCH] Science to Villages and Towns.</Text>
+			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_PRODUCTION] Production to Villages and Towns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_3_HELP">
 			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +2 [ICON_PEACE] Faith to Shrines, Temples and Monasteries.</Text>

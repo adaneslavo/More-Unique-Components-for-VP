@@ -13,6 +13,9 @@ v45:
 	- Kabuki ==> removed yields on empire from unique guilds. Replaced with instant bulb effect on GWAM birth 
 	- Tophet ==> reduced faith yield to +2
 	- Shotelai ==> increased Shotel debuff effect to -2 movement (minimum of 0.16667)
+	- Pogost ==> Stage 2 now +1 Prod to Villages. No specialist unhappiness urbanization reduction
+- fixed:
+	- Monolithic Church ==> Now works as intended	
 v44: 
 - compatibility:
 	- (Baan Chang, Pairidaeza, Riad, Steam Mill, and Japanese Guilds) ==> added no urbanization unhappiness from X specialists,
