@@ -1433,7 +1433,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
 			<Text>
-				Can be built on Unfeatured Hills or on source of [ICON_RES_STONE] Stone, and not next to another Monolithic Church. Improves [ICON_RES_STONE] Stone resources[NEWLINE][NEWLINE]Provides [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completing [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR] and adopting an [COLOR_POSITIVE_TEXT]Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
+				Can be built on [ICON_RES_STONE] Stone or on Unfeatured Hills if not next to another Monolithic Church. Improves [ICON_RES_STONE] Stone resources[NEWLINE][NEWLINE]Provides [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completing [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR] and adopting an [COLOR_POSITIVE_TEXT]Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
 				+1 [ICON_CULTURE] for every Ancient Policy Tree,[NEWLINE]
 				+1 [ICON_PEACE] for every Medieval Policy Tree,[NEWLINE]
 				+1 [ICON_RESEARCH] for every Industrial Policy Tree,[NEWLINE]

@@ -141,8 +141,9 @@ VALUES		('BUILDING_D_FOR_HIPPODROME',	'YIELD_CULTURE',	15),
 -- Building_ImprovementYieldChanges
 ------------------------------		
 INSERT INTO Building_ImprovementYieldChangesGlobal	
-			(BuildingType, 										ImprovementType,							YieldType,			Yield)
-VALUES		('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'YIELD_GOLD',		2);
+			(BuildingType, 										ImprovementType,								YieldType,			Yield)
+VALUES		('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'YIELD_GOLD',		2),
+			('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_GOLD',		2);
 --------------------------------	
 -- Building_ClassYieldChanges
 --------------------------------	
