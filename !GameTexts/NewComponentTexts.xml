@@ -2253,7 +2253,7 @@
 			<Text>Tophet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_HELP">
-			<Text>Gain +10 [ICON_CULTURE] Culture in the City whenever a Unit is purchased, scaling with Era. Units purchased in this City receive additional experience.</Text>
+			<Text>Gain +20 [ICON_CULTURE] Culture in the City whenever a Unit is purchased, scaling with Era. Units purchased in this City receive additional experience.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_STRATEGY">
 			<Text>The Tophet is the unique Shrine replacement for Carthage. In addition to the normal bonuses of a Shrine, the Tophet provides Culture whenever a unit is purchased in the City. Military Units purchased in a City with a Tophet gain +5XP at normal speed, giving them a small boost before barracks, and mitigating the experience penalty on purchased units slightly.</Text>
