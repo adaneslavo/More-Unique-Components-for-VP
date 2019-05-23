@@ -11,7 +11,7 @@ v45:
 	- Landwehr ==> Regimentsmarsche culture increased to 2
 	- Schutzenstand ==> Lowered HP in city to 150 and increased supply from population to 25%
 	- Kabuki ==> removed yields on empire from unique guilds. Replaced with instant bulb effect on GWAM birth 
-	- Tophet ==> reduced faith yield to +2
+	- Tophet ==> reduced faith yield to +2. Increased culture from unit purchase to 15
 	- Shotelai ==> increased Shotel debuff effect to -2 movement (minimum of 0.16667)
 	- Pogost ==> Stage 2 now +1 Prod to Villages. No specialist unhappiness urbanization reduction
 - fixed:
