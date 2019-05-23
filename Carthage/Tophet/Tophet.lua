@@ -42,7 +42,7 @@ function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 
 		-- yields culture on purchasing
 		local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)
-		local iCultureGain = math.floor(10 * iEraModifier * fGameSpeedModifier)
+		local iCultureGain = math.floor(20 * iEraModifier * fGameSpeedModifier)
 		
 		pPlayer:ChangeJONSCulture(iCultureGain)
 		
