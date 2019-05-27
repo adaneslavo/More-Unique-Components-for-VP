@@ -5,17 +5,19 @@
 More Unique Components for Vox Populi changelog:
 v45: 
 - tweaked/modified:	
-	- Slaganz ==> Now named Ulfhedinn. Barbarian Alliance renamed to Druhtiz 
-	- Holkan ==> increased CS to 7
-	- Bastu ==> Increased yield from birth to 25%. Yields from Tundra now 1 per 2 tiles
-	- Landwehr ==> Regimentsmarsche culture increased to 2
-	- Schutzenstand ==> Lowered HP in city to 150 and increased supply from population to 25%
-	- Kabuki ==> removed yields on empire from unique guilds. Replaced with instant bulb effect on GWAM birth 
-	- Tophet ==> reduced faith yield to +2. Increased culture from unit purchase to 20
+	- Slaganz ==> now named Ulfhedinn,
+			  ==> Barbarian Alliance now renamed to Druhtiz.
+	- Holkan ==> increased CS to 7,
+	- Bastu ==> increased yield from birth to 25%; yields from tundra now 1 per 2 tiles,
+	- Landwehr ==> Regimentsmarsche culture increased to 2,
+	- Schutzenstand ==> lowered HP in city to 150 and increased supply from population to 25%,
+	- Kabuki ==> removed yields on empire from unique guilds - now replaced with instant bulb effect on GWAM birth,
+	- Tophet ==> reduced faith yield to +2; increased culture from unit purchase to 20,
 	- Shotelai ==> increased Shotel debuff effect to -2 movement (minimum of 0.16667)
-	- Pogost ==> Stage 2 now +1 Prod to Villages. No specialist unhappiness urbanization reduction
+	- Pogost ==> stage 2 now +1 production to Villages; no specialist unhappiness urbanization reduction.
 - fixed:
-	- Monolithic Church ==> Now works as intended	
+	- Monolithic Church ==> now works as intended.
+
 v44: 
 - compatibility:
 	- (Baan Chang, Pairidaeza, Riad, Steam Mill, and Japanese Guilds) ==> added no urbanization unhappiness from X specialists,
