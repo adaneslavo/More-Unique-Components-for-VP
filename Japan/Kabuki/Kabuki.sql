@@ -112,7 +112,7 @@ VALUES		('PLAYER_EVENT_CHOICE_GAGAKU_TOURISM',	1,				1);
 --------------------------------	
 INSERT INTO EventChoice_InstantYield
 			(EventChoiceType,							YieldType,			Yield)
-VALUES		('PLAYER_EVENT_CHOICE_GAGAKU_TOURISM',	'YIELD_TOURISM',	300);
+VALUES		('PLAYER_EVENT_CHOICE_GAGAKU_TOURISM',	'YIELD_TOURISM',	200);
 --------------------------------
 -- IconTextureAtlases
 --------------------------------
