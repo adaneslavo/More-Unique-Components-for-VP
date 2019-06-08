@@ -80,7 +80,8 @@ VALUES		('PROMOTION_UNIT_RUSSIA_GRAPESHOT', 	'TXT_KEY_PROMOTION_UNIT_RUSSIA_GRAP
 ------------------------------
 INSERT INTO UnitPromotions_UnitCombatMods
 			(PromotionType, 					UnitCombatType,		Modifier)
-VALUES		('PROMOTION_UNIT_RUSSIA_GRAPESHOT',	'UNITCOMBAT_MELEE',	50);
+VALUES		('PROMOTION_UNIT_RUSSIA_GRAPESHOT',	'UNITCOMBAT_MELEE',	50),
+		('PROMOTION_UNIT_RUSSIA_GRAPESHOT',	'UNITCOMBAT_GUN',	50);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
