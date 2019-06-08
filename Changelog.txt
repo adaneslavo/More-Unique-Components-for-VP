@@ -3,6 +3,11 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v46: 
+- tweaked/modified:	
+	- Licorne ==> Added combat bonus vs Gunpowder units
+	- Unique Japanese Guilds ==> Halved the instant yields from GWAM births 
+
 v45: 
 - tweaked/modified:	
 	- Slaganz ==> now named Ulfhedinn,
