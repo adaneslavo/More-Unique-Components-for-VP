@@ -1836,7 +1836,7 @@
 			<Text>Rend</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CELTS_SCYTHE_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]On Move[ENDCOLOR] unit inflicts 10 [COLOR_POSITIVE_TEXT]to all new adjacent Enemy Units[ENDCOLOR]. Ignores Zone of Control.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]On Move[ENDCOLOR] unit inflicts 10 [COLOR_POSITIVE_TEXT]to all new adjacent Enemy Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CELTS_CARNYX">
 			<Text>Carnyx</Text>
@@ -1848,7 +1848,7 @@
 			<Text>Scythed Chariot</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP">
-			<Text>A dangerous Unit on Open Terrain. Only the Celts may build it. This unit is stronger against Archer and Melee Units, has more vision and ignores Enemy Zone of Control.[NEWLINE][NEWLINE]After moving, deals damage to all newly adjacent Enemy Units. Moving into Rough Terrain consumes all [ICON_MOVES] Movement Points.</Text>
+			<Text>A dangerous Unit on Open Terrain. Only the Celts may build it. This unit is stronger against Archer and Melee Units and has more vision.[NEWLINE][NEWLINE]After moving, deals damage to all newly adjacent Enemy Units. Moving into Rough Terrain consumes all [ICON_MOVES] Movement Points.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY">
 			<Text>The Scythed Chariot is a Celtic unique unit made for destroying enemy lines. Enemies take damage whenever the Scythed Chariot moves adjacent to them, making this unit deadly in open terrain. Make every move count to maximize damage, but be careful not to leave your Chariots exposed to enemies on their turn. A mounted unit, the Scythed Chariot is vulnerable to Spearmen.</Text>
