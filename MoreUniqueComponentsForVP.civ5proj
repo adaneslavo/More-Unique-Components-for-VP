@@ -5,10 +5,10 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>(over) More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>45</ModVersion>
+    <ModVersion>46</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>3rd and 4th unique component for each civilization</Teaser>
-    <Description>More Unique Components mod. Compatible with VP 5-19 and later.
+    <Description>More Unique Components mod. Compatible with VP 06-12 and later.
 Compatible with VPEE and ENW from @Infixo.
 
 Latest changes: see changelog file.</Description>
