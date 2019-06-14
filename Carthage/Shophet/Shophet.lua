@@ -7,6 +7,7 @@ local iUnitPromotionGreatAdmiral = GameInfoTypes["PROMOTION_GREAT_ADMIRAL"]
 local iUnitPromotionGreatGeneral = GameInfoTypes["PROMOTION_GREAT_GENERAL"]
 local iUnitPromotionShophetAdmiral = GameInfoTypes["PROMOTION_UNIT_CARTHAGE_ADMIRAL"]
 local iUnitPromotionShophetGeneral = GameInfoTypes["PROMOTION_UNIT_CARTHAGE_GENERAL"]
+local iUnitPromotionEmbark = GameInfoTypes["PROMOTION_EMBARKATION"]
 local iUnitAdmiral = GameInfoTypes["UNIT_GREAT_ADMIRAL"]
 local iUnitShophet = GameInfoTypes["UNIT_CARTHAGE_SHOPHET"]
 local iUnitShophetBoat = GameInfoTypes["UNIT_CARTHAGE_SHOPHET_BOAT"]
@@ -30,9 +31,11 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 			pUnit:SetEmbarked(false)
 			
 			pNewShophet:Convert(pUnit, false, false)
+			pNewShophet:SetHasPromotion(iUnitPromotionEmbark, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetGeneral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionGreatGeneral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, true)
+			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, false)
 			pNewShophet:SetMoves(0)
 		end
 	elseif (pUnit and pPlot and pUnit:IsHasPromotion(iUnitPromotionShophetAdmiral)) then
@@ -40,6 +43,7 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 			local pNewShophet = pPlayer:InitUnit(iUnitShophet, iX, iY, -1, DirectionTypes.NO_DIRECTION, false)
 			
 			pNewShophet:Convert(pUnit, false, false)
+			pNewShophet:SetHasPromotion(iUnitPromotionEmbark, true)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetGeneral, true)
@@ -58,7 +62,7 @@ function ShophetZoneOfControl(iPlayer)
 	if (pPlayer:IsAlive() and (not pPlayer:IsBarbarian())) then	
 		for pUnit in pPlayer:Units() do
 			if not pUnit:IsEmbarked() then
-				local bIsNearbyShophet = (pUnit:IsAdjacentToUnitPromotion(iUnitPromotionShophetAdmiral, true, false) or pUnit:IsWithinDistanceOfUnit(iUnitAdmiral, 0, true, false) or pUnit:IsAdjacentToUnit(iUnitShophet, true, false) or pUnit:IsWithinDistanceOfUnit(iUnitShophet, 0, true, false))
+				local bIsNearbyShophet = (pUnit:IsAdjacentToUnitPromotion(iUnitPromotionShophetAdmiral, true, false) or pUnit:IsWithinDistanceOfUnit(iUnitShophetBoat, 0, true, false) or pUnit:IsAdjacentToUnit(iUnitShophet, true, false) or pUnit:IsWithinDistanceOfUnit(iUnitShophet, 0, true, false))
 				
 				pUnit:SetHasPromotion(iUnitPromotionShophetZoC, bIsNearbyShophet)
 			end
@@ -88,15 +92,9 @@ function OnCreateShophet(iPlayer, iUnit, iUnitType, iX, iY)
 		pNewShophet:SetMoves(300)
 	end
 end
-	
-	
-	
-
-	
 
 if Game.IsCivEverActive(eCivilizationCarthage) then
 	GameEvents.PlayerDoTurn.Add(ShophetZoneOfControl)
 	GameEvents.UnitSetXY.Add(ShophetChange)
 	GameEvents.UnitCreated.Add(OnCreateShophet)
 end
-
