@@ -24,9 +24,9 @@ VALUES	('UNIT_CARTHAGE_ATLAS', 		256, 		'ShophetPicture_256.dds',		1, 				1),
 		('UNIT_CARTHAGE_ATLAS', 		45, 		'ShophetPicture_045.dds',		1, 				1),
 		('UNIT_CARTHAGE_BOAT_ATLAS', 	256, 		'SuffetBoatAtlas_256.dds',		1, 				1),
 		('UNIT_CARTHAGE_BOAT_ATLAS', 	128, 		'SuffetBoatAtlas_128.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	80, 		'SuffetBoatAtlas_080.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	64, 		'SuffetBoatAtlas_064.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	45, 		'SuffetBoatAtlas_045.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	80, 		'SuffetBoatAtlas_80.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	64, 		'SuffetBoatAtlas_64.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	45, 		'SuffetBoatAtlas_45.dds',		1, 				1),
 		('UNIT_CARTHAGE_FLAG_ATLAS', 	32, 		'ShophetFlag_032.dds',			1, 				1);
 --==========================================================================================================================
 		
