@@ -537,7 +537,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Germany/Slaganz/Slaganz.sql</FileName>
+        <FileName>Germany/Ulfhedinn/Ulfhedinn.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -940,9 +940,9 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Slaganz</Name>
-        <Description>Furor Teutonicus for Slaganz</Description>
-        <FileName>Germany/Slaganz/Slaganz.lua</FileName>
+        <Name>Ulfhedinn</Name>
+        <Description>Furor Teutonicus for Ulfhedinn</Description>
+        <FileName>Germany/Ulfhedinn/Ulfhedinn.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1827,55 +1827,55 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\3DModel\BearWarrior.dds">
+    <Content Include="Germany\Ulfhedinn\3DModel\BearWarrior.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\3DModel\BearWarrior.fxsxml">
+    <Content Include="Germany\Ulfhedinn\3DModel\BearWarrior.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\3DModel\BearWarrior.gr2">
+    <Content Include="Germany\Ulfhedinn\3DModel\BearWarrior.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\3DModel\BearWarrior_sref.dds">
+    <Content Include="Germany\Ulfhedinn\3DModel\BearWarrior_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\SlaganzPicture_045.dds">
+    <Content Include="Germany\Ulfhedinn\UlfhedinnPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\SlaganzPicture_080.dds">
+    <Content Include="Germany\Ulfhedinn\UlfhedinnPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\SlaganzPicture_128.dds">
+    <Content Include="Germany\Ulfhedinn\UlfhedinnPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\SlaganzPicture_256.dds">
+    <Content Include="Germany\Ulfhedinn\UlfhedinnPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\SlaganzPicture_064.dds">
+    <Content Include="Germany\Ulfhedinn\UlfhedinnPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\SlaganzFlag_032.dds">
+    <Content Include="Germany\Ulfhedinn\UlfhedinnFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\Slaganz.lua">
+    <Content Include="Germany\Ulfhedinn\Ulfhedinn.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\Slaganz.sql">
+    <Content Include="Germany\Ulfhedinn\Ulfhedinn.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Germany\Slaganz\SlaganzFlag_128.dds">
+    <Content Include="Germany\Ulfhedinn\UlfhedinnFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5141,9 +5141,9 @@ Latest changes: see changelog file.</Description>
     <Folder Include="England\Longbowman" />
     <Folder Include="England\WhiteTower" />
     <Folder Include="Egypt" />
-    <Folder Include="Germany\Slaganz\3DModel" />
+    <Folder Include="Germany\Ulfhedinn\3DModel" />
     <Folder Include="Germany\TeutonicOrder" />
-    <Folder Include="Germany\Slaganz" />
+    <Folder Include="Germany\Ulfhedinn" />
     <Folder Include="Huns" />
     <Folder Include="Huns\AltiCur" />
     <Folder Include="Huns\HorseArcher" />

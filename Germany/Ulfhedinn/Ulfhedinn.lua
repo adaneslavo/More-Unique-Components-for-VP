@@ -42,10 +42,10 @@ function SlaganzConvert(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAtta
 	end
 end
 
-function GetNearestCityState(iX, iY)
+function GetNearestCityState(iPlotX, iPlotY)
 	local iDistance = 10000
 	local pNearestCity = nil
-	local pPlot = Map.GetPlot(iX, iY)
+	local pPlot = Map.GetPlot(iPlotX, iPlotY)
 
 	for i, pPlayer in pairs(Players) do	
 		if pPlayer:IsMinorCiv() and not pPlayer:IsBarbarian() then
