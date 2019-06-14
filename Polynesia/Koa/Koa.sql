@@ -78,8 +78,8 @@ VALUES		('UNIT_POLYNESIA_ATLAS', 			256, 		'KoaPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 										Description, 										Help, 													Sound, 				PlagueChance, 	PlaguePromotion, 							BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0', 'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_HELP', 	'AS2D_IF_LEVELUP',	100, 			'PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1', 	0,						0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_POLYNESIA_PROMOTION_ATLAS', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0');
+			(Type, 										Description, 										Help, 														Sound, 				PlagueChance, 	PlaguePromotion, 							BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 			PediaEntry)
+VALUES		('PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0', 'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0_HELP', 	'AS2D_IF_LEVELUP',	100, 			'PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1', 	0,						0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_POLYNESIA_PROMOTION_ATLAS', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0');
 
 INSERT INTO UnitPromotions 
 			(Type, 										Description, 										Help, 													Sound, 				MaxHitPointsChange, EnemyHealChange, 	NeutralHealChange, 	FriendlyHealChange, PromotionDuration, 	PlagueID, 	PlaguePriority, BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 			PediaEntry)

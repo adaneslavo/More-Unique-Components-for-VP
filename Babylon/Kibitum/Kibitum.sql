@@ -164,7 +164,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SPEARMAN';
 
 INSERT INTO Unit_FreePromotions
 			(UnitType, 					PromotionType)
-VALUES		('UNIT_BABYLON_KIBITUM',	'PROMOTION_UNIT_BABYLON_LEGACY'),
+VALUES		('UNIT_BABYLON_KIBITUM',	'PROMOTION_UNIT_BABYLON_LEGACY_0'),
 			('UNIT_BABYLON_KIBITUM',	'PROMOTION_GAIN_EXPERIENCE');
 --==========================================================================================================================
 --==========================================================================================================================

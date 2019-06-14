@@ -24,9 +24,9 @@ VALUES	('UNIT_CARTHAGE_ATLAS', 		256, 		'ShophetPicture_256.dds',		1, 				1),
 		('UNIT_CARTHAGE_ATLAS', 		45, 		'ShophetPicture_045.dds',		1, 				1),
 		('UNIT_CARTHAGE_BOAT_ATLAS', 	256, 		'SuffetBoatAtlas_256.dds',		1, 				1),
 		('UNIT_CARTHAGE_BOAT_ATLAS', 	128, 		'SuffetBoatAtlas_128.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	80, 		'SuffetBoatAtlas_80.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	64, 		'SuffetBoatAtlas_64.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	45, 		'SuffetBoatAtlas_45.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	80, 		'SuffetBoatAtlas_080.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	64, 		'SuffetBoatAtlas_064.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	45, 		'SuffetBoatAtlas_045.dds',		1, 				1),
 		('UNIT_CARTHAGE_FLAG_ATLAS', 	32, 		'ShophetFlag_032.dds',			1, 				1);
 --==========================================================================================================================
 		
@@ -98,7 +98,7 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_GREATGENERAL_KH
 
 INSERT INTO ArtDefine_UnitMemberInfos 	
 			(Type, 													Scale,  ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
-SELECT		('ART_DEF_UNIT_MEMBER_MC_PHOENICIA_BIREME'),			0.09,	ZOffset, Domain, ('bireme.fxsxml'),			MaterialTypeTag, MaterialTypeSoundOverrideTag
+SELECT		('ART_DEF_UNIT_MEMBER_CARTHAGE_SHOPHET_BOAT'),			0.09,	ZOffset, Domain, ('bireme.fxsxml'),			MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_TRIREME');
 --==========================================================================================================================
 -- UNITS
@@ -174,6 +174,7 @@ INSERT INTO Unit_FreePromotions
 		(UnitType, 						PromotionType)
 VALUES	('UNIT_CARTHAGE_SHOPHET', 		'PROMOTION_UNIT_CARTHAGE_GENERAL'),
 		('UNIT_CARTHAGE_SHOPHET', 		'PROMOTION_UNIT_CARTHAGE_ZOC'),
+		('UNIT_CARTHAGE_SHOPHET', 		'PROMOTION_EMBARKATION'),
 		('UNIT_CARTHAGE_SHOPHET_BOAT', 	'PROMOTION_UNIT_CARTHAGE_ADMIRAL'),
 		('UNIT_CARTHAGE_SHOPHET_BOAT', 	'PROMOTION_UNIT_CARTHAGE_ZOC');
 --==========================================================================================================================

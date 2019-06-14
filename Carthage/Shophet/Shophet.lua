@@ -34,8 +34,9 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 			pNewShophet:SetHasPromotion(iUnitPromotionEmbark, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetGeneral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionGreatGeneral, false)
+			pNewShophet:SetHasPromotion(iUnitPromotionShophetZoC, true)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, true)
-			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, false)
+			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, true)
 			pNewShophet:SetMoves(0)
 		end
 	elseif (pUnit and pPlot and pUnit:IsHasPromotion(iUnitPromotionShophetAdmiral)) then
@@ -44,10 +45,11 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 			
 			pNewShophet:Convert(pUnit, false, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionEmbark, true)
-			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, false)
-			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetGeneral, true)
 			pNewShophet:SetHasPromotion(iUnitPromotionGreatGeneral, true)
+			pNewShophet:SetHasPromotion(iUnitPromotionShophetZoC, true)
+			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, false)
+			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, false)
 			pNewShophet:SetMoves(0)
 		end
 	end
@@ -71,7 +73,6 @@ function ShophetZoneOfControl(iPlayer)
 end
 
 function OnCreateShophet(iPlayer, iUnit, iUnitType, iX, iY)
-
 	--Abort if the new unit is not a Carthaginian Great Admiral
 	local pPlayer = Players[iPlayer]
 	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationCarthage) then return end
@@ -98,3 +99,5 @@ if Game.IsCivEverActive(eCivilizationCarthage) then
 	GameEvents.UnitSetXY.Add(ShophetChange)
 	GameEvents.UnitCreated.Add(OnCreateShophet)
 end
+
+

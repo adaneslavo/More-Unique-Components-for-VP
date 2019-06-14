@@ -74,7 +74,7 @@ VALUES		('UNIT_ETHIOPIA_ATLAS', 			256, 		'ShotelaiPicture_256.dds',	1, 				1),
 ------------------------------
 INSERT INTO UnitPromotions 
 			(Type, 								Description, 								Help, 											Sound, 				MovesChange,	AttackMod,	PlagueChance, 	PlaguePromotion, 					DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_ETHIOPIA_MAIM_0', 	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_HELP', 	'AS2D_IF_LEVELUP',	0,				0,			100, 			'PROMOTION_UNIT_ETHIOPIA_MAIM_1', 	0,			0,					0,			0,					1, 				0, 				'EXPANSION_PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0');
+VALUES		('PROMOTION_UNIT_ETHIOPIA_MAIM_0', 	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0_HELP', 	'AS2D_IF_LEVELUP',	0,				0,			100, 			'PROMOTION_UNIT_ETHIOPIA_MAIM_1', 	0,			0,					0,			0,					1, 				0, 				'EXPANSION_PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0');
 
 INSERT INTO UnitPromotions 
 			(Type, 								Description, 								Help, 											Sound, 				MovesChange,	AttackMod,	PromotionDuration, 	PlagueID, 	PlaguePriority, DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)

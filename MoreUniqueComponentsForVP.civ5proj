@@ -1551,15 +1551,15 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\SuffetBoatAtlas_45.dds">
+    <Content Include="Carthage\Shophet\SuffetBoatAtlas_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\SuffetBoatAtlas_64.dds">
+    <Content Include="Carthage\Shophet\SuffetBoatAtlas_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Carthage\Shophet\SuffetBoatAtlas_80.dds">
+    <Content Include="Carthage\Shophet\SuffetBoatAtlas_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
