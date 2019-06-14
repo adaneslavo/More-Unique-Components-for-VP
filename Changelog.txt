@@ -4,9 +4,14 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v46: 
-- tweaked/modified:	
+- compatibility:
+	- Spices ==> changed to Cinnamon
+	- UnitCombat ==> removed UnitCombat info for civilian units. This info has been added to base VP
+	- Unique Promotions ==> courtesy of Asterix Rage, all promotions have unique graphics
+- tweaked/modified:
 	- Licorne ==> Added combat bonus vs Gunpowder units
 	- Unique Japanese Guilds ==> Halved the instant yields from GWAM births 
+	- various text and file name tweaks
 
 v45: 
 - tweaked/modified:	
