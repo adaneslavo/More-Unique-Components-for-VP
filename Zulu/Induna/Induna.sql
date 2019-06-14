@@ -16,7 +16,7 @@ VALUES	('CIVILIZATION_ZULU',	'UNITCLASS_GREAT_GENERAL',	'UNIT_ZULU_INDABA');
 -- ArtDefine_StrategicView
 ------------------------------
 INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
-	VALUES	('ART_DEF_UNIT_ZULU_INDABA', 'Unit', 'IndabaFlag_128.dds');
+	VALUES	('ART_DEF_UNIT_ZULU_INDABA', 'Unit', 'IndunaFlag_128.dds');
 ------------------------------
 -- ArtDefine_UnitInfos
 ------------------------------		
@@ -52,12 +52,12 @@ INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, Mate
 ------------------------------
 INSERT INTO IconTextureAtlases 
 			(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_ZULU_ATLAS', 			256, 		'IndabaPicture_256.dds',	1, 				1),
-			('UNIT_ZULU_ATLAS', 			128, 		'IndabaPicture_128.dds',	1, 				1),
-			('UNIT_ZULU_ATLAS', 			80, 		'IndabaPicture_080.dds',	1, 				1),
-			('UNIT_ZULU_ATLAS', 			64, 		'IndabaPicture_064.dds',	1, 				1),
-			('UNIT_ZULU_ATLAS', 			45, 		'IndabaPicture_045.dds',	1, 				1),
-			('UNIT_ZULU_FLAG_ATLAS', 		32, 		'IndabaFlag_032.dds',		1, 				1);
+VALUES		('UNIT_ZULU_ATLAS', 			256, 		'IndunaPicture_256.dds',	1, 				1),
+			('UNIT_ZULU_ATLAS', 			128, 		'IndunaPicture_128.dds',	1, 				1),
+			('UNIT_ZULU_ATLAS', 			80, 		'IndunaPicture_080.dds',	1, 				1),
+			('UNIT_ZULU_ATLAS', 			64, 		'IndunaPicture_064.dds',	1, 				1),
+			('UNIT_ZULU_ATLAS', 			45, 		'IndunaPicture_045.dds',	1, 				1),
+			('UNIT_ZULU_FLAG_ATLAS', 		32, 		'IndunaFlag_032.dds',		1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	

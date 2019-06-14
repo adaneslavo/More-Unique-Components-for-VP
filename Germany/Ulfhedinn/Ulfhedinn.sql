@@ -64,9 +64,9 @@ VALUES		('UNIT_GERMANY_SLAGANZ',	'PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS'),
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-		(Type,						Description,						Help,								CannotBeChosen,	Sound,			PortraitIndex,		IconAtlas,		PediaType,	PediaEntry,						LostWithUpgrade, BarbarianCombatBonus)
-VALUES		('PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE',	'TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE',	'TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE_HELP',	1,		'AS2D_IF_LEVELUP',	9,			'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE',	0, 		0),
-		('PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS',	'TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS',	'TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS_HELP',		1,		'AS2D_IF_LEVELUP',	40,			'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS',	0, 		50);
+		(Type,											Description,											Help,														CannotBeChosen,	Sound,				PortraitIndex,		IconAtlas,			PediaType,		PediaEntry,												LostWithUpgrade, 	BarbarianCombatBonus)
+VALUES	('PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE',	'TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE',	'TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE_HELP',	1,				'AS2D_IF_LEVELUP',	9,					'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_GERMANY_BARBARIAN_ALLIANCE',	0, 					0),
+		('PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS',		'TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS',		'TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS_HELP',		1,				'AS2D_IF_LEVELUP',	40,					'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_GERMANY_FUROR_TEUTONICUS',		0, 					50);
 --==========================================================================================================================	
 
 --==========================================================================================================================
@@ -112,17 +112,17 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_WARRIOR';
 ------------------------------
 INSERT INTO ArtDefine_StrategicView 
 			(StrategicViewType,				TileType,	Asset )
-VALUES		('ART_DEF_UNIT_JFD_SLAGANZ', 	'Unit',		'SlaganzFlag_128.dds');
+VALUES		('ART_DEF_UNIT_JFD_SLAGANZ', 	'Unit',		'UlfhedinnFlag_128.dds');
 ------------------------------
 -- IconTextureAtlases
 ------------------------------
 INSERT INTO IconTextureAtlases 
 			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_GERMANY_ATLAS', 		256, 		'SlaganzPicture_256.dds',	1, 				1),
-			('UNIT_GERMANY_ATLAS', 		128, 		'SlaganzPicture_128.dds',	1, 				1),
-			('UNIT_GERMANY_ATLAS', 		80, 		'SlaganzPicture_080.dds',	1, 				1),
-			('UNIT_GERMANY_ATLAS', 		45, 		'SlaganzPicture_045.dds',	1, 				1),
-			('UNIT_GERMANY_ATLAS', 		64, 		'SlaganzPicture_064.dds',	1, 				1),
-			('UNIT_GERMANY_FLAG_ATLAS', 32, 		'SlaganzFlag_032.dds',		1, 				1);
+VALUES		('UNIT_GERMANY_ATLAS', 		256, 		'UlfhedinnPicture_256.dds',	1, 				1),
+			('UNIT_GERMANY_ATLAS', 		128, 		'UlfhedinnPicture_128.dds',	1, 				1),
+			('UNIT_GERMANY_ATLAS', 		80, 		'UlfhedinnPicture_080.dds',	1, 				1),
+			('UNIT_GERMANY_ATLAS', 		45, 		'UlfhedinnPicture_045.dds',	1, 				1),
+			('UNIT_GERMANY_ATLAS', 		64, 		'UlfhedinnPicture_064.dds',	1, 				1),
+			('UNIT_GERMANY_FLAG_ATLAS', 32, 		'UlfhedinnFlag_032.dds',	1, 				1);
 --==========================================================================================================================
 --==========================================================================================================================
