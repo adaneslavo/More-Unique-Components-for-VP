@@ -82,14 +82,6 @@ VALUES		('BUILDING_OTTOMANS_TERSANE',	'TERRAIN_OCEAN',	'YIELD_PRODUCTION',	1),
 			('BUILDING_OTTOMANS_TERSANE',	'TERRAIN_COAST',	'YIELD_PRODUCTION',	1),
 			('BUILDING_OTTOMANS_TERSANE',	'TERRAIN_COAST',	'YIELD_FOOD',		1);
 ------------------------------	
--- UnitCombatInfos + Update Cargo Ships
-------------------------------		
-INSERT INTO UnitCombatInfos  	
-			(Type,					Description)
-VALUES		('UNITCOMBAT_CARGO',	'Cargo Ship Units');
-
-UPDATE Units SET CombatClass = 'UNITCOMBAT_CARGO' WHERE Type = 'UNIT_CARGO_SHIP';
-------------------------------	
 -- Building_UnitCombatProductionModifiers 
 ------------------------------		
 INSERT INTO Building_UnitCombatProductionModifiers  	

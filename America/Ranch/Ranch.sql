@@ -32,9 +32,9 @@ VALUES	('UNIT_AMERICA_ATLAS', 	256, 		'RanchPicture_256.dds',		1, 				1),
 -- UNITS
 --==========================================================================================================================
 INSERT INTO 	Units
-	(Class, Type, Moves, Capture, CivilianAttackPriority, HurryCostModifier, Domain, DefaultUnitAI, Description, Civilopedia, Strategy, Help, PrereqTech, ObsoleteTech, Food, Found, FoundMid, FoundLate, CombatLimit, UnitArtInfo, UnitArtInfoCulturalVariation, PortraitIndex, IconAtlas, ShowInPedia)
+	(Class, Type, Moves, Capture, CombatClass, CivilianAttackPriority, HurryCostModifier, Domain, DefaultUnitAI, Description, Civilopedia, Strategy, Help, PrereqTech, ObsoleteTech, Food, Found, FoundMid, FoundLate, CombatLimit, UnitArtInfo, UnitArtInfoCulturalVariation, PortraitIndex, IconAtlas, ShowInPedia)
 VALUES
-	('UNITCLASS_PIONEER', 'UNIT_AMERICA_PIONEER', 3, 'UNITCLASS_WORKER', 'CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY', -1, 'DOMAIN_LAND', 'UNITAI_SETTLE', 'TXT_KEY_UNIT_PIONEER', 'TXT_KEY_CIV5_PIONEER_TEXT', 'TXT_KEY_UNIT_PIONEER_STRATEGY', 'TXT_KEY_UNIT_HELP_PIONEER', 'TECH_CHIVALRY', 'TECH_BIOLOGY', 1, 1, 1, 0, 0, 'ART_DEF_UNIT_PIONEER', 1, 2, 'COMMUNITY_ATLAS', 0);
+	('UNITCLASS_PIONEER', 'UNIT_AMERICA_PIONEER', 3, 'UNITCLASS_WORKER', 'UNITCOMBAT_SETTLER', 'CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY', -1, 'DOMAIN_LAND', 'UNITAI_SETTLE', 'TXT_KEY_UNIT_PIONEER', 'TXT_KEY_CIV5_PIONEER_TEXT', 'TXT_KEY_UNIT_PIONEER_STRATEGY', 'TXT_KEY_UNIT_HELP_PIONEER', 'TECH_CHIVALRY', 'TECH_BIOLOGY', 1, 1, 1, 0, 0, 'ART_DEF_UNIT_PIONEER', 1, 2, 'COMMUNITY_ATLAS', 0);
 --------------------------------
 -- Unit_BuildingClassRequireds
 --------------------------------
@@ -133,19 +133,6 @@ FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_STABLE';
 INSERT INTO Building_YieldFromBirth	
 			(BuildingType, 				YieldType,			Yield)
 VALUES		('BUILDING_AMERICA_RANCH',	'YIELD_PRODUCTION',	15);
-------------------------------	
--- UnitCombatInfos + Update Settlers/Workers
-------------------------------		
-INSERT INTO UnitCombatInfos  	
-			(Type,					Description)
-VALUES		('UNITCOMBAT_SETTLER',	'Settler Units'),
-	('UNITCOMBAT_WORKER',	'Worker Units');
-
-UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_SETTLER';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_PIONEER';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_AMERICA_PIONEER';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_COLONIST';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_WORKER' WHERE Type = 'UNIT_WORKER';
 --------------------------------
 -- Building_UnitCombatProductionModifiers
 --------------------------------
