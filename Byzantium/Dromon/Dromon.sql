@@ -59,11 +59,11 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_U_BYZANTIUM_DRO
 -- PROMOTIONS
 --==========================================================================================================================	
 INSERT INTO UnitPromotions 
-			(Type, 													Description, 												Help, 																Sound, 				BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE', 				'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE',				'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_HELP', 				'AS2D_IF_LEVELUP',	0,						0,				0,			0,			0,					0,			1,					1, 				0, 				'UNIT_POLYNESIA_PROMOTION_ATLAS', 	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE'),
-			('PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_ON_UNIT', 		'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_ON_UNIT',		'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_ON_UNIT_HELP', 		'AS2D_IF_LEVELUP',	0,						0,				0,			0,			0,					0,			1,					1, 				57, 			'ABILITY_ATLAS', 					'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_ON_UNIT'),
-			('PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2_ON_UNIT',		'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2_ON_UNIT',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2_ON_UNIT_HELP', 		'AS2D_IF_LEVELUP',	0,						0,				0,			0,			0,					0,			1,					1, 				57, 			'ABILITY_ATLAS', 					'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2_ON_UNIT'),
-			('PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_ON_UNIT',		'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_ON_UNIT',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_ON_UNIT_HELP', 		'AS2D_IF_LEVELUP',	0,						0,				0,			0,			0,					0,			1,					1, 				57, 			'ABILITY_ATLAS', 					'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_ON_UNIT');
+			(Type, 										Description, 										Help, 													Sound, 				BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_0', 	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_0',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_0_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0,			0,			0,					0,			1,					1, 				0, 				'UNIT_POLYNESIA_PROMOTION_ATLAS', 	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_0'),
+			('PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_1', 	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_1',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_1_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0,			0,			0,					0,			1,					1, 				57, 			'ABILITY_ATLAS', 					'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_1'),
+			('PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0,			0,			0,					0,			1,					1, 				57, 			'ABILITY_ATLAS', 					'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2'),
+			('PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_HELP', 	'AS2D_IF_LEVELUP',	0,						0,				0,			0,			0,					0,			1,					1, 				57, 			'ABILITY_ATLAS', 					'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -74,7 +74,7 @@ VALUES		('PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE', 				'TXT_KEY_PROMOTION_UNIT_BYZA
 --------------------------------	
 INSERT INTO Units 	
 			(Type,						Class, 	PrereqTech,	Range,	BaseSightRange, Combat,		RangedCombat,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 						Civilopedia, 							Strategy, 									Help, 									Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 						UnitFlagIconOffset,	UnitFlagAtlas,					PortraitIndex, 	IconAtlas,					MoveRate,	PurchaseCooldown)
-SELECT		'UNIT_BYZANTIUM_DROMON',	Class,	PrereqTech,	Range,	BaseSightRange, Combat+2,	RangedCombat,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_NAVIGATION',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_BYZANTIUM_DROMON',	'TXT_KEY_UNIT_BYZANTIUM_DROMON_TEXT',	'TXT_KEY_UNIT_BYZANTIUM_DROMON_STRATEGY',	'TXT_KEY_UNIT_BYZANTIUM_DROMON_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_BYZANTIUM_DROMON', 	5,					'EXPANSION_UNIT_FLAG_ATLAS',	5, 				'EXPANSION_UNIT_ATLAS_1',	MoveRate,	PurchaseCooldown
+SELECT		'UNIT_BYZANTIUM_DROMON',	Class,	PrereqTech,	Range,	BaseSightRange, Combat+2,	RangedCombat,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_NAVIGATION',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_BYZANTIUM_DROMON',	'TXT_KEY_UNIT_BYZANTIUM_DROMON_TEXT',	'TXT_KEY_UNIT_BYZANTIUM_DROMON_STRATEGY',	'TXT_KEY_UNIT_BYZANTIUM_DROMON_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_BYZANTIUM_DROMON', 	5,					'EXPANSIFLAG_ATLAS',	5, 				'EXPANSIATLAS_1',	MoveRate,	PurchaseCooldown
 FROM Units WHERE Type = 'UNIT_BYZANTINE_DROMON';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -121,7 +121,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_BYZANTINE_DROMON';
 
 INSERT INTO Unit_FreePromotions
 			(UnitType, 				PromotionType)
-VALUES		('UNIT_BYZANTIUM_DROMON',	'PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE'),
+VALUES		('UNIT_BYZANTIUM_DROMON',	'PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_0'),
 			('UNIT_BYZANTIUM_DROMON',	'PROMOTION_SPLASH');
 --==========================================================================================================================
 --==========================================================================================================================

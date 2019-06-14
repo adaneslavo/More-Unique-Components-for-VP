@@ -73,12 +73,12 @@ VALUES		('UNIT_ETHIOPIA_ATLAS', 			256, 		'ShotelaiPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-		(Type, 						Description, 						Help, 								Sound, 				MovesChange,	AttackMod,	PlagueChance, 	PlaguePromotion, 			DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_ETHIOPIA_MAIM', 		'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM',			'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_HELP', 			'AS2D_IF_LEVELUP',		0,		0,		100, 		'PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT', 0,		0,		0,		0,					1, 				0, 				'EXPANSION_PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM');
+			(Type, 								Description, 								Help, 											Sound, 				MovesChange,	AttackMod,	PlagueChance, 	PlaguePromotion, 					DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_ETHIOPIA_MAIM_0', 	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_HELP', 	'AS2D_IF_LEVELUP',	0,				0,			100, 			'PROMOTION_UNIT_ETHIOPIA_MAIM_1', 	0,			0,					0,			0,					1, 				0, 				'EXPANSION_PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0');
 
 INSERT INTO UnitPromotions 
-		(Type, 						Description, 						Help, 								Sound, 				MovesChange,	AttackMod,	PromotionDuration, 	PlagueID, 	PlaguePriority, DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT', 	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT',		'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT_HELP', 		'AS2D_IF_LEVELUP',		-2,		0,		1, 			1, 		0, 		0,		0,		0,		0,			1, 		1, 		'KRIS_SWORDSMAN_PROMOTION_ATLAS', 				'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT');
+			(Type, 								Description, 								Help, 											Sound, 				MovesChange,	AttackMod,	PromotionDuration, 	PlagueID, 	PlaguePriority, DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_ETHIOPIA_MAIM_1', 	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_1',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_1_HELP', 	'AS2D_IF_LEVELUP',	-2,				0,			1, 					1, 			0, 				0,			0,					0,			0,					1, 				1, 				'KRIS_SWORDSMAN_PROMOTION_ATLAS', 	'PEDIA_MELEE', 	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_1');
 
 INSERT INTO UnitPromotions 
 		(Type, 						Description, 						Help, 								Sound, 				MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
@@ -146,7 +146,7 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_LONGSWORDSMAN';
 
 INSERT INTO Unit_FreePromotions
 			(UnitType, 					PromotionType)
-VALUES		('UNIT_ETHIOPIA_SHOTELAI',	'PROMOTION_UNIT_ETHIOPIA_MAIM'),
+VALUES		('UNIT_ETHIOPIA_SHOTELAI',	'PROMOTION_UNIT_ETHIOPIA_MAIM_0'),
 			('UNIT_ETHIOPIA_SHOTELAI',	'PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON');
 --==========================================================================================================================
 --==========================================================================================================================

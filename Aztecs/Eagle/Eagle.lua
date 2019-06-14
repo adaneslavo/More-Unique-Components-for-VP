@@ -21,47 +21,47 @@ function OnCombatEndSpawnWorker(iAttackingPlayer, iAttackingUnit, iAttackerDamag
 	end
 	if pAttackingUnit ~= nil and (pAttackingUnit:GetUnitType() == GameInfoTypes.UNIT_AZTEC_JAGUAR) then
 
-		if pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10) then
+		if pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_10) then
 			local eNewEagle = pAttackingPlayer:InitUnit(GameInfoTypes.UNIT_AZTEC_EAGLE, iPlotX, iPlotY, -1, DirectionTypes.NO_DIRECTION, false)
 			eNewEagle:Convert(pAttackingUnit, false, false)
-			eNewEagle:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10, false)
+			eNewEagle:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_10, false)
 			eNewEagle:SetHasPromotion(GameInfoTypes.PROMOTION_BARBARIAN_BONUS, false)
 		
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_9) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_10, true)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_9, false)
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_9) then
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_10, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_9, false)
 
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_8) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_9, true)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_8, false)
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_8) then
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_9, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_8, false)
 
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_7) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_8, true)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_7, false)
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_7) then
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_8, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_7, false)
 
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_6) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_7, true)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_6, false)
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_6) then
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_7, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_6, false)
 		
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_5) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_6, true)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_5, false)
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_5) then
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_6, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_5, false)
 		
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_4) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_5, true)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_4, false)
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_4) then
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_5, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_4, false)
 		
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_3) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_4, true)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_3, false)
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_3) then
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_4, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_3, false)
 		
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_2) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_3, true)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_2, false)
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_2) then
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_3, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_2, false)
 		
-		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_1) then
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_2, true)
-			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CUAUHOCELOTL_1, false)
+		elseif pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_1) then
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_2, true)
+			pAttackingUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_1, false)
 		end
 	end
 end

@@ -592,7 +592,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Zulu/Indaba/Indaba.sql</FileName>
+        <FileName>Zulu/Induna/Induna.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -642,7 +642,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Inca/Tambo/Qullqa.sql</FileName>
+        <FileName>Inca/Qullqa/Qullqa.sql</FileName>
       </Action>
     </ModActions>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -1018,9 +1018,9 @@ Latest changes: see changelog file.</Description>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Indaba</Name>
+        <Name>Induna</Name>
         <Description>Functions for InDuna on attack and on expend</Description>
-        <FileName>Zulu/Indaba/Indaba.lua</FileName>
+        <FileName>Zulu/Induna/Induna.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1038,7 +1038,7 @@ Latest changes: see changelog file.</Description>
         <Type>InGameUIAddin</Type>
         <Name>Qullqa</Name>
         <Description>Adds Coca resource.</Description>
-        <FileName>Inca/Tambo/Qullqa.lua</FileName>
+        <FileName>Inca/Qullqa/Qullqa.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3rd-and-4th-unique-components-for-vp-official-thread.631657/</Homepage>
@@ -2071,27 +2071,27 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Tambo\Qullqa.lua">
+    <Content Include="Inca\Qullqa\Qullqa.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Tambo\Qullqa.sql">
+    <Content Include="Inca\Qullqa\Qullqa.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Tambo\Qullqa.045.dds">
+    <Content Include="Inca\Qullqa\Qullqa.045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Tambo\Qullqa.064.dds">
+    <Content Include="Inca\Qullqa\Qullqa.064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Tambo\Qullqa.128.dds">
+    <Content Include="Inca\Qullqa\Qullqa.128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Inca\Tambo\Qullqa.256.dds">
+    <Content Include="Inca\Qullqa\Qullqa.256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5015,63 +5015,63 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\IndabaFlag_032.dds">
+    <Content Include="Zulu\Induna\IndunaFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\Indaba.sql">
+    <Content Include="Zulu\Induna\Induna.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\IndabaPicture_128.dds">
+    <Content Include="Zulu\Induna\IndunaPicture_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\IndabaPicture_256.dds">
+    <Content Include="Zulu\Induna\IndunaPicture_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\IndabaPicture_045.dds">
+    <Content Include="Zulu\Induna\IndunaPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\IndabaPicture_064.dds">
+    <Content Include="Zulu\Induna\IndunaPicture_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\IndabaPicture_080.dds">
+    <Content Include="Zulu\Induna\IndunaPicture_080.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.blend">
+    <Content Include="Zulu\Induna\3DModel\BA_SonghaiSpear.blend">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.br2">
+    <Content Include="Zulu\Induna\3DModel\BA_SonghaiSpear.br2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.dds">
+    <Content Include="Zulu\Induna\3DModel\BA_SonghaiSpear.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.fxsxml">
+    <Content Include="Zulu\Induna\3DModel\BA_SonghaiSpear.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear.gr2">
+    <Content Include="Zulu\Induna\3DModel\BA_SonghaiSpear.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\3DModel\BA_SonghaiSpear_sref.dds">
+    <Content Include="Zulu\Induna\3DModel\BA_SonghaiSpear_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\Indaba.lua">
+    <Content Include="Zulu\Induna\Induna.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Zulu\Indaba\IndabaFlag_128.dds">
+    <Content Include="Zulu\Induna\IndunaFlag_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -5153,7 +5153,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Inca\Chasqui" />
     <Folder Include="Inca\Chasqui\3DModel" />
     <Folder Include="Inca\Coca" />
-    <Folder Include="Inca\Tambo" />
+    <Folder Include="Inca\Qullqa" />
     <Folder Include="Japan\" />
     <Folder Include="Japan\Kabuki\" />
     <Folder Include="Japan\Yamato\" />
@@ -5312,8 +5312,8 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Venice\Laguna\" />
     <Folder Include="Venice\GreatGalleas" />
     <Folder Include="Zulu" />
-    <Folder Include="Zulu\Indaba" />
-    <Folder Include="Zulu\Indaba\3DModel" />
+    <Folder Include="Zulu\Induna" />
+    <Folder Include="Zulu\Induna\3DModel" />
     <Folder Include="Zulu\Iziko" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />

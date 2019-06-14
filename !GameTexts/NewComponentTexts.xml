@@ -359,28 +359,28 @@
 		
 		<!-- Dromon -->
 		<!-- Created by adan_eslavo on 30/11/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_0">
 			<Text>Greek Fire</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_0_HELP">
 			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked. [COLOR_POSITIVE_TEXT]At the beginning of its turn[ENDCOLOR] it takes an additional 10 "fire" damage for every mark. Effect can stack up to [COLOR_POSITIVE_TEXT]3[ENDCOLOR] times after battles with 3 different units.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_ON_UNIT">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_1">
 			<Text>Fire</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_ON_UNIT_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_1_HELP">
 			<Text>Unit takes an additional 10 "fire" damage [COLOR_POSITIVE_TEXT]at the start of its turn[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2_ON_UNIT">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2">
 			<Text>Huge Fire</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2_ON_UNIT_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2_HELP">
 			<Text>Unit takes an additional 20 "fire" damage [COLOR_POSITIVE_TEXT]at the start of its turn[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_ON_UNIT">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3">
 			<Text>Raging Fire</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_ON_UNIT_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3_HELP">
 			<Text>Unit takes an additional 30 "fire" damage [COLOR_POSITIVE_TEXT]at the start of its turn[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BYZANTIUM_DROMON">
@@ -549,37 +549,37 @@
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_HELP">
 			<Text>Strong, front-line Unit of the Classical Era. Only the Aztecs may build it. Does not require [ICON_RES_IRON] Iron. 25% chance of converting any unit killed into a [ICON_WORKER] Worker. Starts with the [COLOR_POSITIVE_TEXT]Sentry[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Shock I[ENDCOLOR] Promotions.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_1">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_1">
 			<Text>Cuauhocelotl</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_2">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_2">
 			<Text>Cuauhocelotl (1 kill)</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_3">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_3">
 			<Text>Cuauhocelotl (2 kills)</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_4">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_4">
 			<Text>Cuauhocelotl (3 kills)</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_5">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_5">
 			<Text>Cuauhocelotl (4 kills)</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_6">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_6">
 			<Text>Cuauhocelotl (5 kills)</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_7">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_7">
 			<Text>Cuauhocelotl (6 kills)</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_8">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_8">
 			<Text>Cuauhocelotl (7 kills)</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_9">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_9">
 			<Text>Cuauhocelotl (8 kills)</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_10">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_10">
 			<Text>Cuauhocelotl (9 kills)</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CUAUHOCELOTL_1_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_1_HELP">
 			<Text>Unit will become an [COLOR_POSITIVE_TEXT]Eagle[ENDCOLOR] after killing 10 Units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR">
@@ -1103,10 +1103,10 @@
 
 		<!-- Kibitum -->
 		<!-- Created by adan_eslavo on 27/11/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_0">
 			<Text>Legacy</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_0_HELP">
 			<Text>+10% [ICON_STRENGTH] Defense against [COLOR_POSITIVE_TEXT]Ranged[ENDCOLOR] attacks.[NEWLINE]Unit gets +8% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]every 2 levels gained[ENDCOLOR] until level [COLOR_POSITIVE_TEXT]12[ENDCOLOR], and level [COLOR_POSITIVE_TEXT]15[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_1">
@@ -1194,16 +1194,16 @@
 		
 		<!-- Koa -->
 		<!-- Created by adan_eslavo on 3/11/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0">
 			<Text>Kapu Ku'ialua</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0_HELP">
 			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked. [COLOR_POSITIVE_TEXT]At the beginning of its turn[ENDCOLOR] it takes an additional 10 "bleed" damage for every mark. Effect can stack up to [COLOR_POSITIVE_TEXT]3[ENDCOLOR] times after battles with 3 different units.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_ON_UNIT">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1">
 			<Text>Leiomano</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_ON_UNIT_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1_HELP">
 			<Text>-20 Maximum HP and -10 HP [COLOR_POSITIVE_TEXT]on Heal[ENDCOLOR]. Both effects last [COLOR_POSITIVE_TEXT]2[ENDCOLOR] turns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIA_KOA">
@@ -1528,10 +1528,10 @@
 		
 		<!-- Pitz -->
 		<!-- Created by adan_eslavo 16/12/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_KATUN_AHAW">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_KATUN_AHAW_0">
 			<Text>K'atun Ahaw</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_KATUN_AHAW_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_KATUN_AHAW_0_HELP">
 			<Text>Unit gets unique ability [COLOR_POSITIVE_TEXT]every 20 Game Turns[ENDCOLOR]. Effect can be extended [COLOR_POSITIVE_TEXT]4[ENDCOLOR] times.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_MAYA_KATUN_AHAW_1">
@@ -1905,22 +1905,22 @@
 			<Text>In the various independent city-states and colonies of Phoenicia a Suffet (or Shophet) was a non-royal magistrate granted control over a city-state, sometimes functioning much in the same way as a Roman consul. Following the overthrow of its monarchy in the 5th century BC, Carthage was ruled by a number of aristocratic councils presided over by two suffets. The exceptional leadership of suffet generals like Hannibal Barca have become legendary, handing Rome the greatest defeats it had ever suffered.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL">
-			<Text>Admiralty</Text>
+			<Text>Punic Commander</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL_HELP">
-			<Text>Unit turns into Great Admiral [COLOR_POSITIVE_TEXT]on Embark[ENDCOLOR]. [COLOR_POSITIVE_TEXT]From the beginning of the turn to its end[ENDCOLOR], same tile or adjacent Friendly Units [COLOR_POSITIVE_TEXT]ignore ZOC[ENDCOLOR].</Text>
+			<Text>Unit turns into Great Admiral [COLOR_POSITIVE_TEXT]on Embark[ENDCOLOR]. [COLOR_POSITIVE_TEXT]From the beginning of the turn to its end[ENDCOLOR], Friendly Units stacked or adjacent to the Suffet gain [COLOR_POSITIVE_TEXT]Plague Immunity[ENDCOLOR] and [COLOR_POSITIVE_TEXT]ignore Zone of Control[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL">
-			<Text>Commandeering</Text>
+			<Text>Punic Commander</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL_HELP">
-			<Text>Unit turns into Great General if it [COLOR_POSITIVE_TEXT]is standing in City[ENDCOLOR].</Text>
+			<Text>Unit turns into Great General if it [COLOR_POSITIVE_TEXT]is standing in City[ENDCOLOR]. [COLOR_POSITIVE_TEXT]From the beginning of the turn to its end[ENDCOLOR], Friendly Units stacked or adjacent to the Suffet gain [COLOR_POSITIVE_TEXT]Plague Immunity[ENDCOLOR] and [COLOR_POSITIVE_TEXT]ignore Zone of Control[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC">
-			<Text>Great Tactician</Text>
+			<Text>Cannae and Drepana</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC_HELP">
-			<Text>Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR].</Text>
+			<Text>Unit has [COLOR_POSITIVE_TEXT]Plague Immunity[ENDCOLOR] and [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR] for 1 turn.</Text>
 		</Row>
 		<!--Unique Names-->
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_1">
@@ -2001,16 +2001,16 @@
 	
 		<!-- Shotelai -->
 		<!-- Created by adan_eslavo on 12/11/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0">
 			<Text>Maim</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0_HELP">
 			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked. Marked unit has reduced [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]next turn[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_1">
 			<Text>Maimed</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_ON_UNIT_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_1_HELP">
 			<Text>-2 [ICON_ARROW_RIGHT] Movement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON">
@@ -2166,10 +2166,10 @@
 		<Row Tag="TXT_KEY_RESOURCE_MONOPOLY_COCA">
 			<Text>[COLOR_POSITIVE_TEXT]Monopoly Bonus: [ENDCOLOR]Grants [COLOR_POSITIVE_TEXT]Coca Leaves[ENDCOLOR] Promotion to all Units.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_COCA">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_COCA">
 			<Text>Coca Leaves</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_COCA_HELP">
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_COCA_HELP">
 			<Text>Unit [COLOR_POSITIVE_TEXT]can cross Mountains[ENDCOLOR]. +15% [ICON_WORKER] Work Rate.</Text>
 		</Row>
 			

@@ -35,7 +35,7 @@ function OnTurnCheckMonopoly(iPlayer)
 	
 	for unit in pPlayer:Units() do
 		if unit:GetDomainType() == GameInfoTypes.DOMAIN_LAND then 
-			unit:SetHasPromotion(GameInfoTypes.PROMOTION_COCA, pPlayer:HasGlobalMonopoly(eResourceCoca)) 
+			unit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_INCA_COCA, pPlayer:HasGlobalMonopoly(eResourceCoca)) 
 		end
 	end
 end

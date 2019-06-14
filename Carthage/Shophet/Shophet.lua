@@ -57,7 +57,7 @@ function ShophetZoneOfControl(iPlayer)
 	if (pPlayer:IsAlive() and (not pPlayer:IsBarbarian())) then	
 		for pUnit in pPlayer:Units() do
 			if (pUnit:GetDomainType() == iDomain and (not pUnit:IsEmbarked())) then
-				local bIsNearbyShophet = (pUnit:IsAdjacentToUnit(iUnitShophet, true, false) or pUnit:IsWithinDistanceOfUnit(iUnitShophet, 0, true, false))
+				local bIsNearbyShophet = (pUnit:IsAdjacentToUnitPromotion(iUnitPromotionShophetAdmiral, true, false) or pUnit:IsWithinDistanceOfUnit(iUnitAdmiral, 0, true, false) pUnit:IsAdjacentToUnit(iUnitShophet, true, false) or pUnit:IsWithinDistanceOfUnit(iUnitShophet, 0, true, false))
 				
 				pUnit:SetHasPromotion(iUnitPromotionShophetZoC, bIsNearbyShophet)
 			end
@@ -65,8 +65,35 @@ function ShophetZoneOfControl(iPlayer)
 	end
 end
 
+function OnCreateShophet(iPlayer, iUnit, iUnitType, iX, iY)
+
+	--Abort if the new unit is not a Carthaginian Great Admiral
+	local pPlayer = Players[iPlayer]
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationCarthage) then return end
+
+	if iUnitType == iUnitAdmiral then 
+		local pUnit = pPlayer:GetUnitByID(iUnit)
+		local pCapital = pPlayer:GetCapitalCity()
+		local iCapX = pCapital:GetX()
+		local iCapY = pCapital:GetY()
+		pPlayer:GetUnitByID(iUnit):Kill(true, -1)
+
+		local pNewShophet = pPlayer:InitUnit(iUnitShophet, iCapX, iCapY, -1, DirectionTypes.NO_DIRECTION, false)
+		pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, false)
+		pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, false)
+		pNewShophet:SetHasPromotion(iUnitPromotionShophetGeneral, true)
+		pNewShophet:SetMoves(0)
+	end
+end
+	
+	
+	
+
+	
+
 if Game.IsCivEverActive(eCivilizationCarthage) then
 	GameEvents.PlayerDoTurn.Add(ShophetZoneOfControl)
 	GameEvents.UnitSetXY.Add(ShophetChange)
+	GameEvents.UnitCreated.Add(OnCreateShophet)
 end
 
