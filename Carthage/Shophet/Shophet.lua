@@ -84,13 +84,14 @@ function OnCreateShophet(iPlayer, iUnit, iUnitType, iX, iY)
 		local iCapY = pCapital:GetY()
 		pPlayer:GetUnitByID(iUnit):Kill(true, -1)
 
-		local pNewShophet = pPlayer:InitUnit(iUnitShophetBoat, iCapX, iCapY, -1, DirectionTypes.NO_DIRECTION, false)
-		pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, true)
-		pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, true)
+		local pNewShophet = pPlayer:InitUnit(iUnitShophet, iCapX, iCapY, -1, DirectionTypes.NO_DIRECTION, false)
+		pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, false)
+		pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, false)
 		pNewShophet:SetHasPromotion(iUnitPromotionShophetZoC, true)
-		pNewShophet:SetHasPromotion(iUnitPromotionShophetGeneral, false)
-		pNewShophet:SetHasPromotion(iUnitPromotionGreatGeneral, false)
-		pNewShophet:SetMoves(300)
+		pNewShophet:SetHasPromotion(iUnitPromotionShophetGeneral, true)
+		pNewShophet:SetHasPromotion(iUnitPromotionGreatGeneral, true)
+		pNewShophet:SetHasPromotion(iUnitPromotionEmbark, true)
+		pNewShophet:SetMoves(120)
 	end
 end
 
