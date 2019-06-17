@@ -64,18 +64,13 @@ INSERT INTO Building_FeatureYieldChanges
 			(BuildingType,					FeatureType,		YieldType,				Yield)
 VALUES		('BUILDING_SIAM_BAAN_CHANG',	'FEATURE_FOREST',	'YIELD_PRODUCTION',		1),
 			('BUILDING_SIAM_BAAN_CHANG',	'FEATURE_FOREST',	'YIELD_GOLD',			1);
-------------------------------	
--- Building_ResourceYieldChanges
-------------------------------
-INSERT INTO Building_ResourceYieldChanges	
-			(BuildingType,					ResourceType,		YieldType,			Yield)
-VALUES		('BUILDING_SIAM_BAAN_CHANG',	'RESOURCE_IVORY',	'YIELD_FAITH',		1);
 ------------------------------
 -- Building_ImprovementYieldChanges
 ------------------------------		
 INSERT INTO Building_ImprovementYieldChanges	
 			(BuildingType, 					ImprovementType,					YieldType,			Yield)
-VALUES		('BUILDING_SIAM_BAAN_CHANG',	'IMPROVEMENT_LUMBERMILL_JUNGLE',	'YIELD_CULTURE',	1),
+VALUES		('BUILDING_SIAM_BAAN_CHANG',	'IMPROVEMENT_CAMP',					'YIELD_FAITH',		1),
+			('BUILDING_SIAM_BAAN_CHANG',	'IMPROVEMENT_LUMBERMILL_JUNGLE',	'YIELD_CULTURE',	1),
 			('BUILDING_SIAM_BAAN_CHANG',	'IMPROVEMENT_LUMBERMILL',			'YIELD_CULTURE',	1);
 ------------------------------	
 -- Building_YieldFromInternalTREnd

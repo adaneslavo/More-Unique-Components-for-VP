@@ -110,10 +110,10 @@
 			<Text>Elephant Camp</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP">
-			<Text>+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_CULTURE] Culture to Lumber Mills and Logging Camps near this City.[NEWLINE][NEWLINE]Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 25 [ICON_PRODUCTION] Production when completed, scaling with Era. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.[NEWLINE]Nearby [ICON_RES_IVORY] Ivory: +1 [ICON_PEACE] Faith.</Text>
+			<Text>+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_PEACE] Faith to Camps and +1 [ICON_CULTURE] Culture to Lumber Mills and Logging Camps near this City.[NEWLINE][NEWLINE]Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 25 [ICON_PRODUCTION] Production when completed, scaling with Era. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY">
-			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills and logging camps, and gives Faith from Ivory. [NEWLINE][NEWLINE]City-State gifts, both Strategic Resources and Units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
+			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills and logging camps, and gives Faith from Camps. [NEWLINE][NEWLINE]City-State gifts, both Strategic Resources and Units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_TEXT">
 			<Text>
@@ -602,10 +602,10 @@
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_STRATEGY">
-			<Text>The Examination Hall is a Chinese unique building, replacing the Chancery. In addition to the normal bonuses of a Chancery, the Exam Hall boosts Great People generation in the city, and adds Great Person Points to whichever great person currently has the most points in the city whenever a citizen is born.</Text>
+			<Text>The Examination Hall is a Chinese unique building, replacing the Chancery. In addition to the normal bonuses of a Chancery, the Exam Hall boosts Great People generation in the city, adding Great Person Points to whichever great person currently has the most points in the city whenever a citizen is born.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_HELP">
-			<Text>+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]+5% [ICON_GREAT_PEOPLE] Great People Points in the City, increased to +10% during [ICON_HAPPINESS_1] 'We Love the King' Day.[NEWLINE][NEWLINE]Whenever a [ICON_CITIZEN] Citizen is born, gain +15 [ICON_GREAT_PEOPLE] points toward [ICON_GREAT_PEOPLE] Great Person with the highest progress, scaling with Era.</Text>
+			<Text>+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]Whenever a [ICON_CITIZEN] Citizen is born, gain +20 [ICON_GREAT_PEOPLE] points toward [ICON_GREAT_PEOPLE] Great Person with the highest progress, scaling with Era.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold to [ICON_GREAT_WORK] Great Works in this City</Text>
 		</Row>
 		
 		<!-- Fale Tel'e -->

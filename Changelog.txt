@@ -9,9 +9,12 @@ v46:
 	- UnitCombat ==> removed UnitCombat info for civilian units. This info has been added to base VP
 	- Unique Promotions ==> courtesy of Asterix Rage, all promotions have unique graphics
 - tweaked/modified:
-	- Licorne ==> Added combat bonus vs Gunpowder units
-	- Unique Japanese Guilds ==> Halved the instant yields from GWAM births 
-	- various text and file name tweaks
+	- Licorne ==> Added combat bonus vs Gunpowder units.
+	- Unique Japanese Guilds ==> Halved the instant yields from GWAM births.
+	- Exam Hall ==> +2 Gold to Great Works in City. Increased GPPs on Citizen birth to 20.
+				==> removed +GPP rate (and GPP rate boost on WLTKD). Removed extra Civil Servant Specialist Slot.
+	- Elephant Camp ==> Changed +1 Faith for Ivory to +1 Faith for Camps.
+	- Various text and file name tweaks.
 
 v45: 
 - tweaked/modified:	

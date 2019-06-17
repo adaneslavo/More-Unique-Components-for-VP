@@ -28,7 +28,7 @@ local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 	end
 
 -- double great people generation during WLTKDs
-function OnWLTKDIncreaseGPGeneration(iPlayer)
+--[[function OnWLTKDIncreaseGPGeneration(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
 	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationChina or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
@@ -54,7 +54,7 @@ function OnWLTKDIncreaseGPGeneration(iPlayer)
 			end
 		end
 	end
-end
+end --]]
 
 -- adds GP points to the most advanced GP in city on citizen bierth
 function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
@@ -104,7 +104,7 @@ function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
 		end
 		
 		-- found
-		local iGPP = math.floor(7.5 * iEraModifier * iGameSpeedModifier)
+		local iGPP = math.floor(20 * iEraModifier * iGameSpeedModifier)
 		
 		for _, spec in ipairs(tBestGP) do		
 			pCity:ChangeSpecialistGreatPersonProgressTimes100(spec.GPType, iGPP * 100)
@@ -128,6 +128,6 @@ function PositionCalculator(i1, i2)
 end
 
 if Game.IsCivEverActive(eCivilizationChina) then
-	GameEvents.PlayerDoTurn.Add(OnWLTKDIncreaseGPGeneration)
+--	GameEvents.PlayerDoTurn.Add(OnWLTKDIncreaseGPGeneration)
 	GameEvents.SetPopulation.Add(OnBirthAddGPPointsToTheBest)
 end
