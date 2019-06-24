@@ -63,7 +63,11 @@ VALUES		('UNIT_POLAND_ATLAS', 			256, 		'PancernyPicture_256.dds',			1, 				1),
 			('UNIT_POLAND_ATLAS', 			80, 		'PancernyPicture_080.dds',			1, 				1),
 			('UNIT_POLAND_ATLAS', 			64, 		'PancernyPicture_064.dds',			1, 				1),
 			('UNIT_POLAND_ATLAS', 			45, 		'PancernyPicture_045.dds',			1, 				1),
-			('UNIT_POLAND_FLAG_ATLAS', 		32, 		'PancernyFlag_032.dds',				1, 				1);
+			('UNIT_POLAND_FLAG_ATLAS', 		32, 		'PancernyFlag_032.dds',				1, 				1),
+			('UNIT_POLAND_PROMOTION_ATLAS', 32, 		'BogurodzicaIcon_032.dds',			1, 				1),
+			('UNIT_POLAND_PROMOTION_ATLAS', 45, 		'BogurodzicaIcon_045.dds',			1, 				1),
+			('UNIT_POLAND_PROMOTION_ATLAS', 64, 		'BogurodzicaIcon_064.dds',			1, 				1),
+			('UNIT_POLAND_PROMOTION_ATLAS', 256, 		'BogurodzicaIcon_256.dds',			1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
