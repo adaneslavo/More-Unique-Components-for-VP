@@ -6,7 +6,7 @@ function LegacyOnKibitum(iPlayer, iUnit)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
-	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_BABYLON_LEGACY) then
+	if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_BABYLON_LEGACY_0) then
 		if pUnit:GetLevel() < 16 then
 			local sLegacyPromotion = {}
 			sLegacyPromotion[2]	= GameInfoTypes.PROMOTION_UNIT_BABYLON_LEGACY_1
