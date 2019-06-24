@@ -67,8 +67,9 @@ Things borrowed from other mods:
 	
 	Carthage:
 		- JFD - idea and code of Shophet UU,
-		- janboruta - picture and flag of Shophet,
+		- janboruta - picture and flag of Shophet and Bireme
 		- danrell - 3D model of Shophet.
+		- Leugi - Bireme unit model
 	
 	Celts:
 		- mikeburnfire - idea, picture of Scythed Chariot UU (Carpentom),

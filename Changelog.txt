@@ -22,6 +22,8 @@ v46:
 				==> Units built in a city before the Pitz court is built do not gain levels of K'atun Ahaw retroactively, only the base promotion.
 - fixed:
 	- Monolithic Church, Oppidum, Latifundium, Hacienda ==> Now remove Marsh features
+	- Pitz Court ==> Now adds K'atun Ahaw promotion retroactively via SQL
+	- Barbican ==> Now adds/removes Embrasure promotion via dummy fortification improvement and SQL triggers
 
 v45: 
 - tweaked/modified:	
