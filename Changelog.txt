@@ -5,25 +5,25 @@
 More Unique Components for Vox Populi changelog:
 v46: 
 - compatibility:
-	- Spices ==> changed to Cinnamon
-	- UnitCombat ==> removed UnitCombat info for civilian units. This info has been added to base VP
-	- Unique Promotions ==> courtesy of Asterix Rage, all promotions have unique graphics (except 5)
+	- Spices ==> changed to Cinnamon.
+	- UnitCombat ==> removed UnitCombat info for civilian units. This info has been added to base VP.
+	- Unique Promotions ==> courtesy of Asterix Rage, all promotions have unique graphics (except 5).
 - tweaked/modified:
 	- Licorne ==> Added combat bonus vs Gunpowder units.
 	- Unique Japanese Guilds ==> Halved the instant yields from GWAM births.
 	- Exam Hall ==> +2 Gold to Great Works in City. Increased GPPs on Citizen birth to 15.
 				==> removed +GPP rate (and GPP rate boost on WLTKD). Removed extra Civil Servant Slot.
 	- Suffet ==> Added unique embarked unit model and icon
-		==> ZOC bonus now stays on embark and also gives plague immunity.
-		==> Whenever a GAdmiral is born, it appears as a Suffet GGeneral in your capital instead
+		==> ZOC bonus now stays on embark and also gives plague immunity for 1 turn.
+		==> Whenever a GAdmiral is born, it appears as a Suffet GGeneral in your capital instead.
 	- Elephant Camp ==> Changed +1 Faith for Ivory to +1 Faith for Camps.
 	- Various text and file name tweaks.
 	- Pitz Court ==> Gives K'atun Ahaw promotion retroactively. 
-				==> Units built in a city before the Pitz court is built do not gain levels of K'atun Ahaw retroactively, only the base promotion.
+				==> Units built in a city before the Pitz court is built do not gain levels of K'atun Ahaw. retroactively, only the base promotion.
 - fixed:
-	- Monolithic Church, Oppidum, Latifundium, Hacienda ==> Now remove Marsh features
-	- Pitz Court ==> Now adds K'atun Ahaw promotion retroactively via SQL
-	- Barbican ==> Now adds/removes Embrasure promotion via dummy fortification improvement and SQL triggers
+	- Monolithic Church, Oppidum, Latifundium, Hacienda ==> Now correctly remove Marsh features.
+	- Pitz Court ==> Now adds K'atun Ahaw promotion retroactively via SQL.
+	- Barbican ==> Now adds/removes Embrasure promotion via dummy fortification improvement and SQL triggers.
 
 v45: 
 - tweaked/modified:	
