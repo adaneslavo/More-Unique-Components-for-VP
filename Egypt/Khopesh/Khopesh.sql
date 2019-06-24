@@ -64,11 +64,11 @@ VALUES
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-			(Type,								Description,								Help,											CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry,									CombatPercent,	AttackBelowEqual50HealthMod)
+			(Type,								Description,								Help,											CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry,									CombatPercent,	AttackBelowEqual50HealthMod)
 VALUES		
---			('PROMOTION_UNIT_EGYPT_FATIGUE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE',		'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP',	1,					'AS2D_IF_LEVELUP',	23,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE',		0,				0),
---			('PROMOTION_UNIT_EGYPT_FATIGUE_1',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1_HELP',	1,					'AS2D_IF_LEVELUP',	57,				'PROMOTION_ATLAS',	'PEDIA_SHARED',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1',	-30,			0),
-			('PROMOTION_UNIT_EGYPT_MERCY',		'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',		'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY_HELP',		1,					'AS2D_IF_LEVELUP',	9,				'PROMOTION_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',		0,				30);
+--			('PROMOTION_UNIT_EGYPT_FATIGUE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE',		'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP',	1,					'AS2D_IF_LEVELUP',	23,				'PROMOTION_ATLAS',		'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE',		0,				0),
+--			('PROMOTION_UNIT_EGYPT_FATIGUE_1',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1_HELP',	1,					'AS2D_IF_LEVELUP',	57,				'PROMOTION_ATLAS',		'PEDIA_SHARED',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1',	-30,			0),
+			('PROMOTION_UNIT_EGYPT_MERCY',		'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',		'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY_HELP',		1,					'AS2D_IF_LEVELUP',	39,				'promoMUC_atlas_00',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',		0,				30);
 --==========================================================================================================================	
 
 --==========================================================================================================================

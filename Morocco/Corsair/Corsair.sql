@@ -67,8 +67,8 @@ VALUES		('UNIT_MOROCCO_CORSAIR',	'PROMOTION_UNIT_MOROCCO_RAZZIA');
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions
-			(Type,								Description,								Help,											CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,						PediaType,		PediaEntry,									RivalTerritory)
-VALUES		('PROMOTION_UNIT_MOROCCO_RAZZIA',	'TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA',	'TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA_HELP',	1,				'AS2D_IF_LEVELUP',	5,				'EXPANSION_PROMOTION_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA',	1);
+			(Type,								Description,								Help,											CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry,									RivalTerritory)
+VALUES		('PROMOTION_UNIT_MOROCCO_RAZZIA',	'TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA',	'TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA_HELP',	1,				'AS2D_IF_LEVELUP',	2,				'promoMUC_atlas_01',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_MOROCCO_RAZZIA',	1);
 --==========================================================================================================================	
 
 --==========================================================================================================================

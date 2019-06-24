@@ -70,9 +70,9 @@ VALUES			('UNIT_ASSYRIA_IRON_CHARIOT',	'PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL'),
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-			(Type,										Description,										Help,													LostWithUpgrade,	CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,							PediaType,		PediaEntry,											CombatPercent)
-VALUES		('PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_HELP',	0,					1,					'AS2D_IF_LEVELUP',	0,				'UNIT_BABYLON_PROMOTION_5_ATLAS',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL',	0),
-			('PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE_HELP',	1,					1,					'AS2D_IF_LEVELUP',	23,				'ABILITY_ATLAS',					'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE',	0);
+			(Type,										Description,										Help,													LostWithUpgrade,	CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry,											CombatPercent)
+VALUES		('PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL_HELP',	0,					1,					'AS2D_IF_LEVELUP',	4,				'promoMUC_atlas_00',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL',	0),
+			('PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE_HELP',	1,					1,					'AS2D_IF_LEVELUP',	5,				'promoMUC_atlas_00',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_ASSYRIA_IRON_AND_HORSE',	0);
 --------------------------------	
 -- UnitPromotions_CombatModPerAdjacentUnitCombat
 --------------------------------

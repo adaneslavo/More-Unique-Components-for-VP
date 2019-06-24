@@ -439,6 +439,11 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>Austria/Standschutzen/Standschutzen.sql</FileName>
       </Action>
+	  <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>!PromotionIcons/muc_PI_Atlas.sql</FileName>
+      </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
@@ -1175,6 +1180,50 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content> -->
+    <Content Include="!PromotionIcons\0_muc_PI_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="!PromotionIcons\0_muc_PI_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="!PromotionIcons\0_muc_PI_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="!PromotionIcons\0_muc_PI_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="!PromotionIcons\0_muc_PI_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="!PromotionIcons\1_muc_PI_016.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="!PromotionIcons\1_muc_PI_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="!PromotionIcons\1_muc_PI_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="!PromotionIcons\1_muc_PI_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="!PromotionIcons\1_muc_PI_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="!PromotionIcons\muc_PI_Atlas.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="!SharedAssets\SharedAtlas.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1426,26 +1475,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Babylon\Etemenanki\Etemenanki.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyFourIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyOneIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyThreeIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyTwoIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Brazil\Pracinha\Pracinha.lua">
       <SubType>Lua</SubType>
@@ -2127,10 +2156,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="India\Dhanuraashi\Dhanurvidya\DhanurvidyaIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Japan\Kabuki\JapaneseGuildsPictures_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -2251,10 +2276,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Maya\Calendar\CalendarIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Morocco\Corsair\3DModel\tcmAmmiratus.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -2334,18 +2355,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Persia\Darius\DariusFlavors.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Persia\Qizilbash\SafaviAgitator\SafaviAgitatorIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Polynesia\Koa\KapuKuialua\KapuKuialuaIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Portugal\Cacadores\3DModel\ausgw1.blend">
       <SubType>Lua</SubType>
@@ -2667,22 +2676,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Siam\SeirMorb\CoastalCannon\CoastalCannonIcon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger1Icon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger2Icon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger3Icon_016.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Siam\Wat\Wat.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2906,86 +2899,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Babylon\Kibitum\Kibitum.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyFourIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyFourIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyFourIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyFourIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyOneIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyOneIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyOneIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyOneIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyThreeIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyThreeIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyThreeIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyThreeIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyTwoIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyTwoIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyTwoIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Babylon\Kibitum\Legacy\LegacyTwoIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Byzantium\Dromon\Dromon.sql">
       <SubType>Lua</SubType>
@@ -3427,22 +3340,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="India\Dhanuraashi\Dhanurvidya\DhanurvidyaIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="India\Dhanuraashi\Dhanurvidya\DhanurvidyaIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="India\Dhanuraashi\Dhanurvidya\DhanurvidyaIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="India\Dhanuraashi\Dhanurvidya\DhanurvidyaIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="India\Qila\Qila.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -3639,41 +3536,9 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Persia\Qizilbash\SafaviAgitator\SafaviAgitatorIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Persia\Qizilbash\SafaviAgitator\SafaviAgitatorIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Persia\Qizilbash\SafaviAgitator\SafaviAgitatorIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Persia\Qizilbash\SafaviAgitator\SafaviAgitatorIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Poland\Casimir\CasimirFlavors.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Polynesia\FaleTele\FaleTele.sql">
       <SubType>Lua</SubType>
@@ -3744,22 +3609,6 @@ Latest changes: see changelog file.</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Polynesia\Koa\KoaPicture_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Polynesia\Koa\KapuKuialua\KapuKuialuaIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Polynesia\Koa\KapuKuialua\KapuKuialuaIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Polynesia\Koa\KapuKuialua\KapuKuialuaIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Polynesia\Koa\KapuKuialua\KapuKuialuaIcon_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -4155,70 +4004,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Siam\SeirMorb\CoastalCannon\CoastalCannonIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CoastalCannon\CoastalCannonIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CoastalCannon\CoastalCannonIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CoastalCannon\CoastalCannonIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger1Icon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger1Icon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger1Icon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger1Icon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger2Icon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger2Icon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger2Icon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger2Icon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger3Icon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger3Icon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger3Icon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Siam\SeirMorb\CroachingTiger\CroachingTiger3Icon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Siam\SeirMorb\SeirMorbFlag_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -4402,22 +4187,6 @@ Latest changes: see changelog file.</Description>
     <Content Include="Maya\Atlatlist\Atlatlist.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Maya\Calendar\CalendarIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Maya\Calendar\CalendarIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Maya\Calendar\CalendarIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Maya\Calendar\CalendarIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Maya\Holkan\3DModel\Swordsman_Maya.dds">
       <SubType>Lua</SubType>
@@ -5226,7 +4995,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Aztecs\SacrificialCaptives" />
     <Folder Include="Babylon\Kibitum" />
     <Folder Include="Babylon\Kibitum\3DModel" />
-    <Folder Include="Babylon\Kibitum\Legacy" />
     <Folder Include="Babylon\Etemenanki" />
     <Folder Include="Byzantium\Dromon" />
     <Folder Include="Byzantium\Hippodrome" />
@@ -5247,7 +5015,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Greece\Klepth" />
     <Folder Include="India\Dhanuraashi" />
     <Folder Include="India\Dhanuraashi\3DModel" />
-    <Folder Include="India\Dhanuraashi\Dhanurvidya" />
     <Folder Include="India\Qila" />
     <Folder Include="Indonesia\GajahMada" />
     <Folder Include="Indonesia\Kampong" />
@@ -5271,13 +5038,11 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Persia\Qizilbash" />
     <Folder Include="Persia\Pairidaeza" />
     <Folder Include="Persia\Qizilbash\3DModel" />
-    <Folder Include="Persia\Qizilbash\SafaviAgitator" />
     <Folder Include="Celts\ScythedChariot\3DModel" />
     <Folder Include="Maya" />
     <Folder Include="Sweden\Carolean" />
     <Folder Include="Maya\Holkan" />
     <Folder Include="Maya\Holkan\3DModel" />
-    <Folder Include="Maya\Calendar" />
     <Folder Include="Maya\Atlatlist" />
     <Folder Include="Maya\Pitz" />
     <Folder Include="Celts\PictishWarrior" />

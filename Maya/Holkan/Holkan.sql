@@ -63,12 +63,7 @@ VALUES		('UNIT_MAYA_ATLAS', 			256, 		'HolkanPicture_256.dds',		1, 				1),
 			('UNIT_MAYA_ATLAS', 			80, 		'HolkanPicture_080.dds',		1, 				1),
 			('UNIT_MAYA_ATLAS', 			64, 		'HolkanPicture_064.dds',		1, 				1),
 			('UNIT_MAYA_ATLAS', 			45, 		'HolkanPicture_045.dds',		1, 				1),
-			('UNIT_MAYA_FLAG_ATLAS', 		32, 		'HolkanFlag_032.dds',			1, 				1),
-			('UNIT_MAYA_PROMOTION_ATLAS',	16, 		'CalendarIcon_016.dds',			1, 				1),
-			('UNIT_MAYA_PROMOTION_ATLAS',	32, 		'CalendarIcon_032.dds',			1, 				1),
-			('UNIT_MAYA_PROMOTION_ATLAS',	45, 		'CalendarIcon_045.dds',			1, 				1),
-			('UNIT_MAYA_PROMOTION_ATLAS',	64, 		'CalendarIcon_064.dds',			1, 				1),
-			('UNIT_MAYA_PROMOTION_ATLAS',	256, 		'CalendarIcon_256.dds',			1, 				1);
+			('UNIT_MAYA_FLAG_ATLAS', 		32, 		'HolkanFlag_032.dds',			1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -78,8 +73,8 @@ VALUES		('UNIT_MAYA_ATLAS', 			256, 		'HolkanPicture_256.dds',		1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 											Description, 											Help, 														Sound, 				GoodyHutYieldBonus,	BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2', 	'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2',		'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2_HELP', 	'AS2D_IF_LEVELUP',	25,					0,						0,				0,			0,			0,					0,			0,					1, 				11, 			'EXPANSION2_PROMOTION_ATLAS', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2');
+			(Type, 											Description, 											Help, 														Sound, 				GoodyHutYieldBonus,	BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 			PediaEntry)
+VALUES		('PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2', 	'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2',		'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2_HELP', 	'AS2D_IF_LEVELUP',	25,					0,						0,				0,			0,			0,					0,			0,					1, 				0, 				'promoMUC_atlas_01', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

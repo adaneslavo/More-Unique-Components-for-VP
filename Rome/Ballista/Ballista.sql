@@ -40,9 +40,9 @@ UPDATE Unit_Flavors SET Flavor = '6' WHERE UnitType = 'UNIT_ROMAN_BALLISTA' AND 
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-		(Type, 							Description, 							Help, 									Sound, 			CombatPercent,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 		PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA',	'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA',	'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA_HELP',	'AS2D_IF_LEVELUP',	0,		0,		0,		0,		0,		0,		0, 			1,		33, 		'PROMOTION_ATLAS', 	'PEDIA_SIEGE',	'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA'),
-		('PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT',		'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT',		'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT_HELP',		'AS2D_IF_LEVELUP',	0,		1,		0,		0,		0,		0,		0, 			1,		33, 		'PROMOTION_ATLAS', 	'PEDIA_SIEGE',	'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT');
+		(Type, 													Description, 												Help, 																Sound, 				CombatPercent,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES	('PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA',	'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA',	'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA_HELP',	'AS2D_IF_LEVELUP',	0,				0,				0,			0,			0,					0,			0, 					1,				16, 			'promoMUC_atlas_01', 	'PEDIA_SIEGE',	'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_ON_BALLISTA'),
+		('PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT',			'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT',		'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT_HELP',			'AS2D_IF_LEVELUP',	0,				1,				0,			0,			0,					0,			0, 					1,				33, 			'promoMUC_atlas_01', 	'PEDIA_SIEGE',	'TXT_KEY_PROMOTION_UNIT_ROME_LEGATUS_LEGIONIS_EFFECT');
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------

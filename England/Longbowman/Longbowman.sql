@@ -18,8 +18,8 @@ VALUES		('CIVILIZATION_ENGLAND',	'UNITCLASS_CROSSBOWMAN',	'UNIT_ENGLISH_LONGBOWM
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 									Description, 									Help, 												Sound, 				RangeChange,	OpenDefense,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_ENGLAND_AGINCOURT', 	'TXT_KEY_PROMOTION_UNIT_ENGLAND_AGINCOURT',		'TXT_KEY_PROMOTION_UNIT_ENGLAND_AGINCOURT_HELP', 	'AS2D_IF_LEVELUP',	0,				0,				0,				0,			0,			0,					0,			0,					1, 				9, 				'PROMOTION_ATLAS', 	'PEDIA_RANGED', 	'TXT_KEY_PROMOTION_UNIT_ENGLAND_AGINCOURT');
+			(Type, 									Description, 									Help, 												Sound, 				RangeChange,	OpenDefense,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 			PediaEntry)
+VALUES		('PROMOTION_UNIT_ENGLAND_AGINCOURT', 	'TXT_KEY_PROMOTION_UNIT_ENGLAND_AGINCOURT',		'TXT_KEY_PROMOTION_UNIT_ENGLAND_AGINCOURT_HELP', 	'AS2D_IF_LEVELUP',	0,				0,				0,				0,			0,			0,					0,			0,					1, 				40, 			'promoMUC_atlas_00', 	'PEDIA_RANGED', 	'TXT_KEY_PROMOTION_UNIT_ENGLAND_AGINCOURT');
 ------------------------------
 -- UnitPromotions_UnitCombatMods
 ------------------------------

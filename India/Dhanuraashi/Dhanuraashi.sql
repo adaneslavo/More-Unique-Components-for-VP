@@ -63,12 +63,7 @@ VALUES		('UNIT_INDIA_ATLAS', 			256, 		'DhanuraashiPicture_256.dds',	1, 				1),
 			('UNIT_INDIA_ATLAS', 			80, 		'DhanuraashiPicture_080.dds',	1, 				1),
 			('UNIT_INDIA_ATLAS', 			64, 		'DhanuraashiPicture_064.dds',	1, 				1),
 			('UNIT_INDIA_ATLAS', 			45, 		'DhanuraashiPicture_045.dds',	1, 				1),
-			('UNIT_INDIA_FLAG_ATLAS', 		32, 		'DhanuraashiFlag_032.dds',		1, 				1),
-			('UNIT_INDIA_PROMOTION_ATLAS',	16, 		'DhanurvidyaIcon_016.dds',		1, 				1),
-			('UNIT_INDIA_PROMOTION_ATLAS',	32, 		'DhanurvidyaIcon_032.dds',		1, 				1),
-			('UNIT_INDIA_PROMOTION_ATLAS',	45, 		'DhanurvidyaIcon_045.dds',		1, 				1),
-			('UNIT_INDIA_PROMOTION_ATLAS',	64, 		'DhanurvidyaIcon_064.dds',		1, 				1),
-			('UNIT_INDIA_PROMOTION_ATLAS',	256, 		'DhanurvidyaIcon_256.dds',		1, 				1);
+			('UNIT_INDIA_FLAG_ATLAS', 		32, 		'DhanuraashiFlag_032.dds',		1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -78,9 +73,9 @@ VALUES		('UNIT_INDIA_ATLAS', 			256, 		'DhanuraashiPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 									Description, 								Help, 												Sound, 				RangeChange,	RangedAttackModifier,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_INDIA_EPIC',			'TXT_KEY_PROMOTION_UNIT_INDIA_EPIC',		'TXT_KEY_PROMOTION_UNIT_INDIA_EPIC_HELP',			'AS2D_IF_LEVELUP',	0,				0,						0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_POLAND_PROMOTION_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_INDIA_EPIC'),
-			('PROMOTION_UNIT_INDIA_DHANURVIDYA',	'TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA',	'TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA_HELP',	'AS2D_IF_LEVELUP',	0,				0,						0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_INDIA_PROMOTION_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA');
+			(Type, 									Description, 								Help, 												Sound, 				RangeChange,	RangedAttackModifier,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_INDIA_EPIC',			'TXT_KEY_PROMOTION_UNIT_INDIA_EPIC',		'TXT_KEY_PROMOTION_UNIT_INDIA_EPIC_HELP',			'AS2D_IF_LEVELUP',	0,				0,						0,				0,			0,			0,					0,			0,					1, 				53, 				'promoMUC_atlas_00', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_INDIA_EPIC'),
+			('PROMOTION_UNIT_INDIA_DHANURVIDYA',	'TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA',	'TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA_HELP',	'AS2D_IF_LEVELUP',	0,				0,						0,				0,			0,			0,					0,			0,					1, 				52, 				'promoMUC_atlas_00', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_INDIA_DHANURVIDYA');
 ------------------------------
 -- UnitPromotions_YieldFromKills
 ------------------------------

@@ -73,16 +73,16 @@ VALUES		('UNIT_ETHIOPIA_ATLAS', 			256, 		'ShotelaiPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 								Description, 								Help, 											Sound, 				MovesChange,	AttackMod,	PlagueChance, 	PlaguePromotion, 					DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_ETHIOPIA_MAIM_0', 	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0_HELP', 	'AS2D_IF_LEVELUP',	0,				0,			100, 			'PROMOTION_UNIT_ETHIOPIA_MAIM_1', 	0,			0,					0,			0,					1, 				0, 				'EXPANSION_PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0');
+			(Type, 								Description, 								Help, 											Sound, 				MovesChange,	AttackMod,	PlagueChance, 	PlaguePromotion, 					DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_ETHIOPIA_MAIM_0', 	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0_HELP', 	'AS2D_IF_LEVELUP',	0,				0,			100, 			'PROMOTION_UNIT_ETHIOPIA_MAIM_1', 	0,			0,					0,			0,					1, 				42, 				'promoMUC_atlas_00', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0');
 
 INSERT INTO UnitPromotions 
 			(Type, 								Description, 								Help, 											Sound, 				MovesChange,	AttackMod,	PromotionDuration, 	PlagueID, 	PlaguePriority, DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
 VALUES		('PROMOTION_UNIT_ETHIOPIA_MAIM_1', 	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_1',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_1_HELP', 	'AS2D_IF_LEVELUP',	-2,				0,			1, 					1, 			0, 				0,			0,					0,			0,					1, 				1, 				'KRIS_SWORDSMAN_PROMOTION_ATLAS', 	'PEDIA_MELEE', 	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_1');
 
 INSERT INTO UnitPromotions 
-		(Type, 						Description, 						Help, 								Sound, 				MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON_HELP', 		'AS2D_IF_LEVELUP',		0,		0,		0,		0,		0,		1,					1, 				4, 				'EXPANSION2_PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON');
+			(Type, 										Description, 										Help, 														Sound, 					MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON',	'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON_HELP', 		'AS2D_IF_LEVELUP',		0,				0,			0,			0,					0,			1,					1, 				41, 			'promoMUC_atlas_00', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON');
 --------------------------------
 -- UnitPromotions_UnitCombatMods
 --------------------------------

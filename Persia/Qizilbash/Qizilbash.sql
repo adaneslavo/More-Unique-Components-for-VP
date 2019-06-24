@@ -79,7 +79,7 @@ VALUES		('UNIT_PERSIA_ATLAS', 				256, 		'QizilbashPicture_256.dds',			1, 				1)
 ------------------------------
 INSERT INTO UnitPromotions 
 			(Type, 										Description, 										Help, 													Sound, 				AttackWoundedMod,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_PERSIA_SAFAVI_AGITATOR', 	'TXT_KEY_PROMOTION_UNIT_PERSIA_SAFAVI_AGITATOR',	'TXT_KEY_PROMOTION_UNIT_PERSIA_SAFAVI_AGITATOR_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_PERSIA_PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_PERSIA_SAFAVI_AGITATOR');
+VALUES		('PROMOTION_UNIT_PERSIA_SAFAVI_AGITATOR', 	'TXT_KEY_PROMOTION_UNIT_PERSIA_SAFAVI_AGITATOR',	'TXT_KEY_PROMOTION_UNIT_PERSIA_SAFAVI_AGITATOR_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			0,					1, 				9, 				'promoMUC_atlas_01', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_PERSIA_SAFAVI_AGITATOR');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

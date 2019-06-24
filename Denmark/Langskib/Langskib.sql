@@ -127,9 +127,9 @@ VALUES		('UNIT_DENMARK_LANGSKIB',	'FLAVOR_NAVAL',			18),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 															Description, 															Help, 																		Sound, 				AllowsEmbarkation, 	EmbarkedAllWater, 	EmbarkExtraVisibility,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION',					'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION',					'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_HELP',					'AS2D_IF_LEVELUP',	0,					0,					0,						0,				0,			0,			0,					0,			0,					1, 				5, 				'PROMOTION_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION'),
-			('PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN',	'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN',	'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN_HELP',	'AS2D_IF_LEVELUP',	1, 					1, 					2,						0,				0,			0,			0,					0,			0,					1, 				59, 			'PROMOTION_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN');
+			(Type, 															Description, 															Help, 																		Sound, 				AllowsEmbarkation, 	EmbarkedAllWater, 	EmbarkExtraVisibility,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 			PediaEntry)
+VALUES		('PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION',					'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION',					'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_HELP',					'AS2D_IF_LEVELUP',	0,					0,					0,						0,				0,			0,			0,					0,			0,					1, 				38, 			'promoMUC_atlas_00', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION'),
+			('PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN',	'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN',	'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN_HELP',	'AS2D_IF_LEVELUP',	1, 					1, 					2,						0,				0,			0,			0,					0,			0,					1, 				59, 			'PROMOTION_ATLAS', 		'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN');
 --------------------------------
 -- Unit_FreePromotions
 --------------------------------

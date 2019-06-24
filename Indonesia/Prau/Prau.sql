@@ -71,8 +71,8 @@ VALUES		('UNIT_INDONESIA_ATLAS', 		256, 		'PrauPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 										Description, 										Help, 													Sound, 					MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA', 'TXT_KEY_PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA',	'TXT_KEY_PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA_HELP', 'AS2D_IF_LEVELUP',		2,				0,			0,			0,					0,			1,					1, 				33, 			'PROMOTION_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA');
+			(Type, 										Description, 										Help, 													Sound, 					MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA', 'TXT_KEY_PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA',	'TXT_KEY_PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA_HELP', 'AS2D_IF_LEVELUP',		2,				0,			0,			0,					0,			1,					1, 				54, 			'promoMUC_atlas_00', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

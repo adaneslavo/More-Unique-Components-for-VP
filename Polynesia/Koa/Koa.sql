@@ -63,12 +63,7 @@ VALUES		('UNIT_POLYNESIA_ATLAS', 			256, 		'KoaPicture_256.dds',	1, 				1),
 			('UNIT_POLYNESIA_ATLAS', 			80, 		'KoaPicture_080.dds',	1, 				1),
 			('UNIT_POLYNESIA_ATLAS', 			64, 		'KoaPicture_064.dds',	1, 				1),
 			('UNIT_POLYNESIA_ATLAS', 			45, 		'KoaPicture_045.dds',	1, 				1),
-			('UNIT_POLYNESIA_FLAG_ATLAS', 		32, 		'KoaFlag_032.dds',		1, 				1),
-			('UNIT_POLYNESIA_PROMOTION_ATLAS',	16, 		'KapuKuialuaIcon_016.dds',	1, 				1),
-			('UNIT_POLYNESIA_PROMOTION_ATLAS',	32, 		'KapuKuialuaIcon_032.dds',	1, 				1),
-			('UNIT_POLYNESIA_PROMOTION_ATLAS',	45, 		'KapuKuialuaIcon_045.dds',	1, 				1),
-			('UNIT_POLYNESIA_PROMOTION_ATLAS',	64, 		'KapuKuialuaIcon_064.dds',	1, 				1),
-			('UNIT_POLYNESIA_PROMOTION_ATLAS',	256, 		'KapuKuialuaIcon_256.dds',	1, 				1);
+			('UNIT_POLYNESIA_FLAG_ATLAS', 		32, 		'KoaFlag_032.dds',		1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -78,12 +73,12 @@ VALUES		('UNIT_POLYNESIA_ATLAS', 			256, 		'KoaPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 										Description, 										Help, 														Sound, 				PlagueChance, 	PlaguePromotion, 							BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0', 'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0_HELP', 	'AS2D_IF_LEVELUP',	100, 			'PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1', 	0,						0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_POLYNESIA_PROMOTION_ATLAS', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0');
+			(Type, 										Description, 										Help, 														Sound, 				PlagueChance, 	PlaguePromotion, 							BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 			PediaEntry)
+VALUES		('PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0', 'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0_HELP', 	'AS2D_IF_LEVELUP',	100, 			'PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1', 	0,						0,				0,			0,			0,					0,			0,					1, 				12, 			'promoMUC_atlas_01', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0');
 
 INSERT INTO UnitPromotions 
-			(Type, 										Description, 										Help, 													Sound, 				MaxHitPointsChange, EnemyHealChange, 	NeutralHealChange, 	FriendlyHealChange, PromotionDuration, 	PlagueID, 	PlaguePriority, BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1', 'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1_HELP', 'AS2D_IF_LEVELUP',	-20, 				-10, 				-10, 				-10, 				2, 					1, 			0, 				0,						0,				0,			0,			0,					0,			0,					1, 				57, 			'ABILITY_ATLAS', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1');
+			(Type, 										Description, 										Help, 													Sound, 				MaxHitPointsChange, EnemyHealChange, 	NeutralHealChange, 	FriendlyHealChange, PromotionDuration, 	PlagueID, 	PlaguePriority, BarbarianCombatBonus,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 			PediaEntry)
+VALUES		('PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1', 'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1_HELP', 'AS2D_IF_LEVELUP',	-20, 				-10, 				-10, 				-10, 				2, 					1, 			0, 				0,						0,				0,			0,			0,					0,			0,					1, 				13, 			'promoMUC_atlas_01', 	'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

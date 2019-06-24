@@ -16,9 +16,9 @@ VALUES	('CIVILIZATION_HUNS',	'UNITCLASS_HORSEMAN',	'UNIT_HUNS_TARKHAN');
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 								Description, 								Help, 											Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 			PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_HUNS_MIGRATION',	'TXT_KEY_PROMOTION_UNIT_HUNS_MIGRATION',	'TXT_KEY_PROMOTION_UNIT_HUNS_MIGRATION_HELP', 	'AS2D_IF_LEVELUP',	1, 				36, 			'PROMOTION_ATLAS', 	'PEDIA_MOUNTED',	'TXT_KEY_PROMOTION_UNIT_HUNS_MIGRATION'),
-			('PROMOTION_UNIT_HUNS_SACKER',		'TXT_KEY_PROMOTION_UNIT_HUNS_SACKER',		'TXT_KEY_PROMOTION_UNIT_HUNS_SACKER_HELP', 		'AS2D_IF_LEVELUP',	1, 				32, 			'PROMOTION_ATLAS', 	'PEDIA_HEAL',		'TXT_KEY_PROMOTION_UNIT_HUNS_SACKER');
+			(Type, 								Description, 								Help, 											Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 				PediaType, 			PediaEntry)
+VALUES		('PROMOTION_UNIT_HUNS_MIGRATION',	'TXT_KEY_PROMOTION_UNIT_HUNS_MIGRATION',	'TXT_KEY_PROMOTION_UNIT_HUNS_MIGRATION_HELP', 	'AS2D_IF_LEVELUP',	1, 				48, 			'promoMUC_atlas_00', 	'PEDIA_MOUNTED',	'TXT_KEY_PROMOTION_UNIT_HUNS_MIGRATION'),
+			('PROMOTION_UNIT_HUNS_SACKER',		'TXT_KEY_PROMOTION_UNIT_HUNS_SACKER',		'TXT_KEY_PROMOTION_UNIT_HUNS_SACKER_HELP', 		'AS2D_IF_LEVELUP',	1, 				49, 			'promoMUC_atlas_00', 	'PEDIA_HEAL',		'TXT_KEY_PROMOTION_UNIT_HUNS_SACKER');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

@@ -186,10 +186,10 @@ VALUES	('UNIT_CARTHAGE_SHOPHET', 		'PROMOTION_UNIT_CARTHAGE_GENERAL'),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-		(Type, 								Description, 									Help, 												Sound, 				IgnoreZoC,  PlagueIDImmunity, 	CannotBeChosen, PortraitIndex,	IconAtlas, 			PediaType, 			PediaEntry)
-VALUES	('PROMOTION_UNIT_CARTHAGE_ADMIRAL',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL_HELP', 	'AS2D_IF_LEVELUP',	0, 			0, 					1, 				48, 			'PROMOTION_ATLAS', 	'PEDIA_CIVILIAN',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL'),
-		('PROMOTION_UNIT_CARTHAGE_GENERAL',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL_HELP', 	'AS2D_IF_LEVELUP',	0, 			0, 					1, 				48, 			'PROMOTION_ATLAS', 	'PEDIA_CIVILIAN',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL'),
-		('PROMOTION_UNIT_CARTHAGE_ZOC',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC',			'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC_HELP',			'AS2D_IF_LEVELUP',	1, 			1, 					1, 				33, 			'PROMOTION_ATLAS', 	'PEDIA_SHARED',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC');
+		(Type, 								Description, 									Help, 												Sound, 				IgnoreZoC,  PlagueIDImmunity, 	CannotBeChosen, PortraitIndex,	IconAtlas, 				PediaType, 			PediaEntry)
+VALUES	('PROMOTION_UNIT_CARTHAGE_ADMIRAL',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL_HELP', 	'AS2D_IF_LEVELUP',	0, 			0, 					1, 				32, 			'promoMUC_atlas_00', 	'PEDIA_CIVILIAN',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ADMIRAL'),
+		('PROMOTION_UNIT_CARTHAGE_GENERAL',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL_HELP', 	'AS2D_IF_LEVELUP',	0, 			0, 					1, 				33, 			'promoMUC_atlas_00', 	'PEDIA_CIVILIAN',	'TXT_KEY_PROMOTION_UNIT_CARTHAGE_GENERAL'),
+		('PROMOTION_UNIT_CARTHAGE_ZOC',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC',			'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC_HELP',			'AS2D_IF_LEVELUP',	1, 			1, 					1, 				34, 			'promoMUC_atlas_00', 	'PEDIA_SHARED',		'TXT_KEY_PROMOTION_UNIT_CARTHAGE_ZOC');
 --==========================================================================================================================
 
 --==========================================================================================================================

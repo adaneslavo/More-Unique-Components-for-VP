@@ -63,17 +63,7 @@ VALUES		('UNIT_POLAND_ATLAS', 			256, 		'PancernyPicture_256.dds',			1, 				1),
 			('UNIT_POLAND_ATLAS', 			80, 		'PancernyPicture_080.dds',			1, 				1),
 			('UNIT_POLAND_ATLAS', 			64, 		'PancernyPicture_064.dds',			1, 				1),
 			('UNIT_POLAND_ATLAS', 			45, 		'PancernyPicture_045.dds',			1, 				1),
-			('UNIT_POLAND_FLAG_ATLAS', 		32, 		'PancernyFlag_032.dds',				1, 				1),
-			('UNIT_POLAND_PROMOTION_ATLAS', 16, 		'BogurodzicaIcon_016.dds',			1, 				1),
-			('UNIT_POLAND_PROMOTION_ATLAS', 32, 		'BogurodzicaIcon_032.dds',			1, 				1),
-			('UNIT_POLAND_PROMOTION_ATLAS', 45, 		'BogurodzicaIcon_045.dds',			1, 				1),
-			('UNIT_POLAND_PROMOTION_ATLAS', 64, 		'BogurodzicaIcon_064.dds',			1, 				1),
-			('UNIT_POLAND_PROMOTION_ATLAS', 256, 		'BogurodzicaIcon_256.dds',			1, 				1),
-			('UNIT_POLAND_PROMOTION_2_ATLAS', 16, 		'GrunwaldIcon_016.dds',				1, 				1),
-			('UNIT_POLAND_PROMOTION_2_ATLAS', 32, 		'GrunwaldIcon_032.dds',				1, 				1),
-			('UNIT_POLAND_PROMOTION_2_ATLAS', 45, 		'GrunwaldIcon_045.dds',				1, 				1),
-			('UNIT_POLAND_PROMOTION_2_ATLAS', 64, 		'GrunwaldIcon_064.dds',				1, 				1),
-			('UNIT_POLAND_PROMOTION_2_ATLAS', 256, 		'GrunwaldIcon_256.dds',				1, 				1);
+			('UNIT_POLAND_FLAG_ATLAS', 		32, 		'PancernyFlag_032.dds',				1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -83,8 +73,8 @@ VALUES		('UNIT_POLAND_ATLAS', 			256, 		'PancernyPicture_256.dds',			1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 									Description, 									Help, 												Sound, 				MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 							PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA',	'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA_HELP',	'AS2D_IF_LEVELUP',	0,				0,			25,			0,					0,			0,					1, 				0, 				'UNIT_POLAND_PROMOTION_ATLAS', 		'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA');
+			(Type, 									Description, 									Help, 												Sound, 				MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_POLAND_BOGURODZICA',	'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA',	'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA_HELP',	'AS2D_IF_LEVELUP',	0,				0,			25,			0,					0,			0,					1, 				11, 				'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_POLAND_BOGURODZICA');
 ------------------------------
 -- UnitPromotions_YieldFromKills
 ------------------------------

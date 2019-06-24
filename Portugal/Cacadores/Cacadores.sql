@@ -83,7 +83,7 @@ INSERT INTO UnitPromotions
 			(Type,										Description,								Help,						
 			CannotBeChosen,		Sound,			PortraitIndex,	IconAtlas,			PediaType,		PediaEntry)
 VALUES		('PROMOTION_UNIT_PORTUGAL_CACADOR',				'TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR',		'TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR_HELP',
-			1,				'AS2D_IF_LEVELUP',	46,				'PROMOTION_ATLAS',	'PEDIA_MELEE',			'TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR');
+			1,				'AS2D_IF_LEVELUP',	15,				'promoMUC_atlas_01',	'PEDIA_MELEE',			'TXT_KEY_PROMOTION_UNIT_PORTUGAL_CACADOR');
 
 
 

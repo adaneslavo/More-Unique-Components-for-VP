@@ -121,8 +121,8 @@ VALUES	('UNIT_JAPAN_YAMATO',	'FLAVOR_NAVAL',		45),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 						Description, 						Help, 									Sound, 				CombatPercent,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_JAPAN_YAMATO', 	'TXT_KEY_PROMOTION_UNIT_JAPAN_YAMATO',	'TXT_KEY_PROMOTION_UNIT_JAPAN_YAMATO_HELP', 	'AS2D_IF_LEVELUP',	0,				0,				0,			0,			0,					0,			0,					1, 				16, 			'PROMOTION_ATLAS', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_JAPAN_YAMATO');
+			(Type, 								Description, 							Help, 											Sound, 				CombatPercent,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_JAPAN_YAMATO', 	'TXT_KEY_PROMOTION_UNIT_JAPAN_YAMATO',	'TXT_KEY_PROMOTION_UNIT_JAPAN_YAMATO_HELP', 	'AS2D_IF_LEVELUP',	0,				0,				0,			0,			0,					0,			0,					1, 				56, 			'promoMUC_atlas_00', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_JAPAN_YAMATO');
 ------------------------------
 -- UnitPromotions_YieldFromKills
 ------------------------------

@@ -26,8 +26,8 @@ VALUES		('RESOURCE_COCA',	'FLAVOR_PRODUCTION',		10);
 ------------------------------
 --promotions granted by Coca monopoly
 INSERT INTO UnitPromotions 
-			(Type, 							WorkRateMod,	CanCrossMountains, 	Description, 						Help, 										Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 			LostWithUpgrade, 	PediaType,		PediaEntry)
-VALUES		('PROMOTION_UNIT_INCA_COCA',	15,				1,					'TXT_KEY_PROMOTION_UNIT_INCA_COCA',	'TXT_KEY_PROMOTION_UNIT_INCA_COCA_HELP', 	'AS2D_IF_LEVELUP',	1, 				35, 			'PROMOTION_ATLAS', 	0, 					'PEDIA_SHARED',	'TXT_KEY_PROMOTION_UNIT_INCA_COCA');
+			(Type, 							WorkRateMod,	CanCrossMountains, 	Description, 						Help, 										Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 				LostWithUpgrade, 	PediaType,		PediaEntry)
+VALUES		('PROMOTION_UNIT_INCA_COCA',	15,				1,					'TXT_KEY_PROMOTION_UNIT_INCA_COCA',	'TXT_KEY_PROMOTION_UNIT_INCA_COCA_HELP', 	'AS2D_IF_LEVELUP',	1, 				51, 			'promoMUC_atlas_00', 	0, 					'PEDIA_SHARED',	'TXT_KEY_PROMOTION_UNIT_INCA_COCA');
 --==========================================================================================================================
 
 --==========================================================================================================================

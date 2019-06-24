@@ -93,9 +93,9 @@ VALUES		('UNIT_SIAM_ATLAS', 			256, 		'SeirMorbPicture_256.dds',		1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 										Description, 										Help, 													Sound, 				RangeChange,	RangedAttackModifier,	CanMoveAfterAttacking, 	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_SIAM_COASTAL_CANNON', 		'TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON',		'TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON_HELP', 		'AS2D_IF_LEVELUP',	0,				0,						0, 						0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_SIAM_PROMOTION_4_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON'),
-			('PROMOTION_UNIT_SIAM_CROACHING_TIGER', 	'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER',		'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_HELP',		'AS2D_IF_LEVELUP',	0,				0,						1, 						0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_SIAM_PROMOTION_1_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER');
+			(Type, 										Description, 										Help, 													Sound, 				RangeChange,	RangedAttackModifier,	CanMoveAfterAttacking, 	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_SIAM_COASTAL_CANNON', 		'TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON',		'TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON_HELP', 		'AS2D_IF_LEVELUP',	0,				0,						0, 						0,				0,			0,			0,					0,			0,					1, 				22, 			'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON'),
+			('PROMOTION_UNIT_SIAM_CROACHING_TIGER', 	'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER',		'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_HELP',		'AS2D_IF_LEVELUP',	0,				0,						1, 						0,				0,			0,			0,					0,			0,					1, 				23, 			'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER');
 ------------------------------
 -- UnitPromotions_UnitCombatMods
 ------------------------------

@@ -73,8 +73,8 @@ VALUES		('UNIT_MONGOLIA_ATLAS', 		256, 		'BlackTugPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-		(Type, 									Description, 								Help, 												Sound, 				GainsXPFromPillaging,	AttackWoundedMod,	MovesChange,	PillageBonusStrength, 	AttackMod,	DefenseMod, 	ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 			PediaEntry)
-VALUES	('PROMOTION_UNIT_MONGOLIA_MINGGHAN', 	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN',	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN_HELP', 	'AS2D_IF_LEVELUP',	1,						0,					0,				20, 					0,			0,				0,					0,			0,					1, 				9, 				'PROMOTION_ATLAS', 	'PEDIA_MOUNTED',	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN');
+		(Type, 									Description, 								Help, 												Sound, 				GainsXPFromPillaging,	AttackWoundedMod,	MovesChange,	PillageBonusStrength, 	AttackMod,	DefenseMod, 	ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 			PediaEntry)
+VALUES	('PROMOTION_UNIT_MONGOLIA_MINGGHAN', 	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN',	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN_HELP', 	'AS2D_IF_LEVELUP',	1,						0,					0,				20, 					0,			0,				0,					0,			0,					1, 				1, 				'promoMUC_atlas_01', 	'PEDIA_MOUNTED',	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MINGGHAN');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

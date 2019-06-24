@@ -73,8 +73,8 @@ VALUES		('UNIT_RUSSIA_ATLAS', 		256, 		'LicornePicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 									Description, 								Help, 												Sound, 				RangeChange,	RangedAttackModifier,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_RUSSIA_GRAPESHOT', 	'TXT_KEY_PROMOTION_UNIT_RUSSIA_GRAPESHOT',	'TXT_KEY_PROMOTION_UNIT_RUSSIA_GRAPESHOT_HELP', 	'AS2D_IF_LEVELUP',	0,				0,						0,				0,			0,			0,					0,			0,					1, 				10, 			'PROMOTION_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_RUSSIA_GRAPESHOT');
+			(Type, 									Description, 								Help, 												Sound, 				RangeChange,	RangedAttackModifier,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_RUSSIA_GRAPESHOT', 	'TXT_KEY_PROMOTION_UNIT_RUSSIA_GRAPESHOT',	'TXT_KEY_PROMOTION_UNIT_RUSSIA_GRAPESHOT_HELP', 	'AS2D_IF_LEVELUP',	0,				0,						0,				0,			0,			0,					0,			0,					1, 				19, 			'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_RUSSIA_GRAPESHOT');
 ------------------------------
 -- UnitPromotions_UnitCombatMods
 ------------------------------

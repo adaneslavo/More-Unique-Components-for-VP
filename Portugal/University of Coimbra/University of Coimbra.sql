@@ -99,9 +99,9 @@ FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_OXFO
 --------------------------------	
 INSERT INTO UnitPromotions
 			(Type,										Description,								Help,						
-			CannotBeChosen,		Sound,			PortraitIndex,	IconAtlas,			PediaType,		PediaEntry)
+			CannotBeChosen,		Sound,			PortraitIndex,	IconAtlas,				PediaType,		PediaEntry)
 VALUES		('PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY',				'TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY',		'TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY_HELP',
-			1,				'AS2D_IF_LEVELUP',	59,				'ABILITY_ATLAS',	'PEDIA_NAVAL',			'TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY');
+			1,				'AS2D_IF_LEVELUP',	14,				'promoMUC_atlas_01',	'PEDIA_NAVAL',			'TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY');
 --------------------------------	
 -- UnitPromotions_UnitCombats
 --------------------------------

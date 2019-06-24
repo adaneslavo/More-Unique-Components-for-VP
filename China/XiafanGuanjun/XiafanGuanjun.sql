@@ -68,8 +68,8 @@ VALUES			('UNIT_CHINA_XIAFAN_GUANJUN',	'PROMOTION_UNIT_CHINA_KOWTOW'),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions
-			(Type,							Description,							Help,										CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,			PediaType,		PediaEntry,								RivalTerritory)
-VALUES		('PROMOTION_UNIT_CHINA_KOWTOW',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW_HELP',	1,					'AS2D_IF_LEVELUP',	40,				'PROMOTION_ATLAS',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW',	1);
+			(Type,							Description,							Help,										CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry,								RivalTerritory)
+VALUES		('PROMOTION_UNIT_CHINA_KOWTOW',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW_HELP',	1,					'AS2D_IF_LEVELUP',	37,				'promoMUC_atlas_00',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW',	1);
 --==========================================================================================================================	
 
 --==========================================================================================================================

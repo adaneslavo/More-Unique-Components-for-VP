@@ -73,8 +73,8 @@ VALUES		('UNIT_GREECE_ATLAS', 		256, 		'KlephtPicture_256.dds',	1, 				1),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 									Description, 									Help, 												Sound, 				RangeChange,	RangedAttackModifier,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_GREECE_PHILHELLENISM', 'TXT_KEY_PROMOTION_UNIT_GREECE_PHILHELLENISM',	'TXT_KEY_PROMOTION_UNIT_GREECE_PHILHELLENISM_HELP', 'AS2D_IF_LEVELUP',	0,				0,						0,				0,			0,			0,					0,			0,					1, 				11, 			'EXPANSION2_PROMOTION_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_GREECE_PHILHELLENISM');
+			(Type, 									Description, 									Help, 												Sound, 				RangeChange,	RangedAttackModifier,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_GREECE_PHILHELLENISM', 'TXT_KEY_PROMOTION_UNIT_GREECE_PHILHELLENISM',	'TXT_KEY_PROMOTION_UNIT_GREECE_PHILHELLENISM_HELP', 'AS2D_IF_LEVELUP',	0,				0,						0,				0,			0,			0,					0,			0,					1, 				45, 			'promoMUC_atlas_00', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_GREECE_PHILHELLENISM');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

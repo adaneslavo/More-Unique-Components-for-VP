@@ -83,9 +83,9 @@ VALUES		('UNIT_OTTOMANS_ATLAS', 		256, 		'GreatTurkishBombardPicture_256.dds',		
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 											Description, 											Help, 														Sound, 				FriendlyHealChange,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 			PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2',	'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2',	'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			1,					1, 				57, 			'ABILITY_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2'),
-			('PROMOTION_UNIT_OTTOMANS_SAHI_TOPU',			'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU',			'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU_HELP',			'AS2D_IF_LEVELUP',	10,					0,				0,			0,			0,					0,			1,					1, 				57, 			'ABILITY_ATLAS', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU');
+			(Type, 											Description, 											Help, 														Sound, 				FriendlyHealChange,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2',	'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2',	'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			1,					1, 				8, 				'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2'),
+			('PROMOTION_UNIT_OTTOMANS_SAHI_TOPU',			'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU',			'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU_HELP',			'AS2D_IF_LEVELUP',	10,					0,				0,			0,			0,					0,			1,					1, 				7, 				'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU');
 ------------------------------
 -- UnitPromotions_Domains
 ------------------------------
