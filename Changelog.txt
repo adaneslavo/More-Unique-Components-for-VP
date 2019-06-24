@@ -7,12 +7,15 @@ v46:
 - compatibility:
 	- Spices ==> changed to Cinnamon
 	- UnitCombat ==> removed UnitCombat info for civilian units. This info has been added to base VP
-	- Unique Promotions ==> courtesy of Asterix Rage, all promotions have unique graphics
+	- Unique Promotions ==> courtesy of Asterix Rage, all promotions have unique graphics (except 5)
 - tweaked/modified:
 	- Licorne ==> Added combat bonus vs Gunpowder units.
 	- Unique Japanese Guilds ==> Halved the instant yields from GWAM births.
 	- Exam Hall ==> +2 Gold to Great Works in City. Increased GPPs on Citizen birth to 15.
-				==> removed +GPP rate (and GPP rate boost on WLTKD). Removed extra Civil Servant Specialist Slot.
+				==> removed +GPP rate (and GPP rate boost on WLTKD). Removed extra Civil Servant Slot.
+	- Suffet ==> Added unique embarked unit model and icon
+		==> ZOC bonus now stays on embark
+		==> Whenever a GAdmiral is born, it appears as a Suffet GGeneral in your capital instead
 	- Elephant Camp ==> Changed +1 Faith for Ivory to +1 Faith for Camps.
 	- Various text and file name tweaks.
 
