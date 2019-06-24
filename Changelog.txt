@@ -14,7 +14,7 @@ v46:
 	- Exam Hall ==> +2 Gold to Great Works in City. Increased GPPs on Citizen birth to 15.
 				==> removed +GPP rate (and GPP rate boost on WLTKD). Removed extra Civil Servant Slot.
 	- Suffet ==> Added unique embarked unit model and icon
-		==> ZOC bonus now stays on embark
+		==> ZOC bonus now stays on embark and also gives plague immunity.
 		==> Whenever a GAdmiral is born, it appears as a Suffet GGeneral in your capital instead
 	- Elephant Camp ==> Changed +1 Faith for Ivory to +1 Faith for Camps.
 	- Various text and file name tweaks.
