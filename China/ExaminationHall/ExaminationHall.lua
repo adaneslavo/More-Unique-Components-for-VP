@@ -104,7 +104,7 @@ function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
 		end
 		
 		-- found
-		local iGPP = math.floor(20 * iEraModifier * iGameSpeedModifier)
+		local iGPP = math.floor(15 * iEraModifier * iGameSpeedModifier)
 		
 		for _, spec in ipairs(tBestGP) do		
 			pCity:ChangeSpecialistGreatPersonProgressTimes100(spec.GPType, iGPP * 100)

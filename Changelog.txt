@@ -11,7 +11,7 @@ v46:
 - tweaked/modified:
 	- Licorne ==> Added combat bonus vs Gunpowder units.
 	- Unique Japanese Guilds ==> Halved the instant yields from GWAM births.
-	- Exam Hall ==> +2 Gold to Great Works in City. Increased GPPs on Citizen birth to 20.
+	- Exam Hall ==> +2 Gold to Great Works in City. Increased GPPs on Citizen birth to 15.
 				==> removed +GPP rate (and GPP rate boost on WLTKD). Removed extra Civil Servant Specialist Slot.
 	- Elephant Camp ==> Changed +1 Faith for Ivory to +1 Faith for Camps.
 	- Various text and file name tweaks.

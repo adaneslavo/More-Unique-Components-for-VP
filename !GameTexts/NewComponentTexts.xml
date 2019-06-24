@@ -605,7 +605,7 @@
 			<Text>The Examination Hall is a Chinese unique building, replacing the Chancery. In addition to the normal bonuses of a Chancery, the Exam Hall boosts Great People generation in the city, adding Great Person Points to whichever great person currently has the most points in the city whenever a citizen is born.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CHINA_EXAMINATION_HALL_HELP">
-			<Text>+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]Whenever a [ICON_CITIZEN] Citizen is born, gain +20 [ICON_GREAT_PEOPLE] points toward [ICON_GREAT_PEOPLE] Great Person with the highest progress, scaling with Era.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold to [ICON_GREAT_WORK] Great Works in this City</Text>
+			<Text>+10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants the [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] Promotion to all Diplomatic Units built in this City.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.[NEWLINE][NEWLINE]Whenever a [ICON_CITIZEN] Citizen is born, gain +15 [ICON_GREAT_PEOPLE] points toward [ICON_GREAT_PEOPLE] Great Person with the highest progress, scaling with Era.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold to [ICON_GREAT_WORK] Great Works in this City</Text>
 		</Row>
 		
 		<!-- Fale Tel'e -->
