@@ -10,39 +10,12 @@ local fGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].Faith
 local fGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent/ 100
 local eCivilizationMaya = GameInfoTypes.CIVILIZATION_MAYA
 local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
-local ePromotionKhatun = GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW
+local ePromotionKhatun = GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_0
 local ePromotionKhatun1 = GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_1
 local ePromotionKhatun2 = GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_2
 local ePromotionKhatun3 = GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_3
 local ePromotionKhatun4 = GameInfoTypes.PROMOTION_UNIT_MAYA_KATUN_AHAW_4
 local eBuildingPitz = GameInfoTypes.BUILDING_MAYA_PITZ
-
-local tEligibleCombats = {
-	GameInfoTypes.UNITCOMBAT_RECON,
-	GameInfoTypes.UNITCOMBAT_ARCHER,
-	GameInfoTypes.UNITCOMBAT_MOUNTED,
-	GameInfoTypes.UNITCOMBAT_MELEE,
-	GameInfoTypes.UNITCOMBAT_SIEGE,
-	GameInfoTypes.UNITCOMBAT_GUN,
-	GameInfoTypes.UNITCOMBAT_ARMOR
-}
-
--- on unit training give it Khatun promotion
-function OnTrainGiveKhatun(iPlayer, iCity, iUnit)
-	local pPlayer = Players[iPlayer]
-	
-	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationMaya or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
-	
-	local pUnit = pPlayer:GetUnitByID(iUnit)
-	
-	if pPlayer:GetCityByID(iCity):IsHasBuilding(eBuildingPitz) then
-		for i, unitCombatType in pairs(tEligibleCombats) do
-			if pUnit and pUnit:GetUnitCombatType() == unitCombatType then
-				pUnit:SetHasPromotion(ePromotionKhatun, true)
-			end
-		end
-	end
-end
 
 -- upgrade all Khatun promotions every 20 turns
 function OnTurnCheckForUpgrade(iPlayer)
@@ -130,7 +103,6 @@ function PositionCalculator(i1, i2)
 end
 
 if Game.IsCivEverActive(eCivilizationMaya) then
-	GameEvents.CityTrained.Add(OnTrainGiveKhatun)
 	GameEvents.PlayerDoTurn.Add(OnTurnCheckForUpgrade)
 	GameEvents.PlayerEndOfMayaLongCount.Add(OnBaktunGetBonus)
 end

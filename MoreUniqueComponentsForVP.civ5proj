@@ -3840,22 +3840,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Poland\Pancerny\Bogurodzica\BogurodzicaIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Russia\Licorne\3DModel\Licorne.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -5069,7 +5053,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Siam\SeirMorb\3DModel" />
     <Folder Include="Sweden" />
     <Folder Include="Poland\Casimir" />
-    <Folder Include="Poland\Pancerny\Bogurodzica" />
     <Folder Include="Polynesia\Kamehameha" />
     <Folder Include="Spain" />
     <Folder Include="Polynesia\FaleTele" />

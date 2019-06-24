@@ -18,6 +18,10 @@ v46:
 		==> Whenever a GAdmiral is born, it appears as a Suffet GGeneral in your capital instead
 	- Elephant Camp ==> Changed +1 Faith for Ivory to +1 Faith for Camps.
 	- Various text and file name tweaks.
+	- Pitz Court ==> Gives K'atun Ahaw promotion retroactively. 
+				==> Units built in a city before the Pitz court is built do not gain levels of K'atun Ahaw retroactively, only the base promotion.
+- fixed:
+	- Monolithic Church, Oppidum, Latifundium, Hacienda ==> Now remove Marsh features
 
 v45: 
 - tweaked/modified:	

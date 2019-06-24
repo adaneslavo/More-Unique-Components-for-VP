@@ -137,7 +137,7 @@ VALUES		('UNIT_WORKER',		'BUILD_SPAIN_HACIENDA');
 INSERT INTO BuildFeatures	
 			(BuildType, 			FeatureType, PrereqTech, Time, Production, Remove)
 SELECT		'BUILD_SPAIN_HACIENDA',	FeatureType, PrereqTech, Time, Production, Remove
-FROM BuildFeatures WHERE BuildType = 'BUILD_POLDER';
+FROM BuildFeatures WHERE BuildType = 'BUILD_CHATEAU';
 --==========================================================================================================================
 
 --==========================================================================================================================

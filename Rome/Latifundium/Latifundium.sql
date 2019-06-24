@@ -123,7 +123,7 @@ VALUES		('UNIT_WORKER',		'BUILD_ROME_LATIFUNDIUM');
 INSERT INTO BuildFeatures	
 			(BuildType, 				FeatureType, PrereqTech, Time, Production, Remove)
 SELECT		'BUILD_ROME_LATIFUNDIUM',	FeatureType, PrereqTech, Time, Production, Remove
-FROM BuildFeatures WHERE BuildType = 'BUILD_POLDER';
+FROM BuildFeatures WHERE BuildType = 'BUILD_CHATEAU';
 --==========================================================================================================================
 
 --==========================================================================================================================

@@ -29,10 +29,13 @@ function OnCapturePlaceGumey(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop, bCo
 	
 	if pCity:IsHasBuilding(eBuildingGumey) then
 		pPlot:SetImprovementType(eDummyImprovementForGumey)
+		
+	elseif pCity:IsHasBuilding(GameInfoTypes.BUILDING_POLAND_BARBICAN) then
+		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_BARBICAN_DUMMY)			
 
 	elseif pPlot:IsMountain() then
 		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
-	
+		
 	else
 		pPlot:SetImprovementType(-1)
 	end

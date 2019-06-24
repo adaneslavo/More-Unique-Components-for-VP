@@ -108,12 +108,12 @@ VALUES		('TRAIT_BONUS_AGAINST_TECH', 	'UNITCLASS_WORKER',		'BUILD_ETHIOPIA_MONOL
 INSERT INTO BuildFeatures	
 			(BuildType, 								FeatureType, PrereqTech, Time, Production, Remove)
 SELECT		'BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	FeatureType, PrereqTech, Time, Production, Remove
-FROM BuildFeatures WHERE BuildType = 'BUILD_POLDER';
+FROM BuildFeatures WHERE BuildType = 'BUILD_CHATEAU';
 
 INSERT INTO BuildFeatures	
 			(BuildType, 								FeatureType, PrereqTech, Time, Production, Remove)
 SELECT		'BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	FeatureType, PrereqTech, Time, Production, Remove
-FROM BuildFeatures WHERE BuildType = 'BUILD_POLDER';
+FROM BuildFeatures WHERE BuildType = 'BUILD_CHATEAU';
 --==========================================================================================================================
 
 --==========================================================================================================================

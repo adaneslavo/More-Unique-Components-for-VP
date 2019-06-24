@@ -89,8 +89,22 @@ FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_ARMO
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 								Description, 								Help, 											Sound, 				RangedAttackModifier,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_POLAND_BARBICAN',	'TXT_KEY_PROMOTION_UNIT_POLAND_BARBICAN',	'TXT_KEY_PROMOTION_UNIT_POLAND_BARBICAN_HELP',	'AS2D_IF_LEVELUP',	33,						0,				0,			0,			0,					0,			0,					1, 				10, 			'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_POLAND_BARBICAN');
+			(Type, 								Description, 								Help, 											Sound, 				RangedAttackModifier,	IsLostOnMove,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_POLAND_BARBICAN',	'TXT_KEY_PROMOTION_UNIT_POLAND_BARBICAN',	'TXT_KEY_PROMOTION_UNIT_POLAND_BARBICAN_HELP',	'AS2D_IF_LEVELUP',	33,						1,				0,			0,			0,					0,			0,					1, 				10, 			'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_POLAND_BARBICAN');
+------------------------------	
+-- UnitPromotions_UnitCombats
+------------------------------		
+INSERT INTO UnitPromotions_UnitCombats  	
+			(PromotionType, 						UnitCombatType)
+VALUES		('PROMOTION_UNIT_POLAND_BARBICAN',	'UNITCOMBAT_ARCHER'),
+			('PROMOTION_UNIT_POLAND_BARBICAN',	'UNITCOMBAT_SIEGE');
 --==========================================================================================================================
 --==========================================================================================================================
+--------------------------
+-- Improvements
+--------------------------
+INSERT INTO Improvements 
+			(Type,							Description, 							UnitFreePromotion, 					Civilopedia, Help, ArtDefineTag, RequiresFeature, PillageGold, PortraitIndex, IconAtlas)
+SELECT		'IMPROVEMENT_BARBICAN_DUMMY',	'TXT_KEY_IMPROVEMENT_D_FOR_BARBICAN', 	'PROMOTION_UNIT_POLAND_BARBICAN', 	Civilopedia, Help, ArtDefineTag, RequiresFeature, PillageGold, PortraitIndex, IconAtlas 
+FROM Improvements WHERE (Type = 'IMPROVEMENT_TRADING_POST');
 

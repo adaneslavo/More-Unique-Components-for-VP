@@ -454,6 +454,9 @@
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_TEUTONIC">
 			<Text>DF Teutonic</Text>
 		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_D_FOR_BARBICAN">
+			<Text>Fortifications</Text>
+		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_D_FOR_GUMEY">
 			<Text>Suguba</Text>
 		</Row>

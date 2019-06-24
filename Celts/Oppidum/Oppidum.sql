@@ -139,7 +139,7 @@ VALUES		('UNIT_MERCHANT',	'BUILD_CELTS_OPPIDUM');
 INSERT INTO BuildFeatures	
 			(BuildType, 			FeatureType, PrereqTech, Production, Remove)
 SELECT		'BUILD_CELTS_OPPIDUM',	FeatureType, PrereqTech, Production, Remove
-FROM BuildFeatures WHERE BuildType = 'BUILD_POLDER';
+FROM BuildFeatures WHERE BuildType = 'BUILD_CUSTOMS_HOUSE';
 ------------------------------				
 -- Unit_ScalingFromOwnedImprovements
 ------------------------------	

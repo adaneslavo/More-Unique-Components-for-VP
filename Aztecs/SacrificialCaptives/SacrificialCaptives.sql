@@ -16,8 +16,8 @@ VALUES		('TXT_KEY_PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE',			'Human Sacrifice'),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 										Description, 									Help, 													Sound, 				VisibilityChange,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 						PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE',	'TXT_KEY_PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE',	'TXT_KEY_PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			0,					1, 				0, 				'UNIT_POLAND_PROMOTION_ATLAS', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE');
+			(Type, 										Description, 									Help, 													Sound, 				VisibilityChange,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE',	'TXT_KEY_PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE',	'TXT_KEY_PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			0,					1, 				30, 			'promoMUC_atlas_01', 	'PEDIA_MELEE', 'TXT_KEY_PROMOTION_UNIT_AZTEC_HUMAN_SACRIFICE');
 --==========================================================================================================================
 -- TRAITS
 --==========================================================================================================================
