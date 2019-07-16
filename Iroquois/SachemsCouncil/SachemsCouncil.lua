@@ -12,7 +12,7 @@ local eBuildingDummyForSachem3 = GameInfoTypes.BUILDING_D_FOR_SACHEM_3
 local eBuildingDummyForSachem4 = GameInfoTypes.BUILDING_D_FOR_SACHEM_4
 local eBuildingDummyForSachem5 = GameInfoTypes.BUILDING_D_FOR_SACHEM_5
 local eBuildingDummyForSachem6 = GameInfoTypes.BUILDING_D_FOR_SACHEM_6
-local eBuildingDummyForSachem7 = GameInfoTypes.BUILDING_D_FOR_TOWER --same as for White Tower
+local eBuildingDummyForSachem7 = GameInfoTypes.BUILDING_D_FOR_SACHEM_7 --same as for White Tower
 
 -- increase global happiness for each war or defensive pact
 function OnTurnAddHappinessFromDefOrWar(iPlayer)
