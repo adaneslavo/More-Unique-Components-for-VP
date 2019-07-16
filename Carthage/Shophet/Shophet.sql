@@ -98,7 +98,7 @@ FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_GREATGENERAL_KH
 
 INSERT INTO ArtDefine_UnitMemberInfos 	
 			(Type, 													Scale,  ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
-SELECT		('ART_DEF_UNIT_MEMBER_CARTHAGE_SHOPHET_BOAT'),			0.09,	ZOffset, Domain, ('bireme.fxsxml'),			MaterialTypeTag, MaterialTypeSoundOverrideTag
+SELECT		('ART_DEF_UNIT_MEMBER_CARTHAGE_SHOPHET_BOAT'),			0.065,	ZOffset, Domain, ('bireme.fxsxml'),			MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_TRIREME');
 --==========================================================================================================================
 -- UNITS
