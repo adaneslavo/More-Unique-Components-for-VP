@@ -445,6 +445,9 @@
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_SACHEM_6">
 			<Text>DF Sachem 6</Text>
 		</Row>
+		<Row Tag="TXT_KEY_BUILDING_D_FOR_SACHEM_7">
+			<Text>DF Sachem 7</Text>
+		</Row>
 		<Row Tag="TXT_KEY_BUILDING_D_FOR_QILA_1">
 			<Text>DF Qila 1</Text>
 		</Row>
