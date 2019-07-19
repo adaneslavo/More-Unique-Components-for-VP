@@ -55,8 +55,15 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_WORKSHOP';
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
 VALUES		('BUILDING_SIAM_BAAN_CHANG',	'YIELD_FAITH',		1),
-			('BUILDING_SIAM_BAAN_CHANG',	'YIELD_PRODUCTION',	6),
+			('BUILDING_SIAM_BAAN_CHANG',	'YIELD_PRODUCTION',	3),
 			('BUILDING_SIAM_BAAN_CHANG',	'YIELD_CULTURE',	2);
+------------------------------	
+-- Building_YieldChangesPerPop
+------------------------------
+INSERT INTO Building_YieldChangesPerPop 	
+			(BuildingType,						YieldType,	Yield)
+SELECT		'BUILDING_SIAM_BAAN_CHANG',		YieldType,	Yield
+FROM Building_YieldChangesPerPop WHERE BuildingType = 'BUILDING_WORKSHOP';
 ------------------------------	
 -- Building_FeatureYieldChanges
 ------------------------------

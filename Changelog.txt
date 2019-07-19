@@ -3,6 +3,22 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v47:
+- compatibility:
+	- Buildings
+		- InternalTREnd replaced with InternalTR (Baan Chang, Agora, Andelvaegelse, Steam Mill)
+		- Unhappiness from Specialist removed from Baan Chang
+	- Units:
+		- Hashemite Raider RCS 60->58
+		- Cacador RCS 47->45
+		- Klepht RCS 47->45
+		- Pracinha CS 60->64
+		- Landwehr CS 38->41
+- tweaked/modified:
+	- Suffet ==> Embarked unit graphics size reduced by 30%
+- fixed:
+	- Sachem's Council ==> corrected a bug
+	
 v46: 
 - compatibility:
 	- Spices ==> changed to Cinnamon.

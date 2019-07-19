@@ -20,7 +20,7 @@ DELETE FROM UnitClasses WHERE Type = 'UNITCLASS_BRAZILIAN_PRACINHA';
 -- Units
 --------------------------------	
 UPDATE	Units
-SET		Combat = 55, Cost = 1300, FaithCost = 700, Moves = 3, Class = 'UNITCLASS_INFANTRY', PrereqTech = 'TECH_RADIO', MinorCivGift = 0, BaseLandAirDefense = 8
+SET		Combat = 64, Cost = 1300, FaithCost = 700, Moves = 3, Class = 'UNITCLASS_INFANTRY', PrereqTech = 'TECH_RADIO', MinorCivGift = 0, BaseLandAirDefense = 8
 WHERE	Type = 'UNIT_BRAZILIAN_PRACINHA';
 --------------------------------
 -- Unit_FreePromotions

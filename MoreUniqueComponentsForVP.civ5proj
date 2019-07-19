@@ -5,10 +5,10 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>(over) More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>46</ModVersion>
+    <ModVersion>47</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>3rd and 4th unique component for each civilization</Teaser>
-    <Description>More Unique Components mod. Compatible with VP 06-12 and later.
+    <Description>More Unique Components mod. Compatible with VP 07-17 and later.
 Compatible with VPEE and ENW from @Infixo.
 
 Latest changes: see changelog file.</Description>
@@ -397,7 +397,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>England/WhiteTower/WhiteTower.sql</FileName>
+        <FileName>England/SteamMill/SteamMill.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -439,7 +439,7 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>Austria/Standschutzen/Standschutzen.sql</FileName>
       </Action>
-	  <Action>
+      <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>!PromotionIcons/muc_PI_Atlas.sql</FileName>
@@ -1188,39 +1188,39 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="!PromotionIcons\0_muc_PI_045.dds">
+    <Content Include="!PromotionIcons\0_muc_PI_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="!PromotionIcons\0_muc_PI_064.dds">
+    <Content Include="!PromotionIcons\0_muc_PI_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="!PromotionIcons\0_muc_PI_256.dds">
+    <Content Include="!PromotionIcons\0_muc_PI_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="!PromotionIcons\1_muc_PI_016.dds">
+    <Content Include="!PromotionIcons\1_muc_PI_016.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="!PromotionIcons\1_muc_PI_032.dds">
+    <Content Include="!PromotionIcons\1_muc_PI_032.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="!PromotionIcons\1_muc_PI_045.dds">
+    <Content Include="!PromotionIcons\1_muc_PI_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="!PromotionIcons\1_muc_PI_064.dds">
+    <Content Include="!PromotionIcons\1_muc_PI_064.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="!PromotionIcons\1_muc_PI_256.dds">
+    <Content Include="!PromotionIcons\1_muc_PI_256.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="!PromotionIcons\muc_PI_Atlas.sql">
+    <Content Include="!PromotionIcons\muc_PI_Atlas.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1540,7 +1540,7 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-	<Content Include="Carthage\Shophet\3DModel\bireme_diff.dds">
+    <Content Include="Carthage\Shophet\3DModel\bireme_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1880,7 +1880,7 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="England\WhiteTower\WhiteTower.sql">
+    <Content Include="England\SteamMill\SteamMill.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -4905,6 +4905,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="!Animations" />
     <Folder Include="!Dummies" />
     <Folder Include="!GameTexts" />
+    <Folder Include="!PromotionIcons\" />
     <Folder Include="!Settings" />
     <Folder Include="!SharedAssets" />
     <Folder Include="America\" />
@@ -4940,7 +4941,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Egypt\Nilometer" />
     <Folder Include="England" />
     <Folder Include="England\Longbowman" />
-    <Folder Include="England\WhiteTower" />
+    <Folder Include="England\SteamMill" />
     <Folder Include="Egypt" />
     <Folder Include="Germany\Ulfhedinn\3DModel" />
     <Folder Include="Germany\TeutonicOrder" />

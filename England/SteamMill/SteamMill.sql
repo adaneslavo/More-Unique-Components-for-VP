@@ -71,9 +71,9 @@ INSERT INTO Building_SpecialistYieldChangesLocal
 (BuildingType, SpecialistType, YieldType, Yield)
 VALUES ('BUILDING_STEAM_MILL', 'SPECIALIST_ENGINEER', 'YIELD_PRODUCTION', 2);
 --------------------------------
--- Building_SpecialistYieldChangesLocal
+-- Building_YieldFromInternalTR
 --------------------------------
-INSERT INTO Building_YieldFromInternalTREnd
+INSERT INTO Building_YieldFromInternalTR
 (BuildingType, YieldType, Yield)
 SELECT 'BUILDING_STEAM_MILL', YieldType, Yield
-FROM Building_YieldFromInternalTREnd WHERE BuildingType = 'BUILDING_FACTORY';
+FROM Building_YieldFromInternalTR WHERE BuildingType = 'BUILDING_FACTORY';

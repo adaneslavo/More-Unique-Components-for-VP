@@ -72,12 +72,12 @@ INSERT INTO Building_TerrainYieldChanges
 			(BuildingType, 							TerrainType, 			YieldType, 			Yield)
 VALUES		('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'TERRAIN_PLAINS',		'YIELD_FOOD', 		1);
 ------------------------------	
--- Building_YieldFromInternalTREnd
+-- Building_YieldFromInternalTR
 ------------------------------		
-INSERT INTO Building_YieldFromInternalTREnd 	
+INSERT INTO Building_YieldFromInternalTR	
 		(BuildingType, YieldType, Yield)
 SELECT	'BUILDING_DENMARK_ANDELSBEVAEGELSE', YieldType, Yield
-FROM Building_YieldFromInternalTREnd WHERE BuildingType = 'BUILDING_STOCKYARD';
+FROM Building_YieldFromInternalTR WHERE BuildingType = 'BUILDING_STOCKYARD';
 --==========================================================================================================================
 --==========================================================================================================================
 
