@@ -14,6 +14,7 @@ v47:
 		- Klepht RCS 47->45
 		- Pracinha CS 60->64
 		- Landwehr CS 38->41
+                - Carolean CS 39->41
 - tweaked/modified:
 	- Suffet ==> Embarked unit graphics size reduced by 30%
 - fixed:
