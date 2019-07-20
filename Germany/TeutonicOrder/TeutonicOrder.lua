@@ -8,12 +8,13 @@ local eBuildingDummyForTeutonicOrder = GameInfoTypes.BUILDING_D_FOR_TEUTONIC
 local eBuildingBarracks = GameInfoTypes.BUILDING_BARRACKS
 local ePantheon = ReligionTypes.RELIGION_PANTHEON
 local eCivilizationGermany = GameInfoTypes.CIVILIZATION_GERMANY
+local eCivilizationPrussia = GameInfoTypes.CIVILIZATION_JFD_PRUSSIA
 
 -- adds bonus to barracks if TO is built
 function OnCityConstructionAddDummyForTO(iPlayer, iCity, eBuilding)
 	local pPlayer = Players[iPlayer]
 	
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationGermany) then return end
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationGermany or pPlayer:GetCivilizationType() == eCivilizationPrussia)) then return end
 
 	if eBuilding == eBuildingTeutonicOrder then
 		local iNumberOfBarracks = pPlayer:CountNumBuildings(eBuildingBarracks)
@@ -45,7 +46,7 @@ end
 function OnFoundAddDummyForTO(iPlayer, iX, iY)
 	local pPlayer = Players[iPlayer]
 	
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationGermany) then return end
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationGermany or pPlayer:GetCivilizationType() == eCivilizationPrussia)) then return end
 
 	if pPlayer:CountNumBuildings(eBuildingTeutonicOrder) > 0 then
 
@@ -57,7 +58,7 @@ function OnFoundAddDummyForTO(iPlayer, iX, iY)
 	end
 end
 
-if Game.IsCivEverActive(eCivilizationGermany) then
+if (Game.IsCivEverActive(eCivilizationGermany) or Game.IsCivEverActive(eCivilizationPrussia)) then
 	GameEvents.CityConstructed.Add(OnCityConstructionAddDummyForTO)
 	GameEvents.PlayerCityFounded.Add(OnFoundAddDummyForTO)
 end
