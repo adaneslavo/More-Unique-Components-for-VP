@@ -56,24 +56,3 @@ UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_RED_TURN';
 
 -- Proxenos promotion trigger
 UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_UNIT_PREKILL';
-
---Assigns UnitCombatInfos to civilian units -- Can now grant production bonuses and free promotions via buildings, traits and policies
-INSERT INTO UnitCombatInfos     
-            (Type,                    Description)
-VALUES        ('UNITCOMBAT_SETTLER',    'Settler Units'),
-    ('UNITCOMBAT_WORKER',    'Worker Units'),
-    ('UNITCOMBAT_WORKBOAT',    'Workboat Units'),
-    ('UNITCOMBAT_CARGO',    'Cargo Ship Units'),
-    ('UNITCOMBAT_CARAVAN',    'Caravan Units'),
-    ('UNITCOMBAT_INQUISITOR',    'Inquisitor Units'),
-    ('UNITCOMBAT_MISSIONARY',    'Missionary Units');
-   
-UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_SETTLER';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_PIONEER';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER' WHERE Type = 'UNIT_COLONIST';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_WORKER' WHERE Type = 'UNIT_WORKER';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_WORKBOAT' WHERE Type = 'UNIT_WORKBOAT';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_CARGO' WHERE Type = 'UNIT_CARGO_SHIP';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_CARAVAN' WHERE Type = 'UNIT_CARAVAN';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_INQUISITOR' WHERE Type = 'UNIT_INQUISITOR';
-UPDATE Units SET CombatClass = 'UNITCOMBAT_MISSIONARY' WHERE Type = 'UNIT_MISSIONARY';
