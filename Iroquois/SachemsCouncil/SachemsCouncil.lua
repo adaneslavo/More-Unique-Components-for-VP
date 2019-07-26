@@ -26,7 +26,7 @@ function OnTurnAddHappinessFromDefOrWar(iPlayer)
 			local iHappiness = 0
 
 			for id, team in pairs(Teams) do
-				if (team:IsEverAlive() and id < 43 and id ~= iPlayer and team:GetName() ~= "") then
+				if (team:IsEverAlive() and id ~= iPlayer and team:GetName() ~= "" and not Players[id]:IsMinorCiv()) then
 					if pTeam:IsDefensivePact(id) or pTeam:IsAtWar(id) then
 						iHappiness = iHappiness + 1
 					end
