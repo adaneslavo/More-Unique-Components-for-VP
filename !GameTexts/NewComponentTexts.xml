@@ -92,7 +92,7 @@
 			<Text>A Slow, but incredibly dangerous ship. Only the Spanish may build it.[NEWLINE][NEWLINE]Available earlier, but more expensive than the Corvette it replaces. Gains additional strength when at full HP. Begins with [COLOR_POSITIVE_TEXT]Boarding Party I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Boarding Party II[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY">
-			<Text>The Armada is a powerful ship in its era. You are unlikely to chase down an enemy, but brilliant maneuvering could force an engagement. Your Armadas will level up very quickly if they catch an enemy fleet. Each kill by an Armada gives additional XP to all other nearby Armadas.</Text>
+			<Text>The Armada is a powerful ship in its era. You are unlikely to chase down an enemy, but brilliant maneuvering could force an engagement. Much more imposing when at full health, make sure to make contact with the enemy before they can get a few ranged shots or you will lose a great deal of power in your initial melee combat.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_TEXT">
 			<Text>
