@@ -83,13 +83,13 @@
 			<Text>Invincible</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP">
-			<Text>+4 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR], all Armadas [COLOR_POSITIVE_TEXT]within 5-tile range[ENDCOLOR] gain 2 XP. Lost after unit upgrade.</Text>
+			<Text>+6 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. -1 [ICON_ARROW_RIGHT] Moves. Lost after unit upgrade.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA">
 			<Text>Armada</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_HELP">
-			<Text>A Slow, but incredibly dangerous ship. Only the Spanish may build it.[NEWLINE][NEWLINE]Available earlier, but more expensive than the Corvette it replaces. Gains additional strength when at full HP, and grants all other Armadas within 5 tiles additional XP whenever it kills a ship.</Text>
+			<Text>A Slow, but incredibly dangerous ship. Only the Spanish may build it.[NEWLINE][NEWLINE]Available earlier, but more expensive than the Corvette it replaces. Gains additional strength when at full HP. Begins with [COLOR_POSITIVE_TEXT]Boarding Party I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Boarding Party II[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY">
 			<Text>The Armada is a powerful ship in its era. You are unlikely to chase down an enemy, but brilliant maneuvering could force an engagement. Your Armadas will level up very quickly if they catch an enemy fleet. Each kill by an Armada gives additional XP to all other nearby Armadas.</Text>
