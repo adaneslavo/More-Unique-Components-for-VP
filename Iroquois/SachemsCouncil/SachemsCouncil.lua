@@ -12,7 +12,7 @@ local eBuildingDummyForSachem3 = GameInfoTypes.BUILDING_D_FOR_SACHEM_3
 local eBuildingDummyForSachem4 = GameInfoTypes.BUILDING_D_FOR_SACHEM_4
 local eBuildingDummyForSachem5 = GameInfoTypes.BUILDING_D_FOR_SACHEM_5
 local eBuildingDummyForSachem6 = GameInfoTypes.BUILDING_D_FOR_SACHEM_6
-local eBuildingDummyForSachem7 = GameInfoTypes.BUILDING_D_FOR_SACHEM_7 --same as for White Tower
+local eBuildingDummyForSachem7 = GameInfoTypes.BUILDING_D_FOR_SACHEM_7
 
 -- increase global happiness for each war or defensive pact
 function OnTurnAddHappinessFromDefOrWar(iPlayer)
@@ -41,7 +41,7 @@ function OnTurnAddHappinessFromDefOrWar(iPlayer)
 end
 
 -- add Diplomatic Reciprocity on creation of GD
-function OnCreateGiveReciprocity(iPlayer, iUnit, iUnitType, iX, iY)
+--[[function OnCreateGiveReciprocity(iPlayer, iUnit, iUnitType, iX, iY)
 	local pPlayer = Players[iPlayer]
 
 	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationIroquois) then return end
@@ -56,6 +56,7 @@ function OnCreateGiveReciprocity(iPlayer, iUnit, iUnitType, iX, iY)
 		end
 	end
 end
+]]--
 
 -- add yields if GD creates an Embassy
 function OnEmbassyAddYields(iPlayer, iUnit, iUnitType, iX, iY)
@@ -106,7 +107,7 @@ end
 
 if Game.IsCivEverActive(eCivilizationIroquois) then
 	GameEvents.PlayerDoTurn.Add(OnTurnAddHappinessFromDefOrWar)
-	GameEvents.UnitCreated.Add(OnCreateGiveReciprocity)
+--	GameEvents.UnitCreated.Add(OnCreateGiveReciprocity)
 	GameEvents.GreatPersonExpended.Add(OnEmbassyAddYields)
 end
 
