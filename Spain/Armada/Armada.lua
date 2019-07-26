@@ -2,20 +2,6 @@
 -- Author: adan_eslavo
 -- DateCreated: 8/11/2017
 --------------------------------------------------------------
--- check XP scaling
-local bXPScaling = true -- default VP
-
-for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do 
-	bXPScaling = (t.Value == 1) 
-end
-
--- acquire game speed modifier
-local fGameSpeedModifier = 1.0 -- it is float, so use 'f' at begining
-
-if bXPScaling then 
-	fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100 
-end
-
 local ePromotionInvincible = GameInfoTypes.PROMOTION_UNIT_SPAIN_INVINCIBLE
 
 function GetStrongerAtFullHealth(iPlayer)
@@ -28,12 +14,27 @@ function GetStrongerAtFullHealth(iPlayer)
 				local iY = pUnit:GetY()
 				local pPlot = Map.GetPlot(iX, iY)
 
-				pUnit:SetBaseCombatStrength(44)
+				pUnit:SetBaseCombatStrength(42)
 			else
-				pUnit:SetBaseCombatStrength(40)
+				pUnit:SetBaseCombatStrength(36)
 			end
 		end
 	end
+end
+
+--[[
+-- check XP scaling
+local bXPScaling = true -- default VP
+
+for t in GameInfo.CustomModOptions{Name="BALANCE_CORE_SCALING_XP"} do 
+	bXPScaling = (t.Value == 1) 
+end
+
+-- acquire game speed modifier
+local fGameSpeedModifier = 1.0 -- it is float, so use 'f' at begining
+
+if bXPScaling then 
+	fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].TrainPercent / 100 
 end
 
 function SendXPOnKill(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttackerFinalDamage, iAttackerMaxHP, iDefendingPlayer, iDefendingUnit, iDefenderDamage, iDefenderFinalDamage, iDefenderMaxHP)
@@ -58,7 +59,8 @@ function SendXPOnKill(iAttackingPlayer, iAttackingUnit, iAttackerDamage, iAttack
 			end
 		end
 	end
-end
+end 
+]]--
 
 GameEvents.PlayerDoTurn.Add(GetStrongerAtFullHealth)
-GameEvents.CombatResult.Add(SendXPOnKill)
+--GameEvents.CombatResult.Add(SendXPOnKill)
