@@ -32,7 +32,8 @@ INSERT INTO Unit_FreePromotions
 			(UnitType,					PromotionType)
 VALUES		('UNIT_BRAZILIAN_PRACINHA', 'PROMOTION_UNIT_BRAZIL_EXPEDITIONARY_FORCE'),
 			('UNIT_BRAZILIAN_PRACINHA', 'PROMOTION_UNIT_BRAZIL_TOURISM'),
-			('UNIT_BRAZILIAN_PRACINHA', 'PROMOTION_AMPHIBIOUS');
+			('UNIT_BRAZILIAN_PRACINHA', 'PROMOTION_AMPHIBIOUS'),
+			('UNIT_BRAZILIAN_PRACINHA', 'PROMOTION_FIELD_WORKS_3');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
