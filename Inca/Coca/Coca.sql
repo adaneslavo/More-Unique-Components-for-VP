@@ -3,7 +3,7 @@
 --==========================================================================================================================
 INSERT INTO Resources 
 			(Type,				TechReveal,		TechCityTrade, 		Description,				Civilopedia, 					Help,								ResourceClassType, 		IsMonopoly, 	ArtDefineTag, 					CivilizationType,		OnlyMinorCivs,  Happiness,  IconString, 		PortraitIndex, 	IconAtlas)
-VALUES		('RESOURCE_COCA',	null,			null,				'TXT_KEY_RESOURCE_COCA',	'TXT_KEY_RESOURCE_COCA_TEXT',	'TXT_KEY_RESOURCE_MONOPOLY_COCA',	'RESOURCECLASS_LUXURY',	1,				'ART_DEF_RESOURCE_INCA_COCA',	'CIVILIZATION_INCA',	0,				2,			'[ICON_RES_COCA]',	0, 				'RESOURCE_INCA_ATLAS');
+VALUES		('RESOURCE_COCA',	null,			null,				'TXT_KEY_RESOURCE_COCA',	'TXT_KEY_RESOURCE_COCA_TEXT',	'TXT_KEY_RESOURCE_MONOPOLY_COCA',	'RESOURCECLASS_LUXURY',	1,				'ART_DEF_RESOURCE_INCA_COCA',	'CIVILIZATION_INCA',	0,				3,			'[ICON_RES_COCA]',	0, 				'RESOURCE_INCA_ATLAS');
 ------------------------------
 -- Resource_YieldChanges
 ------------------------------
