@@ -25,6 +25,7 @@ UPDATE Units SET PrereqTech = 'TECH_RIFLING' WHERE Type = 'UNIT_SWEDISH_CAROLEAN
 UPDATE Units SET Combat = '42' WHERE Type = 'UNIT_SWEDISH_CAROLEAN';
 UPDATE Units SET ObsoleteTech = 'TECH_COMBINED_ARMS' WHERE Type = 'UNIT_SWEDISH_CAROLEAN'; 
 UPDATE Units SET GoodyHutUpgradeUnitClass = 'UNITCLASS_GREAT_WAR_INFANTRY' WHERE Type = 'UNIT_SWEDISH_CAROLEAN';
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType) SELECT 'UNIT_SWEDISH_CAROLEAN', 'PROMOTION_FIELD_WORKS_1';
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------
