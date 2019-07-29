@@ -68,7 +68,8 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_RIFLEMAN';
 INSERT INTO	Unit_FreePromotions
 			(UnitType,					PromotionType)
 VALUES		('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE'),
-			('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_HOMELAND_GUARDIAN');
+			('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_HOMELAND_GUARDIAN'),
+			('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_FIELD_WORKS_1');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
