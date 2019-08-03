@@ -28,6 +28,7 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 	
 	if (pUnit and pPlot and pUnit:IsHasPromotion(iUnitPromotionShophetGeneral)) then
 		if pPlot:IsWater() then
+			pUnit:SetMoves(0)
 			local pNewShophet = pPlayer:InitUnit(iUnitShophetBoat, iX, iY, -1, DirectionTypes.NO_DIRECTION, false)
 
 			pUnit:SetEmbarked(false)
@@ -47,6 +48,7 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 		end
 	elseif (pUnit and pPlot and pUnit:IsHasPromotion(iUnitPromotionShophetAdmiral)) then
 		if not pPlot:IsWater() then
+			pUnit:SetMoves(0)
 			local pNewShophet = pPlayer:InitUnit(iUnitShophet, iX, iY, -1, DirectionTypes.NO_DIRECTION, false)
 			
 			pNewShophet:Convert(pUnit, false, false)
