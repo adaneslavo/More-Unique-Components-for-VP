@@ -11,6 +11,8 @@ v48:
 			==> No longer has bonus XP on kills
 			==> added Boarded II for plague immunity
 	- Sachems Council ==> code optimization. Uses SQL for unit promotion now
+- fixed:
+	- Suffet ==> cleared missions and added Imperialism policy compatibility
 
 v47:
 - compatibility:
