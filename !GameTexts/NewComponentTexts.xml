@@ -1288,7 +1288,7 @@
 			<Text>The Landwehr is the backbone of the Industrial-era Austrian army. It excels in defending in owned territory and the territory of allied city-states. Each Landwehr can in the empire can also act as a passive source of culture if garrisoned in a city, fort or citadel.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_HELP">
-			<Text>Stalwart defensive Unit. Only Austria may build it. Has additional [ICON_STRENGTH] Combat Bonus when fighting in Territory owned by you or Allied City-States. Generates [ICON_CULTURE] Culture every turn if stationed in a Friendly Fort, Citadel or City.</Text>
+			<Text>Stalwart defensive Unit. Only Austria may build it. Has additional [ICON_STRENGTH] Combat Bonus when fighting in Territory owned by you or Allied City-States. Generates [ICON_CULTURE] Culture every turn if stationed in a Friendly Fort, Citadel or City.[NEWLINE][NEWLINE]Starts with [COLOR_POSITIVE_TEXT]Field Works[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE">
 			<Text>Regimentsmarsche</Text>
