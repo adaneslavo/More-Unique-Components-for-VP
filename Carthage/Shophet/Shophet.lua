@@ -12,6 +12,8 @@ local iUnitAdmiral = GameInfoTypes["UNIT_GREAT_ADMIRAL"]
 local iUnitShophet = GameInfoTypes["UNIT_CARTHAGE_SHOPHET"]
 local iUnitShophetBoat = GameInfoTypes["UNIT_CARTHAGE_SHOPHET_BOAT"]
 local iUnitPromotionShophetZoC = GameInfoTypes["PROMOTION_UNIT_CARTHAGE_ZOC"]
+local iUnitPromotionBetterGeneral = GameInfoTypes["PROMOTION_BETTER_LEADERSHIP"]
+local iPolicyBetterGeneral = GameInfoTypes["POLICY_NAVIGATION_SCHOOL"]
 local eCivilizationCarthage = GameInfoTypes.CIVILIZATION_CARTHAGE
 
 
@@ -27,7 +29,7 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 	if (pUnit and pPlot and pUnit:IsHasPromotion(iUnitPromotionShophetGeneral)) then
 		if pPlot:IsWater() then
 			local pNewShophet = pPlayer:InitUnit(iUnitShophetBoat, iX, iY, -1, DirectionTypes.NO_DIRECTION, false)
-			
+
 			pUnit:SetEmbarked(false)
 			
 			pNewShophet:Convert(pUnit, false, false)
@@ -38,6 +40,10 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, true)
 			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, true)
 			pNewShophet:SetMoves(0)
+			pNewShophet:PushMission(-1)
+			if pPlayer:HasPolicy(iPolicyBetterGeneral) then
+				pNewShophet:SetHasPromotion(iUnitPromotionBetterGeneral, true)
+			end
 		end
 	elseif (pUnit and pPlot and pUnit:IsHasPromotion(iUnitPromotionShophetAdmiral)) then
 		if not pPlot:IsWater() then
@@ -51,6 +57,10 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, false)
 			pNewShophet:SetMoves(0)
+			pNewShophet:PushMission(-1)
+			if pPlayer:HasPolicy(iPolicyBetterGeneral) then
+				pNewShophet:SetHasPromotion(iUnitPromotionBetterGeneral, true)
+			end
 		end
 	end
 end
@@ -92,6 +102,9 @@ function OnCreateShophet(iPlayer, iUnit, iUnitType, iX, iY)
 		pNewShophet:SetHasPromotion(iUnitPromotionGreatGeneral, true)
 		pNewShophet:SetHasPromotion(iUnitPromotionEmbark, true)
 		pNewShophet:SetMoves(120)
+		if pPlayer:HasPolicy(iPolicyBetterGeneral) then
+			pNewShophet:SetHasPromotion(iUnitPromotionBetterGeneral, true)
+		end
 	end
 end
 
