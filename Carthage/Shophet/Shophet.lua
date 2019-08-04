@@ -41,7 +41,6 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, true)
 			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, true)
 			pNewShophet:SetMoves(0)
-			pNewShophet:PushMission(-1)
 			if pPlayer:HasPolicy(iPolicyBetterGeneral) then
 				pNewShophet:SetHasPromotion(iUnitPromotionBetterGeneral, true)
 			end
@@ -59,7 +58,6 @@ function ShophetChange(iPlayer, iUnit, iX, iY)
 			pNewShophet:SetHasPromotion(iUnitPromotionShophetAdmiral, false)
 			pNewShophet:SetHasPromotion(iUnitPromotionGreatAdmiral, false)
 			pNewShophet:SetMoves(0)
-			pNewShophet:PushMission(-1)
 			if pPlayer:HasPolicy(iPolicyBetterGeneral) then
 				pNewShophet:SetHasPromotion(iUnitPromotionBetterGeneral, true)
 			end
