@@ -12,6 +12,7 @@ v48:
 			==> No longer has bonus XP on kills
 			==> added Boarded II for plague immunity
 	- Sachems Council ==> code optimization. Uses SQL for unit promotion now
+	- Eagle CS increased to 17
 - fixed:
 	- Suffet ==> bugfixes for multiple suffet spawning and Imperialism policy compatibility
 
