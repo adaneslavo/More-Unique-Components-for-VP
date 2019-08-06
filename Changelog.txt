@@ -6,13 +6,14 @@ More Unique Components for Vox Populi changelog:
 v48:
 - compatibility:
 	- Field Works Promotion line added to Pracinha, Carolean, and Landwehr
+	- University of Coimbra culture on technology unlock reduced to 25
 - tweaked/modified:
 	- SpanishArmada	==> Reduced CS, but increased bonus CS from Invincible
 			==> No longer has bonus XP on kills
 			==> added Boarded II for plague immunity
 	- Sachems Council ==> code optimization. Uses SQL for unit promotion now
 - fixed:
-	- Suffet ==> cleared missions and added Imperialism policy compatibility
+	- Suffet ==> bugfixes for multiple suffet spawning and Imperialism policy compatibility
 
 v47:
 - compatibility:
