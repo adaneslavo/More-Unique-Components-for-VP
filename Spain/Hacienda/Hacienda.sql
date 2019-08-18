@@ -123,8 +123,8 @@ VALUES		('BUILDING_MISSION',	'IMPROVEMENT_SPAIN_HACIENDA',	'YIELD_FAITH',	1);
 -- Builds
 ------------------------------		
 INSERT INTO Builds		
-			(Type,						PrereqTech,				ImprovementType, 				Description, 					Help, 									Recommendation, 					EntityEvent, 			Time,	OrderPriority, 	Kill, 	IconIndex, 	IconAtlas)
-VALUES		('BUILD_SPAIN_HACIENDA',	'TECH_CIVIL_SERVICE',	'IMPROVEMENT_SPAIN_HACIENDA',	'TXT_KEY_BUILD_SPAIN_HACIENDA',	'TXT_KEY_BUILD_SPAIN_HACIENDA_HELP',	'TXT_KEY_BUILD_SPAIN_HACIENDA_REC',	'ENTITY_EVENT_BUILD',	800,	95,				0,		1,			'IMPROVEMENT_SPAIN_ATLAS');
+			(Type,						PrereqTech,		ImprovementType, 				Description, 					Help, 									Recommendation, 					EntityEvent, 			Time,	OrderPriority, 	Kill, 	IconIndex, 	IconAtlas)
+VALUES		('BUILD_SPAIN_HACIENDA',	'TECH_COMPASS',	'IMPROVEMENT_SPAIN_HACIENDA',	'TXT_KEY_BUILD_SPAIN_HACIENDA',	'TXT_KEY_BUILD_SPAIN_HACIENDA_HELP',	'TXT_KEY_BUILD_SPAIN_HACIENDA_REC',	'ENTITY_EVENT_BUILD',	800,	95,				0,		1,			'IMPROVEMENT_SPAIN_ATLAS');
 ------------------------------				
 -- Unit_Builds
 ------------------------------				

@@ -3,12 +3,23 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+
+v49:
+- compatibility:
+	- Rough Terrain Penalty added to Mounted Ranged units
+		==> Scythed Chariot, Hashemite Raider, Pancerny
+- tweaked/modified:
+	- Hacienda ==> moved to Compass tech
+	- Sambadrome ==> removed +25% GAP during Golden Ages. Added 10 turns WLTKD on completion
+- fixed:
+	- Armada ==> fixed boarding party II bug
+
 v48:
 - compatibility:
 	- Field Works Promotion line added to Pracinha, Carolean, and Landwehr
 	- University of Coimbra culture on technology unlock reduced to 25
 - tweaked/modified:
-	- SpanishArmada	==> Reduced CS, but increased bonus CS from Invincible
+	- Spanish Armada	==> Reduced CS, but increased bonus CS from Invincible
 			==> No longer has bonus XP on kills
 			==> added Boarded II for plague immunity
 	- Sachems Council ==> code optimization. Uses SQL for unit promotion now

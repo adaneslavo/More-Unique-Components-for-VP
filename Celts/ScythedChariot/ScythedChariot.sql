@@ -152,7 +152,6 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_MONGOLIAN_KESHIK';
 INSERT INTO Unit_FreePromotions
 			(UnitType, 						PromotionType)
 VALUES		('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_UNIT_CELTS_SCYTHE'),
-			('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_UNIT_CELTS_CARNYX'),
-			('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_ROUGH_TERRAIN_ENDS_TURN');
+			('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_UNIT_CELTS_CARNYX');
 --==========================================================================================================================
 --==========================================================================================================================
