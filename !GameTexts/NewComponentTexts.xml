@@ -8,10 +8,10 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>+10% [ICON_PRODUCTION] Production when constructing Buildings in this City. +3% [ICON_WORKER] Worker's Construction Speed on Empire. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food to Plains tiles near the City. +3 [ICON_FOOD] Food to Nearby Farms. +3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Nearby Pastures.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses.</Text>
+			<Text>+10% [ICON_PRODUCTION] Production when constructing Buildings in this City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food to Grass and Plains tiles near the City. +3 [ICON_FOOD] Food to Nearby Farms. +3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Nearby Pastures.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
-			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production and improvement speed. The building's massive bonuses to growth help your empire to multiply, especially when surrounded by plains and pastures.</Text>
+			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production. The building's massive bonuses to growth help your empire to multiply, especially when surrounded by plains and pastures.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_TEXT">
 			<Text>
@@ -20,7 +20,6 @@
 				[NEWLINE][NEWLINE]This shift in Danish agriculture was full of uncertainty, requiring that farmers form the Andelsbevægelse to share in the risks. By the time prices for grain had finally stabilized, Danish agriculture had completely changed. Dairies and slaughterhouses dotted the landscape; now they were IMPORTING grain from Russia to feed their livestock! 
 			</Text>
 		</Row>
-		
 		<!-- Agora -->
 		<!-- Created by adan_eslavo 3/11/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GREECE_PROXENOS">
@@ -553,7 +552,7 @@
 			<Text>The Eagle is the unique Aztec replacement for the Swordsman. It does not require Iron to build. It has increased vision, and has a chance of capturing defeated enemy units as Workers.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_HELP">
-			<Text>Strong, front-line Unit of the Classical Era. Only the Aztecs may build it. Does not require [ICON_RES_IRON] Iron. 25% chance of converting any unit killed into a [ICON_WORKER] Worker. Starts with the [COLOR_POSITIVE_TEXT]Sentry[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Shock I[ENDCOLOR] Promotions.</Text>
+			<Text>Strong, front-line Unit of the Classical Era. Only the Aztecs may build it. Does not require [ICON_RES_IRON] Iron. 25% chance of converting any unit killed into a [ICON_WORKER] Worker. Starts with the [COLOR_POSITIVE_TEXT]Sentry[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] Promotions.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_1">
 			<Text>Cuauhocelotl</Text>
@@ -860,7 +859,7 @@
 			<Text>Hippodrome</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
-			<Text>Does not require an Arena in the City. Free Arena in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom. +15% [ICON_GOLD] Gold and [ICON_CULTURE] Culture on Empire during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, 1 turn of [ICON_RESISTANCE] Resistance occurs in this City, after which a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Does not require an Arena in the City. [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Arena in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom. +15% [ICON_GOLD] Gold and [ICON_CULTURE] Culture on Empire during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, 1 turn of [ICON_RESISTANCE] Resistance occurs in this City, after which a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +2 [ICON_GOLD] Gold and all Circuses gain +2 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
 			<Text>
@@ -1807,7 +1806,7 @@
 			<Text>Sachem's Council</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_HELP">
-			<Text>+1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens in this City. All Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+10% [ICON_PRODUCTION] Production of Diplomatic Units. A free Emissary Unit appears on completion. All [ICON_DIPLOMAT] Great Diplomats gain the [COLOR_GREEN]Reciprocity[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food in City for every City-State Friend, and +2 [ICON_PEACE] Faith for every Ally.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or Ongoing War.</Text>
+			<Text>+1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Citizens in this City. All Councils gain +1 [ICON_CULTURE] Culture, and all Chanceries gain +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+10% [ICON_PRODUCTION] Production of Diplomatic Units. A [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Emissary Unit appears on completion. All [ICON_DIPLOMAT] Great Diplomats gain the [COLOR_GREEN]Reciprocity[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food in City for every City-State Friend, and +2 [ICON_PEACE] Faith for every Ally.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Global Happiness for every Defensive Pact or Ongoing War.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_IROQUOIS_SACHEMS_COUNCIL_STRATEGY">
 			<Text>Unique Iroquoian replacement for the Scrivener's Office. In addition to the normal bonuses provided by the Scrivener's Office, the Sachem's Council  provides faster generation of Great Diplomat units. Great Diplomats also receive a unique promotion, providing Science, Culture and gold for every embassy founded. All Councils in your empire also gain +1 Culture, and all Chanceries gain +2 Gold. The Sachem's Council also provides Happiness for every Defensive Pact and Declared War involving the Iroquois.</Text>
@@ -2035,7 +2034,7 @@
 			<Text>Unique replacement for the Longswordsman. This unit specializes in combating Mounted opponents and hobbling retreating units. Only Ethiopia may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_TEXT">
-			<Text>Shotel are dramatically curved double-edged swords used exclusively by the ancient Ethiopian Empire’s Shotelai warriors. Almost semicircular, the shotel could be used to hook shields, or even reach around them to strike an opponent. The sword could also be used to hook and unhorse a mounted soldier, bringing them to the ground. Elite corps of Shotelai were employed by the armies of Amda Seyon I, comprising an elite force within his host.</Text>
+			<Text>Shotel are dramatically curved double-edged swords used exclusively by the ancient Ethiopian Empire’s Shotelai warriors. Almost semicircular, the shotel could be used to hook shields, or even reach around them to strike an opponent. The sword could also be used to hook and unhorse a mounted soldier, bringing them to the ground. Elite corps of Shotelai were employed by the armies of Amda Seyon I, comprising an elite force within his mighty host.</Text>
 		</Row>
 
 		<!-- Slaganz -->
@@ -2150,7 +2149,7 @@
 			<Text>Qullqa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_HELP">
-			<Text>Units stationed in this city heal [COLOR_POSITIVE_TEXT]5 HP[ENDCOLOR] every turn, regardless of any actions taken. City Receives a free [ICON_RES_COCA] Coca Luxury Resource.[NEWLINE][NEWLINE]15% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born.[NEWLINE][NEWLINE]Allows [ICON_FOOD] Food to be moved from this city along trade routes inside your civilization.[NEWLINE]Nearby [ICON_RES_WHEAT] Wheat: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BANANA] Bananas: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_DEER] Deer: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BISON] Bison: +1 [ICON_FOOD] Food.</Text>
+			<Text>Units stationed in this city heal [COLOR_POSITIVE_TEXT]5 HP[ENDCOLOR] every turn, regardless of any actions taken. City Receives a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_RES_COCA] Coca Luxury Resource.[NEWLINE][NEWLINE]15% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born.[NEWLINE][NEWLINE]Allows [ICON_FOOD] Food to be moved from this city along trade routes inside your civilization.[NEWLINE]Nearby [ICON_RES_WHEAT] Wheat: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BANANA] Bananas: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_DEER] Deer: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BISON] Bison: +1 [ICON_FOOD] Food.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_STRATEGY">
 			<Text>The Qullqa is the unique Granary replacement for the Inca. In addition to the normal bonuses of a Granary, the Qullqa heals your garrisoned units every turn. On construction, a [ICON_RES_COCA] Coca Luxury Resource appears beneath the city. [ICON_RES_COCA] Coca replaces any existing resource that was below the city previously.[NEWLINE][NEWLINE]Coca increases the speed of constructing improvements, but also makes mountains passable to any civilization which controls it. Guard your Qullqa, so that other civilizations cannot follow your troops into the mountains.</Text>
@@ -2196,13 +2195,13 @@
 			<Text>Bellum Alet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_SACKER_HELP">
-			<Text>10 HP to all adjacent Friendly Units [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].</Text>
+			<Text>20 HP to all adjacent Friendly Units [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN">
 			<Text>Tarkhan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_HELP">
-			<Text>Mounted warrior who supports Civilian and other Land Military Units with its unique abilities. Only the Huns may build it. Slightly cheaper than the Horseman it replaces. +1 Movement to [ICON_TEAM_1] Settlers and [ICON_WORKER] Workers that begin the turn stacked with this Unit, and +10 HP to all adjacent friendly units whenever this unit pillages a tile.</Text>
+			<Text>Mounted warrior who supports Civilian and other Land Military Units with its unique abilities. Only the Huns may build it. Slightly cheaper than the Horseman it replaces. +1 Movement to [ICON_TEAM_1] Settlers and [ICON_WORKER] Workers that begin the turn stacked with this Unit and +20 HP to all adjacent friendly units whenever this unit pillages a tile.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_STRATEGY">
 			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Pillaging tiles with a Tarkhan heals all your adjacent units, which can be handy for healing a recently captured unit.</Text>
@@ -2247,7 +2246,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
-				Does not require a Barracks. Grants a free Barracks in the City. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing. +2 [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City.
+				Does not require a Barracks. Grants a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Barracks in the City. A [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Great General appears near the city. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing.
 				[NEWLINE][NEWLINE]All Castles gain +2 [ICON_PRODUCTION] Production and all Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion.
 				[NEWLINE][NEWLINE]25 [ICON_PEACE] Faith whenever you kill an enemy Unit, scaling with Era. Enables you to select a Reformation Belief at 5% below its normal Global [ICON_RELIGION] Follower requirement (20% on Standard).
 				[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
@@ -2280,7 +2279,7 @@
 			<Text>The Universiy of Coimbra is the unique Portuguese replacement for the Oxford University. It does not require a University, and provides a free University in the city. In addition to the normal bonuses of the Oxford University, it gives all naval units the ability to gain gold from exploration, and generates Gold and Production in the city for every Feitoria built in foreign lands.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_UNIVERSITY_OF_COIMBRA_HELP">
-			<Text>Does not require a University in the City. Provides a free [ICON_GREAT_SCIENTIST] Great Scientist and a University on Completion. All Universities gain +3 [ICON_GOLD] Gold. +50 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Does not require a University in the City. Provides a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_GREAT_SCIENTIST] Great Scientist and a University on Completion. All Universities gain +3 [ICON_GOLD] Gold. +50 [ICON_CULTURE] Culture every time you research a Technology, scaling with Era. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]All Naval Units gain the [COLOR_POSITIVE_TEXT]Age of Discovery[ENDCOLOR] Promotion. Whenever a Feitoria is built in City-State Territory, permanently gain +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold in the City.[NEWLINE][NEWLINE]Contains 2 slots for [ICON_GREAT_WORK] Great Works of Writing. +3 [ICON_RESEARCH] Science when themed.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PORTUGAL_AGE_OF_DISCOVERY">
 			<Text>Age of Discovery</Text>

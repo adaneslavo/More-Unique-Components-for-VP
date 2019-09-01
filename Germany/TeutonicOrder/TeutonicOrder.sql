@@ -45,18 +45,25 @@ VALUES		('BUILDING_GERMANY_TEUTONIC_ORDER', 'FLAVOR_RELIGION',			30),
 INSERT INTO Building_YieldChanges
 			(BuildingType,						YieldType,			Yield)
 VALUES		('BUILDING_GERMANY_TEUTONIC_ORDER', 'YIELD_CULTURE',	1),
-			('BUILDING_GERMANY_TEUTONIC_ORDER', 'YIELD_FAITH',		4);
+			('BUILDING_GERMANY_TEUTONIC_ORDER', 'YIELD_FAITH',		1);
 --------------------------------	
 -- Building_YieldChangesPerPop
 --------------------------------
-INSERT INTO Building_YieldChangesPerPop 	
-			(BuildingType,						YieldType,				Yield)
-VALUES		('BUILDING_GERMANY_TEUTONIC_ORDER',	'YIELD_PRODUCTION', 	40);
+--INSERT INTO Building_YieldChangesPerPop 	
+--			(BuildingType,						YieldType,				Yield)
+--VALUES		('BUILDING_GERMANY_TEUTONIC_ORDER',	'YIELD_PRODUCTION', 	40);
 --------------------------------	
 -- Building_YieldFromVictory
 --------------------------------
 INSERT INTO Building_YieldFromVictoryGlobal
 	(BuildingType, YieldType, Yield)
 VALUES	('BUILDING_GERMANY_TEUTONIC_ORDER', 'YIELD_FAITH', 25);
+--------------------------------	
+-- Building_FreeUnits
+--------------------------------	
+INSERT INTO	Building_FreeUnits
+			(BuildingType,  UnitType, NumUnits)
+SELECT		'BUILDING_GERMANY_TEUTONIC_ORDER', UnitType, NumUnits
+FROM Building_FreeUnits WHERE BuildingType = 'BUILDING_HEROIC_EPIC';
 --==========================================================================================================================
 --==========================================================================================================================

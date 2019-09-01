@@ -4,6 +4,39 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 
+v50:
+- compatibility:
+	- CS/RCS changes to match CS/RCS shuffle:
+		Dromon: 9/17
+		Fusta: 11/21
+		Great Galleass: 17/27
+		Xiafan Guanjun: 30/38
+		Yamato: 55/80
+		Scythed Chariot: 9/11
+		Pancerni: 16/19
+		Hashemite Raider: 47/57
+		Prowler: 22/32
+		Klepht: 28/45
+		Cacador: 32/45
+		Ballista: 8/13
+		Turkish Bombard: 16/43
+		Tarkhan: 14
+		Iron Chariot: 12
+		Chasqui: 10
+		Koa: 12
+		Black Tug: 27
+		Shotelai: 22
+	- University of Coimbra ==> culture on technology unlock increased to 50
+	- Goedendag ==> Dropped stagnates growing on production
+	- Andelsbevægelse 	==> 1 food added to grass, as well as plains
+						==> dropped +3% worker speed
+	- Teutonic Order 	==> dropped production scaler
+						==> lowered base faith from 4 to 1
+						==> added free Great General
+	- Promotion Changes:
+		Shotelai & Eagle gain cover I, lose Shock I
+		Bellum Alet: Pillaging a tile gives +20 HP heal (up from 10 HP)
+
 v49:
 - compatibility:
 	- Rough Terrain Penalty added to Mounted Ranged units
