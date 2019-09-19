@@ -27,8 +27,8 @@ function OnInvestAddYieldsToCapital(iPlayer, iCity, iBuildingClass, bValue)
 		local vCityPosition = PositionCalculator(pCapital:GetX(), pCapital:GetY())
 		local sName = pCapital:GetName()
 
-		Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_FOOD]+"..iChange1.."[ICON_FOOD][ENDCOLOR]", 1)
-		Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange2.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
+		Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_FOOD]+"..iChange1.." [ICON_FOOD][ENDCOLOR]", 1)
+		Events.AddPopupTextEvent(vCityPosition, "[COLOR_BLUE]+"..iChange2.." [ICON_RESEARCH][ENDCOLOR]", 1.5)
 		
 		pPlayer:AddNotification(NotificationTypes.NOTIFICATION_INSTANT_YIELD,
 			'[ICON_GOLD] Building investment:[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sName..': [ENDCOLOR]+'..iChange1..' [ICON_FOOD] Food[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]'..sName..': [ENDCOLOR]+'..iChange2..' [ICON_RESEARCH] Science',

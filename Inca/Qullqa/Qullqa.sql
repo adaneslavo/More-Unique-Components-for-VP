@@ -38,6 +38,13 @@ INSERT INTO Building_Flavors
 VALUES	('BUILDING_INCA_QULLQA',		'FLAVOR_HAPPINESS',		40),
 		('BUILDING_INCA_QULLQA',		'FLAVOR_PRODUCTION',	20),
 		('BUILDING_INCA_QULLQA',		'FLAVOR_GROWTH',			50);
+------------------------------	
+-- Building_InstantYield
+------------------------------
+INSERT INTO Building_InstantYield
+			(BuildingType, YieldType, Yield)
+SELECT 		'BUILDING_INCA_QULLQA', YieldType, Yield
+FROM Building_InstantYield WHERE BuildingType = 'BUILDING_GRANARY';
 --==========================================================================================================================
 -- ARTDEFINES
 --==========================================================================================================================	

@@ -1729,21 +1729,21 @@
 			<Text>Safavi Agitator</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_PERSIA_SAFAVI_AGITATOR_HELP">
-			<Text>Unit gains [ICON_PEACE] Faith, [ICON_GOLD] Gold and [ICON_GOLDEN_AGE] Golden Age Points each turn if it is standing [COLOR_POSITIVE_TEXT]inside Enemy Territory[ENDCOLOR].</Text>
+			<Text>Unit gains [ICON_PEACE] Faith, [ICON_GOLD] Gold and [ICON_GOLDEN_AGE] Golden Age Points when [COLOR_POSITIVE_TEXT]Pillaging Tiles[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH">
 			<Text>Qizilbash</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_HELP">
-			<Text>Potent Mid-game cavalry focused on economic warfare. Only Persia may build it. Can always be purchased with [ICON_PEACE] Faith.[NEWLINE][NEWLINE]Generates [ICON_PEACE] Faith, [ICON_GOLD] Gold, and [ICON_GOLDEN_AGE] Golden Age Points every turn spent in Enemy Territory.</Text>
+			<Text>Potent Mid-game cavalry focused on economic warfare. Only Persia may build it. Can always be purchased with [ICON_PEACE] Faith.[NEWLINE][NEWLINE]Generates [ICON_PEACE] Faith, [ICON_GOLD] Gold, and [ICON_GOLDEN_AGE] Golden Age Points when pillaging tiles.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_STRATEGY">
-			<Text>The Qizilbash is the Unique Persian replacement for the Lancer. Stronger than the Lancer, the Qizilbash also generates Faith, Gold and Golden Age Points for every turn they spend in enemy territory. This unit can also be purchased with Faith without needing a religious tenet. Maintaining a strong presence in enemy territory allows Persia to generate Faith for more Qizilbash, and trigger more Golden Ages to increase your army's power.</Text>
+			<Text>The Qizilbash is the Unique Persian replacement for the Lancer. Stronger than the Lancer, the Qizilbash also generates Faith, Gold and Golden Age Points for every tile they pillage. This unit can also be purchased with Faith without needing a religious tenet. Maintaining a strong presence in enemy territory allows Persia to generate Faith for more Qizilbash, and trigger more Golden Ages to increase your army's power.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIA_QIZILBASH_TEXT">
 			<Text>
 				Qizilbash (Tr: “red-heads”) was originally a pejorative for the followers of the Safawiyyah Sufi order. Named for their distinctive crimson headwear, the Qizilbash organized into a Shi'ite society reminiscent of a European knightly order. Though primarily of Turkman origin, the Qizilbash proved instrumental in the establishment of the Iranian Safavid Dynasty.[NEWLINE][NEWLINE]
-				In a campaign to avenge the death of his father, Ismail I led 7000 Qizilbash warriors to victory over an Aq Qoyunlu force of 30 000, and established the Safavid State. Within eleven short years, Ismail brought all of Iran under his control, becoming the first ethnically Iranian monarch to unify Iran in over 850 years. Though they had made him a powerful king, Ismail feared the influence of the Qizilbash over the Iranian people. Ismail and his successors would spend the next 80 years diminishing the threat posed by the foreign Qizilbash, replacing them with slave soldiers from the Caucasus. Nevertheless, the Qizilbash maintained a place of honor within the Safavid Empire, both on the battlefield and at court.[NEWLINE][NEWLINE]
+				In a campaign to avenge the death of his father, Ismail I led 7000 Qizilbash warriors to victory over an Aq Qoyunlu force of 30 000, and established the Safavid State. Within eleven short years, Ismail brought all of Iran under his control, becoming the first ethnically Iranian monarch to unify Iran in over 850 years. Though they had made him a powerful king, Ismail feared the influence of the Qizilbash over the Iranian people. Ismail and his successors would spend the next 80 years diminishing the threat posed by the foreign Qizilbash, replacing them with slave soldiers from the Caucasus. Nevertheless, the Qizilbash maintained a place of honor within the Safavid Empire, both on the battlefield and at court.
 			</Text>
 		</Row>
 		
@@ -2149,7 +2149,7 @@
 			<Text>Qullqa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_HELP">
-			<Text>Units stationed in this city heal [COLOR_POSITIVE_TEXT]5 HP[ENDCOLOR] every turn, regardless of any actions taken. City Receives a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_RES_COCA] Coca Luxury Resource.[NEWLINE][NEWLINE]15% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born.[NEWLINE][NEWLINE]Allows [ICON_FOOD] Food to be moved from this city along trade routes inside your civilization.[NEWLINE]Nearby [ICON_RES_WHEAT] Wheat: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BANANA] Bananas: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_DEER] Deer: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BISON] Bison: +1 [ICON_FOOD] Food.</Text>
+			<Text>Units stationed in this city heal [COLOR_POSITIVE_TEXT]5 HP[ENDCOLOR] every turn, regardless of any actions taken. City Receives a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_RES_COCA] Coca Luxury Resource and 25 [ICON_FOOD] Food on Construction.[NEWLINE][NEWLINE]15% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born.[NEWLINE][NEWLINE]Allows [ICON_FOOD] Food to be moved from this city along trade routes inside your civilization.[NEWLINE]Nearby [ICON_RES_WHEAT] Wheat: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BANANA] Bananas: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_DEER] Deer: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BISON] Bison: +1 [ICON_FOOD] Food.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_STRATEGY">
 			<Text>The Qullqa is the unique Granary replacement for the Inca. In addition to the normal bonuses of a Granary, the Qullqa heals your garrisoned units every turn. On construction, a [ICON_RES_COCA] Coca Luxury Resource appears beneath the city. [ICON_RES_COCA] Coca replaces any existing resource that was below the city previously.[NEWLINE][NEWLINE]Coca increases the speed of constructing improvements, but also makes mountains passable to any civilization which controls it. Guard your Qullqa, so that other civilizations cannot follow your troops into the mountains.</Text>

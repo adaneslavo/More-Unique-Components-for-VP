@@ -4,6 +4,13 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 
+v51:
+- compatibility:
+	- 25 Food added on construction of Qullqa
+- tweaked/modified:
+	- Persian Qizilbash	==> Provides faith/gold/GAP on pillage instead of every turn in foreign territory. Incentivizes more active play.
+	
+
 v50:
 - compatibility:
 	- CS/RCS changes to match CS/RCS shuffle:
