@@ -32,6 +32,13 @@ INSERT INTO Building_YieldChanges
 SELECT 'BUILDING_STEAM_MILL', YieldType, Yield
 FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_FACTORY';
 --------------------------------
+-- Building_BuildingClassYieldChanges
+--------------------------------
+INSERT INTO Building_BuildingClassYieldChanges
+(BuildingType, Building_BuildingClassYieldChanges, YieldType, Yield)
+SELECT 'BUILDING_STEAM_MILL', BuildingClassType, YieldType, Yield
+FROM Building_BuildingClassYieldChanges WHERE BuildingType = 'BUILDING_FACTORY';
+--------------------------------
 -- Building_Flavors
 --------------------------------
 INSERT INTO Building_Flavors
