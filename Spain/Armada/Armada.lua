@@ -10,13 +10,9 @@ function GetStrongerAtFullHealth(iPlayer)
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsHasPromotion(ePromotionInvincible) then
 			if pUnit:IsHurt() == false then
-				local iX = pUnit:GetX()
-				local iY = pUnit:GetY()
-				local pPlot = Map.GetPlot(iX, iY)
-
 				pUnit:SetBaseCombatStrength(42)
 			else
-				pUnit:SetBaseCombatStrength(36)
+				pUnit:SetBaseCombatStrength(46)
 			end
 		end
 	end
