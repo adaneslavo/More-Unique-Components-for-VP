@@ -1,6 +1,3 @@
---Pillaging check for Tug Banner Warrior
-UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_TILE_IMPROVEMENTS';
-
 --Celtic UA change
 UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_FOUND_RELIGION';
 

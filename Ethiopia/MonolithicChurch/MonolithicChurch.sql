@@ -42,8 +42,8 @@ INSERT INTO Improvements
 VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT',	'ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	1,						'CIVILIZATION_ETHIOPIA',	20,				0,						0,						0,						1,					0,				'IMPROVEMENT_ETHIOPIA_ATLAS',	1,				0,					0);
 
 INSERT INTO Improvements
-			(Type, 												Description, 										Civilopedia, 											ArtDefineTag, 										Help, 													PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	HillsMakesValid,	PortraitIndex, 	IconAtlas, 						NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury)
-VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT',	'ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	20,				0,						0,						0,						0,					0,				'IMPROVEMENT_ETHIOPIA_ATLAS',	0,				0,					0);
+			(Type, 												Description, 										Civilopedia, 											ArtDefineTag, 										Help, 													PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	HillsMakesValid,	PortraitIndex, 	IconAtlas, 						NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury, ShowInPedia, 	ShowInTechTree)
+VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT',	'ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	20,				0,						0,						0,						0,					0,				'IMPROVEMENT_ETHIOPIA_ATLAS',	0,				0,					0, 				0, 				0);
 ------------------------------	
 -- Improvement_Flavors
 ------------------------------		
