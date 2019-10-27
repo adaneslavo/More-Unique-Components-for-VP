@@ -141,5 +141,12 @@ INSERT INTO Building_UnitCombatProductionModifiers
 VALUES		('BUILDING_AMERICA_RANCH',	'UNITCOMBAT_MOUNTED',	33),
 	('BUILDING_AMERICA_RANCH',	'UNITCOMBAT_SETTLER',			25),
 	('BUILDING_AMERICA_RANCH',	'UNITCOMBAT_WORKER',			25);
+--------------------------------
+-- Building_YieldFromInternalTR
+--------------------------------
+INSERT INTO Building_YieldFromInternalTR
+(BuildingType, YieldType, Yield)
+SELECT 'BUILDING_AMERICA_RANCH', YieldType, Yield
+FROM Building_YieldFromInternalTR WHERE BuildingType = 'BUILDING_STABLE';
 --==========================================================================================================================
 --==========================================================================================================================

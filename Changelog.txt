@@ -4,6 +4,24 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 
+v52:
+- compatibility:
+	- Added/Removed/Adjusted ITR bonuses on Steam Mill, Andelsvaegelse, Baan Chang, Agora, and Homestead
+	- Added +2 production per Steam Mill on Empire to Steam Mill
+	- Adjusted bonuses to Pasture and Farm on Andelsvaegelse
+- tweaked/modified:
+	- Japanese unique guilds instant yield boosts on GP birth reduced to 3% from 5%
+	- Improper CS calculation on Spanish Armada, should now work as intended
+	- Ottoman Tersane now restricted to coastal cities
+- Reworked:
+	- Celtic Oppidum:
+		buildable by GScientist, GMerchant, GEngineer, and GGeneral
+		Base yields now +2 Food and +1 to all other yields
+		Increased Tile defense bonus to +100% from +50%
+		Tech yield changes reworked. Now gains +1 to 2 yields on 1 tech every era from Classical to Atomic (Food unaffected, but ends with +3 to all other yields)
+		Scales bulbing of scientists/merchants/engineers by 5/5/10 (half power of academy/town/manufactory)
+		Deactivated alterations to Celtic UA. Druidic Lore No longer gives any bonuses to GMerchant generation
+		
 v51:
 - compatibility:
 	- 25 Food added on construction of Qullqa

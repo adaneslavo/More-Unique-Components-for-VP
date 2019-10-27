@@ -110,7 +110,7 @@ function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
 	local pPlot = Map.GetPlot(iX, iY)
 	
 	if pUnit:GetUnitType() == GameInfoTypes.UNIT_WRITER and (pPlayer:CountNumBuildings(eBuildingMonogatari) > 0) then 
-		local iWriterBonus = math.floor(pUnit:GetGivePoliciesCulture()*0.05*pPlayer:CountNumBuildings(eBuildingMonogatari))
+		local iWriterBonus = math.floor(pUnit:GetGivePoliciesCulture()*0.03*pPlayer:CountNumBuildings(eBuildingMonogatari))
 		pPlayer:ChangeGold(iWriterBonus)
 		pPlayer:ChangeJONSCulture(iWriterBonus)
 		
@@ -127,7 +127,7 @@ function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
 		end
 	
 	elseif pUnit:GetUnitType() == GameInfoTypes.UNIT_ARTIST and (pPlayer:CountNumBuildings(eBuildingUkiyoe) > 0) then 
-		local iArtistBonus = math.floor(pUnit:GetGAPAmount()*0.05*pPlayer:CountNumBuildings(eBuildingUkiyoe))
+		local iArtistBonus = math.floor(pUnit:GetGAPAmount()*0.03*pPlayer:CountNumBuildings(eBuildingUkiyoe))
 		pPlayer:ChangeOverflowResearch(iArtistBonus)
 		pPlayer:ChangeGoldenAgeProgressMeter(iArtistBonus)
 
@@ -144,7 +144,7 @@ function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
 		end
 
 	elseif pUnit:GetUnitType() == GameInfoTypes.UNIT_MUSICIAN and (pPlayer:CountNumBuildings(eBuildingGagaku) > 0) then 
-		local iMusicianBonus = math.floor(pUnit:GetBlastTourism()*0.05*pPlayer:CountNumBuildings(eBuildingGagaku))
+		local iMusicianBonus = math.floor(pUnit:GetBlastTourism()*0.03*pPlayer:CountNumBuildings(eBuildingGagaku))
 		local iTourismEvent = GameInfoTypes['PLAYER_EVENT_CHOICE_GAGAKU_TOURISM']
 		pPlayer:ChangeFaith(iMusicianBonus)
 		pPlayer:DoEventChoice(iTourismEvent)

@@ -41,29 +41,32 @@ VALUES		('IMPROVEMENT_CELTS_ATLAS', 			256, 		'OppidumIcons_256.dds',			2, 				1
 ------------------------------
 INSERT INTO Improvements
 			(Type, 							Description, 							Civilopedia, 								ArtDefineTag, 							Help, 											SpecificCivRequired, 	CivilizationType, 		PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	Permanent,	DestroyedWhenPillaged, 	PortraitIndex, 	IconAtlas, 					NoTwoAdjacent,	DefenseModifier)
-VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT',	'ART_DEF_IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP',		1,						'CIVILIZATION_CELTS',	20,				1,						1,						0,			0,						0,				'IMPROVEMENT_CELTS_ATLAS',	0,				50);
+VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT',	'ART_DEF_IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP',		1,						'CIVILIZATION_CELTS',	20,				1,						1,						0,			0,						0,				'IMPROVEMENT_CELTS_ATLAS',	0,				100);
 ------------------------------	
 -- Improvement_Flavors
 ------------------------------		
 INSERT INTO Improvement_Flavors	
 			(ImprovementType, 				FlavorType,				Flavor)
-VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_SCIENCE',		1),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_CULTURE',		3),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_GOLD',			6),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_PRODUCTION',	4),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_RELIGION',		5),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_GROWTH',		2),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_CITY_DEFENSE',	2),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_DEFENSE',		5);
+VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_SCIENCE',		10),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_CULTURE',		10),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_GOLD',			20),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_PRODUCTION',	10),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_RELIGION',		10),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_GROWTH',		10),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_CITY_DEFENSE',	20),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'FLAVOR_DEFENSE',		10);
 ------------------------------	
 -- Improvement_Yields
 ------------------------------		
 INSERT INTO Improvement_Yields 	
-			(ImprovementType, 				YieldType,			Yield)
-VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_CULTURE',	2),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FAITH',		2),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_GOLD',		4),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		2);
+			(ImprovementType, 				YieldType,					Yield)
+VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_CULTURE',			1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FAITH',				1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_GOLD',				1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',				2),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_PRODUCTION',			1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_SCIENCE',			1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_GOLDEN_AGE_POINTS',	1);
 ------------------------------	
 -- Improvement_ResourceTypes
 ------------------------------		
@@ -96,16 +99,25 @@ VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'IMPROVEMENT_CAMP',					'YIELD_FAITH',		1)
 			('IMPROVEMENT_CELTS_OPPIDUM',	'IMPROVEMENT_LUMBERMILL_JUNGLE',	'YIELD_CULTURE',	1),
 			('IMPROVEMENT_CELTS_OPPIDUM',	'IMPROVEMENT_LUMBERMILL',			'YIELD_FOOD',		1),
 			('IMPROVEMENT_CELTS_OPPIDUM',	'IMPROVEMENT_LUMBERMILL',			'YIELD_SCIENCE',	1),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'IMPROVEMENT_FISHING_BOATS',			'YIELD_GOLD',	1),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'IMPROVEMENT_FISHING_BOATS',			'YIELD_FAITH',	1);
+			('IMPROVEMENT_CELTS_OPPIDUM',	'IMPROVEMENT_FISHING_BOATS',		'YIELD_GOLD',		1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'IMPROVEMENT_FISHING_BOATS',		'YIELD_FAITH',		1);
 ------------------------------
 -- Improvement_TechYieldChanges
 ------------------------------
 INSERT INTO Improvement_TechYieldChanges
-			(ImprovementType,				TechType,					YieldType,			Yield)
-VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_THEOLOGY',			'YIELD_FAITH',		3),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_ECONOMICS',			'YIELD_GOLD',		2),
-			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_INDUSTRIALIZATION',	'YIELD_PRODUCTION',	2);
+			(ImprovementType,				TechType,					YieldType,					Yield)
+VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_IRON_WORKING',		'YIELD_PRODUCTION',			1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_IRON_WORKING',		'YIELD_CULTURE',			1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_THEOLOGY',			'YIELD_FAITH',				1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_THEOLOGY',			'YIELD_SCIENCE',			1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_ECONOMICS',			'YIELD_GOLD',				1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_ECONOMICS',			'YIELD_GOLDEN_AGE_POINTS',	1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_INDUSTRIALIZATION',	'YIELD_PRODUCTION',			1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_INDUSTRIALIZATION',	'YIELD_SCIENCE',			1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_FLIGHT',				'YIELD_CULTURE',			1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_FLIGHT',				'YIELD_GOLD',				1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_COMPUTERS',			'YIELD_FAITH',				1),
+			('IMPROVEMENT_CELTS_OPPIDUM',	'TECH_COMPUTERS',			'YIELD_GOLDEN_AGE_POINTS',	1);
 ------------------------------	
 -- Improvement_ValidTerrains
 ------------------------------		
@@ -131,8 +143,11 @@ VALUES		('BUILD_CELTS_OPPIDUM',	null,				'IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_B
 -- Unit_Builds
 ------------------------------				
 INSERT INTO Unit_Builds	
-			(UnitType, 			BuildType)
-VALUES		('UNIT_MERCHANT',	'BUILD_CELTS_OPPIDUM');
+			(UnitType, 				BuildType)
+VALUES		('UNIT_MERCHANT',		'BUILD_CELTS_OPPIDUM'),
+			('UNIT_ENGINEER',		'BUILD_CELTS_OPPIDUM'),
+			('UNIT_SCIENTIST',		'BUILD_CELTS_OPPIDUM'),
+			('UNIT_GREAT_GENERAL',	'BUILD_CELTS_OPPIDUM');
 ------------------------------				
 -- BuildFeatures
 ------------------------------				
@@ -145,8 +160,10 @@ FROM BuildFeatures WHERE BuildType = 'BUILD_CUSTOMS_HOUSE';
 ------------------------------	
 INSERT INTO Unit_ScalingFromOwnedImprovements	
 			(UnitType, 			ImprovementType, 				Amount)
-SELECT		'UNIT_MERCHANT', 	'IMPROVEMENT_CELTS_OPPIDUM', 	Amount
-FROM Unit_ScalingFromOwnedImprovements WHERE ImprovementType = 'IMPROVEMENT_CUSTOMS_HOUSE';
+VALUES		('UNIT_MERCHANT', 	'IMPROVEMENT_CELTS_OPPIDUM', 	5),
+			('UNIT_SCIENTIST', 	'IMPROVEMENT_CELTS_OPPIDUM', 	5),
+			('UNIT_ENGINEER', 	'IMPROVEMENT_CELTS_OPPIDUM', 	10);
+
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -157,7 +174,7 @@ FROM Unit_ScalingFromOwnedImprovements WHERE ImprovementType = 'IMPROVEMENT_CUST
 ------------------------------		
 INSERT INTO Policy_ImprovementYieldChanges
 			(PolicyType,					ImprovementType,				YieldType,			Yield)
-VALUES		('POLICY_NEW_DEAL',				'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_GOLD',		5),
+VALUES		('POLICY_NEW_DEAL',				'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FAITH',		5),
 			('POLICY_TRADITION_FINISHER',	'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		1),
 			('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_PRODUCTION',	1),
 			('POLICY_MOBILIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_SCIENCE',	3),

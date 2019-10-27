@@ -137,9 +137,9 @@ WHERE Tag = 'TXT_KEY_BUILDING_GROCER_HELP';
 -- UA Texts
 ------------------------------
 -- Druidic Lore
-UPDATE Language_en_US
-SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion do not generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if City adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] GMP in your [ICON_CAPITAL] Capital after you found a Pantheon, and in Holy City for every religious milestone.'
-WHERE Tag = 'TXT_KEY_TRAIT_FAITH_FROM_NATURE';
+--UPDATE Language_en_US
+--SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion do not generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if City adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] GMP in your [ICON_CAPITAL] Capital after you found a Pantheon, and in Holy City for every religious milestone.'
+--WHERE Tag = 'TXT_KEY_TRAIT_FAITH_FROM_NATURE';
 
 -- Sacrificial Captives
 UPDATE Language_en_US

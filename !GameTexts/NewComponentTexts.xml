@@ -8,7 +8,7 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>+10% [ICON_PRODUCTION] Production when constructing Buildings in this City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food to Grass and Plains tiles near the City. +3 [ICON_FOOD] Food to Nearby Farms. +3 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold to Nearby Pastures.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses.</Text>
+			<Text>+10% [ICON_PRODUCTION] Production when constructing Buildings in this City.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food to Grass and Plains tiles near the City. +2 [ICON_FOOD] Food, +3 [ICON_PRODUCTION] Production, and +3 [ICON_GOLD] Gold to Nearby Farms and Pastures.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production. The building's massive bonuses to growth help your empire to multiply, especially when surrounded by plains and pastures.</Text>
@@ -32,7 +32,7 @@
 			<Text>Agora</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_HELP">
-			<Text>+25% [ICON_PRODUCTION] Production towards Diplomatic Units in this City. Diplomatic Units trained in this City receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City Owner and the Trade Route Owner. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +2 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_SPICES] Cinnamon: +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production[NEWLINE]Nearby [ICON_RES_SUGAR] Sugar: +1 [ICON_FOOD] Food and +1 [ICON_GOLD] Gold.</Text>
+			<Text>+25% [ICON_PRODUCTION] Production towards Diplomatic Units in this City. Diplomatic Units trained in this City receive the [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion.[NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE] Trade Routes other Players make to this City will generate +1 [ICON_GOLD] Gold for both the City Owner and the Trade Route Owner.[NEWLINE]Nearby [ICON_RES_SPICES] Cinnamon: +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production[NEWLINE]Nearby [ICON_RES_SUGAR] Sugar: +1 [ICON_FOOD] Food and +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GREECE_AGORA_STRATEGY">
 			<Text>Unique Market replacement for the Greeks. In addition to the normal bonuses of a Market, the Agora boosts the production Diplomatic Units. Diplomatic units trained in a city with an Agora gain the Proxenos promotion, which increases influence and gold income from Diplomatic Missions. Use your quick production of diplomatic units to secure a steady stream of gold for your empire.</Text>
@@ -109,7 +109,7 @@
 			<Text>Elephant Camp</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_HELP">
-			<Text>+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_PEACE] Faith to Camps and +1 [ICON_CULTURE] Culture to Lumber Mills and Logging Camps near this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production for every 10 [ICON_CITIZEN] Citizens in this City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +2 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.</Text>
+			<Text>+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production to all Forests worked by this City. +1 [ICON_PEACE] Faith to Camps and +1 [ICON_CULTURE] Culture to Lumber Mills and Logging Camps near this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production for every 10 [ICON_CITIZEN] Citizens in this City. Internal [ICON_PRODUCTION] Production [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in City for every 2 Strategic Resources imported from City-State Allies. +10 [ICON_PRODUCTION] Production and +10 [ICON_CULTURE] Culture whenever a City-State gifts a Unit, scaling with Era.[NEWLINE][NEWLINE]Allows [ICON_PRODUCTION] Production to be moved from this City along [ICON_INTERNATIONAL_TRADE] Trade Routes inside your Civilization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIAM_BAAN_CHANG_STRATEGY">
 			<Text>The Baan Chang is the Siamese unique replacement for the Workshop. In addition to the normal bonuses of a Workshop, The Baan Chang increases Culture from lumber mills and logging camps, and gives Faith from Camps. [NEWLINE][NEWLINE]City-State gifts, both Strategic Resources and Units, provide additional benefits in cities with a Baan Chang, so be sure to make strong alliances to get the most from this building.</Text>
@@ -1037,7 +1037,7 @@
 			<Text>The Monogatari Guild is the unique Japanese replacement for the Writers' Guild. It generates Great Writers more quickly than the Writers' Guild, gives Gold for Writer specialists in the City, and provides Culture and Gold whenever a Great Artist is born on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI_HELP">
-			<Text>Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold to Writer specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Musician[ENDCOLOR] is born, Gain [ICON_CULTURE] Culture and [ICON_GOLD] Gold equal to 5% of the writer's potential [ICON_CULTURE] Culture from a [COLOR_POSITIVE_TEXT]Political Treatise[ENDCOLOR].</Text>
+			<Text>Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold to Writer specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Musician[ENDCOLOR] is born, Gain [ICON_CULTURE] Culture and [ICON_GOLD] Gold equal to 3% of the writer's potential [ICON_CULTURE] Culture from a [COLOR_POSITIVE_TEXT]Political Treatise[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE">
 			<Text>Ukiyo-e Guild</Text>
@@ -1049,7 +1049,7 @@
 			<Text>The Ukiyo-e Guild is the unique Japanese replacement for the Artists' Guild. It generates Great Artists more quickly than the Artists' Guild, gives Science for Artist specialists in the City, and provides Science and Golden Age Points whenever a Great Artist is born on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE_HELP">
-			<Text>Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science to Artist specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Artist[ENDCOLOR] is born, gain [ICON_RESEARCH] Science and [ICON_GOLDEN_AGE] Golden Age Points equal to 5% of the artist's potential [ICON_GOLDEN_AGE] Golden Age Points from [COLOR_POSITIVE_TEXT]Starting a Golden Age[ENDCOLOR].</Text>
+			<Text>Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science to Artist specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Artist[ENDCOLOR] is born, gain [ICON_RESEARCH] Science and [ICON_GOLDEN_AGE] Golden Age Points equal to 3% of the artist's potential [ICON_GOLDEN_AGE] Golden Age Points from [COLOR_POSITIVE_TEXT]Starting a Golden Age[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU">
 			<Text>Gagaku Guild</Text>
@@ -1061,7 +1061,7 @@
 			<Text>The Gagaku Guild is the unique Japanese replacement for the Musicians' Guild. It generates Great Musicians more quickly than the Musicians' Guild, gives Faith for Musician and Civil Servant specialists in the City, and provides Tourism and Faith whenever a Great Artist is born on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU_HELP">
-			<Text>Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith to Musician specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Musician[ENDCOLOR] is born, Gain 200 [ICON_TOURISM] Tourism and [ICON_PEACE] Faith equal to 5% of the musician's potential [ICON_TOURISM] Tourism from a [COLOR_POSITIVE_TEXT]Concert Tour[ENDCOLOR].</Text>
+			<Text>Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith to Musician specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Musician[ENDCOLOR] is born, Gain 200 [ICON_TOURISM] Tourism and [ICON_PEACE] Faith equal to 3% of the musician's potential [ICON_TOURISM] Tourism from a [COLOR_POSITIVE_TEXT]Concert Tour[ENDCOLOR].</Text>
 		</Row>
 		
 		<!-- Kampong -->
@@ -1479,7 +1479,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP">
 			<Text>
-				Unique Celtic Great Tile Improvement. It will improve Strategic Resources. Provides various yields, [ICON_STRENGTH] Defense Bonus to Units, and HP to a nearby Cities. Improves Adjacent Tile Improvements:[NEWLINE]
+				Unique Celtic Great Tile Improvement. It will improve Strategic Resources. Provides various yields and +100% [ICON_STRENGTH] Defense Bonus to Units stationed on it, and HP to a nearby City. Improves Adjacent Tile Improvements:[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_PRODUCTION] to Farms,[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_PEACE] to Camps,[NEWLINE]
 				+1 [ICON_PRODUCTION] and +1 [ICON_PEACE] to Pastures,[NEWLINE]
@@ -1488,7 +1488,7 @@
 				+1 [ICON_GOLD] and +1 [ICON_CULTURE] to Plantations,[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_RESEARCH] to Lumbermills,[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_CULTURE] to Logging Camps,[NEWLINE]
-				+1 [ICON_GOLD] and +1 [ICON_PEACE] to Fishing Boats.[NEWLINE][NEWLINE]Each Oppidum on Empire increases the length of [ICON_HAPPINESS_1] 'We Love the King' Days from Trade Missions conducted by [ICON_GREAT_MERCHANT] Great Merchants.
+				+1 [ICON_GOLD] and +1 [ICON_PEACE] to Fishing Boats.[NEWLINE][NEWLINE]Each Oppidum on Empire increases the effectiveness of the Hurry Production action of [ICON_GREAT_ENGINEER] Great Engineers, the Discover Technology action of [ICON_GREAT_SCIENTIST] Great Scientists, and the length of [ICON_HAPPINESS_1] 'We Love the King' Days from Trade Missions conducted by [ICON_GREAT_MERCHANT] Great Merchants.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT">
@@ -1510,7 +1510,7 @@
 			<Text>Construct an [LINK=IMPROVEMENT_CELTS_OPPIDUM]Oppidum[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_HELP">
-			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith. Gives [ICON_STRENGTH] Defense Bonus to units stationed on it, and permanent +10 HP to a nearby city. Provides bonus yields to most non-road and non-great person Improvements.</Text>
+			<Text>It will increase [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR]. Gives +100% [ICON_STRENGTH] Defense Bonus to units stationed on it, and permanent +10 HP to a nearby city. Provides bonus yields to most non-road and non-great person Improvements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_REC">
 			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +10 HP to a nearby City. Adjacent Improvements gain additional bonus yields.</Text>
@@ -1774,7 +1774,7 @@
 			<Text>The Homestead is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Homestead immediately claims all Sheep, Horse, Cattle and Bison resources around the City. The production bonus for each claimed tile can help refund a bit of the cost of the Homestead immediately. The Homestead boosts Bison in addition to all the resources normally boosted by a Ranch, and all boosted resources gain additional food.[NEWLINE][NEWLINE]The Homestead boosts the production of workers and settler units, and allows America to train Pioneers a full era before they usually unlock. With the Homestead, America can settle new, powerful cities quickly.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
-			<Text>+33% [ICON_PRODUCTION] Production when building Mounted Units and +25% [ICON_PRODUCTION] Production when building Worker and Settler units. Pioneers can be built in this City.[NEWLINE][NEWLINE]Increases the [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population in the City by 10%. Gain 15 [ICON_PRODUCTION] Production whenever a [ICON_CITIZEN] Citizen is born in the City, scaling with Era.[NEWLINE][NEWLINE]On completion, the city immediately claims all [ICON_RES_HORSE] Horse, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle, and [ICON_RES_BISON] Bison within 3 tiles of the City. The City gains 20 [ICON_PRODUCTION] Production for each tile claimed, scaling with Era.[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COW] Cattle: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_BISON] Bison: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.</Text>
+			<Text>+33% [ICON_PRODUCTION] Production when building Mounted Units and +25% [ICON_PRODUCTION] Production when building Worker and Settler units. Pioneers can be built in this City.[NEWLINE][NEWLINE]Increases the [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population in the City by 10%. Gain 15 [ICON_PRODUCTION] Production whenever a [ICON_CITIZEN] Citizen is born in the City, scaling with Era.[NEWLINE][NEWLINE]On completion, the city immediately claims all [ICON_RES_HORSE] Horse, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle, and [ICON_RES_BISON] Bison within 3 tiles of the City. The City gains 20 [ICON_PRODUCTION] Production for each tile claimed, scaling with Era. Internal [ICON_PRODUCTION] Production [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +2 [ICON_PRODUCTION] Production.[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COW] Cattle: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_BISON] Bison: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.</Text>
 		</Row>
 
 		<!-- Riad -->
@@ -2139,7 +2139,7 @@
 			<Text>Stationary steam engines are fixed steam engines used for pumping or driving mills and factories, and for power generation. They are distinct from locomotive engines used on railways, traction engines for heavy steam haulage on roads, steam cars (and other motor vehicles), agricultural engines used for ploughing or threshing, marine engines, and the steam turbines used as the mechanism of power generation for most nuclear power plants. They were introduced during the 18th century and widely made for the whole of the 19th century and most of the first half of the 20th century, only declining as electricity supply and the internal combustion engine became more widespread.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_STEAM_MILL_HELP">
-			<Text>+1 [ICON_PRODUCTION] Production for every 2 [ICON_CITIZEN] Citizens in the City. +1 [ICON_PRODUCTION] Production for every Factory on Empire. Manufactories worked by the City gain +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Internal [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +4 [ICON_PRODUCTION] Production. 2 Specialists in this City no longer produce [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]When you complete a building from the Industrial Era or later, gain 10% of its construction cost as Points towards a [ICON_GREAT_ENGINEER] Great Engineer.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production to Engineer Specialists.[NEWLINE][NEWLINE]Nearby [ICON_RES_COAL] Coal: +3 [ICON_PRODUCTION] Production.</Text>
+			<Text>+1 [ICON_PRODUCTION] Production for every 2 [ICON_CITIZEN] Citizens in the City. +2 [ICON_PRODUCTION] Production for every Steam Mill on Empire. Manufactories worked by the City gain +4 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]2 Specialists in this City no longer produce [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]When you complete a building from the Industrial Era or later, gain 10% of its construction cost as Points towards a [ICON_GREAT_ENGINEER] Great Engineer.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production to Engineer Specialists.[NEWLINE][NEWLINE]Nearby [ICON_RES_COAL] Coal: +3 [ICON_PRODUCTION] Production.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_STEAM_MILL_STRATEGY">
 			<Text>Unique English replacement for the Factory. The Steam Mill is cheaper, requires no [ICON_RES_COAL] Coal, is available earlier than the Factory, and provides additional Production to [ICON_RES_COAL] Coal worked by the City. The Steam Mill also provides [ICON_GREAT_ENGINEER] Great Engineer points when constructing buildings, while increasing the [ICON_PRODUCTION] Production of engineer specialists. Since Steam Mills do not require Coal, you can use your Coal surplus to build Seaports and ironclads, or you can trade it away for a large amount of gold.</Text>
