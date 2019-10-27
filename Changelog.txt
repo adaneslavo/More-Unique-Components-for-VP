@@ -16,6 +16,7 @@ v52:
 - Reworked:
 	- Celtic Oppidum:
 		buildable by GScientist, GMerchant, GEngineer, and GGeneral
+		Cannot be built next to another Oppidum (same as Citadel)
 		Base yields now +2 Food and +1 to all other yields
 		Increased Tile defense bonus to +100% from +50%
 		Tech yield changes reworked. Now gains +1 to 2 yields on 1 tech every era from Classical to Atomic (Food unaffected, but ends with +3 to all other yields)

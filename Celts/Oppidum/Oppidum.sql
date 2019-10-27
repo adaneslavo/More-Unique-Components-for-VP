@@ -41,7 +41,7 @@ VALUES		('IMPROVEMENT_CELTS_ATLAS', 			256, 		'OppidumIcons_256.dds',			2, 				1
 ------------------------------
 INSERT INTO Improvements
 			(Type, 							Description, 							Civilopedia, 								ArtDefineTag, 							Help, 											SpecificCivRequired, 	CivilizationType, 		PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	Permanent,	DestroyedWhenPillaged, 	PortraitIndex, 	IconAtlas, 					NoTwoAdjacent,	DefenseModifier)
-VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT',	'ART_DEF_IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP',		1,						'CIVILIZATION_CELTS',	20,				1,						1,						0,			0,						0,				'IMPROVEMENT_CELTS_ATLAS',	0,				100);
+VALUES		('IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_TEXT',	'ART_DEF_IMPROVEMENT_CELTS_OPPIDUM',	'TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP',		1,						'CIVILIZATION_CELTS',	20,				1,						1,						0,			0,						0,				'IMPROVEMENT_CELTS_ATLAS',	1,				100);
 ------------------------------	
 -- Improvement_Flavors
 ------------------------------		

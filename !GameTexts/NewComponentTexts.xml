@@ -1479,7 +1479,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_CELTS_OPPIDUM_HELP">
 			<Text>
-				Unique Celtic Great Tile Improvement. It will improve Strategic Resources. Provides various yields and +100% [ICON_STRENGTH] Defense Bonus to Units stationed on it, and HP to a nearby City. Improves Adjacent Tile Improvements:[NEWLINE]
+				Cannot be built next to another Oppidum.[NEWLINE][NEWLINE]Unique Celtic Great Tile Improvement. It will improve Strategic Resources. Provides various yields and +100% [ICON_STRENGTH] Defense Bonus to Units stationed on it, and HP to a nearby City. Improves Adjacent Tile Improvements:[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_PRODUCTION] to Farms,[NEWLINE]
 				+1 [ICON_FOOD] and +1 [ICON_PEACE] to Camps,[NEWLINE]
 				+1 [ICON_PRODUCTION] and +1 [ICON_PEACE] to Pastures,[NEWLINE]
@@ -1510,7 +1510,7 @@
 			<Text>Construct an [LINK=IMPROVEMENT_CELTS_OPPIDUM]Oppidum[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_HELP">
-			<Text>It will increase [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR]. Gives +100% [ICON_STRENGTH] Defense Bonus to units stationed on it, and permanent +10 HP to a nearby city. Provides bonus yields to most non-road and non-great person Improvements.</Text>
+			<Text>Cannot be built next to another Oppidum.[NEWLINE][NEWLINE]It will increase [COLOR_POSITIVE_TEXT]All Yields[ENDCOLOR]. Gives +100% [ICON_STRENGTH] Defense Bonus to units stationed on it, and permanent +10 HP to a nearby city. Provides bonus yields to most non-road and non-great person Improvements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_CELTS_OPPIDUM_REC">
 			<Text>Unit will be consumed[NEWLINE]Unique Celtic Great Tile Improvement. Will connect Strategic Resources on this tile to the trade network. Gives a [ICON_STRENGTH] Defense Bonus to units stationed on it, and +10 HP to a nearby City. Adjacent Improvements gain additional bonus yields.</Text>
