@@ -81,6 +81,13 @@ INSERT INTO Building_YieldFromInternalTR
 		(BuildingType, YieldType, Yield)
 SELECT	'BUILDING_DENMARK_ANDELSBEVAEGELSE', YieldType, Yield
 FROM Building_YieldFromInternalTR WHERE BuildingType = 'BUILDING_STOCKYARD';
+------------------------------	
+-- Building_YieldFromProcessModifier
+------------------------------		
+INSERT INTO Building_YieldFromProcessModifier	
+		(BuildingType, YieldType, Yield)
+SELECT	'BUILDING_DENMARK_ANDELSBEVAEGELSE', YieldType, Yield
+FROM Building_YieldFromProcessModifier WHERE BuildingType = 'BUILDING_STOCKYARD';
 --==========================================================================================================================
 --==========================================================================================================================
 
