@@ -38,12 +38,12 @@ VALUES	('IMPROVEMENT_ETHIOPIA_ATLAS', 			256, 		'MonolithicChurchIcons_256.dds',
 -- Improvements
 ------------------------------
 INSERT INTO Improvements
-			(Type, 											Description, 										Civilopedia, 											ArtDefineTag, 										Help, 													SpecificCivRequired, 	CivilizationType, 			PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	HillsMakesValid,	PortraitIndex, 	IconAtlas, 						NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury)
-VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT',	'ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	1,						'CIVILIZATION_ETHIOPIA',	20,				0,						0,						0,						1,					0,				'IMPROVEMENT_ETHIOPIA_ATLAS',	1,				0,					0);
+			(Type, 												Description, 										Civilopedia, 											ArtDefineTag, 										Help, 													SpecificCivRequired, 	CivilizationType, 			PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	HillsMakesValid,	PortraitIndex, 	IconAtlas, 						NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury)
+VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT',	'ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	1,						'CIVILIZATION_ETHIOPIA',	20,				0,						0,						0,						1,					0,				'IMPROVEMENT_ETHIOPIA_ATLAS',	1,				0,					0);
 
 INSERT INTO Improvements
-			(Type, 												Description, 										Civilopedia, 											ArtDefineTag, 										Help, 													PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	HillsMakesValid,	PortraitIndex, 	IconAtlas, 						NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury, ShowInPedia, 	ShowInTechTree)
-VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT',	'ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	20,				0,						0,						0,						0,					0,				'IMPROVEMENT_ETHIOPIA_ATLAS',	0,				0,					0, 				0, 				0);
+			(Type, 												Description, 										Civilopedia, 											ArtDefineTag, 										Help, 																										PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	HillsMakesValid,	PortraitIndex, 	IconAtlas, 						NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury)
+VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT',	'ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP',														20,				0,						0,						0,						0,					0,				'IMPROVEMENT_ETHIOPIA_ATLAS',	0,				0,					0);
 ------------------------------	
 -- Improvement_Flavors
 ------------------------------		
@@ -87,9 +87,9 @@ VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'RESOURCE_STONE',		1);
 -- Builds
 ------------------------------		
 INSERT INTO Builds		
-			(Type,										PrereqTech,			ImprovementType, 								Description, 								Help, 												Recommendation, 								EntityEvent, 			Time,	OrderPriority, 	Kill, 	IconIndex, 	IconAtlas)
-VALUES		('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	1000,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS'),
-			('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	1000,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS');
+			(Type,										PrereqTech,			ImprovementType, 								Description, 								Help, 												Recommendation, 								EntityEvent, 			Time,	OrderPriority, 	Kill, 	IconIndex, 	IconAtlas, 						ShowInPedia, 	ShowInTechTree)
+VALUES		('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	1000,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS', 	1, 				1),
+			('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	1000,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS', 	0,				0);
 ------------------------------				
 -- Unit_Builds
 ------------------------------				
