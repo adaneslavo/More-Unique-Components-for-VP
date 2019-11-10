@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_BRAZIL', 'BUILDINGCLASS_OPERA_HOUSE',	'BUILDING_BRAZIL_SA
 -- Buildings
 --------------------------------
 INSERT INTO	Buildings
-			(Type,							Description,							Civilopedia,								Strategy,										Help,										GoldMaintenance, WLTKDTurns, 	Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier, 		GreatWorkSlotType, GreatWorkCount, SpecialistType,			SpecialistCount)
-SELECT		'BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_TEXT',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP',	GoldMaintenance, 10, 			Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_BRAZIL_ATLAS',	GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier+5, 	GreatWorkSlotType, GreatWorkCount, 'SPECIALIST_MUSICIAN',	SpecialistCount+1
+			(Type,							Description,							Civilopedia,								Strategy,										Help,										GoldMaintenance, WLTKDTurns, 	Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier, 		GreatWorkSlotType, GreatWorkCount, SpecialistType, SpecialistCount)
+SELECT		'BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_TEXT',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY',	'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP',	GoldMaintenance, 10, 			Cost, FaithCost, HurryCostModifier, MinAreaSize, ConquestProb, BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_BRAZIL_ATLAS',	GreatWorkYieldType,	UnlockedByBelief, CultureRateModifier+5, 	GreatWorkSlotType, GreatWorkCount, SpecialistType, SpecialistCount
 FROM Buildings WHERE Type = 'BUILDING_OPERA_HOUSE';
 --------------------------------
 -- Building_BuildingClassYieldChanges
@@ -26,14 +26,6 @@ INSERT INTO Building_BuildingClassYieldChanges
 			(BuildingType,					BuildingClassType, YieldType, YieldChange)
 SELECT		'BUILDING_BRAZIL_SAMBADROME',	BuildingClassType, YieldType, YieldChange
 FROM Building_BuildingClassYieldChanges WHERE BuildingType = 'BUILDING_OPERA_HOUSE';
-
---------------------------------
--- Building_BuildingClassYieldChanges
---------------------------------
-INSERT INTO Building_SpecialistYieldChangesLocal 	
-			(BuildingType,						SpecialistType,			YieldType,			Yield)
-VALUES		('BUILDING_BRAZIL_SAMBADROME',	'SPECIALIST_MUSICIAN',	'YIELD_GOLD',	1),
-			('BUILDING_BRAZIL_SAMBADROME',	'SPECIALIST_MUSICIAN',	'YIELD_GOLDEN_AGE_POINTS',	2);
 --------------------------------
 -- Building_ClassesNeededInCity
 --------------------------------
@@ -62,13 +54,26 @@ FROM Building_SpecificGreatPersonRateModifier WHERE BuildingType = 'BUILDING_OPE
 INSERT INTO Building_YieldChanges
 			(BuildingType,					YieldType,					Yield)
 VALUES		('BUILDING_BRAZIL_SAMBADROME',	'YIELD_CULTURE',	4),
-		('BUILDING_BRAZIL_SAMBADROME',	'YIELD_GOLDEN_AGE_POINTS',	4);
+		('BUILDING_BRAZIL_SAMBADROME',	'YIELD_GOLDEN_AGE_POINTS',	2);
+--------------------------------
+-- Building_YieldChanges
+--------------------------------
+INSERT INTO Building_YieldFromYieldPercent
+			(BuildingType, 					YieldIn, 			YieldOut, 					Value)
+VALUES		('BUILDING_BRAZIL_SAMBADROME', 	'YIELD_CULTURE', 	'YIELD_GOLDEN_AGE_POINTS', 	10);
 --------------------------------
 -- Building_GoldenAgeYieldMod
 --------------------------------		
 --INSERT INTO Building_GoldenAgeYieldMod
 --	(BuildingType, YieldType, Yield)
 --VALUES	('BUILDING_BRAZIL_SAMBADROME', 'YIELD_GOLDEN_AGE_POINTS', 25);
+--------------------------------
+-- Building_BuildingClassYieldChanges
+--------------------------------
+--INSERT INTO Building_SpecialistYieldChangesLocal 	
+--			(BuildingType,						SpecialistType,			YieldType,			Yield)
+--VALUES		('BUILDING_BRAZIL_SAMBADROME',	'SPECIALIST_MUSICIAN',	'YIELD_GOLD',	1),
+--			('BUILDING_BRAZIL_SAMBADROME',	'SPECIALIST_MUSICIAN',	'YIELD_GOLDEN_AGE_POINTS',	2);
 --==========================================================================================================================	
 
 --==========================================================================================================================

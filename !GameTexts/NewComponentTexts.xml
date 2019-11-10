@@ -8,7 +8,7 @@
 			<Text>Andelsbevægelse</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_HELP">
-			<Text>+10% [ICON_PRODUCTION] Production when constructing Buildings in this City. The [COLOR_POSITIVE_TEXT]Farming[ENDCOLOR] Process is 15% more effective at converting [ICON_PRODUCTION] Production and reducing [ICON_HAPPINESS_3] Distress.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food to Grass and Plains tiles near the City. +2 [ICON_FOOD] Food, +3 [ICON_PRODUCTION] Production, and +3 [ICON_GOLD] Gold to Nearby Farms and Pastures.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses.</Text>
+			<Text>+10% [ICON_PRODUCTION] Production when constructing Buildings in this City. 10% of [ICON_FOOD] Food created by the City counts as [ICON_GOLD] Gold Per Turn. The [COLOR_POSITIVE_TEXT]Farming[ENDCOLOR] Process is 15% more effective at converting [ICON_PRODUCTION] Production and reducing [ICON_HAPPINESS_3] Distress.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food to Grass and Plains tiles near the City. +2 [ICON_FOOD] Food, [ICON_PRODUCTION] Production, and [ICON_GOLD] Gold to Nearby Farms and Pastures.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DENMARK_ANDELSBEVAEGELSE_STRATEGY">
 			<Text>The Andelsbevægelse is a Danish unique building which can speed up building production. The building's massive bonuses to growth help your empire to multiply, especially when surrounded by plains and pastures.</Text>
@@ -1625,10 +1625,10 @@
 			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]Gains additional traits, and a new look, at Banking and Architecture Technologies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
-			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_PRODUCTION] Production to Villages and Towns.</Text>
+			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_PRODUCTION] Production to Villages and Towns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_3_HELP">
-			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +2 [ICON_PEACE] Faith to Shrines, Temples and Monasteries.</Text>
+			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +2 [ICON_PEACE] Faith to Shrines, Temples and Monasteries.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_STRATEGY">
 			<Text>Unique Russian replacement for the Customs House. Initially, Pogosts are comparatively lackluster, but they develop new traits as the game progresses. Each stage increases Gold generated from City Connections, and The Pogost provides modest increases in gold from trade and culture, then gains modest boosts to gold and science at its second stage, and provides boosts to faith generation in its final stage.</Text>
@@ -1832,7 +1832,7 @@
 			<Text>The Sambadrome is the unique Brazilian replacement for the Opera House. In addition to the bonuses of an Opera House, the Sambadrome also generates Golden Age Points. The Sambadrome comes with a Musician specialist slot, and all Musicians in the city generate extra Gold and Golden Age Points.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP">
-			<Text>Unique replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Points in the City. All Musicians' Guilds adds +1 [ICON_GOLD] Gold and [ICON_GREAT_MUSICIAN] Musician Specialists in the City produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points.[NEWLINE][NEWLINE]Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music and [ICON_GREAT_MUSICIAN] Musician Specialist.[NEWLINE][NEWLINE]Starts 10 turns of 'Carnaval' when completed.</Text>
+			<Text>Unique replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. 10% of [ICON_CULTURE] Culture created by the City counts as [ICON_GOLDEN_AGE] Golden Age Points Per Turn. +33% [ICON_GREAT_MUSICIAN] Great Musician Points in the City. All Musicians' Guilds adds +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music.[NEWLINE][NEWLINE]Starts 10 turns of 'Carnaval' when completed.</Text>
 		</Row>
 		
 		<!-- Scythed Chariot -->
@@ -2224,7 +2224,7 @@
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_TEXT">
 			<Text>
 				The Turkish word 'Tersane' is derived from the Venetian 'darsane', from which the English word 'arsenal' is also derived. Though never at the forefront of shipbuilding technology, the Ottomans enjoyed over a century of naval dominance in the Mediterranean following their conquest of Constantinople in 1453. The largest Tersane, constructed at the Golden Horn across from Constantinople, housed over 160 docks, drydocks, storehouses and supply depots, making it one of the largest centers of commerce and industry in the Mediterranean[NEWLINE][NEWLINE]
-				Ottoman naval power was maintained through its tremendous shipbuilding capacity, as well as its allegiances to the Barbary corsairs of North Africa. This pre-eminence was finally ended at the battle of Lepanto, where a combined Spanish and Venetian armada delivered a crushing defeat to the Ottomans, capturing or destroying more than two thirds of the Ottoman navy. In response, the Ottomans built 250 new vessels within six months.[NEWLINE][NEWLINE]
+				Ottoman naval power was maintained through its tremendous shipbuilding capacity and its allegiances to the Barbary corsairs of North Africa. This pre-eminence was finally ended at the battle of Lepanto, where a combined Spanish and Venetian armada delivered a crushing defeat to the Ottomans, capturing or destroying more than two thirds of the Ottoman navy. In response, the Ottomans built 250 new vessels within six months.[NEWLINE][NEWLINE]
 				"You come to see how we bear our misfortune. But I would have you know the difference between your loss and ours. In wresting Cyprus from you, we deprived you of an arm; in defeating our fleet, you have only shaved our beard."[NEWLINE] Grand Vizier Mehmed Sokullu, on the defeat at Lepanto, and the capture of Cyprus, which the Ottomans had taken earlier the same year
 			</Text>
 		</Row>
@@ -2237,7 +2237,7 @@
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_TEXT">
 			<Text>
 				The Order of Brothers of the German House of Saint Mary in Jerusalem, more commonly known as the Teutonic Order, is a Catholic knightly order christened in 1190 in Acre, Jerusalem. Originally founded as an adjunct of the Knights Hospitaller, the Order was tasked with establishing hospitals and helping Germanic pilgrims on their way to the Holy Land. Within 50 years, the German Catholic order became a state unto itself, prosecuting a holy crusade against Baltic pagans from their capital in present day Malbork, Poland.[NEWLINE][NEWLINE] 
-				After Christian forces were expelled from Jerusalem, the Teutonic knights found work as mercenaries and guardsmen in Transylvania, Hungary, and then Poland, before becoming the largest player in a new Prussian Crusade against the pagan inhabitants of the Eastern Baltics. The Teutonic Order carried out a bloody, centuries-long campaign of forced conversions and ethnic replacement that brought them into conflict with Estonians, Lithuanians, Prussian pagans and their former Polish allies. Resistance to forced Christianization by Catholic knights would shape the national identities of all these neighboring peoples.[NEWLINE][NEWLINE]
+				After Christian forces were expelled from Jerusalem, the Teutonic knights found work as mercenaries and guardsmen in Transylvania, Hungary, and then Poland, before becoming the largest player in a new Prussian Crusade against the pagan inhabitants of the Eastern Baltics. The Teutonic Order carried out a bloody, centuries-long campaign of forced conversions and ethnic replacement that brought them into conflict with Estonians, Lithuanians, Old Prussians and their former Polish allies. Resistance to forced Christianization by Catholic knights would shape the national identities of all these neighboring peoples.[NEWLINE][NEWLINE]
 				The adoption of Christianity in Lithuania along with Poland's attempts to politically isolate the Teutonic Order from the rest of Catholicism left the Order without a purpose (and a shortage of friends) by 1520. In response, the Grand Master of the Order, Albert of Brandenburg, resigned from the Order, converted to Lutheranism, and styled himself Duke of Prussia. With the consent of the Order, Albert converted their land holdings into a secularized fiefdom, making Prussia the first Protestant state. Though declining in political force, the Teutonic Order continued to exist as a Catholic state through its holdings in Germania until forcibly dissolved by Napoleon Bonaparte in 1809. The Teutonic Order eventually reformed and still exists today as a ceremonial and charitable organization.  
 			</Text>
 		</Row>
@@ -2246,7 +2246,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_GERMANY_TEUTONIC_ORDER_HELP">
 			<Text>
-				Does not require a Barracks. Grants a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Barracks in the City. A [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Great General appears near the city. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing.
+				Does not require a Barracks. Grants a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Barracks in the City. A [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Great Writer appears near the city. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing.
 				[NEWLINE][NEWLINE]All Castles gain +2 [ICON_PRODUCTION] Production and all Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion.
 				[NEWLINE][NEWLINE]25 [ICON_PEACE] Faith whenever you kill an enemy Unit, scaling with Era. Enables you to select a Reformation Belief at 5% below its normal Global [ICON_RELIGION] Follower requirement (20% on Standard).
 				[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
@@ -2264,7 +2264,7 @@
 			<Text>The Tophet is the unique Shrine replacement for Carthage. In addition to the normal bonuses of a Shrine, the Tophet provides Culture whenever a unit is purchased in the City. Military Units purchased in a City with a Tophet gain +5XP at normal speed, giving them a small boost before barracks, and mitigating the experience penalty on purchased units slightly.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGE_TOPHET_TEXT">
-			<Text>"Tophet" is a Hebrew term for a place of worship and human sacrifice to the Canaanite gods, and has become a colorful synonym for hell within Judeo-Christian theology. Usually located outside cities, Tophets were holy places where sacrifices to the gods could be presented to the heads of the Phoenician pantheon, Ba'al Hammon, the god of weather and vegetation, and his consort, Tanit.[NEWLINE][NEWLINE]Regular sacrifices were made to ensure the prosperity of Carthage, and the ashes of burnt offerings were sealed within the Tophet. Child sacrifice, once prevalent throughout the Near-East, was a persistent hallmark of Carthaginian religious life long after contemporary cultures had shunned the practice. Modern archaeological evidence suggests children were sacrificed in times of great stress such as wars, plagues, and natural disasters as an act of divine supplication.</Text>
+			<Text>"Tophet" is a Hebrew term for a place of worship and human sacrifice to the Canaanite gods, and has become a colorful synonym for hell within Judeo-Christian theology. Usually located outside cities, Tophets were holy places where sacrifices to the gods could be presented to the heads of the Phoenician pantheon, Ba'al Hammon and his consort, Tanit.[NEWLINE][NEWLINE]Regular sacrifices were made to ensure the prosperity of Carthage and the ashes of burnt offerings were sealed within the Tophet. Child sacrifice, once prevalent throughout the Near-East, was a persistent hallmark of Carthaginian religious life long after contemporary cultures had shunned the practice. Modern archaeological evidence suggests children were sacrificed in times of great stress such as wars, plagues, and natural disasters as an act of divine supplication.</Text>
 		</Row>
 
 		<!-- University of Coimbra -->
@@ -2316,7 +2316,7 @@
 			<Text>Xiafan Guanjun</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_HELP">
-			<Text>Sturdy Renaissance Era Naval Ranged Unit. Only China may build it. Generates [ICON_INFLUENCE] Influence every turn when stationed in a City-State's borders. Has the [COLOR_POSITIVE_TEXT]Broadside[ENDCOLOR] Promotion for free. Can enter Rival Territory.</Text>
+			<Text>Sturdy Renaissance Era Naval Ranged Unit. Only China may build it. Generates [ICON_INFLUENCE] Influence every turn when stationed in a City-State's borders. Has the [COLOR_POSITIVE_TEXT]Broadside[ENDCOLOR] Promotion for free.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_STRATEGY">
 			<Text>The Xiafan Guanjun is a Chinese unique unit. It is much sturdier than the Frigate it replaces, and is available earlier. You can use your Xiafan Guanjun to passively bring city-states under your sway, or take advantage of its bonus against cities and dominate coastal empires.</Text>
@@ -2332,7 +2332,7 @@
 			<Text>Kowtow</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW_HELP">
-			<Text>Unit [COLOR_POSITIVE_TEXT]can Enter Enemy Territory[ENDCOLOR] without Open Borders Agreement. +2 [ICON_INFLUENCE] Influence per turn [COLOR_POSITIVE_TEXT]inside City-State Territory[ENDCOLOR].</Text>
+			<Text>+2 [ICON_INFLUENCE] Influence per turn [COLOR_POSITIVE_TEXT]inside City-State Territory[ENDCOLOR].</Text>
 		</Row>
 		<!-- Created by Blue Ghost-->
 

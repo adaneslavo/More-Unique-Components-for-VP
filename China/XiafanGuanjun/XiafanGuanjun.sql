@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_CHINA', 'UNITCLASS_FRIGATE', 'UNIT_CHINA_XIAFAN_GUANJUN')
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,							Description,							Civilopedia,								Strategy,										Help,										Combat,		RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech,		ObsoleteTech,		GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,			UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_CHINA_XIAFAN_GUANJUN',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_TEXT',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_STRATEGY',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_HELP', 	Combat+5,	RangedCombat+2, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, 'TECH_ASTRONOMY',	'TECH_ELECTRONICS', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_WARJUNK', 	0,					0,				'UNIT_CHINA_ATLAS',	'UNIT_CHINA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
+			(Type,							Description,							Civilopedia,								Strategy,										Help,										Combat,		RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain, DefaultUnitAI, MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech,		ObsoleteTech,		GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,			UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
+SELECT		'UNIT_CHINA_XIAFAN_GUANJUN',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_TEXT',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_STRATEGY',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_HELP', 	Combat+5,	RangedCombat+2, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain, DefaultUnitAI, MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, 'TECH_ASTRONOMY',	'TECH_ELECTRONICS', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_WARJUNK', 	0,					0,				'UNIT_CHINA_ATLAS',	'UNIT_CHINA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_FRIGATE';
 --------------------------------	
 -- Unit_AITypes
@@ -69,7 +69,7 @@ VALUES			('UNIT_CHINA_XIAFAN_GUANJUN',	'PROMOTION_UNIT_CHINA_KOWTOW'),
 ------------------------------
 INSERT INTO UnitPromotions
 			(Type,							Description,							Help,										CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry,								RivalTerritory)
-VALUES		('PROMOTION_UNIT_CHINA_KOWTOW',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW_HELP',	1,					'AS2D_IF_LEVELUP',	37,				'promoMUC_atlas_00',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW',	1);
+VALUES		('PROMOTION_UNIT_CHINA_KOWTOW',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW_HELP',	1,					'AS2D_IF_LEVELUP',	37,				'promoMUC_atlas_00',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_CHINA_KOWTOW',	0);
 --==========================================================================================================================	
 
 --==========================================================================================================================

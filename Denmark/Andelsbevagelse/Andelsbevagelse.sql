@@ -62,11 +62,11 @@ VALUES		('BUILDING_DENMARK_ANDELSBEVAEGELSE',	'YIELD_FOOD',	5),
 INSERT INTO Building_ImprovementYieldChanges
 			(BuildingType, 							ImprovementType, 		YieldType, 			Yield)
 VALUES		('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'IMPROVEMENT_PASTURE',	'YIELD_FOOD', 		2),
-			('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'IMPROVEMENT_PASTURE',	'YIELD_PRODUCTION', 3),
-			('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'IMPROVEMENT_PASTURE',	'YIELD_GOLD', 		3),
+			('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'IMPROVEMENT_PASTURE',	'YIELD_PRODUCTION', 2),
+			('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'IMPROVEMENT_PASTURE',	'YIELD_GOLD', 		2),
 			('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'IMPROVEMENT_FARM',		'YIELD_FOOD', 		2),
-			('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'IMPROVEMENT_FARM',		'YIELD_PRODUCTION', 3),
-			('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'IMPROVEMENT_FARM',		'YIELD_GOLD', 		3);
+			('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'IMPROVEMENT_FARM',		'YIELD_PRODUCTION', 2),
+			('BUILDING_DENMARK_ANDELSBEVAEGELSE', 	'IMPROVEMENT_FARM',		'YIELD_GOLD', 		2);
 ------------------------------
 -- Building_TerrainYieldChanges
 ------------------------------
@@ -88,6 +88,14 @@ INSERT INTO Building_YieldFromProcessModifier
 		(BuildingType, YieldType, Yield)
 SELECT	'BUILDING_DENMARK_ANDELSBEVAEGELSE', YieldType, Yield
 FROM Building_YieldFromProcessModifier WHERE BuildingType = 'BUILDING_STOCKYARD';
+
+------------------------------	
+-- Building_YieldFromProcessModifier
+------------------------------		
+INSERT INTO Building_YieldFromYieldPercent	
+		(BuildingType, YieldIn, YieldOut, Value)
+SELECT	'BUILDING_DENMARK_ANDELSBEVAEGELSE', YieldIn, YieldOut, Value
+FROM Building_YieldFromYieldPercent WHERE BuildingType = 'BUILDING_STOCKYARD';
 --==========================================================================================================================
 --==========================================================================================================================
 
