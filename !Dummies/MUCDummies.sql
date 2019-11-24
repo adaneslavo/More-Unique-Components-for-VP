@@ -33,6 +33,7 @@ VALUES		('BUILDINGCLASS_D_FOR_HUEY',				'BUILDING_D_FOR_HUEY',			1),
 			('BUILDINGCLASS_D_FOR_FEITORIA',		'BUILDING_D_FOR_FEITORIA',		1),
 			('BUILDINGCLASS_D_FOR_BAAN',			'BUILDING_D_FOR_BAAN',			1),
 			('BUILDINGCLASS_D_FOR_WAAG',			'BUILDING_D_FOR_WAAG',			1),
+			('BUILDINGCLASS_SHOPHET_DUMMY',			'BUILDING_SHOPHET_DUMMY', 		1),
 			('BUILDINGCLASS_D_FOR_GUMEY_LUX',		'BUILDING_D_FOR_GUMEY_LUX',		1);
 --==========================================================================================================================	
 -- BUILDINGS
@@ -58,7 +59,8 @@ VALUES		('BUILDING_D_FOR_BARBICAN',		'BUILDINGCLASS_ARMORY',				'TXT_KEY_BUILDIN
 			('BUILDING_D_FOR_FEITORIA',		'BUILDINGCLASS_D_FOR_FEITORIA',		'TXT_KEY_BUILDING_D_FOR_FEITORIA',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
 			('BUILDING_D_FOR_BAAN',			'BUILDINGCLASS_D_FOR_BAAN',			'TXT_KEY_BUILDING_D_FOR_BAAN',			0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
 			('BUILDING_D_FOR_GUMEY_LUX',	'BUILDINGCLASS_D_FOR_GUMEY_LUX',	'TXT_KEY_BUILDING_D_FOR_GUMEY_LUX',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
-			('BUILDING_D_FOR_RIAD',			'BUILDINGCLASS_D_FOR_RIAD',			'TXT_KEY_BUILDING_D_FOR_RIAD',			1, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1);
+			('BUILDING_D_FOR_RIAD',			'BUILDINGCLASS_D_FOR_RIAD',			'TXT_KEY_BUILDING_D_FOR_RIAD',			1, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+			('BUILDING_SHOPHET_DUMMY',		'BUILDINGCLASS_SHOPHET_DUMMY',		'TXT_KEY_BUILDING_SHOPHET_DUMMY',		0, 				0,					-1,   -1,			-1,				1,             	1,          0,				-1,					'CIV_COLOR_ATLAS',	0, 1);
 
 INSERT INTO Buildings 	
 			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	UnmoddedHappiness, IsDummy)
@@ -127,11 +129,6 @@ VALUES		('BUILDING_D_FOR_HUEY',	'DOMAIN_LAND',	3),
 ------------------------------
 -- Building_ResourceYieldChanges
 ------------------------------
-INSERT INTO Building_ResourceYieldChanges
-			(BuildingType,					ResourceType,     YieldType,			Yield)
-VALUES		('BUILDING_D_FOR_HIPPODROME',	'RESOURCE_HORSE', 'YIELD_CULTURE',		1),
-			('BUILDING_D_FOR_HIPPODROME',	'RESOURCE_HORSE', 'YIELD_GOLD',			1);
-			
 INSERT INTO Building_ResourceYieldChanges	
 			(BuildingType,		ResourceType,	YieldType,		Yield)
 SELECT		'BUILDING_D_FOR_GUMEY_LUX',	Type,			'YIELD_GOLD',	1
@@ -168,6 +165,8 @@ VALUES		('BUILDING_D_FOR_PROXENOS',	'YIELD_GOLD',		2),
 			('BUILDING_D_FOR_SACHEM_3',	'YIELD_GOLD',		1),
 			('BUILDING_D_FOR_SACHEM_4',	'YIELD_SCIENCE',	1),
 			('BUILDING_D_FOR_SACHEM_5',	'YIELD_CULTURE',	1),
-			('BUILDING_D_FOR_SACHEM_6',	'YIELD_FAITH',		1);
+			('BUILDING_D_FOR_SACHEM_6',	'YIELD_FAITH',		1),
+			('BUILDING_SHOPHET_DUMMY', 	'YIELD_CULTURE', 	2),
+			('BUILDING_SHOPHET_DUMMY', 	'YIELD_FAITH', 		2);
 --==========================================================================================================================
 --==========================================================================================================================

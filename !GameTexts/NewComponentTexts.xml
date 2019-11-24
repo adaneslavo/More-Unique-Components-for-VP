@@ -2003,7 +2003,117 @@
 		<Row Tag="TXT_KEY_UNIT_CARTHAGE_SHOPHET_25">
 			<Text>Abdmelqart</Text>
 		</Row>
-	
+		<!-- Suffet -->
+		<!-- Created by pineappledan -->
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET">
+			<Text>Shofet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_HELP">
+			<Text>This Israelite unique Great Person replaces the Great General. Aside from the ability to boost nearby troops and construct citadels, this unit generates +2 [ICON_CULTURE] Culture and [ICON_PEACE] Faith every turn.[NEWLINE][NEWLINE]Deals damage every turn to enemy cities the Shofet is adjacent to. Damage is doubled if the city is [ICON_BLOCKADED] Blockaded</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_STRATEGY">
+			<Text>The Shofet is the unique Great General replacement for Israel. The Shofet is very effective at shortening sieges, dealing consistent damage each turn if adjacent to an enemy city. Shoftim also act as a steady supply of Faith and Culture for your Empire, so don't feel the need to build citadels with them right away.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_TEXT">
+			<Text>The Judges of Israel, or Shoftim, were Israelite military leaders in times of crisis, before Israel established their monarchy. The Book of Judges in the Hebrew Bible describes the Shofet as part of a cyclical pattern: The Israelite people fall away from their god, hardship is brought on as punishment from God, the Israelites cry out to the Lord for rescue, God sends a Shofet to lead the Israelites to overthrow their persecutors, and the cycle repeats. The cycle of Judges is thought to have gone on for between 300 and 500 years.[NEWLINE][NEWLINE]The first judge of Israel named by the Bible was Moses, who is said to have led the Israelites out of bondage in Egypt and established the Jewish law. After Moses, Joshua led the Israelites in the conquest of Canaan. The final judge named in the Bible was Samuel, who anointed both the first and second kings of the new Kingdom of Israel.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SHOPHET">
+			<Text>Judge of Israel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SHOPHET_HELP">
+			<Text>+2 [ICON_CULTURE] Culture and +2 [ICON_PEACE] Faith every turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SHOFAR">
+			<Text>Shofar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SHOFAR_HELP">
+			<Text>Deals 20 Damage to adjacent enemy City every turn. Effect is doubled if enemy City is [COLOR_POSITIVE_TEXT]Blockaded[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MILHEMET_RESHUT">
+			<Text>Milhemet Mitzvah</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MILHEMET_RESHUT_HELP">
+			<Text>Enemy units killed [COLOR_POSITIVE_TEXT]within 2 tiles[ENDCOLOR] of this unit yield [ICON_GREAT_PEOPLE] points towards a random Great Person in your [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HASMONEAN">
+			<Text>Hasmonean Guerilla</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HASMONEAN_HELP">
+			<Text>+25% Flank Attack and Wounded Attack Bonus. Ignores Terrain Movement Penalties, and +5 HP when healing in Friendly Territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PROMISED_LAND">
+			<Text>Promised Land</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PROMISED_LAND_HELP">
+			<Text>+25% [ICON_STRENGTH] Strength vs Barbarians. Gain [ICON_PEACE] Faith when [COLOR_POSITIVE_TEXT]Clearing Barbarian Camps[ENDCOLOR].</Text>
+		</Row>
+		<!--Unique Names-->
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_1">
+			<Text>Joshua</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_2">
+			<Text>Othniel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_3">
+			<Text>Ehud</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_4">
+			<Text>Shamgar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_5">
+			<Text>Deborah</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_6">
+			<Text>Gideon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_7">
+			<Text>Abimelech</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_8">
+			<Text>Tola</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_9">
+			<Text>Jair</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_10">
+			<Text>Jephthah</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_11">
+			<Text>Ibzan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_12">
+			<Text>Elon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_13">
+			<Text>Abdon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_14">
+			<Text>Samson</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_15">
+			<Text>Eli</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_16">
+			<Text>Samuel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_17">
+			<Text>Moses</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_18">
+			<Text>Joel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_19">
+			<Text>Abadiah</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_20">
+			<Text>Amariah</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_21">
+			<Text>Zebediah</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_22">
+			<Text>Barak</Text>
+		</Row>	
 		<!-- Shotelai -->
 		<!-- Created by adan_eslavo on 12/11/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_MAIM_0">

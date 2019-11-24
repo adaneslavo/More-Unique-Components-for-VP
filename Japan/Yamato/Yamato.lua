@@ -3,10 +3,13 @@
 -- DateCreated: 02/02/2018
 --------------------------------------------------------------
 local eUnitYamato = GameInfoTypes.UNIT_JAPAN_YAMATO
+local eCivilizationJapan = GameInfoTypes.CIVILIZATION_JAPAN
 
 --GAP on construction of Yamato
 function OnYamatoConstructionAddGAP(iPlayer, iCity, iUnit)
 	local pPlayer = Players[iPlayer]
+
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationJapan) then return end
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 
 	if pUnit:GetUnitType() == eUnitYamato then
@@ -58,6 +61,8 @@ function OnYamatoDeathAddGAP(iPlayerKiller, iPlayerKilled, eKillerUnitType, eKil
 		end
 	end		
 end
-			
-GameEvents.CityTrained.Add(OnYamatoConstructionAddGAP)
+
+if Game.IsCivEverActive(eCivilizationJapan) then			
+	GameEvents.CityTrained.Add(OnYamatoConstructionAddGAP)
+end
 GameEvents.UnitKilledInCombat.Add(OnYamatoDeathAddGAP)

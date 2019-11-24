@@ -5,7 +5,7 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>(over) More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>53</ModVersion>
+    <ModVersion>54</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>3rd and 4th unique component for each civilization</Teaser>
     <Description>More Unique Components mod. Compatible with VP 11-08 and later.
@@ -243,6 +243,16 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Indonesia/Kampong/Kampong.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Israel/KibbutzImprovement.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Israel/Israel4UC.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1044,6 +1054,12 @@ Latest changes: see changelog file.</Description>
         <Name>Qullqa</Name>
         <Description>Adds Coca resource.</Description>
         <FileName>Inca/Qullqa/Qullqa.lua</FileName>
+      </Content>
+	  <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Israel Shophet</Name>
+        <Description>Adds Shophet Judge and Shofar effects</Description>
+        <FileName>Israel/Israel4UC.lua</FileName>
       </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/3rd-and-4th-unique-components-for-vp-official-thread.631657/</Homepage>
@@ -4900,6 +4916,58 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+	<Content Include="Israel\Israel4UC.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\Israel4UC.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\KibbutzImprovement.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\ISRAEL_SHOFET_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\ISRAEL_SHOFET_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\ISRAEL_SHOFET_080.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\ISRAEL_SHOFET_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\ISRAEL_SHOFET_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\IsraelUnitAlphaAtlas.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\SV_IsraelLS.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\Model\Swordsman_Babylon.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\Model\Swordsman_Babylon.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	<Content Include="Israel\Model\Swordsman_Babylon_gloss.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="!Animations" />
@@ -4956,6 +5024,8 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Inca\Chasqui\3DModel" />
     <Folder Include="Inca\Coca" />
     <Folder Include="Inca\Qullqa" />
+	<Folder Include="Israel\" />
+	<Folder Include="Israel\Model" />
     <Folder Include="Japan\" />
     <Folder Include="Japan\Kabuki\" />
     <Folder Include="Japan\Yamato\" />
