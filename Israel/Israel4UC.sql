@@ -26,6 +26,19 @@ INSERT INTO Policy_ImprovementYieldChanges
 VALUES		('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_KIBBUTZ',	'YIELD_PRODUCTION',	1),
 			('POLICY_MOBILIZATION',			'IMPROVEMENT_KIBBUTZ',	'YIELD_SCIENCE',	3),
 			('POLICY_URBANIZATION',			'IMPROVEMENT_KIBBUTZ',	'YIELD_FOOD',		2);
+			
+INSERT INTO ArtDefine_LandmarkTypes(Type, LandmarkType, FriendlyName)
+SELECT 'ART_DEF_IMPROVEMENT_KIBBUTZ', 'Improvement', 'KIBBUTZ';
+
+
+INSERT INTO ArtDefine_Landmarks(Era, State, Scale, ImprovementType, LayoutHandler, ResourceType, Model, TerrainContour)
+SELECT 'Any', 'UnderConstruction', 0.8,  'ART_DEF_IMPROVEMENT_KIBBUTZ', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'kibbutz_hb.fxsxml', 1 UNION ALL
+SELECT 'Any', 'Constructed', 0.8,  'ART_DEF_IMPROVEMENT_KIBBUTZ', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'kibbutz.fxsxml', 1 UNION ALL
+SELECT 'Any', 'Pillaged', 0.6,  'ART_DEF_IMPROVEMENT_KIBBUTZ', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'kibbutz_pl.fxsxml', 1;
+
+
+INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset)
+SELECT 'ART_DEF_IMPROVEMENT_KIBBUTZ', 'Improvement', 'sv_KIBBUTZ.dds';
 --==========================================================================================================================	
 -- PROMOTIONS
 --==========================================================================================================================	
