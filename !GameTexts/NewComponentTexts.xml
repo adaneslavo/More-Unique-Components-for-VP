@@ -2029,24 +2029,6 @@
 		<Row Tag="TXT_KEY_PROMOTION_SHOFAR_HELP">
 			<Text>Deals 20 Damage to adjacent enemy City every turn. Effect is doubled if enemy City is [COLOR_POSITIVE_TEXT]Blockaded[ENDCOLOR]</Text>
 		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_MILHEMET_RESHUT">
-			<Text>Milhemet Mitzvah</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_MILHEMET_RESHUT_HELP">
-			<Text>Enemy units killed [COLOR_POSITIVE_TEXT]within 2 tiles[ENDCOLOR] of this unit yield [ICON_GREAT_PEOPLE] points towards a random Great Person in your [ICON_CAPITAL] Capital.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_HASMONEAN">
-			<Text>Hasmonean Guerilla</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_HASMONEAN_HELP">
-			<Text>+25% Flank Attack and Wounded Attack Bonus. Ignores Terrain Movement Penalties, and +5 HP when healing in Friendly Territory.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_PROMISED_LAND">
-			<Text>Promised Land</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_PROMISED_LAND_HELP">
-			<Text>+25% [ICON_STRENGTH] Strength vs Barbarians. Gain [ICON_PEACE] Faith when [COLOR_POSITIVE_TEXT]Clearing Barbarian Camps[ENDCOLOR].</Text>
-		</Row>
 		<!--Unique Names-->
 		<Row Tag="TXT_KEY_UNIT_ISRAEL_SHOPHET_1">
 			<Text>Joshua</Text>
