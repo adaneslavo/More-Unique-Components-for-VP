@@ -67,9 +67,12 @@ VALUES		('UNIT_ZULU_ATLAS', 			256, 		'IndunaPicture_256.dds',	1, 				1),
 -- Promotions
 --------------------------------	
 INSERT INTO UnitPromotions 
+			(Type, 							Description, 							Help, 										Sound, 				GiveExperiencePercent, 	IsNearbyPromotion, 	NearbyRange, 	GiveDomain,		CannotBeChosen, PortraitIndex,	IconAtlas, 				PediaType, 			PediaEntry)
+VALUES		('PROMOTION_UNIT_ZULU_IBUTHO',	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO',	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO_HELP', 	'AS2D_IF_LEVELUP',	50, 					1, 					0, 				'DOMAIN_LAND', 	1, 				28, 			'promoMUC_atlas_01',	'PEDIA_CIVILIAN', 	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO');
+
+INSERT INTO UnitPromotions 
 			(Type, 							Description, 							Help, 										Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 				PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_ZULU_IBUTHO',	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO',	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO_HELP', 	'AS2D_IF_LEVELUP',	1, 				28, 			'promoMUC_atlas_01',	'PEDIA_CIVILIAN', 	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO'),
-			('PROMOTION_UNIT_ZULU_IQAWE',	'TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE',	'TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE_HELP', 	'AS2D_IF_LEVELUP',	1, 				29, 			'promoMUC_atlas_01',	'PEDIA_CIVILIAN', 	'TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE');
+VALUES		('PROMOTION_UNIT_ZULU_IQAWE',	'TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE',	'TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE_HELP', 	'AS2D_IF_LEVELUP',	1, 				29, 			'promoMUC_atlas_01',	'PEDIA_CIVILIAN', 	'TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

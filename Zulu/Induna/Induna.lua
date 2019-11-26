@@ -71,7 +71,7 @@ function OnExpendingGrantXPAndDealDmg(iPlayer, iUnit, iUnitType, iX, iY)
 end
 
 -- adds xp to stacked units on attack
-function OnAttackGainExtraXP(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP) 
+--[[function OnAttackGainExtraXP(iAttackingPlayer, iAttackingUnit, attackerDamage, attackerFinalDamage, attackerMaxHP, iDefendingPlayer, iDefendingUnit, defenderDamage, defenderFinalDamage, defenderMaxHP) 
 	local pAttackingPlayer = Players[iAttackingPlayer]
 	
 	if not (pAttackingPlayer and pAttackingPlayer:GetCivilizationType() == eCivilizationZulu) then return end
@@ -94,7 +94,7 @@ function OnAttackGainExtraXP(iAttackingPlayer, iAttackingUnit, attackerDamage, a
 			end
 		end
 	end
-end
+end ]]
 
 function PositionCalculator(i1, i2)
     return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
@@ -102,5 +102,5 @@ end
 
 if Game.IsCivEverActive(eCivilizationZulu) then
 	GameEvents.GreatPersonExpended.Add(OnExpendingGrantXPAndDealDmg)
-	GameEvents.CombatEnded.Add(OnAttackGainExtraXP)
+--	GameEvents.CombatEnded.Add(OnAttackGainExtraXP)
 end

@@ -802,25 +802,13 @@
 			<Text>Goedendag!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_HELP">
-			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR]. +10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to all adjacent Friendly Units for one turn[ENDCOLOR].</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT">
-			<Text>Golden Spurs</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT_HELP">
-			<Text>+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from adjacent Friendly Unit[ENDCOLOR].</Text>
+			<Text>+15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to adjacent Friendly Land Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE">
 			<Text>Burgemeeste</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_HELP">
-			<Text>+50% [ICON_STRENGTH] Combat Strength if unit begins its turn [COLOR_POSITIVE_TEXT]Garrisoned in a City[ENDCOLOR].</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT">
-			<Text>Merchant Militia</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT_HELP">
-			<Text>+50% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from City[ENDCOLOR].</Text>
+			<Text>+50% [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]within 2 tiles of a Friendly City[ENDCOLOR].</Text>
 		</Row>
 		<!-- Hashemite Raider -->
 		<!-- Created by Blue Ghost -->
@@ -919,7 +907,7 @@
 			<Text>Ibutho</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO_HELP">
-			<Text>Friendly Units stacked with this unit gain extra XP [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR].</Text>
+			<Text>Friendly Units stacked with this unit gain +50% Experience.</Text>
 		</Row>	
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE">
 			<Text>Iqawe</Text>
@@ -931,10 +919,10 @@
 			<Text>InDuna</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_STRATEGY">
-			<Text>The InDuna is a Zulu unique unit. May construct a Citadel. +15% Combat bonus to all Land units within 2 tiles.[NEWLINE][NEWLINE]A unit stacked with an InDuna receives additional XP when attacking other units.[NEWLINE][NEWLINE]Expending an InDuna gives 30XP to the unit that was stacked with it, and deals 30 damage adjacent enemy units.</Text>
+			<Text>The InDuna is a Zulu unique unit. May construct a Citadel. +15% Combat bonus to all Land units within 2 tiles.[NEWLINE][NEWLINE]A unit stacked with an InDuna receives +50% Experience.[NEWLINE][NEWLINE]Expending an InDuna gives 30XP to the unit that was stacked with it, and deals 30 damage adjacent enemy units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_HELP">
-			<Text>This Zulu Unique Great Person replaces the Great General. Aside from the ability to boost nearby troops and construct Citadels, Units stacked with an InDuna gain bonus XP when attacking. Expending an InDuna gives bonus XP to a Stacked Unit, and immediately deals 30 damage to adjacent Enemy Units.</Text>
+			<Text>This Zulu Unique Great Person replaces the Great General. Aside from the ability to boost nearby troops and construct Citadels, Units stacked with an InDuna gain bonus Experience more quickly. Expending an InDuna gives bonus XP to a Stacked Unit, and immediately deals 30 damage to adjacent Enemy Units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA_TEXT">
 			<Text>Leadership was not a complicated affair for the Zulu military. An inDuna guided each regiment, or 'ibutho', and he in turn answered to senior izinDuna who controlled the corps. One or more of these elder chiefs might accompany a big force on an important mission, but there was no single "field marshal" in command of all Zulu forces. Regimental izinDuna, like the non-commissioned officers of today's army, were important for morale and discipline. This was demonstrated during the battle of Isandlwana, where the army led by Ntshingwayo kaMahole outmaneuvered and destroyed a British column. Ntshingwayo kaMahole and his fellow izinDuna snuck a Zulu force of 20 000 men behind the British, hiding them in a valley only 7 miles from the British camp. When discovered sitting in complete silence by scouts, the izinDuna spurred their men into action and closed the remaining distance with lightning speed.</Text>

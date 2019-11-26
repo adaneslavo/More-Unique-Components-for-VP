@@ -4,7 +4,7 @@
 -- 2018-01-22 Infixo, RESOURCECLASS_LUXURY used
 -- 2018-03-14 Infixo, no self-boost for Goedendags
 --------------------------------------------------------------
-local eGoedendag = GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_GOEDENDAG
+--[[local eGoedendag = GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_GOEDENDAG
 local eGoedendagEffect = GameInfoTypes.PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT
 
 function GoedendagBonus(iPlayer)

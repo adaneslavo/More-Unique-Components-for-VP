@@ -118,24 +118,20 @@ VALUES		('UNIT_NETHERLANDS_GOEDENDAG',	'FLAVOR_OFFENSE',	10),
 -- UnitPromotions
 ------------------------------
 INSERT INTO UnitPromotions 
-			(Type, 												Description, 												Help, 																Sound, 				CombatPercent,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,			LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
-VALUES		('PROMOTION_UNIT_NETHERLANDS_GOEDENDAG',			'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG',				'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_HELP',				'AS2D_IF_LEVELUP',	0,				0,				0,			0,			0,					0,					0, 					1,				5, 				'promoMUC_atlas_01', 	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG'),
-			('PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT',		'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT',		'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT_HELP',			'AS2D_IF_LEVELUP',	10,				0,				0,			0,			0,					0,					0, 					1,				6, 				'promoMUC_atlas_01', 	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_EFFECT'),
-			('PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE',			'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE',			'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_HELP',				'AS2D_IF_LEVELUP',	0,				0,				0,			0,			0,					0,					0, 					1,				3, 				'promoMUC_atlas_01', 	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE'),
-			('PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT',	'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT',	'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT_HELP',		'AS2D_IF_LEVELUP',	50,				0,				0,			0,			0,					0,					0, 					1,				4, 				'promoMUC_atlas_01', 	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_EFFECT');
-------------------------------
--- UnitPromotions_UnitCombatMods
-------------------------------	
-INSERT INTO	UnitPromotions_UnitCombatMods
-			(PromotionType,								UnitCombatType,			Modifier)
-VALUES		('PROMOTION_UNIT_NETHERLANDS_GOEDENDAG',	'UNITCOMBAT_MOUNTED', 	25);
+			(Type, 												Description, 												Help, 																Sound, 				GiveCombatMod,	GiveDomain,		IsNearbyPromotion,	NearbyRange, 	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_NETHERLANDS_GOEDENDAG',			'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG',				'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_HELP',				'AS2D_IF_LEVELUP',	15,				'DOMAIN_LAND', 	1,					1, 				0, 					1,				5, 				'promoMUC_atlas_01', 	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG');
+			
+		
+INSERT INTO UnitPromotions 
+			(Type, 												Description, 												Help, 																Sound, 				NearbyFriendlyCityCombatMod,	NearbyRange,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
+VALUES		('PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE',			'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE',			'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_HELP',				'AS2D_IF_LEVELUP',	50,								1,				0, 					1,				3, 				'promoMUC_atlas_01', 	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE');
 --------------------------------
 -- Unit_FreePromotions
 --------------------------------
---INSERT INTO Unit_FreePromotions 	
---			(UnitType, 						PromotionType)
---SELECT		'UNIT_NETHERLANDS_GOEDENDAG', 	PromotionType
---FROM Unit_FreePromotions WHERE UnitType = 'UNIT_PIKEMAN';
+INSERT INTO Unit_FreePromotions 	
+			(UnitType, 						PromotionType)
+SELECT		'UNIT_NETHERLANDS_GOEDENDAG', 	PromotionType
+FROM Unit_FreePromotions WHERE UnitType = 'UNIT_PIKEMAN';
 
 INSERT INTO Unit_FreePromotions
 			(UnitType, 						PromotionType)
