@@ -3,6 +3,19 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v54:
+- Compatibility: 
+	- mounted ranged units have movement and CS/RCS linked to the base units and will move accordingly
+		- I have abandoned modifying these units here, as they are getting changed every patch now. Download PDan's unit tweaks for a more sane mounted archer experience
+- tweaked/modified:
+	- Teutonic Order Faith on kill reduced to 15
+	- IsNearbyPromotion implemented
+		Goedendag! now gives +10% CS aura to units in 1 tile via SQL
+		Goedendag! no longer gives +25% vs mounted. Goedendag unit now has the normal +50% vs mounted promotion (unless using PDan's Unit Tweaks)
+		Burgemeeste promotion now gives +33% CS if within 2 tiles of a friendly city
+		InDuna's Ibutho now gives +50% XP to the unit stacked with it, rather than +2 only on attack.
+	
+
 v53:
 - compatibility:
 	- Added 10% Food/Gold conversion and adjusted bonuses to Pasture and Farm on Andelsvaegelse

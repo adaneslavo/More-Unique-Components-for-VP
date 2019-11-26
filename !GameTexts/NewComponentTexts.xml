@@ -802,13 +802,13 @@
 			<Text>Goedendag!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_GOEDENDAG_HELP">
-			<Text>+15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to adjacent Friendly Land Units[ENDCOLOR].</Text>
+			<Text>+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to adjacent Friendly Land Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE">
 			<Text>Burgemeeste</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE_HELP">
-			<Text>+50% [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]within 2 tiles of a Friendly City[ENDCOLOR].</Text>
+			<Text>+33% [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]within 2 tiles of a Friendly City[ENDCOLOR].</Text>
 		</Row>
 		<!-- Hashemite Raider -->
 		<!-- Created by Blue Ghost -->
@@ -2328,7 +2328,7 @@
 			<Text>
 				Does not require a Barracks. Grants a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Barracks in the City. A [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Great Writer appears near the city. Contains 1 slot for a [ICON_GREAT_WORK] Great Work of Writing.
 				[NEWLINE][NEWLINE]All Castles gain +2 [ICON_PRODUCTION] Production and all Barracks in the Empire gain +2 [ICON_PEACE] Faith, +5 [ICON_STRENGTH] Defense, and +50 HP, and Units trained in a City with a Barracks gain the [COLOR_POSITIVE_TEXT]Morale[ENDCOLOR] Promotion.
-				[NEWLINE][NEWLINE]25 [ICON_PEACE] Faith whenever you kill an enemy Unit, scaling with Era. Enables you to select a Reformation Belief at 5% below its normal Global [ICON_RELIGION] Follower requirement (20% on Standard).
+				[NEWLINE][NEWLINE]15 [ICON_PEACE] Faith whenever you kill an enemy Unit, scaling with Era. Enables you to select a Reformation Belief at 5% below its normal Global [ICON_RELIGION] Follower requirement (20% on Standard).
 				[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.
 			</Text>
 		</Row>

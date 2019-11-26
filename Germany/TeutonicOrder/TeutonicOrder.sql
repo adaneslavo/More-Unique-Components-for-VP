@@ -57,7 +57,7 @@ VALUES		('BUILDING_GERMANY_TEUTONIC_ORDER', 'YIELD_CULTURE',	1),
 --------------------------------
 INSERT INTO Building_YieldFromVictoryGlobal
 	(BuildingType, YieldType, Yield)
-VALUES	('BUILDING_GERMANY_TEUTONIC_ORDER', 'YIELD_FAITH', 25);
+VALUES	('BUILDING_GERMANY_TEUTONIC_ORDER', 'YIELD_FAITH', 15);
 --------------------------------	
 -- Building_FreeUnits
 --------------------------------	
