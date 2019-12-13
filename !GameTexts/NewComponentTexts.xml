@@ -274,10 +274,10 @@
 			<Text>Chasqui</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_HELP">
-			<Text>Flexible Scout of the Classical Era. Only the Inca may build it. Heals an additional 10 HP, and gains +1 [ICON_ARROW_RIGHT] Movement in Friendly Territory. Starts with the [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotion.</Text>
+			<Text>Flexible Scout of the Classical Era. Only the Inca may build it. Heals an additional 10 HP, and gains +1 [ICON_ARROW_RIGHT] Movement in Friendly Territory. Moves at Double Speed in [COLOR_POSITIVE_TEXT]Mountains[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_STRATEGY">
-			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Hills and friendly territory. The Chasqui also heals 10 additional HP whenever it heals, making it recover very quickly when exploring or fighting.</Text>
+			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Mountains and friendly territory. The Chasqui also heals 10 additional HP whenever it heals, making it recover very quickly when exploring or fighting.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_TEXT">
 			<Text>
@@ -289,7 +289,7 @@
 			<Text>Chasquiwasi</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP">
-			<Text>+10 HP [COLOR_POSITIVE_TEXT]on Heal[ENDCOLOR]. +1 [ICON_ARROW_RIGHT] Movement Point if unit is [COLOR_POSITIVE_TEXT]inside Friendly Territory[ENDCOLOR].</Text>
+			<Text>+10 HP [COLOR_POSITIVE_TEXT]on Heal[ENDCOLOR].[NEWLINE]+1 [ICON_ARROW_RIGHT] Movement Point [COLOR_POSITIVE_TEXT]in Friendly Territory[ENDCOLOR].[NEWLINE]Double Movement in [COLOR_POSITIVE_TEXT]Mountains[ENDCOLOR]</Text>
 		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->

@@ -46,10 +46,10 @@ SELECT 'ART_DEF_IMPROVEMENT_KIBBUTZ', 'Improvement', 'sv_KIBBUTZ.dds';
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-		(Type,							Description,							Help,										CannotBeChosen,	Sound,				PortraitIndex,		IconAtlas,			PediaType,		PediaEntry,								AuraEffectChange, 	LostWithUpgrade, 	BarbarianCombatBonus)
+		(Type,							Description,							Help,										CannotBeChosen,	Sound,				PortraitIndex,		IconAtlas,					PediaType,		PediaEntry,								AuraEffectChange, 	LostWithUpgrade, 	BarbarianCombatBonus)
 VALUES	
-		('PROMOTION_SHOFAR',			'TXT_KEY_PROMOTION_SHOFAR',				'TXT_KEY_PROMOTION_SHOFAR_HELP',			1,				'AS2D_IF_LEVELUP',	59,					'PROMOTION_ATLAS',	'PEDIA_SHARED',	'TXT_KEY_PROMOTION_SHOFAR',				0, 					0, 					0),
-		('PROMOTION_SHOPHET',			'TXT_KEY_PROMOTION_SHOPHET',			'TXT_KEY_PROMOTION_SHOPHET_HELP',			1,				'AS2D_IF_LEVELUP',	59,					'PROMOTION_ATLAS',	'PEDIA_SHARED',	'TXT_KEY_PROMOTION_SHOPHET',			0, 					0, 					0);
+		('PROMOTION_SHOFAR',			'TXT_KEY_PROMOTION_SHOFAR',				'TXT_KEY_PROMOTION_SHOFAR_HELP',			1,				'AS2D_IF_LEVELUP',	3,					'ISRAEL_PROMOTION_ATLAS',	'PEDIA_SHARED',	'TXT_KEY_PROMOTION_SHOFAR',				0, 					0, 					0),
+		('PROMOTION_SHOPHET',			'TXT_KEY_PROMOTION_SHOPHET',			'TXT_KEY_PROMOTION_SHOPHET_HELP',			1,				'AS2D_IF_LEVELUP',	1,					'ISRAEL_PROMOTION_ATLAS',	'PEDIA_SHARED',	'TXT_KEY_PROMOTION_SHOPHET',			0, 					0, 					0);
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------	

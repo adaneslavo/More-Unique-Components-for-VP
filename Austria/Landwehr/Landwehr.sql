@@ -81,6 +81,12 @@ VALUES		('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE'),
 INSERT INTO UnitPromotions
 			(Type,											Description,											Help,														CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry,												FriendlyLandsModifier)
 VALUES		('PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP',		1,				'AS2D_IF_LEVELUP',	6,				'promoMUC_atlas_00',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		0);
+--------------------------------	
+-- UnitPromotions_YieldChanges
+--------------------------------
+INSERT INTO	UnitPromotions_YieldChanges
+			(PromotionType, 			YieldType,			Yield)
+VALUES		('UNIT_AUSTRIA_LANDWEHR',	'YIELD_CULTURE',	2);
 --==========================================================================================================================	
 
 --==========================================================================================================================

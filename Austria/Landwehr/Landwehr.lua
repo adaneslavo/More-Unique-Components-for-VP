@@ -14,7 +14,7 @@ function YorkscherMarsch(iPlayer)
 			if pPlot ~= nil then
 				local iImprovementOnTile = pPlot:GetImprovementType()
 				
-				if pUnit:IsGarrisoned() or iImprovementOnTile == GameInfoTypes.IMPROVEMENT_CITADEL or iImprovementOnTile == GameInfoTypes.IMPROVEMENT_FORT then
+				if iImprovementOnTile == GameInfoTypes.IMPROVEMENT_CITADEL or iImprovementOnTile == GameInfoTypes.IMPROVEMENT_FORT then
 					local iOwner = pPlot:GetOwner()
 					local pOwner = Players[iOwner]
 

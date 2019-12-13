@@ -10,9 +10,9 @@ function GetStrongerAtFullHealth(iPlayer)
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsHasPromotion(ePromotionInvincible) then
 			if pUnit:IsHurt() == false then
-				pUnit:SetBaseCombatStrength(42)
-			else
 				pUnit:SetBaseCombatStrength(46)
+			else
+				pUnit:SetBaseCombatStrength(42)
 			end
 		end
 	end
