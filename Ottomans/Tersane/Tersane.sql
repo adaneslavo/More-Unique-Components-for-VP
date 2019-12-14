@@ -63,24 +63,18 @@ INSERT INTO Building_YieldChanges
 VALUES		('BUILDING_OTTOMANS_TERSANE',	'YIELD_PRODUCTION',	2),
 			('BUILDING_OTTOMANS_TERSANE',	'YIELD_GOLD',		2);
 ------------------------------	
--- Building_ResourceYieldChanges 
+-- Building_SeaResourceYieldChanges 
 ------------------------------		
-INSERT INTO Building_ResourceYieldChanges 	
-			(BuildingType, 					ResourceType,		YieldType,		Yield)
-VALUES		('BUILDING_OTTOMANS_TERSANE',	'RESOURCE_FISH',	'YIELD_GOLD',	1),
-			('BUILDING_OTTOMANS_TERSANE',	'RESOURCE_PEARLS',	'YIELD_GOLD',	1),
-			('BUILDING_OTTOMANS_TERSANE',	'RESOURCE_CRAB',	'YIELD_GOLD',	1),
-			('BUILDING_OTTOMANS_TERSANE',	'RESOURCE_WHALE',	'YIELD_GOLD',	1),
-			('BUILDING_OTTOMANS_TERSANE',	'RESOURCE_CORAL',	'YIELD_GOLD',	1);
+INSERT INTO Building_SeaResourceYieldChanges 	
+			(BuildingType, 					YieldType,		Yield)
+VALUES		('BUILDING_OTTOMANS_TERSANE',	'YIELD_GOLD',	1);
 ------------------------------	
--- Building_TerrainYieldChanges 
+-- Building_SeaPlotYieldChanges 
 ------------------------------		
-INSERT INTO Building_TerrainYieldChanges 	
-			(BuildingType, 					TerrainType,		YieldType,			Yield)
-VALUES		('BUILDING_OTTOMANS_TERSANE',	'TERRAIN_OCEAN',	'YIELD_PRODUCTION',	1),
-			('BUILDING_OTTOMANS_TERSANE',	'TERRAIN_OCEAN',	'YIELD_FOOD',		1),
-			('BUILDING_OTTOMANS_TERSANE',	'TERRAIN_COAST',	'YIELD_PRODUCTION',	1),
-			('BUILDING_OTTOMANS_TERSANE',	'TERRAIN_COAST',	'YIELD_FOOD',		1);
+INSERT INTO Building_SeaPlotYieldChanges 	
+			(BuildingType, 					YieldType,			Yield)
+VALUES		('BUILDING_OTTOMANS_TERSANE',	'YIELD_PRODUCTION',	1),
+			('BUILDING_OTTOMANS_TERSANE',	'YIELD_FOOD',		1);
 ------------------------------	
 -- Building_UnitCombatProductionModifiers 
 ------------------------------		

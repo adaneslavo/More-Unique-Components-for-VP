@@ -31,12 +31,12 @@ function Shofar(iPlayer)
 							if city:IsBlockaded() then
 								city:ChangeDamage(40)
 								if (pPlayer:IsHuman() or otherPlayer:IsHuman()) then
-									Events.AddPopupTextEvent(HexToWorld(ToHexFromGrid(Vector2(city:GetX(), city:GetY()))), Locale.ConvertTextKey("[COLOR_NEGATIVE_TEXT]20 Shofar[ENDCOLOR]", 1))
+									Events.AddPopupTextEvent(HexToWorld(ToHexFromGrid(Vector2(city:GetX(), city:GetY()))), Locale.ConvertTextKey("[COLOR_NEGATIVE_TEXT]40 Shofar[ENDCOLOR]", 1))
 								end
 							else 
 								city:ChangeDamage(20)
 								if (pPlayer:IsHuman() or otherPlayer:IsHuman()) then
-									Events.AddPopupTextEvent(HexToWorld(ToHexFromGrid(Vector2(city:GetX(), city:GetY()))), Locale.ConvertTextKey("[COLOR_NEGATIVE_TEXT]40 Shofar[ENDCOLOR]", 1))
+									Events.AddPopupTextEvent(HexToWorld(ToHexFromGrid(Vector2(city:GetX(), city:GetY()))), Locale.ConvertTextKey("[COLOR_NEGATIVE_TEXT]20 Shofar[ENDCOLOR]", 1))
 								end
 							end
 						end

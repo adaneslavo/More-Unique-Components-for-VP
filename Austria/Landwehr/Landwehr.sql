@@ -85,8 +85,8 @@ VALUES		('PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUS
 -- UnitPromotions_YieldChanges
 --------------------------------
 INSERT INTO	UnitPromotions_YieldChanges
-			(PromotionType, 			YieldType,			Yield)
-VALUES		('UNIT_AUSTRIA_LANDWEHR',	'YIELD_CULTURE',	2);
+			(PromotionType, 							YieldType,			Yield)
+VALUES		('PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',	'YIELD_CULTURE',	2);
 --==========================================================================================================================	
 
 --==========================================================================================================================

@@ -525,7 +525,9 @@
 		<Row Tag="TXT_KEY_BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_REFORMATION">
 			<Text>Dummy Reformation Building</Text>
 		</Row>
-
+		<Row Tag="TXT_KEY_BUILDING_SHOPHET_DUMMY">
+			<Text>DF Shofet</Text>
+		</Row>
 		<!-- E-temenanki -->
 		<!-- Created by adan_eslavo 28/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI">
