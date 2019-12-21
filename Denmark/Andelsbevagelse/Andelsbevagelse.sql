@@ -9,20 +9,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 VALUES	('CIVILIZATION_DENMARK',	'BUILDINGCLASS_STOCKYARD',	'BUILDING_DENMARK_ANDELSBEVAEGELSE');
 --==========================================================================================================================	
 
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 							IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
-VALUES	('BUILDING_DENMARK_ATLAS', 			256, 		'AndelsbevagelsePicture_256.dds',			1, 				1),
-		('BUILDING_DENMARK_ATLAS', 			128, 		'AndelsbevagelsePicture_128.dds',			1, 				1),
-		('BUILDING_DENMARK_ATLAS', 			64, 		'AndelsbevagelsePicture_064.dds',			1, 				1),
-		('BUILDING_DENMARK_ATLAS', 			45, 		'AndelsbevagelsePicture_045.dds',			1, 				1);
---==========================================================================================================================
-
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -96,6 +82,19 @@ INSERT INTO Building_YieldFromYieldPercent
 		(BuildingType, YieldIn, YieldOut, Value)
 SELECT	'BUILDING_DENMARK_ANDELSBEVAEGELSE', YieldIn, YieldOut, Value
 FROM Building_YieldFromYieldPercent WHERE BuildingType = 'BUILDING_STOCKYARD';
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 							IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
+VALUES	('BUILDING_DENMARK_ATLAS', 			256, 		'AndelsbevagelsePicture_256.dds',			1, 				1),
+		('BUILDING_DENMARK_ATLAS', 			128, 		'AndelsbevagelsePicture_128.dds',			1, 				1),
+		('BUILDING_DENMARK_ATLAS', 			64, 		'AndelsbevagelsePicture_064.dds',			1, 				1),
+		('BUILDING_DENMARK_ATLAS', 			45, 		'AndelsbevagelsePicture_045.dds',			1, 				1);
+--==========================================================================================================================
 --==========================================================================================================================
 --==========================================================================================================================
 

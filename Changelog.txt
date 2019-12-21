@@ -3,6 +3,10 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v55:
+- Lancer CS update:
+	- Lancer base CS has been changed to 37. Hakkapeliitta and Qizilbash have been changed to 39 and 41 CS respectively
+
 v54:
 - Compatibility: 
 	- mounted ranged units have movement and CS/RCS linked to the base units and will move accordingly
@@ -14,7 +18,7 @@ v54:
 		Goedendag! no longer gives +25% vs mounted. Goedendag unit now has the normal +50% vs mounted promotion (unless using PDan's Unit Tweaks)
 		Burgemeeste promotion now gives +33% CS if within 2 tiles of a friendly city
 		InDuna's Ibutho now gives +50% XP to the unit stacked with it, rather than +2 only on attack.
-	
+		Chasqui - no longer has Altitude Training Promotion. Added double move in mountains to Chasquiwasi
 
 v53:
 - compatibility:

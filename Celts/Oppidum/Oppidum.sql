@@ -23,14 +23,7 @@ VALUES 		('Any', 'UnderConstruction', 	0.0018, 'ART_DEF_IMPROVEMENT_CELTS_OPPIDU
 INSERT INTO ArtDefine_StrategicView
 			(StrategicViewType, 					TileType, 		Asset)
 VALUES 		('ART_DEF_IMPROVEMENT_CELTS_OPPIDUM', 	'Improvement', 	'OppidumIcon_128.dds');
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 								IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('IMPROVEMENT_CELTS_ATLAS', 			256, 		'OppidumIcons_256.dds',			2, 				1),
-			('IMPROVEMENT_CELTS_ATLAS', 			64, 		'OppidumIcons_064.dds',			2, 				1),
-			('IMPROVEMENT_CELTS_ATLAS', 			45, 		'OppidumIcons_045.dds',			2, 				1);
+
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -201,3 +194,11 @@ INSERT INTO Belief_ImprovementYieldChanges
 VALUES
 	('BELIEF_UNITY_OF_PROPHETS', 'IMPROVEMENT_CELTS_OPPIDUM', 'YIELD_FAITH', 4),
 	('BELIEF_UNITY_OF_PROPHETS', 'IMPROVEMENT_CELTS_OPPIDUM', 'YIELD_SCIENCE', 4);
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 								IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('IMPROVEMENT_CELTS_ATLAS', 			256, 		'OppidumIcons_256.dds',			2, 				1),
+			('IMPROVEMENT_CELTS_ATLAS', 			64, 		'OppidumIcons_064.dds',			2, 				1),
+			('IMPROVEMENT_CELTS_ATLAS', 			45, 		'OppidumIcons_045.dds',			2, 				1);

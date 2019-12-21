@@ -9,18 +9,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 VALUES	('CIVILIZATION_NETHERLANDS',	'BUILDINGCLASS_BANK',	'BUILDING_NETHERLANDS_WAAG');
 --==========================================================================================================================	
 
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 									IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_NETHERLANDS_ATLAS', 				256, 		'WaagPicture_256.dds',			1, 				1),
-			('BUILDING_NETHERLANDS_ATLAS', 				128, 		'WaagPicture_128.dds',			1, 				1),
-			('BUILDING_NETHERLANDS_ATLAS', 				64, 		'WaagPicture_064.dds',			1, 				1),
-			('BUILDING_NETHERLANDS_ATLAS', 				45, 		'WaagPicture_045.dds',			1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -85,7 +73,18 @@ INSERT INTO Building_YieldChanges
 VALUES		('BUILDING_NETHERLANDS_WAAG',	'YIELD_GOLD',			2),
 			('BUILDING_NETHERLANDS_WAAG',	'YIELD_PRODUCTION',		2);
 --==========================================================================================================================	
-
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 									IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_NETHERLANDS_ATLAS', 				256, 		'WaagPicture_256.dds',			1, 				1),
+			('BUILDING_NETHERLANDS_ATLAS', 				128, 		'WaagPicture_128.dds',			1, 				1),
+			('BUILDING_NETHERLANDS_ATLAS', 				64, 		'WaagPicture_064.dds',			1, 				1),
+			('BUILDING_NETHERLANDS_ATLAS', 				45, 		'WaagPicture_045.dds',			1, 				1);
 
 
 

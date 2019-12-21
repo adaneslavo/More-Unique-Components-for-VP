@@ -21,7 +21,7 @@ UPDATE Units SET Cost = '325' WHERE Type = 'UNIT_SWEDISH_HAKKAPELIITTA';
 UPDATE Units SET FaithCost = '400' WHERE Type = 'UNIT_SWEDISH_HAKKAPELIITTA';
 UPDATE Units SET PrereqTech = 'TECH_METALLURGY' WHERE Type = 'UNIT_SWEDISH_HAKKAPELIITTA';
 UPDATE Units SET ObsoleteTech = 'TECH_COMBINED_ARMS' WHERE Type = 'UNIT_SWEDISH_HAKKAPELIITTA';
-UPDATE Units SET Combat = '38' WHERE Type = 'UNIT_SWEDISH_HAKKAPELIITTA';
+UPDATE Units SET Combat = '39' WHERE Type = 'UNIT_SWEDISH_HAKKAPELIITTA';
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------

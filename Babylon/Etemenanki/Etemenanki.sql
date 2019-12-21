@@ -9,20 +9,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 VALUES	('CIVILIZATION_BABYLON',	'BUILDINGCLASS_NATIONAL_EPIC',	'BUILDING_BABYLON_ETEMENANKI');
 --==========================================================================================================================	
 
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 							IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
-VALUES	('BUILDING_BABYLON_ATLAS', 			256, 		'EtemenankiPicture_256.dds',			1, 				1),
-		('BUILDING_BABYLON_ATLAS', 			128, 		'EtemenankiPicture_128.dds',			1, 				1),
-		('BUILDING_BABYLON_ATLAS', 			64, 		'EtemenankiPicture_064.dds',			1, 				1),
-		('BUILDING_BABYLON_ATLAS', 			45, 		'EtemenankiPicture_045.dds',			1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -77,6 +63,19 @@ INSERT INTO Building_ClassesNeededInCity
 			(BuildingType, 					BuildingClassType)
 VALUES		('BUILDING_BABYLON_ETEMENANKI',	'BUILDINGCLASS_MONUMENT'),
 		('BUILDING_BABYLON_ETEMENANKI',	'BUILDINGCLASS_PALACE');
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 							IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
+VALUES	('BUILDING_BABYLON_ATLAS', 			256, 		'EtemenankiPicture_256.dds',			1, 				1),
+		('BUILDING_BABYLON_ATLAS', 			128, 		'EtemenankiPicture_128.dds',			1, 				1),
+		('BUILDING_BABYLON_ATLAS', 			64, 		'EtemenankiPicture_064.dds',			1, 				1),
+		('BUILDING_BABYLON_ATLAS', 			45, 		'EtemenankiPicture_045.dds',			1, 				1);
+--==========================================================================================================================	
 --==========================================================================================================================
 --==========================================================================================================================
 
