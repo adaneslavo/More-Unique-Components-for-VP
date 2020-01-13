@@ -3,6 +3,11 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v56:
+- tweaked/modified:
+	- Lamassu Gate: City Ranged Attack modifier reduced to +15% (rework on how city damage is calculated affected this)
+	- Barbican: City Ranged Attack modifier reduced to +20%% (rework on how city damage is calculated affected this)
+
 v55:
 - Lancer CS update:
 	- Lancer base CS has been changed to 37. Hakkapeliitta and Qizilbash have been changed to 39 and 41 CS respectively
