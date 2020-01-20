@@ -1193,7 +1193,7 @@
 			<Text>Kapu Ku'ialua</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked. [COLOR_POSITIVE_TEXT]At the beginning of its turn[ENDCOLOR] it takes an additional 10 "bleed" damage for every mark. Effect can stack up to [COLOR_POSITIVE_TEXT]3[ENDCOLOR] times after battles with 3 different units.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is marked, reducing its Max HP by [COLOR_NEGATIVE_TEXT]20[ENDCOLOR] and Healing by [COLOR_NEGATIVE_TEXT]10[ENDCOLOR] for [COLOR_POSITIVE_TEXT]2[ENDCOLOR] turns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_1">
 			<Text>Leiomano</Text>
@@ -1843,7 +1843,7 @@
 			<Text>Scythed Chariot</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_HELP">
-			<Text>A dangerous Unit on Open Terrain. Only the Celts may build it. This unit is stronger against Archer and Melee Units and has more vision.[NEWLINE][NEWLINE]After moving, deals damage to all newly adjacent Enemy Units. Moving into Rough Terrain consumes all [ICON_MOVES] Movement Points.</Text>
+			<Text>A dangerous Unit on Open Terrain. Only the Celts may build it. This unit is stronger against Archer and Melee Units.[NEWLINE][NEWLINE]After moving, deals damage to all newly adjacent Enemy Units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELTS_SCYTHED_CHARIOT_STRATEGY">
 			<Text>The Scythed Chariot is a Celtic unique unit made for destroying enemy lines. Enemies take damage whenever the Scythed Chariot moves adjacent to them, making this unit deadly in open terrain. Make every move count to maximize damage, but be careful not to leave your Chariots exposed to enemies on their turn. A mounted unit, the Scythed Chariot is vulnerable to Spearmen.</Text>
