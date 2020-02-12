@@ -27,7 +27,7 @@ function DefenseToCulture(iPlayer)
 				city:SetNumRealBuilding(eBuildingDummyForQila1, iDefenseChange)
 				
 				-- 10% Defense converted to culture in City
-				local iCultureChange = 0.001 * city:GetStrengthValue()
+				local iCultureChange = 0.002 * city:GetStrengthValue()
 				
 				city:SetNumRealBuilding(eBuildingDummyForQila2, iCultureChange)
 

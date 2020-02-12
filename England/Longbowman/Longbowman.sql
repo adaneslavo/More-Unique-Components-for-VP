@@ -41,7 +41,7 @@ UPDATE Units SET Cost = '180' WHERE Type = 'UNIT_ENGLISH_LONGBOWMAN';
 UPDATE Units SET ObsoleteTech = 'TECH_DYNAMITE' WHERE Type = 'UNIT_ENGLISH_LONGBOWMAN';
 UPDATE Units SET Range = '2' WHERE Type = 'UNIT_ENGLISH_LONGBOWMAN';
 UPDATE Units SET FaithCost = '300' WHERE Type = 'UNIT_ENGLISH_LONGBOWMAN';
---UPDATE Units SET RangedCombat = '23' WHERE Type = 'UNIT_ENGLISH_LONGBOWMAN';
+UPDATE Units SET RangedCombat = '21' WHERE Type = 'UNIT_ENGLISH_LONGBOWMAN';
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------

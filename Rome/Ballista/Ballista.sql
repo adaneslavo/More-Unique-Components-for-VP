@@ -21,7 +21,7 @@ UPDATE Units SET Cost = '100' WHERE Type = 'UNIT_ROMAN_BALLISTA';
 UPDATE Units SET FaithCost = '200' WHERE Type = 'UNIT_ROMAN_BALLISTA';
 UPDATE Units SET ObsoleteTech = 'TECH_GUNPOWDER' WHERE Type = 'UNIT_ROMAN_BALLISTA';
 UPDATE Units SET Combat = '8' WHERE Type = 'UNIT_ROMAN_BALLISTA';
-UPDATE Units SET RangedCombat = '13' WHERE Type = 'UNIT_ROMAN_BALLISTA';
+UPDATE Units SET RangedCombat = '14' WHERE Type = 'UNIT_ROMAN_BALLISTA';
 --------------------------------	
 -- Unit_BuildingClassPurchaseRequireds
 --------------------------------

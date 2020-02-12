@@ -102,6 +102,13 @@ VALUES		('BUILDING_RUSSIA_POGOST_1',	'IMPROVEMENT_TRADING_POST', 		'YIELD_GOLD',
 --			('BUILDING_RUSSIA_POGOST_2',	'IMPROVEMENT_CUSTOMS_HOUSE_VENICE',	'YIELD_PRODUCTION',	1),
 			('BUILDING_RUSSIA_POGOST_2',	'IMPROVEMENT_CELTS_OPPIDUM',		'YIELD_PRODUCTION',	1);
 ------------------------------	
+-- Building_ResourceYieldChanges
+------------------------------
+INSERT INTO Building_ResourceYieldChanges
+			(BuildingType,				ResourceType, YieldType, Yield)
+SELECT		'BUILDING_RUSSIA_POGOST_1',	ResourceType, YieldType, Yield
+FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_MINT';
+------------------------------	
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------
 INSERT INTO Building_BuildingClassLocalYieldChanges 	

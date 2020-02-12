@@ -89,11 +89,11 @@ VALUES		('BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY',	'BUILDINGCLASS_ETHIOPIA
 
 INSERT INTO Buildings 	
 			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	Defense,	ExtraCityHitPoints,	TrainedFreePromotion, IsDummy)
-VALUES		('BUILDING_D_FOR_TEUTONIC',	'BUILDINGCLASS_D_FOR_TEUTONIC',	'TXT_KEY_BUILDING_D_FOR_TEUTONIC',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				500,		50,					'PROMOTION_MORALE', 1);
+VALUES		('BUILDING_D_FOR_TEUTONIC',	'BUILDINGCLASS_D_FOR_TEUTONIC',	'TXT_KEY_BUILDING_D_FOR_TEUTONIC',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				300,		50,					'PROMOTION_MORALE', 1);
 
 INSERT INTO Buildings 	
-			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	Defense, 	IsDummy)
-VALUES		('BUILDING_D_FOR_QILA_1',	'BUILDINGCLASS_D_FOR_QILA_1',	'TXT_KEY_BUILDING_D_FOR_QILA_1',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				100, 		1);
+			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	Defense, 	ExtraCityHitPoints, 	IsDummy)
+VALUES		('BUILDING_D_FOR_QILA_1',	'BUILDINGCLASS_D_FOR_QILA_1',	'TXT_KEY_BUILDING_D_FOR_QILA_1',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				0, 			25, 					1);
 
 INSERT INTO Buildings 	
 			(Type,					BuildingClass,				Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	IsDummy)

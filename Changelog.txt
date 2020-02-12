@@ -3,6 +3,19 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v57:
+- tweaked/modified:
+	- Defensive building tweaks
+	- unit CS tweaks
+	- Pogost now gives Resource boosts (moved from Grocer for this patch)
+	- Harbour replacements now give +2 flat supply
+	
+Bug Fixes
+	- Monolithic Church fixed (wasn't receiving ideology bonus)
+	- Iron Chariot Art file fix
+	- Steam mill syntax fix (should now do everything it is supposed to)
+
+
 v56:
 - tweaked/modified:
 	- Lamassu Gate: City Ranged Attack modifier reduced to +15% (rework on how city damage is calculated affected this)

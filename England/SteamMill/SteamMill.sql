@@ -35,7 +35,7 @@ FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_FACTORY';
 -- Building_BuildingClassYieldChanges
 --------------------------------
 INSERT INTO Building_BuildingClassYieldChanges
-(BuildingType, Building_BuildingClassYieldChanges, YieldType, Yield)
+(BuildingType, BuildingClassType, YieldType, Yield)
 SELECT 'BUILDING_STEAM_MILL', BuildingClassType, YieldType, Yield
 FROM Building_BuildingClassYieldChanges WHERE BuildingType = 'BUILDING_FACTORY';
 --------------------------------
@@ -60,12 +60,6 @@ INSERT INTO Building_YieldChangesPerPop
 SELECT 'BUILDING_STEAM_MILL', YieldType, 50
 FROM Building_YieldChangesPerPop WHERE BuildingType = 'BUILDING_FACTORY';
 --------------------------------
--- Building_ResourceYieldChanges
---------------------------------
-INSERT INTO Building_ResourceYieldChanges
-(BuildingType, ResourceType, YieldType, Yield)
-VALUES ('BUILDING_STEAM_MILL', 'RESOURCE_COAL', 'YIELD_PRODUCTION', 3);
---------------------------------
 -- Building_GreatPersonProgressFromConstruction
 --------------------------------
 INSERT INTO Building_GreatPersonProgressFromConstruction
@@ -84,3 +78,9 @@ INSERT INTO Building_YieldFromInternalTR
 (BuildingType, YieldType, Yield)
 SELECT 'BUILDING_STEAM_MILL', YieldType, Yield
 FROM Building_YieldFromInternalTR WHERE BuildingType = 'BUILDING_FACTORY';
+--------------------------------
+-- Building_ResourceYieldChanges
+--------------------------------
+INSERT INTO Building_ResourceYieldChanges
+(BuildingType, ResourceType, YieldType, Yield)
+VALUES ('BUILDING_STEAM_MILL', 'RESOURCE_COAL', 'YIELD_PRODUCTION', 3);

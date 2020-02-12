@@ -9,7 +9,7 @@ local eBuildingMCIdeology = GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_ID
 function OnIdeologyAddYields(iPlayer, iPolicy)
 	local pPlayer = Players[iPlayer]
 
-	if not bIdeologyState and (pPlayer:IsPolicyBranchUnlocked(eBranchFreedom) == true or pPlayer:IsPolicyBranchUnlocked(eBranchOrder) == true or pPlayer:IsPolicyBranchUnlocked(eBranchAutocracy) == true) then
+	if not bIdeologyState and (pPlayer:IsPolicyBranchUnlocked(GameInfoTypes.POLICY_BRANCH_FREEDOM) == true or pPlayer:IsPolicyBranchUnlocked(GameInfoTypes.POLICY_BRANCH_ORDER) == true or pPlayer:IsPolicyBranchUnlocked(GameInfoTypes.POLICY_BRANCH_AUTOCRACY ) == true) then
 		bIdeologyState = true
 		pPlayer:GetCapitalCity():SetNumRealBuilding(GameInfoTypes.BUILDING_ETHIOPIA_MONOLITHIC_CHURCH_IDEOLOGY, 1)
 	end
