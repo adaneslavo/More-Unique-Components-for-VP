@@ -153,7 +153,7 @@ FROM BuildFeatures WHERE BuildType = 'BUILD_CUSTOMS_HOUSE';
 ------------------------------	
 INSERT INTO Unit_ScalingFromOwnedImprovements	
 			(UnitType, 			ImprovementType, 				Amount)
-VALUES		('UNIT_MERCHANT', 	'IMPROVEMENT_CELTS_OPPIDUM', 	5),
+VALUES		('UNIT_MERCHANT', 	'IMPROVEMENT_CELTS_OPPIDUM', 	10),
 			('UNIT_SCIENTIST', 	'IMPROVEMENT_CELTS_OPPIDUM', 	5),
 			('UNIT_ENGINEER', 	'IMPROVEMENT_CELTS_OPPIDUM', 	10);
 
