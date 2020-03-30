@@ -8,6 +8,7 @@ v58:
 	- SPAD no longer costs supply
 	- Oppidum now boosts GMerchant WLTKD by 10% 
 	- RCS/CS tweaks to Danurgraha
+	- moved production from Coca to Qullqa (aesthetic change)
 v57:
 - tweaked/modified:
 	- Defensive building tweaks
