@@ -23,6 +23,13 @@ INSERT INTO Units
 SELECT		'UNIT_AUSTRIA_LANDWEHR',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_TEXT',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_STRATEGY',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_HELP', 	Combat+3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, 'TECH_COMBINED_ARMS',	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_LANDWEHR', 	0,					0,				'UNIT_AUSTRIA_ATLAS',	'UNIT_AUSTRIA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_RIFLEMAN';
 --------------------------------	
+-- UnitGameplay2DScripts
+--------------------------------		
+INSERT INTO UnitGameplay2DScripts 	
+			(UnitType, 					SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_AUSTRIA_LANDWEHR',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_RIFLEMAN';	
+--------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	

@@ -20,6 +20,13 @@ INSERT INTO Units
 SELECT		'UNIT_AZTEC_EAGLE', 'TXT_KEY_UNIT_AZTEC_EAGLE', 'TXT_KEY_UNIT_AZTEC_EAGLE_TEXT',	'TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY',	'TXT_KEY_UNIT_AZTEC_EAGLE_HELP',	Combat+1,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_GUNPOWDER', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_EAGLE', 	0,					0,				'UNIT_AZTEC_ATLAS', 'UNIT_AZTEC_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_SWORDSMAN';
 --------------------------------	
+-- UnitGameplay2DScripts
+--------------------------------		
+INSERT INTO UnitGameplay2DScripts 	
+			(UnitType, 			SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_AZTEC_EAGLE',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_SWORDSMAN';	
+--------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	

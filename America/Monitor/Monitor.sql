@@ -20,6 +20,13 @@ INSERT INTO Units
 SELECT		'UNIT_AMERICA_MONITOR',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_TEXT', 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_STRATEGY',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_HELP',	Combat+6,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves-1,	Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_UNION_IRONCLAD',	3,					9,				'CIVIL_WAR_UNIT_ATLAS', 'CIVIL_WAR_UNIT_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_IRONCLAD';
 --------------------------------	
+-- UnitGameplay2DScripts
+--------------------------------		
+INSERT INTO UnitGameplay2DScripts 	
+			(UnitType, 				SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_AMERICA_MONITOR',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_IRONCLAD';	
+--------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	

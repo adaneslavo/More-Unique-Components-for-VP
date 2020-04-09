@@ -20,6 +20,13 @@ INSERT INTO Units
 SELECT		'UNIT_CHINA_XIAFAN_GUANJUN',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_TEXT',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_STRATEGY',	'TXT_KEY_UNIT_CHINA_XIAFAN_GUANJUN_HELP', 	Combat+5,	RangedCombat+2, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain, DefaultUnitAI, MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, 'TECH_ASTRONOMY',	'TECH_ELECTRONICS', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_WARJUNK', 	0,					0,				'UNIT_CHINA_ATLAS',	'UNIT_CHINA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_FRIGATE';
 --------------------------------	
+-- UnitGameplay2DScripts
+--------------------------------		
+INSERT INTO UnitGameplay2DScripts 	
+			(UnitType, 						SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_CHINA_XIAFAN_GUANJUN',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_FRIGATE';	
+--------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	

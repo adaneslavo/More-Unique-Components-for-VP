@@ -20,6 +20,13 @@ INSERT INTO Units
 SELECT		'UNIT_GERMANY_SLAGANZ',	'TXT_KEY_UNIT_GERMANY_SLAGANZ',	'TXT_KEY_UNIT_GERMANY_SLAGANZ_TEXT',	'TXT_KEY_UNIT_GERMANY_SLAGANZ_STRATEGY',	'TXT_KEY_UNIT_GERMANY_SLAGANZ_HELP',	Combat+1,	RangedCombat, Cost-8,	FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_STEEL', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_JFD_SLAGANZ', 	0,					0,				'UNIT_GERMANY_ATLAS',	'UNIT_GERMANY_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_WARRIOR';
 --------------------------------	
+-- UnitGameplay2DScripts
+--------------------------------		
+INSERT INTO UnitGameplay2DScripts 	
+			(UnitType, 						SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_GERMANY_SLAGANZ',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_WARRIOR';	
+--------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	

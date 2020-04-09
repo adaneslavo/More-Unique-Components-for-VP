@@ -20,6 +20,13 @@ INSERT INTO Units
 SELECT		'UNIT_ASSYRIA_IRON_CHARIOT',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_TEXT',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_STRATEGY',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP', 	Combat-1,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, 'TECH_BRONZE_WORKING', 	'TECH_METALLURGY', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_TCM_HEQA_KHASUT', 	0,					0,				'UNIT_ASSYRIA_ATLAS',	'UNIT_ASSYRIA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_HORSEMAN';
 --------------------------------	
+-- UnitGameplay2DScripts
+--------------------------------		
+INSERT INTO UnitGameplay2DScripts 	
+			(UnitType, 						SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_ASSYRIA_IRON_CHARIOT',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_HORSEMAN';	
+--------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	

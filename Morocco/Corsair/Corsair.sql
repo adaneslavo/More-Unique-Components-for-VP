@@ -20,6 +20,13 @@ INSERT INTO Units
 SELECT		'UNIT_MOROCCO_CORSAIR', 'TXT_KEY_UNIT_MOROCCO_CORSAIR', 'TXT_KEY_UNIT_MOROCCO_CORSAIR_TEXT',	'TXT_KEY_UNIT_MOROCCO_CORSAIR_STRATEGY',	'TXT_KEY_UNIT_MOROCCO_CORSAIR_HELP',	Combat+2,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_ROCKETRY',	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_CORSAIR', 	0,					0,				'UNIT_MOROCCO_ATLAS',	'UNIT_MOROCCO_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_PRIVATEER';
 --------------------------------	
+-- UnitGameplay2DScripts
+--------------------------------		
+INSERT INTO UnitGameplay2DScripts 	
+			(UnitType, 				SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_MOROCCO_CORSAIR',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_PRIVATEER';	
+--------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	

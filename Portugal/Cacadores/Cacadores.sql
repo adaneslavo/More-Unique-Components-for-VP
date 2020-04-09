@@ -30,12 +30,19 @@ UPDATE		Units
 SET			ObsoleteTech = 'TECH_NUCLEAR_FISSION'
 WHERE		Type = 'UNIT_PORTUGUESE_CACADORES';
 
+--------------------------------	
+-- UnitGameplay2DScripts
+--------------------------------		
+INSERT INTO UnitGameplay2DScripts 	
+			(UnitType, 						SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_PORTUGUESE_CACADORES',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_GATLINGGUN';	
 
 --------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	
-			(UnitType, 			UnitAIType)
+			(UnitType, 						UnitAIType)
 SELECT		'UNIT_PORTUGUESE_CACADORES', 	UnitAIType
 FROM Unit_AITypes WHERE UnitType = 'UNIT_GATLINGGUN';
 
@@ -43,7 +50,7 @@ FROM Unit_AITypes WHERE UnitType = 'UNIT_GATLINGGUN';
 -- Unit_BuildingClassPurchaseRequireds
 --------------------------------		
 INSERT INTO Unit_BuildingClassPurchaseRequireds 	
-			(UnitType, 			BuildingClassType)
+			(UnitType, 						BuildingClassType)
 SELECT		'UNIT_PORTUGUESE_CACADORES', 	BuildingClassType
 FROM Unit_BuildingClassPurchaseRequireds WHERE UnitType = 'UNIT_GATLINGGUN';
 
@@ -51,7 +58,7 @@ FROM Unit_BuildingClassPurchaseRequireds WHERE UnitType = 'UNIT_GATLINGGUN';
 -- Unit_ClassUpgrades
 --------------------------------		
 INSERT INTO Unit_ClassUpgrades 	
-			(UnitType, 			UnitClassType)
+			(UnitType, 						UnitClassType)
 SELECT		'UNIT_PORTUGUESE_CACADORES', 	UnitClassType
 FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_GATLINGGUN';
 
@@ -68,13 +75,13 @@ VALUES			('UNIT_PORTUGUESE_CACADORES', 'FLAVOR_OFFENSE', 3),
 -- Unit_FreePromotions
 --------------------------------	
 INSERT INTO		Unit_FreePromotions
-				(UnitType, 			PromotionType)
+				(UnitType, 						PromotionType)
 SELECT			'UNIT_PORTUGUESE_CACADORES', 	PromotionType
 FROM Unit_FreePromotions WHERE UnitType = 'UNIT_GATLINGGUN';
 
 INSERT INTO		Unit_FreePromotions
-				(UnitType,			PromotionType)
-VALUES			('UNIT_PORTUGUESE_CACADORES', 'PROMOTION_UNIT_PORTUGAL_CACADOR');
+				(UnitType,						PromotionType)
+VALUES			('UNIT_PORTUGUESE_CACADORES', 	'PROMOTION_UNIT_PORTUGAL_CACADOR');
 
 --------------------------------	
 -- UnitPromotions
@@ -130,10 +137,10 @@ FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_RIFLEMAN');
 -- IconTextureAtlases
 --==========================================================================================================================	
 INSERT OR REPLACE INTO IconTextureAtlases 
-			(Atlas, 									IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
-VALUES		('4UC_CACADOR_ATLAS', 						256, 		'CacadoresPicture_256.dds',					1, 				1),
-			('4UC_CACADOR_ATLAS', 						128, 		'CacadoresPicture_128.dds',					1, 				1),
-			('4UC_CACADOR_ATLAS', 						80, 		'CacadoresPicture_080.dds',					1, 				1),
-			('4UC_CACADOR_ATLAS', 						45, 		'CacadoresPicture_045.dds',					1, 				1),
-			('4UC_CACADOR_ATLAS', 						64, 		'CacadoresPicture_064.dds',					1, 				1),
-			('UNITS_4UC_CACADOR_FLAG_ATLAS', 		32, 		'CacadoresFlag_032.dds',				1, 				1);
+			(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
+VALUES		('4UC_CACADOR_ATLAS', 				256, 		'CacadoresPicture_256.dds',			1, 				1),
+			('4UC_CACADOR_ATLAS', 				128, 		'CacadoresPicture_128.dds',			1, 				1),
+			('4UC_CACADOR_ATLAS', 				80, 		'CacadoresPicture_080.dds',			1, 				1),
+			('4UC_CACADOR_ATLAS', 				45, 		'CacadoresPicture_045.dds',			1, 				1),
+			('4UC_CACADOR_ATLAS', 				64, 		'CacadoresPicture_064.dds',			1, 				1),
+			('UNITS_4UC_CACADOR_FLAG_ATLAS', 	32, 		'CacadoresFlag_032.dds',			1, 				1);

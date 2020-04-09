@@ -20,6 +20,13 @@ INSERT INTO Units
 SELECT		'UNIT_ARABIA_HASHEMITE_RAIDER',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_TEXT',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_STRATEGY',	'TXT_KEY_UNIT_ARABIA_HASHEMITE_RAIDER_HELP', 	Combat,	RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, 0,				'TECH_COMBUSTION',	null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_HASHEMITE', 0,					0,				'UNIT_ARABIA_ATLAS',	'UNIT_ARABIA_FLAG_ATLAS',	'QUADRUPED',	PurchaseCooldown, BaseLandAirDefense, 1
 FROM Units WHERE Type = 'UNIT_ANTI_TANK_GUN';
 --------------------------------	
+-- UnitGameplay2DScripts
+--------------------------------		
+INSERT INTO UnitGameplay2DScripts 	
+			(UnitType, 						SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_ARABIA_HASHEMITE_RAIDER',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_ANTI_TANK_GUN';	
+--------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	

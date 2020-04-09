@@ -20,6 +20,13 @@ INSERT INTO Units
 SELECT		'UNIT_EGYPT_KHOPESH',	'TXT_KEY_UNIT_EGYPT_KHOPESH',	'TXT_KEY_UNIT_EGYPT_KHOPESH_TEXT',	'TXT_KEY_UNIT_EGYPT_KHOPESH_STRATEGY',	'TXT_KEY_UNIT_EGYPT_KHOPESH_HELP',	Combat+3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_GUNPOWDER', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_KHOPESH_SWORDSMAN', 	0,					0,				'UNIT_EGYPT_ATLAS',	'UNIT_EGYPT_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_SPEARMAN';
 --------------------------------	
+-- UnitGameplay2DScripts
+--------------------------------		
+INSERT INTO UnitGameplay2DScripts 	
+			(UnitType, 				SelectionSound, FirstSelectionSound)
+SELECT		'UNIT_EGYPT_KHOPESH',	SelectionSound, FirstSelectionSound
+FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_SPEARMAN';	
+--------------------------------	
 -- Unit_AITypes
 --------------------------------		
 INSERT INTO Unit_AITypes 	
@@ -50,11 +57,14 @@ VALUES		('UNIT_EGYPT_KHOPESH',	'FLAVOR_OFFENSE',	6),
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------	
+INSERT INTO Unit_FreePromotions 	
+			(UnitType, 				PromotionType)
+SELECT		'UNIT_EGYPT_KHOPESH',	PromotionType
+FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SPEARMAN';
+
 INSERT INTO		Unit_FreePromotions
 				(UnitType,				PromotionType)
-VALUES			
---				('UNIT_EGYPT_KHOPESH',	'PROMOTION_UNIT_EGYPT_FATIGUE'),
-				('UNIT_EGYPT_KHOPESH',	'PROMOTION_UNIT_EGYPT_MERCY');
+VALUES			('UNIT_EGYPT_KHOPESH',	'PROMOTION_UNIT_EGYPT_MERCY');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -65,10 +75,7 @@ VALUES
 --------------------------------	
 INSERT INTO UnitPromotions
 			(Type,								Description,								Help,											CannotBeChosen,		Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry,									CombatPercent,	AttackBelowEqual50HealthMod)
-VALUES		
---			('PROMOTION_UNIT_EGYPT_FATIGUE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE',		'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_HELP',	1,					'AS2D_IF_LEVELUP',	23,				'PROMOTION_ATLAS',		'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE',		0,				0),
---			('PROMOTION_UNIT_EGYPT_FATIGUE_1',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1_HELP',	1,					'AS2D_IF_LEVELUP',	57,				'PROMOTION_ATLAS',		'PEDIA_SHARED',	'TXT_KEY_PROMOTION_UNIT_EGYPT_FATIGUE_1',	-30,			0),
-			('PROMOTION_UNIT_EGYPT_MERCY',		'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',		'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY_HELP',		1,					'AS2D_IF_LEVELUP',	39,				'promoMUC_atlas_00',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',		0,				30);
+VALUES		('PROMOTION_UNIT_EGYPT_MERCY',		'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',		'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY_HELP',		1,					'AS2D_IF_LEVELUP',	39,				'promoMUC_atlas_00',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY',		0,				30);
 --==========================================================================================================================	
 
 --==========================================================================================================================
