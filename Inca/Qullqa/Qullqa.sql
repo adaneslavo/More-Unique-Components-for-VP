@@ -22,8 +22,8 @@ FROM Buildings WHERE Type = 'BUILDING_GRANARY';
 ------------------------------
 INSERT INTO Building_YieldChanges
 			(BuildingType, 			YieldType, 			Yield)
-VALUES		('BUILDING_INCA_QULLQA', 'YIELD_FOOD', 		1);
-		('BUILDING_INCA_QULLQA', 'YIELD_PRODUCTION', 		2)
+VALUES		('BUILDING_INCA_QULLQA', 'YIELD_FOOD', 		1),
+		('BUILDING_INCA_QULLQA', 'YIELD_PRODUCTION', 		2);
 ------------------------------	
 -- Building_ResourceYieldChanges
 ------------------------------
