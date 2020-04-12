@@ -169,9 +169,9 @@ INSERT INTO Policy_ImprovementYieldChanges
 			(PolicyType,					ImprovementType,				YieldType,			Yield)
 VALUES		('POLICY_NEW_DEAL',				'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FAITH',		5),
 			('POLICY_TRADITION_FINISHER',	'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		1),
-			('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_PRODUCTION',	1),
+			('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_PRODUCTION',	3),
 			('POLICY_MOBILIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_SCIENCE',	3),
-			('POLICY_URBANIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		2);
+			('POLICY_URBANIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		4);
 --==========================================================================================================================
 -- BUILDING
 --==========================================================================================================================				

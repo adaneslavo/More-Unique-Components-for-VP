@@ -23,9 +23,9 @@ FROM Improvements WHERE CreatedByGreatPerson = 1;
 ------------------------------		
 INSERT INTO Policy_ImprovementYieldChanges
 			(PolicyType,					ImprovementType,		YieldType,			Yield)
-VALUES		('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_KIBBUTZ',	'YIELD_PRODUCTION',	1),
+VALUES		('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_KIBBUTZ',	'YIELD_PRODUCTION',	3),
 			('POLICY_MOBILIZATION',			'IMPROVEMENT_KIBBUTZ',	'YIELD_SCIENCE',	3),
-			('POLICY_URBANIZATION',			'IMPROVEMENT_KIBBUTZ',	'YIELD_FOOD',		2);
+			('POLICY_URBANIZATION',			'IMPROVEMENT_KIBBUTZ',	'YIELD_FOOD',		4);
 			
 INSERT INTO ArtDefine_LandmarkTypes(Type, LandmarkType, FriendlyName)
 SELECT 'ART_DEF_IMPROVEMENT_KIBBUTZ', 'Improvement', 'KIBBUTZ';
