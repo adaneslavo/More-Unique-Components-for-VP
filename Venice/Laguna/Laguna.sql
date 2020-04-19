@@ -4,16 +4,16 @@ SELECT 'ATLAS_LAGUNA', 128, 'LagunaPicture_128.dds', 1, 1 UNION ALL
 SELECT 'ATLAS_LAGUNA', 64, 'LagunaPicture_064.dds', 1, 1 UNION ALL
 SELECT 'ATLAS_LAGUNA', 45, 'LagunaPicture_045.dds', 1, 1;
 
-
-INSERT INTO Buildings 
-		(Type, 						BuildingClass, 			Cost, 	GoldMaintenance, 	Water, 	PrereqTech, 	Help, 									Description, 						Civilopedia, 							Strategy, 									ArtDefineTag, 	MinAreaSize, 	HurryCostModifier, 	IconAtlas, 		PortraitIndex, 	DisplayPosition, 	ArtInfoEraVariation, 	CitySupplyFlat, FinishSeaTRTourism, TradeRouteSeaDistanceModifier, 	TradeRouteSeaGoldBonus, ExtraCityHitPoints, ConquestProb)
-SELECT 	'BUILDING_VENICE_LAGUNA', 	'BUILDINGCLASS_HARBOR', 350, 	2, 					1, 		'TECH_COMPASS', 'TXT_KEY_BUILDING_VENICE_LAGUNA_HELP', 'TXT_KEY_BUILDING_VENICE_LAGUNA', 	'TXT_KEY_BUILDING_VENICE_LAGUNA_TEXT', 	'TXT_KEY_BUILDING_VENICE_LAGUNA_STRATEGY', 	'HARBOR', 		10, 			-20, 				'ATLAS_LAGUNA', 0, 				16, 				1, 						2, 				10, 				75, 							400, 					100, 				66;
+INSERT INTO Buildings 	
+			(Type,						BuildingClass, GoldMaintenance, Cost, FaithCost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat, CitySupplyModifier, DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, Water, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, TradeRouteSeaDistanceModifier,	TradeRouteSeaGoldBonus,	FinishSeaTRTourism,	Help,									Description,						Civilopedia,							Strategy,									IconAtlas,		PortraitIndex)
+SELECT		'BUILDING_VENICE_LAGUNA',	BuildingClass, GoldMaintenance, Cost, FaithCost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense, ExtraCityHitPoints, TrainedFreePromotion, CitySupplyFlat, CitySupplyModifier, DefenseHappinessChange, GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, Water, FreeStartEra, Happiness, NeverCapture, PrereqTech, ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, 75,								400,					FinishSeaTRTourism, 'TXT_KEY_BUILDING_VENICE_LAGUNA_HELP',	'TXT_KEY_BUILDING_VENICE_LAGUNA', 	'TXT_KEY_BUILDING_VENICE_LAGUNA_TEXT',	'TXT_KEY_BUILDING_VENICE_LAGUNA_STRATEGY',	'ATLAS_LAGUNA',	0
+FROM Buildings WHERE Type = 'BUILDING_HARBOR';	
 
 INSERT INTO Building_YieldChanges
 	(BuildingType, YieldType, Yield)
 VALUES
-	('BUILDING_VENICE_LAGUNA', 'YIELD_GOLD', 3),
-	('BUILDING_VENICE_LAGUNA', 'YIELD_FOOD', 3),
+	('BUILDING_VENICE_LAGUNA', 'YIELD_GOLD', 	3),
+	('BUILDING_VENICE_LAGUNA', 'YIELD_FOOD', 	3),
 	('BUILDING_VENICE_LAGUNA', 'YIELD_CULTURE', 3);
 	
 INSERT INTO Building_SeaPlotYieldChanges

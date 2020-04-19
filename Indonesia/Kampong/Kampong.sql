@@ -104,7 +104,6 @@ VALUES		('UNIT_WORKER',		'BUILD_INDONESIA_KAMPONG');
 -- Policy_ImprovementYieldChanges
 ------------------------------		
 INSERT INTO Policy_ImprovementYieldChanges
-			(PolicyType,					ImprovementType,				YieldType,			Yield)
-VALUES		('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_INDONESIA_KAMPONG',	'YIELD_PRODUCTION',	3),
-			('POLICY_MOBILIZATION',			'IMPROVEMENT_INDONESIA_KAMPONG',	'YIELD_SCIENCE',	3),
-			('POLICY_URBANIZATION',			'IMPROVEMENT_INDONESIA_KAMPONG',	'YIELD_FOOD',		4);
+(PolicyType, ImprovementType, YieldType, Yield)
+SELECT PolicyType, 'IMPROVEMENT_INDONESIA_KAMPONG', YieldType, Yield
+FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';

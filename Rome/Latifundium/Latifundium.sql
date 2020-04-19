@@ -133,9 +133,8 @@ FROM BuildFeatures WHERE BuildType = 'BUILD_CHATEAU';
 -- Policy_ImprovementYieldChanges
 ------------------------------		
 INSERT INTO Policy_ImprovementYieldChanges
-			(PolicyType,					ImprovementType,							YieldType,			Yield)
-VALUES		('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_ROME_LATIFUNDIUM',				'YIELD_PRODUCTION',	3),
-			('POLICY_MOBILIZATION',			'IMPROVEMENT_ROME_LATIFUNDIUM',				'YIELD_SCIENCE',	3),
-			('POLICY_URBANIZATION',			'IMPROVEMENT_ROME_LATIFUNDIUM',				'YIELD_FOOD',		4);
+(PolicyType, ImprovementType, YieldType, Yield)
+SELECT PolicyType, 'IMPROVEMENT_ROME_LATIFUNDIUM', YieldType, Yield
+FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';
 --==========================================================================================================================
 --==========================================================================================================================

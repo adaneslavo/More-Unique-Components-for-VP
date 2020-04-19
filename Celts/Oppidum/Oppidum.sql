@@ -166,12 +166,14 @@ VALUES		('UNIT_MERCHANT', 	'IMPROVEMENT_CELTS_OPPIDUM', 	10),
 -- Policy_ImprovementYieldChanges
 ------------------------------		
 INSERT INTO Policy_ImprovementYieldChanges
+(PolicyType, ImprovementType, YieldType, Yield)
+SELECT PolicyType, 'IMPROVEMENT_CELTS_OPPIDUM', YieldType, Yield
+FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';
+
+INSERT INTO Policy_ImprovementYieldChanges
 			(PolicyType,					ImprovementType,				YieldType,			Yield)
-VALUES		('POLICY_NEW_DEAL',				'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FAITH',		5),
-			('POLICY_TRADITION_FINISHER',	'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		1),
-			('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_PRODUCTION',	3),
-			('POLICY_MOBILIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_SCIENCE',	3),
-			('POLICY_URBANIZATION',			'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		4);
+VALUES		('POLICY_NEW_DEAL',				'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FAITH',		6),
+			('POLICY_TRADITION_FINISHER',	'IMPROVEMENT_CELTS_OPPIDUM',	'YIELD_FOOD',		1);
 --==========================================================================================================================
 -- BUILDING
 --==========================================================================================================================				

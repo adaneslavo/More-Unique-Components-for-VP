@@ -19,13 +19,12 @@ INSERT INTO Improvement_AdjacentImprovementYieldChanges
 SELECT	'IMPROVEMENT_KIBBUTZ', 	Type, 					'YIELD_PRODUCTION', 2
 FROM Improvements WHERE CreatedByGreatPerson = 1;
 ------------------------------
--- Improvement_AdjacentYieldChanges
+-- Policy_ImprovementYieldChanges
 ------------------------------		
 INSERT INTO Policy_ImprovementYieldChanges
-			(PolicyType,					ImprovementType,		YieldType,			Yield)
-VALUES		('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_KIBBUTZ',	'YIELD_PRODUCTION',	3),
-			('POLICY_MOBILIZATION',			'IMPROVEMENT_KIBBUTZ',	'YIELD_SCIENCE',	3),
-			('POLICY_URBANIZATION',			'IMPROVEMENT_KIBBUTZ',	'YIELD_FOOD',		4);
+(PolicyType, ImprovementType, YieldType, Yield)
+SELECT PolicyType, 'IMPROVEMENT_KIBBUTZ', YieldType, Yield
+FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';
 			
 INSERT INTO ArtDefine_LandmarkTypes(Type, LandmarkType, FriendlyName)
 SELECT 'ART_DEF_IMPROVEMENT_KIBBUTZ', 'Improvement', 'KIBBUTZ';

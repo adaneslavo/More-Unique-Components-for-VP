@@ -147,7 +147,6 @@ FROM BuildFeatures WHERE BuildType = 'BUILD_CHATEAU';
 -- Policy_ImprovementYieldChanges
 ------------------------------		
 INSERT INTO Policy_ImprovementYieldChanges
-			(PolicyType,					ImprovementType,				YieldType,			Yield)
-VALUES		('POLICY_FIVE_YEAR_PLAN',		'IMPROVEMENT_SPAIN_HACIENDA',	'YIELD_PRODUCTION',	3),
-			('POLICY_MOBILIZATION',			'IMPROVEMENT_SPAIN_HACIENDA',	'YIELD_SCIENCE',	3),
-			('POLICY_URBANIZATION',			'IMPROVEMENT_SPAIN_HACIENDA',	'YIELD_FOOD',		4);
+(PolicyType, ImprovementType, YieldType, Yield)
+SELECT PolicyType, 'IMPROVEMENT_SPAIN_HACIENDA', YieldType, Yield
+FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';
