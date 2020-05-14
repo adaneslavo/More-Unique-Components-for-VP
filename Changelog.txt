@@ -3,6 +3,18 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v60:
+- 
+- tweaked/modified:
+	- Reduced Etemenanki's national population requirement to 15
+	- Removed Iron Chariot's Rough Terrain Penalty
+v59: 
+- Compatibility: 
+	- added defense to harbors
+	- changed new deal yields
+Bug Fixes
+	- SQL error in Steam Mill
+
 v58:
 - Compatibility: 
 	- All unique improvement policy boosts have been updated
