@@ -32,7 +32,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_KIBBUTZ</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>7</Yield>
+			<Yield>8</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_KIBBUTZ</ImprovementType>
