@@ -16,7 +16,7 @@ VALUES		('IMPROVEMENT_KIBBUTZ',	'IMPROVEMENT_FARM',		'YIELD_PRODUCTION',	1);
 
 INSERT INTO Improvement_AdjacentImprovementYieldChanges
 		(ImprovementType,		OtherImprovementType,	YieldType,			Yield)
-SELECT	'IMPROVEMENT_KIBBUTZ', 	Type, 					'YIELD_PRODUCTION', 2
+SELECT	'IMPROVEMENT_KIBBUTZ', 	Type, 					'YIELD_PRODUCTION', 1
 FROM Improvements WHERE CreatedByGreatPerson = 1;
 ------------------------------
 -- Policy_ImprovementYieldChanges

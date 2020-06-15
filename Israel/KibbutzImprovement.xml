@@ -80,7 +80,7 @@
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_KIBBUTZ</ImprovementType>
-			<TechType>TECH_BALLISTICS</TechType>
+			<TechType>TECH_MOBILE_TACTICS</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
