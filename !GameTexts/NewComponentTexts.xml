@@ -82,7 +82,7 @@
 			<Text>Invincible</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SPAIN_INVINCIBLE_HELP">
-			<Text>+6 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. -1 [ICON_ARROW_RIGHT] Moves. Lost after unit upgrade.</Text>
+			<Text>+4 [ICON_STRENGTH] Combat Strength if [COLOR_POSITIVE_TEXT]at full Health[ENDCOLOR]. -1 [ICON_ARROW_RIGHT] Moves. Lost after unit upgrade.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA">
 			<Text>Armada</Text>
@@ -91,12 +91,12 @@
 			<Text>A Slow, but incredibly dangerous ship. Only the Spanish may build it.[NEWLINE][NEWLINE]Available earlier, but more expensive than the Corvette it replaces. Gains additional strength when at full HP. Begins with [COLOR_POSITIVE_TEXT]Boarding Party I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Boarding Party II[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_STRATEGY">
-			<Text>The Armada is a powerful ship in its era. You are unlikely to chase down an enemy, but brilliant maneuvering could force an engagement. Much more imposing when at full health, make sure to make contact with the enemy before they can get a few ranged shots or you will lose a great deal of power in your initial melee combat.</Text>
+			<Text>The Armada is a powerful ship in its era. You are unlikely to chase down an enemy, but brilliant maneuvering could force an engagement. Much more imposing when at full health, make sure to make contact with the enemy before they can place ranged attacks, or you will lose a great deal of power in your initial melee combat.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SPAIN_ARMADA_TEXT">
 			<Text>
 				The "Great and Most Fortunate Navy", the Spanish Armada, was a fleet of 130 ships constructed for the invasion of England and the overthrow the tyrannical Reformist, Elizabeth I. The Armada was one of the largest fleets ever seen in Europe, raised at great expense by Philip II in retribution for England's break from the Catholic Church, their execution of Mary, Queen of Scots, their support for the Dutch revolt against Spain, and the illegitimacy of Elizabeth I.[NEWLINE][NEWLINE]
-				Spanish ships were outnumbered by England’s navy, but they easily outgunned the smaller English vessels. In the end, however, it was not firepower, but speed which won the day, allowing the small English vessels to harry the lumbering Spanish Juggernaut, sinking 10 ships. When finally forced to retire to Spain, a navigational error blew the Armada off-course and onto the Irish coast, where fierce storms dashed the ships against the rocks. When the Armada at last reached Spain only 67 of the original 130 ships remained, full of sickly, starving, and demoralized sailors.[NEWLINE][NEWLINE]
+				Spanish ships were outnumbered by England’s navy, but they easily outgunned the smaller English vessels. In the end, however, it was not firepower, but speed which won the day, allowing the small English vessels to harry the lumbering Spanish Juggernaut, sinking 10 ships. When finally forced to retire to Spain, a navigational error blew the Armada off-course and onto the Irish coast, where fierce storms dashed the ships against the rocks. When the Armada managed to reach Spain, only 67 of the original 130 ships remained, full of sickly, starving, and demoralized sailors.[NEWLINE][NEWLINE]
 				The lessons of the Spanish Armada informed naval strategy for the next two centuries. Cannons and ranged action had now overtaken boarding and ramming as the primary methods of attack; sinking, rather than capturing, was now the priority. With this stunning victory, England had wrested naval dominance from Spain, a lead they would maintain until the rise of the United States in WWII.[NEWLINE][NEWLINE]
 				"I sent the Armada against men, not God's winds and waves".[NEWLINE]
 				-Philip II
@@ -354,6 +354,27 @@
 			<Text>
 				Archery was the most highly revered martial art of ancient India. Many of the culture heroes and gods of the Vedic texts describe archers of unparalleled skill, including Arjuna, Rama, Karna, and even Shiva himself. Traditional Indian bows are described as long, matching the height of their users, but without the tremendous strength of the Welsh longbow.
 			</Text>
+		</Row>
+		
+		<!-- Djong -->
+		<!-- Created by pineappledan -->
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDONESIA_CETBANG">
+			<Text>Cetbang</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDONESIA_CETBANG_HELP">
+			<Text>10 Damage to all adjacent enemy Units [COLOR_POSITIVE_TEXT]each Turn[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_INDONESIA_DJONG">
+			<Text>Djong</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_INDONESIA_DJONG_TEXT">
+			<Text>At the time of their creation in the 1st century CE, the Djong were easily the largest, most capable seagoing vessels anywhere in the world. Averaging at over 400 tons of cargo and capable of withstanding the typhoon winds, these marvels of engineering extended the Javanese trade networks from northern China to Ghana. At the time of the Majapahit Empire, Djong were armed with the earliest breech-loading cannons, the brass cetbang, which helping them conquer the entire Indonsesian Archipelago. Djong were still widely used until the 16th century, and the methods for designing Djong ships spread throughout Asia, influencing the creation of China's iconic junk boats.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_INDONESIA_DJONG_STRATEGY">
+			<Text>The Djong is a replacement for the Galleass, but behaves like an early Frigate, able to enter deep ocean and fire from 2 tiles away. Use Djong in combination with melee units to create a seaworthy navy before any other civilization.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_INDONESIA_DJONG_HELP">
+			<Text>Massive ranged naval unit. Only Indonesia may build it. Can enter deep ocean and attack from a distance. Damages all nearby enemy units each turn.</Text>
 		</Row>
 		
 		<!-- Dromon -->
@@ -683,7 +704,7 @@
 			<Text>The Grande École is the French unique building, replacing the Public School. In addition to the normal bonuses of a Public School, The Grande École increases production for every citizen in the City, has more Scientist Specialist slots, and helps to generate Great Engineers. In addition, all Scientists generate more Production, and all Engineers generate more Science, making any city with a Grande Ecole a powerhouse of scientific and technical achievement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_TEXT">
-			<Text>The French Grande École are institutions of higher learning separate from the more conventional university system. These schools are highly selective, taking only the best and brightest French graduates, and barring entry by foreigners. Once accepted, students studying at a Grande École are considered public servants, paying little to no entrance fees and even receiving a monthly government stipend.[NEWLINE][NEWLINE]The origins of the Grande Écoles lie in the French Revolution, where several military and technical écoles normale supérieure were established by distinguished French mathematicians and intellectuals. The idea was to open education to individuals based strictly on merit. By the 19th century a number of schools had sprung up for a wide array of disciplines including natural sciences, business and the humanities. The Grande Écoles continue to have a deep impact on French society, with approximately 10% of all Native-born French citizens graduate from these schools, including many of France's most renowned politicians, philosophers, scientists, and executives.</Text>
+			<Text>The French Grande Écoles are institutions of higher learning separate from the more conventional university system. These schools are highly selective, taking only the best and brightest French graduates. Once accepted, students studying at a Grande École are considered public servants, paying little to no entrance fees and even receiving a monthly government stipend.[NEWLINE][NEWLINE]The origins of the Grande Écoles lie in the French Revolution, where several military and technical écoles normale supérieure were established by distinguished French mathematicians and intellectuals. The idea was to open education to individuals based strictly on merit. By the 19th century a number of schools had sprung up for a wide array of disciplines including natural sciences, business and the humanities. The Grande Écoles continue to have a deep impact on French society, with approximately 10% of all Native-born French citizens graduating from these schools, including many of France's most renowned politicians, philosophers, scientists, and executives.</Text>
 		</Row>
 				
 		<!-- Hacienda -->
@@ -734,7 +755,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAYA_HOLKAN_TEXT">
 			<Text>
-				The Maya are often idealized as a peaceful civilization by western Mayanists, but the Maya were no strangers to war. Unlike the wars of Europe and Asia, however, the Maya engaged in a highly ritualized form of combat based on astrological and religious concerns as much as political ones. Squabbles over land, influence and resources were common, but the capture of human sacrifices was another factor leading to war.
+				The Maya are often idealized as a peaceful civilization by western historians, but the Maya were not strangers to war. Unlike the wars of Europe and Asia, however, the Maya engaged in a highly ritualized form of combat based on astrological and religious concerns as much as political ones. Squabbles over land, influence, and resources were common, but the need for human sacrifices was also a factor leading to war.
 				[NEWLINE][NEWLINE]The nobility and priesthood of Mayan cities kept a monopoly on violence, making all but the most desperate of wars strictly within the affairs of the upper class. Weapons made of obsidian and chert were stockpiled within the palaces of lords and kings, who would call upon their family to lead raids. The leaders of such expeditions were known as ‘Holkan’.
 			</Text>
 		</Row>
@@ -751,7 +772,7 @@
 			<Text>Sahi Topu</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU_HELP">
-			<Text>Unit deals 20 damage to itself [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR]. +10 HP [COLOR_POSITIVE_TEXT]on Heal inside Friendly Territory[ENDCOLOR]. Lost after unit upgrade.</Text>
+			<Text>Unit deals 15 damage to itself [COLOR_POSITIVE_TEXT]on Attack[ENDCOLOR]. Lost after unit upgrade.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_1">
 			<Text>Basilica</Text>
@@ -765,11 +786,14 @@
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_4">
 			<Text>Orban's Cannon</Text>
 		</Row>
+		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_5">
+			<Text>Kalle Acici</Text>
+		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD">
 			<Text>Great Bombard</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_HELP">
-			<Text>An Incredibly powerful Unit capable of smashing Cities to pieces. Only the Ottomans may build it. Does very high damage to Cities and Naval Units, but is less useful against Land Units compared to other Siege Weapons.[NEWLINE][NEWLINE]Deals 20 damage to itself on attack, but heals an additional 10 HP when in Friendly Territory.[NEWLINE][NEWLINE]Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]</Text>
+			<Text>An Incredibly powerful Unit capable of smashing Cities to pieces. Only the Ottomans may build it. Does very high damage to Cities and Naval Units, but is less useful against Land Units compared to other Siege Weapons.[NEWLINE][NEWLINE]Deals 15 damage to itself on attack.[NEWLINE][NEWLINE]Player may have only [COLOR_GREEN]2[ENDCOLOR] Great Bombards at one time.[NEWLINE][NEWLINE]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_STRATEGY">
 			<Text>The Great Bombard is a powerful Siege Weapon well after it is researched. It is the most powerful seige unit in its era; so dangerous it even hurts itself! Devastating against cities and naval units.</Text>
@@ -889,7 +913,7 @@
 			<Text>Assyria's Iron Chariots act as shock troops to control the battlefield. They excel at breaking enemy ranks. The Iron Chariot gains a combat bonus for every adjacent enemy unit, neutralizing the enemy's flanking bonuses and allowing your chariots to take greater risks on the battlefield. Iron and Horse resources in excess of the number of Iron Chariots you own increase the combat effectivness of your chariots.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP">
-			<Text>Durable shock cavalry of the Ancient Era. Only Assyria may build it. Gains [ICON_STRENGTH] Combat Strength for each adjacent Enemy Unit.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses, but gains +2 [ICON_STRENGTH] Combat Strength if Player has sufficient [ICON_RES_HORSE] Horses for all Iron Chariots, and again for [ICON_RES_IRON] Iron. Ends turn if entering Rough Terrain.</Text>
+			<Text>Durable shock cavalry of the Ancient Era. Only Assyria may build it. Gains [ICON_STRENGTH] Combat Strength for each adjacent Enemy Unit.[NEWLINE][NEWLINE]Does not require [ICON_RES_HORSE] Horses, but gains +2 [ICON_STRENGTH] Combat Strength if Player has sufficient [ICON_RES_HORSE] Horses for all Iron Chariots, and again for [ICON_RES_IRON] Iron.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ASSYRIA_FURY_OF_NERGAL">
 			<Text>Fury of Nergal</Text>
@@ -1075,27 +1099,6 @@
 			<Text>It will increase [ICON_FOOD] Food and [ICON_CULTURE] Culture and adjacent Sea Resources receive +1 [ICON_PRODUCTION] Production.</Text>
 		</Row>
 		
-		<!-- Khopesh -->
-		<!-- Created by BlueGhost, incorporated and modified by adan_eslavo on 7/01/2018 -->
-		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH">
-			<Text>Khopesh</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_TEXT">
-			<Text>Khopesh is the Egyptian name of the Canaanite "sickle-sword", designed for hooking an opponent's shield or disarming them. The weapon evolved from the epsilon axes that were common in warfare at the time. Note, however, that the khopesh is not an axe, but rather a slashing weapon like a sabre. Its origins can be traced back to Sumer of the third millennium BC, where the Stele of Vultures depicts Eannatum of Lagash, the world's first emperor, wielding a khopesh. Many of the histories of Egyptian Pharaohs depict them holding the weapon. Indeed, most examples of khopesh recovered from tombs do not show signs of ever having been sharpened, indicating their use as ceremonial, or status symbols.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_STRATEGY">
-			<Text>The Khopesh is the unique Egyptian replacement for the Spearman. It's a strong early unit that has an edge in direct combat. However, unlike the Spearman it replaces, it does not have a combat bonus against mounted units.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_HELP">
-			<Text>Strong, front-line Unit of the Ancient Era. Only Egypt may build it. Deals increased damage against heavily damaged Units. Does not have a bonus against Mounted Units.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY">
-			<Text>Mercy</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY_HELP">
-			<Text>+30% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].</Text>
-		</Row>
-
 		<!-- Kibitum -->
 		<!-- Created by adan_eslavo on 27/11/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_0">
@@ -1401,6 +1404,27 @@
 			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 25% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]Gain 15% of the Cost of any [ICON_PEACE] Faith Purchase as [ICON_RESEARCH] Science in this City. Gain 5 [ICON_PEACE] Faith and [ICON_CULTURE] Culture whenever you Expend a [ICON_GREAT_PEOPLE] Great Person, scaling with Era.</Text>
 		</Row>
 		
+		<!-- Mamluk -->
+		<!-- Created by pineappledan, incorporated and modified by pineappledan on 17/07/2020 -->
+		<Row Tag="TXT_KEY_UNIT_EGYPT_MAMLUK">
+			<Text>Mamluk</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_EGYPT_MAMLUK_TEXT">
+			<Text>The Mamluks were a military knightly caste composed of slave-soldiers captured as young boys and sold into the Arabic world to serve as retainers. Because of their slave status ('Mamluk' directly translates to possession), these young men were dependent on their lord for social status and career advancement, making them reliable and dependable institutions in the Fatimid and Ayyubid dynasties of Cairo. The Mamluks were renowned warriors for their defense of Islam from waves of Crusader and Mongol invasions. In some cases, the Mamluks rose up and secured their own dynasties, initiating sultanates in Egypt, India, and Iraq.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_EGYPT_MAMLUK_STRATEGY">
+			<Text>The Mamluk is the unique Egyptian replacement for the Lancer. It is a strong mid-game unit that has advantages harrassing enemy positions, especially in open terrain. The Mamluk also reduces enemy religious spread while stationed inside.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_EGYPT_MAMLUK_HELP">
+			<Text>Agile Unit of the Renaissance Era. Only Egypt may build it. Deals increased damage against lightly and undamaged Units. Recovers Movement after attacks.[NEWLINE][NEWLINE]Mamluks stationed in cities reduce foreign Missionary and Prophet spread power by 50%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_VUR_HA">
+			<Text>Vur Ha!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_VUR_HA_HELP">
+			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Units above 50 HP[ENDCOLOR].[NEWLINE]+1 [ICON_ARROW_RIGHT] Move whenever this unit [COLOR_POSITIVE_TEXT]Attacks[ENDCOLOR].</Text>
+		</Row>
+		
 		<!-- Monitor -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR">
@@ -1612,7 +1636,7 @@
 			<Text>Pogost - Stage 3: Eastern Orthodox Church</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_1_HELP">
-			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_GOLD] Poverty. Gains additional traits, and a new look, at Banking and Architecture Technologies.[NEWLINE] Nearby [ICON_RES_BANANA] Bananas: +2 [ICON_GOLD] Gold.</Text>
+			<Text>+10% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_GOLD] Gold to Villages and Towns.[NEWLINE][NEWLINE]Incoming [ICON_INTERNATIONAL_TRADE] Trade Routes grants additional [ICON_GOLD] Gold for both City Owner and Trade Route Owner.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_GOLD] Poverty. Gains additional traits, and a new look, at Banking and Architecture Technologies.[NEWLINE][NEWLINE]Nearby [ICON_RES_TOBACCO] Tobacco: +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_BANANA] Bananas: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COFFEE] Coffee: +1 [ICON_GOLD] Gold, +2 [ICON_PRODUCTION] Production.[NEWLINE]Nearby [ICON_RES_TEA] Tea: +2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_2_HELP">
 			<Text>+5% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connection in this City. +1 [ICON_PRODUCTION] Production to Villages and Towns.</Text>
@@ -1625,27 +1649,6 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_RUSSIA_POGOST_TEXT">
 			<Text>In many medieval Russian states, Pogosts began as inns and lodging for the nobility and priesthood, but may have doubled as community centers and trading hubs. By the end of the 10th century, however, Pogosts had evolved into administrative and legislative hubs throughout the Slavic states. By 1775 the last Pogost-led administrative district was abolished, and the buildings were repurposed as parishes of the Eastern Orthodox Church.</Text>
-		</Row>
-		
-		<!-- Prau -->
-		<!-- Created by pineappledan; incorporated by adan_eslavo on 23/11/2017 -->
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA">
-			<Text>Flying the Ama</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_INDONESIA_FLYING_THE_AMA_HELP">
-			<Text>+2 [ICON_ARROW_RIGHT] Movement Points. Lost after unit upgrade.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU">
-			<Text>Prau</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_TEXT">
-			<Text>One of the most ancient of seaworthy boat designs, the prau, also known as proa or perahu, are wooden sailing vessels consisting of a large hull (vaka) and a small hull (ama) set in parallel by a crossbeam (akas). Prau are believed to have been developed in Micronesia in the first century AD, spreading quickly throughout southeast Asia. Western accounts of prau first appear in the 16th century, when Magellan made note of their agility in his fateful trip to the Philippines.[NEWLINE][NEWLINE]When sailing in strong winds, the crew walk between the hulls along the akas to counterbalance the force of the sail. A skilled prau crew can balance so as to lift the ama out of the water, called "flying the ama", and skim the ocean's surface to reach incredible speeds. Prau continue to be used worldwide, and modern designs can exceed 95km/h in favourable winds. This makes prau some of the fastest ships in the world; not bad for a 2,000 year old!</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_STRATEGY">
-			<Text>The Prau is faster and cheaper than the Trireme it replaces and ignores zone of control. It is great for early game scouting and raiding.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UNIT_INDONESIA_PRAU_HELP">
-			<Text>Effective early Naval Scout. Only Indonesia may build it. This unit is faster and available earlier than the Trireme it replaces. Starts with the [COLOR_POSITIVE_TEXT]Pincer[ENDCOLOR] Promotion.</Text>
 		</Row>
 		
 		<!-- Penteconter -->
@@ -1709,7 +1712,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SONGHAI_GUMEY_TEXT">
 			<Text>
-				Even before gaining their independence from the Mali Empire, the Songhai had become ludicrously wealthy off the trade of gold, salt and slaves from the Trans-Saharan trade routes. The Songhai's seat of power lay at the edge of the vast Saharan desert, forming an entrepot between the Taghazan salt mines to the north, the gold mines in the southwest, and the distant markets in Egypt and the Middle East. The Gumey were riverside ports and waystations, used to conduct goods and soldiers back and forth along the Niger river, before they were loaded onto camels for the arduous journey across the open desert.
+				Even before gaining their independence from the Mali Empire, the Songhai had become fantastically wealthy off the trade of gold, salt, and slaves from the Trans-Saharan trade routes. The Songhai's seat of power lay at the edge of the vast Saharan desert, forming an entrepot between the Taghazan salt mines to the north, the gold mines in the southwest, and distant markets in Egypt and the Middle East. The Gumey were riverside ports and waystations, used to conduct goods and soldiers back and forth along the Niger river, before they were loaded onto camels for the arduous journey across the open desert.
 			</Text>
 		</Row>		
 		

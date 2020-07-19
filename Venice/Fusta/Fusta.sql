@@ -119,7 +119,7 @@ FROM ArtDefine_UnitMemberCombatWeapons WHERE UnitMemberType = 'ART_DEF_UNIT_MEMB
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberInfos 	
 		(Type, 										Scale,  ZOffset, Domain, Model, 				 MaterialTypeTag, MaterialTypeSoundOverrideTag)
-SELECT	'ART_DEF_UNIT_MEMBER_JFD_LANTERNAS',		Scale,	ZOffset, Domain, 'lanternas.fxsxml',	 MaterialTypeTag, MaterialTypeSoundOverrideTag
+SELECT	'ART_DEF_UNIT_MEMBER_JFD_LANTERNAS',		'0.08',	ZOffset, Domain, 'lanternas.fxsxml',	 MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_GALLEASS';
 --==========================================================================================================================
 --==========================================================================================================================

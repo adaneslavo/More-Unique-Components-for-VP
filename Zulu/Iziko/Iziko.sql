@@ -30,8 +30,8 @@ VALUES		('BUILDING_ZULU_ATLAS', 	256, 		'IzikoPicture_256.dds',			1, 				1),
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type, 					BuildingClass, Cost, FaithCost, UnlockedByBelief, GoldMaintenance, 	PrereqTech, Water, TradeRouteSeaDistanceModifier, TradeRouteSeaGoldBonus, Description, 						Civilopedia, 							Help, 									Strategy,								ThemingBonusHelp, PlotBuyCostModifier, GreatWorkSlotType, GreatWorkCount, ArtDefineTag, 	ArtInfoEraVariation, FreeStartEra, DisplayPosition, AllowsWaterRoutes, MinAreaSize, ConquestProb, 	GreatPeopleRateModifier, FreshWater, HurryCostModifier, PortraitIndex, 	IconAtlas)
-SELECT		'BUILDING_ZULU_IZIKO',	BuildingClass, Cost, FaithCost, UnlockedByBelief, 0, 				PrereqTech, Water, TradeRouteSeaDistanceModifier, TradeRouteSeaGoldBonus, 'TXT_KEY_BUILDING_ZULU_IZIKO', 	'TXT_KEY_BUILDING_ZULU_IZIKO_TEXT', 	'TXT_KEY_BUILDING_ZULU_IZIKO_HELP', 	'TXT_KEY_BUILDING_ZULU_IZIKO_STRATEGY',	'TXT_KEY_BUILDING_ZULU_IZIKO_THEMING_BONUS_HELP', PlotBuyCostModifier, GreatWorkSlotType, GreatWorkCount, ArtDefineTag,	ArtInfoEraVariation, FreeStartEra, DisplayPosition, AllowsWaterRoutes, MinAreaSize, ConquestProb, 	GreatPeopleRateModifier, FreshWater, HurryCostModifier, 0,			 	'BUILDING_ZULU_ATLAS'
+			(Type, 					BuildingClass, Cost, FaithCost, UnlockedByBelief, GoldMaintenance, 	PrereqTech, Water, TradeRouteSeaDistanceModifier, TradeRouteSeaGoldBonus, Description, 						Civilopedia, 							Help, 									Strategy,								ThemingBonusHelp, 									PlotBuyCostModifier, GreatWorkSlotType, GreatWorkCount, ArtDefineTag, ArtInfoEraVariation, FreeStartEra, DisplayPosition, AllowsWaterRoutes, MinAreaSize, ConquestProb, GreatPeopleRateModifier, FreshWater, HurryCostModifier, PortraitIndex, 	IconAtlas)
+SELECT		'BUILDING_ZULU_IZIKO',	BuildingClass, Cost, FaithCost, UnlockedByBelief, 0, 				PrereqTech, Water, TradeRouteSeaDistanceModifier, TradeRouteSeaGoldBonus, 'TXT_KEY_BUILDING_ZULU_IZIKO', 	'TXT_KEY_BUILDING_ZULU_IZIKO_TEXT', 	'TXT_KEY_BUILDING_ZULU_IZIKO_HELP', 	'TXT_KEY_BUILDING_ZULU_IZIKO_STRATEGY',	'TXT_KEY_BUILDING_ZULU_IZIKO_THEMING_BONUS_HELP', 	PlotBuyCostModifier, GreatWorkSlotType, GreatWorkCount, ArtDefineTag, ArtInfoEraVariation, FreeStartEra, DisplayPosition, AllowsWaterRoutes, MinAreaSize, ConquestProb, GreatPeopleRateModifier, FreshWater, HurryCostModifier, 0,			 	'BUILDING_ZULU_ATLAS'
 FROM Buildings WHERE Type = 'BUILDING_AMPHITHEATER';	
 ------------------------------	
 -- Building_Yields
@@ -39,7 +39,7 @@ FROM Buildings WHERE Type = 'BUILDING_AMPHITHEATER';
 INSERT INTO Building_YieldChanges
 			(BuildingType,			YieldType,			Yield)
 VALUES		('BUILDING_ZULU_IZIKO', 'YIELD_FAITH',		2),
-			('BUILDING_ZULU_IZIKO', 'YIELD_CULTURE',	2);
+			('BUILDING_ZULU_IZIKO', 'YIELD_CULTURE',	3);
 ------------------------------	
 -- Building_ResourceYieldChanges
 ------------------------------
@@ -79,8 +79,8 @@ VALUES		('BUILDING_ZULU_IZIKO', 'YIELD_CULTURE', 	2);
 INSERT INTO Building_ThemingBonuses
 	(BuildingType, Description, Bonus, RequiresOwner, RequiresAnyButOwner,  AIPriority)
 VALUES
-	('BUILDING_ZULU_IZIKO', 'TXT_KEY_THEMING_BONUS_AMPHITHEATER_NATIONAL', 4, 1, 0, 2),
-	('BUILDING_ZULU_IZIKO', 'TXT_KEY_THEMING_BONUS_AMPHITHEATER_GLOBAL', 6, 0, 1, 3);
+	('BUILDING_ZULU_IZIKO', 'TXT_KEY_THEMING_BONUS_AMPHITHEATER_NATIONAL', 4, 1, 0, 1),
+	('BUILDING_ZULU_IZIKO', 'TXT_KEY_THEMING_BONUS_AMPHITHEATER_GLOBAL', 4, 0, 1, 1);
 ------------------------------	
 -- Building_Flavors
 ------------------------------		

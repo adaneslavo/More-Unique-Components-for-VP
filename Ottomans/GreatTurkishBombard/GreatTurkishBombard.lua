@@ -13,7 +13,7 @@ function MeltingTurkishBombard(iPlayer, iUnitOrCity, iRole)
 			
 			if pUnit ~= nil then
 				if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_OTTOMANS_SAHI_TOPU) then
-					pUnit:ChangeDamage(20)
+					pUnit:ChangeDamage(15)
 					
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 						local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())

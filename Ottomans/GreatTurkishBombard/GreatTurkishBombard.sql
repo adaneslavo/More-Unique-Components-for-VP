@@ -85,7 +85,7 @@ VALUES		('UNIT_OTTOMANS_ATLAS', 		256, 		'GreatTurkishBombardPicture_256.dds',		
 INSERT INTO UnitPromotions 
 			(Type, 											Description, 											Help, 														Sound, 				FriendlyHealChange,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
 VALUES		('PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2',	'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2',	'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2_HELP',	'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			1,					1, 				8, 				'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2'),
-			('PROMOTION_UNIT_OTTOMANS_SAHI_TOPU',			'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU',			'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU_HELP',			'AS2D_IF_LEVELUP',	10,					0,				0,			0,			0,					0,			1,					1, 				7, 				'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU');
+			('PROMOTION_UNIT_OTTOMANS_SAHI_TOPU',			'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU',			'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU_HELP',			'AS2D_IF_LEVELUP',	0,					0,				0,			0,			0,					0,			1,					1, 				7, 				'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_OTTOMANS_SAHI_TOPU');
 ------------------------------
 -- UnitPromotions_Domains
 ------------------------------
@@ -143,21 +143,16 @@ VALUES		('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD',	'FLAVOR_OFFENSE',	6),
 --------------------------------
 -- Unit_FreePromotions
 --------------------------------
-INSERT INTO Unit_FreePromotions 	
-			(UnitType, 								PromotionType)
-SELECT		'UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD', 	PromotionType
-FROM Unit_FreePromotions WHERE UnitType = 'UNIT_CANNON';
-
 INSERT INTO Unit_FreePromotions
 			(UnitType, 								PromotionType)
 VALUES		('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD', 'PROMOTION_UNIT_OTTOMANS_SIEGE_INACCURACY_2'),
 			('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD', 'PROMOTION_UNIT_OTTOMANS_SAHI_TOPU'),
-			('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD', 'PROMOTION_CITY_ASSAULT');
---------------------------------
--- Unit_FreePromotions Deletion
---------------------------------
-DELETE FROM Unit_FreePromotions 	
-WHERE UnitType = 'UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD' AND PromotionType = 'PROMOTION_SIEGE_INACCURACY';
+			('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD', 'PROMOTION_CITY_ASSAULT'),
+			('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD', 'PROMOTION_ONLY_DEFENSIVE'),
+			('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD', 'PROMOTION_NO_DEFENSIVE_BONUSES'),
+			('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD', 'PROMOTION_MUST_SET_UP'),
+			('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD', 'PROMOTION_COVER_1'),
+			('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD', 'PROMOTION_SIGHT_PENALTY');
 --------------------------------
 -- Unit_UniqueNames
 --------------------------------

@@ -30,3 +30,12 @@ INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType) SE
 UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_FRIGATE' WHERE UnitType = 'UNIT_VENETIAN_GALLEASS';
 
 DELETE FROM UnitClasses WHERE Type = 'UNIT_VENETIAN_GALLEASS';
+
+--==========================================================================================================================	
+-- ART
+--==========================================================================================================================	
+--------------------------------	
+-- ArtDefine_UnitMemberInfos
+--------------------------------
+UPDATE ArtDefine_UnitMemberInfos SET Scale = '0.10' WHERE Type = 'ART_DEF_UNIT_MEMBER_GALLEASS';
+UPDATE ArtDefine_UnitMemberInfos SET Scale = '0.105' WHERE Type = 'ART_DEF_UNIT_MEMBER_U_VENETIAN_GALLEASS';

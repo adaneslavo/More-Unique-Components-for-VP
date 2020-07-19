@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_AMERICA',	'UNITCLASS_IRONCLAD',	'UNIT_AMERICA_MONITOR');
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,					Description,								Civilopedia,									Strategy,											Help,											Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves,		Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, ObsoleteTech,	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 						UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,					MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_AMERICA_MONITOR',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_TEXT', 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_STRATEGY',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_HELP',	Combat+6,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves-1,	Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_UNION_IRONCLAD',	3,					9,				'CIVIL_WAR_UNIT_ATLAS', 'CIVIL_WAR_UNIT_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
+			(Type,					Description,								Civilopedia,									Strategy,											Help,											Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves,	Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, ObsoleteTech,	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 						UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,					MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
+SELECT		'UNIT_AMERICA_MONITOR',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_TEXT', 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_STRATEGY',	'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_HELP',	Combat+6,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves,	Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, null,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_UNION_IRONCLAD',	3,					9,				'CIVIL_WAR_UNIT_ATLAS', 'CIVIL_WAR_UNIT_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_IRONCLAD';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -65,8 +65,8 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_IRONCLAD';
 INSERT INTO		Unit_FreePromotions
 				(UnitType,					PromotionType)
 VALUES			('UNIT_AMERICA_MONITOR',	'PROMOTION_UNIT_AMERICA_MONITOR'),
-				('UNIT_AMERICA_MONITOR',	'PROMOTION_UNIT_AMERICA_HARDENED'),
-				('UNIT_AMERICA_MONITOR',	'PROMOTION_STEAM_POWERED');
+				('UNIT_AMERICA_MONITOR',	'PROMOTION_UNIT_AMERICA_HARDENED');
+--				('UNIT_AMERICA_MONITOR',	'PROMOTION_STEAM_POWERED');
 --------------------------------	
 -- Unit_ResourceQuantityRequirements
 --------------------------------	

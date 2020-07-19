@@ -47,6 +47,7 @@ function OnCSGiftGiveYields(iMinor, iMajor, iUnitType)
 				iCurrentBaan = iCurrentBaan + 1
 
 				if pPlayer:IsHuman() then
+					local iX, iY = city:GetX(), city:GetY()
 					local vCityPosition = PositionCalculator(iX, iY)
 
 					Events.AddPopupTextEvent(vCityPosition, "[COLOR_YIELD_PRODUCTION]+ "..iGain1.." [ICON_PRODUCTION][ENDCOLOR]", 1)

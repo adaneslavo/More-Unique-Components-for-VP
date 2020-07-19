@@ -4,17 +4,23 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v60:
-- 
+- changes
+	- Egyptian Khopesh (spearman) replaced with Mamluk (Lancer)
+	- Indonesian Prau (Trireme) replaced with Djong (Galleass)
 - tweaked/modified:
+	- Monitor now has same base movement as the ironclad (no more double movement in coast)
+	- Increased base culture of Iziko to 3
+	- Chasqui now unlock at Writing
+	- updated text issues
+	- Reduced Great Bombard's Sahi Topu self-damage to 15. removed +10 healing in friendly lands. No longer has City Siege promotion
 	- Reduced Etemenanki's national population requirement to 15
-	- Removed Iron Chariot's Rough Terrain Penalty
+	- Removed Iron Chariot's Rough Terrain Penalty and fixed the lua errors.
 v59: 
 - Compatibility: 
 	- added defense to harbors
 	- changed new deal yields
 Bug Fixes
 	- SQL error in Steam Mill
-
 v58:
 - Compatibility: 
 	- All unique improvement policy boosts have been updated
