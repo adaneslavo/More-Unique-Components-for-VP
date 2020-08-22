@@ -5,7 +5,7 @@
     <ProjectGuid>{3ef07daf-374c-482d-8a96-88562be005c5}</ProjectGuid>
     <Name>(overhaul) More Unique Components for VP</Name>
     <Guid>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Guid>
-    <ModVersion>59</ModVersion>
+    <ModVersion>61</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>3rd and 4th unique component for each civilization</Teaser>
     <Description>More Unique Components mod. Compatible with VP 11-08 and later.
@@ -242,6 +242,11 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Indonesia/Djong/Djong.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Indonesia/Kampong/Kampong.sql</FileName>
       </Action>
       <Action>
@@ -418,6 +423,11 @@ Latest changes: see changelog file.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Egypt/Khopesh/Khopesh.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Egypt/Mamluk/Mamluk.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -731,12 +741,6 @@ Latest changes: see changelog file.</Description>
         <Description>Adds HP to cities.</Description>
         <FileName>Celts/Oppidum/Oppidum.lua</FileName>
       </Content>
-      <!--     <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>Druidic Lore</Name>
-        <Description>Modifies Celtic UA.</Description>
-        <FileName>Celts/DruidicLore/DruidicLore.lua</FileName>
-      </Content> -->
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>Yellow Brow</Name>
@@ -874,6 +878,12 @@ Latest changes: see changelog file.</Description>
         <Name>Nilometer</Name>
         <Description>Spans 2 Flax Resources on construction.</Description>
         <FileName>Egypt/Nilometer/Nilometer.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Mamluk</Name>
+        <Description>Refunds Movement on attack</Description>
+        <FileName>Egypt/Mamluk/Mamluk.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -1676,19 +1686,19 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="China\XiafanGuanjun\3DModel\WarJunk.fxsxml">
+    <Content Include="China\XiafanGuanjun\3DModel\RedJunk.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\XiafanGuanjun\3DModel\WarJunk.gr2">
+    <Content Include="China\XiafanGuanjun\3DModel\RedJunk.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\XiafanGuanjun\3DModel\WarJunk_diff.dds">
+    <Content Include="China\XiafanGuanjun\3DModel\RedJunk_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="China\XiafanGuanjun\3DModel\WarJunk_sref.dds">
+    <Content Include="China\XiafanGuanjun\3DModel\RedJunk_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1884,6 +1894,72 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+	
+	
+	    <Content Include="Egypt\Mamluk\UnitModel\Mamluk.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\UnitModel\Mamluk.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\UnitModel\Mamluk.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\UnitModel\Mamluk_Gloss.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\UnitModel\Mamluk_Horse.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\UnitModel\Mamluk_Horse_Gloss.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\Mamluk_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\Mamluk_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\Mamluk_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\Mamluk_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\Mamluk_080.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\Mamluk.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\Mamluk.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\MamlukFlag.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Egypt\Mamluk\mamlukSV.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+	
+	
+	
+	
     <Content Include="Egypt\Nilometer\Nilometer.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -3468,6 +3544,54 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Indonesia\Djong\3DModel\WarJunk.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\3DModel\WarJunk.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\3DModel\WarJunk_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\3DModel\WarJunk_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\Djong.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\DjongFlag_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\DjongFlagSV.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\DjongPicture_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\DjongPicture_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\DjongPicture_080.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\DjongPicture_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Indonesia\Djong\DjongPicture_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Persia\Pairidaeza\PairidaezaPicture_045.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -5009,6 +5133,8 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Egypt\Flax\3DModel" />
     <Folder Include="Egypt\Khopesh" />
     <Folder Include="Egypt\Khopesh\3DModel" />
+    <Folder Include="Egypt\Mamluk" />
+    <Folder Include="Egypt\Mamluk\UnitModel" />
     <Folder Include="Egypt\Flax" />
     <Folder Include="Egypt\Nilometer" />
     <Folder Include="England" />
@@ -5096,6 +5222,8 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Indonesia\Kampong\3DModel" />
     <Folder Include="Indonesia\Prau" />
     <Folder Include="Indonesia\Prau\3DModel" />
+    <Folder Include="Indonesia\Djong" />
+    <Folder Include="Indonesia\Djong\3DModel" />
     <Folder Include="Mongolia" />
     <Folder Include="Mongolia\BlackTug" />
     <Folder Include="Mongolia\BlackTug\3DModel" />

@@ -4,9 +4,9 @@
 --------------------------------	
 -- Civilization_UnitClassOverrides 
 --------------------------------		
-INSERT INTO Civilization_UnitClassOverrides 
-			(CivilizationType, 			UnitClassType, 			UnitType)
-VALUES		('CIVILIZATION_INDONESIA',	'UNITCLASS_TRIREME', 	'UNIT_INDONESIA_PRAU');
+--INSERT INTO Civilization_UnitClassOverrides 
+--			(CivilizationType, 			UnitClassType, 			UnitType)
+--VALUES		('CIVILIZATION_INDONESIA',	'UNITCLASS_TRIREME', 	'UNIT_INDONESIA_PRAU');
 --==========================================================================================================================
 -- ARTDEFINES
 --==========================================================================================================================	

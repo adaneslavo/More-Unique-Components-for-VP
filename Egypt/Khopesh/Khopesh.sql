@@ -4,9 +4,9 @@
 --------------------------------	
 -- Civilization_UnitClassOverrides
 --------------------------------	
-INSERT INTO	Civilization_UnitClassOverrides
-			(CivilizationType,		UnitClassType,			UnitType)
-VALUES		('CIVILIZATION_EGYPT',	'UNITCLASS_SPEARMAN',	'UNIT_EGYPT_KHOPESH');
+--INSERT INTO	Civilization_UnitClassOverrides
+--			(CivilizationType,		UnitClassType,			UnitType)
+--VALUES		('CIVILIZATION_EGYPT',	'UNITCLASS_SPEARMAN',	'UNIT_EGYPT_KHOPESH');
 --==========================================================================================================================	
 
 --==========================================================================================================================	

@@ -43,6 +43,7 @@ function OnCSGiftGiveYields(iMinor, iMajor, iUnitType)
 		for city in pPlayer:Cities() do
 			if city:IsHasBuilding(eBuildingBaanChang) then
 				city:ChangeProduction(iGain1)
+				city:ChangeJONSCultureStored(iGain2)
 				pPlayer:ChangeJONSCulture(iGain2)
 				iCurrentBaan = iCurrentBaan + 1
 

@@ -20,12 +20,13 @@ function PairidaezaGoldenAgeStartBonus(iPlayer, bStart, iTurns)
 		
 		if iNumberOfPairidaezas > 0 then
 			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)	
-			local iGain = math.floor(15 * iEraModifier * fGameSpeedModifier)
+			local iGain = math.floor(30 * iEraModifier * fGameSpeedModifier)
 			local iCurrentPairidaeza = 0
 
 			for city in pPlayer:Cities() do
 				if city:IsHasBuilding(eBuildingParadiseGarden) then
 					pPlayer:ChangeJONSCulture(iGain)
+					city:ChangeJONSCultureStored(iGain)
 					iCurrentPairidaeza = iCurrentPairidaeza + 1
 
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then

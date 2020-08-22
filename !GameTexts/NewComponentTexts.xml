@@ -1098,7 +1098,26 @@
 		<Row Tag="TXT_KEY_BUILD_INDONESIA_KAMPONG_REC">
 			<Text>It will increase [ICON_FOOD] Food and [ICON_CULTURE] Culture and adjacent Sea Resources receive +1 [ICON_PRODUCTION] Production.</Text>
 		</Row>
-		
+		<!-- Khopesh -->
+		<!-- Created by BlueGhost, incorporated and modified by adan_eslavo on 7/01/2018 -->
+		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH">
+			<Text>Khopesh</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_TEXT">
+			<Text>Khopesh is the Egyptian name of the Canaanite "sickle-sword", in Assyrian known as sappara. Its origins can be traced back to Sumer of the third millennium BC, where the Stele of Vultures depicts Eannatum of Lagash, the world's first emperor, wielding a khopesh.[NEWLINE][NEWLINE]A typical khopesh is 50–60 cm (20–24 inches) in length, designed for hooking an opponent's shield or disarming them. The blade is only sharpened on the outside portion of the curved end. The khopesh evolved from the epsilon or similar crescent shaped axes that were used in warfare. Note, however, that the khopesh is not an axe, but rather a slashing weapon like a sabre. Many examples of Khopesh can be found in tombs and many Pharaohs are depicted holding the weapon. Indeed, many examples of khopesh found do not show signs of ever having been sharpened, indicating they were ceremonial, or status symbols.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_STRATEGY">
+			<Text>The Khopesh is the unique Egyptian replacement for the Spearman. It's a strong early unit that has an edge in direct combat.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_EGYPT_KHOPESH_HELP">
+			<Text>Strong, front-line land Unit of the Ancient Era. Only Egypt may build it. Has the [COLOR_POSITIVE_TEXT]Formation I[ENDCOLOR] Promotion, and deals increased damage vs heavily damaged units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY">
+			<Text>Mercy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_EGYPT_MERCY_HELP">
+			<Text>+30% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].</Text>
+		</Row>
 		<!-- Kibitum -->
 		<!-- Created by adan_eslavo on 27/11/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_BABYLON_LEGACY_0">
@@ -1164,7 +1183,7 @@
 				The Sabum Kibitum were the heavy troops of the Babylonians and one of the earliest examples of career soldiers in history. Assembled from the royal guard and city residents, Sabum Kibitum were armed with long and short spears, javelins and bows to form a disciplined and flexible fighting force.
 			</Text>
 		</Row>
-
+	
 		<!-- Klepht -->
 		<!-- Created by adan_eslavo on 5/11/2017 -->
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_GREECE_PHILHELLENISM">

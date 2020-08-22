@@ -20,6 +20,7 @@ function OnLevelCityGainCulture(iPlayer, iUnit, iPromotionType)
 
 	for city in pPlayer:Cities() do
 		if city:IsHasBuilding(eBuildingIziko) then
+			city:ChangeJONSCultureStored(iGain)
 			pPlayer:ChangeJONSCulture(iGain)
 			bHasIziko = true
 

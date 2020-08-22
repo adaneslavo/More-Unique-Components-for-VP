@@ -45,6 +45,7 @@ function OnTrainAddXPAndYields(iPlayer, iCity, iUnit, bGold, bFaith)
 		local iCultureGain = math.floor(20 * iEraModifier * fGameSpeedModifier)
 		
 		pPlayer:ChangeJONSCulture(iCultureGain)
+		pCity:ChangeJONSCultureStored(iCultureGain)
 		
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local iX, iY = pCity:GetX(), pCity:GetY()

@@ -110,7 +110,7 @@ INSERT INTO ArtDefine_UnitMemberCombatWeapons (UnitMemberType, "Index", SubIndex
 -- ArtDefine_UnitMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-	SELECT	('ART_DEF_UNIT_MEMBER_WARJUNK'), '0.16', ZOffset, Domain, ('WarJunk.fxsxml'), MaterialTypeTag, MaterialTypeSoundOverrideTag
+	SELECT	('ART_DEF_UNIT_MEMBER_WARJUNK'), '0.17', ZOffset, Domain, ('RedJunk.fxsxml'), MaterialTypeTag, MaterialTypeSoundOverrideTag
 	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_CARAVEL');
 ------------------------------
 -- ArtDefine_StrategicView
