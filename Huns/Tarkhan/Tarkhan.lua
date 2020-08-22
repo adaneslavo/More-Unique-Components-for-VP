@@ -81,7 +81,7 @@ function OnUnitPillageGoldBellumAlet(iPlayer, iUnit, iImprovement, iGold)
 					end
 
 				if IsPlayerFriendly(iPlayer, pAdjacentUnit:GetOwner()) then
-					pAdjacentUnit:ChangeDamage(-20, iPlayer)
+					pAdjacentUnit:ChangeDamage(-15, iPlayer)
 					
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 						local vUnitPosition = PositionCalculator(pAdjacentUnit:GetX(), pAdjacentUnit:GetY())

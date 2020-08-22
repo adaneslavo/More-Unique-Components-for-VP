@@ -2283,12 +2283,6 @@
 		</Row>
 			
 		<!-- Tarkhan -->		
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_HORSE_ARCHER">
-			<Text>Last Chance</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_HORSE_ARCHER_HELP">
-			<Text>Unit Attacks a valid target automatically [COLOR_POSITIVE_TEXT]if spent all [ICON_ARROW_RIGHT] Movement Points without Attacking[ENDCOlOR].</Text>
-		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_MIGRATION">
 			<Text>Migration</Text>
 		</Row>
@@ -2299,13 +2293,13 @@
 			<Text>Bellum Alet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_HUNS_SACKER_HELP">
-			<Text>20 HP to all adjacent Friendly Units [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].</Text>
+			<Text>15 HP to all adjacent Friendly Units [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN">
 			<Text>Tarkhan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_HELP">
-			<Text>Mounted warrior who supports Civilian and other Land Military Units with its unique abilities. Only the Huns may build it. Slightly cheaper than the Horseman it replaces. +1 Movement to [ICON_TEAM_1] Settlers and [ICON_WORKER] Workers that begin the turn stacked with this Unit and +20 HP to all adjacent friendly units whenever this unit pillages a tile.</Text>
+			<Text>Mounted warrior who supports Civilian and other Land Military Units with its unique abilities. Only the Huns may build it. Slightly cheaper than the Horseman it replaces. +1 Movement to [ICON_TEAM_1] Settlers and [ICON_WORKER] Workers that begin the turn stacked with the Tarkhan. Whenever this unit pillages a tile, adjacent friendly units are also healed.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUNS_TARKHAN_STRATEGY">
 			<Text>The Tarkhan is the Hunnic unique replacement for the Horseman. Slightly cheaper than the Horseman, the Tarkhan can help to quickly spread your empire by increasing the movement of Settlers and Workers. Pillaging tiles with a Tarkhan heals all your adjacent units, which can be handy for healing a recently captured unit.</Text>
