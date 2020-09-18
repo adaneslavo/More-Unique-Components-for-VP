@@ -29,6 +29,26 @@ function OnConstructionPlaceCoca(iPlayer, iCity, iBuilding)
 	end
 end
 
+function OnFoundPlaceCoca(iPlayer, iX, iY)
+	local pPlayer = Players[iPlayer]
+	
+	if not(pPlayer and pPlayer:GetCivilizationType() == eCivilizationInca) then return end
+
+	local pTeam = Teams[pPlayer:GetTeam()]
+	if pTeam:GetTeamTechs():HasTech(GameInfoTypes.TECH_BANKING) then
+
+		local pPlot = Map.GetPlot(iX, iY)
+	
+		pPlot:SetResourceType(eResourceCoca, 1)
+		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
+		pPlot:SetImprovementType(-1)
+		-- removes plantation after connecting Coca to trade list
+		if pPlot:IsMountain() then
+			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
+		end
+	end
+end
+
 -- checks from monopoly bonus for Coca
 function OnTurnCheckMonopoly(iPlayer)
 	local pPlayer = Players[iPlayer]
@@ -42,5 +62,6 @@ end
 
 if Game.IsCivEverActive(eCivilizationInca) then
 	GameEvents.CityConstructed.Add(OnConstructionPlaceCoca)
+	GameEvents.PlayerCityFounded.Add(OnFoundPlaceCoca)
 	GameEvents.PlayerDoTurn.Add(OnTurnCheckMonopoly)
 end

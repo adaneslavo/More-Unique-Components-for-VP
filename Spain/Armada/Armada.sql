@@ -141,7 +141,6 @@ INSERT INTO Unit_FreePromotions
 			(UnitType, 				PromotionType)
 VALUES		('UNIT_SPAIN_ARMADA',	'PROMOTION_UNIT_SPAIN_SANTA_MARIA'),
 			('UNIT_SPAIN_ARMADA',	'PROMOTION_UNIT_SPAIN_INVINCIBLE'),
-			('UNIT_SPAIN_ARMADA',	'PROMOTION_BOARDING_PARTY_1'),
-			('UNIT_SPAIN_ARMADA',	'PROMOTION_BOARDING_PARTY_2');
+			('UNIT_SPAIN_ARMADA',	'PROMOTION_BOARDING_PARTY_1');
 --==========================================================================================================================
 --==========================================================================================================================

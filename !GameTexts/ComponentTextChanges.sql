@@ -156,6 +156,22 @@ WHERE Tag = 'TXT_KEY_PROMOTION_ATLATL_ATTACK';
 UPDATE Language_en_US 
 SET Text = '+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength [COLOR_POSITIVE_TEXT]against Wounded Units[ENDCOLOR]' 
 WHERE Tag = 'TXT_KEY_PROMOTION_ATLATL_ATTACK_HELP';
+-- Impi
+UPDATE Language_en_US 
+SET Text = 'Bonus vs Gunpowder (25)' 
+WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_GUNPOWDER';
+
+UPDATE Language_en_US 
+SET Text = '+25% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Gunpowder Units[ENDCOLOR].' 
+WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_GUNPOWDER_HELP';
+
+UPDATE Language_en_US 
+SET Text = 'Spear Throw' 
+WHERE Tag = 'TXT_KEY_PROMOTION_RANGED_SUPPORT_FIRE';
+
+UPDATE Language_en_US 
+SET Text = 'Before engaging in melee, this Unit has an extra attack.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Lost on upgrade.[ENDCOLOR]' 
+WHERE Tag = 'TXT_KEY_PROMOTION_RANGED_SUPPORT_FIRE_HELP';
 --==========================================================================================================================
 --==========================================================================================================================
 

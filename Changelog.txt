@@ -3,6 +3,13 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v61:
+- tweaked/modified:
+	- Impi no longer have ranged strike carry forward. Gunpowder combat bonus has been split into a separate promotion that carries forward
+	- Armada no longer have Boarding Party II for free
+Bug Fixes
+	- Text fixes
+	- Qullqa now place coca under the city if the Qullqa was given for free when settling with a Pioneer or Colonist
 v60:
 - changes
 	- Egyptian Khopesh (spearman) replaced with Mamluk (Lancer)
