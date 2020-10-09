@@ -683,7 +683,7 @@
 			<Text>Fusta</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_VENICE_FUSTA_HELP">
-			<Text>A small and fast compliment to the Great Galleas, rather than a replacement. Weaker, but cheaper, and does not contribute to Unit [ICON_GOLD] Gold Maintenance. May withdraw before melee attacks.</Text>
+			<Text>A small and fast compliment to the Great Galleas, rather than a replacement. Weaker, but cheaper, and does not cost Unit [ICON_GOLD] Gold Maintenance or [ICON WAR] Unit Supply.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_VENICE_FUSTA_STRATEGY">
 			<Text>Fusta are quick, cheap, and do not cost any unit maintenance. Use these ships in combination with the bigger Galleass to monitor and protect your shipping lanes without causing an undue burden on your economy.</Text>
