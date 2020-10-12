@@ -194,6 +194,11 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>Spain/Hacienda/Hacienda.sql</FileName>
       </Action>
+	  <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Spain/BullRing/BullRing.sql</FileName>
+      </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
@@ -758,6 +763,12 @@ Latest changes: see changelog file.</Description>
         <Name>Klepht</Name>
         <Description>Adds Philhellenism promotion.</Description>
         <FileName>Greece/Klepth/Klepht.lua</FileName>
+      </Content>
+	  <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>BullRing</Name>
+        <Description>Adds Bullring WLTKD bonus.</Description>
+        <FileName>Spain/BullRing/BullRing.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
@@ -4232,6 +4243,34 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Spain\BullRing\BullRing_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Spain\BullRing\BullRing_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Spain\BullRing\BullRing_080.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Spain\BullRing\BullRing_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Spain\BullRing\BullRing_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Spain\BullRing\BullRing.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Spain\BullRing\BullRing.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Spain\Hacienda\3DModel\hacienda.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -5257,7 +5296,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Sweden" />
     <Folder Include="Poland\Casimir" />
     <Folder Include="Polynesia\Kamehameha" />
-    <Folder Include="Spain" />
     <Folder Include="Polynesia\FaleTele" />
     <Folder Include="Shoshone" />
     <Folder Include="Polynesia" />
@@ -5266,6 +5304,8 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Shoshone\BuffaloPound" />
     <Folder Include="Shoshone\YellowBrow" />
     <Folder Include="Shoshone\YellowBrow\3DModel" />
+    <Folder Include="Spain" />
+    <Folder Include="Spain\BullRing" />
     <Folder Include="Spain\Armada" />
     <Folder Include="Spain\Armada\3DModel" />
     <Folder Include="Spain\Hacienda" />

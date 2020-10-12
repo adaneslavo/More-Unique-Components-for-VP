@@ -18,13 +18,15 @@ function OnConstructionPlaceCoca(iPlayer, iCity, iBuilding)
 	
 	if pCity then
 		local pPlot = Map.GetPlot(pCity:GetX(), pCity:GetY())
+		if pPlot:GetNumResource() == 0 then
 	
-		pPlot:SetResourceType(eResourceCoca, 1)
-		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
-		pPlot:SetImprovementType(-1)
-		-- removes plantation after connecting Coca to trade list
-		if pPlot:IsMountain() then
-			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
+			pPlot:SetResourceType(eResourceCoca, 1)
+			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
+			pPlot:SetImprovementType(-1)
+			-- removes plantation after connecting Coca to trade list
+			if pPlot:IsMountain() then
+				pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
+			end
 		end
 	end
 end
@@ -38,13 +40,15 @@ function OnFoundPlaceCoca(iPlayer, iX, iY)
 	if pTeam:GetTeamTechs():HasTech(GameInfoTypes.TECH_BANKING) then
 
 		local pPlot = Map.GetPlot(iX, iY)
+		if pPlot:GetNumResource() == 0 then
 	
-		pPlot:SetResourceType(eResourceCoca, 1)
-		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
-		pPlot:SetImprovementType(-1)
-		-- removes plantation after connecting Coca to trade list
-		if pPlot:IsMountain() then
-			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
+			pPlot:SetResourceType(eResourceCoca, 1)
+			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
+			pPlot:SetImprovementType(-1)
+			-- removes plantation after connecting Coca to trade list
+			if pPlot:IsMountain() then
+				pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
+			end
 		end
 	end
 end

@@ -4,16 +4,21 @@
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
 v61:
+- Reworked:
+		- Added the Bullring as a unique replacement for Spain
 - tweaked/modified:
 	- Impi no longer have ranged strike carry forward. Gunpowder combat bonus has been split into a separate promotion that carries forward
 	- Armada no longer have Boarding Party II for free
+	- University of Coimbra icon modified. Credit to EmeraldRange 
 Bug Fixes
 	- Text fixes
+	- Qullqa Coca no longer replaces existing resources. If settling on an existing resource, no Coca is placed
 	- Qullqa now place coca under the city if the Qullqa was given for free when settling with a Pioneer or Colonist
 v60:
 - changes
 	- Egyptian Khopesh (spearman) replaced with Mamluk (Lancer)
 	- Indonesian Prau (Trireme) replaced with Djong (Galleass)
+	- Chinese Xiafan Guanjun unit model re-textured
 - tweaked/modified:
 	- Monitor now has same base movement as the ironclad (no more double movement in coast)
 	- Increased base culture of Iziko to 3

@@ -252,6 +252,20 @@
 				Today, American buffalo have recovered, but their range has been greatly limited to a few national parks. Commercial farming and sport hunting continues, but the buffalo are unlikely to ever return to their historical numbers.
 			</Text>
 		</Row>
+		<!-- Bullring -->
+		<!-- Created by pineappledan 12/10/2020 -->
+		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING">
+			<Text>Bullring</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING_HELP">
+			<Text>+1000 [ICON_TOURISM] Tourism with all known Civilizations when completed. Nearby Jungle, Forest, and Pastures gain +2 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture. When any [ICON_INTERNATIONAL_TRADE] Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]+50% [ICON_HAPPINESS_1] 'We Love the King Day' length and gain 50 [ICON_CULTURE] Culture and [ICON_PEACE] Peace whenever a [ICON_HAPPINESS_1] 'We Love the King Day' begins.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING_STRATEGY">
+			<Text>The Bullring is a Spanish unique building that is cheaper and is available earlier than the Zoo. In addition to the Zoo's bonuses to Forest and Jungle, the Bullring gives bonuses to Pastures. Try to focus on triggering many 'We Love the King Days', which last longer and provide additional yields with the Bullring.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING_TEXT">
+			<Text>An exceptionally old and irrepressible institution, Spanish bullfighting can trace its roots back to pre-Roman pagan bull cults. The modern incarnation of Spanish bullfighting traces its roots to the ceremonial and stylistic innovations of virtuoso bullfighters and the construction of the first dedicated Bullrings in the late 1700s. From there, Spain's bullfighting traditions have spread to all of her former colonies.</Text>
+		</Row>
 		<!-- Chaebol -->		
 		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL">
 			<Text>Chaebol</Text>
@@ -1555,7 +1569,7 @@
 			<Text>Pairidaeza</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>Available earlier. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins, Scaling with Era.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
 			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, each the Pairidaeza increases Gold production during Golden Ages. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
