@@ -258,10 +258,10 @@
 			<Text>Bullring</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING_HELP">
-			<Text>+1000 [ICON_TOURISM] Tourism with all known Civilizations when completed. Nearby Jungle, Forest, and Pastures gain +2 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture. When any [ICON_INTERNATIONAL_TRADE] Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]+50% [ICON_HAPPINESS_1] 'We Love the King Day' length and gain 50 [ICON_CULTURE] Culture and [ICON_PEACE] Peace whenever a [ICON_HAPPINESS_1] 'We Love the King Day' begins.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.</Text>
+			<Text>+1000 [ICON_TOURISM] Tourism with all known Civilizations when completed. Nearby Jungle, Forest, and Pastures gain +2 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture. When any [ICON_INTERNATIONAL_TRADE] Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]+50% "We Love the King Day" length and gain 50 [ICON_CULTURE] Culture and [ICON_PEACE] Peace whenever a "We Love the King Day" begins, Scaling with Era.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING_STRATEGY">
-			<Text>The Bullring is a Spanish unique building that is cheaper and is available earlier than the Zoo. In addition to the Zoo's bonuses to Forest and Jungle, the Bullring gives bonuses to Pastures. Try to focus on triggering many 'We Love the King Days', which last longer and provide additional yields with the Bullring.</Text>
+			<Text>The Bullring is a Spanish unique building that is cheaper and is available earlier than the Zoo. In addition to the Zoo's bonuses to Forest and Jungle, the Bullring gives bonuses to Pastures. Try to focus on triggering many "We Love the King Days", which last longer and provide additional yields with the Bullring.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING_TEXT">
 			<Text>An exceptionally old and irrepressible institution, Spanish bullfighting can trace its roots back to pre-Roman pagan bull cults. The modern incarnation of Spanish bullfighting traces its roots to the ceremonial and stylistic innovations of virtuoso bullfighters and the construction of the first dedicated Bullrings in the late 1700s. From there, Spain's bullfighting traditions have spread to all of her former colonies.</Text>
@@ -723,7 +723,7 @@
 				
 		<!-- Hacienda -->
 		<!-- Created by adan_eslavo on 10/11/2017 -->
-		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA">
+<!--		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA">
 			<Text>Hacienda</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_HELP">

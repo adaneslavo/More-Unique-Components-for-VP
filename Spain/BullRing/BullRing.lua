@@ -16,8 +16,7 @@ function BullringWLTKDStarts(iPlayer, iX, iY, iTurns)
 	
 	if iTurns > 2 then
 	
-		local pPlot = Map.GetPlot(iPlotX, iPlotY)
-		local pCity = pPlot:GetPlotCity()
+		local pCity = Map.GetPlot(iX, iY):GetPlotCity()
 		if pCity:IsHasBuilding(eBuildingBullring) then
 			print"Bullring WLTKD"
 
