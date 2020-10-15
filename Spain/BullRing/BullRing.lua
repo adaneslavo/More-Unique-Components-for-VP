@@ -33,7 +33,7 @@ function BullringWLTKDStarts(iPlayer, iX, iY, iTurns)
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vCityPosition = PositionCalculator(iX, iY)
 				local sName = pCity:GetName()
-				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+"..iGain1.." [ICON_PEACE][ENDCOLOR]", 1)
+				Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iGain1.." [ICON_PEACE][ENDCOLOR]", 1)
 				Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iGain2.." [ICON_CULTURE][ENDCOLOR]", 1.5)
 
 				pPlayer:AddNotification(
