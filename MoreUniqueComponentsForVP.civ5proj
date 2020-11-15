@@ -189,12 +189,7 @@ Latest changes: see changelog file.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>Spain/Armada/Armada.sql</FileName>
       </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Spain/Hacienda/Hacienda.sql</FileName>
-      </Action>
-	  <Action>
+ 	  <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Spain/BullRing/BullRing.sql</FileName>
@@ -4271,66 +4266,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Spain\Hacienda\3DModel\hacienda.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\3DModel\hacienda.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\3DModel\hacienda_decal.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\3DModel\hacienda_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\3DModel\hacienda_hb.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\3DModel\hacienda_hb.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\3DModel\hacienda_pl.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\3DModel\hacienda_pl.gr2">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\3DModel\hacienda_pl_decal.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\3DModel\hacienda_pl_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\HaciendaIcons_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\HaciendaIcons_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\HaciendaIcons_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\HaciendaIcon_128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Spain\Hacienda\Hacienda.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Spain\Isabella\IsabellaFlavors.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -5308,8 +5243,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Spain\BullRing" />
     <Folder Include="Spain\Armada" />
     <Folder Include="Spain\Armada\3DModel" />
-    <Folder Include="Spain\Hacienda" />
-    <Folder Include="Spain\Hacienda\3DModel" />
     <Folder Include="Spain\Isabella" />
     <Folder Include="Sweden\Bastu" />
     <Folder Include="Sweden\Hakkapeliitta" />

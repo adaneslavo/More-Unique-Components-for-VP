@@ -2,6 +2,8 @@
 -- Author: adan_eslavo
 -- DateCreated: 27/11/2017
 --------------------------------------------------------------
+local eCivilizationBabylon = GameInfoTypes.CIVILIZATION_BABYLON
+
 function LegacyOnKibitum(iPlayer, iUnit)
 	local pPlayer = Players[iPlayer]
 	local pUnit = pPlayer:GetUnitByID(iUnit)
@@ -35,10 +37,10 @@ end
 function WarriorToKibitumUpgrade(iPlayer, iOldUnit, iNewUnit, bGoodyHut)
 	local pPlayer = Players[iPlayer]
 
-	if pPlayer:GetName() == 'Nebuchadnezzar II' then
+	if pPlayer:GetCivilizationType() == eCivilizationBabylon then
 		local pNewUnit = pPlayer:GetUnitByID(iNewUnit)
 
-		if pNewUnit:GetName() == 'Kibitum' then
+		if pNewUnit:GetUnitType() == GameInfoTypes.UNIT_BABYLON_KIBITUM then
 			local sLegacyPromotion = {}
 			sLegacyPromotion[2]	= GameInfoTypes.PROMOTION_UNIT_BABYLON_LEGACY_1
 			sLegacyPromotion[4]	= GameInfoTypes.PROMOTION_UNIT_BABYLON_LEGACY_2
