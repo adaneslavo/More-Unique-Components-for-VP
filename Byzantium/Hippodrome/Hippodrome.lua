@@ -9,7 +9,7 @@ local eBuildingHippodrome = GameInfoTypes.BUILDING_BYZANTIUM_HIPPODROME
 local eBuildingDummyForHippodrome = GameInfoTypes.BUILDING_D_FOR_HIPPODROME
 local eCivilizationByzantium = GameInfoTypes.CIVILIZATION_BYZANTIUM
 				
--- adds WLTKD and Yields to all Horses in empire after its construction
+-- adds WLTKD on empire after its construction
 function OnConstructionAddBonuses(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 
@@ -34,7 +34,7 @@ function OnConstructionAddBonuses(iPlayer, iCity, iBuilding)
 	end
 end
 
--- removes bonus gold and culture to horses on empire if Hippodrome is destroyed
+-- removes bonus gold and culture from WLTKD on empire if Hippodrome is destroyed
 function OnCaptureRemoveHorseYields(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop, bConquest)
 	local pOldPlayer = Players[iOldOwner]
 	
@@ -54,14 +54,14 @@ function OnEraSetAnarchyAndWLTKD(eTeam, eEra, bFirst)
 				if not pPlayer:IsAnarchy() then
 					local iWLTKDLength = math.floor(10 * fGameSpeedModifier) + 1
 						
-					pPlayer:ChangeAnarchyNumTurns(2)
+					pPlayer:pAttackingPlayer:DoEventChoice(GameInfoTypes.PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT)
 					
 					for city in pPlayer:Cities() do
 						city:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 					end
 						
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						pPlayer:AddNotification(0, 'Your Empire entered new Era, causing a massive riot across your Empire. Your Empire falls into 1 turn of [ICON_RESISTANCE] Resistance, after which your [ICON_CITIZEN] Citizens will [ICON_HAPPINESS_1] love their king for '..(iWLTKDLength - 1)..' turns.', 'Hooliganism in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())
+						pPlayer:AddNotification(0, 'Your Empire entered new Era, causing a massive riot across your Empire. Your Empire becomes very [ICON_HAPPINESS_4] Unhappy for 1 turn, after which your [ICON_CITIZEN] Citizens will [ICON_HAPPINESS_1] love their king for '..(iWLTKDLength - 1)..' turns.', 'Hooliganism in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())
 					end
 						
 					break

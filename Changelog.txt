@@ -6,10 +6,12 @@ More Unique Components for Vox Populi changelog:
 v61:
 - Reworked:
 	- Added the Bullring as a unique replacement for Spain
+		- Hacienda moved to base VP mod
 - tweaked/modified:
 	- Impi no longer have ranged strike carry forward. Gunpowder combat bonus has been split into a separate promotion that carries forward
 	- Armada no longer have Boarding Party II for free
 	- University of Coimbra icon modified. Credit to EmeraldRange 
+	- Hippodrome era riot downgraded from 1 turn of anarchy per city to 1 turn of -10 unhappiness per city 
 Bug Fixes
 	- Text fixes
 	- InDuna, Shophet, and Suffet now get bonuses from Imperialism policies

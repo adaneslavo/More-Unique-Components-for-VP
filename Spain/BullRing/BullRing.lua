@@ -18,27 +18,31 @@ function BullringWLTKDStarts(iPlayer, iX, iY, iTurns)
 	
 		local pCity = Map.GetPlot(iX, iY):GetPlotCity()
 		if pCity:IsHasBuilding(eBuildingBullring) then
-			print"Bullring WLTKD"
+--			print"Bullring WLTKD"
 
 			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)	
 			local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 			local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
-			local iGain1 = math.floor(50 * iEraModifier * iGameSpeedModifier1)
-			local iGain2 = math.floor(50 * iEraModifier * iGameSpeedModifier2)
+			local iGameSpeedModifier3 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldPercent / 100
+			local iGain1 = math.floor(100 * iEraModifier * iGameSpeedModifier1)
+			local iGain2 = math.floor(100 * iEraModifier * iGameSpeedModifier2)
+			local iGain3 = math.floor(100 * iGameSpeedModifier3 * iEraModifier)
 			pCity:ChangeWeLoveTheKingDayCounter(math.floor(iTurns*0.5))
 			pPlayer:ChangeFaith(iGain1)
 			pPlayer:ChangeJONSCulture(iGain2)
 			pCity:ChangeJONSCultureStored(iGain2)
+			pPlayer:ChangeGold(iGain3)
 
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 				local vCityPosition = PositionCalculator(iX, iY)
 				local sName = pCity:GetName()
 				Events.AddPopupTextEvent(vCityPosition, "[COLOR_WHITE]+"..iGain1.." [ICON_PEACE][ENDCOLOR]", 1)
 				Events.AddPopupTextEvent(vCityPosition, "[COLOR_MAGENTA]+"..iGain2.." [ICON_CULTURE][ENDCOLOR]", 1.5)
+				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iGain3.." [ICON_GOLD][ENDCOLOR]", 2)
 
 				pPlayer:AddNotification(
 					NotificationTypes.NOTIFICATION_INSTANT_YIELD,
-					'[ICON_GOLDEN_AGE] We Love The King Day has started in [COLOR_POSITIVE_TEXT]'..sName..'[ENDCOLOR].[NEWLINE][ICON_BULLET]+'..iGain2..' [ICON_CULTURE] Culture[NEWLINE][ICON_BULLET]+'..iGain1..' [ICON_PEACE] Faith',
+					'[ICON_GOLDEN_AGE] We Love The King Day has started in [COLOR_POSITIVE_TEXT]'..sName..'[ENDCOLOR].[NEWLINE][ICON_BULLET]+'..iGain2..' [ICON_CULTURE] Culture[NEWLINE][ICON_BULLET]+'..iGain1..' [ICON_PEACE] Faith[NEWLINE][ICON_BULLET]+'..iGain3..' [ICON_GOLD] Gold',
 					'Bonus Yields from We Love the King Day',
 					iX, iY, pCity:GetID())
 			end

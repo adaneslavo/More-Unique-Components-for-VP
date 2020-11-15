@@ -258,7 +258,7 @@
 			<Text>Bullring</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING_HELP">
-			<Text>+1000 [ICON_TOURISM] Tourism with all known Civilizations when completed. Nearby Jungle, Forest, and Pastures gain +2 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture. When any [ICON_INTERNATIONAL_TRADE] Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]+50% "We Love the King Day" length and gain 50 [ICON_CULTURE] Culture and [ICON_PEACE] Peace whenever a "We Love the King Day" begins, Scaling with Era.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.</Text>
+			<Text>+1000 [ICON_TOURISM] Tourism with all known Civilizations when completed. Nearby Jungle, Forest, and Pastures gain +2 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture. When any [ICON_INTERNATIONAL_TRADE] Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Trigger a "We Love the King Day" in this city whenever it completes a [COLOR_POSITIVE_TEXT]Public Works Project[ENDCOLOR]. Gain 100 [ICON_CULTURE] Culture, [ICON_PEACE] Faith, and [ICON_GOLD] Gold whenever a "We Love the King Day" begins, Scaling with Era.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING_STRATEGY">
 			<Text>The Bullring is a Spanish unique building that is cheaper and is available earlier than the Zoo. In addition to the Zoo's bonuses to Forest and Jungle, the Bullring gives bonuses to Pastures. Try to focus on triggering many "We Love the King Days", which last longer and provide additional yields with the Bullring.</Text>
@@ -720,35 +720,6 @@
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_TEXT">
 			<Text>The French Grande Écoles are institutions of higher learning separate from the more conventional university system. These schools are highly selective, taking only the best and brightest French graduates. Once accepted, students studying at a Grande École are considered public servants, paying little to no entrance fees and even receiving a monthly government stipend.[NEWLINE][NEWLINE]The origins of the Grande Écoles lie in the French Revolution, where several military and technical écoles normale supérieure were established by distinguished French mathematicians and intellectuals. The idea was to open education to individuals based strictly on merit. By the 19th century a number of schools had sprung up for a wide array of disciplines including natural sciences, business and the humanities. The Grande Écoles continue to have a deep impact on French society, with approximately 10% of all Native-born French citizens graduating from these schools, including many of France's most renowned politicians, philosophers, scientists, and executives.</Text>
 		</Row>
-				
-		<!-- Hacienda -->
-		<!-- Created by adan_eslavo on 10/11/2017 -->
-<!--		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA">
-			<Text>Hacienda</Text>
-		</Row>
-		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_HELP">
-			<Text>Cannot be built next to another Hacienda. Provides [ICON_FOOD] Food, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold. Grants additional bonuses for every adjacent map component:[NEWLINE]
-				+2 [ICON_FOOD] - Bonus Resource,[NEWLINE]
-				+2 [ICON_PRODUCTION] - Strategic Resource,[NEWLINE]
-				+2 [ICON_GOLD] - Luxury Resource,[NEWLINE]
-				+1 [ICON_CULTURE] - City.[NEWLINE][NEWLINE]+1 [ICON_PEACE] Faith if City has a Mission.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_IMPROVEMENT_SPAIN_HACIENDA_TEXT">
-			<Text>
-				Haciendas are colonial estates constructed by the Spanish for the administration and extraction of resources from their native subjects. Haciendas were based on grants of property and enterprise, rather than the strict grant of indigenous labor as described by the older Encomienda system. Haciendas were generally large estates, but the nature of the work varied from plantations, to mining, to factories.[NEWLINE][NEWLINE]
-				The owner of a Hacienda was called a Hacendado, but the wealthy landowners rarely visited their holdings and preferred to live in nearby cities. Day-to-day operations of a Hacienda were the responsibility of hired managers. Some unusually large and profitable Haciendas were the property of the Roman Catholic Church, exacerbating tension between native laborers and their Christian taskmasters.[NEWLINE][NEWLINE]
-				The Hacienda system was abolished in most countries after the dissolution of the Spanish Empire, but with mixed results. Efforts to break apart the large estates into individual holdings for subsistence farmers led to crushing poverty in some South American nations. In contrast, Latin American and Filipino Haciendas were mostly left intact, but without the same legal standing or permissions of their colonial past.
-			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILD_SPAIN_HACIENDA">
-			<Text>Build a [LINK=IMPROVEMENT_SPAIN_HACIENDA]Hacienda[\LINK]</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILD_SPAIN_HACIENDA_HELP">
-			<Text>Constructs a Hacienda, which yields [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE]Gains [ICON_FOOD] Food for adjacent Bonus Resources, [ICON_PRODUCTION] Production for adjacent Strategic Resources, [ICON_GOLD] Gold for adjacent Luxury Resources, and [ICON_CULTURE] Culture from adjacent Cities. +1 [ICON_PEACE] Faith if the nearby City has built a Mission.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILD_SPAIN_HACIENDA_REC">
-			<Text>It will increase [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production. [NEWLINE]Gains [ICON_PRODUCTION] Production from adjacent Cities and [ICON_FOOD] Food, [ICON_GOLD] Gold and [ICON_PRODUCTION] Production from adjacent resources. +1 [ICON_PEACE] Faith if the nearby City has built a Mission.</Text>
-		</Row>
 		
 		<!-- Holkan -->
 		<!-- Created by adan_eslavo on 16/12/2017 -->
@@ -887,7 +858,7 @@
 			<Text>Hippodrome</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
-			<Text>Does not require an Arena in the City. [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Arena in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom. +15% [ICON_GOLD] Gold and [ICON_CULTURE] Culture on Empire during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, 1 turn of [ICON_RESISTANCE] Resistance occurs in this City, after which a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +3 [ICON_GOLD] Gold and all Circuses gain +3 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Does not require an Arena in the City. [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Arena in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom. +15% [ICON_GOLD] Gold and [ICON_CULTURE] Culture on Empire during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, Your Empire becomes very [ICON_HAPPINESS_4] Unhappy for 1 turn, after which a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +3 [ICON_GOLD] Gold and all Circuses gain +3 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
 			<Text>

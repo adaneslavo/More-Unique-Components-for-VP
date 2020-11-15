@@ -74,6 +74,15 @@ INSERT INTO Building_UnhappinessNeedsFlatReduction
 			(BuildingType,						YieldType, Yield)
 SELECT		'BUILDING_BYZANTIUM_HIPPODROME', 	YieldType, Yield
 FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_CIRCUS_MAXIMUS');
+--==========================================================================================================================	
+-- EVENTS
+--==========================================================================================================================	
+--------------------------------
+-- EventChoices
+--------------------------------	
+INSERT INTO EventChoices
+			(Type,													HappinessPerCity, 	EventDuration,	Expires)
+VALUES		('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	-10, 				1,				1);
 --==========================================================================================================================
 --==========================================================================================================================
 
