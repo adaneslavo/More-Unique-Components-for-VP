@@ -115,7 +115,8 @@ FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SCOUT';
 
 INSERT INTO Unit_FreePromotions 	
 			(UnitType, 					PromotionType)
-VALUES		('UNIT_INCA_CHASQUI',		'PROMOTION_UNIT_INCA_CHASQUIWASI');
+VALUES		('UNIT_INCA_CHASQUI',		'PROMOTION_UNIT_INCA_CHASQUIWASI'),
+			('UNIT_INCA_CHASQUI',		'PROMOTION_MEDIC');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -126,13 +127,7 @@ VALUES		('UNIT_INCA_CHASQUI',		'PROMOTION_UNIT_INCA_CHASQUIWASI');
 ------------------------------
 INSERT INTO UnitPromotions 
 			(Type, 									Description, 									Help, 											EnemyHealChange, 	NeutralHealChange, 	FriendlyHealChange,		MountainsDoubleMove, 	Sound, 				CannotBeChosen, 	PortraitIndex,	IconAtlas, 				LostWithUpgrade, 	PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_INCA_CHASQUIWASI',		'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI',		'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP', 10, 				10, 				10, 					1, 						'AS2D_IF_LEVELUP',	1, 					50, 			'promoMUC_atlas_00', 	0, 					'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI');
-------------------------------
--- UnitPromotions_YieldFromScouting
-------------------------------
---INSERT INTO UnitPromotions_YieldFromScouting
---			(PromotionType,							YieldType,		Yield)
---VALUES		('PROMOTION_UNIT_INCA_KHIPU_RUNNER',	'YIELD_GOLD',	1);
+VALUES		('PROMOTION_UNIT_INCA_CHASQUIWASI',		'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI',		'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP', 0, 					0, 					5, 						1, 						'AS2D_IF_LEVELUP',	1, 					50, 			'promoMUC_atlas_00', 	0, 					'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI');
 --==========================================================================================================================
 --==========================================================================================================================
 

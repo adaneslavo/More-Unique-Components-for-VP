@@ -288,22 +288,22 @@
 			<Text>Chasqui</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_HELP">
-			<Text>Flexible Scout of the Classical Era. Only the Inca may build it. Heals an additional 10 HP, and gains +1 [ICON_ARROW_RIGHT] Movement in Friendly Territory. Moves at Double Speed in [COLOR_POSITIVE_TEXT]Mountains[ENDCOLOR].</Text>
+			<Text>Flexible Scout and Support Unit of the Classical Era. Only the Inca may build it. Gains +1 [ICON_ARROW_RIGHT] Moves and Heals faster in Friendly Territory. Moves at Double Speed in [COLOR_POSITIVE_TEXT]Mountains[ENDCOLOR]. Starts with [COLOR_POSITIVE_TEXT]Medic I[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_STRATEGY">
-			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Mountains and friendly territory. The Chasqui also heals 10 additional HP whenever it heals, making it recover very quickly when exploring or fighting.</Text>
+			<Text>The Chasqui is the unique Scout replacement for the Inca. This unit moves quickly through Mountains and friendly territory. The Chasqui also starts with medic I, making it a flexible and accessible early support unit for your main fighting force.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCA_CHASQUI_TEXT">
 			<Text>
 				The Chasquis were the messengers of the Inca Empire in charge of carrying messages and gifts up to 240 km per day through a form of on-foot Pony Express. In addition to their physical fitness, Chasquis were well-educated, able to translate the khipus, the Incan knot-based writing system, to each other and higher authorities.[NEWLINE][NEWLINE]
-				Chasquis were dispatched along thousands of miles of Andean trails, taking advantage of a vast system of roads and rope bridges maintained throughout the mountains of Peru and Ecuador. Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. Each Chasqui carried a conch trumpet which was blown to signalling to a fresh chasqui that one runner was close so that they could prepare to run.
+				Chasquis were dispatched along thousands of miles of Andean trails, taking advantage of a vast system of roads and rope bridges maintained throughout the mountains of Peru and Ecuador. Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. Each Chasqui carried a conch trumpet which was blown to signal to a fresh chasqui that one runner was close so that they could prepare to run.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI">
 			<Text>Chasquiwasi</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP">
-			<Text>+10 HP [COLOR_POSITIVE_TEXT]on Heal[ENDCOLOR].[NEWLINE]+1 [ICON_ARROW_RIGHT] Movement Point [COLOR_POSITIVE_TEXT]in Friendly Territory[ENDCOLOR].[NEWLINE]Double Movement in [COLOR_POSITIVE_TEXT]Mountains[ENDCOLOR]</Text>
+			<Text>[NEWLINE]+1 [ICON_ARROW_RIGHT] Movement and [COLOR_POSITIVE_TEXT]Heal 5 Additional HP[ENDCOLOR] per turn when in [COLOR_POSITIVE_TEXT]Friendly Territory[ENDCOLOR].[NEWLINE]Double Movement in [COLOR_POSITIVE_TEXT]Mountains[ENDCOLOR]</Text>
 		</Row>
 		<!-- Corsair -->
 		<!-- Created by Blue Ghost -->
