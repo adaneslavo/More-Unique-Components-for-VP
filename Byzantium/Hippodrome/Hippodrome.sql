@@ -81,8 +81,16 @@ FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_CIRC
 -- EventChoices
 --------------------------------	
 INSERT INTO EventChoices
-			(Type,													HappinessPerCity, 	EventDuration,	Expires)
-VALUES		('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	-10, 				1,				1);
+			(Type,													EventDuration,	Expires)
+VALUES		('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	1,				1);
+
+INSERT INTO EventChoice_CityUnhappinessNeedMod
+			(EventChoiceType,										YieldType,			Yield)
+VALUES		('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'YIELD_CULTURE',	-100),
+			('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'YIELD_FAITH',		-100),
+			('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'YIELD_GOLD',		-100),
+			('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'YIELD_PRODUCTION',	-100),
+			('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'YIELD_SCIENCE',	-100);
 --==========================================================================================================================
 --==========================================================================================================================
 

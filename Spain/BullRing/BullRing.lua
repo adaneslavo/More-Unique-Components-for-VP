@@ -14,12 +14,12 @@ function BullringWLTKDStarts(iPlayer, iX, iY, iTurns)
 	
 	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationSpain or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
-	if iTurns > 2 then
+	if iTurns > 1 then
 	
 		local pCity = Map.GetPlot(iX, iY):GetPlotCity()
 		if pCity:IsHasBuilding(eBuildingBullring) then
---			print"Bullring WLTKD"
 
+			print"Bullring WLTKD"
 			local iEraModifier = math.max(pPlayer:GetCurrentEra(), 1)	
 			local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
 			local iGameSpeedModifier2 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].CulturePercent / 100
@@ -27,7 +27,6 @@ function BullringWLTKDStarts(iPlayer, iX, iY, iTurns)
 			local iGain1 = math.floor(100 * iEraModifier * iGameSpeedModifier1)
 			local iGain2 = math.floor(100 * iEraModifier * iGameSpeedModifier2)
 			local iGain3 = math.floor(100 * iGameSpeedModifier3 * iEraModifier)
-			pCity:ChangeWeLoveTheKingDayCounter(math.floor(iTurns*0.5))
 			pPlayer:ChangeFaith(iGain1)
 			pPlayer:ChangeJONSCulture(iGain2)
 			pCity:ChangeJONSCultureStored(iGain2)
@@ -50,10 +49,26 @@ function BullringWLTKDStarts(iPlayer, iX, iY, iTurns)
 	end
 end
 
+function BullRingPubWorks(iPlayer, iCity, iProject)
+	local pPlayer = Players[iPlayer]
+
+	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationSpain or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
+	
+	local works = GameInfo.Projects.PROJECT_PUBLIC_WORKS.ID
+	print("Ole! Public Works Done!")
+
+	if iProject == works then
+		local pCity = pPlayer:GetCityByID(iCity)
+		local iGameSpeedModifier1 = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].FaithPercent / 100
+		pCity:ChangeWeLoveTheKingDayCounter(math.floor(10 * iGameSpeedModifier1))
+	end
+end
+
 function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
 if Game.IsCivEverActive(eCivilizationSpain) then
 	GameEvents.CityBeginsWLTKD.Add(BullringWLTKDStarts)
+	GameEvents.CityProjectComplete.Add(BullRingPubWorks)
 end
