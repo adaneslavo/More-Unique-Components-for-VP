@@ -3,6 +3,10 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v62:
+- Reworked:
+	- Arabian Madrasa replaced with Bimaristsan (mainly aesthetic change)
+
 v61:
 - Reworked:
 	- Added the Bullring as a unique replacement for Spain
@@ -11,7 +15,7 @@ v61:
 	- Impi no longer have ranged strike carry forward. Gunpowder combat bonus has been split into a separate promotion that carries forward
 	- Armada no longer have Boarding Party II for free
 	- University of Coimbra icon modified. Credit to EmeraldRange 
-	- Hippodrome era riot downgraded from 1 turn of anarchy per city to 1 turn of -10 unhappiness per city 
+	- Hippodrome era riot downgraded from 1 turn of anarchy per city to 1 turn of -100% Needs modifier in all cities 
 	- Chasquiwasi promotion healing reduced from +10 in all territory to +5 in friendly only. Chasqui start with Medic I
 Bug Fixes
 	- Text fixes

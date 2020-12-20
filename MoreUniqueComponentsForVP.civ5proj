@@ -537,7 +537,7 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Arabia/Madrasah/Madrasah.sql</FileName>
+        <FileName>Arabia/Bimaristan/Bimaristan.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1360,9 +1360,25 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Arabia\Madrasah\Madrasah.sql">
+    <Content Include="Arabia\Bimaristan\Bimaristan.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Arabia\Bimaristan\Bimaristan_Icon_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Arabia\Bimaristan\Bimaristan_Icon_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Arabia\Bimaristan\Bimaristan_Icon_128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Arabia\Bimaristan\Bimaristan_Icon_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Assyria\IronChariot\IronChariot.lua">
       <SubType>Lua</SubType>
@@ -5084,7 +5100,7 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Arabia\" />
     <Folder Include="Arabia\HashemiteRaider" />
     <Folder Include="Arabia\HashemiteRaider\3DModel" />
-    <Folder Include="Arabia\Madrasah\" />
+    <Folder Include="Arabia\Bimaristan\" />
     <Folder Include="Assyria\" />
     <Folder Include="Assyria\IronChariot" />
     <Folder Include="Assyria\LamassuGate" />

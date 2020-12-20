@@ -37,6 +37,7 @@ Things borrowed from other mods:
 		- Zantonius Hamm - idea of Hashemite Raider UU (Maara Weyn),
 		- OrderOfOlav - picture of Hashemite Raider,
 		- Civitar - 3D model of Hashemite Raider.
+		- TarcisioCM - Idea and icon for Bimaristan
 
 	Assyria:
 		- KevinJK - idea and picture of Lamassu Gate UB.

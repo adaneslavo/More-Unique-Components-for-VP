@@ -230,6 +230,21 @@
 			<Text>Unit gets a free Trailblazer or Survivalism promotion [COLOR_POSITIVE_TEXT]on Levelling[ENDCOLOR].</Text>
 		</Row>
 		
+		<!-- BIMARISTAN -->
+		<!-- Created by Blue Ghost -->
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_BIMARISTAN">
+			<Text>Bimaristan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_BIMARISTAN_TEXT">
+			<Text>The Bimaristan were centres for medical treatment, the precursor to the modern Hospital. The Arab world was notable for several medical practices which have become commonplace today including separating patients by their ailments into wards, the development of patient medical records, the secularization of medical care, and standards for medical practitioners, including examinations and licensing. Bimaristans were paid for by charitable endowments called Waqfs. This guaranteed that the operations and cost of treatment would be borne by the institution, regardless of the patient's race, religion, gender, or social standing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_BIMARISTAN_STRATEGY">
+			<Text>Unique Arabian replacement for the University. In addition to the bonuses of a University, the Bimaristan generates additional yields when you purchase anything with Faith, and grants additional Food based on the city's Science output.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARABIA_BIMARISTAN_HELP">
+			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 25% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]Gain 15% of the Cost of any [ICON_PEACE] Faith Purchase as [ICON_RESEARCH] Science and [ICON_FOOD] Food in this City. 10% of [ICON_RESEARCH] Science created by the City counts as [ICON_FOOD] Food Per Turn.</Text>
+		</Row>
+		
 		<!-- Buffalo Pound -->
 		<!-- Created by adan_eslavo 4/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_SHOSHONE_BUFFALO_POUND">
@@ -1392,22 +1407,6 @@
 			<Text>+20% [ICON_RANGED_STRENGTH] Attack Bonus and +20% [ICON_STRENGTH] Defense Bonus vs [COLOR_POSITIVE_TEXT]Armor and Mounted Units[ENDCOLOR].</Text>
 		</Row>
 
-
-		<!-- Madrasah -->
-		<!-- Created by Blue Ghost -->
-		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH">
-			<Text>Madrasa</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_TEXT">
-			<Text>"Madrasa" is Arabic for any type of educational institution. Though often with a religious component, madrasas were primarily secular, and could cover anything from elementary to higher learning, including medicine, law, science, philosophy or the education of women. The first madrasa, the Gama'at al-Qarawiyyn, was established in 859 AD by Fatimah al-Fihri, the daughter of a wealthy merchant. During the rule of the Fatimid, Ayyubid and Mamluk dynasties, the practice of sponsoring madrasas by the ruling elite spread across Egypt and the Middle East. As Europe suffered through the Dark Ages, the madrasas of the Turks and Arabs would keep the best of Western knowledge alive, blending it with that of the East.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_STRATEGY">
-			<Text>Unique Arabian replacement for the University. In addition to the bonuses of a University, the Madrasa generates additional yields when you purchase anything with Faith or expend a Great Person.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_ARABIA_MADRASAH_HELP">
-			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 25% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]Gain 15% of the Cost of any [ICON_PEACE] Faith Purchase as [ICON_RESEARCH] Science in this City. Gain 5 [ICON_PEACE] Faith and [ICON_CULTURE] Culture whenever you Expend a [ICON_GREAT_PEOPLE] Great Person, scaling with Era.</Text>
-		</Row>
-		
 		<!-- Mamluk -->
 		<!-- Created by pineappledan, incorporated and modified by pineappledan on 17/07/2020 -->
 		<Row Tag="TXT_KEY_UNIT_EGYPT_MAMLUK">
