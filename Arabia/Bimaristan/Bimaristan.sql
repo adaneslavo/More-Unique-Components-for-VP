@@ -42,13 +42,6 @@ INSERT INTO Building_FeatureYieldChanges
 SELECT		'BUILDING_ARABIA_BIMARISTAN', FeatureType, YieldType, Yield
 FROM Building_FeatureYieldChanges WHERE	BuildingType = 'BUILDING_UNIVERSITY';
 --------------------------------
--- Building_YieldChanges
---------------------------------
-INSERT INTO Building_YieldChanges
-			(BuildingType,					YieldType,			Yield)
-VALUES		('BUILDING_ARABIA_BIMARISTAN',	'YIELD_FOOD',		3),
-			('BUILDING_ARABIA_BIMARISTAN',	'YIELD_SCIENCE',	3);
---------------------------------
 -- Building_YieldFromFaithPurchase
 --------------------------------
 INSERT INTO Building_YieldFromFaithPurchase
@@ -56,32 +49,40 @@ INSERT INTO Building_YieldFromFaithPurchase
 VALUES		('BUILDING_ARABIA_BIMARISTAN',	'YIELD_FOOD',		15),
 			('BUILDING_ARABIA_BIMARISTAN',	'YIELD_SCIENCE',	15);
 --------------------------------
--- Building_YieldChanges
+-- Building_YieldFromYieldPercent
 --------------------------------
 INSERT INTO Building_YieldFromYieldPercent
 			(BuildingType, 					YieldIn, 			YieldOut, 		Value)
-VALUES		('BUILDING_BRAZIL_SAMBADROME', 	'YIELD_SCIENCE', 	'YIELD_FOOD', 	10);
+VALUES		('BUILDING_ARABIA_BIMARISTAN', 	'YIELD_SCIENCE', 	'YIELD_FOOD', 	10);
 --------------------------------
 -- Building_GrowthExtraYield
 --------------------------------
-INSERT INTO Building_GrowthExtraYield
-			(BuildingType,					YieldType,			Yield)
-VALUES		('BUILDING_ARABIA_BIMARISTAN',	'YIELD_SCIENCE',	25);
+INSERT INTO Building_GrowthExtraYield 	
+			(BuildingType,					YieldType, Yield)
+SELECT		'BUILDING_ARABIA_BIMARISTAN', 	YieldType, Yield
+FROM Building_GrowthExtraYield WHERE (BuildingType = 'BUILDING_UNIVERSITY');
 ------------------------------	
 -- Building_UnhappinessNeedsFlatReduction
 ------------------------------
-INSERT INTO Building_UnhappinessNeedsFlatReduction 	
+INSERT INTO Building_UnhappinessNeedsFlatReduction
 			(BuildingType,					YieldType, Yield)
 SELECT		'BUILDING_ARABIA_BIMARISTAN', 	YieldType, Yield
 FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_UNIVERSITY');
 ------------------------------	
--- Building_UnhappinessNeedsFlatReduction
+-- IconTextureAtlases
 ------------------------------
 INSERT INTO IconTextureAtlases 
 		(Atlas, 				IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES	('BIMARISTAN_ATLAS', 	256, 		'Bimaristan_Icon_045.dds',	1, 				1),
-		('BIMARISTAN_ATLAS', 	128, 		'Bimaristan_Icon_045.dds',	1, 				1),
-		('BIMARISTAN_ATLAS', 	45, 		'Bimaristan_Icon_045.dds',	1, 				1),
-		('BIMARISTAN_ATLAS', 	64, 		'Bimaristan_Icon_045.dds',	1, 				1);
+VALUES	('BIMARISTAN_ATLAS', 	256, 		'Bimaristan_Icon_256.dds',	1, 				1),
+		('BIMARISTAN_ATLAS', 	128, 		'Bimaristan_Icon_128.dds',	1, 				1),
+		('BIMARISTAN_ATLAS', 	64, 		'Bimaristan_Icon_064.dds',	1, 				1),
+		('BIMARISTAN_ATLAS', 	45, 		'Bimaristan_Icon_045.dds',	1, 				1);
+--------------------------------
+-- Building_YieldChanges
+--------------------------------
+INSERT INTO Building_YieldChanges
+			(BuildingType,					YieldType,			Yield)
+VALUES		('BUILDING_ARABIA_BIMARISTAN',	'YIELD_FOOD',		3),
+			('BUILDING_ARABIA_BIMARISTAN',	'YIELD_SCIENCE',	3);
 --==========================================================================================================================
 --==========================================================================================================================
