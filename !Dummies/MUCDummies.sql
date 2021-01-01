@@ -42,9 +42,12 @@ VALUES		('BUILDINGCLASS_D_FOR_HUEY',				'BUILDING_D_FOR_HUEY',			1),
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
+			(Type,							BuildingClass,						Description,							CapitalOnly, 	GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex, 	IsDummy, 	ShowInPedia)
+VALUES		('BUILDING_D_FOR_BARBICAN',		'BUILDINGCLASS_ARMORY',				'TXT_KEY_BUILDING_D_FOR_BARBICAN',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 				0, 			0);
+
+INSERT INTO Buildings 	
 			(Type,							BuildingClass,						Description,							CapitalOnly, 	GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex, IsDummy)
-VALUES		('BUILDING_D_FOR_BARBICAN',		'BUILDINGCLASS_ARMORY',				'TXT_KEY_BUILDING_D_FOR_BARBICAN',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 0),
-			('BUILDING_D_FOR_HUEY',			'BUILDINGCLASS_D_FOR_HUEY',			'TXT_KEY_BUILDING_D_FOR_HUEY',			0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
+VALUES		('BUILDING_D_FOR_HUEY',			'BUILDINGCLASS_D_FOR_HUEY',			'TXT_KEY_BUILDING_D_FOR_HUEY',			0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
 			('BUILDING_D_FOR_HIPPODROME',	'BUILDINGCLASS_D_FOR_HIPPODROME',	'TXT_KEY_BUILDING_D_FOR_HIPPODROME',	0, 				0,					-1,		-1,			-1,				1,				1,          0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
 			('BUILDING_D_FOR_PROXENOS',		'BUILDINGCLASS_D_FOR_PROXENOS',		'TXT_KEY_BUILDING_D_FOR_PROXENOS',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 1),
 			('BUILDING_D_FOR_BUFFALO',		'BUILDINGCLASS_D_FOR_BUFFALO',		'TXT_KEY_BUILDING_D_FOR_BUFFALO',		0, 				0,					-1,		-1,			-1,				0,				1,			100,			-1,					'CIV_COLOR_ATLAS',	0, 1),
@@ -98,6 +101,13 @@ VALUES		('BUILDING_D_FOR_QILA_1',	'BUILDINGCLASS_D_FOR_QILA_1',	'TXT_KEY_BUILDIN
 INSERT INTO Buildings 	
 			(Type,					BuildingClass,				Description,					GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	IsDummy)
 VALUES		('BUILDING_D_FOR_WAAG',	'BUILDINGCLASS_D_FOR_WAAG',	'TXT_KEY_BUILDING_D_FOR_WAAG',	0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0,				1);
+------------------------------	
+-- Building_ClassesNeededInCity
+------------------------------		
+INSERT INTO Building_ClassesNeededInCity 	
+			(BuildingType, 				BuildingClassType)
+SELECT		'BUILDING_D_FOR_BARBICAN',	BuildingClassType
+FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_ARMORY';
 ------------------------------	
 -- Building_BuildingClassYieldChanges
 ------------------------------

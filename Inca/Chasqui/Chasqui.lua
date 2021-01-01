@@ -7,6 +7,8 @@
 function Chasquiwasi(iPlayer)
 	local pPlayer = Players[iPlayer]
 
+	if (pPlayer:GetNumUnitPromotions(GameInfoTypes.PROMOTION_UNIT_INCA_CHASQUIWASI)) == 0 then return end
+
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_INCA_CHASQUIWASI) then
 			if Map.GetPlot(pUnit:GetX(), pUnit:GetY()):GetOwner() == iPlayer then

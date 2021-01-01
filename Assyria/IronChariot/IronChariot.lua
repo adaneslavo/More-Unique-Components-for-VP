@@ -7,13 +7,7 @@ function IronChariotResourceCheck(iPlayer)
 	local pPlayer = Players[iPlayer]
 	local tIronChariots = {}
 	
-	for pUnit in pPlayer:Units() do
-		if pUnit:GetUnitType() == GameInfoTypes.UNIT_ASSYRIA_IRON_CHARIOT then
-			table.insert(tIronChariots, pUnit)
-		end
-	end
-	
-	if #tIronChariots <= 0 then return end
+	if (pPlayer:GetNumUnitsOfType(GameInfoTypes.UNIT_ASSYRIA_IRON_CHARIOT, 0)) == 0 then return end
 
 	local iResourceBonuses = 0
 	

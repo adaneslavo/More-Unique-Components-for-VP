@@ -7,6 +7,8 @@ include("FLuaVector.lua")
 function YorkscherMarsch(iPlayer)
 	local pPlayer = Players[iPlayer]
 
+	if (pPlayer:GetNumUnitPromotions(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE)) == 0 then return end
+
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE) then
 			local pPlot = pUnit:GetPlot()

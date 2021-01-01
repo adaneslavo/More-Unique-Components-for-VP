@@ -23,6 +23,8 @@ function OnTurnCheckForUpgrade(iPlayer)
 	
 	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationMaya or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
+	if (pPlayer:CountNumBuildings(eBuildingPitz) == 0) then return end
+	
 	local iCounter = math.floor(20 * fGameSpeedModifier3)
 	
 	if Game.GetElapsedGameTurns() % iCounter ~= 0 then return end

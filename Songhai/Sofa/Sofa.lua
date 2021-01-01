@@ -9,6 +9,9 @@ local eUnitCombatMounted = GameInfoTypes.UNITCOMBAT_MOUNTED
 
 function HorseDaddy(iPlayer)
 	local pPlayer = Players[iPlayer]
+	
+	if (pPlayer:GetNumUnitPromotions(iSofa)) == 0 then return end
+	
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsMounted() or pUnit:GetUnitCombatType() == eUnitCombatMounted then
 			pUnit:SetHasPromotion(iHorseDadEffect, pUnit:IsWithinDistanceOfUnitPromotion(iSofa, 2, true, false))

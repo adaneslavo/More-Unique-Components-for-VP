@@ -27,6 +27,9 @@ UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'BUGFIX_DUMMY_POLICIES';
 -- Melting Great Turkish Bombard
 UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_BATTLES';
 
+-- Latifundia Pillage
+UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'PILLAGE_PERMANENT_IMPROVEMENTS';
+
 -- Holkan's Goody Huts Bonus
 UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_GOODY_CHOICE';
 

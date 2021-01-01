@@ -7,7 +7,7 @@
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 		BuildingClassType, 		BuildingType)
 VALUES	('CIVILIZATION_POLAND',	'BUILDINGCLASS_CASTLE',	'BUILDING_POLAND_BARBICAN'),
-		('CIVILIZATION_POLAND',	'BUILDINGCLASS_ARMORY',	null);
+		('CIVILIZATION_POLAND',	'BUILDINGCLASS_ARMORY',	'BUILDING_D_FOR_BARBICAN');
 --==========================================================================================================================	
 
 --==========================================================================================================================
@@ -33,7 +33,11 @@ VALUES	('BUILDING_POLAND_ATLAS', 			256, 		'BarbicanPicture_256.dds',			1, 				1
 INSERT INTO Buildings 	
 			(Type,						BuildingClass,	GoldMaintenance, Cost,		FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,		RangedStrikeModifier, ExtraCityHitPoints,		TrainedFreePromotion, CitySupplyFlat,	CitySupplyModifier, EmpireNeedsModifier, DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech,		ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, DisplayPosition,	Help,										Description,						Civilopedia,								Strategy,										IconAtlas,					PortraitIndex)
 SELECT		'BUILDING_POLAND_BARBICAN', BuildingClass,	GoldMaintenance, Cost+100,	FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense+100,	RangedStrikeModifier, ExtraCityHitPoints+25,	TrainedFreePromotion, CitySupplyFlat+2,	CitySupplyModifier, EmpireNeedsModifier, DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_STEEL',	ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, DisplayPosition,	'TXT_KEY_BUILDING_POLAND_BARBICAN_HELP',	'TXT_KEY_BUILDING_POLAND_BARBICAN', 'TXT_KEY_BUILDING_POLAND_BARBICAN_TEXT',	'TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY',	'BUILDING_POLAND_ATLAS',	0
-FROM Buildings WHERE Type = 'BUILDING_CASTLE';	
+FROM Buildings WHERE Type = 'BUILDING_CASTLE';
+
+INSERT INTO Building_Flavors 	
+			(BuildingType, 					FreeBuildingThisCity)
+VALUES		('BUILDING_POLAND_BARBICAN',	'BUILDING_D_FOR_BARBICAN')
 ------------------------------	
 -- Building_Flavors
 ------------------------------		

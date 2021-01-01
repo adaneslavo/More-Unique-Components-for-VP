@@ -16,6 +16,8 @@ function OnTurnBuffCivilians(iPlayer)
 	
 	if not pPlayer:IsAlive() then return end
 	
+	if (pPlayer:GetNumUnitPromotions(GameInfoTypes.PROMOTION_UNIT_HUNS_MIGRATION)) == 0 then return end
+
 	local iCivilianNumber = pPlayer:GetUnitClassCount(eUnitWorker) + pPlayer:GetUnitClassCount(eUnitSettler)
 
 	if iCivilianNumber > 0 then

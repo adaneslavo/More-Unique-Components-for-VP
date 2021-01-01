@@ -598,13 +598,13 @@
 			<Text>Eagle</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_TEXT">
-			<Text>One of the two elite class of infantry (the other being the Jaguar Warriors) in the Aztec army, the Eagle Warriors were the bravest young men of noble birth and/or those who had taken the most prisoners in battle. Like the Jaguars, the Eagles used the atlatl, bow, spear and macuahuitl (wooden swords set with obsidian shards); unlike the Jaguars, the Eagles decorated their armor with eagle feathers and wore a headdress shaped like the head of an eagle with the beak wide open. Upon taking 20 prisoners – intact enough to serve as human sacrifice – a young warrior was eligible to become an Eagle Warrior, no doubt making his family very proud. Until the Spanish arrived with their cannons, muskets, and horses, the Eagle and Jaguar warriors were the toughest bullies on the Mesoamerican block.</Text>
+			<Text>One of the two elite class of infantry (the other being the Jaguars) in the Aztec army, the Eagle Warriors were the bravest young men of noble birth and/or those who had taken the most prisoners in battle. Like the Jaguars, the Eagles used the atlatl, bow, spear and macuahuitl (wooden swords set with obsidian shards); unlike the Jaguars, the Eagles decorated their armor with eagle feathers and wore a headdress shaped like the head of an eagle with the beak wide open. Upon taking 20 prisoners – intact enough to serve as human sacrifice – a young warrior was eligible to become an Eagle Warrior, no doubt making his family very proud. Until the Spanish arrived with their cannons, muskets, and horses, the Eagle and Jaguar warriors were the toughest bullies on the Mesoamerican block.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY">
-			<Text>The Eagle is the unique Aztec replacement for the Swordsman. It does not require Iron to build. It has increased vision, and has a chance of capturing defeated enemy units as Workers.</Text>
+			<Text>The Eagle is the unique Aztec replacement for the Swordsman. It does not require Iron to build. It has increased vision, and has a chance of capturing defeated enemy units as Workers with increased improvement speed.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_HELP">
-			<Text>Strong, front-line Unit of the Classical Era. Only the Aztecs may build it. Does not require [ICON_RES_IRON] Iron. 25% chance of converting any unit killed into a [ICON_WORKER] Worker. Starts with the [COLOR_POSITIVE_TEXT]Sentry[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] Promotions.</Text>
+			<Text>Strong, front-line Unit of the Classical Era. Only the Aztecs may build it. Does not require [ICON_RES_IRON] Iron. 25% chance of converting any unit killed into a [ICON_WORKER] Worker with an increased work rate. Starts with the [COLOR_POSITIVE_TEXT]Sentry[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] Promotions.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_1">
 			<Text>Cuauhocelotl</Text>
@@ -644,6 +644,12 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR_HELP">
 			<Text>Chance to [COLOR_POSITIVE_TEXT]spawn a Worker on Kill[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_TLACOTIN">
+			<Text>Tlacotin</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_UNIT_AZTEC_TLACOTIN_HELP">
+			<Text>+25% Work Rate when building Improvements or Routes.</Text>
 		</Row>
 		<!-- Examination Hall -->
 		<!-- Created by Blue Ghost-->

@@ -11,6 +11,8 @@ local iPraefectusEffect = GameInfoTypes.PROMOTION_UNIT_ROME_PRAEFECTUS_CASTRORUM
 function LegatusAndPraefectus(iPlayer)
 	local pPlayer = Players[iPlayer];
 
+	if (pPlayer:GetNumUnitPromotions(GameInfoTypes.iPraefectus) + pPlayer:GetNumUnitPromotions(GameInfoTypes.iLegatus)) == 0 then return end
+
 	for pUnit in pPlayer:Units() do
 		if pUnit:IsHasPromotion(iLegatus) or pUnit:IsHasPromotion(iPraefectus) then
 			if pUnit:IsHasPromotion(iLegatus) then

@@ -5,6 +5,8 @@
 function VikingsExplorationEmbarkation(playerID)
 	local player = Players[playerID]
 
+	if (pPlayer:GetNumUnitPromotions(GameInfoTypes.PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION)) == 0 then return end
+
 	for unit in player:Units() do
 		if unit:IsEmbarked() then
 			local sameTile = false

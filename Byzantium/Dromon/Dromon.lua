@@ -33,9 +33,15 @@ end
 function FireFromGreekFire(iPlayer)
 	local pPlayer = Players[iPlayer]
 	
+	local GreekFire1 = GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_1
+	local GreekFire2 = GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2
+	local GreekFire3 = GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3
+	
+	if ((pPlayer:GetNumUnitPromotions(GreekFire1) + pPlayer:GetNumUnitPromotions(GreekFire2) + pPlayer:GetNumUnitPromotions(GreekFire3))) == 0 then return end
+	
 	for pUnit in pPlayer:Units() do
-		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_1) then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_1, false)
+		if pUnit:IsHasPromotion(GreekFire1) then
+			pUnit:SetHasPromotion(GreekFire1, false)
 			pUnit:ChangeDamage(10)
 			
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -43,8 +49,8 @@ function FireFromGreekFire(iPlayer)
 			
 				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Fire[ENDCOLOR]", 1.5)
 			end
-		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2) then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_2, false)
+		elseif pUnit:IsHasPromotion(GreekFire2) then
+			pUnit:SetHasPromotion(GreekFire2, false)
 			pUnit:ChangeDamage(20)
 
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
@@ -52,8 +58,8 @@ function FireFromGreekFire(iPlayer)
 			
 				Events.AddPopupTextEvent(vUnitPosition, "[COLOR_RED]Huge fire[ENDCOLOR]", 1.5)
 			end
-		elseif pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3) then
-			pUnit:SetHasPromotion(GameInfoTypes.PROMOTION_UNIT_BYZANTIUM_GREEK_FIRE_3, false)
+		elseif pUnit:IsHasPromotion(GreekFire3) then
+			pUnit:SetHasPromotion(GreekFire3, false)
 			pUnit:ChangeDamage(30)
 
 			if pPlayer:IsHuman() and pPlayer:IsTurnActive() then

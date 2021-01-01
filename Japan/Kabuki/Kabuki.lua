@@ -110,53 +110,53 @@ function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
 	local pPlot = Map.GetPlot(iX, iY)
 	
 	if pUnit:GetUnitType() == GameInfoTypes.UNIT_WRITER and (pPlayer:CountNumBuildings(eBuildingMonogatari) > 0) then 
-		local iWriterBonus = math.floor(pUnit:GetGivePoliciesCulture()*0.03*pPlayer:CountNumBuildings(eBuildingMonogatari))
+		local iWriterBonus = math.floor(pUnit:GetGivePoliciesCulture()*0.02*pPlayer:CountNumBuildings(eBuildingMonogatari))
 		pPlayer:ChangeGold(iWriterBonus)
-		pPlayer:ChangeJONSCulture(iWriterBonus)
+--		pPlayer:ChangeJONSCulture(iWriterBonus)
 		
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local vUnitPosition = PositionCalculator(iX, iY)
 
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+"..iWriterBonus.."[ICON_CULTURE][ENDCOLOR]", 1)
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iWriterBonus.."[ICON_GOLD][ENDCOLOR]", 1.5)
+--			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+"..iWriterBonus.."[ICON_CULTURE][ENDCOLOR]", 1)
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_YIELD_GOLD]+"..iWriterBonus.."[ICON_GOLD][ENDCOLOR]", 1)
 
 			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC,
-				'A Great Writer has emerged. The Monogatari guilds celebrate.',
+				'A Great Writer has emerged. +'..iWriterBonus..' [ICON_GOLD] Gold from Monogatari guilds.',
 				'Yields from Monogatari Guilds',
 				iX, iY)
 		end
 	
 	elseif pUnit:GetUnitType() == GameInfoTypes.UNIT_ARTIST and (pPlayer:CountNumBuildings(eBuildingUkiyoe) > 0) then 
-		local iArtistBonus = math.floor(pUnit:GetGAPAmount()*0.03*pPlayer:CountNumBuildings(eBuildingUkiyoe))
+		local iArtistBonus = math.floor(pUnit:GetGAPAmount()*0.01*pPlayer:CountNumBuildings(eBuildingUkiyoe))
 		pPlayer:ChangeOverflowResearch(iArtistBonus)
-		pPlayer:ChangeGoldenAgeProgressMeter(iArtistBonus)
+--		pPlayer:ChangeGoldenAgeProgressMeter(iArtistBonus)
 
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local vUnitPosition = PositionCalculator(iX, iY)
 
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+"..iArtistBonus.."[ICON_GOLDEN_AGE][ENDCOLOR]", 1)
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+"..iArtistBonus.."[ICON_RESEARCH][ENDCOLOR]", 1.5)
+--			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+"..iArtistBonus.."[ICON_GOLDEN_AGE][ENDCOLOR]", 1)
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_BLUE]+"..iArtistBonus.."[ICON_RESEARCH][ENDCOLOR]", 1)
 
 			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC,
-				'A Great Artist has emerged. The Ukiyo-e guilds celebrate.',
+				'A Great Artist has emerged. +'..iArtistBonus..' [ICON_RESEARCH] Science from Ukiyo-e guilds.',
 				'Yields from Ukiyo-e Guilds',
 				iX, iY)
 		end
 
 	elseif pUnit:GetUnitType() == GameInfoTypes.UNIT_MUSICIAN and (pPlayer:CountNumBuildings(eBuildingGagaku) > 0) then 
 		local iMusicianBonus = math.floor(pUnit:GetBlastTourism()*0.03*pPlayer:CountNumBuildings(eBuildingGagaku))
-		local iTourismEvent = GameInfoTypes['PLAYER_EVENT_CHOICE_GAGAKU_TOURISM']
+--		local iTourismEvent = GameInfoTypes['PLAYER_EVENT_CHOICE_GAGAKU_TOURISM']
 		pPlayer:ChangeFaith(iMusicianBonus)
-		pPlayer:DoEventChoice(iTourismEvent)
-		pPlayer:DoCancelEventChoice(iTourismEvent)
+--		pPlayer:DoEventChoice(iTourismEvent)
+--		pPlayer:DoCancelEventChoice(iTourismEvent)
 
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
 			local vUnitPosition = PositionCalculator(iX, iY)
 
-			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+"..iMusicianBonus.."[ICON_PEACE][ENDCOLOR]", 1.5)
+			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+"..iMusicianBonus.."[ICON_PEACE][ENDCOLOR]", 1)
 
 			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC,
-				'A Great Musician has emerged. The Gagaku guilds celebrate.',
+				'A Great Musician has emerged. +'..iMusicianBonus..' [ICON_PEACE] Science from Gagaku guilds.',
 				'Yields from Gagaku Guilds',
 				iX, iY)
 		end

@@ -17,11 +17,16 @@ function OnTurnUpdateYieldsFromStrategic(iPlayer)
 	
 	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationSiam or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
-	for city in pPlayer:Cities() do
-		if city:IsHasBuilding(eBuildingBaanChang) then
-			local iStrategicResourcesFromMinors = 0.5 * (pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_HORSE) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_IRON) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_COAL) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_OIL) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_ALUMINUM) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_URANIUM))
+	local iNumberOfBaans = pPlayer:CountNumBuildings(eBuildingBaanChang)
+		
+	if iNumberOfBaans > 0 then
+	
+		for city in pPlayer:Cities() do
+			if city:IsHasBuilding(eBuildingBaanChang) then
+				local iStrategicResourcesFromMinors = 0.5 * (pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_HORSE) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_IRON) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_COAL) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_OIL) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_ALUMINUM) + pPlayer:GetResourceFromMinors(GameInfoTypes.RESOURCE_URANIUM))
 			
-			city:SetNumRealBuilding(eBuildingDummyForBaanChang, iStrategicResourcesFromMinors)
+				city:SetNumRealBuilding(eBuildingDummyForBaanChang, iStrategicResourcesFromMinors)
+			end
 		end
 	end
 end

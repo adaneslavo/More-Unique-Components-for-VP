@@ -14,6 +14,8 @@ function OnTurnAddMonopolyBonus (iPlayer)
 	
 	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationNetherlands or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
+	if (pPlayer:CountNumBuildings(eBuildingWaag) == 0) then return end
+	
 	local iMonopolyCounter = 0
 	
 	for resource in GameInfo.Resources() do

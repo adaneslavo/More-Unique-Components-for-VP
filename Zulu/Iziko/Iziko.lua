@@ -14,6 +14,9 @@ function OnLevelCityGainCulture(iPlayer, iUnit, iPromotionType)
 	
 	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationZulu or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
 	
+	if (pPlayer:CountNumBuildings(eBuildingIziko) == 0) then return end
+
+	
 	local pUnit = pPlayer:GetUnitByID(iUnit)
 	local iGain = math.max(pUnit:GetLevel(), 0)
 	local bHasIziko = false
