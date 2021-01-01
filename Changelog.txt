@@ -6,6 +6,13 @@ More Unique Components for Vox Populi changelog:
 v62:
 - Reworked:
 	- Arabian Madrasa replaced with Bimaristsan (mainly aesthetic change)
+- tweaked/modified:
+	- Japan Guilds nerfed significantly. % of total bulb reduced on 2 guilds, only give 1 type of yield now.
+	- Aztec Eagle. captured workers have Prisoner of War promotion (-50% work rate), but also get a permanent promotion with +25 work rate
+		- Net -25/+25 work rate before/after 50 turns
+	- Icon updates for Seir Morb and Klepht
+Bug Fixes
+	- Code optimizations for 7 units and 4 buildings to help with mid/late game stability
 
 v61:
 - Reworked:
