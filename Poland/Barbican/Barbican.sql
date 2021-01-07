@@ -7,7 +7,7 @@
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 		BuildingClassType, 		BuildingType)
 VALUES	('CIVILIZATION_POLAND',	'BUILDINGCLASS_CASTLE',	'BUILDING_POLAND_BARBICAN'),
-		('CIVILIZATION_POLAND',	'BUILDINGCLASS_ARMORY',	'BUILDING_D_FOR_BARBICAN');
+		('CIVILIZATION_POLAND',	'BUILDINGCLASS_ARMORY',	NONE);
 --==========================================================================================================================	
 
 --==========================================================================================================================
@@ -31,13 +31,9 @@ VALUES	('BUILDING_POLAND_ATLAS', 			256, 		'BarbicanPicture_256.dds',			1, 				1
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-			(Type,						BuildingClass,	GoldMaintenance, Cost,		FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,		RangedStrikeModifier, ExtraCityHitPoints,		TrainedFreePromotion, CitySupplyFlat,	CitySupplyModifier, EmpireNeedsModifier, DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech,		ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, DisplayPosition,	Help,										Description,						Civilopedia,								Strategy,										IconAtlas,					PortraitIndex)
-SELECT		'BUILDING_POLAND_BARBICAN', BuildingClass,	GoldMaintenance, Cost+100,	FaithCost,	EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense+100,	RangedStrikeModifier, ExtraCityHitPoints+25,	TrainedFreePromotion, CitySupplyFlat+2,	CitySupplyModifier, EmpireNeedsModifier, DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_STEEL',	ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, DisplayPosition,	'TXT_KEY_BUILDING_POLAND_BARBICAN_HELP',	'TXT_KEY_BUILDING_POLAND_BARBICAN', 'TXT_KEY_BUILDING_POLAND_BARBICAN_TEXT',	'TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY',	'BUILDING_POLAND_ATLAS',	0
+			(Type,						BuildingClass, GoldMaintenance, Cost,		FaithCost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense,		RangedStrikeModifier, ExtraCityHitPoints,		TrainedFreePromotion, CitySupplyFlat,	CitySupplyModifier, EmpireNeedsModifier, DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, PrereqTech,		ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, DisplayPosition,	Help,										Description,						Civilopedia,								Strategy,										IconAtlas,					PortraitIndex)
+SELECT		'BUILDING_POLAND_BARBICAN', BuildingClass, GoldMaintenance, Cost+100,	FaithCost, EnhancedYieldTech, TechEnhancedTourism, AllowsRangeStrike, Defense+100,	RangedStrikeModifier, ExtraCityHitPoints+25,	TrainedFreePromotion, CitySupplyFlat+2,	CitySupplyModifier, EmpireNeedsModifier, DefenseHappinessChange,	GreatPeopleRateModifier, GreatWorkSlotType, GreatWorkCount, FreshWater, FreeStartEra, Happiness, NeverCapture, 'TECH_STEEL',	ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, DisplayPosition,	'TXT_KEY_BUILDING_POLAND_BARBICAN_HELP',	'TXT_KEY_BUILDING_POLAND_BARBICAN', 'TXT_KEY_BUILDING_POLAND_BARBICAN_TEXT',	'TXT_KEY_BUILDING_POLAND_BARBICAN_STRATEGY',	'BUILDING_POLAND_ATLAS',	0
 FROM Buildings WHERE Type = 'BUILDING_CASTLE';
-
-INSERT INTO Building_Flavors 	
-			(BuildingType, 					FreeBuildingThisCity)
-VALUES		('BUILDING_POLAND_BARBICAN',	'BUILDING_D_FOR_BARBICAN')
 ------------------------------	
 -- Building_Flavors
 ------------------------------		
@@ -68,7 +64,8 @@ VALUES		('BUILDING_POLAND_BARBICAN',	'DOMAIN_LAND',	25),
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 					YieldType,			Yield)
-VALUES		('BUILDING_POLAND_BARBICAN',	'YIELD_CULTURE',	3),
+VALUES		('BUILDING_POLAND_BARBICAN',	'YIELD_PRODUCTION',	1),
+			('BUILDING_POLAND_BARBICAN',	'YIELD_GOLD',		1),
 			('BUILDING_POLAND_BARBICAN',	'YIELD_SCIENCE',	3);
 ------------------------------	
 -- Building_ImprovementYieldChanges

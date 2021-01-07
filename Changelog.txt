@@ -13,6 +13,8 @@ v62:
 	- Icon updates for Seir Morb and Klepht
 Bug Fixes
 	- Code optimizations for 7 units and 4 buildings to help with mid/late game stability
+	- Latifundia fix to give modmod compatibility
+	- upcoming modmod compatibility fix for Kabuki and Barbican
 
 v61:
 - Reworked:

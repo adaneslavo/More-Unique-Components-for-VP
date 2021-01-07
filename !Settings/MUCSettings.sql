@@ -56,3 +56,7 @@ UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_RED_TURN';
 
 -- Proxenos promotion trigger
 UPDATE CustomModOptions SET Value = 1 WHERE Name = 'EVENTS_UNIT_PREKILL';
+
+-- Kabuki and Barbican unique integration
+UPDATE CustomModOptions SET Value = 1 WHERE Name = 'BUILDINGS_THOROUGH_PREREQUISITES';
+

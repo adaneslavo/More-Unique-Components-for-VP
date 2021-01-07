@@ -97,10 +97,11 @@ VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_CURRENCY',		'YIELD_GOLD',		2),
 
 INSERT INTO Improvement_ResourceTypes	
 			(ImprovementType, 							ResourceType,			ResourceMakesValid,	ResourceTrade)
-VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_WHEAT',		1,					1),			
-			
+VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_WHEAT',		1,					1);	
+
+INSERT INTO Improvement_ResourceTypes	
 			(ImprovementType,				ResourceType,	ResourceMakesValid,		ResourceTrade)
-SELECT		'IMPROVEMENT_SPAIN_HACIENDA',	ResourceType,	1,						1
+SELECT		'IMPROVEMENT_ROME_LATIFUNDIUM',	ResourceType,	1,						1
 FROM Improvement_ResourceTypes WHERE ImprovementType = 'IMPROVEMENT_PLANTATION';
 
 CREATE TRIGGER VP_LatifundiaCompatibility_Resource1

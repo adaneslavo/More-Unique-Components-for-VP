@@ -44,7 +44,7 @@ function OnConstructionBuildDummyArmory(iPlayer, iCity, iBuilding)
 			local pCity = pPlayer:GetCityByID(iCity)
 			local pPlot = Map.GetPlot(pCity:GetX(), pCity:GetY())
 
---			pCity:SetNumRealBuilding(eBuildingDummyForBarbican, 1)
+			pCity:SetNumRealBuilding(eBuildingDummyForBarbican, 1)
 			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_BARBICAN_DUMMY)
 		end
 	end
