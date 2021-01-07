@@ -77,7 +77,7 @@ VALUES		('UNIT_AZTEC_EAGLE', 'PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR'),
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-			(Type,										Description,									Help,													CannotBeChosen,		LostWithUpgrade,	WorkRate, 			ModSound,			PortraitIndex,	IconAtlas,				PediaType,				PediaEntry)
+			(Type,										Description,									Help,													CannotBeChosen,		LostWithUpgrade,	WorkRateMod,		Sound,				PortraitIndex,	IconAtlas,				PediaType,				PediaEntry)
 VALUES		('PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR_HELP',	1,					0, 					0, 					'AS2D_IF_LEVELUP',	7,				'promoMUC_atlas_00',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CAPTIVES_OF_WAR'),
 			('PROMOTION_UNIT_AZTEC_TLACOTIN',			'TXT_KEY_PROMOTION_UNIT_AZTEC_TLACOTIN',		'TXT_KEY_PROMOTION_UNIT_AZTEC_TLACOTIN_HELP',			1,					0, 					25, 				'AS2D_IF_LEVELUP',	7,				'promoMUC_atlas_00',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AZTEC_TLACOTIN'),
 			('PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_1',		'TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_1',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_1_HELP',		1,					1, 					0, 					'AS2D_IF_LEVELUP',	8,				'promoMUC_atlas_00',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AZTEC_CUAUHOCELOTL_1'),
