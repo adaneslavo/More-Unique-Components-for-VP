@@ -7,7 +7,7 @@
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 		BuildingClassType, 		BuildingType)
 VALUES	('CIVILIZATION_POLAND',	'BUILDINGCLASS_CASTLE',	'BUILDING_POLAND_BARBICAN'),
-		('CIVILIZATION_POLAND',	'BUILDINGCLASS_ARMORY',	NONE);
+		('CIVILIZATION_POLAND',	'BUILDINGCLASS_ARMORY',	null);
 --==========================================================================================================================	
 
 --==========================================================================================================================
