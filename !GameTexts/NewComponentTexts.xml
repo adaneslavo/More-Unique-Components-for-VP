@@ -1054,10 +1054,10 @@
 			<Text>Monogatari are a classical form of Japanses literature which gained popularity during the 10th century Heian period. Monogatari were traditionally epics and semi-religious tales, but later works included secular stories of courtly life, including Genji Monogatari, widely regarded as the first novel. Many of the most prolific and successful writers of Monogatari were noble women.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI_STRATEGY">
-			<Text>The Monogatari Guild is the unique Japanese replacement for the Writers' Guild. It generates Great Writers more quickly than the Writers' Guild, gives Gold for Writer specialists in the City, and provides Culture and Gold whenever a Great Artist is born on Empire.</Text>
+			<Text>The Monogatari Guild is the unique Japanese replacement for the Writers' Guild. It generates Great Writers more quickly than the Writers' Guild, gives Gold for Writer specialists in the City, and provides Gold whenever a Great Artist is born on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI_HELP">
-			<Text>Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold to Writer specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Musician[ENDCOLOR] is born, Gain [ICON_CULTURE] Culture and [ICON_GOLD] Gold equal to 3% of the writer's potential [ICON_CULTURE] Culture from a [COLOR_POSITIVE_TEXT]Political Treatise[ENDCOLOR].</Text>
+			<Text>Generates [ICON_GREAT_WRITER] Great Writers, and contains slots for Writer Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold to Writer specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Musician[ENDCOLOR] is born, Gain [ICON_GOLD] Gold equal to 2% of the writer's potential [ICON_CULTURE] Culture from a [COLOR_POSITIVE_TEXT]Political Treatise[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE">
 			<Text>Ukiyo-e Guild</Text>
@@ -1066,10 +1066,10 @@
 			<Text>Ukiyo-e is a style of Japanese painting on woodblocks which flourished in the 17th century. The production of ukiyo-e was a collaborative affair, often with a separate painter who crafted the designs, a woodcarver who crafted the woodblock, and a printer who inked and reproduced the artwork. The striking angles, shapes and colours of Ukiyo-e would leave a lasting impression on Western art, informing the impressionist and modernist movements.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE_STRATEGY">
-			<Text>The Ukiyo-e Guild is the unique Japanese replacement for the Artists' Guild. It generates Great Artists more quickly than the Artists' Guild, gives Science for Artist specialists in the City, and provides Science and Golden Age Points whenever a Great Artist is born on Empire.</Text>
+			<Text>The Ukiyo-e Guild is the unique Japanese replacement for the Artists' Guild. It generates Great Artists more quickly than the Artists' Guild, gives Science for Artist specialists in the City, and provides Science whenever a Great Artist is born on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_UKIYOE_HELP">
-			<Text>Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science to Artist specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Artist[ENDCOLOR] is born, gain [ICON_RESEARCH] Science and [ICON_GOLDEN_AGE] Golden Age Points equal to 3% of the artist's potential [ICON_GOLDEN_AGE] Golden Age Points from [COLOR_POSITIVE_TEXT]Starting a Golden Age[ENDCOLOR].</Text>
+			<Text>Generates [ICON_GREAT_ARTIST] Great Artists, and contains slots for Artist Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science to Artist specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Artist[ENDCOLOR] is born, gain [ICON_RESEARCH] Science equal to 1% of the artist's potential [ICON_GOLDEN_AGE] Golden Age Points from [COLOR_POSITIVE_TEXT]Starting a Golden Age[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU">
 			<Text>Gagaku Guild</Text>
@@ -1078,10 +1078,10 @@
 			<Text>Gagaku is the oldest existing form of orchestral music in the world. The style was brought in from mainland China in the 6th century, and reached its peak in the 10th century's imperial court. Modern ensembles consist of three wind instruments, three percussion instruments, and a supporting string instrument.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU_STRATEGY">
-			<Text>The Gagaku Guild is the unique Japanese replacement for the Musicians' Guild. It generates Great Musicians more quickly than the Musicians' Guild, gives Faith for Musician and Civil Servant specialists in the City, and provides Tourism and Faith whenever a Great Artist is born on Empire.</Text>
+			<Text>The Gagaku Guild is the unique Japanese replacement for the Musicians' Guild. It generates Great Musicians more quickly than the Musicians' Guild, gives Faith for Musician and Civil Servant specialists in the City, and provides Faith whenever a Great Musician is born on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU_HELP">
-			<Text>Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith to Musician specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Musician[ENDCOLOR] is born, Gain 200 [ICON_TOURISM] Tourism and [ICON_PEACE] Faith equal to 3% of the musician's potential [ICON_TOURISM] Tourism from a [COLOR_POSITIVE_TEXT]Concert Tour[ENDCOLOR].</Text>
+			<Text>Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith to Musician specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Musician[ENDCOLOR] is born, Gain [ICON_PEACE] Faith equal to 3% of the musician's potential [ICON_TOURISM] Tourism from a [COLOR_POSITIVE_TEXT]Concert Tour[ENDCOLOR].</Text>
 		</Row>
 		
 		<!-- Kampong -->
