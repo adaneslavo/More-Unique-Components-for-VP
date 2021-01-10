@@ -2,9 +2,7 @@
 -- Author: adan_eslavo
 -- DateCreated: 20/10/2017
 --------------------------------------------------------------
-local eBuildingBarbican = GameInfoTypes.BUILDING_POLAND_BARBICAN
 local eCivilizationPoland = GameInfoTypes.CIVILIZATION_POLAND
---local eBuildingDummyForBarbican = GameInfoTypes.BUILDING_D_FOR_BARBICAN
 --local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 --local ePromotionBarbican = GameInfoTypes.PROMOTION_UNIT_POLAND_BARBICAN
 
@@ -40,11 +38,11 @@ function OnConstructionBuildDummyArmory(iPlayer, iCity, iBuilding)
 	local pPlayer = Players[iPlayer]
 
 	if pPlayer and pPlayer:GetCivilizationType() == eCivilizationPoland then
-		if iBuilding == eBuildingBarbican then
+		if iBuilding == GameInfoTypes.BUILDING_POLAND_BARBICAN then
 			local pCity = pPlayer:GetCityByID(iCity)
 			local pPlot = Map.GetPlot(pCity:GetX(), pCity:GetY())
 
-			pCity:SetNumRealBuilding(eBuildingDummyForBarbican, 1)
+			pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_D_FOR_BARBICAN, 1)
 			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_BARBICAN_DUMMY)
 		end
 	end
