@@ -144,7 +144,7 @@ function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
 		end
 
 	elseif pUnit:GetUnitType() == GameInfoTypes.UNIT_MUSICIAN and (pPlayer:CountNumBuildings(eBuildingGagaku) > 0) then 
-		local iMusicianBonus = math.floor(pUnit:GetBlastTourism()*0.03*pPlayer:CountNumBuildings(eBuildingGagaku))
+		local iMusicianBonus = math.floor(pUnit:GetTourismBlastStrength()*0.03*pPlayer:CountNumBuildings(eBuildingGagaku))
 --		local iTourismEvent = GameInfoTypes['PLAYER_EVENT_CHOICE_GAGAKU_TOURISM']
 		pPlayer:ChangeFaith(iMusicianBonus)
 --		pPlayer:DoEventChoice(iTourismEvent)

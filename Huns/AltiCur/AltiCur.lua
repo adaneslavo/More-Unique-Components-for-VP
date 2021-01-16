@@ -7,14 +7,12 @@ local eAltiCurEvent = GameInfoTypes.PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS
 local eBuildingAltiCur = GameInfoTypes.BUILDING_HUNS_ALTI_CUR
 local eCivilizationHuns = GameInfoTypes.CIVILIZATION_HUNS
 
--- adds gold and 6 turn of happiness after demanding tribute from CS
-function OnDemandTributeAddGoldAndHappiness(iPlayer, iCS)
+-- adds 6 happiness after demanding tribute from CS for 10 turns
+function OnDemandTributeAddHappiness(iPlayer, iCS)
 	local pPlayer = Players[iPlayer]
 	
 	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationHuns) then return end
-	
 	local iNumberOfAltiCurs = pPlayer:CountNumBuildings(eBuildingAltiCur)
-
 	local pCityWithAltiCur
 
 	if iNumberOfAltiCurs > 0 then 
@@ -54,6 +52,35 @@ function PositionCalculator(i1, i2)
 	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
 end
 
+-- adds gold For every CS that you can bully
+function OnTurnHunsBullyCheck(iPlayer)
+	local pPlayer = Players[iPlayer]
+	
+	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationHuns) then return end
+	
+	if (pPlayer:CountNumBuildings(eBuildingAltiCur) == 0) then return end
+	
+	local pCapital = pPlayer:GetCapitalCity()
+	
+	local iBullyCounter = 0
+	
+	for player in pairs(Players) do
+		player
+
+		if player and player:IsMinorCiv() then 
+
+			if player:CanMajorBullyGold(pPlayer) then
+				iBullyCounter = iBullyCounter + 1
+			end
+		end
+	end
+	pCapital:SetNumRealBuilding(GameInfoTypes.BUILDING_D_FOR_ALTICUR, iBullyCounter)
+end
+
+
+
 if Game.IsCivEverActive(eCivilizationHuns) then
-	GameEvents.PlayerBullied.Add(OnDemandTributeAddGoldAndHappiness)
+	GameEvents.PlayerBullied.Add(OnDemandTributeAddHappiness)
+	GameEvents.PlayerDoTurn.Add(OnTurnHunsBullyCheck)
+
 end

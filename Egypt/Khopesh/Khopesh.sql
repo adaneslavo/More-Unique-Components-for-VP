@@ -16,8 +16,8 @@
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,					Description,					Civilopedia,						Strategy,								Help,								Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, ObsoleteTech,		GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, UnitArtInfo,						UnitFlagIconOffset, PortraitIndex,	IconAtlas,			UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_EGYPT_KHOPESH',	'TXT_KEY_UNIT_EGYPT_KHOPESH',	'TXT_KEY_UNIT_EGYPT_KHOPESH_TEXT',	'TXT_KEY_UNIT_EGYPT_KHOPESH_STRATEGY',	'TXT_KEY_UNIT_EGYPT_KHOPESH_HELP',	Combat+3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_GUNPOWDER', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_KHOPESH_SWORDSMAN', 	0,					0,				'UNIT_EGYPT_ATLAS',	'UNIT_EGYPT_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
+			(Type,					Description,					Civilopedia,						Strategy,								Help,								Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, ObsoleteTech,		GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, UnitArtInfo,						UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
+SELECT		'UNIT_EGYPT_KHOPESH',	'TXT_KEY_UNIT_EGYPT_KHOPESH',	'TXT_KEY_UNIT_EGYPT_KHOPESH_TEXT',	'TXT_KEY_UNIT_EGYPT_KHOPESH_STRATEGY',	'TXT_KEY_UNIT_EGYPT_KHOPESH_HELP',	Combat+3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, PrereqTech, 'TECH_GUNPOWDER', GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_KHOPESH_SWORDSMAN', 	0,					0,				'UNIT_KHOPESH_ATLAS',	'UNIT_KHOPESH_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_SPEARMAN';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -121,11 +121,11 @@ INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
 ------------------------------
 INSERT INTO IconTextureAtlases 
 			(Atlas, 								IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_EGYPT_ATLAS', 						256, 		'KhopeshPicture_256.dds',				1, 				1),
-			('UNIT_EGYPT_ATLAS', 						128, 		'KhopeshPicture_128.dds',				1, 				1),
-			('UNIT_EGYPT_ATLAS', 						80, 		'KhopeshPicture_080.dds',				1, 				1),
-			('UNIT_EGYPT_ATLAS', 						45, 		'KhopeshPicture_045.dds',				1, 				1),
-			('UNIT_EGYPT_ATLAS', 						64, 		'KhopeshPicture_064.dds',				1, 				1),
-			('UNIT_EGYPT_FLAG_ATLAS', 					32, 		'KhopeshFlag_032.dds',					1, 				1);
+VALUES		('UNIT_KHOPESH_ATLAS', 						256, 		'KhopeshPicture_256.dds',				1, 				1),
+			('UNIT_KHOPESH_ATLAS', 						128, 		'KhopeshPicture_128.dds',				1, 				1),
+			('UNIT_KHOPESH_ATLAS', 						80, 		'KhopeshPicture_080.dds',				1, 				1),
+			('UNIT_KHOPESH_ATLAS', 						45, 		'KhopeshPicture_045.dds',				1, 				1),
+			('UNIT_KHOPESH_ATLAS', 						64, 		'KhopeshPicture_064.dds',				1, 				1),
+			('UNIT_KHOPESH_FLAG_ATLAS', 				32, 		'KhopeshFlag_032.dds',					1, 				1);
 --==========================================================================================================================
 --==========================================================================================================================
