@@ -65,11 +65,11 @@ function OnTurnHunsBullyCheck(iPlayer)
 	local iBullyCounter = 0
 	
 	for player in pairs(Players) do
-		player
+		
+		local MinorPlayer = Players[player]
+		if (MinorPlayer and MinorPlayer:IsMinorCiv()) then 
 
-		if player and player:IsMinorCiv() then 
-
-			if player:CanMajorBullyGold(pPlayer) then
+			if MinorPlayer:CanMajorBullyGold(pPlayer) then
 				iBullyCounter = iBullyCounter + 1
 			end
 		end

@@ -3,6 +3,13 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v63:
+- Reworked:
+	- Alti Cur gold bonus changed to be per-turn, rather than a bonus on tributing
+- Bug Fixes:
+	- Gagaku Musician yields
+	- Khopesh Art fix
+
 v62:
 - Reworked:
 	- Arabian Madrasa replaced with Bimaristsan (mainly aesthetic change)
