@@ -2479,7 +2479,7 @@
 			<Text>Yellow Brow</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_HELP">
-			<Text>Tenacious Renaissance Era Unit. Only the Shoshone may build it. Has the [COLOR_POSITIVE_TEXT]Anti-cavalry[ENDCOLOR] Promotion, fights at full strength when damaged, and has double combat bonus from fortifying.</Text>
+			<Text>Tenacious Renaissance Era Unit. Only the Shoshone may build it. Has the [COLOR_POSITIVE_TEXT]Formation I[ENDCOLOR] Promotion, fights at full strength when damaged, and has double combat bonus from fortifying.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_STRATEGY">
 			<Text>The Yellow Brow is unmatched for its ability to hold ground. Never one to retreat, the Yellow brow fights at full strength regardless of health, and has double the normal bonus from fortifying. This unit is very effective against enemy cavalry</Text>

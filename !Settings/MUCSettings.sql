@@ -1,5 +1,5 @@
 --Celtic UA change
-UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_FOUND_RELIGION';
+--UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_FOUND_RELIGION';
 
 --CityConstructed/Trained/Prepared
 UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_CITY';
@@ -28,7 +28,7 @@ UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'BUGFIX_DUMMY_POLICIES';
 UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_BATTLES';
 
 -- Latifundia Pillage
-UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'PILLAGE_PERMANENT_IMPROVEMENTS';
+--UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'PILLAGE_PERMANENT_IMPROVEMENTS';
 
 -- Holkan's Goody Huts Bonus
 UPDATE CustomModOptions	SET Value = 1 WHERE Name = 'EVENTS_GOODY_CHOICE';
