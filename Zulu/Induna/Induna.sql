@@ -158,6 +158,7 @@ VALUES		('UNIT_ZULU_INDABA',	'TXT_KEY_UNIT_ZULU_INDABA_1'),
 --Zulu Impi Bonus vs. Gunpowder stays on promotion
 --==========================================================================================================================
 UPDATE UnitPromotions SET LostWithUpgrade = '0' WHERE Type = 'PROMOTION_ANTI_GUNPOWDER';
+UPDATE UnitPromotions SET RangedSupportFire = '0' WHERE Type = 'PROMOTION_ANTI_GUNPOWDER';
 UPDATE UnitPromotions SET LostWithUpgrade = '1' WHERE Type = 'PROMOTION_RANGED_SUPPORT_FIRE';
 UPDATE UnitPromotions SET PediaType = 'PEDIA_MELEE' WHERE Type = 'PROMOTION_RANGED_SUPPORT_FIRE';
 UPDATE UnitPromotions SET CannotBeChosen = '1' WHERE Type = 'PROMOTION_RANGED_SUPPORT_FIRE';

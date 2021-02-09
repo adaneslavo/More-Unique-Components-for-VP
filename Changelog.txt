@@ -3,6 +3,14 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v64:
+- Bug Fixes:
+	- added improvement bonuses to civilopedia pages (Kampong, Monolithic Church, Latifundia)
+	- IsNearbyPromotion re-enabled (it had been deactivated for performance reasons)
+	- fixed University of Coimbra lua
+	- Ranged attack no longer stays on upgrade for Impi
+	- Iron Chariot bonus changed to defense per adjacent enemy unit
+
 v63:
 - Reworked:
 	- Alti Cur gold bonus changed to be per-turn, rather than a bonus on tributing
