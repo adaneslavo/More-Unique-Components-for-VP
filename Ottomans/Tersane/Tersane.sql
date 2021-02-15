@@ -75,14 +75,13 @@ INSERT INTO Building_SeaPlotYieldChanges
 			(BuildingType, 					YieldType,			Yield)
 VALUES		('BUILDING_OTTOMANS_TERSANE',	'YIELD_PRODUCTION',	1),
 			('BUILDING_OTTOMANS_TERSANE',	'YIELD_FOOD',		1);
-------------------------------	
--- Building_UnitCombatProductionModifiers 
-------------------------------		
-INSERT INTO Building_UnitCombatProductionModifiers  	
-			(BuildingType, 					UnitCombatType,				Modifier)
-VALUES		('BUILDING_OTTOMANS_TERSANE',	'UNITCOMBAT_CARGO',			50),
-			('BUILDING_OTTOMANS_TERSANE',	'UNITCOMBAT_NAVALMELEE',	30),
-			('BUILDING_OTTOMANS_TERSANE',	'UNITCOMBAT_NAVALRANGED',	30);
+--------------------------------	
+-- Building_DomainProductionModifiers
+--------------------------------		
+INSERT INTO Building_DomainProductionModifiers 	
+			(BuildingType, 					DomainType, Modifier)
+SELECT		'BUILDING_OTTOMANS_TERSANE',	DomainType, Modifier+15
+FROM Building_DomainProductionModifiers WHERE BuildingType = 'BUILDING_HARBOR';
 ------------------------------	
 -- UnitPromotions_UnitCombats
 ------------------------------		

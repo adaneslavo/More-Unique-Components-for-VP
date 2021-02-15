@@ -19,8 +19,8 @@ VALUES		('CIVILIZATION_AUSTRIA',	'UNITCLASS_RIFLEMAN',	'UNIT_AUSTRIA_LANDWEHR');
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,						Description,						Civilopedia,							Strategy,									Help, 									Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, ObsoleteTech,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_AUSTRIA_LANDWEHR',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_TEXT',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_STRATEGY',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_HELP', 	Combat+3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, 'TECH_COMBINED_ARMS',	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_LANDWEHR', 	0,					0,				'UNIT_AUSTRIA_ATLAS',	'UNIT_AUSTRIA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
+			(Type,						Description,						Civilopedia,							Strategy,									Help, 									Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, ObsoleteTech,			GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 				UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted, NoMinorCivGift)
+SELECT		'UNIT_AUSTRIA_LANDWEHR',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_TEXT',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_STRATEGY',	'TXT_KEY_UNIT_AUSTRIA_LANDWEHR_HELP', 	Combat-3,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, 'TECH_COMBINED_ARMS',	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_LANDWEHR', 	0,					0,				'UNIT_AUSTRIA_ATLAS',	'UNIT_AUSTRIA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted, 1
 FROM Units WHERE Type = 'UNIT_RIFLEMAN';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -86,13 +86,7 @@ VALUES		('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE'),
 --------------------------------	
 INSERT INTO UnitPromotions
 			(Type,											Description,											Help,														CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry,												FriendlyLandsModifier)
-VALUES		('PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP',		1,				'AS2D_IF_LEVELUP',	6,				'promoMUC_atlas_00',	'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		0);
---------------------------------	
--- UnitPromotions_YieldChanges
---------------------------------
-INSERT INTO	UnitPromotions_YieldChanges
-			(PromotionType, 							YieldType,			Yield)
-VALUES		('PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',	'YIELD_CULTURE',	2);
+VALUES		('PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP',		1,				'AS2D_IF_LEVELUP',	43,				'extraPromo_Atlas',		'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		0);
 --==========================================================================================================================	
 
 --==========================================================================================================================

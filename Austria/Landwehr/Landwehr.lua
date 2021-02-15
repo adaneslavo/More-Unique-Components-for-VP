@@ -2,41 +2,28 @@
 -- Author: Blue Ghost, adan_eslavo
 -- DateCreated:
 --------------------------------------------------------------
-include("FLuaVector.lua")
 
-function YorkscherMarsch(iPlayer)
+function GrenzerCombatStrength(iPlayer, iUnit, iPromotionType)
 	local pPlayer = Players[iPlayer]
+	if not (pPlayer and pPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_AUSTRIA) then return end
+	
+	local pUnit = pPlayer:GetUnitByID(iUnit)
+	if (pUnit:GetUnitType() == GameInfoTypes.UNIT_AUSTRIA_LANDWEHR)then
+		local iMarriageCount = 0
 
-	if (pPlayer:GetNumUnitPromotions(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE)) == 0 then return end
-
-	for pUnit in pPlayer:Units() do
-		if pUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE) then
-			local pPlot = pUnit:GetPlot()
-			
-			if pPlot ~= nil then
-				local iImprovementOnTile = pPlot:GetImprovementType()
-				
-				if iImprovementOnTile == GameInfoTypes.IMPROVEMENT_CITADEL or iImprovementOnTile == GameInfoTypes.IMPROVEMENT_FORT then
-					local iOwner = pPlot:GetOwner()
-					local pOwner = Players[iOwner]
-
-					if pOwner == pPlayer then
-						pPlayer:ChangeJONSCulture(2)
-
-						if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-							local vUnitPosition = PositionCalculator(pUnit:GetX(), pUnit:GetY())
-			
-							Events.AddPopupTextEvent(vUnitPosition, "[COLOR_MAGENTA]+2 [ICON_CULTURE] Regimentsmarsche[ENDCOLOR]", 1)
-						end
-					end
+		for player in pairs(Players) do
+			local MinorPlayer = Players[player]
+			if (MinorPlayer:IsAlive() and MinorPlayer:IsMinorCiv()) then
+				if MinorPlayer:IsMarried() then
+					iMarriageCount = (iMarriageCount + 1)
 				end
 			end
 		end
+		pUnit:SetBaseCombatStrength(33 + iMarriageCount)	
 	end
 end
 
-function PositionCalculator(i1, i2)
-	return HexToWorld(ToHexFromGrid(Vector2(i1, i2)))
-end
+GameEvents.UnitPromoted.Add(GrenzerCombatStrength)
 
-GameEvents.PlayerDoTurn.Add(YorkscherMarsch)
+--pPlayer:GetTeam():GetID()
+--or eTeam:IsVassal(pPlayer:GetTeam())

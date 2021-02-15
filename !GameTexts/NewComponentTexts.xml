@@ -1291,28 +1291,25 @@
 			<Text>[ICON_WAR] Military Supplies by this City's population increased by 20%. Increases the City's [ICON_RANGE_STRENGTH] Bombard Strength by 10% and Strike Range by 1. Contains a slot for a [ICON_GREAT_WORK] Great Work of Writing.[NEWLINE][NEWLINE]Empire [ICON_HAPPINESS_3] Needs Modifier is reduced by 5% in this City.</Text>
 		</Row>
 
-		<!-- Landwehr -->
+		<!-- Grenzer -->
 		<!-- Created by Blue Ghost -->
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR">
-			<Text>Landwehr</Text>
+			<Text>Grenzer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_TEXT">
-			<Text>
-				The Austro-Hungarian Dual Monarchy sponsored two separate land armies to defend its Austrian and Hungarian portions. The Kaiserlich-Königliche Landwehr were one of three (or maybe six?) components of the Austrian national defense force between 1868 and 1918, the Austrian counterpart to the Hungarian Honved. Ludwig van Beethoven himself was commissioned to write the marching song for the Bohemian division, now famously known as the Yorkscher Marsch.[NEWLINE[NEWLINE]
-				While the Hungarian Honved was generously supported by their parliament in Budapest, legislators in Vienna generally failed to do the same for the Landwehr, leaving it a skeletal force with only the appearance of parity. Nationalist interests led to a gradual strengthening and improvement of the Landwehr leading up to the First World War, just in time to see the entire Austro-Hungarian Empire collapse for good.
-			</Text>
+			<Text>The men of the Habsburg's military frontier with the Ottomans were composed of a diverse array of client duchies, soldier-settlers, and refugees. These border-men, or Grenzers, developed a fearsome reputation for vigilance, tenacity, and fieldcraft after generations defending their lands from Ottoman raids. When the Muslim threat subsided in the 18th century, the Grenzers became a mainstay of Austro-Hungarian infantry forces in their European conflicts, distinguishing themselves in the Napoleonic wars as a mix between light and line infantry.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_STRATEGY">
-			<Text>The Landwehr is the backbone of the Industrial-era Austrian army. It excels in defending in owned territory and the territory of allied city-states. Each Landwehr can in the empire can also act as a passive source of culture if garrisoned in a city, fort or citadel.</Text>
+			<Text>The Landwehr is the backbone of the Industrial-era Austrian army. It excels in defending in owned territory and the territory of allied city-states. Grenzers are slightly weaker than the Fusiliers they replace, but gain combat strength for each Diplomatic Marriage on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_HELP">
-			<Text>Stalwart defensive Unit. Only Austria may build it. Has additional [ICON_STRENGTH] Combat Bonus when fighting in Territory owned by you or Allied City-States. Generates [ICON_CULTURE] Culture every turn if stationed in a Friendly Fort, Citadel or City.[NEWLINE][NEWLINE]Starts with [COLOR_POSITIVE_TEXT]Field Works[ENDCOLOR]</Text>
+			<Text>Stalwart defensive Unit. Only Austria may build it. Has a [ICON_STRENGTH] Combat Bonus when fighting in Territory owned by you or Allied City-States. Gains additional Combat Strength for each [COLOR_POSITIVE_TEXT]Diplomatic Marriage[ENDCOLOR] on Empire.[NEWLINE][NEWLINE]Starts with [COLOR_POSITIVE_TEXT]Field Works[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE">
-			<Text>Regimentsmarsche</Text>
+			<Text>Grenzer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP">
-			<Text>Unit gains [ICON_CULTURE] Culture if unit [COLOR_POSITIVE_TEXT]is Garrisoned or is standing in a Fort or Citadel inside Owned Territory[ENDCOLOR].</Text>
+			<Text>Gains additional Combat Strength for each [COLOR_POSITIVE_TEXT]Diplomatic Marriage[ENDCOLOR] on Empire.</Text>
 		</Row>
 		
 		<!-- Langskib -->
@@ -2478,7 +2475,7 @@
 			<Text>Big Horse Dance</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_HELP">
-			<Text>Adds [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]on Fortifying[ENDCOLOR]. Fights at full strength when damaged.</Text>
+			<Text>Adds [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]on Fortifying[ENDCOLOR]. Is stronger when damaged.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE_PERFORMED">
 			<Text>Big Horse Dance Performed</Text>
@@ -2490,7 +2487,7 @@
 			<Text>Yellow Brow</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_HELP">
-			<Text>Tenacious Renaissance Era Unit. Only the Shoshone may build it. Has the [COLOR_POSITIVE_TEXT]Formation I[ENDCOLOR] Promotion, fights at full strength when damaged, and has double combat bonus from fortifying.</Text>
+			<Text>Tenacious Renaissance Era Unit. Only the Shoshone may build it. Has the [COLOR_POSITIVE_TEXT]Formation I[ENDCOLOR] Promotion, gains [ICON_STRENGTH] Strength when damaged, and a double [ICON_STRENGTH] Combat bonus from fortifying.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHOSHONE_YELLOW_BROW_STRATEGY">
 			<Text>The Yellow Brow is unmatched for its ability to hold ground. Never one to retreat, the Yellow brow fights at full strength regardless of health, and has double the normal bonus from fortifying. This unit is very effective against enemy cavalry</Text>

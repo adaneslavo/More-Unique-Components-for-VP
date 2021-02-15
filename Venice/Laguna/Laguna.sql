@@ -55,3 +55,11 @@ VALUES
 INSERT INTO Building_FeatureYieldChanges (BuildingType, FeatureType, YieldType, Yield)
 SELECT 'BUILDING_VENICE_LAGUNA', 'FEATURE_ATOLL', 'YIELD_FOOD', 2 UNION ALL
 SELECT 'BUILDING_VENICE_LAGUNA', 'FEATURE_ATOLL', 'YIELD_PRODUCTION', 2;
+
+--------------------------------	
+-- Building_DomainProductionModifiers
+--------------------------------		
+INSERT INTO Building_DomainProductionModifiers 	
+			(BuildingType, 				DomainType, Modifier)
+SELECT		'BUILDING_VENICE_LAGUNA',	DomainType, Modifier
+FROM Building_DomainProductionModifiers WHERE BuildingType = 'BUILDING_HARBOR';

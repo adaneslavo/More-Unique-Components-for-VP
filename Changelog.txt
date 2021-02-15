@@ -3,6 +3,12 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v65: 
+- Reworked:
+	- Austrian Landwehr changed to Grenzer (fusilier)
+		- lower base CS, increases CS for every vassal or Diplomatic Marriage on empire. CS is adjusted on promotion
+		- No longer gains culture while garrisoned or on defensive tiles
+
 v64:
 - Bug Fixes:
 	- added improvement bonuses to civilopedia pages (Kampong, Monolithic Church, Latifundia)
