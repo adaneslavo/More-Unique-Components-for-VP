@@ -1297,7 +1297,7 @@
 			<Text>Grenzer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_TEXT">
-			<Text>The men of the Habsburg's military frontier with the Ottomans were composed of a diverse array of client duchies, soldier-settlers, and refugees. These border-men, or Grenzers, developed a fearsome reputation for vigilance, tenacity, and fieldcraft after generations defending their lands from Ottoman raids. When the Muslim threat subsided in the 18th century, the Grenzers became a mainstay of Austro-Hungarian infantry forces in their European conflicts, distinguishing themselves in the Napoleonic wars as a mix between light and line infantry.</Text>
+			<Text>The men of the Habsburg's military frontier with the Ottomans were composed of a diverse array of client duchies, soldier-settlers, and refugees. These border-men, or Grenzers, developed a fearsome reputation for vigilance, tenacity, and fieldcraft after generations defending their lands from Ottoman raids. When the Muslim threat subsided in the 18th century, the Grenzers became a mainstay of Austro-Hungarian forces in their European conflicts, distinguishing themselves as flexible and reliable infantry in the Napoleonic Wars.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIA_LANDWEHR_STRATEGY">
 			<Text>The Landwehr is the backbone of the Industrial-era Austrian army. It excels in defending in owned territory and the territory of allied city-states. Grenzers are slightly weaker than the Fusiliers they replace, but gain combat strength for each Diplomatic Marriage on Empire.</Text>
@@ -1309,7 +1309,7 @@
 			<Text>Grenzer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP">
-			<Text>Gains additional Combat Strength for each [COLOR_POSITIVE_TEXT]Diplomatic Marriage[ENDCOLOR] on Empire.</Text>
+			<Text>Gains additional Combat Strength for each [COLOR_POSITIVE_TEXT]Diplomatic Marriage[ENDCOLOR] on Empire. [COLOR_NEGATIVE_TEXT]Lost on Upgrade[ENDCOLOR].</Text>
 		</Row>
 		
 		<!-- Langskib -->

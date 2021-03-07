@@ -85,8 +85,8 @@ VALUES		('UNIT_AUSTRIA_LANDWEHR',	'PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE'),
 -- UnitPromotions
 --------------------------------	
 INSERT INTO UnitPromotions
-			(Type,											Description,											Help,														CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry,												FriendlyLandsModifier)
-VALUES		('PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP',		1,				'AS2D_IF_LEVELUP',	43,				'extraPromo_Atlas',		'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		0);
+			(Type,											Description,											Help,														CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry,												LostWithUpgrade)
+VALUES		('PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE_HELP',		1,				'AS2D_IF_LEVELUP',	43,				'extraPromo_Atlas',		'PEDIA_MELEE',	'TXT_KEY_PROMOTION_UNIT_AUSTRIA_YORKSCHER_MARCHE',		1);
 --==========================================================================================================================	
 
 --==========================================================================================================================
