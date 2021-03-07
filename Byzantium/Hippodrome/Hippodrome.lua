@@ -54,7 +54,9 @@ function OnEraSetAnarchyAndWLTKD(eTeam, eEra, bFirst)
 				if not pPlayer:IsAnarchy() then
 					local iWLTKDLength = math.floor(10 * fGameSpeedModifier) + 1
 						
-					pPlayer:DoEventChoice(GameInfoTypes.PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT)
+--					pPlayer:DoEventChoice(GameInfoTypes.PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT)
+--					pPlayer:DoCancelEventChoice(GameInfoTypes.PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT)
+					pPlayer:DoStartEvent(GameInfoTypes.PLAYER_EVENT_BYZANTIUM_HIPPODROME_NIKA_RIOT)
 					
 					for city in pPlayer:Cities() do
 						city:ChangeWeLoveTheKingDayCounter(iWLTKDLength)

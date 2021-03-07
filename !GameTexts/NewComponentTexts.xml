@@ -734,7 +734,7 @@
 			<Text>Grande École</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_HELP">
-			<Text>Requires University in the City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy. +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Population in this City. +2 [ICON_PRODUCTION] Production to [ICON_GREAT_SCIENTIST] Scientist Specialists and +2 [ICON_RESEARCH] Science to [ICON_GREAT_ENGINEER] Engineer Specialists in this City.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this City.</Text>
+			<Text>Requires University in the City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy. +1 [ICON_PRODUCTION] Production and +1 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Population in this City. +1 [ICON_PRODUCTION] Production to [ICON_GREAT_SCIENTIST] Scientist Specialists and +1 [ICON_RESEARCH] Science to [ICON_GREAT_ENGINEER] Engineer Specialists in this City.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_GRANDE_ECOLE_STRATEGY">
 			<Text>The Grande École is the French unique building, replacing the Public School. In addition to the normal bonuses of a Public School, The Grande École increases production for every citizen in the City, has more Scientist Specialist slots, and helps to generate Great Engineers. In addition, all Scientists generate more Production, and all Engineers generate more Science, making any city with a Grande Ecole a powerhouse of scientific and technical achievement.</Text>
@@ -2122,13 +2122,13 @@
 			<Text>-2 [ICON_ARROW_RIGHT] Movement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON">
-			<Text>Hooked Weapon</Text>
+			<Text>Shotelai</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON_HELP">
 			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI">
-			<Text>Shotelai</Text>
+			<Text>Chewa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_HELP">
 			<Text>Front-line Medieval Era land Unit. Only Ethiopia may build it. It is stronger against Mounted Units, unlike the Longswordsman it replaces. Enemies attacked by this Unit have -2 [ICON_MOVES] Movement Points on their next turn.</Text>
@@ -2137,7 +2137,7 @@
 			<Text>Unique replacement for the Longswordsman. This unit specializes in combating Mounted opponents and hobbling retreating units. Only Ethiopia may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ETHIOPIA_SHOTELAI_TEXT">
-			<Text>Shotel are dramatically curved double-edged swords used exclusively by the ancient Ethiopian Empire’s Shotelai warriors. Almost semicircular, the shotel could be used to hook shields, or even reach around them to strike an opponent. The sword could also be used to hook and unhorse a mounted soldier, bringing them to the ground. Elite corps of Shotelai were employed by the armies of Amda Seyon I, comprising an elite force within his mighty host.</Text>
+			<Text>Chewa were the noble warrior caste of Ethiopian medieval society, appointed by the emperor and furnished with land grants for their service. The Chewa nobility are famous for the use of the Shotel, a dramatically curved double-edged swords that are unique to the Ethiopian Empire. Almost semicircular, the shotel could be used to hook shields, or to reach around them to strike an opponent. The sword could also be used to hook and unhorse a mounted soldier, bringing them to the ground.</Text>
 		</Row>
 
 		<!-- Slaganz -->
@@ -2147,7 +2147,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMANY_SLAGANZ_TEXT">
 			<Text>
-				The strength and ferocity of the tribal Germanic warriors was legendary among Roman writers and soldiers alike. Of particular note were the Ulfhedinn, Odin's sacred warriors who clothed themselves in wolf pelts and imitated wolves while fighting. Germanic tribesmen stood an average of 6 inches taller than a Latini, but were often overmatched by the Legions' superior equipment, organization, and training. German fortunes would change, however, under the leadership of Arminius.[NEWLINE][NEWLINE] 
+				The strength and ferocity of the tribal Germanic warriors was legendary among Roman writers and soldiers alike. Of particular note were the Ulfhedinn, Wodan's sacred warriors who clothed themselves in wolf pelts and imitated wolves while fighting. Germanic tribesmen stood an average of 6 inches taller than a Latini, but were often overmatched by the Legions' superior equipment, organization, and training. German fortunes would change, however, under the leadership of Arminius.[NEWLINE][NEWLINE] 
 				A Cherusci commander who had spent time training under the Romans, Arminius organized a coalition of five German tribes to strike back at the Roman invaders under Publius Varus. The Germans falsified reports of a northern Germanic uprising and laid an ambush for Varus deep in the Teutoburg Forest. Using their superior numbers, heavy rain, and Arminius' knowledge of Roman tactics, the Roman’s defeat at Teutoburg Forest was thorough, with 20 000 dead or enslaved after the German onslaught. Rome's total defeat at Teutoberg halted their expansion permanently, and would be remembered as Rome’s greatest humiliation.
 			</Text>
 		</Row>
@@ -2205,7 +2205,7 @@
 			<Text>SPAD S.VII</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_HELP">
-			<Text>Potent Modern Era flying Unit. Only France may build it. Has a longer range and is slightly weaker than the Triplane it replaces. Starts with the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] Promotion. Requires [ICON_RES_OIL] Oil.</Text>
+			<Text>Potent Modern Era flying Unit. Only France may build it. Has a longer intercept range. Starts with the [COLOR_POSITIVE_TEXT]Air Logistics[ENDCOLOR] Promotion. Does not require [ICON_RES_OIL] Oil and [COLOR_POSITIVE_TEXT]does not use Military Supply[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_SPAD_STRATEGY">
 			<Text>The SPAD S.VII is France's early air superiority fighter. These fighters will help create a strong French presence in the air with their ability to attack twice in a turn.</Text>
@@ -2313,7 +2313,7 @@
 			<Text>Tersane</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_HELP">
-			<Text>When a Sea Trade Route originating here and targeting another Civilization is completed, receive a [ICON_TOURISM] Tourism boost with the Civilization based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Production towards Cargo Ships and +30% [ICON_PRODUCTION] towards Naval Melee Units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from Coast and Ocean Tiles, +2 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production from Sea Resources worked by this City.[NEWLINE][NEWLINE]City must be on the coast.</Text>
+			<Text>When a Sea Trade Route originating here and targeting another Civilization is completed, receive a [ICON_TOURISM] Tourism boost with the Civilization based on your recent [ICON_CULTURE] Culture output.[NEWLINE][NEWLINE]+30% [ICON_PRODUCTION] towards Naval units. Naval Melee Units trained in this City receive the [COLOR_POSITIVE_TEXT]Prize Ships[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production from Coast and Ocean Tiles, and +1 [ICON_GOLD] Gold from Sea Resources worked by this City.[NEWLINE][NEWLINE]City must be on the coast.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMANS_TERSANE_STRATEGY">
 			<Text>Tersane is the unique Harbor replacement of the Ottomans. In addition to the bonuses of a Harbor, the Tersane increases the yields of work boats. The building also greatly improves production towards trade and military vessels, greatly improving the Ottoman's naval capabilities. All Melee Ships built in this city also receive the Prize Ships promotion, allowing them to capture defeated enemy units.</Text>

@@ -78,6 +78,12 @@ FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_CIRC
 -- EVENTS
 --==========================================================================================================================	
 --------------------------------
+-- Events
+--------------------------------	
+INSERT INTO Events
+			(Type,											EventClass,				EventAudio, 						RandomChance, 	NumChoices)
+VALUES		('PLAYER_EVENT_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'EVENT_CLASS_NEUTRAL',	'AS2D_INTERFACE_BORDERS_EXPAND', 	0, 				1);
+--------------------------------
 -- EventChoices
 --------------------------------	
 INSERT INTO EventChoices
@@ -90,6 +96,11 @@ VALUES		('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'YIELD_CULTURE',	
 			('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'YIELD_GOLD',		100),
 			('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'YIELD_PRODUCTION',	100),
 			('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'YIELD_SCIENCE',	100);
+--------------------------------
+-- Event_ParentEvents
+--------------------------------			
+INSERT INTO Event_ParentEvents
+			(EventChoiceType,										EventType)
+VALUES		('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'PLAYER_EVENT_BYZANTIUM_HIPPODROME_NIKA_RIOT');
 --==========================================================================================================================
 --==========================================================================================================================
-

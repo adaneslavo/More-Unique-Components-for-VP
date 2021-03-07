@@ -82,8 +82,8 @@ FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_PUBL
 ------------------------------
 INSERT INTO Building_SpecialistYieldChangesLocal 	
 			(BuildingType,						SpecialistType,			YieldType,			Yield)
-VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'SPECIALIST_SCIENTIST',	'YIELD_PRODUCTION',	2),
-			('BUILDING_FRANCE_GRANDE_ECOLE',	'SPECIALIST_ENGINEER',	'YIELD_SCIENCE',	2);
+VALUES		('BUILDING_FRANCE_GRANDE_ECOLE',	'SPECIALIST_SCIENTIST',	'YIELD_PRODUCTION',	1),
+			('BUILDING_FRANCE_GRANDE_ECOLE',	'SPECIALIST_ENGINEER',	'YIELD_SCIENCE',	1);
 --==========================================================================================================================
 --==========================================================================================================================
 

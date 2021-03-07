@@ -8,7 +8,15 @@ v65:
 	- Austrian Landwehr changed to Grenzer (fusilier)
 		- lower base CS, increases CS for every vassal or Diplomatic Marriage on empire. CS is adjusted on promotion
 		- No longer gains culture while garrisoned or on defensive tiles
-
+- tweaked/modified:
+	- fixed Hippodrome's unhappiness bomb not expiring
+	- Renamed Shotelai to Chewa. Hooked Weapon promotion renamed to Shotelai.
+	- increased GE and GM scaling on Oppidum (03/02 compatibility)
+	- SPAD S.VII no longer requires oil again, RCS increased to 45 (same as base triplane)
+	- Grande Ecole yields to engineer and scientist specialists reduced to 1 sci/prod
+- Bug Fixes:
+	- Text fixes on SPAD, Tersane, Wat
+	
 v64:
 - Bug Fixes:
 	- added improvement bonuses to civilopedia pages (Kampong, Monolithic Church, Latifundia)

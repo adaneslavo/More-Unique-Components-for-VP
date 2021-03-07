@@ -105,14 +105,8 @@ WHERE Tag = 'TXT_KEY_UNIT_HELP_JAGUAR';
 ------------------------------
 -- Wat
 UPDATE Language_en_US
-SET Text = 'Reduces Enemy [ICON_SPY] Spy Stealing Rate by 50%. Blocks the disruption of Building and Wonder construction by Spies, and enemy Spies cannot cause Unrest in the City. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City, and reduces [ICON_HAPPINESS_3] Crime. Available earlier.[NEWLINE][NEWLINE]Contains 2 slots for Great Works of Writing[NEWLINE]+3 [ICON_RESEARCH] Science and [ICON_PEACE] Faith when themed.'
+SET Text = 'Reduces Enemy [ICON_SPY] Spy Stealing Rate by 50%. Blocks the disruption of Building and Wonder construction by Spies, and enemy Spies cannot cause Unrest in the City. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD]/[ICON_PRODUCTION] Distress. Available earlier.[NEWLINE][NEWLINE]Contains 2 slots for Great Works of Writing[NEWLINE]+3 [ICON_RESEARCH] Science and [ICON_PEACE] Faith when themed.'
 WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
-
---Mission
-UPDATE Language_en_US
-SET Text = 'Gain 3x the [ICON_PEACE] Faith and [ICON_GOLD] Gold output of the City, respectively, as an [
-]Instant Boost[ENDCOLOR] every time a [ICON_CITIZEN] Citizen is born in this City. +1 [ICON_PRODUCTION] Production from Quarries and +1 [ICON_PEACE] Faith from Haciendas.[NEWLINE][NEWLINE]Boosts [ICON_RELIGION] Religious Pressure and Resistance of this city by 15%. Does not require Walls in order to be built, and can be purchased with [ICON_PEACE] Faith. Military Units supplied by this City''s population increased by 10%. Contains 1 slot for a Great Work of Art or Artifact.'
-WHERE Tag = 'TXT_KEY_BUILDING_MISSION_HELP';
 
 --Caravansary
 UPDATE Language_en_US
