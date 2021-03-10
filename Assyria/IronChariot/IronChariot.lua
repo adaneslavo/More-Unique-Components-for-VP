@@ -5,27 +5,29 @@
 --------------------------------------------------------------
 function IronChariotResourceCheck(iPlayer)
 	local pPlayer = Players[iPlayer]
-	local tIronChariots = {}
+	local iIronChariots = pPlayer:GetNumUnitsOfType(GameInfoTypes.UNIT_ASSYRIA_IRON_CHARIOT, 0)
 	
-	if (pPlayer:GetNumUnitsOfType(GameInfoTypes.UNIT_ASSYRIA_IRON_CHARIOT, 0)) == 0 then return end
+	if iIronChariots == 0 then return end
 
 	local iResourceBonuses = 0
 	
-	if (pPlayer:GetNumResourceAvailable(GameInfoTypes.RESOURCE_HORSE, 1) >= #tIronChariots) then
+	if (pPlayer:GetNumResourceAvailable(GameInfoTypes.RESOURCE_HORSE, 1) >= iIronChariots) then
 		iResourceBonuses = iResourceBonuses + 1
 	end
 
-	if (pPlayer:GetNumResourceAvailable(GameInfoTypes.RESOURCE_IRON, 1) >= #tIronChariots) then
+	if (pPlayer:GetNumResourceAvailable(GameInfoTypes.RESOURCE_IRON, 1) >= iIronChariots) then
 		iResourceBonuses = iResourceBonuses + 1
 	end
 
-	for i, pIronChariot in pairs(tIronChariots) do
-		if iResourceBonuses == 0 then
-			pIronChariot:SetBaseCombatStrength(12)
-		elseif iResourceBonuses == 1 then
-			pIronChariot:SetBaseCombatStrength(14)
-		else
-			pIronChariot:SetBaseCombatStrength(16)
+	for pUnit in pPlayer:Units() do
+		if pUnit:GetUnitType() == GameInfoTypes.UNIT_ASSYRIA_IRON_CHARIOT then
+			if iResourceBonuses == 0 then
+				pUnit:SetBaseCombatStrength(12)
+			elseif iResourceBonuses == 1 then
+				pUnit:SetBaseCombatStrength(14)
+			else
+				pUnit:SetBaseCombatStrength(16)
+			end
 		end
 	end
 end
