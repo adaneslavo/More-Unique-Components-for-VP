@@ -14,16 +14,16 @@ VALUES	('CIVILIZATION_INCA', 		'BUILDINGCLASS_GRANARY', 	'BUILDING_INCA_QULLQA')
 -- Buildings
 ------------------------------
 INSERT INTO Buildings 	
-		(Type, 					BuildingClass, Cost, GoldMaintenance, PrereqTech, Water, TradeRouteLandDistanceModifier, AlwaysHeal, 	FoodKept, TradeRouteLandGoldBonus, AllowsFoodTradeRoutes, CityConnectionGoldModifier, 	FinishLandTRTourism, Description, 					Civilopedia, 						Help, 								Strategy,								PlotBuyCostModifier, ArtDefineTag, 	ArtInfoEraVariation, FreeStartEra, DisplayPosition, MinAreaSize, ConquestProb, 	GreatPeopleRateModifier, FreshWater, HurryCostModifier, PortraitIndex, 	IconAtlas)
-SELECT	'BUILDING_INCA_QULLQA',	BuildingClass, Cost, GoldMaintenance, PrereqTech, Water, TradeRouteLandDistanceModifier, 5,				FoodKept, TradeRouteLandGoldBonus, AllowsFoodTradeRoutes, CityConnectionGoldModifier,	FinishLandTRTourism, 'TXT_KEY_BUILDING_INCA_QULLQA', 'TXT_KEY_BUILDING_INCA_QULLQA_TEXT', 'TXT_KEY_BUILDING_INCA_QULLQA_HELP', 'TXT_KEY_BUILDING_INCA_QULLQA_STRATEGY',	PlotBuyCostModifier, ArtDefineTag,	ArtInfoEraVariation, FreeStartEra, DisplayPosition, MinAreaSize, ConquestProb, 	GreatPeopleRateModifier, FreshWater, HurryCostModifier, 0, 				'BUILDING_QULLQA_ATLAS'
+		(Type, 					BuildingClass, Cost, GoldMaintenance, PrereqTech, Water, TradeRouteLandDistanceModifier, FreeBuildingThisCity, 		AlwaysHeal, 	FoodKept, TradeRouteLandGoldBonus, AllowsFoodTradeRoutes, CityConnectionGoldModifier, FinishLandTRTourism, Description, 					Civilopedia, 						Help, 								Strategy,									PlotBuyCostModifier, ArtDefineTag, 	ArtInfoEraVariation, FreeStartEra, DisplayPosition, MinAreaSize, ConquestProb, 	GreatPeopleRateModifier, FreshWater, HurryCostModifier, PortraitIndex, 	IconAtlas)
+SELECT	'BUILDING_INCA_QULLQA',	BuildingClass, Cost, GoldMaintenance, PrereqTech, Water, TradeRouteLandDistanceModifier, 'BUILDING_D_FOR_QULLQA', 	5,				FoodKept, TradeRouteLandGoldBonus, AllowsFoodTradeRoutes, CityConnectionGoldModifier, FinishLandTRTourism, 'TXT_KEY_BUILDING_INCA_QULLQA', 'TXT_KEY_BUILDING_INCA_QULLQA_TEXT', 'TXT_KEY_BUILDING_INCA_QULLQA_HELP', 'TXT_KEY_BUILDING_INCA_QULLQA_STRATEGY',	PlotBuyCostModifier, ArtDefineTag,	ArtInfoEraVariation, FreeStartEra, DisplayPosition, MinAreaSize, ConquestProb, 	GreatPeopleRateModifier, FreshWater, HurryCostModifier, 0, 				'BUILDING_QULLQA_ATLAS'
 FROM Buildings WHERE Type = 'BUILDING_GRANARY';	
 ------------------------------	
 -- Building_Yields
 ------------------------------
 INSERT INTO Building_YieldChanges
-			(BuildingType, 			YieldType, 			Yield)
-VALUES		('BUILDING_INCA_QULLQA', 'YIELD_FOOD', 		1),
-		('BUILDING_INCA_QULLQA', 'YIELD_PRODUCTION', 		2);
+		(BuildingType, 			YieldType, 				Yield)
+VALUES	('BUILDING_INCA_QULLQA', 'YIELD_FOOD', 			1),
+		('BUILDING_INCA_QULLQA', 'YIELD_PRODUCTION', 	2);
 ------------------------------	
 -- Building_ResourceYieldChanges
 ------------------------------

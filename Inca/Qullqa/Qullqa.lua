@@ -16,42 +16,42 @@ function OnConstructionPlaceCoca(iPlayer, iCity, iBuilding)
 	
 	local pCity = pPlayer:GetCityByID(iCity)
 	
-	if pCity then
+	if pCity and pCity:IsOriginalCapital() then
 		local pPlot = Map.GetPlot(pCity:GetX(), pCity:GetY())
-		if pPlot:GetNumResource() == 0 then
-	
-			pPlot:SetResourceType(eResourceCoca, 1)
-			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
-			pPlot:SetImprovementType(-1)
-			-- removes plantation after connecting Coca to trade list
-			if pPlot:IsMountain() then
-				pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
-			end
+		-- removes Coca dummy building and plant a coca resource under the capital city, regardless of what was there before
+		pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_D_FOR_QULLQA, 0) 
+		pPlot:SetResourceType(-1)
+		pPlot:SetResourceType(eResourceCoca, 1)
+		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
+		pPlot:SetImprovementType(-1)
+		-- removes plantation after connecting Coca to trade list
+		if pPlot:IsMountain() then
+			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
 		end
 	end
 end
 
-function OnFoundPlaceCoca(iPlayer, iX, iY)
-	local pPlayer = Players[iPlayer]
-	
-	if not(pPlayer and pPlayer:GetCivilizationType() == eCivilizationInca) then return end
-
-	local pTeam = Teams[pPlayer:GetTeam()]
-	if pTeam:GetTeamTechs():HasTech(GameInfoTypes.TECH_BANKING) then
-
-		local pPlot = Map.GetPlot(iX, iY)
-		if pPlot:GetNumResource() == 0 then
-	
-			pPlot:SetResourceType(eResourceCoca, 1)
-			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
-			pPlot:SetImprovementType(-1)
-			-- removes plantation after connecting Coca to trade list
-			if pPlot:IsMountain() then
-				pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
-			end
-		end
-	end
-end
+--function OnFoundPlaceCoca(iPlayer, iX, iY)
+--	local pPlayer = Players[iPlayer]
+--	
+--	if not(pPlayer and pPlayer:GetCivilizationType() == eCivilizationInca) then return end
+--
+--	local pTeam = Teams[pPlayer:GetTeam()]
+--	if pTeam:GetTeamTechs():HasTech(GameInfoTypes.TECH_BANKING) then
+--
+--		local pPlot = Map.GetPlot(iX, iY)
+--		if pPlot:GetNumResource() == 0 then
+--	
+--			pPlot:SetResourceType(eResourceCoca, 1)
+--			pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)
+--			pPlot:SetImprovementType(-1)
+--			-- removes plantation after connecting Coca to trade list
+--			if pPlot:IsMountain() then
+--				pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_JFD_MACHU_PICCHU)
+--			end
+--		end
+--	end
+--end
 
 -- checks from monopoly bonus for Coca
 function OnTurnCheckMonopoly(iPlayer)
@@ -66,6 +66,6 @@ end
 
 if Game.IsCivEverActive(eCivilizationInca) then
 	GameEvents.CityConstructed.Add(OnConstructionPlaceCoca)
-	GameEvents.PlayerCityFounded.Add(OnFoundPlaceCoca)
+--	GameEvents.PlayerCityFounded.Add(OnFoundPlaceCoca)
 	GameEvents.PlayerDoTurn.Add(OnTurnCheckMonopoly)
 end

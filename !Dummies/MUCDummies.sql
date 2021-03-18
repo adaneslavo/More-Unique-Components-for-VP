@@ -35,7 +35,8 @@ VALUES		('BUILDINGCLASS_D_FOR_HUEY',				'BUILDING_D_FOR_HUEY',			1),
 			('BUILDINGCLASS_D_FOR_WAAG',			'BUILDING_D_FOR_WAAG',			1),
 			('BUILDINGCLASS_SHOPHET_DUMMY',			'BUILDING_SHOPHET_DUMMY', 		1),
 			('BUILDINGCLASS_D_FOR_GUMEY_LUX',		'BUILDING_D_FOR_GUMEY_LUX',		1),
-			('BUILDINGCLASS_D_FOR_ALTICUR',			'BUILDING_D_FOR_ALTICUR', 		1);
+			('BUILDINGCLASS_D_FOR_ALTICUR',			'BUILDING_D_FOR_ALTICUR', 		1),
+			('BUILDINGCLASS_D_FOR_QULLQA',			'BUILDING_D_FOR_QULLQA', 		0);
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -65,7 +66,8 @@ VALUES		('BUILDING_D_FOR_HUEY',			'BUILDINGCLASS_D_FOR_HUEY',			'TXT_KEY_BUILDIN
 			('BUILDING_D_FOR_GUMEY_LUX',	'BUILDINGCLASS_D_FOR_GUMEY_LUX',	'TXT_KEY_BUILDING_D_FOR_GUMEY_LUX',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 				1),
 			('BUILDING_D_FOR_ALTICUR',		'BUILDINGCLASS_D_FOR_ALTICUR',		'TXT_KEY_BUILDING_D_FOR_ALTICUR',		0, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 				1),
 			('BUILDING_D_FOR_RIAD',			'BUILDINGCLASS_D_FOR_RIAD',			'TXT_KEY_BUILDING_D_FOR_RIAD',			1, 				0,					-1,		-1,			-1,				1,				1,			0,				-1,					'CIV_COLOR_ATLAS',	0, 				1),
-			('BUILDING_SHOPHET_DUMMY',		'BUILDINGCLASS_SHOPHET_DUMMY',		'TXT_KEY_BUILDING_SHOPHET_DUMMY',		0, 				0,					-1,   	-1,			-1,				1,             	1,          0,				-1,					'CIV_COLOR_ATLAS',	0, 				1);
+			('BUILDING_SHOPHET_DUMMY',		'BUILDINGCLASS_SHOPHET_DUMMY',		'TXT_KEY_BUILDING_SHOPHET_DUMMY',		0, 				0,					-1,   	-1,			-1,				1,             	1,          0,				-1,					'CIV_COLOR_ATLAS',	0, 				1),
+			('BUILDING_D_FOR_QULLQA',		'BUILDINGCLASS_D_FOR_QULLQA',		'TXT_KEY_BUILDING_D_FOR_QULLQA',		0, 				0,					-1,   	-1,			-1,				0,             	1,          100,			-1,					'CIV_COLOR_ATLAS',	0, 				1);
 
 INSERT INTO Buildings 	
 			(Type,						BuildingClass,					Description,						GoldMaintenance,	Cost,	FaithCost,	GreatWorkCount, NeverCapture,	NukeImmune, ConquestProb,	HurryCostModifier,	IconAtlas,			PortraitIndex,	UnmoddedHappiness, IsDummy)
@@ -181,5 +183,11 @@ VALUES		('BUILDING_D_FOR_PROXENOS',	'YIELD_GOLD',		2),
 			('BUILDING_D_FOR_SACHEM_6',	'YIELD_FAITH',		1),
 			('BUILDING_SHOPHET_DUMMY', 	'YIELD_CULTURE', 	2),
 			('BUILDING_SHOPHET_DUMMY', 	'YIELD_FAITH', 		2);
+------------------------------	
+-- Building_ResourceQuantity
+------------------------------		
+INSERT INTO Building_ResourceQuantity 	
+			(BuildingType, 				ResourceType,		Quantity)
+VALUES		('BUILDING_D_FOR_QULLQA',	'RESOURCE_COCA',	1);
 --==========================================================================================================================
 --==========================================================================================================================

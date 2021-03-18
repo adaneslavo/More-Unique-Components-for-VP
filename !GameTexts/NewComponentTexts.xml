@@ -579,6 +579,9 @@
 		<Row Tag="TXT_KEY_BUILDING_SHOPHET_DUMMY">
 			<Text>DF Shofet</Text>
 		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SHOPHET_DUMMY">
+			<Text>1 [ICON_RES_COCA] Coca</Text>
+		</Row>
 		<!-- E-temenanki -->
 		<!-- Created by adan_eslavo 28/11/2017 -->
 		<Row Tag="TXT_KEY_BUILDING_BABYLON_ETEMENANKI">
@@ -2255,7 +2258,7 @@
 			<Text>Units stationed in this city heal [COLOR_POSITIVE_TEXT]5 HP[ENDCOLOR] every turn, regardless of any actions taken. City Receives a [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] [ICON_RES_COCA] Coca Luxury Resource and 25 [ICON_FOOD] Food on Construction.[NEWLINE][NEWLINE]15% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born.[NEWLINE][NEWLINE]Allows [ICON_FOOD] Food to be moved from this city along trade routes inside your civilization.[NEWLINE]Nearby [ICON_RES_WHEAT] Wheat: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BANANA] Bananas: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_DEER] Deer: +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_BISON] Bison: +1 [ICON_FOOD] Food.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_STRATEGY">
-			<Text>The Qullqa is the unique Granary replacement for the Inca. In addition to the normal bonuses of a Granary, the Qullqa heals your garrisoned units every turn. On construction, a [ICON_RES_COCA] Coca Luxury Resource appears beneath the city. [ICON_RES_COCA] Coca replaces any existing resource that was below the city previously.[NEWLINE][NEWLINE]Coca increases the speed of constructing improvements, but also makes mountains passable to any civilization which controls it. Guard your Qullqa, so that other civilizations cannot follow your troops into the mountains.</Text>
+			<Text>The Qullqa is the unique Granary replacement for the Inca. In addition to the normal bonuses of a Granary, the Qullqa heals your garrisoned units every turn. On construction, the city receives a free copy of the [ICON_RES_COCA] Coca Luxury Resource.[NEWLINE][NEWLINE]Coca increases the speed of constructing improvements, but also makes mountains passable to any civilization which controls a monopoly on it. Guard your Qullqa, so that other civilizations cannot follow your troops into the mountains.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INCA_QULLQA_TEXT">
 			<Text>
@@ -2263,13 +2266,11 @@
 				Royal Qullqa stored the luxury and ceremonial goods of the Incan nobility, including feathers, precious stones, and Coca leaves. Coca production was jealously guarded as an imperial monopoly; cultivation and distribution of coca was strictly under the control of the nobles and a few favored classes.
 			</Text>
 		</Row>
-		
-		
 		<Row Tag="TXT_KEY_RESOURCE_COCA">
 			<Text>Coca</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOURCE_COCA_TEXT">
-			<Text>Coca is the leaf of any of four cultivated species of the family Erythroxylaceae native to western South America. The plant is famous for its various medicinal and nutritional uses, increasing alertness, dulling pain, supressing appetite, and treating altitude sickness. The leaves are traditionally chewed or brewed into a tea. Coca made an impression on the Spanish conquerors for its ability to help people work harder, even through exhaustion or hunger.[NEWLINE][NEWLINE]Today, coca is best known for its psychoactive alkaloid, cocaine. The alkaloid content of coca leaves is relatively low, requiring a large number of leaves for a single batch of cocaine. Coca leaf extract began being used in Coca-Cola products in 1885, but cocaine was completely eliminated from the products around 1903.</Text>
+			<Text>Coca is the leaf of any of four cultivated species of the family Erythroxylaceae native to western South America. The plant is famous for its various medicinal and nutritional uses, increasing alertness, dulling pain, supressing appetite, and treating altitude sickness. The leaves are traditionally chewed or brewed into a tea. Coca made an impression on the Spanish conquerors for its ability to help people work harder, even through exhaustion or hunger.[NEWLINE][NEWLINE]Today, coca is best known for its psychoactive alkaloid, cocaine. The alkaloid content of coca leaves is relatively low, requiring a large number of leaves for a single batch of cocaine. Coca leaf extract was once used widely in a wide range of medicinal and consumer products, but was later made a controlled substance and eliminated from North American and European consumer markets in the early 20th century.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_RESOURCE_MONOPOLY_COCA">
 			<Text>[COLOR_POSITIVE_TEXT]Monopoly Bonus: [ENDCOLOR]Grants [COLOR_POSITIVE_TEXT]Coca Leaves[ENDCOLOR] Promotion to all Units.</Text>
