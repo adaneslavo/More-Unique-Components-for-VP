@@ -20,6 +20,7 @@ function OnConstructionPlaceCoca(iPlayer, iCity, iBuilding)
 		local pPlot = Map.GetPlot(pCity:GetX(), pCity:GetY())
 		-- removes Coca dummy building and plant a coca resource under the capital city, regardless of what was there before
 		pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_D_FOR_QULLQA, 0) 
+		pPlayer:ChangeNumResourceTotal(eResourceCoca,-1)
 		pPlot:SetResourceType(-1)
 		pPlot:SetResourceType(eResourceCoca, 1)
 		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_PLANTATION)

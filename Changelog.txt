@@ -3,6 +3,11 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v66: 
+- tweaked/modified:
+	- with the exception of the capital, Incan Coca is now given via a 100% capturable dummy building
+	- Increased Chasqui and Koa CS to 11 and 13, respectively
+
 v65: 
 - Reworked:
 	- Austrian Landwehr changed to Grenzer (fusilier)

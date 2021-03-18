@@ -36,7 +36,7 @@ VALUES		('BUILDINGCLASS_D_FOR_HUEY',				'BUILDING_D_FOR_HUEY',			1),
 			('BUILDINGCLASS_SHOPHET_DUMMY',			'BUILDING_SHOPHET_DUMMY', 		1),
 			('BUILDINGCLASS_D_FOR_GUMEY_LUX',		'BUILDING_D_FOR_GUMEY_LUX',		1),
 			('BUILDINGCLASS_D_FOR_ALTICUR',			'BUILDING_D_FOR_ALTICUR', 		1),
-			('BUILDINGCLASS_D_FOR_QULLQA',			'BUILDING_D_FOR_QULLQA', 		0);
+			('BUILDINGCLASS_D_FOR_QULLQA',			'BUILDING_D_FOR_QULLQA', 		1);
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -145,7 +145,7 @@ VALUES		('BUILDING_D_FOR_HUEY',	'DOMAIN_LAND',	3),
 -- Building_ResourceYieldChanges
 ------------------------------
 INSERT INTO Building_ResourceYieldChanges	
-			(BuildingType,		ResourceType,	YieldType,		Yield)
+			(BuildingType,				ResourceType,	YieldType,		Yield)
 SELECT		'BUILDING_D_FOR_GUMEY_LUX',	Type,			'YIELD_GOLD',	1
 FROM Resources WHERE ResourceClassType = 'RESOURCECLASS_LUXURY';
 ------------------------------	
