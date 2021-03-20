@@ -106,7 +106,16 @@ FROM Improvement_ResourceTypes WHERE ImprovementType = 'IMPROVEMENT_PLANTATION';
 
 CREATE TRIGGER VP_LatifundiaCompatibility_Resource1
 AFTER INSERT ON Improvement_ResourceTypes 
-WHEN NEW.ImprovementType IN('IMPROVEMENT_PLANTATION', 'IMPROVEMENT_FARM')
+WHEN NEW.ImprovementType IN('IMPROVEMENT_PLANTATION')
+BEGIN
+	INSERT INTO Improvement_ResourceTypes
+				(ImprovementType, 				ResourceType, 		ResourceMakesValid,	ResourceTrade)
+	SELECT		'IMPROVEMENT_ROME_LATIFUNDIUM', NEW.ResourceType, 	1, 					1;
+END;
+
+CREATE TRIGGER VP_LatifundiaCompatibility_Resource1
+AFTER INSERT ON Improvement_ResourceTypes 
+WHEN NEW.ImprovementType IN('IMPROVEMENT_FARM')
 BEGIN
 	INSERT INTO Improvement_ResourceTypes
 				(ImprovementType, 				ResourceType, 		ResourceMakesValid,	ResourceTrade)
