@@ -367,11 +367,6 @@ Latest changes: see changelog file.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Maya/Atlatlist/Atlatlist.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Persia/Qizilbash/Qizilbash.sql</FileName>
       </Action>
       <Action>
@@ -4314,10 +4309,6 @@ Latest changes: see changelog file.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Maya\Atlatlist\Atlatlist.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Maya\Holkan\3DModel\Swordsman_Maya.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -5236,7 +5227,6 @@ Latest changes: see changelog file.</Description>
     <Folder Include="Sweden\Carolean" />
     <Folder Include="Maya\Holkan" />
     <Folder Include="Maya\Holkan\3DModel" />
-    <Folder Include="Maya\Atlatlist" />
     <Folder Include="Maya\Pitz" />
     <Folder Include="Celts\PictishWarrior" />
     <Folder Include="Netherlands" />

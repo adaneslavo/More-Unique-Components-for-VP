@@ -125,6 +125,18 @@ INSERT INTO Unit_FreePromotions
 			(UnitType, 				PromotionType)
 VALUES		('UNIT_ZULU_INDABA',	'PROMOTION_UNIT_ZULU_IBUTHO'),
 			('UNIT_ZULU_INDABA',	'PROMOTION_UNIT_ZULU_IQAWE');
+--------------------------------	
+-- UnitPromotions_CivilianUnitType
+--------------------------------	
+INSERT INTO UnitPromotions_CivilianUnitType
+		(PromotionType, 					UnitType)
+VALUES	('PROMOTION_FASTER_GENERAL', 		'UNIT_ZULU_INDABA'),
+		('PROMOTION_FASTER_GENERAL', 		'UNIT_ISRAEL_SHOPHET'),
+		('PROMOTION_FASTER_GENERAL', 		'UNIT_CARTHAGE_SHOPHET'),
+		('PROMOTION_BETTER_LEADERSHIP', 	'UNIT_ZULU_INDABA'),
+		('PROMOTION_BETTER_LEADERSHIP', 	'UNIT_ISRAEL_SHOPHET'),
+		('PROMOTION_BETTER_LEADERSHIP', 	'UNIT_CARTHAGE_SHOPHET'),
+		('PROMOTION_BETTER_LEADERSHIP', 	'UNIT_CARTHAGE_SHOPHET_BOAT');
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -154,25 +166,3 @@ VALUES		('UNIT_ZULU_INDABA',	'TXT_KEY_UNIT_ZULU_INDABA_1'),
 			('UNIT_ZULU_INDABA',	'TXT_KEY_UNIT_ZULU_INDABA_17');
 --==========================================================================================================================
 --==========================================================================================================================
---==========================================================================================================================	
---Zulu Impi Bonus vs. Gunpowder stays on promotion
---==========================================================================================================================
-UPDATE UnitPromotions SET LostWithUpgrade = '0' WHERE Type = 'PROMOTION_ANTI_GUNPOWDER';
-UPDATE UnitPromotions SET RangedSupportFire = '0' WHERE Type = 'PROMOTION_ANTI_GUNPOWDER';
-UPDATE UnitPromotions SET LostWithUpgrade = '1' WHERE Type = 'PROMOTION_RANGED_SUPPORT_FIRE';
-UPDATE UnitPromotions SET PediaType = 'PEDIA_MELEE' WHERE Type = 'PROMOTION_RANGED_SUPPORT_FIRE';
-UPDATE UnitPromotions SET CannotBeChosen = '1' WHERE Type = 'PROMOTION_RANGED_SUPPORT_FIRE';
-
-INSERT INTO Unit_FreePromotions
-			(UnitType, 			PromotionType)
-VALUES		('UNIT_ZULU_IMPI',	'PROMOTION_RANGED_SUPPORT_FIRE');
-
-INSERT INTO UnitPromotions_CivilianUnitType
-		(PromotionType, 					UnitType)
-VALUES	('PROMOTION_FASTER_GENERAL', 		'UNIT_ZULU_INDABA'),
-		('PROMOTION_FASTER_GENERAL', 		'UNIT_ISRAEL_SHOPHET'),
-		('PROMOTION_FASTER_GENERAL', 		'UNIT_CARTHAGE_SHOPHET'),
-		('PROMOTION_BETTER_LEADERSHIP', 	'UNIT_ZULU_INDABA'),
-		('PROMOTION_BETTER_LEADERSHIP', 	'UNIT_ISRAEL_SHOPHET'),
-		('PROMOTION_BETTER_LEADERSHIP', 	'UNIT_CARTHAGE_SHOPHET'),
-		('PROMOTION_BETTER_LEADERSHIP', 	'UNIT_CARTHAGE_SHOPHET_BOAT');

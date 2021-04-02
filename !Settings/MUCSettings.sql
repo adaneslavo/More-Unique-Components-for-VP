@@ -62,3 +62,6 @@ UPDATE CustomModOptions SET Value = 1 WHERE Name = 'BUILDINGS_THOROUGH_PREREQUIS
 
 -- InDuna and Goedendag promotions
 UPDATE CustomModOptions SET Value = 1 WHERE Name = 'CORE_AREA_EFFECT_PROMOTIONS';
+
+-- Coca Monopoly
+UPDATE CustomModOptions SET Value = 1 WHERE Name = 'PROMOTIONS_CROSS_MOUNTAINS';

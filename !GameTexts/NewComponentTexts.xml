@@ -1459,7 +1459,7 @@
 			<Text>
 				The term "Monolithic Church" (or "rock-hewn church") can be attributed to any church cut from a single stone formation, but is most often used to refer to the complex of 11 churches in Lalibela, Ethiopia. These churches were constructed in the 12th century by King Gebre Mesqel Lalibela, a devout Christian. This 'New Jerusalem' is situated in a mountainous region in the heart of Ethiopia, and is an important center of Christian pilgrimage to this day.[NEWLINE][NEWLINE]
 				Monolithic Churches are found in places besides Lalibela, including many in Tigray. These churches were almost unknown to the outside world until Abba Tewelde Medhin Josief, a Catholic priest, announced the existence of over 120 rock-hewn churches, 90 of which were still in use. Over the next few years, the total of known churches was raised to 153.[NEWLINE][NEWLINE]
-				Monolithic Churches an be built on [ICON_RES_STONE] Stone or on Unfeatured Hills if not next to another Monolithic Church. Improves [ICON_RES_STONE] Stone resources[NEWLINE][NEWLINE]Provides [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completing [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR] and adopting an [COLOR_POSITIVE_TEXT]Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
+				Monolithic Churches an be built on Unfeatured Hills if not next to another Monolithic Church.[NEWLINE][NEWLINE]Provides [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completing [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR] and adopting an [COLOR_POSITIVE_TEXT]Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
 				+1 [ICON_CULTURE] for every Ancient Policy Tree,[NEWLINE]
 				+1 [ICON_PEACE] for every Medieval Policy Tree,[NEWLINE]
 				+1 [ICON_RESEARCH] for every Industrial Policy Tree,[NEWLINE]
@@ -1472,7 +1472,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP">
 			<Text>
-				Can be built on [ICON_RES_STONE] Stone or on Unfeatured Hills if not next to another Monolithic Church. Improves [ICON_RES_STONE] Stone resources[NEWLINE][NEWLINE]Provides [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completing [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR] and adopting an [COLOR_POSITIVE_TEXT]Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
+				Can be built on Unfeatured Hills if not next to another Monolithic Church.[NEWLINE][NEWLINE]Provides [ICON_PRODUCTION] Production and [ICON_PEACE] Faith. Instead of Technologies, Monolithic Churches are improved by the completing [COLOR_POSITIVE_TEXT]Social Policy Trees[ENDCOLOR] and adopting an [COLOR_POSITIVE_TEXT]Ideology[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Religious Beliefs[ENDCOLOR]:[NEWLINE]
 				+1 [ICON_CULTURE] for every Ancient Policy Tree,[NEWLINE]
 				+1 [ICON_PEACE] for every Medieval Policy Tree,[NEWLINE]
 				+1 [ICON_RESEARCH] for every Industrial Policy Tree,[NEWLINE]

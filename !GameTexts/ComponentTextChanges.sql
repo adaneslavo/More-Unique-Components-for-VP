@@ -78,15 +78,6 @@ UPDATE Language_en_US
 SET Text = 'Overpowering defensive ship. Only Korea may build it. Has higher [ICON_STRENGTH] Combat Strength, and is more effective against other Naval Melee Units. Moves slowly in deep Ocean.'
 WHERE Tag = 'TXT_KEY_CIV5_KOREA_TURTLESHIP_HELP';
 
--- Horse Archer
---UPDATE Language_en_US 
---SET Text = 'Terrifying Classical Era Ranged Unit. Only the Huns may build it. Does not require [ICON_RES_HORSE] Horses, unlike the Skirmisher it replaces. If all the Unit''s [ICON_ARROW_RIGHT] Movement Points are used without attacking, attacks a valid target automatically.'
---WHERE Tag = 'TXT_KEY_UNIT_HELP_HUN_HORSE_ARCHER';
-
---UPDATE Language_en_US 
---SET Text = 'Horse Archers are fast ranged units, deadly on open terrain. Horse Archers have the unique ability to automatically attack a random nearby target if they have run out of moves, but have not attacked yet. As a mounted unit, the Horse Archer is vulnerable to Spearmen. Unlike the Skirmisher, the Horse Archer does not require Horses.'
---WHERE Tag = 'TXT_KEY_UNIT_HUN_HORSE_ARCHER_STRATEGY';
-
 -- Great Galleas
 UPDATE Language_en_US 
 SET Text = 'Tough Medieval ranged naval unit. Only Venice may build it. This Unit is stronger than the Galleass it replaces.'
@@ -130,11 +121,6 @@ WHERE Tag = 'TXT_KEY_BUILDING_GROCER_HELP';
 ------------------------------
 -- UA Texts
 ------------------------------
--- Druidic Lore
---UPDATE Language_en_US
---SET Text = 'Has a unique set of Pantheon Beliefs. Owned Cities with your Religion do not generate nor receive foreign Religious Pressure. +3 [ICON_PEACE] Faith if City adopted your Pantheon. +2 [ICON_GREAT_MERCHANT] GMP in your [ICON_CAPITAL] Capital after you found a Pantheon, and in Holy City for every religious milestone.'
---WHERE Tag = 'TXT_KEY_TRAIT_FAITH_FROM_NATURE';
-
 -- Sacrificial Captives
 UPDATE Language_en_US
 SET Text = 'Flower War'
@@ -142,30 +128,6 @@ WHERE Tag = 'TXT_KEY_TRAIT_CULTURE_FROM_KILLS_SHORT';
 --------------------------------	
 -- Promotion Text
 --------------------------------
--- Atlatlist
-UPDATE Language_en_US 
-SET Text = 'Poisoned Weapon' 
-WHERE Tag = 'TXT_KEY_PROMOTION_ATLATL_ATTACK';
-
-UPDATE Language_en_US 
-SET Text = '+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength [COLOR_POSITIVE_TEXT]against Wounded Units[ENDCOLOR]' 
-WHERE Tag = 'TXT_KEY_PROMOTION_ATLATL_ATTACK_HELP';
--- Impi
-UPDATE Language_en_US 
-SET Text = 'Bonus vs Gunpowder (25)' 
-WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_GUNPOWDER';
-
-UPDATE Language_en_US 
-SET Text = '+25% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Gunpowder Units[ENDCOLOR].' 
-WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_GUNPOWDER_HELP';
-
-UPDATE Language_en_US 
-SET Text = 'Spear Throw' 
-WHERE Tag = 'TXT_KEY_PROMOTION_RANGED_SUPPORT_FIRE';
-
-UPDATE Language_en_US 
-SET Text = 'Before engaging in melee, this Unit has an extra attack.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Lost on upgrade.[ENDCOLOR]' 
-WHERE Tag = 'TXT_KEY_PROMOTION_RANGED_SUPPORT_FIRE_HELP';
 --==========================================================================================================================
 --==========================================================================================================================
 

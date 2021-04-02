@@ -5,7 +5,12 @@
 More Unique Components for Vox Populi changelog:
 v66: 
 - tweaked/modified:
+	- Mayan Atlatl and Zulu promotion changes removed 
+		- moved to separate Tweaks Mod
+	- Monolithic Church can only be built on hills now (no stone)
 	- with the exception of the capital, Incan Coca is now given via a 100% capturable dummy building
+		- No longer on the map so the cities can be razed
+		- Cusco will replace any resource you settle on top of with a Coca.
 	- Increased Chasqui and Koa CS to 11 and 13, respectively
 
 v65: 
