@@ -240,7 +240,7 @@
 			<Text>Unique Arabian replacement for the University. In addition to the bonuses of a University, the Bimaristan generates additional yields when you purchase anything with Faith, and grants additional Food based on the city's Science output.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ARABIA_BIMARISTAN_HELP">
-			<Text>+1 [ICON_RESEARCH] Science from Jungle tiles worked by this City. Gain 25% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]Gain 15% of the Cost of any [ICON_PEACE] Faith Purchase as [ICON_RESEARCH] Science and [ICON_FOOD] Food in this City. 10% of [ICON_RESEARCH] Science created by the City counts as [ICON_FOOD] Food Per Turn.</Text>
+			<Text>+1 [ICON_RESEARCH] Science from Jungle and Snow tiles worked by this City. Gain 25% of the [ICON_RESEARCH] Science output of the City as an instant boost to your current Research when a [ICON_CITIZEN] Citizen is born in this City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_RESEARCH] Illiteracy.[NEWLINE][NEWLINE]Gain 15% of the Cost of any [ICON_PEACE] Faith Purchase as [ICON_RESEARCH] Science and [ICON_FOOD] Food in this City. 10% of [ICON_RESEARCH] Science created by the City counts as [ICON_FOOD] Food Per Turn.</Text>
 		</Row>
 		
 		<!-- Buffalo Pound -->
@@ -284,7 +284,7 @@
 			<Text>Chaebol</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL_HELP">
-			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City and +2 [ICON_GOLD] Gold for Towns near the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 20%. +3 [ICON_PRODUCTION] Production for Factories in this City.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great People Points for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]Each Chaebol gains +2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol on Empire.</Text>
+			<Text>City must have a Bank. +1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Citizens in the City and +2 [ICON_GOLD] Gold for Towns and Villages near the City. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 20%. +3 [ICON_PRODUCTION] Production for Factories in this City.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great People Points for every [ICON_INTERNATIONAL_TRADE] International Trade Route controlled by the Empire.[NEWLINE][NEWLINE]Each Chaebol gains +2 [ICON_GOLD] Gold, [ICON_RESEARCH] Science, and [ICON_CULTURE] Culture in the city for every Chaebol on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_KOREA_CHAEBOL_STRATEGY">
 			<Text>The Chaebol is the unique Stock Exchange replacement for South Korea. In addition to the normal bonuses of a Stock Exchange, the Chaebol boosts the production of Factories in Cities where the Chaebol is built. Chaebols increase the production of Great People for every International Trade Route the Empire controls. In addition, every Chaebol increases the Gold, Culture and Science of every other Chaebol in the empire; the more you build, the more they produce.</Text>
@@ -1049,7 +1049,7 @@
 			<Text>The Kabuki is the unique Japanese replacement for the Opera House. On construction, Any guilds in the city are replaced with unique Japanese guilds.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_KABUKI_HELP">
-			<Text>Does not require an Amphitheater in the City. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate. All Musicians' Guilds produce +1 [ICON_GOLD] Gold. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 50 [ICON_CULTURE] Culture when completed, scaling with Era.[NEWLINE][NEWLINE]Writers', Artists' and Musicians' Guilds in this City are replaced with unique Guilds of the same type.</Text>
+			<Text>Does not require an Amphitheater in the City. +5% [ICON_CULTURE] Culture in the City. Internal [ICON_INTERNATIONAL_TRADE] Trade Routes to or from this City generate 50 [ICON_CULTURE] Culture when completed, scaling with Era.[NEWLINE][NEWLINE][ICON_GREAT_WORK] Great Works in the City produce +1 [ICON_TOURISM] Tourism. +33% [ICON_GREAT_MUSICIAN] Great Musician Rate.[NEWLINE][NEWLINE]All Musicians' Guilds produce +1 [ICON_GOLD] Gold. Writers', Artists' and Musicians' Guilds in this City are replaced with unique Guilds of the same type.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_MONOGATARI">
 			<Text>Monogatari Guild</Text>
@@ -1557,7 +1557,7 @@
 			<Text>Pairidaeza</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_HELP">
-			<Text>Available earlier. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins, Scaling with Era.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Available earlier. +25% [ICON_GREAT_PEOPLE] Great People Points in the City. Musician, Writer, and Artist Specialists produce +1 [ICON_TOURISM] Tourism in the City. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+15% [ICON_GOLD] Gold in the City during a [ICON_GOLDEN_AGE] Golden Age, and +30 [ICON_CULTURE] Culture as an instant boost in the City when a [ICON_GOLDEN_AGE] Golden Age begins, Scaling with Era.[NEWLINE][NEWLINE]Nearby Oases: +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PERSIA_PAIRIDAEZA_STRATEGY">
 			<Text>The Pairidaeza is the Persian unique Garden replacement. In addition to the normal bonuses of a Garden, each the Pairidaeza increases Gold production during Golden Ages. The beginning of every Golden Age produces culture for each city with a Pairidaeza, so be sure to build them in every city.</Text>
@@ -1602,7 +1602,7 @@
 			<Text>Pitz Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
-			<Text>Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in this City receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVE] Olives: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom. +1 [ICON_TOURISM] Tourism for every 2 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in this City receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVE] Olives: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
 			<Text>
@@ -1806,7 +1806,7 @@
 			<Text>The Riad is the Moroccan unique replacement for the Garden. Gold purchases in this city are slightly cheaper. Gold generation in the city is converted into [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden. Unlike other buildings, the Riad's base yields increase with each Era.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_HELP">
-			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. 15% of [ICON_GOLD] Gold in the City is converted into [ICON_GREAT_PEOPLE] Great Merchant Points.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 5%.[NEWLINE][NEWLINE]Gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism every Era[NEWLINE]Nearby Oases: +3 [ICON_GOLD] Gold, +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. 15% of [ICON_GOLD] Gold in the City is converted into [ICON_GREAT_PEOPLE] Great Merchant Points. Musician, Writer, and Artist Specialists produce +1 [ICON_TOURISM] Tourism in the City.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization. Musician, Writer, and Artist Specialists produce +1 [ICON_TOURISM] Tourism in the City.Cost of [ICON_GOLD] Gold purchasing in this City reduced by 5%.[NEWLINE][NEWLINE]Gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism every Era[NEWLINE]Nearby Oases: +3 [ICON_GOLD] Gold, +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
@@ -1846,7 +1846,7 @@
 			<Text>The Sambadrome is the unique Brazilian replacement for the Opera House. In addition to the bonuses of an Opera House, the Sambadrome also generates Golden Age Points. The Sambadrome comes with a Musician specialist slot, and all Musicians in the city generate extra Gold and Golden Age Points.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP">
-			<Text>Unique replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. 10% of [ICON_CULTURE] Culture created by the City counts as [ICON_GOLDEN_AGE] Golden Age Points Per Turn. +33% [ICON_GREAT_MUSICIAN] Great Musician Points in the City. All Musicians' Guilds adds +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music.[NEWLINE][NEWLINE]Starts 10 turns of 'Carnaval' when completed.</Text>
+			<Text>Unique replacement for the Opera House. +10% [ICON_CULTURE] Culture in the City. 10% of [ICON_CULTURE] Culture created by the City counts as [ICON_GOLDEN_AGE] Golden Age Points Per Turn.[NEWLINE][NEWLINE][ICON_GREAT_WORK] Great Works in the City produce +1 [ICON_TOURISM] Tourism. +33% [ICON_GREAT_MUSICIAN] Great Musician Points in the City. All Musicians' Guilds adds +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music.[NEWLINE][NEWLINE]Starts 10 turns of 'Carnaval' when completed.</Text>
 		</Row>
 		
 		<!-- Scythed Chariot -->

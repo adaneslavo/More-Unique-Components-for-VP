@@ -48,6 +48,13 @@ INSERT INTO Building_FeatureYieldChanges
 			(BuildingType,				FeatureType,		YieldType,		Yield)
 VALUES		('BUILDING_MAROCCO_RIAD',	'FEATURE_OASIS',	'YIELD_GOLD',	3),
 			('BUILDING_MAROCCO_RIAD',	'FEATURE_OASIS',	'YIELD_FOOD',	1);
+------------------------------	
+-- Building_SpecialistYieldChangesLocal
+------------------------------
+INSERT INTO Building_SpecialistYieldChangesLocal
+		(BuildingType, 				SpecialistType, YieldType, Yield)
+SELECT	'BUILDING_MAROCCO_RIAD', 	SpecialistType, YieldType, Yield
+FROM Building_SpecialistYieldChangesLocal WHERE BuildingType = 'BUILDING_GARDEN';
 --------------------------------
 -- Building_HurryModifiersLocal
 --------------------------------

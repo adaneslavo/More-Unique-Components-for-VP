@@ -35,12 +35,26 @@ INSERT INTO Building_ClassesNeededInCity
 SELECT		'BUILDING_ARABIA_BIMARISTAN', BuildingClassType
 FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_UNIVERSITY';
 --------------------------------
+-- Building_YieldChanges
+--------------------------------
+INSERT INTO Building_YieldChanges
+			(BuildingType,					YieldType,			Yield)
+VALUES		('BUILDING_ARABIA_BIMARISTAN',	'YIELD_FOOD',		3),
+			('BUILDING_ARABIA_BIMARISTAN',	'YIELD_SCIENCE',	3);
+--------------------------------
 -- Building_FeatureYieldChanges
 --------------------------------
 INSERT INTO Building_FeatureYieldChanges
-			(BuildingType,				FeatureType, YieldType, Yield)
-SELECT		'BUILDING_ARABIA_BIMARISTAN', FeatureType, YieldType, Yield
+			(BuildingType,					FeatureType, YieldType, Yield)
+SELECT		'BUILDING_ARABIA_BIMARISTAN', 	FeatureType, YieldType, Yield
 FROM Building_FeatureYieldChanges WHERE	BuildingType = 'BUILDING_UNIVERSITY';
+--------------------------------
+-- Building_TerrainYieldChanges
+--------------------------------
+INSERT INTO Building_TerrainYieldChanges
+		(BuildingType, 					TerrainType, YieldType, Yield)
+SELECT	'BUILDING_ARABIA_BIMARISTAN', 	TerrainType, YieldType, Yield
+FROM Building_TerrainYieldChanges WHERE	BuildingType = 'BUILDING_UNIVERSITY';
 --------------------------------
 -- Building_YieldFromFaithPurchase
 --------------------------------
@@ -77,12 +91,5 @@ VALUES	('BIMARISTAN_ATLAS', 	256, 		'Bimaristan_Icon_256.dds',	1, 				1),
 		('BIMARISTAN_ATLAS', 	128, 		'Bimaristan_Icon_128.dds',	1, 				1),
 		('BIMARISTAN_ATLAS', 	64, 		'Bimaristan_Icon_064.dds',	1, 				1),
 		('BIMARISTAN_ATLAS', 	45, 		'Bimaristan_Icon_045.dds',	1, 				1);
---------------------------------
--- Building_YieldChanges
---------------------------------
-INSERT INTO Building_YieldChanges
-			(BuildingType,					YieldType,			Yield)
-VALUES		('BUILDING_ARABIA_BIMARISTAN',	'YIELD_FOOD',		3),
-			('BUILDING_ARABIA_BIMARISTAN',	'YIELD_SCIENCE',	3);
 --==========================================================================================================================
 --==========================================================================================================================

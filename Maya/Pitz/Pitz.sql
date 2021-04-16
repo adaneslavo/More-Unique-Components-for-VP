@@ -58,8 +58,14 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_COLOSSEUM';
 INSERT INTO Building_YieldChanges	
 			(BuildingType, 			YieldType,			Yield)
 VALUES		('BUILDING_MAYA_PITZ',	'YIELD_FAITH',		2),
-			('BUILDING_MAYA_PITZ',	'YIELD_CULTURE',	2),
-			('BUILDING_MAYA_PITZ',	'YIELD_TOURISM',	2);
+			('BUILDING_MAYA_PITZ',	'YIELD_CULTURE',	2);
+------------------------------	
+-- Building_YieldChangesPerPop
+------------------------------
+INSERT INTO Building_YieldChangesPerPop 	
+			(BuildingType,			YieldType, Yield)
+SELECT		'BUILDING_MAYA_PITZ', 	YieldType, Yield
+FROM Building_YieldChangesPerPop WHERE (BuildingType = 'BUILDING_COLOSSEUM');
 ------------------------------	
 -- Building_BuildingClassLocalYieldChanges
 ------------------------------		

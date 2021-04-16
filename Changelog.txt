@@ -3,6 +3,16 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v67: 
+- tweaked/modified:
+	- Naresuans Elephant and Naga Malla promotion changes removed - moved to pineappledan's Tweaks mod
+	- Building Changes for 4/14 compatbility:
+		- Pitz now has 1 tourism per 2 citizens
+		- Sambadrome and Kabuki now have +1 Tourism to GWs
+		- Pairidaeza and Riad now have +1 Tourism to WAM specialists
+		- Bimaristan has +1 Sci to Snow tiles
+		- Chaebol has +2 gold to Villages
+
 v66: 
 - tweaked/modified:
 	- Mayan Atlatl and Zulu promotion changes removed 

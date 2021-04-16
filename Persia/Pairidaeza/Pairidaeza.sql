@@ -61,22 +61,28 @@ VALUES		('BUILDING_PERSIA_PAIRIDAEZA',	'YIELD_CULTURE',	3),
 -- Building_FeatureYieldChanges
 ------------------------------		
 INSERT INTO Building_FeatureYieldChanges
-			(BuildingType, 					FeatureType, 		YieldType, 		Yield)
-VALUES		('BUILDING_PERSIA_PAIRIDAEZA', 	'FEATURE_OASIS', 	'YIELD_GOLD',	2);
+			(BuildingType, 					FeatureType, YieldType, Yield)
+SELECT		'BUILDING_PERSIA_PAIRIDAEZA', 	FeatureType, YieldType, Yield
+FROM Building_FeatureYieldChanges WHERE BuildingType = 'BUILDING_GARDEN';
 ------------------------------	
 -- Building_ResourceYieldChanges
 ------------------------------
 INSERT INTO Building_ResourceYieldChanges	
-			(BuildingType,					ResourceType,		YieldType,			Yield)
-VALUES		('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_COCOA',	'YIELD_GOLD',		1),
-			('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_COCOA',	'YIELD_FOOD',		1),
-			('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_CITRUS',	'YIELD_GOLD',		1),
-			('BUILDING_PERSIA_PAIRIDAEZA',	'RESOURCE_CITRUS',	'YIELD_FOOD',		1);
+			(BuildingType,					ResourceType, YieldType, Yield)
+SELECT		'BUILDING_PERSIA_PAIRIDAEZA', 	ResourceType, YieldType, Yield
+FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_GARDEN';
+------------------------------	
+-- Building_SpecialistYieldChangesLocal
+------------------------------
+INSERT INTO Building_SpecialistYieldChangesLocal
+		(BuildingType, 					SpecialistType, YieldType, Yield)
+SELECT	'BUILDING_PERSIA_PAIRIDAEZA', 	SpecialistType, YieldType, Yield
+FROM Building_SpecialistYieldChangesLocal WHERE BuildingType = 'BUILDING_GARDEN';
 --------------------------------	
 -- Building_GoldenAgeYieldMod
 --------------------------------
 INSERT INTO Building_GoldenAgeYieldMod
-			(BuildingType,				YieldType,		Yield)
+			(BuildingType,					YieldType,		Yield)
 VALUES		('BUILDING_PERSIA_PAIRIDAEZA',	'YIELD_GOLD',	15);
 --==========================================================================================================================
 --==========================================================================================================================

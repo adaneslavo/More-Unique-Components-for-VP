@@ -39,7 +39,7 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_OPERA_HOUSE';
 INSERT INTO	Building_Flavors
 			(BuildingType,					FlavorType,				Flavor)
 VALUES		('BUILDING_BRAZIL_SAMBADROME',	'FLAVOR_CULTURE',		50),
-		('BUILDING_BRAZIL_SAMBADROME',	'FLAVOR_GOLD',		20),
+			('BUILDING_BRAZIL_SAMBADROME',	'FLAVOR_GOLD',			20),
 			('BUILDING_BRAZIL_SAMBADROME',	'FLAVOR_GREAT_PEOPLE',	5);
 --------------------------------
 -- Building_SpecificGreatPersonRateModifier
@@ -53,14 +53,21 @@ FROM Building_SpecificGreatPersonRateModifier WHERE BuildingType = 'BUILDING_OPE
 --------------------------------
 INSERT INTO Building_YieldChanges
 			(BuildingType,					YieldType,					Yield)
-VALUES		('BUILDING_BRAZIL_SAMBADROME',	'YIELD_CULTURE',	4),
-		('BUILDING_BRAZIL_SAMBADROME',	'YIELD_GOLDEN_AGE_POINTS',	2);
+VALUES		('BUILDING_BRAZIL_SAMBADROME',	'YIELD_CULTURE',			4),
+		('BUILDING_BRAZIL_SAMBADROME',		'YIELD_GOLDEN_AGE_POINTS',	2);
 --------------------------------
 -- Building_YieldChanges
 --------------------------------
 INSERT INTO Building_YieldFromYieldPercent
 			(BuildingType, 					YieldIn, 			YieldOut, 					Value)
 VALUES		('BUILDING_BRAZIL_SAMBADROME', 	'YIELD_CULTURE', 	'YIELD_GOLDEN_AGE_POINTS', 	10);
+--------------------------------
+-- Building_GreatWorkYieldChangesLocal
+--------------------------------
+INSERT INTO Building_GreatWorkYieldChangesLocal
+		(BuildingType, 					YieldType, Yield)
+SELECT	'BUILDING_BRAZIL_SAMBADROME', 	YieldType, Yield
+FROM Building_GreatWorkYieldChangesLocal WHERE	BuildingType = 'BUILDING_OPERA_HOUSE';
 --------------------------------
 -- Building_GoldenAgeYieldMod
 --------------------------------		
