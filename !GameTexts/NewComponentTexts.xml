@@ -1085,7 +1085,7 @@
 			<Text>The Gagaku Guild is the unique Japanese replacement for the Musicians' Guild. It generates Great Musicians more quickly than the Musicians' Guild, gives Faith for Musician and Civil Servant specialists in the City, and provides Faith whenever a Great Musician is born on Empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_JAPAN_GAGAKU_HELP">
-			<Text>Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith to Musician specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Musician[ENDCOLOR] is born, Gain [ICON_PEACE] Faith equal to 3% of the musician's potential [ICON_TOURISM] Tourism from a [COLOR_POSITIVE_TEXT]Concert Tour[ENDCOLOR].</Text>
+			<Text>Generates [ICON_GREAT_MUSICIAN] Great Musicians, and contains slots for Musician Specialists. 1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith to Musician specialists in this city. When a [COLOR_POSITIVE_TEXT]Great Musician[ENDCOLOR] is born, Gain [ICON_PEACE] Faith equal to 50% of your Empire's [ICON_TOURISM] Tourism output per turn.</Text>
 		</Row>
 		
 		<!-- Kampong -->

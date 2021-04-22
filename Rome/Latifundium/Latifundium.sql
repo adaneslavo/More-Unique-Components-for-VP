@@ -40,8 +40,8 @@ VALUES		('IMPROVEMENT_ROME_ATLAS', 			256, 		'LatifundiumIcons_256.dds',				1, 	
 -- Improvements
 ------------------------------
 INSERT INTO Improvements
-			(Type, 										Description, 							Civilopedia, 									ArtDefineTag, 							Help, 											SpecificCivRequired, 	CivilizationType, 		PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	Permanent,	PortraitIndex, 	IconAtlas, 					NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury)
-VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT',	'ART_DEF_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP',	1,						'CIVILIZATION_ROME',	25,				0,						0,						0,						1,			0,				'IMPROVEMENT_ROME_ATLAS',	1,				0,					0);
+			(Type, 								Description, 							Civilopedia, 									ArtDefineTag, 							Help, 											SpecificCivRequired, 	CivilizationType, 		PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	Permanent,	PortraitIndex, 	IconAtlas, 					NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury)
+VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_TEXT',	'ART_DEF_IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_IMPROVEMENT_ROME_LATIFUNDIUM_HELP',	1,						'CIVILIZATION_ROME',	25,				0,						0,						0,						1,			0,				'IMPROVEMENT_ROME_ATLAS',	1,				0,					0);
 ------------------------------	
 -- Improvement_Flavors
 ------------------------------		
@@ -113,7 +113,7 @@ BEGIN
 	SELECT		'IMPROVEMENT_ROME_LATIFUNDIUM', NEW.ResourceType, 	1, 					1;
 END;
 
-CREATE TRIGGER VP_LatifundiaCompatibility_Resource1
+CREATE TRIGGER VP_LatifundiaCompatibility_Resource2
 AFTER INSERT ON Improvement_ResourceTypes 
 WHEN NEW.ImprovementType IN('IMPROVEMENT_FARM')
 BEGIN

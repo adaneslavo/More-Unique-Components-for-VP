@@ -144,8 +144,9 @@ function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
 		end
 
 	elseif pUnit:GetUnitType() == GameInfoTypes.UNIT_MUSICIAN and (pPlayer:CountNumBuildings(eBuildingGagaku) > 0) then 
-		local iMusicianBonus = math.floor(pUnit:GetTourismBlastStrength()*0.03*pPlayer:CountNumBuildings(eBuildingGagaku))
+--		local iMusicianBonus = math.floor(pUnit:GetTourismBlastStrength()*0.03*pPlayer:CountNumBuildings(eBuildingGagaku))
 --		local iTourismEvent = GameInfoTypes['PLAYER_EVENT_CHOICE_GAGAKU_TOURISM']
+		local iMusicianBonus = math.floor(0.50 * pPlayer:GetTourism() * pPlayer:CountNumBuildings(eBuildingGagaku))
 		pPlayer:ChangeFaith(iMusicianBonus)
 --		pPlayer:DoEventChoice(iTourismEvent)
 --		pPlayer:DoCancelEventChoice(iTourismEvent)
@@ -156,7 +157,7 @@ function JapGuildsExpendBonus(iPlayer, iUnit, iUnitType, iX, iY)
 			Events.AddPopupTextEvent(vUnitPosition, "[COLOR_WHITE]+"..iMusicianBonus.."[ICON_PEACE][ENDCOLOR]", 1)
 
 			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC,
-				'A Great Musician has emerged. +'..iMusicianBonus..' [ICON_PEACE] Science from Gagaku guilds.',
+				'A Great Musician has emerged. +'..iMusicianBonus..' [ICON_PEACE] Faith from Gagaku guilds.',
 				'Yields from Gagaku Guilds',
 				iX, iY)
 		end
