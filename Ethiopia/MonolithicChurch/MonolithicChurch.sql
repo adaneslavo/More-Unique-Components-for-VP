@@ -174,10 +174,55 @@ INSERT INTO Belief_ImprovementYieldChanges
 SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL', 	'YIELD_CULTURE', 	1
 FROM Beliefs WHERE Enhancer = 1;
 
---INSERT INTO Belief_ImprovementYieldChanges
+INSERT INTO Belief_ImprovementYieldChanges
 		(BeliefType, 	ImprovementType, 								YieldType, 		Yield)
 SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL', 	'YIELD_GOLD', 	1
 FROM Beliefs WHERE Reformation = 1;
+
+CREATE TRIGGER MUCfVP_MonoChurchTrigger_Pantheon
+AFTER INSERT ON Beliefs 
+WHEN NEW.Pantheon = 1
+BEGIN
+	INSERT INTO Belief_ImprovementYieldChanges
+			(BeliefType, 	ImprovementType, 								YieldType, 		Yield)
+	SELECT	NEW.Type, 		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL', 	'YIELD_FAITH', 	1;
+END;
+
+CREATE TRIGGER MUCfVP_MonoChurchTrigger_Founder
+AFTER INSERT ON Beliefs 
+WHEN NEW.Founder = 1
+BEGIN
+	INSERT INTO Belief_ImprovementYieldChanges
+			(BeliefType, 	ImprovementType, 								YieldType, 		Yield)
+	SELECT	NEW.Type, 		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL', 	'YIELD_CULTURE', 	1;
+END;
+
+CREATE TRIGGER MUCfVP_MonoChurchTrigger_Follower
+AFTER INSERT ON Beliefs 
+WHEN NEW.Follower = 1
+BEGIN
+	INSERT INTO Belief_ImprovementYieldChanges
+			(BeliefType, 	ImprovementType, 								YieldType, 		Yield)
+	SELECT	NEW.Type, 		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL', 	'YIELD_PRODUCTION', 	1;
+END;
+
+CREATE TRIGGER MUCfVP_MonoChurchTrigger_Enhancer
+AFTER INSERT ON Beliefs 
+WHEN NEW.Enhancer = 1
+BEGIN
+	INSERT INTO Belief_ImprovementYieldChanges
+			(BeliefType, 	ImprovementType, 								YieldType, 		Yield)
+	SELECT	NEW.Type, 		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL', 	'YIELD_CULTURE', 	1;
+END;
+
+CREATE TRIGGER MUCfVP_MonoChurchTrigger_Reformation
+AFTER INSERT ON Beliefs 
+WHEN NEW.Reformation = 1
+BEGIN
+	INSERT INTO Belief_ImprovementYieldChanges
+			(BeliefType, 	ImprovementType, 								YieldType, 		Yield)
+	SELECT	NEW.Type, 		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL', 	'YIELD_GOLD', 	1;
+END;
 
 --INSERT INTO Belief_ImprovementYieldChanges
 --		(BeliefType, 	ImprovementType, 									YieldType, 		Yield)
