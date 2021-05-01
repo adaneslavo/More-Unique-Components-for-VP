@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_AUSTRIA',	'BUILDINGCLASS_ARSENAL',	'BUILDING_AUSTRIA_STAN
 -- Buildings
 --------------------------------	
 INSERT INTO	Buildings
-			(Type,								Description,								Civilopedia,									Strategy,											Help,											GoldMaintenance, Cost,		HurryCostModifier, MinAreaSize, BlockScienceTheft, HealRateChange, CityRangedStrikeRange, CityIndirectFire, ConquestProb, 	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	NeverCapture, AllowsRangeStrike, Defense,		ExtraCityHitPoints,	CitySupplyModifier, 	EmpireNeedsModifier)
-SELECT		'BUILDING_AUSTRIA_STANDSCHUTZEN',	'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN',	'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_TEXT',	'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_STRATEGY',	'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP',	GoldMaintenance, Cost-150,	HurryCostModifier, MinAreaSize, BlockScienceTheft, HealRateChange, CityRangedStrikeRange, CityIndirectFire, ConquestProb, 	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_APIG4UC_ATLAS',	GreatWorkYieldType,	NeverCapture, AllowsRangeStrike, Defense+200,	ExtraCityHitPoints,	CitySupplyModifier+10, 	EmpireNeedsModifier
+			(Type,								Description,								Civilopedia,									Strategy,											Help,											GoldMaintenance, Cost,		HurryCostModifier, MinAreaSize, HealRateChange, CityRangedStrikeRange, CityIndirectFire, ConquestProb, 	BuildingClass, ArtDefineTag, PrereqTech, PortraitIndex, IconAtlas,					GreatWorkYieldType,	NeverCapture, AllowsRangeStrike, Defense,		ExtraCityHitPoints,	CitySupplyModifier, 	EmpireNeedsModifier)
+SELECT		'BUILDING_AUSTRIA_STANDSCHUTZEN',	'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN',	'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_TEXT',	'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_STRATEGY',	'TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP',	GoldMaintenance, Cost-150,	HurryCostModifier, MinAreaSize, HealRateChange, CityRangedStrikeRange, CityIndirectFire, ConquestProb, 	BuildingClass, ArtDefineTag, PrereqTech, 0,				'BUILDING_APIG4UC_ATLAS',	GreatWorkYieldType,	NeverCapture, AllowsRangeStrike, Defense+200,	ExtraCityHitPoints,	CitySupplyModifier+10, 	EmpireNeedsModifier
 FROM Buildings WHERE Type = 'BUILDING_ARSENAL';
 --------------------------------
 -- Building_ClassesNeededInCity
@@ -40,15 +40,15 @@ VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'FLAVOR_CITY_DEFENSE',	50),
 -- Building_YieldChanges
 --------------------------------
 INSERT INTO Building_YieldChanges
-			(BuildingType,					YieldType,					Yield)
-VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_CULTURE',	3),
+		(BuildingType,						YieldType,			Yield)
+VALUES	('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_CULTURE',	3),
 		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_PRODUCTION',	3);
 --------------------------------	
 -- Building_YieldPerAlly
 --------------------------------	
 INSERT INTO Building_YieldPerAlly
 			(BuildingType,						YieldType,			Yield)
-VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_PRODUCTION',		1),
+VALUES		('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_PRODUCTION',	1),
 			('BUILDING_AUSTRIA_STANDSCHUTZEN',	'YIELD_CULTURE',	1);
 --------------------------------	
 -- Building_UnitCombatProductionModifiers
