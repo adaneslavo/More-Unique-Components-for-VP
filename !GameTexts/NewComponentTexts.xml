@@ -943,13 +943,7 @@
 			<Text>Ibutho</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO_HELP">
-			<Text>Friendly Units stacked with this unit gain +50% Experience.</Text>
-		</Row>	
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE">
-			<Text>Iqawe</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]On Expending[ENDCOLOR], [COLOR_POSITIVE_TEXT]grants XP[ENDCOLOR] to a stacked Friendly Unit and [COLOR_POSITIVE_TEXT]inflicts flat damage to every adjacent Enemy Unit[ENDCOLOR].</Text>
+			<Text>Grants [COLOR_POSITIVE_TEXT]30 XP[ENDCOLOR] to a stacked Friendly Unit when [COLOR_POSITIVE_TEXT]Expended[ENDCOLOR].</Text>
 		</Row>		
 		<Row Tag="TXT_KEY_UNIT_ZULU_INDABA">
 			<Text>InDuna</Text>
@@ -1258,6 +1252,26 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_KOREA_DECK_SPIKES_HELP">
 			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Naval Melee Units[ENDCOLOR].</Text>
+		</Row>
+
+		<!-- Kraal -->
+		<Row Tag="TXT_KEY_IMPROVEMENT_ZULU_KRAAL">
+			<Text>Isibaya</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_ZULU_KRAAL_TEXT">
+			<Text>An Isibaya is a Zulu homestead and defensive structure. The Isibaya is laid out in a circular pattern with a cattle enclosure at the centre, ringed by huts, palisades, and mud walls. The layout and function are reminiscent of a European corral, which is where the Afrikaans word Kraal comes from.[NEWLINE][NEWLINE]The Isibaya is a unique Zulu Great Person Tile Improvement, replacing the Citadel. It Provides [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production, and gives +1 [ICON_CULTURE] Culture to adjacent Pastures.[NEWLINE][NEWLINE]Building an Isibaya claims adjacent tiles and places a [ICON_RES_COW] Cattle Resource below the improvement.[NEWLINE][NEWLINE]Units standing on an Isibaya receive +100% [ICON_STRENGTH] Tile Defense. Deals 30 damage to adjacent Enemy Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_ZULU_KRAAL_HELP">
+			<Text>Unique Zulu Great Person Tile Improvement, replacing the Citadel. Provides [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production. Adjacent Pastures receive +1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]Building an Isibaya claims adjacent tiles and places a [ICON_RES_COW] Cattle Resource below the improvement.[NEWLINE][NEWLINE]Units standing on an Isibaya receive +100% [ICON_STRENGTH] Tile Defense. Deals 30 damage to adjacent Enemy Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ZULU_KRAAL">
+			<Text>Construct an [LINK=IMPROVEMENT_ZULU_KRAAL]Isibaya[\LINK]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ZULU_KRAAL_HELP">
+			<Text>Constructs an Isibaya, which will increase [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production, and give +1 [ICON_CULTURE] Culture to Adjacent Pastures. Gives +100% [ICON_STRENGTH] Defense Bonus to units and deals 30 damage to adjacent Enemy Units. Claims adjacent tiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ZULU_KRAAL_REC">
+			<Text>Unit will be consumed.[NEWLINE]Unique Zulu Tile Improvement. [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production. Adjacent Pastures receive +1 [ICON_CULTURE] Culture. Gives a [ICON_STRENGTH] Defense Bonus and damages adjacent Enemy Units.</Text>
 		</Row>
 
 		<!-- Laguna -->
@@ -2038,7 +2052,7 @@
 			<Text>+2 [ICON_CULTURE] Culture and +2 [ICON_PEACE] Faith every turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SHOFAR">
-			<Text>Shofar</Text>
+			<Text>Ba'al Tekiah</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SHOFAR_HELP">
 			<Text>Deals 20 Damage to adjacent enemy City every turn. Effect is doubled if enemy City is [COLOR_POSITIVE_TEXT]Blockaded[ENDCOLOR]</Text>
@@ -2233,7 +2247,7 @@
 			<Text>The Schützenstand is an Austrian unique building, replacing the Arsenal. It is cheaper than the Arsenal and provides more defense. Increases the City's [ICON_RANGE_STRENGTH] Ranged Strike Range by 1, and also allows the City to Ranged Strike indirectly, ignoring Line of Sight. It allows for faster construction of land military units in the city. It also provides +1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture per city-state ally.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AUSTRIA_STANDSCHUTZEN_HELP">
-			<Text>City must have a Castle. Military Units supplied by this City's population increased by 25%. Increases the City's [ICON_RANGE_STRENGTH] Ranged Strike Range by 1, and allows Indirect Fire.[NEWLINE][NEWLINE]Garrisoned units receive an additional 10 Health when healing in this city. Foreign Spies cannot steal [ICON_RESEARCH] Science from this City.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture for each City-State Ally. +30% [ICON_PRODUCTION] Production and 15 XP for Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units.[NEWLINE][NEWLINE]Empire [ICON_HAPPINESS_3] Needs Modifier is reduced by 5% in this City.</Text>
+			<Text>City must have a Castle. Increases the City's [ICON_RANGE_STRENGTH] Ranged Strike Range by 1, and allows Indirect Fire.[NEWLINE][NEWLINE]Military Units supplied by this City's population increased by 25%. Garrisoned units receive an additional 10 Health when healing in this city.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_CULTURE] Culture for each City-State Ally. +30% [ICON_PRODUCTION] Production and 15 XP for Gunpowder Units, and +15% [ICON_PRODUCTION] Production to all other Land Military Units.[NEWLINE][NEWLINE]Empire [ICON_HAPPINESS_3] Needs Modifier is reduced by 5% in this City.</Text>
 		</Row>
 		
 		<!-- Steam Mill -->

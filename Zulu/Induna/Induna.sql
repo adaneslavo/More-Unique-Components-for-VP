@@ -66,13 +66,13 @@ VALUES		('UNIT_ZULU_ATLAS', 			256, 		'IndunaPicture_256.dds',	1, 				1),
 --------------------------------	
 -- Promotions
 --------------------------------	
-INSERT INTO UnitPromotions 
-			(Type, 							Description, 							Help, 										Sound, 				GiveExperiencePercent, 	IsNearbyPromotion, 	NearbyRange, 	GiveDomain,		CannotBeChosen, PortraitIndex,	IconAtlas, 				PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_ZULU_IBUTHO',	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO',	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO_HELP', 	'AS2D_IF_LEVELUP',	50, 					1, 					0, 				'DOMAIN_LAND', 	1, 				28, 			'promoMUC_atlas_01',	'PEDIA_CIVILIAN', 	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO');
+--INSERT INTO UnitPromotions 
+--			(Type, 							Description, 							Help, 										Sound, 				GiveExperiencePercent, 	IsNearbyPromotion, 	NearbyRange, 	GiveDomain,		CannotBeChosen, PortraitIndex,	IconAtlas, 				PediaType, 			PediaEntry)
+--VALUES		('PROMOTION_UNIT_ZULU_IBUTHO',	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO',	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO_HELP', 	'AS2D_IF_LEVELUP',	50, 					1, 					0, 				'DOMAIN_LAND', 	1, 				28, 			'promoMUC_atlas_01',	'PEDIA_CIVILIAN', 	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO');
 
 INSERT INTO UnitPromotions 
 			(Type, 							Description, 							Help, 										Sound, 				CannotBeChosen, PortraitIndex,	IconAtlas, 				PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_ZULU_IQAWE',	'TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE',	'TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE_HELP', 	'AS2D_IF_LEVELUP',	1, 				29, 			'promoMUC_atlas_01',	'PEDIA_CIVILIAN', 	'TXT_KEY_PROMOTION_UNIT_ZULU_IQAWE');
+VALUES		('PROMOTION_UNIT_ZULU_IBUTHO',	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO',	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO_HELP', 	'AS2D_IF_LEVELUP',	1, 				29, 			'promoMUC_atlas_01',	'PEDIA_CIVILIAN', 	'TXT_KEY_PROMOTION_UNIT_ZULU_IBUTHO');
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -85,13 +85,6 @@ INSERT INTO Units
 			(Type, 				Class, DontShowYields, WorkRate, CivilianAttackPriority, SupplyCapBoost, 	PrereqTech, RangedCombat, Range, Special, Combat, Cost, ObsoleteTech, GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves,		CombatClass, Domain,	DefaultUnitAI,	Help, 								Description, 				Civilopedia, 						Strategy, 		 						Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfoEraVariation, UnitArtInfo, 					UnitFlagIconOffset,	UnitFlagAtlas,				PortraitIndex, 	IconAtlas,			MoveRate,	PurchaseCooldown, GlobalFaithPurchaseCooldown)
 SELECT		'UNIT_ZULU_INDABA',	Class, DontShowYields, WorkRate, CivilianAttackPriority, SupplyCapBoost, 	PrereqTech, RangedCombat, Range, Special, Combat, Cost, ObsoleteTech, GoodyHutUpgradeUnitClass, FaithCost, RequiresFaithPurchaseEnabled, Moves+1, 	CombatClass, Domain,	DefaultUnitAI,  'TXT_KEY_UNIT_ZULU_INDABA_HELP',	'TXT_KEY_UNIT_ZULU_INDABA',  'TXT_KEY_UNIT_ZULU_INDABA_TEXT',	'TXT_KEY_UNIT_ZULU_INDABA_STRATEGY',  	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfoEraVariation, 'ART_DEF_UNIT_ZULU_INDABA',	0,					'UNIT_ZULU_FLAG_ATLAS',	0, 					'UNIT_ZULU_ATLAS',	 MoveRate,	PurchaseCooldown, GlobalFaithPurchaseCooldown
 FROM Units WHERE Type = 'UNIT_GREAT_GENERAL';
---------------------------------	
--- Unit_Builds
---------------------------------
-INSERT INTO Unit_Builds 	
-			(UnitType, 			BuildType)
-SELECT		'UNIT_ZULU_INDABA',	BuildType
-FROM Unit_Builds WHERE UnitType = 'UNIT_GREAT_GENERAL';
 --------------------------------	
 -- UnitGameplay2DScripts
 --------------------------------		

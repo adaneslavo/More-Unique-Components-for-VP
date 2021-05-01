@@ -241,4 +241,5 @@ Things borrowed from other mods:
 		- KevinJK - idea and picture of Laguna UB (Breakwater).
 
 	Zulu:
-		- mikeburnfire - idea, picture, flag and 3D model of InDuna.
+		- mikeburnfire - idea, picture, and flag of InDuna.
+		- Leugi - Kraal model and icon 

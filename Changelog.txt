@@ -3,6 +3,17 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v68: 
+- Compatibility: 
+	- Unique components that previously blocked spy actions have had those abilities removed
+- Reworked
+	- InDuna rework:
+		Ibutho now gives 30XP to stacked unit on Expend
+		Removed damage to adjacent enemies on Expend
+		Removed +50% XP for stacked unit
+		InDuna can now build Kraal unique improvement
+	
+
 v67: 
 - tweaked/modified:
 	- Naresuans Elephant and Naga Malla promotion changes removed - moved to pineappledan's Tweaks mod

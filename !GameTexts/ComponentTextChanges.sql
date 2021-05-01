@@ -96,7 +96,7 @@ WHERE Tag = 'TXT_KEY_UNIT_HELP_JAGUAR';
 ------------------------------
 -- Wat
 UPDATE Language_en_US
-SET Text = 'Reduces Enemy [ICON_SPY] Spy Stealing Rate by 50%. Blocks the disruption of Building and Wonder construction by Spies, and enemy Spies cannot cause Unrest in the City. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD]/[ICON_PRODUCTION] Distress. Available earlier.[NEWLINE][NEWLINE]Contains 2 slots for Great Works of Writing[NEWLINE]+3 [ICON_RESEARCH] Science and [ICON_PEACE] Faith when themed.'
+SET Text = 'Reduces Enemy [ICON_SPY] Spy Stealing Rate by 50%. +2 [ICON_RESEARCH] Science from Temples and Shrines in this City. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_FOOD]/[ICON_PRODUCTION] Distress. Available earlier.[NEWLINE][NEWLINE]Contains 2 slots for Great Works of Writing[NEWLINE]+3 [ICON_RESEARCH] Science and [ICON_PEACE] Faith when themed.'
 WHERE Tag = 'TXT_KEY_BUILDING_WAT_HELP';
 
 --Caravansary
