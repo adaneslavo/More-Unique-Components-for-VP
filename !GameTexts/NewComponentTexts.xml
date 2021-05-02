@@ -1259,19 +1259,19 @@
 			<Text>Isibaya</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ZULU_KRAAL_TEXT">
-			<Text>An Isibaya is a Zulu homestead and defensive structure. The Isibaya is laid out in a circular pattern with a cattle enclosure at the centre, ringed by huts, palisades, and mud walls. The layout and function are reminiscent of a European corral, which is where the Afrikaans word Kraal comes from.[NEWLINE][NEWLINE]Cattle were central to the life and economy of the Zulu Kingdom. Cattle were a sign of status, wealth, and power, and were instrumental for feeding and arming the amabutho regiments of the Zulu army.[NEWLINE][NEWLINE]The Isibaya is a unique Zulu Great Person Tile Improvement, replacing the Citadel. It Provides [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production, and gives +1 [ICON_CULTURE] Culture to adjacent Pastures.[NEWLINE][NEWLINE]Building an Isibaya claims adjacent tiles and places a [ICON_RES_COW] Cattle Resource below the improvement.[NEWLINE][NEWLINE]Units standing on an Isibaya receive +100% [ICON_STRENGTH] Tile Defense. Deals 30 damage to adjacent Enemy Units.</Text>
+			<Text>An Isibaya is a Zulu homestead and defensive structure. The Isibaya is laid out in a circular pattern with a cattle enclosure at the centre, ringed by huts, palisades, and mud walls. The layout and function are reminiscent of a European corral, hence the Afrikaans term for Amabaya, "Kraal".[NEWLINE][NEWLINE]Cattle were central to the life and economy of the Zulu Kingdom. Cattle were a sign of status, wealth, and power, and were instrumental for feeding and arming the amabutho regiments of the Zulu army.[NEWLINE][NEWLINE]The Isibaya is a unique Zulu Great Person Tile Improvement, replacing the Citadel. It Provides [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production, and gives +1 [ICON_CULTURE] Culture to adjacent Pastures.[NEWLINE][NEWLINE]Building an Isibaya places a [ICON_RES_COW] Cattle Resource and claims adjacent tiles.[NEWLINE][NEWLINE]Units standing on an Isibaya receive +100% [ICON_STRENGTH] Tile Defense. Deals 30 damage to adjacent Enemy Units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ZULU_KRAAL_HELP">
-			<Text>Unique Zulu Great Person Tile Improvement, replacing the Citadel. Provides [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production. Adjacent Pastures receive +1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]Building an Isibaya claims adjacent tiles and places a [ICON_RES_COW] Cattle Resource below the improvement.[NEWLINE][NEWLINE]Units standing on an Isibaya receive +100% [ICON_STRENGTH] Tile Defense. Deals 30 damage to adjacent Enemy Units.</Text>
+			<Text>Unique Zulu Great Person Tile Improvement, replacing the Citadel. Provides [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production. Adjacent Pastures receive +1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]Building an Isibaya places a [ICON_RES_COW] Cattle Resource and claims adjacent tiles.[NEWLINE][NEWLINE]Units standing on an Isibaya receive +100% [ICON_STRENGTH] Tile Defense. Deals 30 damage to adjacent Enemy Units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ZULU_KRAAL">
 			<Text>Construct an [LINK=IMPROVEMENT_ZULU_KRAAL]Isibaya[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ZULU_KRAAL_HELP">
-			<Text>Constructs an Isibaya, which will increase [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production, and give +1 [ICON_CULTURE] Culture to Adjacent Pastures. Gives +100% [ICON_STRENGTH] Defense Bonus to units and deals 30 damage to adjacent Enemy Units. Claims adjacent tiles.</Text>
+			<Text>Constructs an Isibaya, which will increase [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production, and give +1 [ICON_CULTURE] Culture to Adjacent Pastures. Gives +100% [ICON_STRENGTH] Defense Bonus to units and deals 30 damage to adjacent Enemy Units. Claims adjacent tiles and places a [ICON_RES_COW] Cattle Resource below the Isibaya.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_ZULU_KRAAL_REC">
-			<Text>Unit will be consumed.[NEWLINE]Unique Zulu Tile Improvement. [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production. Adjacent Pastures receive +1 [ICON_CULTURE] Culture. Gives a [ICON_STRENGTH] Defense Bonus and damages adjacent Enemy Units.</Text>
+			<Text>Unit will be consumed.[NEWLINE]Unique Zulu Tile Improvement. [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PRODUCTION] Production. Adjacent Pastures receive +1 [ICON_CULTURE] Culture. Gives a [ICON_STRENGTH] Defense Bonus and damages adjacent Enemy Units. Claims adjacent tiles and places a [ICON_RES_COW] Cattle Resource below the Isibaya.</Text>
 		</Row>
 
 		<!-- Laguna -->
