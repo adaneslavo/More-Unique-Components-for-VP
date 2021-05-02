@@ -10,9 +10,9 @@ SELECT 'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'Improvement', 'IYA';
 -- ArtDefine_Landmarks
 ------------------------------
 INSERT INTO ArtDefine_Landmarks(Era, State, Scale, ImprovementType, LayoutHandler, ResourceType, Model, TerrainContour)
-SELECT 'Any', 'UnderConstruction', 0.8,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_NONE', 'iya_hb.fxsxml', 1 UNION ALL
-SELECT 'Any', 'Constructed', 0.8,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_NONE', 'iya.fxsxml', 1 UNION ALL
-SELECT 'Any', 'Pillaged', 0.6,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_NONE', 'iya_pl.fxsxml_pl', 1;
+--SELECT 'Any', 'UnderConstruction', 0.8,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'iya_hb.fxsxml', 1 UNION ALL
+SELECT 'Any', 'Constructed', 0.8,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'iya.fxsxml', 1 UNION ALL
+SELECT 'Any', 'Pillaged', 0.6,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'iya_pl.fxsxml_pl', 1;
 ------------------------------
 -- ArtDefine_StrategicView
 ------------------------------
@@ -59,15 +59,16 @@ VALUES		('IMPROVEMENT_ZULU_KRAAL',	'YIELD_CULTURE', 	1),
 			('IMPROVEMENT_ZULU_KRAAL',	'YIELD_PRODUCTION',	1);
 ------------------------------	
 -- Improvement_ResourceTypes
-------------------------------		
+------------------------------
 INSERT INTO Improvement_ResourceTypes	
 		(ImprovementType, 			ResourceType, ResourceMakesValid)
 SELECT 	'IMPROVEMENT_ZULU_KRAAL', 	ResourceType, ResourceMakesValid
 FROM Improvement_ResourceTypes WHERE ImprovementType = 'IMPROVEMENT_CITADEL';
 
 INSERT INTO Improvement_ResourceTypes	
-		(ImprovementType, 			ResourceType, 		ResourceMakesValid)
-VALUES 	('IMPROVEMENT_ZULU_KRAAL',	'YIELD_CULTURE', 	1);
+		(ImprovementType, 			ResourceType, ResourceMakesValid)
+SELECT 	'IMPROVEMENT_ZULU_KRAAL', 	ResourceType, ResourceMakesValid
+FROM Improvement_ResourceTypes WHERE ImprovementType = 'IMPROVEMENT_PASTURE';
 ------------------------------	
 -- Improvement_ResourceType_Yields
 ------------------------------	
