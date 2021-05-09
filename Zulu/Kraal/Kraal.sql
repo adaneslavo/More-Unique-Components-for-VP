@@ -38,8 +38,8 @@ VALUES		('ZULU_KRAAL_ATLAS', 		256, 		'KraalAtlas256.dds',	1, 				1),
 -- Improvements
 ------------------------------
 INSERT INTO Improvements
-			(Type, 						Description, 						Civilopedia, 							ArtDefineTag, 						Help, 									ImprovementResource, 	ImprovementResourceQuantity, 	CultureBombRadius, 	MakesPassable, 	InAdjacentFriendly, PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	SpecificCivRequired,	Permanent,	DestroyedWhenPillaged, 	PortraitIndex, 	IconAtlas, 			NoTwoAdjacent,	DefenseModifier, 	NearbyEnemyDamage)
-VALUES		('IMPROVEMENT_ZULU_KRAAL',	'TXT_KEY_IMPROVEMENT_ZULU_KRAAL',	'TXT_KEY_IMPROVEMENT_ZULU_KRAAL_TEXT',	'ART_DEF_IMPROVEMENT_ZULU_KRAAL',	'TXT_KEY_IMPROVEMENT_ZULU_KRAAL_HELP',	'RESOURCE_COW', 		1, 								1, 					1, 				1, 					17,				1,						1,						0, 						0,			0,						0,				'ZULU_KRAAL_ATLAS',	1,				100, 				30);
+			(Type, 						Description, 						Civilopedia, 							ArtDefineTag, 						Help, 									CultureBombRadius, 	MakesPassable, 	InAdjacentFriendly, PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	SpecificCivRequired,	Permanent,	DestroyedWhenPillaged, 	PortraitIndex, 	IconAtlas, 			NoTwoAdjacent,	DefenseModifier, 	NearbyEnemyDamage)
+VALUES		('IMPROVEMENT_ZULU_KRAAL',	'TXT_KEY_IMPROVEMENT_ZULU_KRAAL',	'TXT_KEY_IMPROVEMENT_ZULU_KRAAL_TEXT',	'ART_DEF_IMPROVEMENT_ZULU_KRAAL',	'TXT_KEY_IMPROVEMENT_ZULU_KRAAL_HELP',	1, 					1, 				1, 					17,				1,						1,						0, 						0,			0,						0,				'ZULU_KRAAL_ATLAS',	1,				100, 				30);
 ------------------------------	
 -- Improvement_Flavors
 ------------------------------		
