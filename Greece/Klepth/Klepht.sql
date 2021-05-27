@@ -50,8 +50,8 @@ FROM ArtDefine_UnitMemberCombatWeapons WHERE UnitMemberType = 'ART_DEF_UNIT_MEMB
 -- ArtDefine_UnitMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberInfos 	
-		(Type, 									Scale, ZOffset, Domain, Model, 	MaterialTypeTag, MaterialTypeSoundOverrideTag)
-SELECT	'ART_DEF_UNIT_MEMBER_GREECE_KLEPHT',	Scale, ZOffset, Domain, Model,	MaterialTypeTag, MaterialTypeSoundOverrideTag
+		(Type, 									Scale, ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
+SELECT	'ART_DEF_UNIT_MEMBER_GREECE_KLEPHT',	Scale, ZOffset, Domain, 'civ5_ottrm.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_U_OTTOMAN_JANISSARY';
 ------------------------------
 -- IconTextureAtlases

@@ -26,7 +26,7 @@ INSERT INTO	Building_BuildingClassYieldChanges
 			(BuildingType,						BuildingClassType,			YieldType,			YieldChange)
 VALUES		('BUILDING_AZTEC_HUEY_TEOCALLI',	'BUILDINGCLASS_BARRACKS',	'YIELD_FOOD',		2),
 			('BUILDING_AZTEC_HUEY_TEOCALLI',	'BUILDINGCLASS_TEMPLE',		'YIELD_FAITH',		2),
-			('BUILDING_AZTEC_HUEY_TEOCALLI',	'BUILDINGCLASS_TEMPLE',		'YIELD_CULTURE',	2);
+			('BUILDING_AZTEC_HUEY_TEOCALLI',	'BUILDINGCLASS_TEMPLE',		'YIELD_GOLD',		2);
 --------------------------------	
 -- Building_Flavors
 --------------------------------	
