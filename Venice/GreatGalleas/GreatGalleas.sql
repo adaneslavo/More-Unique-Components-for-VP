@@ -20,7 +20,7 @@ UPDATE Units SET PrereqTech = 'TECH_GUILDS' WHERE Type = 'UNIT_VENETIAN_GALLEASS
 UPDATE Units SET ObsoleteTech = 'TECH_DYNAMITE' WHERE Type = 'UNIT_VENETIAN_GALLEASS';
 UPDATE Units SET Combat = '17' WHERE Type = 'UNIT_VENETIAN_GALLEASS';
 UPDATE Units SET RangedCombat = '27' WHERE Type = 'UNIT_VENETIAN_GALLEASS';
-UPDATE Units SET Moves = '3' WHERE Type = 'UNIT_VENETIAN_GALLEASS';
+UPDATE Units SET Moves = '4' WHERE Type = 'UNIT_VENETIAN_GALLEASS';
 
 UPDATE Unit_Flavors SET Flavor = '20' WHERE UnitType = 'UNIT_VENETIAN_GALLEASS' AND FlavorType = 'FLAVOR_NAVAL';
 
@@ -30,6 +30,10 @@ INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType) SE
 UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_FRIGATE' WHERE UnitType = 'UNIT_VENETIAN_GALLEASS';
 
 DELETE FROM UnitClasses WHERE Type = 'UNIT_VENETIAN_GALLEASS';
+
+INSERT INTO Unit_FreePromotions 
+		(UnitType, 					PromotionType)
+VALUES	('UNIT_VENETIAN_GALLEASS', 	'PROMOTION_BOMBARDMENT_1');
 
 --==========================================================================================================================	
 -- ART

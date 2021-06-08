@@ -26,12 +26,13 @@ function OnExpendingGrantXPAndCows(iPlayer, iUnit, iUnitType, iX, iY)
 			pStackedUnit:ChangeExperience(30)
 		end
 	end	
-	if (pPlot:GetResourceType(-1) == (-1)) then 
+	if pPlot:GetResourceType(-1) == -1 then 
 		pPlot:SetImprovementType(-1)
 		pPlot:SetResourceType(GameInfoTypes.RESOURCE_COW, 1)
 		pPlot:SetImprovementType(GameInfoTypes.IMPROVEMENT_ZULU_KRAAL)	
-
+		
 		if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
+			pNearestCity = GetNearestCity(pPlayer, pPlot)
 			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_DISCOVERED_BONUS_RESOURCE, 
 			'Udibi youths have brought a new source of [ICON_RES_COW] Cattle near [COLOR_CYAN]'..pNearestCity:GetName()..'[ENDCOLOR].', 
 			'New source of Cattle in '..pNearestCity:GetName(), 

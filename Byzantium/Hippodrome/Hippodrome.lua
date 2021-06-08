@@ -6,7 +6,6 @@ include("FLuaVector.lua")
 
 local fGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GoldenAgePercent / 100
 local eBuildingHippodrome = GameInfoTypes.BUILDING_BYZANTIUM_HIPPODROME
-local eBuildingDummyForHippodrome = GameInfoTypes.BUILDING_D_FOR_HIPPODROME
 local eCivilizationByzantium = GameInfoTypes.CIVILIZATION_BYZANTIUM
 				
 -- adds WLTKD on empire after its construction
@@ -31,16 +30,6 @@ function OnConstructionAddBonuses(iPlayer, iCity, iBuilding)
 				'Hippodrome constructed in '..sName, 
 				pCity:GetX(), pCity:GetY())
 		end
-	end
-end
-
--- removes bonus gold and culture from WLTKD on empire if Hippodrome is destroyed
-function OnCaptureRemoveHorseYields(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop, bConquest)
-	local pOldPlayer = Players[iOldOwner]
-	
-	if pOldPlayer:GetCivilizationType() ~= eCivilizationByzantium or not bIsCapital then return end
- 	for city in pOldPlayer:Cities() do
-		city:SetNumRealBuilding(eBuildingDummyHorseYields, 0)
 	end
 end
 
@@ -80,6 +69,5 @@ end
 if Game.IsCivEverActive(eCivilizationByzantium) then
 	GameEvents.CityConstructed.Add(OnConstructionAddBonuses)
 	GameEvents.TeamSetEra.Add(OnEraSetAnarchyAndWLTKD)
-	GameEvents.CityCaptureComplete.Add(OnCaptureRemoveHorseYields)
 end
 

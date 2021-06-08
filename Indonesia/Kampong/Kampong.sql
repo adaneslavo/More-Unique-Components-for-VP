@@ -39,7 +39,7 @@ VALUES	('IMPROVEMENT_INDONESIA_ATLAS', 			256, 		'KampongIcons_256.dds',			1, 		
 ------------------------------
 INSERT INTO Improvements
 			(Type,										Water,	SpecificCivRequired,	CivilizationType,			GoldMaintenance,	NoTwoAdjacent,	 Description,									Civilopedia,										Help, 											ArtDefineTag,								DestroyedWhenPillaged,	Permanent,	PillageGold,	BuildableOnResources,	PortraitIndex,	IconAtlas)
-VALUES		('IMPROVEMENT_INDONESIA_KAMPONG',			1,		1,						'CIVILIZATION_INDONESIA',	0,					1,				'TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG',		'TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG_TEXT',		'TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG_HELP',	'ART_DEF_IMPROVEMENT_INDONESIA_KAMPONG', 	1,						0,			10,				0,						0,				'IMPROVEMENT_INDONESIA_ATLAS');
+VALUES		('IMPROVEMENT_INDONESIA_KAMPONG',			1,		1,						'CIVILIZATION_INDONESIA',	0,					1,				'TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG',		'TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG_TEXT',		'TXT_KEY_IMPROVEMENT_INDONESIA_KAMPONG_HELP',	'ART_DEF_IMPROVEMENT_INDONESIA_KAMPONG', 	0,						0,			10,				0,						0,				'IMPROVEMENT_INDONESIA_ATLAS');
 ------------------------------	
 -- Improvement_Flavors
 ------------------------------		
@@ -87,14 +87,20 @@ VALUES		('IMPROVEMENT_INDONESIA_KAMPONG',		'TECH_COMPASS',		'YIELD_PRODUCTION',	
 -- Builds
 ------------------------------		
 INSERT INTO Builds
-			(Type,						PrereqTech,				Water,	CanBeEmbarked,	Time,			ImprovementType,						Description,							Help,											Recommendation,							EntityEvent,				OrderPriority,	IconIndex,	IconAtlas)
-VALUES		('BUILD_INDONESIA_KAMPONG',	'TECH_OPTICS',			1,		1,				700,            'IMPROVEMENT_INDONESIA_KAMPONG',		'TXT_KEY_BUILD_INDONESIA_KAMPONG',		'TXT_KEY_BUILD_INDONESIA_KAMPONG_HELP',			'TXT_KEY_BUILD_INDONESIA_KAMPONG_REC',	'ENTITY_EVENT_CHOP',		96,				1,			'IMPROVEMENT_INDONESIA_ATLAS');
+		(Type,						PrereqTech,				Water,	CanBeEmbarked,	Time,			ImprovementType,						Description,							Help,											Recommendation,							EntityEvent,				OrderPriority,	IconIndex,	IconAtlas)
+VALUES	('BUILD_INDONESIA_KAMPONG',	'TECH_OPTICS',			1,		1,				700,            'IMPROVEMENT_INDONESIA_KAMPONG',		'TXT_KEY_BUILD_INDONESIA_KAMPONG',		'TXT_KEY_BUILD_INDONESIA_KAMPONG_HELP',			'TXT_KEY_BUILD_INDONESIA_KAMPONG_REC',	'ENTITY_EVENT_CHOP',		96,				1,			'IMPROVEMENT_INDONESIA_ATLAS');
+
+INSERT INTO Builds
+		(Type,						Water, 	CanBeEmbarked,	ShowInPedia, 	ShowInTechTree, HotKey, CtrlDown, Repair, Time, ImprovementType, Description, Help, Recommendation, EntityEvent, OrderPriority, IconIndex, IconAtlas)
+SELECT 	'BUILD_REPAIR_EMBARKED', 	1, 		1, 				0, 				0, 				HotKey, CtrlDown, Repair, Time, ImprovementType, Description, Help, Recommendation, EntityEvent, OrderPriority, IconIndex, IconAtlas
+FROM Builds WHERE Type = 'BUILD_REPAIR';
 ------------------------------				
 -- Unit_Builds
 ------------------------------				
 INSERT INTO Unit_Builds	
 			(UnitType, 			BuildType)
-VALUES		('UNIT_WORKER',		'BUILD_INDONESIA_KAMPONG');
+VALUES		('UNIT_WORKER',		'BUILD_INDONESIA_KAMPONG'),
+			('UNIT_WORKER',		'BUILD_REPAIR_EMBARKED');
 --==========================================================================================================================
 
 --==========================================================================================================================

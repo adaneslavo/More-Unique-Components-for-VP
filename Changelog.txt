@@ -3,6 +3,27 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v69/70:
+- Compatibility: 
+	- Huey Teocalli now gives +2 Gold to Temples instead of Culture
+	- Sachems Council now gives 1 faith per CS Ally
+- tweaked/modified:
+	- New unit model for Klepht
+	- Indian Archer renamed to Danurdhara
+	- Kampong can now be pillaged/repaired
+	- Great Galleass now has 4 moves and Bombardment I
+- Reworked
+	- Tersane rework:
+		Tersane is now a unique improvement
+		Built by Expending Great Admirals adjacent to cities
+		Functions as a naval citadel with extra infrastructure bonuses
+	- France UB rework:
+		Grande Ecole replaced with Salon, a unique Museum
+		Gains additional %GP rate per chateau worked
+		Higher yields and theming bonuses
+- Bug Fixes:
+	- Monolithic church yields for beliefs fixed; re-added stone as a valid tile prerequisite
+	
 v68: 
 - Compatibility: 
 	- Unique components that previously blocked spy actions have had those abilities removed
@@ -12,7 +33,6 @@ v68:
 		Removed damage to adjacent enemies on Expend
 		Removed +50% XP for stacked unit
 		InDuna can now build Kraal unique improvement
-	
 
 v67: 
 - tweaked/modified:

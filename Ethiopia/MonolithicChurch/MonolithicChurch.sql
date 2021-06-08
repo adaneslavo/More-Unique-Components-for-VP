@@ -41,9 +41,9 @@ INSERT INTO Improvements
 			(Type, 												Description, 										Civilopedia, 											ArtDefineTag, 										Help, 													SpecificCivRequired, 	CivilizationType, 			PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	HillsMakesValid,	PortraitIndex, 	IconAtlas, 						NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury)
 VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT',	'ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	1,						'CIVILIZATION_ETHIOPIA',	20,				0,						0,						0,						1,					0,				'IMPROVEMENT_ETHIOPIA_ATLAS',	1,				0,					0);
 
---INSERT INTO Improvements
---			(Type, 												Description, 										Civilopedia, 											ArtDefineTag, 										Help, 																										PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	HillsMakesValid,	PortraitIndex, 	IconAtlas, 						NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury)
---VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT',	'ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP',														20,				0,						0,						0,						0,					0,				'IMPROVEMENT_ETHIOPIA_ATLAS',	0,				0,					0);
+INSERT INTO Improvements
+			(Type, 												Description, 										Civilopedia, 											ArtDefineTag, 										Help, 																										PillageGold,	CreatedByGreatPerson,	BuildableOnResources,	DestroyedWhenPillaged, 	HillsMakesValid,	PortraitIndex, 	IconAtlas, 						NoTwoAdjacent,	DefenseModifier,	AdjacentLuxury)
+VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_TEXT',	'ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HELP',														20,				0,						0,						0,						0,					0,				'IMPROVEMENT_ETHIOPIA_ATLAS',	0,				0,					0);
 ------------------------------	
 -- Improvement_Flavors
 ------------------------------		
@@ -52,12 +52,12 @@ INSERT INTO Improvement_Flavors
 VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'FLAVOR_GOLD',			5),
 			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'FLAVOR_PRODUCTION',	80),
 			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'FLAVOR_RELIGION',		80),
-			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'FLAVOR_CULTURE',		10);
+			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'FLAVOR_CULTURE',		10),
 			
---			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'FLAVOR_GOLD',			5),
---			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'FLAVOR_PRODUCTION',	80),
---			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'FLAVOR_RELIGION',		80),
---			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'FLAVOR_CULTURE',		10);
+			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'FLAVOR_GOLD',			5),
+			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'FLAVOR_PRODUCTION',	80),
+			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'FLAVOR_RELIGION',		80),
+			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'FLAVOR_CULTURE',		10);
 ------------------------------	
 -- Improvement_ValidTerrains
 ------------------------------		
@@ -70,16 +70,16 @@ VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TERRAIN_HILL');
 INSERT INTO Improvement_Yields 	
 			(ImprovementType, 									YieldType,			Yield)
 VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'YIELD_PRODUCTION',	1),
-			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'YIELD_FAITH',		1);
+			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'YIELD_FAITH',		1),
 			
---			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_PRODUCTION',	1),
---			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_FAITH',		1);
+			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_PRODUCTION',	1),
+			('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_FAITH',		1);
 ------------------------------	
 -- Improvement_ResourceTypes
 ------------------------------		
---INSERT INTO Improvement_ResourceTypes	
---			(ImprovementType, 									ResourceType,			ResourceMakesValid)
---VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'RESOURCE_STONE',		1);
+INSERT INTO Improvement_ResourceTypes	
+			(ImprovementType, 									ResourceType,			ResourceMakesValid)
+VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'RESOURCE_STONE',		1);
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -90,9 +90,9 @@ VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',		'YIELD_PRODUCTION',	1),
 ------------------------------		
 INSERT INTO Builds		
 			(Type,										PrereqTech,			ImprovementType, 								Description, 								Help, 												Recommendation, 								EntityEvent, 			Time,	OrderPriority, 	Kill, 	IconIndex, 	IconAtlas, 						ShowInPedia, 	ShowInTechTree)
-VALUES		('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	1000,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS', 	1, 				1);
+VALUES		('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	1000,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS', 	1, 				1),
 
---			('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	1000,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS', 	0,				0);
+			('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	1000,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS', 	0,				0);
 ------------------------------				
 -- Unit_Builds
 ------------------------------				
@@ -102,9 +102,9 @@ VALUES		('UNIT_WORKER',		'BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HILL');
 ------------------------------				
 -- Trait_BuildsUnitClasses
 ------------------------------				
---INSERT INTO Trait_BuildsUnitClasses	
---			(TraitType, 					UnitClassType, 			BuildType)
---VALUES		('TRAIT_BONUS_AGAINST_TECH', 	'UNITCLASS_WORKER',		'BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE');
+INSERT INTO Trait_BuildsUnitClasses	
+			(TraitType, 					UnitClassType, 			BuildType)
+VALUES		('TRAIT_BONUS_AGAINST_TECH', 	'UNITCLASS_WORKER',		'BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE');
 ------------------------------				
 -- BuildFeatures
 ------------------------------				
@@ -113,10 +113,10 @@ INSERT INTO BuildFeatures
 SELECT		'BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	FeatureType, PrereqTech, Time, Production, Remove
 FROM BuildFeatures WHERE BuildType = 'BUILD_CHATEAU';
 
---INSERT INTO BuildFeatures	
---			(BuildType, 								FeatureType, PrereqTech, Time, Production, Remove)
---SELECT		'BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	FeatureType, PrereqTech, Time, Production, Remove
---FROM BuildFeatures WHERE BuildType = 'BUILD_CHATEAU';
+INSERT INTO BuildFeatures	
+			(BuildType, 								FeatureType, PrereqTech, Time, Production, Remove)
+SELECT		'BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	FeatureType, PrereqTech, Time, Production, Remove
+FROM BuildFeatures WHERE BuildType = 'BUILD_CHATEAU';
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -131,6 +131,11 @@ SELECT PolicyType, 'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL', YieldType, Yie
 FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';
 
 INSERT INTO Policy_ImprovementYieldChanges
+(PolicyType, ImprovementType, YieldType, Yield)
+SELECT PolicyType, 'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', YieldType, Yield
+FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';
+
+INSERT INTO Policy_ImprovementYieldChanges
 			(PolicyType,					ImprovementType,								YieldType,			Yield)
 VALUES		('POLICY_TRADITION_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'YIELD_CULTURE',	1),
 			('POLICY_LIBERTY_FINISHER',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'YIELD_CULTURE',	1),
@@ -140,20 +145,21 @@ VALUES		('POLICY_TRADITION_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HI
 			('POLICY_AESTHETICS_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'YIELD_FAITH',		1),
 			('POLICY_RATIONALISM_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'YIELD_SCIENCE',	1),
 			('POLICY_EXPLORATION_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'YIELD_SCIENCE',	1),
-			('POLICY_COMMERCE_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'YIELD_SCIENCE',	1);
+			('POLICY_COMMERCE_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'YIELD_SCIENCE',	1),
 			
---			('POLICY_TRADITION_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_CULTURE',	1),
---			('POLICY_LIBERTY_FINISHER',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_CULTURE',	1),
---			('POLICY_HONOR_FINISHER',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_CULTURE',	1),
---			('POLICY_PIETY_FINISHER',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_FAITH',		1),
---			('POLICY_PATRONAGE_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_FAITH',		1),
---			('POLICY_AESTHETICS_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_FAITH',		1),
---			('POLICY_RATIONALISM_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_SCIENCE',	1),
---			('POLICY_EXPLORATION_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_SCIENCE',	1),
---			('POLICY_COMMERCE_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_SCIENCE',	1);
+			('POLICY_TRADITION_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_CULTURE',	1),
+			('POLICY_LIBERTY_FINISHER',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_CULTURE',	1),
+			('POLICY_HONOR_FINISHER',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_CULTURE',	1),
+			('POLICY_PIETY_FINISHER',		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_FAITH',		1),
+			('POLICY_PATRONAGE_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_FAITH',		1),
+			('POLICY_AESTHETICS_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_FAITH',		1),
+			('POLICY_RATIONALISM_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_SCIENCE',	1),
+			('POLICY_EXPLORATION_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_SCIENCE',	1),
+			('POLICY_COMMERCE_FINISHER',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'YIELD_SCIENCE',	1);
 ------------------------------
 -- Belief_ImprovementYieldChanges
 ------------------------------	
+/*
 INSERT INTO Belief_ImprovementYieldChanges
 		(BeliefType, 	ImprovementType, 								YieldType, 		Yield)
 SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL', 	'YIELD_FAITH', 	1
@@ -224,29 +230,30 @@ BEGIN
 	SELECT	NEW.Type, 		'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL', 	'YIELD_GOLD', 	1;
 END;
 
---INSERT INTO Belief_ImprovementYieldChanges
---		(BeliefType, 	ImprovementType, 									YieldType, 		Yield)
---SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', 	'YIELD_FAITH', 	1
---FROM Beliefs WHERE Pantheon = 1;
+INSERT INTO Belief_ImprovementYieldChanges
+		(BeliefType, 	ImprovementType, 									YieldType, 		Yield)
+SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', 	'YIELD_FAITH', 	1
+FROM Beliefs WHERE Pantheon = 1;
 
---INSERT INTO Belief_ImprovementYieldChanges
---		(BeliefType, 	ImprovementType, 									YieldType, 		Yield)
---SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', 	'YIELD_CULTURE', 	1
---FROM Beliefs WHERE Founder = 1;
+INSERT INTO Belief_ImprovementYieldChanges
+		(BeliefType, 	ImprovementType, 									YieldType, 		Yield)
+SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', 	'YIELD_CULTURE', 	1
+FROM Beliefs WHERE Founder = 1;
 
---INSERT INTO Belief_ImprovementYieldChanges
---		(BeliefType, 	ImprovementType, 									YieldType, 				Yield)
---SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', 	'YIELD_PRODUCTION', 	1
---FROM Beliefs WHERE Follower = 1;
+INSERT INTO Belief_ImprovementYieldChanges
+		(BeliefType, 	ImprovementType, 									YieldType, 				Yield)
+SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', 	'YIELD_PRODUCTION', 	1
+FROM Beliefs WHERE Follower = 1;
 
---INSERT INTO Belief_ImprovementYieldChanges
---		(BeliefType, 	ImprovementType, 									YieldType, 			Yield)
---SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', 	'YIELD_CULTURE', 	1
---FROM Beliefs WHERE Enhancer = 1;
+INSERT INTO Belief_ImprovementYieldChanges
+		(BeliefType, 	ImprovementType, 									YieldType, 			Yield)
+SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', 	'YIELD_CULTURE', 	1
+FROM Beliefs WHERE Enhancer = 1;
 
---INSERT INTO Belief_ImprovementYieldChanges
---		(BeliefType, 	ImprovementType, 									YieldType, 		Yield)
---SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', 	'YIELD_GOLD', 	1
---FROM Beliefs WHERE Reformation = 1;
+INSERT INTO Belief_ImprovementYieldChanges
+		(BeliefType, 	ImprovementType, 									YieldType, 		Yield)
+SELECT	Type, 			'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE', 	'YIELD_GOLD', 	1
+FROM Beliefs WHERE Reformation = 1;
+*/
 --==========================================================================================================================
 --==========================================================================================================================

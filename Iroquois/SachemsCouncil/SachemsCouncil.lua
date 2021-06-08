@@ -40,24 +40,6 @@ function OnTurnAddHappinessFromDefOrWar(iPlayer)
 	end
 end
 
--- add Diplomatic Reciprocity on creation of GD
---[[function OnCreateGiveReciprocity(iPlayer, iUnit, iUnitType, iX, iY)
-	local pPlayer = Players[iPlayer]
-
-	if not (pPlayer and pPlayer:GetCivilizationType() == eCivilizationIroquois) then return end
-
-	if iUnitType == eUnitGreatDiplomat then
-		local iNumberOfSachems = pPlayer:CountNumBuildings(eBuildingSachemsCouncil)
-
-		if iNumberOfSachems > 0 then
-			local pUnit = pPlayer:GetUnitByID(iUnit)
-
-			pUnit:SetHasPromotion(ePromotionDiplomaticReciprocity, true)
-		end
-	end
-end
-]]--
-
 -- add yields if GD creates an Embassy
 function OnEmbassyAddYields(iPlayer, iUnit, iUnitType, iX, iY)
 	local pPlayer = Players[iPlayer]
@@ -73,12 +55,12 @@ function OnEmbassyAddYields(iPlayer, iUnit, iUnitType, iX, iY)
 		local pCapital = pPlayer:GetCapitalCity()
 		
 		local function YieldCalculation(pPlot, pPlayer, pCapital, iDivisor)
-			local iFood = pPlot:GetYield(0) / iDivisor
-			local iProduction = pPlot:GetYield(1) / iDivisor
-			local iGold = pPlot:GetYield(2) / iDivisor
-			local iScience = pPlot:GetYield(3) / iDivisor
-			local iCulture = pPlot:GetYield(4) / iDivisor
-			local iFaith = pPlot:GetYield(5) / iDivisor
+			local iFood = math.floor(pPlot:GetYield(0) / iDivisor)
+			local iProduction = math.floor(pPlot:GetYield(1) / iDivisor)
+			local iGold = math.floor(pPlot:GetYield(2) / iDivisor)
+			local iScience = math.floor(pPlot:GetYield(3) / iDivisor)
+			local iCulture = math.floor(pPlot:GetYield(4) / iDivisor)
+			local iFaith = math.floor(pPlot:GetYield(5) / iDivisor)
 
 			pCapital:SetNumRealBuilding(eBuildingDummyForSachem1, pCapital:GetNumRealBuilding(eBuildingDummyForSachem1) + iFood)
 			pCapital:SetNumRealBuilding(eBuildingDummyForSachem2, pCapital:GetNumRealBuilding(eBuildingDummyForSachem2) + iProduction)
@@ -107,7 +89,6 @@ end
 
 if Game.IsCivEverActive(eCivilizationIroquois) then
 	GameEvents.PlayerDoTurn.Add(OnTurnAddHappinessFromDefOrWar)
---	GameEvents.UnitCreated.Add(OnCreateGiveReciprocity)
 	GameEvents.GreatPersonExpended.Add(OnEmbassyAddYields)
 end
 

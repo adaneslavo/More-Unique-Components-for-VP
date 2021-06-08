@@ -56,7 +56,7 @@ INSERT INTO Building_YieldChanges
 VALUES		('BUILDING_BRAZIL_SAMBADROME',	'YIELD_CULTURE',			4),
 		('BUILDING_BRAZIL_SAMBADROME',		'YIELD_GOLDEN_AGE_POINTS',	2);
 --------------------------------
--- Building_YieldChanges
+-- Building_YieldFromYieldPercent
 --------------------------------
 INSERT INTO Building_YieldFromYieldPercent
 			(BuildingType, 					YieldIn, 			YieldOut, 					Value)

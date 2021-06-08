@@ -50,9 +50,9 @@ FROM Unit_AITypes WHERE UnitType = 'UNIT_GALLEASS';
 --------------------------------	
 -- Unit_FreePromotions
 --------------------------------
---INSERT INTO Unit_FreePromotions 
---		(UnitType, 					PromotionType)
---VALUES	('UNIT_VENICE_FUSTA', 		'PROMOTION_WITHDRAW_BEFORE_MELEE');
+INSERT INTO Unit_FreePromotions 
+		(UnitType, 					PromotionType)
+VALUES	('UNIT_VENICE_FUSTA', 		'PROMOTION_SENTRY');
 
 INSERT INTO		Unit_FreePromotions
 				(UnitType, 			PromotionType)

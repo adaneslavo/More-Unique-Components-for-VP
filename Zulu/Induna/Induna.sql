@@ -45,7 +45,7 @@ INSERT INTO ArtDefine_UnitMemberCombatWeapons (UnitMemberType, "Index", SubIndex
 -- ArtDefine_UnitMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-	SELECT	('ART_DEF_UNIT_ZULU_INDABA_MEMBER'), Scale, ZOffset, Domain, 'BA_SonghaiSpear.fxsxml', MaterialTypeTag, MaterialTypeSoundOverrideTag
+	SELECT	('ART_DEF_UNIT_ZULU_INDABA_MEMBER'), Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
 	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_U_ZULU_IMPI_WARRIOR_V2');
 ------------------------------
 -- IconTextureAtlases

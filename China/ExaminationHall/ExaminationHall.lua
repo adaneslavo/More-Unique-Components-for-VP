@@ -8,7 +8,6 @@ include("FLuaVector.lua")
 
 local iGameSpeedModifier = GameInfo.GameSpeeds[ Game.GetGameSpeedType() ].GreatPeoplePercent / 100
 local eBuildingExamHall = GameInfoTypes.BUILDING_CHINA_EXAMINATION_HALL
-local eBuildingDummyForExamHall = GameInfoTypes.BUILDING_D_FOR_EXAM
 local eCivilizationChina = GameInfoTypes.CIVILIZATION_CHINA
 local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 
@@ -27,34 +26,6 @@ local eCivilizationRome = GameInfoTypes.CIVILIZATION_ROME
 		end
 	end
 
--- double great people generation during WLTKDs
---[[function OnWLTKDIncreaseGPGeneration(iPlayer)
-	local pPlayer = Players[iPlayer]
-	
-	if not (pPlayer and (pPlayer:GetCivilizationType() == eCivilizationChina or pPlayer:GetCivilizationType() == eCivilizationRome)) then return end
-	
-	local iNumberOfExamHalls = pPlayer:CountNumBuildings(eBuildingExamHall)
-
-	if iNumberOfExamHalls > 0 then
-		for city in pPlayer:Cities() do
-			iCurrentExamHall = 0
-
-			if city:IsHasBuilding(eBuildingExamHall) then
-				iCurrentExamHall = iCurrentExamHall + 1
-
-				if city:GetWeLoveTheKingDayCounter() > 0 then
-					city:SetNumRealBuilding(eBuildingDummyForExamHall, 1)
-				else
-					city:SetNumRealBuilding(eBuildingDummyForExamHall, 0)
-				end
-
-				if iCurrentExamHall == iNumberOfExamHalls then
-					break
-				end
-			end
-		end
-	end
-end --]]
 
 -- adds GP points to the most advanced GP in city on citizen bierth
 function OnBirthAddGPPointsToTheBest(iX, iY, iOld, iNew)
@@ -128,6 +99,5 @@ function PositionCalculator(i1, i2)
 end
 
 if Game.IsCivEverActive(eCivilizationChina) then
---	GameEvents.PlayerDoTurn.Add(OnWLTKDIncreaseGPGeneration)
 	GameEvents.SetPopulation.Add(OnBirthAddGPPointsToTheBest)
 end
