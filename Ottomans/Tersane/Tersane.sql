@@ -37,8 +37,8 @@ VALUES	('IMPROVEMENT_OTTOMAN_ATLAS', 			256, 		'TersaneIcons_256.dds',		2, 				1
 -- Improvements
 ------------------------------
 INSERT INTO Improvements
-			(Type,							Water,	SpecificCivRequired,	CivilizationType,		GoldMaintenance,	Cityside, 	NoTwoAdjacent,	CultureBombRadius, 	CreatedByGreatPerson,	BuildableOnResources,	DefenseModifier, 	Description,								Civilopedia,								Help, 										ArtDefineTag,							DestroyedWhenPillaged,	Permanent,	PillageGold,	NearbyEnemyDamage, 	PortraitIndex,	IconAtlas)
-VALUES		('IMPROVEMENT_OTTOMAN_TERSANE',	1,		1,						'CIVILIZATION_OTTOMAN',	0,					1,			1, 				1, 					1, 						1, 						50, 				'TXT_KEY_IMPROVEMENT_OTTOMAN_TERSANE',		'TXT_KEY_IMPROVEMENT_OTTOMAN_TERSANE_TEXT',	'TXT_KEY_IMPROVEMENT_OTTOMAN_TERSANE_HELP',	'ART_DEF_IMPROVEMENT_OTTOMAN_TERSANE', 	0,						0,			17,				30, 				0,				'IMPROVEMENT_OTTOMAN_ATLAS');
+			(Type,							Water,	SpecificCivRequired,	CivilizationType,		GoldMaintenance,	Cityside, 	NoTwoAdjacent,	CultureBombRadius, 	CreatedByGreatPerson,	BuildableOnResources,	DefenseModifier, 	NoFollowUp, Description,							Civilopedia,								Help, 										ArtDefineTag,							DestroyedWhenPillaged,	Permanent,	PillageGold,	NearbyEnemyDamage, 	PortraitIndex,	IconAtlas)
+VALUES		('IMPROVEMENT_OTTOMAN_TERSANE',	1,		1,						'CIVILIZATION_OTTOMAN',	0,					1,			1, 				1, 					1, 						1, 						50, 				1, 			'TXT_KEY_IMPROVEMENT_OTTOMAN_TERSANE',	'TXT_KEY_IMPROVEMENT_OTTOMAN_TERSANE_TEXT',	'TXT_KEY_IMPROVEMENT_OTTOMAN_TERSANE_HELP',	'ART_DEF_IMPROVEMENT_OTTOMAN_TERSANE', 	0,						0,			17,				30, 				0,				'IMPROVEMENT_OTTOMAN_ATLAS');
 ------------------------------	
 -- Improvement_Flavors
 ------------------------------		
@@ -62,10 +62,11 @@ VALUES		('IMPROVEMENT_OTTOMAN_TERSANE',	'TERRAIN_COAST');
 -- Improvement_Yields
 ------------------------------		
 INSERT INTO Improvement_Yields 	
-			(ImprovementType, 				YieldType,				Yield)
-VALUES		('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_GOLD',			2),
-			('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_SCIENCE',		2),
-			('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_PRODUCTION',		2);
+			(ImprovementType, 				YieldType,						Yield)
+VALUES		('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_GOLD',					2),
+			('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_SCIENCE',				2),
+			('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_PRODUCTION',				2),
+			('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_GREAT_ADMIRAL_POINTS',	5);
 ------------------------------	
 -- Improvement_ResourceTypes
 ------------------------------		

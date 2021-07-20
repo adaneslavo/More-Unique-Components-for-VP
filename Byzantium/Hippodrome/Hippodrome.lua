@@ -16,7 +16,7 @@ function OnConstructionAddBonuses(iPlayer, iCity, iBuilding)
 
 	if iBuilding == eBuildingHippodrome then
 		for city in pPlayer:Cities() do
-			local iWLTKDLength = math.floor(20 * fGameSpeedModifier)
+			local iWLTKDLength = math.floor(10 * fGameSpeedModifier)
 				
 			city:ChangeWeLoveTheKingDayCounter(iWLTKDLength)				
 		end
@@ -42,17 +42,13 @@ function OnEraSetAnarchyAndWLTKD(eTeam, eEra, bFirst)
 			if pCapital:IsHasBuilding(eBuildingHippodrome) then
 				if not pPlayer:IsAnarchy() then
 					local iWLTKDLength = math.floor(10 * fGameSpeedModifier) + 1
-						
---					pPlayer:DoEventChoice(GameInfoTypes.PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT)
---					pPlayer:DoCancelEventChoice(GameInfoTypes.PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT)
-					pPlayer:DoStartEvent(GameInfoTypes.PLAYER_EVENT_BYZANTIUM_HIPPODROME_NIKA_RIOT)
 					
 					for city in pPlayer:Cities() do
 						city:ChangeWeLoveTheKingDayCounter(iWLTKDLength)
 					end
 						
 					if pPlayer:IsHuman() and pPlayer:IsTurnActive() then
-						pPlayer:AddNotification(0, 'Your Empire entered new Era, causing a massive riot across your Empire. Your Empire becomes very [ICON_HAPPINESS_4] Unhappy for 1 turn, after which your [ICON_CITIZEN] Citizens will [ICON_HAPPINESS_1] love their king for '..(iWLTKDLength - 1)..' turns.', 'Hooliganism in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())
+						pPlayer:AddNotification(0, 'Your Empire entered new Era. Citizens [ICON_HAPPINESS_1] love their king for '..iWLTKDLength..' turns.', 'Games in '..pCapital:GetName()..'!', pCapital:GetX(), pCapital:GetY())
 					end
 						
 					break

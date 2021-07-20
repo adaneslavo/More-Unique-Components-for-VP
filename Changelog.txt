@@ -3,9 +3,25 @@
 -- DateCreated: 27/10/2017
 --------------------------------------------------------------
 More Unique Components for Vox Populi changelog:
+v72:
+- Tweaked/modified:
+	- Monitor harbor defense increased to 10%
+	- added Great Admiral Points onto the Tersane
+v71:
+- Compatibility: 
+	- Isibaya and Tersane now allow melee units to fall back to them after kills (credit to InkAxis)
+	- Bullring now +1 culture/tourism to jungle/forest/pasture
+	- Salon Tourism to Great Works reduced to +1
+	- Pitz Court Tourism per Population reduced to 1 per 4
+	- Greek Klepht now a Commando replacement (melee recon unit)
+	- removed Mandekalu move to knight and Carolean move to Fusilier
+		- these changes are now part of PDan's Civ Tweaks Mod, and can be added back there
+- tweaked/modified:
+	- Hippodrome no longer gives unhappiness on Era change; WLTKD reduced to 10 turns
+	
 v69/70:
 - Compatibility: 
-	- Huey Teocalli now gives +2 Gold to Temples instead of Culture
+	- Huey Teocalli now gives +1 Gold to Temples instead of Culture
 	- Sachems Council now gives 1 faith per CS Ally
 - tweaked/modified:
 	- New unit model for Klepht

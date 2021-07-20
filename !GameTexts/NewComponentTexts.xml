@@ -271,7 +271,7 @@
 			<Text>Bullring</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING_HELP">
-			<Text>+1000 [ICON_TOURISM] Tourism with all known Civilizations when completed. Nearby Jungle, Forest, and Pastures gain +2 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture. When any [ICON_INTERNATIONAL_TRADE] Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Trigger a "We Love the King Day" in this city whenever it completes a [COLOR_POSITIVE_TEXT]Public Works Project[ENDCOLOR]. Gain 100 [ICON_CULTURE] Culture, [ICON_PEACE] Faith, and [ICON_GOLD] Gold whenever a "We Love the King Day" begins, Scaling with Era.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.</Text>
+			<Text>+1000 [ICON_TOURISM] Tourism with all known Civilizations when completed. Nearby Jungle, Forest, and Pastures gain +1 [ICON_TOURISM] Tourism and [ICON_CULTURE] Culture. When any [ICON_INTERNATIONAL_TRADE] Trade Route originating here and targeting another Civ is completed, receive a [ICON_TOURISM] Tourism boost with the Civ based on your recent [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism output.[NEWLINE][NEWLINE]Trigger a "We Love the King Day" in this city whenever it completes a [COLOR_POSITIVE_TEXT]Public Works Project[ENDCOLOR]. Gain 100 [ICON_CULTURE] Culture, [ICON_PEACE] Faith, and [ICON_GOLD] Gold whenever a "We Love the King Day" begins, Scaling with Era.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SPAIN_BULLRING_STRATEGY">
 			<Text>The Bullring is a Spanish unique building that is cheaper and is available earlier than the Zoo. In addition to the Zoo's bonuses to Forest and Jungle, the Bullring gives bonuses to Pastures. Try to focus on triggering many "We Love the King Days", which last longer and provide additional yields with the Bullring.</Text>
@@ -844,12 +844,12 @@
 			<Text>Hippodrome</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_HELP">
-			<Text>Does not require an Arena in the City. [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Arena in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom. +15% [ICON_GOLD] Gold and [ICON_CULTURE] Culture on Empire during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, Your Empire becomes very [ICON_HAPPINESS_4] Unhappy for 1 turn, after which a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +3 [ICON_GOLD] Gold and all Circuses gain +3 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Does not require an Arena in the City. [COLOR_POSITIVE_TEXT]Free[ENDCOLOR] Arena in the City.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom. +15% [ICON_GOLD] Gold and [ICON_CULTURE] Culture on Empire during [ICON_HAPPINESS_1] 'We Love the King' Day and a [ICON_HAPPINESS_1] 'We Love the King' Day begins immediately on Completion.[NEWLINE][NEWLINE]At the beginning of every new Era, a [ICON_HAPPINESS_1] 'We Love the King' Day is triggered across the Empire.[NEWLINE][NEWLINE]All Arenas gain +3 [ICON_GOLD] Gold and all Circuses gain +3 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture on all sources of [ICON_RES_HORSE] Horses on Empire.[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_STRATEGY">
 			<Text>
 				The Hippodrome is the Byzantine Unique Wonder, replacing the Circus Maximus. In comparison to the Circus Maximus, The Hippodrome greatly increases Gold and Culture yields during "We Love the King Days" and begins a "We Love the King Day" on completion. All Arenas in the empire receive gold, while circuses receive Culture, and Horses get both.[NEWLINE][NEWLINE]
-				Be careful to time when your transition into a new era comes. A turn of resistance could is a small price to pay for a free "We Love the King Day", but it could slow down a crucial wonder or come during a war.
+				Be careful to time when your transition into a new era comes, timing your free "We Love the King Day", to reset luxuries demanded in all cities.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_BYZANTIUM_HIPPODROME_TEXT">
@@ -869,7 +869,7 @@
 			<Text>The Huey Teocalli is the unique Aztec replacement for the Grand Temple. It does not require a Temple, and immediately triggers a Golden Age on completion. Every time you enter a Golden Age the Huey Teocalli permanently gains Food, Faith, and additional XP to units built in the city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AZTEC_HUEY_TEOCALLI_HELP">
-			<Text>Does not require a Temple. Triggers a [ICON_GOLDEN_AGE] Golden Age on Completion.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +2 [ICON_GOLD] Gold to all Temples, and +2 [ICON_FOOD] Food to all Barracks on Empire. Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_PEACE] Religious Unrest.[NEWLINE][NEWLINE]Whenever you enter a [ICON_GOLDEN_AGE] Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith and +3 XP for Units trained in the City (max +30).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
+			<Text>Does not require a Temple. Triggers a [ICON_GOLDEN_AGE] Golden Age on Completion.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +1 [ICON_GOLD] Gold to all Temples, and +2 [ICON_FOOD] Food to all Barracks on Empire. Contains 1 slot for [ICON_GREAT_WORK] Great Work of Music. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_PEACE] Religious Unrest.[NEWLINE][NEWLINE]Whenever you enter a [ICON_GOLDEN_AGE] Golden Age, permanently gain +3 [ICON_FOOD] Food, +3 [ICON_PEACE] Faith and +3 XP for Units trained in the City (max +30).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of Cities you own.</Text>
 		</Row>
 
 		<!-- Iron Chariot -->
@@ -1161,16 +1161,16 @@
 			<Text>Klepht</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_HELP">
-			<Text>A quick and elusive guerilla fighter. Only Greece may build it. Slightly weaker than the Gatling Gun it replaces and does not have the [COLOR_RED]Covering Fire I[ENDCOLOR] Promotion. Starts with the [COLOR_POSITIVE_TEXT]Philhellenism[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotions, and can move after attacking.</Text>
+			<Text>A quick and elusive guerilla fighter. Only Greece may build it. Starts with the [COLOR_POSITIVE_TEXT]Philhellenism[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Commando[ENDCOLOR] Promotions, and can move after attacking.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_STRATEGY">
-			<Text>The Klepht is not as powerful as the Gatling Gun it replaces, but can move quickly through hills, even after attacking. This unit also gains gold and production for every city-state ally every time it attacks a unit.</Text>
+			<Text>While not an effective front-line force, The Klepht can move quickly through enemy positions and strike at vulnerable back line units. This unit also gains gold and production for every city-state ally every time it attacks a unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREECE_KLEPHT_TEXT">
 			<Text>
-				Bandits and mountainfolk, turned anti-Ottoman insurgents and freedom fighters, The Klephts were the bedrock upon which the modern Greek army was formed. Together with the men originally hired to capture them, the Armatoloi, the Klephts formed the "yeast of liberty", and the first hope for Greek independence after more than four centuries of Ottoman rule.[NEWLINE][NEWLINE]
-				Undisciplined and flighty as one would expect of brigands, Klephts waged an effective guerilla campaign against the much larger Ottoman armies sent to subdue them.  Massacres on both sides of the conflict were inflicted, but European sympathies fell heavily in favor of the Greeks. The unbridled cruelty of the Muslim Ottomans outraged Europe’s citizenry, who raised supplies, food and even soldiers to fight for a Hellenic independence.[NEWLINE][NEWLINE]
-				After 8 years Ottoman forces had finally managed to crush the revolt, but where Greek soldiers had failed poets and propaganda had succeeded. French, British and Russian governments each sent a fleet in defense of the Greek islands, in response to popular demand for intervention. In the face of such overwhelming force, the Ottomans sued for peace and liberated Greece. After more than 2,000 years under the boots of Macedonian, Roman and Ottoman conquerors, The Greek homeland was at last free -- unified as one people for the first time in history.
+				Bandits and mountainfolk, turned anti-Ottoman insurgents and freedom fighters, The Klephts were the bedrock upon which the modern Greek army was formed. Together with the men originally hired to capture them, the Armatoloi, the Klephts formed the "yeast of liberty", the first hope for Greek independence after more than four centuries of Ottoman rule.[NEWLINE][NEWLINE]
+				Undisciplined and flighty as one would expect of brigands, Klephts waged an effective guerilla campaign against the much larger Ottoman armies sent to subdue them.  Massacres on both sides of the conflict were inflicted, but European sympathies fell heavily in favor of the Greeks. The unbridled cruelty of the Muslim Ottomans outraged Europe’s citizenry, who raised supplies, food and volunteers to fight for a Hellenic independence.[NEWLINE][NEWLINE]
+				After 8 years, Ottoman forces had finally managed to crush the revolt, but where Greek soldiers had failed poets and propaganda had succeeded. French, British, and Russian governments each sent a fleet in defense of the Greek islands in response to popular demand for intervention. In the face of such overwhelming force, the Ottomans sued for peace and liberated Greece. After more than 2,000 years under the boots of Macedonian, Roman and Ottoman conquerors, The Greek homeland was at last free -- unified as one people for the first time in history.
 			</Text>
 		</Row>
 		
@@ -1417,7 +1417,7 @@
 			<Text>Harbor Defense</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP">
-			<Text>+5% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to adjacent Friendly Cities[ENDCOLOR].</Text>
+			<Text>+10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to adjacent Friendly Cities[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_AMERICA_HARDENED">
 			<Text>Hardened</Text>
@@ -1577,7 +1577,7 @@
 			<Text>Pitz Court</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_HELP">
-			<Text>Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom. +1 [ICON_TOURISM] Tourism for every 2 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in this City receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVE] Olives: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>Barracks, Forge, and Armory in this City gain +2 [ICON_PRODUCTION] Production. -1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom. +1 [ICON_TOURISM] Tourism for every 4 [ICON_CITIZEN] Citizens in the City.[NEWLINE][NEWLINE]Grants [ICON_RESEARCH] Science and [ICON_PEACE] Faith at the end of every Long Count. [NEWLINE][NEWLINE]Land Units trained in this City receive the [COLOR_POSITIVE_TEXT]K'atun Ahaw[ENDCOLOR] Promotion, which grants new abilities for every 20 turns the Unit has been alive.[NEWLINE]Nearby [ICON_RES_PERFUME] Perfume: +1 [ICON_CULTURE] Culture.[NEWLINE]Nearby [ICON_RES_OLIVE] Olives: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAYA_PITZ_STRATEGY">
 			<Text>
@@ -1781,7 +1781,7 @@
 			<Text>The Riad is the Moroccan unique replacement for the Garden. Gold purchases in this city are slightly cheaper. Gold generation in the city is converted into [ICON_GREAT_PEOPLE] Great Merchant Points. Oases are boosted by the Riad more than by a normal Garden. Unlike other buildings, the Riad's base yields increase with each Era.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MAROCCO_RIAD_HELP">
-			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. 15% of [ICON_GOLD] Gold in the City is converted into [ICON_GREAT_PEOPLE] Great Merchant Points. Musician, Writer, and Artist Specialists produce +1 [ICON_TOURISM] Tourism in the City.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization. Musician, Writer, and Artist Specialists produce +1 [ICON_TOURISM] Tourism in the City.Cost of [ICON_GOLD] Gold purchasing in this City reduced by 5%.[NEWLINE][NEWLINE]Gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism every Era[NEWLINE]Nearby Oases: +3 [ICON_GOLD] Gold, +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+25% [ICON_GREAT_PEOPLE] Great People Points in the City. 15% of [ICON_GOLD] Gold in the City is converted into [ICON_GREAT_PEOPLE] Great Merchant Points. Musician, Writer, and Artist Specialists produce +1 [ICON_TOURISM] Tourism in the City.[NEWLINE][NEWLINE]1 Specialist in this City no longer produces [ICON_HAPPINESS_3] Unhappiness from Urbanization. Cost of [ICON_GOLD] Gold purchasing in this City reduced by 5%.[NEWLINE][NEWLINE]Gains +1 [ICON_GOLD] Gold and [ICON_TOURISM] Tourism every Era[NEWLINE]Nearby Oases: +3 [ICON_GOLD] Gold, +1 [ICON_FOOD] Food.[NEWLINE]Nearby [ICON_RES_CITRUS] Citrus: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COCOA] Cocoa: +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<!-- Sachem's Council -->
 		<!-- Created by adan_eslavo 14/10/2017 -->
@@ -1814,10 +1814,30 @@
 			<Text>Salon</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_SALON_HELP">
-			<Text>Available much earlier. Does not require Opera House.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science, [ICON_CULTURE] Culture and [ICON_TOURISM] Tourism for every 4 [ICON_CITIZEN] Citizens in the City. [ICON_GREAT_WORK] Great Works in the City produce +2 [ICON_TOURISM] Tourism. +33% [ICON_GREAT_ARTIST] Great Artist Rate in the City, and all Artists'' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+5% [ICON_GREAT_PEOPLE] Great People Rate in the City for each Chateau worked by the city.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.[NEWLINE][NEWLINE]+5 [ICON_CULTURE] Culture if [COLOR_POSITIVE_TEXT]Themed[ENDCOLOR].</Text>
+			<Text>Available much earlier. Does not require an Opera House.[NEWLINE][NEWLINE][ICON_CULTURE] Culture and [ICON_TOURISM] Tourism for every 4 [ICON_CITIZEN] Citizens in the City. [ICON_GREAT_WORK] Great Works in the City produce +1 [ICON_TOURISM] Tourism. +33% [ICON_GREAT_ARTIST] Great Artist Rate in the City, and all Artists' Guilds produce +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]-1 [ICON_HAPPINESS_3] Unhappiness from [ICON_CULTURE] Boredom.[NEWLINE][NEWLINE]Can be [COLOR_POSITIVE_TEXT]Themed[ENDCOLOR] in 9 different arrangements. +5 [ICON_CULTURE] Culture and [ICON_GREAT_PEOPLE] Great People Points if [COLOR_POSITIVE_TEXT]Themed[ENDCOLOR] (The type of [ICON_GREAT_PEOPLE] Points given depends on how it is themed). +3 [ICON_RESEARCH] Science and +10% [ICON_GREAT_PEOPLE] Great People generation for each active Theming bonus in the City.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_SALON_STRATEGY">
-			<Text>The Salon is the French unique building, replacing the Museum. In addition to the normal bonuses of a Museum, The Salon also yields Science from Population, and has stronger themeing bonuses. Each Chateau worked by a city with a Salon increases the generation of Great People in that city.</Text>
+			<Text>
+				The Salon is the French unique building, replacing the Museum. In addition to the normal bonuses of a Museum, The Salon also yields Science and increases Great People generation for each active theming bonus in the city. The Salon also has unique Great Work Theming bonuses that give different Great Person Points depending on what Art or Artifacts fill its slots:[NEWLINE]
+				[ICON_BULLET]Cabinet de Curiosités: Requires Arfifacts from your own Civilization.[NEWLINE]
+				[TAB][ICON_BULLET]+5 [ICON_GREAT_SCIENTIST] Great Scientist Points[NEWLINE]
+				[ICON_BULLET]Collection Exotique: Requires Art from the same Era and Civilizations other than your own.[NEWLINE]
+				[TAB][ICON_BULLET]+5 [ICON_GREAT_ARTIST] Great Artist Points[NEWLINE]
+				[ICON_BULLET]Ensemble de Diplômes: Requires Art from Different Eras and Civilizations other than your own.[NEWLINE]
+				[TAB][ICON_BULLET]+5 [ICON_DIPLOMAT] Great Diplomat Points[NEWLINE]
+				[ICON_BULLET]Illustrations Architecturales: Requires Art from the same Era and your own Civilization.[NEWLINE]
+				[TAB][ICON_BULLET]+5 [ICON_GREAT_ENGINEER] Great Engineer Points[NEWLINE]
+				[ICON_BULLET]Galerie des Batailles: Requires Art from Different Eras and your own Civilization.[NEWLINE]
+				[TAB][ICON_BULLET]+8 [ICON_GREAT_GENERAL] Great General Points[NEWLINE]
+				[ICON_BULLET]Retrospective Étrangère: Requires both an Art and an Artifact from Different Eras and Civilizations other than your own.[NEWLINE]
+				[TAB][ICON_BULLET]+5 [ICON_GREAT_WRITER] Great Writer Points[NEWLINE]
+				[ICON_BULLET]Synesthésie Artistique: Requires both an Art and an Artifact from your own Civilization.[NEWLINE]
+				[TAB][ICON_BULLET]+5 [ICON_GREAT_MUSICIAN] Great Musician Points[NEWLINE]
+				[ICON_BULLET]Salle de Marine: Requires both an Art and an Artifact from the same Era and Civilizations other than your own.[NEWLINE]
+				[TAB][ICON_BULLET]+8 [ICON_GREAT_ADMIRAL] Great Admiral Points[NEWLINE]
+				[ICON_BULLET]Pièce des Voyages: Requires Arfifacts from Civilizations other than your own.[NEWLINE]
+				[TAB][ICON_BULLET]+5 [ICON_GREAT_MERCHANT] Great Merchant Points
+			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_SALON_TEXT">
 			<Text>A salon is a gathering of people under the roof of an inspiring host, held partly to amuse one another and partly to refine the taste and increase the knowledge of the participants through conversation. These gatherings often consciously followed Horace's definition of the aims of poetry, "either to please or to educate" ("aut delectare aut prodesse est"). Salons, commonly associated with French literary and philosophical movements of the 17th and 18th centuries, were carried on until quite recently in urban settings.</Text>
@@ -1826,28 +1846,31 @@
 			<Text>Cabinet de Curiosités</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_FRANCE_SALON_2">
-			<Text>Cabinet de Curiosités</Text>
+			<Text>Collection Exotique</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_FRANCE_SALON_3">
-			<Text>Cabinet de Curiosités</Text>
+			<Text>Ensemble de Diplômes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_FRANCE_SALON_4">
-			<Text>Cabinet de Curiosités</Text>
+			<Text>Illustrations Architecturales</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_FRANCE_SALON_5">
-			<Text>Cabinet de Curiosités</Text>
+			<Text>Galerie des Batailles</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_FRANCE_SALON_6">
-			<Text>Cabinet de Curiosités</Text>
+			<Text>Retrospective Étrangère</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_FRANCE_SALON_7">
-			<Text>Cabinet de Curiosités</Text>
+			<Text>Synesthésie Artistique</Text>
 		</Row>
 		<Row Tag="TXT_KEY_THEMING_BONUS_FRANCE_SALON_8">
-			<Text>Cabinet de Curiosités</Text>
+			<Text>Salle de Marine</Text>
+		</Row>
+		<Row Tag="TXT_KEY_THEMING_BONUS_FRANCE_SALON_9">
+			<Text>Pièce des Voyages</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FRANCE_SALON_THEMING_BONUS_HELP">
-			<Text>To maximize your bonus, make sure the Great Work Slots are all filled with Great Art or Artifacts</Text>
+			<Text>To maximize your bonus, make sure the Great Work Slots are all filled with Great Art or Artifacts either all from your own Civilization or all from Civilizations other than your own.</Text>
 		</Row>	
 		<!-- Sambadrome -->
 		<!-- Created by Blue Ghost -->

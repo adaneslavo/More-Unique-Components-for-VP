@@ -84,7 +84,7 @@ FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_IRONCLAD';
 --------------------------------	
 INSERT INTO UnitPromotions
 			(Type,										Description,										Help,													CannotBeChosen,	Sound,				PortraitIndex,	IconAtlas,				PediaType,		PediaEntry, 									ChangeDamageValue,	AdjacentCityDefenseMod)
-VALUES		('PROMOTION_UNIT_AMERICA_MONITOR',			'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR',			'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP',			1,				'AS2D_IF_LEVELUP',	1,				'promoMUC_atlas_00',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR', 		0, 					5),
+VALUES		('PROMOTION_UNIT_AMERICA_MONITOR',			'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR',			'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR_HELP',			1,				'AS2D_IF_LEVELUP',	1,				'promoMUC_atlas_00',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_AMERICA_MONITOR', 		0, 					10),
 			('PROMOTION_UNIT_AMERICA_HARDENED',			'TXT_KEY_PROMOTION_UNIT_AMERICA_HARDENED',			'TXT_KEY_PROMOTION_UNIT_AMERICA_HARDENED_HELP',			1,				'AS2D_IF_LEVELUP',	0,				'promoMUC_atlas_00',	'PEDIA_NAVAL',	'TXT_KEY_PROMOTION_UNIT_AMERICA_HARDENED', 		-3, 				0);
 --==========================================================================================================================	
 

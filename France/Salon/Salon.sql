@@ -26,22 +26,21 @@ INSERT INTO Building_Flavors
 			(BuildingType, 				FlavorType,				Flavor)
 VALUES		('BUILDING_FRANCE_SALON',	'FLAVOR_GREAT_PEOPLE',	50),
 			('BUILDING_FRANCE_SALON',	'FLAVOR_CULTURE',		90),
-			('BUILDING_FRANCE_SALON',	'FLAVOR_SCIENCE',		10);
+			('BUILDING_FRANCE_SALON',	'FLAVOR_SCIENCE',		30);
 ------------------------------	
 -- Building_YieldChanges
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 			(BuildingType, 				YieldType,			Yield)
-VALUES		('BUILDING_FRANCE_SALON',	'YIELD_CULTURE',	2),
-			('BUILDING_FRANCE_SALON',	'YIELD_TOURISM',	2),
-			('BUILDING_FRANCE_SALON',	'YIELD_SCIENCE',	2);
+VALUES		('BUILDING_FRANCE_SALON',	'YIELD_CULTURE',	3),
+			('BUILDING_FRANCE_SALON',	'YIELD_TOURISM',	3),
+			('BUILDING_FRANCE_SALON',	'YIELD_SCIENCE',	3);
 ------------------------------	
 -- Building_YieldChangesPerPop
 ------------------------------
 INSERT INTO Building_YieldChangesPerPop 	
 			(BuildingType,				YieldType,			Yield)
-VALUES		('BUILDING_FRANCE_SALON',	'YIELD_SCIENCE',	25),
-			('BUILDING_FRANCE_SALON', 	'YIELD_TOURISM', 	25),
+VALUES		('BUILDING_FRANCE_SALON', 	'YIELD_TOURISM', 	25),
 			('BUILDING_FRANCE_SALON',	'YIELD_CULTURE',	25);
 ------------------------------	
 -- Building_UnhappinessNeedsFlatReduction
@@ -82,18 +81,16 @@ VALUES		('BUILDING_FRANCE_SALON', 	'YIELD_CULTURE', 	5);
 ------------------------------	
 INSERT INTO Building_ThemingBonuses
 		(BuildingType, 				Description, 							Bonus, 	SameEra, 	UniqueEras, 	MustBeArt, 	MustBeArtifact, 	MustBeEqualArtArtifact, 	RequiresOwner, 	RequiresAnyButOwner,  	AIPriority)
-VALUES	('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_1', 6, 		1, 			0, 				1, 			0, 					0, 							1, 				0, 						2),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_1', 6, 		1, 			0, 				1, 			0, 					0, 							0, 				1, 						2),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_2', 6, 		1, 			0, 				0, 			1, 					0, 							1, 				0, 						2),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_2', 6, 		1, 			0, 				0, 			1, 					0, 							0, 				1, 						2),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_3', 6, 		1, 			0, 				1, 			0, 					0, 							0, 				0, 						1),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_4', 6, 		1, 			0, 				0, 			1, 					0, 							0, 				0, 						1),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_5', 6, 		1, 			0, 				0, 			0, 					0, 							1, 				0, 						1),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_6', 6, 		1, 			0, 				0, 			0, 					0, 							0, 				1, 						1),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_7', 6, 		0, 			0, 				1, 			0, 					0, 							1, 				0, 						1),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_7', 6, 		0, 			0, 				1, 			0, 					0, 							0, 				1, 						1),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_8', 6, 		0, 			0, 				0, 			1, 					0, 							1, 				0, 						1),
-		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_8', 6, 		0, 			0, 				0, 			1, 					0, 							0, 				1, 						1);
+VALUES	('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_1', 6, 		0, 			0, 				0, 			1, 					0, 							1, 				0, 						2),
+		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_2', 6, 		1, 			0, 				1, 			0, 					0, 							0, 				1, 						2),
+		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_3', 6, 		0, 			1, 				1, 			0, 					0, 							0, 				1, 						1),
+		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_4', 6, 		1, 			0, 				1, 			0, 					0, 							1, 				0, 						1),
+		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_5', 6, 		0, 			1, 				1, 			0, 					0, 							1, 				0, 						1),
+		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_6', 6, 		0, 			1, 				0, 			0, 					1, 							0, 				1, 						1),
+		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_7', 6, 		0, 			0, 				0, 			0, 					1, 							1, 				0, 						1),
+		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_8', 6, 		1, 			0, 				0, 			0, 					1, 							0, 				1, 						1),
+		('BUILDING_FRANCE_SALON', 	'TXT_KEY_THEMING_BONUS_FRANCE_SALON_9', 6, 		0, 			0, 				0, 			1, 					0, 							0, 				1, 						2);
+
 --==========================================================================================================================
 -- ARTDEFINES
 --==========================================================================================================================	

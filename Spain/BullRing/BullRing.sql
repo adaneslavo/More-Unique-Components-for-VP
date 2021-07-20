@@ -1,8 +1,8 @@
 -- Buildings
 ------------------------------	
 INSERT INTO Buildings 	
-		(Type, 							BuildingClass, Cost, FreeStartEra, Happiness, FinishLandTRTourism, FinishSeaTRTourism, NeverCapture, GoldMaintenance, 	PrereqTech, 		ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, Help, 										Description, 							Civilopedia, 								Strategy, 									IconAtlas, 				PortraitIndex)
-SELECT	'BUILDING_SPAIN_BULLRING', 	BuildingClass, Cost, FreeStartEra, Happiness, FinishLandTRTourism, FinishSeaTRTourism, NeverCapture, 0, 					'TECH_NAVIGATION', 	ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, 'TXT_KEY_BUILDING_SPAIN_BULLRING_HELP', 	'TXT_KEY_BUILDING_SPAIN_BULLRING', 	'TXT_KEY_BUILDING_SPAIN_BULLRING_TEXT', 	'TXT_KEY_BUILDING_SPAIN_BULLRING_STRATEGY', 	'SPAIN_BULLRING_ATLAS', 0
+		(Type, 						BuildingClass, Cost, FreeStartEra, Happiness, FinishLandTRTourism, FinishSeaTRTourism, NeverCapture, GoldMaintenance, 	PrereqTech, 		ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, Help, 										Description, 							Civilopedia, 								Strategy, 									IconAtlas, 				PortraitIndex)
+SELECT	'BUILDING_SPAIN_BULLRING', 	BuildingClass, Cost, FreeStartEra, Happiness, FinishLandTRTourism, FinishSeaTRTourism, NeverCapture, 0, 				'TECH_NAVIGATION', 	ArtDefineTag, SpecialistType, SpecialistCount, MinAreaSize, ConquestProb, HurryCostModifier, 'TXT_KEY_BUILDING_SPAIN_BULLRING_HELP', 	'TXT_KEY_BUILDING_SPAIN_BULLRING', 	'TXT_KEY_BUILDING_SPAIN_BULLRING_TEXT', 	'TXT_KEY_BUILDING_SPAIN_BULLRING_STRATEGY', 	'SPAIN_BULLRING_ATLAS', 0
 FROM Buildings WHERE Type = 'BUILDING_THEATRE';	
 ------------------------------	
 -- Building_Flavors
@@ -33,12 +33,8 @@ VALUES
 ------------------------------		
 INSERT INTO Building_FeatureYieldChanges
 	(BuildingType, FeatureType, YieldType, Yield)
-VALUES
-	('BUILDING_SPAIN_BULLRING', 'FEATURE_FOREST', 'YIELD_TOURISM', 2),
-	('BUILDING_SPAIN_BULLRING', 'FEATURE_JUNGLE', 'YIELD_TOURISM', 2),
-	('BUILDING_SPAIN_BULLRING', 'FEATURE_FOREST', 'YIELD_CULTURE', 2),
-	('BUILDING_SPAIN_BULLRING', 'FEATURE_JUNGLE', 'YIELD_CULTURE', 2);
-	
+SELECT	'BUILDING_SPAIN_BULLRING',	FeatureType, YieldType, Yield
+FROM Building_FeatureYieldChanges WHERE BuildingType = 'BUILDING_THEATRE';
 ------------------------------	
 -- Building_ResourceYieldChanges
 ------------------------------		
@@ -51,8 +47,8 @@ VALUES
 ------------------------------		
 INSERT INTO Building_ImprovementYieldChanges
 		(BuildingType, 					ImprovementType, 		YieldType, 			Yield)
-VALUES	('BUILDING_SPAIN_BULLRING', 	'IMPROVEMENT_PASTURE', 	'YIELD_TOURISM', 	2),
-		('BUILDING_SPAIN_BULLRING', 	'IMPROVEMENT_PASTURE', 	'YIELD_CULTURE', 	2);
+VALUES	('BUILDING_SPAIN_BULLRING', 	'IMPROVEMENT_PASTURE', 	'YIELD_TOURISM', 	1),
+		('BUILDING_SPAIN_BULLRING', 	'IMPROVEMENT_PASTURE', 	'YIELD_CULTURE', 	1);
 
 ------------------------------	
 -- Building_ResourceQuantityRequirements

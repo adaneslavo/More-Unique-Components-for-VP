@@ -6,7 +6,7 @@
 --------------------------------		
 INSERT INTO Civilization_UnitClassOverrides 
 			(CivilizationType, 		UnitClassType, 			UnitType)
-VALUES		('CIVILIZATION_GREECE',	'UNITCLASS_GATLINGGUN', 'UNIT_GREECE_KLEPHT');
+VALUES		('CIVILIZATION_GREECE',	'UNITCLASS_COMMANDO', 	'UNIT_GREECE_KLEPHT');
 --==========================================================================================================================	
 
 --==========================================================================================================================
@@ -84,9 +84,9 @@ VALUES		('PROMOTION_UNIT_GREECE_PHILHELLENISM', 'TXT_KEY_PROMOTION_UNIT_GREECE_P
 -- Units
 --------------------------------	
 INSERT INTO Units 	
-			(Type,					Class,	PrereqTech,		Range,	BaseSightRange, Combat,		RangedCombat,	Cost,		FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,				GoodyHutUpgradeUnitClass,	XPValueAttack,	BaseLandAirDefense,	Description, 					Civilopedia, 						Strategy, 								Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 					UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate,	PurchaseCooldown)
-SELECT		'UNIT_GREECE_KLEPHT',	Class,	'TECH_RIFLING',	Range,	BaseSightRange, Combat-4,	RangedCombat,	Cost-50,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_ADVANCED_BALLISTICS',	GoodyHutUpgradeUnitClass,	XPValueAttack,	BaseLandAirDefense,	'TXT_KEY_UNIT_GREECE_KLEPHT',	'TXT_KEY_UNIT_GREECE_KLEPHT_TEXT',	'TXT_KEY_UNIT_GREECE_KLEPHT_STRATEGY',	'TXT_KEY_UNIT_GREECE_KLEPHT_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_GREECE_KLEPHT', 	0,					'UNIT_GREECE_FLAG_ATLAS',	0, 				'UNIT_GREECE_ATLAS',	MoveRate,	PurchaseCooldown
-FROM Units WHERE Type = 'UNIT_GATLINGGUN';
+			(Type,					Class,	PrereqTech,		Range, BaseSightRange, Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass, XPValueAttack, BaseLandAirDefense,	Description, 					Civilopedia, 						Strategy, 								Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 					UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate, PurchaseCooldown)
+SELECT		'UNIT_GREECE_KLEPHT',	Class,	'TECH_RIFLING',	Range, BaseSightRange, Combat+2,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_ROCKETRY',	GoodyHutUpgradeUnitClass, XPValueAttack, BaseLandAirDefense,	'TXT_KEY_UNIT_GREECE_KLEPHT',	'TXT_KEY_UNIT_GREECE_KLEPHT_TEXT',	'TXT_KEY_UNIT_GREECE_KLEPHT_STRATEGY',	'TXT_KEY_UNIT_GREECE_KLEPHT_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_GREECE_KLEPHT', 	0,					'UNIT_GREECE_FLAG_ATLAS',	0, 				'UNIT_GREECE_ATLAS',	MoveRate, PurchaseCooldown
+FROM Units WHERE Type = 'UNIT_COMMANDO';
 --------------------------------	
 -- UnitGameplay2DScripts
 --------------------------------		
@@ -100,45 +100,39 @@ FROM UnitGameplay2DScripts WHERE UnitType = 'UNIT_MUSKETMAN';
 INSERT INTO Unit_AITypes 	
 			(UnitType, 				UnitAIType)
 SELECT		'UNIT_GREECE_KLEPHT', 	UnitAIType
-FROM Unit_AITypes WHERE UnitType = 'UNIT_GATLINGGUN';
+FROM Unit_AITypes WHERE UnitType = 'UNIT_COMMANDO';
 --------------------------------	
 -- Unit_ResourceQuantityRequirements
 --------------------------------		
 INSERT INTO Unit_ResourceQuantityRequirements 	
 			(UnitType, 				ResourceType)
 SELECT		'UNIT_GREECE_KLEPHT', 	ResourceType
-FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_GATLINGGUN';
+FROM Unit_ResourceQuantityRequirements WHERE UnitType = 'UNIT_COMMANDO';
 --------------------------------	
 -- Unit_ClassUpgrades
 --------------------------------		
 INSERT INTO Unit_ClassUpgrades 	
 			(UnitType, 				UnitClassType)
 SELECT		'UNIT_GREECE_KLEPHT', 	UnitClassType
-FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_GATLINGGUN';
+FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_COMMANDO';
 --------------------------------	
 -- Unit_Flavors
 --------------------------------		
 INSERT INTO Unit_Flavors 	
 			(UnitType, 				FlavorType,				Flavor)
-VALUES		('UNIT_GREECE_KLEPHT',	'FLAVOR_OFFENSE',		6),
-			('UNIT_GREECE_KLEPHT',	'FLAVOR_DEFENSE',		11),
-			('UNIT_GREECE_KLEPHT',	'FLAVOR_RANGED',		10);
+VALUES		('UNIT_GREECE_KLEPHT',	'FLAVOR_OFFENSE',		15),
+			('UNIT_GREECE_KLEPHT',	'FLAVOR_DEFENSE',		10);
 --------------------------------
 -- Unit_FreePromotions
 --------------------------------
 INSERT INTO Unit_FreePromotions 	
 			(UnitType, 				PromotionType)
 SELECT		'UNIT_GREECE_KLEPHT', 	PromotionType
-FROM Unit_FreePromotions WHERE UnitType = 'UNIT_GATLINGGUN';
+FROM Unit_FreePromotions WHERE UnitType = 'UNIT_COMMANDO';
 
 INSERT INTO Unit_FreePromotions
 			(UnitType, 				PromotionType)
 VALUES		('UNIT_GREECE_KLEPHT',	'PROMOTION_UNIT_GREECE_PHILHELLENISM'),
-			('UNIT_GREECE_KLEPHT',	'PROMOTION_ALTITUDE_TRAINING'),
 			('UNIT_GREECE_KLEPHT',	'PROMOTION_CAN_MOVE_AFTER_ATTACKING');
---------------------------------
--- Unit_FreePromotions Deletion
---------------------------------
-DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_GREECE_KLEPHT' AND PromotionType = 'PROMOTION_MODERN_RANGED_PENALTY_I';
 --==========================================================================================================================
 --==========================================================================================================================

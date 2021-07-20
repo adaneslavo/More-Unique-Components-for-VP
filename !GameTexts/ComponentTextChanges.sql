@@ -24,15 +24,6 @@ UPDATE Language_en_US
 SET Text = ' The Longbowman has a greater Range than the Crossbowman, allowing it to attack Enemies three hexes away, often destroying them before they can strike back. Longbows also are more effective against Mounted opponents, thanks to their Agincourt Promotion. Like other Ranged Units, Longbowmen are vulnerable to Melee attack.'
 WHERE Tag = 'TXT_KEY_UNIT_ENGLISH_LONGBOWMAN_STRATEGY';
 
--- Carolean
-UPDATE Language_en_US 
-SET Text = 'Strong frontline Land Unit specializing in long marches far from Swedish land. Only Sweden may build it. Starts with [COLOR_POSITIVE_TEXT]March[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Field Works[ENDCOLOR], gets additional bonuses from [ICON_GREAT_GENERAL] Great Generals and deals AOE damage to Enemy Units on kills.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_SWEDISH_CAROLEAN';
-
-UPDATE Language_en_US 
-SET Text = 'Caroleans are the backbone of the Industrial era Swedish army. They start with the March promotion that allows it to Heal every turn, even if it performs an action. The Carolean also receives a 15% Combat Bonus when stacked with a Great General, and deals damage to all adjacent Units after advancing from killing a Unit.'
-WHERE Tag = 'TXT_KEY_UNIT_SWEDISH_CAROLEAN_STRATEGY';
-
 -- Hakkapeliitta
 UPDATE Language_en_US 
 SET Text = 'Mid-game cavalry, stronger and more effective against Wounded Units. Only Sweden may build it. [ICON_GREAT_GENERAL] Great Generals are generated more quickly by this Unit, and it transfers its [ICON_ARROW_RIGHT] Movement Points to stacked [ICON_GREAT_GENERAL] Great Generals at the beginning of the turn.'
@@ -50,15 +41,6 @@ WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_HELP';
 UPDATE Language_en_US 
 SET Text = 'A powerful Industrial Era Naval Unit. Only America may build it. Takes slightly reduced damage from all sources, and gives a Defensive Bonus to nearby Friendly Cities. Their rock hard defensive abilities make them a dangerous adversary in coastal engagements.'
 WHERE Tag = 'TXT_KEY_CIVIL_WAR_SCENARIO_UNIT_MONITOR_STRATEGY';
-
--- Mandekalu Cavalry
-UPDATE Language_en_US
-SET Text = 'This is a Songhai unique unit, replacing the Knight. This unit gains a significant bonus when attacking cities and flanking other units. The Mandekalu Cavalry can move after attacking. Its speed makes it difficult for an enemy to build a defensive line before the Mandekalu Cavalry reaches the target.'
-WHERE Tag = 'TXT_KEY_UNIT_SONGHAI_MUSLIMCAVALRY_STRATEGY';
-
-UPDATE Language_en_US
-SET Text = 'Powerful Medieval Mounted Unit, weak to Pikemen. Only the Songhai may build it. This Unit is not penalized when attacking Cities, unlike the Knight which it replaces, and starts with the [COLOR_POSITIVE_TEXT]Raider[ENDCOLOR] Promotion.'
-WHERE Tag = 'TXT_KEY_UNIT_HELP_MUSLIM_CAVALRY';
 
 -- Pracinha
 UPDATE	Language_en_US

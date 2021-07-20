@@ -85,23 +85,6 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Buildings WHERE Type='BUILDIN
 	UPDATE Units SET ObsoleteTech = 'TECH_COMBUSTION' WHERE Type = 'UNIT_SWEDISH_HAKKAPELIITTA' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Units SET GoodyHutUpgradeUnitClass = 'UNITCLASS_EE_UHLAN' WHERE Type = 'UNIT_SWEDISH_HAKKAPELIITTA' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
-	-- Klepht
-	UPDATE Civilization_UnitClassOverrides SET UnitClassType = 'UNITCLASS_EE_SKIRMISHER' WHERE UnitType = 'UNIT_GREECE_KLEPHT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_GATLINGGUN' WHERE UnitType = 'UNIT_GREECE_KLEPHT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Units SET Class = 'UNITCLASS_EE_SKIRMISHER' WHERE Type = 'UNIT_GREECE_KLEPHT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Units SET ObsoleteTech = 'TECH_BALLISTICS' WHERE Type = 'UNIT_GREECE_KLEPHT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Units SET PrereqTech = 'TECH_EE_FORTIFICATION' WHERE Type = 'UNIT_GREECE_KLEPHT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Units SET Combat = '23' WHERE Type = 'UNIT_GREECE_KLEPHT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Units SET RangedCombat = '38' WHERE Type = 'UNIT_GREECE_KLEPHT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Units SET Cost = '325' WHERE Type = 'UNIT_GREECE_KLEPHT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	INSERT INTO	Unit_FreePromotions SELECT 'UNIT_GREECE_KLEPHT', PromotionType FROM Unit_FreePromotions WHERE UnitType = 'UNIT_EE_SKIRMISHER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Language_en_US 
-		SET Text = 'A quick and elusive guerilla fighter. The Klepht is not as powerful as the Light Infantry it replaces, but can move quickly through hills, even after attacking. This unit also gains gold and production for every city-state ally every time it attacks a unit.'
-		WHERE Tag = 'TXT_KEY_UNIT_GREECE_KLEPHT_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Language_en_US 
-		SET Text = 'Unique Enlightenment Era Unit.  Only the Greeks may build it. This unit is slightly weaker than the Light Infantry, but can move quickly through hills and can move after attacking. Receives the [COLOR_POSITIVE_TEXT]Philhellenism[ENDCOLOR] Promotion for free.'
-		WHERE Tag = 'TXT_KEY_UNIT_GREECE_KLEPHT_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-
 	-- Langskib
 	UPDATE Unit_ClassUpgrades SET UnitClassType = 'UNITCLASS_EE_CARRACK' WHERE UnitType = 'UNIT_DENMARK_LANGSKIB' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Units SET ObsoleteTech = 'TECH_NAVIGATION' WHERE Type = 'UNIT_DENMARK_LANGSKIB' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
@@ -118,9 +101,6 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Buildings WHERE Type='BUILDIN
 	UPDATE Language_en_US 
 		SET Text = 'Unique Enlightenment Era Siege Unit. Only the Russians may build it. This Unit has better mobility in enemy territory, can move after attacking, and is more effective against Unmounted Melee units.'
 		WHERE Tag = 'TXT_KEY_UNIT_RUSSIA_LICORNE_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-
-	-- Mandekalu Cavalry
-	UPDATE Units SET ObsoleteTech = 'TECH_RIFLING' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- Prau
 	UPDATE Units SET ObsoleteTech = 'TECH_EE_EXPLORATION' WHERE Type = 'UNIT_INDONESIA_PRAU' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
@@ -199,12 +179,12 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Buildings WHERE Type='BUILDIN
 	UPDATE Buildings SET CultureRateModifier = '0' WHERE Type = 'BUILDING_BRAZIL_SAMBADROME' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	DELETE FROM Building_SpecificGreatPersonRateModifier WHERE BuildingType = 'BUILDING_BRAZIL_SAMBADROME' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Buildings SET TechEnhancedTourism = '0' WHERE Type = 'BUILDING_BRAZIL_SAMBADROME' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Building_YieldChangesPerPop SET Yield = '17' WHERE BuildingType = 'BUILDING_BRAZIL_SAMBADROME' AND YieldType = 'YIELD_CULTURE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+	UPDATE Building_YieldChangesPerPop SET Yield = '20' WHERE BuildingType = 'BUILDING_BRAZIL_SAMBADROME' AND YieldType = 'YIELD_CULTURE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Language_en_US 
 		SET Text = 'The Sambadrome is the unique Brazilian replacement for the Salon. In addition to the bonuses of a Salon, the Sambadrome also generates Golden Age Points and Tourism. The Sambadrome can be built in cities with an Academy, so they do not block your scientific growth like a normal Salon. Comes with a Musician specialist slot, and all Musicians in the city generate extra Gold and Golden Age Points.'
 		WHERE Tag = 'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 	UPDATE Language_en_US 
-		SET Text = 'Unique Brazilian replacement for the Salon. +1 [ICON_CULTURE] Culture for every 6 [ICON_CITIZEN] Population in City.[NEWLINE][NEWLINE]Musicians in City produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +25% [ICON_GOLDEN_AGE] Golden Age Points during Golden Ages. +2 [ICON_TOURISM] Tourism at Radio.[NEWLINE][NEWLINE]Can be built in a city with an Academy'
+		SET Text = 'Unique Brazilian replacement for the Salon. +1 [ICON_CULTURE] Culture for every 5 [ICON_CITIZEN] Population in City.[NEWLINE][NEWLINE]Musicians in City produce +1 [ICON_GOLD] Gold and +2 [ICON_GOLDEN_AGE] Golden Age Points. +25% [ICON_GOLDEN_AGE] Golden Age Points during Golden Ages. +2 [ICON_TOURISM] Tourism at Radio.[NEWLINE][NEWLINE]Can be built in a city with an Academy'
 		WHERE Tag = 'TXT_KEY_BUILDING_BRAZIL_SAMBADROME_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
 
 	-- Schutzenstand
@@ -251,21 +231,15 @@ WHERE Type = 'MUCfVP-EE' AND EXISTS (SELECT * FROM Buildings WHERE Type='BUILDIN
 	UPDATE Language_en_US 
 		SET Text = 'Unique Dutch replacement for the Weigh House. Cheaper, and Available earlier.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold  for every [ICON_CITIZEN] Citizen in the city. 1 Merchant specialist in this city. +3 [ICON_GOLD] Gold to Market in this City.[NEWLINE][NEWLINE]+2% [ICON_GREAT_PEOPLE] Great Person Generation and +1 [ICON_STRENGTH] Combat Strength in City for every Luxury Resource traded on Empire, up to a maximum of 10 traded resources.[NEWLINE]Reduces Poverty slightly.'
 		WHERE Tag = 'TXT_KEY_BUILDING_NETHERLANDS_WAAG_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-
-	-- White Tower
-	UPDATE Civilization_BuildingClassOverrides SET BuildingClassType = 'BUILDINGCLASS_EE_SUMMER_PALACE' WHERE BuildingType = 'BUILDING_ENGLAND_WHITE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Buildings SET BuildingClass = 'BUILDINGCLASS_EE_SUMMER_PALACE' WHERE Type = 'BUILDING_ENGLAND_WHITE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Buildings SET PrereqTech = 'TECH_EE_SOVEREIGNTY' WHERE Type = 'BUILDING_ENGLAND_WHITE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Buildings SET MinorityHappinessChangeGlobal = '-50' WHERE Type = 'BUILDING_ENGLAND_WHITE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Buildings SET FreeGreatPeople = '1' WHERE Type = 'BUILDING_ENGLAND_WHITE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Buildings SET NationalPopRequired = '35' WHERE Type = 'BUILDING_ENGLAND_WHITE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Buildings SET GreatWorkCount = '2' WHERE Type = 'BUILDING_ENGLAND_WHITE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Building_ThemingYieldBonus SET Yield = '3' WHERE BuildingType = 'BUILDING_ENGLAND_WHITE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Building_YieldChanges SET Yield = '3' WHERE BuildingType = 'BUILDING_ENGLAND_WHITE_TOWER' AND YieldType = 'YIELD_CULTURE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1); 
-	DELETE FROM Building_YieldChangesPerPop WHERE BuildingType = 'BUILDING_ENGLAND_WHITE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
-	UPDATE Language_en_US
-		SET Text = 'Unique replacement for the Tower of Buddhist Incense. Only England may build it. Receive your choice of a free [ICON_GREAT_PEOPLE] Great Person.[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold to Constabulary and +3 [ICON_FOOD] Food to Arsenal in City. +2 [ICON_CULTURE] Culture for all Castles on Empire, and -25% Spy stealing rate on Empire.[NEWLINE][NEWLINE]+1 [ICON_HAPPINESS_1] Happiness on Empire for every enemy spy killed on Empire.[NEWLINE][NEWLINE]Contains 2 slots for Great Works of Art/Artifact, and comes with a free Great Work of Art. +3 [ICON_GOLD] Gold and +3 [ICON_CULTURE] Culture when themed.[NEWLINE][NEWLINE]Requires Castle in City.[NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.'
-		WHERE Tag = 'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+		
 	UPDATE Language_en_US 
-		SET Text = 'Unique English replacement for the Tower of Buddhist Incense. Receive your choice of a free great person, and 2 culture for every castle in the empire. The White Tower reduces the stealing rate of enemy spies on empire, and gives Happiness for every enemy spy killed. Your citizens will love you if you can keep a tight lid on English secrets, so station spies in your cities to take advantage of this wonder.'
-		WHERE Tag = 'TXT_KEY_BUILDING_ENGLAND_WHITE_TOWER_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+		SET Text = 'Parlour'
+		WHERE Tag = 'TXT_KEY_BUILDING_EE_SALON' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+		
+	UPDATE Language_en_US 
+		SET Text = 'The Parlour originated as the outer room or building of a monastery where monks could welcome, talk, and do business amongst themselves and visiting laity. From there, the parlour spread as a featured space in the homes of the emerging middle-class where ideas of the day were discussed. The usage of Parlours as places of business survives today, with the rise of funeral parlours and beauty parlours.'
+		WHERE Tag = 'TXT_KEY_BUILDING_EE_SALON_PEDIA' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
+
+	UPDATE Language_en_US 
+		SET Text = 'The Parlour is an Enlightenment-era building which increases the [ICON_CULTURE] Culture output of a city. It may not be built in a city with an Academy, forcing cities to specialise in either Culture or Science.'
+		WHERE Tag = 'TXT_KEY_BUILDING_EE_SALON_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='MUCfVP-EE' AND Value= 1);
