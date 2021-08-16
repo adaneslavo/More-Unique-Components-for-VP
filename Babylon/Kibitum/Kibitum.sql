@@ -53,19 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 									Scale, ZOffset, Domain, Model, 				MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_BABYLON_KIBITUM',	Scale, ZOffset, Domain, 'Kibitum.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_SPEARMAN';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_BABYLON_ATLAS', 				256, 		'KibitumPicture_256.dds',	1, 				1),
-			('UNIT_BABYLON_ATLAS', 				128, 		'KibitumPicture_128.dds',	1, 				1),
-			('UNIT_BABYLON_ATLAS', 				80, 		'KibitumPicture_080.dds',	1, 				1),
-			('UNIT_BABYLON_ATLAS', 				64, 		'KibitumPicture_064.dds',	1, 				1),
-			('UNIT_BABYLON_ATLAS', 				45, 		'KibitumPicture_045.dds',	1, 				1),
-			('UNIT_BABYLON_FLAG_ATLAS', 		32, 		'KibitumFlag_032.dds',		1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- PROMOTIONS
 --==========================================================================================================================	
@@ -143,3 +130,15 @@ VALUES		('UNIT_BABYLON_KIBITUM',	'PROMOTION_UNIT_BABYLON_LEGACY_0'),
 			('UNIT_BABYLON_KIBITUM',	'PROMOTION_GAIN_EXPERIENCE');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_BABYLON_ATLAS', 				256, 		'KibitumPicture_256.dds',	1, 				1),
+			('UNIT_BABYLON_ATLAS', 				128, 		'KibitumPicture_128.dds',	1, 				1),
+			('UNIT_BABYLON_ATLAS', 				80, 		'KibitumPicture_080.dds',	1, 				1),
+			('UNIT_BABYLON_ATLAS', 				64, 		'KibitumPicture_064.dds',	1, 				1),
+			('UNIT_BABYLON_ATLAS', 				45, 		'KibitumPicture_045.dds',	1, 				1),
+			('UNIT_BABYLON_FLAG_ATLAS', 		32, 		'KibitumFlag_032.dds',		1, 				1);
+--==========================================================================================================================	

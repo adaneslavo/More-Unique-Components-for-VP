@@ -53,17 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 									Scale, ZOffset, Domain, Model, 				MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_PERSIA_QIZILBASH',	Scale, ZOffset, Domain, 'Qizilbash.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_LANCER';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_PERSIA_ATLAS', 				256, 		'QizilbashPicture_256.dds',			1, 				1),
-			('UNIT_PERSIA_ATLAS', 				128, 		'QizilbashPicture_128.dds',			1, 				1),
-			('UNIT_PERSIA_ATLAS', 				80, 		'QizilbashPicture_080.dds',			1, 				1),
-			('UNIT_PERSIA_ATLAS', 				64, 		'QizilbashPicture_064.dds',			1, 				1),
-			('UNIT_PERSIA_ATLAS', 				45, 		'QizilbashPicture_045.dds',			1, 				1),
-			('UNIT_PERSIA_FLAG_ATLAS', 			32, 		'QizilbashFlag_032.dds',			1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -136,3 +125,14 @@ INSERT INTO Unit_FreePromotions
 VALUES		('UNIT_PERSIA_QIZILBASH',	'PROMOTION_UNIT_PERSIA_SAFAVI_AGITATOR');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_PERSIA_ATLAS', 				256, 		'QizilbashPicture_256.dds',			1, 				1),
+			('UNIT_PERSIA_ATLAS', 				128, 		'QizilbashPicture_128.dds',			1, 				1),
+			('UNIT_PERSIA_ATLAS', 				80, 		'QizilbashPicture_080.dds',			1, 				1),
+			('UNIT_PERSIA_ATLAS', 				64, 		'QizilbashPicture_064.dds',			1, 				1),
+			('UNIT_PERSIA_ATLAS', 				45, 		'QizilbashPicture_045.dds',			1, 				1),
+			('UNIT_PERSIA_FLAG_ATLAS', 			32, 		'QizilbashFlag_032.dds',			1, 				1);

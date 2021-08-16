@@ -7,20 +7,7 @@
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 		BuildingClassType, 			BuildingType)
 VALUES	('CIVILIZATION_SIAM',	'BUILDINGCLASS_WORKSHOP',	'BUILDING_SIAM_BAAN_CHANG');
---==========================================================================================================================	
 
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES	('BUILDING_SIAM_ATLAS', 			256, 		'BaanChangPicture_256.dds',			1, 				1),
-		('BUILDING_SIAM_ATLAS', 			128, 		'BaanChangPicture_128.dds',			1, 				1),
-		('BUILDING_SIAM_ATLAS', 			64, 		'BaanChangPicture_064.dds',			1, 				1),
-		('BUILDING_SIAM_ATLAS', 			45, 		'BaanChangPicture_045.dds',			1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -88,4 +75,15 @@ SELECT		'BUILDING_SIAM_BAAN_CHANG', YieldType, Yield
 FROM Building_YieldFromInternalTR WHERE BuildingType = 'BUILDING_WORKSHOP';
 --==========================================================================================================================
 --==========================================================================================================================
-
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
+VALUES	('BUILDING_SIAM_ATLAS', 			256, 		'BaanChangPicture_256.dds',			1, 				1),
+		('BUILDING_SIAM_ATLAS', 			128, 		'BaanChangPicture_128.dds',			1, 				1),
+		('BUILDING_SIAM_ATLAS', 			64, 		'BaanChangPicture_064.dds',			1, 				1),
+		('BUILDING_SIAM_ATLAS', 			45, 		'BaanChangPicture_045.dds',			1, 				1);

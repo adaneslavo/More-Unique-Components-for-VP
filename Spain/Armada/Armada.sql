@@ -53,17 +53,7 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 								Scale,	ZOffset, Domain, Model, 							MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_SPAIN_ARMADA',	Scale,	ZOffset, Domain, 'mod_spanish_galleon.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_PRIVATEER';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_SPAIN_ATLAS', 		256, 		'ArmadaPicture_256.dds',	1, 				1),
-			('UNIT_SPAIN_ATLAS', 		128, 		'ArmadaPicture_128.dds',	1, 				1),
-			('UNIT_SPAIN_ATLAS', 		80, 		'ArmadaPicture_080.dds',	1, 				1),
-			('UNIT_SPAIN_ATLAS', 		64, 		'ArmadaPicture_064.dds',	1, 				1),
-			('UNIT_SPAIN_ATLAS', 		45, 		'ArmadaPicture_045.dds',	1, 				1),
-			('UNIT_SPAIN_FLAG_ATLAS', 	32, 		'ArmadaFlag_032.dds',		1, 				1);
+
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -144,3 +134,14 @@ VALUES		('UNIT_SPAIN_ARMADA',	'PROMOTION_UNIT_SPAIN_SANTA_MARIA'),
 			('UNIT_SPAIN_ARMADA',	'PROMOTION_BOARDING_PARTY_1');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_SPAIN_ATLAS', 		256, 		'ArmadaPicture_256.dds',	1, 				1),
+			('UNIT_SPAIN_ATLAS', 		128, 		'ArmadaPicture_128.dds',	1, 				1),
+			('UNIT_SPAIN_ATLAS', 		80, 		'ArmadaPicture_080.dds',	1, 				1),
+			('UNIT_SPAIN_ATLAS', 		64, 		'ArmadaPicture_064.dds',	1, 				1),
+			('UNIT_SPAIN_ATLAS', 		45, 		'ArmadaPicture_045.dds',	1, 				1),
+			('UNIT_SPAIN_FLAG_ATLAS', 	32, 		'ArmadaFlag_032.dds',		1, 				1);

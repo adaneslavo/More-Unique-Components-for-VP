@@ -8,22 +8,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 			(CivilizationType, 			BuildingClassType, 				BuildingType)
 VALUES		('CIVILIZATION_BYZANTIUM',	'BUILDINGCLASS_CIRCUS_MAXIMUS',	'BUILDING_BYZANTIUM_HIPPODROME');
 --==========================================================================================================================	
-
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 							IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
-VALUES	('BUILDING_BYZANTIUM_ATLAS', 			256, 		'HippodromePicture_256.dds',			1, 				1),
-		('BUILDING_BYZANTIUM_ATLAS', 			128, 		'HippodromePicture_128.dds',			1, 				1),
-		('BUILDING_BYZANTIUM_ATLAS', 			64, 		'HippodromePicture_064.dds',			1, 				1),
-		('BUILDING_BYZANTIUM_ATLAS', 			45, 		'HippodromePicture_045.dds',			1, 				1);
---==========================================================================================================================	
-
---==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
 ------------------------------
@@ -104,3 +88,16 @@ FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_CIRC
 --VALUES		('PLAYER_EVENT_CHOICE_BYZANTIUM_HIPPODROME_NIKA_RIOT',	'PLAYER_EVENT_BYZANTIUM_HIPPODROME_NIKA_RIOT');
 --==========================================================================================================================
 --==========================================================================================================================
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 							IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
+VALUES	('BUILDING_BYZANTIUM_ATLAS', 			256, 		'HippodromePicture_256.dds',			1, 				1),
+		('BUILDING_BYZANTIUM_ATLAS', 			128, 		'HippodromePicture_128.dds',			1, 				1),
+		('BUILDING_BYZANTIUM_ATLAS', 			64, 		'HippodromePicture_064.dds',			1, 				1),
+		('BUILDING_BYZANTIUM_ATLAS', 			45, 		'HippodromePicture_045.dds',			1, 				1);
+--==========================================================================================================================	

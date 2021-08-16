@@ -15,28 +15,6 @@ INSERT INTO BuildingClasses
 VALUES		('BUILDINGCLASS_RUSSIA_POGOST_3',	'BUILDING_RUSSIA_POGOST_3'),
 			('BUILDINGCLASS_RUSSIA_POGOST_2',	'BUILDING_RUSSIA_POGOST_2');
 --==========================================================================================================================	
-
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_RUSSIA_ATLAS', 			256, 		'PogostPicture_256.dds',			1, 				1),
-			('BUILDING_RUSSIA_ATLAS', 			128, 		'PogostPicture_128.dds',			1, 				1),
-			('BUILDING_RUSSIA_ATLAS', 			64, 		'PogostPicture_064.dds',			1, 				1),
-			('BUILDING_RUSSIA_ATLAS', 			45, 		'PogostPicture_045.dds',			1, 				1),
-			('BUILDING_RUSSIA3_ATLAS', 			256, 		'Pogost3Picture_256.dds',			1, 				1),
-			('BUILDING_RUSSIA3_ATLAS', 			128, 		'Pogost3Picture_128.dds',			1, 				1),
-			('BUILDING_RUSSIA3_ATLAS', 			64, 		'Pogost3Picture_064.dds',			1, 				1),
-			('BUILDING_RUSSIA3_ATLAS', 			45, 		'Pogost3Picture_045.dds',			1, 				1),
-			('BUILDING_RUSSIA2_ATLAS', 			256, 		'Pogost2Picture_256.dds',			1, 				1),
-			('BUILDING_RUSSIA2_ATLAS', 			128, 		'Pogost2Picture_128.dds',			1, 				1),
-			('BUILDING_RUSSIA2_ATLAS', 			64, 		'Pogost2Picture_064.dds',			1, 				1),
-			('BUILDING_RUSSIA2_ATLAS', 			45, 		'Pogost2Picture_045.dds',			1, 				1);
---==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
 ------------------------------
@@ -124,3 +102,23 @@ INSERT INTO Building_UnhappinessNeedsFlatReduction
 SELECT		'BUILDING_RUSSIA_POGOST_1', 	YieldType, Yield
 FROM Building_UnhappinessNeedsFlatReduction WHERE (BuildingType = 'BUILDING_MINT');
 --==========================================================================================================================
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_RUSSIA_ATLAS', 			256, 		'PogostPicture_256.dds',			1, 				1),
+			('BUILDING_RUSSIA_ATLAS', 			128, 		'PogostPicture_128.dds',			1, 				1),
+			('BUILDING_RUSSIA_ATLAS', 			64, 		'PogostPicture_064.dds',			1, 				1),
+			('BUILDING_RUSSIA_ATLAS', 			45, 		'PogostPicture_045.dds',			1, 				1),
+			('BUILDING_RUSSIA3_ATLAS', 			256, 		'Pogost3Picture_256.dds',			1, 				1),
+			('BUILDING_RUSSIA3_ATLAS', 			128, 		'Pogost3Picture_128.dds',			1, 				1),
+			('BUILDING_RUSSIA3_ATLAS', 			64, 		'Pogost3Picture_064.dds',			1, 				1),
+			('BUILDING_RUSSIA3_ATLAS', 			45, 		'Pogost3Picture_045.dds',			1, 				1),
+			('BUILDING_RUSSIA2_ATLAS', 			256, 		'Pogost2Picture_256.dds',			1, 				1),
+			('BUILDING_RUSSIA2_ATLAS', 			128, 		'Pogost2Picture_128.dds',			1, 				1),
+			('BUILDING_RUSSIA2_ATLAS', 			64, 		'Pogost2Picture_064.dds',			1, 				1),
+			('BUILDING_RUSSIA2_ATLAS', 			45, 		'Pogost2Picture_045.dds',			1, 				1);

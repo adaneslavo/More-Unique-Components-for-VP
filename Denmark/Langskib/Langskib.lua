@@ -2,7 +2,7 @@
 -- Author: De_Genius, adan_eslavo
 -- DateCreated: 17/12/2017
 --------------------------------------------------------------
-function VikingsExplorationEmbarkation(playerID)
+--[[function VikingsExplorationEmbarkation(playerID)
 	local player = Players[playerID]
 
 	if (player:GetNumUnitPromotions(GameInfoTypes.PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION)) == 0 then return end
@@ -26,3 +26,4 @@ function VikingsExplorationEmbarkation(playerID)
 end
 
 GameEvents.PlayerDoTurn.Add(VikingsExplorationEmbarkation)
+]]

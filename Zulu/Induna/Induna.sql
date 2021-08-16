@@ -47,17 +47,7 @@ INSERT INTO ArtDefine_UnitMemberCombatWeapons (UnitMemberType, "Index", SubIndex
 INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
 	SELECT	('ART_DEF_UNIT_ZULU_INDABA_MEMBER'), Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
 	FROM ArtDefine_UnitMemberInfos WHERE (Type = 'ART_DEF_UNIT_MEMBER_U_ZULU_IMPI_WARRIOR_V2');
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_ZULU_ATLAS', 			256, 		'IndunaPicture_256.dds',	1, 				1),
-			('UNIT_ZULU_ATLAS', 			128, 		'IndunaPicture_128.dds',	1, 				1),
-			('UNIT_ZULU_ATLAS', 			80, 		'IndunaPicture_080.dds',	1, 				1),
-			('UNIT_ZULU_ATLAS', 			64, 		'IndunaPicture_064.dds',	1, 				1),
-			('UNIT_ZULU_ATLAS', 			45, 		'IndunaPicture_045.dds',	1, 				1),
-			('UNIT_ZULU_FLAG_ATLAS', 		32, 		'IndunaFlag_032.dds',		1, 				1);
+
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -158,3 +148,14 @@ VALUES		('UNIT_ZULU_INDABA',	'TXT_KEY_UNIT_ZULU_INDABA_1'),
 			('UNIT_ZULU_INDABA',	'TXT_KEY_UNIT_ZULU_INDABA_17');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_ZULU_ATLAS', 			256, 		'IndunaPicture_256.dds',	1, 				1),
+			('UNIT_ZULU_ATLAS', 			128, 		'IndunaPicture_128.dds',	1, 				1),
+			('UNIT_ZULU_ATLAS', 			80, 		'IndunaPicture_080.dds',	1, 				1),
+			('UNIT_ZULU_ATLAS', 			64, 		'IndunaPicture_064.dds',	1, 				1),
+			('UNIT_ZULU_ATLAS', 			45, 		'IndunaPicture_045.dds',	1, 				1),
+			('UNIT_ZULU_FLAG_ATLAS', 		32, 		'IndunaFlag_032.dds',		1, 				1);

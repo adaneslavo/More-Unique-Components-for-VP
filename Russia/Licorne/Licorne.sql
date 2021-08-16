@@ -53,17 +53,7 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 									Scale, ZOffset, Domain, Model, 				MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_RUSSIA_LICORNE',	Scale, ZOffset, Domain, 'Licorne.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_FIELD_GUN';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_RUSSIA_ATLAS', 		256, 		'LicornePicture_256.dds',	1, 				1),
-			('UNIT_RUSSIA_ATLAS', 		128, 		'LicornePicture_128.dds',	1, 				1),
-			('UNIT_RUSSIA_ATLAS', 		80, 		'LicornePicture_080.dds',	1, 				1),
-			('UNIT_RUSSIA_ATLAS', 		64, 		'LicornePicture_064.dds',	1, 				1),
-			('UNIT_RUSSIA_ATLAS', 		45, 		'LicornePicture_045.dds',	1, 				1),
-			('UNIT_RUSSIA_FLAG_ATLAS', 	32, 		'LicorneFlag_032.dds',		1, 				1);
+
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -148,3 +138,14 @@ VALUES		('UNIT_RUSSIA_LICORNE', 'PROMOTION_UNIT_RUSSIA_GRAPESHOT'),
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_RUSSIA_LICORNE' AND PromotionType = 'PROMOTION_MUST_SET_UP';
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_RUSSIA_ATLAS', 		256, 		'LicornePicture_256.dds',	1, 				1),
+			('UNIT_RUSSIA_ATLAS', 		128, 		'LicornePicture_128.dds',	1, 				1),
+			('UNIT_RUSSIA_ATLAS', 		80, 		'LicornePicture_080.dds',	1, 				1),
+			('UNIT_RUSSIA_ATLAS', 		64, 		'LicornePicture_064.dds',	1, 				1),
+			('UNIT_RUSSIA_ATLAS', 		45, 		'LicornePicture_045.dds',	1, 				1),
+			('UNIT_RUSSIA_FLAG_ATLAS', 	32, 		'LicorneFlag_032.dds',		1, 				1);

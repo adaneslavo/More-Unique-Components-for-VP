@@ -53,17 +53,7 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 										Scale, ZOffset, Domain, Model, 						MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_INDIA_DHANURAASHI',	Scale, ZOffset, Domain, 'EthiopiaCompBow.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_ARCHER';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_INDIA_ATLAS', 			256, 		'DhanuraashiPicture_256.dds',	1, 				1),
-			('UNIT_INDIA_ATLAS', 			128, 		'DhanuraashiPicture_128.dds',	1, 				1),
-			('UNIT_INDIA_ATLAS', 			80, 		'DhanuraashiPicture_080.dds',	1, 				1),
-			('UNIT_INDIA_ATLAS', 			64, 		'DhanuraashiPicture_064.dds',	1, 				1),
-			('UNIT_INDIA_ATLAS', 			45, 		'DhanuraashiPicture_045.dds',	1, 				1),
-			('UNIT_INDIA_FLAG_ATLAS', 		32, 		'DhanuraashiFlag_032.dds',		1, 				1);
+
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -150,3 +140,14 @@ VALUES		('UNIT_INDIA_DHANURAASHI',	'PROMOTION_UNIT_INDIA_EPIC'),
 			('UNIT_INDIA_DHANURAASHI',	'PROMOTION_UNIT_INDIA_DHANURVIDYA');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_INDIA_ATLAS', 			256, 		'DhanuraashiPicture_256.dds',	1, 				1),
+			('UNIT_INDIA_ATLAS', 			128, 		'DhanuraashiPicture_128.dds',	1, 				1),
+			('UNIT_INDIA_ATLAS', 			80, 		'DhanuraashiPicture_080.dds',	1, 				1),
+			('UNIT_INDIA_ATLAS', 			64, 		'DhanuraashiPicture_064.dds',	1, 				1),
+			('UNIT_INDIA_ATLAS', 			45, 		'DhanuraashiPicture_045.dds',	1, 				1),
+			('UNIT_INDIA_FLAG_ATLAS', 		32, 		'DhanuraashiFlag_032.dds',		1, 				1);

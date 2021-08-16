@@ -9,23 +9,6 @@ INSERT INTO Civilization_UnitClassOverrides
 			(CivilizationType, 			UnitClassType, 			UnitType)
 VALUES		('CIVILIZATION_DENMARK', 	'UNITCLASS_CARAVEL', 	'UNIT_DENMARK_LANGSKIB');
 --==========================================================================================================================
-
---==========================================================================================================================
--- ART DEFINES
---==========================================================================================================================	
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 								IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES	('UNIT_DENMARK_ATLAS', 					256, 		'LangskibPicture_256.dds',		1, 				1),
-		('UNIT_DENMARK_ATLAS', 					128, 		'LangskibPicture_128.dds',		1, 				1),
-		('UNIT_DENMARK_ATLAS', 					80, 		'LangskibPicture_080.dds',		1, 				1),
-		('UNIT_DENMARK_ATLAS', 					64, 		'LangskibPicture_064.dds',		1, 				1),
-		('UNIT_DENMARK_ATLAS', 					45, 		'LangskibPicture_045.dds',		1, 				1),
-		('UNIT_DENMARK_FLAG_ATLAS', 			32, 		'LangskibFlag_032.dds',			1, 				1);
---==========================================================================================================================
-
---==========================================================================================================================
 -- ARTDEFINE
 --==========================================================================================================================	
 ------------------------------
@@ -126,17 +109,30 @@ VALUES		('UNIT_DENMARK_LANGSKIB',	'FLAVOR_NAVAL',			18),
 ------------------------------
 -- UnitPromotions
 ------------------------------
-INSERT INTO UnitPromotions 
-			(Type, 															Description, 															Help, 																		Sound, 				AllowsEmbarkation, 	EmbarkedAllWater, 	EmbarkExtraVisibility,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 			PediaEntry)
-VALUES		('PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION',					'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION',					'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_HELP',					'AS2D_IF_LEVELUP',	0,					0,					0,						0,				0,			0,			0,					0,			0,					1, 				38, 			'promoMUC_atlas_00', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION'),
-			('PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN',	'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN',	'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN_HELP',	'AS2D_IF_LEVELUP',	1, 					1, 					2,						0,				0,			0,			0,					0,			0,					1, 				12, 			'promoVP_atlas_01', 		'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN');
+--INSERT INTO UnitPromotions 
+--			(Type, 															Description, 															Help, 																		Sound, 				AllowsEmbarkation, 	EmbarkedAllWater, 	EmbarkExtraVisibility,	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 			PediaEntry)
+--VALUES		('PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION',					'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION',					'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_HELP',					'AS2D_IF_LEVELUP',	0,					0,					0,						0,				0,			0,			0,					0,			0,					1, 				38, 			'promoMUC_atlas_00', 	'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION'),
+--			('PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN',	'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN',	'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN_HELP',	'AS2D_IF_LEVELUP',	1, 					1, 					2,						0,				0,			0,			0,					0,			0,					1, 				12, 			'promoVP_atlas_01', 		'PEDIA_NAVAL', 'TXT_KEY_PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION_CAN_CROSS_OCEAN');
 --------------------------------
 -- Unit_FreePromotions
 --------------------------------
 INSERT INTO Unit_FreePromotions
 			(UnitType, 						PromotionType)
-VALUES		('UNIT_DENMARK_LANGSKIB', 		'PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION'),
+VALUES		
+--			('UNIT_DENMARK_LANGSKIB', 		'PROMOTION_UNIT_DENMARK_VIKING_EXPLORATION'),
 			('UNIT_DENMARK_LANGSKIB', 		'PROMOTION_COASTAL_RAIDER_4'),
 			('UNIT_DENMARK_LANGSKIB', 		'PROMOTION_CAN_MOVE_AFTER_ATTACKING');
 --==========================================================================================================================
+-- ART DEFINES
+--==========================================================================================================================	
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 								IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES	('UNIT_DENMARK_ATLAS', 					256, 		'LangskibPicture_256.dds',		1, 				1),
+		('UNIT_DENMARK_ATLAS', 					128, 		'LangskibPicture_128.dds',		1, 				1),
+		('UNIT_DENMARK_ATLAS', 					80, 		'LangskibPicture_080.dds',		1, 				1),
+		('UNIT_DENMARK_ATLAS', 					64, 		'LangskibPicture_064.dds',		1, 				1),
+		('UNIT_DENMARK_ATLAS', 					45, 		'LangskibPicture_045.dds',		1, 				1),
+		('UNIT_DENMARK_FLAG_ATLAS', 			32, 		'LangskibFlag_032.dds',			1, 				1);
 --==========================================================================================================================

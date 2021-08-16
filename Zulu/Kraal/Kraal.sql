@@ -1,37 +1,4 @@
 --==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- ArtDefine_LandmarkTypes
-------------------------------
-INSERT INTO ArtDefine_LandmarkTypes(Type, LandmarkType, FriendlyName)
-SELECT 'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'Improvement', 'IYA';
-------------------------------
--- ArtDefine_Landmarks
-------------------------------
-INSERT INTO ArtDefine_Landmarks(Era, State, Scale, ImprovementType, LayoutHandler, ResourceType, Model, TerrainContour)
---SELECT 'Any', 'UnderConstruction', 0.8,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'iya_hb.fxsxml', 1 UNION ALL
-SELECT 'Any', 'Constructed', 0.8,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'iya.fxsxml', 1 UNION ALL
-SELECT 'Any', 'Pillaged', 0.6,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'iya_pl.fxsxml_pl', 1;
-------------------------------
--- ArtDefine_StrategicView
-------------------------------
-INSERT INTO ArtDefine_StrategicView
-			(StrategicViewType, 					TileType, 		Asset)
-VALUES 		('ART_DEF_IMPROVEMENT_ZULU_KRAAL', 	'Improvement', 	'KraalSV.dds');
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 					IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
-VALUES		('ZULU_KRAAL_ATLAS', 		256, 		'KraalAtlas256.dds',	1, 				1),
-			('ZULU_KRAAL_ATLAS', 		64, 		'KraalAtlas64.dds',		1, 				1),
-			('ZULU_KRAAL_ATLAS', 		45, 		'KraalAtlas45.dds',		1, 				1),
-			('ZULU_KRAAL_BUILD_ATLAS', 	64, 		'KraalBuild_64.dds',	1, 				1),
-			('ZULU_KRAAL_BUILD_ATLAS', 	45, 		'KraalBuild_45.dds',	1, 				1);
---==========================================================================================================================
-
---==========================================================================================================================
 -- IMPROVEMENTS
 --==========================================================================================================================
 ------------------------------
@@ -156,3 +123,34 @@ INSERT INTO Policy_ImprovementYieldChanges
 (PolicyType, ImprovementType, YieldType, Yield)
 SELECT PolicyType, 'IMPROVEMENT_ZULU_KRAAL', YieldType, Yield
 FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- ArtDefine_LandmarkTypes
+------------------------------
+INSERT INTO ArtDefine_LandmarkTypes(Type, LandmarkType, FriendlyName)
+SELECT 'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'Improvement', 'IYA';
+------------------------------
+-- ArtDefine_Landmarks
+------------------------------
+INSERT INTO ArtDefine_Landmarks(Era, State, Scale, ImprovementType, LayoutHandler, ResourceType, Model, TerrainContour)
+--SELECT 'Any', 'UnderConstruction', 0.8,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'iya_hb.fxsxml', 1 UNION ALL
+SELECT 'Any', 'Constructed', 0.8,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'iya.fxsxml', 1 UNION ALL
+SELECT 'Any', 'Pillaged', 0.6,  'ART_DEF_IMPROVEMENT_ZULU_KRAAL', 'SNAPSHOT', 'ART_DEF_RESOURCE_ALL', 'iya_pl.fxsxml_pl', 1;
+------------------------------
+-- ArtDefine_StrategicView
+------------------------------
+INSERT INTO ArtDefine_StrategicView
+			(StrategicViewType, 					TileType, 		Asset)
+VALUES 		('ART_DEF_IMPROVEMENT_ZULU_KRAAL', 	'Improvement', 	'KraalSV.dds');
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 					IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
+VALUES		('ZULU_KRAAL_ATLAS', 		256, 		'KraalAtlas256.dds',	1, 				1),
+			('ZULU_KRAAL_ATLAS', 		64, 		'KraalAtlas64.dds',		1, 				1),
+			('ZULU_KRAAL_ATLAS', 		45, 		'KraalAtlas45.dds',		1, 				1),
+			('ZULU_KRAAL_BUILD_ATLAS', 	64, 		'KraalBuild_64.dds',	1, 				1),
+			('ZULU_KRAAL_BUILD_ATLAS', 	45, 		'KraalBuild_45.dds',	1, 				1);

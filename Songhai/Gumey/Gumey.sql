@@ -9,20 +9,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 VALUES		('CIVILIZATION_SONGHAI',	'BUILDINGCLASS_CARAVANSARY',	'BUILDING_SONGHAI_GUMEY');
 --==========================================================================================================================	
 
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_GUMEY_ATLAS', 		256, 		'GumeyPicture_256.dds',		1, 				1),
-			('BUILDING_GUMEY_ATLAS', 		128, 		'GumeyPicture_128.dds',		1, 				1),
-			('BUILDING_GUMEY_ATLAS', 		64, 		'GumeyPicture_064.dds',		1, 				1),
-			('BUILDING_GUMEY_ATLAS', 		45, 		'GumeyPicture_045.dds',		1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -104,3 +90,15 @@ VALUES
 	('IMPROVEMENT_GUMEY_DUMMY', 	'ROUTE_RAILROAD', 	'YIELD_PRODUCTION', 2),
 	('IMPROVEMENT_GUMEY_DUMMY', 	'ROUTE_RAILROAD', 	'YIELD_CULTURE', 	2);
 --==========================================================================================================================
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_GUMEY_ATLAS', 		256, 		'GumeyPicture_256.dds',		1, 				1),
+			('BUILDING_GUMEY_ATLAS', 		128, 		'GumeyPicture_128.dds',		1, 				1),
+			('BUILDING_GUMEY_ATLAS', 		64, 		'GumeyPicture_064.dds',		1, 				1),
+			('BUILDING_GUMEY_ATLAS', 		45, 		'GumeyPicture_045.dds',		1, 				1);

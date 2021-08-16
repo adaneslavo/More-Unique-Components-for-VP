@@ -16,8 +16,8 @@ VALUES		('CIVILIZATION_ASSYRIA',	'UNITCLASS_HORSEMAN',	'UNIT_ASSYRIA_IRON_CHARIO
 -- Units
 --------------------------------	
 INSERT INTO Units
-			(Type,							Description,							Civilopedia,								Strategy,										Help, 										Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, 			ObsoleteTech,		GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 						UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
-SELECT		'UNIT_ASSYRIA_IRON_CHARIOT',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_TEXT',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_STRATEGY',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP', 	Combat-1,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, 'TECH_BRONZE_WORKING', 'TECH_METALLURGY', 	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_TCM_HEQA_KHASUT', 	0,					0,				'UNIT_ASSYRIA_ATLAS',	'UNIT_ASSYRIA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
+			(Type,							Description,							Civilopedia,								Strategy,										Help, 										Combat,		RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, PrereqTech, 			ObsoleteTech,		GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, UnitArtInfo, 					UnitFlagIconOffset, PortraitIndex,	IconAtlas,				UnitFlagAtlas,				MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted)
+SELECT		'UNIT_ASSYRIA_IRON_CHARIOT',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_TEXT',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_STRATEGY',	'TXT_KEY_UNIT_ASSYRIA_IRON_CHARIOT_HELP', 	Combat-1,	RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Range, BaseSightRange, Class, CombatClass, Domain,	DefaultUnitAI,  MilitarySupport, MilitaryProduction, Pillage, IgnoreBuildingDefense, Mechanized, 'TECH_BRONZE_WORKING', 'TECH_METALLURGY', 	GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, Conscription, XPValueAttack, XPValueDefense, 'ART_DEF_UNIT_IRON_CHARIOT', 	0,					0,				'UNIT_ASSYRIA_ATLAS',	'UNIT_ASSYRIA_FLAG_ATLAS',	MoveRate, PurchaseCooldown, BaseLandAirDefense, IsMounted
 FROM Units WHERE Type = 'UNIT_HORSEMAN';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -102,34 +102,34 @@ VALUES
 -- ArtDefine_UnitInfos
 ------------------------------		
 INSERT INTO ArtDefine_UnitInfos(Type, DamageStates, Formation)
-  VALUES ('ART_DEF_UNIT_TCM_HEQA_KHASUT', 1, 'ChariotElephant');
+  VALUES ('ART_DEF_UNIT_IRON_CHARIOT', 1, 'ChariotElephant');
 ------------------------------
 -- ArtDefine_UnitInfoMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitInfoMemberInfos(UnitInfoType, UnitMemberInfoType, NumMembers)
-  VALUES ('ART_DEF_UNIT_TCM_HEQA_KHASUT', 'ART_DEF_UNIT_MEMBER_TCM_HEQA_KHASUT', 1);
+  VALUES ('ART_DEF_UNIT_IRON_CHARIOT', 'ART_DEF_UNIT_MEMBER_IRON_CHARIOT', 1);
 ------------------------------
 -- ArtDefine_UnitMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberInfos(Type, Scale, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-  VALUES ('ART_DEF_UNIT_MEMBER_TCM_HEQA_KHASUT', 0.129999995231628, 'Hititte_War_Chariot.fxsxml', 'CLOTH', 'WOODSM');
+  VALUES ('ART_DEF_UNIT_MEMBER_IRON_CHARIOT', 0.129999995231628, 'IronChariot.fxsxml', 'CLOTH', 'WOODSM');
 ------------------------------
 -- ArtDefine_UnitMemberCombats
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberCombats(UnitMemberType, EnableActions, ShortMoveRadius, ShortMoveRate, TurnRateMin, TurnRateMax, TurnFacingRateMin, TurnFacingRateMax, TargetHeight, HasShortRangedAttack, HasLongRangedAttack, HasStationaryMelee, HasRefaceAfterCombat, ReformBeforeCombat, OnlyTurnInMovementActions)
-  VALUES ('ART_DEF_UNIT_MEMBER_TCM_HEQA_KHASUT', 'Idle Attack RunCharge AttackCity Bombard Death BombardDefend Run Fortify CombatReady Walk', 24.0, 0.349999994039536, 0.5, 0.75, 15.0, 20.0, 12.0, 1, 1, 1, 1, 1, 1);
+  VALUES ('ART_DEF_UNIT_MEMBER_IRON_CHARIOT', 'Idle Attack RunCharge AttackCity Bombard Death BombardDefend Run Fortify CombatReady Walk', 24.0, 0.349999994039536, 0.5, 0.75, 15.0, 20.0, 12.0, 1, 1, 1, 1, 1, 1);
 ------------------------------
 -- ArtDefine_UnitMemberCombatWeapons
 ------------------------------
 INSERT INTO ArtDefine_UnitMemberCombatWeapons(UnitMemberType, "Index", SubIndex, WeaponTypeTag, WeaponTypeSoundOverrideTag, MissTargetSlopRadius)
-  VALUES ('ART_DEF_UNIT_MEMBER_TCM_HEQA_KHASUT', 0, 0, 'ARROW', 'ARROW', 10.0);
+  VALUES ('ART_DEF_UNIT_MEMBER_IRON_CHARIOT', 0, 0, 'ARROW', 'ARROW', 10.0);
 INSERT INTO ArtDefine_UnitMemberCombatWeapons(UnitMemberType, "Index", SubIndex, VisKillStrengthMin, VisKillStrengthMax, WeaponTypeTag, MissTargetSlopRadius)
-  VALUES ('ART_DEF_UNIT_MEMBER_TCM_HEQA_KHASUT', 1, 0, 10.0, 20.0, 'FLAMING_ARROW', 10.0);
+  VALUES ('ART_DEF_UNIT_MEMBER_IRON_CHARIOT', 1, 0, 10.0, 20.0, 'FLAMING_ARROW', 10.0);
 ------------------------------
 -- ArtDefine_StrategicView
 ------------------------------
 INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset)
-  VALUES ('ART_DEF_UNIT_TCM_HEQA_KHASUT', 'Unit', 'IronChariotFlag_128.dds');
+  VALUES ('ART_DEF_UNIT_IRON_CHARIOT', 'Unit', 'IronChariotFlag_128.dds');
 ------------------------------
 -- IconTextureAtlases
 ------------------------------

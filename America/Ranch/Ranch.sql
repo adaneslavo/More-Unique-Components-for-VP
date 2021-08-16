@@ -14,20 +14,6 @@ INSERT INTO	Civilization_UnitClassOverrides
 			(CivilizationType,			UnitClassType,			UnitType)
 VALUES		('CIVILIZATION_AMERICA',	'UNITCLASS_PIONEER',	'UNIT_AMERICA_PIONEER');
 --==========================================================================================================================	
-
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
---------------------------------
--- IconTextureAtlases
---------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 				IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES	('UNIT_AMERICA_ATLAS', 	256, 		'RanchPicture_256.dds',		1, 				1),
-		('UNIT_AMERICA_ATLAS', 	128, 		'RanchPicture_128.dds',		1, 				1),
-		('UNIT_AMERICA_ATLAS', 	45, 		'RanchPicture_045.dds',		1, 				1),
-		('UNIT_AMERICA_ATLAS', 	64, 		'RanchPicture_064.dds',		1, 				1);
---==========================================================================================================================	
 --==========================================================================================================================	
 -- UNITS
 --==========================================================================================================================
@@ -149,4 +135,16 @@ INSERT INTO Building_YieldFromInternalTR
 SELECT 'BUILDING_AMERICA_RANCH', YieldType, Yield
 FROM Building_YieldFromInternalTR WHERE BuildingType = 'BUILDING_STABLE';
 --==========================================================================================================================
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+--------------------------------
+-- IconTextureAtlases
+--------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 				IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES	('UNIT_AMERICA_ATLAS', 	256, 		'RanchPicture_256.dds',		1, 				1),
+		('UNIT_AMERICA_ATLAS', 	128, 		'RanchPicture_128.dds',		1, 				1),
+		('UNIT_AMERICA_ATLAS', 	45, 		'RanchPicture_045.dds',		1, 				1),
+		('UNIT_AMERICA_ATLAS', 	64, 		'RanchPicture_064.dds',		1, 				1);
 --==========================================================================================================================

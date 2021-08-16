@@ -1760,7 +1760,7 @@
 			<Text>A Homestead is a complex of buildings on a large landholding, typically a ranch, settled in accordance with the United States Homesteading Acts. The US Government implemented a policy of "free soil", allowing claimants, effectively squatters, ownership of land which they had converted into productive farms or ranches. Nearly 10% of the continental United States was settled in this way; 270 million acres of land claimed by approximately 1.6 million homesteaders between 1862 and 1930.[NEWLINE][NEWLINE]The colonization of vast swathes of the continental interior left an indelible mark on the American psyche. Legends of the frontier, the Old West, Cowboys and Indians still permeate American culture, informing their sense of independence, enterprising spirit and mastery over nature.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_STRATEGY">
-			<Text>The Homestead is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Homestead immediately claims all Sheep, Horse, Cattle and Bison resources around the City. The production bonus for each claimed tile can help refund a bit of the cost of the Homestead immediately. The Homestead boosts Bison in addition to all the resources normally boosted by a Ranch, and all boosted resources gain additional food.[NEWLINE][NEWLINE]The Homestead boosts the production of workers and settler units, and allows America to train Pioneers a full era before they usually unlock. With the Homestead, America can settle new, powerful cities quickly.</Text>
+			<Text>The Homestead is the American replacement for the Stable. In addition to the regular abilities of the Stable, the Homestead immediately claims all Sheep, Horse, Cattle and Bison resources around the City. The production bonus for each claimed tile can help refund a bit of the cost of the Homestead immediately. The Homestead boosts Bison in addition to all the resources normally boosted by a Stable, and all boosted resources gain additional food.[NEWLINE][NEWLINE]The Homestead boosts the production of workers and settler units, and allows America to train Pioneers a full era before they usually unlock. With the Homestead, America can settle new, powerful cities quickly.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_AMERICA_RANCH_HELP">
 			<Text>+33% [ICON_PRODUCTION] Production when building Mounted Units and +25% [ICON_PRODUCTION] Production when building Worker and Settler units. Pioneers can be built in this City.[NEWLINE][NEWLINE]Increases the [ICON_WAR] Military Supply Cap from [ICON_CITIZEN] Population in the City by 10%. Gain 15 [ICON_PRODUCTION] Production whenever a [ICON_CITIZEN] Citizen is born in the City, scaling with Era.[NEWLINE][NEWLINE]On completion, the city immediately claims all [ICON_RES_HORSE] Horse, [ICON_RES_SHEEP] Sheep, [ICON_RES_COW] Cattle, and [ICON_RES_BISON] Bison within 3 tiles of the City. The City gains 20 [ICON_PRODUCTION] Production for each tile claimed, scaling with Era. Internal [ICON_PRODUCTION] Production [ICON_INTERNATIONAL_TRADE] Trade Routes from this City generate +2 [ICON_PRODUCTION] Production.[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COW] Cattle: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_BISON] Bison: +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, +2 [ICON_GOLD] Gold.</Text>
@@ -1925,27 +1925,26 @@
 			<Text>Coastal Cannon</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON_HELP">
-			<Text>+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].</Text>
+			<Text>+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER">
 			<Text>Crouching Tiger</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_HELP">
-			<Text>15 Bonus Damage [COLOR_POSITIVE_TEXT]for every Remaining Movement Point[ENDCOLOR] on Attack.</Text>
+			<Text>Attacks deal 20 Bonus Damage to all Units and Cities on the tile [COLOR_POSITIVE_TEXT]if Unit has not moved this turn[ENDCOLOR].[NEWLINE][COLOR_NEGATIVE_TEXT]Lost on Upgrade[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB">
 			<Text>Seir Morb</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_HELP">
-			<Text>Industrial Era Unit specializing in coastal defense. Only Siam may build it. Has a bonus against Naval Units instead of a penalty. No bonuses against Cities.[NEWLINE][NEWLINE]Deals more damage on attack the less the Unit has moved. Starts with the [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] Promotions.</Text>
+			<Text>Industrial Era Unit specializing in coastal defense. Only Siam may build it. Has a bonus against Naval Units, but no bonuses against Cities.[NEWLINE][NEWLINE]Deals bonus damage on attack to all units and cities on a tile if the Seir Morb has not moved that turn.[NEWLINE][NEWLINE]Starts with the [COLOR_POSITIVE_TEXT]Cover I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cover II[ENDCOLOR] Promotions.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_STRATEGY">
-			<Text>A powerful coastal defense cannon, the Seir Morb is more powerful than the Field Gun it replaces, especially against naval targets, but deals less damage to cities. The Seir Morb receives a combat boost for every remaining movement point when attacking, so pick a good spot and keep it steady.  Location, Location, Location.</Text>
+			<Text>A powerful coastal defense cannon, the Seir Morb is more powerful than the Field Gun it replaces, especially against naval targets, but deals less damage to cities. The cannon deals 20 extra damage if it has not moved at all that turn, so pick a good spot and keep it steady. Bonus damage from movement affects all enemy units stacked on a tile, including garrisons inside cities and embarked units protected by naval units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAM_SEIR_MORB_TEXT">
 			<Text>Despite Siam's remarkable diplomacy, they did occasionally come into conflict with the great imperial powers which threated their independence. When the French set their sights on Laos, the Siamese mistakenly believed the English would support them against France, and prepared for war. The Seir Morb ("Crouching Tiger") were the most technologically advanced cannons in the Siamese arsenal at the time; coastal artillery which could destroy any French boats foolish enough to enter their harbours. No amount of raw power, however, can account for corruption and disorganization; the French managed to establish their beachheads, and the coastal artillery of Thailand remained unused. It turns out that the finest artillery money can buy still needs to be fired.</Text>
 		</Row>
-
 
 		<!-- Suffet -->
 		<!-- Created by pineappledan -->

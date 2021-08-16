@@ -53,19 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 										Scale, ZOffset, Domain, Model, 							MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_ETHIOPIA_SHOTELAI',	Scale, ZOffset, Domain, 'EthiopiaMedSwordsman.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_LONGSWORDSMAN';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_ETHIOPIA_ATLAS', 			256, 		'ShotelaiPicture_256.dds',	1, 				1),
-			('UNIT_ETHIOPIA_ATLAS', 			128, 		'ShotelaiPicture_128.dds',	1, 				1),
-			('UNIT_ETHIOPIA_ATLAS', 			80, 		'ShotelaiPicture_080.dds',	1, 				1),
-			('UNIT_ETHIOPIA_ATLAS', 			64, 		'ShotelaiPicture_064.dds',	1, 				1),
-			('UNIT_ETHIOPIA_ATLAS', 			45, 		'ShotelaiPicture_045.dds',	1, 				1),
-			('UNIT_ETHIOPIA_FLAG_ATLAS', 		32, 		'ShotelaiFlag_032.dds',		1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- PROMOTIONS
 --==========================================================================================================================	
@@ -150,3 +137,15 @@ VALUES		('UNIT_ETHIOPIA_SHOTELAI',	'PROMOTION_UNIT_ETHIOPIA_MAIM_0'),
 			('UNIT_ETHIOPIA_SHOTELAI',	'PROMOTION_UNIT_ETHIOPIA_HOOKED_WEAPON');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_ETHIOPIA_ATLAS', 			256, 		'ShotelaiPicture_256.dds',	1, 				1),
+			('UNIT_ETHIOPIA_ATLAS', 			128, 		'ShotelaiPicture_128.dds',	1, 				1),
+			('UNIT_ETHIOPIA_ATLAS', 			80, 		'ShotelaiPicture_080.dds',	1, 				1),
+			('UNIT_ETHIOPIA_ATLAS', 			64, 		'ShotelaiPicture_064.dds',	1, 				1),
+			('UNIT_ETHIOPIA_ATLAS', 			45, 		'ShotelaiPicture_045.dds',	1, 				1),
+			('UNIT_ETHIOPIA_FLAG_ATLAS', 		32, 		'ShotelaiFlag_032.dds',		1, 				1);
+--==========================================================================================================================	

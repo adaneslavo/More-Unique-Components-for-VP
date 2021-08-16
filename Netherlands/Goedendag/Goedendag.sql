@@ -53,17 +53,7 @@ INSERT INTO ArtDefine_UnitMemberInfos
 			(Type, 											Scale,	ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT		'ART_DEF_UNIT_MEMBER_NETHERLANDS_GOEDENDAG',	Scale,	ZOffset, Domain, 'Pikeman_England.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_PIKEMAN';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 									IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_NETHERLANDS_ATLAS', 					256, 		'GoedendagPicture_256.dds',			1, 				1),
-			('UNIT_NETHERLANDS_ATLAS', 					128, 		'GoedendagPicture_128.dds',			1, 				1),
-			('UNIT_NETHERLANDS_ATLAS', 					80, 		'GoedendagPicture_080.dds',			1, 				1),
-			('UNIT_NETHERLANDS_ATLAS', 					64, 		'GoedendagPicture_064.dds',			1, 				1),
-			('UNIT_NETHERLANDS_ATLAS', 					45, 		'GoedendagPicture_045.dds',			1, 				1),
-			('UNIT_NETHERLANDS_FLAG_ATLAS', 			32, 		'GoedendagFlag_032.dds',			1, 				1);
+
 --==========================================================================================================================
 -- UNITS
 --==========================================================================================================================
@@ -139,3 +129,14 @@ VALUES		('UNIT_NETHERLANDS_GOEDENDAG', 	'PROMOTION_UNIT_NETHERLANDS_GOEDENDAG'),
 			('UNIT_NETHERLANDS_GOEDENDAG', 	'PROMOTION_UNIT_NETHERLANDS_BURGEMEESTE');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 									IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_NETHERLANDS_ATLAS', 					256, 		'GoedendagPicture_256.dds',			1, 				1),
+			('UNIT_NETHERLANDS_ATLAS', 					128, 		'GoedendagPicture_128.dds',			1, 				1),
+			('UNIT_NETHERLANDS_ATLAS', 					80, 		'GoedendagPicture_080.dds',			1, 				1),
+			('UNIT_NETHERLANDS_ATLAS', 					64, 		'GoedendagPicture_064.dds',			1, 				1),
+			('UNIT_NETHERLANDS_ATLAS', 					45, 		'GoedendagPicture_045.dds',			1, 				1),
+			('UNIT_NETHERLANDS_FLAG_ATLAS', 			32, 		'GoedendagFlag_032.dds',			1, 				1);

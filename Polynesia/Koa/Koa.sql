@@ -53,17 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 									Scale, ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_POLYNESIA_KOA',	Scale, ZOffset, Domain, 'hawaii_ikaika.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_SCOUT';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_POLYNESIA_ATLAS', 			256, 		'KoaPicture_256.dds',	1, 				1),
-			('UNIT_POLYNESIA_ATLAS', 			128, 		'KoaPicture_128.dds',	1, 				1),
-			('UNIT_POLYNESIA_ATLAS', 			80, 		'KoaPicture_080.dds',	1, 				1),
-			('UNIT_POLYNESIA_ATLAS', 			64, 		'KoaPicture_064.dds',	1, 				1),
-			('UNIT_POLYNESIA_ATLAS', 			45, 		'KoaPicture_045.dds',	1, 				1),
-			('UNIT_POLYNESIA_FLAG_ATLAS', 		32, 		'KoaFlag_032.dds',		1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -144,3 +133,14 @@ VALUES		('UNIT_POLYNESIA_KOA',	'PROMOTION_UNIT_POLYNESIA_KAPU_KUIALUA_0'),
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_POLYNESIA_KOA' AND PromotionType = 'PROMOTION_BARBARIAN_PENALTY_II';
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_POLYNESIA_ATLAS', 			256, 		'KoaPicture_256.dds',	1, 				1),
+			('UNIT_POLYNESIA_ATLAS', 			128, 		'KoaPicture_128.dds',	1, 				1),
+			('UNIT_POLYNESIA_ATLAS', 			80, 		'KoaPicture_080.dds',	1, 				1),
+			('UNIT_POLYNESIA_ATLAS', 			64, 		'KoaPicture_064.dds',	1, 				1),
+			('UNIT_POLYNESIA_ATLAS', 			45, 		'KoaPicture_045.dds',	1, 				1),
+			('UNIT_POLYNESIA_FLAG_ATLAS', 		32, 		'KoaFlag_032.dds',		1, 				1);

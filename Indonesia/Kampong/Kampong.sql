@@ -21,14 +21,7 @@ VALUES 		('Any', 'UnderConstruction', 	0.6,		'ART_DEF_IMPROVEMENT_INDONESIA_KAMP
 INSERT INTO ArtDefine_StrategicView
 			(StrategicViewType, 						TileType, 		Asset)
 VALUES 		('ART_DEF_IMPROVEMENT_INDONESIA_KAMPONG', 	'Improvement', 	'KampongIcon_128.dds');
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 									IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES	('IMPROVEMENT_INDONESIA_ATLAS', 			256, 		'KampongIcons_256.dds',			1, 				2),
-		('IMPROVEMENT_INDONESIA_ATLAS', 			64, 		'KampongIcons_064.dds',			1, 				2),
-		('IMPROVEMENT_INDONESIA_ATLAS', 			45, 		'KampongIcons_045.dds',			1, 				2);
+
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -113,3 +106,11 @@ INSERT INTO Policy_ImprovementYieldChanges
 (PolicyType, ImprovementType, YieldType, Yield)
 SELECT PolicyType, 'IMPROVEMENT_INDONESIA_KAMPONG', YieldType, Yield
 FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 									IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES	('IMPROVEMENT_INDONESIA_ATLAS', 			256, 		'KampongIcons_256.dds',			1, 				2),
+		('IMPROVEMENT_INDONESIA_ATLAS', 			64, 		'KampongIcons_064.dds',			1, 				2),
+		('IMPROVEMENT_INDONESIA_ATLAS', 			45, 		'KampongIcons_045.dds',			1, 				2);

@@ -8,19 +8,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 		(CivilizationType, 			BuildingClassType, 		BuildingType)
 VALUES	('CIVILIZATION_SHOSHONE',	'BUILDINGCLASS_WELL',	'BUILDING_SHOSHONE_BUFFALO_POUND');
 --==========================================================================================================================	
-
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 								IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_SHOSHONE_ATLAS', 			256, 		'BuffaloPoundPicture_256.dds',			1, 				1),
-			('BUILDING_SHOSHONE_ATLAS', 			128, 		'BuffaloPoundPicture_128.dds',			1, 				1),
-			('BUILDING_SHOSHONE_ATLAS', 			64, 		'BuffaloPoundPicture_064.dds',			1, 				1),
-			('BUILDING_SHOSHONE_ATLAS', 			45, 		'BuffaloPoundPicture_045.dds',			1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -71,4 +58,15 @@ VALUES		('BUILDING_SHOSHONE_BUFFALO_POUND',	'RESOURCE_BISON',	'YIELD_FOOD',		1),
 			('BUILDING_SHOSHONE_BUFFALO_POUND',	'RESOURCE_HORSE',	'YIELD_FOOD',		1);
 --==========================================================================================================================
 --==========================================================================================================================
-
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 								IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_SHOSHONE_ATLAS', 			256, 		'BuffaloPoundPicture_256.dds',			1, 				1),
+			('BUILDING_SHOSHONE_ATLAS', 			128, 		'BuffaloPoundPicture_128.dds',			1, 				1),
+			('BUILDING_SHOSHONE_ATLAS', 			64, 		'BuffaloPoundPicture_064.dds',			1, 				1),
+			('BUILDING_SHOSHONE_ATLAS', 			45, 		'BuffaloPoundPicture_045.dds',			1, 				1);

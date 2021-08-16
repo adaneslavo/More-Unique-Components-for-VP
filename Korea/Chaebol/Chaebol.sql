@@ -7,17 +7,6 @@
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 		BuildingClassType, 				BuildingType)
 VALUES	('CIVILIZATION_KOREA',	'BUILDINGCLASS_STOCK_EXCHANGE',	'BUILDING_KOREA_CHAEBOL');
-
-
-
-
-INSERT INTO IconTextureAtlases 
-			(Atlas, 				IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('CHAEBOL_ATLAS', 		256, 		'ChaebolPicture_256.dds',		1, 				1),
-			('CHAEBOL_ATLAS', 		128, 		'ChaebolPicture_128.dds',		1, 				1),
-			('CHAEBOL_ATLAS', 		64, 		'ChaebolPicture_064.dds',		1, 				1),
-			('CHAEBOL_ATLAS', 		45, 		'ChaebolPicture_045.dds',		1, 				1);
-
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -85,3 +74,12 @@ INSERT INTO Building_BuildingClassYieldChanges
 VALUES		('BUILDING_KOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_GOLD', 		2),
 			('BUILDING_KOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_CULTURE', 	2),
 			('BUILDING_KOREA_CHAEBOL', 'BUILDINGCLASS_STOCK_EXCHANGE', 'YIELD_SCIENCE', 	2);
+------------------------------	
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 				IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('CHAEBOL_ATLAS', 		256, 		'ChaebolPicture_256.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		128, 		'ChaebolPicture_128.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		64, 		'ChaebolPicture_064.dds',		1, 				1),
+			('CHAEBOL_ATLAS', 		45, 		'ChaebolPicture_045.dds',		1, 				1);

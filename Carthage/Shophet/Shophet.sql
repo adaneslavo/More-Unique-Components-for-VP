@@ -8,29 +8,6 @@ INSERT INTO Civilization_UnitClassOverrides
 		(CivilizationType, 			UnitClassType, 				UnitType)
 VALUES	('CIVILIZATION_CARTHAGE', 	'UNITCLASS_GREAT_GENERAL', 	'UNIT_CARTHAGE_SHOPHET');
 --==========================================================================================================================
-
---==========================================================================================================================
--- ART DEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES	('UNIT_CARTHAGE_ATLAS', 		256, 		'ShophetPicture_256.dds',		1, 				1),
-		('UNIT_CARTHAGE_ATLAS', 		128, 		'ShophetPicture_128.dds',		1, 				1),
-		('UNIT_CARTHAGE_ATLAS', 		80, 		'ShophetPicture_080.dds',		1, 				1),
-		('UNIT_CARTHAGE_ATLAS', 		64, 		'ShophetPicture_064.dds',		1, 				1),
-		('UNIT_CARTHAGE_ATLAS', 		45, 		'ShophetPicture_045.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	256, 		'SuffetBoatAtlas_256.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	128, 		'SuffetBoatAtlas_128.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	80, 		'SuffetBoatAtlas_080.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	64, 		'SuffetBoatAtlas_064.dds',		1, 				1),
-		('UNIT_CARTHAGE_BOAT_ATLAS', 	45, 		'SuffetBoatAtlas_045.dds',		1, 				1),
-		('UNIT_CARTHAGE_FLAG_ATLAS', 	32, 		'ShophetFlag_032.dds',			1, 				1);
---==========================================================================================================================
-		
---==========================================================================================================================
 -- UNIT GRAPHICS
 --==========================================================================================================================	
 ------------------------------
@@ -252,3 +229,21 @@ VALUES	('UNIT_CARTHAGE_SHOPHET',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_1'),
 		('UNIT_CARTHAGE_SHOPHET_BOAT',	'TXT_KEY_UNIT_CARTHAGE_SHOPHET_25');
 --==========================================================================================================================
 --==========================================================================================================================
+-- ART DEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES	('UNIT_CARTHAGE_ATLAS', 		256, 		'ShophetPicture_256.dds',		1, 				1),
+		('UNIT_CARTHAGE_ATLAS', 		128, 		'ShophetPicture_128.dds',		1, 				1),
+		('UNIT_CARTHAGE_ATLAS', 		80, 		'ShophetPicture_080.dds',		1, 				1),
+		('UNIT_CARTHAGE_ATLAS', 		64, 		'ShophetPicture_064.dds',		1, 				1),
+		('UNIT_CARTHAGE_ATLAS', 		45, 		'ShophetPicture_045.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	256, 		'SuffetBoatAtlas_256.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	128, 		'SuffetBoatAtlas_128.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	80, 		'SuffetBoatAtlas_080.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	64, 		'SuffetBoatAtlas_064.dds',		1, 				1),
+		('UNIT_CARTHAGE_BOAT_ATLAS', 	45, 		'SuffetBoatAtlas_045.dds',		1, 				1),
+		('UNIT_CARTHAGE_FLAG_ATLAS', 	32, 		'ShophetFlag_032.dds',			1, 				1);

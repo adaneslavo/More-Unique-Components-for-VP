@@ -1,15 +1,3 @@
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES	('SONGHAI_UNIT_ATLAS', 			256, 		'SofaPicture_256.dds',		1, 				1),
-		('SONGHAI_UNIT_ATLAS', 			128, 		'SofaPicture_128.dds',		1, 				1),
-		('SONGHAI_UNIT_ATLAS', 			80, 		'SofaPicture_080.dds',		1, 				1),
-		('SONGHAI_UNIT_ATLAS', 			64, 		'SofaPicture_064.dds',		1, 				1),
-		('SONGHAI_UNIT_ATLAS', 			45, 		'SofaPicture_045.dds',		1, 				1),
-		('SONGHAI_UNIT_FLAG_ATLAS', 	32, 		'SofaFlag_032.dds',			1, 				1);
-
 INSERT INTO ArtDefine_UnitInfos (Type,DamageStates,Formation)
 	SELECT	('ART_DEF_UNIT_SOFA'), DamageStates, Formation
 	FROM ArtDefine_UnitInfos WHERE (Type = 'ART_DEF_UNIT_CROSSBOWMAN');
@@ -103,3 +91,15 @@ VALUES	('UNIT_SONGHAI_SOFA',  'PROMOTION_MEDIC'),
 INSERT INTO Civilization_UnitClassOverrides 
 		(CivilizationType, 					UnitClassType, 			UnitType)
 VALUES	('CIVILIZATION_SONGHAI',	'UNITCLASS_CROSSBOWMAN',	'UNIT_SONGHAI_SOFA');
+
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES	('SONGHAI_UNIT_ATLAS', 			256, 		'SofaPicture_256.dds',		1, 				1),
+		('SONGHAI_UNIT_ATLAS', 			128, 		'SofaPicture_128.dds',		1, 				1),
+		('SONGHAI_UNIT_ATLAS', 			80, 		'SofaPicture_080.dds',		1, 				1),
+		('SONGHAI_UNIT_ATLAS', 			64, 		'SofaPicture_064.dds',		1, 				1),
+		('SONGHAI_UNIT_ATLAS', 			45, 		'SofaPicture_045.dds',		1, 				1),
+		('SONGHAI_UNIT_FLAG_ATLAS', 	32, 		'SofaFlag_032.dds',			1, 				1);

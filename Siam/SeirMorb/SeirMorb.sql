@@ -53,37 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 									Scale, ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_SIAM_SEIR_MORB',	Scale, ZOffset, Domain, '155mmDeBang.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_FIELD_GUN';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_SIAM_ATLAS', 			256, 		'SeirMorbPicture_256.dds',		1, 				1),
-			('UNIT_SIAM_ATLAS', 			128, 		'SeirMorbPicture_128.dds',		1, 				1),
-			('UNIT_SIAM_ATLAS', 			80, 		'SeirMorbPicture_080.dds',		1, 				1),
-			('UNIT_SIAM_ATLAS', 			64, 		'SeirMorbPicture_064.dds',		1, 				1),
-			('UNIT_SIAM_ATLAS', 			45, 		'SeirMorbPicture_045.dds',		1, 				1),
-			('UNIT_SIAM_FLAG_ATLAS', 		32, 		'SeirMorbFlag_032.dds',			1, 				1),
-			('UNIT_SIAM_PROMOTION_1_ATLAS',	16, 		'CroachingTiger1Icon_016.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_1_ATLAS',	32, 		'CroachingTiger1Icon_032.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_1_ATLAS',	45, 		'CroachingTiger1Icon_045.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_1_ATLAS',	64, 		'CroachingTiger1Icon_064.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_1_ATLAS',	256, 		'CroachingTiger1Icon_256.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_2_ATLAS',	16, 		'CroachingTiger2Icon_016.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_2_ATLAS',	32, 		'CroachingTiger2Icon_032.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_2_ATLAS',	45, 		'CroachingTiger2Icon_045.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_2_ATLAS',	64, 		'CroachingTiger2Icon_064.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_2_ATLAS',	256, 		'CroachingTiger2Icon_256.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_3_ATLAS',	16, 		'CroachingTiger3Icon_016.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_3_ATLAS',	32, 		'CroachingTiger3Icon_032.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_3_ATLAS',	45, 		'CroachingTiger3Icon_045.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_3_ATLAS',	64, 		'CroachingTiger3Icon_064.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_3_ATLAS',	256, 		'CroachingTiger3Icon_256.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_4_ATLAS',	16, 		'CoastalCannonIcon_016.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_4_ATLAS',	32, 		'CoastalCannonIcon_032.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_4_ATLAS',	45, 		'CoastalCannonIcon_045.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_4_ATLAS',	64, 		'CoastalCannonIcon_064.dds',	1, 				1),
-			('UNIT_SIAM_PROMOTION_4_ATLAS',	256, 		'CoastalCannonIcon_256.dds',	1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -95,14 +64,14 @@ VALUES		('UNIT_SIAM_ATLAS', 			256, 		'SeirMorbPicture_256.dds',		1, 				1),
 INSERT INTO UnitPromotions 
 			(Type, 										Description, 										Help, 													Sound, 				RangeChange,	RangedAttackModifier,	CanMoveAfterAttacking, 	MovesChange,	AttackMod,	DefenseMod, ExperiencePercent,	IgnoreZOC,	LostWithUpgrade,	CannotBeChosen, PortraitIndex, 	IconAtlas, 				PediaType, 		PediaEntry)
 VALUES		('PROMOTION_UNIT_SIAM_COASTAL_CANNON', 		'TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON',		'TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON_HELP', 		'AS2D_IF_LEVELUP',	0,				0,						0, 						0,				0,			0,			0,					0,			0,					1, 				22, 			'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_SIAM_COASTAL_CANNON'),
-			('PROMOTION_UNIT_SIAM_CROACHING_TIGER', 	'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER',		'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_HELP',		'AS2D_IF_LEVELUP',	0,				0,						1, 						0,				0,			0,			0,					0,			0,					1, 				23, 			'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER');
+			('PROMOTION_UNIT_SIAM_CROACHING_TIGER', 	'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER',		'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER_HELP',		'AS2D_IF_LEVELUP',	0,				0,						1, 						0,				0,			0,			0,					0,			1,					1, 				23, 			'promoMUC_atlas_01', 	'PEDIA_RANGED', 'TXT_KEY_PROMOTION_UNIT_SIAM_CROACHING_TIGER');
 ------------------------------
 -- UnitPromotions_UnitCombatMods
 ------------------------------
 INSERT INTO UnitPromotions_UnitCombatMods
 			(PromotionType, 						UnitCombatType,				Modifier)
-VALUES		('PROMOTION_UNIT_SIAM_COASTAL_CANNON',	'UNITCOMBAT_NAVALMELEE',	25),
-			('PROMOTION_UNIT_SIAM_COASTAL_CANNON',	'UNITCOMBAT_NAVALRANGED',	25);
+VALUES		('PROMOTION_UNIT_SIAM_COASTAL_CANNON',	'UNITCOMBAT_NAVALMELEE',	33),
+			('PROMOTION_UNIT_SIAM_COASTAL_CANNON',	'UNITCOMBAT_NAVALRANGED',	33);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -112,8 +81,8 @@ VALUES		('PROMOTION_UNIT_SIAM_COASTAL_CANNON',	'UNITCOMBAT_NAVALMELEE',	25),
 -- Units
 --------------------------------	
 INSERT INTO Units 	
-			(Type,					Class,	PrereqTech,	Range,	BaseSightRange, Combat,		RangedCombat,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,				GoodyHutUpgradeUnitClass,	XPValueAttack,	Description, 					Civilopedia, 						Strategy, 								Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 					UnitFlagIconOffset, UnitFlagAtlas,			PortraitIndex, 	IconAtlas,			MoveRate,	PurchaseCooldown)
-SELECT		'UNIT_SIAM_SEIR_MORB',	Class,	PrereqTech,	Range,	BaseSightRange, Combat+2,	RangedCombat+5,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_ADVANCED_BALLISTICS',	GoodyHutUpgradeUnitClass,	XPValueAttack,	'TXT_KEY_UNIT_SIAM_SEIR_MORB',	'TXT_KEY_UNIT_SIAM_SEIR_MORB_TEXT',	'TXT_KEY_UNIT_SIAM_SEIR_MORB_STRATEGY',	'TXT_KEY_UNIT_SIAM_SEIR_MORB_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_SIAM_SEIR_MORB', 	0,					'UNIT_SIAM_FLAG_ATLAS',	0, 				'UNIT_SIAM_ATLAS',	MoveRate,	PurchaseCooldown
+			(Type,					Class, PrereqTech, Range, BaseSightRange, Combat,	RangedCombat,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Immobile, CombatClass, Domain, DefaultUnitAI, ObsoleteTech,				GoodyHutUpgradeUnitClass, XPValueAttack, Description, 					Civilopedia, 						Strategy, 								Help, 								Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 					UnitFlagIconOffset, UnitFlagAtlas,			PortraitIndex, 	IconAtlas,			MoveRate,	PurchaseCooldown)
+SELECT		'UNIT_SIAM_SEIR_MORB',	Class, PrereqTech, Range, BaseSightRange, Combat+2,	RangedCombat+5,	Cost, FaithCost, RequiresFaithPurchaseEnabled, Moves, Immobile, CombatClass, Domain, DefaultUnitAI, 'TECH_ADVANCED_BALLISTICS',	GoodyHutUpgradeUnitClass, XPValueAttack, 'TXT_KEY_UNIT_SIAM_SEIR_MORB',	'TXT_KEY_UNIT_SIAM_SEIR_MORB_TEXT',	'TXT_KEY_UNIT_SIAM_SEIR_MORB_STRATEGY',	'TXT_KEY_UNIT_SIAM_SEIR_MORB_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_SIAM_SEIR_MORB', 	0,					'UNIT_SIAM_FLAG_ATLAS',	0, 				'UNIT_SIAM_ATLAS',	MoveRate,	PurchaseCooldown
 FROM Units WHERE Type = 'UNIT_FIELD_GUN';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -170,3 +139,14 @@ VALUES		('UNIT_SIAM_SEIR_MORB', 'PROMOTION_UNIT_SIAM_COASTAL_CANNON'),
 DELETE FROM Unit_FreePromotions	WHERE UnitType = 'UNIT_SIAM_SEIR_MORB' AND PromotionType = 'PROMOTION_CITY_SIEGE';
 DELETE FROM Unit_FreePromotions	WHERE UnitType = 'UNIT_SIAM_SEIR_MORB' AND PromotionType = 'PROMOTION_NAVAL_MISFIRE';
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_SIAM_ATLAS', 			256, 		'SeirMorbPicture_256.dds',		1, 				1),
+			('UNIT_SIAM_ATLAS', 			128, 		'SeirMorbPicture_128.dds',		1, 				1),
+			('UNIT_SIAM_ATLAS', 			80, 		'SeirMorbPicture_080.dds',		1, 				1),
+			('UNIT_SIAM_ATLAS', 			64, 		'SeirMorbPicture_064.dds',		1, 				1),
+			('UNIT_SIAM_ATLAS', 			45, 		'SeirMorbPicture_045.dds',		1, 				1),
+			('UNIT_SIAM_FLAG_ATLAS', 		32, 		'SeirMorbFlag_032.dds',			1, 				1);

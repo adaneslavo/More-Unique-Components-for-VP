@@ -10,20 +10,6 @@ VALUES	('CIVILIZATION_POLAND',	'BUILDINGCLASS_CASTLE',	'BUILDING_POLAND_BARBICAN
 		('CIVILIZATION_POLAND',	'BUILDINGCLASS_ARMORY',	null);
 --==========================================================================================================================	
 
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES	('BUILDING_POLAND_ATLAS', 			256, 		'BarbicanPicture_256.dds',			1, 				1),
-		('BUILDING_POLAND_ATLAS', 			128, 		'BarbicanPicture_128.dds',			1, 				1),
-		('BUILDING_POLAND_ATLAS', 			64, 		'BarbicanPicture_064.dds',			1, 				1),
-		('BUILDING_POLAND_ATLAS', 			45, 		'BarbicanPicture_045.dds',			1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -109,3 +95,15 @@ INSERT INTO Improvements
 SELECT		'IMPROVEMENT_BARBICAN_DUMMY',	'TXT_KEY_IMPROVEMENT_D_FOR_BARBICAN', 	'PROMOTION_UNIT_POLAND_BARBICAN', 	Civilopedia, Help, ArtDefineTag, RequiresFeature, PillageGold, PortraitIndex, IconAtlas 
 FROM Improvements WHERE (Type = 'IMPROVEMENT_TRADING_POST');
 
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
+VALUES	('BUILDING_POLAND_ATLAS', 			256, 		'BarbicanPicture_256.dds',			1, 				1),
+		('BUILDING_POLAND_ATLAS', 			128, 		'BarbicanPicture_128.dds',			1, 				1),
+		('BUILDING_POLAND_ATLAS', 			64, 		'BarbicanPicture_064.dds',			1, 				1),
+		('BUILDING_POLAND_ATLAS', 			45, 		'BarbicanPicture_045.dds',			1, 				1);

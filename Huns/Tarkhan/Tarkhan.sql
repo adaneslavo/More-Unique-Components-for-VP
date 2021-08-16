@@ -78,20 +78,7 @@ INSERT INTO Unit_FreePromotions
 		(UnitType, 				PromotionType)
 VALUES	('UNIT_HUNS_TARKHAN',	'PROMOTION_UNIT_HUNS_MIGRATION'),
 		('UNIT_HUNS_TARKHAN',	'PROMOTION_UNIT_HUNS_SACKER');
---==========================================================================================================================
--- ART DEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_HUNS_ATLAS', 			256, 		'TarkhanPicture_256.dds',			1, 				1),
-			('UNIT_HUNS_ATLAS', 			128, 		'TarkhanPicture_128.dds',			1, 				1),
-			('UNIT_HUNS_ATLAS', 			80, 		'TarkhanPicture_080.dds',			1, 				1),
-			('UNIT_HUNS_ATLAS', 			64, 		'TarkhanPicture_064.dds',			1, 				1),
-			('UNIT_HUNS_ATLAS', 			45, 		'TarkhanPicture_045.dds',			1, 				1),
-			('UNIT_HUNS_FLAG_ATLAS', 		32, 		'TarkhanFlag_032.dds',				1, 				1);	
+
 ------------------------------
 -- ArtDefine_StrategicView
 ------------------------------		
@@ -134,4 +121,16 @@ INSERT INTO ArtDefine_UnitMemberInfos
 SELECT	'ART_DEF_UNIT_MEMBER_HUNS_TARKHAN',	Scale,		ZOffset, Domain, 'Horseman_Turkey.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_HORSEMAN';
 --==========================================================================================================================
---==========================================================================================================================
+-- ART DEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_HUNS_ATLAS', 			256, 		'TarkhanPicture_256.dds',			1, 				1),
+			('UNIT_HUNS_ATLAS', 			128, 		'TarkhanPicture_128.dds',			1, 				1),
+			('UNIT_HUNS_ATLAS', 			80, 		'TarkhanPicture_080.dds',			1, 				1),
+			('UNIT_HUNS_ATLAS', 			64, 		'TarkhanPicture_064.dds',			1, 				1),
+			('UNIT_HUNS_ATLAS', 			45, 		'TarkhanPicture_045.dds',			1, 				1),
+			('UNIT_HUNS_FLAG_ATLAS', 		32, 		'TarkhanFlag_032.dds',				1, 				1);	

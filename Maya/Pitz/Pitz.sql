@@ -8,22 +8,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 		(CivilizationType, 		BuildingClassType, 			BuildingType)
 VALUES	('CIVILIZATION_MAYA',	'BUILDINGCLASS_COLOSSEUM',	'BUILDING_MAYA_PITZ');
 --==========================================================================================================================	
-
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_MAYA_ATLAS', 			256, 		'PitzPicture_256.dds',			1, 				1),
-			('BUILDING_MAYA_ATLAS', 			128, 		'PitzPicture_128.dds',			1, 				1),
-			('BUILDING_MAYA_ATLAS', 			64, 		'PitzPicture_064.dds',			1, 				1),
-			('BUILDING_MAYA_ATLAS', 			45, 		'PitzPicture_045.dds',			1, 				1);
---==========================================================================================================================
-
---==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
 ------------------------------
@@ -127,6 +111,16 @@ VALUES		('PROMOTION_UNIT_MAYA_KATUN_AHAW_2',	'FEATURE_FOREST',	5),
 			('PROMOTION_UNIT_MAYA_KATUN_AHAW_4',	'FEATURE_FOREST',	15),
 			('PROMOTION_UNIT_MAYA_KATUN_AHAW_4',	'FEATURE_JUNGLE',	15);
 --==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_MAYA_ATLAS', 			256, 		'PitzPicture_256.dds',			1, 				1),
+			('BUILDING_MAYA_ATLAS', 			128, 		'PitzPicture_128.dds',			1, 				1),
+			('BUILDING_MAYA_ATLAS', 			64, 		'PitzPicture_064.dds',			1, 				1),
+			('BUILDING_MAYA_ATLAS', 			45, 		'PitzPicture_045.dds',			1, 				1);
 --==========================================================================================================================
-
 

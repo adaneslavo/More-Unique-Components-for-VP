@@ -53,29 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 											Scale, ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_CELTS_SCYTHED_CHARIOT',	Scale, ZOffset, Domain, 'tcmHeqaKhasut.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_U_HUNS_HORSE_ARCHER';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_CELTS_ATLAS', 				256, 		'ScythedChariotPicture_256.dds',	1, 				1),
-			('UNIT_CELTS_ATLAS', 				128, 		'ScythedChariotPicture_128.dds',	1, 				1),
-			('UNIT_CELTS_ATLAS', 				80, 		'ScythedChariotPicture_080.dds',	1, 				1),
-			('UNIT_CELTS_ATLAS', 				64, 		'ScythedChariotPicture_064.dds',	1, 				1),
-			('UNIT_CELTS_ATLAS', 				45, 		'ScythedChariotPicture_045.dds',	1, 				1),
-			('UNIT_CELTS_FLAG_ATLAS', 			32, 		'ScythedChariotFlag_032.dds',		1, 				1),
-			('UNIT_CELTS_PROMOTION_ATLAS',		16, 		'ScytheIcon_016.dds',				1, 				1),
-			('UNIT_CELTS_PROMOTION_ATLAS',		32, 		'ScytheIcon_032.dds',				1, 				1),
-			('UNIT_CELTS_PROMOTION_ATLAS',		45, 		'ScytheIcon_045.dds',				1, 				1),
-			('UNIT_CELTS_PROMOTION_ATLAS',		64, 		'ScytheIcon_064.dds',				1, 				1),
-			('UNIT_CELTS_PROMOTION_ATLAS',		256, 		'ScytheIcon_256.dds',				1, 				1),
-			('UNIT_CELTS_PROMOTION_2_ATLAS',	16, 		'CarnyxIcon_016.dds',				1, 				1),
-			('UNIT_CELTS_PROMOTION_2_ATLAS',	32, 		'CarnyxIcon_032.dds',				1, 				1),
-			('UNIT_CELTS_PROMOTION_2_ATLAS',	45, 		'CarnyxIcon_045.dds',				1, 				1),
-			('UNIT_CELTS_PROMOTION_2_ATLAS',	64, 		'CarnyxIcon_064.dds',				1, 				1),
-			('UNIT_CELTS_PROMOTION_2_ATLAS',	256, 		'CarnyxIcon_256.dds',				1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- PROMOTIONS
 --==========================================================================================================================	
@@ -154,4 +131,16 @@ INSERT INTO Unit_FreePromotions
 VALUES		('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_UNIT_CELTS_SCYTHE'),
 			('UNIT_CELTS_SCYTHED_CHARIOT', 'PROMOTION_UNIT_CELTS_CARNYX');
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_CELTS_ATLAS', 				256, 		'ScythedChariotPicture_256.dds',	1, 				1),
+			('UNIT_CELTS_ATLAS', 				128, 		'ScythedChariotPicture_128.dds',	1, 				1),
+			('UNIT_CELTS_ATLAS', 				80, 		'ScythedChariotPicture_080.dds',	1, 				1),
+			('UNIT_CELTS_ATLAS', 				64, 		'ScythedChariotPicture_064.dds',	1, 				1),
+			('UNIT_CELTS_ATLAS', 				45, 		'ScythedChariotPicture_045.dds',	1, 				1),
+			('UNIT_CELTS_FLAG_ATLAS', 			32, 		'ScythedChariotFlag_032.dds',		1, 				1);
+--==========================================================================================================================	
 --==========================================================================================================================

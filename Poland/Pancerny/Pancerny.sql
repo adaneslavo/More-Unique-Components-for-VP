@@ -53,17 +53,7 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 									Scale, ZOffset, Domain, Model, 						MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_POLAND_PANCERNY',	Scale, ZOffset, Domain, 'Horseman_Viking.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_HEAVY_SKIRMISH';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_POLAND_ATLAS', 			256, 		'PancernyPicture_256.dds',			1, 				1),
-			('UNIT_POLAND_ATLAS', 			128, 		'PancernyPicture_128.dds',			1, 				1),
-			('UNIT_POLAND_ATLAS', 			80, 		'PancernyPicture_080.dds',			1, 				1),
-			('UNIT_POLAND_ATLAS', 			64, 		'PancernyPicture_064.dds',			1, 				1),
-			('UNIT_POLAND_ATLAS', 			45, 		'PancernyPicture_045.dds',			1, 				1),
-			('UNIT_POLAND_FLAG_ATLAS', 		32, 		'PancernyFlag_032.dds',				1, 				1);
+
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -150,3 +140,14 @@ VALUES		('UNIT_POLAND_PANCERNY', 'PROMOTION_UNIT_POLAND_BOGURODZICA'),
 			('UNIT_POLAND_PANCERNY', 'PROMOTION_COVER_1');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_POLAND_ATLAS', 			256, 		'PancernyPicture_256.dds',			1, 				1),
+			('UNIT_POLAND_ATLAS', 			128, 		'PancernyPicture_128.dds',			1, 				1),
+			('UNIT_POLAND_ATLAS', 			80, 		'PancernyPicture_080.dds',			1, 				1),
+			('UNIT_POLAND_ATLAS', 			64, 		'PancernyPicture_064.dds',			1, 				1),
+			('UNIT_POLAND_ATLAS', 			45, 		'PancernyPicture_045.dds',			1, 				1),
+			('UNIT_POLAND_FLAG_ATLAS', 		32, 		'PancernyFlag_032.dds',				1, 				1);

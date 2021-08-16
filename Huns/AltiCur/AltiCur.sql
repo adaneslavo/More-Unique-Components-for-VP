@@ -9,20 +9,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 VALUES		('CIVILIZATION_HUNS',	'BUILDINGCLASS_IRONWORKS',	'BUILDING_HUNS_ALTI_CUR');
 --==========================================================================================================================	
 
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_HUNS_ATLAS', 			256, 		'AltiCurPicture_256.dds',			1, 				1),
-			('BUILDING_HUNS_ATLAS', 			128, 		'AltiCurPicture_128.dds',			1, 				1),
-			('BUILDING_HUNS_ATLAS', 			64, 		'AltiCurPicture_064.dds',			1, 				1),
-			('BUILDING_HUNS_ATLAS', 			45, 		'AltiCurPicture_045.dds',			1, 				1);
---==========================================================================================================================
-
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -83,4 +69,15 @@ INSERT INTO EventChoices
 			(Type,										Description,										Help,													EventDuration,	Expires,	PlayerHappiness)
 VALUES		('PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS',	'TXT_KEY_PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS',	'TXT_KEY_PLAYER_EVENT_CHOICE_ALTI_CUR_HAPPINESS_HELP',	10,				1,			6);
 --==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_HUNS_ATLAS', 			256, 		'AltiCurPicture_256.dds',			1, 				1),
+			('BUILDING_HUNS_ATLAS', 			128, 		'AltiCurPicture_128.dds',			1, 				1),
+			('BUILDING_HUNS_ATLAS', 			64, 		'AltiCurPicture_064.dds',			1, 				1),
+			('BUILDING_HUNS_ATLAS', 			45, 		'AltiCurPicture_045.dds',			1, 				1);
 --==========================================================================================================================

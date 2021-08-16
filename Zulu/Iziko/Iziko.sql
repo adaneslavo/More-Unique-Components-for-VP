@@ -7,20 +7,7 @@
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 		BuildingClassType, 				BuildingType)
 VALUES	('CIVILIZATION_ZULU',	'BUILDINGCLASS_AMPHITHEATER', 	'BUILDING_ZULU_IZIKO');
---==========================================================================================================================	
 
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 					IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_ZULU_ATLAS', 	256, 		'IzikoPicture_256.dds',			1, 				1),
-			('BUILDING_ZULU_ATLAS', 	128, 		'IzikoPicture_128.dds',			1, 				1),
-			('BUILDING_ZULU_ATLAS', 	64, 		'IzikoPicture_064.dds',			1, 				1),
-			('BUILDING_ZULU_ATLAS', 	45, 		'IzikoPicture_045.dds',			1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -91,3 +78,15 @@ VALUES		('BUILDING_ZULU_IZIKO',		'FLAVOR_RELIGION',		20),
 			('BUILDING_ZULU_IZIKO',		'FLAVOR_GOLD',			20);
 --==========================================================================================================================
 --==========================================================================================================================
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 					IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_ZULU_ATLAS', 	256, 		'IzikoPicture_256.dds',			1, 				1),
+			('BUILDING_ZULU_ATLAS', 	128, 		'IzikoPicture_128.dds',			1, 				1),
+			('BUILDING_ZULU_ATLAS', 	64, 		'IzikoPicture_064.dds',			1, 				1),
+			('BUILDING_ZULU_ATLAS', 	45, 		'IzikoPicture_045.dds',			1, 				1);

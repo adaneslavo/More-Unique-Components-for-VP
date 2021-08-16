@@ -11,12 +11,22 @@ function CrouchingTigerDamage(iAttackingPlayer, iAttackingUnit, attackerDamage, 
 	local pAttackingUnit = pAttackingPlayer:GetUnitByID(iAttackingUnit)
 	
 	if (pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_UNIT_SIAM_CROACHING_TIGER) and (defenderFinalDamage < defenderMaxHP)) then
-		local iDamage = math.floor(pAttackingUnit:MovesLeft()/4)
+--		local iDamage = math.floor(pAttackingUnit:MovesLeft()/6)
 		
-		if iDamage > 0 then
+		if pAttackingUnit:MovesLeft() >= 60 then
 			local pDefendingUnit = pDefendingPlayer:GetUnitByID(iDefendingUnit)
-			pDefendingUnit:ChangeDamage(iDamage)
-		
+			local iX = pDefendingUnit:GetX()
+			local iY = pDefendingUnit:GetY()
+			local pPlot = Map.GetPlot(iX, iY)
+			
+			for k = 0, pPlot:GetNumUnits() - 1, 1 do
+				local pStackedUnit = pPlot:GetUnit(k)
+				local eOwner = pStackedUnit:GetOwner()
+				if eOwner == iDefendingPlayer then
+					pStackedUnit:ChangeDamage(20)
+				end
+			end
+			
 			if not pAttackingUnit:IsHasPromotion(GameInfoTypes.PROMOTION_LOGISTICS) then
 				pAttackingUnit:SetMoves(0)
 			end

@@ -21,16 +21,6 @@ VALUES 		('Any', 'UnderConstruction', 	0.75,		'ART_DEF_IMPROVEMENT_ETHIOPIA_MONO
 INSERT INTO ArtDefine_StrategicView
 			(StrategicViewType, 								TileType, 		Asset)
 VALUES 		('ART_DEF_IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH', 	'Improvement', 	'MonolithicChurchIcon_128.dds');
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 								IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
-VALUES	('IMPROVEMENT_ETHIOPIA_ATLAS', 			256, 		'MonolithicChurchIcons_256.dds',			1, 				2),
-		('IMPROVEMENT_ETHIOPIA_ATLAS', 			64, 		'MonolithicChurchIcons_064.dds',			1, 				2),
-		('IMPROVEMENT_ETHIOPIA_ATLAS', 			45, 		'MonolithicChurchIcons_045.dds',			1, 				2);
---==========================================================================================================================
-
 --==========================================================================================================================
 -- IMPROVEMENTS
 --==========================================================================================================================
@@ -90,9 +80,9 @@ VALUES		('IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'RESOURCE_STONE',		1);
 ------------------------------		
 INSERT INTO Builds		
 			(Type,										PrereqTech,			ImprovementType, 								Description, 								Help, 												Recommendation, 								EntityEvent, 			Time,	OrderPriority, 	Kill, 	IconIndex, 	IconAtlas, 						ShowInPedia, 	ShowInTechTree)
-VALUES		('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	1000,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS', 	1, 				1),
+VALUES		('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_HILL',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	900,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS', 	1, 				1),
 
-			('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	1000,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS', 	0,				0);
+			('BUILD_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TECH_THEOLOGY',	'IMPROVEMENT_ETHIOPIA_MONOLITHIC_CHURCH_STONE',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_HELP',	'TXT_KEY_BUILD_ETHIOPIA_MONOLITHIC_CHURCH_REC',	'ENTITY_EVENT_MINE',	900,	95,				0,		1,			'IMPROVEMENT_ETHIOPIA_ATLAS', 	0,				0);
 ------------------------------				
 -- Unit_Builds
 ------------------------------				
@@ -257,3 +247,11 @@ FROM Beliefs WHERE Reformation = 1;
 */
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 								IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
+VALUES	('IMPROVEMENT_ETHIOPIA_ATLAS', 			256, 		'MonolithicChurchIcons_256.dds',			1, 				2),
+		('IMPROVEMENT_ETHIOPIA_ATLAS', 			64, 		'MonolithicChurchIcons_064.dds',			1, 				2),
+		('IMPROVEMENT_ETHIOPIA_ATLAS', 			45, 		'MonolithicChurchIcons_045.dds',			1, 				2);

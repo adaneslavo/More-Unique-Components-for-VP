@@ -53,17 +53,7 @@ INSERT INTO ArtDefine_UnitMemberInfos
 	(Type, 				Scale,	ZOffset, Domain, Model, 		MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_YAMATO',	Scale,	ZOffset, Domain, 'Yamato_Class.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_BATTLESHIP';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_JAPAN_YAMATO_ATLAS', 		256, 		'YamatoPicture_256.dds',	1, 				1),
-			('UNIT_JAPAN_YAMATO_ATLAS', 		128, 		'YamatoPicture_128.dds',	1, 				1),
-			('UNIT_JAPAN_YAMATO_ATLAS', 		80, 		'YamatoPicture_080.dds',	1, 				1),
-			('UNIT_JAPAN_YAMATO_ATLAS', 		64, 		'YamatoPicture_064.dds',	1, 				1),
-			('UNIT_JAPAN_YAMATO_ATLAS', 		45, 		'YamatoPicture_045.dds',	1, 				1),
-			('UNIT_JAPAN_YAMATO_FLAG_ATLAS', 	32, 		'YamatoFlag_032.dds',		1, 				1);
+
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -146,3 +136,14 @@ VALUES		('UNIT_JAPAN_YAMATO',	'PROMOTION_UNIT_JAPAN_YAMATO'),
 --==========================================================================================================================
 --==========================================================================================================================
 
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_JAPAN_YAMATO_ATLAS', 		256, 		'YamatoPicture_256.dds',	1, 				1),
+			('UNIT_JAPAN_YAMATO_ATLAS', 		128, 		'YamatoPicture_128.dds',	1, 				1),
+			('UNIT_JAPAN_YAMATO_ATLAS', 		80, 		'YamatoPicture_080.dds',	1, 				1),
+			('UNIT_JAPAN_YAMATO_ATLAS', 		64, 		'YamatoPicture_064.dds',	1, 				1),
+			('UNIT_JAPAN_YAMATO_ATLAS', 		45, 		'YamatoPicture_045.dds',	1, 				1),
+			('UNIT_JAPAN_YAMATO_FLAG_ATLAS', 	32, 		'YamatoFlag_032.dds',		1, 				1);

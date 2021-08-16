@@ -53,17 +53,7 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 									Scale, ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_IROQUOIS_PROWLER',	Scale, ZOffset, Domain, 'civ5_iromu1.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_MUSKETMAN';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 					IconSize, 		Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_IROQUOIS_ATLAS', 		256, 		'ProwlerPicture_256.dds',	1, 				1),
-			('UNIT_IROQUOIS_ATLAS', 		128, 		'ProwlerPicture_128.dds',	1, 				1),
-			('UNIT_IROQUOIS_ATLAS', 		80, 		'ProwlerPicture_080.dds',	1, 				1),
-			('UNIT_IROQUOIS_ATLAS', 		64, 		'ProwlerPicture_064.dds',	1, 				1),
-			('UNIT_IROQUOIS_ATLAS', 		45, 		'ProwlerPicture_045.dds',	1, 				1),
-			('UNIT_IROQUOIS_FLAG_ATLAS', 	32, 		'ProwlerFlag_032.dds',		1, 				1);
+
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -125,3 +115,14 @@ VALUES		('UNIT_IROQUOIS_PROWLER',	'PROMOTION_INDIRECT_FIRE'),
 			('UNIT_IROQUOIS_PROWLER',	'PROMOTION_WITHDRAW_BEFORE_MELEE');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 					IconSize, 		Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_IROQUOIS_ATLAS', 		256, 		'ProwlerPicture_256.dds',	1, 				1),
+			('UNIT_IROQUOIS_ATLAS', 		128, 		'ProwlerPicture_128.dds',	1, 				1),
+			('UNIT_IROQUOIS_ATLAS', 		80, 		'ProwlerPicture_080.dds',	1, 				1),
+			('UNIT_IROQUOIS_ATLAS', 		64, 		'ProwlerPicture_064.dds',	1, 				1),
+			('UNIT_IROQUOIS_ATLAS', 		45, 		'ProwlerPicture_045.dds',	1, 				1),
+			('UNIT_IROQUOIS_FLAG_ATLAS', 	32, 		'ProwlerFlag_032.dds',		1, 				1);

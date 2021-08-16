@@ -63,19 +63,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 											Scale, ZOffset, Domain, Model, 				MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_OTTOMANS_GREAT_TURKISH_BOMBARD',	Scale, ZOffset, Domain, 'Bombard.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_CANNON';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_OTTOMANS_ATLAS', 		256, 		'GreatTurkishBombardPicture_256.dds',			1, 				1),
-			('UNIT_OTTOMANS_ATLAS', 		128, 		'GreatTurkishBombardPicture_128.dds',			1, 				1),
-			('UNIT_OTTOMANS_ATLAS', 		80, 		'GreatTurkishBombardPicture_080.dds',			1, 				1),
-			('UNIT_OTTOMANS_ATLAS', 		64, 		'GreatTurkishBombardPicture_064.dds',			1, 				1),
-			('UNIT_OTTOMANS_ATLAS', 		45, 		'GreatTurkishBombardPicture_045.dds',			1, 				1),
-			('UNIT_OTTOMANS_FLAG_ATLAS', 	32, 		'GreatTurkishBombardFlag_032.dds',				1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- PROMOTIONS
 --==========================================================================================================================	
@@ -164,3 +151,14 @@ VALUES		('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD',	'TXT_KEY_UNIT_OTTOMANS_GREAT_TUR
 			('UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD',	'TXT_KEY_UNIT_OTTOMANS_GREAT_TURKISH_BOMBARD_4');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_OTTOMANS_ATLAS', 		256, 		'GreatTurkishBombardPicture_256.dds',			1, 				1),
+			('UNIT_OTTOMANS_ATLAS', 		128, 		'GreatTurkishBombardPicture_128.dds',			1, 				1),
+			('UNIT_OTTOMANS_ATLAS', 		80, 		'GreatTurkishBombardPicture_080.dds',			1, 				1),
+			('UNIT_OTTOMANS_ATLAS', 		64, 		'GreatTurkishBombardPicture_064.dds',			1, 				1),
+			('UNIT_OTTOMANS_ATLAS', 		45, 		'GreatTurkishBombardPicture_045.dds',			1, 				1),
+			('UNIT_OTTOMANS_FLAG_ATLAS', 	32, 		'GreatTurkishBombardFlag_032.dds',				1, 				1);

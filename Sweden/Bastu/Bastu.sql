@@ -9,18 +9,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 VALUES		('CIVILIZATION_SWEDEN',		'BUILDINGCLASS_BATH',	'BUILDING_SWEDEN_BASTU');
 --==========================================================================================================================	
 
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_SWEDEN_ATLAS', 			256, 		'BastuPicture_256.dds',			1, 				1),
-			('BUILDING_SWEDEN_ATLAS', 			128, 		'BastuPicture_128.dds',			1, 				1),
-			('BUILDING_SWEDEN_ATLAS', 			64, 		'BastuPicture_064.dds',			1, 				1),
-			('BUILDING_SWEDEN_ATLAS', 			45, 		'BastuPicture_045.dds',			1, 				1);
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -89,3 +77,15 @@ SELECT		'BUILDING_SWEDEN_BASTU',	BuildingClassType
 FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_BATH';
 --==========================================================================================================================
 --==========================================================================================================================	
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_SWEDEN_ATLAS', 			256, 		'BastuPicture_256.dds',			1, 				1),
+			('BUILDING_SWEDEN_ATLAS', 			128, 		'BastuPicture_128.dds',			1, 				1),
+			('BUILDING_SWEDEN_ATLAS', 			64, 		'BastuPicture_064.dds',			1, 				1),
+			('BUILDING_SWEDEN_ATLAS', 			45, 		'BastuPicture_045.dds',			1, 				1);

@@ -22,14 +22,14 @@ VALUES		('ART_DEF_UNIT_EGYPT_MAMLUK',	'Unit',		'mamlukSV.dds');
 -- ArtDefine_UnitInfos
 ------------------------------		
 INSERT INTO ArtDefine_UnitInfos 
-			(Type,								DamageStates,	Formation)
+			(Type,							DamageStates,	Formation)
 SELECT		'ART_DEF_UNIT_EGYPT_MAMLUK',	DamageStates, 	Formation
 FROM ArtDefine_UnitInfos WHERE Type = 'ART_DEF_UNIT_LANCER';
 ------------------------------
 -- ArtDefine_UnitInfoMemberInfos
 ------------------------------
 INSERT INTO ArtDefine_UnitInfoMemberInfos 	
-			(UnitInfoType,						UnitMemberInfoType,							NumMembers)
+			(UnitInfoType,					UnitMemberInfoType,						NumMembers)
 SELECT		'ART_DEF_UNIT_EGYPT_MAMLUK',	'ART_DEF_UNIT_MEMBER_EGYPT_MAMLUK', 	8
 FROM ArtDefine_UnitInfoMemberInfos WHERE UnitInfoType = 'ART_DEF_UNIT_LANCER';
 ------------------------------
@@ -53,19 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 									Scale, ZOffset, Domain, Model, 				MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_EGYPT_MAMLUK',	Scale, ZOffset, Domain, 'Mamluk.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_LANCER';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_EGYPT_ATLAS', 				256, 		'Mamluk_256.dds',		1, 				1),
-			('UNIT_EGYPT_ATLAS', 				128, 		'Mamluk_128.dds',		1, 				1),
-			('UNIT_EGYPT_ATLAS', 				80, 		'Mamluk_080.dds',		1, 				1),
-			('UNIT_EGYPT_ATLAS', 				64, 		'Mamluk_064.dds',		1, 				1),
-			('UNIT_EGYPT_ATLAS', 				45, 		'Mamluk_045.dds',		1, 				1),
-			('UNIT_EGYPT_FLAG_ATLAS', 			32, 		'MamlukFlag.dds',		1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- PROMOTIONS
 --==========================================================================================================================	
@@ -135,4 +122,15 @@ INSERT INTO Unit_FreePromotions
 			(UnitType, 				PromotionType)
 VALUES		('UNIT_EGYPT_MAMLUK',	'PROMOTION_UNIT_EGYPT_VUR_HA');
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 				IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_EGYPT_ATLAS', 				256, 		'Mamluk_256.dds',		1, 				1),
+			('UNIT_EGYPT_ATLAS', 				128, 		'Mamluk_128.dds',		1, 				1),
+			('UNIT_EGYPT_ATLAS', 				80, 		'Mamluk_080.dds',		1, 				1),
+			('UNIT_EGYPT_ATLAS', 				64, 		'Mamluk_064.dds',		1, 				1),
+			('UNIT_EGYPT_ATLAS', 				45, 		'Mamluk_045.dds',		1, 				1),
+			('UNIT_EGYPT_FLAG_ATLAS', 			32, 		'MamlukFlag.dds',		1, 				1);
 --==========================================================================================================================

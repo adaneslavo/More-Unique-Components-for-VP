@@ -71,17 +71,6 @@ FROM Unit_ClassUpgrades WHERE UnitType = 'UNIT_GALLEASS';
 -- ART DEFINES
 --==========================================================================================================================	
 ------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES	('VENICE_UNIT_ATLAS', 			256, 		'FustaPicture_256.dds',		1, 				1),
-		('VENICE_UNIT_ATLAS', 			128, 		'FustaPicture_128.dds',		1, 				1),
-		('VENICE_UNIT_ATLAS', 			80, 		'FustaPicture_080.dds',		1, 				1),
-		('VENICE_UNIT_ATLAS', 			64, 		'FustaPicture_064.dds',		1, 				1),
-		('VENICE_UNIT_ATLAS', 			45, 		'FustaPicture_045.dds',		1, 				1),
-		('VENICE_UNIT_FLAG_ATLAS', 		32, 		'FustaFlag_032.dds',		1, 				1);
-------------------------------
 -- ArtDefine_StrategicView
 ------------------------------
 INSERT INTO ArtDefine_StrategicView 
@@ -122,5 +111,17 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 										Scale,  ZOffset, Domain, Model, 				 MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_JFD_LANTERNAS',		'0.08',	ZOffset, Domain, 'lanternas.fxsxml',	 MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_GALLEASS';
+
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES	('VENICE_UNIT_ATLAS', 			256, 		'FustaPicture_256.dds',		1, 				1),
+		('VENICE_UNIT_ATLAS', 			128, 		'FustaPicture_128.dds',		1, 				1),
+		('VENICE_UNIT_ATLAS', 			80, 		'FustaPicture_080.dds',		1, 				1),
+		('VENICE_UNIT_ATLAS', 			64, 		'FustaPicture_064.dds',		1, 				1),
+		('VENICE_UNIT_ATLAS', 			45, 		'FustaPicture_045.dds',		1, 				1),
+		('VENICE_UNIT_FLAG_ATLAS', 		32, 		'FustaFlag_032.dds',		1, 				1);
 --==========================================================================================================================
 --==========================================================================================================================

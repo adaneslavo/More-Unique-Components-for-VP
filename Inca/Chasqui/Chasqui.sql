@@ -47,19 +47,6 @@ INSERT INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, Mate
 ------------------------------
 INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
 	VALUES	('ART_DEF_UNIT_CHASQUI', 'Unit', 'ChasquiFlag_128.dds');
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_INCA_FLAG_ATLAS', 	32, 		'ChasquiFlag_032.dds',		1, 				1),
-			('UNIT_INCA_ATLAS', 		256, 		'ChasquiPicture_256.dds',	1, 				1),
-			('UNIT_INCA_ATLAS', 		128, 		'ChasquiPicture_128.dds',	1, 				1),
-			('UNIT_INCA_ATLAS', 		80, 		'ChasquiPicture_080.dds',	1, 				1),
-			('UNIT_INCA_ATLAS', 		64, 		'ChasquiPicture_064.dds',	1, 				1),
-			('UNIT_INCA_ATLAS', 		45, 		'ChasquiPicture_045.dds',	1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- UNITS
 --==========================================================================================================================
@@ -130,4 +117,14 @@ INSERT INTO UnitPromotions
 VALUES		('PROMOTION_UNIT_INCA_CHASQUIWASI',		'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI',		'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI_HELP', 0, 					0, 					5, 						1, 						'AS2D_IF_LEVELUP',	1, 					50, 			'promoMUC_atlas_00', 	0, 					'PEDIA_SCOUTING',	'TXT_KEY_PROMOTION_UNIT_INCA_CHASQUIWASI');
 --==========================================================================================================================
 --==========================================================================================================================
-
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_INCA_FLAG_ATLAS', 	32, 		'ChasquiFlag_032.dds',		1, 				1),
+			('UNIT_INCA_ATLAS', 		256, 		'ChasquiPicture_256.dds',	1, 				1),
+			('UNIT_INCA_ATLAS', 		128, 		'ChasquiPicture_128.dds',	1, 				1),
+			('UNIT_INCA_ATLAS', 		80, 		'ChasquiPicture_080.dds',	1, 				1),
+			('UNIT_INCA_ATLAS', 		64, 		'ChasquiPicture_064.dds',	1, 				1),
+			('UNIT_INCA_ATLAS', 		45, 		'ChasquiPicture_045.dds',	1, 				1);

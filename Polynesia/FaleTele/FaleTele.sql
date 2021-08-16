@@ -9,20 +9,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 VALUES		('CIVILIZATION_POLYNESIA',	'BUILDINGCLASS_GROVE',	'BUILDING_POLYNESIA_FALE_TELE');
 --==========================================================================================================================	
 
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 								IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_POLYNESIA_ATLAS', 			256, 		'FaleTelePicture_256.dds',			1, 				1),
-			('BUILDING_POLYNESIA_ATLAS', 			128, 		'FaleTelePicture_128.dds',			1, 				1),
-			('BUILDING_POLYNESIA_ATLAS', 			64, 		'FaleTelePicture_064.dds',			1, 				1),
-			('BUILDING_POLYNESIA_ATLAS', 			45, 		'FaleTelePicture_045.dds',			1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
@@ -70,12 +56,15 @@ INSERT INTO Building_YieldFromConstruction
 VALUES		('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_GOLD',		3),
 			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_FOOD',		3),
 			('BUILDING_POLYNESIA_FALE_TELE',	'YIELD_CULTURE',	3);
-------------------------------	
--- Building_ImprovementYieldChanges
-------------------------------		
---INSERT INTO Building_ImprovementYieldChanges	
---			(BuildingType, 						ImprovementType,				YieldType,		Yield)
---VALUES		('BUILDING_POLYNESIA_FALE_TELE',	'IMPROVEMENT_FISHING_BOATS',	'YIELD_GOLD',	1);
 --==========================================================================================================================
---==========================================================================================================================
-
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 								IconSize, 	Filename, 							IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_POLYNESIA_ATLAS', 			256, 		'FaleTelePicture_256.dds',			1, 				1),
+			('BUILDING_POLYNESIA_ATLAS', 			128, 		'FaleTelePicture_128.dds',			1, 				1),
+			('BUILDING_POLYNESIA_ATLAS', 			64, 		'FaleTelePicture_064.dds',			1, 				1),
+			('BUILDING_POLYNESIA_ATLAS', 			45, 		'FaleTelePicture_045.dds',			1, 				1);

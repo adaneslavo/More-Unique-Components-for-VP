@@ -53,19 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 									Scale, ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_GREECE_KLEPHT',	Scale, ZOffset, Domain, 'civ5_ottrm.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_U_OTTOMAN_JANISSARY';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_GREECE_ATLAS', 		256, 		'KlephtPicture_256.dds',	1, 				1),
-			('UNIT_GREECE_ATLAS', 		128, 		'KlephtPicture_128.dds',	1, 				1),
-			('UNIT_GREECE_ATLAS', 		80, 		'KlephtPicture_080.dds',	1, 				1),
-			('UNIT_GREECE_ATLAS', 		64, 		'KlephtPicture_064.dds',	1, 				1),
-			('UNIT_GREECE_ATLAS', 		45, 		'KlephtPicture_045.dds',	1, 				1),
-			('UNIT_GREECE_FLAG_ATLAS', 	32, 		'KlephtFlag_032.dds',		1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- PROMOTIONS
 --==========================================================================================================================	
@@ -136,3 +123,14 @@ VALUES		('UNIT_GREECE_KLEPHT',	'PROMOTION_UNIT_GREECE_PHILHELLENISM'),
 			('UNIT_GREECE_KLEPHT',	'PROMOTION_CAN_MOVE_AFTER_ATTACKING');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 					IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_GREECE_ATLAS', 		256, 		'KlephtPicture_256.dds',	1, 				1),
+			('UNIT_GREECE_ATLAS', 		128, 		'KlephtPicture_128.dds',	1, 				1),
+			('UNIT_GREECE_ATLAS', 		80, 		'KlephtPicture_080.dds',	1, 				1),
+			('UNIT_GREECE_ATLAS', 		64, 		'KlephtPicture_064.dds',	1, 				1),
+			('UNIT_GREECE_ATLAS', 		45, 		'KlephtPicture_045.dds',	1, 				1),
+			('UNIT_GREECE_FLAG_ATLAS', 	32, 		'KlephtFlag_032.dds',		1, 				1);

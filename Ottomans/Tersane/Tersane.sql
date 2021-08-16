@@ -20,14 +20,6 @@ SELECT	Era, State,	Scale+0.2,	'ART_DEF_IMPROVEMENT_OTTOMAN_TERSANE',	LayoutHandl
 INSERT INTO ArtDefine_StrategicView
 			(StrategicViewType, 						TileType, 		Asset)
 VALUES 		('ART_DEF_IMPROVEMENT_OTTOMAN_TERSANE', 	'Improvement', 	'TersaneIcons_128.dds');
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 								IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES	('IMPROVEMENT_OTTOMAN_ATLAS', 			256, 		'TersaneIcons_256.dds',		2, 				1),
-		('IMPROVEMENT_OTTOMAN_ATLAS', 			64, 		'TersaneIcons_064.dds',		2, 				1),
-		('IMPROVEMENT_OTTOMAN_ATLAS', 			45, 		'TersaneIcons_045.dds',		2, 				1);
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -63,9 +55,9 @@ VALUES		('IMPROVEMENT_OTTOMAN_TERSANE',	'TERRAIN_COAST');
 ------------------------------		
 INSERT INTO Improvement_Yields 	
 			(ImprovementType, 				YieldType,						Yield)
-VALUES		('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_GOLD',					2),
-			('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_SCIENCE',				2),
-			('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_PRODUCTION',				2),
+VALUES		('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_GOLD',					3),
+			('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_SCIENCE',				3),
+			('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_PRODUCTION',				3),
 			('IMPROVEMENT_OTTOMAN_TERSANE',	'YIELD_GREAT_ADMIRAL_POINTS',	5);
 ------------------------------	
 -- Improvement_ResourceTypes
@@ -141,3 +133,11 @@ INSERT INTO Policy_ImprovementYieldChanges
 (PolicyType, ImprovementType, YieldType, Yield)
 SELECT PolicyType, 'IMPROVEMENT_OTTOMAN_TERSANE', YieldType, Yield
 FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 								IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES	('IMPROVEMENT_OTTOMAN_ATLAS', 			256, 		'TersaneIcons_256.dds',		2, 				1),
+		('IMPROVEMENT_OTTOMAN_ATLAS', 			64, 		'TersaneIcons_064.dds',		2, 				1),
+		('IMPROVEMENT_OTTOMAN_ATLAS', 			45, 		'TersaneIcons_045.dds',		2, 				1);

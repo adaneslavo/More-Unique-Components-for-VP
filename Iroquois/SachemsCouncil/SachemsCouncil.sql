@@ -8,19 +8,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 		(CivilizationType, 			BuildingClassType, 				BuildingType)
 VALUES	('CIVILIZATION_IROQUOIS',	'BUILDINGCLASS_COURT_SCRIBE',	'BUILDING_IROQUOIS_SACHEMS_COUNCIL');
 --==========================================================================================================================	
-
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 								IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_IROQUOIS_ATLAS', 			256, 		'SachemsCouncilPicture_256.dds',			1, 				1),
-			('BUILDING_IROQUOIS_ATLAS', 			128, 		'SachemsCouncilPicture_128.dds',			1, 				1),
-			('BUILDING_IROQUOIS_ATLAS', 			64, 		'SachemsCouncilPicture_064.dds',			1, 				1),
-			('BUILDING_IROQUOIS_ATLAS', 			45, 		'SachemsCouncilPicture_045.dds',			1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -119,3 +106,15 @@ UPDATE Units SET CombatClass = 'UNITCOMBAT_GREAT_DIPLOMAT' WHERE Type = 'UNIT_GR
 INSERT INTO UnitPromotions_UnitCombats
 	(PromotionType, UnitCombatType)
 VALUES	('PROMOTION_UNIT_IROQUOIS_DIPLOMATIC_RECIPROCITY', 'UNITCOMBAT_GREAT_DIPLOMAT');
+--==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 								IconSize, 	Filename, 									IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_IROQUOIS_ATLAS', 			256, 		'SachemsCouncilPicture_256.dds',			1, 				1),
+			('BUILDING_IROQUOIS_ATLAS', 			128, 		'SachemsCouncilPicture_128.dds',			1, 				1),
+			('BUILDING_IROQUOIS_ATLAS', 			64, 		'SachemsCouncilPicture_064.dds',			1, 				1),
+			('BUILDING_IROQUOIS_ATLAS', 			45, 		'SachemsCouncilPicture_045.dds',			1, 				1);

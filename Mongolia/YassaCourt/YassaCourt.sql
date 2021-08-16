@@ -8,22 +8,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 		(CivilizationType, 		BuildingClassType, 			BuildingType)
 VALUES	('CIVILIZATION_MONGOL',	'BUILDINGCLASS_COURTHOUSE',	'BUILDING_MONGOLIA_YASSA_COURT');
 --==========================================================================================================================	
-
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases
-			(Atlas, 								IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
-VALUES		('BUILDING_MONGOLIA_ATLAS', 			256, 		'YassaCourtPicture_256.dds',			1, 				1),
-			('BUILDING_MONGOLIA_ATLAS', 			128, 		'YassaCourtPicture_128.dds',			1, 				1),
-			('BUILDING_MONGOLIA_ATLAS', 			64, 		'YassaCourtPicture_064.dds',			1, 				1),
-			('BUILDING_MONGOLIA_ATLAS', 			45, 		'YassaCourtPicture_045.dds',			1, 				1);
---==========================================================================================================================	
-
---==========================================================================================================================	
 -- BUILDINGS
 --==========================================================================================================================	
 ------------------------------
@@ -56,6 +40,19 @@ VALUES		('BUILDING_MONGOLIA_YASSA_COURT',	'UNITCOMBAT_MOUNTED',	20),
 			('BUILDING_MONGOLIA_YASSA_COURT',	'UNITCOMBAT_ARCHER',	20),
 			('BUILDING_MONGOLIA_YASSA_COURT',	'UNITCOMBAT_SIEGE',		20),
 			('BUILDING_MONGOLIA_YASSA_COURT',	'UNITCOMBAT_ARMOR',		20);
+			
 --==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases
+			(Atlas, 								IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
+VALUES		('BUILDING_MONGOLIA_ATLAS', 			256, 		'YassaCourtPicture_256.dds',			1, 				1),
+			('BUILDING_MONGOLIA_ATLAS', 			128, 		'YassaCourtPicture_128.dds',			1, 				1),
+			('BUILDING_MONGOLIA_ATLAS', 			64, 		'YassaCourtPicture_064.dds',			1, 				1),
+			('BUILDING_MONGOLIA_ATLAS', 			45, 		'YassaCourtPicture_045.dds',			1, 				1);
+--==========================================================================================================================	
 --==========================================================================================================================
 

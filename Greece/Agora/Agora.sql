@@ -8,21 +8,6 @@ INSERT INTO Civilization_BuildingClassOverrides
 		(CivilizationType, 		BuildingClassType, 		BuildingType)
 VALUES	('CIVILIZATION_GREECE',	'BUILDINGCLASS_MARKET',	'BUILDING_GREECE_AGORA');
 --==========================================================================================================================	
-
---==========================================================================================================================
--- ARTDEFINES
---==========================================================================================================================	
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-		(Atlas, 							IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES	('BUILDING_GREECE_ATLAS', 			256, 		'AgoraPicture_256.dds',			1, 				1),
-		('BUILDING_GREECE_ATLAS', 			128, 		'AgoraPicture_128.dds',			1, 				1),
-		('BUILDING_GREECE_ATLAS', 			64, 		'AgoraPicture_064.dds',			1, 				1),
-		('BUILDING_GREECE_ATLAS', 			45, 		'AgoraPicture_045.dds',			1, 				1);
---==========================================================================================================================	
---==========================================================================================================================	
 -- PROMOTIONS
 --==========================================================================================================================
 --------------------------------	
@@ -95,5 +80,15 @@ INSERT INTO Building_YieldFromInternalTR
 SELECT		'BUILDING_GREECE_AGORA', YieldType, Yield
 FROM Building_YieldFromInternalTR WHERE BuildingType = 'BUILDING_MARKET';
 --==========================================================================================================================
+-- ARTDEFINES
+--==========================================================================================================================	
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+		(Atlas, 							IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES	('BUILDING_GREECE_ATLAS', 			256, 		'AgoraPicture_256.dds',			1, 				1),
+		('BUILDING_GREECE_ATLAS', 			128, 		'AgoraPicture_128.dds',			1, 				1),
+		('BUILDING_GREECE_ATLAS', 			64, 		'AgoraPicture_064.dds',			1, 				1),
+		('BUILDING_GREECE_ATLAS', 			45, 		'AgoraPicture_045.dds',			1, 				1);
 --==========================================================================================================================
-

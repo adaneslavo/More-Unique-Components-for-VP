@@ -53,19 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 								Scale, ZOffset, Domain, Model, 						MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_MAYA_HOLKAN',	Scale, ZOffset, Domain, 'Swordsman_Maya.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_U_SHOSHONE_PATHFINDER';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_MAYA_ATLAS', 			256, 		'HolkanPicture_256.dds',		1, 				1),
-			('UNIT_MAYA_ATLAS', 			128, 		'HolkanPicture_128.dds',		1, 				1),
-			('UNIT_MAYA_ATLAS', 			80, 		'HolkanPicture_080.dds',		1, 				1),
-			('UNIT_MAYA_ATLAS', 			64, 		'HolkanPicture_064.dds',		1, 				1),
-			('UNIT_MAYA_ATLAS', 			45, 		'HolkanPicture_045.dds',		1, 				1),
-			('UNIT_MAYA_FLAG_ATLAS', 		32, 		'HolkanFlag_032.dds',			1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- PROMOTIONS
 --==========================================================================================================================	
@@ -140,3 +127,15 @@ VALUES		('UNIT_MAYA_HOLKAN',	'PROMOTION_UNIT_MAYA_SCOUT_GOODY_BONUS_2'),
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_MAYA_HOLKAN' AND PromotionType = 'PROMOTION_BARBARIAN_PENALTY_I';
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_MAYA_ATLAS', 			256, 		'HolkanPicture_256.dds',		1, 				1),
+			('UNIT_MAYA_ATLAS', 			128, 		'HolkanPicture_128.dds',		1, 				1),
+			('UNIT_MAYA_ATLAS', 			80, 		'HolkanPicture_080.dds',		1, 				1),
+			('UNIT_MAYA_ATLAS', 			64, 		'HolkanPicture_064.dds',		1, 				1),
+			('UNIT_MAYA_ATLAS', 			45, 		'HolkanPicture_045.dds',		1, 				1),
+			('UNIT_MAYA_FLAG_ATLAS', 		32, 		'HolkanFlag_032.dds',			1, 				1);
+--==========================================================================================================================	

@@ -53,17 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 										Scale, ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_MONGOLIA_BLACK_TUG',	Scale, ZOffset, Domain, 'Knight_Turkey.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_KNIGHT';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_MONGOLIA_ATLAS', 		256, 		'BlackTugPicture_256.dds',	1, 				1),
-			('UNIT_MONGOLIA_ATLAS', 		128, 		'BlackTugPicture_128.dds',	1, 				1),
-			('UNIT_MONGOLIA_ATLAS', 		80, 		'BlackTugPicture_080.dds',	1, 				1),
-			('UNIT_MONGOLIA_ATLAS', 		64, 		'BlackTugPicture_064.dds',	1, 				1),
-			('UNIT_MONGOLIA_ATLAS', 		45, 		'BlackTugPicture_045.dds',	1, 				1),
-			('UNIT_MONGOLIA_FLAG_ATLAS', 	32, 		'BlackTugFlag_032.dds',		1, 				1);
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -85,7 +74,7 @@ VALUES	('PROMOTION_UNIT_MONGOLIA_MINGGHAN', 	'TXT_KEY_PROMOTION_UNIT_MONGOLIA_MI
 --------------------------------	
 INSERT INTO Units 	
 			(Type,						Class, 	PrereqTech,	Range,	BaseSightRange, Combat,		Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	ObsoleteTech,		GoodyHutUpgradeUnitClass,	XPValueAttack,	IsMounted,	Description, 						Civilopedia, 							Strategy, 									Help, 									Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, UnitArtInfo, 						UnitFlagIconOffset, UnitFlagAtlas,				PortraitIndex, 	IconAtlas,				MoveRate,	PurchaseCooldown)
-SELECT		'UNIT_MONGOLIA_BLACK_TUG',	Class,	PrereqTech,	Range,	BaseSightRange, Combat+3,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_COMBUSTION',	GoodyHutUpgradeUnitClass,	XPValueAttack,	IsMounted,	'TXT_KEY_UNIT_MONGOLIA_BLACK_TUG',	'TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_TEXT', 'TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_STRATEGY',	'TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_MONGOLIA_BLACK_TUG', 	0,					'UNIT_MONGOLIA_FLAG_ATLAS',	0, 				'UNIT_MONGOLIA_ATLAS',	MoveRate,	PurchaseCooldown
+SELECT		'UNIT_MONGOLIA_BLACK_TUG',	Class,	PrereqTech,	Range,	BaseSightRange, Combat+1,	Cost,	FaithCost,	RequiresFaithPurchaseEnabled,	Moves, Immobile, CombatClass, Domain, DefaultUnitAI,	'TECH_COMBUSTION',	GoodyHutUpgradeUnitClass,	XPValueAttack,	IsMounted,	'TXT_KEY_UNIT_MONGOLIA_BLACK_TUG',	'TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_TEXT', 'TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_STRATEGY',	'TXT_KEY_UNIT_MONGOLIA_BLACK_TUG_HELP',	Pillage, MilitarySupport, MilitaryProduction, IgnoreBuildingDefense, Mechanized, AirUnitCap, AdvancedStartCost, RangedCombatLimit, CombatLimit, XPValueDefense, 'ART_DEF_UNIT_MONGOLIA_BLACK_TUG', 	0,					'UNIT_MONGOLIA_FLAG_ATLAS',	0, 				'UNIT_MONGOLIA_ATLAS',	MoveRate,	PurchaseCooldown
 FROM Units WHERE Type = 'UNIT_KNIGHT';
 --------------------------------	
 -- UnitGameplay2DScripts
@@ -137,3 +126,14 @@ VALUES		('UNIT_MONGOLIA_BLACK_TUG',	'PROMOTION_UNIT_MONGOLIA_MINGGHAN'),
 			('UNIT_MONGOLIA_BLACK_TUG',	'PROMOTION_CHARGE');
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 					IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_MONGOLIA_ATLAS', 		256, 		'BlackTugPicture_256.dds',	1, 				1),
+			('UNIT_MONGOLIA_ATLAS', 		128, 		'BlackTugPicture_128.dds',	1, 				1),
+			('UNIT_MONGOLIA_ATLAS', 		80, 		'BlackTugPicture_080.dds',	1, 				1),
+			('UNIT_MONGOLIA_ATLAS', 		64, 		'BlackTugPicture_064.dds',	1, 				1),
+			('UNIT_MONGOLIA_ATLAS', 		45, 		'BlackTugPicture_045.dds',	1, 				1),
+			('UNIT_MONGOLIA_FLAG_ATLAS', 	32, 		'BlackTugFlag_032.dds',		1, 				1);

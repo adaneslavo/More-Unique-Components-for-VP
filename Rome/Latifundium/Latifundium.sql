@@ -21,16 +21,6 @@ VALUES 		('Any', 'UnderConstruction', 	0.85,		'ART_DEF_IMPROVEMENT_ROME_LATIFUND
 INSERT INTO ArtDefine_StrategicView
 			(StrategicViewType, 						TileType, 		Asset)
 VALUES 		('ART_DEF_IMPROVEMENT_ROME_LATIFUNDIUM', 	'Improvement', 	'LatifundiumIcon_128.dds');
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 							IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
-VALUES		('IMPROVEMENT_ROME_ATLAS', 			256, 		'LatifundiumIcons_256.dds',				1, 				1),
-			('IMPROVEMENT_ROME_ATLAS', 			64, 		'LatifundiumIcons_064.dds',				1, 				1),
-			('IMPROVEMENT_ROME_ATLAS', 			45, 		'LatifundiumIcons_045.dds',				1, 				1),
-			('IMPROVEMENT_ROME_2_ATLAS', 		64, 		'LatifundiumBuildIcons_064.dds',		1, 				1),
-			('IMPROVEMENT_ROME_2_ATLAS', 		45, 		'LatifundiumBuildIcons_045.dds',		1, 				1);
 --==========================================================================================================================
 
 --==========================================================================================================================
@@ -72,29 +62,6 @@ VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'TECH_CURRENCY',		'YIELD_GOLD',		2),
 ------------------------------	
 -- Improvement_ResourceTypes
 ------------------------------		
---INSERT INTO Improvement_ResourceTypes	
---			(ImprovementType, 							ResourceType,			ResourceMakesValid,	ResourceTrade)
---VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_CITRUS',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_CLOVES',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_COCOA',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_COFFEE',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_COTTON',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_DYE',			1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_INCENSE',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_NUTMEG',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_OLIVE',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_PEPPER',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_PERFUME',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_SILK',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_SPICES',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_SUGAR',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_TEA',			1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_TOBACCO',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_WINE',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_BANANA',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_WHEAT',		1,					1),
---			('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_EGYPT_FLAX',	1,					1);
-
 INSERT INTO Improvement_ResourceTypes	
 			(ImprovementType, 							ResourceType,			ResourceMakesValid,	ResourceTrade)
 VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'RESOURCE_WHEAT',		1,					1);	
@@ -137,7 +104,7 @@ VALUES		('IMPROVEMENT_ROME_LATIFUNDIUM',			'IMPROVEMENT_PLANTATION',	'YIELD_CULT
 ------------------------------		
 INSERT INTO Builds		
 			(Type,						PrereqTech,			ImprovementType, 				Description, 						Help, 									Recommendation, 						EntityEvent, 				Time,	OrderPriority, 	Kill, 	IconIndex, 	IconAtlas)
-VALUES		('BUILD_ROME_LATIFUNDIUM',	'TECH_CALENDAR',	'IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM_HELP',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM_REC',	'ENTITY_EVENT_IRRIGATE',	1200,	95,				0,		0,			'IMPROVEMENT_ROME_2_ATLAS');
+VALUES		('BUILD_ROME_LATIFUNDIUM',	'TECH_CALENDAR',	'IMPROVEMENT_ROME_LATIFUNDIUM',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM_HELP',	'TXT_KEY_BUILD_ROME_LATIFUNDIUM_REC',	'ENTITY_EVENT_IRRIGATE',	950,	95,				0,		0,			'IMPROVEMENT_ROME_2_ATLAS');
 ------------------------------				
 -- Unit_Builds
 ------------------------------				
@@ -165,3 +132,13 @@ SELECT PolicyType, 'IMPROVEMENT_ROME_LATIFUNDIUM', YieldType, Yield
 FROM Policy_ImprovementYieldChanges WHERE ImprovementType = 'IMPROVEMENT_ENCAMPMENT_SHOSHONE';
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 							IconSize, 	Filename, 								IconsPerRow, 	IconsPerColumn)
+VALUES		('IMPROVEMENT_ROME_ATLAS', 			256, 		'LatifundiumIcons_256.dds',				1, 				1),
+			('IMPROVEMENT_ROME_ATLAS', 			64, 		'LatifundiumIcons_064.dds',				1, 				1),
+			('IMPROVEMENT_ROME_ATLAS', 			45, 		'LatifundiumIcons_045.dds',				1, 				1),
+			('IMPROVEMENT_ROME_2_ATLAS', 		64, 		'LatifundiumBuildIcons_064.dds',		1, 				1),
+			('IMPROVEMENT_ROME_2_ATLAS', 		45, 		'LatifundiumBuildIcons_045.dds',		1, 				1);

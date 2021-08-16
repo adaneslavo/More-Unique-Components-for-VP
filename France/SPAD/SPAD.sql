@@ -53,19 +53,6 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 								Scale, ZOffset, Domain, Model, 					MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_FRANCE_SPAD',	Scale, ZOffset, Domain, 'Nieuport_17.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_WW1_FIGHTER';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_FRANCE_ATLAS', 			256, 		'SPADPicture_256.dds',			1, 				1),
-			('UNIT_FRANCE_ATLAS', 			128, 		'SPADPicture_128.dds',			1, 				1),
-			('UNIT_FRANCE_ATLAS', 			80, 		'SPADPicture_080.dds',			1, 				1),
-			('UNIT_FRANCE_ATLAS', 			64, 		'SPADPicture_064.dds',			1, 				1),
-			('UNIT_FRANCE_ATLAS', 			45, 		'SPADPicture_045.dds',			1, 				1),
-			('UNIT_FRANCE_FLAG_ATLAS', 		32, 		'SPADFlag_032.dds',				1, 				1);
---==========================================================================================================================	
-
 --==========================================================================================================================	
 -- UNITS
 --==========================================================================================================================
@@ -126,4 +113,16 @@ INSERT INTO Unit_FreePromotions
 		(UnitType, 		PromotionType)
 VALUES		('UNIT_FRANCE_SPAD', 	'PROMOTION_AIR_LOGISTICS');
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_FRANCE_ATLAS', 			256, 		'SPADPicture_256.dds',			1, 				1),
+			('UNIT_FRANCE_ATLAS', 			128, 		'SPADPicture_128.dds',			1, 				1),
+			('UNIT_FRANCE_ATLAS', 			80, 		'SPADPicture_080.dds',			1, 				1),
+			('UNIT_FRANCE_ATLAS', 			64, 		'SPADPicture_064.dds',			1, 				1),
+			('UNIT_FRANCE_ATLAS', 			45, 		'SPADPicture_045.dds',			1, 				1),
+			('UNIT_FRANCE_FLAG_ATLAS', 		32, 		'SPADFlag_032.dds',				1, 				1);
+--==========================================================================================================================	
 --==========================================================================================================================

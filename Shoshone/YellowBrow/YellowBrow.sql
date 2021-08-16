@@ -53,17 +53,7 @@ INSERT INTO ArtDefine_UnitMemberInfos
 		(Type, 					Scale, ZOffset, Domain, Model, 			MaterialTypeTag, MaterialTypeSoundOverrideTag)
 SELECT	'ART_DEF_UNIT_MEMBER_SHOSHONE_YELLOW_BROW',	Scale, ZOffset, Domain, 'civ5_iropi1.fxsxml',	MaterialTypeTag, MaterialTypeSoundOverrideTag
 FROM ArtDefine_UnitMemberInfos WHERE Type = 'ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_PIQUERO';
-------------------------------
--- IconTextureAtlases
-------------------------------
-INSERT INTO IconTextureAtlases 
-			(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
-VALUES		('UNIT_SHOSHONE_ATLAS', 		256, 		'YellowBrowPicture_256.dds',	1, 				1),
-			('UNIT_SHOSHONE_ATLAS', 		128, 		'YellowBrowPicture_128.dds',	1, 				1),
-			('UNIT_SHOSHONE_ATLAS', 		80, 		'YellowBrowPicture_080.dds',	1, 				1),
-			('UNIT_SHOSHONE_ATLAS', 		64, 		'YellowBrowPicture_064.dds',	1, 				1),
-			('UNIT_SHOSHONE_ATLAS', 		45, 		'YellowBrowPicture_045.dds',	1, 				1),
-			('UNIT_SHOSHONE_FLAG_ATLAS', 	32, 		'YellowBrowFlag_032.dds',		1, 				1);
+
 --==========================================================================================================================	
 
 --==========================================================================================================================	
@@ -136,3 +126,14 @@ INSERT INTO Unit_FreePromotions
 VALUES		('UNIT_SHOSHONE_YELLOW_BROW',	'PROMOTION_UNIT_SHOSHONE_BIG_HORSE_DANCE');			
 --==========================================================================================================================
 --==========================================================================================================================
+------------------------------
+-- IconTextureAtlases
+------------------------------
+INSERT INTO IconTextureAtlases 
+			(Atlas, 						IconSize, 	Filename, 						IconsPerRow, 	IconsPerColumn)
+VALUES		('UNIT_SHOSHONE_ATLAS', 		256, 		'YellowBrowPicture_256.dds',	1, 				1),
+			('UNIT_SHOSHONE_ATLAS', 		128, 		'YellowBrowPicture_128.dds',	1, 				1),
+			('UNIT_SHOSHONE_ATLAS', 		80, 		'YellowBrowPicture_080.dds',	1, 				1),
+			('UNIT_SHOSHONE_ATLAS', 		64, 		'YellowBrowPicture_064.dds',	1, 				1),
+			('UNIT_SHOSHONE_ATLAS', 		45, 		'YellowBrowPicture_045.dds',	1, 				1),
+			('UNIT_SHOSHONE_FLAG_ATLAS', 	32, 		'YellowBrowFlag_032.dds',		1, 				1);
